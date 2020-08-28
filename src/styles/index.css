@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.light-text {
+  color: #eeeeee;
+}
+
 .App {
   background-color: #4f575e;
   height: 100%;

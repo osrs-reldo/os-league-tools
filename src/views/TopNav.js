@@ -6,7 +6,9 @@ import Homepage from "../pages/Homepage";
 
 export default function () {
     return (
-        <React.Fragment>
+        <div
+            className="content"
+        >
             <Navbar bg="dark" variant="dark">
                 <Navbar.Brand href="/">OS League Tools</Navbar.Brand>
                 <Nav>
@@ -26,6 +28,6 @@ export default function () {
                 {/* <Route path="/character" component={CharacterTracker} /> */}
                 {/* <Route path="/calculators" component={Calculators} /> */}
             </Switch>
-        </React.Fragment>
+        </div>
     );
 }
