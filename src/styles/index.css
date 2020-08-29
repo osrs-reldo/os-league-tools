@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #4f575e;
 }
 
 code {
@@ -16,13 +17,14 @@ code {
   color: #eeeeee;
 }
 
-.App {
-  background-color: #4f575e;
-  height: 100%;
-}
-
 .content {
   min-height: 100vh;
   margin: auto;
   width: 100%;
+}
+
+.content-wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -3,6 +3,7 @@ import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Route, Switch } from "react-router-dom";
 import Homepage from "../pages/Homepage";
+import Calculators from "../pages/Calculators";
 
 export default function () {
     return (
@@ -24,9 +25,9 @@ export default function () {
                 </Nav>
             </Navbar>
             <Switch>
-                <Route path="/" component={Homepage} />
+                <Route exact path="/" component={Homepage} />
                 {/* <Route path="/character" component={CharacterTracker} /> */}
-                {/* <Route path="/calculators" component={Calculators} /> */}
+                <Route path="/calculators" component={Calculators} />
             </Switch>
         </div>
     );

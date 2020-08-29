@@ -5,13 +5,7 @@ import newsPosts from '../resources/newsPosts.json';
 
 export default function Homepage() {
     return (
-        <div
-            style={{
-                width: "80%",
-                marginLeft: "auto",
-                marginRight: "auto",
-            }}
-        >
+        <div className="content-wrapper">
             <h1 className="mt-2 light-text">News & Updates</h1>
             {newsPosts.map(newsPost => (
                 newsPost.type === "news" ?
