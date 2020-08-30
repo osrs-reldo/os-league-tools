@@ -2,8 +2,14 @@
     "skill": "Woodcutting",
     "type": "gathering",
     "categories": [
-        "Trees",
-        "Tai bwo wannai minigame"
+        {
+            "value": "Trees",
+            "label": "Trees"
+        },
+        {
+            "value": "Tai bwo wannai",
+            "label": "Tai bwo wannai"
+        }
     ],
     "expMultipliers": [
         {
@@ -39,7 +45,7 @@
         {
             "id": 1,
             "name": "Light Jungle",
-            "category": "Tai bwo wannai minigame",
+            "category": "Tai bwo wannai",
             "exp": 32,
             "level": 10,
             "icon": "https://oldschool.runescape.wiki/images/d/da/Thatch_spar_light.png",
@@ -71,7 +77,7 @@
         {
             "id": 3,
             "name": "Medium Jungle",
-            "category": "Tai bwo wannai minigame",
+            "category": "Tai bwo wannai",
             "exp": 55,
             "level": 20,
             "icon": "https://oldschool.runescape.wiki/images/f/f9/Thatch_spar_med.png",
@@ -119,7 +125,7 @@
         {
             "id": 6,
             "name": "Dense Jungle",
-            "category": "Tai bwo wannai minigame",
+            "category": "Tai bwo wannai",
             "exp": 80,
             "level": 35,
             "icon": "https://oldschool.runescape.wiki/images/3/3c/Thatch_spar_dense.png",
