@@ -14,15 +14,20 @@
     "expMultipliers": [
         {
             "id": 0,
-            "name": "Lumberjack Outfit",
-            "multiplier": "0.025"
+            "name": "Lumberjack Outfit (2.5%)",
+            "multiplier": "1.025"
+        },
+        {
+            "id": 1,
+            "name": "Trailblazer league base multiplier (x5)",
+            "multiplier": "5"
         }
     ],
     "outputMultipliers": [
         {
             "id": 0,
-            "name": "Skilling relic placeholder",
-            "multiplier": "3"
+            "name": "Relic - Endless harvest (x2)",
+            "multiplier": "2"
         }
     ],
     "actions": [

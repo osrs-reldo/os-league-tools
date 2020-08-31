@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, InputGroup, FormControl, CardDeck, Button } from "react-bootstrap";
+import { Card, InputGroup, FormControl, CardDeck, Button, Form } from "react-bootstrap";
 import BootstrapTable from 'react-bootstrap-table-next';
 import calcWoodcutting from '../resources/calcWoodcutting.json';
 import { getLevelForExp, getExpForLevel } from '../util/exp-table'
@@ -21,23 +21,21 @@ export default function Calculators() {
     const [currentExp, setCurrentExp] = useState(getExpForLevel(1));
     const [targetLevel, setTargetLevel] = useState("99");
     const [targetExp, setTargetExp] = useState(getExpForLevel(99));
+    const [expMultiplier, setExpMultiplier] = useState(1);
+    const [outputMultiplier, setOutputMultiplier] = useState(1);
 
     const amountFormatter = (cell, row, rowIndex, exp) => {
-        return calcActionsRemaining(exp.current, exp.target, row.exp);
+        return calcActionsRemaining(exp.current, exp.target, row.exp, exp.expMultiplier);
     }
 
     const outputsFormatter = (cell, row, rowIndex, exp) => {
-        const numOfActions = calcActionsRemaining(exp.current, exp.target, row.exp);
+        const numOfActions = calcActionsRemaining(exp.current, exp.target, row.exp, exp.expMultiplier);
         return (
             <ul>
                 {cell.map(output => {
-                    var amount = numOfActions * output.amount * output.chance;
+                    var amount = numOfActions * output.amount * output.chance * exp.outputMultiplier;
                     amount = +amount.toFixed(2);
-                    return (
-                        <React.Fragment>
-                            <li key="output.name">{amount + ' ' + output.name}</li>
-                        </React.Fragment>
-                    );
+                    return <li key={output.name}>{amount + ' ' + output.name}</li>;
                 })}
             </ul>
         );
@@ -81,14 +79,14 @@ export default function Calculators() {
             "isDummyField": true,
             "sort": true,
             "formatter": amountFormatter,
-            "formatExtraData": { "current": currentExp, "target": targetExp },
+            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplier": expMultiplier },
             "headerStyle": { width: '10%' }
         },
         {
             "dataField": "outputs",
             "text": "Outputs",
             "formatter": outputsFormatter,
-            "formatExtraData": { "current": currentExp, "target": targetExp }
+            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplier": expMultiplier, "outputMultiplier": outputMultiplier }
         }
     ];
 
@@ -97,9 +95,44 @@ export default function Calculators() {
             <h1 className="mt-2 light-text text-center">Woodcutting</h1>
             <CardDeck style={{ margin: '1rem' }} >
                 <Card bg='dark' text='white' >
-                    <h4 className="pt-3 pl-3">Modifiers:</h4>
-                    TODO: input multipliers (skilling outfits, relic bonuses, etc); output
-                    multipliers (more relics, other outfits like rogue)
+                    <div className="p-3">
+                        <h4>Exp multipliers:</h4>
+                        <div className="pl-2">
+                            {calcWoodcutting.expMultipliers.map(multiplier => {
+                                return (
+                                    <Form.Check
+                                        label={multiplier.name}
+                                        key={multiplier.id}
+                                        onChange={(event) => {
+                                            if (event.target.checked) {
+                                                setExpMultiplier(prevMultiplier => prevMultiplier * multiplier.multiplier);
+                                            } else {
+                                                setExpMultiplier(prevMultiplier => prevMultiplier / multiplier.multiplier);
+                                            }
+                                        }}
+                                    />
+                                );
+                            })}
+                        </div>
+                        <h4>Output multipliers:</h4>
+                        <div className="pl-2">
+                            {calcWoodcutting.outputMultipliers.map(multiplier => {
+                                return (
+                                    <Form.Check
+                                        label={multiplier.name}
+                                        key={multiplier.id}
+                                        onChange={(event) => {
+                                            if (event.target.checked) {
+                                                setOutputMultiplier(prevMultiplier => prevMultiplier * multiplier.multiplier);
+                                            } else {
+                                                setOutputMultiplier(prevMultiplier => prevMultiplier / multiplier.multiplier);
+                                            }
+                                        }}
+                                    />
+                                );
+                            })}
+                        </div>
+                    </div>
                 </Card>
                 <Card bg='dark' text='white' >
                     <h4 className="pt-3 pl-3">Level/Experience:</h4>
@@ -188,7 +221,8 @@ export default function Calculators() {
     );
 }
 
-function calcActionsRemaining(curExp, targetExp, activityExp) {
+function calcActionsRemaining(curExp, targetExp, activityExp, expMultiplier) {
     const expLeft = targetExp - curExp;
-    return Math.ceil(expLeft / activityExp);
+    const expPerAction = activityExp * expMultiplier;
+    return Math.ceil(expLeft / expPerAction);
 }
