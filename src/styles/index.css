@@ -17,6 +17,14 @@ code {
   color: #eeeeee;
 }
 
+.unlocked {
+  color: #17c878;
+}
+
+.locked {
+  color: #d62b2b;
+}
+
 .content {
   min-height: 100vh;
   margin: auto;

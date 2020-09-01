@@ -1,14 +1,15 @@
 {
     "skill": "Woodcutting",
     "type": "gathering",
+    "isCombatSkill": false,
     "categories": [
         {
             "value": "Trees",
             "label": "Trees"
         },
         {
-            "value": "Tai bwo wannai",
-            "label": "Tai bwo wannai"
+            "value": "Tai Bwo Wannai",
+            "label": "Tai Bwo Wannai"
         }
     ],
     "expMultipliers": [
@@ -19,7 +20,7 @@
         },
         {
             "id": 1,
-            "name": "Trailblazer league base multiplier (x5)",
+            "name": "League base multiplier (500%)",
             "multiplier": "5"
         }
     ],
@@ -45,12 +46,15 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "All"
             ]
         },
         {
             "id": 1,
             "name": "Light Jungle",
-            "category": "Tai bwo wannai",
+            "category": "Tai Bwo Wannai",
             "exp": 32,
             "level": 10,
             "icon": "https://oldschool.runescape.wiki/images/d/da/Thatch_spar_light.png",
@@ -61,6 +65,9 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "Karamja"
             ]
         },
         {
@@ -77,12 +84,15 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "All"
             ]
         },
         {
             "id": 3,
             "name": "Medium Jungle",
-            "category": "Tai bwo wannai",
+            "category": "Tai Bwo Wannai",
             "exp": 55,
             "level": 20,
             "icon": "https://oldschool.runescape.wiki/images/f/f9/Thatch_spar_med.png",
@@ -93,6 +103,9 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "Karamja"
             ]
         },
         {
@@ -109,6 +122,9 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "All"
             ]
         },
         {
@@ -125,12 +141,15 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "All"
             ]
         },
         {
             "id": 6,
             "name": "Dense Jungle",
-            "category": "Tai bwo wannai",
+            "category": "Tai Bwo Wannai",
             "exp": 80,
             "level": 35,
             "icon": "https://oldschool.runescape.wiki/images/3/3c/Thatch_spar_dense.png",
@@ -141,6 +160,9 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "Karamja"
             ]
         },
         {
@@ -157,6 +179,9 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "Zeah"
             ]
         },
         {
@@ -173,6 +198,15 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "Asgarnia",
+                "Fremennik Province",
+                "Kandarin",
+                "Misthalin",
+                "Tirannwn",
+                "Western Provinces",
+                "Zeah"
             ]
         },
         {
@@ -189,6 +223,9 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "Morytania"
             ]
         },
         {
@@ -205,6 +242,15 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "Fremennik Province",
+                "Karamja",
+                "Misthalin",
+                "Morytania",
+                "Tirannwn",
+                "Western Provinces",
+                "Zeah"
             ]
         },
         {
@@ -221,6 +267,9 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "Fremennik Province"
             ]
         },
         {
@@ -237,6 +286,9 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "All"
             ]
         },
         {
@@ -253,6 +305,9 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "Morytania"
             ]
         },
         {
@@ -289,6 +344,9 @@
                     "amount": 1,
                     "chance": 0.257
                 }
+            ],
+            "areas": [
+                "Misthalin"
             ]
         },
         {
@@ -305,6 +363,9 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "All"
             ]
         },
         {
@@ -321,6 +382,9 @@
                     "amount": 1,
                     "chance": 1
                 }
+            ],
+            "areas": [
+                "Zeah"
             ]
         }
     ],

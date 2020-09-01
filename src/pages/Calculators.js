@@ -3,9 +3,17 @@ import { Card, InputGroup, FormControl, CardDeck, Button, Form } from "react-boo
 import BootstrapTable from 'react-bootstrap-table-next';
 import calcWoodcutting from '../resources/calcWoodcutting.json';
 import { getLevelForExp, getExpForLevel } from '../util/exp-table'
+import { AREAS } from '../util/map-areas'
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 
 const actions = calcWoodcutting.actions;
+
+function levelFormatter(cell, row, rowIndex, levelData) {
+    const boostedLevel = getBoostedLevel(levelData.level, levelData.isSkillingProdigy);
+    return (
+        <div className={cell <= boostedLevel ? "unlocked" : "locked"}>{cell}</div>
+    );
+}
 
 function iconFormatter(cell, row) {
     return (
@@ -16,6 +24,23 @@ function iconFormatter(cell, row) {
     );
 }
 
+const amountFormatter = (cell, row, rowIndex, exp) => {
+    return calcActionsRemaining(exp.current, exp.target, row.exp, exp.expMultiplier);
+}
+
+const outputsFormatter = (cell, row, rowIndex, exp) => {
+    const numOfActions = calcActionsRemaining(exp.current, exp.target, row.exp, exp.expMultiplier);
+    return (
+        <ul>
+            {cell.map(output => {
+                var amount = numOfActions * output.amount * output.chance * exp.outputMultiplier;
+                amount = +amount.toFixed(2);
+                return <li key={output.name}>{amount + ' ' + output.name}</li>;
+            })}
+        </ul>
+    );
+}
+
 export default function Calculators() {
     const [currentLevel, setCurrentLevel] = useState("1");
     const [currentExp, setCurrentExp] = useState(getExpForLevel(1));
@@ -23,23 +48,10 @@ export default function Calculators() {
     const [targetExp, setTargetExp] = useState(getExpForLevel(99));
     const [expMultiplier, setExpMultiplier] = useState(1);
     const [outputMultiplier, setOutputMultiplier] = useState(1);
-
-    const amountFormatter = (cell, row, rowIndex, exp) => {
-        return calcActionsRemaining(exp.current, exp.target, row.exp, exp.expMultiplier);
-    }
-
-    const outputsFormatter = (cell, row, rowIndex, exp) => {
-        const numOfActions = calcActionsRemaining(exp.current, exp.target, row.exp, exp.expMultiplier);
-        return (
-            <ul>
-                {cell.map(output => {
-                    var amount = numOfActions * output.amount * output.chance * exp.outputMultiplier;
-                    amount = +amount.toFixed(2);
-                    return <li key={output.name}>{amount + ' ' + output.name}</li>;
-                })}
-            </ul>
-        );
-    }
+    const [useLevelFilter, setUseLevelFilter] = useState(false);
+    const [isSkillingProdigy, setIsSkillingProdigy] = useState(false);
+    const [useAreaFilter, setUseAreaFilter] = useState(false);
+    const [includedAreas, setIncludedAreas] = useState(AREAS);
 
     const columns = [
         {
@@ -51,7 +63,9 @@ export default function Calculators() {
             "dataField": "level",
             "text": "Level",
             "sort": true,
-            "headerStyle": { width: '10%' }
+            "headerStyle": { width: '10%' },
+            "formatter": levelFormatter,
+            "formatExtraData": { "level": currentLevel, "isSkillingProdigy": isSkillingProdigy }
         },
         {
             "dataField": "name",
@@ -114,6 +128,7 @@ export default function Calculators() {
                                 );
                             })}
                         </div>
+                        <br />
                         <h4>Output multipliers:</h4>
                         <div className="pl-2">
                             {calcWoodcutting.outputMultipliers.map(multiplier => {
@@ -132,6 +147,20 @@ export default function Calculators() {
                                 );
                             })}
                         </div>
+                        {!calcWoodcutting.isCombatSkill && (
+                            <React.Fragment>
+                                <br />
+                                <h4>Boosts:</h4>
+                                <div className="pl-2">
+                                    <Form.Check
+                                        label="Relic - Skilling Prodigy (+10)"
+                                        onChange={(event) => {
+                                            setIsSkillingProdigy(event.target.checked);
+                                        }}
+                                    />
+                                </div>
+                            </React.Fragment>
+                        )}
                     </div>
                 </Card>
                 <Card bg='dark' text='white' >
@@ -153,7 +182,6 @@ export default function Calculators() {
                             placeholder="Level"
                             value={currentLevel}
                             onChange={(event) => {
-                                console.log(event.target.value);
                                 setCurrentLevel(event.target.value);
                                 setCurrentExp(getExpForLevel(event.target.value));
                             }}
@@ -197,10 +225,50 @@ export default function Calculators() {
                     </div>
                 </Card>
                 <Card bg='dark' text='white' >
-                    <h4 className="pt-3 pl-3">Settings:</h4>
-                    TODO settings like: configure area restrictions/hide activities you can't do in your areas;
-                    checkbox to hide things you don't have the level for (might also need to include whether
-                    you have skilling prodigy for this)
+                    <div className="p-3">
+                        <h4>Filters:</h4>
+                        <div className="pl-2">
+                            <Form.Check
+                                label="Hide actions with missing level requirement"
+                                onChange={(event) => {
+                                    setUseLevelFilter(event.target.checked);
+                                }}
+                            />
+                        </div>
+                        <br />
+                        <h4>Areas:</h4>
+                        <div className="pl-2">
+                            <Form.Check
+                                label="Include all areas"
+                                checked={!useAreaFilter}
+                                onChange={(event) => {
+                                    setUseAreaFilter(!event.target.checked);
+                                    if (event.target.checked) {
+                                        setIncludedAreas(AREAS);
+                                    }
+                                }}
+                            />
+                            <Form.Control
+                                as="select"
+                                multiple
+                                htmlSize='8'
+                                disabled={!useAreaFilter}
+                                value={includedAreas}
+                                onChange={event => {
+                                    const options = event.target.options;
+                                    const selectedAreas = [];
+                                    for (var i = 0, l = options.length; i < l; i++) {
+                                        if (options[i].selected) {
+                                            selectedAreas.push(options[i].value);
+                                        }
+                                    }
+                                    setIncludedAreas(selectedAreas)
+                                }}
+                            >
+                                {AREAS.map(area => <option key={area}>{area}</option>)}
+                            </Form.Control>
+                        </div>
+                    </div>
                 </Card>
             </CardDeck>
             <Card bg='dark' text='white' style={{ margin: '1rem' }} >
@@ -208,7 +276,7 @@ export default function Calculators() {
                     <BootstrapTable
                         bootstrap4
                         keyField='id'
-                        data={actions}
+                        data={applyFilters(actions, currentLevel, useLevelFilter, isSkillingProdigy, useAreaFilter, includedAreas)}
                         columns={columns}
                         bordered={false}
                         classes="light-text"
@@ -225,4 +293,25 @@ function calcActionsRemaining(curExp, targetExp, activityExp, expMultiplier) {
     const expLeft = targetExp - curExp;
     const expPerAction = activityExp * expMultiplier;
     return Math.ceil(expLeft / expPerAction);
+}
+
+function applyFilters(actions, currentLevel, useLevelFilter, isSkillingProdigy, useAreaFilter, includedAreas) {
+    let filteredActions = actions;
+    if (useLevelFilter) {
+        const boostedLevel = getBoostedLevel(currentLevel, isSkillingProdigy);
+        filteredActions = filteredActions.filter(action => boostedLevel >= action.level);
+    }
+    if (useAreaFilter) {
+        filteredActions = filteredActions.filter(action => {
+            if (action.areas.includes("All")) {
+                return true;
+            }
+            return action.areas.some(r => includedAreas.includes(r));
+        });
+    }
+    return filteredActions;
+}
+
+function getBoostedLevel(currentLevel, isSkillingProdigy) {
+    return isSkillingProdigy ? Math.min(99, parseInt(currentLevel) + 10) : currentLevel;
 }
