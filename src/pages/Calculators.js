@@ -5,6 +5,7 @@ import calcWoodcutting from '../resources/calcWoodcutting.json';
 import { getLevelForExp, getExpForLevel } from '../util/exp-table'
 import { AREAS } from '../util/map-areas'
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
+import useLocalStorage from "../hooks/useLocalStorage";
 
 const actions = calcWoodcutting.actions;
 
@@ -52,6 +53,7 @@ export default function Calculators() {
     const [isSkillingProdigy, setIsSkillingProdigy] = useState(false);
     const [useAreaFilter, setUseAreaFilter] = useState(false);
     const [includedAreas, setIncludedAreas] = useState(AREAS);
+    const [username, setUsername] = useLocalStorage("username", "");
 
     const columns = [
         {
@@ -169,9 +171,16 @@ export default function Calculators() {
                         {/* TODO implement hiscores lookup */}
                         <FormControl
                             placeholder="Username"
+                            value={username}
+                            onChange={event => setUsername(event.target.value)}
                         />
                         <InputGroup.Append>
-                            <Button variant="outline-light">Lookup</Button>
+                            <Button
+                                variant="outline-light"
+                                onClick={() => console.log(username)}
+                            >
+                                Lookup
+                            </Button>
                         </InputGroup.Append>
                     </InputGroup>
                     <InputGroup className="p-3">
