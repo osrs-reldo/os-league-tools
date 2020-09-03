@@ -1,0 +1,432 @@
+{
+    "skills": [
+        "prayer",
+        "magic",
+        "runecrafting",
+        "construction",
+        "agility",
+        "herblore",
+        "thieving",
+        "crafting",
+        "fletching",
+        "slayer",
+        "hunter",
+        "mining",
+        "smithing",
+        "fishing",
+        "cooking",
+        "firemaking",
+        "woodcutting",
+        "farming"
+    ],
+    "calculators": {
+        "woodcutting": {
+            "name": "Woodcutting",
+            "icon": "https://oldschool.runescape.wiki/images/thumb/f/f4/Woodcutting_icon.png/17px-Woodcutting_icon.png",
+            "type": "gathering",
+            "isCombatSkill": false,
+            "categories": [
+                {
+                    "value": "Trees",
+                    "label": "Trees"
+                },
+                {
+                    "value": "Tai Bwo Wannai",
+                    "label": "Tai Bwo Wannai"
+                }
+            ],
+            "expMultipliers": [
+                {
+                    "id": 0,
+                    "name": "Lumberjack Outfit (2.5%)",
+                    "multiplier": "1.025"
+                },
+                {
+                    "id": 1,
+                    "name": "League base multiplier (500%)",
+                    "multiplier": "5"
+                }
+            ],
+            "outputMultipliers": [
+                {
+                    "id": 0,
+                    "name": "Relic - Endless harvest (x2)",
+                    "multiplier": "2"
+                }
+            ],
+            "actions": [
+                {
+                    "id": 0,
+                    "name": "Tree",
+                    "category": "Trees",
+                    "exp": 25,
+                    "level": 1,
+                    "icon": "https://oldschool.runescape.wiki/images/2/2d/Logs.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Logs",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "Light Jungle",
+                    "category": "Tai Bwo Wannai",
+                    "exp": 32,
+                    "level": 10,
+                    "icon": "https://oldschool.runescape.wiki/images/d/da/Thatch_spar_light.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Thatch spar light",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Karamja"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Oak tree",
+                    "category": "Trees",
+                    "exp": 37.5,
+                    "level": 15,
+                    "icon": "https://oldschool.runescape.wiki/images/c/cb/Oak_logs.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Oak logs",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "Medium Jungle",
+                    "category": "Tai Bwo Wannai",
+                    "exp": 55,
+                    "level": 20,
+                    "icon": "https://oldschool.runescape.wiki/images/f/f9/Thatch_spar_med.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Thatch spar med",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Karamja"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "Willow tree",
+                    "category": "Trees",
+                    "exp": 67.5,
+                    "level": 30,
+                    "icon": "https://oldschool.runescape.wiki/images/1/18/Willow_logs.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Willow logs",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "name": "Teak tree",
+                    "category": "Trees",
+                    "exp": 85,
+                    "level": 35,
+                    "icon": "https://oldschool.runescape.wiki/images/7/76/Teak_logs.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Teak logs",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ]
+                },
+                {
+                    "id": 6,
+                    "name": "Dense Jungle",
+                    "category": "Tai Bwo Wannai",
+                    "exp": 80,
+                    "level": 35,
+                    "icon": "https://oldschool.runescape.wiki/images/3/3c/Thatch_spar_dense.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Thatch spar dense",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Karamja"
+                    ]
+                },
+                {
+                    "id": 7,
+                    "name": "Mature juniper tree",
+                    "category": "Trees",
+                    "exp": 35,
+                    "level": 42,
+                    "icon": "https://oldschool.runescape.wiki/images/7/7b/Juniper_logs.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Juniper logs",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Zeah"
+                    ]
+                },
+                {
+                    "id": 8,
+                    "name": "Maple tree",
+                    "category": "Trees",
+                    "exp": 100,
+                    "level": 45,
+                    "icon": "https://oldschool.runescape.wiki/images/3/32/Maple_logs.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Maple logs",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Asgarnia",
+                        "Fremennik Province",
+                        "Kandarin",
+                        "Misthalin",
+                        "Tirannwn",
+                        "Western Provinces",
+                        "Zeah"
+                    ]
+                },
+                {
+                    "id": 9,
+                    "name": "Hollow tree",
+                    "category": "Trees",
+                    "exp": 82.5,
+                    "level": 45,
+                    "icon": "https://oldschool.runescape.wiki/images/d/dc/Bark.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Bark",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Morytania"
+                    ]
+                },
+                {
+                    "id": 10,
+                    "name": "Mahogany tree",
+                    "category": "Trees",
+                    "exp": 125,
+                    "level": 50,
+                    "icon": "https://oldschool.runescape.wiki/images/1/1c/Mahogany_logs.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Mahogany logs",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Fremennik Province",
+                        "Karamja",
+                        "Misthalin",
+                        "Morytania",
+                        "Tirannwn",
+                        "Western Provinces",
+                        "Zeah"
+                    ]
+                },
+                {
+                    "id": 11,
+                    "name": "Arctic pine tree",
+                    "category": "Trees",
+                    "exp": 40,
+                    "level": 54,
+                    "icon": "https://oldschool.runescape.wiki/images/1/1d/Arctic_pine_logs.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Arctic pine logs",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Fremennik Province"
+                    ]
+                },
+                {
+                    "id": 12,
+                    "name": "Yew tree",
+                    "category": "Trees",
+                    "exp": 175,
+                    "level": 60,
+                    "icon": "https://oldschool.runescape.wiki/images/a/ae/Yew_logs.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Yew logs",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ]
+                },
+                {
+                    "id": 13,
+                    "name": "Blisterwood tree",
+                    "category": "Trees",
+                    "exp": 52,
+                    "level": 62,
+                    "icon": "https://oldschool.runescape.wiki/images/3/3f/Blisterwood_logs.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Blisterwood logs",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Morytania"
+                    ]
+                },
+                {
+                    "id": 14,
+                    "name": "Sulliuscep",
+                    "category": "Trees",
+                    "exp": 127,
+                    "level": 65,
+                    "icon": "https://oldschool.runescape.wiki/images/8/8c/Mushroom.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Mushroom",
+                            "amount": 1,
+                            "chance": 0.504
+                        },
+                        {
+                            "name": "Mort myre fungus",
+                            "amount": 1,
+                            "chance": 0.2
+                        },
+                        {
+                            "name": "Sulliuscep cap",
+                            "amount": 1,
+                            "chance": 0.01
+                        },
+                        {
+                            "name": "Unidentified fossil",
+                            "amount": 1,
+                            "chance": 0.029
+                        },
+                        {
+                            "name": "Numulite",
+                            "amount": 1,
+                            "chance": 0.257
+                        }
+                    ],
+                    "areas": [
+                        "Misthalin"
+                    ]
+                },
+                {
+                    "id": 15,
+                    "name": "Magic tree",
+                    "category": "Trees",
+                    "exp": 250,
+                    "level": 75,
+                    "icon": "https://oldschool.runescape.wiki/images/2/20/Magic_logs.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Magic logs",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ]
+                },
+                {
+                    "id": 16,
+                    "name": "Redwood tree",
+                    "category": "Trees",
+                    "exp": 380,
+                    "level": 90,
+                    "icon": "https://oldschool.runescape.wiki/images/1/16/Redwood_logs.png",
+                    "inputs": [],
+                    "outputs": [
+                        {
+                            "name": "Redwood logs",
+                            "amount": 1,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Zeah"
+                    ]
+                }
+            ],
+            "template": {
+                "id": 0,
+                "name": "",
+                "category": "Trees",
+                "exp": 0,
+                "level": 0,
+                "icon": "",
+                "inputs": [],
+                "outputs": [
+                    {
+                        "name": "",
+                        "amount": 1,
+                        "chance": 1
+                    }
+                ]
+            }
+        }
+    }
+}

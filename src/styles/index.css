@@ -25,12 +25,6 @@ code {
   color: #d62b2b;
 }
 
-.content {
-  min-height: 100vh;
-  margin: auto;
-  width: 100%;
-}
-
 .content-wrapper {
   width: 80%;
   margin-left: auto;
