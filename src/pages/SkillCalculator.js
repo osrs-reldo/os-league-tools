@@ -1,21 +1,19 @@
 import React, { useState } from "react";
 import { Card, CardDeck, Form } from "react-bootstrap";
 import BootstrapTable from 'react-bootstrap-table-next';
-import { getExpForLevel } from '../util/exp-table'
-import { MAP_AREAS } from '../util/constants'
-import { getSkillFromCalcUrl } from '../util/browser-util'
-import { getFormatters, getBoostedLevel } from '../util/calculator-util'
+import { MAP_AREAS } from '../util/constants';
+import { getSkillFromCalcUrl } from '../util/browser-util';
+import { getFormatters, getBoostedLevel } from '../util/calculator-util';
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import calculatorData from '../resources/calculatorData.json';
 import MultiplierGroup from "../components/MultiplierGroup";
 import LevelExpInput from "../components/LevelExpInput";
 import HiscoreLookup from "../components/HiscoreLookup";
+import useLevel from "../hooks/useLevel";
 
 export default function SkillCalculator(props) {
-    const [currentLevel, setCurrentLevel] = useState("1");
-    const [currentExp, setCurrentExp] = useState(getExpForLevel(1));
-    const [targetLevel, setTargetLevel] = useState("99");
-    const [targetExp, setTargetExp] = useState(getExpForLevel(99));
+    const [currentLevel, currentExp, setCurrentLevel, setCurrentExp] = useLevel(1);
+    const [targetLevel, targetExp, setTargetLevel, setTargetExp] = useLevel(currentLevel + 1);
     const [expMultiplier, setExpMultiplier] = useState(1);
     const [outputMultiplier, setOutputMultiplier] = useState(1);
     const [useLevelFilter, setUseLevelFilter] = useState(false);
@@ -26,8 +24,11 @@ export default function SkillCalculator(props) {
     const skill = getSkillFromCalcUrl(props.location.pathname);
     const skillData = calculatorData.calculators[skill];
     if (!skillData) {
-        // TODO probably some error if this happens
-        return null;
+        return (
+            <h4 className="mt-5 light-text text-center">
+                No calculator found for "{skill}". Check your link and try again.
+            </h4>
+        );
     }
 
     const { levelFormatter, iconFormatter, amountFormatter, itemListFormatter } = getFormatters();

@@ -30,6 +30,6 @@ id,name,category,exp,level,icon,inputs,outputs,areas
 11,Arctic pine tree,Trees,40,54,https://oldschool.runescape.wiki/images/1/1d/Arctic_pine_logs.png ,,1 Arctic pine logs,Fremennik Province
 12,Yew tree,Trees,175,60,https://oldschool.runescape.wiki/images/a/ae/Yew_logs.png ,,1 Yew logs,All
 13,Blisterwood tree,Trees,76,62,https://oldschool.runescape.wiki/images/3/3f/Blisterwood_logs.png ,,1 Blisterwood logs,Morytania
-14,Sulliuscep,Trees,127,65,https://oldschool.runescape.wiki/images/8/8c/Mushroom.png ,,0.5 Mushroom;0.2 Mort myre fungus;0.01 Sulliuscep cap;0.03 Unidentified fossil;0.26 Numulite,Misthalin
+14,Sulliuscep,Trees,127,65,https://oldschool.runescape.wiki/images/8/8c/Mushroom.png ,,1 Mushroom - 63.9;1 Mort myre fungus - 6.4;1 Sulliuscep cap - 0.7;1 Unidentified fossil - 3;1 Numulite - 26,Misthalin
 15,Magic tree,Trees,250,75,https://oldschool.runescape.wiki/images/2/20/Magic_logs.png ,,1 Magic logs,All
 16,Redwood tree,Trees,380,90,https://oldschool.runescape.wiki/images/1/16/Redwood_logs.png ,,1 Redwood logs,Zeah

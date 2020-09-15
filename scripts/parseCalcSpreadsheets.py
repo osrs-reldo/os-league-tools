@@ -22,7 +22,7 @@ def parseInputOutputLine(line):
         else:
             result = {
                 'name': groups.group(2),
-                'amount': groups.group(1),
+                'amount': float(groups.group(1)),
                 'chance': 1
             }
             if len(dataSplit) > 1:
@@ -74,7 +74,7 @@ def parseCsv(skillName):
             skilldata['name'] = lineSplit[0]
             skilldata['icon'] = lineSplit[1]
             skilldata['type'] = lineSplit[2]
-            skilldata['isCombatSkill'] = lineSplit[3].lower()
+            skilldata['isCombatSkill'] = lineSplit[3] == 'TRUE'
         elif NEXT_LINE_IS_CATEGORIES:
             NEXT_LINE_IS_CATEGORIES = False
             for category in lineSplit:
@@ -109,11 +109,11 @@ def parseCsv(skillName):
                 NEXT_LINE_IS_ACTIONS = False
             else:
                 actionJson = {
-                    'id': lineSplit[0],
+                    'id': int(lineSplit[0]),
                     'name': lineSplit[1],
                     'category': lineSplit[2],
-                    'exp': lineSplit[3],
-                    'level': lineSplit[4],
+                    'exp': float(lineSplit[3]),
+                    'level': int(lineSplit[4]),
                     'icon': lineSplit[5],
                     'inputs': parseInputOutputLine(lineSplit[6]),
                     'outputs': parseInputOutputLine(lineSplit[7]),

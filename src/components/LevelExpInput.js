@@ -1,6 +1,5 @@
 import React from "react";
 import { InputGroup, FormControl } from "react-bootstrap";
-import { getLevelForExp, getExpForLevel } from '../util/exp-table'
 
 export default function LevelExpInput({ title, level, exp, setLevelCallback, setExpCallback }) {
     return (
@@ -11,18 +10,12 @@ export default function LevelExpInput({ title, level, exp, setLevelCallback, set
             <FormControl
                 placeholder="Level"
                 value={level}
-                onChange={(event) => {
-                    setLevelCallback(event.target.value);
-                    setExpCallback(getExpForLevel(event.target.value));
-                }}
+                onChange={(event) => setLevelCallback(event.target.value)}
             />
             <FormControl
                 placeholder="Exp"
                 value={exp}
-                onChange={(event) => {
-                    setExpCallback(event.target.value);
-                    setLevelCallback(getLevelForExp(event.target.value));
-                }}
+                onChange={(event) => setExpCallback(event.target.value)}
             />
         </InputGroup>
     );

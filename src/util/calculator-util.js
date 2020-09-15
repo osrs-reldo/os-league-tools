@@ -53,5 +53,5 @@ export function calcActionsRemaining(curExp, targetExp, activityExp, expMultipli
 }
 
 export function getBoostedLevel(currentLevel, isSkillingProdigy) {
-    return isSkillingProdigy ? Math.min(99, parseInt(currentLevel) + 10) : currentLevel;
+    return isSkillingProdigy ? Math.min(99, currentLevel + 10) : currentLevel;
 }
