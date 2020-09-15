@@ -1,0 +1,57 @@
+SKILL,,,,,,,,
+name,icon,type,isCombatSkill,,,,,
+Runecrafting,https://oldschool.runescape.wiki/images/6/63/Runecraft_icon.png?c278c,processing,FALSE,,,,,
+,,,,,,,,
+CATEGORIES,,,,,,,,
+Runes,Combination runes,Dark altar runes,Tiaras,,,,,
+,,,,,,,,
+EXP MULTIPLIERS,,,,,,,,
+id,name,multiplier,,,,,,
+0,League base multiplier (500%),5,,,,,,
+1,Daeyalt essence (150%),1.5,,,,,,
+,,,,,,,,
+OUTPUT MULTIPLIERS,,,,,,,,
+id,name,multiplier,,,,,,
+,,,,,,,,
+,,,,,,,,
+ACTIONS,,,,,,,,
+id,name,category,exp,level,icon,inputs,outputs,areas
+0,Air rune,Runes,5,1,https://oldschool.runescape.wiki/images/b/bf/Air_rune.png?b3a44,1 Rune/Pure essence,1 Air rune,Asgarnia; Wilderness
+27,Air tiara,Tiaras,25,1,https://oldschool.runescape.wiki/images/c/ca/Air_tiara.png?6bf5e,1 Tiara;1 Air talisman,1 Air tiara,Asgarnia
+35,Mind tiara,Tiaras,27.5,1,https://oldschool.runescape.wiki/images/9/98/Mind_tiara.png?c3670,1 Tiara;1 Mind talisman,1 Mind tiara,Asgarnia
+37,Water tiara,Tiaras,30,1,https://oldschool.runescape.wiki/images/f/f2/Water_tiara.png?a4084,1 Tiara;1 Water talisman,1 Water tiara,Misthalin
+32,Earth tiara,Tiaras,32.5,1,https://oldschool.runescape.wiki/images/9/93/Earth_tiara.png?370a7,1 Tiara;1 Earth talisman,1 Earth tiara,Misthalin
+33,Fire tiara,Tiaras,35,1,https://oldschool.runescape.wiki/images/7/7c/Fire_tiara.png?88724,1 Tiara;1 Fire talisman,1 Fire tiara,Desert
+28,Body tiara,Tiaras,37.5,1,https://oldschool.runescape.wiki/images/8/86/Body_tiara.png?6bf5e,1 Tiara;1 Body talisman,1 Body tiara,Misthalin
+30,Cosmic tiara,Tiaras,40,1,https://oldschool.runescape.wiki/images/d/da/Cosmic_tiara.png?7f120,1 Tiara;1 Cosmic talisman,1 Cosmic tiara,Misthalin
+29,Chaos tiara,Tiaras,42.5,1,https://oldschool.runescape.wiki/images/9/93/Chaos_tiara.png?cf497,1 Tiara;1 Chaos talisman,1 Chaos tiara,Wilderness
+36,Nature tiara,Tiaras,45,1,https://oldschool.runescape.wiki/images/9/9b/Nature_tiara.png?3a14a,1 Tiara;1 Nature talisman,1 Nature tiara,Karamja
+34,Law tiara,Tiaras,47.5,1,https://oldschool.runescape.wiki/images/9/9c/Law_tiara.png?562fc,1 Tiara;1 Law talisman,1 Law tiara,Asgarnia
+31,Death tiara,Tiaras,50,1,https://oldschool.runescape.wiki/images/a/a9/Death_tiara.png?bac7d,1 Tiara;1 Death talisman,1 Death tiara,Kandarin
+38,Wrath tiara,Tiaras,52.5,1,https://oldschool.runescape.wiki/images/c/c6/Wrath_tiara.png?72d2d,1 Tiara;1 Wrath talisman,1 Wrath tiara,Western Provinces
+1,Mind rune,Runes,5.5,2,https://oldschool.runescape.wiki/images/9/99/Mind_rune.png?76ed2,1 Rune/Pure essence,1 Mind rune,Asgarnia; Wilderness
+2,Water rune,Runes,6,5,https://oldschool.runescape.wiki/images/d/d1/Water_rune.png?835c3,1 Rune/Pure essence,1 Water rune,Misthalin; Wilderness
+3,Mist rune (at Air altar),Combination runes,8,6,https://oldschool.runescape.wiki/images/f/f9/Mist_rune.png?76ed2,1 Water rune;1 Pure essence,1 Mist rune,Asgarnia; Wilderness
+4,Mist rune (at Water altar),Combination runes,8.5,6,https://oldschool.runescape.wiki/images/f/f9/Mist_rune.png?76ed2,1 Air rune;1 Pure essence,1 Mist rune,Misthalin; Wilderness
+5,Earth rune,Runes,6.5,9,https://oldschool.runescape.wiki/images/d/d2/Earth_rune.png?45ae5,1 Rune/Pure essence,1 Earth rune,Misthalin; Wilderness
+6,Dust rune (at Air altar),Combination runes,8.3,10,https://oldschool.runescape.wiki/images/f/f9/Dust_rune.png?090cd,1 Earth rune;1 Pure essence,1 Dust rune,Asgarnia; Wilderness
+7,Dust rune (at Earth altar),Combination runes,9,10,https://oldschool.runescape.wiki/images/f/f9/Dust_rune.png?090cd,1 Air rune;1 Pure essence,1 Dust rune,Misthalin; Wilderness
+8,Mud rune (at Water altar),Combination runes,9.3,13,https://oldschool.runescape.wiki/images/f/fe/Mud_rune.png?76ed2,1 Earth rune;1 Pure essence,1 Mud rune,Misthalin; Wilderness
+9,Mud rune (at Earth altar),Combination runes,9.5,13,https://oldschool.runescape.wiki/images/f/fe/Mud_rune.png?76ed2,1 Water rune;1 Pure essence,1 Mud rune,Misthalin; Wilderness
+10,Fire rune,Runes,7,14,https://oldschool.runescape.wiki/images/a/a2/Fire_rune.png?45ae5,1 Rune/Pure essence,1 Fire rune,Desert; Wilderness
+11,Smoke rune (at Air altar),Combination runes,8.5,15,https://oldschool.runescape.wiki/images/b/ba/Smoke_rune.png?55b11,1 Fire rune;1 Pure essence,1 Smoke rune,Asgarnia; Wilderness
+12,Smoke rune (at Fire altar),Combination runes,9.5,15,https://oldschool.runescape.wiki/images/b/ba/Smoke_rune.png?55b11,1 Air rune;1 Pure essence,1 Smoke rune,Desert; Wilderness
+13,Steam rune (at Water altar),Combination runes,9.3,19,https://oldschool.runescape.wiki/images/6/6c/Steam_rune.png?6941a,1 Fire rune;1 Pure essence,1 Steam rune,Misthalin; Wilderness
+14,Steam rune (at Fire altar),Combination runes,10,19,https://oldschool.runescape.wiki/images/6/6c/Steam_rune.png?6941a,1 Water rune;1 Pure essence,1 Steam rune,Desert; Wilderness
+15,Body rune,Runes,7.5,20,https://oldschool.runescape.wiki/images/f/f5/Body_rune.png?9dc50,1 Rune/Pure essence,1 Body rune,Misthalin; Wilderness
+16,Lava rune (at Earth altar),Combination runes,10,23,https://oldschool.runescape.wiki/images/8/8f/Lava_rune.png?b2713,1 Fire rune;1 Pure essence,1 Lava rune,Misthalin; Wilderness
+17,Lava rune (at Fire altar),Combination runes,10.5,23,https://oldschool.runescape.wiki/images/8/8f/Lava_rune.png?b2713,1 Earth rune;1 Pure essence,1 Lava rune,Desert; Wilderness
+18,Cosmic rune,Runes,8,27,https://oldschool.runescape.wiki/images/a/ae/Cosmic_rune.png?25f9c,1 Pure essence,1 Cosmic rune,Misthalin; Wilderness
+19,Chaos rune,Runes,8.5,35,https://oldschool.runescape.wiki/w/Chaos_rune,1 Pure essence,1 Chaos rune,Wilderness
+20,Astral rune,Runes,8.7,40,https://oldschool.runescape.wiki/w/Astral_rune,1 Pure essence,1 Astral rune,Fremennik Province; Wilderness
+21,Nature rune,Runes,9,44,https://oldschool.runescape.wiki/images/8/88/Nature_rune.png?55b11,1 Pure essence,1 Nature rune,Karamja; Wilderness
+22,Law rune,Runes,9.5,54,https://oldschool.runescape.wiki/images/f/f6/Law_rune.png?c7ef5,1 Pure essence,1 Law rune,Asgarnia; Wilderness
+23,Death rune,Runes,10,65,https://oldschool.runescape.wiki/images/5/55/Death_rune.png?090cd,1 Pure essence,1 Death rune,Kandarin; Wilderness
+24,Blood rune,Dark altar runes,23.8,77,https://oldschool.runescape.wiki/images/2/2a/Blood_rune.png?9dc50,1 Dense essence block,1 Blood rune,Zeah
+25,Soul rune,Dark altar runes,29.7,90,https://oldschool.runescape.wiki/images/9/9b/Soul_rune.png?6941a,1 Dense essence block,1 Soul rune,Zeah
+26,Wrath rune,Runes,8,95,https://oldschool.runescape.wiki/images/7/70/Wrath_rune.png?3a737,1 Pure essence,1 Wrath rune,Western Provinces

@@ -1,0 +1,95 @@
+SKILL,,,,,,,,
+name,icon,type,isCombatSkill,,,,,
+Prayer,https://oldschool.runescape.wiki/images/f/f2/Prayer_icon.png?ca0dc,processing,TRUE,,,,,
+,,,,,,,,
+CATEGORIES,,,,,,,,
+Bones,Ensouled heads,Shades of Mort'ton,Enriched bones,,,,,
+,,,,,,,,
+EXP MULTIPLIERS,,,,,,,,
+id,name,multiplier,,,,,,
+0,League base multiplier (500%),5,,,,,,
+1,Gilded altar (350%),3.5,,,,,,
+2,Ectofuntus (400%),4,,,,,,
+3,Chaos altar (700%),7,,,,,,
+4,Morytania Hard/Elite (150% on shade burning),1.5,,,,,,
+,,,,,,,,
+ACTIONS,,,,,,,,
+id,name,category,exp,level,icon,inputs,outputs,areas
+0,Bones,Bones,15.7,1,https://oldschool.runescape.wiki/images/5/5e/Bones.png?31df0,1 Bones,,All
+3,Monkey bones,Bones,17.5,1,https://oldschool.runescape.wiki/images/f/fb/Monkey_bones.png?4f673,1 Monkey bones,,Karamja; Kandarin; Morytania; Western Provinces
+4,Bat bones,Bones,18.5,1,https://oldschool.runescape.wiki/images/d/d2/Bat_bones.png?9342c,1 Bat bones,,All
+43,Loar remains (Pyre logs),Shades of Mort'ton,25,1,https://oldschool.runescape.wiki/images/3/3f/Loar_remains.png?3461b,1 Loar remains;1 Pyre logs,1 Bronze shade key - 60;450 coins - 40,Morytania
+44,Loar remains (Oak pyre logs),Shades of Mort'ton,33,1,https://oldschool.runescape.wiki/images/3/3f/Loar_remains.png?3461b,1 Loar remains;1 Oak pyre logs,1 Bronze shade key - 60;450 coins - 40,Morytania
+45,Loar remains (Willow pyre logs),Shades of Mort'ton,33.5,1,https://oldschool.runescape.wiki/images/3/3f/Loar_remains.png?3461b,1 Loar remains;1 Willow pyre logs,1 Bronze shade key - 60;450 coins - 40,Morytania
+46,Loar remains (Teak pyre logs),Shades of Mort'ton,33.7,1,https://oldschool.runescape.wiki/images/3/3f/Loar_remains.png?3461b,1 Loar remains;1 Teak pyre logs,1 Bronze shade key - 60;450 coins - 40,Morytania
+47,Loar remains (Arctic pyre logs),Shades of Mort'ton,33.9,1,https://oldschool.runescape.wiki/images/3/3f/Loar_remains.png?3461b,1 Loar remains;1 Arctic pyre logs,1 Bronze shade key - 60;450 coins - 40,Morytania
+48,Loar remains (Maple pyre logs),Shades of Mort'ton,34,1,https://oldschool.runescape.wiki/images/3/3f/Loar_remains.png?3461b,1 Loar remains;1 Maple pyre logs,1 Bronze shade key - 60;450 coins - 40,Morytania
+49,Loar remains (Mahogany pyre logs),Shades of Mort'ton,34.3,1,https://oldschool.runescape.wiki/images/3/3f/Loar_remains.png?3461b,1 Loar remains;1 Mahogany pyre logs,1 Bronze shade key - 60;450 coins - 40,Morytania
+50,Loar remains (Yew pyre logs),Shades of Mort'ton,34.5,1,https://oldschool.runescape.wiki/images/3/3f/Loar_remains.png?3461b,1 Loar remains;1 Yew pyre logs,1 Bronze shade key - 60;450 coins - 40,Morytania
+51,Loar remains (Magic pyre logs),Shades of Mort'ton,35,1,https://oldschool.runescape.wiki/images/3/3f/Loar_remains.png?3461b,1 Loar remains;1 Magic pyre logs,1 Bronze shade key - 60;450 coins - 40,Morytania
+52,Loar remains (Redwood pyre logs),Shades of Mort'ton,35.5,1,https://oldschool.runescape.wiki/images/3/3f/Loar_remains.png?3461b,1 Loar remains;1 Redwood pyre logs,1 Bronze shade key - 60;450 coins - 40,Morytania
+53,Phrin remains (Pyre logs),Shades of Mort'ton,37.5,1,https://oldschool.runescape.wiki/images/d/d8/Phrin_remains.png?9bcff,1 Phrin remains;1 Pyre logs,1 Bronze/Steel shade key - 60;650 coins - 40,Morytania
+54,Phrin remains (Oak pyre logs),Shades of Mort'ton,45.5,1,https://oldschool.runescape.wiki/images/d/d8/Phrin_remains.png?9bcff,1 Phrin remains;1 Oak pyre logs,1 Bronze/Steel shade key - 60;650 coins - 40,Morytania
+55,Phrin remains (Willow pyre logs),Shades of Mort'ton,46,1,https://oldschool.runescape.wiki/images/d/d8/Phrin_remains.png?9bcff,1 Phrin remains;1 Willow pyre logs,1 Bronze/Steel shade key - 60;650 coins - 40,Morytania
+56,Phrin remains (Teak pyre logs),Shades of Mort'ton,46.2,1,https://oldschool.runescape.wiki/images/d/d8/Phrin_remains.png?9bcff,1 Phrin remains;1 Teak pyre logs,1 Bronze/Steel shade key - 60;650 coins - 40,Morytania
+57,Phrin remains (Arctic pyre logs),Shades of Mort'ton,46.4,1,https://oldschool.runescape.wiki/images/d/d8/Phrin_remains.png?9bcff,1 Phrin remains;1 Arctic pyre logs,1 Bronze/Steel shade key - 60;650 coins - 40,Morytania
+58,Phrin remains (Maple pyre logs),Shades of Mort'ton,46.5,1,https://oldschool.runescape.wiki/images/d/d8/Phrin_remains.png?9bcff,1 Phrin remains;1 Maple pyre logs,1 Bronze/Steel shade key - 60;650 coins - 40,Morytania
+59,Phrin remains (Mahogany pyre logs),Shades of Mort'ton,46.8,1,https://oldschool.runescape.wiki/images/d/d8/Phrin_remains.png?9bcff,1 Phrin remains;1 Mahogany pyre logs,1 Bronze/Steel shade key - 60;650 coins - 40,Morytania
+60,Phrin remains (Yew pyre logs),Shades of Mort'ton,47,1,https://oldschool.runescape.wiki/images/d/d8/Phrin_remains.png?9bcff,1 Phrin remains;1 Yew pyre logs,1 Bronze/Steel shade key - 60;650 coins - 40,Morytania
+61,Phrin remains (Magic pyre logs),Shades of Mort'ton,47.5,1,https://oldschool.runescape.wiki/images/d/d8/Phrin_remains.png?9bcff,1 Phrin remains;1 Magic pyre logs,1 Bronze/Steel shade key - 60;650 coins - 40,Morytania
+62,Phrin remains (Redwood pyre logs),Shades of Mort'ton,48,1,https://oldschool.runescape.wiki/images/d/d8/Phrin_remains.png?9bcff,1 Phrin remains;1 Redwood pyre logs,1 Bronze/Steel shade key - 60;650 coins - 40,Morytania
+5,Big bones,Bones,52.5,1,https://oldschool.runescape.wiki/images/1/11/Big_bones.png?bc2e9,1 Big bones,,All
+6,Jogre bones,Bones,52.5,1,https://oldschool.runescape.wiki/images/d/db/Jogre_bones.png?ca3a4,1 Jogre bones,,Asgarnia; Karamja; Fremennik Province
+63,Riyl remains (Willow pyre logs),Shades of Mort'ton,61,1,https://oldschool.runescape.wiki/images/9/9b/Riyl_remains.png?443df,1 Riyl remains;1 Willow pyre logs,1 Steel/Black shade key - 60;750 coins - 40,Morytania
+64,Riyl remains (Teak pyre logs),Shades of Mort'ton,61.2,1,https://oldschool.runescape.wiki/images/9/9b/Riyl_remains.png?443df,1 Riyl remains;1 Teak pyre logs,1 Steel/Black shade key - 60;750 coins - 40,Morytania
+65,Riyl remains (Arctic pyre logs),Shades of Mort'ton,61.4,1,https://oldschool.runescape.wiki/images/9/9b/Riyl_remains.png?443df,1 Riyl remains;1 Arctic pyre logs,1 Steel/Black shade key - 60;750 coins - 40,Morytania
+66,Riyl remains (Maple pyre logs),Shades of Mort'ton,61.5,1,https://oldschool.runescape.wiki/images/9/9b/Riyl_remains.png?443df,1 Riyl remains;1 Maple pyre logs,1 Steel/Black shade key - 60;750 coins - 40,Morytania
+67,Riyl remains (Mahogany pyre logs),Shades of Mort'ton,61.8,1,https://oldschool.runescape.wiki/images/9/9b/Riyl_remains.png?443df,1 Riyl remains;1 Mahogany pyre logs,1 Steel/Black shade key - 60;750 coins - 40,Morytania
+68,Riyl remains (Yew pyre logs),Shades of Mort'ton,62,1,https://oldschool.runescape.wiki/images/9/9b/Riyl_remains.png?443df,1 Riyl remains;1 Yew pyre logs,1 Steel/Black shade key - 60;750 coins - 40,Morytania
+69,Riyl remains (Magic pyre logs),Shades of Mort'ton,62.5,1,https://oldschool.runescape.wiki/images/9/9b/Riyl_remains.png?443df,1 Riyl remains;1 Magic pyre logs,1 Steel/Black shade key - 60;750 coins - 40,Morytania
+70,Riyl remains (Redwood pyre logs),Shades of Mort'ton,63,1,https://oldschool.runescape.wiki/images/9/9b/Riyl_remains.png?443df,1 Riyl remains;1 Redwood pyre logs,1 Steel/Black shade key - 60;750 coins - 40,Morytania
+7,Zogre bones,Bones,78.7,1,https://oldschool.runescape.wiki/images/6/6d/Zogre_bones.png?5fb16,1 Zogre bones,,Western Provinces
+71,Asyn remains (Yew pyre logs),Shades of Mort'ton,79.5,1,https://oldschool.runescape.wiki/images/4/47/Asyn_remains.png?82a11,1 Asyn remains;1 Yew pyre logs,1 Black/Silver shade key - 60;850 coins - 40,Morytania
+72,Asyn remains (Magic pyre logs),Shades of Mort'ton,80,1,https://oldschool.runescape.wiki/images/4/47/Asyn_remains.png?82a11,1 Asyn remains;1 Magic pyre logs,1 Black/Silver shade key - 60;850 coins - 40,Morytania
+73,Asyn remains (Redwood pyre logs),Shades of Mort'ton,80.5,1,https://oldschool.runescape.wiki/images/4/47/Asyn_remains.png?82a11,1 Asyn remains;1 Redwood pyre logs,1 Black/Silver shade key - 60;850 coins - 40,Morytania
+8,Shaikahan bones,Bones,87.5,1,https://oldschool.runescape.wiki/images/6/6d/Shaikahan_bones.png?0e569,1 Shaikahan bones,,Karamja
+74,Fiyr remains (Magic pyre logs),Shades of Mort'ton,100,1,https://oldschool.runescape.wiki/images/5/56/Fiyr_remains.png?39f7d,1 Fiyr remains;1 Magic pyre logs,1 Silver shade key - 60;3250 coins - 40,Morytania
+75,Fiyr remains (Redwood pyre logs),Shades of Mort'ton,100.5,1,https://oldschool.runescape.wiki/images/5/56/Fiyr_remains.png?39f7d,1 Fiyr remains;1 Redwood pyre logs,1 Silver shade key - 60;3250 coins - 40,Morytania
+9,Babydragon bones,Bones,105,1,https://oldschool.runescape.wiki/images/2/2e/Babydragon_bones.png?f1a24,1 Babydragon bones,,All
+10,Ensouled goblin head,Ensouled heads,130,1,https://oldschool.runescape.wiki/images/b/b2/Ensouled_goblin_head.png?e9471,1 Ensouled goblin head;2 Mind rune;1 Nature rune,,Zeah
+11,Wyrm bones,Bones,175,1,https://oldschool.runescape.wiki/images/c/c8/Wyrm_bones.png?2dc38,1 Wyrm bones,,Zeah
+12,Ensouled monkey head,Ensouled heads,182,1,https://oldschool.runescape.wiki/images/b/b0/Ensouled_monkey_head.png?88c5f,1 Ensouled monkey head;3 Mind rune;1 Nature rune,,Zeah
+13,Wyvern bones,Bones,252,1,https://oldschool.runescape.wiki/images/4/4b/Wyvern_bones.png?81b8e,1 Wyvern bones,,Asgarnia; Misthalin
+14,Dragon bones,Bones,252,1,https://oldschool.runescape.wiki/images/6/63/Dragon_bones.png?61378,1 Dragon bones,,All
+15,Drake bones,Bones,280,1,https://oldschool.runescape.wiki/images/e/ea/Drake_bones.png?1988d,1 Drake bones,,Zeah
+16,Ensouled imp head,Ensouled heads,286,1,https://oldschool.runescape.wiki/images/b/ba/Ensouled_imp_head.png?b6b58,1 Ensouled imp head;3 Mind rune;2 Nature rune,,Zeah
+17,Fayrg bones,Bones,294,1,https://oldschool.runescape.wiki/images/f/fa/Fayrg_bones.png?18cc3,1 Fayrg bones,,Western Provinces
+18,Lava dragon bones,Bones,297.5,1,https://oldschool.runescape.wiki/images/1/1b/Lava_dragon_bones.png?39e0f,1 Lava dragon bones,,Wilderness
+19,Raurg bones,Bones,336,1,https://oldschool.runescape.wiki/images/b/b1/Raurg_bones.png?cacf6,1 Raurg bones,,Western Provinces
+20,Ensouled minotaur head,Ensouled heads,364,1,https://oldschool.runescape.wiki/images/e/e0/Ensouled_minotaur_head.png?88c5f,1 Ensouled minotaur head;4 Mind rune;2 Nature rune,,Zeah
+21,Hydra bones,Bones,385,1,https://oldschool.runescape.wiki/images/0/0a/Hydra_bones.png?96267,1 Hydra bones,,Zeah
+22,Dagannoth bones,Bones,437.5,1,https://oldschool.runescape.wiki/images/4/4f/Dagannoth_bones.png?3cff6,1 Dagannoth bones,,Fremennik Province
+23,Ensouled scorpion head,Ensouled heads,454,1,https://oldschool.runescape.wiki/images/3/37/Ensouled_scorpion_head.png?a9ef2,1 Ensouled scorpion head;1 Nature rune;1 Soul rune,,Zeah
+24,Ensouled bear head,Ensouled heads,480,1,https://oldschool.runescape.wiki/images/7/7f/Ensouled_bear_head.png?6a50e,1 Ensouled bear head;1 Mind rune;1 Nature rune;1 Soul rune,,Zeah
+25,Ourg bones,Bones,490,1,https://oldschool.runescape.wiki/images/9/98/Ourg_bones.png?e334e,1 Ourg bones,,Western Provinces
+26,Ensouled unicorn head,Ensouled heads,494,1,https://oldschool.runescape.wiki/images/9/9b/Ensouled_unicorn_head.png?669e1,1 Ensouled unicorn head;2 Mind rune;1 Nature rune;1 Soul rune,,Zeah
+76,Small enriched bone,Enriched bones,500,1,https://oldschool.runescape.wiki/images/d/d3/Small_enriched_bone.png?5cbd6,1 Small fossil;0.25 Calcite;0.25 Pyrophosphite,,Misthalin
+27,Ensouled dog head,Ensouled heads,520,1,https://oldschool.runescape.wiki/images/1/1b/Ensouled_dog_head.png?cf458,1 Ensouled dog head;2 Mind rune;2 Nature rune;1 Soul rune,,Zeah
+28,Ensouled chaos druid head,Ensouled heads,584,1,https://oldschool.runescape.wiki/images/5/50/Ensouled_chaos_druid_head.png?669e1,1 Ensouled chaos druid head;3 Mind rune;2 Nature rune;1 Soul rune,,Zeah
+29,Ensouled giant head,Ensouled heads,650,1,https://oldschool.runescape.wiki/images/1/1f/Ensouled_giant_head.png?e9471,1 Ensouled giant head;4 Mind rune;2 Nature rune;1 Soul rune,,Zeah
+30,Ensouled ogre head,Ensouled heads,716,1,https://oldschool.runescape.wiki/images/9/90/Ensouled_ogre_head.png?a9ef2,1 Ensouled ogre head;4 Mind rune;3 Nature rune;1 Soul rune,,Zeah
+31,Ensouled elf head,Ensouled heads,754,1,https://oldschool.runescape.wiki/images/3/32/Ensouled_elf_head.png?c722a,1 Ensouled elf head;2 Mind rune;2 Nature rune;2 Soul rune,,Zeah
+32,Ensouled troll head,Ensouled heads,780,1,https://oldschool.runescape.wiki/images/3/30/Ensouled_troll_head.png?a9ef2,1 Ensouled troll head;3 Mind rune;2 Nature rune;2 Soul rune,,Zeah
+33,Ensouled horror head,Ensouled heads,832,1,https://oldschool.runescape.wiki/images/6/6c/Ensouled_horror_head.png?b6b58,1 Ensouled horror head;4 Mind rune;2 Nature rune;2 Soul rune,,Zeah
+34,Ensouled kalphite head,Ensouled heads,884,1,https://oldschool.runescape.wiki/images/1/11/Ensouled_kalphite_head.png?88c5f,1 Ensouled kalphite head;4 Mind rune;3 Nature rune;2 Soul rune,,Zeah
+35,Ensouled dagannoth head,Ensouled heads,936,1,https://oldschool.runescape.wiki/images/3/37/Ensouled_dagannoth_head.png?669e1,1 Ensouled dagannoth head;4 Mind rune;3 Nature rune;3 Soul rune,,Zeah
+77,Medium enriched bone,Enriched bones,1000,1,https://oldschool.runescape.wiki/images/c/cb/Medium_enriched_bone.png?48825,1 Medium fossil;0.25 Calcite;0.25 Pyrophosphite,,Misthalin
+36,Ensouled bloodveld head,Ensouled heads,1040,1,https://oldschool.runescape.wiki/images/6/68/Ensouled_bloodveld_head.png?6a50e,1 Ensouled bloodveld head;1 Blood rune;2 Nature rune;2 Soul rune,,Zeah
+37,Ensouled tzhaar head,Ensouled heads,1104,1,https://oldschool.runescape.wiki/images/f/fe/Ensouled_tzhaar_head.png?6a50e,1 Ensouled tzhaar head;1 Blood rune;3 Nature rune;2 Soul rune,,Zeah
+38,Ensouled demon head,Ensouled heads,1170,1,https://oldschool.runescape.wiki/images/b/b2/Ensouled_demon_head.png?cf458,1 Ensouled demon head;1 Blood rune;4 Nature rune;2 Soul rune,,Zeah
+39,Ensouled aviansie head,Ensouled heads,1234,1,https://oldschool.runescape.wiki/images/6/6e/Ensouled_aviansie_head.png?6a50e,1 Ensouled aviansie head;1 Blood rune;4 Nature rune;3 Soul rune,,Zeah
+40,Ensouled abyssal head,Ensouled heads,1300,1,https://oldschool.runescape.wiki/images/1/19/Ensouled_abyssal_head.png?f44a5,1 Ensouled abyssal head;1 Blood rune;4 Nature rune;4 Soul rune,,Zeah
+78,Large enriched bone,Enriched bones,1500,1,https://oldschool.runescape.wiki/images/8/86/Large_enriched_bone.png?23f3c,1 Large fossil;0.25 Calcite;0.25 Pyrophosphite,,Misthalin
+41,Ensouled dragon head,Ensouled heads,1560,1,https://oldschool.runescape.wiki/images/b/bb/Ensouled_dragon_head.png?cf458,1 Ensouled dragon head;2 Blood rune;4 Nature rune;4 Soul rune,,Zeah
+79,Rare enriched bone,Enriched bones,2500,1,https://oldschool.runescape.wiki/images/2/29/Rare_enriched_bone.png?48825,1 Rare fossil;0.25 Calcite;0.25 Pyrophosphite,,Misthalin
+42,Superior dragon bones,Bones,525,70,https://oldschool.runescape.wiki/images/a/a5/Superior_dragon_bones.png?105c4,1 Superior dragon bones,,Fremennik Province

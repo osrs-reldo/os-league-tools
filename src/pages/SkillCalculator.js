@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, InputGroup, FormControl, CardDeck, Button, Form } from "react-bootstrap";
+import { Card, CardDeck, Form } from "react-bootstrap";
 import BootstrapTable from 'react-bootstrap-table-next';
 import { getExpForLevel } from '../util/exp-table'
 import { MAP_AREAS } from '../util/constants'
@@ -30,7 +30,7 @@ export default function SkillCalculator(props) {
         return null;
     }
 
-    const { levelFormatter, iconFormatter, amountFormatter, outputsFormatter } = getFormatters();
+    const { levelFormatter, iconFormatter, amountFormatter, itemListFormatter } = getFormatters();
     const columns = [
         {
             "dataField": "id",
@@ -75,10 +75,16 @@ export default function SkillCalculator(props) {
             "headerStyle": { width: '10%' }
         },
         {
+            "dataField": "inputs",
+            "text": "Inputs",
+            "formatter": itemListFormatter,
+            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplier": expMultiplier }
+        },
+        {
             "dataField": "outputs",
             "text": "Outputs",
-            "formatter": outputsFormatter,
-            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplier": expMultiplier, "outputMultiplier": outputMultiplier }
+            "formatter": itemListFormatter,
+            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplier": expMultiplier, "countMultiplier": outputMultiplier }
         }
     ];
 

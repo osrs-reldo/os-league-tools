@@ -25,8 +25,20 @@ code {
   color: #d62b2b;
 }
 
+.content-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .content-wrapper {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+ul.calc-list {
+  list-style-type: none;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
 }

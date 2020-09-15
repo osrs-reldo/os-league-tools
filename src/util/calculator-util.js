@@ -5,7 +5,7 @@ export function getFormatters() {
         levelFormatter: levelFormatter,
         iconFormatter: iconFormatter,
         amountFormatter: amountFormatter,
-        outputsFormatter: outputsFormatter,
+        itemListFormatter: itemListFormatter,
     }
 }
 
@@ -19,7 +19,7 @@ function levelFormatter(cell, row, rowIndex, levelData) {
 function iconFormatter(cell, row) {
     return (
         <React.Fragment>
-            <img src={row.icon} alt={cell} />
+            {row.icon && <img src={row.icon} alt={cell} />}
             {' ' + cell}
         </React.Fragment>
     );
@@ -29,14 +29,18 @@ function amountFormatter(cell, row, rowIndex, exp) {
     return calcActionsRemaining(exp.current, exp.target, row.exp, exp.expMultiplier);
 }
 
-function outputsFormatter(cell, row, rowIndex, exp) {
+function itemListFormatter(cell, row, rowIndex, exp) {
     const numOfActions = calcActionsRemaining(exp.current, exp.target, row.exp, exp.expMultiplier);
+    const countMultiplier = exp.countMultiplier || 1
     return (
         <ul>
-            {cell.map(output => {
-                var amount = numOfActions * output.amount * output.chance * exp.outputMultiplier;
-                amount = +amount.toFixed(2);
-                return <li key={output.name}>{amount + ' ' + output.name}</li>;
+            {cell.map(item => {
+                if (item.amount) {
+                    var amount = numOfActions * item.amount * item.chance * countMultiplier;
+                    amount = +amount.toFixed(2);
+                    return <li key={item.name}>{amount + ' ' + item.name}</li>;
+                }
+                return <li key={item.name}>{item.name}</li>;
             })}
         </ul>
     );

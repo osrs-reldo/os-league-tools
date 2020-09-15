@@ -1,0 +1,49 @@
+SKILL,,,,,,,,
+name,icon,type,isCombatSkill,,,,,
+Construction,https://oldschool.runescape.wiki/images/f/f6/Construction_icon.png?f9bf7,processing,FALSE,,,,,
+,,,,,,,,
+CATEGORIES,,,,,,,,
+Materials,Bones,Furniture,STASH unit,Mahogany homes,,,,
+,,,,,,,,
+EXP MULTIPLIERS,,,,,,,,
+id,name,multiplier,,,,,,
+0,League base multiplier (500%),5,,,,,,
+,,,,,,,,
+,,,,,,,,
+OUTPUT MULTIPLIERS,,,,,,,,
+id,name,multiplier,,,,,,
+,,,,,,,,
+,,,,,,,,
+ACTIONS,,,,,,,,
+id,name,category,exp,level,icon,inputs,outputs,areas
+1,Iron bar,Materials,10,1,https://oldschool.runescape.wiki/images/1/14/Iron_bar.png?5d806,1 Iron bar,,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+0,Plank,Materials,29,1,https://oldschool.runescape.wiki/images/0/0d/Plank.png?d096f,1 Plank;Nails (varies),,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+2,Crude wooden chair,Furniture,58,1,https://oldschool.runescape.wiki/images/4/4d/Crude_wooden_chair_icon.png?4e7bc,2 Planks;Nails (varies),,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+3,Mahogany Homes contract - Beginner,Mahogany homes,1176.2,1,https://oldschool.runescape.wiki/images/0/0d/Plank.png?d096f,13 Planks;0.75 Steel bars,2 Carpenter points,Misthalin; Asgarnia; Western Provinces; Zeah
+4,Bolt of cloth,Materials,15,2,https://oldschool.runescape.wiki/images/6/63/Bolt_of_cloth.png?fd048,1 Bolt of cloth,,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+5,Soft clay,Materials,10,3,https://oldschool.runescape.wiki/images/e/e7/Soft_clay.png?727c2,1 Soft clay,,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+6,Wooden bookcase,Furniture,115,4,https://oldschool.runescape.wiki/images/9/99/Wooden_bookcase_icon.png?adda8,4 Planks;Nails (varies),,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+7,Steel bar,Materials,20,5,https://oldschool.runescape.wiki/images/a/a2/Steel_bar.png?47c87,1 Steel bar,,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+8,Limestone brick,Materials,20,5,https://oldschool.runescape.wiki/images/6/66/Limestone_brick.png?30eff,1 Limestone brick,,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+9,Beginner STASH unit (3 available),STASH unit,150,12,https://oldschool.runescape.wiki/images/b/b3/Stash_units.png?1187e,2 Planks;10 Nails,,Misthalin
+10,Oak plank,Materials,60,15,https://oldschool.runescape.wiki/images/8/8b/Oak_plank.png?f6d05,1 Oak plank,,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+11,Oak chair,Furniture,120,19,https://oldschool.runescape.wiki/images/4/4c/Oak_chair_icon.png?8e970,2 Oak planks,,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+12,Mahogany Homes contract - Novice,Mahogany homes,2277.3,20,https://oldschool.runescape.wiki/images/8/8b/Oak_plank.png?f6d05,13 Oak planks;0.75 Steel bars,3 Carpenter points,Misthalin; Asgarnia; Western Provinces; Zeah
+13,Oak dining table,Furniture,240,22,https://oldschool.runescape.wiki/images/e/e0/Oak_dining_table_icon.png?796b1,4 Oak planks,,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+14,Easy STASH unit (29 available),STASH unit,150,27,https://oldschool.runescape.wiki/images/b/b3/Stash_units.png?1187e,2 Planks;10 Nails,,All
+15,Long bone,Bones,4500,30,https://oldschool.runescape.wiki/images/7/73/Long_bone.png?81c33,1 Long bone,,Misthalin
+16,Curved bone,Bones,6750,30,https://oldschool.runescape.wiki/images/8/8f/Curved_bone.png?69581,1 Curved bone,,Misthalin
+17,Oak larder,Furniture,480,33,https://oldschool.runescape.wiki/images/9/97/Oak_larder_icon.png?f765e,8 Oak planks,,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+18,Teak plank,Materials,90,35,https://oldschool.runescape.wiki/images/9/99/Teak_plank.png?9ae4d,1 Teak plank,,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+19,Teak table,Furniture,360,38,https://oldschool.runescape.wiki/images/6/60/Teak_table_icon.png?e90e6,4 Teak planks,,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+20,Mahogany plank,Materials,140,40,https://oldschool.runescape.wiki/images/2/24/Mahogany_plank.png?c365c,1 Mahogany plank,,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+21,Medium STASH unit (23 available),STASH unit,250,42,https://oldschool.runescape.wiki/images/b/b3/Stash_units.png?1187e,2 Oak planks;10 Nails,,All
+22,Mythical cape (mounted),Furniture,370,47,https://oldschool.runescape.wiki/images/2/28/Mythical_cape_%28mounted%29_icon.png?340cb,3 Teak planks;Mythical cape (not consumed),,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+23,Mahogany Homes contract - Adept,Mahogany homes,3606.1,50,https://oldschool.runescape.wiki/images/9/99/Teak_plank.png?9ae4d,13 Teak planks;0.75 Steel bars,4 Carpenter points,Misthalin; Asgarnia; Western Provinces; Zeah
+24,Mahogany table,Furniture,840,52,https://oldschool.runescape.wiki/images/2/2c/Mahogany_table_icon.png?555e3,6 Mahogany planks,,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+25,Hard STASH unit (15 available),STASH unit,400,55,https://oldschool.runescape.wiki/images/b/b3/Stash_units.png?1187e,2 Teak planks;10 Nails,,All
+26,Teak garden bench,Furniture,540,66,https://oldschool.runescape.wiki/images/5/5e/Teak_garden_bench_icon.png?32fc2,6 Teak planks,,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+27,Mahogany Homes contract - Expert,Mahogany homes,4654.1,70,https://oldschool.runescape.wiki/images/2/24/Mahogany_plank.png?c365c,13 Mahogany planks;0.75 Steel bars,5 Carpenter points,Misthalin; Asgarnia; Western Provinces; Zeah
+28,Oak door,Furniture,600,74,https://oldschool.runescape.wiki/images/2/26/Oak_door_icon.png?18806,10 Oak planks,,Misthalin; Asgarnia; Desert; Zeah; Fremennik Province; Karamja; Western Provinces; Tirannwn
+29,Elite STASH unit (16 available),STASH unit,600,77,https://oldschool.runescape.wiki/images/b/b3/Stash_units.png?1187e,2 Mahogany planks;10 Nails,,All
+30,Master STASH unit (22 available),STASH unit,1500,88,https://oldschool.runescape.wiki/images/b/b3/Stash_units.png?1187e,2 Mahogany planks;10 Nails;1 Gold leaf,,All

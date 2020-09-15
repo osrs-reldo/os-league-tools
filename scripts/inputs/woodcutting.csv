@@ -1,0 +1,35 @@
+SKILL,,,,,,,,
+name,icon,type,isCombatSkill,,,,,
+Woodcutting,https://oldschool.runescape.wiki/images/thumb/f/f4/Woodcutting_icon.png/17px-Woodcutting_icon.png,gathering,FALSE,,,,,
+,,,,,,,,
+CATEGORIES,,,,,,,,
+Trees ,Tai Bwo Wannai ,,,,,,,
+,,,,,,,,
+EXP MULTIPLIERS,,,,,,,,
+id,name,multiplier,,,,,,
+0,League base multiplier (500%),5,,,,,,
+1,Lumberjack Outfit (2.5%) ,1.025,,,,,,
+,,,,,,,,
+OUTPUT MULTIPLIERS,,,,,,,,
+id,name,multiplier,,,,,,
+0,Relic - Endless harvest (x2) ,2,,,,,,
+,,,,,,,,
+ACTIONS,,,,,,,,
+id,name,category,exp,level,icon,inputs,outputs,areas
+0,Tree,Trees,25,1,https://oldschool.runescape.wiki/images/2/2d/Logs.png ,,1 Logs,All
+1,Light Jungle,Tai Bwo Wannai,32,10,https://oldschool.runescape.wiki/images/d/da/Thatch_spar_light.png ,,1 Thatch spar light,Karamja
+2,Oak tree,Trees,37.5,15,https://oldschool.runescape.wiki/images/c/cb/Oak_logs.png ,,1 Oak logs,All
+3,Medium Jungle,Tai Bwo Wannai,55,20,https://oldschool.runescape.wiki/images/f/f9/Thatch_spar_med.png ,,1 Thatch spar med,Karamja
+4,Willow tree,Trees,67.5,30,https://oldschool.runescape.wiki/images/1/18/Willow_logs.png ,,1 Willow logs,All
+5,Teak tree,Trees,85,35,https://oldschool.runescape.wiki/images/7/76/Teak_logs.png ,,1 Teak logs,All
+6,Dense Jungle,Tai Bwo Wannai,80,35,https://oldschool.runescape.wiki/images/3/3c/Thatch_spar_dense.png ,,1 Thatch spar dense,Karamja
+7,Mature juniper tree,Trees,35,42,https://oldschool.runescape.wiki/images/7/7b/Juniper_logs.png ,,1 Juniper logs,Zeah
+8,Maple tree,Trees,100,45,https://oldschool.runescape.wiki/images/3/32/Maple_logs.png ,,1 Maple logs,Asgarnia; Fremennik Province; Kandarin; Misthalin; Tirannwn; Western Provinces; Zeah
+9,Hollow tree,Trees,82.5,45,https://oldschool.runescape.wiki/images/d/dc/Bark.png ,,1 Bark,Morytania
+10,Mahogany tree,Trees,125,50,https://oldschool.runescape.wiki/images/1/1c/Mahogany_logs.png ,,1 Mahogany logs,Karamja; Fremennik Province; Morytania; Misthalin; Tirannwn; Western Provinces; Zeah
+11,Arctic pine tree,Trees,40,54,https://oldschool.runescape.wiki/images/1/1d/Arctic_pine_logs.png ,,1 Arctic pine logs,Fremennik Province
+12,Yew tree,Trees,175,60,https://oldschool.runescape.wiki/images/a/ae/Yew_logs.png ,,1 Yew logs,All
+13,Blisterwood tree,Trees,76,62,https://oldschool.runescape.wiki/images/3/3f/Blisterwood_logs.png ,,1 Blisterwood logs,Morytania
+14,Sulliuscep,Trees,127,65,https://oldschool.runescape.wiki/images/8/8c/Mushroom.png ,,0.5 Mushroom;0.2 Mort myre fungus;0.01 Sulliuscep cap;0.03 Unidentified fossil;0.26 Numulite,Misthalin
+15,Magic tree,Trees,250,75,https://oldschool.runescape.wiki/images/2/20/Magic_logs.png ,,1 Magic logs,All
+16,Redwood tree,Trees,380,90,https://oldschool.runescape.wiki/images/1/16/Redwood_logs.png ,,1 Redwood logs,Zeah

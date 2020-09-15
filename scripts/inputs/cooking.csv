@@ -1,0 +1,133 @@
+SKILL,,,,,,,,
+name,icon,type,isCombatSkill,,,,,
+Cooking,https://oldschool.runescape.wiki/images/d/dc/Cooking_icon.png?a0156,processing,FALSE,,,,,
+,,,,,,,,
+CATEGORIES,,,,,,,,
+Meat/Fish,Gnome cooking,Baking,Vegetables,Brewing,Other,,,
+,,,,,,,,
+EXP MULTIPLIERS,,,,,,,,
+id,name,multiplier,,,,,,
+0,League base multiplier (500%),5,,,,,,
+,,,,,,,,
+,,,,,,,,
+OUTPUT MULTIPLIERS,,,,,,,,
+id,name,multiplier,,,,,,
+,,,,,,,,
+,,,,,,,,
+ACTIONS,,,,,,,,
+id,name,category,exp,level,icon,inputs,outputs,areas
+0,Sinew,Other,3,1,,1 Raw beef,1 Sinew,All
+1,Anchovies,Meat/Fish,30,1,,1 Raw anchovies,1 Anchovies,All
+2,Cooked chicken,Meat/Fish,30,1,,1 Raw chicken,1 Cooked chicken,All
+3,Cooked meat,Meat/Fish,30,1,,1 Raw beef,1 Cooked meat,All
+4,Cooked rabbit,Meat/Fish,30,1,,1 Raw rabbit,1 Cooked rabbit,All
+5,Shrimps,Meat/Fish,30,1,,1 Raw shrimps,1 Shrimps,All
+6,Bread,Baking,40,1,,1 Bread dough,1 Bread,All
+7,Sardine,Meat/Fish,40,1,,1 Raw sardine,1 Sardine,All
+8,Ugthanki meat,Meat/Fish,40,1,,1 Raw ugthanki meat,1 Ugthanki meat,Desert
+9,Poison karambwan,Meat/Fish,80,1,,1 Raw karambwan,1 Poison karambwan,Karamja
+10,Herring,Meat/Fish,50,5,,1 Raw herring,1 Herring,All
+11,Fruit blast,Gnome cooking,50,6,,1 Pineapple;1 Lemon;1 Orange;1 Lemon slices;1 Cocktail glass,1 Fruit blast,Western Provinces
+12,Baked potato,Vegetables,15,7,,1 Potato,1 Baked potato,All
+13,Pineapple punch,Gnome cooking,70,8,,2 Pineapple;1 Lemon;1 Orange;1 Lime chunks;1 Orange slices;1 Pineapple chunks;1 Cocktail glass,1 Pineapple punch,Western Provinces
+14,Spicy sauce,Vegetables,25,9,,1 Chopped garlic;1 Gnome spice,1 Spicy sauce,All
+15,Mackerel,Meat/Fish,60,10,,1 Raw mackerel,1 Mackerel,All
+16,Redberry pie,Baking,78,10,,1 Uncooked berry pie,1 Redberry pie,All
+17,Toad crunchies,Gnome cooking,100,10,,1 Gianne dough;1 Toad's legs;1 Equa leaves,1 Toad crunchies,Western Provinces
+18,Chilli con carne,Vegetables,25,11,,1 Spicy sauce;1 Cooked meat,1 Chilli con carne,All
+19,Roast bird meat,Meat/Fish,60,11,,1 Raw bird meat,1 Roast bird meat,All
+20,Thin snail meat,Meat/Fish,70,12,,1 Thin snail,1 Thin snail meat,Morytania
+21,Spicy crunchies,Gnome cooking,100,12,,1 Gianne dough;2 Equa leaves,1 Spicy crunchies,Western Provinces
+22,Scrambled egg,Vegetables,50,13,,1 Uncooked egg,1 Scrambled egg,All
+23,Worm crunchies,Gnome cooking,100,14,,1 Gianne dough;2 King worm;1 Equa leaves,1 Worm crunchies,Western Provinces
+24,Cider,Brewing,182,14,,4 Apple mush;1 Ale yeast;8 Beer glass,1 Cider,Fremennik Province; Morytania
+25,Trout,Meat/Fish,70,15,,1 Raw trout,1 Trout,All
+26,Roast rabbit,Meat/Fish,70,16,,1 Raw rabbit,1 Roast rabbit,All
+27,Spider on shaft,Meat/Fish,80,16,,1 Spider carcass;1 Arrow shaft,1 Spider on shaft,Zeah; Karamja; Western Provinces
+28,Spider on stick,Meat/Fish,80,16,,1 Spider carcass;1 Skewer stick,1 Spider on stick,Zeah; Karamja; Western Provinces
+29,Chocchip crunchies,Gnome cooking,100,16,,1 Gianne dough;1 Chocolate dust;2 Chocolate bar,1 Chocchip crunchies,Western Provinces
+30,Lean snail meat,Meat/Fish,80,17,,1 Lean snail,1 Lean snail meat,Morytania
+31,Cod,Meat/Fish,75,18,,1 Raw cod,1 Cod,All
+32,Wizard blizzard,Gnome cooking,110,18,,2 Vodka;1 Gin;1 Lime;1 Lemon;1 Orange;1 Pineapple chunks;1 Lime slices;1 Cocktail glass,1 Wizard blizzard,Western Provinces
+33,Dwarven stout,Brewing,215,19,,2 Bucket of water;2 Barley malt;4 Hammerstone hops;1 Ale yeast;8 Beer glass,1 Dwarven stout,Fremennik Province; Morytania
+34,Cup of tea,Other,52,20,,1 Nettle tea;1 Empty cup,1 Cup of tea,All
+35,Pike,Meat/Fish,80,20,,1 Raw pike,1 Pike,All
+36,Meat pie,Baking,104,20,,1 Uncooked meat pie,1 Meat pie,All
+37,Short green guy,Gnome cooking,120,20,,1 Vodka;3 Lime;1 Lime slices;1 Equa leaves;1 Cocktail glass,1 Short green guy,Western Provinces
+38,Pot of cream,Other,18,21,,1 Bucket of milk,1 Pot of cream,All
+39,Roast beast meat,Meat/Fish,82.5,21,,1 Raw beast meat,1 Roast beast meat,Desert; Karamja; Western Provinces
+40,Cooked crab meat,Meat/Fish,100,21,,1 Crab meat,1 Cooked crab meat,Western Provinces
+41,Fat snail meat,Meat/Fish,95,22,,1 Fat snail,1 Fat snail meat,Morytania
+42,Asgarnian ale,Brewing,248,24,,2 Bucket of water;2 Barley malt;4 Asgarnian hops;1 Ale yeast;8 Beer glass,1 Asgarnian ale,Fremennik Province; Morytania
+43,Salmon,Meat/Fish,90,25,,1 Raw salmon,1 Salmon,All
+44,Stew,Other,117,25,,1 Bowl of water;1 Potato;1 Cooked meat,1 Stew,All
+45,Fruit batta,Gnome cooking,150,25,,1 Gianne dough;4 Equa leaves;1 Lime chunks;1 Orange chunks;1 Pineapple chunks,1 Fruit batta,Western Provinces
+46,Toad batta,Gnome cooking,152,26,,1 Gianne dough;1 Equa leaves;1 Toad's legs;1 Cheese,1 Toad batta,Western Provinces
+47,Worm batta,Gnome cooking,154,27,,1 Gianne dough;1 King worm;1 Cheese,1 Worm batta,Western Provinces
+48,Slimy eel,Meat/Fish,95,28,,1 Raw slimy eel,1 Slimy eel,Misthalin; Morytania
+49,Cooked sweetcorn,Vegetables,104,28,,1 Sweetcorn,1 Cooked sweetcorn,All
+50,Vegetable batta,Gnome cooking,156,28,,1 Gianne dough;2 Tomato;1 Dwellberries;1 Cabbage;1 Cheese;1 Onion;1 Equa leaves,1 Vegetable batta,Western Provinces
+51,Mud pie,Baking,128,29,,1 Raw mud pie,1 Mud pie,All
+52,Cheese+tom batta,Gnome cooking,158,29,,1 Gianne dough;1 Tomato;1 Cheese,1 Cheese+tom batta,Western Provinces
+53,Greenman's ale,Brewing,281,29,,2 Bucket of water;2 Barley malt;4 Harralander;1 Ale yeast;8 Beer glass,1 Greenman's ale,Fremennik Province; Morytania
+54,Cooked chompy,Meat/Fish,100,30,,1 Raw chompy,1 Cooked chompy,Western Provinces
+55,Tuna,Meat/Fish,100,30,,1 Raw tuna,1 Tuna,All
+56,Apple pie,Baking,130,30,,1 Uncooked apple pie,1 Apple pie,All
+57,Worm hole,Gnome cooking,170,30,,1 Gianne dough;4 King worm;2 Onion;1 Equa leaves,1 Worm hole,Western Provinces
+58,Cooked karambwan,Meat/Fish,190,30,,1 Raw karambwan,1 Cooked karambwan,Karamja
+59,Cooked fishcake,Baking,100,31,,1 Raw fishcake,1 Cooked fishcake,All
+60,Drunk dragon,Gnome cooking,160,32,,1 Gin;1 Vodka;1 Dwellberries;1 Pineapple chunks;1 Pot of cream;1 Cocktail glass,1 Drunk dragon,Western Provinces
+61,Choc saturday,Gnome cooking,170,33,,1 Whisky;1 Bucket of milk;1 Chocolate dust;1 Chocolate bar;1 Equa leaves;1 Cocktail glass,1 Choc saturday,Western Provinces
+62,Garden pie,Baking,128,34,,1 Raw garden pie,1 Garden pie,All
+63,Wizard's mind bomb,Brewing,314,34,,2 Bucket of water;2 Barley malt;4 Yanillian hops;1 Ale yeast;8 Beer glass,1 Wizard's mind bomb,Fremennik Province; Morytania
+64,Rainbow fish,Meat/Fish,110,35,,1 Raw rainbow fish,1 Rainbow fish,All
+65,Plain pizza,Baking,143,35,,1 Uncooked pizza,1 Plain pizza,All
+66,Veg ball,Gnome cooking,175,35,,1 Gianne dough;2 Onion;2 Potato;1 Equa leaves,1 Veg ball,Western Provinces
+67,Jug of wine,Other,200,35,,1 Jug of water;1 Grapes,1 Jug of wine,All
+68,Blurberry special,Gnome cooking,180,37,,1 Vodka;1 Brandy;1 Gin;2 Lemon;1 Orange;1 Lemon chunks;1 Orange chunks;1 Equa leaves;1 Lime slices;1 Cocktail glass,1 Blurberry special,Western Provinces
+69,Pat of butter,Other,40.5,38,,1 Bucket of milk,1 Pat of butter,All
+70,Cave eel,Meat/Fish,115,38,,1 Raw cave eel,1 Cave eel,Misthalin
+71,Potato with butter,Vegetables,40,39,,1 Baked potato;1 Pat of butter,1 Potato with butter,All
+72,Dragon bitter,Brewing,347,39,,2 Bucket of water;2 Barley malt;4 Krandorian hops;1 Ale yeast;8 Beer glass,1 Dragon bitter,Fremennik Province; Morytania
+73,Lobster,Meat/Fish,120,40,,1 Raw lobster,1 Lobster,All
+74,Cake,Baking,180,40,,1 Egg;1 Bucket of milk;1 Pot of flour;1 Cake tin,1 Cake,All
+75,Tangled toad's legs,Gnome cooking,185,40,,1 Gianne dough;4 Toad's legs;2 Cheese;2 Equa leaves;1 Dwellberries,1 Tangled toad's legs,Western Provinces
+76,Chilli potato,Vegetables,15,41,,1 Potato with butter;1 Chilli con carne,1 Chilli potato,All
+77,Cooked jubbly,Meat/Fish,160,41,,1 Raw jubbly,1 Cooked jubbly,Western Provinces
+78,Fried onions,Vegetables,60,42,,1 Chopped onion,1 Fried onions,All
+79,Chocolate bomb,Gnome cooking,190,42,,1 Gianne dough;4 Chocolate bar;1 Equa leaves;1 Chocolate dust;2 Pot of cream,1 Chocolate bomb,Western Provinces
+80,Bass,Meat/Fish,130,43,,1 Raw bass,1 Bass,All
+81,Moonlight mead,Brewing,480,44,,2 Bucket of water;2 Barley malt;4 Mushroom;1 Ale yeast;8 Beer glass,1 Moonlight mead,Fremennik Province; Morytania
+82,Swordfish,Meat/Fish,140,45,,1 Raw swordfish,1 Swordfish,All
+83,Meat pizza,Baking,169,45,,1 Plain pizza;1 Cooked meat,1 Meat pizza,All
+84,Fried mushrooms,Vegetables,60,46,,1 Sliced mushrooms,1 Fried mushrooms,All
+85,Potato with cheese,Vegetables,40,47,,1 Potato with butter;1 Cheese,1 Potato with cheese,All
+86,Fish pie,Baking,164,47,,1 Raw fish pie,1 Fish pie,All
+87,Cheese,Other,64,48,,1 Bucket of milk,1 Cheese,All
+88,Axeman's folly,Brewing,413,49,,2 Bucket of water;2 Barley malt;1 Oak roots;1 Ale yeast;8 Beer glass,1 Axeman's folly,Fremennik Province; Morytania
+89,Chocolate cake,Baking,210,50,,1 Cake;1 Chocolate bar,1 Chocolate cake,All
+90,Egg potato,Vegetables,45,51,,1 Egg and tomato;1 Potato with butter,1 Egg potato,All
+91,Botanical pie,Baking,180,52,,1 Uncooked botanical pie,1 Botanical pie,Zeah
+92,Lava eel,Meat/Fish,30,53,,1 Raw lava eel,1 Lava eel,Asgarnia; Wilderness
+93,Chef's delight,Brewing,446,54,,2 Bucket of water;2 Barley malt;4 Chocolate dust;1 Ale yeast;8 Beer glass,1 Chef's delight,Fremennik Province; Morytania
+94,Anchovy pizza,Baking,182,55,,1 Plain pizza;1 Anchovies,1 Anchovy pizza,All
+95,Mushroom & onion,Vegetables,120,57,,1 Fried mushrooms;1 Fried onions,1 Mushroom & onion,All
+96,Pitta bread,Baking,40,58,,1 Pitta dough,1 Pitta bread,All
+97,Slayer's respite,Brewing,479,59,,2 Bucket of water;2 Barley malt;4 Wildblood hops;1 Ale yeast;8 Beer glass,1 Slayer's respite,Fremennik Province; Morytania
+98,Mushroom pie,Baking,200,60,,1 Uncooked mushroom pie,1 Mushroom pie,Misthalin
+99,Curry,Other,280,60,,1 Bowl of water;1 Potato;1 Cooked meat;1 Curry leaf,1 Curry,All
+100,Monkfish,Meat/Fish,150,62,,1 Raw monkfish,1 Monkfish,Western Provinces; Zeah; Wilderness
+101,Mushroom potato,Vegetables,55,64,,1 Mushroom & onion;1 Potato with butter,1 Mushroom potato,All
+102,Pineapple pizza,Baking,195,65,,1 Plain pizza;1 Pineapple chunks,1 Pineapple pizza,All
+103,Wine of zamorak,Other,200,65,,1 Jug of water;1 Zamorak's grapes,1 Wine of zamorak,All
+104,Tuna potato,Vegetables,10,68,,1 Tuna and corn;1 Potato with butter,1 Tuna potato,All
+105,Admiral pie,Baking,210,70,,1 Raw admiral pie,1 Admiral pie,All
+106,Sacred eel,Meat/Fish,116.5,72,,1 Sacred eel,1 Sacred eel,Tirannwn
+107,Dragonfruit pie,Baking,220,73,,1 Uncooked dragonfruit pie,1 Dragonfruit pie,All
+108,Shark,Meat/Fish,210,80,,1 Raw shark,1 Shark,All
+109,Sea turtle,Meat/Fish,211.3,82,,1 Raw sea turtle,1 Sea turtle,All
+110,Anglerfish,Meat/Fish,230,84,,1 Raw anglerfish,1 Anglerfish,Zeah
+111,Wild pie,Baking,240,85,,1 Raw wild pie,1 Wild pie,Western Provinces
+112,Dark crab,Meat/Fish,215,90,,1 Raw dark crab,1 Dark crab,Wilderness
+113,Manta ray,Meat/Fish,216.2,91,,1 Raw manta ray,1 Manta ray,All
+114,Summer pie,Baking,260,95,,1 Raw summer pie,1 Summer pie,All

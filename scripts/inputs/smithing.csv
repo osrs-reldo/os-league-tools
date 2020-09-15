@@ -1,0 +1,208 @@
+SKILL,,,,,,,,
+name,icon,type,isCombatSkill,,,,,
+Smithing,https://oldschool.runescape.wiki/images/d/dd/Smithing_icon.png?d26c5,processing,FALSE,,,,,
+,,,,,,,,
+CATEGORIES,,,,,,,,
+Smelting,Bronze,Iron,Steel,Mithril,Adamantite,Runite,Gold,Crystal
+,,,,,,,,
+EXP MULTIPLIERS,,,,,,,,
+id,name,multiplier,,,,,,
+0,League base multiplier (500%),5,,,,,,
+1,Goldsmith gauntlets,2,gold only,,,,,
+,,,,,,,,
+OUTPUT MULTIPLIERS,,,,,,,,
+id,name,multiplier,,,,,,
+,,,,,,,,
+,,,,,,,,
+ACTIONS,,,,,,,,
+id,name,category,exp,level,icon,inputs,outputs,areas
+0,Bronze bar,Smelting,6.2,1,,1 Copper ore;1 Tin ore,1 Bronze bar,All
+1,Bronze axe,Bronze,12.5,1,,1 Bronze bar,1 Bronze axe,All
+2,Bronze dagger,Bronze,12.5,1,,1 Bronze bar,1 Bronze dagger,All
+3,Bronze mace,Bronze,12.5,2,,1 Bronze bar,1 Bronze mace,All
+4,Bronze bolts (unf),Bronze,12.5,3,,1 Bronze bar,10 Bronze bolts (unf),All
+5,Bronze med helm,Bronze,12.5,3,,1 Bronze bar,1 Bronze med helm,All
+6,Bronze dart tip,Bronze,12.5,4,,1 Bronze bar,1 Bronze dart tip,Desert
+7,Bronze nails,Bronze,12.5,4,,1 Bronze bar,15 Bronze nails,All
+8,Bronze sword,Bronze,12.5,4,,1 Bronze bar,1 Bronze sword,All
+9,Bronze wire,Bronze,12.5,4,,1 Bronze bar,1 Bronze wire,All
+10,Bronze arrowtips,Bronze,12.5,5,,1 Bronze bar,15 Bronze arrowtips,All
+11,Bronze hasta,Bronze,25,5,,1 Bronze bar;1 Logs,1 Bronze hasta,Kandarin
+12,Bronze scimitar,Bronze,25,5,,2 Bronze bar,1 Bronze scimitar,All
+13,Bronze spear,Bronze,25,5,,1 Bronze bar;1 Logs,1 Bronze spear,Kandarin
+14,Bronze javelin heads,Bronze,12.5,6,,1 Bronze bar,5 Bronze javelin heads,All
+15,Bronze limbs,Bronze,12.5,6,,1 Bronze bar,1 Bronze limbs,All
+16,Bronze longsword,Bronze,25,6,,2 Bronze bar,1 Bronze longsword,All
+17,Bronze knife,Bronze,12.5,7,,1 Bronze bar,5 Bronze knife,All
+18,Bronze full helm,Bronze,25,7,,2 Bronze bar,1 Bronze full helm,All
+19,Blurite bar,Smelting,8,8,,1 Blurite ore,1 Blurite bar,Asgarnia
+20,Bronze sq shield,Bronze,25,8,,2 Bronze bar,1 Bronze sq shield,All
+21,Bronze warhammer,Bronze,37.5,9,,3 Bronze bar,1 Bronze warhammer,All
+22,Bronze battleaxe,Bronze,37.5,10,,3 Bronze bar,1 Bronze battleaxe,All
+23,Bronze chainbody,Bronze,37.5,11,,3 Bronze bar,1 Bronze chainbody,All
+24,Bronze kiteshield,Bronze,37.5,12,,3 Bronze bar,1 Bronze kiteshield,All
+25,Bronze claws,Bronze,25,13,,2 Bronze bar,1 Bronze claws,Asgarnia
+26,Bronze 2h sword,Bronze,37.5,14,,3 Bronze bar,1 Bronze 2h sword,All
+27,Iron bar,Smelting,12.5,15,,2 Iron ore,1 Iron bar,All
+28,Iron dagger,Iron,25,15,,1 Iron bar,1 Iron dagger,All
+29,Iron axe,Iron,25,16,,1 Iron bar,1 Iron axe,All
+30,Bronze platelegs,Bronze,37.5,16,,3 Bronze bar,1 Bronze platelegs,All
+31,Bronze plateskirt,Bronze,37.5,16,,3 Bronze bar,1 Bronze plateskirt,All
+32,Iron mace,Iron,25,17,,1 Iron bar,1 Iron mace,All
+33,Iron med helm,Iron,25,17,,1 Iron bar,1 Iron med helm,All
+34,Iron spit,Iron,25,17,,1 Iron bar,1 Iron spit,All
+35,Iron bolts (unf),Iron,25,18,,1 Iron bar,10 Iron bolts (unf),All
+36,Bronze platebody,Bronze,62.5,18,,5 Bronze bar,1 Bronze platebody,All
+37,Iron dart tip,Iron,25,19,,1 Iron bar,1 Iron dart tip,Desert
+38,Iron nails,Iron,25,19,,1 Iron bar,15 Iron nails,All
+39,Iron sword,Iron,25,19,,1 Iron bar,1 Iron sword,All
+40,Elemental metal,Smelting,7.5,20,,1 Elemental ore;4 Coal,1 Elemental metal,All
+41,Silver bar,Smelting,13.6,20,,1 Silver ore,1 Silver bar,All
+42,Iron arrowtips,Iron,25,20,,1 Iron bar,15 Iron arrowtips,All
+43,Iron hasta,Iron,50,20,,1 Iron bar;1 Oak logs,1 Iron hasta,Kandarin
+44,Iron scimitar,Iron,50,20,,2 Iron bar,1 Iron scimitar,All
+45,Iron spear,Iron,50,20,,1 Iron bar;1 Oak logs,1 Iron spear,Kandarin
+46,Iron javelin heads,Iron,25,21,,1 Iron bar,5 Iron javelin heads,All
+47,Iron longsword,Iron,50,21,,2 Iron bar,1 Iron longsword,All
+48,Iron knife,Iron,25,22,,1 Iron bar,5 Iron knife,All
+49,Iron full helm,Iron,50,22,,2 Iron bar,1 Iron full helm,All
+50,Iron limbs,Iron,25,23,,1 Iron bar,1 Iron limbs,All
+51,Iron sq shield,Iron,50,23,,2 Iron bar,1 Iron sq shield,All
+52,Iron warhammer,Iron,75,24,,3 Iron bar,1 Iron warhammer,All
+53,Iron battleaxe,Iron,75,25,,3 Iron bar,1 Iron battleaxe,All
+54,Oil lantern frame,Iron,25,26,,1 Iron bar,1 Oil lantern frame,All
+55,Iron chainbody,Iron,75,26,,3 Iron bar,1 Iron chainbody,All
+56,Iron kiteshield,Iron,75,27,,3 Iron bar,1 Iron kiteshield,All
+57,Iron claws,Iron,50,28,,2 Iron bar,1 Iron claws,Asgarnia
+58,Iron 2h sword,Iron,75,29,,3 Iron bar,1 Iron 2h sword,All
+59,Steel bar,Smelting,17.5,30,,1 Iron ore;2 Coal,1 Steel bar,All
+60,Steel dagger,Steel,37.5,30,,1 Steel bar,1 Steel dagger,All
+61,Steel axe,Steel,37.5,31,,1 Steel bar,1 Steel axe,All
+62,Iron platelegs,Iron,75,31,,3 Iron bar,1 Iron platelegs,All
+63,Iron plateskirt,Iron,75,31,,3 Iron bar,1 Iron plateskirt,All
+64,Steel mace,Steel,37.5,32,,1 Steel bar,1 Steel mace,All
+65,Steel bolts (unf),Steel,37.5,33,,1 Steel bar,10 Steel bolts (unf),All
+66,Steel med helm,Steel,37.5,33,,1 Steel bar,1 Steel med helm,All
+67,Iron platebody,Iron,125,33,,5 Iron bar,1 Iron platebody,All
+68,Steel dart tip,Steel,37.5,34,,1 Steel bar,1 Steel dart tip,Desert
+69,Steel nails,Steel,37.5,34,,1 Steel bar,15 Steel nails,All
+70,Steel sword,Steel,37.5,34,,1 Steel bar,1 Steel sword,All
+71,Cannonball,Steel,25.6,35,,1 Steel bar,4 Cannonball,Kandarin
+72,Steel arrowtips,Steel,37.5,35,,1 Steel bar,15 Steel arrowtips,All
+73,Steel hasta,Steel,75,35,,1 Steel bar;1 Willow logs,1 Steel hasta,Kandarin
+74,Steel scimitar,Steel,75,35,,2 Steel bar,1 Steel scimitar,All
+75,Steel spear,Steel,75,35,,1 Steel bar;1 Willow logs,1 Steel spear,Kandarin
+76,Steel javelin heads,Steel,37.5,36,,1 Steel bar,5 Steel javelin heads,All
+77,Steel limbs,Steel,37.5,36,,1 Steel bar,1 Steel limbs,All
+78,Steel longsword,Steel,75,36,,2 Steel bar,1 Steel longsword,All
+79,Steel knife,Steel,37.5,37,,1 Steel bar,5 Steel knife,All
+80,Steel full helm,Steel,75,37,,2 Steel bar,1 Steel full helm,All
+81,Steel sq shield,Steel,75,38,,2 Steel bar,1 Steel sq shield,All
+82,Steel warhammer,Steel,112.5,39,,3 Steel bar,1 Steel warhammer,All
+83,Gold bar,Smelting,22.5,40,,1 Gold ore,1 Gold bar,All
+84,Steel battleaxe,Steel,112.5,40,,3 Steel bar,1 Steel battleaxe,All
+85,Steel chainbody,Steel,112.5,41,,3 Steel bar,1 Steel chainbody,All
+86,Steel kiteshield,Steel,112.5,42,,3 Steel bar,1 Steel kiteshield,All
+87,Steel claws,Steel,75,43,,2 Steel bar,1 Steel claws,Asgarnia
+88,Steel 2h sword,Steel,112.5,44,,3 Steel bar,1 Steel 2h sword,All
+89,Lovakite bar,Smelting,20,45,,1 Lovakite ore;2 Coal,1 Lovakite bar,Zeah
+90,Steel platelegs,Steel,112.5,46,,3 Steel bar,1 Steel platelegs,All
+91,Steel plateskirt,Steel,112.5,46,,3 Steel bar,1 Steel plateskirt,All
+92,Steel platebody,Steel,187.5,48,,5 Steel bar,1 Steel platebody,All
+93,Bullseye lantern (unf),Steel,37.5,49,,1 Steel bar,1 Bullseye lantern (unf),All
+94,Mithril bar,Smelting,30,50,,1 Mithril ore;4 Coal,1 Mithril bar,All
+95,Gold bowl,Gold,30,50,,2 Gold bar,1 Gold bowl,Karamja
+96,Gold helmet,Gold,30,50,,3 Gold bar,1 Gold helmet,Fremennik Province
+97,Mithril dagger,Mithril,50,50,,1 Mithril bar,1 Mithril dagger,All
+98,Mithril axe,Mithril,50,51,,1 Mithril bar,1 Mithril axe,All
+99,Mithril mace,Mithril,50,52,,1 Mithril bar,1 Mithril mace,All
+100,Mithril bolts (unf),Mithril,50,53,,1 Mithril bar,10 Mithril bolts (unf),All
+101,Mithril med helm,Mithril,50,53,,1 Mithril bar,1 Mithril med helm,All
+102,Mithril dart tip,Mithril,50,54,,1 Mithril bar,1 Mithril dart tip,Desert
+103,Mithril nails,Mithril,50,54,,1 Mithril bar,15 Mithril nails,All
+104,Mithril sword,Mithril,50,54,,1 Mithril bar,1 Mithril sword,All
+105,Mithril arrowtips,Mithril,50,55,,1 Mithril bar,15 Mithril arrowtips,All
+106,Mithril hasta,Mithril,100,55,,1 Mithril bar;1 Maple logs,1 Mithril hasta,Kandarin
+107,Mithril scimitar,Mithril,100,55,,2 Mithril bar,1 Mithril scimitar,All
+108,Mithril spear,Mithril,100,55,,1 Mithril bar;1 Maple logs,1 Mithril spear,Kandarin
+109,Mithril javelin heads,Mithril,50,56,,1 Mithril bar,5 Mithril javelin heads,All
+110,Mithril limbs,Mithril,50,56,,1 Mithril bar,1 Mithril limbs,All
+111,Mithril longsword,Mithril,100,56,,2 Mithril bar,1 Mithril longsword,All
+112,Mithril knife,Mithril,50,57,,1 Mithril bar,5 Mithril knife,All
+113,Mithril full helm,Mithril,100,57,,2 Mithril bar,1 Mithril full helm,All
+114,Mithril sq shield,Mithril,100,58,,2 Mithril bar,1 Mithril sq shield,All
+115,Mith grapple tip,Mithril,50,59,,1 Mithril bar,1 Mith grapple tip,All
+116,Mithril warhammer,Mithril,150,59,,3 Mithril bar,1 Mithril warhammer,All
+117,Mithril battleaxe,Mithril,150,60,,3 Mithril bar,1 Mithril battleaxe,All
+118,Mithril chainbody,Mithril,150,61,,3 Mithril bar,1 Mithril chainbody,All
+119,Mithril kiteshield,Mithril,150,62,,3 Mithril bar,1 Mithril kiteshield,All
+120,Mithril claws,Mithril,100,63,,2 Mithril bar,1 Mithril claws,Asgarnia
+121,Mithril 2h sword,Mithril,150,64,,3 Mithril bar,1 Mithril 2h sword,All
+122,Mithril platelegs,Mithril,150,66,,3 Mithril bar,1 Mithril platelegs,All
+123,Mithril plateskirt,Mithril,150,66,,3 Mithril bar,1 Mithril plateskirt,All
+124,Mithril platebody,Mithril,250,68,,5 Mithril bar,1 Mithril platebody,All
+125,Adamantite bar,Smelting,37.5,70,,1 Adamantite ore;6 Coal,1 Adamantite bar,All
+126,Adamant dagger,Adamantite,62.5,70,,1 Adamantite bar,1 Adamant dagger,All
+127,Crystal helm,Crystal,2500,70,,50 Crystal shard;1 Crystal armour seed,1 Crystal helm,Tirannwn
+128,Adamant axe,Adamantite,62.5,71,,1 Adamantite bar,1 Adamant axe,All
+129,Adamant mace,Adamantite,62.5,72,,1 Adamantite bar,1 Adamant mace,All
+130,Crystal legs,Crystal,5000,72,,100 Crystal shard;2 Crystal armour seed,1 Crystal legs,Tirannwn
+131,Adamant bolts(unf),Adamantite,62.5,73,,1 Adamantite bar,10 Adamant bolts(unf),All
+132,Adamant med helm,Adamantite,62.5,73,,1 Adamantite bar,1 Adamant med helm,All
+133,Adamant dart tip,Adamantite,62.5,74,,1 Adamantite bar,1 Adamant dart tip,Desert
+134,Adamant nails,Adamantite,62.5,74,,1 Adamantite bar,15 Adamant nails,All
+135,Adamant sword,Adamantite,62.5,74,,1 Adamantite bar,1 Adamant sword,All
+136,Crystal body,Crystal,7500,74,,150 Crystal shard;3 Crystal armour seed,1 Crystal body,Tirannwn
+137,Adamant arrowtips,Adamantite,62.5,75,,1 Adamantite bar,15 Adamant arrowtips,All
+138,Adamant hasta,Adamantite,125,75,,1 Adamantite bar;1 Yew logs,1 Adamant hasta,Kandarin
+139,Adamant scimitar,Adamantite,125,75,,2 Adamantite bar,1 Adamant scimitar,All
+140,Adamant spear,Adamantite,125,75,,1 Adamantite bar;1 Yew logs,1 Adamant spear,Kandarin
+141,Adamant javelin heads,Adamantite,62.5,76,,1 Adamantite bar,5 Adamant javelin heads,All
+142,Adamantite limbs,Adamantite,62.5,76,,1 Adamantite bar,1 Adamantite limbs,All
+143,Adamant longsword,Adamantite,125,76,,2 Adamantite bar,1 Adamant longsword,All
+144,Crystal axe,Crystal,6000,76,,120 Crystal shard;1 Crystal tool seed;1 Dragon axe,1 Crystal axe,Tirannwn
+145,Crystal harpoon,Crystal,6000,76,,120 Crystal shard;1 Crystal tool seed;1 Dragon harpoon,1 Crystal harpoon,Tirannwn
+146,Crystal pickaxe,Crystal,6000,76,,120 Crystal shard;1 Crystal tool seed;1 Dragon pickaxe,1 Crystal pickaxe,Tirannwn
+147,Adamant knife,Adamantite,62.5,77,,1 Adamantite bar,5 Adamant knife,All
+148,Adamant full helm,Adamantite,125,77,,2 Adamantite bar,1 Adamant full helm,All
+149,Adamant sq shield,Adamantite,125,78,,2 Adamantite bar,1 Adamant sq shield,All
+150,Crystal halberd,Crystal,2000,78,,40 Crystal shard;1 Crystal weapon seed,1 Crystal halberd,Tirannwn
+151,Adamant warhammer,Adamantite,187.5,79,,3 Adamantite bar,1 Adamant warhammer,All
+152,Adamant battleaxe,Adamantite,187.5,80,,3 Adamantite bar,1 Adamant battleaxe,All
+153,Enhanced crystal key,Crystal,500,80,,10 Crystal shard;1 Crystal key,1 Enhanced crystal key,Tirannwn
+154,Eternal teleport crystal,Crystal,5000,80,,100 Crystal shard;1 Enhanced crystal teleport seed,1 Eternal teleport crystal,Tirannwn
+155,Adamant chainbody,Adamantite,187.5,81,,3 Adamantite bar,1 Adamant chainbody,All
+156,Adamant kiteshield,Adamantite,187.5,82,,3 Adamantite bar,1 Adamant kiteshield,All
+157,Adamant claws,Adamantite,125,83,,2 Adamantite bar,1 Adamant claws,Asgarnia
+158,Adamant 2h sword,Adamantite,187.5,84,,3 Adamantite bar,1 Adamant 2h sword,All
+159,Runite bar,Smelting,50,85,,1 Runite ore;8 Coal,1 Runite bar,All
+160,Rune dagger,Runite,75,85,,1 Runite bar,1 Rune dagger,All
+161,Rune axe,Runite,75,86,,1 Runite bar,1 Rune axe,All
+162,Adamant platelegs,Adamantite,187.5,86,,3 Adamantite bar,1 Adamant platelegs,All
+163,Adamant plateskirt,Adamantite,187.5,86,,3 Adamantite bar,1 Adamant plateskirt,All
+164,Rune mace,Runite,75,87,,1 Runite bar,1 Rune mace,All
+165,Rune med helm,Runite,75,88,,1 Runite bar,1 Rune med helm,All
+166,Runite bolts (unf),Runite,75,88,,1 Runite bar,10 Runite bolts (unf),All
+167,Adamant platebody,Adamantite,312.5,88,,5 Adamantite bar,1 Adamant platebody,All
+168,Rune dart tip,Runite,75,89,,1 Runite bar,1 Rune dart tip,Desert
+169,Rune nails,Runite,75,89,,1 Runite bar,15 Rune nails,All
+170,Rune sword,Runite,75,89,,1 Runite bar,1 Rune sword,All
+171,Rune arrowtips,Runite,75,90,,1 Runite bar,15 Rune arrowtips,All
+172,Rune hasta,Runite,150,90,,1 Runite bar;1 Magic logs,1 Rune hasta,Kandarin
+173,Rune scimitar,Runite,150,90,,2 Runite bar,1 Rune scimitar,All
+174,Rune spear,Runite,150,90,,1 Runite bar;1 Magic logs,1 Rune spear,Kandarin
+175,Rune javelin heads,Runite,75,91,,1 Runite bar,5 Rune javelin heads,All
+176,Runite limbs,Runite,75,91,,1 Runite bar,1 Runite limbs,All
+177,Rune longsword,Runite,150,91,,2 Runite bar,1 Rune longsword,All
+178,Rune knife,Runite,75,92,,1 Runite bar,5 Rune knife,All
+179,Rune full helm,Runite,150,92,,2 Runite bar,1 Rune full helm,All
+180,Rune sq shield,Runite,150,93,,2 Runite bar,1 Rune sq shield,All
+181,Rune warhammer,Runite,225,94,,3 Runite bar,1 Rune warhammer,All
+182,Rune battleaxe,Runite,225,95,,3 Runite bar,1 Rune battleaxe,All
+183,Rune chainbody,Runite,225,96,,3 Runite bar,1 Rune chainbody,All
+184,Rune kiteshield,Runite,225,97,,3 Runite bar,1 Rune kiteshield,All
+185,Rune claws,Runite,150,98,,2 Runite bar,1 Rune claws,Asgarnia
+186,Rune 2h sword,Runite,225,99,,3 Runite bar,1 Rune 2h sword,All
+187,Rune platelegs,Runite,225,99,,3 Runite bar,1 Rune platelegs,All
+188,Rune plateskirt,Runite,225,99,,3 Runite bar,1 Rune plateskirt,All
+189,Rune platebody,Runite,375,99,,5 Runite bar,1 Rune platebody,All
