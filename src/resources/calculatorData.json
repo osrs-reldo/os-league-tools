@@ -18,6 +18,32 @@
         "woodcutting",
         "farming"
     ],
+    "globalMultipliers": {
+        "expMultipliers": [
+            {
+                "id": "G0",
+                "name": "League base multiplier (5x) ",
+                "multiplier": "5"
+            },
+            {
+                "id": "G1",
+                "name": "League relic 2 passive (8x) ",
+                "multiplier": "8"
+            },
+            {
+                "id": "G2",
+                "name": "League relic 4 passive (12x) ",
+                "multiplier": "12"
+            },
+            {
+                "id": "G3",
+                "name": "League relic 6 passive (16x) ",
+                "multiplier": "16"
+            }
+        ],
+        "inputMultipliers": [],
+        "outputMultipliers": []
+    },
     "calculators": {
         "agility": {
             "name": "Agility",
@@ -1062,8 +1088,8 @@
             "expMultipliers": [
                 {
                     "id": "0",
-                    "name": "Carpenter\u2019s outfit (102.5%)",
-                    "multiplier": "1.025"
+                    "name": "Carpenter's outfit (102.5%)",
+                    "multiplier": 1.025
                 }
             ],
             "inputMultipliers": [],
@@ -1095,7 +1121,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1129,7 +1155,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1163,7 +1189,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1201,7 +1227,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1232,7 +1258,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1263,7 +1289,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1297,7 +1323,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1328,7 +1354,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1359,7 +1385,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1388,7 +1414,7 @@
                         "Misthalin"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1419,7 +1445,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1450,7 +1476,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1488,7 +1514,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1519,7 +1545,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1548,7 +1574,7 @@
                         "All"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1572,7 +1598,7 @@
                         "Misthalin"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1596,7 +1622,7 @@
                         "Misthalin"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1627,7 +1653,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1658,7 +1684,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1689,7 +1715,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1720,7 +1746,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1749,7 +1775,7 @@
                         "All"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1783,7 +1809,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1821,7 +1847,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1852,7 +1878,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1881,7 +1907,7 @@
                         "All"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1912,7 +1938,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1950,7 +1976,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -1981,7 +2007,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -2010,7 +2036,7 @@
                         "All"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -2044,7 +2070,7 @@
                         "All"
                     ],
                     "expMultipliers": [
-                        "all"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -10900,7 +10926,7 @@
                 {
                     "id": "0",
                     "name": "Farmer's outfit (102.5%)",
-                    "multiplier": "1.025"
+                    "multiplier": 1.025
                 }
             ],
             "inputMultipliers": [],
@@ -10935,7 +10961,7 @@
                         "Fremennik Province"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -10959,7 +10985,7 @@
                         "Desert"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -10994,7 +11020,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11029,7 +11055,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11062,7 +11088,7 @@
                         "Asgarnia"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11095,7 +11121,7 @@
                         "Asgarnia"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11130,7 +11156,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11165,7 +11191,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11198,7 +11224,7 @@
                         "Asgarnia"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11233,7 +11259,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11267,7 +11293,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11302,7 +11328,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11337,7 +11363,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11370,7 +11396,7 @@
                         "Asgarnia"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11405,7 +11431,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11432,7 +11458,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11465,7 +11491,7 @@
                         "Asgarnia"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11500,7 +11526,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11535,7 +11561,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11568,7 +11594,7 @@
                         "Asgarnia"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11602,7 +11628,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11632,7 +11658,7 @@
                         "Misthalin"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11667,7 +11693,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11702,7 +11728,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11737,7 +11763,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11772,7 +11798,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11806,7 +11832,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11839,7 +11865,7 @@
                         "Asgarnia"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11874,7 +11900,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11901,7 +11927,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11936,7 +11962,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -11971,7 +11997,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12005,7 +12031,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12029,7 +12055,7 @@
                         "Misthalin"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12063,7 +12089,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12093,7 +12119,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12128,7 +12154,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12162,7 +12188,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12196,7 +12222,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12231,7 +12257,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12258,7 +12284,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12293,7 +12319,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12327,7 +12353,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12362,7 +12388,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12396,7 +12422,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12426,7 +12452,7 @@
                         "Morytania"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12457,7 +12483,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12481,7 +12507,7 @@
                         "Misthalin"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12516,7 +12542,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12550,7 +12576,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12585,7 +12611,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12619,7 +12645,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12646,7 +12672,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12681,7 +12707,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12716,7 +12742,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12746,7 +12772,7 @@
                         "Misthalin"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12777,7 +12803,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12801,7 +12827,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12836,7 +12862,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12870,7 +12896,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12904,7 +12930,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12934,7 +12960,7 @@
                         "Karamja"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12969,7 +12995,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -12999,7 +13025,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13026,7 +13052,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13050,7 +13076,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13074,7 +13100,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13098,7 +13124,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13133,7 +13159,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13167,7 +13193,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13194,7 +13220,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13229,7 +13255,7 @@
                         "Tirannwn"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13259,7 +13285,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13283,7 +13309,7 @@
                         "Zeah"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13309,12 +13335,12 @@
                 {
                     "id": "0",
                     "name": "Pyromancer outfit (102.5%)",
-                    "multiplier": "1.025"
+                    "multiplier": 1.025
                 },
                 {
                     "id": "1",
                     "name": "Morytania legs 4 (150% for shade burning)",
-                    "multiplier": "1.5"
+                    "multiplier": 1.5
                 }
             ],
             "inputMultipliers": [],
@@ -13392,7 +13418,8 @@
                         "Morytania"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0",
+                        "1"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13445,7 +13472,8 @@
                         "Morytania"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0",
+                        "1"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13498,7 +13526,8 @@
                         "Morytania"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0",
+                        "1"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13551,7 +13580,8 @@
                         "Morytania"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0",
+                        "1"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13628,7 +13658,8 @@
                         "Morytania"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0",
+                        "1"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13681,7 +13712,8 @@
                         "Morytania"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0",
+                        "1"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13710,7 +13742,8 @@
                         "Morytania"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0",
+                        "1"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13758,7 +13791,8 @@
                         "Morytania"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0",
+                        "1"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13787,7 +13821,8 @@
                         "Morytania"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0",
+                        "1"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13840,7 +13875,8 @@
                         "Morytania"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0",
+                        "1"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []
@@ -13923,7 +13959,7 @@
                 {
                     "id": "0",
                     "name": "Angler Outfit (102.5%) ",
-                    "multiplier": "1.025"
+                    "multiplier": 1.025
                 }
             ],
             "inputMultipliers": [],
@@ -13954,11 +13990,11 @@
                         "Western Provinces",
                         "Fremennik Province"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 1,
@@ -13978,11 +14014,11 @@
                     "areas": [
                         "Karamja"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 2,
@@ -14015,11 +14051,11 @@
                         "Western Provinces",
                         "Fremennik Province"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 3,
@@ -14052,11 +14088,11 @@
                         "Western Provinces",
                         "Fremennik Province"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 4,
@@ -14083,11 +14119,11 @@
                         "Western Provinces",
                         "Fremennik Province"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 5,
@@ -14112,11 +14148,11 @@
                         "Western Provinces",
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 6,
@@ -14147,11 +14183,11 @@
                         "Tirannwn",
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 7,
@@ -14176,11 +14212,11 @@
                         "Western Provinces",
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 8,
@@ -14211,11 +14247,11 @@
                         "Tirannwn",
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 9,
@@ -14242,11 +14278,11 @@
                         "Morytania",
                         "Misthalin"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 10,
@@ -14277,11 +14313,11 @@
                         "Tirannwn",
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 11,
@@ -14301,11 +14337,11 @@
                     "areas": [
                         "Misthalin"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 12,
@@ -14330,11 +14366,11 @@
                         "Fremennik Province",
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 13,
@@ -14360,11 +14396,11 @@
                     "areas": [
                         "Misthalin"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 14,
@@ -14395,11 +14431,11 @@
                         "Tirannwn",
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 15,
@@ -14424,11 +14460,11 @@
                         "Fremennik Province",
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 16,
@@ -14454,11 +14490,11 @@
                     "areas": [
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 17,
@@ -14483,11 +14519,11 @@
                         "Western Provinces",
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 18,
@@ -14513,11 +14549,11 @@
                     "areas": [
                         "Kandarin"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 19,
@@ -14542,11 +14578,11 @@
                         "Fremennik Province",
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 20,
@@ -14573,11 +14609,11 @@
                         "Asgarnia",
                         "Wilderness"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 21,
@@ -14603,11 +14639,11 @@
                     "areas": [
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 22,
@@ -14633,11 +14669,11 @@
                     "areas": [
                         "Kandarin"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 23,
@@ -14657,11 +14693,11 @@
                     "areas": [
                         "Western Provinces"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 24,
@@ -14687,11 +14723,11 @@
                     "areas": [
                         "Karamja"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 25,
@@ -14717,11 +14753,11 @@
                     "areas": [
                         "Kandarin"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 26,
@@ -14747,11 +14783,11 @@
                     "areas": [
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 27,
@@ -14776,11 +14812,11 @@
                         "Western Provinces",
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 28,
@@ -14801,11 +14837,11 @@
                         "Misthalin",
                         "Western Provinces"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 29,
@@ -14831,11 +14867,11 @@
                     "areas": [
                         "Karamja"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 30,
@@ -14856,11 +14892,11 @@
                         "Misthalin",
                         "Western Provinces"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 31,
@@ -14880,11 +14916,11 @@
                     "areas": [
                         "Kandarin"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 32,
@@ -14910,11 +14946,11 @@
                     "areas": [
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 33,
@@ -14940,11 +14976,11 @@
                     "areas": [
                         "Wilderness"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 34,
@@ -14970,11 +15006,11 @@
                     "areas": [
                         "Tirannwn"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 },
                 {
                     "id": 35,
@@ -15000,11 +15036,11 @@
                     "areas": [
                         "Zeah"
                     ],
-                    "expMultipliers": [],
+                    "expMultipliers": [
+                        "0"
+                    ],
                     "inputMultipliers": [],
-                    "outputMultipliers": [
-                        "All"
-                    ]
+                    "outputMultipliers": []
                 }
             ]
         },
@@ -35805,7 +35841,7 @@
                 {
                     "id": "0",
                     "name": "Prospector Kit (102.5%) ",
-                    "multiplier": "1.025"
+                    "multiplier": 1.025
                 }
             ],
             "inputMultipliers": [],
@@ -36491,52 +36527,52 @@
                 {
                     "id": "0",
                     "name": "Gilded altar (350%)",
-                    "multiplier": "3.5"
+                    "multiplier": 3.5
                 },
                 {
                     "id": "1",
                     "name": "Ectofuntus (400%)",
-                    "multiplier": "4"
+                    "multiplier": 4.0
                 },
                 {
                     "id": "2",
                     "name": "Chaos altar (700%)",
-                    "multiplier": "7"
+                    "multiplier": 7.0
                 },
                 {
                     "id": "3",
                     "name": "Morytania Hard/Elite (150% - Shade burning)",
-                    "multiplier": "1.5"
+                    "multiplier": 1.5
                 },
                 {
                     "id": "4",
                     "name": "Marble altar (300%)",
-                    "multiplier": "3"
+                    "multiplier": 3.0
                 },
                 {
                     "id": "5",
                     "name": "Limestone altar (275%)",
-                    "multiplier": "2.75"
+                    "multiplier": 2.75
                 },
                 {
                     "id": "6",
                     "name": "Mahogany altar (250%)",
-                    "multiplier": "2.5"
+                    "multiplier": 2.5
                 },
                 {
                     "id": "7",
                     "name": "Cloth altar (225%)",
-                    "multiplier": "2.25"
+                    "multiplier": 2.25
                 },
                 {
                     "id": "8",
                     "name": "Teak altar (210%)",
-                    "multiplier": "2.1"
+                    "multiplier": 2.1
                 },
                 {
                     "id": "9",
                     "name": "Oak altar (200%)",
-                    "multiplier": "2"
+                    "multiplier": 2.0
                 }
             ],
             "inputMultipliers": [],
@@ -39403,7 +39439,7 @@
                 {
                     "id": "0",
                     "name": "Daeyalt essence (150%)",
-                    "multiplier": "1.5"
+                    "multiplier": 1.5
                 }
             ],
             "inputMultipliers": [],
@@ -40695,7 +40731,7 @@
                 {
                     "id": "0",
                     "name": "Goldsmith gauntlets (250% on smelting gold)",
-                    "multiplier": "2.5"
+                    "multiplier": 2.5
                 }
             ],
             "inputMultipliers": [],
@@ -46213,7 +46249,7 @@
                 {
                     "id": "0",
                     "name": "Rogue outfit",
-                    "multiplier": "2"
+                    "multiplier": 2.0
                 }
             ],
             "actions": [
@@ -47910,12 +47946,12 @@
                 {
                     "id": "0",
                     "name": "Lumberjack Outfit (102.5%) ",
-                    "multiplier": "1.025"
+                    "multiplier": 1.025
                 },
                 {
                     "id": "1",
                     "name": "Kandarin headgear 2+ (110% for Seer\u2019s maples)",
-                    "multiplier": "1.1"
+                    "multiplier": 1.1
                 }
             ],
             "inputMultipliers": [],
@@ -47923,7 +47959,7 @@
                 {
                     "id": "0",
                     "name": "Kandarin headgear [any tier] (x2 regular logs)",
-                    "multiplier": "2"
+                    "multiplier": 2.0
                 }
             ],
             "actions": [
@@ -48170,7 +48206,8 @@
                         "Kandarin"
                     ],
                     "expMultipliers": [
-                        "All"
+                        "0",
+                        "1"
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": []

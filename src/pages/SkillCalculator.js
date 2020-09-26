@@ -10,13 +10,14 @@ import MultiplierGroup from "../components/MultiplierGroup";
 import LevelExpInput from "../components/LevelExpInput";
 import HiscoreLookup from "../components/HiscoreLookup";
 import useLevel from "../hooks/useLevel";
+import useMultiplier from "../hooks/useMultiplier";
 
 export default function SkillCalculator(props) {
     const [currentLevel, currentExp, setCurrentLevel, setCurrentExp] = useLevel(1);
     const [targetLevel, targetExp, setTargetLevel, setTargetExp] = useLevel(currentLevel + 1);
-    const [expMultiplier, setExpMultiplier] = useState(1);
-    const [inputMultiplier, setInputMultiplier] = useState(1);
-    const [outputMultiplier, setOutputMultiplier] = useState(1);
+    const [addExpMultiplier, removeExpMultiplier, applyExpMultipliers] = useMultiplier();
+    const [addInputMultiplier, removeInputMultiplier, applyInputMultipliers] = useMultiplier();
+    const [addOutputMultiplier, removeOutputMultiplier, applyOutputMultipliers] = useMultiplier();
     const [useLevelFilter, setUseLevelFilter] = useState(false);
     const [isSkillingProdigy, setIsSkillingProdigy] = useState(false);
     const [useAreaFilter, setUseAreaFilter] = useState(false);
@@ -32,7 +33,7 @@ export default function SkillCalculator(props) {
         );
     }
 
-    const { levelFormatter, iconFormatter, amountFormatter, itemListFormatter } = getFormatters();
+    const { levelFormatter, iconFormatter, amountFormatter, inputListFormatter, outputListFormatter } = getFormatters();
     const columns = [
         {
             "dataField": "id",
@@ -73,20 +74,20 @@ export default function SkillCalculator(props) {
             "isDummyField": true,
             "sort": true,
             "formatter": amountFormatter,
-            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplier": expMultiplier },
+            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplierCallback": applyExpMultipliers },
             "headerStyle": { width: '10%' }
         },
         {
             "dataField": "inputs",
             "text": "Inputs",
-            "formatter": itemListFormatter,
-            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplier": expMultiplier, "countMultiplier": inputMultiplier }
+            "formatter": inputListFormatter,
+            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplierCallback": applyExpMultipliers, "countMultiplierCallback": applyInputMultipliers }
         },
         {
             "dataField": "outputs",
             "text": "Outputs",
-            "formatter": itemListFormatter,
-            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplier": expMultiplier, "countMultiplier": outputMultiplier }
+            "formatter": outputListFormatter,
+            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplierCallback": applyExpMultipliers, "countMultiplierCallback": applyOutputMultipliers }
         }
     ];
 
@@ -99,17 +100,21 @@ export default function SkillCalculator(props) {
                         <MultiplierGroup
                             title="Exp multipliers"
                             multiplierData={skillData.expMultipliers}
-                            setMultiplierCallback={setExpMultiplier}
+                            globalMultiplierData={calculatorData.globalMultipliers.expMultipliers}
+                            setMultiplierCallback={addExpMultiplier}
+                            removeMultiplierCallback={removeExpMultiplier}
                         />
                         <MultiplierGroup
                             title="Input multipliers"
                             multiplierData={skillData.inputMultipliers}
-                            setMultiplierCallback={setInputMultiplier}
+                            setMultiplierCallback={addInputMultiplier}
+                            removeMultiplierCallback={removeInputMultiplier}
                         />
                         <MultiplierGroup
                             title="Output multipliers"
                             multiplierData={skillData.outputMultipliers}
-                            setMultiplierCallback={setOutputMultiplier}
+                            setMultiplierCallback={addOutputMultiplier}
+                            removeMultiplierCallback={removeOutputMultiplier}
                         />
                         {!skillData.isCombatSkill && (
                             <React.Fragment>

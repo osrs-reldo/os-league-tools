@@ -5,7 +5,8 @@ export function getFormatters() {
         levelFormatter: levelFormatter,
         iconFormatter: iconFormatter,
         amountFormatter: amountFormatter,
-        itemListFormatter: itemListFormatter,
+        outputListFormatter: outputListFormatter,
+        inputListFormatter: inputListFormatter,
     }
 }
 
@@ -26,12 +27,24 @@ function iconFormatter(cell, row) {
 }
 
 function amountFormatter(cell, row, rowIndex, exp) {
-    return calcActionsRemaining(exp.current, exp.target, row.exp, exp.expMultiplier);
+    const expMultiplier = exp.expMultiplierCallback(row.expMultipliers);
+    return calcActionsRemaining(exp.current, exp.target, row.exp, expMultiplier);
 }
 
-function itemListFormatter(cell, row, rowIndex, exp) {
-    const numOfActions = calcActionsRemaining(exp.current, exp.target, row.exp, exp.expMultiplier);
-    const countMultiplier = exp.countMultiplier || 1
+function outputListFormatter(cell, row, rowIndex, exp) {
+    const expMultiplier = exp.expMultiplierCallback(row.expMultipliers);
+    const countMultiplier = exp.countMultiplierCallback(row.outputMultipliers);
+    return itemListFormatter(cell, expMultiplier, countMultiplier, exp.current, exp.target, row.exp)
+}
+
+function inputListFormatter(cell, row, rowIndex, exp) {
+    const expMultiplier = exp.expMultiplierCallback(row.expMultipliers);
+    const countMultiplier = exp.countMultiplierCallback(row.inputMultipliers);
+    return itemListFormatter(cell, expMultiplier, countMultiplier, exp.current, exp.target, row.exp)
+}
+
+function itemListFormatter(cell, expMultiplier, countMultiplier, curExp, targetExp, expPerAction) {
+    const numOfActions = calcActionsRemaining(curExp, targetExp, expPerAction, expMultiplier);
     return (
         <ul>
             {cell.map(item => {

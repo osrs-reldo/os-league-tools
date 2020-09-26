@@ -1,7 +1,7 @@
 import React from "react";
 import { Form } from "react-bootstrap";
 
-export default function MultiplierGroup({ title, multiplierData, setMultiplierCallback }) {
+export default function MultiplierGroup({ title, multiplierData, globalMultiplierData = [], setMultiplierCallback, removeMultiplierCallback }) {
     if (multiplierData.length === 0) {
         return null;
     }
@@ -10,6 +10,21 @@ export default function MultiplierGroup({ title, multiplierData, setMultiplierCa
         <React.Fragment>
             <h4>{title + ":"}</h4>
             <div className={"pl-2 pb-2"}>
+                {globalMultiplierData.map(multiplier => {
+                    return (
+                        <Form.Check
+                            label={multiplier.name}
+                            key={multiplier.id}
+                            onChange={(event) => {
+                                if (event.target.checked) {
+                                    setMultiplierCallback(multiplier.id, multiplier.multiplier, true);
+                                } else {
+                                    removeMultiplierCallback(multiplier.id, true)
+                                }
+                            }}
+                        />
+                    );
+                })}
                 {multiplierData.map(multiplier => {
                     return (
                         <Form.Check
@@ -17,9 +32,9 @@ export default function MultiplierGroup({ title, multiplierData, setMultiplierCa
                             key={multiplier.id}
                             onChange={(event) => {
                                 if (event.target.checked) {
-                                    setMultiplierCallback(prevMultiplier => prevMultiplier * multiplier.multiplier);
+                                    setMultiplierCallback(multiplier.id, multiplier.multiplier);
                                 } else {
-                                    setMultiplierCallback(prevMultiplier => prevMultiplier / multiplier.multiplier);
+                                    removeMultiplierCallback(multiplier.id)
                                 }
                             }}
                         />

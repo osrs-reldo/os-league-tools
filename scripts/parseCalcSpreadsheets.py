@@ -37,7 +37,7 @@ def parseMultiplier(lineSplit, multipliers):
         multiplierJson = {
             'id': lineSplit[0],
             'name': lineSplit[1],
-            'multiplier': lineSplit[2]
+            'multiplier': float(lineSplit[2])
         }
         multipliers.append(multiplierJson)
         return True
