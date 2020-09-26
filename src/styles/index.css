@@ -42,3 +42,25 @@ ul.calc-list {
   -webkit-columns: 3;
   -moz-columns: 3;
 }
+
+/* Inactive tab */
+.tab-bar-dark .nav-item.nav-link {
+  color: #f7f7f7;
+}
+.tab-bar-dark .nav-item.nav-link:hover {
+  background-color: #6c757d;
+}
+
+/* Active tab */
+.tab-bar-dark .nav-item.nav-link.active,
+.tab-bar-dark .nav-item.nav-link.active:hover,
+.tab-bar-dark .nav-item.nav-link.active:focus {
+  background-color: #343a40;
+  color: #f7f7f7;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+/* Disabled tab */
+.tab-bar-dark .nav-item.nav-link.disabled {
+  color:  #6c757d;
+}

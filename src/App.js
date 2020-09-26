@@ -8,6 +8,7 @@ import { Route, Switch } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Calculators from "./pages/Calculators";
 import Calculator from "./pages/SkillCalculator";
+import CharacterTracker from "./pages/CharacterTracker";
 
 export default function App(props) {
   return (
@@ -16,6 +17,7 @@ export default function App(props) {
         <TopNav />
         <Switch>
           <Route exact path="/" component={Homepage} />
+          <Route exact path="/character" component={CharacterTracker} />
           <Route exact path="/calculators" component={Calculators} />
           <Route path="/calculators/" component={Calculator} />
         </Switch>
