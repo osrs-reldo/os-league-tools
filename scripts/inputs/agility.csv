@@ -1,76 +1,71 @@
-SKILL,,,,,,,,
-name,icon,type,isCombatSkill,,,,,
-Agility,https://oldschool.runescape.wiki/images/8/86/Agility_icon.png?22e10,utility,FALSE,,,,,
-,,,,,,,,
-CATEGORIES,,,,,,,,
-Courses,Rooftop courses,Other,,,,,,
-,,,,,,,,
-EXP MULTIPLIERS,,,,,,,,
-id,name,multiplier,,,,,,
-0,League base multiplier (500%),5,,,,,,
-,,,,,,,,
-,,,,,,,,
-OUTPUT MULTIPLIERS,,,,,,,,
-id,name,multiplier,,,,,,
-,,,,,,,,
-,,,,,,,,
-ACTIONS,,,,,,,,
-id,name,category,exp,level,icon,inputs,outputs,areas
-0,Basalt rock (Lighthouse),Shortcuts,2,1,,,,Fremennik Province
-1,Releasing toy mice,Other,3,1,,,,All
-2,Stepping stone (Lumbridge swamp caves),Shortcuts,3,1,,,,Misthalin
-3,Bridge (Nature spirit grotto),Shortcuts,15,1,,,,Morytania
-4,Gnome Stronghold course,Courses,86.5,1,,,,Western Provinces
-5,Crumbling wall (Falador),Shortcuts,0.5,5,,,,Asgarnia
-6,Rocks (Corsair Cove),Shortcuts,1,10,,,,Western Provinces
-7,Ropeswing (Moss giant island),Shortcuts,3,10,,,,Karamja
-8,Draynor Village rooftops,Rooftop courses,120,10,,,0.14 Mark of grace,Misthalin
-9,Stepping stones (Brimhaven dungeon),Shortcuts,3,12,,,,Karamja
-10,Pillar jump (Corsair Cove dungeon),Shortcuts,2,15,,,,Western Provinces
-11,Monkey bars (Edgeville dungeon),Shortcuts,20,15,,,,Misthalin
-12,Log balance (Coal trucks),Shortcuts,8.5,20,,,,Kandarin
-13,Al Kharid rooftops,Rooftop courses,180,20,,,0.14 Mark of grace,Desert
-14,Pipe squeeze (Brimhaven dungeon),Shortcuts,8.5,22,,,,Karamja
-15,Rock climb (Eagle's Peak),Shortcuts,1,25,,,,Western Provinces
-16,Werewolf Skullball course,Courses,750,25,,,,Morytania
-17,Pillar jump (Catacombs of Kourend),Shortcuts,2,28,,,,Zeah
-18,Rocks (Corsair Cove resource area),Shortcuts,2,30,,,,Western Provinces
-19,Varrock rooftops,Rooftop courses,238,30,,,0.24 Mark of grace,Misthalin
-20,Penguin course,Courses,540,30,,,,Fremennik Province
-21,Agility Pyramid,Courses,1030,30,,,,Desert
-22,Stepping stone (Draynor manor),Shortcuts,3,31,,,,Misthalin
-23,Rock grapple (Catherby),Shortcuts,15,32,,,,Kandarin
-24,Log balance (Ardougne),Shortcuts,4,33,,,,Western Provinces
-25,Pipe squeeze (Brimhaven dungeon),Shortcuts,10,34,,,,Karamja
-26,Barbarian Outpost course,Courses,153.3,35,,,,Kandarin
-27,Tree grapple (Water obelisk isle),Shortcuts,15,36,,,,Kandarin
-28,Balancing ledge (Yanille dungeon),Shortcuts,22,40,,,,Western Provinces
-29,Canifis rooftops,Rooftop courses,240,40,,,0.2 Mark of grace,Morytania
-30,Narrow walkway (Cosmic altar),Shortcuts,10,46,,,,Misthalin
-31,Rocks (Trollheim),Shortcuts,8,47,,,,Asgarnia
-32,Ape Atoll course,Courses,580,48,,,,Western Provinces
-33,Falador rooftops,Rooftop courses,440,50,,,0.21 Mark of grace,Asgarnia
-34,Pipe squeeze (Edgeville dungeon),Shortcuts,10,51,,,,Misthalin
-35,Wilderness course,Courses,571.4,52,,,,Wilderness
-36,Monkey bars (Yanille dungeon),Shortcuts,20,57,,,,Western Provinces
-37,Gap (Wintertodt),Shortcuts,18,60,,,,Zeah
-38,Seers' Village rooftops,Rooftop courses,570,60,,,0.2 Mark of grace,Kandarin
-39,Werewolf course,Courses,730,60,,,,Morytania
-40,Pillar jump (Revenant caves),Shortcuts,6.5,65,,,,Wilderness
-41,Narrow walkway (Cosmic altar),Shortcuts,10,66,,,,Misthalin
-42,Pile of rubble (Yanille dungeon),Shortcuts,6,67,,,,western Provinces
-43,Rock (God wars dungeon),Shortcuts,6,70,,,,Asgarnia
-44,Obstacle pipe (Taverley dungeon),Shortcuts,10,70,,,,Asgarnia
-45,Pollnivneach rooftops,Rooftop courses,890,70,,,0.15 Mark of grace,Desert
-46,Dorgesh-Kaan course,Courses,2750,70,,,,Misthalin
-47,Pillar jump (Revenant caves),Shortcuts,7.5,75,,,,Wilderness
-48,Spiked blades (Forthos dungeon),Shortcuts,10,75,,,,Zeah
-49,Prifddinas course,Courses,1285.2,75,,,0.3 Crystal shard,Tirannwn
-50,Stepping stone (Shilo village),Shortcuts,1.25,77,,,,Karamja
-51,Tight gap (Iowerth dungeon),Shortcuts,1,78,,,,Tirannwn
-52,Strange floor (Taverley dungeon),Shortcuts,12.5,80,,,,Asgarnia
-53,Rellekka rooftops,Rooftop courses,780,80,,,0.2 Mark of grace,Fremennik Province
-54,Spiked blades (Fremennik slayer dungeon),Shortcuts,5,81,,,,Fremennik Province
-55,Tight gap (Iowerth dungeon),Shortcuts,1.5,84,,,,Tirannwn
-56,Pillar jump (Revenant caves),Shortcuts,9,89,,,,Wilderness
-57,Ardougne rooftops,Rooftop courses,793,90,,,0.28 Mark of grace,Western Provinces
+SKILL,icon,type,isCombatSkill,,,,,,,,
+Agility,https://oldschool.runescape.wiki/images/8/86/Agility_icon.png?22e10,utility,FALSE,,,,,,,,
+,,,,,,,,,,,
+CATEGORIES,,,,,,,,,,,
+Courses,Rooftop courses,Other,,,,,,,,,
+,,,,,,,,,,,
+EXP MULTIPLIERS,name,multiplier,,,,,,,,,
+,,,,,,,,,,,
+INPUT MULTIPLIERS,name,multiplier,,,,,,,,,
+,,,,,,,,,,,
+OUTPUT MULTIPLIERS,name,multiplier,,,,,,,,,
+,,,,,,,,,,,
+ACTIONS,name,category,exp,level,icon,inputs,outputs,areas,exp multipliers,input multipliers,output multipliers
+0,Basalt rock (Lighthouse),Shortcuts,2,1,,,,Fremennik Province,,,
+1,Releasing toy mice,Other,3,1,,,,All,,,
+2,Stepping stone (Lumbridge swamp caves),Shortcuts,3,1,,,,Misthalin,,,
+3,Bridge (Nature spirit grotto),Shortcuts,15,1,,,,Morytania,,,
+4,Gnome Stronghold course,Courses,86.5,1,,,,Western Provinces,,,
+5,Crumbling wall (Falador),Shortcuts,0.5,5,,,,Asgarnia,,,
+6,Rocks (Corsair Cove),Shortcuts,1,10,,,,Western Provinces,,,
+7,Ropeswing (Moss giant island),Shortcuts,3,10,,,,Karamja,,,
+8,Draynor Village rooftops,Rooftop courses,120,10,,,0.14 Mark of grace,Misthalin,,,
+9,Stepping stones (Brimhaven dungeon),Shortcuts,3,12,,,,Karamja,,,
+10,Pillar jump (Corsair Cove dungeon),Shortcuts,2,15,,,,Western Provinces,,,
+11,Monkey bars (Edgeville dungeon),Shortcuts,20,15,,,,Misthalin,,,
+12,Log balance (Coal trucks),Shortcuts,8.5,20,,,,Kandarin,,,
+13,Al Kharid rooftops,Rooftop courses,180,20,,,0.14 Mark of grace,Desert,,,
+14,Pipe squeeze (Brimhaven dungeon),Shortcuts,8.5,22,,,,Karamja,,,
+15,Rock climb (Eagle's Peak),Shortcuts,1,25,,,,Western Provinces,,,
+16,Werewolf Skullball course,Courses,750,25,,,,Morytania,,,
+17,Pillar jump (Catacombs of Kourend),Shortcuts,2,28,,,,Zeah,,,
+18,Rocks (Corsair Cove resource area),Shortcuts,2,30,,,,Western Provinces,,,
+19,Varrock rooftops,Rooftop courses,238,30,,,0.24 Mark of grace,Misthalin,,,
+20,Penguin course,Courses,540,30,,,,Fremennik Province,,,
+21,Agility Pyramid,Courses,1030,30,,,,Desert,,,
+22,Stepping stone (Draynor manor),Shortcuts,3,31,,,,Misthalin,,,
+23,Rock grapple (Catherby),Shortcuts,15,32,,,,Kandarin,,,
+24,Log balance (Ardougne),Shortcuts,4,33,,,,Western Provinces,,,
+25,Pipe squeeze (Brimhaven dungeon),Shortcuts,10,34,,,,Karamja,,,
+26,Barbarian Outpost course,Courses,153.3,35,,,,Kandarin,,,
+27,Tree grapple (Water obelisk isle),Shortcuts,15,36,,,,Kandarin,,,
+28,Balancing ledge (Yanille dungeon),Shortcuts,22,40,,,,Western Provinces,,,
+29,Canifis rooftops,Rooftop courses,240,40,,,0.2 Mark of grace,Morytania,,,
+30,Narrow walkway (Cosmic altar),Shortcuts,10,46,,,,Misthalin,,,
+31,Rocks (Trollheim),Shortcuts,8,47,,,,Asgarnia,,,
+32,Ape Atoll course,Courses,580,48,,,,Western Provinces,,,
+33,Falador rooftops,Rooftop courses,440,50,,,0.21 Mark of grace,Asgarnia,,,
+34,Pipe squeeze (Edgeville dungeon),Shortcuts,10,51,,,,Misthalin,,,
+35,Wilderness course,Courses,571.4,52,,,,Wilderness,,,
+36,Monkey bars (Yanille dungeon),Shortcuts,20,57,,,,Western Provinces,,,
+37,Gap (Wintertodt),Shortcuts,18,60,,,,Zeah,,,
+38,Seers' Village rooftops,Rooftop courses,570,60,,,0.2 Mark of grace,Kandarin,,,
+39,Werewolf course,Courses,730,60,,,,Morytania,,,
+40,Pillar jump (Revenant caves),Shortcuts,6.5,65,,,,Wilderness,,,
+41,Narrow walkway (Cosmic altar),Shortcuts,10,66,,,,Misthalin,,,
+42,Pile of rubble (Yanille dungeon),Shortcuts,6,67,,,,western Provinces,,,
+43,Rock (God wars dungeon),Shortcuts,6,70,,,,Asgarnia,,,
+44,Obstacle pipe (Taverley dungeon),Shortcuts,10,70,,,,Asgarnia,,,
+45,Pollnivneach rooftops,Rooftop courses,890,70,,,0.15 Mark of grace,Desert,,,
+46,Dorgesh-Kaan course,Courses,2750,70,,,,Misthalin,,,
+47,Pillar jump (Revenant caves),Shortcuts,7.5,75,,,,Wilderness,,,
+48,Spiked blades (Forthos dungeon),Shortcuts,10,75,,,,Zeah,,,
+49,Prifddinas course,Courses,1285.2,75,,,0.3 Crystal shard,Tirannwn,,,
+50,Stepping stone (Shilo village),Shortcuts,1.25,77,,,,Karamja,,,
+51,Tight gap (Iowerth dungeon),Shortcuts,1,78,,,,Tirannwn,,,
+52,Strange floor (Taverley dungeon),Shortcuts,12.5,80,,,,Asgarnia,,,
+53,Rellekka rooftops,Rooftop courses,780,80,,,0.2 Mark of grace,Fremennik Province,,,
+54,Spiked blades (Fremennik slayer dungeon),Shortcuts,5,81,,,,Fremennik Province,,,
+55,Tight gap (Iowerth dungeon),Shortcuts,1.5,84,,,,Tirannwn,,,
+56,Pillar jump (Revenant caves),Shortcuts,9,89,,,,Wilderness,,,
+57,Ardougne rooftops,Rooftop courses,793,90,,,0.28 Mark of grace,Western Provinces,,,

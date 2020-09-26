@@ -15,6 +15,7 @@ export default function SkillCalculator(props) {
     const [currentLevel, currentExp, setCurrentLevel, setCurrentExp] = useLevel(1);
     const [targetLevel, targetExp, setTargetLevel, setTargetExp] = useLevel(currentLevel + 1);
     const [expMultiplier, setExpMultiplier] = useState(1);
+    const [inputMultiplier, setInputMultiplier] = useState(1);
     const [outputMultiplier, setOutputMultiplier] = useState(1);
     const [useLevelFilter, setUseLevelFilter] = useState(false);
     const [isSkillingProdigy, setIsSkillingProdigy] = useState(false);
@@ -79,7 +80,7 @@ export default function SkillCalculator(props) {
             "dataField": "inputs",
             "text": "Inputs",
             "formatter": itemListFormatter,
-            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplier": expMultiplier }
+            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplier": expMultiplier, "countMultiplier": inputMultiplier }
         },
         {
             "dataField": "outputs",
@@ -100,7 +101,11 @@ export default function SkillCalculator(props) {
                             multiplierData={skillData.expMultipliers}
                             setMultiplierCallback={setExpMultiplier}
                         />
-                        <br />
+                        <MultiplierGroup
+                            title="Input multipliers"
+                            multiplierData={skillData.inputMultipliers}
+                            setMultiplierCallback={setInputMultiplier}
+                        />
                         <MultiplierGroup
                             title="Output multipliers"
                             multiplierData={skillData.outputMultipliers}
@@ -108,7 +113,6 @@ export default function SkillCalculator(props) {
                         />
                         {!skillData.isCombatSkill && (
                             <React.Fragment>
-                                <br />
                                 <h4>Boosts:</h4>
                                 <div className="pl-2">
                                     <Form.Check

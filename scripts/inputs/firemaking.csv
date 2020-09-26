@@ -1,40 +1,38 @@
-SKILL,,,,,,,,
-name,icon,type,isCombatSkill,,,,,
-Firemaking,https://oldschool.runescape.wiki/images/9/9b/Firemaking_icon.png?45ea0,processing,FALSE,,,,,
-,,,,,,,,
-CATEGORIES,,,,,,,,
-Logs,Pyre logs,,,,,,,
-,,,,,,,,
-EXP MULTIPLIERS,,,,,,,,
-id,name,multiplier,,,,,,
-0,League base multiplier (500%),5,,,,,,
-,,,,,,,,
-,,,,,,,,
-OUTPUT MULTIPLIERS,,,,,,,,
-id,name,multiplier,,,,,,
-,,,,,,,,
-,,,,,,,,
-ACTIONS,,,,,,,,
-id,name,category,exp,level,icon,inputs,outputs,areas
-0,Achey tree logs,Logs,40,1,,1 Achey tree logs,,Western Provinces
-1,Logs,Logs,40,1,,1 Logs,,All
-2,Pyre logs,Pyre logs,50.5,5,,1 Logs;2 Sacred oil doses,,Morytania
-3,Oak logs,Logs,60,15,,1 Oak logs,,All
-4,Oak pyre logs,Pyre logs,70,20,,1 Oak logs;2 Sacred oil doses,,Morytania
-5,Willow logs,Logs,90,30,,1 Willow logs,,All
-6,Willow pyre logs,Pyre logs,100,35,,1 Willow logs;3 Sacred oil doses,,Morytania
-7,Teak logs,Logs,105,35,,1 Teak logs,,All
-8,Teak pyre logs,Pyre logs,120,40,,1 Teak logs;3 Sacred oil doses,,Morytania
-9,Arctic pine logs,Logs,125,42,,1 Arctic pine logs,,Fremennik Provinces
-10,Maple logs,Logs,135,45,,1 Maple logs,,All
-11,Arctic pyre logs,Pyre logs,158,47,,1 Arctic pine logs;3 Sacred oil doses,,Morytania
-12,Mahogany logs,Logs,157.5,50,,1 Mahogany logs,,All
-13,Maple pyre logs,Pyre logs,175,50,,1 Maple logs;3 Sacred oil doses,,Morytania
-14,Mahogany pyre logs,Pyre logs,210,55,,1 Mahogany logs;3 Sacred oil doses,,Morytania
-15,Yew logs,Logs,202.5,60,,1 Yew logs,,All
-16,Blisterwood logs,Logs,96,62,,1 Blisterwood logs,,Morytania
-17,Yew pyre logs,Pyre logs,225,65,,1 Yew logs;4 Sacred oil doses,,Morytania
-18,Magic logs,Logs,303.8,75,,1 Magic logs,,All
-19,Magic pyre logs,Pyre logs,404.5,80,,1 Magic logs;4 Sacred oil doses,,Morytania
-20,Redwood logs,Logs,350,90,,1 Redwood logs,,Zeah
-21,Redwood pyre logs,Pyre logs,500,95,,1 Redwood logs;4 Sacred oil doses,,Zeah
+SKILL,icon,type,isCombatSkill,,,,,,,,
+Firemaking,https://oldschool.runescape.wiki/images/9/9b/Firemaking_icon.png?45ea0,processing,FALSE,,,,,,,,
+,,,,,,,,,,,
+CATEGORIES,,,,,,,,,,,
+Logs,Pyre logs,,,,,,,,,,
+,,,,,,,,,,,
+EXP MULTIPLIERS,name,multiplier,,,,,,,,,
+0,Pyromancer outfit (102.5%),1.025,,,,,,,,,
+1,Morytania legs 4 (150% for shade burning),1.5,,,,,,,,,
+,,,,,,,,,,,
+INPUT MULTIPLIERS,name,multiplier,,,,,,,,,
+,,,,,,,,,,,
+OUTPUT MULTIPLIERS,name,multiplier,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+ACTIONS,name,category,exp,level,icon,inputs,outputs,areas,exp multipliers,input multipliers,output multipliers
+0,Achey tree logs,Logs,40,1,,1 Achey tree logs,,Western Provinces,0,,
+1,Logs,Logs,40,1,,1 Logs,,All,0,,
+2,Pyre logs,Pyre logs,50.5,5,,1 Logs;2 Sacred oil doses,,Morytania,All,,
+3,Oak logs,Logs,60,15,,1 Oak logs,,All,0,,
+4,Oak pyre logs,Pyre logs,70,20,,1 Oak logs;2 Sacred oil doses,,Morytania,All,,
+5,Willow logs,Logs,90,30,,1 Willow logs,,All,0,,
+6,Willow pyre logs,Pyre logs,100,35,,1 Willow logs;3 Sacred oil doses,,Morytania,All,,
+7,Teak logs,Logs,105,35,,1 Teak logs,,All,0,,
+8,Teak pyre logs,Pyre logs,120,40,,1 Teak logs;3 Sacred oil doses,,Morytania,All,,
+9,Arctic pine logs,Logs,125,42,,1 Arctic pine logs,,Fremennik Provinces,0,,
+10,Maple logs,Logs,135,45,,1 Maple logs,,All,0,,
+11,Arctic pyre logs,Pyre logs,158,47,,1 Arctic pine logs;3 Sacred oil doses,,Morytania,All,,
+12,Mahogany logs,Logs,157.5,50,,1 Mahogany logs,,All,0,,
+13,Maple pyre logs,Pyre logs,175,50,,1 Maple logs;3 Sacred oil doses,,Morytania,All,,
+14,Mahogany pyre logs,Pyre logs,210,55,,1 Mahogany logs;3 Sacred oil doses,,Morytania,All,,
+15,Yew logs,Logs,202.5,60,,1 Yew logs,,All,0,,
+16,Blisterwood logs,Logs,96,62,,1 Blisterwood logs,,Morytania,All,,
+17,Yew pyre logs,Pyre logs,225,65,,1 Yew logs;4 Sacred oil doses,,Morytania,All,,
+18,Magic logs,Logs,303.8,75,,1 Magic logs,,All,0,,
+19,Magic pyre logs,Pyre logs,404.5,80,,1 Magic logs;4 Sacred oil doses,,Morytania,All,,
+20,Redwood logs,Logs,350,90,,1 Redwood logs,,Zeah,0,,
+21,Redwood pyre logs,Pyre logs,500,95,,1 Redwood logs;4 Sacred oil doses,,Zeah,0,,

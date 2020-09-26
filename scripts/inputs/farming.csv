@@ -1,101 +1,88 @@
-SKILL,,,,,,,,
-name,icon,type,isCombatSkill,,,,,
-Farming,https://oldschool.runescape.wiki/images/f/fc/Farming_icon.png?558fa,gathering,FALSE,,,,,
-,,,,,,,,
-CATEGORIES,,,,,,,,
-Herbs,Allotments,Trees,Fruit trees,Flowers,Hops,Bushes,Special,
-,,,,,,,,
-EXP MULTIPLIERS,,,,,,,,
-id,name,multiplier,,,,,,
-0,League base multiplier (500%),5,,,,,,
-1,Farmer's outfit (102.5%),0.025,,,,,,
-,,,,,,,,
-OUTPUT MULTIPLIERS,,,,,,,,
-id,name,multiplier,,,,,,
-0,Magic secateurs (+10% yield),1.1,,,,,,
-1,Farming skillcape (+5% yield),1.05,,,,,,
-2,Compost (+5% yield),1.05,,,,,,
-3,Supercompost (+10% yield),1.1,,"NOTE: for now, not including these, it's going to need some much more complex formula work",,,,
-4,Ultracompost (+20% yield),1.2,,,,,,
-5,Attas planted (+5% yield),1.05,,,,,,
-6,"Kandarin medium diary (+5% yield, catherby herbs)",1.05,,,,,,
-7,"Kandarin hard diary (+10% yield, catherby herbs)",1.1,,,,,,
-8,"Kandarin elite diary (+15% yield, catherby herbs)",1.15,,,,,,
-9,"Kourend hard diary (+5% yield, hosidius & farming guild herbs)",1.05,,,,,,
-,,,,,,,,
-ACTIONS,,,,,,,,
-id,name,category,exp,level,icon,inputs,outputs,areas
-0,Raking,Special,4,1,https://oldschool.runescape.wiki/images/4/42/Weeds.png?bb76e,,1 Weeds,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn; Misthalin; Desert; Morytania; Karamja; Fremennik Province
-73,Sorceress's Garden - Picking herbs,Special,50,1,https://oldschool.runescape.wiki/images/7/79/Summer_sq%27irk.png?7c5a9,,2 Random herbs,Desert
-1,Potato,Allotment,98,1,https://oldschool.runescape.wiki/images/c/c2/Potato.png?62188,3 Potato seeds,10 Potato,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-2,Marigold,Flowers,55.5,2,https://oldschool.runescape.wiki/images/8/85/Marigolds.png?ae73c,1 Marigold seeds,1 Marigold,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-3,Barley,Hops,103.5,3,https://oldschool.runescape.wiki/images/d/df/Barley.png?8b3a1,4 Barley seeds,10 Barley,Misthalin; Kandarin; Western Provinces; Asgarnia
-4,Hammerstone hops,Hops,109,4,https://oldschool.runescape.wiki/images/d/d8/Hammerstone_hops.png?22eb8,4 Hammerstone seeds,10 Hammerstone hops,Misthalin; Kandarin; Western Provinces; Asgarnia
-5,Onion,Allotment,114.5,5,https://oldschool.runescape.wiki/images/5/51/Onion.png?62650,3 Onion seeds,10 Onion,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-6,Cabbage,Allotment,125,7,https://oldschool.runescape.wiki/images/c/cc/Cabbage.png?1ee52,3 Cabbage seeds,10 Cabbage,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-7,Asgarnian hops,Hops,130.9,8,https://oldschool.runescape.wiki/images/8/82/Asgarnian_hops.png?ab718,4 Asgarnian seeds,10 Asgarnian hops,Misthalin; Kandarin; Western Provinces; Asgarnia
-8,Guam leaf,Herbs,98.5,9,https://oldschool.runescape.wiki/images/f/fd/Guam_leaf.png?8fae5,1 Guam seeds,7 Guam leaf,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-9,Redberry bush,Bushes,93.5,10,https://oldschool.runescape.wiki/images/f/f4/Redberries.png?b1fe5,1 Redberry seeds,4 Redberries,Misthalin; Western Provinces; Asgarnia; Fremennik Province; Zeah
-10,Rosemary,Flowers,78.5,11,https://oldschool.runescape.wiki/images/7/76/Rosemary.png?71280,1 Rosemary seeds,1 Rosemary,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-11,Tomato,Allotment,152.5,12,https://oldschool.runescape.wiki/images/9/9d/Tomato.png?597a9,3 Tomato seeds,10 Tomato,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-12,Jute fibres,Hops,158,13,https://oldschool.runescape.wiki/images/a/a8/Jute_fibre.png?5edde,3 Jute seeds,10 Jute fibres,Misthalin; Kandarin; Western Provinces; Asgarnia
-13,Marrentill,Herbs,118.5,14,https://oldschool.runescape.wiki/images/b/ba/Marrentill.png?4fb2b,1 Marrentill seeds,7 Marrentill,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-14,Oak tree,Trees,481.3,15,https://oldschool.runescape.wiki/images/c/cb/Oak_logs.png?f93f1,1 Oak sapling,,Misthalin; Asgarnia; Western Provinces; Zeah
-15,Yanillian hops,Hops,174.5,16,https://oldschool.runescape.wiki/images/d/db/Yanillian_hops.png?21787,4 Yanillian seeds,10 Yanillian hops,Misthalin; Kandarin; Western Provinces; Asgarnia
-16,Tarromin,Herbs,142,19,https://oldschool.runescape.wiki/images/7/78/Tarromin.png?ada2a,1 Tarromin seeds,7 Tarromin,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-17,Sweetcorn,Allotment,207,20,https://oldschool.runescape.wiki/images/6/66/Sweetcorn.png?d4a98,3 Sweetcorn seeds,10 Sweetcorn,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-18,Krandorian hops,Hops,212.5,21,https://oldschool.runescape.wiki/images/2/2d/Krandorian_hops.png?dadc3,4 Krandorian seeds,10 Krandorian hops,Misthalin; Kandarin; Western Provinces; Asgarnia
-19,Cadavaberry bush,Bushes,148.5,22,https://oldschool.runescape.wiki/images/2/23/Cadava_berries.png?0cd1c,1 Cadavaberry seeds,4 Cadava berries,Misthalin; Western Provinces; Asgarnia; Fremennik Province; Zeah
-20,Giant seaweed,Special,334,23,https://oldschool.runescape.wiki/images/6/64/Giant_seaweed.png?b59f4,1 Seaweed spore,15 Giant seaweed,Misthalin
-21,Nasturtium,Flowers,130.5,24,https://oldschool.runescape.wiki/images/b/b1/Nasturtiums.png?71c30,1 Nasturtium seeds,1 Nasturtium,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-22,Woad leaf,Flowers,136,25,https://oldschool.runescape.wiki/images/e/e2/Woad_leaf_5.png?4d023,1 Woad seeds,3 Woad leaf,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-23,Limpwurt root,Flowers,141.5,26,https://oldschool.runescape.wiki/images/1/18/Limpwurt_root.png?fe88f,1 Limpwurt seeds,5 Limpwurt root,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-24,Harralander,Herbs,189.5,26,https://oldschool.runescape.wiki/images/c/cb/Harralander.png?bdd9c,1 Harralander seeds,7 Harralander,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-25,Apple,Fruit trees,1272.5,27,https://oldschool.runescape.wiki/images/9/9e/Cooking_apple.png?00e20,1 Apple seedling,6 Apples,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah
-26,Wildblood hops,Hops,283,28,https://oldschool.runescape.wiki/images/c/c3/Wildblood_hops.png?617df,4 Wildblood seeds,10 Wildblood hops,Misthalin; Kandarin; Western Provinces; Asgarnia
-27,Goutweed,Herbs,420,29,https://oldschool.runescape.wiki/images/4/41/Goutweed.png?0e2f5,1 Gout tuber,7 Goutweed,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-28,Willow tree,Trees,1481.5,30,https://oldschool.runescape.wiki/images/1/18/Willow_logs.png?a25e5,1 Willow sapling,,Misthalin; Asgarnia; Western Provinces; Zeah
-29,Strawberry,Allotment,316,31,https://oldschool.runescape.wiki/images/6/6d/Strawberry.png?07988,3 Strawberry seeds,10 Strawberry,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-30,Ranarr weed,Herbs,240.5,32,https://oldschool.runescape.wiki/images/a/a5/Ranarr_weed.png?ada2a,1 Ranarr seeds,7 Ranarr weed,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-31,Banana,Fruit trees,1841.5,33,https://oldschool.runescape.wiki/images/6/69/Banana.png?c60e6,1 Banana seedling,6 Bananas,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah
-32,Teak tree,Special,7315,35,https://oldschool.runescape.wiki/images/7/76/Teak_logs.png?d11f2,1 Teak sapling,,Misthalin
-33,Dwellberry bush,Bushes,257,36,https://oldschool.runescape.wiki/images/e/e0/Dwellberries.png?377e5,1 Dwellberry seeds,4 Dwellberries,Misthalin; Western Provinces; Asgarnia; Fremennik Province; Zeah
-34,Grapes,Special,400,36,https://oldschool.runescape.wiki/images/3/39/Grapes.png?377e5,1 Grape seed,10 Grapes,Zeah
-35,Toadflax,Herbs,303.5,38,https://oldschool.runescape.wiki/images/a/ad/Toadflax.png?14698,1 Toadflax seeds,7 Toadflax,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-36,Orange,Fruit trees,2586.7,39,https://oldschool.runescape.wiki/images/4/43/Orange.png?ed8c3,1 Orange seedling,6 Oranges,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah
-37,Curry,Fruit trees,3036.9,42,https://oldschool.runescape.wiki/images/e/e9/Curry_leaf.png?c6c91,1 Curry seedling,6 Curry leaves,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah
-38,Irit leaf,Herbs,382.5,44,https://oldschool.runescape.wiki/images/a/ae/Irit_leaf.png?3ed63,1 Irit leaf seeds,7 Irit leaf,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-39,Maple tree,Trees,3448.4,45,https://oldschool.runescape.wiki/images/3/32/Maple_logs.png?2360e,1 Maple sapling,,Misthalin; Asgarnia; Western Provinces; Zeah
-40,Watermelon,Allotment,593.5,47,https://oldschool.runescape.wiki/images/0/06/Watermelon.png?5b245,3 Watermelon seeds,10 Watermelon,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-41,Jangerberry bush,Bushes,411,48,https://oldschool.runescape.wiki/images/2/2c/Jangerberries.png?28fc3,1 Jangerberry seeds,4 Jangerberries,Misthalin; Western Provinces; Asgarnia; Fremennik Province; Zeah
-42,Avantoe,Herbs,485,50,https://oldschool.runescape.wiki/images/9/9e/Avantoe.png?8fae5,1 Avantoe seeds,7 Avantoe,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-43,Pineapple,Fruit trees,4791.7,51,https://oldschool.runescape.wiki/images/f/fb/Pineapple.png?8a68c,1 Pineapple seedling,6 Pineapples,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah
-44,Mushroom,Special,407.7,53,https://oldschool.runescape.wiki/images/8/8c/Mushroom.png?4858a,1 Mushroom seed,6 Mushrooms,Morytania
-45,Cactus,Special,590.5,55,https://oldschool.runescape.wiki/images/1/12/Cactus_spine.png?64d35,1 Cactus seed,6 Cactus spine,Desert; Zeah
-46,Mahogany tree,Special,15783,55,https://oldschool.runescape.wiki/images/1/1c/Mahogany_logs.png?c365c,1 Mahogany sapling,,Misthalin
-47,Kwuarm,Herbs,615,56,https://oldschool.runescape.wiki/images/c/c6/Kwuarm.png?3ed63,1 Kwuarm seeds,7 Kwuarm,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-48,Papaya,Fruit trees,6380.4,57,https://oldschool.runescape.wiki/images/a/a0/Papaya_fruit.png?a0579,1 Papaya seedling,6 Papaya fruits,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah
-49,White lily,Flowers,292,58,https://oldschool.runescape.wiki/images/0/05/White_lily.png?2f529,1 White lily seeds,1 White lily,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-50,Whiteberry bush,Bushes,631.5,59,https://oldschool.runescape.wiki/images/5/56/White_berries.png?e2e46,1 Whiteberry seeds,4 White berries,Misthalin; Western Provinces; Asgarnia; Fremennik Province; Zeah
-51,Yew tree,Trees,7150.9,60,https://oldschool.runescape.wiki/images/a/ae/Yew_logs.png?053a4,1 Yew sapling,,Misthalin; Asgarnia; Western Provinces; Zeah
-52,Snape grass,Allotment,902,61,https://oldschool.runescape.wiki/images/3/30/Snape_grass.png?c7b1f,3 Snape grass seeds,10 Snape grass,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-53,Snapdragon,Herbs,777,62,https://oldschool.runescape.wiki/images/2/23/Snapdragon.png?ada2a,1 Snapdragon seeds,7 Snapdragon,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-54,Belladonna,Special,603,63,https://oldschool.runescape.wiki/images/2/2d/Cave_nightshade.png?74a67,1 Belladonna seed,5 Cave nightshade,Misthalin
-55,Potato cactus,Special,706,64,https://oldschool.runescape.wiki/images/5/56/Potato_cactus.png?fb31b,1 Potato cactus seed,6 Potato cactus,Desert; Zeah
-56,Hespori,Special,12662,65,https://oldschool.runescape.wiki/images/c/c7/Bottomless_compost_bucket_%28full%29.png?c3700,1 Hespori seed,,Zeah
-57,Cadantine,Herbs,946.5,67,https://oldschool.runescape.wiki/images/4/4c/Cadantine.png?8fae5,1 Cadantine seeds,7 Cadantine,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-58,Palm tree,Fruit trees,10509.6,68,https://oldschool.runescape.wiki/images/2/2f/Coconut.png?2770c,1 Palm tree seedling,6 Coconuts,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah
-59,Poison ivy bush,Bushes,975,70,https://oldschool.runescape.wiki/images/3/3b/Poison_ivy_berries.png?2be9f,1 Poison ivy seeds,4 Poison ivy berries,Misthalin; Western Provinces; Asgarnia; Fremennik Province; Zeah
-60,Calquat tree,Special,12516.50,72,https://oldschool.runescape.wiki/images/1/15/Calquat_fruit.png?2599d,1 Calquat sapling,6 Calquat fruit,Karamja
-61,Lantadyme,Herbs,1195,73,https://oldschool.runescape.wiki/images/8/82/Lantadyme.png?3ed63,1 Lantadyme seeds,7 Lantadyme,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-62,Crystal tree,Special,13366,74,https://oldschool.runescape.wiki/images/f/f6/Crystal_shard_25.png?c3d15,1 Crystal sapling,12 Crystal shards,Tirannwn
-63,Magic tree,Trees,13913.8,75,https://oldschool.runescape.wiki/images/2/20/Magic_logs.png?ff7aa,1 Magic sapling,,Misthalin; Asgarnia; Western Provinces; Zeah
-64,Kronos,Special,100,76,https://oldschool.runescape.wiki/images/2/28/Kronos_seed_5.png?22805,1 Kronos seed,,Zeah
-65,Iasor,Special,100,76,https://oldschool.runescape.wiki/images/3/3d/Iasor_seed_5.png?89b2f,1 Iasor seed,,Zeah
-66,Attas,Special,100,76,https://oldschool.runescape.wiki/images/9/93/Attas_seed_5.png?760b2,1 Attas seed,,Zeah
-67,Dwarf weed,Herbs,1514.5,79,https://oldschool.runescape.wiki/images/2/22/Dwarf_weed.png?8fae5,1 Dwarf weed seeds,7 Dwarf weed,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-68,Dragonfruit,Fruit trees,17895,81,https://oldschool.runescape.wiki/images/5/5a/Dragonfruit.png?1988d,1 Dragonfruit seedling,6 Dragonfruits,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah
-69,Spirit tree,Special,19501.3,83,https://oldschool.runescape.wiki/images/c/ca/Spirit_tree_%28Construction%29_icon.png?32fc2,1 Spirit seedling,,Asgarnia; Fremennik Province; Karamja; Zeah
-70,Torstol,Herbs,1771,85,https://oldschool.runescape.wiki/images/a/a4/Torstol.png?14698,1 Torstol seeds,7 Torstol,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn
-71,Celastrus tree,Special,14475,85,https://oldschool.runescape.wiki/images/b/b7/Celastrus_bark.png?ebbec,1 Celastrus seedling,6 Celastrus bark,Zeah
-72,Redwood tree,Special,22680,90,https://oldschool.runescape.wiki/images/1/16/Redwood_logs.png?a240d,1 Redwood seedling,,Zeah
+SKILL,icon,type,isCombatSkill,,,,,,,,
+Farming,https://oldschool.runescape.wiki/images/f/fc/Farming_icon.png?558fa,gathering,FALSE,,,,,,,,
+,,,,,,,,,,,
+CATEGORIES,,,,,,,,,,,
+Herbs,Allotments,Trees,Fruit trees,Flowers,Hops,Bushes,Special,,,,
+,,,,,,,,,,,
+EXP MULTIPLIERS,name,multiplier,,,,,,,,,
+0,Farmer's outfit (102.5%),1.025,,,,,,,,,
+,,,,,,,,,,,
+INPUT MULTIPLIERS,name,multiplier,,,,,,,,,
+,,,,,,,,,,,
+OUTPUT MULTIPLIERS,name,multiplier,,,,,,,,,
+,,,,,,,,,,,
+ACTIONS,name,category,exp,level,icon,inputs,outputs,areas,exp multipliers,input multipliers,output multipliers
+0,Raking,Special,4,1,https://oldschool.runescape.wiki/images/4/42/Weeds.png?bb76e,,1 Weeds,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn; Misthalin; Desert; Morytania; Karamja; Fremennik Province,All,,
+73,Sorceress's Garden - Picking herbs,Special,50,1,https://oldschool.runescape.wiki/images/7/79/Summer_sq%27irk.png?7c5a9,,2 Random herbs,Desert,All,,
+1,Potato,Allotment,98,1,https://oldschool.runescape.wiki/images/c/c2/Potato.png?62188,3 Potato seeds,10 Potato,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+2,Marigold,Flowers,55.5,2,https://oldschool.runescape.wiki/images/8/85/Marigolds.png?ae73c,1 Marigold seeds,1 Marigold,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+3,Barley,Hops,103.5,3,https://oldschool.runescape.wiki/images/d/df/Barley.png?8b3a1,4 Barley seeds,10 Barley,Misthalin; Kandarin; Western Provinces; Asgarnia,All,,
+4,Hammerstone hops,Hops,109,4,https://oldschool.runescape.wiki/images/d/d8/Hammerstone_hops.png?22eb8,4 Hammerstone seeds,10 Hammerstone hops,Misthalin; Kandarin; Western Provinces; Asgarnia,All,,
+5,Onion,Allotment,114.5,5,https://oldschool.runescape.wiki/images/5/51/Onion.png?62650,3 Onion seeds,10 Onion,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+6,Cabbage,Allotment,125,7,https://oldschool.runescape.wiki/images/c/cc/Cabbage.png?1ee52,3 Cabbage seeds,10 Cabbage,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+7,Asgarnian hops,Hops,130.9,8,https://oldschool.runescape.wiki/images/8/82/Asgarnian_hops.png?ab718,4 Asgarnian seeds,10 Asgarnian hops,Misthalin; Kandarin; Western Provinces; Asgarnia,All,,
+8,Guam leaf,Herbs,98.5,9,https://oldschool.runescape.wiki/images/f/fd/Guam_leaf.png?8fae5,1 Guam seeds,7 Guam leaf,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+9,Redberry bush,Bushes,93.5,10,https://oldschool.runescape.wiki/images/f/f4/Redberries.png?b1fe5,1 Redberry seeds,4 Redberries,Misthalin; Western Provinces; Asgarnia; Fremennik Province; Zeah,All,,
+10,Rosemary,Flowers,78.5,11,https://oldschool.runescape.wiki/images/7/76/Rosemary.png?71280,1 Rosemary seeds,1 Rosemary,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+11,Tomato,Allotment,152.5,12,https://oldschool.runescape.wiki/images/9/9d/Tomato.png?597a9,3 Tomato seeds,10 Tomato,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+12,Jute fibres,Hops,158,13,https://oldschool.runescape.wiki/images/a/a8/Jute_fibre.png?5edde,3 Jute seeds,10 Jute fibres,Misthalin; Kandarin; Western Provinces; Asgarnia,All,,
+13,Marrentill,Herbs,118.5,14,https://oldschool.runescape.wiki/images/b/ba/Marrentill.png?4fb2b,1 Marrentill seeds,7 Marrentill,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+14,Oak tree,Trees,481.3,15,https://oldschool.runescape.wiki/images/c/cb/Oak_logs.png?f93f1,1 Oak sapling,,Misthalin; Asgarnia; Western Provinces; Zeah,All,,
+15,Yanillian hops,Hops,174.5,16,https://oldschool.runescape.wiki/images/d/db/Yanillian_hops.png?21787,4 Yanillian seeds,10 Yanillian hops,Misthalin; Kandarin; Western Provinces; Asgarnia,All,,
+16,Tarromin,Herbs,142,19,https://oldschool.runescape.wiki/images/7/78/Tarromin.png?ada2a,1 Tarromin seeds,7 Tarromin,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+17,Sweetcorn,Allotment,207,20,https://oldschool.runescape.wiki/images/6/66/Sweetcorn.png?d4a98,3 Sweetcorn seeds,10 Sweetcorn,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+18,Krandorian hops,Hops,212.5,21,https://oldschool.runescape.wiki/images/2/2d/Krandorian_hops.png?dadc3,4 Krandorian seeds,10 Krandorian hops,Misthalin; Kandarin; Western Provinces; Asgarnia,All,,
+19,Cadavaberry bush,Bushes,148.5,22,https://oldschool.runescape.wiki/images/2/23/Cadava_berries.png?0cd1c,1 Cadavaberry seeds,4 Cadava berries,Misthalin; Western Provinces; Asgarnia; Fremennik Province; Zeah,All,,
+20,Giant seaweed,Special,334,23,https://oldschool.runescape.wiki/images/6/64/Giant_seaweed.png?b59f4,1 Seaweed spore,15 Giant seaweed,Misthalin,All,,
+21,Nasturtium,Flowers,130.5,24,https://oldschool.runescape.wiki/images/b/b1/Nasturtiums.png?71c30,1 Nasturtium seeds,1 Nasturtium,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+22,Woad leaf,Flowers,136,25,https://oldschool.runescape.wiki/images/e/e2/Woad_leaf_5.png?4d023,1 Woad seeds,3 Woad leaf,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+23,Limpwurt root,Flowers,141.5,26,https://oldschool.runescape.wiki/images/1/18/Limpwurt_root.png?fe88f,1 Limpwurt seeds,5 Limpwurt root,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+24,Harralander,Herbs,189.5,26,https://oldschool.runescape.wiki/images/c/cb/Harralander.png?bdd9c,1 Harralander seeds,7 Harralander,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+25,Apple,Fruit trees,1272.5,27,https://oldschool.runescape.wiki/images/9/9e/Cooking_apple.png?00e20,1 Apple seedling,6 Apples,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah,All,,
+26,Wildblood hops,Hops,283,28,https://oldschool.runescape.wiki/images/c/c3/Wildblood_hops.png?617df,4 Wildblood seeds,10 Wildblood hops,Misthalin; Kandarin; Western Provinces; Asgarnia,All,,
+27,Goutweed,Herbs,420,29,https://oldschool.runescape.wiki/images/4/41/Goutweed.png?0e2f5,1 Gout tuber,7 Goutweed,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+28,Willow tree,Trees,1481.5,30,https://oldschool.runescape.wiki/images/1/18/Willow_logs.png?a25e5,1 Willow sapling,,Misthalin; Asgarnia; Western Provinces; Zeah,All,,
+29,Strawberry,Allotment,316,31,https://oldschool.runescape.wiki/images/6/6d/Strawberry.png?07988,3 Strawberry seeds,10 Strawberry,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+30,Ranarr weed,Herbs,240.5,32,https://oldschool.runescape.wiki/images/a/a5/Ranarr_weed.png?ada2a,1 Ranarr seeds,7 Ranarr weed,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+31,Banana,Fruit trees,1841.5,33,https://oldschool.runescape.wiki/images/6/69/Banana.png?c60e6,1 Banana seedling,6 Bananas,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah,All,,
+32,Teak tree,Special,7315,35,https://oldschool.runescape.wiki/images/7/76/Teak_logs.png?d11f2,1 Teak sapling,,Misthalin,All,,
+33,Dwellberry bush,Bushes,257,36,https://oldschool.runescape.wiki/images/e/e0/Dwellberries.png?377e5,1 Dwellberry seeds,4 Dwellberries,Misthalin; Western Provinces; Asgarnia; Fremennik Province; Zeah,All,,
+34,Grapes,Special,400,36,https://oldschool.runescape.wiki/images/3/39/Grapes.png?377e5,1 Grape seed,10 Grapes,Zeah,All,,
+35,Toadflax,Herbs,303.5,38,https://oldschool.runescape.wiki/images/a/ad/Toadflax.png?14698,1 Toadflax seeds,7 Toadflax,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+36,Orange,Fruit trees,2586.7,39,https://oldschool.runescape.wiki/images/4/43/Orange.png?ed8c3,1 Orange seedling,6 Oranges,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah,All,,
+37,Curry,Fruit trees,3036.9,42,https://oldschool.runescape.wiki/images/e/e9/Curry_leaf.png?c6c91,1 Curry seedling,6 Curry leaves,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah,All,,
+38,Irit leaf,Herbs,382.5,44,https://oldschool.runescape.wiki/images/a/ae/Irit_leaf.png?3ed63,1 Irit leaf seeds,7 Irit leaf,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+39,Maple tree,Trees,3448.4,45,https://oldschool.runescape.wiki/images/3/32/Maple_logs.png?2360e,1 Maple sapling,,Misthalin; Asgarnia; Western Provinces; Zeah,All,,
+40,Watermelon,Allotment,593.5,47,https://oldschool.runescape.wiki/images/0/06/Watermelon.png?5b245,3 Watermelon seeds,10 Watermelon,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+41,Jangerberry bush,Bushes,411,48,https://oldschool.runescape.wiki/images/2/2c/Jangerberries.png?28fc3,1 Jangerberry seeds,4 Jangerberries,Misthalin; Western Provinces; Asgarnia; Fremennik Province; Zeah,All,,
+42,Avantoe,Herbs,485,50,https://oldschool.runescape.wiki/images/9/9e/Avantoe.png?8fae5,1 Avantoe seeds,7 Avantoe,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+43,Pineapple,Fruit trees,4791.7,51,https://oldschool.runescape.wiki/images/f/fb/Pineapple.png?8a68c,1 Pineapple seedling,6 Pineapples,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah,All,,
+44,Mushroom,Special,407.7,53,https://oldschool.runescape.wiki/images/8/8c/Mushroom.png?4858a,1 Mushroom seed,6 Mushrooms,Morytania,All,,
+45,Cactus,Special,590.5,55,https://oldschool.runescape.wiki/images/1/12/Cactus_spine.png?64d35,1 Cactus seed,6 Cactus spine,Desert; Zeah,All,,
+46,Mahogany tree,Special,15783,55,https://oldschool.runescape.wiki/images/1/1c/Mahogany_logs.png?c365c,1 Mahogany sapling,,Misthalin,All,,
+47,Kwuarm,Herbs,615,56,https://oldschool.runescape.wiki/images/c/c6/Kwuarm.png?3ed63,1 Kwuarm seeds,7 Kwuarm,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+48,Papaya,Fruit trees,6380.4,57,https://oldschool.runescape.wiki/images/a/a0/Papaya_fruit.png?a0579,1 Papaya seedling,6 Papaya fruits,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah,All,,
+49,White lily,Flowers,292,58,https://oldschool.runescape.wiki/images/0/05/White_lily.png?2f529,1 White lily seeds,1 White lily,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+50,Whiteberry bush,Bushes,631.5,59,https://oldschool.runescape.wiki/images/5/56/White_berries.png?e2e46,1 Whiteberry seeds,4 White berries,Misthalin; Western Provinces; Asgarnia; Fremennik Province; Zeah,All,,
+51,Yew tree,Trees,7150.9,60,https://oldschool.runescape.wiki/images/a/ae/Yew_logs.png?053a4,1 Yew sapling,,Misthalin; Asgarnia; Western Provinces; Zeah,All,,
+52,Snape grass,Allotment,902,61,https://oldschool.runescape.wiki/images/3/30/Snape_grass.png?c7b1f,3 Snape grass seeds,10 Snape grass,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+53,Snapdragon,Herbs,777,62,https://oldschool.runescape.wiki/images/2/23/Snapdragon.png?ada2a,1 Snapdragon seeds,7 Snapdragon,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+54,Belladonna,Special,603,63,https://oldschool.runescape.wiki/images/2/2d/Cave_nightshade.png?74a67,1 Belladonna seed,5 Cave nightshade,Misthalin,All,,
+55,Potato cactus,Special,706,64,https://oldschool.runescape.wiki/images/5/56/Potato_cactus.png?fb31b,1 Potato cactus seed,6 Potato cactus,Desert; Zeah,All,,
+56,Hespori,Special,12662,65,https://oldschool.runescape.wiki/images/c/c7/Bottomless_compost_bucket_%28full%29.png?c3700,1 Hespori seed,,Zeah,All,,
+57,Cadantine,Herbs,946.5,67,https://oldschool.runescape.wiki/images/4/4c/Cadantine.png?8fae5,1 Cadantine seeds,7 Cadantine,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+58,Palm tree,Fruit trees,10509.6,68,https://oldschool.runescape.wiki/images/2/2f/Coconut.png?2770c,1 Palm tree seedling,6 Coconuts,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah,All,,
+59,Poison ivy bush,Bushes,975,70,https://oldschool.runescape.wiki/images/3/3b/Poison_ivy_berries.png?2be9f,1 Poison ivy seeds,4 Poison ivy berries,Misthalin; Western Provinces; Asgarnia; Fremennik Province; Zeah,All,,
+60,Calquat tree,Special,12516.5,72,https://oldschool.runescape.wiki/images/1/15/Calquat_fruit.png?2599d,1 Calquat sapling,6 Calquat fruit,Karamja,All,,
+61,Lantadyme,Herbs,1195,73,https://oldschool.runescape.wiki/images/8/82/Lantadyme.png?3ed63,1 Lantadyme seeds,7 Lantadyme,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+62,Crystal tree,Special,13366,74,https://oldschool.runescape.wiki/images/f/f6/Crystal_shard_25.png?c3d15,1 Crystal sapling,12 Crystal shards,Tirannwn,All,,
+63,Magic tree,Trees,13913.8,75,https://oldschool.runescape.wiki/images/2/20/Magic_logs.png?ff7aa,1 Magic sapling,,Misthalin; Asgarnia; Western Provinces; Zeah,All,,
+64,Kronos,Special,100,76,https://oldschool.runescape.wiki/images/2/28/Kronos_seed_5.png?22805,1 Kronos seed,,Zeah,All,,
+65,Iasor,Special,100,76,https://oldschool.runescape.wiki/images/3/3d/Iasor_seed_5.png?89b2f,1 Iasor seed,,Zeah,All,,
+66,Attas,Special,100,76,https://oldschool.runescape.wiki/images/9/93/Attas_seed_5.png?760b2,1 Attas seed,,Zeah,All,,
+67,Dwarf weed,Herbs,1514.5,79,https://oldschool.runescape.wiki/images/2/22/Dwarf_weed.png?8fae5,1 Dwarf weed seeds,7 Dwarf weed,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+68,Dragonfruit,Fruit trees,17895,81,https://oldschool.runescape.wiki/images/5/5a/Dragonfruit.png?1988d,1 Dragonfruit seedling,6 Dragonfruits,Western Provinces; Kandarin; Karamja; Tirannwn; Zeah,All,,
+69,Spirit tree,Special,19501.3,83,https://oldschool.runescape.wiki/images/c/ca/Spirit_tree_%28Construction%29_icon.png?32fc2,1 Spirit seedling,,Asgarnia; Fremennik Province; Karamja; Zeah,All,,
+70,Torstol,Herbs,1771,85,https://oldschool.runescape.wiki/images/a/a4/Torstol.png?14698,1 Torstol seeds,7 Torstol,Asgarnia; Morytania; Kandarin; Western Provinces; Zeah; Tirannwn,All,,
+71,Celastrus tree,Special,14475,85,https://oldschool.runescape.wiki/images/b/b7/Celastrus_bark.png?ebbec,1 Celastrus seedling,6 Celastrus bark,Zeah,All,,
+72,Redwood tree,Special,22680,90,https://oldschool.runescape.wiki/images/1/16/Redwood_logs.png?a240d,1 Redwood seedling,,Zeah,All,,
