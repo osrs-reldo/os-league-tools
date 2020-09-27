@@ -1,11 +1,13 @@
 import React from "react";
 import { Card, Tabs, Tab } from "react-bootstrap";
+import useQueryString from "../hooks/useQueryString";
 
 export default function CharacterTracker() {
+    const [selectedTab, onSetSelectedTab] = useQueryString('tab');
     return (
         <div className="content-wrapper">
             <h1 className="mt-2 light-text text-center">Character Tracker</h1>
-            <Tabs fill variant="pills" defaultActiveKey="overview" className="mt-3 tab-bar-dark">
+            <Tabs fill variant="pills" defaultActiveKey={selectedTab} className="mt-3 tab-bar-dark" onSelect={onSetSelectedTab}>
                 <Tab eventKey="overview" title="Character Overview">
                     <Card bg='dark' text='white' className="mt-3">
                         <div className="m-3 text-center">

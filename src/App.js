@@ -17,9 +17,9 @@ export default function App(props) {
         <TopNav />
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/character" component={CharacterTracker} />
+          <Route path="/tracker" component={CharacterTracker} />
           <Route exact path="/calculators" component={Calculators} />
-          <Route path="/calculators/" component={Calculator} />
+          <Route path="/calculators/:skill" component={Calculator} />
         </Switch>
       </BrowserRouter>
     </div>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Card, CardDeck, Form } from "react-bootstrap";
 import BootstrapTable from 'react-bootstrap-table-next';
+import { useParams } from "react-router";
 import { MAP_AREAS } from '../util/constants';
-import { getSkillFromCalcUrl } from '../util/browser-util';
 import { getFormatters, getBoostedLevel } from '../util/calculator-util';
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import calculatorData from '../resources/calculatorData.json';
@@ -22,8 +22,8 @@ export default function SkillCalculator(props) {
     const [isSkillingProdigy, setIsSkillingProdigy] = useState(false);
     const [useAreaFilter, setUseAreaFilter] = useState(false);
     const [includedAreas, setIncludedAreas] = useState(MAP_AREAS);
+    const { skill } = useParams();
 
-    const skill = getSkillFromCalcUrl(props.location.pathname);
     const skillData = calculatorData.calculators[skill];
     if (!skillData) {
         return (

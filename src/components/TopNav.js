@@ -10,7 +10,7 @@ export default function () {
                 <Link to="/" className="nav-link">
                     Home
                 </Link>
-                <Link to="/character" className="nav-link">
+                <Link to="/tracker" className="nav-link">
                     Character Tracker
                 </Link>
                 <Link to="/calculators" className="nav-link">
