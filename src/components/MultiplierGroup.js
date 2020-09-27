@@ -1,7 +1,7 @@
 import React from "react";
 import { Form } from "react-bootstrap";
 
-export default function MultiplierGroup({ title, multiplierData, globalMultiplierData = [], setMultiplierCallback, removeMultiplierCallback }) {
+export default function MultiplierGroup({ title, multiplierData, globalMultiplierData = [], multipliers }) {
     if (multiplierData.length === 0) {
         return null;
     }
@@ -17,9 +17,9 @@ export default function MultiplierGroup({ title, multiplierData, globalMultiplie
                             key={multiplier.id}
                             onChange={(event) => {
                                 if (event.target.checked) {
-                                    setMultiplierCallback(multiplier.id, multiplier.multiplier, true);
+                                    multipliers.add(multiplier.id, multiplier.multiplier, true);
                                 } else {
-                                    removeMultiplierCallback(multiplier.id, true)
+                                    multipliers.remove(multiplier.id, true)
                                 }
                             }}
                         />
@@ -32,9 +32,9 @@ export default function MultiplierGroup({ title, multiplierData, globalMultiplie
                             key={multiplier.id}
                             onChange={(event) => {
                                 if (event.target.checked) {
-                                    setMultiplierCallback(multiplier.id, multiplier.multiplier);
+                                    multipliers.add(multiplier.id, multiplier.multiplier);
                                 } else {
-                                    removeMultiplierCallback(multiplier.id)
+                                    multipliers.remove(multiplier.id)
                                 }
                             }}
                         />

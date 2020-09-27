@@ -47,5 +47,5 @@ export default function useMultiplier() {
         return totalMultiplier;
     }
 
-    return [addMultiplier, removeMultiplier, applyMultipliers];
+    return { add: addMultiplier, remove: removeMultiplier, apply: applyMultipliers };
 }

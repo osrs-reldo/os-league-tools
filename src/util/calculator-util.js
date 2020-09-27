@@ -27,19 +27,19 @@ function iconFormatter(cell, row) {
 }
 
 function amountFormatter(cell, row, rowIndex, exp) {
-    const expMultiplier = exp.expMultiplierCallback(row.expMultipliers);
+    const expMultiplier = exp.expMultiplier.apply(row.expMultipliers);
     return calcActionsRemaining(exp.current, exp.target, row.exp, expMultiplier);
 }
 
 function outputListFormatter(cell, row, rowIndex, exp) {
-    const expMultiplier = exp.expMultiplierCallback(row.expMultipliers);
-    const countMultiplier = exp.countMultiplierCallback(row.outputMultipliers);
+    const expMultiplier = exp.expMultiplier.apply(row.expMultipliers);
+    const countMultiplier = exp.countMultiplier.apply(row.outputMultipliers);
     return itemListFormatter(cell, expMultiplier, countMultiplier, exp.current, exp.target, row.exp)
 }
 
 function inputListFormatter(cell, row, rowIndex, exp) {
-    const expMultiplier = exp.expMultiplierCallback(row.expMultipliers);
-    const countMultiplier = exp.countMultiplierCallback(row.inputMultipliers);
+    const expMultiplier = exp.expMultiplier.apply(row.expMultipliers);
+    const countMultiplier = exp.countMultiplier.apply(row.inputMultipliers);
     return itemListFormatter(cell, expMultiplier, countMultiplier, exp.current, exp.target, row.exp)
 }
 

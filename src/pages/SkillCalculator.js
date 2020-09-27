@@ -13,11 +13,11 @@ import useLevel from "../hooks/useLevel";
 import useMultiplier from "../hooks/useMultiplier";
 
 export default function SkillCalculator(props) {
-    const [currentLevel, currentExp, setCurrentLevel, setCurrentExp] = useLevel(1);
-    const [targetLevel, targetExp, setTargetLevel, setTargetExp] = useLevel(currentLevel + 1);
-    const [addExpMultiplier, removeExpMultiplier, applyExpMultipliers] = useMultiplier();
-    const [addInputMultiplier, removeInputMultiplier, applyInputMultipliers] = useMultiplier();
-    const [addOutputMultiplier, removeOutputMultiplier, applyOutputMultipliers] = useMultiplier();
+    const currentLevel = useLevel(1);
+    const targetLevel = useLevel(currentLevel.level + 1);
+    const expMultiplier = useMultiplier();
+    const inputMultiplier = useMultiplier();
+    const outputMultiplier = useMultiplier();
     const [useLevelFilter, setUseLevelFilter] = useState(false);
     const [isSkillingProdigy, setIsSkillingProdigy] = useState(false);
     const [useAreaFilter, setUseAreaFilter] = useState(false);
@@ -46,7 +46,7 @@ export default function SkillCalculator(props) {
             "sort": true,
             "headerStyle": { width: '10%' },
             "formatter": levelFormatter,
-            "formatExtraData": { "level": currentLevel, "isSkillingProdigy": isSkillingProdigy }
+            "formatExtraData": { "level": currentLevel.level, "isSkillingProdigy": isSkillingProdigy }
         },
         {
             "dataField": "name",
@@ -74,20 +74,20 @@ export default function SkillCalculator(props) {
             "isDummyField": true,
             "sort": true,
             "formatter": amountFormatter,
-            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplierCallback": applyExpMultipliers },
+            "formatExtraData": { "current": currentLevel.exp, "target": targetLevel.exp, "expMultiplier": expMultiplier },
             "headerStyle": { width: '10%' }
         },
         {
             "dataField": "inputs",
             "text": "Inputs",
             "formatter": inputListFormatter,
-            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplierCallback": applyExpMultipliers, "countMultiplierCallback": applyInputMultipliers }
+            "formatExtraData": { "current": currentLevel.exp, "target": targetLevel.exp, "expMultiplier": expMultiplier, "countMultiplier": inputMultiplier }
         },
         {
             "dataField": "outputs",
             "text": "Outputs",
             "formatter": outputListFormatter,
-            "formatExtraData": { "current": currentExp, "target": targetExp, "expMultiplierCallback": applyExpMultipliers, "countMultiplierCallback": applyOutputMultipliers }
+            "formatExtraData": { "current": currentLevel.exp, "target": targetLevel.exp, "expMultiplier": expMultiplier, "countMultiplier": outputMultiplier }
         }
     ];
 
@@ -101,20 +101,17 @@ export default function SkillCalculator(props) {
                             title="Exp multipliers"
                             multiplierData={skillData.expMultipliers}
                             globalMultiplierData={calculatorData.globalMultipliers.expMultipliers}
-                            setMultiplierCallback={addExpMultiplier}
-                            removeMultiplierCallback={removeExpMultiplier}
+                            multipliers={expMultiplier}
                         />
                         <MultiplierGroup
                             title="Input multipliers"
                             multiplierData={skillData.inputMultipliers}
-                            setMultiplierCallback={addInputMultiplier}
-                            removeMultiplierCallback={removeInputMultiplier}
+                            multipliers={inputMultiplier}
                         />
                         <MultiplierGroup
                             title="Output multipliers"
                             multiplierData={skillData.outputMultipliers}
-                            setMultiplierCallback={addOutputMultiplier}
-                            removeMultiplierCallback={removeOutputMultiplier}
+                            multipliers={outputMultiplier}
                         />
                         {!skillData.isCombatSkill && (
                             <React.Fragment>
@@ -134,28 +131,28 @@ export default function SkillCalculator(props) {
                 <Card bg='dark' text='white' >
                     <h4 className="pt-3 pl-3">Level/Experience:</h4>
                     <HiscoreLookup
-                        setLevelCallback={setCurrentLevel}
-                        setExpCallback={setCurrentExp}
+                        setLevelCallback={currentLevel.updateByLevel}
+                        setExpCallback={currentLevel.updateByExp}
                     />
                     <LevelExpInput
                         title="Current"
-                        level={currentLevel}
-                        exp={currentExp}
-                        setLevelCallback={setCurrentLevel}
-                        setExpCallback={setCurrentExp}
+                        level={currentLevel.level}
+                        exp={currentLevel.exp}
+                        setLevelCallback={currentLevel.updateByLevel}
+                        setExpCallback={currentLevel.updateByExp}
                     />
                     <LevelExpInput
                         title="Target"
-                        level={targetLevel}
-                        exp={targetExp}
-                        setLevelCallback={setTargetLevel}
-                        setExpCallback={setTargetExp}
+                        level={targetLevel.level}
+                        exp={targetLevel.exp}
+                        setLevelCallback={targetLevel.updateByLevel}
+                        setExpCallback={targetLevel.updateByExp}
                     />
                     <div className="p-3">
                         <h5>Remaining until goal:</h5>
                         <ul>
-                            <li>{targetExp - currentExp} Experience</li>
-                            <li>{targetLevel - currentLevel} Levels</li>
+                            <li>{targetLevel.exp - currentLevel.exp} Experience</li>
+                            <li>{targetLevel.level - currentLevel.level} Levels</li>
                         </ul>
                     </div>
                 </Card>
@@ -211,7 +208,7 @@ export default function SkillCalculator(props) {
                     <BootstrapTable
                         bootstrap4
                         keyField='id'
-                        data={applyFilters(skillData.actions, currentLevel, useLevelFilter, isSkillingProdigy, useAreaFilter, includedAreas)}
+                        data={applyFilters(skillData.actions, currentLevel.level, useLevelFilter, isSkillingProdigy, useAreaFilter, includedAreas)}
                         columns={columns}
                         bordered={false}
                         classes="light-text"

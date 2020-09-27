@@ -16,5 +16,5 @@ export default function useLevel(initialLevel) {
         setLevel(getLevelForExp(newExp));
     }
 
-    return [level, exp, updateByLevel, updateByExp];
+    return { level, exp, updateByLevel, updateByExp };
 }
