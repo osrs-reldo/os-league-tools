@@ -24,3 +24,6 @@ yarn-error.log*
 
 # csv working files
 .~lock.*#
+
+# misc docs that don't need to be published
+/docs

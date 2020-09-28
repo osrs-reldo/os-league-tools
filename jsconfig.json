@@ -1,0 +1,6 @@
+{
+    // stop vscode from giving typescript errors on imports
+    "compilerOptions": {
+        "module": "es2015"
+    }
+}

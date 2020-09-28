@@ -64,3 +64,26 @@ ul.calc-list {
 .tab-bar-dark .nav-item.nav-link.disabled {
   color:  #6c757d;
 }
+
+/* Progress bar steps */
+.progressStep {
+  filter: grayscale(1);
+}
+
+.progressStep.accomplished {
+  filter: grayscale(0);
+}
+
+/* Relic table */
+.relic-table {
+  background-color: #484e53;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.relic-table-cell {
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.relic-table-cell.selected {
+  border: 2px solid #a3ce27;
+}

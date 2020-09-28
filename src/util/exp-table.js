@@ -214,7 +214,6 @@ export function getLevelForExp(exp) {
     }
 
     const matchingLevelExp = binarySearch(Object.keys(reverseExpTable), exp);
-    console.log(matchingLevelExp);
     return reverseExpTable[matchingLevelExp.toString()];
 }
 

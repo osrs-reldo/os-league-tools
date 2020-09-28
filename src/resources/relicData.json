@@ -1,0 +1,146 @@
+[
+    {
+        "category": "Skilling",
+        "relics": [
+            {
+                "name": "Endless Harvest",
+                "icon": "placeholder.png",
+                "description": "Resources gathered from Fishing, Woodcutting and Mining will be multiplied by 2. Resources generated this way will not provide any additional experience. The resources you gather are sent directly to your Bank if you have space. If not, they will be placed in your Inventory."
+            },
+            {
+                "name": "Production Master",
+                "icon": "placeholder.png",
+                "description": "When doing the following activities, all items will be processed at once, awarding full XP: 1) Smelting ores, smithing bars and making cannonballs, 2) Fletching logs and cutting bolt tips, 3) Cleaning herbs and making potions, 4) Cooking food and making jugs of wine, and 5) Crafting leather, uncut gems, glass, jewelry, pottery, battlestaves and spinning flax/wool."
+            },
+            {
+                "name": "Skilling Prodigy",
+                "icon": "placeholder.png",
+                "description": "All non-combat skills will permanently be boosted by 10. When skills are boosted beyond 10 levels, the boosts will over time drain back to the standard +10 boost. By the same token, when skills are drained down, they will eventually restore."
+            },
+            {
+                "name": "Endless Run",
+                "description": "Your Run Energy will never drain while running."
+            }
+        ]
+    },
+    {
+        "category": "Teleportation",
+        "relics": [
+            {
+                "name": "Teleport Relic 1",
+                "icon": "placeholder.png",
+                "description": "Unannounced teleportation relic"
+            },
+            {
+                "name": "Teleport Relic 2",
+                "icon": "placeholder.png",
+                "description": "Unannounced teleportation relic"
+            },
+            {
+                "name": "Teleport Relic 3",
+                "icon": "placeholder.png",
+                "description": "Unannounced teleportation relic"
+            },
+            {
+                "name": "8x Exp",
+                "description": "Your League XP multiplier will increase from 5x to 8x."
+            }
+        ]
+    },
+    {
+        "category": "Combat",
+        "relics": [
+            {
+                "name": "Combat Relic 1",
+                "icon": "placeholder.png",
+                "description": "Unannounced combat relic"
+            },
+            {
+                "name": "Combat Relic 2",
+                "icon": "placeholder.png",
+                "description": "Unannounced combat relic"
+            },
+            {
+                "name": "Combat Relic 3",
+                "icon": "placeholder.png",
+                "description": "Unannounced combat relic"
+            },
+            {
+                "name": "2x Drop Rate",
+                "description": "Your drop rate modifier will increase from 1x to 2x."
+            }
+        ]
+    },
+    {
+        "category": "Utility",
+        "relics": [
+            {
+                "name": "Utility Relic 1",
+                "icon": "placeholder.png",
+                "description": "Unannounced utility relic"
+            },
+            {
+                "name": "Utility Relic 2",
+                "icon": "placeholder.png",
+                "description": "Unannounced utility relic"
+            },
+            {
+                "name": "Utility Relic 3",
+                "icon": "placeholder.png",
+                "description": "Unannounced utility relic"
+            },
+            {
+                "name": "12x Exp",
+                "description": "Your League XP multiplier will increase from 8x to 12x."
+            }
+        ]
+    },
+    {
+        "category": "Skilling",
+        "relics": [
+            {
+                "name": "Skilling Relic 1",
+                "icon": "placeholder.png",
+                "description": "Unannounced skilling relic"
+            },
+            {
+                "name": "Skilling Relic 2",
+                "icon": "placeholder.png",
+                "description": "Unannounced skilling relic"
+            },
+            {
+                "name": "Skilling Relic 3",
+                "icon": "placeholder.png",
+                "description": "Unannounced skilling relic"
+            },
+            {
+                "name": "3x Drop Rate",
+                "description": "Your drop rate modifier will increase from 2x to 3x."
+            }
+        ]
+    },
+    {
+        "category": "Combat",
+        "relics": [
+            {
+                "name": "Combat Relic 1",
+                "icon": "placeholder.png",
+                "description": "Unannounced combat relic"
+            },
+            {
+                "name": "Combat Relic 2",
+                "icon": "placeholder.png",
+                "description": "Unannounced combat relic"
+            },
+            {
+                "name": "Combat Relic 3",
+                "icon": "placeholder.png",
+                "description": "Unannounced combat relic"
+            },
+            {
+                "name": "16x Exp",
+                "description": "Your League XP multiplier will increase from 12x to 16x."
+            }
+        ]
+    }
+]
