@@ -4,18 +4,22 @@ import ProgressBar from "./UnlockProgressBar";
 import RelicCheckImg from '../resources/img/relic-check.png';
 import RelicInfoTile from "./RelicInfoTile";
 import relicData from '../resources/relicData.json';
-import { getRelicKey } from '../util/relic-util';
+import { getRelicKey, MAX_POINTS, RELIC_UNLOCKS, unlockRelicInState, lockRelicInState, isRelicUnlocked } from '../util/relic-util';
+import useLocalStorage from "../hooks/useLocalStorage";
+import { LOCALSTORAGE_KEYS } from '../util/constants';
 
 export default function RelicsTracker() {
     const [selectedRelic, setSelectedRelic] = useState();
+    const [unlockedRelics, setUnlockedRelics] = useLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_RELICS, {});
+    const [totalPoints] = useLocalStorage(LOCALSTORAGE_KEYS.TOTAL_POINTS, 0);
 
     return (
         <Card bg='dark' text='white' className="mt-3">
-            <h1 className="m-3 text-center">2000 Points - 500 To Next Unlock</h1>
+            <h1 className="m-3 text-center">{totalPoints + ' Points - 500 To Next Unlock'}</h1>
             <ProgressBar
                 curValue={2000}
-                maxValue={10000}
-                steps={[0, 400, 1200, 2500, 5000, 10000]}
+                maxValue={MAX_POINTS}
+                steps={RELIC_UNLOCKS}
                 stepImage={<img src={RelicCheckImg} alt='' height={50} />}
             />
             <Container className='relic-table mt-4 mb-4'>
@@ -40,6 +44,7 @@ export default function RelicsTracker() {
                                         key={relicKey}
                                         relicKey={relicKey}
                                         onClickEvent={() => setSelectedRelic(relicKey)}
+                                        selected={isRelicUnlocked(unlockedRelics, relicKey)}
                                     />
                                 );
                             })}
@@ -54,7 +59,20 @@ export default function RelicsTracker() {
                             <RelicInfoTile
                                 relicKey={selectedRelic}
                                 isWide
-                                additionalContent={<Button variant='light'>Unlock this relic</Button>}
+                                additionalContent={
+                                    <React.Fragment>
+                                        {isRelicUnlocked(unlockedRelics, selectedRelic) ?
+                                            <Button
+                                                variant='dark' onClick={() => setUnlockedRelics(prevState => { return lockRelicInState(prevState, selectedRelic) })}>
+                                                Re-lock this relic
+                                            </Button>
+                                            :
+                                            <Button variant='light' onClick={() => setUnlockedRelics(prevState => { return unlockRelicInState(prevState, selectedRelic) })}>
+                                                Unlock this relic
+                                            </Button>
+                                        }
+                                    </React.Fragment>
+                                }
                             />
                         ) : (
                                 <p className='m-1'>Select a relic to view more information or unlock it.</p>

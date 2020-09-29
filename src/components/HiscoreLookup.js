@@ -1,10 +1,11 @@
 import React from "react";
 import { InputGroup, FormControl, Button } from "react-bootstrap";
 import useLocalStorage from "../hooks/useLocalStorage";
+import { LOCALSTORAGE_KEYS } from '../util/constants';
 
 // TODO make this functional
 export default function HiscoreLookup({ setLevelCallback, setExpCallback }) {
-    const [username, setUsername] = useLocalStorage("username", "");
+    const [username, setUsername] = useLocalStorage(LOCALSTORAGE_KEYS.USERNAME, "");
 
     return (
         <InputGroup className="p-3">
