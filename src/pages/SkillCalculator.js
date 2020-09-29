@@ -11,6 +11,7 @@ import LevelExpInput from "../components/LevelExpInput";
 import HiscoreLookup from "../components/HiscoreLookup";
 import useLevel from "../hooks/useLevel";
 import useMultiplier from "../hooks/useMultiplier";
+import { isRelicUnlocked } from "../util/relic-util";
 
 export default function SkillCalculator(props) {
     const currentLevel = useLevel(1);
@@ -19,7 +20,7 @@ export default function SkillCalculator(props) {
     const inputMultiplier = useMultiplier();
     const outputMultiplier = useMultiplier();
     const [useLevelFilter, setUseLevelFilter] = useState(false);
-    const [isSkillingProdigy, setIsSkillingProdigy] = useState(false);
+    const [isSkillingProdigy, setIsSkillingProdigy] = useState(isRelicUnlocked('1,3'));
     const [useAreaFilter, setUseAreaFilter] = useState(false);
     const [includedAreas, setIncludedAreas] = useState(MAP_AREAS);
     const { skill } = useParams();
@@ -118,7 +119,8 @@ export default function SkillCalculator(props) {
                                 <h4>Boosts:</h4>
                                 <div className="pl-2">
                                     <Form.Check
-                                        label="Relic - Skilling Prodigy (+10)"
+                                        label="Relic - Skilling Prodigy (+12)"
+                                        defaultChecked={isSkillingProdigy}
                                         onChange={(event) => {
                                             setIsSkillingProdigy(event.target.checked);
                                         }}

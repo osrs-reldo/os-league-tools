@@ -10,7 +10,7 @@ import { LOCALSTORAGE_KEYS } from '../util/constants';
 
 export default function RelicsTracker() {
     const [selectedRelic, setSelectedRelic] = useState();
-    const [unlockedRelics, setUnlockedRelics] = useLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_RELICS, {});
+    const [_, setUnlockedRelics] = useLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_RELICS, {});
     const [totalPoints] = useLocalStorage(LOCALSTORAGE_KEYS.TOTAL_POINTS, 0);
 
     return (
@@ -44,7 +44,7 @@ export default function RelicsTracker() {
                                         key={relicKey}
                                         relicKey={relicKey}
                                         onClickEvent={() => setSelectedRelic(relicKey)}
-                                        selected={isRelicUnlocked(unlockedRelics, relicKey)}
+                                        selected={isRelicUnlocked(relicKey)}
                                     />
                                 );
                             })}
@@ -61,7 +61,7 @@ export default function RelicsTracker() {
                                 isWide
                                 additionalContent={
                                     <React.Fragment>
-                                        {isRelicUnlocked(unlockedRelics, selectedRelic) ?
+                                        {isRelicUnlocked(selectedRelic) ?
                                             <Button
                                                 variant='dark' onClick={() => setUnlockedRelics(prevState => { return lockRelicInState(prevState, selectedRelic) })}>
                                                 Re-lock this relic

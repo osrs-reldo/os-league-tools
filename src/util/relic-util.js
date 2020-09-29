@@ -1,4 +1,5 @@
 import relicData from '../resources/relicData.json';
+import { LOCALSTORAGE_KEYS } from './constants';
 
 export const MAX_POINTS = 12000;
 export const RELIC_UNLOCKS = [0, 500, 1500, 3000, 6000, 12000];
@@ -30,7 +31,6 @@ export function unlockRelicInState(currentRelicState, relicKey) {
     } else {
         relicStateCopy[tierId]['relic'] = relicId;
     }
-    console.log('setting new relic state to: ' + Object.toString(relicStateCopy));
     return relicStateCopy;
 }
 
@@ -50,16 +50,18 @@ export function lockRelicInState(currentRelicState, relicKey) {
     return relicStateCopy;
 }
 
-export function isRelicUnlocked(currentRelicState, relicKey) {
+export function isRelicUnlocked(relicKey) {
     if (!relicKey) {
         return false;
     }
 
     const [tierId, relicId] = getRelicIndices(relicKey);
+    const unlockedRelicsRaw = window.localStorage.getItem(LOCALSTORAGE_KEYS.UNLOCKED_RELICS);
+    const unlockedRelics = unlockedRelicsRaw ? JSON.parse(unlockedRelicsRaw) : {};
 
     if (relicId === 3) {
-        return currentRelicState && currentRelicState[tierId] && currentRelicState[tierId]['passive'];
+        return unlockedRelics && unlockedRelics[tierId] && unlockedRelics[tierId]['passive'];
     } else {
-        return currentRelicState && currentRelicState[tierId] && currentRelicState[tierId]['relic'] === relicId;
+        return unlockedRelics && unlockedRelics[tierId] && unlockedRelics[tierId]['relic'] === relicId;
     }
 }
