@@ -222,7 +222,7 @@ ACTIONS,name,category,exp,level,icon,inputs,outputs,areas,exp multipliers,input 
 208,Shadow Blitz (splash),Ancient magicks (combat),43,76,,2 Air rune;2 Blood rune;2 Death rune;2 Soul rune,,Desert,,,,,,,,,,,,,,,
 209,Shadow Blitz (avg damage defensive casting) ,Ancient magicks (combat),58.96,76,,2 Air rune;2 Blood rune;2 Death rune;2 Soul rune,,Desert,,,,,,,,,,,,,,,
 210,Shadow Blitz (avg damage),Ancient magicks (combat),67,76,,2 Air rune;2 Blood rune;2 Death rune;2 Soul rune,,Desert,,,,,,,,,,,,,,,
-211,Spin Flax,Lunar magic (utility),75,76,,5 Air rune;1 Astral rune;5 Flax;2 Nature rune;5 Flax,5 Bowstring,Fremennik Province,,,,,,,,,,,,,,,
+211,Spin Flax,Lunar magic (utility),75,76,,5 Air rune;1 Astral rune;5 Flax;2 Nature rune,5 Bowstring,Fremennik Province,,,,,,,,,,,,,,,
 212,Tele Group Barbarian,Lunar magic (teleport),77,76,,2 Astral rune;6 Fire rune;2 Law rune,,Fremennik Province,,,,,,,,,,,,,,,
 213,Superglass Make (giant seaweed),Lunar magic (utility),78,77,,10 Air rune;2 Astral rune;6 Fire rune;18 Bucket of sand;3 Giant seaweed,28.8 Molten glass,Fremennik Province,,,,,,,,,,,,,,,
 214,Superglass Make (regular seaweed),Lunar magic (utility),78,77,,10 Air rune;2 Astral rune;6 Fire rune;12 Bucket of sand;12 Seaweed,15.6 Molten glass,Fremennik Province,,,,,,,,,,,,,,,

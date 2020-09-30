@@ -32994,11 +32994,6 @@
                             "name": "Nature rune",
                             "amount": 2.0,
                             "chance": 1
-                        },
-                        {
-                            "name": "Flax",
-                            "amount": 5.0,
-                            "chance": 1
                         }
                     ],
                     "outputs": [

@@ -92,44 +92,52 @@ export default function SkillCalculator(props) {
         }
     ];
 
+    const showMultiplierCard = skillData.expMultipliers.length > 0
+                               || skillData.inputMultipliers.length > 0
+                               || skillData.outputMultipliers.length > 0
+                               || !skillData.isCombatSkill;
+
     return (
         <div className="content-wrapper">
             <h1 className="mt-2 light-text text-center">{skillData.name}</h1>
             <CardDeck style={{ margin: '1rem' }} >
-                <Card bg='dark' text='white' >
-                    <div className="p-3">
-                        <MultiplierGroup
-                            title="Exp multipliers"
-                            multiplierData={skillData.expMultipliers}
-                            globalMultiplierData={calculatorData.globalMultipliers.expMultipliers}
-                            multipliers={expMultiplier}
-                        />
-                        <MultiplierGroup
-                            title="Input multipliers"
-                            multiplierData={skillData.inputMultipliers}
-                            multipliers={inputMultiplier}
-                        />
-                        <MultiplierGroup
-                            title="Output multipliers"
-                            multiplierData={skillData.outputMultipliers}
-                            multipliers={outputMultiplier}
-                        />
-                        {!skillData.isCombatSkill && (
-                            <React.Fragment>
-                                <h4>Boosts:</h4>
-                                <div className="pl-2">
-                                    <Form.Check
-                                        label="Relic - Skilling Prodigy (+12)"
-                                        defaultChecked={isSkillingProdigy}
-                                        onChange={(event) => {
-                                            setIsSkillingProdigy(event.target.checked);
-                                        }}
-                                    />
-                                </div>
-                            </React.Fragment>
-                        )}
-                    </div>
-                </Card>
+                {
+                    showMultiplierCard &&
+                    <Card bg='dark' text='white' >
+                        <div className="p-3">
+                            <MultiplierGroup
+                                title="Exp multipliers"
+                                multiplierData={skillData.expMultipliers}
+                                globalMultiplierData={calculatorData.globalMultipliers.expMultipliers}
+                                multipliers={expMultiplier}
+                            />
+                            <MultiplierGroup
+                                title="Input multipliers"
+                                multiplierData={skillData.inputMultipliers}
+                                multipliers={inputMultiplier}
+                            />
+                            <MultiplierGroup
+                                title="Output multipliers"
+                                multiplierData={skillData.outputMultipliers}
+                                multipliers={outputMultiplier}
+                            />
+                            {!skillData.isCombatSkill && (
+                                <React.Fragment>
+                                    <h4>Boosts:</h4>
+                                    <div className="pl-2">
+                                        <Form.Check
+                                            label="Relic - Skilling Prodigy (+12)"
+                                            defaultChecked={isSkillingProdigy}
+                                            onChange={(event) => {
+                                                setIsSkillingProdigy(event.target.checked);
+                                            }}
+                                        />
+                                    </div>
+                                </React.Fragment>
+                            )}
+                        </div>
+                    </Card>
+                }
                 <Card bg='dark' text='white' >
                     <h4 className="pt-3 pl-3">Level/Experience:</h4>
                     <HiscoreLookup
