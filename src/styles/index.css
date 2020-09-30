@@ -44,24 +44,46 @@ ul.calc-list {
 }
 
 /* Inactive tab */
-.tab-bar-dark .nav-item.nav-link {
+.tab-bar-dark .nav-link {
   color: #f7f7f7;
 }
-.tab-bar-dark .nav-item.nav-link:hover {
+.tab-bar-dark .nav-link:hover {
   background-color: #6c757d;
 }
 
 /* Active tab */
-.tab-bar-dark .nav-item.nav-link.active,
-.tab-bar-dark .nav-item.nav-link.active:hover,
-.tab-bar-dark .nav-item.nav-link.active:focus {
+.tab-bar-dark .nav-link.active,
+.tab-bar-dark .nav-link.active:hover,
+.tab-bar-dark .nav-link.active:focus {
   background-color: #343a40;
   color: #f7f7f7;
   border: 1px solid rgba(0,0,0,.125);
 }
 
 /* Disabled tab */
-.tab-bar-dark .nav-item.nav-link.disabled {
+.tab-bar-dark .nav-link.disabled {
+  color:  #6c757d;
+}
+
+/* Inactive tab */
+.tab-bar-secondary .nav-link {
+  color: #f7f7f7;
+}
+.tab-bar-secondary .nav-link:hover {
+  background-color: #535c64;
+}
+
+/* Active tab */
+.tab-bar-secondary .nav-link.active,
+.tab-bar-secondary .nav-link.active:hover,
+.tab-bar-secondary .nav-link.active:focus {
+  background-color: #6c757d;
+  color: #f7f7f7;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+/* Disabled tab */
+.tab-bar-secondary .nav-link.disabled {
   color:  #6c757d;
 }
 

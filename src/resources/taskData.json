@@ -134,159 +134,127 @@
         }
     ],
     "areas": [
-        {
-            "value": "common",
-            "label": "common"
-        },
-        {
-            "value": "asgarnia",
-            "label": "asgarnia"
-        },
-        {
-            "value": "desert",
-            "label": "desert"
-        },
-        {
-            "value": "fremennik",
-            "label": "fremennik"
-        },
-        {
-            "value": "kandarin",
-            "label": "kandarin"
-        },
-        {
-            "value": "karamja",
-            "label": "karamja"
-        },
-        {
-            "value": "misthalin",
-            "label": "misthalin"
-        },
-        {
-            "value": "morytania",
-            "label": "morytania"
-        },
-        {
-            "value": "tirannwn",
-            "label": "tirannwn"
-        },
-        {
-            "value": "wilderness",
-            "label": "wilderness"
-        }
+        "common",
+        "asgarnia",
+        "desert",
+        "fremennik",
+        "kandarin",
+        "karamja",
+        "misthalin",
+        "morytania",
+        "tirannwn",
+        "wilderness"
     ],
-    "tasks": [
-        {
-            "id": 0,
-            "name": "Catch 100 lobsters",
-            "difficulty": "medium",
-            "skill": "fishing",
-            "category": "skilling",
-            "area": "common"
-        },
-        {
-            "id": 1,
-            "name": "Chop 200 willow logs",
-            "difficulty": "easy",
-            "skill": "woodcutting",
-            "category": "skilling",
-            "area": "common"
-        },
-        {
-            "id": 2,
-            "name": "Chop a tree using a rune axe",
-            "difficulty": "medium",
-            "skill": "woodcutting",
-            "category": "skilling",
-            "area": "common"
-        },
-        {
-            "id": 3,
-            "name": "Build a waka canoe",
-            "difficulty": "hard",
-            "skill": "woodcutting",
-            "category": "skilling",
-            "area": "common"
-        },
-        {
-            "id": 4,
-            "name": "Catch an anchovy",
-            "difficulty": "easy",
-            "skill": "fishing",
-            "category": "skilling",
-            "area": "common"
-        },
-        {
-            "id": 5,
-            "name": "Catch 100 sharks",
-            "difficulty": "hard",
-            "skill": "fishing",
-            "category": "skilling",
-            "area": "common"
-        },
-        {
-            "id": 6,
-            "name": "Enter the cooking guild",
-            "difficulty": "medium",
-            "skill": "cooking",
-            "category": "skilling",
-            "area": "misthalin"
-        },
-        {
-            "id": 7,
-            "name": "Defeat Obor",
-            "difficulty": "hard",
-            "skill": "combat",
-            "category": "bossing",
-            "area": "misthalin"
-        },
-        {
-            "id": 8,
-            "name": "Craft 50 water runes",
-            "difficulty": "easy",
-            "skill": "runecraft",
-            "category": "skilling",
-            "area": "misthalin"
-        },
-        {
-            "id": 9,
-            "name": "Receive a slayer task from Vannaka",
-            "difficulty": "easy",
-            "skill": "slayer",
-            "category": "combat",
-            "area": "misthalin"
-        },
-        {
-            "id": 10,
-            "name": "Obtain an Infernal cape",
-            "difficulty": "master",
-            "skill": "combat",
-            "category": "bossing",
-            "area": "misthalin"
-        },
-        {
-            "id": 11,
-            "name": "Obtain a Mark of grace",
-            "difficulty": "easy",
-            "skill": "agility",
-            "category": "skilling",
-            "area": "misthalin"
-        },
-        {
-            "id": 12,
-            "name": "Equip a Yew shortbow",
-            "difficulty": "medium",
-            "skill": "ranged",
-            "category": "combat",
-            "area": "misthalin"
-        },
-        {
-            "id": 13,
-            "name": "Defeat a Goblin",
-            "difficulty": "easy",
-            "skill": "combat",
-            "category": "combat",
-            "area": "misthalin"
-        }
-    ]
+    "tasks": {
+        "common": [
+            {
+                "id": 0,
+                "name": "Catch 100 lobsters",
+                "difficulty": "medium",
+                "skill": "fishing",
+                "category": "skilling"
+            },
+            {
+                "id": 1,
+                "name": "Chop 200 willow logs",
+                "difficulty": "easy",
+                "skill": "woodcutting",
+                "category": "skilling"
+            },
+            {
+                "id": 2,
+                "name": "Chop a tree using a rune axe",
+                "difficulty": "medium",
+                "skill": "woodcutting",
+                "category": "skilling"
+            },
+            {
+                "id": 3,
+                "name": "Build a waka canoe",
+                "difficulty": "hard",
+                "skill": "woodcutting",
+                "category": "skilling"
+            },
+            {
+                "id": 4,
+                "name": "Catch an anchovy",
+                "difficulty": "easy",
+                "skill": "fishing",
+                "category": "skilling"
+            },
+            {
+                "id": 5,
+                "name": "Catch 100 sharks",
+                "difficulty": "hard",
+                "skill": "fishing",
+                "category": "skilling"
+            }
+        ],
+        "asgarnia": [],
+        "desert": [],
+        "fremennik": [],
+        "kandarin": [],
+        "karamja": [],
+        "misthalin": [
+            {
+                "id": 6,
+                "name": "Enter the cooking guild",
+                "difficulty": "medium",
+                "skill": "cooking",
+                "category": "skilling"
+            },
+            {
+                "id": 7,
+                "name": "Defeat Obor",
+                "difficulty": "hard",
+                "skill": "combat",
+                "category": "bossing"
+            },
+            {
+                "id": 8,
+                "name": "Craft 50 water runes",
+                "difficulty": "easy",
+                "skill": "runecraft",
+                "category": "skilling"
+            },
+            {
+                "id": 9,
+                "name": "Receive a slayer task from Vannaka",
+                "difficulty": "easy",
+                "skill": "slayer",
+                "category": "combat"
+            },
+            {
+                "id": 10,
+                "name": "Obtain an Infernal cape",
+                "difficulty": "master",
+                "skill": "combat",
+                "category": "bossing"
+            },
+            {
+                "id": 11,
+                "name": "Obtain a Mark of grace",
+                "difficulty": "easy",
+                "skill": "agility",
+                "category": "skilling"
+            },
+            {
+                "id": 12,
+                "name": "Equip a Yew shortbow",
+                "difficulty": "medium",
+                "skill": "ranged",
+                "category": "combat"
+            },
+            {
+                "id": 13,
+                "name": "Defeat a Goblin",
+                "difficulty": "easy",
+                "skill": "combat",
+                "category": "combat"
+            }
+        ],
+        "morytania": [],
+        "tirannwn": [],
+        "wilderness": []
+    }
 }
