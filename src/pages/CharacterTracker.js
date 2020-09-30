@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Tabs, Tab } from "react-bootstrap";
 import RelicsTracker from "../components/RelicsTracker";
+import TaskTracker from "../components/TaskTracker";
 import useQueryString from "../hooks/useQueryString";
 
 export default function CharacterTracker() {
@@ -27,11 +28,7 @@ export default function CharacterTracker() {
                     </Card>
                 </Tab>
                 <Tab eventKey="tasks" title="Tasks">
-                    <Card bg='dark' text='white' className="mt-3">
-                        <div className="m-3 text-center">
-                            TODO
-                        </div>
-                    </Card>
+                    <TaskTracker />
                 </Tab>
             </Tabs>
         </div >

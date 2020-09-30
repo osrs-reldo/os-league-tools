@@ -1,0 +1,292 @@
+{
+    "difficulties": [
+        {
+            "value": "easy",
+            "label": "easy"
+        },
+        {
+            "value": "medium",
+            "label": "medium"
+        },
+        {
+            "value": "hard",
+            "label": "hard"
+        },
+        {
+            "value": "elite",
+            "label": "elite"
+        },
+        {
+            "value": "master",
+            "label": "master"
+        }
+    ],
+    "skills": [
+        {
+            "value": "agility",
+            "label": "agility"
+        },
+        {
+            "value": "attack",
+            "label": "attack"
+        },
+        {
+            "value": "combat",
+            "label": "combat"
+        },
+        {
+            "value": "construction",
+            "label": "construction"
+        },
+        {
+            "value": "cooking",
+            "label": "cooking"
+        },
+        {
+            "value": "crafting",
+            "label": "crafting"
+        },
+        {
+            "value": "defence",
+            "label": "defence"
+        },
+        {
+            "value": "farming",
+            "label": "farming"
+        },
+        {
+            "value": "firemaking",
+            "label": "firemaking"
+        },
+        {
+            "value": "fishing",
+            "label": "fishing"
+        },
+        {
+            "value": "fletching",
+            "label": "fletching"
+        },
+        {
+            "value": "herblore",
+            "label": "herblore"
+        },
+        {
+            "value": "hitpoints",
+            "label": "hitpoints"
+        },
+        {
+            "value": "hunter",
+            "label": "hunter"
+        },
+        {
+            "value": "magic",
+            "label": "magic"
+        },
+        {
+            "value": "mining",
+            "label": "mining"
+        },
+        {
+            "value": "prayer",
+            "label": "prayer"
+        },
+        {
+            "value": "ranged",
+            "label": "ranged"
+        },
+        {
+            "value": "runecraft",
+            "label": "runecraft"
+        },
+        {
+            "value": "slayer",
+            "label": "slayer"
+        },
+        {
+            "value": "smithing",
+            "label": "smithing"
+        },
+        {
+            "value": "strength",
+            "label": "strength"
+        },
+        {
+            "value": "thieving",
+            "label": "thieving"
+        },
+        {
+            "value": "woodcutting",
+            "label": "woodcutting"
+        }
+    ],
+    "categories": [
+        {
+            "value": "skilling",
+            "label": "skilling"
+        },
+        {
+            "value": "combat",
+            "label": "combat"
+        },
+        {
+            "value": "bossing",
+            "label": "bossing"
+        }
+    ],
+    "areas": [
+        {
+            "value": "common",
+            "label": "common"
+        },
+        {
+            "value": "asgarnia",
+            "label": "asgarnia"
+        },
+        {
+            "value": "desert",
+            "label": "desert"
+        },
+        {
+            "value": "fremennik",
+            "label": "fremennik"
+        },
+        {
+            "value": "kandarin",
+            "label": "kandarin"
+        },
+        {
+            "value": "karamja",
+            "label": "karamja"
+        },
+        {
+            "value": "misthalin",
+            "label": "misthalin"
+        },
+        {
+            "value": "morytania",
+            "label": "morytania"
+        },
+        {
+            "value": "tirannwn",
+            "label": "tirannwn"
+        },
+        {
+            "value": "wilderness",
+            "label": "wilderness"
+        }
+    ],
+    "tasks": [
+        {
+            "id": 0,
+            "name": "Catch 100 lobsters",
+            "difficulty": "medium",
+            "skill": "fishing",
+            "category": "skilling",
+            "area": "common"
+        },
+        {
+            "id": 1,
+            "name": "Chop 200 willow logs",
+            "difficulty": "easy",
+            "skill": "woodcutting",
+            "category": "skilling",
+            "area": "common"
+        },
+        {
+            "id": 2,
+            "name": "Chop a tree using a rune axe",
+            "difficulty": "medium",
+            "skill": "woodcutting",
+            "category": "skilling",
+            "area": "common"
+        },
+        {
+            "id": 3,
+            "name": "Build a waka canoe",
+            "difficulty": "hard",
+            "skill": "woodcutting",
+            "category": "skilling",
+            "area": "common"
+        },
+        {
+            "id": 4,
+            "name": "Catch an anchovy",
+            "difficulty": "easy",
+            "skill": "fishing",
+            "category": "skilling",
+            "area": "common"
+        },
+        {
+            "id": 5,
+            "name": "Catch 100 sharks",
+            "difficulty": "hard",
+            "skill": "fishing",
+            "category": "skilling",
+            "area": "common"
+        },
+        {
+            "id": 6,
+            "name": "Enter the cooking guild",
+            "difficulty": "medium",
+            "skill": "cooking",
+            "category": "skilling",
+            "area": "misthalin"
+        },
+        {
+            "id": 7,
+            "name": "Defeat Obor",
+            "difficulty": "hard",
+            "skill": "combat",
+            "category": "bossing",
+            "area": "misthalin"
+        },
+        {
+            "id": 8,
+            "name": "Craft 50 water runes",
+            "difficulty": "easy",
+            "skill": "runecraft",
+            "category": "skilling",
+            "area": "misthalin"
+        },
+        {
+            "id": 9,
+            "name": "Receive a slayer task from Vannaka",
+            "difficulty": "easy",
+            "skill": "slayer",
+            "category": "combat",
+            "area": "misthalin"
+        },
+        {
+            "id": 10,
+            "name": "Obtain an Infernal cape",
+            "difficulty": "master",
+            "skill": "combat",
+            "category": "bossing",
+            "area": "misthalin"
+        },
+        {
+            "id": 11,
+            "name": "Obtain a Mark of grace",
+            "difficulty": "easy",
+            "skill": "agility",
+            "category": "skilling",
+            "area": "misthalin"
+        },
+        {
+            "id": 12,
+            "name": "Equip a Yew shortbow",
+            "difficulty": "medium",
+            "skill": "ranged",
+            "category": "combat",
+            "area": "misthalin"
+        },
+        {
+            "id": 13,
+            "name": "Defeat a Goblin",
+            "difficulty": "easy",
+            "skill": "combat",
+            "category": "combat",
+            "area": "misthalin"
+        }
+    ]
+}

@@ -17,7 +17,7 @@ export default function RelicsTracker() {
         <Card bg='dark' text='white' className="mt-3">
             <h1 className="m-3 text-center">{totalPoints + ' Points - 500 To Next Unlock'}</h1>
             <ProgressBar
-                curValue={2000}
+                curValue={totalPoints}
                 maxValue={MAX_POINTS}
                 steps={RELIC_UNLOCKS}
                 stepImage={<img src={RelicCheckImg} alt='' height={50} />}
