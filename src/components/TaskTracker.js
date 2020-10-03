@@ -107,96 +107,100 @@ export default function TaskTracker() {
     };
 
     return (
-        <Card bg='dark' text='white' className="mt-3">
-            <Container >
-                <Row>
-                    <Col className="mt-1 text-center">
-                        <ul>
-                            <li>Easy: 60 / 500 (12%)</li>
-                            <li>Medium: 30 / 300 (10%)</li>
-                            <li>Hard: 5 / 200 (2%)</li>
-                            <li>Elite: 0 / 200 (0%)</li>
-                            <li>Master: 0 / 200 (0%)</li>
-                        </ul>
-                    </Col>
-                    <Col>
-                        <h1 className="m-3 text-center">Tasks Completed: 100 / 1000 (10%)</h1>
-                    </Col>
-                    <Col className="mt-1 text-center">
-                        <ul>
-                            <li>Misthalin: 70 / 250 (28%)</li>
-                            <li>Karamja: 15 / 250 (6%)</li>
-                            <li>Asgarnia: 10 / 250 (4%)</li>
-                            <li>Tirannwn: 5 / 250 (2%)</li>
-                            <li>Fremennik: 0 / 250 (0%)</li>
-                        </ul>
-                    </Col>
-                </Row>
-            </Container>
-            <Tabs fill defaultActiveKey={"all"} className="pl-3 pr-3 pb-2 tab-bar-secondary">
-                <Tab eventKey="all" title="All Tasks">
-                    <Card bg='dark' text='white' style={{ 'border': '2px solid #6c757d' }}>
-                        <div className="m-3 text-center">
-                            <Tab.Container defaultActiveKey="common">
-                                <Row>
-                                    <Col sm={2}>
-                                        <h5>Areas:</h5>
-                                        <Nav variant="pills" className="flex-column mt-3 tab-bar-secondary">
-                                            {taskData.areas.map(area =>
-                                                <Nav.Item>
-                                                    <Nav.Link eventKey={area}>{area}</Nav.Link>
-                                                </Nav.Item>
-                                            )}
-                                        </Nav>
-                                    </Col>
-                                    <Col sm={10}>
-                                        <Tab.Content>
-                                            {taskData.areas.map(area =>
-                                                <Tab.Pane eventKey={area}>
-                                                    <BootstrapTable
-                                                        bootstrap4
-                                                        keyField='id'
-                                                        data={taskData.tasks[area]}
-                                                        columns={columns}
-                                                        bordered={false}
-                                                        classes="light-text"
-                                                        filter={filterFactory()}
-                                                        filterPosition="top"
-                                                        pagination={paginationFactory({
-                                                            pageButtonRenderer,
-                                                            sizePerPage: 20,
-                                                            hideSizePerPage: true,
-                                                            hidePageListOnlyOnePage: true
-                                                        })}
-                                                    />
-                                                </Tab.Pane>
-                                            )}
-                                        </Tab.Content>
-                                    </Col>
-                                </Row>
-                            </Tab.Container>
-                        </div>
-                    </Card>
-                </Tab>
-                <Tab eventKey="todo" title="To-Do List">
-                    <Card bg='dark' text='white' style={{ 'border': '2px solid #6c757d' }}>
-                        <div className="m-3 text-center">
-                            <h3 className="mt-2 light-text text-center">To-Do List</h3>
-                            <BootstrapTable
-                                bootstrap4
-                                keyField='id'
-                                data={tempTaskData.tasks}
-                                columns={todoColumns}
-                                bordered={false}
-                                classes="light-text"
-                                filter={filterFactory()}
-                                filterPosition="top"
-                            />
-                        </div>
-                    </Card>
-                </Tab>
-            </Tabs>
-        </Card>
+        <React.Fragment>
+            <Card bg='dark' text='white' className="mt-3">
+                <Container >
+                    <Row>
+                        <Col className="mt-1 text-center">
+                            <ul>
+                                <li>Easy: 60 / 500 (12%)</li>
+                                <li>Medium: 30 / 300 (10%)</li>
+                                <li>Hard: 5 / 200 (2%)</li>
+                                <li>Elite: 0 / 200 (0%)</li>
+                                <li>Master: 0 / 200 (0%)</li>
+                            </ul>
+                        </Col>
+                        <Col>
+                            <h1 className="m-3 text-center">Tasks Completed: 100 / 1000 (10%)</h1>
+                        </Col>
+                        <Col className="mt-1 text-center">
+                            <ul>
+                                <li>Misthalin: 70 / 250 (28%)</li>
+                                <li>Karamja: 15 / 250 (6%)</li>
+                                <li>Asgarnia: 10 / 250 (4%)</li>
+                                <li>Tirannwn: 5 / 250 (2%)</li>
+                                <li>Fremennik: 0 / 250 (0%)</li>
+                            </ul>
+                        </Col>
+                    </Row>
+                </Container>
+            </Card>
+            <Card bg='dark' text='white' className="mt-3">
+                <Tabs fill defaultActiveKey={"all"} className="tab-bar-secondary" style={{ margin: '0', borderRadius: '.25rem .25rem 0rem 0rem' }}>
+                    <Tab eventKey="all" title="All Tasks">
+                        <Card bg='dark' text='white' style={{ border: '2px solid #6c757d', borderRadius: '0rem 0rem .25rem .25rem' }}>
+                            <div className="m-3 text-center">
+                                <Tab.Container defaultActiveKey="common">
+                                    <Row>
+                                        <Col sm={2}>
+                                            <h5>Areas:</h5>
+                                            <Nav variant="pills" className="flex-column mt-3 tab-bar-secondary">
+                                                {taskData.areas.map(area =>
+                                                    <Nav.Item>
+                                                        <Nav.Link eventKey={area}>{area}</Nav.Link>
+                                                    </Nav.Item>
+                                                )}
+                                            </Nav>
+                                        </Col>
+                                        <Col sm={10}>
+                                            <Tab.Content>
+                                                {taskData.areas.map(area =>
+                                                    <Tab.Pane eventKey={area}>
+                                                        <BootstrapTable
+                                                            bootstrap4
+                                                            keyField='id'
+                                                            data={taskData.tasks[area]}
+                                                            columns={columns}
+                                                            bordered={false}
+                                                            classes="light-text"
+                                                            filter={filterFactory()}
+                                                            filterPosition="top"
+                                                            pagination={paginationFactory({
+                                                                pageButtonRenderer,
+                                                                sizePerPage: 20,
+                                                                hideSizePerPage: true,
+                                                                hidePageListOnlyOnePage: true
+                                                            })}
+                                                        />
+                                                    </Tab.Pane>
+                                                )}
+                                            </Tab.Content>
+                                        </Col>
+                                    </Row>
+                                </Tab.Container>
+                            </div>
+                        </Card>
+                    </Tab>
+                    <Tab eventKey="todo" title="To-Do List">
+                        <Card bg='dark' text='white' style={{ 'border': '2px solid #6c757d' }}>
+                            <div className="m-3 text-center">
+                                <h3 className="mt-2 light-text text-center">To-Do List</h3>
+                                <BootstrapTable
+                                    bootstrap4
+                                    keyField='id'
+                                    data={tempTaskData.tasks}
+                                    columns={todoColumns}
+                                    bordered={false}
+                                    classes="light-text"
+                                    filter={filterFactory()}
+                                    filterPosition="top"
+                                />
+                            </div>
+                        </Card>
+                    </Tab>
+                </Tabs>
+            </Card>
+        </React.Fragment>
     );
 }
 
