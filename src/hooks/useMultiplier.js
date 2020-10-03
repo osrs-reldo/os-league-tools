@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import update from 'immutability-helper';
 
 export default function useMultiplier() {
     const [multipliers, setMultipliers] = useState({});
@@ -6,15 +7,17 @@ export default function useMultiplier() {
 
     const addMultiplier = (id, amount, isGlobal = false) => {
         if (isGlobal) {
-            setGlobalMultipliers(prevState => ({
-                ...prevState,
-                [id]: amount
-            }))
+            setGlobalMultipliers(
+                update(globalMultipliers, {
+                    [id]: { $set: amount }
+                })
+            );
         } else {
-            setMultipliers(prevState => ({
-                ...prevState,
-                [id]: amount
-            }))
+            setMultipliers(
+                update(globalMultipliers, {
+                    [id]: { $set: amount }
+                })
+            );
         }
     }
 

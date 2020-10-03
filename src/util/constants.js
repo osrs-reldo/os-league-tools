@@ -10,10 +10,3 @@ export const MAP_AREAS = [
     "Wilderness",
     "Zeah"
 ];
-
-export const LOCALSTORAGE_KEYS = {
-    USERNAME: 'username',
-    UNLOCKED_RELICS: 'unlockedRelics',
-    TOTAL_POINTS: 'totalPoints',
-    TASKS: 'tasks'
-}
