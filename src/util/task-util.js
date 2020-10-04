@@ -1,7 +1,11 @@
 import React from "react";
-import { Form } from "react-bootstrap";
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../util/browser-util'
 import update from 'immutability-helper';
+import { InlineIcon } from '@iconify/react';
+import addToListIcon from '@iconify/icons-mdi/text-box-plus-outline';
+import removeFromListIcon from '@iconify/icons-mdi/text-box-remove-outline';
+import checkedIcon from '@iconify/icons-mdi/check-circle-outline';
+import uncheckedIcon from '@iconify/icons-mdi/checkbox-blank-circle-outline';
 
 export const INITIAL_TASKS_STATE = {
     points: 0,
@@ -35,6 +39,8 @@ export function getFormatters() {
     return {
         completedFormatter: completedFormatter,
         pointsFormatter: pointsFormatter,
+        todoFormatter: todoFormatter,
+        nameFormatter: nameFormatter,
     }
 }
 
@@ -45,13 +51,18 @@ export function getRenderers() {
 }
 
 function completedFormatter(cell, row, rowIndex, props) {
+    const isComplete = isTaskComplete(row.id, props.area, props.taskStatus);
+    if (isComplete) {
+        return (
+            <div className='clickable completed' onClick={() => props.updateTaskCallback(false, row.id, row.difficulty)}>
+                <InlineIcon icon={checkedIcon} height='1.25rem' />
+            </div>
+        );
+    }
     return (
-        <Form.Check
-            checked={isTaskComplete(row.id, props.area, props.taskStatus)}
-            onChange={(event) => {
-                props.updateTaskCallback(event.target.checked, row.id, row.difficulty);
-            }}
-        />
+        <div className='clickable' onClick={() => props.updateTaskCallback(true, row.id, row.difficulty)}>
+            <InlineIcon icon={uncheckedIcon} height='1.25rem' />
+        </div>
     );
 }
 
@@ -61,6 +72,31 @@ function pointsFormatter(cell, row, rowIndex) {
         return 0;
     }
     return points;
+}
+
+function nameFormatter(cell, row, rowIndex, props) {
+    if (isTaskComplete(row.id, props.area, props.taskStatus)) {
+        return <div className='completed'>{cell}</div>
+    }
+    return <div>{cell}</div>;
+}
+
+function todoFormatter(cell, row, rowIndex, props) {
+    const isOnTodoList = isTaskOnTodoList(row.id, props.area, props.taskStatus);
+    if (isOnTodoList) {
+        return (
+            <div className='clickable' onClick={() => props.updateTaskCallback(false, row.id)}>
+                <InlineIcon icon={removeFromListIcon} />{' '}
+                Remove
+            </div>
+        );
+    }
+    return (
+        <div className='clickable' onClick={() => props.updateTaskCallback(true, row.id)}>
+            <InlineIcon icon={addToListIcon} />{' '}
+            Add
+        </div>
+    );
 }
 
 function pageButtonRenderer({ page, active, disable, title, onPageChange }) {
@@ -112,7 +148,29 @@ export function immutablyUpdateTaskCompletion(isCompleted, taskId, area, difficu
     return updatedStatus;
 }
 
+export function immutablyUpdateTaskTodoList(isOnTodoList, taskId, area, taskState, setTaskTodoCallback = () => { }) {
+    const taskStatus = taskState ? taskState : getFromLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE);
+
+    const updatedStatus = update(taskStatus, {
+        [area]: {
+            tasks: {
+                [taskId]: prevTaskState =>
+                    update(prevTaskState || INITIAL_TASK_STATE,
+                        { todoList: { $set: isOnTodoList } }
+                    )
+            }
+        }
+    });
+    setTaskTodoCallback(updatedStatus);
+    return updatedStatus;
+}
+
 export function isTaskComplete(taskId, area, taskState) {
     const taskStatus = taskState ? taskState : getFromLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE);
     return taskStatus[area]['tasks'][taskId] && taskStatus[area]['tasks'][taskId].complete;
+}
+
+export function isTaskOnTodoList(taskId, area, taskState) {
+    const taskStatus = taskState ? taskState : getFromLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE);
+    return taskStatus[area]['tasks'][taskId] && taskStatus[area]['tasks'][taskId].todoList;
 }

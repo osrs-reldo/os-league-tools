@@ -36,6 +36,15 @@ code {
   margin-right: auto;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #99b83d;
+}
+
 ul.calc-list {
   list-style-type: none;
   columns: 3;

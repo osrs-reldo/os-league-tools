@@ -1,16 +1,20 @@
 import React from "react";
 import { Card, Container, Row, Col, Tabs, Tab, Nav } from "react-bootstrap";
 import taskData from '../resources/taskData.json';
+import { isTaskOnTodoList } from "../util/task-util";
 import TaskTable from "./TaskTable";
 
 export default function TaskTracker({ taskStatus, updateTaskStatusCallback }) {
+    const todoListFilter = (task, area) => {
+        return isTaskOnTodoList(task.id, area, taskStatus);
+    }
     return (
         <React.Fragment>
             <Card bg='dark' text='white' className="mt-3">
                 <Container >
                     <Row>
                         <Col className="mt-1 text-center">
-                            <ul>
+                            <ul style={{ listStyleType: 'none' }} >
                                 {taskData.difficulties.map(difficultyJson => {
                                     const numComplete = taskStatus.taskCount[difficultyJson.value];
                                     const totalTasks = taskData.taskCounts.byDifficulty[difficultyJson.value];
@@ -32,7 +36,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback }) {
                             </h1>
                         </Col>
                         <Col className="mt-1 text-center">
-                            <ul>
+                            <ul style={{ listStyleType: 'none' }} >
                                 {/* TODO update these to real values when region unlocking feature is ready */}
                                 <li>Misthalin: 70 / 250 (28%)</li>
                                 <li>Karamja: 15 / 250 (6%)</li>
@@ -50,7 +54,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback }) {
                         <TaskTableWrapper taskStatus={taskStatus} updateTaskStatusCallback={updateTaskStatusCallback} />
                     </Tab>
                     <Tab eventKey="todo" title="To-Do List">
-                        <TaskTableWrapper taskStatus={taskStatus} updateTaskStatusCallback={updateTaskStatusCallback} />
+                        <TaskTableWrapper taskStatus={taskStatus} updateTaskStatusCallback={updateTaskStatusCallback} taskFilter={todoListFilter} />
                     </Tab>
                 </Tabs>
             </Card>
@@ -58,7 +62,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback }) {
     );
 }
 
-function TaskTableWrapper({ taskStatus, updateTaskStatusCallback }) {
+function TaskTableWrapper({ taskStatus, updateTaskStatusCallback, taskFilter }) {
     return (
         <Card bg='dark' text='white' style={{ border: '2px solid #6c757d', borderRadius: '0rem 0rem .25rem .25rem' }}>
             <div className="m-3 text-center">
@@ -78,7 +82,7 @@ function TaskTableWrapper({ taskStatus, updateTaskStatusCallback }) {
                             <Tab.Content>
                                 {taskData.areas.map(area =>
                                     <Tab.Pane key={area} eventKey={area}>
-                                        <TaskTable area={area} taskStatus={taskStatus} updateTaskStatusCallback={updateTaskStatusCallback} />
+                                        <TaskTable area={area} taskStatus={taskStatus} updateTaskStatusCallback={updateTaskStatusCallback} taskFilter={taskFilter} />
                                     </Tab.Pane>
                                 )}
                             </Tab.Content>
