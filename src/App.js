@@ -11,17 +11,17 @@ import Calculator from "./pages/SkillCalculator";
 import CharacterTracker from "./pages/CharacterTracker";
 
 export default function App(props) {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <TopNav />
-        <Switch>
-          <Route exact path="/" component={Homepage} />
-          <Route path="/tracker" component={CharacterTracker} />
-          <Route exact path="/calculators" component={Calculators} />
-          <Route path="/calculators/:skill" component={Calculator} />
-        </Switch>
-      </BrowserRouter>
-    </div>
-  );
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <TopNav />
+                <Switch>
+                    <Route exact path="/" component={Homepage} />
+                    <Route path="/tracker" component={CharacterTracker} />
+                    <Route exact path="/calculators" component={Calculators} />
+                    <Route path="/calculators/:skill" component={Calculator} />
+                </Switch>
+            </BrowserRouter>
+        </div>
+    );
 }
