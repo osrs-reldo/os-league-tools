@@ -2,23 +2,23 @@
     "difficulties": [
         {
             "value": "easy",
-            "label": "easy"
+            "label": "Easy"
         },
         {
             "value": "medium",
-            "label": "medium"
+            "label": "Medium"
         },
         {
             "value": "hard",
-            "label": "hard"
+            "label": "Hard"
         },
         {
             "value": "elite",
-            "label": "elite"
+            "label": "Elite"
         },
         {
             "value": "master",
-            "label": "master"
+            "label": "Master"
         }
     ],
     "skills": [
@@ -145,6 +145,28 @@
         "tirannwn",
         "wilderness"
     ],
+    "taskCounts": {
+        "total": 14,
+        "byArea": {
+            "common": 6,
+            "asgarnia": 0,
+            "desert": 0,
+            "fremennik": 0,
+            "kandarin": 0,
+            "karamja": 0,
+            "misthalin": 8,
+            "morytania": 0,
+            "tirannwn": 0,
+            "wilderness": 0
+        },
+        "byDifficulty": {
+            "easy": 6,
+            "medium": 4,
+            "hard": 3,
+            "elite": 1,
+            "master": 1
+        }
+    },
     "tasks": {
         "common": [
             {

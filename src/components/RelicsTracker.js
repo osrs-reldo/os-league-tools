@@ -8,10 +8,9 @@ import { getRelicKey, MAX_POINTS, RELIC_UNLOCKS, unlockRelicInState, lockRelicIn
 import useLocalStorage from "../hooks/useLocalStorage";
 import { LOCALSTORAGE_KEYS } from '../util/browser-util';
 
-export default function RelicsTracker() {
+export default function RelicsTracker({ totalPoints }) {
     const [selectedRelic, setSelectedRelic] = useState();
     const [unlockedRelics, setUnlockedRelics] = useLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_RELICS, {});
-    const [totalPoints] = useLocalStorage(LOCALSTORAGE_KEYS.TOTAL_POINTS, 0);
 
     return (
         <Card bg='dark' text='white' className="mt-3">
