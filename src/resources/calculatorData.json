@@ -47933,12 +47933,12 @@
             "isCombatSkill": false,
             "categories": [
                 {
-                    "value": "Trees ",
-                    "label": "Trees "
+                    "value": "Trees",
+                    "label": "Trees"
                 },
                 {
-                    "value": "Tai Bwo Wannai ",
-                    "label": "Tai Bwo Wannai "
+                    "value": "Tai Bwo Wannai",
+                    "label": "Tai Bwo Wannai"
                 }
             ],
             "expMultipliers": [
