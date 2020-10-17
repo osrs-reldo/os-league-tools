@@ -174,3 +174,11 @@ export function isTaskOnTodoList(taskId, area, taskState) {
     const taskStatus = taskState ? taskState : getFromLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE);
     return taskStatus[area]['tasks'][taskId] && taskStatus[area]['tasks'][taskId].todoList;
 }
+
+export function applyFilters(tasks, area, filterFunctions) {
+    return tasks.filter(task => {
+        let status = true;
+        filterFunctions.forEach(filterFunction => status = status && filterFunction(task, area));
+        return status;
+    });
+}

@@ -3,9 +3,9 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import taskData from '../resources/taskData.json';
-import { getFormatters, getRenderers, immutablyUpdateTaskCompletion, immutablyUpdateTaskTodoList } from "../util/task-util";
+import { applyFilters, getFormatters, getRenderers, immutablyUpdateTaskCompletion, immutablyUpdateTaskTodoList } from "../util/task-util";
 
-export default function TaskTable({ area, taskStatus, updateTaskStatusCallback, taskFilter = () => { return true; } }) {
+export default function TaskTable({ area, taskStatus, updateTaskStatusCallback, taskFilters }) {
     const { completedFormatter, pointsFormatter, todoFormatter, nameFormatter } = getFormatters();
 
     const setTaskCompletion = (isComplete, taskId, difficulty) => {
@@ -39,6 +39,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatusCallback, 
             "isDummyField": true,
             "headerStyle": { width: '6rem' },
             "formatter": pointsFormatter,
+            "sortValue": pointsFormatter,
             "sort": true
         },
         {
@@ -86,7 +87,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatusCallback, 
         <BootstrapTable
             bootstrap4
             keyField='id'
-            data={applyFilter(taskData.tasks[area], area, taskFilter)}
+            data={taskFilters ? applyFilters(taskData.tasks[area], area, taskFilters) : taskData.tasks[area]}
             columns={columns}
             bordered={false}
             classes="light-text"
@@ -100,8 +101,4 @@ export default function TaskTable({ area, taskStatus, updateTaskStatusCallback, 
             })}
         />
     );
-}
-
-function applyFilter(tasks, area, filterFunction) {
-    return tasks.filter(task => filterFunction(task, area));
 }

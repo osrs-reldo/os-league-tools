@@ -1,7 +1,7 @@
-import React from "react";
-import { Card, Container, Row, Col, Tabs, Tab, Nav } from "react-bootstrap";
+import React, { useState } from "react";
+import { Card, Container, Row, Col, Tabs, Tab, Nav, Form } from "react-bootstrap";
 import taskData from '../resources/taskData.json';
-import { isTaskOnTodoList } from "../util/task-util";
+import { isTaskComplete, isTaskOnTodoList } from "../util/task-util";
 import TaskTable from "./TaskTable";
 
 export default function TaskTracker({ taskStatus, updateTaskStatusCallback }) {
@@ -51,10 +51,17 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback }) {
             <Card bg='dark' text='white' className="mt-3">
                 <Tabs fill defaultActiveKey={"all"} className="tab-bar-secondary" style={{ margin: '0', borderRadius: '.25rem .25rem 0rem 0rem' }}>
                     <Tab eventKey="all" title="All Tasks">
-                        <TaskTableWrapper taskStatus={taskStatus} updateTaskStatusCallback={updateTaskStatusCallback} />
+                        <TaskTableWrapper
+                            taskStatus={taskStatus}
+                            updateTaskStatusCallback={updateTaskStatusCallback}
+                        />
                     </Tab>
                     <Tab eventKey="todo" title="To-Do List">
-                        <TaskTableWrapper taskStatus={taskStatus} updateTaskStatusCallback={updateTaskStatusCallback} taskFilter={todoListFilter} />
+                        <TaskTableWrapper
+                            taskStatus={taskStatus}
+                            updateTaskStatusCallback={updateTaskStatusCallback}
+                            taskFilters={[todoListFilter]}
+                        />
                     </Tab>
                 </Tabs>
             </Card>
@@ -62,13 +69,30 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback }) {
     );
 }
 
-function TaskTableWrapper({ taskStatus, updateTaskStatusCallback, taskFilter }) {
+function TaskTableWrapper({ taskStatus, updateTaskStatusCallback, taskFilters = [] }) {
+    const [showCompleted, setShowCompleted] = useState(true);
+
+    const hideCompletedFilter = (task, area) => {
+        return !isTaskComplete(task.id, area, taskStatus);
+    }
+
+    let allFilters = [...taskFilters];
+    if (!showCompleted) {
+        allFilters.push(hideCompletedFilter);
+    }
+
     return (
         <Card bg='dark' text='white' style={{ border: '2px solid #6c757d', borderRadius: '0rem 0rem .25rem .25rem' }}>
             <div className="m-3 text-center">
                 <Tab.Container defaultActiveKey="common">
                     <Row>
                         <Col sm={2}>
+                            <Form.Check
+                                label="Show completed tasks"
+                                checked={showCompleted}
+                                onChange={() => setShowCompleted(prevShowCompleted => !prevShowCompleted)}
+                            />
+                            <div className="mt-2 mb-2" style={{borderTop: '0.5px solid', width: '100%'}} />
                             <h5>Areas:</h5>
                             <Nav variant="pills" className="flex-column mt-3 tab-bar-secondary">
                                 {taskData.areas.map(area =>
@@ -82,7 +106,7 @@ function TaskTableWrapper({ taskStatus, updateTaskStatusCallback, taskFilter }) 
                             <Tab.Content>
                                 {taskData.areas.map(area =>
                                     <Tab.Pane key={area} eventKey={area}>
-                                        <TaskTable area={area} taskStatus={taskStatus} updateTaskStatusCallback={updateTaskStatusCallback} taskFilter={taskFilter} />
+                                        <TaskTable area={area} taskStatus={taskStatus} updateTaskStatusCallback={updateTaskStatusCallback} taskFilters={allFilters} />
                                     </Tab.Pane>
                                 )}
                             </Tab.Content>
