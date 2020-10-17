@@ -75,6 +75,7 @@ export default function SkillCalculator(props) {
             "isDummyField": true,
             "sort": true,
             "formatter": amountFormatter,
+            "sortValue": (cell, row) => row.exp,
             "formatExtraData": { "current": currentLevel.exp, "target": targetLevel.exp, "expMultiplier": expMultiplier },
             "headerStyle": { width: '10%' }
         },
