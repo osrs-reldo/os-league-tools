@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Tabs, Tab } from "react-bootstrap";
+import RegionsTracker from "../components/RegionsTracker";
 import RelicsTracker from "../components/RelicsTracker";
 import TaskTracker from "../components/TaskTracker";
 import useLocalStorage from "../hooks/useLocalStorage";
@@ -26,11 +27,7 @@ export default function CharacterTracker() {
                     <RelicsTracker totalPoints={taskStatus.points} />
                 </Tab>
                 <Tab eventKey="regions" title="Regions">
-                    <Card bg='dark' text='white' className="mt-3">
-                        <div className="m-3 text-center">
-                            TODO
-                        </div>
-                    </Card>
+                    <RegionsTracker totalTasks={taskStatus.taskCount.total} />
                 </Tab>
                 <Tab eventKey="tasks" title="Tasks">
                     <TaskTracker taskStatus={taskStatus} updateTaskStatusCallback={setTaskStatus} />
