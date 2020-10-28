@@ -20,14 +20,14 @@ export default function RegionMap({ unlockedRegions }) {
         <Card bg='dark' style={{ maxWidth: MAX_WIDTH, border: '0px' }}>
             <Image fluid src={Map} alt='' style={{ ...mapImgStyle, position: 'relative', zIndex: 1 }} />
             <Image fluid src={MapMisthalin} alt='' style={mapImgStyle} />
-            {isRegionUnlocked('asgarnia') && <Image fluid src={MapAsgarnia} alt='' style={mapImgStyle} />}
-            {isRegionUnlocked('desert') && <Image fluid src={MapDesert} alt='' style={mapImgStyle} />}
-            {isRegionUnlocked('fremennik') && <Image fluid src={MapFremennik} alt='' style={mapImgStyle} />}
-            {isRegionUnlocked('kandarin') && <Image fluid src={MapKandarin} alt='' style={mapImgStyle} />}
-            {isRegionUnlocked('karamja') && <Image fluid src={MapKaramja} alt='' style={mapImgStyle} />}
-            {isRegionUnlocked('morytania') && <Image fluid src={MapMorytania} alt='' style={mapImgStyle} />}
-            {isRegionUnlocked('tirannwn') && <Image fluid src={MapTirannwn} alt='' style={mapImgStyle} />}
-            {isRegionUnlocked('wilderness') && <Image fluid src={MapWilderness} alt='' style={mapImgStyle} />}
+            <Image fluid src={MapKaramja} alt='' style={mapImgStyle} />
+            {isRegionUnlocked('Asgarnia', unlockedRegions) && <Image fluid src={MapAsgarnia} alt='' style={mapImgStyle} />}
+            {isRegionUnlocked('Desert', unlockedRegions) && <Image fluid src={MapDesert} alt='' style={mapImgStyle} />}
+            {isRegionUnlocked('Fremennik', unlockedRegions) && <Image fluid src={MapFremennik} alt='' style={mapImgStyle} />}
+            {isRegionUnlocked('Kandarin', unlockedRegions) && <Image fluid src={MapKandarin} alt='' style={mapImgStyle} />}
+            {isRegionUnlocked('Morytania', unlockedRegions) && <Image fluid src={MapMorytania} alt='' style={mapImgStyle} />}
+            {isRegionUnlocked('Tirannwn', unlockedRegions) && <Image fluid src={MapTirannwn} alt='' style={mapImgStyle} />}
+            {isRegionUnlocked('Wilderness', unlockedRegions) && <Image fluid src={MapWilderness} alt='' style={mapImgStyle} />}
         </Card>
     );
 }

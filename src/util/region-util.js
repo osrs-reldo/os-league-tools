@@ -11,8 +11,8 @@ export const REGIONS = [
     "Tirannwn",
     "Wilderness",
 ];
+export const INITIAL_REGIONS_STATE = ["Misthalin", "Karamja"]
 
-export function isRegionUnlocked(region) {
-    // TODO placeholder
-    return ['misthalin', 'karamja', 'tirannwn', 'fremennik', 'kandarin'].includes(region);
+export function isRegionUnlocked(region, unlockedRegions) {
+    return unlockedRegions.includes(region);
 }

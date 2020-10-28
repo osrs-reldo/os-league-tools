@@ -1,6 +1,7 @@
 export const LOCALSTORAGE_KEYS = {
     USERNAME: 'username',
     UNLOCKED_RELICS: 'unlockedRelics',
+    UNLOCKED_REGIONS: 'unlockedRegions',
     TASKS: 'tasks'
 }
 
