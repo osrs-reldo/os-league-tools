@@ -3,11 +3,14 @@ import { Card, Container, Row, Col, Tabs, Tab, Nav, Form } from "react-bootstrap
 import taskData from '../resources/taskData.json';
 import { isTaskComplete, isTaskOnTodoList } from "../util/task-util";
 import TaskTable from "./TaskTable";
+import { INITIAL_REGIONS_STATE } from '../util/region-util';
 
-export default function TaskTracker({ taskStatus, updateTaskStatusCallback }) {
+export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlockedRegions = INITIAL_REGIONS_STATE }) {
+    const regionsToShow = [ 'Common', ...unlockedRegions ]
     const todoListFilter = (task, area) => {
         return isTaskOnTodoList(task.id, area, taskStatus);
     }
+
     return (
         <React.Fragment>
             <Card bg='dark' text='white' className="mt-3">
@@ -37,12 +40,16 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback }) {
                         </Col>
                         <Col className="mt-1 text-center">
                             <ul style={{ listStyleType: 'none' }} >
-                                {/* TODO update these to real values when region unlocking feature is ready */}
-                                <li>Misthalin: 70 / 250 (28%)</li>
-                                <li>Karamja: 15 / 250 (6%)</li>
-                                <li>Asgarnia: 10 / 250 (4%)</li>
-                                <li>Tirannwn: 5 / 250 (2%)</li>
-                                <li>Fremennik: 0 / 250 (0%)</li>
+                                {regionsToShow.map(region => {
+                                    const numComplete = taskStatus[region].taskCount;
+                                    const totalTasks = taskData.taskCounts.byArea[region];
+                                    const percentage = Math.round((numComplete / totalTasks) * 100);
+                                    return (
+                                        <li key={region}>
+                                            {`${region}: ${numComplete} / ${totalTasks} (${percentage}%)`}
+                                        </li>
+                                    );
+                                })}
                             </ul>
                         </Col>
                     </Row>
@@ -54,12 +61,14 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback }) {
                         <TaskTableWrapper
                             taskStatus={taskStatus}
                             updateTaskStatusCallback={updateTaskStatusCallback}
+                            unlockedRegions={regionsToShow}
                         />
                     </Tab>
                     <Tab eventKey="todo" title="To-Do List">
                         <TaskTableWrapper
                             taskStatus={taskStatus}
                             updateTaskStatusCallback={updateTaskStatusCallback}
+                            unlockedRegions={regionsToShow}
                             taskFilters={[todoListFilter]}
                         />
                     </Tab>
@@ -69,8 +78,9 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback }) {
     );
 }
 
-function TaskTableWrapper({ taskStatus, updateTaskStatusCallback, taskFilters = [] }) {
+function TaskTableWrapper({ taskStatus, updateTaskStatusCallback, unlockedRegions, taskFilters = [] }) {
     const [showCompleted, setShowCompleted] = useState(true);
+    const [hideLockedAreas, setHideLockedAreas] = useState(true);
 
     const hideCompletedFilter = (task, area) => {
         return !isTaskComplete(task.id, area, taskStatus);
@@ -84,7 +94,7 @@ function TaskTableWrapper({ taskStatus, updateTaskStatusCallback, taskFilters = 
     return (
         <Card bg='dark' text='white' style={{ border: '2px solid #6c757d', borderRadius: '0rem 0rem .25rem .25rem' }}>
             <div className="m-3 text-center">
-                <Tab.Container defaultActiveKey="common">
+                <Tab.Container defaultActiveKey="Common">
                     <Row>
                         <Col sm={2}>
                             <Form.Check
@@ -92,14 +102,27 @@ function TaskTableWrapper({ taskStatus, updateTaskStatusCallback, taskFilters = 
                                 checked={showCompleted}
                                 onChange={() => setShowCompleted(prevShowCompleted => !prevShowCompleted)}
                             />
+                            <Form.Check
+                                label="Hide locked areas"
+                                checked={hideLockedAreas}
+                                onChange={() => setHideLockedAreas(prevHideLocked => !prevHideLocked)}
+                            />
                             <div className="mt-2 mb-2" style={{borderTop: '0.5px solid', width: '100%'}} />
                             <h5>Areas:</h5>
                             <Nav variant="pills" className="flex-column mt-3 tab-bar-secondary">
-                                {taskData.areas.map(area =>
-                                    <Nav.Item key={area}>
-                                        <Nav.Link eventKey={area}>{area}</Nav.Link>
-                                    </Nav.Item>
-                                )}
+                                {hideLockedAreas ?
+                                    unlockedRegions.map(area =>
+                                        <Nav.Item key={area}>
+                                            <Nav.Link eventKey={area}>{area}</Nav.Link>
+                                        </Nav.Item>
+                                    )
+                                :
+                                    taskData.areas.map(area =>
+                                        <Nav.Item key={area}>
+                                            <Nav.Link eventKey={area}>{area}</Nav.Link>
+                                        </Nav.Item>
+                                    )
+                                }
                             </Nav>
                         </Col>
                         <Col sm={10}>

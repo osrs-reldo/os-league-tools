@@ -7,10 +7,12 @@ import useLocalStorage from "../hooks/useLocalStorage";
 import useQueryString from "../hooks/useQueryString";
 import { LOCALSTORAGE_KEYS } from "../util/browser-util";
 import { INITIAL_TASKS_STATE } from "../util/task-util";
+import { INITIAL_REGIONS_STATE } from '../util/region-util';
 
 export default function CharacterTracker() {
     const [selectedTab, onSetSelectedTab] = useQueryString('tab');
     const [taskStatus, setTaskStatus] = useLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE);
+    const [unlockedRegions, setUnlockedRegions, refreshRegionState] = useLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_REGIONS, INITIAL_REGIONS_STATE);
 
     return (
         <div className="content-wrapper mb-4">
@@ -27,10 +29,19 @@ export default function CharacterTracker() {
                     <RelicsTracker totalPoints={taskStatus.points} />
                 </Tab>
                 <Tab eventKey="regions" title="Regions">
-                    <RegionsTracker totalTasks={taskStatus.taskCount.total} />
+                    <RegionsTracker
+                        totalTasks={taskStatus.taskCount.total}
+                        unlockedRegions={unlockedRegions}
+                        setUnlockedRegionsCallback={setUnlockedRegions}
+                        refreshRegionState={refreshRegionState}
+                    />
                 </Tab>
                 <Tab eventKey="tasks" title="Tasks">
-                    <TaskTracker taskStatus={taskStatus} updateTaskStatusCallback={setTaskStatus} />
+                    <TaskTracker
+                        taskStatus={taskStatus}
+                        updateTaskStatusCallback={setTaskStatus}
+                        unlockedRegions={unlockedRegions}
+                    />
                 </Tab>
             </Tabs>
         </div >

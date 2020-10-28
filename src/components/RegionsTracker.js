@@ -5,13 +5,10 @@ import RelicCheckImg from '../resources/img/relic-check.png';
 import { MAX_TASKS, REGIONS, REGION_UNLOCKS, isRegionUnlocked, INITIAL_REGIONS_STATE } from '../util/region-util';
 import RegionMap from "./RegionMap";
 import regionsData from '../resources/regionsData.json';
-import useLocalStorage from "../hooks/useLocalStorage";
-import { LOCALSTORAGE_KEYS } from "../util/browser-util";
 import _ from 'lodash';
 
-export default function RegionsTracker({totalTasks}) {
+export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlockedRegionsCallback, refreshRegionState }) {
     const [selectedRegion, setSelectedRegion] = useState("Misthalin");
-    const [unlockedRegions, setUnlockedRegions, refreshRegionState] = useLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_REGIONS, INITIAL_REGIONS_STATE);
 
     return (
         <React.Fragment>
@@ -64,14 +61,14 @@ export default function RegionsTracker({totalTasks}) {
                                         <Button
                                             variant='outline-light'
                                             onClick={() => {
-                                                setUnlockedRegions(prevState => _.pull(prevState, selectedRegion));
+                                                setUnlockedRegionsCallback(prevState => _.pull(prevState, selectedRegion));
                                                 refreshRegionState();
                                             }}
                                         >
                                             Re-lock this region
                                         </Button>
                                         :
-                                        <Button variant='light' onClick={() => setUnlockedRegions(prevState => [...prevState, selectedRegion])}>
+                                        <Button variant='light' onClick={() => setUnlockedRegionsCallback(prevState => [...prevState, selectedRegion])}>
                                             Unlock this region
                                         </Button>
                                     )

@@ -10,16 +10,16 @@ import uncheckedIcon from '@iconify/icons-mdi/checkbox-blank-circle-outline';
 export const INITIAL_TASKS_STATE = {
     points: 0,
     taskCount: { total: 0, easy: 0, medium: 0, hard: 0, elite: 0, master: 0, },
-    common: { points: 0, taskCount: 0, tasks: {} },
-    asgarnia: { points: 0, taskCount: 0, tasks: {} },
-    desert: { points: 0, taskCount: 0, tasks: {} },
-    fremennik: { points: 0, taskCount: 0, tasks: {} },
-    kandarin: { points: 0, taskCount: 0, tasks: {} },
-    karamja: { points: 0, taskCount: 0, tasks: {} },
-    misthalin: { points: 0, taskCount: 0, tasks: {} },
-    morytania: { points: 0, taskCount: 0, tasks: {} },
-    tirannwn: { points: 0, taskCount: 0, tasks: {} },
-    wilderness: { points: 0, taskCount: 0, tasks: {} },
+    Common: { points: 0, taskCount: 0, tasks: {} },
+    Asgarnia: { points: 0, taskCount: 0, tasks: {} },
+    Desert: { points: 0, taskCount: 0, tasks: {} },
+    Fremennik: { points: 0, taskCount: 0, tasks: {} },
+    Kandarin: { points: 0, taskCount: 0, tasks: {} },
+    Karamja: { points: 0, taskCount: 0, tasks: {} },
+    Misthalin: { points: 0, taskCount: 0, tasks: {} },
+    Morytania: { points: 0, taskCount: 0, tasks: {} },
+    Tirannwn: { points: 0, taskCount: 0, tasks: {} },
+    Wilderness: { points: 0, taskCount: 0, tasks: {} },
 }
 
 const INITIAL_TASK_STATE = {

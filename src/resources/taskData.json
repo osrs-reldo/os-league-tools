@@ -134,30 +134,30 @@
         }
     ],
     "areas": [
-        "common",
-        "asgarnia",
-        "desert",
-        "fremennik",
-        "kandarin",
-        "karamja",
-        "misthalin",
-        "morytania",
-        "tirannwn",
-        "wilderness"
+        "Common",
+        "Asgarnia",
+        "Desert",
+        "Fremennik",
+        "Kandarin",
+        "Karamja",
+        "Misthalin",
+        "Morytania",
+        "Tirannwn",
+        "Wilderness"
     ],
     "taskCounts": {
         "total": 14,
         "byArea": {
-            "common": 6,
-            "asgarnia": 0,
-            "desert": 0,
-            "fremennik": 0,
-            "kandarin": 0,
-            "karamja": 0,
-            "misthalin": 8,
-            "morytania": 0,
-            "tirannwn": 0,
-            "wilderness": 0
+            "Common": 6,
+            "Asgarnia": 1,
+            "Desert": 1,
+            "Fremennik": 1,
+            "Kandarin": 1,
+            "Karamja": 1,
+            "Misthalin": 8,
+            "Morytania": 1,
+            "Tirannwn": 1,
+            "Wilderness": 1
         },
         "byDifficulty": {
             "easy": 6,
@@ -168,7 +168,7 @@
         }
     },
     "tasks": {
-        "common": [
+        "Common": [
             {
                 "id": 0,
                 "name": "Catch 100 lobsters",
@@ -212,12 +212,12 @@
                 "category": "skilling"
             }
         ],
-        "asgarnia": [],
-        "desert": [],
-        "fremennik": [],
-        "kandarin": [],
-        "karamja": [],
-        "misthalin": [
+        "Asgarnia": [],
+        "Desert": [],
+        "Fremennik": [],
+        "Kandarin": [],
+        "Karamja": [],
+        "Misthalin": [
             {
                 "id": 6,
                 "name": "Enter the cooking guild",
@@ -275,8 +275,8 @@
                 "category": "combat"
             }
         ],
-        "morytania": [],
-        "tirannwn": [],
-        "wilderness": []
+        "Morytania": [],
+        "Tirannwn": [],
+        "Wilderness": []
     }
 }
