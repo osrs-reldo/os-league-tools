@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Tabs, Tab } from "react-bootstrap";
+import { Tabs, Tab } from "react-bootstrap";
 import RegionsTracker from "../components/RegionsTracker";
 import RelicsTracker from "../components/RelicsTracker";
 import TaskTracker from "../components/TaskTracker";
@@ -18,13 +18,13 @@ export default function CharacterTracker() {
         <div className="content-wrapper mb-4">
             <h1 className="mt-2 light-text text-center">Character Tracker</h1>
             <Tabs fill variant="pills" defaultActiveKey={selectedTab} className="mt-3 tab-bar-dark" onSelect={onSetSelectedTab}>
-                <Tab eventKey="overview" title="Character Overview">
+                {/* <Tab eventKey="overview" title="Character Overview">
                     <Card bg='dark' text='white' className="mt-3">
                         <div className="m-3 text-center">
                             TODO
                         </div>
                     </Card>
-                </Tab>
+                </Tab> */}
                 <Tab eventKey="relics" title="Relics">
                     <RelicsTracker totalPoints={taskStatus.points} />
                 </Tab>

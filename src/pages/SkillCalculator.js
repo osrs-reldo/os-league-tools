@@ -8,7 +8,6 @@ import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-
 import calculatorData from '../resources/calculatorData.json';
 import MultiplierGroup from "../components/MultiplierGroup";
 import LevelExpInput from "../components/LevelExpInput";
-import HiscoreLookup from "../components/HiscoreLookup";
 import useLevel from "../hooks/useLevel";
 import useMultiplier from "../hooks/useMultiplier";
 import { isRelicUnlocked } from "../util/relic-util";
@@ -141,10 +140,11 @@ export default function SkillCalculator(props) {
                 }
                 <Card bg='dark' text='white' >
                     <h4 className="pt-3 pl-3">Level/Experience:</h4>
+                    {/* TODO
                     <HiscoreLookup
                         setLevelCallback={currentLevel.updateByLevel}
                         setExpCallback={currentLevel.updateByExp}
-                    />
+                    /> */}
                     <LevelExpInput
                         title="Current"
                         level={currentLevel.level}

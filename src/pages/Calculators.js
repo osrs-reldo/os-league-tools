@@ -30,14 +30,14 @@ export default function Calculators() {
                 <Card bg='dark' text='white' style={{ margin: '1rem' }} >
                     <h1 className="mt-2 light-text text-center">Skill Planners</h1>
                     <div className="m-3 text-center">
-                        None yet
+                        Coming soon!
                 </div>
                 </Card>
             </CardDeck>
             <Card bg='dark' text='white'>
                 <h1 className="mt-2 light-text text-center">Other Calculators</h1>
                 <div className="m-3 text-center">
-                    None yet
+                    Coming soon!
                 </div>
             </Card>
         </div >
