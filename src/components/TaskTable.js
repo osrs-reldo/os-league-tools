@@ -53,16 +53,6 @@ export default function TaskTable({ area, taskStatus, updateTaskStatusCallback, 
             })
         },
         {
-            "dataField": "skill",
-            "text": "Skill",
-            "headerStyle": { width: '10rem' },
-            "sort": true,
-            "filter": selectFilter({
-                "placeholder": "(all)",
-                "options": taskData.skills
-            })
-        },
-        {
             "dataField": "category",
             "text": "Category",
             "headerStyle": { width: '10rem' },

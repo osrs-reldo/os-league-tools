@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Card, Container, Row, Col, Tabs, Tab, Nav, Form } from "react-bootstrap";
 import taskData from '../resources/taskData.json';
-import { isTaskComplete, isTaskOnTodoList } from "../util/task-util";
+import { getMaxCompletableTasks, isTaskComplete, isTaskOnTodoList } from "../util/task-util";
 import TaskTable from "./TaskTable";
 import { INITIAL_REGIONS_STATE } from '../util/region-util';
 
 export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlockedRegions = INITIAL_REGIONS_STATE }) {
     const regionsToShow = [ 'Common', ...unlockedRegions ]
+    const maxCompletableTasks = getMaxCompletableTasks(unlockedRegions);
     const todoListFilter = (task, area) => {
         return isTaskOnTodoList(task.id, area, taskStatus);
     }
@@ -20,7 +21,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
                             <ul style={{ listStyleType: 'none' }} >
                                 {taskData.difficulties.map(difficultyJson => {
                                     const numComplete = taskStatus.taskCount[difficultyJson.value];
-                                    const totalTasks = taskData.taskCounts.byDifficulty[difficultyJson.value];
+                                    const totalTasks = maxCompletableTasks[difficultyJson.value];
                                     const percentage = Math.round((numComplete / totalTasks) * 100);
                                     return (
                                         <li key={difficultyJson.value}>
@@ -33,8 +34,8 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
                         <Col>
                             <h1 className="m-3 text-center">
                                 {`Tasks Completed: ${taskStatus.taskCount.total
-                                    } / ${taskData.taskCounts.total
-                                    } (${Math.round((taskStatus.taskCount.total / taskData.taskCounts.total) * 100)
+                                    } / ${maxCompletableTasks.Total
+                                    } (${Math.round((taskStatus.taskCount.total / maxCompletableTasks.Total) * 100)
                                     }%)`}
                             </h1>
                         </Col>
@@ -42,7 +43,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
                             <ul style={{ listStyleType: 'none' }} >
                                 {regionsToShow.map(region => {
                                     const numComplete = taskStatus[region].taskCount;
-                                    const totalTasks = taskData.taskCounts.byArea[region];
+                                    const totalTasks = taskData.taskCounts[region].Total;
                                     const percentage = Math.round((numComplete / totalTasks) * 100);
                                     return (
                                         <li key={region}>

@@ -6,10 +6,11 @@ import addToListIcon from '@iconify/icons-mdi/text-box-plus-outline';
 import removeFromListIcon from '@iconify/icons-mdi/text-box-remove-outline';
 import checkedIcon from '@iconify/icons-mdi/check-circle-outline';
 import uncheckedIcon from '@iconify/icons-mdi/checkbox-blank-circle-outline';
+import taskData from '../resources/taskData.json';
 
 export const INITIAL_TASKS_STATE = {
     points: 0,
-    taskCount: { total: 0, easy: 0, medium: 0, hard: 0, elite: 0, master: 0, },
+    taskCount: { total: 0, Easy: 0, Medium: 0, Hard: 0, Elite: 0, Master: 0, },
     Common: { points: 0, taskCount: 0, tasks: {} },
     Asgarnia: { points: 0, taskCount: 0, tasks: {} },
     Desert: { points: 0, taskCount: 0, tasks: {} },
@@ -28,11 +29,11 @@ const INITIAL_TASK_STATE = {
 }
 
 const DIFFICULTY_POINTS = {
-    'easy': 10,
-    'medium': 50,
-    'hard': 100,
-    'elite': 250,
-    'master': 500,
+    'Easy': 10,
+    'Medium': 50,
+    'Hard': 100,
+    'Elite': 250,
+    'Master': 500,
 }
 
 export function getFormatters() {
@@ -75,10 +76,15 @@ function pointsFormatter(cell, row, rowIndex) {
 }
 
 function nameFormatter(cell, row, rowIndex, props) {
-    if (isTaskComplete(row.id, props.area, props.taskStatus)) {
-        return <div className='completed'>{cell}</div>
-    }
-    return <div>{cell}</div>;
+    const isComplete = isTaskComplete(row.id, props.area, props.taskStatus)
+    return (
+        <div className={isComplete ? 'completed' : ''}>
+            {cell}
+            <div className='small'>
+                {row.description}
+            </div>
+        </div>
+    );
 }
 
 function todoFormatter(cell, row, rowIndex, props) {
@@ -181,4 +187,25 @@ export function applyFilters(tasks, area, filterFunctions) {
         filterFunctions.forEach(filterFunction => status = status && filterFunction(task, area));
         return status;
     });
+}
+
+export function getMaxCompletableTasks(unlockedRegions) {
+    const maxTasks = {
+        Total: taskData.taskCounts.Common.Total,
+        Easy: taskData.taskCounts.Common.Easy,
+        Medium: taskData.taskCounts.Common.Medium,
+        Hard: taskData.taskCounts.Common.Hard,
+        Elite: taskData.taskCounts.Common.Elite,
+        Master: taskData.taskCounts.Common.Master,
+    }
+    unlockedRegions.forEach(region => {
+        const regionValues = taskData.taskCounts[region];
+        maxTasks.Total = maxTasks.Total + regionValues.Total;
+        maxTasks.Easy = maxTasks.Easy + regionValues.Easy;
+        maxTasks.Medium = maxTasks.Medium + regionValues.Medium;
+        maxTasks.Hard = maxTasks.Hard + regionValues.Hard;
+        maxTasks.Elite = maxTasks.Elite + regionValues.Elite;
+        maxTasks.Master = maxTasks.Master + regionValues.Master;
+    })
+    return maxTasks;
 }
