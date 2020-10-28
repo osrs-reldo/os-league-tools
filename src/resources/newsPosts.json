@@ -1,5 +1,40 @@
 [
     {
+        "title": "WEBSITE LAUNCH!",
+        "date": "Oct 28 2020",
+        "type": "blog",
+        "thumbnail": "https://oldschool.runescape.wiki/images/6/63/Leagues_II_-_Trailblazer_Reward_Poll_Blog_%287%29.png?ef6ef",
+        "leadText": "OS League Tools is officially live!",
+        "htmlContent": "OS League Tools is officially live!<br/><br/> I've been working on this site off and on for the past couple of months and I am really hyped to finally get to launch it into beta and share it with all of you. I really hope you'll find it useful.<br/><br/>If you have any site feedback, suggestions, or bug reports, please come by the <a href='https://discord.gg/GQ5kVyU'>discord</a>!"
+    },
+    {
+        "title": "Trailblazer Areas Blog",
+        "date": "Oct 16 2020",
+        "type": "news",
+        "leadText": "All the details about area unlocks & content",
+        "thumbnail": "https://cdn.runescape.com/assets/img/external/oldschool/2020/newsposts/2020-10-08/RegionBlogSmallThumb.jpg",
+        "buttonLink": "https://secure.runescape.com/m=news/leagues-ii---trailblazer-areas?oldschool=1",
+        "buttonText": "Go to news post"
+    },
+    {
+        "title": "Gielinor Gazette",
+        "date": "Sep 25 2020",
+        "type": "news",
+        "leadText": "Dev blog about area, relic, and task design",
+        "thumbnail": "https://cdn.runescape.com/assets/img/external/oldschool/2020/newsposts/2020-09-25/SeptemberThumb.jpg",
+        "buttonLink": "https://secure.runescape.com/m=news/gielinor-gazette-september-2020?oldschool=1",
+        "buttonText": "Go to news post"
+    },
+    {
+        "title": "Poll Blog",
+        "date": "Sep 02 2020",
+        "type": "news",
+        "leadText": "All polled rewards to spend your league points on.",
+        "thumbnail": "https://cdn.runescape.com/assets/img/external/oldschool/2020/newsposts/2020-09-02/trailblazer_rug.png",
+        "buttonLink": "https://secure.runescape.com/m=news/leagues-ii---trailblazer-reward-poll-blog?oldschool=1",
+        "buttonText": "Go to news post"
+    },
+    {
         "title": "Trailblazer League Announcement",
         "date": "Aug 14 2020",
         "type": "news",
@@ -7,12 +42,5 @@
         "thumbnail": "https://oldschool.runescape.wiki/images/a/a8/Leagues_II_-_Trailblazer_%281%29.png?2d320",
         "buttonLink": "https://secure.runescape.com/m=news/leagues-ii---trailblazer?oldschool=1",
         "buttonText": "Go to news post"
-    },
-    {
-        "title": "Test Blog Entry",
-        "date": "Aug 28 2020",
-        "type": "blog",
-        "leadText": "lorem ipsum whatever blah blah blah here",
-        "htmlContent": "lorem ipsum whatever blah blah blah here is some <h2>inline</h2> <b>html</b> to see if that works"
     }
 ]

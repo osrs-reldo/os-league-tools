@@ -16,6 +16,7 @@ export default function NewsEntry({ title, date, thumbnail, leadText, buttonLink
                             height={100}
                             src={thumbnail}
                             alt={title}
+                            className='mr-3'
                         />}
                         <Media.Body>
                             <p>

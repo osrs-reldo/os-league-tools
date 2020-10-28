@@ -21,6 +21,7 @@ export default function Homepage() {
                     <BlogEntry
                         title={newsPost.title}
                         date={newsPost.date}
+                        thumbnail={newsPost.thumbnail}
                         leadText={newsPost.leadText}
                         htmlContent={newsPost.htmlContent}
                     />
