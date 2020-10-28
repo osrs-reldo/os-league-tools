@@ -4,22 +4,29 @@ import ProgressBar from "./UnlockProgressBar";
 import RelicCheckImg from '../resources/img/relic-check.png';
 import RelicInfoTile from "./RelicInfoTile";
 import relicData from '../resources/relicData.json';
-import { getRelicKey, MAX_POINTS, RELIC_UNLOCKS, unlockRelicInState, lockRelicInState, isRelicUnlocked } from '../util/relic-util';
+import { getRelicKey, MAX_POINTS, RELIC_UNLOCKS, unlockRelicInState, lockRelicInState, isRelicUnlocked, getPointsToNextRelic } from '../util/relic-util';
 import useLocalStorage from "../hooks/useLocalStorage";
 import { LOCALSTORAGE_KEYS } from '../util/browser-util';
 
 export default function RelicsTracker({ totalPoints }) {
     const [selectedRelic, setSelectedRelic] = useState();
     const [unlockedRelics, setUnlockedRelics] = useLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_RELICS, {});
+    const pointsToNextRelic = getPointsToNextRelic(totalPoints);
 
     return (
         <Card bg='dark' text='white' className="mt-3">
-            <h1 className="m-3 text-center">{totalPoints + ' Points - 500 To Next Unlock'}</h1>
+            <h1 className="m-3 text-center">
+                {
+                    pointsToNextRelic > 0 ?
+                    `${totalPoints} Points - ${pointsToNextRelic} To Next Unlock`
+                    : 'All relics unlocked!'
+                }
+            </h1>
             <ProgressBar
                 curValue={totalPoints}
                 maxValue={MAX_POINTS}
                 steps={RELIC_UNLOCKS}
-                stepImage={<img src={RelicCheckImg} alt='' height={50} />}
+                stepImage={<img src={RelicCheckImg} alt='' height={40} />}
             />
             <Container className='relic-table mt-4 mb-4'>
                 <Row>

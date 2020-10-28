@@ -3,8 +3,8 @@ import { LOCALSTORAGE_KEYS } from './browser-util';
 import { getFromLocalStorage } from '../util/browser-util';
 import update from 'immutability-helper';
 
-export const MAX_POINTS = 12000;
-export const RELIC_UNLOCKS = [0, 500, 1500, 3000, 6000, 12000];
+export const MAX_POINTS = 15000;
+export const RELIC_UNLOCKS = [0, 500, 2000, 4000, 7500, 15000];
 
 export function getRelicKey(tierId, relicId) {
     return [tierId + 1, relicId + 1].join(',');
@@ -62,4 +62,13 @@ export function isRelicUnlocked(relicKey, unlockedRelics) {
     } else {
         return relics && relics[tierId] && relics[tierId]['relic'] === relicId;
     }
+}
+
+export function getPointsToNextRelic(currentPoints) {
+    for (var i = 0; i < RELIC_UNLOCKS.length; i++) {
+        if (currentPoints < RELIC_UNLOCKS[i]) {
+            return RELIC_UNLOCKS[i] - currentPoints;
+        }
+    }
+    return 0;
 }

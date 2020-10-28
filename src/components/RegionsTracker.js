@@ -2,23 +2,30 @@ import React, { useState } from "react";
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
 import ProgressBar from "./UnlockProgressBar";
 import RelicCheckImg from '../resources/img/relic-check.png';
-import { MAX_TASKS, REGIONS, REGION_UNLOCKS, isRegionUnlocked, INITIAL_REGIONS_STATE } from '../util/region-util';
+import { MAX_TASKS, REGIONS, REGION_UNLOCKS, isRegionUnlocked, INITIAL_REGIONS_STATE, getTasksToNextRegion } from '../util/region-util';
 import RegionMap from "./RegionMap";
 import regionsData from '../resources/regionsData.json';
 import _ from 'lodash';
 
 export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlockedRegionsCallback, refreshRegionState }) {
     const [selectedRegion, setSelectedRegion] = useState("Misthalin");
+    const tasksToNextRegion = getTasksToNextRegion(totalTasks);
 
     return (
         <React.Fragment>
             <Card bg='dark' text='white' className="mt-3">
-                <h1 className="m-3 text-center">{totalTasks + ' Tasks complete - 10 To Next Region Unlock'}</h1>
+                <h1 className="m-3 text-center">
+                    {
+                        tasksToNextRegion > 0 ?
+                        `${totalTasks} Tasks complete - ${tasksToNextRegion} To Next Region Unlock`
+                        : 'All areas unlocked!'
+                    }
+                </h1>
                 <ProgressBar
                     curValue={totalTasks}
                     maxValue={MAX_TASKS}
                     steps={REGION_UNLOCKS}
-                    stepImage={<img src={RelicCheckImg} alt='' height={30} />}
+                    stepImage={<img src={RelicCheckImg} alt='' height={40} />}
                 />
             </Card>
 
