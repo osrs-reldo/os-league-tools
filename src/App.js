@@ -9,6 +9,7 @@ import Homepage from "./pages/Homepage";
 import Calculators from "./pages/Calculators";
 import Calculator from "./pages/SkillCalculator";
 import CharacterTracker from "./pages/CharacterTracker";
+import About from "./pages/About";
 
 export default function App(props) {
     return (
@@ -20,6 +21,7 @@ export default function App(props) {
                     <Route path="/tracker" component={CharacterTracker} />
                     <Route exact path="/calculators" component={Calculators} />
                     <Route path="/calculators/:skill" component={Calculator} />
+                    <Route path="/about" component={About} />
                 </Switch>
             </BrowserRouter>
         </div>
