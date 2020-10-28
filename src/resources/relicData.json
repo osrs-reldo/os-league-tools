@@ -4,22 +4,38 @@
         "relics": [
             {
                 "name": "Endless Harvest",
-                "icon": "placeholder.png",
-                "description": "Resources gathered from Fishing, Woodcutting and Mining will be multiplied by 2. Resources generated this way will not provide any additional experience. The resources you gather are sent directly to your Bank if you have space. If not, they will be placed in your Inventory."
+                "icon": "https://oldschool.runescape.wiki/images/e/e5/Endless_Harvest_detail.png?62d5b",
+                "description": [
+                    "Resources gathered from Fishing, Woodcutting and Mining will be multiplied by 2.",
+                    "Experience is granted per resource gathered.",
+                    "The resources you gather are sent directly to your Bank if you have space. If not, they will be placed in your Inventory."
+                ]
             },
             {
                 "name": "Production Master",
-                "icon": "placeholder.png",
-                "description": "When doing the following activities, all items will be processed at once, awarding full XP: 1) Smelting ores, smithing bars and making cannonballs, 2) Fletching logs and cutting bolt tips, 3) Cleaning herbs and making potions, 4) Cooking food and making jugs of wine, and 5) Crafting leather, uncut gems, glass, jewelry, pottery, battlestaves and spinning flax/wool."
+                "icon": "https://oldschool.runescape.wiki/images/6/65/Production_Master_detail.png?62d5b",
+                "description": [
+                    "When doing the following activities, all items will be processed at once, awarding full XP:",
+                    "1. Smelting ores, smithing bars and making cannonballs",
+                    "2. Fletching logs and cutting bolt tips",
+                    "3. Cleaning herbs and making potions",
+                    "4. Cooking food and making jugs of wine",
+                    "5. Crafting leather, uncut gems, glass, jewelry, pottery, battlestaves, and spinning flax/wool"
+                ]
             },
             {
                 "name": "Skilling Prodigy",
-                "icon": "placeholder.png",
-                "description": "All non-combat skills will permanently be boosted by 10. When skills are boosted beyond 10 levels, the boosts will over time drain back to the standard +10 boost. By the same token, when skills are drained down, they will eventually restore."
+                "icon": "https://oldschool.runescape.wiki/images/e/e9/Skilling_Prodigy_detail.png?62d5b",
+                "description": [
+                    "All non-combat skills will permanently be boosted by 12.",
+                    "When skills are boosted beyond 12 levels, the boosts will over time drain back to the standard +12 boost. By the same token, when skills are drained down, they will eventually restore."
+                ]
             },
             {
                 "name": "Endless Run",
-                "description": "Your Run Energy will never drain while running."
+                "description": [
+                    "Your Run Energy will never drain while running."
+                ]
             }
         ]
     },
@@ -27,23 +43,35 @@
         "category": "Teleportation",
         "relics": [
             {
-                "name": "Teleport Relic 1",
-                "icon": "placeholder.png",
-                "description": "Unannounced teleportation relic"
+                "name": "Fairy's Flight",
+                "icon": "https://oldschool.runescape.wiki/images/5/52/Fairy%27s_Flight_detail.png?795e5",
+                "description": [
+                    "Must be unlocked in a bank as the player is given an item upon unlocking this relic.",
+                    "Players are given a fairy mushroom which allows players to teleport to any fairy ring or spirit tree, provided they can access the destination."
+                ]
             },
             {
-                "name": "Teleport Relic 2",
-                "icon": "placeholder.png",
-                "description": "Unannounced teleportation relic"
+                "name": "Eternal Jeweller",
+                "icon": "https://oldschool.runescape.wiki/images/7/71/Eternal_Jeweller_detail.png?3895c",
+                "description": [
+                    "Must be unlocked in a bank as the player is given an item upon unlocking this relic.",
+                    "Players will receive a ring of dueling, ring of returning, ring of wealth, games necklace, skills necklace, and a necklace of passage.",
+                    "The above items will no longer consume charges, in addition to the master scroll book, slayer ring, amulet of glory, Digsite pendant, and combat bracelet."
+                ]
             },
             {
-                "name": "Teleport Relic 3",
-                "icon": "placeholder.png",
-                "description": "Unannounced teleportation relic"
+                "name": "Last Recall",
+                "icon": "https://oldschool.runescape.wiki/images/c/ce/Last_Recall_detail.png?37a04",
+                "description": [
+                    "Must be unlocked in a bank as the player is given an item upon unlocking this relic.",
+                    "Players are given a crystal of memories which allows players to teleport themselves back to the location where their most recent teleport occurred, excluding instances."
+                ]
             },
             {
                 "name": "8x Exp",
-                "description": "Your League XP multiplier will increase from 5x to 8x."
+                "description": [
+                    "Your League XP multiplier will increase from 5x to 8x."
+                ]
             }
         ]
     },
@@ -51,23 +79,38 @@
         "category": "Combat",
         "relics": [
             {
-                "name": "Combat Relic 1",
-                "icon": "placeholder.png",
-                "description": "Unannounced combat relic"
+                "name": "Quick Shot",
+                "icon": "https://oldschool.runescape.wiki/images/3/3a/Quick_Shot_detail.png?37a04",
+                "description": [
+                    "",
+                    "",
+                    ""
+                ]
             },
             {
-                "name": "Combat Relic 2",
-                "icon": "placeholder.png",
-                "description": "Unannounced combat relic"
+                "name": "Fluid Strikes",
+                "icon": "https://oldschool.runescape.wiki/images/e/ec/Fluid_Strikes_detail.png?795e5",
+                "description": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
             },
             {
-                "name": "Combat Relic 3",
-                "icon": "placeholder.png",
-                "description": "Unannounced combat relic"
+                "name": "Double Cast",
+                "icon": "https://oldschool.runescape.wiki/images/e/e0/Double_Cast_detail.png?3895c",
+                "description": [
+                    "",
+                    "",
+                    ""
+                ]
             },
             {
                 "name": "2x Drop Rate",
-                "description": "Your drop rate modifier will increase from 1x to 2x."
+                "description": [
+                    "Your drop rate modifier will increase from 1x to 2x."
+                ]
             }
         ]
     },
@@ -75,23 +118,35 @@
         "category": "Utility",
         "relics": [
             {
-                "name": "Utility Relic 1",
-                "icon": "placeholder.png",
-                "description": "Unannounced utility relic"
+                "name": "Treasure Seeker",
+                "icon": "https://oldschool.runescape.wiki/images/f/f6/Treasure_Seeker_%28Trailblazer%29_detail.png?22527",
+                "description": [
+                    "NPCs that drop clue scrolls will have a 1/20 chance of dropping them.",
+                    "Clue geodes, nests, and bottles will be found ten times more often.",
+                    "All un-started clues are stackable as scroll boxes.",
+                    "All clues will have the lowest number of steps possible for their tier."
+                ]
             },
             {
-                "name": "Utility Relic 2",
-                "icon": "placeholder.png",
-                "description": "Unannounced utility relic"
+                "name": "Unnatural Selection",
+                "icon": "https://oldschool.runescape.wiki/images/0/0f/Unnatural_Selection_%28Trailblazer%29_detail.png?22527",
+                "description": [
+                    "Players can choose which slayer assignment they would like to receive.",
+                    "Superior slayer monsters will have a 1/25 chance of appearing, and will always drop a clue scroll if they are able to drop one. In addition, they will roll their standard variant's drop table six times, though this does not increase the amount of rolls on the superior creature's unique drop table."
+                ]
             },
             {
-                "name": "Utility Relic 3",
-                "icon": "placeholder.png",
-                "description": "Unannounced utility relic"
+                "name": "",
+                "icon": "",
+                "description": [
+                    ""
+                ]
             },
             {
                 "name": "12x Exp",
-                "description": "Your League XP multiplier will increase from 8x to 12x."
+                "description": [
+                    "Your League XP multiplier will increase from 8x to 12x."
+                ]
             }
         ]
     },
@@ -99,23 +154,40 @@
         "category": "Skilling",
         "relics": [
             {
-                "name": "Skilling Relic 1",
-                "icon": "placeholder.png",
-                "description": "Unannounced skilling relic"
+                "name": "Botanist",
+                "icon": "https://oldschool.runescape.wiki/images/4/49/Botanist_detail.png?fcc91",
+                "description": [
+                    "Farming ticks occur every minute instead of five, allowing crops to grow five times quicker.",
+                    "Resources harvested are multiplied by two. Extra resources will not grant additional experience.",
+                    "Creating potions will give their four-dose variant, and players have a 95% chance of saving their secondary ingredient.",
+                    "Stats boosted above the player's base level will not drain over time."
+                ]
             },
             {
-                "name": "Skilling Relic 2",
-                "icon": "placeholder.png",
-                "description": "Unannounced skilling relic"
+                "name": "Infernal Gathering",
+                "icon": "https://oldschool.runescape.wiki/images/b/bc/Infernal_Gathering_detail.png?795e5",
+                "description": [
+                    "Must be unlocked in a bank as the player is given items upon unlocking this relic.",
+                    "The player is given a set of Trailblazer tools that act as undegradable variants of crystal tools with no requirements, plus some additional effects:",
+                    "1. Trailblazer axe: Any logs chopped are burned, granting Firemaking experience regardless of level requirements.",
+                    "2. Trailblazer pickaxe: Any ore mined will be smelted into a metal bar (if applicable), granting Smithing experience regardless of level requirements.",
+                    "3. Trailblazer harpoon: Any fish caught are cooked, granting Cooking experience regardless of level requirements. If equipped, it will also work for fish that don't require a harpoon to be caught, e.g. trout."
+                ]
             },
             {
-                "name": "Skilling Relic 3",
-                "icon": "placeholder.png",
-                "description": "Unannounced skilling relic"
+                "name": "Equilibrium",
+                "icon": "https://oldschool.runescape.wiki/images/a/af/Equilibrium_detail.png?a3df0",
+                "description": [
+                    "Each time the player gains experience, they will gain additional experience equal to 10% of the player's total level.",
+                    "Addition experience given by this relic is not multiplied by the Leagues XP multiplier.",
+                    "If chosen with Production Master, each item processed will trigger this effect."
+                ]
             },
             {
                 "name": "3x Drop Rate",
-                "description": "Your drop rate modifier will increase from 2x to 3x."
+                "description": [
+                    "Your drop rate modifier will increase from 2x to 3x."
+                ]
             }
         ]
     },
@@ -123,23 +195,37 @@
         "category": "Combat",
         "relics": [
             {
-                "name": "Combat Relic 1",
-                "icon": "placeholder.png",
-                "description": "Unannounced combat relic"
+                "name": "Draining Strikes",
+                "icon": "https://oldschool.runescape.wiki/images/8/83/Draining_Strikes_detail.png?3895c",
+                "description": [
+                    "All attacks have 10% increased accuracy and 10% increased damage. This stacks with Quick Shot, Fluid Strikes, and Double Cast.",
+                    "Any successful hit will have a 50% chance of restoring the player's Hitpoints and Prayer points by 10% of the damage dealt.",
+                    "This Relic does not work for multi-target attacks (such as chinchompas and burst spells) or special attacks. However, it will work with the Scythe of Vitur's initial hit, as well as the secondary hits if those hits damage the same target as the initial hit."
+                ]
             },
             {
-                "name": "Combat Relic 2",
-                "icon": "placeholder.png",
-                "description": "Unannounced combat relic"
+                "name": "Exploding Attacks",
+                "icon": "https://oldschool.runescape.wiki/images/e/e3/Exploding_Attacks_detail.png?2a4f5",
+                "description": [
+                    "All attacks have 10% increased accuracy and 10% increased damage. This stacks with Quick Shot, Fluid Strikes, and Double Cast.",
+                    "Any successful hit to the primary target will hit up to five additional targets hit as well, dealing the same damage to them as the primary target.",
+                    "This Relic does not work for multi-target attacks (such as the Scythe of Vitur and burst spells) or special attacks, and will only work in multicombat areas."
+                ]
             },
             {
-                "name": "Combat Relic 3",
-                "icon": "placeholder.png",
-                "description": "Unannounced combat relic"
+                "name": "Weapon Specialist",
+                "icon": "https://oldschool.runescape.wiki/images/1/14/Weapon_Specialist_detail.png?a3775",
+                "description": [
+                    "All attacks have 10% increased accuracy and 10% increased damage. This stacks with Quick Shot, Fluid Strikes, and Double Cast.",
+                    "The player's special attack energy regenerates at a rate of 30% every 30 seconds instead of 10%.",
+                    "Special attacks that cost 20% or more energy (such as the Bandos godsword) will cost 20% instead."
+                ]
             },
             {
                 "name": "16x Exp",
-                "description": "Your League XP multiplier will increase from 12x to 16x."
+                "description": [
+                    "Your League XP multiplier will increase from 12x to 16x."
+                ]
             }
         ]
     }
