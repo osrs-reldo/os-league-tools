@@ -82,28 +82,28 @@
                 "name": "Quick Shot",
                 "icon": "https://oldschool.runescape.wiki/images/3/3a/Quick_Shot_detail.png?37a04",
                 "description": [
-                    "",
-                    "",
-                    ""
+                    "The attack speed of all ranged weapons are halved, rounded up.",
+                    "Ranged attacks deal 10% more damage and have 100% increased accuracy against NPCs (50% against players).",
+                    "90% of ammunition is saved when using ranged weapons, excluding chinchompas. This stacks with Ava's devices."
                 ]
             },
             {
                 "name": "Fluid Strikes",
                 "icon": "https://oldschool.runescape.wiki/images/e/ec/Fluid_Strikes_detail.png?795e5",
                 "description": [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "The attack speed of all melee weapons are halved, rounded up.",
+                    "Melee attacks have 25% increased accuracy.",
+                    "Players will take 15% less damage from all sources.",
+                    "Hitpoints regenerate at a rate of four per minute instead of one."
                 ]
             },
             {
                 "name": "Double Cast",
                 "icon": "https://oldschool.runescape.wiki/images/e/e0/Double_Cast_detail.png?3895c",
                 "description": [
-                    "",
-                    "",
-                    ""
+                    "The attack speed of all magic weapons and spells are halved, rounded up.",
+                    "Magic attacks have 125% increased accuracy against NPCs (50% against players).",
+                    "90% of runes used are saved when casting spells. This includes powered staves."
                 ]
             },
             {
