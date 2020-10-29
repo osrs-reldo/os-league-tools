@@ -22,27 +22,33 @@
         "expMultipliers": [
             {
                 "id": "G0",
-                "name": "League base multiplier (5x) ",
+                "name": "League base multiplier (5x)",
                 "multiplier": "5",
                 "autoApply": "always"
             },
             {
                 "id": "G1",
-                "name": "League relic 2 passive (8x) ",
+                "name": "League relic 2 passive (8x)",
                 "multiplier": "8",
                 "autoApply": "2,4"
             },
             {
                 "id": "G2",
-                "name": "League relic 4 passive (12x) ",
+                "name": "League relic 4 passive (12x)",
                 "multiplier": "12",
                 "autoApply": "4,4"
             },
             {
                 "id": "G3",
-                "name": "League relic 6 passive (16x) ",
+                "name": "League relic 6 passive (16x)",
                 "multiplier": "16",
                 "autoApply": "6,4"
+            },
+            {
+                "id": "G4",
+                "name": "Equilibrium (+10% of total lvl)",
+                "multiplier": "1",
+                "autoApply": "5,3"
             }
         ],
         "inputMultipliers": [],

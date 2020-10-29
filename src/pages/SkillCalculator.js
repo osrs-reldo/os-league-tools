@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, CardDeck, Form } from "react-bootstrap";
+import { Card, CardDeck, Form, FormControl, InputGroup } from "react-bootstrap";
 import BootstrapTable from 'react-bootstrap-table-next';
 import { useParams } from "react-router";
 import { INITIAL_REGIONS_STATE, REGIONS } from '../util/region-util';
@@ -16,6 +16,7 @@ import { getFromLocalStorage, LOCALSTORAGE_KEYS } from "../util/browser-util";
 export default function SkillCalculator() {
     const currentLevel = useLevel(1);
     const targetLevel = useLevel(currentLevel.level + 1);
+    const [totalLevel, setTotalLevel] = useState(1000);
     const expMultiplier = useMultiplier();
     const inputMultiplier = useMultiplier();
     const outputMultiplier = useMultiplier();
@@ -93,52 +94,44 @@ export default function SkillCalculator() {
         }
     ];
 
-    const showMultiplierCard = skillData.expMultipliers.length > 0
-                               || skillData.inputMultipliers.length > 0
-                               || skillData.outputMultipliers.length > 0
-                               || !skillData.isCombatSkill;
-
     return (
         <div className="content-wrapper">
             <h1 className="mt-2 light-text text-center">{skillData.name}</h1>
             <CardDeck style={{ margin: '1rem' }} >
-                {
-                    showMultiplierCard &&
-                    <Card bg='dark' text='white' >
-                        <div className="p-3">
-                            <MultiplierGroup
-                                title="Exp multipliers"
-                                multiplierData={skillData.expMultipliers}
-                                globalMultiplierData={calculatorData.globalMultipliers.expMultipliers}
-                                multipliers={expMultiplier}
-                            />
-                            <MultiplierGroup
-                                title="Input multipliers"
-                                multiplierData={skillData.inputMultipliers}
-                                multipliers={inputMultiplier}
-                            />
-                            <MultiplierGroup
-                                title="Output multipliers"
-                                multiplierData={skillData.outputMultipliers}
-                                multipliers={outputMultiplier}
-                            />
-                            {!skillData.isCombatSkill && (
-                                <React.Fragment>
-                                    <h4>Boosts:</h4>
-                                    <div className="pl-2">
-                                        <Form.Check
-                                            label="Relic - Skilling Prodigy (+12)"
-                                            defaultChecked={isSkillingProdigy}
-                                            onChange={(event) => {
-                                                setIsSkillingProdigy(event.target.checked);
-                                            }}
-                                        />
-                                    </div>
-                                </React.Fragment>
-                            )}
-                        </div>
-                    </Card>
-                }
+                <Card bg='dark' text='white' >
+                    <div className="p-3">
+                        <MultiplierGroup
+                            title="Exp multipliers"
+                            multiplierData={skillData.expMultipliers}
+                            globalMultiplierData={calculatorData.globalMultipliers.expMultipliers}
+                            multipliers={expMultiplier}
+                        />
+                        <MultiplierGroup
+                            title="Input multipliers"
+                            multiplierData={skillData.inputMultipliers}
+                            multipliers={inputMultiplier}
+                        />
+                        <MultiplierGroup
+                            title="Output multipliers"
+                            multiplierData={skillData.outputMultipliers}
+                            multipliers={outputMultiplier}
+                        />
+                        {!skillData.isCombatSkill && (
+                            <React.Fragment>
+                                <h4>Boosts:</h4>
+                                <div className="pl-2">
+                                    <Form.Check
+                                        label="Relic - Skilling Prodigy (+12)"
+                                        defaultChecked={isSkillingProdigy}
+                                        onChange={(event) => {
+                                            setIsSkillingProdigy(event.target.checked);
+                                        }}
+                                    />
+                                </div>
+                            </React.Fragment>
+                        )}
+                    </div>
+                </Card>
                 <Card bg='dark' text='white' >
                     <h4 className="pt-3 pl-3">Level/Experience:</h4>
                     {/* TODO
@@ -160,6 +153,15 @@ export default function SkillCalculator() {
                         setLevelCallback={targetLevel.updateByLevel}
                         setExpCallback={targetLevel.updateByExp}
                     />
+                    <InputGroup className="p-3">
+                        <InputGroup.Prepend>
+                            <InputGroup.Text>Total Level (for Equilibrium)</InputGroup.Text>
+                        </InputGroup.Prepend>
+                        <FormControl
+                            value={totalLevel}
+                            onChange={(event) => setTotalLevel(event.target.value)}
+                        />
+                    </InputGroup>
                     <div className="p-3">
                         <h5>Remaining until goal:</h5>
                         <ul>
