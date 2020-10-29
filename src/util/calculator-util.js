@@ -7,11 +7,12 @@ export function getFormatters() {
         amountFormatter: amountFormatter,
         outputListFormatter: outputListFormatter,
         inputListFormatter: inputListFormatter,
+        expFormatter: expFormatter,
     }
 }
 
-function levelFormatter(cell, row, rowIndex, levelData) {
-    const boostedLevel = getBoostedLevel(levelData.level, levelData.isSkillingProdigy);
+function levelFormatter(cell, row, rowIndex, props) {
+    const boostedLevel = getBoostedLevel(props.level, props.isSkillingProdigy);
     return (
         <div className={cell <= boostedLevel ? "unlocked" : "locked"}>{cell}</div>
     );
@@ -26,30 +27,62 @@ function iconFormatter(cell, row) {
     );
 }
 
-function amountFormatter(cell, row, rowIndex, exp) {
-    const expMultiplier = exp.expMultiplier.apply(row.expMultipliers);
-    return calcActionsRemaining(exp.current, exp.target, row.exp, expMultiplier);
+function expFormatter(cell, row, rowIndex, props) {
+    return calcExpPerAction(
+        cell,
+        props.baseMultiplier,
+        props.expMultiplier,
+        row.expMultipliers,
+        props.totalLevel
+    );
 }
 
-function outputListFormatter(cell, row, rowIndex, exp) {
-    const expMultiplier = exp.expMultiplier.apply(row.expMultipliers);
-    const countMultiplier = exp.countMultiplier.apply(row.outputMultipliers);
-    return itemListFormatter(cell, expMultiplier, countMultiplier, exp.current, exp.target, row.exp)
+function amountFormatter(cell, row, rowIndex, props) {
+    return calcActionsRemaining(
+        props.current,
+        props.target,
+        row.exp,
+        props.baseMultiplier,
+        props.expMultiplier,
+        row.expMultipliers,
+        props.totalLevel
+    );
 }
 
-function inputListFormatter(cell, row, rowIndex, exp) {
-    const expMultiplier = exp.expMultiplier.apply(row.expMultipliers);
-    const countMultiplier = exp.countMultiplier.apply(row.inputMultipliers);
-    return itemListFormatter(cell, expMultiplier, countMultiplier, exp.current, exp.target, row.exp)
+function outputListFormatter(cell, row, rowIndex, props) {
+    const countMultiplier = props.countMultiplier.apply(row.outputMultipliers);
+    const actionsRemaining = calcActionsRemaining(
+        props.current,
+        props.target,
+        row.exp,
+        props.baseMultiplier,
+        props.expMultiplier,
+        row.expMultipliers,
+        props.totalLevel
+    );
+    return itemListFormatter(cell, countMultiplier, actionsRemaining);
 }
 
-function itemListFormatter(cell, expMultiplier, countMultiplier, curExp, targetExp, expPerAction) {
-    const numOfActions = calcActionsRemaining(curExp, targetExp, expPerAction, expMultiplier);
+function inputListFormatter(cell, row, rowIndex, props) {
+    const countMultiplier = props.countMultiplier.apply(row.inputMultipliers);
+    const actionsRemaining = calcActionsRemaining(
+        props.current,
+        props.target,
+        row.exp,
+        props.baseMultiplier,
+        props.expMultiplier,
+        row.expMultipliers,
+        props.totalLevel
+    );
+    return itemListFormatter(cell, countMultiplier, actionsRemaining);
+}
+
+function itemListFormatter(cell, countMultiplier, actionsRemaining) {
     return (
         <ul>
             {cell.map(item => {
                 if (item.amount) {
-                    var amount = numOfActions * item.amount * item.chance * countMultiplier;
+                    var amount = actionsRemaining * item.amount * item.chance * countMultiplier;
                     amount = +amount.toFixed(2);
                     return <li key={item.name}>{amount + ' ' + item.name}</li>;
                 }
@@ -59,9 +92,16 @@ function itemListFormatter(cell, expMultiplier, countMultiplier, curExp, targetE
     );
 }
 
-export function calcActionsRemaining(curExp, targetExp, activityExp, expMultiplier) {
+function calcExpPerAction(baseExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel) {
+    const baseMultiplier = parseInt(baseMultiplierStr);
+    const secondaryMultiplier = baseMultiplier * expMultiplier.apply(validMultipliers);
+    const equilibriumBonus = expMultiplier.get().hasOwnProperty("G0") ? totalLevel *.1 : 0;
+    return baseExp * secondaryMultiplier + equilibriumBonus;
+}
+
+export function calcActionsRemaining(curExp, targetExp, activityExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel) {
     const expLeft = targetExp - curExp;
-    const expPerAction = activityExp * expMultiplier;
+    const expPerAction = calcExpPerAction(activityExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel);
     return Math.ceil(expLeft / expPerAction);
 }
 

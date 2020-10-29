@@ -50,5 +50,12 @@ export default function useMultiplier() {
         return totalMultiplier;
     }
 
-    return { add: addMultiplier, remove: removeMultiplier, apply: applyMultipliers };
+    const getMultipliers = () => {
+        return {
+            ...multipliers,
+            ...globalMultipliers
+        }
+    }
+
+    return { add: addMultiplier, remove: removeMultiplier, apply: applyMultipliers, get: getMultipliers };
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Card, CardDeck, Form, FormControl, InputGroup } from "react-bootstrap";
 import BootstrapTable from 'react-bootstrap-table-next';
 import { useParams } from "react-router";
@@ -17,6 +17,7 @@ export default function SkillCalculator() {
     const currentLevel = useLevel(1);
     const targetLevel = useLevel(currentLevel.level + 1);
     const [totalLevel, setTotalLevel] = useState(1000);
+    const [baseExpMultiplier, setBaseExpMultiplier] = useState('5');
     const expMultiplier = useMultiplier();
     const inputMultiplier = useMultiplier();
     const outputMultiplier = useMultiplier();
@@ -25,6 +26,22 @@ export default function SkillCalculator() {
     const [useAreaFilter, setUseAreaFilter] = useState(true);
     const [includedAreas, setIncludedAreas] = useState(getFromLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_REGIONS, INITIAL_REGIONS_STATE));
     const { skill } = useParams();
+
+    useEffect(() => {
+        if (!skillData) {
+            return;
+        }
+
+        if (isRelicUnlocked('6,4')) {
+            setBaseExpMultiplier('16')
+        } else if (isRelicUnlocked('4,4')) {
+            setBaseExpMultiplier('12')
+        } else if (isRelicUnlocked('2,4')) {
+            setBaseExpMultiplier('8')
+        }
+    // only want this to run a single time on first load, so don't depend on anything here
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     const skillData = calculatorData.calculators[skill];
     if (!skillData) {
@@ -35,7 +52,7 @@ export default function SkillCalculator() {
         );
     }
 
-    const { levelFormatter, iconFormatter, amountFormatter, inputListFormatter, outputListFormatter } = getFormatters();
+    const { levelFormatter, iconFormatter, amountFormatter, inputListFormatter, outputListFormatter, expFormatter } = getFormatters();
     const columns = [
         {
             "dataField": "id",
@@ -61,7 +78,13 @@ export default function SkillCalculator() {
             "dataField": "exp",
             "text": "Exp",
             "sort": true,
-            "headerStyle": { width: '10%' }
+            "headerStyle": { width: '10%' },
+            "formatter": expFormatter,
+            "formatExtraData": {
+                "baseMultiplier": baseExpMultiplier,
+                "expMultiplier": expMultiplier,
+                "totalLevel": totalLevel
+            },
         },
         {
             "dataField": "category",
@@ -77,20 +100,40 @@ export default function SkillCalculator() {
             "sort": true,
             "formatter": amountFormatter,
             "sortValue": (cell, row) => row.exp,
-            "formatExtraData": { "current": currentLevel.exp, "target": targetLevel.exp, "expMultiplier": expMultiplier },
+            "formatExtraData": {
+                "current": currentLevel.exp,
+                "target": targetLevel.exp,
+                "baseMultiplier": baseExpMultiplier,
+                "expMultiplier": expMultiplier,
+                "totalLevel": totalLevel
+            },
             "headerStyle": { width: '10%' }
         },
         {
             "dataField": "inputs",
             "text": "Inputs",
             "formatter": inputListFormatter,
-            "formatExtraData": { "current": currentLevel.exp, "target": targetLevel.exp, "expMultiplier": expMultiplier, "countMultiplier": inputMultiplier }
+            "formatExtraData": {
+                "current": currentLevel.exp,
+                "target": targetLevel.exp,
+                "baseMultiplier": baseExpMultiplier,
+                "expMultiplier": expMultiplier,
+                "totalLevel": totalLevel,
+                "countMultiplier": inputMultiplier
+            }
         },
         {
             "dataField": "outputs",
             "text": "Outputs",
             "formatter": outputListFormatter,
-            "formatExtraData": { "current": currentLevel.exp, "target": targetLevel.exp, "expMultiplier": expMultiplier, "countMultiplier": outputMultiplier }
+            "formatExtraData": {
+                "current": currentLevel.exp,
+                "target": targetLevel.exp,
+                "baseMultiplier": baseExpMultiplier,
+                "expMultiplier": expMultiplier,
+                "totalLevel": totalLevel,
+                "countMultiplier": outputMultiplier
+            }
         }
     ];
 
@@ -100,6 +143,49 @@ export default function SkillCalculator() {
             <CardDeck style={{ margin: '1rem' }} >
                 <Card bg='dark' text='white' >
                     <div className="p-3">
+                        <h4>{"League base multiplier:"}</h4>
+                        <div className={"pl-2 pb-2"}>
+                            <Form.Check
+                                label='5x'
+                                inline
+                                type='radio'
+                                id='5'
+                                checked={baseExpMultiplier === '5'}
+                                onChange={(event) => {
+                                    setBaseExpMultiplier(event.target.id);
+                                }}
+                            />
+                            <Form.Check
+                                label='8x'
+                                inline
+                                type='radio'
+                                id='8'
+                                checked={baseExpMultiplier === '8'}
+                                onChange={(event) => {
+                                    setBaseExpMultiplier(event.target.id);
+                                }}
+                            />
+                            <Form.Check
+                                label='12x'
+                                inline
+                                type='radio'
+                                id='12'
+                                checked={baseExpMultiplier === '12'}
+                                onChange={(event) => {
+                                    setBaseExpMultiplier(event.target.id);
+                                }}
+                            />
+                            <Form.Check
+                                label='16x'
+                                inline
+                                type='radio'
+                                id='16x'
+                                checked={baseExpMultiplier === '16x'}
+                                onChange={(event) => {
+                                    setBaseExpMultiplier(event.target.id);
+                                }}
+                            />
+                        </div>
                         <MultiplierGroup
                             title="Exp multipliers"
                             multiplierData={skillData.expMultipliers}

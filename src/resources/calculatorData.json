@@ -22,30 +22,6 @@
         "expMultipliers": [
             {
                 "id": "G0",
-                "name": "League base multiplier (5x)",
-                "multiplier": "5",
-                "autoApply": "always"
-            },
-            {
-                "id": "G1",
-                "name": "League relic 2 passive (8x)",
-                "multiplier": "8",
-                "autoApply": "2,4"
-            },
-            {
-                "id": "G2",
-                "name": "League relic 4 passive (12x)",
-                "multiplier": "12",
-                "autoApply": "4,4"
-            },
-            {
-                "id": "G3",
-                "name": "League relic 6 passive (16x)",
-                "multiplier": "16",
-                "autoApply": "6,4"
-            },
-            {
-                "id": "G4",
                 "name": "Equilibrium (+10% of total lvl)",
                 "multiplier": "1",
                 "autoApply": "5,3"
@@ -34006,7 +33982,7 @@
                     "id": 0,
                     "name": "Bones",
                     "category": "Bones",
-                    "exp": 15.7,
+                    "exp": 4.5,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/5/5e/Bones.png?31df0",
                     "inputs": [
@@ -34021,6 +33997,7 @@
                         "All"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",
@@ -34037,7 +34014,7 @@
                     "id": 3,
                     "name": "Monkey bones",
                     "category": "Bones",
-                    "exp": 17.5,
+                    "exp": 5.0,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/f/fb/Monkey_bones.png?4f673",
                     "inputs": [
@@ -34055,6 +34032,7 @@
                         "Kandarin"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",
@@ -34071,7 +34049,7 @@
                     "id": 4,
                     "name": "Bat bones",
                     "category": "Bones",
-                    "exp": 18.5,
+                    "exp": 5.3,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/d/d2/Bat_bones.png?9342c",
                     "inputs": [
@@ -34086,6 +34064,7 @@
                         "All"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",
@@ -34822,7 +34801,7 @@
                     "id": 5,
                     "name": "Big bones",
                     "category": "Bones",
-                    "exp": 52.5,
+                    "exp": 15.0,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/1/11/Big_bones.png?bc2e9",
                     "inputs": [
@@ -34837,6 +34816,7 @@
                         "All"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",
@@ -34853,7 +34833,7 @@
                     "id": 6,
                     "name": "Jogre bones",
                     "category": "Bones",
-                    "exp": 52.5,
+                    "exp": 15.0,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/d/db/Jogre_bones.png?ca3a4",
                     "inputs": [
@@ -34870,6 +34850,7 @@
                         "Fremennik"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",
@@ -35166,7 +35147,7 @@
                     "id": 7,
                     "name": "Zogre bones",
                     "category": "Bones",
-                    "exp": 78.7,
+                    "exp": 22.5,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/6/6d/Zogre_bones.png?5fb16",
                     "inputs": [
@@ -35181,6 +35162,7 @@
                         "Kandarin"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",
@@ -35277,7 +35259,7 @@
                     "id": 8,
                     "name": "Shaikahan bones",
                     "category": "Bones",
-                    "exp": 87.5,
+                    "exp": 25.0,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/6/6d/Shaikahan_bones.png?0e569",
                     "inputs": [
@@ -35292,6 +35274,7 @@
                         "Karamja"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",
@@ -35348,7 +35331,7 @@
                     "id": 9,
                     "name": "Babydragon bones",
                     "category": "Bones",
-                    "exp": 105.0,
+                    "exp": 30.0,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/2/2e/Babydragon_bones.png?f1a24",
                     "inputs": [
@@ -35363,6 +35346,7 @@
                         "All"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",
@@ -35379,7 +35363,7 @@
                     "id": 13,
                     "name": "Wyvern bones",
                     "category": "Bones",
-                    "exp": 252.0,
+                    "exp": 72.0,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/4/4b/Wyvern_bones.png?81b8e",
                     "inputs": [
@@ -35395,6 +35379,7 @@
                         "Misthalin"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",
@@ -35411,7 +35396,7 @@
                     "id": 14,
                     "name": "Dragon bones",
                     "category": "Bones",
-                    "exp": 252.0,
+                    "exp": 80.0,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/6/63/Dragon_bones.png?61378",
                     "inputs": [
@@ -35426,6 +35411,7 @@
                         "All"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",
@@ -35442,7 +35428,7 @@
                     "id": 17,
                     "name": "Fayrg bones",
                     "category": "Bones",
-                    "exp": 294.0,
+                    "exp": 84.0,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/f/fa/Fayrg_bones.png?18cc3",
                     "inputs": [
@@ -35457,6 +35443,7 @@
                         "Kandarin"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",
@@ -35473,7 +35460,7 @@
                     "id": 18,
                     "name": "Lava dragon bones",
                     "category": "Bones",
-                    "exp": 297.5,
+                    "exp": 85.0,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/1/1b/Lava_dragon_bones.png?39e0f",
                     "inputs": [
@@ -35488,6 +35475,7 @@
                         "Wilderness"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",
@@ -35504,7 +35492,7 @@
                     "id": 19,
                     "name": "Raurg bones",
                     "category": "Bones",
-                    "exp": 336.0,
+                    "exp": 96.0,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/b/b1/Raurg_bones.png?cacf6",
                     "inputs": [
@@ -35519,6 +35507,7 @@
                         "Kandarin"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",
@@ -35535,7 +35524,7 @@
                     "id": 22,
                     "name": "Dagannoth bones",
                     "category": "Bones",
-                    "exp": 437.5,
+                    "exp": 125.0,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/4/4f/Dagannoth_bones.png?3cff6",
                     "inputs": [
@@ -35550,6 +35539,7 @@
                         "Fremennik"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",
@@ -35566,7 +35556,7 @@
                     "id": 25,
                     "name": "Ourg bones",
                     "category": "Bones",
-                    "exp": 490.0,
+                    "exp": 140.0,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/9/98/Ourg_bones.png?e334e",
                     "inputs": [
@@ -35581,6 +35571,7 @@
                         "Kandarin"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",
@@ -35725,7 +35716,7 @@
                     "id": 42,
                     "name": "Superior dragon bones",
                     "category": "Bones",
-                    "exp": 525.0,
+                    "exp": 150.0,
                     "level": 70,
                     "icon": "https://oldschool.runescape.wiki/images/a/a5/Superior_dragon_bones.png?105c4",
                     "inputs": [
@@ -35740,6 +35731,7 @@
                         "Fremennik"
                     ],
                     "expMultipliers": [
+                        "0",
                         "1",
                         "2",
                         "4",

@@ -28,36 +28,29 @@ export default function MultiplierGroup({ title, multiplierData, globalMultiplie
 
     return (
         <React.Fragment>
-            {globalMultiplierData.length > 0 &&
-                <React.Fragment>
-                    <h4>{"Global " + title + ":"}</h4>
-                    <div className={"pl-2 pb-2"}>
-                        {globalMultiplierData.map(multiplier => {
-                            return (
-                                <Form.Check
-                                    label={multiplier.name}
-                                    key={multiplier.id}
-                                    checked={checkedGlobalMultipliers.includes(multiplier.id)}
-                                    onChange={(event) => {
-                                        if (event.target.checked) {
-                                            setCheckedGlobalMultipliers(prevState => [...prevState, multiplier.id]);
-                                            multipliers.add(multiplier.id, multiplier.multiplier, true);
-                                        } else {
-                                            setCheckedGlobalMultipliers(prevState => _.pull(prevState, multiplier.id));
-                                            multipliers.remove(multiplier.id, true)
-                                        }
-                                    }}
-                                />
-                            );
-                        })}
-                    </div>
-                </React.Fragment>
-            }
-            {multiplierData.length > 0 &&
-                <React.Fragment>
-                    <h4>{title + ":"}</h4>
-                    <div className={"pl-2 pb-2"}>
-                        {multiplierData.map(multiplier => {
+            <h4>{title + ":"}</h4>
+            <div className={"pl-2 pb-2"}>
+                {globalMultiplierData.length > 0 &&
+                    globalMultiplierData.map(multiplier => {
+                    return (
+                        <Form.Check
+                            label={multiplier.name}
+                            key={multiplier.id}
+                            checked={checkedGlobalMultipliers.includes(multiplier.id)}
+                            onChange={(event) => {
+                                if (event.target.checked) {
+                                    setCheckedGlobalMultipliers(prevState => [...prevState, multiplier.id]);
+                                    multipliers.add(multiplier.id, multiplier.multiplier, true);
+                                } else {
+                                    setCheckedGlobalMultipliers(prevState => _.pull(prevState, multiplier.id));
+                                    multipliers.remove(multiplier.id, true)
+                                }
+                            }}
+                        />
+                    );
+                })}
+                {multiplierData.length > 0 &&
+                        multiplierData.map(multiplier => {
                             return (
                                 <Form.Check
                                     label={multiplier.name}
@@ -71,10 +64,9 @@ export default function MultiplierGroup({ title, multiplierData, globalMultiplie
                                     }}
                                 />
                             );
-                        })}
-                    </div>
-                </React.Fragment>
-            }
+                        })
+                }
+            </div>
         </React.Fragment>
     );
 }
