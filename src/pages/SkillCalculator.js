@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Card, CardDeck, Form } from "react-bootstrap";
 import BootstrapTable from 'react-bootstrap-table-next';
 import { useParams } from "react-router";
-import { MAP_AREAS } from '../util/constants';
+import { INITIAL_REGIONS_STATE, REGIONS } from '../util/region-util';
 import { getFormatters, getBoostedLevel } from '../util/calculator-util';
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import calculatorData from '../resources/calculatorData.json';
@@ -11,8 +11,9 @@ import LevelExpInput from "../components/LevelExpInput";
 import useLevel from "../hooks/useLevel";
 import useMultiplier from "../hooks/useMultiplier";
 import { isRelicUnlocked } from "../util/relic-util";
+import { getFromLocalStorage, LOCALSTORAGE_KEYS } from "../util/browser-util";
 
-export default function SkillCalculator(props) {
+export default function SkillCalculator() {
     const currentLevel = useLevel(1);
     const targetLevel = useLevel(currentLevel.level + 1);
     const expMultiplier = useMultiplier();
@@ -20,8 +21,8 @@ export default function SkillCalculator(props) {
     const outputMultiplier = useMultiplier();
     const [useLevelFilter, setUseLevelFilter] = useState(false);
     const [isSkillingProdigy, setIsSkillingProdigy] = useState(isRelicUnlocked('1,3'));
-    const [useAreaFilter, setUseAreaFilter] = useState(false);
-    const [includedAreas, setIncludedAreas] = useState(MAP_AREAS);
+    const [useAreaFilter, setUseAreaFilter] = useState(true);
+    const [includedAreas, setIncludedAreas] = useState(getFromLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_REGIONS, INITIAL_REGIONS_STATE));
     const { skill } = useParams();
 
     const skillData = calculatorData.calculators[skill];
@@ -187,7 +188,7 @@ export default function SkillCalculator(props) {
                                 onChange={(event) => {
                                     setUseAreaFilter(!event.target.checked);
                                     if (event.target.checked) {
-                                        setIncludedAreas(MAP_AREAS);
+                                        setIncludedAreas(REGIONS);
                                     }
                                 }}
                             />
@@ -208,7 +209,7 @@ export default function SkillCalculator(props) {
                                     setIncludedAreas(selectedAreas)
                                 }}
                             >
-                                {MAP_AREAS.map(area => <option key={area}>{area}</option>)}
+                                {REGIONS.map(area => <option key={area}>{area}</option>)}
                             </Form.Control>
                         </div>
                     </div>

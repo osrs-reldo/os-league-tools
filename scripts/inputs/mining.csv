@@ -12,28 +12,25 @@ INPUT MULTIPLIERS,name,multiplier,,,,,,,,,
 OUTPUT MULTIPLIERS,name,multiplier,,,,,,,,,
 ,,,,,,,,,,,
 ACTIONS,name,category,exp,level,icon,inputs,outputs,areas,exp multipliers,input multipliers,output multipliers
-0,Clay,Ore/Rock,5,1,,,1 Clay,Asgarnia; Western Provinces; Fremennik Province; Misthalin; Morytania; Zeah; Desert,,,All
+0,Clay,Ore/Rock,5,1,,,1 Clay,Asgarnia; Kandarin; Fremennik; Misthalin; Morytania; Desert,,,All
 1,Rune essence,Essence,5,1,,,1 Rune essence,All,,,All
-2,Copper ore,Ore/Rock,17.5,1,,,1 Copper,Asgarnia; Western Provinces; Fremennik Province; Misthalin; Morytania; Zeah; Desert; Kandarin,,,All
-3,Tin ore,Ore/Rock,17.5,1,,,1 Tin,Asgarnia; Western Provinces; Fremennik Province; Misthalin; Morytania; Zeah; Desert; Kandarin,,,All
+2,Copper ore,Ore/Rock,17.5,1,,,1 Copper,Asgarnia; Kandarin; Fremennik; Misthalin; Morytania; Desert; Kandarin,,,All
+3,Tin ore,Ore/Rock,17.5,1,,,1 Tin,Asgarnia; Kandarin; Fremennik; Misthalin; Morytania; Desert; Kandarin,,,All
 4,Limestone,Ore/Rock,26.5,10,,,1 Limestone,Misthalin; Tirannwn,,,All
 5,Blurite,Ore/Rock,17.5,10,,,1 Blurite,Asgarnia,,,All
 6,Iron ore,Ore/Rock,35,15,,,1 Iron,All,,,All
-7,Silver ore,Ore/Rock,40,20,,,1 Silver,Asgarnia; Western Provinces; Fremennik Province; Misthalin; Zeah; Desert; Karamja; Tirannwn,,,All
+7,Silver ore,Ore/Rock,40,20,,,1 Silver,Asgarnia; Kandarin; Fremennik; Misthalin; Desert; Karamja; Tirannwn,,,All
 8,Volcanic ash,Other,10,22,,,1 Volcanic ash,Misthalin,,,All
 9,Pure essence,Essence,5,30,,,1 Pure essence,All,,,All
 10,Coal,Ore/Rock,50,30,,,1 Coal,All,,,All
 11,Sandstone,Ore/Rock,45,35,,,1 Sandstone,Desert,,,All
-12,Dense essence block,Essence,12,38,,,1 Dense essence block,Zeah,,,All
 13,Gem rocks,Ore/Rock,65,40,,,1 Gem rocks,Karamja,,,All
-14,Gold ore,Ore/Rock,65,40,,,1 Gold,Asgarnia; Western Provinces; Fremennik Province; Misthalin; Zeah; Desert; Karamja; Tirannwn; Kandarin; Wilderness,,,All
-15,Volcanic sulphur,Other,25,42,,,1 Volcanic sulphur,Zeah,,,All
+14,Gold ore,Ore/Rock,65,40,,,1 Gold,Asgarnia; Kandarin; Fremennik; Misthalin; Desert; Karamja; Tirannwn; Kandarin; Wilderness,,,All
 16,Granite,Ore/Rock,61.7,45,,,1 Granite,Desert,,,All
 17,Mithril ore,Ore/Rock,80,55,,,1 Mithril,All,,,All
 18,Daeyalt shard,Essence,5,60,,,1 Daeyalt shard,Morytania,,,All
-19,Lovakite ore,Ore/Rock,10,65,,,1 Lovakite,Zeah,,,All
 20,Soft clay,Ore/Rock,5,70,,,1 Soft clay,Tirannwn,,,All
-21,Adamantite ore,Ore/Rock,95,70,,,1 Adamantite,Asgarnia; Fremennik Province; Karamja; Misthalin; Morytania; Tirannwn; Western Provinces; Wilderness; Zeah,,,All
+21,Adamantite ore,Ore/Rock,95,70,,,1 Adamantite,Asgarnia; Fremennik; Karamja; Misthalin; Morytania; Tirannwn; Kandarin; Wilderness,,,All
 22,Salts (any kind),Other,5,72,,,1 Salt,Asgarnia,,,All
-23,Runite ore,Ore/Rock,125,85,,,1 Runite,Fremennik Province; Misthalin; Wilderness; Asgarnia; Tirannwn; Western Provinces; Karamja,,,All
+23,Runite ore,Ore/Rock,125,85,,,1 Runite,Fremennik; Misthalin; Wilderness; Asgarnia; Tirannwn; Kandarin; Karamja,,,All
 24,Amethyst,Ore/Rock,240,92,,,1 Amethyst,Asgarnia,,,All
