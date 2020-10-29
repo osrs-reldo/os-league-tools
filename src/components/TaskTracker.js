@@ -4,8 +4,13 @@ import taskData from '../resources/taskData.json';
 import { getMaxCompletableTasks, isTaskComplete, isTaskOnTodoList } from "../util/task-util";
 import TaskTable from "./TaskTable";
 import { INITIAL_REGIONS_STATE } from '../util/region-util';
+import useLocalStorage from "../hooks/useLocalStorage";
+import { LOCALSTORAGE_KEYS } from "../util/browser-util";
 
 export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlockedRegions = INITIAL_REGIONS_STATE }) {
+    const [showCompleted, setShowCompleted] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_SHOW_COMPLETED_TASKS, true);
+    const [hideLockedAreas, setHideLockedAreas] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_HIDE_LOCKED_AREAS, true);
+
     const regionsToShow = [ 'Common', ...unlockedRegions ]
     const maxCompletableTasks = getMaxCompletableTasks(unlockedRegions);
     const todoListFilter = (task, area) => {
@@ -63,6 +68,10 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
                             taskStatus={taskStatus}
                             updateTaskStatusCallback={updateTaskStatusCallback}
                             unlockedRegions={regionsToShow}
+                            showCompleted={showCompleted}
+                            setShowCompleted={setShowCompleted}
+                            hideLockedAreas={hideLockedAreas}
+                            setHideLockedAreas={setHideLockedAreas}
                         />
                     </Tab>
                     <Tab eventKey="todo" title="To-Do List">
@@ -71,6 +80,10 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
                             updateTaskStatusCallback={updateTaskStatusCallback}
                             unlockedRegions={regionsToShow}
                             taskFilters={[todoListFilter]}
+                            showCompleted={showCompleted}
+                            setShowCompleted={setShowCompleted}
+                            hideLockedAreas={hideLockedAreas}
+                            setHideLockedAreas={setHideLockedAreas}
                         />
                     </Tab>
                 </Tabs>
@@ -79,10 +92,16 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
     );
 }
 
-function TaskTableWrapper({ taskStatus, updateTaskStatusCallback, unlockedRegions, taskFilters = [] }) {
-    const [showCompleted, setShowCompleted] = useState(true);
-    const [hideLockedAreas, setHideLockedAreas] = useState(true);
-
+function TaskTableWrapper({
+        taskStatus,
+        updateTaskStatusCallback,
+        unlockedRegions,
+        showCompleted,
+        setShowCompleted,
+        hideLockedAreas,
+        setHideLockedAreas,
+        taskFilters = []
+    }) {
     const hideCompletedFilter = (task, area) => {
         return !isTaskComplete(task.id, area, taskStatus);
     }
