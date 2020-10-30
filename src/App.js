@@ -20,12 +20,12 @@ ReactGA.initialize(trackingId, {
     }
 });
 history.listen((location, action) => {
-    ReactGA.pageview(window.location.hash);
+    ReactGA.pageview(window.location.pathname + window.location.search + window.location.hash);
 });
 
 export default function App(props) {
     useEffect(() => {
-        ReactGA.pageview(window.location.hash)
+        ReactGA.pageview(window.location.pathname + window.location.search + window.location.hash);
     }, [])
 
     return (
