@@ -12,11 +12,8 @@ import useLevel from "../hooks/useLevel";
 import useMultiplier from "../hooks/useMultiplier";
 import { isRelicUnlocked } from "../util/relic-util";
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from "../util/browser-util";
-import ReactGA from 'react-ga';
 
 export default function SkillCalculator() {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-
     const currentLevel = useLevel(1);
     const targetLevel = useLevel(currentLevel.level + 1);
     const [totalLevel, setTotalLevel] = useState(1000);

@@ -2,11 +2,8 @@ import React from "react";
 import { Card, CardDeck } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import calculatorData from '../resources/calculatorData.json';
-import ReactGA from 'react-ga';
 
 export default function Calculators() {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-
     return (
         <div className="content-wrapper">
             <CardDeck>
