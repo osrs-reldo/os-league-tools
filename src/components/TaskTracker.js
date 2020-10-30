@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, Container, Row, Col, Tabs, Tab, Nav, Form } from "react-bootstrap";
 import taskData from '../resources/taskData.json';
 import { getMaxCompletableTasks, isTaskComplete, isTaskOnTodoList, DIFFICULTY_POINTS, getTaskPointsOnTodoList } from "../util/task-util";
@@ -152,6 +152,9 @@ function TaskTableWrapper({
         plannedOnTodoList,
         taskFilters = []
     }) {
+
+    const [selectedArea, setSelectedArea] = useState('All');
+
     const hideCompletedFilter = (task, area) => {
         return !isTaskComplete(task.id, area, taskStatus);
     }
@@ -164,7 +167,7 @@ function TaskTableWrapper({
     return (
         <Card bg='dark' text='white' style={{ border: '2px solid #6c757d', borderRadius: '0rem 0rem .25rem .25rem' }}>
             <div className="m-3 text-center">
-                <Tab.Container defaultActiveKey="All">
+                <Tab.Container activeKey={selectedArea}>
                     <Row>
                         <Col sm={2}>
                             <Form.Check
@@ -181,12 +184,12 @@ function TaskTableWrapper({
                             <h5>Areas:</h5>
                             <Nav variant="pills" className="flex-column mt-3 tab-bar-secondary">
                                 <Nav.Item key='All'>
-                                    <Nav.Link eventKey='All'>All</Nav.Link>
+                                    <Nav.Link eventKey='All' onClick={event => setSelectedArea('All')}>All</Nav.Link>
                                 </Nav.Item>
                                 {hideLockedAreas ?
                                     unlockedRegions.map(area =>
                                         <Nav.Item key={area}>
-                                            <Nav.Link eventKey={area}>{area}</Nav.Link>
+                                            <Nav.Link eventKey={area} onClick={() => setSelectedArea(area)}>{area}</Nav.Link>
                                         </Nav.Item>
                                     )
                                 :
@@ -210,14 +213,7 @@ function TaskTableWrapper({
                                 </div>
                             }
                             <Tab.Content>
-                                <Tab.Pane key='All' eventKey='All'>
-                                    <TaskTable area='All' taskStatus={taskStatus} updateTaskStatusCallback={updateTaskStatusCallback} taskFilters={allFilters} />
-                                </Tab.Pane>
-                                {taskData.areas.map(area =>
-                                    <Tab.Pane key={area} eventKey={area}>
-                                        <TaskTable area={area} taskStatus={taskStatus} updateTaskStatusCallback={updateTaskStatusCallback} taskFilters={allFilters} />
-                                    </Tab.Pane>
-                                )}
+                                <TaskTable area={selectedArea} taskStatus={taskStatus} updateTaskStatusCallback={updateTaskStatusCallback} taskFilters={allFilters} />
                             </Tab.Content>
                         </Col>
                     </Row>

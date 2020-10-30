@@ -32,30 +32,28 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
             <Card bg='dark' text='white' className="mt-3">
                 <Container fluid>
                     <Row>
-                        <Col className='text-center'>
-                            Select a region to view more information or unlock it:
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col className='text-center'>
-                            {REGIONS.map(regionName =>
-                                <Button
-                                    className='m-3'
-                                    variant={selectedRegion === regionName ? 'light' : 'dark'}
-                                    onClick={() => setSelectedRegion(regionName)}
-                                >
-                                    {regionName}
-                                </Button>
-                            )}
-                        </Col>
-                    </Row>
-                </Container>
-            </Card>
-
-            <Card bg='dark' text='white' className="mt-3">
-                <Container fluid>
-                    <Row>
                         <Col>
+                            <Container fluid>
+                                <Row>
+                                    <Col className='text-center'>
+                                        <h6 className="mt-2">Select a region to view more information or unlock it:</h6>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col className='text-center'>
+                                        {REGIONS.map(regionName =>
+                                            <Button
+                                                key={regionName}
+                                                className='m-3'
+                                                variant={selectedRegion === regionName ? 'light' : 'outline-light'}
+                                                onClick={() => setSelectedRegion(regionName)}
+                                            >
+                                                {regionName}
+                                            </Button>
+                                        )}
+                                    </Col>
+                                </Row>
+                            </Container>
                             <div className='m-3'>
                                 <RegionMap unlockedRegions={unlockedRegions} />
                             </div>
@@ -81,7 +79,7 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                                     )
                                 }
                             </div>
-                            <div className={'relic-table p-2'} style={{ maxHeight: '500px', overflowY: 'scroll' }}>
+                            <div className={'relic-table p-2'} style={{ maxHeight: '700px', overflowY: 'scroll' }}>
 
                                 <h5>Overview:</h5>
                                 {regionsData[selectedRegion].overview}
@@ -91,7 +89,7 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                                         <br /><br />
                                         The following travel options are restricted unless you have access to the appropriate area:
                                         <ul>
-                                            {regionsData[selectedRegion].travel.map(listItem => <li>{listItem}</li>)}
+                                            {regionsData[selectedRegion].travel.map(listItem => <li key={listItem}>{listItem}</li>)}
                                         </ul>
                                     </React.Fragment>
                                 }
@@ -100,24 +98,24 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
 
                                 Notable Settlements:
                                 <ul>
-                                    {regionsData[selectedRegion].settlements.map(listItem => <li>{listItem}</li>)}
+                                    {regionsData[selectedRegion].settlements.map(listItem => <li key={listItem}>{listItem}</li>)}
                                 </ul>
 
                                 Notable combat-related activities:
                                 <ul>
-                                    {regionsData[selectedRegion].combatActivities.map(listItem => <li>{listItem}</li>)}
+                                    {regionsData[selectedRegion].combatActivities.map(listItem => <li key={listItem}>{listItem}</li>)}
                                 </ul>
 
                                 Notable non-combat activities:
                                 <ul>
-                                    {regionsData[selectedRegion].nonCombatActivities.map(listItem => <li>{listItem}</li>)}
+                                    {regionsData[selectedRegion].nonCombatActivities.map(listItem => <li key={listItem}>{listItem}</li>)}
                                 </ul>
 
                                 {regionsData[selectedRegion].shops &&
                                     <React.Fragment>
                                         Notable shops:
                                         <ul>
-                                            {regionsData[selectedRegion].shops.map(listItem => <li>{listItem}</li>)}
+                                            {regionsData[selectedRegion].shops.map(listItem => <li key={listItem}>{listItem}</li>)}
                                         </ul>
                                     </React.Fragment>
                                 }
@@ -127,37 +125,37 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                                 <br /><br />
                                 Unlocking Misthalin will add the following tasks to your Slayer list:
                                 <ul>
-                                    {regionsData[selectedRegion].slayerTasks.map(listItem => <li>{listItem}</li>)}
+                                    {regionsData[selectedRegion].slayerTasks.map(listItem => <li key={listItem}>{listItem}</li>)}
                                 </ul>
 
                                 <h5>Unlocks:</h5>
 
                                 The following quests are automatically completed but will not reward any completion XP:
                                 <ul>
-                                    {regionsData[selectedRegion].questUnlocks.map(listItem => <li>{listItem}</li>)}
+                                    {regionsData[selectedRegion].questUnlocks.map(listItem => <li key={listItem}>{listItem}</li>)}
                                 </ul>
 
                                 {regionsData[selectedRegion].diaryUnlocks &&
                                     <React.Fragment>
                                         {regionsData[selectedRegion].diaryUnlocks.map(diaryData => (
-                                            <React.Fragment>
+                                            <React.Fragment key={diaryData.area}>
                                                 The following tasks in the {diaryData.area} Achievement Diary are automatically completed.
                                                 <br /><br />
                                                 Easy Tasks:
                                                 <ul>
-                                                    {diaryData.easyTasks.map(listItem => <li>{listItem}</li>)}
+                                                    {diaryData.easyTasks.map(listItem => <li key={listItem}>{listItem}</li>)}
                                                 </ul>
                                                 Medium Tasks:
                                                 <ul>
-                                                    {diaryData.medTasks.map(listItem => <li>{listItem}</li>)}
+                                                    {diaryData.medTasks.map(listItem => <li key={listItem}>{listItem}</li>)}
                                                 </ul>
                                                 Hard Tasks:
                                                 <ul>
-                                                    {diaryData.hardTasks.map(listItem => <li>{listItem}</li>)}
+                                                    {diaryData.hardTasks.map(listItem => <li key={listItem}>{listItem}</li>)}
                                                 </ul>
                                                 Elite Tasks:
                                                 <ul>
-                                                    {diaryData.eliteTasks.map(listItem => <li>{listItem}</li>)}
+                                                    {diaryData.eliteTasks.map(listItem => <li key={listItem}>{listItem}</li>)}
                                                 </ul>
                                             </React.Fragment>
                                         ))}
@@ -169,7 +167,7 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                                 The drops listed below are affected by the drop rate modifier perks granted by passive Relic unlocks.
                                 Drop rates affected are always rounded down and are not tied to area unlocks, this list represents the key drops affected in {selectedRegion}.
                                 <ul>
-                                    {regionsData[selectedRegion].notableDrops.map(listItem => <li>{listItem}</li>)}
+                                    {regionsData[selectedRegion].notableDrops.map(listItem => <li key={listItem}>{listItem}</li>)}
                                 </ul>
                             </div>
                         </Col>

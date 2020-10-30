@@ -30,7 +30,7 @@ export default function App(props) {
 
     return (
         <div className="App">
-            <HashRouter basename='/' history={history}>
+            <HashRouter basename='/'>
                 <TopNav />
                 <Switch>
                     <Route exact path="/" component={Homepage} />
