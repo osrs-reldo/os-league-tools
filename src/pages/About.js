@@ -33,7 +33,7 @@ export default function About() {
                             OS League Tools is lovingly crafted by chaiinchomp, a runescape veteran since 2005 and longtime spreadsheet enthusiast.
                         </p>
                         <p>
-                            The site is developed in React JS with components from react-bootstrap and react-bootstrap-table-2, and images from the official OSRS wiki. It will soon be open source, once I tidy up a few things!
+                            The site is developed in React JS, with images and data from the official OSRS wiki. It is open source - head over to <a href="https://github.com/chaiinchomp/os-league-tools">Github</a> if you're interested in contributing.
                         </p>
                         <p>
                             If you'd like to keep up-to-date on site changes, report bugs, make suggestions, or just hang out, please come by the <a href="https://discord.gg/GQ5kVyU">discord server</a>.
