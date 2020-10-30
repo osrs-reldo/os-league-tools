@@ -1,6 +1,6 @@
 {
     "name": "os-league-tools",
-    "homepage": "http://chaiinchomp.github.io/os-league-tools",
+    "homepage": "http://www.osleague.tools",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
