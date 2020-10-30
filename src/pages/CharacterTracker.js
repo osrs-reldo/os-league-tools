@@ -8,6 +8,9 @@ import useQueryString from "../hooks/useQueryString";
 import { LOCALSTORAGE_KEYS } from "../util/browser-util";
 import { INITIAL_TASKS_STATE } from "../util/task-util";
 import { INITIAL_REGIONS_STATE } from '../util/region-util';
+import ReactGA from 'react-ga';
+
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 export default function CharacterTracker() {
     const [selectedTab, onSetSelectedTab] = useQueryString('tab');

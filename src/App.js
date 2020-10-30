@@ -10,6 +10,14 @@ import Calculators from "./pages/Calculators";
 import Calculator from "./pages/SkillCalculator";
 import CharacterTracker from "./pages/CharacterTracker";
 import About from "./pages/About";
+import ReactGA from 'react-ga';
+
+const trackingId = process.env.REACT_APP_GA_TRACKING || "" ;
+ReactGA.initialize(trackingId, {
+    gaOptions: {
+        siteSpeedSampleRate: 100
+    }
+});
 
 export default function App(props) {
     return (

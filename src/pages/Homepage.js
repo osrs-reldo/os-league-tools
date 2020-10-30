@@ -2,6 +2,9 @@ import React from "react";
 import BlogEntry from "../components/BlogEntry";
 import NewsEntry from "../components/NewsEntry";
 import newsPosts from '../resources/newsPosts.json';
+import ReactGA from 'react-ga';
+
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 export default function Homepage() {
     return (

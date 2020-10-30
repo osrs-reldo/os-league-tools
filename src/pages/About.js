@@ -1,5 +1,8 @@
 import React from "react";
 import { Card, CardDeck } from "react-bootstrap";
+import ReactGA from 'react-ga';
+
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 export default function About() {
     return (
