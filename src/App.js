@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import TopNav from "./components/TopNav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
@@ -14,7 +14,7 @@ import About from "./pages/About";
 export default function App(props) {
     return (
         <div className="App">
-            <BrowserRouter>
+            <HashRouter basename='/'>
                 <TopNav />
                 <Switch>
                     <Route exact path="/" component={Homepage} />
@@ -23,7 +23,7 @@ export default function App(props) {
                     <Route path="/calculators/:skill" component={Calculator} />
                     <Route path="/about" component={About} />
                 </Switch>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 }
