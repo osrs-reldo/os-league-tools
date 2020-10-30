@@ -129,6 +129,7 @@ function pageButtonRenderer({ page, active, disable, title, onPageChange }) {
 };
 
 export function immutablyUpdateTaskCompletion(isCompleted, taskId, area, difficulty, taskState, setTaskStatusCallback = () => { }) {
+    const taskArea = area === "All" ? taskData.tasksById[taskId].area : area;
     const taskStatus = taskState ? taskState : getFromLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE);
     const pointValue = DIFFICULTY_POINTS[difficulty] * (isCompleted ? 1 : -1);
     const countAdjustment = isCompleted ? 1 : -1;
@@ -139,7 +140,7 @@ export function immutablyUpdateTaskCompletion(isCompleted, taskId, area, difficu
             total: prevCount => prevCount + countAdjustment,
             [difficulty]: prevCount => prevCount + countAdjustment,
         },
-        [area]: {
+        [taskArea]: {
             points: prevPoints => prevPoints + pointValue,
             taskCount: prevCount => prevCount + countAdjustment,
             tasks: {
@@ -155,10 +156,11 @@ export function immutablyUpdateTaskCompletion(isCompleted, taskId, area, difficu
 }
 
 export function immutablyUpdateTaskTodoList(isOnTodoList, taskId, area, taskState, setTaskTodoCallback = () => { }) {
+    const taskArea = area === "All" ? taskData.tasksById[taskId].area : area;
     const taskStatus = taskState ? taskState : getFromLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE);
 
     const updatedStatus = update(taskStatus, {
-        [area]: {
+        [taskArea]: {
             tasks: {
                 [taskId]: prevTaskState =>
                     update(prevTaskState || INITIAL_TASK_STATE,
