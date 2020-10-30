@@ -4,17 +4,22 @@ on:
     branches:
       - master
 jobs:
-  build-and-deploy:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Build
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install and build
         run: |
-            npm run build
+          npm install
+          npm run build
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.6.2
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
         with:
+          target_branch: gh-pages
+          build_dir: build
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
-
