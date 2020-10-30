@@ -1,8 +1,8 @@
-## O S   L E A G U E   T O O L S
+## O S - L E A G U E - T O O L S
 
 Your hub for all your OSRS leagues needs - calculators, relics and regions info, task tracking and planning, and more!
 
-Looking for more info, or have a bug report or suggestion? Check out the (Discord Server)[https://discord.gg/GQ5kVyU].
+Looking for more info, or have a bug report or suggestion? Check out the [Discord server](https://discord.gg/GQ5kVyU).
 
 ### Contributing
 
