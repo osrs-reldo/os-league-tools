@@ -129,7 +129,7 @@ Id,Name,Description,Difficulty,Type,Area
 127,Burn 100 Willow Logs ,Burn 100 Willow Logs. ,Medium,Skilling,Common
 128,Equip a Harpie Bug Lantern ,Equip a Bug lantern. ,Medium,Combat,Common
 129,Light a Bullseye Lantern ,Light a Bullseye Lantern. ,Medium,Skilling,Common
-130,"Equip full Graahk, Larupia or Kyatt ",Equip a full set of Graahk Larupia or Kyatt attire. ,Medium,Skilling,Common
+130,Equip full Graahk Larupia or Kyatt ,Equip a full set of Graahk Larupia or Kyatt attire. ,Medium,Skilling,Common
 131,Catch a Swamp Lizard or Salamander ,Catch either a Swamp Lizard or any kind of Salamander. ,Medium,Skilling,Common
 132,Catch a Butterfly ,Catch any butterfly. ,Medium,Skilling,Common
 133,Complete 50 Laps of a Rooftop Agility Course ,Complete 50 laps of any Rooftop Agility Course. ,Medium,Skilling,Common
@@ -448,7 +448,7 @@ Id,Name,Description,Difficulty,Type,Area
 446,Complete the Inferno 20 Times ,Complete the Inferno in Mor Ul Rek 20 times.,Elite,Bossing,Karamja
 447,Complete the Elite Karamja Diary ,Complete all of the elite tasks in the Karamja Achievement Diary. ,Elite,Diaries,Karamja
 448,Purchase an Onyx in Mor Ul Rek ,Purchase an Onyx from an Ore and Gem Store in Mor Ul Rek. ,Elite,Other,Karamja
-449,"Trade 1,000 Agility Arena Tickets for XP ",Trade in 1000 or more Agility Arena Tickets for XP in one go.,Master,Skilling,Karamja
+449,Trade 1000 Agility Arena Tickets for XP ,Trade in 1000 or more Agility Arena Tickets for XP in one go.,Master,Skilling,Karamja
 450,Equip an Infernal Cape ,Equip an Infernal Cape.,Master,Bossing,Karamja
 451,Complete the Fight Caves in 25:00 ,Complete the Tzhaar Fight Cave in Mor Ul Rek in 25:00 or less.,Master,Bossing,Karamja
 452,Complete the Inferno in 75:00 ,Complete the Inferno in Mor Ul Rek in 75:00 or less.,Master,Bossing,Karamja
@@ -502,7 +502,7 @@ Id,Name,Description,Difficulty,Type,Area
 500,Equip a Saradomin Sword ,Equip a saradomin sword. ,Elite,Drops,Asgarnia
 501,Equip a Piece of the Bandos Armour Set ,Equip any piece of the Bandos armour set. ,Elite,Drops,Asgarnia
 502,Equip an Armadyl Crossbow ,Equip an armadyl crossbow. ,Elite,Drops,Asgarnia
-503,"Equip Some Primordial, Pegasian or Eternal Boots ",Equip either some primordial boots some pegasian boots or some eternal boots. ,Elite,Drops,Asgarnia
+503,Equip Some Primordial Pegasian or Eternal Boots ,Equip either some primordial boots some pegasian boots or some eternal boots. ,Elite,Drops,Asgarnia
 504,Equip a Godsword ,Equip any godsword. ,Elite,Drops,Asgarnia
 505,Defeat Cerberus ,Defeat Cerberus in the Taverley Dungeon. ,Elite,Bossing,Asgarnia
 506,Defeat Any God Wars Dungeon Boss 100 Times ,Defeat any God Wars Dungeon boss 100 times.,Elite,Bossing,Asgarnia
@@ -516,7 +516,7 @@ Id,Name,Description,Difficulty,Type,Area
 514,Equip Every Godsword ,Equip all four godswords. ,Master,Drops,Asgarnia
 515,Equip a Full Armadyl Armour Set ,Equip a full set of Armadyl armour. ,Master,Drops,Asgarnia
 516,Equip a Full Bandos Armour Set ,Equip a full set of Bandos armour. ,Master,Drops,Asgarnia
-517,"Equip Some Primordial, Pegasian and Eternal Boots ",Equip some primordial boots some pegasian boots and some eternal boots. ,Master,Drops,Asgarnia
+517,Equip Some Primordial Pegasian and Eternal Boots ,Equip some primordial boots some pegasian boots and some eternal boots. ,Master,Drops,Asgarnia
 518,Switch to the Lunar Spellbook ,Switch to the Lunar Spellbook.,Easy,Other,Fremennik
 519,Defeat a Rock Crab in the Fremennik Province ,Defeat a rock crab in the Fremennik Province.,Easy,Combat,Fremennik
 520,Defeat a Cockatrice in the Fremennik Province ,Defeat a cockatrice in the Fremennik Province. ,Easy,Combat,Fremennik
@@ -731,7 +731,7 @@ Id,Name,Description,Difficulty,Type,Area
 729,Equip a Piece of the Infinity Robe Set ,Equip any piece of the Infinity robe set. ,Hard,Skilling,Desert
 730,Complete Enakhra's Lament ,Complete the Enakhra's Lament quest.,Hard,Quests,Desert
 731,Cast Paddewwa Teleport ,Cast the Paddewwa Teleport spell. ,Hard,Skilling,Desert
-732,"Have Zahur Make 1,000 Unfinished Potions At Once ",Have Zahur make 1000 Unfinished Potions in one go.,Hard,Other,Desert
+732,Have Zahur Make 1000 Unfinished Potions At Once ,Have Zahur make 1000 Unfinished Potions in one go.,Hard,Other,Desert
 733,Complete Room 8 of Pyramid Plunder ,Search the Golden Chest in Room 8 of Pyramid Plunder in Sophanem. ,Elite,Skilling,Desert
 734,Complete Room 8 of Pyramid Plunder 50 Times ,Search the Golden Chest in Room 8 of Pyramid Plunder in Sophanem 50 times. ,Elite,Skilling,Desert
 735,Complete Room 8 of Pyramid Plunder 100 Times ,Search the Golden Chest in Room 8 of Pyramid Plunder in Sophanem 100 times. ,Elite,Skilling,Desert
@@ -767,7 +767,7 @@ Id,Name,Description,Difficulty,Type,Area
 765,Complete the Canifis Agility Course ,Complete a lap of the Canifis Rooftop Agility Course. ,Medium,Skilling,Morytania
 766,Complete the Werewolf Agility Course ,Complete a lap of the Werewolf Agility Course. ,Medium,Skilling,Morytania
 767,Catch a Swamp Lizard in Morytania ,Catch a Swamp Lizard in Morytania. ,Medium,Skilling,Morytania
-768,"Convert 2,000 Daeyalt Shards Into Essence ",Convert 2000 Daeyalt Shards into Daeyalt Essence in Darkmeyer in one go. ,Medium,Skilling,Morytania
+768,Convert 2000 Daeyalt Shards Into Essence ,Convert 2000 Daeyalt Shards into Daeyalt Essence in Darkmeyer in one go. ,Medium,Skilling,Morytania
 769,Craft a Rune Using Daeyalt Essence ,Craft any rune using Daeyalt Essence. ,Medium,Skilling,Morytania
 770,Assemble a Slayer Helm ,Assemble a Slayer Helm. ,Medium,Drops,Morytania
 771,Loot a Barrows Chest ,Loot a Barrows Chest once.,Medium,Bossing,Morytania

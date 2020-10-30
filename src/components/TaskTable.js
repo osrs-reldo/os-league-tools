@@ -8,6 +8,8 @@ import { applyFilters, getFormatters, getRenderers, immutablyUpdateTaskCompletio
 export default function TaskTable({ area, taskStatus, updateTaskStatusCallback, taskFilters }) {
     const { completedFormatter, pointsFormatter, todoFormatter, nameFormatter } = getFormatters();
 
+    const taskTableContent = area === "All" ? taskData.tasks : taskData.tasksByRegion[area];
+
     const setTaskCompletion = (isComplete, taskId, difficulty) => {
         immutablyUpdateTaskCompletion(isComplete, taskId, area, difficulty, taskStatus, updateTaskStatusCallback);
     }
@@ -77,7 +79,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatusCallback, 
         <BootstrapTable
             bootstrap4
             keyField='id'
-            data={taskFilters ? applyFilters(taskData.tasks[area], area, taskFilters) : taskData.tasks[area]}
+            data={taskFilters ? applyFilters(taskTableContent, area, taskFilters) : taskTableContent}
             columns={columns}
             bordered={false}
             classes="light-text"

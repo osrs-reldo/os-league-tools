@@ -2,6 +2,7 @@ import relicData from '../resources/relicData.json';
 import { LOCALSTORAGE_KEYS } from './browser-util';
 import { getFromLocalStorage } from '../util/browser-util';
 import update from 'immutability-helper';
+import taskData from '../resources/taskData.json';
 
 export const MAX_POINTS = 15000;
 export const RELIC_UNLOCKS = [0, 500, 2000, 4000, 7500, 15000];
@@ -71,4 +72,25 @@ export function getPointsToNextRelic(currentPoints) {
         }
     }
     return 0;
+}
+
+export function getMaxCompletablePoints(unlockedRegions) {
+    const maxTasks = {
+        Total: taskData.pointCounts.Common.Total,
+        Easy: taskData.pointCounts.Common.Easy,
+        Medium: taskData.pointCounts.Common.Medium,
+        Hard: taskData.pointCounts.Common.Hard,
+        Elite: taskData.pointCounts.Common.Elite,
+        Master: taskData.pointCounts.Common.Master,
+    }
+    unlockedRegions.forEach(region => {
+        const regionValues = taskData.pointCounts[region];
+        maxTasks.Total = maxTasks.Total + regionValues.Total;
+        maxTasks.Easy = maxTasks.Easy + regionValues.Easy;
+        maxTasks.Medium = maxTasks.Medium + regionValues.Medium;
+        maxTasks.Hard = maxTasks.Hard + regionValues.Hard;
+        maxTasks.Elite = maxTasks.Elite + regionValues.Elite;
+        maxTasks.Master = maxTasks.Master + regionValues.Master;
+    })
+    return maxTasks;
 }

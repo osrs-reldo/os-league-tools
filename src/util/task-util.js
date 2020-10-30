@@ -28,7 +28,7 @@ const INITIAL_TASK_STATE = {
     todoList: false,
 }
 
-const DIFFICULTY_POINTS = {
+export const DIFFICULTY_POINTS = {
     'Easy': 10,
     'Medium': 50,
     'Hard': 100,
@@ -172,13 +172,15 @@ export function immutablyUpdateTaskTodoList(isOnTodoList, taskId, area, taskStat
 }
 
 export function isTaskComplete(taskId, area, taskState) {
+    const taskArea = area === "All" ? taskData.tasksById[taskId].area : area;
     const taskStatus = taskState ? taskState : getFromLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE);
-    return taskStatus[area]['tasks'][taskId] && taskStatus[area]['tasks'][taskId].complete;
+    return taskStatus[taskArea]['tasks'][taskId] && taskStatus[taskArea]['tasks'][taskId].complete;
 }
 
 export function isTaskOnTodoList(taskId, area, taskState) {
+    const taskArea = area === "All" ? taskData.tasksById[taskId].area : area;
     const taskStatus = taskState ? taskState : getFromLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE);
-    return taskStatus[area]['tasks'][taskId] && taskStatus[area]['tasks'][taskId].todoList;
+    return taskStatus[taskArea]['tasks'][taskId] && taskStatus[taskArea]['tasks'][taskId].todoList;
 }
 
 export function applyFilters(tasks, area, filterFunctions) {
@@ -208,4 +210,22 @@ export function getMaxCompletableTasks(unlockedRegions) {
         maxTasks.Master = maxTasks.Master + regionValues.Master;
     })
     return maxTasks;
+}
+
+export function getTaskPointsOnTodoList(taskStatus, regions) {
+    const todoListStatus = {
+        'tasks': 0,
+        'points': 0
+    }
+    regions.forEach(region => {
+        const regionTasks = taskStatus[region].tasks;
+        for (let [id, value] of Object.entries(regionTasks)) {
+            if (value.todoList === true && value.complete === false) {
+                const pointValue = DIFFICULTY_POINTS[taskData.tasksById[id].difficulty]
+                todoListStatus.tasks = todoListStatus.tasks + 1
+                todoListStatus.points = todoListStatus.points + pointValue
+            }
+        }
+    })
+    return todoListStatus;
 }
