@@ -4,9 +4,9 @@ import NewsEntry from "../components/NewsEntry";
 import newsPosts from '../resources/newsPosts.json';
 import ReactGA from 'react-ga';
 
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 export default function Homepage() {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     return (
         <div className="content-wrapper">
             <h1 className="mt-2 light-text">News & Updates</h1>

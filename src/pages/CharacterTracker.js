@@ -10,9 +10,9 @@ import { INITIAL_TASKS_STATE } from "../util/task-util";
 import { INITIAL_REGIONS_STATE } from '../util/region-util';
 import ReactGA from 'react-ga';
 
-ReactGA.pageview(window.location.pathname + window.location.search);
-
 export default function CharacterTracker() {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     const [selectedTab, onSetSelectedTab] = useQueryString('tab');
     const [taskStatus, setTaskStatus] = useLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE);
     const [unlockedRegions, setUnlockedRegions, refreshRegionState] = useLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_REGIONS, INITIAL_REGIONS_STATE);

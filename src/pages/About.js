@@ -2,9 +2,10 @@ import React from "react";
 import { Card, CardDeck } from "react-bootstrap";
 import ReactGA from 'react-ga';
 
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 export default function About() {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     return (
         <div className="content-wrapper">
             <Card bg='dark' text='white' style={{ margin: '1rem' }} >
