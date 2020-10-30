@@ -159,9 +159,17 @@ function TaskTableWrapper({
         return !isTaskComplete(task.id, area, taskStatus);
     }
 
+    const hideLockedAreasFilter = (task, area) => {
+        const taskArea = area === "All" ? taskData.tasksById[task.id].area : area;
+        return unlockedRegions.includes(taskArea);
+    }
+
     let allFilters = [...taskFilters];
     if (!showCompleted) {
         allFilters.push(hideCompletedFilter);
+    }
+    if (hideLockedAreas) {
+        allFilters.push(hideLockedAreasFilter);
     }
 
     return (
