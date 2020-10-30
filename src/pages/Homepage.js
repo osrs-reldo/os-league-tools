@@ -10,6 +10,7 @@ export default function Homepage() {
             {newsPosts.map(newsPost => (
                 newsPost.type === "news" ?
                     <NewsEntry
+                        key={newsPost.title}
                         title={newsPost.title}
                         date={newsPost.date}
                         leadText={newsPost.leadText}
@@ -19,6 +20,7 @@ export default function Homepage() {
                     />
                     :
                     <BlogEntry
+                        key={newsPost.title}
                         title={newsPost.title}
                         date={newsPost.date}
                         thumbnail={newsPost.thumbnail}

@@ -9,31 +9,25 @@ export default function NewsEntry({ title, date, thumbnail, leadText, buttonLink
                     <h4>{title}</h4>
                 </Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{date}</Card.Subtitle>
-                <Card.Text>
-                    <Media>
-                        {thumbnail && <img
-                            width='auto'
-                            height={100}
-                            src={thumbnail}
-                            alt={title}
-                            className='mr-3'
-                        />}
-                        <Media.Body>
-                            <p>
-                                <div dangerouslySetInnerHTML={{ __html: leadText }} />
-                            </p>
-                            <p>
-                                <Button
-                                    variant="outline-light"
-                                    as='a'
-                                    href={buttonLink}
-                                >
-                                    {buttonText}
-                                </Button>
-                            </p>
-                        </Media.Body>
-                    </Media>
-                </Card.Text>
+                <Media>
+                    {thumbnail && <img
+                        width='auto'
+                        height={100}
+                        src={thumbnail}
+                        alt={title}
+                        className='mr-3'
+                    />}
+                    <Media.Body>
+                        <div dangerouslySetInnerHTML={{ __html: leadText }} className="mb-2" />
+                        <Button
+                            variant="outline-light"
+                            as='a'
+                            href={buttonLink}
+                        >
+                            {buttonText}
+                        </Button>
+                    </Media.Body>
+                </Media>
             </Card.Body>
         </Card>
     );

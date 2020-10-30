@@ -11,47 +11,37 @@ export default function NewsEntry({ title, date, thumbnail, leadText, htmlConten
                     <h4>{title}</h4>
                 </Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{date}</Card.Subtitle>
-                <Card.Text>
-                    <Media>
-                        {thumbnail && <img
-                            width='auto'
-                            height={100}
-                            src={thumbnail}
-                            alt={title}
-                        />}
-                        <Media.Body>
-                            {expanded ? (
+                <Media>
+                    {thumbnail && <img
+                        width='auto'
+                        height={100}
+                        src={thumbnail}
+                        alt={title}
+                    />}
+                    <Media.Body>
+                        {expanded ? (
+                            <React.Fragment>
+                                <div dangerouslySetInnerHTML={{ __html: htmlContent }} className="mb-1"  />
+                                <Button
+                                    variant="outline-light"
+                                    onClick={() => setExpanded(!expanded)}
+                                >
+                                    Show less
+                                </Button>
+                            </React.Fragment>
+                        ) : (
                                 <React.Fragment>
-                                    <p>
-                                        <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
-                                    </p>
-                                    <p>
-                                        <Button
-                                            variant="outline-light"
-                                            onClick={() => setExpanded(!expanded)}
-                                        >
-                                            Show less
+                                    <div dangerouslySetInnerHTML={{ __html: leadText + '...' }}  className="mb-1" />
+                                    <Button
+                                        variant="outline-light"
+                                        onClick={() => setExpanded(!expanded)}
+                                    >
+                                        Show more
                                     </Button>
-                                    </p>
                                 </React.Fragment>
-                            ) : (
-                                    <React.Fragment>
-                                        <p>
-                                            <div dangerouslySetInnerHTML={{ __html: leadText + '...' }} />
-                                        </p>
-                                        <p>
-                                            <Button
-                                                variant="outline-light"
-                                                onClick={() => setExpanded(!expanded)}
-                                            >
-                                                Show more
-                                            </Button>
-                                        </p>
-                                    </React.Fragment>
-                                )}
-                        </Media.Body>
-                    </Media>
-                </Card.Text>
+                            )}
+                    </Media.Body>
+                </Media>
             </Card.Body>
         </Card>
     );
