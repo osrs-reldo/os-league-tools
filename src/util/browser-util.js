@@ -3,7 +3,7 @@ export const LOCALSTORAGE_KEYS = {
     UNLOCKED_RELICS: 'unlockedRelics',
     UNLOCKED_REGIONS: 'unlockedRegions',
     TASKS: 'tasks',
-    FILTER_SHOW_COMPLETED_TASKS: 'filterShowCompleted',
+    FILTER_SELECTED_STATUS: 'filterSelectedStatus',
     FILTER_HIDE_LOCKED_AREAS: 'filterHideLocked'
 }
 

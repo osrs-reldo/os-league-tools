@@ -10,8 +10,8 @@ import { LOCALSTORAGE_KEYS } from "../util/browser-util";
 import { CardDeck } from "../../node_modules/react-bootstrap/esm/index";
 
 export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlockedRegions = INITIAL_REGIONS_STATE }) {
-    const [showCompleted, setShowCompleted] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_SHOW_COMPLETED_TASKS, true);
     const [hideLockedAreas, setHideLockedAreas] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_HIDE_LOCKED_AREAS, true);
+    const [selectedStatus, setSelectedStatus] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_SELECTED_STATUS, 'All');
 
     const regionsToShow = [ 'Common', ...unlockedRegions ]
     const maxCompletableTasks = getMaxCompletableTasks(unlockedRegions);
@@ -116,8 +116,8 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
                             taskStatus={taskStatus}
                             updateTaskStatusCallback={updateTaskStatusCallback}
                             unlockedRegions={regionsToShow}
-                            showCompleted={showCompleted}
-                            setShowCompleted={setShowCompleted}
+                            selectedStatus={selectedStatus}
+                            setSelectedStatus={setSelectedStatus}
                             hideLockedAreas={hideLockedAreas}
                             setHideLockedAreas={setHideLockedAreas}
                         />
@@ -128,8 +128,8 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
                             updateTaskStatusCallback={updateTaskStatusCallback}
                             unlockedRegions={regionsToShow}
                             taskFilters={[todoListFilter]}
-                            showCompleted={showCompleted}
-                            setShowCompleted={setShowCompleted}
+                            selectedStatus={selectedStatus}
+                            setSelectedStatus={setSelectedStatus}
                             hideLockedAreas={hideLockedAreas}
                             setHideLockedAreas={setHideLockedAreas}
                             plannedOnTodoList={plannedOnTodoList}
@@ -145,8 +145,8 @@ function TaskTableWrapper({
         taskStatus,
         updateTaskStatusCallback,
         unlockedRegions,
-        showCompleted,
-        setShowCompleted,
+        selectedStatus,
+        setSelectedStatus,
         hideLockedAreas,
         setHideLockedAreas,
         plannedOnTodoList,
@@ -154,8 +154,6 @@ function TaskTableWrapper({
     }) {
 
     const [selectedArea, setSelectedArea] = useState('All');
-
-    const [selectedStatus, setSelectedStatus] = useState('All');
 
     const showIncompleteFilter = (task, area) => {
         return !isTaskComplete(task.id, area, taskStatus);
