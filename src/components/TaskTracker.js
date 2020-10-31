@@ -155,8 +155,14 @@ function TaskTableWrapper({
 
     const [selectedArea, setSelectedArea] = useState('All');
 
-    const hideCompletedFilter = (task, area) => {
+    const [selectedStatus, setSelectedStatus] = useState('All');
+
+    const showIncompleteFilter = (task, area) => {
         return !isTaskComplete(task.id, area, taskStatus);
+    }
+
+    const showCompleteFilter = (task, area) => {
+        return isTaskComplete(task.id, area, taskStatus);
     }
 
     const hideLockedAreasFilter = (task, area) => {
@@ -165,8 +171,12 @@ function TaskTableWrapper({
     }
 
     let allFilters = [...taskFilters];
-    if (!showCompleted) {
-        allFilters.push(hideCompletedFilter);
+
+    if ({selectedStatus}.selectedStatus === "Incomplete") {
+        allFilters.push(showIncompleteFilter);
+    }
+    if ({selectedStatus}.selectedStatus === "Complete") {
+        allFilters.push(showCompleteFilter);
     }
     if (hideLockedAreas) {
         allFilters.push(hideLockedAreasFilter);
@@ -175,57 +185,76 @@ function TaskTableWrapper({
     return (
         <Card bg='dark' text='white' style={{ border: '2px solid #6c757d', borderRadius: '0rem 0rem .25rem .25rem' }}>
             <div className="m-3 text-center">
-                <Tab.Container activeKey={selectedArea}>
+                <Nav>
                     <Row>
                         <Col sm={2}>
-                            <Form.Check
-                                label="Show completed tasks"
-                                checked={showCompleted}
-                                onChange={() => setShowCompleted(prevShowCompleted => !prevShowCompleted)}
-                            />
-                            <Form.Check
-                                label="Hide locked areas"
-                                checked={hideLockedAreas}
-                                onChange={() => setHideLockedAreas(prevHideLocked => !prevHideLocked)}
-                            />
-                            <div className="mt-2 mb-2" style={{borderTop: '0.5px solid', width: '100%'}} />
-                            <h5>Areas:</h5>
-                            <Nav variant="pills" className="flex-column mt-3 tab-bar-secondary">
-                                <Nav.Item key='All'>
-                                    <Nav.Link eventKey='All' onClick={event => setSelectedArea('All')}>All</Nav.Link>
-                                </Nav.Item>
-                                {hideLockedAreas ?
-                                    unlockedRegions.map(area =>
-                                        <Nav.Item key={area}>
-                                            <Nav.Link eventKey={area} onClick={() => setSelectedArea(area)}>{area}</Nav.Link>
-                                        </Nav.Item>
-                                    )
-                                :
-                                    taskData.areas.map(area =>
-                                        <Nav.Item key={area}>
-                                            <Nav.Link eventKey={area}>{area}</Nav.Link>
-                                        </Nav.Item>
-                                    )
-                                }
-                            </Nav>
+                            <Tab.Container activeKey={selectedArea}>
+                                <Form.Check
+                                    label="Hide locked areas"
+                                    checked={hideLockedAreas}
+                                    onChange={() => setHideLockedAreas(prevHideLocked => !prevHideLocked)}
+                                />
+                                <div className="mt-2 mb-2" style={{borderTop: '0.5px solid', width: '100%'}} />
+                                <h5>Areas:</h5>
+                                <Nav variant="pills" className="flex-column mt-3 tab-bar-secondary">
+                                    <Nav.Item key='All'>
+                                        <Nav.Link eventKey='All' onClick={event => setSelectedArea('All')}>All</Nav.Link>
+                                    </Nav.Item>
+                                    {hideLockedAreas ?
+                                        unlockedRegions.map(area =>
+                                            <Nav.Item key={area}>
+                                                <Nav.Link eventKey={area} onClick={() => setSelectedArea(area)}>{area}</Nav.Link>
+                                            </Nav.Item>
+                                        )
+                                    :
+                                        taskData.areas.map(area =>
+                                            <Nav.Item key={area}>
+                                                <Nav.Link eventKey={area}>{area}</Nav.Link>
+                                            </Nav.Item>
+                                        )
+                                    }
+                                </Nav>
+                                <div className="mt-2 mb-2" style={{borderTop: '0.5px solid', width: '100%'}} />
+                            </Tab.Container>
+
+                            <Tab.Container activeKey={selectedStatus}>
+                                <h5>Status:</h5>
+                                <Nav variant="pills" className="flex-column mt-3 tab-bar-secondary">
+                                    <Nav.Item key='All'>
+                                        <Nav.Link eventKey='All' onClick={() => setSelectedStatus('All')}>All</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item key='Complete'>
+                                        <Nav.Link eventKey='Complete' onClick={() => {setSelectedStatus('Complete');
+                                                                                        
+                                                                                        
+                                                                                    }
+                                        }>Complete</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item key='Incomplete'>
+                                        <Nav.Link eventKey='Incomplete' onClick={() => setSelectedStatus('Incomplete')}>Incomplete</Nav.Link>
+                                    </Nav.Item>
+                                </Nav>
+                            </Tab.Container>
                         </Col>
+
                         <Col sm={10}>
                             {plannedOnTodoList &&
-                                <div className='d-flex justify-content-around'>
-                                    <h4 className="mb-3">
-                                        Tasks on To-do List: {plannedOnTodoList.tasks}
-                                    </h4>
-                                    <h4 className="mb-3">
-                                        Points on To-do List: {plannedOnTodoList.points}
-                                    </h4>
-                                </div>
-                            }
-                            <Tab.Content>
+                                            <div className='d-flex justify-content-around'>
+                                                <h4 className="mb-3">
+                                                    Tasks on To-do List: {plannedOnTodoList.tasks}
+                                                </h4>
+                                                <h4 className="mb-3">
+                                                    Points on To-do List: {plannedOnTodoList.points}
+                                                </h4>
+                                            </div>
+                                        }
+                            <Nav>
                                 <TaskTable area={selectedArea} taskStatus={taskStatus} updateTaskStatusCallback={updateTaskStatusCallback} taskFilters={allFilters} />
-                            </Tab.Content>
+                            </Nav>
                         </Col>
                     </Row>
-                </Tab.Container>
+                </Nav>
+                
             </div>
         </Card>
     );
