@@ -75,12 +75,14 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
         },
     ];
 
-    const { pageButtonRenderer } = getRenderers();
+    const { pageButtonRenderer, pageListRenderer, sizePerPageRenderer } = getRenderers();
+    const tableData = taskFilters ? applyFilters(taskTableContent, area, taskFilters) : taskTableContent;
+
     return (
         <BootstrapTable
             bootstrap4
             keyField='id'
-            data={taskFilters ? applyFilters(taskTableContent, area, taskFilters) : taskTableContent}
+            data={tableData}
             columns={columns}
             bordered={false}
             classes="light-text"
@@ -88,9 +90,16 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             filterPosition="top"
             pagination={paginationFactory({
                 pageButtonRenderer,
+                pageListRenderer,
+                sizePerPageRenderer,
                 sizePerPage: 20,
-                hideSizePerPage: true,
-                hidePageListOnlyOnePage: true
+                sizePerPageList: [
+                    { text: '20', value: 20 },
+                    { text: '50', value: 50 },
+                    { text: '100', value: 100 },
+                    { text: 'All', value: 1000 },
+                ],
+                alwaysShowAllBtns: true
             })}
         />
     );

@@ -108,13 +108,21 @@ ul.calc-list {
 /* Relic table */
 .relic-table {
   background-color: #484e53;
-  border: 1px solid rgba(0,0,0,.125);
+  outline: 1px solid rgba(0,0,0,.125);
 }
 
 .relic-table-cell {
-  border: 1px solid rgba(0,0,0,.125);
+  outline: 2px solid rgba(0,0,0,.125);
+  margin: 2px;
 }
 
 .relic-table-cell.selected {
-  border: 2px solid #a3ce27;
+  outline: 2px solid #a3ce27;
+  margin: 2px;
+}
+
+.react-bootstrap-table-pagination {
+  margin: auto;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
 }

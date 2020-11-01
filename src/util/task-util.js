@@ -26,6 +26,8 @@ export function getFormatters() {
 export function getRenderers() {
     return {
         pageButtonRenderer: pageButtonRenderer,
+        pageListRenderer: pageListRenderer,
+        sizePerPageRenderer: sizePerPageRenderer
     }
 }
 
@@ -95,16 +97,50 @@ function pageButtonRenderer({ page, active, disable, title, onPageChange }) {
         activeStyle.backgroundColor = '#484e53';
         activeStyle.color = 'white';
     } else {
-        activeStyle.backgroundColor = ' #343a40';
+        activeStyle.backgroundColor = '#343a40';
         activeStyle.color = 'white';
     }
     return (
-        <li key={page} >
+        <li key={page} style={{ display: "inline" }}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a href="#" onClick={handleClick} style={activeStyle}>{page}</a>
         </li>
     );
 };
+
+function pageListRenderer({ pages, onPageChange }) {
+    return (
+        <div className="mt-2">
+            <ul className="list-unstyled">
+                {pages.map(page => (
+                    pageButtonRenderer({ ...page, onPageChange })
+                ))}
+            </ul>
+        </div>
+    );
+  };
+
+function sizePerPageRenderer({ options, currSizePerPage, onSizePerPageChange }) {
+    return (
+        <div className="btn-group ml-5" role="group">
+            {
+                options.map((option) => {
+                    const isSelected = currSizePerPage === `${option.page}`;
+                    return (
+                        <button
+                            key={ option.text }
+                            type="button"
+                            onClick={() => onSizePerPageChange(option.page)}
+                            className={`btn ${isSelected ? 'btn-light' : 'btn-secondary'}`}
+                        >
+                            {option.text}
+                        </button>
+                    );
+                })
+            }
+        </div>
+  );
+}
 
 export function isTaskComplete(taskId, area, taskState) {
     return taskState.tasks.includes(taskId);
