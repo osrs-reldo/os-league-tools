@@ -371,7 +371,7 @@ Id,Name,Description,Difficulty,Type,Area
 369,Complete Death to the Dorgeshuun ,Complete the Death to the Dorgeshuun quest.,Medium,Quests,Misthalin
 370,Complete Demon Slayer ,Complete the Demon Slayer quest.,Medium,Quests,Misthalin
 371,Use a Digsite Pendant to Teleport to Fossil Island ,Use a Digsite Pendant to teleport to Fossil Island. ,Medium,Other,Misthalin
-372,Complete a Soul's Bane ,Complete the A Soul's Bane quest.,Hard,Quests,Misthalin
+372,Complete a Soul's Bane ,Complete the A Soul's Bane quest.,Medium,Quests,Misthalin
 373,Build a Magic Bird House ,Build a Magic Bird House on Fossil Island. ,Hard,Skilling,Misthalin
 374,Complete the Hard Varrock Diary ,Complete all of the hard tasks in the Varrock Achievement Diary. ,Hard,Diaries,Misthalin
 375,Catch 200 Implings in Puro-Puro ,Catch 200 Implings in Puro-Puro. ,Hard,Skilling,Misthalin
@@ -420,7 +420,7 @@ Id,Name,Description,Difficulty,Type,Area
 418,Enter the Tai Bwo Wannai Hardwood Grove ,Enter the Hardwood Grove in Tai Bwo Wannai.,Medium,Quests,Karamja
 419,Equip a Matching Tribal Mask and Broodoo Shield ,Equip a matching Tribal Mask and Broodoo Shield.,Medium,Drops,Karamja
 420,Equip a Full Tai Bwo Wannai Villager Set ,Equip a full set of Tai Bwo Wannai villager clothing.,Medium,Other,Karamja
-421,Cook 100 Karambwans ,Cook 100 Karambwans. ,Medium,Skilling,Karamja
+421,Cook 100 Karambwans ,Cook 100 Karambwans. ,Hard,Skilling,Karamja
 422,Take a Shortcut Across the Shilo Village River ,Use the Stepping Stones Agility Shortcut in Shilo Village. ,Medium,Skilling,Karamja
 423,Catch 100 Karambwans ,Catch 100 Karambwans on Karamja. ,Hard,Skilling,Karamja
 424,Check a grown Calquat Tree ,Check the health of a Calquat Tree you've grown on Karamja. ,Hard,Skilling,Karamja

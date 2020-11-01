@@ -3236,7 +3236,7 @@
             "id": "372",
             "name": "Complete a Soul's Bane",
             "description": "Complete the A Soul's Bane quest.",
-            "difficulty": "Hard",
+            "difficulty": "Medium",
             "category": "Quests",
             "area": "Misthalin"
         },
@@ -3628,7 +3628,7 @@
             "id": "421",
             "name": "Cook 100 Karambwans",
             "description": "Cook 100 Karambwans.",
-            "difficulty": "Medium",
+            "difficulty": "Hard",
             "category": "Skilling",
             "area": "Karamja"
         },
@@ -10921,7 +10921,7 @@
                 "id": "372",
                 "name": "Complete a Soul's Bane",
                 "description": "Complete the A Soul's Bane quest.",
-                "difficulty": "Hard",
+                "difficulty": "Medium",
                 "category": "Quests",
                 "area": "Misthalin"
             },
@@ -11315,7 +11315,7 @@
                 "id": "421",
                 "name": "Cook 100 Karambwans",
                 "description": "Cook 100 Karambwans.",
-                "difficulty": "Medium",
+                "difficulty": "Hard",
                 "category": "Skilling",
                 "area": "Karamja"
             },
@@ -18620,7 +18620,7 @@
             "id": "372",
             "name": "Complete a Soul's Bane",
             "description": "Complete the A Soul's Bane quest.",
-            "difficulty": "Hard",
+            "difficulty": "Medium",
             "category": "Quests",
             "area": "Misthalin"
         },
@@ -19012,7 +19012,7 @@
             "id": "421",
             "name": "Cook 100 Karambwans",
             "description": "Cook 100 Karambwans.",
-            "difficulty": "Medium",
+            "difficulty": "Hard",
             "category": "Skilling",
             "area": "Karamja"
         },
