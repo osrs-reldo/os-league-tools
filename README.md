@@ -16,6 +16,7 @@ To build and start up locally, run:
 
 ```
 npm install
+npm run build
 yarn start
 ```
 
