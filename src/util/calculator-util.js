@@ -96,7 +96,7 @@ function calcExpPerAction(baseExp, baseMultiplierStr, expMultiplier, validMultip
     const baseMultiplier = parseInt(baseMultiplierStr);
     const secondaryMultiplier = baseMultiplier * expMultiplier.apply(validMultipliers);
     const equilibriumBonus = expMultiplier.get().hasOwnProperty("G0") ? totalLevel *.1 : 0;
-    return baseExp * secondaryMultiplier + equilibriumBonus;
+    return Math.round((baseExp * secondaryMultiplier + equilibriumBonus) * 10) / 10;
 }
 
 export function calcActionsRemaining(curExp, targetExp, activityExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel) {

@@ -179,8 +179,8 @@ export default function SkillCalculator() {
                                 label='16x'
                                 inline
                                 type='radio'
-                                id='16x'
-                                checked={baseExpMultiplier === '16x'}
+                                id='16'
+                                checked={baseExpMultiplier === '16'}
                                 onChange={(event) => {
                                     setBaseExpMultiplier(event.target.id);
                                 }}
