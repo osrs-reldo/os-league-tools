@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { getFromLocalStorage, updateLocalStorage } from '../util/browser-util'
+import { getFromLocalStorage, updateLocalStorage } from '../util/browser-util';
 
 /** originally from https://usehooks.com/useLocalStorage **/
 export default function useLocalStorage(key, initialValue) {
@@ -14,9 +14,5 @@ export default function useLocalStorage(key, initialValue) {
         updateLocalStorage(key, valueToStore, setStoredValue);
     };
 
-    const refresh = () => {
-        setStoredValue(getValue);
-    }
-
-    return [storedValue, setValue, refresh];
+    return [storedValue, setValue];
 }

@@ -20,8 +20,7 @@ function setQueryStringWithoutPageReload(qsValue) {
         window.location.host +
         window.location.pathname +
         qsValue +
-        window.location.hash ;
-        console.log("new url: " + newurl)
+        window.location.hash;
 
     window.history.pushState({ path: newurl }, "", newurl);
 };

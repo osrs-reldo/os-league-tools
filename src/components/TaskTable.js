@@ -3,19 +3,19 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import taskData from '../resources/taskData.json';
-import { applyFilters, getFormatters, getRenderers, immutablyUpdateTaskCompletion, immutablyUpdateTaskTodoList } from "../util/task-util";
+import { applyFilters, getFormatters, getRenderers } from "../util/task-util";
 
-export default function TaskTable({ area, taskStatus, updateTaskStatusCallback, taskFilters }) {
+export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters }) {
     const { completedFormatter, pointsFormatter, todoFormatter, nameFormatter } = getFormatters();
 
     const taskTableContent = area === "All" ? taskData.tasks : taskData.tasksByRegion[area];
 
-    const setTaskCompletion = (isComplete, taskId, difficulty) => {
-        immutablyUpdateTaskCompletion(isComplete, taskId, area, difficulty, taskStatus, updateTaskStatusCallback);
+    const setTaskCompletion = (isComplete, taskId) => {
+        updateTaskStatus.setCompleted(taskId, isComplete);
     }
 
     const setTaskTodo = (isOnTodoList, taskId) => {
-        immutablyUpdateTaskTodoList(isOnTodoList, taskId, area, taskStatus, updateTaskStatusCallback);
+        updateTaskStatus.setTodoListed(taskId, isOnTodoList);
     }
 
     const columns = [

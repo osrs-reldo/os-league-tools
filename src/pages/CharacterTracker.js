@@ -6,13 +6,14 @@ import TaskTracker from "../components/TaskTracker";
 import useLocalStorage from "../hooks/useLocalStorage";
 import useQueryString from "../hooks/useQueryString";
 import { LOCALSTORAGE_KEYS } from "../util/browser-util";
-import { INITIAL_TASKS_STATE } from "../util/task-util";
 import { INITIAL_REGIONS_STATE } from '../util/region-util';
+import useTaskStatus from "../hooks/useTaskStatus";
+import { getPointsEarned } from "../util/task-util";
 
 export default function CharacterTracker() {
     const [selectedTab, onSetSelectedTab] = useQueryString('tab');
-    const [taskStatus, setTaskStatus] = useLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE);
-    const [unlockedRegions, setUnlockedRegions, refreshRegionState] = useLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_REGIONS, INITIAL_REGIONS_STATE);
+    const [taskStatus, updateTaskStatus] = useTaskStatus();
+    const [unlockedRegions, setUnlockedRegions] = useLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_REGIONS, INITIAL_REGIONS_STATE);
 
     return (
         <div className="content-wrapper mb-4">
@@ -26,20 +27,19 @@ export default function CharacterTracker() {
                     </Card>
                 </Tab> */}
                 <Tab eventKey="relics" title="Relics">
-                    <RelicsTracker totalPoints={taskStatus.points} />
+                    <RelicsTracker totalPoints={getPointsEarned(taskStatus)} />
                 </Tab>
                 <Tab eventKey="regions" title="Regions">
                     <RegionsTracker
-                        totalTasks={taskStatus.taskCount.total}
+                        totalTasks={taskStatus.tasks.length}
                         unlockedRegions={unlockedRegions}
                         setUnlockedRegionsCallback={setUnlockedRegions}
-                        refreshRegionState={refreshRegionState}
                     />
                 </Tab>
                 <Tab eventKey="tasks" title="Tasks">
                     <TaskTracker
                         taskStatus={taskStatus}
-                        updateTaskStatusCallback={setTaskStatus}
+                        updateTaskStatus={updateTaskStatus}
                         unlockedRegions={unlockedRegions}
                     />
                 </Tab>

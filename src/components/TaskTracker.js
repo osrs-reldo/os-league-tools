@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Card, Container, Row, Col, Tabs, Tab, Nav, Form } from "react-bootstrap";
 import taskData from '../resources/taskData.json';
-import { getMaxCompletableTasks, isTaskComplete, isTaskOnTodoList, DIFFICULTY_POINTS, getTaskPointsOnTodoList } from "../util/task-util";
+import { getMaxCompletableTasks, isTaskComplete, isTaskOnTodoList, getTaskPointsOnTodoList, getCompletedTasksInArea, getCompletedTasksWithDifficulty, getPointsEarned } from "../util/task-util";
 import { getMaxCompletablePoints } from "../util/relic-util"
 import TaskTable from "./TaskTable";
 import { INITIAL_REGIONS_STATE } from '../util/region-util';
@@ -9,7 +9,7 @@ import useLocalStorage from "../hooks/useLocalStorage";
 import { LOCALSTORAGE_KEYS } from "../util/browser-util";
 import { CardDeck } from "../../node_modules/react-bootstrap/esm/index";
 
-export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlockedRegions = INITIAL_REGIONS_STATE }) {
+export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegions = INITIAL_REGIONS_STATE }) {
     const [hideLockedAreas, setHideLockedAreas] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_HIDE_LOCKED_AREAS, true);
     const [selectedStatus, setSelectedStatus] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_SELECTED_STATUS, 'All');
 
@@ -19,7 +19,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
     const plannedOnTodoList = getTaskPointsOnTodoList(taskStatus, regionsToShow);
 
     const todoListFilter = (task, area) => {
-        return isTaskOnTodoList(task.id, area, taskStatus);
+        return isTaskOnTodoList(task.id, taskStatus);
     }
 
     return (
@@ -30,9 +30,9 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
                         <Row>
                             <Col className="text-center">
                                 <h2 className="mt-3">
-                                    {`Tasks Completed: ${taskStatus.taskCount.total
+                                    {`Tasks Completed: ${taskStatus.tasks.length
                                         } / ${maxCompletableTasks.Total
-                                        } (${Math.round((taskStatus.taskCount.total / maxCompletableTasks.Total) * 100)
+                                        } (${Math.round((taskStatus.tasks.length / maxCompletableTasks.Total) * 100)
                                         }%)`}
                                 </h2>
                             </Col>
@@ -41,7 +41,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
                             <Col className="text-center">
                                 <ul style={{ listStyleType: 'none' }} >
                                     {taskData.difficulties.map(difficultyJson => {
-                                        const numComplete = taskStatus.taskCount[difficultyJson.value];
+                                        const numComplete = getCompletedTasksWithDifficulty(difficultyJson.value, taskStatus).length;
                                         const totalTasks = maxCompletableTasks[difficultyJson.value];
                                         const percentage = Math.round((numComplete / totalTasks) * 100);
                                         return (
@@ -55,7 +55,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
                             <Col className="text-center">
                                 <ul style={{ listStyleType: 'none' }} >
                                     {regionsToShow.map(region => {
-                                        const numComplete = taskStatus[region].taskCount;
+                                        const numComplete = getCompletedTasksInArea(region, taskStatus).length;
                                         const totalTasks = taskData.taskCounts[region].Total;
                                         const percentage = Math.round((numComplete / totalTasks) * 100);
                                         return (
@@ -74,7 +74,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
                         <Row>
                             <Col className="text-center">
                                 <h2 className="mt-3">
-                                    {`Points Earned: ${taskStatus.points} / ${maxCompletablePoints.Total}`}
+                                    {`Points Earned: ${getPointsEarned(taskStatus)} / ${maxCompletablePoints.Total}`}
                                 </h2>
                             </Col>
                         </Row>
@@ -82,7 +82,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
                             <Col className="text-center">
                                 <ul style={{ listStyleType: 'none' }} >
                                     {taskData.difficulties.map(difficultyJson => {
-                                        const numEarned = taskStatus.taskCount[difficultyJson.value] * DIFFICULTY_POINTS[difficultyJson.value];
+                                        const numEarned = getPointsEarned(taskStatus, null, difficultyJson.value);
                                         const totalPoints = maxCompletablePoints[difficultyJson.value];
                                         return (
                                             <li key={difficultyJson.value}>
@@ -95,7 +95,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
                             <Col className="text-center">
                                 <ul style={{ listStyleType: 'none' }} >
                                     {regionsToShow.map(region => {
-                                        const numEarned = taskStatus[region].points;
+                                        const numEarned = getPointsEarned(taskStatus, region);
                                         const totalPoints = taskData.pointCounts[region].Total;
                                         return (
                                             <li key={region}>
@@ -114,7 +114,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
                     <Tab eventKey="all" title="All Tasks">
                         <TaskTableWrapper
                             taskStatus={taskStatus}
-                            updateTaskStatusCallback={updateTaskStatusCallback}
+                            updateTaskStatus={updateTaskStatus}
                             unlockedRegions={regionsToShow}
                             selectedStatus={selectedStatus}
                             setSelectedStatus={setSelectedStatus}
@@ -125,7 +125,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
                     <Tab eventKey="todo" title="To-Do List">
                         <TaskTableWrapper
                             taskStatus={taskStatus}
-                            updateTaskStatusCallback={updateTaskStatusCallback}
+                            updateTaskStatus={updateTaskStatus}
                             unlockedRegions={regionsToShow}
                             taskFilters={[todoListFilter]}
                             selectedStatus={selectedStatus}
@@ -143,7 +143,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatusCallback, unlo
 
 function TaskTableWrapper({
         taskStatus,
-        updateTaskStatusCallback,
+        updateTaskStatus,
         unlockedRegions,
         selectedStatus,
         setSelectedStatus,
@@ -242,7 +242,12 @@ function TaskTableWrapper({
                             </div>
                         }
                         <Nav>
-                            <TaskTable area={selectedArea} taskStatus={taskStatus} updateTaskStatusCallback={updateTaskStatusCallback} taskFilters={allFilters} />
+                            <TaskTable
+                                area={selectedArea}
+                                taskStatus={taskStatus}
+                                updateTaskStatus={updateTaskStatus}
+                                taskFilters={allFilters}
+                            />
                         </Nav>
                     </Col>
                 </Row>

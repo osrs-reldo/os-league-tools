@@ -42,7 +42,7 @@ export default function MultiplierGroup({ title, multiplierData, globalMultiplie
                                     setCheckedGlobalMultipliers(prevState => [...prevState, multiplier.id]);
                                     multipliers.add(multiplier.id, multiplier.multiplier, true);
                                 } else {
-                                    setCheckedGlobalMultipliers(prevState => _.pull(prevState, multiplier.id));
+                                    setCheckedGlobalMultipliers(prevState => _.without(prevState, multiplier.id));
                                     multipliers.remove(multiplier.id, true)
                                 }
                             }}

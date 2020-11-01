@@ -7,7 +7,7 @@ import RegionMap from "./RegionMap";
 import regionsData from '../resources/regionsData.json';
 import _ from 'lodash';
 
-export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlockedRegionsCallback, refreshRegionState }) {
+export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlockedRegionsCallback }) {
     const [selectedRegion, setSelectedRegion] = useState("Misthalin");
     const tasksToNextRegion = getTasksToNextRegion(totalTasks);
 
@@ -66,8 +66,7 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                                         <Button
                                             variant='outline-light'
                                             onClick={() => {
-                                                setUnlockedRegionsCallback(prevState => _.pull(prevState, selectedRegion));
-                                                refreshRegionState();
+                                                setUnlockedRegionsCallback(prevState => _.without(prevState, selectedRegion));
                                             }}
                                         >
                                             Re-lock this region
