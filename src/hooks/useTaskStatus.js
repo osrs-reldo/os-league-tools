@@ -13,10 +13,13 @@ export const INITIAL_TASKS_STATE_V2 = {
 }
 
 export default function useTaskStatus() {
-    const [taskStatus, setTaskStatus] = useLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE_V2);
+    const [storedTaskStatus, setTaskStatus] = useLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE_V2);
 
-    if (shouldUpdateVersion(taskStatus)) {
-        setTaskStatus(updateTaskStatusVersion(taskStatus, setTaskStatus));
+    let taskStatus = storedTaskStatus;
+    if (shouldUpdateVersion(storedTaskStatus)) {
+        const updatedVersion = updateTaskStatusVersion(taskStatus, setTaskStatus);
+        taskStatus = updatedVersion;
+        setTaskStatus(updatedVersion);
     }
 
     const setCompleted = (taskId, isComplete) => {
