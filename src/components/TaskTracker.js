@@ -169,7 +169,6 @@ function TaskTableWrapper({
     }
 
     let allFilters = [...taskFilters];
-
     if (selectedStatus === "Incomplete") {
         allFilters.push(showIncompleteFilter);
     }
@@ -195,7 +194,7 @@ function TaskTableWrapper({
                             <h5>Areas:</h5>
                             <Nav variant="pills" className="flex-column mt-3 tab-bar-secondary">
                                 <Nav.Item key='All'>
-                                    <Nav.Link eventKey='All' onClick={event => setSelectedArea('All')}>All</Nav.Link>
+                                    <Nav.Link eventKey='All' onClick={() => setSelectedArea('All')}>All</Nav.Link>
                                 </Nav.Item>
                                 {hideLockedAreas ?
                                     unlockedRegions.map(area =>

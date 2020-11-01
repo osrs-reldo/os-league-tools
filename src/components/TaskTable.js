@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BootstrapTable from 'react-bootstrap-table-next';
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
-import paginationFactory from 'react-bootstrap-table2-paginator';
+import paginationFactory, { PaginationProvider, PaginationListStandalone } from 'react-bootstrap-table2-paginator';
 import taskData from '../resources/taskData.json';
 import { applyFilters, getFormatters, getRenderers } from "../util/task-util";
 
-export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters }) {
-    const { completedFormatter, pointsFormatter, todoFormatter, nameFormatter } = getFormatters();
+const PAGE_SIZE = 20;
 
+function getTableData(area, taskFilters) {
     const taskTableContent = area === "All" ? taskData.tasks : taskData.tasksByRegion[area];
+    return taskFilters ? applyFilters(taskTableContent, area, taskFilters) : taskTableContent;
+}
+
+export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters }) {
+    const [tableData, setTableData] = useState(getTableData(area, taskFilters));
+    const [paginatedData, setPaginatedData] = useState(tableData.slice(0, PAGE_SIZE));
+    const [page, setPage] = useState(1);
+
+    // hacky stuff to force table to reset to page 1 when new area is selected
+    useEffect(() => {
+        setTableData(getTableData(area, taskFilters));
+    }, [area, taskFilters]);
+    useEffect(() => {
+        setPaginatedData(tableData.slice(0, PAGE_SIZE));
+        setPage(1);
+    }, [tableData]);
+
+    const { completedFormatter, pointsFormatter, todoFormatter, nameFormatter } = getFormatters();
 
     const setTaskCompletion = (isComplete, taskId) => {
         updateTaskStatus.setCompleted(taskId, isComplete);
@@ -76,22 +94,61 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
     ];
 
     const { pageButtonRenderer } = getRenderers();
+
+    const handleTableChange = (type, { page, sizePerPage }) => {
+        const currentIndex = (page - 1) * sizePerPage;
+        setPage(page);
+        setPaginatedData(tableData.slice(currentIndex, currentIndex + sizePerPage));
+    }
+
+    const PaginatedTable = ({ data, columns, onTableChange, page, totalSize, sizePerPage, pageButtonRenderer }) => (
+        <PaginationProvider
+            pagination={
+                paginationFactory({
+                    custom: true,
+                    pageButtonRenderer,
+                    page,
+                    sizePerPage,
+                    hideSizePerPage: true,
+                    hidePageListOnlyOnePage: true,
+                    totalSize
+                })
+            }
+        >
+            {({ paginationProps, paginationTableProps }) => (
+                <React.Fragment>
+                    <BootstrapTable
+                        bootstrap4
+                        keyField='id'
+                        data={data}
+                        columns={columns}
+                        bordered={false}
+                        classes="light-text"
+                        filter={filterFactory()}
+                        filterPosition="top"
+                        remote
+                        onTableChange={onTableChange}
+                        { ...paginationTableProps }
+                    />
+                    <div className='text-center' style={{margin: 'auto'}}>
+                        <PaginationListStandalone
+                            { ...paginationProps }
+                        />
+                    </div>
+                </React.Fragment>
+            )}
+        </PaginationProvider>
+    );
+
     return (
-        <BootstrapTable
-            bootstrap4
-            keyField='id'
-            data={taskFilters ? applyFilters(taskTableContent, area, taskFilters) : taskTableContent}
+        <PaginatedTable
+            data={paginatedData}
             columns={columns}
-            bordered={false}
-            classes="light-text"
-            filter={filterFactory()}
-            filterPosition="top"
-            pagination={paginationFactory({
-                pageButtonRenderer,
-                sizePerPage: 20,
-                hideSizePerPage: true,
-                hidePageListOnlyOnePage: true
-            })}
+            page={page}
+            sizePerPage={PAGE_SIZE}
+            totalSize={tableData.length}
+            onTableChange={handleTableChange}
+            pageButtonRenderer={pageButtonRenderer}
         />
     );
 }
