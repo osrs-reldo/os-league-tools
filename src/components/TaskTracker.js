@@ -206,7 +206,7 @@ function TaskTableWrapper({
                                 :
                                     taskData.areas.map(area =>
                                         <Nav.Item key={area}>
-                                            <Nav.Link eventKey={area}>{area}</Nav.Link>
+                                            <Nav.Link eventKey={area} onClick={() => setSelectedArea(area)}>{area}</Nav.Link>
                                         </Nav.Item>
                                     )
                                 }

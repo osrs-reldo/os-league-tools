@@ -14,7 +14,10 @@ So far, this whole thing has been a one-developer hack job. If you think you can
 
 To build and start up locally, run:
 
-```yarn start```
+```
+npm install
+yarn start
+```
 
 and open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 

@@ -48,6 +48,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             "dataField": "difficulty",
             "text": "Difficulty",
             "sort": true,
+            "sortValue": pointsFormatter,
             "headerStyle": { width: '10rem' },
             "filter": selectFilter({
                 "placeholder": "(all)",

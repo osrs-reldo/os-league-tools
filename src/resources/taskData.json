@@ -3636,7 +3636,7 @@
             "id": "422",
             "name": "Take a Shortcut Across the Shilo Village River",
             "description": "Use the Stepping Stones Agility Shortcut in Shilo Village.",
-            "difficulty": "Medium",
+            "difficulty": "Hard",
             "category": "Skilling",
             "area": "Karamja"
         },
@@ -11323,7 +11323,7 @@
                 "id": "422",
                 "name": "Take a Shortcut Across the Shilo Village River",
                 "description": "Use the Stepping Stones Agility Shortcut in Shilo Village.",
-                "difficulty": "Medium",
+                "difficulty": "Hard",
                 "category": "Skilling",
                 "area": "Karamja"
             },
@@ -19020,7 +19020,7 @@
             "id": "422",
             "name": "Take a Shortcut Across the Shilo Village River",
             "description": "Use the Stepping Stones Agility Shortcut in Shilo Village.",
-            "difficulty": "Medium",
+            "difficulty": "Hard",
             "category": "Skilling",
             "area": "Karamja"
         },
