@@ -24,21 +24,20 @@ export function getRelicInfo(relicKey) {
 export function unlockRelicInState(currentRelicState, relicKey) {
     const [tierId, relicId] = getRelicIndices(relicKey);
 
-    if (relicId === 3) {
-        return immutablyUpdateRelicState(currentRelicState, tierId, 'passive', true);
-    } else {
-        return immutablyUpdateRelicState(currentRelicState, tierId, 'relic', relicId);
-    }
+    const stateWithPassive = immutablyUpdateRelicState(currentRelicState, tierId, 'passive', true);
+    return immutablyUpdateRelicState(stateWithPassive, tierId, 'relic', relicId);
 }
 
 export function lockRelicInState(currentRelicState, relicKey) {
-    const [tierId, relicId] = getRelicIndices(relicKey);
+    const [tierId,] = getRelicIndices(relicKey);
 
-    if (relicId === 3) {
-        return immutablyUpdateRelicState(currentRelicState, tierId, 'passive', false);
-    } else {
-        return immutablyUpdateRelicState(currentRelicState, tierId, 'relic', -1);
-    }
+    const stateWithPassive = immutablyUpdateRelicState(currentRelicState, tierId, 'passive', false);
+    return immutablyUpdateRelicState(stateWithPassive, tierId, 'relic', -1);
+}
+
+export function isPassiveRelic(relicKey) {
+    const [, relicId] = getRelicIndices(relicKey);
+    return relicId === 3;
 }
 
 function immutablyUpdateRelicState(currentRelicState, tierId, fieldToUpdate, valueToUpdate) {

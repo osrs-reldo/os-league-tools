@@ -4,7 +4,7 @@ import ProgressBar from "./UnlockProgressBar";
 import RelicCheckImg from '../resources/img/relic-check.png';
 import RelicInfoTile from "./RelicInfoTile";
 import relicData from '../resources/relicData.json';
-import { getRelicKey, MAX_POINTS, RELIC_UNLOCKS, unlockRelicInState, lockRelicInState, isRelicUnlocked, getPointsToNextRelic } from '../util/relic-util';
+import { getRelicKey, MAX_POINTS, RELIC_UNLOCKS, unlockRelicInState, lockRelicInState, isRelicUnlocked, getPointsToNextRelic, isPassiveRelic } from '../util/relic-util';
 import useLocalStorage from "../hooks/useLocalStorage";
 import { LOCALSTORAGE_KEYS } from '../util/browser-util';
 
@@ -67,15 +67,17 @@ export default function RelicsTracker({ totalPoints }) {
                                 isWide
                                 additionalContent={
                                     <React.Fragment>
-                                        {isRelicUnlocked(selectedRelic, unlockedRelics) ?
-                                            <Button
-                                                variant='dark' onClick={() => setUnlockedRelics(prevState => { return lockRelicInState(prevState, selectedRelic) })}>
-                                                Re-lock this relic
-                                            </Button>
-                                            :
-                                            <Button variant='light' onClick={() => setUnlockedRelics(prevState => { return unlockRelicInState(prevState, selectedRelic) })}>
-                                                Unlock this relic
-                                            </Button>
+                                        {!isPassiveRelic(selectedRelic) && (
+                                            isRelicUnlocked(selectedRelic, unlockedRelics) ?
+                                                <Button
+                                                    variant='dark' onClick={() => setUnlockedRelics(prevState => { return lockRelicInState(prevState, selectedRelic) })}>
+                                                    Re-lock this relic
+                                                </Button>
+                                                :
+                                                <Button variant='light' onClick={() => setUnlockedRelics(prevState => { return unlockRelicInState(prevState, selectedRelic) })}>
+                                                    Unlock this relic
+                                                </Button>
+                                        )
                                         }
                                     </React.Fragment>
                                 }
