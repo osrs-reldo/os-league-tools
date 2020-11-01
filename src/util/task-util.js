@@ -1,6 +1,4 @@
 import React from "react";
-import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../util/browser-util';
-import update from 'immutability-helper';
 import { InlineIcon } from '@iconify/react';
 import addToListIcon from '@iconify/icons-mdi/text-box-plus-outline';
 import removeFromListIcon from '@iconify/icons-mdi/text-box-remove-outline';
