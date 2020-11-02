@@ -3,7 +3,7 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import taskData from '../resources/taskData.json';
-import { applyFilters, getFormatters, getRenderers } from "../util/task-util";
+import { applyFilters, getFormatters, getRenderers, isTaskComplete, isTaskHidden, isTaskOnTodoList } from "../util/task-util";
 
 export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters }) {
     const { completedFormatter, pointsFormatter, todoFormatter, nameFormatter, hideFormatter } = getFormatters();
@@ -27,7 +27,14 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             "isDummyField": true,
             "headerStyle": { width: '5rem' },
             "formatter": completedFormatter,
-            "formatExtraData": { "updateTaskCallback": setTaskCompletion, "taskStatus": taskStatus }
+            "formatExtraData": { "taskStatus": taskStatus },
+            "classes": "clickable",
+            "events": {
+                onClick: (event, column, columnIndex, row, rowIndex) => {
+                    const isComplete = isTaskComplete(row.id, taskStatus);
+                    setTaskCompletion(!isComplete, row.id);
+                }
+            },
         },
         {
             "dataField": "name",
@@ -35,7 +42,14 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             "sort": true,
             "filter": textFilter({ placeholder: "Filter..." }),
             "formatter": nameFormatter,
-            "formatExtraData": { "taskStatus": taskStatus }
+            "formatExtraData": { "taskStatus": taskStatus },
+            "classes": "clickable",
+            "events": {
+                onClick: (event, column, columnIndex, row, rowIndex) => {
+                    const isComplete = isTaskComplete(row.id, taskStatus);
+                    setTaskCompletion(!isComplete, row.id);
+                }
+            },
         },
         {
             "dataField": "points",
@@ -80,7 +94,14 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             "isDummyField": true,
             "headerStyle": { width: '8rem' },
             "formatter": todoFormatter,
-            "formatExtraData": { "updateTaskCallback": setTaskTodo, "taskStatus": taskStatus }
+            "formatExtraData": { "taskStatus": taskStatus },
+            "classes": "clickable",
+            "events": {
+                onClick: (event, column, columnIndex, row, rowIndex) => {
+                    const isTodo = isTaskOnTodoList(row.id, taskStatus);
+                    setTaskTodo(!isTodo, row.id);
+                }
+            },
         },
         {
             "dataField": "hide",
@@ -88,7 +109,14 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             "isDummyField": true,
             "headerStyle": { width: '5rem' },
             "formatter": hideFormatter,
-            "formatExtraData": { "updateTaskCallback": setTaskHidden, "taskStatus": taskStatus }
+            "formatExtraData": { "taskStatus": taskStatus },
+            "classes": "clickable",
+            "events": {
+                onClick: (event, column, columnIndex, row, rowIndex) => {
+                    const isHidden = isTaskHidden(row.id, taskStatus);
+                    setTaskHidden(!isHidden, row.id);
+                }
+            },
         },
     ];
 
@@ -105,6 +133,8 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             classes="light-text"
             filter={filterFactory()}
             filterPosition="top"
+            hover
+            rowClasses="text-light"
             pagination={paginationFactory({
                 pageButtonRenderer,
                 pageListRenderer,
