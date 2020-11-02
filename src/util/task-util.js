@@ -4,6 +4,8 @@ import addToListIcon from '@iconify/icons-mdi/text-box-plus-outline';
 import removeFromListIcon from '@iconify/icons-mdi/text-box-remove-outline';
 import checkedIcon from '@iconify/icons-mdi/check-circle-outline';
 import uncheckedIcon from '@iconify/icons-mdi/checkbox-blank-circle-outline';
+import closeIcon from '@iconify/icons-mdi/close';
+import plusIcon from '@iconify/icons-mdi/plus';
 import taskData from '../resources/taskData.json';
 
 export const DIFFICULTY_POINTS = {
@@ -20,6 +22,7 @@ export function getFormatters() {
         pointsFormatter: pointsFormatter,
         todoFormatter: todoFormatter,
         nameFormatter: nameFormatter,
+        hideFormatter: hideFormatter,
     }
 }
 
@@ -32,7 +35,7 @@ export function getRenderers() {
 }
 
 function completedFormatter(cell, row, rowIndex, props) {
-    const isComplete = isTaskComplete(row.id, props.area, props.taskStatus);
+    const isComplete = isTaskComplete(row.id, props.taskStatus);
     if (isComplete) {
         return (
             <div className='clickable completed' onClick={() => props.updateTaskCallback(false, row.id)}>
@@ -56,7 +59,7 @@ function pointsFormatter(cell, row, rowIndex) {
 }
 
 function nameFormatter(cell, row, rowIndex, props) {
-    const isComplete = isTaskComplete(row.id, props.area, props.taskStatus);
+    const isComplete = isTaskComplete(row.id, props.taskStatus);
     return (
         <div className={isComplete ? 'completed' : ''}>
             {cell}
@@ -81,6 +84,22 @@ function todoFormatter(cell, row, rowIndex, props) {
         <div className='clickable' onClick={() => props.updateTaskCallback(true, row.id)}>
             <InlineIcon icon={addToListIcon} />{' '}
             Add
+        </div>
+    );
+}
+
+function hideFormatter(cell, row, rowIndex, props) {
+    const isHidden = isTaskHidden(row.id, props.taskStatus);
+    if (!isHidden) {
+        return (
+            <div className='clickable' onClick={() => props.updateTaskCallback(true, row.id)}>
+                <InlineIcon icon={closeIcon} height='1.25rem' />
+            </div>
+        );
+    }
+    return (
+        <div className='clickable' onClick={() => props.updateTaskCallback(false, row.id)}>
+            <InlineIcon icon={plusIcon} height='1.25rem' />
         </div>
     );
 }
@@ -142,12 +161,26 @@ function sizePerPageRenderer({ options, currSizePerPage, onSizePerPageChange }) 
   );
 }
 
-export function isTaskComplete(taskId, area, taskState) {
+export function isTaskComplete(taskId, taskState) {
     return taskState.tasks.includes(taskId);
 }
 
 export function isTaskOnTodoList(taskId, taskState) {
     return taskState.todoList.includes(taskId);
+}
+
+export function isTaskHidden(taskId, taskState) {
+    return taskState.hidden.includes(taskId);
+}
+
+export function removeCompletedFromTodo(taskStatus, setIsTodoCallback) {
+    let idsToRemove = [];
+    taskStatus.todoList.forEach(taskId => {
+        if (isTaskComplete(taskId, taskStatus)) {
+            idsToRemove.push(taskId);
+        }
+    })
+    setIsTodoCallback(idsToRemove, false);
 }
 
 export function applyFilters(tasks, area, filterFunctions) {
@@ -199,14 +232,14 @@ export function getPointsEarned(taskStatus, area, difficulty) {
     return totalPoints;
 }
 
-export function getMaxCompletableTasks(unlockedRegions) {
+export function getMaxCompletableTasks(unlockedRegions, taskStatus) {
     const maxTasks = {
-        Total: taskData.taskCounts.Common.Total,
-        Easy: taskData.taskCounts.Common.Easy,
-        Medium: taskData.taskCounts.Common.Medium,
-        Hard: taskData.taskCounts.Common.Hard,
-        Elite: taskData.taskCounts.Common.Elite,
-        Master: taskData.taskCounts.Common.Master,
+        Total: 0,
+        Easy: 0,
+        Medium: 0,
+        Hard: 0,
+        Elite: 0,
+        Master: 0,
     }
     unlockedRegions.forEach(region => {
         const regionValues = taskData.taskCounts[region];
@@ -216,6 +249,13 @@ export function getMaxCompletableTasks(unlockedRegions) {
         maxTasks.Hard = maxTasks.Hard + regionValues.Hard;
         maxTasks.Elite = maxTasks.Elite + regionValues.Elite;
         maxTasks.Master = maxTasks.Master + regionValues.Master;
+        maxTasks[region] = regionValues.Total;
+    })
+    taskStatus.hidden.forEach(taskId => {
+        const task = taskData.tasksById[taskId];
+        maxTasks[task.difficulty] = maxTasks[task.difficulty] - 1;
+        maxTasks.Total = maxTasks.Total - 1;
+        maxTasks[task.area] = maxTasks[task.area] - 1;
     })
     return maxTasks;
 }
@@ -228,10 +268,10 @@ export function getTaskPointsOnTodoList(taskStatus, regions) {
 
     taskStatus.todoList.forEach(taskId => {
         const task = taskData.tasksById[taskId];
-        if (regions.includes(task.area)) {
-            const pointValue = DIFFICULTY_POINTS[task.difficulty]
-            todoListStatus.tasks = todoListStatus.tasks + 1
-            todoListStatus.points = todoListStatus.points + pointValue
+        if (regions.includes(task.area) && !isTaskComplete(taskId, taskStatus) && !isTaskHidden(taskId, taskStatus)) {
+            const pointValue = DIFFICULTY_POINTS[task.difficulty];
+            todoListStatus.tasks = todoListStatus.tasks + 1;
+            todoListStatus.points = todoListStatus.points + pointValue;
         }
     })
     return todoListStatus;

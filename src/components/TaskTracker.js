@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Card, Container, Row, Col, Tabs, Tab, Nav, Form } from "react-bootstrap";
+import { Card, Container, Row, Col, Tabs, Tab, Nav, Form, Button } from "react-bootstrap";
 import taskData from '../resources/taskData.json';
-import { getMaxCompletableTasks, isTaskComplete, isTaskOnTodoList, getTaskPointsOnTodoList, getCompletedTasksInArea, getCompletedTasksWithDifficulty, getPointsEarned } from "../util/task-util";
+import { getMaxCompletableTasks, isTaskComplete, isTaskOnTodoList, getTaskPointsOnTodoList, getCompletedTasksInArea, getCompletedTasksWithDifficulty, getPointsEarned, isTaskHidden, removeCompletedFromTodo } from "../util/task-util";
 import { getMaxCompletablePoints } from "../util/relic-util"
 import TaskTable from "./TaskTable";
 import { INITIAL_REGIONS_STATE } from '../util/region-util';
@@ -12,10 +12,11 @@ import { CardDeck } from "../../node_modules/react-bootstrap/esm/index";
 export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegions = INITIAL_REGIONS_STATE }) {
     const [hideLockedAreas, setHideLockedAreas] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_HIDE_LOCKED_AREAS, true);
     const [selectedStatus, setSelectedStatus] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_SELECTED_STATUS, 'All');
+    const [showHiddenTasks, setShowHiddenTasks] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_SHOW_HIDDEN_TASKS, false);
 
     const regionsToShow = [ 'Common', ...unlockedRegions ]
-    const maxCompletableTasks = getMaxCompletableTasks(unlockedRegions);
-    const maxCompletablePoints = getMaxCompletablePoints(unlockedRegions);
+    const maxCompletableTasks = getMaxCompletableTasks(regionsToShow, taskStatus);
+    const maxCompletablePoints = getMaxCompletablePoints(regionsToShow, taskStatus);
     const plannedOnTodoList = getTaskPointsOnTodoList(taskStatus, regionsToShow);
 
     const todoListFilter = (task, area) => {
@@ -56,7 +57,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                                 <ul style={{ listStyleType: 'none' }} >
                                     {regionsToShow.map(region => {
                                         const numComplete = getCompletedTasksInArea(region, taskStatus).length;
-                                        const totalTasks = taskData.taskCounts[region].Total;
+                                        const totalTasks = maxCompletableTasks[region];
                                         const percentage = Math.round((numComplete / totalTasks) * 100);
                                         return (
                                             <li key={region}>
@@ -96,7 +97,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                                 <ul style={{ listStyleType: 'none' }} >
                                     {regionsToShow.map(region => {
                                         const numEarned = getPointsEarned(taskStatus, region);
-                                        const totalPoints = taskData.pointCounts[region].Total;
+                                        const totalPoints = maxCompletablePoints[region];
                                         return (
                                             <li key={region}>
                                                 {`${region}: ${numEarned} / ${totalPoints}`}
@@ -120,6 +121,8 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                             setSelectedStatus={setSelectedStatus}
                             hideLockedAreas={hideLockedAreas}
                             setHideLockedAreas={setHideLockedAreas}
+                            showHiddenTasks={showHiddenTasks}
+                            setShowHiddenTasks={setShowHiddenTasks}
                         />
                     </Tab>
                     <Tab eventKey="todo" title="To-Do List">
@@ -133,6 +136,8 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                             hideLockedAreas={hideLockedAreas}
                             setHideLockedAreas={setHideLockedAreas}
                             plannedOnTodoList={plannedOnTodoList}
+                            showHiddenTasks={showHiddenTasks}
+                            setShowHiddenTasks={setShowHiddenTasks}
                         />
                     </Tab>
                 </Tabs>
@@ -150,34 +155,27 @@ function TaskTableWrapper({
         hideLockedAreas,
         setHideLockedAreas,
         plannedOnTodoList,
+        showHiddenTasks,
+        setShowHiddenTasks,
         taskFilters = []
-    }) {
-
+}) {
     const [selectedArea, setSelectedArea] = useState('All');
 
-    const showIncompleteFilter = (task, area) => {
-        return !isTaskComplete(task.id, area, taskStatus);
-    }
-
-    const showCompleteFilter = (task, area) => {
-        return isTaskComplete(task.id, area, taskStatus);
-    }
-
-    const hideLockedAreasFilter = (task, area) => {
-        const taskArea = area === "All" ? taskData.tasksById[task.id].area : area;
-        return unlockedRegions.includes(taskArea);
-    }
-
     let allFilters = [...taskFilters];
-
     if (selectedStatus === "Incomplete") {
-        allFilters.push(showIncompleteFilter);
+        allFilters.push((task) => !isTaskComplete(task.id, taskStatus));
     }
     if (selectedStatus === "Complete") {
-        allFilters.push(showCompleteFilter);
+        allFilters.push((task) => isTaskComplete(task.id, taskStatus));
     }
     if (hideLockedAreas) {
-        allFilters.push(hideLockedAreasFilter);
+        allFilters.push((task, area) => {
+            const taskArea = area === "All" ? taskData.tasksById[task.id].area : area;
+            return unlockedRegions.includes(taskArea);
+        });
+    }
+    if (!showHiddenTasks) {
+        allFilters.push((task) => !isTaskHidden(task.id, taskStatus));
     }
 
     return (
@@ -190,6 +188,11 @@ function TaskTableWrapper({
                                 label="Hide locked areas"
                                 checked={hideLockedAreas}
                                 onChange={() => setHideLockedAreas(prevHideLocked => !prevHideLocked)}
+                            />
+                            <Form.Check
+                                label="Show hidden tasks"
+                                checked={showHiddenTasks}
+                                onChange={() => setShowHiddenTasks(prevShowHidden => !prevShowHidden)}
                             />
                             <div className="mt-2 mb-2" style={{borderTop: '0.5px solid', width: '100%'}} />
                             <h5>Areas:</h5>
@@ -232,13 +235,21 @@ function TaskTableWrapper({
 
                     <Col sm={10}>
                         {plannedOnTodoList &&
-                            <div className='d-flex justify-content-around'>
-                                <h4 className="mb-3">
-                                    Tasks on To-do List: {plannedOnTodoList.tasks}
-                                </h4>
-                                <h4 className="mb-3">
-                                    Points on To-do List: {plannedOnTodoList.points}
-                                </h4>
+                            <div className='d-flex justify-content-around align-items-center'>
+                                <h5 className="mb-3">
+                                    Incomplete Tasks on To-do List: {plannedOnTodoList.tasks}
+                                </h5>
+                                <h5 className="mb-3">
+                                    Points Remaining on To-do List: {plannedOnTodoList.points}
+                                </h5>
+                                <div className="mb-3">
+                                    <Button
+                                        variant="outline-light"
+                                        onClick={() => removeCompletedFromTodo(taskStatus, updateTaskStatus.setTodoListed)}
+                                    >
+                                        Remove completed tasks
+                                    </Button>
+                                </div>
                             </div>
                         }
                         <Nav>

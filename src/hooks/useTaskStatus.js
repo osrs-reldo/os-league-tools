@@ -4,20 +4,26 @@ import useLocalStorage from './useLocalStorage';
 import update from 'immutability-helper';
 import _ from 'lodash';
 
-const CURRENT_VERSION = 2;
+const CURRENT_VERSION = 3;
 
-export const INITIAL_TASKS_STATE_V2 = {
+const INITIAL_TASKS_STATE_V2 = {
     version: 2,
     tasks: [],
     todoList: []
 }
+const INITIAL_TASKS_STATE_V3 = {
+    version: 3,
+    tasks: [],
+    todoList: [],
+    hidden: []
+}
 
 export default function useTaskStatus() {
-    const [storedTaskStatus, setTaskStatus] = useLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE_V2);
+    const [storedTaskStatus, setTaskStatus] = useLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE_V3);
 
     let taskStatus = storedTaskStatus;
     if (shouldUpdateVersion(storedTaskStatus)) {
-        const updatedVersion = updateTaskStatusVersion(taskStatus, setTaskStatus);
+        const updatedVersion = updateTaskStatusVersion(taskStatus, storedTaskStatus.version);
         taskStatus = updatedVersion;
         setTaskStatus(updatedVersion);
     }
@@ -36,28 +42,52 @@ export default function useTaskStatus() {
         setTaskStatus(updatedTaskStatus);
     }
 
-    const setTodoListed = (taskId, isOnTodoList) => {
+    const setTodoListed = (taskIds, isOnTodoList) => {
+        const idsToSet = !Array.isArray(taskIds) ? [taskIds] : taskIds;
         let updatedTaskStatus;
         if (isOnTodoList) {
             updatedTaskStatus = update(taskStatus, {
-                todoList: prevTasks => [ ...prevTasks, taskId ]
+                todoList: prevTasks => [ ...prevTasks, ...idsToSet ]
             })
         } else {
             updatedTaskStatus = update(taskStatus, {
-                todoList: prevTasks => _.without(prevTasks, taskId)
+                todoList: prevTasks => _.without(prevTasks, ...idsToSet)
             })
         }
         setTaskStatus(updatedTaskStatus);
     }
 
-    return [ taskStatus, { setCompleted, setTodoListed } ];
+    const setHidden = (taskId, isHidden) => {
+        let updatedTaskStatus;
+        if (isHidden) {
+            updatedTaskStatus = update(taskStatus, {
+                hidden: prevTasks => [ ...prevTasks, taskId ]
+            })
+        } else {
+            updatedTaskStatus = update(taskStatus, {
+                hidden: prevTasks => _.without(prevTasks, taskId)
+            })
+        }
+        setTaskStatus(updatedTaskStatus);
+    }
+
+    return [ taskStatus, { setCompleted, setTodoListed, setHidden } ];
 }
 
 function shouldUpdateVersion(taskStatus) {
     return !taskStatus.version || taskStatus.version < CURRENT_VERSION;
 }
 
-function updateTaskStatusVersion(taskStatus) {
+function updateTaskStatusVersion(taskStatus, prevVersion) {
+    if (!prevVersion || prevVersion === 1) {
+        const updatedStatus = updateToVersion2(taskStatus);
+        return updateToVersion3(updatedStatus);
+    } else if (prevVersion === 2) {
+        return updateToVersion3(taskStatus);
+    }
+}
+
+function updateToVersion2(taskStatus) {
     const newTaskStatus = INITIAL_TASKS_STATE_V2;
     const regions = [ 'Common', ...REGIONS ];
     regions.forEach(region => {
@@ -72,4 +102,14 @@ function updateTaskStatusVersion(taskStatus) {
         }
     })
     return newTaskStatus;
+}
+
+function updateToVersion3(taskStatus) {
+    const updatedTaskStatus = INITIAL_TASKS_STATE_V3;
+
+    // an old bug caused these to sometimes contain duplicates, make sure they've been removed
+    updatedTaskStatus.todoList = [...new Set(taskStatus.todoList)];
+    updatedTaskStatus.tasks = [...new Set(taskStatus.tasks)];
+
+    return updatedTaskStatus;
 }

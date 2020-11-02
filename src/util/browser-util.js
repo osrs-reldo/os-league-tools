@@ -3,7 +3,8 @@ export const LOCALSTORAGE_KEYS = {
     UNLOCKED_REGIONS: 'unlockedRegions',
     TASKS: 'tasks',
     FILTER_SELECTED_STATUS: 'filterSelectedStatus',
-    FILTER_HIDE_LOCKED_AREAS: 'filterHideLocked'
+    FILTER_HIDE_LOCKED_AREAS: 'filterHideLocked',
+    FILTER_SHOW_HIDDEN_TASKS: 'filterShowHiddenTasks'
 }
 
 export function getFromLocalStorage(key, initialValue) {

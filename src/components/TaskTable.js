@@ -6,16 +6,18 @@ import taskData from '../resources/taskData.json';
 import { applyFilters, getFormatters, getRenderers } from "../util/task-util";
 
 export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters }) {
-    const { completedFormatter, pointsFormatter, todoFormatter, nameFormatter } = getFormatters();
+    const { completedFormatter, pointsFormatter, todoFormatter, nameFormatter, hideFormatter } = getFormatters();
 
     const taskTableContent = area === "All" ? taskData.tasks : taskData.tasksByRegion[area];
 
     const setTaskCompletion = (isComplete, taskId) => {
         updateTaskStatus.setCompleted(taskId, isComplete);
     }
-
     const setTaskTodo = (isOnTodoList, taskId) => {
         updateTaskStatus.setTodoListed(taskId, isOnTodoList);
+    }
+    const setTaskHidden = (isHidden, taskId) => {
+        updateTaskStatus.setHidden(taskId, isHidden);
     }
 
     const columns = [
@@ -25,7 +27,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             "isDummyField": true,
             "headerStyle": { width: '5rem' },
             "formatter": completedFormatter,
-            "formatExtraData": { "updateTaskCallback": setTaskCompletion, "area": area, "taskStatus": taskStatus }
+            "formatExtraData": { "updateTaskCallback": setTaskCompletion, "taskStatus": taskStatus }
         },
         {
             "dataField": "name",
@@ -33,7 +35,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             "sort": true,
             "filter": textFilter({ placeholder: "Filter..." }),
             "formatter": nameFormatter,
-            "formatExtraData": { "area": area, "taskStatus": taskStatus }
+            "formatExtraData": { "taskStatus": taskStatus }
         },
         {
             "dataField": "points",
@@ -71,7 +73,15 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             "isDummyField": true,
             "headerStyle": { width: '8rem' },
             "formatter": todoFormatter,
-            "formatExtraData": { "updateTaskCallback": setTaskTodo, "area": area, "taskStatus": taskStatus }
+            "formatExtraData": { "updateTaskCallback": setTaskTodo, "taskStatus": taskStatus }
+        },
+        {
+            "dataField": "hide",
+            "text": "Hide",
+            "isDummyField": true,
+            "headerStyle": { width: '8rem' },
+            "formatter": hideFormatter,
+            "formatExtraData": { "updateTaskCallback": setTaskHidden, "taskStatus": taskStatus }
         },
     ];
 
