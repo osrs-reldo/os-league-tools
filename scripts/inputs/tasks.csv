@@ -88,9 +88,9 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 86,Reach Total Level 750 ,Reach a Total Level of 750.,Medium,Overall,Total level,,Common
 87,Reach Total Level 1000 ,Reach a Total Level of 1000.,Medium,Overall,Total level,,Common
 88,Reach Total Level 1250 ,Reach a Total Level of 1250.,Medium,Overall,Total level,,Common
-89,Reach Base Level 30 ,Reach level 30 in every skill.,Medium,Overall,First level,,Common
-90,Reach Base Level 40 ,Reach level 40 in every skill.,Medium,Overall,First level,,Common
-91,Reach Base Level 50 ,Reach level 50 in every skill.,Medium,Overall,First level,,Common
+89,Reach Base Level 30 ,Reach level 30 in every skill.,Medium,Overall,Base level,,Common
+90,Reach Base Level 40 ,Reach level 40 in every skill.,Medium,Overall,Base level,,Common
+91,Reach Base Level 50 ,Reach level 50 in every skill.,Medium,Overall,Base level,,Common
 92,Pickpocket a Guard ,Pickpocket a Guard. ,Medium,Skilling,Thieving,,Common
 93,Obtain 800 Coins From Coin Pouches At Once ,Open a stack of coin pouches and obtain at least 800 Coins. ,Medium,Skilling,Thieving,,Common
 94,Pickpocket a Ranarr Seed ,Pickpocket a Ranarr Seed from a Master Farmer. ,Medium,Skilling,Thieving,,Common

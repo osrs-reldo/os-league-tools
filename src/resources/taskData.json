@@ -1063,7 +1063,7 @@
             "description": "Reach level 30 in every skill.",
             "difficulty": "Medium",
             "category": "Overall",
-            "subcategory": "First level",
+            "subcategory": "Base level",
             "area": "Common"
         },
         {
@@ -1072,7 +1072,7 @@
             "description": "Reach level 40 in every skill.",
             "difficulty": "Medium",
             "category": "Overall",
-            "subcategory": "First level",
+            "subcategory": "Base level",
             "area": "Common"
         },
         {
@@ -1081,7 +1081,7 @@
             "description": "Reach level 50 in every skill.",
             "difficulty": "Medium",
             "category": "Overall",
-            "subcategory": "First level",
+            "subcategory": "Base level",
             "area": "Common"
         },
         {
@@ -9715,7 +9715,7 @@
                 "description": "Reach level 30 in every skill.",
                 "difficulty": "Medium",
                 "category": "Overall",
-                "subcategory": "First level",
+                "subcategory": "Base level",
                 "area": "Common"
             },
             {
@@ -9724,7 +9724,7 @@
                 "description": "Reach level 40 in every skill.",
                 "difficulty": "Medium",
                 "category": "Overall",
-                "subcategory": "First level",
+                "subcategory": "Base level",
                 "area": "Common"
             },
             {
@@ -9733,7 +9733,7 @@
                 "description": "Reach level 50 in every skill.",
                 "difficulty": "Medium",
                 "category": "Overall",
-                "subcategory": "First level",
+                "subcategory": "Base level",
                 "area": "Common"
             },
             {
@@ -18385,7 +18385,7 @@
             "description": "Reach level 30 in every skill.",
             "difficulty": "Medium",
             "category": "Overall",
-            "subcategory": "First level",
+            "subcategory": "Base level",
             "area": "Common"
         },
         "90": {
@@ -18394,7 +18394,7 @@
             "description": "Reach level 40 in every skill.",
             "difficulty": "Medium",
             "category": "Overall",
-            "subcategory": "First level",
+            "subcategory": "Base level",
             "area": "Common"
         },
         "91": {
@@ -18403,7 +18403,7 @@
             "description": "Reach level 50 in every skill.",
             "difficulty": "Medium",
             "category": "Overall",
-            "subcategory": "First level",
+            "subcategory": "Base level",
             "area": "Common"
         },
         "92": {
