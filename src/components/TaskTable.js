@@ -68,6 +68,13 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             })
         },
         {
+            "dataField": "subcategory",
+            "text": "Subcategory",
+            "headerStyle": { width: '10rem' },
+            "sort": true,
+            "filter": textFilter({ placeholder: "Filter..." }),
+        },
+        {
             "dataField": "todo",
             "text": "To-Do",
             "isDummyField": true,
@@ -79,7 +86,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             "dataField": "hide",
             "text": "Hide",
             "isDummyField": true,
-            "headerStyle": { width: '8rem' },
+            "headerStyle": { width: '5rem' },
             "formatter": hideFormatter,
             "formatExtraData": { "updateTaskCallback": setTaskHidden, "taskStatus": taskStatus }
         },

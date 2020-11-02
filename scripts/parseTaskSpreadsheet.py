@@ -27,7 +27,8 @@ def parse_csv(skillName):
             'description': line_split[2].strip(),
             'difficulty': line_split[3].strip(),
             'category': line_split[4].strip(),
-            'area': line_split[5].strip()
+            'subcategory': line_split[5].strip(),
+            'area': line_split[7].strip()
         }
 
         updated_area = task_data.get(area, [])
