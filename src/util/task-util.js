@@ -36,9 +36,16 @@ export function getRenderers() {
 
 function completedFormatter(cell, row, rowIndex, props) {
     const isComplete = isTaskComplete(row.id, props.taskStatus);
+    if (isComplete) {
+        return (
+            <div className='clickable completed' onClick={() => props.updateTaskCallback(false, row.id)}>
+                <InlineIcon icon={checkedIcon} height='1.25rem' />
+            </div>
+        );
+    }
     return (
-        <div className={isComplete ? 'completed' : ''}>
-            <InlineIcon icon={isComplete ? checkedIcon : uncheckedIcon} height='1.25rem' />
+        <div className='clickable' onClick={() => props.updateTaskCallback(true, row.id)}>
+            <InlineIcon icon={uncheckedIcon} height='1.25rem' />
         </div>
     );
 }
@@ -65,17 +72,36 @@ function nameFormatter(cell, row, rowIndex, props) {
 
 function todoFormatter(cell, row, rowIndex, props) {
     const isOnTodoList = isTaskOnTodoList(row.id, props.taskStatus);
+    if (isOnTodoList) {
+        return (
+            <div className='clickable' onClick={() => props.updateTaskCallback(false, row.id)}>
+                <InlineIcon icon={removeFromListIcon} />{' '}
+                Remove
+            </div>
+        );
+    }
     return (
-        <div>
-            <InlineIcon icon={isOnTodoList ? removeFromListIcon : addToListIcon} />
-            {isOnTodoList ? ' Remove' : ' Add'}
+        <div className='clickable' onClick={() => props.updateTaskCallback(true, row.id)}>
+            <InlineIcon icon={addToListIcon} />{' '}
+            Add
         </div>
     );
 }
 
 function hideFormatter(cell, row, rowIndex, props) {
     const isHidden = isTaskHidden(row.id, props.taskStatus);
-    return <InlineIcon icon={isHidden ? plusIcon : closeIcon} height='1.25rem' />
+    if (!isHidden) {
+        return (
+            <div className='clickable' onClick={() => props.updateTaskCallback(true, row.id)}>
+                <InlineIcon icon={closeIcon} height='1.25rem' />
+            </div>
+        );
+    }
+    return (
+        <div className='clickable' onClick={() => props.updateTaskCallback(false, row.id)}>
+            <InlineIcon icon={plusIcon} height='1.25rem' />
+        </div>
+    );
 }
 
 function pageButtonRenderer({ page, active, disable, title, onPageChange }) {
