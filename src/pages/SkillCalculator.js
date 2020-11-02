@@ -258,16 +258,17 @@ export default function SkillCalculator() {
                 </Card>
                 <Card bg='dark' text='white' >
                     <div className="p-3">
-                        <h4>Filters:</h4>
-                        <div className="pl-2">
-                            <Form.Check
-                                label="Hide actions with missing level requirement"
-                                onChange={(event) => {
-                                    setUseLevelFilter(event.target.checked);
-                                }}
-                            />
-                        </div>
-                        <br />
+                        <p>
+                            <h4>Filters:</h4>
+                            <div className="pl-2">
+                                <Form.Check
+                                    label="Hide actions with missing level requirement"
+                                    onChange={(event) => {
+                                        setUseLevelFilter(event.target.checked);
+                                    }}
+                                />
+                            </div>
+                        </p>
                         <h4>Areas:</h4>
                         <div className="pl-2">
                             <Form.Check
