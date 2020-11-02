@@ -4,7 +4,8 @@ export const LOCALSTORAGE_KEYS = {
     TASKS: 'tasks',
     FILTER_SELECTED_STATUS: 'filterSelectedStatus',
     FILTER_HIDE_LOCKED_AREAS: 'filterHideLocked',
-    FILTER_SHOW_HIDDEN_TASKS: 'filterShowHiddenTasks'
+    FILTER_SHOW_HIDDEN_TASKS: 'filterShowHiddenTasks',
+    HIDE_ALERT_BANNER: 'hideAlertBanner'
 }
 
 export function getFromLocalStorage(key, initialValue) {
@@ -24,4 +25,12 @@ export function updateLocalStorage(key, value, setValueCallback = () => { return
     } catch (error) {
         console.log(error);
     }
+}
+
+export function reloadPage() {
+    window.location.reload();
+}
+
+export function resetLocalStorageData() {
+    localStorage.clear();
 }

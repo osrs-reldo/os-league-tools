@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, Nav, Alert } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useLocalStorage from "../hooks/useLocalStorage";
 import RelicCheckImg from '../resources/img/relic-check.png';
+import { LOCALSTORAGE_KEYS, reloadPage } from "../util/browser-util";
+import ManageDataModal from "./ManageDataModal";
 
 export default function () {
-    const [hideAlertBanner, setHideAlertBanner] = useLocalStorage("hideAlertBanner", false);
+    const [hideAlertBanner, setHideAlertBanner] = useLocalStorage(LOCALSTORAGE_KEYS.HIDE_ALERT_BANNER, false);
+    const [showDataModal, setShowDataModal] = useState(false);
 
     return (
         <React.Fragment>
@@ -32,6 +35,12 @@ export default function () {
                     </Link>
                 </Nav>
                 <Nav>
+                    <Navbar.Text
+                        onClick={() => setShowDataModal(true)}
+                        className="clickable mr-2"
+                    >
+                        Manage Data
+                    </Navbar.Text>
                     <Link to="/about" className="nav-link">
                         About
                     </Link>
@@ -47,6 +56,15 @@ export default function () {
                     <b>OS League Tools is in BETA!</b> If you find any bugs or incorrect data, or if you have feedback/suggestions, please come by the <Alert.Link href="https://discord.gg/GQ5kVyU">discord</Alert.Link>!
                 </Alert>
             }
+            <ManageDataModal
+                show={showDataModal}
+                onClose={updated => {
+                    setShowDataModal(false);
+                    if (updated) {
+                        reloadPage();
+                    }
+                }}
+            />
         </React.Fragment>
     );
 }
