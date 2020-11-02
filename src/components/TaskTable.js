@@ -37,9 +37,15 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             },
         },
         {
+            "dataField": "spacer",
+            "text": "",
+            "isDummyField": true,
+        },
+        {
             "dataField": "name",
             "text": "Task",
             "sort": true,
+            "headerStyle": { width: '22rem' },
             "filter": textFilter({ placeholder: "Filter..." }),
             "formatter": nameFormatter,
             "formatExtraData": { "taskStatus": taskStatus },
@@ -50,6 +56,11 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
                     setTaskCompletion(!isComplete, row.id);
                 }
             },
+        },
+        {
+            "dataField": "spacer",
+            "text": "",
+            "isDummyField": true,
         },
         {
             "dataField": "points",
@@ -124,30 +135,32 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
     const tableData = taskFilters ? applyFilters(taskTableContent, area, taskFilters) : taskTableContent;
 
     return (
-        <BootstrapTable
-            bootstrap4
-            keyField='id'
-            data={tableData}
-            columns={columns}
-            bordered={false}
-            classes="light-text"
-            filter={filterFactory()}
-            filterPosition="top"
-            hover
-            rowClasses="text-light"
-            pagination={paginationFactory({
-                pageButtonRenderer,
-                pageListRenderer,
-                sizePerPageRenderer,
-                sizePerPage: 20,
-                sizePerPageList: [
-                    { text: '20', value: 20 },
-                    { text: '50', value: 50 },
-                    { text: '100', value: 100 },
-                    { text: 'All', value: 1000 },
-                ],
-                alwaysShowAllBtns: true
-            })}
-        />
+        <div style={{ maxWidth: '100%', overflowX: 'scroll' }}>
+            <BootstrapTable
+                bootstrap4
+                keyField='id'
+                data={tableData}
+                columns={columns}
+                bordered={false}
+                classes="light-text"
+                filter={filterFactory()}
+                filterPosition="top"
+                hover
+                rowClasses="text-light"
+                pagination={paginationFactory({
+                    pageButtonRenderer,
+                    pageListRenderer,
+                    sizePerPageRenderer,
+                    sizePerPage: 20,
+                    sizePerPageList: [
+                        { text: '20', value: 20 },
+                        { text: '50', value: 50 },
+                        { text: '100', value: 100 },
+                        { text: 'All', value: 1000 },
+                    ],
+                    alwaysShowAllBtns: true
+                })}
+            />
+        </div>
     );
 }
