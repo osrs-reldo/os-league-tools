@@ -20,7 +20,7 @@ def parse_csv(skillName):
         line_split = line.split(',')
 
         task_id = line_split[0].strip()
-        area = line_split[5].strip()
+        area = line_split[7].strip()
         current_task = {
             'id': task_id,
             'name': line_split[1].strip(),
