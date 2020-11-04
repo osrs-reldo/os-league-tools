@@ -11,6 +11,8 @@ export default function ManageDataModal({ show, onClose }) {
     const [updated, setUpdated] = useState(false);
     const [runeliteImportJson, setRuneliteImportJson] = useState({});
 
+    const pluginHubLink = "https://github.com/runelite/runelite/wiki/Information-about-the-Plugin-Hub";
+
     const loadFile = async (FileObject) => {
         const response = await loadLocalStorageFromFile(FileObject);
         if (response.success) {
@@ -94,6 +96,10 @@ export default function ManageDataModal({ show, onClose }) {
                     </Tab>
                     <Tab eventKey="runelite" title="Runelite Import">
                         <div className="text-center mt-3">
+                            <Alert variant="info" className="small">
+                                The OsLeague plugin from the Runelite Plugin Hub is required.<br/>
+                                <a href={pluginHubLink}>Click here</a> for more information.
+                            </Alert>
                             <Alert variant="warning" className="small">
                                 <b>Note:</b> Importing from Runelite will only update tasks, relics, and areas.
                             </Alert>
