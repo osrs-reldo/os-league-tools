@@ -3,10 +3,11 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import taskData from '../resources/taskData.json';
+import DoubleScrollbar from 'react-double-scrollbar'
 import { applyFilters, getFormatters, getRenderers, isTaskComplete, isTaskHidden, isTaskOnTodoList } from "../util/task-util";
 
 export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters }) {
-    const { completedFormatter, pointsFormatter, todoFormatter, nameFormatter, hideFormatter } = getFormatters();
+    const { completedFormatter, pointsFormatter, todoFormatter, nameFormatter, hideFormatter, difficultyFormatter } = getFormatters();
 
     const taskTableContent = area === "All" ? taskData.tasks : taskData.tasksByRegion[area];
 
@@ -63,15 +64,6 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             "isDummyField": true,
         },
         {
-            "dataField": "points",
-            "text": "Points",
-            "isDummyField": true,
-            "headerStyle": { width: '6rem' },
-            "formatter": pointsFormatter,
-            "sortValue": pointsFormatter,
-            "sort": true
-        },
-        {
             "dataField": "difficulty",
             "text": "Difficulty",
             "sort": true,
@@ -80,7 +72,8 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             "filter": selectFilter({
                 "placeholder": "(all)",
                 "options": taskData.difficulties
-            })
+            }),
+            "formatter": difficultyFormatter,
         },
         {
             "dataField": "category",
@@ -135,32 +128,34 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
     const tableData = taskFilters ? applyFilters(taskTableContent, area, taskFilters) : taskTableContent;
 
     return (
-        <div style={{ maxWidth: '100%', overflowX: 'scroll' }}>
-            <BootstrapTable
-                bootstrap4
-                keyField='id'
-                data={tableData}
-                columns={columns}
-                bordered={false}
-                classes="light-text"
-                filter={filterFactory()}
-                filterPosition="top"
-                hover
-                rowClasses="text-light"
-                pagination={paginationFactory({
-                    pageButtonRenderer,
-                    pageListRenderer,
-                    sizePerPageRenderer,
-                    sizePerPage: 20,
-                    sizePerPageList: [
-                        { text: '20', value: 20 },
-                        { text: '50', value: 50 },
-                        { text: '100', value: 100 },
-                        { text: 'All', value: 1000 },
-                    ],
-                    alwaysShowAllBtns: true
-                })}
-            />
+        <div style={{ maxWidth: '100%'}}>
+            <DoubleScrollbar>
+                <BootstrapTable
+                    bootstrap4
+                    keyField='id'
+                    data={tableData}
+                    columns={columns}
+                    bordered={false}
+                    classes="light-text"
+                    filter={filterFactory()}
+                    filterPosition="top"
+                    hover
+                    rowClasses="text-light"
+                    pagination={paginationFactory({
+                        pageButtonRenderer,
+                        pageListRenderer,
+                        sizePerPageRenderer,
+                        sizePerPage: 20,
+                        sizePerPageList: [
+                            { text: '20', value: 20 },
+                            { text: '50', value: 50 },
+                            { text: '100', value: 100 },
+                            { text: 'All', value: 1000 },
+                        ],
+                        alwaysShowAllBtns: true
+                    })}
+                />
+            </DoubleScrollbar>
         </div>
     );
 }

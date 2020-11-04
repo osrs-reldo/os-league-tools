@@ -20,6 +20,7 @@ export function getFormatters() {
     return {
         completedFormatter: completedFormatter,
         pointsFormatter: pointsFormatter,
+        difficultyFormatter: difficultyFormatter,
         todoFormatter: todoFormatter,
         nameFormatter: nameFormatter,
         hideFormatter: hideFormatter,
@@ -51,10 +52,21 @@ function pointsFormatter(cell, row, rowIndex) {
     return points;
 }
 
+function difficultyFormatter(cell, row, rowIndex) {
+    const points = pointsFormatter(cell, row, rowIndex);
+    return `${cell} (${points})`;
+}
+
 function nameFormatter(cell, row, rowIndex, props) {
-    const isComplete = isTaskComplete(row.id, props.taskStatus);
+    let className = '';
+    if (isTaskHidden(row.id, props.taskStatus)) {
+        className = 'text-muted';
+    } else if (isTaskComplete(row.id, props.taskStatus)) {
+        className = 'completed'
+    }
+
     return (
-        <div className={isComplete ? 'completed' : ''}>
+        <div className={className}>
             {cell}
             <div className='small'>
                 {row.description}

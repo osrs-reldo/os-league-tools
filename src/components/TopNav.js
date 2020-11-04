@@ -12,7 +12,7 @@ export default function () {
 
     return (
         <React.Fragment>
-            <Navbar bg="dark" variant="dark">
+            <Navbar bg="dark" variant="dark" expand="lg">
                 <Navbar.Brand href="/">
                     <img
                         src={RelicCheckImg}
@@ -23,28 +23,31 @@ export default function () {
                     />
                     OS League Tools
                 </Navbar.Brand>
-                <Nav className="mr-auto">
-                    <Link to="/" className="nav-link">
-                        Home
-                    </Link>
-                    <Link to="/tracker" className="nav-link">
-                        Character Tracker
-                    </Link>
-                    <Link to="/calculators" className="nav-link">
-                        Calculators
-                    </Link>
-                </Nav>
-                <Nav>
-                    <Navbar.Text
-                        onClick={() => setShowDataModal(true)}
-                        className="clickable mr-2"
-                    >
-                        Manage Data
-                    </Navbar.Text>
-                    <Link to="/about" className="nav-link">
-                        About
-                    </Link>
-                </Nav>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mr-auto">
+                        <Link to="/" className="nav-link">
+                            Home
+                        </Link>
+                        <Link to="/tracker" className="nav-link">
+                            Character Tracker
+                        </Link>
+                        <Link to="/calculators" className="nav-link">
+                            Calculators
+                        </Link>
+                    </Nav>
+                    <Nav>
+                        <Navbar.Text
+                            onClick={() => setShowDataModal(true)}
+                            className="clickable mr-2"
+                        >
+                            Manage Data
+                        </Navbar.Text>
+                        <Link to="/about" className="nav-link">
+                            About
+                        </Link>
+                    </Nav>
+                </Navbar.Collapse>
             </Navbar>
             {!hideAlertBanner &&
                 <Alert

@@ -3492,7 +3492,7 @@
             "name": "Use Enriched Bones on the Strange Machine",
             "description": "Use Enriched bones on the Strange Machine on Fossil Island.",
             "difficulty": "Medium",
-            "category": "Skilling",
+            "category": "Combat",
             "subcategory": "Prayer",
             "area": "Misthalin"
         },
@@ -7219,7 +7219,7 @@
             "description": "Defeat a Fiyr Shade.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u2019ton",
+            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
             "area": "Morytania"
         },
         {
@@ -7282,7 +7282,7 @@
             "description": "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u2019ton",
+            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
             "area": "Morytania"
         },
         {
@@ -8596,7 +8596,7 @@
             "description": "Defeat Vet'ion in the Wilderness.",
             "difficulty": "Hard",
             "category": "Bossing",
-            "subcategory": "Vet\u2019ion",
+            "subcategory": "Vet\u00ef\u00bf\u00bdion",
             "area": "Wilderness"
         },
         {
@@ -8749,7 +8749,7 @@
             "description": "Equip a Ring of the gods.",
             "difficulty": "Elite",
             "category": "Bossing",
-            "subcategory": "Vet\u2019ion",
+            "subcategory": "Vet\u00ef\u00bf\u00bdion",
             "area": "Wilderness"
         },
         {
@@ -12146,7 +12146,7 @@
                 "name": "Use Enriched Bones on the Strange Machine",
                 "description": "Use Enriched bones on the Strange Machine on Fossil Island.",
                 "difficulty": "Medium",
-                "category": "Skilling",
+                "category": "Combat",
                 "subcategory": "Prayer",
                 "area": "Misthalin"
             },
@@ -15885,7 +15885,7 @@
                 "description": "Defeat a Fiyr Shade.",
                 "difficulty": "Medium",
                 "category": "Minigames",
-                "subcategory": "Shades of Mort\u2019ton",
+                "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
                 "area": "Morytania"
             },
             {
@@ -15948,7 +15948,7 @@
                 "description": "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
                 "difficulty": "Medium",
                 "category": "Minigames",
-                "subcategory": "Shades of Mort\u2019ton",
+                "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
                 "area": "Morytania"
             },
             {
@@ -17266,7 +17266,7 @@
                 "description": "Defeat Vet'ion in the Wilderness.",
                 "difficulty": "Hard",
                 "category": "Bossing",
-                "subcategory": "Vet\u2019ion",
+                "subcategory": "Vet\u00ef\u00bf\u00bdion",
                 "area": "Wilderness"
             },
             {
@@ -17419,7 +17419,7 @@
                 "description": "Equip a Ring of the gods.",
                 "difficulty": "Elite",
                 "category": "Bossing",
-                "subcategory": "Vet\u2019ion",
+                "subcategory": "Vet\u00ef\u00bf\u00bdion",
                 "area": "Wilderness"
             },
             {
@@ -20814,7 +20814,7 @@
             "name": "Use Enriched Bones on the Strange Machine",
             "description": "Use Enriched bones on the Strange Machine on Fossil Island.",
             "difficulty": "Medium",
-            "category": "Skilling",
+            "category": "Combat",
             "subcategory": "Prayer",
             "area": "Misthalin"
         },
@@ -24541,7 +24541,7 @@
             "description": "Defeat a Fiyr Shade.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u2019ton",
+            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
             "area": "Morytania"
         },
         "773": {
@@ -24604,7 +24604,7 @@
             "description": "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u2019ton",
+            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
             "area": "Morytania"
         },
         "780": {
@@ -25918,7 +25918,7 @@
             "description": "Defeat Vet'ion in the Wilderness.",
             "difficulty": "Hard",
             "category": "Bossing",
-            "subcategory": "Vet\u2019ion",
+            "subcategory": "Vet\u00ef\u00bf\u00bdion",
             "area": "Wilderness"
         },
         "926": {
@@ -26071,7 +26071,7 @@
             "description": "Equip a Ring of the gods.",
             "difficulty": "Elite",
             "category": "Bossing",
-            "subcategory": "Vet\u2019ion",
+            "subcategory": "Vet\u00ef\u00bf\u00bdion",
             "area": "Wilderness"
         },
         "943": {
