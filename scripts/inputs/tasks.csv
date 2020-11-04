@@ -358,7 +358,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 355,Pickpocket a Bullseye Lantern From a Cave Goblin ,Pickpocket a Bullseye Lantern from a Cave Goblin. ,Medium,Skilling,Thieving,,Misthalin
 356,Complete 30 Laps of the Draynor Agility Course ,Complete 30 laps of the Draynor Rooftop Agility Course. ,Medium,Skilling,Agility,,Misthalin
 357,Craft 50 Cosmic Runes ,Craft 50 Cosmic Runes. ,Medium,Skilling,Runecrafting,,Misthalin
-358,Use Enriched Bones on the Strange Machine ,Use Enriched bones on the Strange Machine on Fossil Island.,Medium,Skilling,Prayer,,Misthalin
+358,Use Enriched Bones on the Strange Machine ,Use Enriched bones on the Strange Machine on Fossil Island.,Medium,Combat,Prayer,,Misthalin
 359,Chop a Sulliuscep Cap ,Chop a Sulliuscep Cap on Fossil Island. ,Medium,Skilling,Woodcutting,,Misthalin
 360,Complete the Medium Varrock Diary ,Complete all of the medium tasks in the Varrock Achievement Diary. ,Medium,Diaries,Varrock,,Misthalin
 361,Defeat a Fossil Island Wyvern ,Defeat any type of Wyvern on Fossil Island. ,Medium,Combat,Slayer,,Misthalin
@@ -772,14 +772,14 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 769,Craft a Rune Using Daeyalt Essence ,Craft any rune using Daeyalt Essence. ,Medium,Skilling,Runecrafting,,Morytania
 770,Assemble a Slayer Helm ,Assemble a Slayer Helm. ,Medium,Combat,Slayer,,Morytania
 771,Loot a Barrows Chest ,Loot a Barrows Chest once.,Medium,Bossing,Barrows,,Morytania
-772,Defeat a Fiyr Shade ,Defeat a Fiyr Shade. ,Medium,Minigames,Shades of Mort’ton,,Morytania
+772,Defeat a Fiyr Shade ,Defeat a Fiyr Shade. ,Medium,Minigames,Shades of Mortï¿½ton,,Morytania
 773,Defeat a Vyrewatch Sentinel ,Defeat a Vyrewatch Sentinel in Darkmeyer.,Medium,Combat,Other,,Morytania
 774,Equip a Piece of any Barrows Armour Set ,Equip any piece of any Barrows armour set.,Medium,Bossing,Barrows,,Morytania
 775,Complete the Medium Morytania Diary ,Complete all of the medium tasks in the Morytania Achievement Diary. ,Medium,Diaries,Morytania,,Morytania
 776,Complete a Medium Temple Trek ,Complete a medium Temple Trek,Medium,Minigames,Temple trekking,,Morytania
 777,Complete Haunted Mine ,Complete the Haunted Mine quest.,Medium,Quests,Experienced,,Morytania
 778,Complete A Taste of Hope ,Complete the A Taste of Hope quest.,Medium,Quests,Experienced,,Morytania
-779,Achieve 100% Shades of Mort'ton Sanctity ,Achieve 100% Sanctity during the Shades of Mort'ton minigame.,Medium,Minigames,Shades of Mort’ton,,Morytania
+779,Achieve 100% Shades of Mort'ton Sanctity ,Achieve 100% Sanctity during the Shades of Mort'ton minigame.,Medium,Minigames,Shades of Mortï¿½ton,,Morytania
 780,Equip a Salve Amulet (e) ,Equip a Salve amulet (e).,Medium,Quests,Experienced,,Morytania
 781,Complete Floor 3 of the Hallowed Sepulchre ,Complete floor 3 of the Hallowed Sepulchre in Darkmeyer. ,Hard,Skilling,Agility,,Morytania
 782,Complete Floor 4 of the Hallowed Sepulchre ,Complete floor 4 of the Hallowed Sepulchre in Darkmeyer. ,Hard,Skilling,Agility,,Morytania
@@ -925,7 +925,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 922,Fill a Giant Pouch ,Fill a giant pouch with Essence. ,Hard,Skilling,Runecrafting,,Wilderness
 923,Defeat Venenatis ,Defeat Venenatis in the Wilderness.,Hard,Bossing,Venenatis,,Wilderness
 924,Defeat Callisto ,Defeat Callisto in the Wilderness.,Hard,Bossing,Callisto,,Wilderness
-925,Defeat Vet'ion ,Defeat Vet'ion in the Wilderness.,Hard,Bossing,Vet’ion,,Wilderness
+925,Defeat Vet'ion ,Defeat Vet'ion in the Wilderness.,Hard,Bossing,Vetï¿½ion,,Wilderness
 926,Defeat the King Black Dragon ,Defeat the King Black Dragon in the Wilderness.,Hard,Bossing,King Black Dragon,,Wilderness
 927,Equip a Dragon Pickaxe ,Equip a dragon pickaxe.,Hard,Bossing,Wilderness,,Wilderness
 928,Equip a Dragon 2H Sword in the Wilderness ,Equip a dragon 2h sword in the Wilderness.,Hard,Bossing,Wilderness,,Wilderness
@@ -942,7 +942,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 939,Mine Some Runite Ore in the Wilderness ,Mine some Runite Ore in the Wilderness. ,Elite,Skilling,Mining,,Wilderness
 940,Equip a Treasonous Ring ,Equip a Treasonous ring.,Elite,Bossing,Venenatis,,Wilderness
 941,Equip a Tyrannical Ring ,Equip a Tyrannical ring.,Elite,Bossing,Callisto,,Wilderness
-942,Equip a Ring of the Gods ,Equip a Ring of the gods.,Elite,Bossing,Vet’ion,,Wilderness
+942,Equip a Ring of the Gods ,Equip a Ring of the gods.,Elite,Bossing,Vetï¿½ion,,Wilderness
 943,Equip a Craw's Bow ,Equip a Craw's Bow. ,Elite,Combat,Revenants,,Wilderness
 944,Equip a Viggora's Chainmace ,Equip a Viggora's Chainmace. ,Elite,Combat,Revenants,,Wilderness
 945,Equip a Thammaron's Sceptre ,Equip a Thammaron's Sceptre. ,Elite,Combat,Revenants,,Wilderness

@@ -26,6 +26,7 @@ export default function ManageDataModal({ show, onClose }) {
     const resetData = () => {
         resetLocalStorageData();
         setUpdated(true);
+        setSuccessText("Data successfully deleted");
     }
 
     return (
