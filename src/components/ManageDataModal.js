@@ -98,9 +98,17 @@ export default function ManageDataModal({ show, onClose }) {
                     <Tab eventKey="runelite" title="Runelite Import">
                         <div className="text-center mt-3">
                             <Alert variant="info" className="small">
-                                <p>The OsLeague plugin from the Runelite Plugin Hub is required.</p>
-                                <p class="mb-0"><a href={pluginHubLink}>Click here</a> for more information.</p>
+                                The OsLeague plugin from the Runelite Plugin Hub is required.
                             </Alert>
+                            <p className="text-left">
+                                <h5>How to use:</h5>
+                                <ol>
+                                    <li>Install the plugin using the <a href={pluginHubLink} target="_blank" rel="noopener noreferrer">plugin hub</a></li>
+                                    <li>Go to the Leagues tab ingame and open/close each interface to make sure your data is up-to-date</li>
+                                    <li>Click on the OS League Tools icon on the top toolbar to copy your data</li>
+                                    <li>Paste the copied text into the box below</li>
+                                </ol>
+                            </p>
                             <InputGroup>
                                 <InputGroup.Prepend>
                                     <InputGroup.Text>Paste copied data from Runelite:</InputGroup.Text>
