@@ -676,7 +676,7 @@
             "description": "Visit the Rune Essence Mine.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         {
@@ -685,7 +685,7 @@
             "description": "Use a Runecrafting Altar to craft any type of rune.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         {
@@ -694,7 +694,7 @@
             "description": "Use any talisman to check the location of a Runecrafting Altar.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         {
@@ -1378,7 +1378,7 @@
             "description": "Use Runecrafting Altars to craft 200 essence into runes of any type.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         {
@@ -1387,7 +1387,7 @@
             "description": "Use a Runecrafting Altar to craft 4 of any type of rune using a single essence.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         {
@@ -1396,7 +1396,7 @@
             "description": "Use a Runecrafting Altar to craft any type of combination rune.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         {
@@ -1482,8 +1482,8 @@
         },
         {
             "id": "136",
-            "name": "Make a Potion With an Amulet of Chemistry",
-            "description": "Make any 4 dose potion using an Amulet of Chemistry.",
+            "name": "Make a 4 dose potion",
+            "description": "Make any 4 dose potion using an Amulet of Chemistry or the Botanist relic.",
             "difficulty": "Medium",
             "category": "Skilling",
             "subcategory": "Herblore",
@@ -2053,7 +2053,7 @@
             "description": "Use Runecrafting Altars to craft 2500 essence into runes of any type.",
             "difficulty": "Hard",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         {
@@ -2602,7 +2602,7 @@
             "description": "Reach level 99 in your Runecraft skill.",
             "difficulty": "Elite",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         {
@@ -2611,7 +2611,7 @@
             "description": "Obtain 25 million experience in your Runecraft skill.",
             "difficulty": "Elite",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         {
@@ -3229,10 +3229,10 @@
         {
             "id": "329",
             "name": "Craft 50 Water Runes",
-            "description": "Craft 50 Water Runes.",
+            "description": "Craft 50 Water Runes at the Water altar.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Misthalin"
         },
         {
@@ -3481,10 +3481,10 @@
         {
             "id": "357",
             "name": "Craft 50 Cosmic Runes",
-            "description": "Craft 50 Cosmic Runes.",
+            "description": "Craft 50 Cosmic Runes at the Cosmic altar.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Misthalin"
         },
         {
@@ -4003,10 +4003,10 @@
         {
             "id": "415",
             "name": "Craft 50 Nature Runes",
-            "description": "Craft 50 Nature Runes.",
+            "description": "Craft 50 Nature Runes at the Nature altar.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Karamja"
         },
         {
@@ -4182,7 +4182,7 @@
         },
         {
             "id": "435",
-            "name": "Find a Gout Tubor",
+            "name": "Find a Gout Tuber",
             "description": "Find a Gout Tuber in Tai Bwo Wannai.",
             "difficulty": "Hard",
             "category": "Minigames",
@@ -4345,10 +4345,10 @@
         {
             "id": "453",
             "name": "Craft an Air Rune",
-            "description": "Craft an air rune.",
+            "description": "Craft an air rune at the Air altar.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Asgarnia"
         },
         {
@@ -4462,10 +4462,10 @@
         {
             "id": "466",
             "name": "Craft a Body Rune",
-            "description": "Craft a body rune.",
+            "description": "Craft a body rune at the Body altar.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Asgarnia"
         },
         {
@@ -4606,10 +4606,10 @@
         {
             "id": "482",
             "name": "Craft 50 Law Runes",
-            "description": "Craft 50 law runes.",
+            "description": "Craft 50 law runes at the Law altar.",
             "difficulty": "Hard",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Asgarnia"
         },
         {
@@ -5038,10 +5038,10 @@
         {
             "id": "530",
             "name": "Craft 50 Astral Runes",
-            "description": "Craft 50 astral runes.",
+            "description": "Craft 50 astral runes at the Astral altar.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Fremennik"
         },
         {
@@ -5271,7 +5271,7 @@
         },
         {
             "id": "556",
-            "name": "Defeat Vorkath in 1:45",
+            "name": "Defeat Vorkath in 2:00",
             "description": "Defeat Vorkath on Ungael in 2:00 or less.",
             "difficulty": "Hard",
             "category": "Bossing",
@@ -5698,7 +5698,7 @@
             "description": "Have Brimstail teleport you to the Rune Essence Mine.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Kandarin"
         },
         {
@@ -5874,11 +5874,11 @@
         },
         {
             "id": "623",
-            "name": "Defeat an Aberrant Spectre in Kandarin",
-            "description": "Defeat an aberrant spectre in Kandarin.",
+            "name": "Defeat a Fire Giant in Kandarin",
+            "description": "Defeat a fire giant in Kandarin.",
             "difficulty": "Medium",
             "category": "Combat",
-            "subcategory": "Slayer",
+            "subcategory": "Other",
             "area": "Kandarin"
         },
         {
@@ -6379,10 +6379,10 @@
         {
             "id": "679",
             "name": "Craft a Fire Rune",
-            "description": "Craft a Fire Rune.",
+            "description": "Craft a Fire Rune at the Fire altar.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Desert"
         },
         {
@@ -6522,8 +6522,8 @@
         },
         {
             "id": "695",
-            "name": "Pickpocket a Bandit in the Desert",
-            "description": "Pickpocket a Bandit in the Kharidian Desert.",
+            "name": "Pickpocket a Bandit in the Bandit Camp",
+            "description": "Pickpocket a Bandit in the Kharidian Desert\u2019s Bandit Camp.",
             "difficulty": "Medium",
             "category": "Skilling",
             "subcategory": "Thieving",
@@ -6571,7 +6571,7 @@
             "description": "Craft a Lava Rune at the Fire Altar.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Desert"
         },
         {
@@ -7183,7 +7183,7 @@
             "description": "Convert 2000 Daeyalt Shards into Daeyalt Essence in Darkmeyer in one go.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Morytania"
         },
         {
@@ -7192,7 +7192,7 @@
             "description": "Craft any rune using Daeyalt Essence.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Morytania"
         },
         {
@@ -7774,10 +7774,10 @@
         {
             "id": "834",
             "name": "Craft 50 Death Runes",
-            "description": "Craft 50 death runes.",
+            "description": "Craft 50 death runes at the Death altar.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Tirannwn"
         },
         {
@@ -8227,7 +8227,7 @@
             "description": "Use the Abyss to access a Runecrafting Altar.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Wilderness"
         },
         {
@@ -8389,8 +8389,8 @@
             "description": "Fill a Large Pouch with Essence.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
-            "area": "Wilderness"
+            "subcategory": "Runecraft",
+            "area": "Common"
         },
         {
             "id": "903",
@@ -8569,8 +8569,8 @@
             "description": "Fill a giant pouch with Essence.",
             "difficulty": "Hard",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
-            "area": "Wilderness"
+            "subcategory": "Runecraft",
+            "area": "Common"
         },
         {
             "id": "923",
@@ -9328,7 +9328,7 @@
                 "description": "Visit the Rune Essence Mine.",
                 "difficulty": "Easy",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Common"
             },
             {
@@ -9337,7 +9337,7 @@
                 "description": "Use a Runecrafting Altar to craft any type of rune.",
                 "difficulty": "Easy",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Common"
             },
             {
@@ -9346,7 +9346,7 @@
                 "description": "Use any talisman to check the location of a Runecrafting Altar.",
                 "difficulty": "Easy",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Common"
             },
             {
@@ -10030,7 +10030,7 @@
                 "description": "Use Runecrafting Altars to craft 200 essence into runes of any type.",
                 "difficulty": "Medium",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Common"
             },
             {
@@ -10039,7 +10039,7 @@
                 "description": "Use a Runecrafting Altar to craft 4 of any type of rune using a single essence.",
                 "difficulty": "Medium",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Common"
             },
             {
@@ -10048,7 +10048,7 @@
                 "description": "Use a Runecrafting Altar to craft any type of combination rune.",
                 "difficulty": "Medium",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Common"
             },
             {
@@ -10134,8 +10134,8 @@
             },
             {
                 "id": "136",
-                "name": "Make a Potion With an Amulet of Chemistry",
-                "description": "Make any 4 dose potion using an Amulet of Chemistry.",
+                "name": "Make a 4 dose potion",
+                "description": "Make any 4 dose potion using an Amulet of Chemistry or the Botanist relic.",
                 "difficulty": "Medium",
                 "category": "Skilling",
                 "subcategory": "Herblore",
@@ -10705,7 +10705,7 @@
                 "description": "Use Runecrafting Altars to craft 2500 essence into runes of any type.",
                 "difficulty": "Hard",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Common"
             },
             {
@@ -11254,7 +11254,7 @@
                 "description": "Reach level 99 in your Runecraft skill.",
                 "difficulty": "Elite",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Common"
             },
             {
@@ -11263,7 +11263,7 @@
                 "description": "Obtain 25 million experience in your Runecraft skill.",
                 "difficulty": "Elite",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Common"
             },
             {
@@ -11841,6 +11841,24 @@
                 "category": "Overall",
                 "subcategory": "Base level",
                 "area": "Common"
+            },
+            {
+                "id": "902",
+                "name": "Fill a Large Pouch",
+                "description": "Fill a Large Pouch with Essence.",
+                "difficulty": "Medium",
+                "category": "Skilling",
+                "subcategory": "Runecraft",
+                "area": "Common"
+            },
+            {
+                "id": "922",
+                "name": "Fill a Giant Pouch",
+                "description": "Fill a giant pouch with Essence.",
+                "difficulty": "Hard",
+                "category": "Skilling",
+                "subcategory": "Runecraft",
+                "area": "Common"
             }
         ],
         "Misthalin": [
@@ -11883,10 +11901,10 @@
             {
                 "id": "329",
                 "name": "Craft 50 Water Runes",
-                "description": "Craft 50 Water Runes.",
+                "description": "Craft 50 Water Runes at the Water altar.",
                 "difficulty": "Easy",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Misthalin"
             },
             {
@@ -12135,10 +12153,10 @@
             {
                 "id": "357",
                 "name": "Craft 50 Cosmic Runes",
-                "description": "Craft 50 Cosmic Runes.",
+                "description": "Craft 50 Cosmic Runes at the Cosmic altar.",
                 "difficulty": "Medium",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Misthalin"
             },
             {
@@ -12659,10 +12677,10 @@
             {
                 "id": "415",
                 "name": "Craft 50 Nature Runes",
-                "description": "Craft 50 Nature Runes.",
+                "description": "Craft 50 Nature Runes at the Nature altar.",
                 "difficulty": "Medium",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Karamja"
             },
             {
@@ -12838,7 +12856,7 @@
             },
             {
                 "id": "435",
-                "name": "Find a Gout Tubor",
+                "name": "Find a Gout Tuber",
                 "description": "Find a Gout Tuber in Tai Bwo Wannai.",
                 "difficulty": "Hard",
                 "category": "Minigames",
@@ -13003,10 +13021,10 @@
             {
                 "id": "453",
                 "name": "Craft an Air Rune",
-                "description": "Craft an air rune.",
+                "description": "Craft an air rune at the Air altar.",
                 "difficulty": "Easy",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Asgarnia"
             },
             {
@@ -13120,10 +13138,10 @@
             {
                 "id": "466",
                 "name": "Craft a Body Rune",
-                "description": "Craft a body rune.",
+                "description": "Craft a body rune at the Body altar.",
                 "difficulty": "Medium",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Asgarnia"
             },
             {
@@ -13264,10 +13282,10 @@
             {
                 "id": "482",
                 "name": "Craft 50 Law Runes",
-                "description": "Craft 50 law runes.",
+                "description": "Craft 50 law runes at the Law altar.",
                 "difficulty": "Hard",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Asgarnia"
             },
             {
@@ -13698,10 +13716,10 @@
             {
                 "id": "530",
                 "name": "Craft 50 Astral Runes",
-                "description": "Craft 50 astral runes.",
+                "description": "Craft 50 astral runes at the Astral altar.",
                 "difficulty": "Medium",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Fremennik"
             },
             {
@@ -13931,7 +13949,7 @@
             },
             {
                 "id": "556",
-                "name": "Defeat Vorkath in 1:45",
+                "name": "Defeat Vorkath in 2:00",
                 "description": "Defeat Vorkath on Ungael in 2:00 or less.",
                 "difficulty": "Hard",
                 "category": "Bossing",
@@ -14360,7 +14378,7 @@
                 "description": "Have Brimstail teleport you to the Rune Essence Mine.",
                 "difficulty": "Easy",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Kandarin"
             },
             {
@@ -14536,11 +14554,11 @@
             },
             {
                 "id": "623",
-                "name": "Defeat an Aberrant Spectre in Kandarin",
-                "description": "Defeat an aberrant spectre in Kandarin.",
+                "name": "Defeat a Fire Giant in Kandarin",
+                "description": "Defeat a fire giant in Kandarin.",
                 "difficulty": "Medium",
                 "category": "Combat",
-                "subcategory": "Slayer",
+                "subcategory": "Other",
                 "area": "Kandarin"
             },
             {
@@ -15043,10 +15061,10 @@
             {
                 "id": "679",
                 "name": "Craft a Fire Rune",
-                "description": "Craft a Fire Rune.",
+                "description": "Craft a Fire Rune at the Fire altar.",
                 "difficulty": "Easy",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Desert"
             },
             {
@@ -15186,8 +15204,8 @@
             },
             {
                 "id": "695",
-                "name": "Pickpocket a Bandit in the Desert",
-                "description": "Pickpocket a Bandit in the Kharidian Desert.",
+                "name": "Pickpocket a Bandit in the Bandit Camp",
+                "description": "Pickpocket a Bandit in the Kharidian Desert\u2019s Bandit Camp.",
                 "difficulty": "Medium",
                 "category": "Skilling",
                 "subcategory": "Thieving",
@@ -15235,7 +15253,7 @@
                 "description": "Craft a Lava Rune at the Fire Altar.",
                 "difficulty": "Medium",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Desert"
             },
             {
@@ -15849,7 +15867,7 @@
                 "description": "Convert 2000 Daeyalt Shards into Daeyalt Essence in Darkmeyer in one go.",
                 "difficulty": "Medium",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Morytania"
             },
             {
@@ -15858,7 +15876,7 @@
                 "description": "Craft any rune using Daeyalt Essence.",
                 "difficulty": "Medium",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Morytania"
             },
             {
@@ -16442,10 +16460,10 @@
             {
                 "id": "834",
                 "name": "Craft 50 Death Runes",
-                "description": "Craft 50 death runes.",
+                "description": "Craft 50 death runes at the Death altar.",
                 "difficulty": "Medium",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Tirannwn"
             },
             {
@@ -16897,7 +16915,7 @@
                 "description": "Use the Abyss to access a Runecrafting Altar.",
                 "difficulty": "Easy",
                 "category": "Skilling",
-                "subcategory": "Runecrafting",
+                "subcategory": "Runecraft",
                 "area": "Wilderness"
             },
             {
@@ -17051,15 +17069,6 @@
                 "difficulty": "Medium",
                 "category": "Skilling",
                 "subcategory": "Hunter",
-                "area": "Wilderness"
-            },
-            {
-                "id": "902",
-                "name": "Fill a Large Pouch",
-                "description": "Fill a Large Pouch with Essence.",
-                "difficulty": "Medium",
-                "category": "Skilling",
-                "subcategory": "Runecrafting",
                 "area": "Wilderness"
             },
             {
@@ -17231,15 +17240,6 @@
                 "difficulty": "Hard",
                 "category": "Skilling",
                 "subcategory": "Crafting",
-                "area": "Wilderness"
-            },
-            {
-                "id": "922",
-                "name": "Fill a Giant Pouch",
-                "description": "Fill a giant pouch with Essence.",
-                "difficulty": "Hard",
-                "category": "Skilling",
-                "subcategory": "Runecrafting",
                 "area": "Wilderness"
             },
             {
@@ -17998,7 +17998,7 @@
             "description": "Visit the Rune Essence Mine.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         "47": {
@@ -18007,7 +18007,7 @@
             "description": "Use a Runecrafting Altar to craft any type of rune.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         "48": {
@@ -18016,7 +18016,7 @@
             "description": "Use any talisman to check the location of a Runecrafting Altar.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         "49": {
@@ -18700,7 +18700,7 @@
             "description": "Use Runecrafting Altars to craft 200 essence into runes of any type.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         "125": {
@@ -18709,7 +18709,7 @@
             "description": "Use a Runecrafting Altar to craft 4 of any type of rune using a single essence.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         "126": {
@@ -18718,7 +18718,7 @@
             "description": "Use a Runecrafting Altar to craft any type of combination rune.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         "127": {
@@ -18804,8 +18804,8 @@
         },
         "136": {
             "id": "136",
-            "name": "Make a Potion With an Amulet of Chemistry",
-            "description": "Make any 4 dose potion using an Amulet of Chemistry.",
+            "name": "Make a 4 dose potion",
+            "description": "Make any 4 dose potion using an Amulet of Chemistry or the Botanist relic.",
             "difficulty": "Medium",
             "category": "Skilling",
             "subcategory": "Herblore",
@@ -19375,7 +19375,7 @@
             "description": "Use Runecrafting Altars to craft 2500 essence into runes of any type.",
             "difficulty": "Hard",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         "200": {
@@ -19924,7 +19924,7 @@
             "description": "Reach level 99 in your Runecraft skill.",
             "difficulty": "Elite",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         "261": {
@@ -19933,7 +19933,7 @@
             "description": "Obtain 25 million experience in your Runecraft skill.",
             "difficulty": "Elite",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Common"
         },
         "262": {
@@ -20551,10 +20551,10 @@
         "329": {
             "id": "329",
             "name": "Craft 50 Water Runes",
-            "description": "Craft 50 Water Runes.",
+            "description": "Craft 50 Water Runes at the Water altar.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Misthalin"
         },
         "330": {
@@ -20803,10 +20803,10 @@
         "357": {
             "id": "357",
             "name": "Craft 50 Cosmic Runes",
-            "description": "Craft 50 Cosmic Runes.",
+            "description": "Craft 50 Cosmic Runes at the Cosmic altar.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Misthalin"
         },
         "358": {
@@ -21325,10 +21325,10 @@
         "415": {
             "id": "415",
             "name": "Craft 50 Nature Runes",
-            "description": "Craft 50 Nature Runes.",
+            "description": "Craft 50 Nature Runes at the Nature altar.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Karamja"
         },
         "416": {
@@ -21504,7 +21504,7 @@
         },
         "435": {
             "id": "435",
-            "name": "Find a Gout Tubor",
+            "name": "Find a Gout Tuber",
             "description": "Find a Gout Tuber in Tai Bwo Wannai.",
             "difficulty": "Hard",
             "category": "Minigames",
@@ -21667,10 +21667,10 @@
         "453": {
             "id": "453",
             "name": "Craft an Air Rune",
-            "description": "Craft an air rune.",
+            "description": "Craft an air rune at the Air altar.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Asgarnia"
         },
         "454": {
@@ -21784,10 +21784,10 @@
         "466": {
             "id": "466",
             "name": "Craft a Body Rune",
-            "description": "Craft a body rune.",
+            "description": "Craft a body rune at the Body altar.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Asgarnia"
         },
         "467": {
@@ -21928,10 +21928,10 @@
         "482": {
             "id": "482",
             "name": "Craft 50 Law Runes",
-            "description": "Craft 50 law runes.",
+            "description": "Craft 50 law runes at the Law altar.",
             "difficulty": "Hard",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Asgarnia"
         },
         "483": {
@@ -22360,10 +22360,10 @@
         "530": {
             "id": "530",
             "name": "Craft 50 Astral Runes",
-            "description": "Craft 50 astral runes.",
+            "description": "Craft 50 astral runes at the Astral altar.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Fremennik"
         },
         "531": {
@@ -22593,7 +22593,7 @@
         },
         "556": {
             "id": "556",
-            "name": "Defeat Vorkath in 1:45",
+            "name": "Defeat Vorkath in 2:00",
             "description": "Defeat Vorkath on Ungael in 2:00 or less.",
             "difficulty": "Hard",
             "category": "Bossing",
@@ -23020,7 +23020,7 @@
             "description": "Have Brimstail teleport you to the Rune Essence Mine.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Kandarin"
         },
         "604": {
@@ -23196,11 +23196,11 @@
         },
         "623": {
             "id": "623",
-            "name": "Defeat an Aberrant Spectre in Kandarin",
-            "description": "Defeat an aberrant spectre in Kandarin.",
+            "name": "Defeat a Fire Giant in Kandarin",
+            "description": "Defeat a fire giant in Kandarin.",
             "difficulty": "Medium",
             "category": "Combat",
-            "subcategory": "Slayer",
+            "subcategory": "Other",
             "area": "Kandarin"
         },
         "624": {
@@ -23701,10 +23701,10 @@
         "679": {
             "id": "679",
             "name": "Craft a Fire Rune",
-            "description": "Craft a Fire Rune.",
+            "description": "Craft a Fire Rune at the Fire altar.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Desert"
         },
         "680": {
@@ -23844,8 +23844,8 @@
         },
         "695": {
             "id": "695",
-            "name": "Pickpocket a Bandit in the Desert",
-            "description": "Pickpocket a Bandit in the Kharidian Desert.",
+            "name": "Pickpocket a Bandit in the Bandit Camp",
+            "description": "Pickpocket a Bandit in the Kharidian Desert\u2019s Bandit Camp.",
             "difficulty": "Medium",
             "category": "Skilling",
             "subcategory": "Thieving",
@@ -23893,7 +23893,7 @@
             "description": "Craft a Lava Rune at the Fire Altar.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Desert"
         },
         "701": {
@@ -24505,7 +24505,7 @@
             "description": "Convert 2000 Daeyalt Shards into Daeyalt Essence in Darkmeyer in one go.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Morytania"
         },
         "769": {
@@ -24514,7 +24514,7 @@
             "description": "Craft any rune using Daeyalt Essence.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Morytania"
         },
         "770": {
@@ -25096,10 +25096,10 @@
         "834": {
             "id": "834",
             "name": "Craft 50 Death Runes",
-            "description": "Craft 50 death runes.",
+            "description": "Craft 50 death runes at the Death altar.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Tirannwn"
         },
         "835": {
@@ -25549,7 +25549,7 @@
             "description": "Use the Abyss to access a Runecrafting Altar.",
             "difficulty": "Easy",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
+            "subcategory": "Runecraft",
             "area": "Wilderness"
         },
         "885": {
@@ -25711,8 +25711,8 @@
             "description": "Fill a Large Pouch with Essence.",
             "difficulty": "Medium",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
-            "area": "Wilderness"
+            "subcategory": "Runecraft",
+            "area": "Common"
         },
         "903": {
             "id": "903",
@@ -25891,8 +25891,8 @@
             "description": "Fill a giant pouch with Essence.",
             "difficulty": "Hard",
             "category": "Skilling",
-            "subcategory": "Runecrafting",
-            "area": "Wilderness"
+            "subcategory": "Runecraft",
+            "area": "Common"
         },
         "923": {
             "id": "923",

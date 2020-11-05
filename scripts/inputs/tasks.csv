@@ -45,9 +45,9 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 43,Purchase a Player Owned House ,Purchase a Player Owned House.,Easy,Skilling,Construction,,Common
 44,Build a Room in Your Player Owned House ,Build a room in your Player Owned House.,Easy,Skilling,Construction,,Common
 45,Turn a Log Into a Plank ,Use a Sawmill to turn a Log into a Plank.,Easy,Skilling,Construction,,Common
-46,Visit the Rune Essence Mine ,Visit the Rune Essence Mine.,Easy,Skilling,Runecrafting,,Common
-47,Craft Any Rune ,Use a Runecrafting Altar to craft any type of rune.,Easy,Skilling,Runecrafting,,Common
-48,Locate a Runecrafting Altar With a Talisman ,Use any talisman to check the location of a Runecrafting Altar.,Easy,Skilling,Runecrafting,,Common
+46,Visit the Rune Essence Mine ,Visit the Rune Essence Mine.,Easy,Skilling,Runecraft,,Common
+47,Craft Any Rune ,Use a Runecrafting Altar to craft any type of rune.,Easy,Skilling,Runecraft,,Common
+48,Locate a Runecrafting Altar With a Talisman ,Use any talisman to check the location of a Runecrafting Altar.,Easy,Skilling,Runecraft,,Common
 49,Burn Some Normal Logs ,Burn some Normal Logs.,Easy,Skilling,Firemaking,,Common
 50,Burn Some Oak Logs ,Burn some Oak Logs. ,Easy,Skilling,Firemaking,15 Firemaking,Common
 51,Light a Torch ,Light a Torch.,Easy,Skilling,Firemaking,,Common
@@ -123,9 +123,9 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 121,Build a Mahogany Portal ,Build a mahogany portal in a Portal Chamber in your Player Owned House. ,Medium,Skilling,Construction,,Common
 122,Build an Oak Larder ,Build an oak larder in a Kitchen in your Player Owned House. ,Medium,Skilling,Construction,,Common
 123,Fill a Medium S.T.A.S.H. Unit ,Build a Medium S.T.A.S.H. unit and fill it with the relevant items. ,Medium,Clues,Construction,,Common
-124,Craft 200 Essence Into Runes ,Use Runecrafting Altars to craft 200 essence into runes of any type.,Medium,Skilling,Runecrafting,,Common
-125,Craft 4 Runes With 1 Essence ,Use a Runecrafting Altar to craft 4 of any type of rune using a single essence. ,Medium,Skilling,Runecrafting,,Common
-126,Craft Any Combination Rune ,Use a Runecrafting Altar to craft any type of combination rune. ,Medium,Skilling,Runecrafting,,Common
+124,Craft 200 Essence Into Runes ,Use Runecrafting Altars to craft 200 essence into runes of any type.,Medium,Skilling,Runecraft,,Common
+125,Craft 4 Runes With 1 Essence ,Use a Runecrafting Altar to craft 4 of any type of rune using a single essence. ,Medium,Skilling,Runecraft,,Common
+126,Craft Any Combination Rune ,Use a Runecrafting Altar to craft any type of combination rune. ,Medium,Skilling,Runecraft,,Common
 127,Burn 100 Willow Logs ,Burn 100 Willow Logs. ,Medium,Skilling,Firemaking,,Common
 128,Equip a Harpie Bug Lantern ,Equip a Bug lantern. ,Medium,Combat,Slayer,,Common
 129,Light a Bullseye Lantern ,Light a Bullseye Lantern. ,Medium,Skilling,Firemaking,,Common
@@ -135,7 +135,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 133,Complete 50 Laps of a Rooftop Agility Course ,Complete 50 laps of any Rooftop Agility Course. ,Medium,Skilling,Agility,,Common
 134,Make 30 Prayer Potions ,Make 30 Prayer Potions. ,Medium,Skilling,Herblore,,Common
 135,Clean a Grimy Avantoe ,Clean a Grimy Avantoe. ,Medium,Skilling,Herblore,,Common
-136,Make a Potion With an Amulet of Chemistry ,Make any 4 dose potion using an Amulet of Chemistry. ,Medium,Skilling,Herblore,,Common
+136,Make a 4 dose potion,Make any 4 dose potion using an Amulet of Chemistry or the Botanist relic. ,Medium,Skilling,Herblore,,Common
 137,Reach Combat Level 50 ,Reach Combat Level 50.,Medium,Overall,Combat level,,Common
 138,Reach Combat Level 75 ,Reach Combat Level 75.,Medium,Overall,Combat level,,Common
 139,Perform a Special Attack ,Perform any special attack.,Medium,Combat,Other,,Common
@@ -198,7 +198,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 196,Smelt a Runite Bar ,Use a Furnace to smelt a runite bar. ,Hard,Skilling,Smithing,,Common
 197,Fill a Hard S.T.A.S.H. Unit ,Build a Hard S.T.A.S.H. unit and fill it with the relevant items. ,Hard,Clues,Construction,,Common
 198,Build an Achievement Gallery ,Build an Achievement Gallery in your Player Owned House. ,Hard,Skilling,Construction,,Common
-199,Craft 2500 Essence Into Runes ,Use Runecrafting Altars to craft 2500 essence into runes of any type.,Hard,Skilling,Runecrafting,,Common
+199,Craft 2500 Essence Into Runes ,Use Runecrafting Altars to craft 2500 essence into runes of any type.,Hard,Skilling,Runecraft,,Common
 200,Burn 100 Yew Logs ,Burn 100 Yew Logs. ,Hard,Skilling,Firemaking,,Common
 201,Burn Some Magic Logs ,Burn some Magic Logs. ,Hard,Skilling,Firemaking,,Common
 202,Catch a Dragon Impling ,Catch a Dragon Impling. ,Hard,Skilling,Hunter,,Common
@@ -259,8 +259,8 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 257,Obtain 25 Million Prayer XP ,Obtain 25 million experience in your Prayer skill. ,Elite,Combat,Prayer,,Common
 258,Reach Level 99 Magic ,Reach level 99 in your Magic skill. ,Elite,Combat,Magic,,Common
 259,Obtain 25 Million Magic XP ,Obtain 25 million experience in your Magic skill. ,Elite,Combat,Magic,,Common
-260,Reach Level 99 Runecraft ,Reach level 99 in your Runecraft skill. ,Elite,Skilling,Runecrafting,,Common
-261,Obtain 25 Million Runecraft XP ,Obtain 25 million experience in your Runecraft skill. ,Elite,Skilling,Runecrafting,,Common
+260,Reach Level 99 Runecraft ,Reach level 99 in your Runecraft skill. ,Elite,Skilling,Runecraft,,Common
+261,Obtain 25 Million Runecraft XP ,Obtain 25 million experience in your Runecraft skill. ,Elite,Skilling,Runecraft,,Common
 262,Reach Level 99 Construction ,Reach level 99 in your Construction skill. ,Elite,Skilling,Construction,,Common
 263,Obtain 25 Million Construction XP ,Obtain 25 million experience in your Construction skill. ,Elite,Skilling,Construction,,Common
 264,Reach Level 99 Hitpoints ,Reach level 99 in your Hitpoints skill. ,Elite,Combat,Hitpoints,,Common
@@ -329,7 +329,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 326,Pickpocket a H.A.M. Member ,Pickpocket any H.A.M. member at their hideout. ,Easy,Skilling,Thieving,,Misthalin
 327,Steal From the Varrock Tea Stall ,Steal from the Tea Stall in Varrock. ,Easy,Skilling,Thieving,,Misthalin
 328,Complete the Draynor Agility Course ,Complete a lap of the Draynor Rooftop Agility Course. ,Easy,Skilling,Agility,,Misthalin
-329,Craft 50 Water Runes ,Craft 50 Water Runes. ,Easy,Skilling,Runecrafting,,Misthalin
+329,Craft 50 Water Runes ,Craft 50 Water Runes at the Water altar. ,Easy,Skilling,Runecraft,,Misthalin
 330,Complete the Easy Varrock Diary ,Complete all of the easy tasks in the Varrock Achievement Diary. ,Easy,Diaries,Varrock,,Misthalin
 331,Defeat the Lesser Demon in the Wizards' Tower ,Defeat the Lesser Demon at the top of the Wizards' Tower.,Easy,Combat,Other,,Misthalin
 332,Receive a Slayer Task From Vannaka ,Receive a Slayer task from Vannaka in Edgeville Dungeon. ,Easy,Combat,Slayer,,Misthalin
@@ -357,7 +357,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 354,Pickpocket a Varrock Guard ,Pickpocket any Varrock Guard. ,Medium,Skilling,Thieving,,Misthalin
 355,Pickpocket a Bullseye Lantern From a Cave Goblin ,Pickpocket a Bullseye Lantern from a Cave Goblin. ,Medium,Skilling,Thieving,,Misthalin
 356,Complete 30 Laps of the Draynor Agility Course ,Complete 30 laps of the Draynor Rooftop Agility Course. ,Medium,Skilling,Agility,,Misthalin
-357,Craft 50 Cosmic Runes ,Craft 50 Cosmic Runes. ,Medium,Skilling,Runecrafting,,Misthalin
+357,Craft 50 Cosmic Runes ,Craft 50 Cosmic Runes at the Cosmic altar. ,Medium,Skilling,Runecraft,,Misthalin
 358,Use Enriched Bones on the Strange Machine ,Use Enriched bones on the Strange Machine on Fossil Island.,Medium,Combat,Prayer,,Misthalin
 359,Chop a Sulliuscep Cap ,Chop a Sulliuscep Cap on Fossil Island. ,Medium,Skilling,Woodcutting,,Misthalin
 360,Complete the Medium Varrock Diary ,Complete all of the medium tasks in the Varrock Achievement Diary. ,Medium,Diaries,Varrock,,Misthalin
@@ -415,7 +415,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 412,Enter the Brimhaven Dungeon ,Enter the Brimhaven Dungeon. ,Easy,Other,Locations,,Karamja
 413,Buy a Snapdragon From Pirate Jackie the Fruit ,Buy a Snapdragon From Pirate Jackie the Fruit in Brimhaven.,Medium,Skilling,Agility,,Karamja
 414,Catch a Salmon on Karamja ,Catch a Salmon on Karamja. ,Medium,Skilling,Fishing,,Karamja
-415,Craft 50 Nature Runes ,Craft 50 Nature Runes. ,Medium,Skilling,Runecrafting,,Karamja
+415,Craft 50 Nature Runes ,Craft 50 Nature Runes at the Nature altar. ,Medium,Skilling,Runecraft,,Karamja
 416,Defeat a Steel Dragon on Karamja ,Defeat a Steel Dragon on Karamja.,Medium,Combat,Other,,Karamja
 417,Complete the Medium Karamja Diary ,Complete all of the medium tasks in the Karamja Achievement Diary. ,Medium,Diaries,Karamja,,Karamja
 418,Enter the Tai Bwo Wannai Hardwood Grove ,Enter the Hardwood Grove in Tai Bwo Wannai.,Medium,Minigames,Tai Bwo Wannai cleanup,,Karamja
@@ -435,7 +435,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 432,Equip a Toktz-Xil-Ek ,Equip a Toktz-Xil-Ek. ,Hard,Combat,Melee,,Karamja
 433,Complete the Hard Karamja Diary ,Complete all of the hard tasks in the Karamja Achievement Diary. ,Hard,Diaries,Karamja,,Karamja
 434,Equip a Red Topaz Machete ,Equip a Red Topaz Machete.,Hard,Minigames,Tai Bwo Wannai cleanup,,Karamja
-435,Find a Gout Tubor ,Find a Gout Tuber in Tai Bwo Wannai. ,Hard,Minigames,Tai Bwo Wannai cleanup,,Karamja
+435,Find a Gout Tuber ,Find a Gout Tuber in Tai Bwo Wannai. ,Hard,Minigames,Tai Bwo Wannai cleanup,,Karamja
 436,Receive 60 Agility Arena Tickets With No Mistakes ,Receive 60 Agility Arena Tickets without missing any pillars. ,Elite,Skilling,Agility,,Karamja
 437,Pickpocket a Diamond From a TzHaar ,Pickpocket a Diamond from a TzHaar. ,Elite,Skilling,Thieving,,Karamja
 438,Equip a Fire Cape ,Equip a Fire Cape.,Elite,Bossing,Fight caves,,Karamja
@@ -453,7 +453,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 450,Equip an Infernal Cape ,Equip an Infernal Cape.,Master,Bossing,Inferno,,Karamja
 451,Complete the Fight Caves in 25:00 ,Complete the Tzhaar Fight Cave in Mor Ul Rek in 25:00 or less.,Master,Bossing,Fight caves,,Karamja
 452,Complete the Inferno in 75:00 ,Complete the Inferno in Mor Ul Rek in 75:00 or less.,Master,Bossing,Inferno,,Karamja
-453,Craft an Air Rune ,Craft an air rune. ,Easy,Skilling,Runecrafting,,Asgarnia
+453,Craft an Air Rune ,Craft an air rune at the Air altar. ,Easy,Skilling,Runecraft,,Asgarnia
 454,Move Your House to Taverley ,Move your player-owned house to Taverley. ,Easy,Skilling,Construction,,Asgarnia
 455,Receive a Slayer Task From Turael or Spria ,Receive a Slayer task From Turael in Burthorpe or Spria in Draynor Village. ,Easy,Combat,Slayer,,Asgarnia
 456,Defeat a Troll in Asgarnia ,Defeat a Troll in Asgarnia.,Easy,Combat,Other,,Asgarnia
@@ -466,7 +466,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 463,Complete the Falador Agility Course ,Complete a lap of the Falador Rooftop Course. ,Medium,Skilling,Agility,,Asgarnia
 464,Obtain 20 Golden Nuggets ,Obtain 20 golden nuggets from the Motherlode Mine beneath Falador. ,Medium,Skilling,Mining,,Asgarnia
 465,Enter the Crafting Guild ,Enter the Crafting Guild. ,Medium,Skilling,Crafting,,Asgarnia
-466,Craft a Body Rune ,Craft a body rune. ,Medium,Skilling,Runecrafting,,Asgarnia
+466,Craft a Body Rune ,Craft a body rune at the Body altar. ,Medium,Skilling,Runecraft,,Asgarnia
 467,Harvest Any Herb at the Troll Stronghold ,Harvest any herb you've grown at the Troll Stronghold. ,Medium,Skilling,Farming,,Asgarnia
 468,Defeat the Giant Mole ,Defeat the Giant Mole beneath Falador.,Medium,Bossing,Giant mole,,Asgarnia
 469,Defeat a Skeletal Wyvern ,Defeat a Skeletal Wyvern in the Asgarnian Ice Dungeon. ,Medium,Combat,Slayer,,Asgarnia
@@ -482,7 +482,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 479,Equip a Full Graceful Outfit ,Equip a full set of graceful outfit.,Hard,Skilling,Agility,,Asgarnia
 480,Equip a Full Rogue Outfit ,Equip a full set of rogue gear. ,Hard,Skilling,Thieving,,Asgarnia
 481,Equip a Full Prospector Outfit ,Equip a full set of prospector gear. ,Hard,Skilling,Mining,,Asgarnia
-482,Craft 50 Law Runes ,Craft 50 law runes. ,Hard,Skilling,Runecrafting,,Asgarnia
+482,Craft 50 Law Runes ,Craft 50 law runes at the Law altar. ,Hard,Skilling,Runecraft,,Asgarnia
 483,Make 20 Ranging Potions ,Make 20 ranging potions. ,Hard,Skilling,Herblore,,Asgarnia
 484,Make 20 Stamina Potions ,Make 20 stamina potions. ,Hard,Skilling,Herblore,,Asgarnia
 485,Equip a Dragon Defender ,Equip a dragon defender.,Hard,Combat,Melee,,Asgarnia
@@ -530,7 +530,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 527,Use the Bank on Lunar Isle ,Use the bank on Lunar Isle. ,Easy,Other,Locations,,Fremennik
 528,Cast Moonclan Teleport ,Cast the Moonclan Teleport spell. ,Medium,Combat,Magic,,Fremennik
 529,Move Your House to Rellekka ,Move your Player Owned House to Rellekka. ,Medium,Skilling,Construction,,Fremennik
-530,Craft 50 Astral Runes ,Craft 50 astral runes. ,Medium,Skilling,Runecrafting,,Fremennik
+530,Craft 50 Astral Runes ,Craft 50 astral runes at the Astral altar. ,Medium,Skilling,Runecraft,,Fremennik
 531,Complete the Penguin Agility Course ,Complete a lap of the Penguin Agility Course. ,Medium,Skilling,Agility,,Fremennik
 532,Catch a Snowy Knight ,Catch a snowy knight. ,Medium,Skilling,Hunter,,Fremennik
 533,Unlock Free Use of the Blast Furnace ,Unlock free use of the Keldagrim Blast Furnace by speaking with the Foreman. ,Medium,Skilling,Smithing,,Fremennik
@@ -556,7 +556,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 553,Use Your Portal Nexus to Teleport to Weiss ,Use a portal nexus in your player-owned house to teleport to Weiss. ,Hard,Skilling,Construction,,Fremennik
 554,Defeat Vorkath ,Defeat Vorkath on Ungael.,Hard,Bossing,Vorkath,,Fremennik
 555,Equip an Ava's Assembler ,Equip an ava's assembler.,Hard,Bossing,Vorkath,,Fremennik
-556,Defeat Vorkath in 1:45 ,Defeat Vorkath on Ungael in 2:00 or less.,Hard,Bossing,Vorkath,,Fremennik
+556,Defeat Vorkath in 2:00,Defeat Vorkath on Ungael in 2:00 or less.,Hard,Bossing,Vorkath,,Fremennik
 557,Defeat the Dagannoth Kings Without Leaving ,Defeat all three of the Dagannoth Kings in the Waterbirth Island Dungeon without leaving their area.,Hard,Bossing,Dagannoth Kings,,Fremennik
 558,Equip a Berserker Ring ,Equip a berserker ring.,Hard,Bossing,Dagannoth Kings,,Fremennik
 559,Equip a Warrior Ring ,Equip a warrior ring.,Hard,Bossing,Dagannoth Kings,,Fremennik
@@ -603,7 +603,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 600,Complete Monk's Friend ,Complete the Monk's Friend quest. ,Easy,Quests,Novice,,Kandarin
 601,Complete Tower of Life ,Complete the Tower of Life quest. ,Easy,Quests,Novice,,Kandarin
 602,Complete Sea Slug ,Complete the Sea Slug quest. ,Easy,Quests,Intermediate,,Kandarin
-603,Brimstail Rune Essence Mine teleport ,Have Brimstail teleport you to the Rune Essence Mine.,Easy,Skilling,Runecrafting,,Kandarin
+603,Brimstail Rune Essence Mine teleport ,Have Brimstail teleport you to the Rune Essence Mine.,Easy,Skilling,Runecraft,,Kandarin
 604,Equip a Marksman Chompy Hat ,Equip a chompy bird hat.,Easy,Quests,Intermediate,,Kandarin
 605,Equip a Monkey Backpack ,Equip a monkey backpack.,Easy,Quests,Grandmaster,,Kandarin
 606,Complete the Easy Ardougne Diary ,Complete all of the easy tasks in the Ardougne Achievement Diary. ,Easy,Diaries,Ardougne,,Kandarin
@@ -623,7 +623,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 620,Enter the Ranging Guild ,Enter the Ranging Guild. ,Medium,Combat,Ranged,,Kandarin
 621,Enter the Wizards' Guild ,Enter the Wizards' Guild in Yanille. ,Medium,Combat,Magic,,Kandarin
 622,Defeat a Bloodveld in Kandarin ,Defeat a bloodveld in Kandarin. ,Medium,Combat,Slayer,,Kandarin
-623,Defeat an Aberrant Spectre in Kandarin ,Defeat an aberrant spectre in Kandarin. ,Medium,Combat,Slayer,,Kandarin
+623,Defeat a Fire Giant in Kandarin ,Defeat a fire giant in Kandarin. ,Medium,Combat,Other,,Kandarin
 624,Use the Chivalry Prayer ,Use the Chivalry prayer. ,Medium,Combat,Prayer,,Kandarin
 625,Equip an Iban's Staff (u) ,Equip an iban's staff (u). ,Medium,Combat,Magic,,Kandarin
 626,Win a Game of Castle Wars ,Win a game of Castle Wars.,Medium,Minigames,Castle wars,,Kandarin
@@ -679,7 +679,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 676,Pick a Winter Sq'irk ,Pick a Winter Sq'irk in the Sorceress's Garden.,Easy,Skilling,Thieving,,Desert
 677,Turn in a Winter Sq'irkjuice to Osman ,Turn in a Winter Sq'irkjuice to Osman in Al Kharid.,Easy,Skilling,Thieving,,Desert
 678,Complete the Al Kharid Agility Course ,Complete a lap of the Al Kharid Rooftop Agility Course. ,Easy,Skilling,Agility,,Desert
-679,Craft a Fire Rune ,Craft a Fire Rune. ,Easy,Skilling,Runecrafting,,Desert
+679,Craft a Fire Rune ,Craft a Fire Rune at the Fire altar. ,Easy,Skilling,Runecraft,,Desert
 680,Defeat an Al Kharid Warrior ,Defeat an Al Kharid Warrior.,Easy,Combat,Other,,Desert
 681,Complete the Easy Desert Diary ,Complete all of the easy tasks in the Desert Achievement Diary. ,Easy,Diaries,Desert,,Desert
 682,Go Through the Al Kharid Gate ,Go through the Al Kharid gate.,Easy,Other,Locations,,Desert
@@ -695,12 +695,12 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 692,Pick a Spring Sq'irk ,Pick a Spring Sq'irk in the Sorceress's Garden. ,Medium,Skilling,Thieving,,Desert
 693,Pick a Autumn Sq'irk ,Pick a Autumn Sq'irk in the Sorceress's Garden. ,Medium,Skilling,Thieving,,Desert
 694,Turn in 10 Spring Sq'irkjuices to Osman ,Turn in 10 Spring sq'irkjuices to Osman in Al Kharid in one go. ,Medium,Skilling,Thieving,,Desert
-695,Pickpocket a Bandit in the Desert ,Pickpocket a Bandit in the Kharidian Desert. ,Medium,Skilling,Thieving,,Desert
+695,Pickpocket a Bandit in the Bandit Camp ,Pickpocket a Bandit in the Kharidian Desert’s Bandit Camp.,Medium,Skilling,Thieving,,Desert
 696,Smith 1000 Mithril Dart Tips ,Use an Anvil to smith 1000 Mithril dart tips. ,Medium,Skilling,Smithing,,Desert
 697,Make a Combat Potion ,Make a Combat Potion. ,Medium,Skilling,Herblore,,Desert
 698,Defeat a Crocodile ,Defeat a Crocodile in the Kharidian Desert.,Medium,Combat,Other,,Desert
 699,Turn in a Pyramid Top to Simon Templeton ,Turn in a Pyramid top to Simon Templeton at the Agility Pyramid. ,Medium,Skilling,Agility,,Desert
-700,Craft a Lava Rune at the Fire Altar ,Craft a Lava Rune at the Fire Altar. ,Medium,Skilling,Runecrafting,,Desert
+700,Craft a Lava Rune at the Fire Altar ,Craft a Lava Rune at the Fire Altar. ,Medium,Skilling,Runecraft,,Desert
 701,Catch 30 Orange Salamanders ,Catch 30 Orange Salamanders at Uzer. ,Medium,Skilling,Hunter,,Desert
 702,Mine 30 Chunks of Granite ,Mine 30 chunks of Granite at the Kharidian Desert Quarry. ,Medium,Skilling,Mining,,Desert
 703,Defeat a Scarab Mage ,Defeat a Scarab Mage in the Sophanem Dungeon.,Medium,Combat,Other,,Desert
@@ -768,8 +768,8 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 765,Complete the Canifis Agility Course ,Complete a lap of the Canifis Rooftop Agility Course. ,Medium,Skilling,Agility,,Morytania
 766,Complete the Werewolf Agility Course ,Complete a lap of the Werewolf Agility Course. ,Medium,Skilling,Agility,,Morytania
 767,Catch a Swamp Lizard in Morytania ,Catch a Swamp Lizard in Morytania. ,Medium,Skilling,Hunter,,Morytania
-768,Convert 2000 Daeyalt Shards Into Essence ,Convert 2000 Daeyalt Shards into Daeyalt Essence in Darkmeyer in one go. ,Medium,Skilling,Runecrafting,,Morytania
-769,Craft a Rune Using Daeyalt Essence ,Craft any rune using Daeyalt Essence. ,Medium,Skilling,Runecrafting,,Morytania
+768,Convert 2000 Daeyalt Shards Into Essence ,Convert 2000 Daeyalt Shards into Daeyalt Essence in Darkmeyer in one go. ,Medium,Skilling,Runecraft,,Morytania
+769,Craft a Rune Using Daeyalt Essence ,Craft any rune using Daeyalt Essence. ,Medium,Skilling,Runecraft,,Morytania
 770,Assemble a Slayer Helm ,Assemble a Slayer Helm. ,Medium,Combat,Slayer,,Morytania
 771,Loot a Barrows Chest ,Loot a Barrows Chest once.,Medium,Bossing,Barrows,,Morytania
 772,Defeat a Fiyr Shade ,Defeat a Fiyr Shade. ,Medium,Minigames,Shades of Mortï¿½ton,,Morytania
@@ -834,7 +834,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 831,Charter a Ship From Prifddinas to Port Tyras ,Take a Charter Ship from Prifddinas to Port Tyras.,Easy,Other,Transportation,,Tirannwn
 832,Talk to Ilfeen in Tirannwn ,Talk to Ilfeen in Tirannwn. ,Easy,Other,Other,,Tirannwn
 833,Check a grown Papaya Tree in Lletya ,Check the health of a papaya tree you've grown in Lletya. ,Medium,Skilling,Farming,,Tirannwn
-834,Craft 50 Death Runes ,Craft 50 death runes. ,Medium,Skilling,Runecrafting,,Tirannwn
+834,Craft 50 Death Runes ,Craft 50 death runes at the Death altar.,Medium,Skilling,Runecraft,,Tirannwn
 835,Move Your House to Prifddinas ,Move your player-owned house to Prifddinas.,Medium,Skilling,Construction,,Tirannwn
 836,Defeat an Elf in Tirannwn ,Defeat an Elf in Tirannwn.,Medium,Combat,Other,,Tirannwn
 837,Defeat a Bloodveld in Tirannwn ,Defeat a Bloodveld in Tirannwn. ,Medium,Combat,Slayer,,Tirannwn
@@ -884,7 +884,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 881,Complete the Corrupted Gauntlet in 5:00 ,Complete the Corrupted Gauntlet in Prifddinas in 5:00 or less.,Master,Bossing,Gauntlet,,Tirannwn
 882,Equip a Crystal Crown ,Equip a Crystal crown. ,Master,Other,Shops,,Tirannwn
 883,Sacrifice Some Bones at the Chaos Temple ,Sacrifice some Bones at the Western Chaos Temple altar.,Easy,Combat,Prayer,,Wilderness
-884,Use the Abyss ,Use the Abyss to access a Runecrafting Altar.,Easy,Skilling,Runecrafting,,Wilderness
+884,Use the Abyss ,Use the Abyss to access a Runecrafting Altar.,Easy,Skilling,Runecraft,,Wilderness
 885,Defeat a Lava Dragon in the Wilderness ,Defeat a Lava dragon in the Wilderness.,Easy,Combat,Other,,Wilderness
 886,Defeat a Fire Giant in the Wilderness ,Defeat a Fire Giant in the Wilderness.,Easy,Combat,Other,,Wilderness
 887,Defeat a Chaos Dwarf in the Wilderness ,Defeat a Chaos Dwarf in the Wilderness.,Easy,Combat,Other,,Wilderness
@@ -902,7 +902,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 899,Bury Some Lava Dragon Bones ,Bury some Lava dragon bones.,Medium,Combat,Prayer,,Wilderness
 900,Complete the Wilderness Agility Course ,Complete a lap of the Wilderness Agility Course. ,Medium,Skilling,Agility,,Wilderness
 901,Catch a Black Salamander ,Catch a Black Salamander in the Wilderness. ,Medium,Skilling,Hunter,,Wilderness
-902,Fill a Large Pouch ,Fill a Large Pouch with Essence. ,Medium,Skilling,Runecrafting,,Wilderness
+902,Fill a Large Pouch ,Fill a Large Pouch with Essence. ,Medium,Skilling,Runecraft,,Common
 903,Defeat the Crazy Archaeologist ,Defeat the Crazy Archaeologist in the Wilderness.,Medium,Bossing,Wilderness,,Wilderness
 904,Defeat Scorpia ,Defeat Scorpia in the Wilderness.,Medium,Bossing,Scorpia,,Wilderness
 905,Defeat the Chaos Fanatic ,Defeat the Chaos Fanatic in the Wilderness.,Medium,Bossing,Chaos Fanatic,,Wilderness
@@ -922,7 +922,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 919,Catch 100 Dark Crabs ,Catch 100 Dark Crabs in the Wilderness. ,Hard,Skilling,Fishing,,Wilderness
 920,Catch a Black Chinchompa ,Catch a Black Chinchompa in the Wilderness. ,Hard,Skilling,Hunter,,Wilderness
 921,Craft an Air Battlestaff in the Wilderness ,Craft an air battlestaff in the Wilderness. ,Hard,Skilling,Crafting,,Wilderness
-922,Fill a Giant Pouch ,Fill a giant pouch with Essence. ,Hard,Skilling,Runecrafting,,Wilderness
+922,Fill a Giant Pouch ,Fill a giant pouch with Essence. ,Hard,Skilling,Runecraft,,Common
 923,Defeat Venenatis ,Defeat Venenatis in the Wilderness.,Hard,Bossing,Venenatis,,Wilderness
 924,Defeat Callisto ,Defeat Callisto in the Wilderness.,Hard,Bossing,Callisto,,Wilderness
 925,Defeat Vet'ion ,Defeat Vet'ion in the Wilderness.,Hard,Bossing,Vetï¿½ion,,Wilderness
