@@ -18565,7 +18565,7 @@
                     "icon": "https://oldschool.runescape.wiki/images/b/b5/Amethyst_broad_bolts_5.png?8e6f7",
                     "inputs": [
                         {
-                            "name": "Opal bolts",
+                            "name": "Broad bolts",
                             "amount": 1.0,
                             "chance": 1
                         },

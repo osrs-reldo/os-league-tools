@@ -146,7 +146,7 @@ ACTIONS,name,category,exp,level,icon,inputs,outputs,areas,exp multipliers,input 
 132,Onyx bolt tips,Bolts,9.4,73,https://oldschool.runescape.wiki/images/6/68/Onyx_bolt_tips_5.png?3e70a,1 Onyx,12 Onyx bolt tips,All,,,
 133,Rune arrows,Arrows,12.5,75,https://oldschool.runescape.wiki/images/2/27/Rune_arrow_5.png?31136,1 Headless arrow;1 Rune arrowtip,1 Rune arrow,All,,,
 134,Arrow shafts (x90),Arrows,30,75,https://oldschool.runescape.wiki/images/c/cb/Arrow_shaft_5.png?3ba7a,1 Magic logs,90 Arrow shafts,All,,,
-135,Amethyst broad bolts,Bolts,10.6,76,https://oldschool.runescape.wiki/images/b/b5/Amethyst_broad_bolts_5.png?8e6f7,1 Opal bolts;1 Amethyst bolt tips,1 Amethyst broad bolts,All,,,
+135,Amethyst broad bolts,Bolts,10.6,76,https://oldschool.runescape.wiki/images/b/b5/Amethyst_broad_bolts_5.png?8e6f7,1 Broad bolts;1 Amethyst bolt tips,1 Amethyst broad bolts,All,,,
 136,Rune javelins,Javelins,12.4,77,https://oldschool.runescape.wiki/images/7/79/Rune_javelin.png?9ecc2,1 Javelin shafts;1 Rune javelin heads,1 Rune javelins,All,,,
 137,Rune brutal,Arrows,12.5,77,https://oldschool.runescape.wiki/images/e/e2/Rune_brutal_5.png?816f0,1 Flighted ogre arrow;1 Rune nails,1 Rune brutal,All,,,
 138,Magic stock,Crossbows,70,78,https://oldschool.runescape.wiki/images/4/47/Magic_stock.png?37b74,1 Magic logs,1 Magic stock,All,,,
