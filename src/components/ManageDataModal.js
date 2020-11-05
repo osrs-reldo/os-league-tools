@@ -1,13 +1,17 @@
 import React, { useState } from "react";
-import { Button, Modal, Alert, Tabs, Tab } from "react-bootstrap";
+import { Button, Modal, Alert, Tabs, Tab, InputGroup, FormControl } from "react-bootstrap";
 import { FilePicker } from "react-file-picker";
 import { saveLocalStorageToFile, loadLocalStorageFromFile } from "../util/file-util";
+import { updateLocalStorageFromRuneliteJson } from "../util/runelite-util";
 import { resetLocalStorageData } from "../util/browser-util";
 
 export default function ManageDataModal({ show, onClose }) {
     const [errorText, setErrorText] = useState("");
     const [successText, setSuccessText] = useState("");
     const [updated, setUpdated] = useState(false);
+    const [runeliteImportJson, setRuneliteImportJson] = useState({});
+
+    const pluginHubLink = "https://github.com/runelite/runelite/wiki/Information-about-the-Plugin-Hub";
 
     const loadFile = async (FileObject) => {
         const response = await loadLocalStorageFromFile(FileObject);
@@ -27,6 +31,20 @@ export default function ManageDataModal({ show, onClose }) {
         resetLocalStorageData();
         setUpdated(true);
         setSuccessText("Data successfully deleted");
+    }
+
+    const loadRuneliteImport = async () => {
+        const response = await updateLocalStorageFromRuneliteJson(runeliteImportJson);
+        if (response.success) {
+            setSuccessText(
+                "Successfully imported character data from Runelite."
+            );
+            setErrorText("");
+            setUpdated(true);
+        } else {
+            setSuccessText("");
+            setErrorText(response.message);
+        }
     }
 
     return (
@@ -71,6 +89,33 @@ export default function ManageDataModal({ show, onClose }) {
                                     Import from file
                                 </Button>
                             </FilePicker>
+                            {errorText && <p className="text-danger small">{errorText}</p>}
+                            {successText && (
+                                <p className="text-success small">{successText}</p>
+                            )}
+                        </div>
+                    </Tab>
+                    <Tab eventKey="runelite" title="Runelite Import">
+                        <div className="text-center mt-3">
+                            <Alert variant="info" className="small">
+                                <p>The OsLeague plugin from the Runelite Plugin Hub is required.</p>
+                                <p class="mb-0"><a href={pluginHubLink}>Click here</a> for more information.</p>
+                            </Alert>
+                            <Alert variant="warning" className="small">
+                                <b>Note:</b> Importing from Runelite will only update tasks, relics, and areas.
+                            </Alert>
+                            <InputGroup>
+                                <InputGroup.Prepend>
+                                    <InputGroup.Text>Paste copied data from Runelite:</InputGroup.Text>
+                                </InputGroup.Prepend>
+                                <FormControl
+                                    as="textarea"
+                                    onChange={(event) => setRuneliteImportJson(event.target.value)}
+                                    />
+                            </InputGroup>
+                            <Button onClick={loadRuneliteImport} variant="dark" className="m-2">
+                                Import
+                            </Button>
                             {errorText && <p className="text-danger small">{errorText}</p>}
                             {successText && (
                                 <p className="text-success small">{successText}</p>
