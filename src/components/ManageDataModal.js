@@ -101,9 +101,6 @@ export default function ManageDataModal({ show, onClose }) {
                                 <p>The OsLeague plugin from the Runelite Plugin Hub is required.</p>
                                 <p class="mb-0"><a href={pluginHubLink}>Click here</a> for more information.</p>
                             </Alert>
-                            <Alert variant="warning" className="small">
-                                <b>Note:</b> Importing from Runelite will only update tasks, relics, and areas.
-                            </Alert>
                             <InputGroup>
                                 <InputGroup.Prepend>
                                     <InputGroup.Text>Paste copied data from Runelite:</InputGroup.Text>
