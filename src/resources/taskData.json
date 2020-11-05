@@ -5991,8 +5991,8 @@
         },
         {
             "id": "636",
-            "name": "Catch 50 Red Chinchompas in the Hunting Ground",
-            "description": "Catch 50 red chinchompas in the Feldip Hills Red Chinchompa Hunting Ground.",
+            "name": "Catch 50 Red Chinchompas in Kandarin",
+            "description": "Catch 50 red chinchompas in Kandarin.",
             "difficulty": "Hard",
             "category": "Skilling",
             "subcategory": "Hunter",
@@ -14671,8 +14671,8 @@
             },
             {
                 "id": "636",
-                "name": "Catch 50 Red Chinchompas in the Hunting Ground",
-                "description": "Catch 50 red chinchompas in the Feldip Hills Red Chinchompa Hunting Ground.",
+                "name": "Catch 50 Red Chinchompas in Kandarin",
+                "description": "Catch 50 red chinchompas in Kandarin.",
                 "difficulty": "Hard",
                 "category": "Skilling",
                 "subcategory": "Hunter",
@@ -23313,8 +23313,8 @@
         },
         "636": {
             "id": "636",
-            "name": "Catch 50 Red Chinchompas in the Hunting Ground",
-            "description": "Catch 50 red chinchompas in the Feldip Hills Red Chinchompa Hunting Ground.",
+            "name": "Catch 50 Red Chinchompas in Kandarin",
+            "description": "Catch 50 red chinchompas in Kandarin.",
             "difficulty": "Hard",
             "category": "Skilling",
             "subcategory": "Hunter",
