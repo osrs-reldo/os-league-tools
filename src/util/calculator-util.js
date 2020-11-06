@@ -102,8 +102,13 @@ function itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining) {
         <ul>
             {cell.map(item => {
                 if (item.amount) {
-                    var amount = actionsRemaining * item.amount * (item.chance * 0.1) * countMultiplier;
-                    amount = Math.ceil(amount)
+                    if (item.name.includes('rune')){
+                        var amount = actionsRemaining * item.amount * (item.chance * 0.1) * countMultiplier;
+                        amount = Math.ceil(amount)
+                    } else {
+                        var amount = actionsRemaining * item.amount * item.chance * countMultiplier;
+                        amount = +amount.toFixed(2);
+                    }
                     return <li key={item.name}>{amount + ' ' + item.name}</li>;
                 }
                 return <li key={item.name}>{item.name}</li>;
