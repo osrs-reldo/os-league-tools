@@ -24,6 +24,7 @@ export default function SkillCalculator() {
     const [useLevelFilter, setUseLevelFilter] = useState(false);
     const [isSkillingProdigy, setIsSkillingProdigy] = useState(isRelicUnlocked('1,3'));
     const [hasDoubleCast, setHasDoubleCast] = useState(isRelicUnlocked('3,3'));
+    const [hasBotanist, setHasBotanist] = useState(isRelicUnlocked('5,1'));
     const [useAreaFilter, setUseAreaFilter] = useState(true);
     const [includedAreas, setIncludedAreas] = useState(getFromLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_REGIONS, INITIAL_REGIONS_STATE));
     const { skill } = useParams();
@@ -53,6 +54,7 @@ export default function SkillCalculator() {
         );
     }
     const isMagic = skillData.name === "Magic" ? true : false;
+    const isFarming = skillData.name === "Farming" ? true : false;
 
     const { levelFormatter, iconFormatter, amountFormatter, outputListFormatter, inputListFormatter, expFormatter } = getFormatters();
     const columns = [
@@ -67,7 +69,10 @@ export default function SkillCalculator() {
             "sort": true,
             "headerStyle": { width: '10%' },
             "formatter": levelFormatter,
-            "formatExtraData": { "level": currentLevel.level, "isSkillingProdigy": isSkillingProdigy }
+            "formatExtraData": { 
+                "level": currentLevel.level, 
+                "isSkillingProdigy": isSkillingProdigy 
+            }
         },
         {
             "dataField": "name",
@@ -135,7 +140,8 @@ export default function SkillCalculator() {
                 "baseMultiplier": baseExpMultiplier,
                 "expMultiplier": expMultiplier,
                 "totalLevel": totalLevel,
-                "countMultiplier": outputMultiplier
+                "countMultiplier": outputMultiplier,
+                "hasBotanist": isFarming ? hasBotanist : false,
             }
         }
     ];
@@ -200,6 +206,20 @@ export default function SkillCalculator() {
                             multiplierData={skillData.inputMultipliers}
                             multipliers={inputMultiplier}
                         />
+                        {isFarming && (
+                            <React.Fragment>
+                            <h4>Output multiplier:</h4>
+                            <div className="pl-2">
+                                <Form.Check
+                                    label="Relic - Botanist"
+                                    defaultChecked={hasBotanist}
+                                    onChange={(event) => {
+                                        setHasBotanist(event.target.checked);
+                                    }}
+                                />
+                            </div>
+                        </React.Fragment>
+                        )}
                         <MultiplierGroup
                             title="Output multipliers"
                             multiplierData={skillData.outputMultipliers}

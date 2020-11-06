@@ -60,7 +60,11 @@ function outputListFormatter(cell, row, rowIndex, props) {
         row.expMultipliers,
         props.totalLevel
     );
-    return itemListFormatter(cell, countMultiplier, actionsRemaining);
+    if (props.hasBotanist) {
+        return itemListBotanistFormatter(cell, countMultiplier, actionsRemaining);
+    } else {
+        return itemListFormatter(cell, countMultiplier, actionsRemaining);
+    }
 }
 
 function inputListFormatter(cell, row, rowIndex, props) {
@@ -102,11 +106,12 @@ function itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining) {
         <ul>
             {cell.map(item => {
                 if (item.amount) {
+                    var amount
                     if (item.name.includes('rune')){
-                        var amount = actionsRemaining * item.amount * (item.chance * 0.1) * countMultiplier;
+                        amount = actionsRemaining * item.amount * (item.chance * 0.1) * countMultiplier;
                         amount = Math.ceil(amount)
                     } else {
-                        var amount = actionsRemaining * item.amount * item.chance * countMultiplier;
+                        amount = actionsRemaining * item.amount * item.chance * countMultiplier;
                         amount = +amount.toFixed(2);
                     }
                     return <li key={item.name}>{amount + ' ' + item.name}</li>;
@@ -116,6 +121,23 @@ function itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining) {
         </ul>
     );
 }
+
+function itemListBotanistFormatter(cell, countMultiplier, actionsRemaining) {
+    return (
+        <ul>
+            {cell.map(item => {
+                if (item.amount) {
+                    var amount = actionsRemaining * item.amount * item.chance * countMultiplier;
+                    amount = +amount.toFixed(2);
+                    amount = amount*2;
+                    return <li key={item.name}>{amount + ' ' + item.name}</li>;
+                }
+                return <li key={item.name}>{item.name}</li>;
+            })}
+        </ul>
+    );
+}
+
 
 function calcExpPerAction(baseExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel) {
     const baseMultiplier = parseInt(baseMultiplierStr);
