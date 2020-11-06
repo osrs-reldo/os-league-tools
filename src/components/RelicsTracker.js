@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
 import ProgressBar from "./UnlockProgressBar";
-import RelicCheckImg from '../resources/img/relic-check.png';
 import RelicInfoTile from "./RelicInfoTile";
 import relicData from '../resources/relicData.json';
 import { getRelicKey, MAX_POINTS, RELIC_UNLOCKS, unlockRelicInState, lockRelicInState, isRelicUnlocked, getPointsToNextRelic, isPassiveRelic } from '../util/relic-util';
@@ -26,7 +25,6 @@ export default function RelicsTracker({ totalPoints }) {
                 curValue={totalPoints}
                 maxValue={MAX_POINTS}
                 steps={RELIC_UNLOCKS}
-                stepImage={<img src={RelicCheckImg} alt='' height={40} />}
             />
             <Container className='relic-table mt-4 mb-4'>
                 <Row>

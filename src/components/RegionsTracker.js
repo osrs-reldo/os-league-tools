@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
 import ProgressBar from "./UnlockProgressBar";
-import RelicCheckImg from '../resources/img/relic-check.png';
 import { MAX_TASKS, REGIONS, REGION_UNLOCKS, isRegionUnlocked, INITIAL_REGIONS_STATE, getTasksToNextRegion } from '../util/region-util';
 import RegionMap from "./RegionMap";
 import regionsData from '../resources/regionsData.json';
@@ -25,7 +24,6 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                     curValue={totalTasks}
                     maxValue={MAX_TASKS}
                     steps={REGION_UNLOCKS}
-                    stepImage={<img src={RelicCheckImg} alt='' height={40} />}
                 />
             </Card>
 
