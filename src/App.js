@@ -4,7 +4,7 @@ import { createHashHistory } from 'history';
 import TopNav from "./components/TopNav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
-import "./styles/index.css";
+import "./styles/index.scss";
 import Homepage from "./pages/Homepage";
 import Calculators from "./pages/Calculators";
 import Calculator from "./pages/SkillCalculator";
