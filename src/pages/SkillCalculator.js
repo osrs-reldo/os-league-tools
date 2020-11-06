@@ -54,7 +54,7 @@ export default function SkillCalculator() {
     }
     const isMagic = skillData.name === "Magic" ? true : false;
 
-    const { levelFormatter, iconFormatter, amountFormatter, outputListFormatter, inputListFormatter, expFormatter } = getFormatters(hasDoubleCast);
+    const { levelFormatter, iconFormatter, amountFormatter, outputListFormatter, inputListFormatter, expFormatter } = getFormatters();
     const columns = [
         {
             "dataField": "id",
@@ -326,7 +326,7 @@ export default function SkillCalculator() {
                     <BootstrapTable
                         bootstrap4
                         keyField='id'
-                        data={applyFilters(skillData.actions, currentLevel.level, useLevelFilter, isSkillingProdigy, hasDoubleCast, useAreaFilter, includedAreas)}
+                        data={applyFilters(skillData.actions, currentLevel.level, useLevelFilter, isSkillingProdigy, useAreaFilter, includedAreas)}
                         columns={columns}
                         bordered={false}
                         classes="light-text"
@@ -339,7 +339,7 @@ export default function SkillCalculator() {
     );
 }
 
-function applyFilters(actions, currentLevel, useLevelFilter, isSkillingProdigy, hasDoubleCast, useAreaFilter, includedAreas) {
+function applyFilters(actions, currentLevel, useLevelFilter, isSkillingProdigy, useAreaFilter, includedAreas) {
     let filteredActions = actions;
     if (useLevelFilter) {
         const boostedLevel = getBoostedLevel(currentLevel, isSkillingProdigy);
