@@ -7,7 +7,7 @@ export function getFormatters() {
         amountFormatter: amountFormatter,
         outputListFormatter: outputListFormatter,
         inputListFormatter: inputListFormatter,
-        expFormatter: expFormatter,
+        expFormatter: expFormatter
     }
 }
 
@@ -74,7 +74,12 @@ function inputListFormatter(cell, row, rowIndex, props) {
         row.expMultipliers,
         props.totalLevel
     );
-    return itemListFormatter(cell, countMultiplier, actionsRemaining);
+    if (props.hasDoubleCast) {
+        return itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining);
+    } else {
+        return itemListFormatter(cell, countMultiplier, actionsRemaining);
+	}
+
 }
 
 function itemListFormatter(cell, countMultiplier, actionsRemaining) {
@@ -84,6 +89,21 @@ function itemListFormatter(cell, countMultiplier, actionsRemaining) {
                 if (item.amount) {
                     var amount = actionsRemaining * item.amount * item.chance * countMultiplier;
                     amount = +amount.toFixed(2);
+                    return <li key={item.name}>{amount + ' ' + item.name}</li>;
+                }
+                return <li key={item.name}>{item.name}</li>;
+            })}
+        </ul>
+    );
+}
+
+function itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining) {
+    return (
+        <ul>
+            {cell.map(item => {
+                if (item.amount) {
+                    var amount = actionsRemaining * item.amount * (item.chance * 0.1) * countMultiplier;
+                    amount = Math.ceil(amount)
                     return <li key={item.name}>{amount + ' ' + item.name}</li>;
                 }
                 return <li key={item.name}>{item.name}</li>;
