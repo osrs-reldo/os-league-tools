@@ -23,6 +23,8 @@ export default function SkillCalculator() {
     const outputMultiplier = useMultiplier();
     const [useLevelFilter, setUseLevelFilter] = useState(false);
     const [isSkillingProdigy, setIsSkillingProdigy] = useState(isRelicUnlocked('1,3'));
+    const [hasDoubleCast, setHasDoubleCast] = useState(isRelicUnlocked('3,3'));
+    const [hasBotanist, setHasBotanist] = useState(isRelicUnlocked('5,1'));
     const [useAreaFilter, setUseAreaFilter] = useState(true);
     const [includedAreas, setIncludedAreas] = useState(getFromLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_REGIONS, INITIAL_REGIONS_STATE));
     const { skill } = useParams();
@@ -51,8 +53,10 @@ export default function SkillCalculator() {
             </h4>
         );
     }
+    const isMagic = skillData.name === "Magic" ? true : false;
+    const isFarming = skillData.name === "Farming" ? true : false;
 
-    const { levelFormatter, iconFormatter, amountFormatter, inputListFormatter, outputListFormatter, expFormatter } = getFormatters();
+    const { levelFormatter, iconFormatter, amountFormatter, outputListFormatter, inputListFormatter, expFormatter } = getFormatters();
     const columns = [
         {
             "dataField": "id",
@@ -65,7 +69,10 @@ export default function SkillCalculator() {
             "sort": true,
             "headerStyle": { width: '10%' },
             "formatter": levelFormatter,
-            "formatExtraData": { "level": currentLevel.level, "isSkillingProdigy": isSkillingProdigy }
+            "formatExtraData": { 
+                "level": currentLevel.level, 
+                "isSkillingProdigy": isSkillingProdigy 
+            }
         },
         {
             "dataField": "name",
@@ -111,7 +118,7 @@ export default function SkillCalculator() {
         },
         {
             "dataField": "inputs",
-            "text": "Inputs",
+            "text": isMagic ? hasDoubleCast ? "Minimum Inputs" : "Inputs" : "Inputs",
             "formatter": inputListFormatter,
             "formatExtraData": {
                 "current": currentLevel.exp,
@@ -119,7 +126,8 @@ export default function SkillCalculator() {
                 "baseMultiplier": baseExpMultiplier,
                 "expMultiplier": expMultiplier,
                 "totalLevel": totalLevel,
-                "countMultiplier": inputMultiplier
+                "countMultiplier": inputMultiplier,
+                "hasDoubleCast": isMagic ? hasDoubleCast : false,
             }
         },
         {
@@ -132,7 +140,8 @@ export default function SkillCalculator() {
                 "baseMultiplier": baseExpMultiplier,
                 "expMultiplier": expMultiplier,
                 "totalLevel": totalLevel,
-                "countMultiplier": outputMultiplier
+                "countMultiplier": outputMultiplier,
+                "hasBotanist": isFarming ? hasBotanist : false,
             }
         }
     ];
@@ -197,6 +206,20 @@ export default function SkillCalculator() {
                             multiplierData={skillData.inputMultipliers}
                             multipliers={inputMultiplier}
                         />
+                        {isFarming && (
+                            <React.Fragment>
+                            <h4>Output multiplier:</h4>
+                            <div className="pl-2">
+                                <Form.Check
+                                    label="Relic - Botanist"
+                                    defaultChecked={hasBotanist}
+                                    onChange={(event) => {
+                                        setHasBotanist(event.target.checked);
+                                    }}
+                                />
+                            </div>
+                        </React.Fragment>
+                        )}
                         <MultiplierGroup
                             title="Output multipliers"
                             multiplierData={skillData.outputMultipliers}
@@ -211,6 +234,20 @@ export default function SkillCalculator() {
                                         defaultChecked={isSkillingProdigy}
                                         onChange={(event) => {
                                             setIsSkillingProdigy(event.target.checked);
+                                        }}
+                                    />
+                                </div>
+                            </React.Fragment>
+                        )}
+                        {isMagic && (
+                            <React.Fragment>
+                                <h4>Input Modifiers:</h4>
+                                <div className="pl-2">
+                                    <Form.Check
+                                        label="Relic - Double Cast"
+                                        defaultChecked={hasDoubleCast}
+                                        onChange={(event) => {
+                                            setHasDoubleCast(event.target.checked);
                                         }}
                                     />
                                 </div>
