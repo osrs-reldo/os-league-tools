@@ -145,6 +145,12 @@ ul.calc-list {
 
 .react-bootstrap-table-pagination {
   margin: auto;
-  flex-wrap: nowrap;
+  flex-wrap: wrap-reverse;
   flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.react-bootstrap-table-page-btns-ul {
+  margin-bottom: 0;
 }

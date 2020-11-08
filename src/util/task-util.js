@@ -106,7 +106,7 @@ function pageButtonRenderer({ page, active, disable, title, onPageChange }) {
         activeStyle.color = 'white';
     }
     return (
-        <li key={page} style={{ display: "inline" }}>
+        <li key={page} className='align-self-center' style={{ display: "inline" }}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a href="#" onClick={handleClick} style={activeStyle}>{page}</a>
         </li>
@@ -115,7 +115,7 @@ function pageButtonRenderer({ page, active, disable, title, onPageChange }) {
 
 function pageListRenderer({ pages, onPageChange }) {
     return (
-        <div className="mt-2">
+        <div>
             <ul className="list-unstyled">
                 {pages.map(page => (
                     pageButtonRenderer({ ...page, onPageChange })
@@ -127,7 +127,7 @@ function pageListRenderer({ pages, onPageChange }) {
 
 function sizePerPageRenderer({ options, currSizePerPage, onSizePerPageChange }) {
     return (
-        <div className="btn-group ml-5" role="group">
+        <div className="btn-group mb-2" role="group">
             {
                 options.map((option) => {
                     const isSelected = currSizePerPage === `${option.page}`;

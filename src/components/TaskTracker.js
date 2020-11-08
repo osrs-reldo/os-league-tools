@@ -9,6 +9,7 @@ import useLocalStorage from "../hooks/useLocalStorage";
 import { LOCALSTORAGE_KEYS } from "../util/browser-util";
 import { CardDeck } from "../../node_modules/react-bootstrap/esm/index";
 import useScreenSize from "../hooks/useScreenSize";
+import Divider from "./Divider";
 
 export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegions = INITIAL_REGIONS_STATE }) {
     const [hideLockedAreas, setHideLockedAreas] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_HIDE_LOCKED_AREAS, true);
@@ -177,7 +178,7 @@ function TaskTableWrapper({
                                 checked={showHiddenTasks}
                                 onChange={() => setShowHiddenTasks(prevShowHidden => !prevShowHidden)}
                             />
-                            <div className="mt-2 mb-2" style={{borderTop: '0.5px solid', width: '100%'}} />
+                            <Divider />
                             <h5>Areas:</h5>
                             <Nav
                                 variant="pills"
@@ -200,10 +201,10 @@ function TaskTableWrapper({
                                     )
                                 }
                             </Nav>
-                            <div className="mt-2 mb-2" style={{borderTop: '0.5px solid', width: '100%'}} />
                         </Tab.Container>
 
                         <Tab.Container activeKey={selectedStatus}>
+                            <Divider />
                             <h5>Status:</h5>
                             <Nav
                                 variant="pills"
@@ -224,22 +225,25 @@ function TaskTableWrapper({
 
                     <Col lg={10}>
                         {plannedOnTodoList &&
-                            <div className='d-flex justify-content-around align-items-center'>
-                                <h5 className="mb-3">
-                                    Incomplete Tasks on To-do List: {plannedOnTodoList.tasks}
-                                </h5>
-                                <h5 className="mb-3">
-                                    Points Remaining on To-do List: {plannedOnTodoList.points}
-                                </h5>
-                                <div className="mb-3">
-                                    <Button
-                                        variant="outline-light"
-                                        onClick={() => removeCompletedFromTodo(taskStatus, updateTaskStatus.setTodoListed)}
-                                    >
-                                        Remove completed tasks
-                                    </Button>
+                            <React.Fragment>
+                                {screenSize.isSizeOrSmaller('md') && <Divider />}
+                                <div className='d-flex justify-content-around align-items-center flex-wrap'>
+                                    <h5 className="mb-1 mt-1 mr-2">
+                                        Incomplete Tasks on To-do List: {plannedOnTodoList.tasks}
+                                    </h5>
+                                    <h5 className="mb-1 mt-1 mr-2">
+                                        Points Remaining on To-do List: {plannedOnTodoList.points}
+                                    </h5>
+                                    <div className="mb-1 mt-1">
+                                        <Button
+                                            variant="outline-light"
+                                            onClick={() => removeCompletedFromTodo(taskStatus, updateTaskStatus.setTodoListed)}
+                                        >
+                                            Remove completed tasks
+                                        </Button>
+                                    </div>
                                 </div>
-                            </div>
+                            </React.Fragment>
                         }
                         <Nav>
                             <TaskTable
