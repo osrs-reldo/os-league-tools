@@ -14,17 +14,15 @@ export default function About() {
             <CardDeck>
                 <Card bg='dark' text='white' style={{ margin: '1rem' }} >
                     <h3 className="mt-2 light-text text-center">Features:</h3>
-                    <div className="text-center">
-                        <ul>
-                            <li>Plan your relic and area unlocks</li>
-                            <li>View, sort, and filter lists of tasks to decide what to do next</li>
-                            <li>Create a task to-do list</li>
-                            <li>Use calculators to plan your grind</li>
-                            <li>Filter and adjust calculators to your liking</li>
-                            <li>Integrate your personal league build with calculator settings</li>
-                            <li>Catch up on league-related news posts</li>
-                            <li>...and more coming soon!</li>
-                        </ul>
+                    <div className="d-flex flex-column text-center mb-2">
+                        <div>Plan your relic and area unlocks</div>
+                        <div>View, sort, and filter lists of tasks to decide what to do next</div>
+                        <div>Create a task to-do list</div>
+                        <div>Use calculators to plan your grind</div>
+                        <div>Filter and adjust calculators to your liking</div>
+                        <div>Integrate your personal league build with calculator settings</div>
+                        <div>Catch up on league-related news posts</div>
+                        <div>...and more coming soon!</div>
                     </div>
                 </Card>
                 <Card bg='dark' text='white' style={{ margin: '1rem' }} >

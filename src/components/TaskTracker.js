@@ -38,15 +38,15 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                     </h2>
                     <div className="d-flex justify-content-around">
                         <div className="d-flex flex-column">
-                                {taskData.difficulties.map(difficultyJson => {
-                                    const numComplete = getCompletedTasksWithDifficulty(difficultyJson.value, taskStatus).length;
-                                    const totalTasks = maxCompletableTasks[difficultyJson.value];
-                                    return (
-                                        <div key={difficultyJson.value}>
-                                            {`${difficultyJson.label}: ${numComplete} / ${totalTasks}`}
-                                        </div>
-                                    );
-                                })}
+                            {taskData.difficulties.map(difficultyJson => {
+                                const numComplete = getCompletedTasksWithDifficulty(difficultyJson.value, taskStatus).length;
+                                const totalTasks = maxCompletableTasks[difficultyJson.value];
+                                return (
+                                    <div key={difficultyJson.value}>
+                                        {`${difficultyJson.label}: ${numComplete} / ${totalTasks}`}
+                                    </div>
+                                );
+                            })}
                         </div>
                         <div className="d-flex flex-column">
                             {regionsToShow.map(region => {

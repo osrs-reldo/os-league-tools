@@ -100,7 +100,7 @@ export default function ManageDataModal({ show, onClose }) {
                             <p className="text-left">
                                 <h5>How to use:</h5>
                                 <ol>
-                                    <li>Install the plugin using the <a href={pluginHubLink} target="_blank" rel="noopener noreferrer">plugin hub</a></li>
+                                    <li>Install the "OsLeague" plugin using the <a href={pluginHubLink} target="_blank" rel="noopener noreferrer">plugin hub</a></li>
                                     <li>Go to the Leagues tab ingame and open/close each interface to make sure your data is up-to-date <b>NOTE: Make sure you have disabled all task filters on the ingame UI.</b></li>
                                     <li>Click on the OS League Tools icon on the top toolbar to copy your data</li>
                                     <li>Paste the copied text into the box below</li>
