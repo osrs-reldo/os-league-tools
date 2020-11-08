@@ -76,7 +76,7 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                                     )
                                 }
                             </div>
-                            <div className={'relic-table p-2'} style={{ maxHeight: '700px', overflowY: 'scroll' }}>
+                            <div className={'relic-table-cell p-2'} style={{ maxHeight: '700px', overflowY: 'scroll' }}>
 
                                 <p>
                                     <h5>Overview:</h5>
