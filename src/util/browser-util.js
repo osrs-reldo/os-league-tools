@@ -5,6 +5,7 @@ export const LOCALSTORAGE_KEYS = {
     FILTER_SELECTED_STATUS: 'filterSelectedStatus',
     FILTER_HIDE_LOCKED_AREAS: 'filterHideLocked',
     FILTER_SHOW_HIDDEN_TASKS: 'filterShowHiddenTasks',
+    FILTER_HIDE_TODO_TASKS: 'filterHideTodoTasks',
     HIDE_ALERT_BANNER: 'hideAlertBanner'
 }
 
