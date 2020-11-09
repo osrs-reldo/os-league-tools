@@ -12,7 +12,7 @@ import useLevel from "../hooks/useLevel";
 import useMultiplier from "../hooks/useMultiplier";
 import { isRelicUnlocked } from "../util/relic-util";
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from "../util/browser-util";
-import DoubleScrollbar from 'react-double-scrollbar';
+import DoubleScrollbar from "../components/DoubleScrollbar";
 
 export default function SkillCalculator() {
     const currentLevel = useLevel(1);

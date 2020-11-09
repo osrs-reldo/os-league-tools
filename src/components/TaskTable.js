@@ -3,7 +3,7 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import taskData from '../resources/taskData.json';
-import DoubleScrollbar from 'react-double-scrollbar';
+import DoubleScrollbar from "../components/DoubleScrollbar";
 import { applyFilters, getFormatters, getRenderers, isTaskComplete, isTaskHidden, isTaskOnTodoList } from "../util/task-util";
 
 export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters }) {
@@ -59,7 +59,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             },
         },
         {
-            "dataField": "spacer",
+            "dataField": "spacer2",
             "text": "",
             "isDummyField": true,
         },
@@ -128,7 +128,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
     const tableData = taskFilters ? applyFilters(taskTableContent, area, taskFilters) : taskTableContent;
 
     return (
-        <div style={{ maxWidth: '100%'}}>
+        <div style={{ maxWidth: '100%' }}>
             <DoubleScrollbar>
                 <BootstrapTable
                     bootstrap4

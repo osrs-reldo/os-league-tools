@@ -208,7 +208,7 @@ function TaskTableWrapper({
                             <h5>Status:</h5>
                             <Nav
                                 variant="pills"
-                                className={"mt-3 tab-bar-secondary " + (screenSize.isSizeOrLarger('lg')  ? "flex-column" : "d-flex justify-content-around") }
+                                className={"mt-3 mb-3 tab-bar-secondary " + (screenSize.isSizeOrLarger('lg')  ? "flex-column" : "d-flex justify-content-around") }
                             >
                                 <Nav.Item key='All'>
                                     <Nav.Link eventKey='All' onClick={() => setSelectedStatus('All')}>All</Nav.Link>
@@ -227,7 +227,7 @@ function TaskTableWrapper({
                         {plannedOnTodoList &&
                             <React.Fragment>
                                 {screenSize.isSizeOrSmaller('md') && <Divider />}
-                                <div className='d-flex justify-content-around align-items-center flex-wrap'>
+                                <div className='d-flex justify-content-around align-items-center flex-wrap mb-2'>
                                     <h5 className="mb-1 mt-1 mr-2">
                                         Incomplete Tasks on To-do List: {plannedOnTodoList.tasks}
                                     </h5>

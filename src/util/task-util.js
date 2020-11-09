@@ -39,7 +39,7 @@ function completedFormatter(cell, row, rowIndex, props) {
     const isComplete = isTaskComplete(row.id, props.taskStatus);
     return (
         <div className={isComplete ? 'completed' : ''}>
-            <InlineIcon icon={isComplete ? checkedIcon : uncheckedIcon} height='1.25rem' />
+            <InlineIcon icon={isComplete ? checkedIcon : uncheckedIcon} height='20px' />
         </div>
     );
 }
@@ -87,7 +87,7 @@ function todoFormatter(cell, row, rowIndex, props) {
 
 function hideFormatter(cell, row, rowIndex, props) {
     const isHidden = isTaskHidden(row.id, props.taskStatus);
-    return <InlineIcon icon={isHidden ? plusIcon : closeIcon} height='1.25rem' />
+    return <InlineIcon icon={isHidden ? plusIcon : closeIcon} height='20px' />
 }
 
 function pageButtonRenderer({ page, active, disable, title, onPageChange }) {

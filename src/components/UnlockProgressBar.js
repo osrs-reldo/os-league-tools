@@ -34,7 +34,7 @@ export default function UnlockProgressBar({ curValue, maxValue, steps }) {
         stepsToShow = steps.slice(1, steps.length-1);
     }
     const stepPercentages = stepsToShow.map(amount => (amount / maxValue) * 100);
-    const curPercentage = (curValue / maxValue) * 100;
+    const curPercentage = Math.min((curValue / maxValue) * 100, 100);
 
     return (
         <div className={marginClass}>
