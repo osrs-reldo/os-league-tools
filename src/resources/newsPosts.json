@@ -1,5 +1,13 @@
 [
     {
+        "title": "Improved mobile support",
+        "date": "Nov 08 2020",
+        "type": "blog",
+        "thumbnail": "https://cdn.runescape.com/assets/img/external/oldschool/2017/newsposts/2017-06-27/News-Thumb-OS.jpg",
+        "leadText": "OS League Tools is now fully compatible with mobile devices (and screens of all other sizes).",
+        "htmlContent": "<p>OS League Tools is now fully compatible with mobile devices (and screens of all other sizes).</p> <p>I've been hard at work this weekend improving the site experience on mobile, so you can now track and plan your tasks on the go. While my focus was on mobile, you should see some improvements all across the site for just about any screen size, as many components were revamped completely to be more responsive to the size of your screen.</p> <p>If you come across any parts of the site that still look strange on mobile devices, please make a bug report in the <a href='https://discord.gg/GQ5kVyU'>discord</a>, preferably with a screenshot and information about what device and browser you're using.</p>"
+    },
+    {
         "title": "Runelite Plugin Now Available!",
         "date": "Nov 05 2020",
         "type": "blog",
