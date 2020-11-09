@@ -73,9 +73,21 @@ code {
 
 ul.calc-list {
   list-style-type: none;
+  padding: 0;
   columns: 3;
+  column-gap: 40px;
   -webkit-columns: 3;
   -moz-columns: 3;
+}
+
+@include media-breakpoint-down(lg) {
+  ul.calc-list {
+    list-style-type: none;
+    padding: 0;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
 }
 
 /* Inactive tab */

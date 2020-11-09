@@ -12,6 +12,7 @@ import useLevel from "../hooks/useLevel";
 import useMultiplier from "../hooks/useMultiplier";
 import { isRelicUnlocked } from "../util/relic-util";
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from "../util/browser-util";
+import DoubleScrollbar from 'react-double-scrollbar';
 
 export default function SkillCalculator() {
     const currentLevel = useLevel(1);
@@ -67,17 +68,18 @@ export default function SkillCalculator() {
             "dataField": "level",
             "text": "Level",
             "sort": true,
-            "headerStyle": { width: '10%' },
+            "headerStyle": { width: '5.5rem' },
             "formatter": levelFormatter,
-            "formatExtraData": { 
-                "level": currentLevel.level, 
-                "isSkillingProdigy": isSkillingProdigy 
+            "formatExtraData": {
+                "level": currentLevel.level,
+                "isSkillingProdigy": isSkillingProdigy
             }
         },
         {
             "dataField": "name",
             "text": "Activity",
             "sort": true,
+            "headerStyle": { width: '15rem' },
             "formatter": iconFormatter,
             "filter": textFilter({ placeholder: "Filter..." })
         },
@@ -85,7 +87,7 @@ export default function SkillCalculator() {
             "dataField": "exp",
             "text": "Exp",
             "sort": true,
-            "headerStyle": { width: '10%' },
+            "headerStyle": { width: '5rem' },
             "formatter": expFormatter,
             "formatExtraData": {
                 "baseMultiplier": baseExpMultiplier,
@@ -96,6 +98,7 @@ export default function SkillCalculator() {
         {
             "dataField": "category",
             "text": "Category",
+            "headerStyle": { width: '10rem' },
             "filter": selectFilter({
                 "options": skillData.categories
             })
@@ -105,6 +108,7 @@ export default function SkillCalculator() {
             "text": "Amount",
             "isDummyField": true,
             "sort": true,
+            "headerStyle": { width: '7rem' },
             "formatter": amountFormatter,
             "sortValue": (cell, row) => row.exp,
             "formatExtraData": {
@@ -113,13 +117,14 @@ export default function SkillCalculator() {
                 "baseMultiplier": baseExpMultiplier,
                 "expMultiplier": expMultiplier,
                 "totalLevel": totalLevel
-            },
-            "headerStyle": { width: '10%' }
+            }
         },
         {
             "dataField": "inputs",
             "text": isMagic ? hasDoubleCast ? "Minimum Inputs" : "Inputs" : "Inputs",
             "formatter": inputListFormatter,
+            "headerStyle": { width: '10rem' },
+            "classes": "small",
             "formatExtraData": {
                 "current": currentLevel.exp,
                 "target": targetLevel.exp,
@@ -133,6 +138,8 @@ export default function SkillCalculator() {
         {
             "dataField": "outputs",
             "text": "Outputs",
+            "headerStyle": { width: '10rem' },
+            "classes": "small",
             "formatter": outputListFormatter,
             "formatExtraData": {
                 "current": currentLevel.exp,
@@ -149,8 +156,8 @@ export default function SkillCalculator() {
     return (
         <div className="content-wrapper">
             <h1 className="mt-2 light-text text-center">{skillData.name}</h1>
-            <CardDeck style={{ margin: '1rem' }} >
-                <Card bg='dark' text='white' >
+            <CardDeck>
+                <Card bg='dark' text='white' className="mt-2 mb-2" style={{ minWidth: '300px' }}>
                     <div className="p-3">
                         <h4>{"League base multiplier:"}</h4>
                         <div className={"pl-2 pb-2"}>
@@ -255,7 +262,7 @@ export default function SkillCalculator() {
                         )}
                     </div>
                 </Card>
-                <Card bg='dark' text='white' >
+                <Card bg='dark' text='white' className="mt-2 mb-2" style={{ minWidth: '300px' }}>
                     <h4 className="pt-3 pl-3">Level/Experience:</h4>
                     {/* TODO
                     <HiscoreLookup
@@ -278,7 +285,7 @@ export default function SkillCalculator() {
                     />
                     <InputGroup className="p-3">
                         <InputGroup.Prepend>
-                            <InputGroup.Text>Total Level (for Equilibrium)</InputGroup.Text>
+                            <InputGroup.Text>Total Level</InputGroup.Text>
                         </InputGroup.Prepend>
                         <FormControl
                             value={totalLevel}
@@ -293,7 +300,7 @@ export default function SkillCalculator() {
                         </ul>
                     </div>
                 </Card>
-                <Card bg='dark' text='white' >
+                <Card bg='dark' text='white' className="mt-2 mb-2" style={{ minWidth: '300px' }}>
                     <div className="p-3">
                         <p>
                             <h4>Filters:</h4>
@@ -341,18 +348,20 @@ export default function SkillCalculator() {
                     </div>
                 </Card>
             </CardDeck>
-            <Card bg='dark' text='white' style={{ margin: '1rem' }} >
+            <Card bg='dark' text='white' className="mt-3">
                 <Card.Body>
-                    <BootstrapTable
-                        bootstrap4
-                        keyField='id'
-                        data={applyFilters(skillData.actions, currentLevel.level, useLevelFilter, isSkillingProdigy, useAreaFilter, includedAreas)}
-                        columns={columns}
-                        bordered={false}
-                        classes="light-text"
-                        filter={filterFactory()}
-                        filterPosition="top"
-                    />
+                    <DoubleScrollbar>
+                        <BootstrapTable
+                            bootstrap4
+                            keyField='id'
+                            data={applyFilters(skillData.actions, currentLevel.level, useLevelFilter, isSkillingProdigy, useAreaFilter, includedAreas)}
+                            columns={columns}
+                            bordered={false}
+                            classes="light-text"
+                            filter={filterFactory()}
+                            filterPosition="top"
+                        />
+                    </DoubleScrollbar>
                 </Card.Body>
             </Card>
         </div>

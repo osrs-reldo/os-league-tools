@@ -7,7 +7,7 @@ export default function Calculators() {
     return (
         <div className="content-wrapper">
             <CardDeck>
-                <Card bg='dark' text='white' style={{ margin: '1rem' }} >
+                <Card bg='dark' text='white' className="mt-2 mb-2">
                     <h1 className="mt-2 light-text text-center">Skill Calculators</h1>
                     <div className="content-center">
                         <ul className="calc-list">
@@ -27,7 +27,7 @@ export default function Calculators() {
                         </ul>
                     </div>
                 </Card>
-                <Card bg='dark' text='white' style={{ margin: '1rem' }} >
+                <Card bg='dark' text='white' className="mt-2 mb-2" >
                     <h1 className="mt-2 light-text text-center">Skill Planners</h1>
                     <div className="m-3 text-center">
                         Coming soon!

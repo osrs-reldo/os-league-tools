@@ -88,7 +88,7 @@ function inputListFormatter(cell, row, rowIndex, props) {
 
 function itemListFormatter(cell, countMultiplier, actionsRemaining) {
     return (
-        <ul>
+        <ul className="mb-0">
             {cell.map(item => {
                 if (item.amount) {
                     var amount = actionsRemaining * item.amount * item.chance * countMultiplier;
@@ -103,7 +103,7 @@ function itemListFormatter(cell, countMultiplier, actionsRemaining) {
 
 function itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining) {
     return (
-        <ul>
+        <ul className="mb-0">
             {cell.map(item => {
                 if (item.amount) {
                     var amount
@@ -124,7 +124,7 @@ function itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining) {
 
 function itemListBotanistFormatter(cell, countMultiplier, actionsRemaining) {
     return (
-        <ul>
+        <ul className="mb-0">
             {cell.map(item => {
                 if (item.amount) {
                     var amount = actionsRemaining * item.amount * item.chance * countMultiplier;
