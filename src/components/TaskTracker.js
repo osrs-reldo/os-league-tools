@@ -15,6 +15,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
     const [hideLockedAreas, setHideLockedAreas] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_HIDE_LOCKED_AREAS, true);
     const [selectedStatus, setSelectedStatus] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_SELECTED_STATUS, 'All');
     const [showHiddenTasks, setShowHiddenTasks] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_SHOW_HIDDEN_TASKS, false);
+    const [hideTodoTasks, setHideTodoTasks] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_HIDE_TODO_TASKS, false);
     const screenSize = useScreenSize();
 
     const regionsToShow = [ 'Common', ...unlockedRegions ]
@@ -105,6 +106,8 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                             setHideLockedAreas={setHideLockedAreas}
                             showHiddenTasks={showHiddenTasks}
                             setShowHiddenTasks={setShowHiddenTasks}
+                            hideTodoTasks={hideTodoTasks}
+                            setHideTodoTasks={setHideTodoTasks}
                         />
                     </Tab>
                     <Tab eventKey="todo" title="To-Do List">
@@ -141,6 +144,8 @@ function TaskTableWrapper({
         plannedOnTodoList,
         showHiddenTasks,
         setShowHiddenTasks,
+        hideTodoTasks,
+        setHideTodoTasks,
         taskFilters = []
 }) {
     const [selectedArea, setSelectedArea] = useState('All');
@@ -161,6 +166,9 @@ function TaskTableWrapper({
     if (!showHiddenTasks) {
         allFilters.push((task) => !isTaskHidden(task.id, taskStatus));
     }
+    if (hideTodoTasks) {
+        allFilters.push((task) => !isTaskOnTodoList(task.id, taskStatus));
+    }
 
     return (
         <Card bg='dark' text='white' style={{ border: '2px solid #6c757d', borderRadius: '0rem 0rem .25rem .25rem' }}>
@@ -178,6 +186,15 @@ function TaskTableWrapper({
                                 checked={showHiddenTasks}
                                 onChange={() => setShowHiddenTasks(prevShowHidden => !prevShowHidden)}
                             />
+                            { !plannedOnTodoList &&
+                                <React.Fragment>
+                                    <Form.Check
+                                        label="Hide to-do tasks"
+                                        checked={hideTodoTasks}
+                                        onChange={() => setHideTodoTasks((prevHideTodo) => !prevHideTodo)}
+                                    />
+                                </React.Fragment>
+                            }
                             <Divider />
                             <h5>Areas:</h5>
                             <Nav
