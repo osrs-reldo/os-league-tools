@@ -40,6 +40,9 @@ export default function About() {
                         <p>
                             You can also message me ingame (RSN: chaiinchomp) where I usually have private chat on.
                         </p>
+                        <p>
+                            If you're enjoying the site and want to throw a few bucks my way in support, you can do so here: <a href="https://ko-fi.com/chaiinchomp">https://ko-fi.com/chaiinchomp</a> (but seriously, it's free, you don't have to).
+                        </p>
                     </div>
                 </Card>
             </CardDeck>
