@@ -93,8 +93,6 @@ function runeliteJsonToStorageFormat(json) {
     storageFormat[LOCALSTORAGE_KEYS.TASKS] = JSON.stringify(extractRuneliteTasks(parsedJson));
     storageFormat[LOCALSTORAGE_KEYS.UNLOCKED_REGIONS] = JSON.stringify(extractRuneliteAreas(parsedJson));
     storageFormat[LOCALSTORAGE_KEYS.UNLOCKED_RELICS] = JSON.stringify(extractRuneliteRelics(parsedJson));
-
-    console.log(storageFormat);
     
     return storageFormat;
 }
