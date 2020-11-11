@@ -352,12 +352,11 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 347,Enter Draynor Manor ,Enter Draynor Manor.,Easy,Other,Locations,,Misthalin
 348,Equip Some Fancy Boots or Fighting Boots ,Equip either a pair of Fancy Boots or a pair of Fighting Boots. ,Easy,Combat,Melee,,Misthalin
 349,Dismantle 20 Filled Bird Houses ,Dismantle 20 filled bird houses on Fossil Island. ,Medium,Skilling,Hunter,,Misthalin
-350,Build a Yew Bird House ,Build a yew bird house on Fossil Island. ,Medium,Skilling,Hunter,,Misthalin
+350,Setup a Yew Bird House ,Setup a yew bird house on Fossil Island. ,Medium,Skilling,Hunter,,Misthalin
 351,Catch 50 Implings in Puro-Puro ,Catch 50 Implings in Puro-Puro. ,Medium,Skilling,Hunter,,Misthalin
 352,Complete a Volcanic Mine Game ,Complete a Volcanic Mine game on Fossil Island. ,Medium,Skilling,Mining,,Misthalin
 353,Enter the Cooks' Guild ,Enter the Cooks' Guild west of Varrock. ,Medium,Skilling,Cooking,,Misthalin
 354,Pickpocket a Varrock Guard ,Pickpocket any Varrock Guard. ,Medium,Skilling,Thieving,,Misthalin
-355,Pickpocket a Bullseye Lantern From a Cave Goblin ,Pickpocket a Bullseye Lantern from a Cave Goblin. ,Medium,Skilling,Thieving,,Misthalin
 356,Complete 30 Laps of the Draynor Agility Course ,Complete 30 laps of the Draynor Rooftop Agility Course. ,Medium,Skilling,Agility,,Misthalin
 357,Craft 50 Cosmic Runes ,Craft 50 Cosmic Runes at the Cosmic altar. ,Medium,Skilling,Runecraft,,Misthalin
 358,Use Enriched Bones on the Strange Machine ,Use Enriched bones on the Strange Machine on Fossil Island.,Medium,Combat,Prayer,,Misthalin
@@ -367,23 +366,18 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 362,Defeat Obor ,Defeat Obor in Edgeville Dungeon.,Medium,Bossing,Giants,,Misthalin
 363,Defeat a Wall Beast ,Defeat a Wall Beast in the Lumbridge Swamp Caves. ,Medium,Combat,Slayer,,Misthalin
 364,Defeat Bryophyta ,Defeat Bryophyta in Edgeville Dungeon.,Medium,Bossing,Giants,,Misthalin
-365,Equip a Dorgeshuun Crossbow ,Equip a Dorgeshuun Crossbow. ,Medium,Combat,Ranged,,Misthalin
 366,Complete the Medium Lumbridge & Draynor Diary ,Complete all of the medium tasks in the Lumbridge & Draynor Achievement Diary. ,Medium,Diaries,Lumbridge,,Misthalin
 367,Equip Some Mithril Gloves ,Equip a pair of Mithril Gloves.,Medium,Quests,Grandmaster,,Misthalin
-368,Complete The Lost Tribe ,Complete The Lost Tribe quest.,Medium,Quests,Intermediate,,Misthalin
-369,Complete Death to the Dorgeshuun ,Complete the Death to the Dorgeshuun quest.,Medium,Quests,Intermediate,,Misthalin
 370,Complete Demon Slayer ,Complete the Demon Slayer quest.,Medium,Quests,Novice,,Misthalin
 371,Use a Digsite Pendant to Teleport to Fossil Island ,Use a Digsite Pendant to teleport to Fossil Island. ,Medium,Other,Transportation,,Misthalin
 372,Complete a Soul's Bane ,Complete the A Soul's Bane quest.,Medium,Quests,Novice,,Misthalin
-373,Build a Magic Bird House ,Build a Magic Bird House on Fossil Island. ,Hard,Skilling,Hunter,,Misthalin
+373,Setup a Magic Bird House ,Setup a Magic Bird House on Fossil Island. ,Hard,Skilling,Hunter,,Misthalin
 374,Complete the Hard Varrock Diary ,Complete all of the hard tasks in the Varrock Achievement Diary. ,Hard,Diaries,Varrock,,Misthalin
 375,Catch 200 Implings in Puro-Puro ,Catch 200 Implings in Puro-Puro. ,Hard,Skilling,Hunter,,Misthalin
 376,Buy an Ash Covered Tome ,Buy an ash covered tome from Petrified Pete's Ore Shop on Fossil Island. ,Hard,Skilling,Mining,,Misthalin
 377,Check a grown Magic Tree in Lumbridge ,Check the health of a Magic Tree you've grown in Lumbridge. ,Hard,Skilling,Farming,,Misthalin
 378,Check a grown Mahogany Tree ,Check the health of a Mahogany Tree you've grown on Fossil Island. ,Hard,Skilling,Farming,,Misthalin
-379,Steal a Diamond in Dorgesh-Kaan ,Steal a Diamond from a chest in Dorgesh-Kaan. ,Hard,Skilling,Thieving,,Misthalin
 380,Take the Advanced Shortcut to the Cosmic Altar ,Use the Advanced Narrow Walkway Agility Shortcut near the Cosmic Altar. ,Hard,Skilling,Agility,,Misthalin
-381,Defeat a Rune Dragon ,Defeat a Rune Dragon in the Lithkren Vault.,Hard,Combat,Other,,Misthalin
 382,Equip a Hill Giant Club ,Equip a Hill Giant Club. ,Hard,Bossing,Giants,,Misthalin
 383,Equip Bryophyta's Staff ,Equip Bryophyta's staff. ,Hard,Bossing,Giants,,Misthalin
 384,Defeat the Abyssal Sire ,Defeat the Abyssal Sire in the Abyssal Nexus. ,Hard,Bossing,Abyssal Sire,,Misthalin
@@ -395,7 +389,6 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 390,Receive a Torstol From a Herbiboar ,Receive a Torstol From a Herbiboar on Fossil Island. ,Elite,Skilling,Hunter,,Misthalin
 391,Complete the Elite Varrock Diary ,Complete all of the elite tasks in the Varrock Achievement Diary. ,Elite,Diaries,Varrock,,Misthalin
 392,Mine a Runite Ore Fragment ,Mine a runite ore fragment in the Volcanic Mine on Fossil Island. ,Elite,Skilling,Mining,,Misthalin
-393,Equip a Dragon Crossbow ,Equip a Dragon Crossbow. ,Elite,Combat,Ranged,,Misthalin
 394,Equip a Dragonfire Shield ,Equip a Dragonfire Shield. ,Elite,Combat,Melee,,Misthalin
 395,Equip an Ancient Wyvern Shield ,Equip an Ancient Wyvern Shield. ,Elite,Combat,Slayer,,Misthalin
 396,Equip an Abyssal Bludgeon ,Equip an Abyssal Bludgeon. ,Elite,Bossing,Abyssal Sire,,Misthalin
@@ -470,13 +463,17 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 465,Enter the Crafting Guild ,Enter the Crafting Guild. ,Medium,Skilling,Crafting,,Asgarnia
 466,Craft a Body Rune ,Craft a body rune at the Body altar. ,Medium,Skilling,Runecraft,,Asgarnia
 467,Harvest Any Herb at the Troll Stronghold ,Harvest any herb you've grown at the Troll Stronghold. ,Medium,Skilling,Farming,,Asgarnia
+355,Pickpocket a Bullseye Lantern From a Cave Goblin ,Pickpocket a Bullseye Lantern from a Cave Goblin. ,Medium,Skilling,Thieving,,Asgarnia
 468,Defeat the Giant Mole ,Defeat the Giant Mole beneath Falador.,Medium,Bossing,Giant mole,,Asgarnia
 469,Defeat a Skeletal Wyvern ,Defeat a Skeletal Wyvern in the Asgarnian Ice Dungeon. ,Medium,Combat,Slayer,,Asgarnia
 470,Equip Some Granite Legs ,Equip some granite legs. ,Medium,Combat,Slayer,,Asgarnia
+365,Equip a Dorgeshuun Crossbow ,Equip a Dorgeshuun Crossbow. ,Medium,Combat,Ranged,,Asgarnia
 471,Charge an Amulet of Glory in the Heroes' Guild ,Charge an amulet of glory at the Fountain of Heroes in the Heroes' Guild. ,Medium,Quests,Experienced,,Asgarnia
 472,Defeat 30 Black Dragons in Asgarnia ,Defeat 30 black dragons in Asgarnia.,Medium,Combat,Other,,Asgarnia
 473,Complete the Medium Falador Diary ,Complete all of the medium tasks in the Falador Achievement Diary. ,Medium,Diaries,Falador,,Asgarnia
 474,Enter the Warriors' Guild ,Enter the Warriors' Guild. ,Medium,Combat,Melee,,Asgarnia
+368,Complete The Lost Tribe ,Complete The Lost Tribe quest.,Medium,Quests,Intermediate,,Asgarnia
+369,Complete Death to the Dorgeshuun ,Complete the Death to the Dorgeshuun quest.,Medium,Quests,Intermediate,,Asgarnia
 475,Complete A Porcine of Interest ,Complete the A Porcine of Interest quest. ,Medium,Quests,Novice,,Asgarnia
 476,Defeat Some Animated Rune Armour ,Defeat some Animated Rune Armour in the Warriors' Guild.,Medium,Combat,Melee,,Asgarnia
 477,Open the Crystal Chest ,Open the crystal chest in Taverley.,Medium,Other,Crystal chests,,Asgarnia
@@ -487,6 +484,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 482,Craft 50 Law Runes ,Craft 50 law runes at the Law altar. ,Hard,Skilling,Runecraft,,Asgarnia
 483,Make 20 Ranging Potions ,Make 20 ranging potions. ,Hard,Skilling,Herblore,,Asgarnia
 484,Make 20 Stamina Potions ,Make 20 stamina potions. ,Hard,Skilling,Herblore,,Asgarnia
+379,Steal a Diamond in Dorgesh-Kaan ,Steal a Diamond from a chest in Dorgesh-Kaan. ,Hard,Skilling,Thieving,,Asgarnia
 485,Equip a Dragon Defender ,Equip a dragon defender.,Hard,Combat,Melee,,Asgarnia
 486,Defeat K'ril Tsutsaroth ,Defeat K'ril Tsutsaroth in the God Wars Dungeon. ,Hard,Bossing,God Wars,,Asgarnia
 487,Defeat General Graardor ,Defeat General Graardor in the God Wars Dungeon. ,Hard,Bossing,God Wars,,Asgarnia
@@ -508,9 +506,9 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 503,Equip Some Primordial Pegasian or Eternal Boots ,Equip either some primordial boots some pegasian boots or some eternal boots. ,Elite,Bossing,Slayer,,Asgarnia
 504,Equip a Godsword ,Equip any godsword. ,Elite,Bossing,God Wars,,Asgarnia
 505,Defeat Cerberus ,Defeat Cerberus in the Taverley Dungeon. ,Elite,Bossing,Slayer,,Asgarnia
-506,Defeat Any God Wars Dungeon Boss 100 Times ,Defeat any God Wars Dungeon boss 100 times.,Elite,Bossing,God Wars,,Asgarnia
-507,Defeat Any God Wars Dungeon Boss 250 Times ,Defeat any God Wars Dungeon boss 250 times.,Elite,Bossing,God Wars,,Asgarnia
-508,Defeat Any God Wars Dungeon Boss 500 Times ,Defeat any God Wars Dungeon boss 500 times.,Elite,Bossing,God Wars,,Asgarnia
+506,Defeat Any God Wars Dungeon Boss 100 Times ,Defeat any one of the God Wars Dungeon bosses 100 times.,Elite,Bossing,God Wars,,Asgarnia
+507,Defeat Any God Wars Dungeon Boss 250 Times ,Defeat any one of the God Wars Dungeon bosses 250 times.,Elite,Bossing,God Wars,,Asgarnia
+508,Defeat Any God Wars Dungeon Boss 500 Times ,Defeat any one of the God Wars Dungeon bosses 500 times.,Elite,Bossing,God Wars,,Asgarnia
 509,Defeat the Giant Mole 250 Times ,Defeat the Giant Mole beneath Falador 250 times.,Elite,Bossing,Giant mole,,Asgarnia
 510,Defeat the Giant Mole 500 Times ,Defeat the Giant Mole beneath Falador 500 times.,Elite,Bossing,Giant mole,,Asgarnia
 511,Defeat the Giant Mole 750 Times ,Defeat the Giant Mole beneath Falador 750 times.,Elite,Bossing,Giant mole,,Asgarnia
@@ -568,6 +566,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 563,Equip a Mud Battlestaff ,Equip a mud battlestaff. ,Hard,Bossing,Dagannoth Kings,,Fremennik
 564,Equip a Seercull ,Equip a seercull. ,Hard,Bossing,Dagannoth Kings,,Fremennik
 565,Equip a Leaf-Bladed Battleaxe ,Equip a leaf-bladed battleaxe in The Fremennik Provinces. ,Hard,Combat,Slayer,,Fremennik
+381,Defeat a Rune Dragon ,Defeat a Rune Dragon in the Lithkren Vault.,Hard,Combat,Other,,Fremennik
 566,Equip a Full Skeletal Armour Set ,Equip a full set of skeletal armour. ,Hard,Bossing,Dagannoth Kings,,Fremennik
 567,Equip a Full Spined Armour Set ,Equip a full set of spined armour. ,Hard,Bossing,Dagannoth Kings,,Fremennik
 568,Equip a Full Rockshell Armour Set ,Equip a full set of rock-shell armour. ,Hard,Bossing,Dagannoth Kings,,Fremennik
@@ -581,6 +580,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 576,Defeat Vorkath in 1:00 ,Defeat Vorkath on Ungael in 1:00 or less.,Elite,Bossing,Vorkath,,Fremennik
 577,Equip Every Dagannoth King Ring ,Equip an archers ring a berserker ring a seers ring and a warrior ring.,Elite,Bossing,Dagannoth Kings,,Fremennik
 578,Equip a Neitiznot Faceguard ,Equip a neitiznot faceguard. ,Elite,Combat,Slayer,,Fremennik
+393,Equip a Dragon Crossbow ,Equip a Dragon Crossbow. ,Elite,Combat,Ranged,,Fremennik
 579,Defeat Vorkath 5 Times Without Special Damage ,Defeat Vorkath on Ungael 5 times without taking any damage from his special attacks and without leaving his area.,Elite,Bossing,Vorkath,,Fremennik
 580,Defeat Vorkath 15 Times Without Leaving ,Defeat Vorkath on Ungael 15 times without leaving his area.,Elite,Bossing,Vorkath,,Fremennik
 581,Defeat Vorkath 250 Times ,Defeat Vorkath on Ungael 250 times.,Elite,Bossing,Vorkath,,Fremennik

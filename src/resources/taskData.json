@@ -3435,8 +3435,8 @@
         },
         {
             "id": "350",
-            "name": "Build a Yew Bird House",
-            "description": "Build a yew bird house on Fossil Island.",
+            "name": "Setup a Yew Bird House",
+            "description": "Setup a yew bird house on Fossil Island.",
             "difficulty": "Medium",
             "category": "Skilling",
             "subcategory": "Hunter",
@@ -3473,15 +3473,6 @@
             "id": "354",
             "name": "Pickpocket a Varrock Guard",
             "description": "Pickpocket any Varrock Guard.",
-            "difficulty": "Medium",
-            "category": "Skilling",
-            "subcategory": "Thieving",
-            "area": "Misthalin"
-        },
-        {
-            "id": "355",
-            "name": "Pickpocket a Bullseye Lantern From a Cave Goblin",
-            "description": "Pickpocket a Bullseye Lantern from a Cave Goblin.",
             "difficulty": "Medium",
             "category": "Skilling",
             "subcategory": "Thieving",
@@ -3569,15 +3560,6 @@
             "area": "Misthalin"
         },
         {
-            "id": "365",
-            "name": "Equip a Dorgeshuun Crossbow",
-            "description": "Equip a Dorgeshuun Crossbow.",
-            "difficulty": "Medium",
-            "category": "Combat",
-            "subcategory": "Ranged",
-            "area": "Misthalin"
-        },
-        {
             "id": "366",
             "name": "Complete the Medium Lumbridge & Draynor Diary",
             "description": "Complete all of the medium tasks in the Lumbridge & Draynor Achievement Diary.",
@@ -3593,24 +3575,6 @@
             "difficulty": "Medium",
             "category": "Quests",
             "subcategory": "Grandmaster",
-            "area": "Misthalin"
-        },
-        {
-            "id": "368",
-            "name": "Complete The Lost Tribe",
-            "description": "Complete The Lost Tribe quest.",
-            "difficulty": "Medium",
-            "category": "Quests",
-            "subcategory": "Intermediate",
-            "area": "Misthalin"
-        },
-        {
-            "id": "369",
-            "name": "Complete Death to the Dorgeshuun",
-            "description": "Complete the Death to the Dorgeshuun quest.",
-            "difficulty": "Medium",
-            "category": "Quests",
-            "subcategory": "Intermediate",
             "area": "Misthalin"
         },
         {
@@ -3642,8 +3606,8 @@
         },
         {
             "id": "373",
-            "name": "Build a Magic Bird House",
-            "description": "Build a Magic Bird House on Fossil Island.",
+            "name": "Setup a Magic Bird House",
+            "description": "Setup a Magic Bird House on Fossil Island.",
             "difficulty": "Hard",
             "category": "Skilling",
             "subcategory": "Hunter",
@@ -3695,30 +3659,12 @@
             "area": "Misthalin"
         },
         {
-            "id": "379",
-            "name": "Steal a Diamond in Dorgesh-Kaan",
-            "description": "Steal a Diamond from a chest in Dorgesh-Kaan.",
-            "difficulty": "Hard",
-            "category": "Skilling",
-            "subcategory": "Thieving",
-            "area": "Misthalin"
-        },
-        {
             "id": "380",
             "name": "Take the Advanced Shortcut to the Cosmic Altar",
             "description": "Use the Advanced Narrow Walkway Agility Shortcut near the Cosmic Altar.",
             "difficulty": "Hard",
             "category": "Skilling",
             "subcategory": "Agility",
-            "area": "Misthalin"
-        },
-        {
-            "id": "381",
-            "name": "Defeat a Rune Dragon",
-            "description": "Defeat a Rune Dragon in the Lithkren Vault.",
-            "difficulty": "Hard",
-            "category": "Combat",
-            "subcategory": "Other",
             "area": "Misthalin"
         },
         {
@@ -3818,15 +3764,6 @@
             "difficulty": "Elite",
             "category": "Skilling",
             "subcategory": "Mining",
-            "area": "Misthalin"
-        },
-        {
-            "id": "393",
-            "name": "Equip a Dragon Crossbow",
-            "description": "Equip a Dragon Crossbow.",
-            "difficulty": "Elite",
-            "category": "Combat",
-            "subcategory": "Ranged",
             "area": "Misthalin"
         },
         {
@@ -4496,6 +4433,15 @@
             "area": "Asgarnia"
         },
         {
+            "id": "355",
+            "name": "Pickpocket a Bullseye Lantern From a Cave Goblin",
+            "description": "Pickpocket a Bullseye Lantern from a Cave Goblin.",
+            "difficulty": "Medium",
+            "category": "Skilling",
+            "subcategory": "Thieving",
+            "area": "Asgarnia"
+        },
+        {
             "id": "468",
             "name": "Defeat the Giant Mole",
             "description": "Defeat the Giant Mole beneath Falador.",
@@ -4520,6 +4466,15 @@
             "difficulty": "Medium",
             "category": "Combat",
             "subcategory": "Slayer",
+            "area": "Asgarnia"
+        },
+        {
+            "id": "365",
+            "name": "Equip a Dorgeshuun Crossbow",
+            "description": "Equip a Dorgeshuun Crossbow.",
+            "difficulty": "Medium",
+            "category": "Combat",
+            "subcategory": "Ranged",
             "area": "Asgarnia"
         },
         {
@@ -4556,6 +4511,24 @@
             "difficulty": "Medium",
             "category": "Combat",
             "subcategory": "Melee",
+            "area": "Asgarnia"
+        },
+        {
+            "id": "368",
+            "name": "Complete The Lost Tribe",
+            "description": "Complete The Lost Tribe quest.",
+            "difficulty": "Medium",
+            "category": "Quests",
+            "subcategory": "Intermediate",
+            "area": "Asgarnia"
+        },
+        {
+            "id": "369",
+            "name": "Complete Death to the Dorgeshuun",
+            "description": "Complete the Death to the Dorgeshuun quest.",
+            "difficulty": "Medium",
+            "category": "Quests",
+            "subcategory": "Intermediate",
             "area": "Asgarnia"
         },
         {
@@ -4646,6 +4619,15 @@
             "difficulty": "Hard",
             "category": "Skilling",
             "subcategory": "Herblore",
+            "area": "Asgarnia"
+        },
+        {
+            "id": "379",
+            "name": "Steal a Diamond in Dorgesh-Kaan",
+            "description": "Steal a Diamond from a chest in Dorgesh-Kaan.",
+            "difficulty": "Hard",
+            "category": "Skilling",
+            "subcategory": "Thieving",
             "area": "Asgarnia"
         },
         {
@@ -4840,7 +4822,7 @@
         {
             "id": "506",
             "name": "Defeat Any God Wars Dungeon Boss 100 Times",
-            "description": "Defeat any God Wars Dungeon boss 100 times.",
+            "description": "Defeat any one of the God Wars Dungeon bosses 100 times.",
             "difficulty": "Elite",
             "category": "Bossing",
             "subcategory": "God Wars",
@@ -4849,7 +4831,7 @@
         {
             "id": "507",
             "name": "Defeat Any God Wars Dungeon Boss 250 Times",
-            "description": "Defeat any God Wars Dungeon boss 250 times.",
+            "description": "Defeat any one of the God Wars Dungeon bosses 250 times.",
             "difficulty": "Elite",
             "category": "Bossing",
             "subcategory": "God Wars",
@@ -4858,7 +4840,7 @@
         {
             "id": "508",
             "name": "Defeat Any God Wars Dungeon Boss 500 Times",
-            "description": "Defeat any God Wars Dungeon boss 500 times.",
+            "description": "Defeat any one of the God Wars Dungeon bosses 500 times.",
             "difficulty": "Elite",
             "category": "Bossing",
             "subcategory": "God Wars",
@@ -5378,6 +5360,15 @@
             "area": "Fremennik"
         },
         {
+            "id": "381",
+            "name": "Defeat a Rune Dragon",
+            "description": "Defeat a Rune Dragon in the Lithkren Vault.",
+            "difficulty": "Hard",
+            "category": "Combat",
+            "subcategory": "Other",
+            "area": "Fremennik"
+        },
+        {
             "id": "566",
             "name": "Equip a Full Skeletal Armour Set",
             "description": "Equip a full set of skeletal armour.",
@@ -5492,6 +5483,15 @@
             "difficulty": "Elite",
             "category": "Combat",
             "subcategory": "Slayer",
+            "area": "Fremennik"
+        },
+        {
+            "id": "393",
+            "name": "Equip a Dragon Crossbow",
+            "description": "Equip a Dragon Crossbow.",
+            "difficulty": "Elite",
+            "category": "Combat",
+            "subcategory": "Ranged",
             "area": "Fremennik"
         },
         {
@@ -12089,8 +12089,8 @@
             },
             {
                 "id": "350",
-                "name": "Build a Yew Bird House",
-                "description": "Build a yew bird house on Fossil Island.",
+                "name": "Setup a Yew Bird House",
+                "description": "Setup a yew bird house on Fossil Island.",
                 "difficulty": "Medium",
                 "category": "Skilling",
                 "subcategory": "Hunter",
@@ -12127,15 +12127,6 @@
                 "id": "354",
                 "name": "Pickpocket a Varrock Guard",
                 "description": "Pickpocket any Varrock Guard.",
-                "difficulty": "Medium",
-                "category": "Skilling",
-                "subcategory": "Thieving",
-                "area": "Misthalin"
-            },
-            {
-                "id": "355",
-                "name": "Pickpocket a Bullseye Lantern From a Cave Goblin",
-                "description": "Pickpocket a Bullseye Lantern from a Cave Goblin.",
                 "difficulty": "Medium",
                 "category": "Skilling",
                 "subcategory": "Thieving",
@@ -12223,15 +12214,6 @@
                 "area": "Misthalin"
             },
             {
-                "id": "365",
-                "name": "Equip a Dorgeshuun Crossbow",
-                "description": "Equip a Dorgeshuun Crossbow.",
-                "difficulty": "Medium",
-                "category": "Combat",
-                "subcategory": "Ranged",
-                "area": "Misthalin"
-            },
-            {
                 "id": "366",
                 "name": "Complete the Medium Lumbridge & Draynor Diary",
                 "description": "Complete all of the medium tasks in the Lumbridge & Draynor Achievement Diary.",
@@ -12247,24 +12229,6 @@
                 "difficulty": "Medium",
                 "category": "Quests",
                 "subcategory": "Grandmaster",
-                "area": "Misthalin"
-            },
-            {
-                "id": "368",
-                "name": "Complete The Lost Tribe",
-                "description": "Complete The Lost Tribe quest.",
-                "difficulty": "Medium",
-                "category": "Quests",
-                "subcategory": "Intermediate",
-                "area": "Misthalin"
-            },
-            {
-                "id": "369",
-                "name": "Complete Death to the Dorgeshuun",
-                "description": "Complete the Death to the Dorgeshuun quest.",
-                "difficulty": "Medium",
-                "category": "Quests",
-                "subcategory": "Intermediate",
                 "area": "Misthalin"
             },
             {
@@ -12296,8 +12260,8 @@
             },
             {
                 "id": "373",
-                "name": "Build a Magic Bird House",
-                "description": "Build a Magic Bird House on Fossil Island.",
+                "name": "Setup a Magic Bird House",
+                "description": "Setup a Magic Bird House on Fossil Island.",
                 "difficulty": "Hard",
                 "category": "Skilling",
                 "subcategory": "Hunter",
@@ -12349,30 +12313,12 @@
                 "area": "Misthalin"
             },
             {
-                "id": "379",
-                "name": "Steal a Diamond in Dorgesh-Kaan",
-                "description": "Steal a Diamond from a chest in Dorgesh-Kaan.",
-                "difficulty": "Hard",
-                "category": "Skilling",
-                "subcategory": "Thieving",
-                "area": "Misthalin"
-            },
-            {
                 "id": "380",
                 "name": "Take the Advanced Shortcut to the Cosmic Altar",
                 "description": "Use the Advanced Narrow Walkway Agility Shortcut near the Cosmic Altar.",
                 "difficulty": "Hard",
                 "category": "Skilling",
                 "subcategory": "Agility",
-                "area": "Misthalin"
-            },
-            {
-                "id": "381",
-                "name": "Defeat a Rune Dragon",
-                "description": "Defeat a Rune Dragon in the Lithkren Vault.",
-                "difficulty": "Hard",
-                "category": "Combat",
-                "subcategory": "Other",
                 "area": "Misthalin"
             },
             {
@@ -12472,15 +12418,6 @@
                 "difficulty": "Elite",
                 "category": "Skilling",
                 "subcategory": "Mining",
-                "area": "Misthalin"
-            },
-            {
-                "id": "393",
-                "name": "Equip a Dragon Crossbow",
-                "description": "Equip a Dragon Crossbow.",
-                "difficulty": "Elite",
-                "category": "Combat",
-                "subcategory": "Ranged",
                 "area": "Misthalin"
             },
             {
@@ -13154,6 +13091,15 @@
                 "area": "Asgarnia"
             },
             {
+                "id": "355",
+                "name": "Pickpocket a Bullseye Lantern From a Cave Goblin",
+                "description": "Pickpocket a Bullseye Lantern from a Cave Goblin.",
+                "difficulty": "Medium",
+                "category": "Skilling",
+                "subcategory": "Thieving",
+                "area": "Asgarnia"
+            },
+            {
                 "id": "468",
                 "name": "Defeat the Giant Mole",
                 "description": "Defeat the Giant Mole beneath Falador.",
@@ -13178,6 +13124,15 @@
                 "difficulty": "Medium",
                 "category": "Combat",
                 "subcategory": "Slayer",
+                "area": "Asgarnia"
+            },
+            {
+                "id": "365",
+                "name": "Equip a Dorgeshuun Crossbow",
+                "description": "Equip a Dorgeshuun Crossbow.",
+                "difficulty": "Medium",
+                "category": "Combat",
+                "subcategory": "Ranged",
                 "area": "Asgarnia"
             },
             {
@@ -13214,6 +13169,24 @@
                 "difficulty": "Medium",
                 "category": "Combat",
                 "subcategory": "Melee",
+                "area": "Asgarnia"
+            },
+            {
+                "id": "368",
+                "name": "Complete The Lost Tribe",
+                "description": "Complete The Lost Tribe quest.",
+                "difficulty": "Medium",
+                "category": "Quests",
+                "subcategory": "Intermediate",
+                "area": "Asgarnia"
+            },
+            {
+                "id": "369",
+                "name": "Complete Death to the Dorgeshuun",
+                "description": "Complete the Death to the Dorgeshuun quest.",
+                "difficulty": "Medium",
+                "category": "Quests",
+                "subcategory": "Intermediate",
                 "area": "Asgarnia"
             },
             {
@@ -13304,6 +13277,15 @@
                 "difficulty": "Hard",
                 "category": "Skilling",
                 "subcategory": "Herblore",
+                "area": "Asgarnia"
+            },
+            {
+                "id": "379",
+                "name": "Steal a Diamond in Dorgesh-Kaan",
+                "description": "Steal a Diamond from a chest in Dorgesh-Kaan.",
+                "difficulty": "Hard",
+                "category": "Skilling",
+                "subcategory": "Thieving",
                 "area": "Asgarnia"
             },
             {
@@ -13498,7 +13480,7 @@
             {
                 "id": "506",
                 "name": "Defeat Any God Wars Dungeon Boss 100 Times",
-                "description": "Defeat any God Wars Dungeon boss 100 times.",
+                "description": "Defeat any one of the God Wars Dungeon bosses 100 times.",
                 "difficulty": "Elite",
                 "category": "Bossing",
                 "subcategory": "God Wars",
@@ -13507,7 +13489,7 @@
             {
                 "id": "507",
                 "name": "Defeat Any God Wars Dungeon Boss 250 Times",
-                "description": "Defeat any God Wars Dungeon boss 250 times.",
+                "description": "Defeat any one of the God Wars Dungeon bosses 250 times.",
                 "difficulty": "Elite",
                 "category": "Bossing",
                 "subcategory": "God Wars",
@@ -13516,7 +13498,7 @@
             {
                 "id": "508",
                 "name": "Defeat Any God Wars Dungeon Boss 500 Times",
-                "description": "Defeat any God Wars Dungeon boss 500 times.",
+                "description": "Defeat any one of the God Wars Dungeon bosses 500 times.",
                 "difficulty": "Elite",
                 "category": "Bossing",
                 "subcategory": "God Wars",
@@ -14038,6 +14020,15 @@
                 "area": "Fremennik"
             },
             {
+                "id": "381",
+                "name": "Defeat a Rune Dragon",
+                "description": "Defeat a Rune Dragon in the Lithkren Vault.",
+                "difficulty": "Hard",
+                "category": "Combat",
+                "subcategory": "Other",
+                "area": "Fremennik"
+            },
+            {
                 "id": "566",
                 "name": "Equip a Full Skeletal Armour Set",
                 "description": "Equip a full set of skeletal armour.",
@@ -14152,6 +14143,15 @@
                 "difficulty": "Elite",
                 "category": "Combat",
                 "subcategory": "Slayer",
+                "area": "Fremennik"
+            },
+            {
+                "id": "393",
+                "name": "Equip a Dragon Crossbow",
+                "description": "Equip a Dragon Crossbow.",
+                "difficulty": "Elite",
+                "category": "Combat",
+                "subcategory": "Ranged",
                 "area": "Fremennik"
             },
             {
@@ -20757,8 +20757,8 @@
         },
         "350": {
             "id": "350",
-            "name": "Build a Yew Bird House",
-            "description": "Build a yew bird house on Fossil Island.",
+            "name": "Setup a Yew Bird House",
+            "description": "Setup a yew bird house on Fossil Island.",
             "difficulty": "Medium",
             "category": "Skilling",
             "subcategory": "Hunter",
@@ -20795,15 +20795,6 @@
             "id": "354",
             "name": "Pickpocket a Varrock Guard",
             "description": "Pickpocket any Varrock Guard.",
-            "difficulty": "Medium",
-            "category": "Skilling",
-            "subcategory": "Thieving",
-            "area": "Misthalin"
-        },
-        "355": {
-            "id": "355",
-            "name": "Pickpocket a Bullseye Lantern From a Cave Goblin",
-            "description": "Pickpocket a Bullseye Lantern from a Cave Goblin.",
             "difficulty": "Medium",
             "category": "Skilling",
             "subcategory": "Thieving",
@@ -20890,15 +20881,6 @@
             "subcategory": "Giants",
             "area": "Misthalin"
         },
-        "365": {
-            "id": "365",
-            "name": "Equip a Dorgeshuun Crossbow",
-            "description": "Equip a Dorgeshuun Crossbow.",
-            "difficulty": "Medium",
-            "category": "Combat",
-            "subcategory": "Ranged",
-            "area": "Misthalin"
-        },
         "366": {
             "id": "366",
             "name": "Complete the Medium Lumbridge & Draynor Diary",
@@ -20915,24 +20897,6 @@
             "difficulty": "Medium",
             "category": "Quests",
             "subcategory": "Grandmaster",
-            "area": "Misthalin"
-        },
-        "368": {
-            "id": "368",
-            "name": "Complete The Lost Tribe",
-            "description": "Complete The Lost Tribe quest.",
-            "difficulty": "Medium",
-            "category": "Quests",
-            "subcategory": "Intermediate",
-            "area": "Misthalin"
-        },
-        "369": {
-            "id": "369",
-            "name": "Complete Death to the Dorgeshuun",
-            "description": "Complete the Death to the Dorgeshuun quest.",
-            "difficulty": "Medium",
-            "category": "Quests",
-            "subcategory": "Intermediate",
             "area": "Misthalin"
         },
         "370": {
@@ -20964,8 +20928,8 @@
         },
         "373": {
             "id": "373",
-            "name": "Build a Magic Bird House",
-            "description": "Build a Magic Bird House on Fossil Island.",
+            "name": "Setup a Magic Bird House",
+            "description": "Setup a Magic Bird House on Fossil Island.",
             "difficulty": "Hard",
             "category": "Skilling",
             "subcategory": "Hunter",
@@ -21016,15 +20980,6 @@
             "subcategory": "Farming",
             "area": "Misthalin"
         },
-        "379": {
-            "id": "379",
-            "name": "Steal a Diamond in Dorgesh-Kaan",
-            "description": "Steal a Diamond from a chest in Dorgesh-Kaan.",
-            "difficulty": "Hard",
-            "category": "Skilling",
-            "subcategory": "Thieving",
-            "area": "Misthalin"
-        },
         "380": {
             "id": "380",
             "name": "Take the Advanced Shortcut to the Cosmic Altar",
@@ -21032,15 +20987,6 @@
             "difficulty": "Hard",
             "category": "Skilling",
             "subcategory": "Agility",
-            "area": "Misthalin"
-        },
-        "381": {
-            "id": "381",
-            "name": "Defeat a Rune Dragon",
-            "description": "Defeat a Rune Dragon in the Lithkren Vault.",
-            "difficulty": "Hard",
-            "category": "Combat",
-            "subcategory": "Other",
             "area": "Misthalin"
         },
         "382": {
@@ -21140,15 +21086,6 @@
             "difficulty": "Elite",
             "category": "Skilling",
             "subcategory": "Mining",
-            "area": "Misthalin"
-        },
-        "393": {
-            "id": "393",
-            "name": "Equip a Dragon Crossbow",
-            "description": "Equip a Dragon Crossbow.",
-            "difficulty": "Elite",
-            "category": "Combat",
-            "subcategory": "Ranged",
             "area": "Misthalin"
         },
         "394": {
@@ -21817,6 +21754,15 @@
             "subcategory": "Farming",
             "area": "Asgarnia"
         },
+        "355": {
+            "id": "355",
+            "name": "Pickpocket a Bullseye Lantern From a Cave Goblin",
+            "description": "Pickpocket a Bullseye Lantern from a Cave Goblin.",
+            "difficulty": "Medium",
+            "category": "Skilling",
+            "subcategory": "Thieving",
+            "area": "Asgarnia"
+        },
         "468": {
             "id": "468",
             "name": "Defeat the Giant Mole",
@@ -21842,6 +21788,15 @@
             "difficulty": "Medium",
             "category": "Combat",
             "subcategory": "Slayer",
+            "area": "Asgarnia"
+        },
+        "365": {
+            "id": "365",
+            "name": "Equip a Dorgeshuun Crossbow",
+            "description": "Equip a Dorgeshuun Crossbow.",
+            "difficulty": "Medium",
+            "category": "Combat",
+            "subcategory": "Ranged",
             "area": "Asgarnia"
         },
         "471": {
@@ -21878,6 +21833,24 @@
             "difficulty": "Medium",
             "category": "Combat",
             "subcategory": "Melee",
+            "area": "Asgarnia"
+        },
+        "368": {
+            "id": "368",
+            "name": "Complete The Lost Tribe",
+            "description": "Complete The Lost Tribe quest.",
+            "difficulty": "Medium",
+            "category": "Quests",
+            "subcategory": "Intermediate",
+            "area": "Asgarnia"
+        },
+        "369": {
+            "id": "369",
+            "name": "Complete Death to the Dorgeshuun",
+            "description": "Complete the Death to the Dorgeshuun quest.",
+            "difficulty": "Medium",
+            "category": "Quests",
+            "subcategory": "Intermediate",
             "area": "Asgarnia"
         },
         "475": {
@@ -21968,6 +21941,15 @@
             "difficulty": "Hard",
             "category": "Skilling",
             "subcategory": "Herblore",
+            "area": "Asgarnia"
+        },
+        "379": {
+            "id": "379",
+            "name": "Steal a Diamond in Dorgesh-Kaan",
+            "description": "Steal a Diamond from a chest in Dorgesh-Kaan.",
+            "difficulty": "Hard",
+            "category": "Skilling",
+            "subcategory": "Thieving",
             "area": "Asgarnia"
         },
         "485": {
@@ -22162,7 +22144,7 @@
         "506": {
             "id": "506",
             "name": "Defeat Any God Wars Dungeon Boss 100 Times",
-            "description": "Defeat any God Wars Dungeon boss 100 times.",
+            "description": "Defeat any one of the God Wars Dungeon bosses 100 times.",
             "difficulty": "Elite",
             "category": "Bossing",
             "subcategory": "God Wars",
@@ -22171,7 +22153,7 @@
         "507": {
             "id": "507",
             "name": "Defeat Any God Wars Dungeon Boss 250 Times",
-            "description": "Defeat any God Wars Dungeon boss 250 times.",
+            "description": "Defeat any one of the God Wars Dungeon bosses 250 times.",
             "difficulty": "Elite",
             "category": "Bossing",
             "subcategory": "God Wars",
@@ -22180,7 +22162,7 @@
         "508": {
             "id": "508",
             "name": "Defeat Any God Wars Dungeon Boss 500 Times",
-            "description": "Defeat any God Wars Dungeon boss 500 times.",
+            "description": "Defeat any one of the God Wars Dungeon bosses 500 times.",
             "difficulty": "Elite",
             "category": "Bossing",
             "subcategory": "God Wars",
@@ -22699,6 +22681,15 @@
             "subcategory": "Slayer",
             "area": "Fremennik"
         },
+        "381": {
+            "id": "381",
+            "name": "Defeat a Rune Dragon",
+            "description": "Defeat a Rune Dragon in the Lithkren Vault.",
+            "difficulty": "Hard",
+            "category": "Combat",
+            "subcategory": "Other",
+            "area": "Fremennik"
+        },
         "566": {
             "id": "566",
             "name": "Equip a Full Skeletal Armour Set",
@@ -22814,6 +22805,15 @@
             "difficulty": "Elite",
             "category": "Combat",
             "subcategory": "Slayer",
+            "area": "Fremennik"
+        },
+        "393": {
+            "id": "393",
+            "name": "Equip a Dragon Crossbow",
+            "description": "Equip a Dragon Crossbow.",
+            "difficulty": "Elite",
+            "category": "Combat",
+            "subcategory": "Ranged",
             "area": "Fremennik"
         },
         "579": {
