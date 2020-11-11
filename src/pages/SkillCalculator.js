@@ -13,10 +13,12 @@ import useMultiplier from "../hooks/useMultiplier";
 import { isRelicUnlocked } from "../util/relic-util";
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from "../util/browser-util";
 import DoubleScrollbar from "../components/DoubleScrollbar";
+import HiscoreLookup from "../components/HiscoreLookup";
+import { getLevelForExp } from "../util/exp-table";
 
 export default function SkillCalculator() {
     const currentLevel = useLevel(1);
-    const targetLevel = useLevel(currentLevel.level + 1);
+    const targetLevel = useLevel(Math.min(currentLevel.level + 1, 99));
     const [totalLevel, setTotalLevel] = useState(1000);
     const [baseExpMultiplier, setBaseExpMultiplier] = useState('5');
     const expMultiplier = useMultiplier();
@@ -264,11 +266,14 @@ export default function SkillCalculator() {
                 </Card>
                 <Card bg='dark' text='white' className="mt-2 mb-2" style={{ minWidth: '300px' }}>
                     <h4 className="pt-3 pl-3">Level/Experience:</h4>
-                    {/* TODO
                     <HiscoreLookup
-                        setLevelCallback={currentLevel.updateByLevel}
-                        setExpCallback={currentLevel.updateByExp}
-                    /> */}
+                        skill={skill}
+                        setExpCallback={(newExp) => {
+                            currentLevel.updateByExp(newExp);
+                            targetLevel.updateByLevel(Math.min(getLevelForExp(newExp) + 1, 99));
+                        }}
+                        setTotalLvlCallback={setTotalLevel}
+                    />
                     <LevelExpInput
                         title="Current"
                         level={currentLevel.level}
@@ -302,17 +307,15 @@ export default function SkillCalculator() {
                 </Card>
                 <Card bg='dark' text='white' className="mt-2 mb-2" style={{ minWidth: '300px' }}>
                     <div className="p-3">
-                        <p>
-                            <h4>Filters:</h4>
-                            <div className="pl-2">
-                                <Form.Check
-                                    label="Hide actions with missing level requirement"
-                                    onChange={(event) => {
-                                        setUseLevelFilter(event.target.checked);
-                                    }}
-                                />
-                            </div>
-                        </p>
+                        <h4>Filters:</h4>
+                        <div className="pl-2 mb-1">
+                            <Form.Check
+                                label="Hide actions with missing level requirement"
+                                onChange={(event) => {
+                                    setUseLevelFilter(event.target.checked);
+                                }}
+                            />
+                        </div>
                         <h4>Areas:</h4>
                         <div className="pl-2">
                             <Form.Check

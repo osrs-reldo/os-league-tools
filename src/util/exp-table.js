@@ -203,6 +203,12 @@ const reverseExpTable = {
 }
 
 export function getExpForLevel(level) {
+    if (level < 1) {
+        return 0;
+    } else if (level > 99) {
+        return expTable[99];
+    }
+
     return expTable[level];
 }
 

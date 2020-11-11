@@ -2,7 +2,7 @@
     "skills": [
         "prayer",
         "magic",
-        "runecrafting",
+        "runecraft",
         "construction",
         "agility",
         "herblore",
@@ -35746,8 +35746,8 @@
                 }
             ]
         },
-        "runecrafting": {
-            "name": "Runecrafting",
+        "runecraft": {
+            "name": "Runecraft",
             "icon": "https://oldschool.runescape.wiki/images/6/63/Runecraft_icon.png?c278c",
             "type": "processing",
             "isCombatSkill": false,
