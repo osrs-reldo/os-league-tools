@@ -62,12 +62,14 @@ function getRelicLookupByName() {
     let lookup = {}
     relicData.forEach((slot, slotIndex) => {
         slot.relics.forEach((relic, relicIndex) => {
-            lookup[relic.name] = {};
-            lookup[relic.name][slotIndex] = {
-                passive: true,
-                relic: relicIndex
+            lookup[relic.name] = {
+                slot: slotIndex,
+                relic: {
+                    passive: true,
+                    relic: relicIndex
+                }
             };
-        })
+        });
     });
     return lookup;
 }
@@ -114,13 +116,16 @@ function extractRuneliteAreas(runeliteJson) {
 }
 
 function extractRuneliteRelics(runeliteJson) {
-    return runeliteJson.relics.map(relic => {
+    const relics = {};
+    runeliteJson.relics.forEach(relic => {
         const relicName = RELIC_ENUM_TO_NAME[relic];
         if (!relicName) throw new Error("Relic name not found for enum: " + relic);
-        const match = RELICS_BY_NAME[relicName];
-        if (!match) throw new Error("Relic match not found for " + relicName);
-        return match;
+        const matched = RELICS_BY_NAME[relicName];
+        if (!matched) throw new Error("Relic match not found for " + relicName);
+        relics[matched.slot] = matched.relic;
     });
+
+    return relics;
 }
 
 function toPascalCase(areaName) {
