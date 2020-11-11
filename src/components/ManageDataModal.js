@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import { Button, Modal, Alert, Tabs, Tab, InputGroup, FormControl } from "react-bootstrap";
+import { Button, Modal, Alert, Tabs, Tab } from "react-bootstrap";
+// import { Button, Modal, Alert, Tabs, Tab, InputGroup, FormControl } from "react-bootstrap";
 import { FilePicker } from "react-file-picker";
 import { saveLocalStorageToFile, loadLocalStorageFromFile } from "../util/file-util";
-import { updateLocalStorageFromRuneliteJson } from "../util/runelite-util";
+// import { updateLocalStorageFromRuneliteJson } from "../util/runelite-util";
 import { resetLocalStorageData } from "../util/browser-util";
 
 export default function ManageDataModal({ show, onClose }) {
     const [errorText, setErrorText] = useState("");
     const [successText, setSuccessText] = useState("");
     const [updated, setUpdated] = useState(false);
-    const [runeliteImportJson, setRuneliteImportJson] = useState({});
+    // const [runeliteImportJson, setRuneliteImportJson] = useState({});
 
     const pluginHubLink = "https://github.com/runelite/runelite/wiki/Information-about-the-Plugin-Hub";
 
@@ -33,19 +34,19 @@ export default function ManageDataModal({ show, onClose }) {
         setSuccessText("Data successfully deleted");
     }
 
-    const loadRuneliteImport = async () => {
-        const response = await updateLocalStorageFromRuneliteJson(runeliteImportJson);
-        if (response.success) {
-            setSuccessText(
-                "Successfully imported character data from Runelite."
-            );
-            setErrorText("");
-            setUpdated(true);
-        } else {
-            setSuccessText("");
-            setErrorText(response.message);
-        }
-    }
+    // const loadRuneliteImport = async () => {
+    //     const response = await updateLocalStorageFromRuneliteJson(runeliteImportJson);
+    //     if (response.success) {
+    //         setSuccessText(
+    //             "Successfully imported character data from Runelite."
+    //         );
+    //         setErrorText("");
+    //         setUpdated(true);
+    //     } else {
+    //         setSuccessText("");
+    //         setErrorText(response.message);
+    //     }
+    // }
 
     return (
         <Modal show={show} onHide={() => onClose(updated)}>
@@ -97,7 +98,12 @@ export default function ManageDataModal({ show, onClose }) {
                     </Tab>
                     <Tab eventKey="runelite" title="Runelite Import">
                         <div className="text-center mt-3">
-                            <p className="text-left">
+                            <Alert variant="danger" className="small">
+                                <b>Runelite import is temporarily disabled!</b> A game update today changed multiple tasks
+                                and introduced some bugs in the plugin logic. Thanks for your patience as we investigate and
+                                fix this issue. Plugin import will be re-enabled as soon as it's fixed.
+                            </Alert>
+                            <p className="text-left" style={{textDecoration: 'line-through'}}>
                                 <h5>How to use:</h5>
                                 <ol>
                                     <li>Install the "OsLeague" plugin using the <a href={pluginHubLink} target="_blank" rel="noopener noreferrer">plugin hub</a></li>
@@ -106,7 +112,7 @@ export default function ManageDataModal({ show, onClose }) {
                                     <li>Paste the copied text into the box below</li>
                                 </ol>
                             </p>
-                            <InputGroup>
+                            {/* <InputGroup>
                                 <InputGroup.Prepend>
                                     <InputGroup.Text>Paste copied data from Runelite:</InputGroup.Text>
                                 </InputGroup.Prepend>
@@ -117,7 +123,7 @@ export default function ManageDataModal({ show, onClose }) {
                             </InputGroup>
                             <Button onClick={loadRuneliteImport} variant="dark" className="m-2">
                                 Import
-                            </Button>
+                            </Button> */}
                             {errorText && <p className="text-danger small">{errorText}</p>}
                             {successText && (
                                 <p className="text-success small">{successText}</p>
