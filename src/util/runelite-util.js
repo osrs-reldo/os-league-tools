@@ -16,7 +16,7 @@ const RELIC_ENUM_TO_NAME = {
     DOUBLE_CAST: "Double Cast",
     TREASURE_SEEKER: "Treasure Seeker",
     UNNATURAL_SELECTION: "Unnatural Selection",
-    BOTANIST: "Botanist",
+    THE_BOTANIST: "Botanist",
     INFERNAL_GATHERING: "Infernal Gathering",
     EQUILIBRIUM: "Equilibrium",
     DRAINING_STRIKES: "Draining Strikes",
@@ -93,7 +93,7 @@ function runeliteJsonToStorageFormat(json) {
     storageFormat[LOCALSTORAGE_KEYS.TASKS] = JSON.stringify(extractRuneliteTasks(parsedJson));
     storageFormat[LOCALSTORAGE_KEYS.UNLOCKED_REGIONS] = JSON.stringify(extractRuneliteAreas(parsedJson));
     storageFormat[LOCALSTORAGE_KEYS.UNLOCKED_RELICS] = JSON.stringify(extractRuneliteRelics(parsedJson));
-    
+
     return storageFormat;
 }
 
