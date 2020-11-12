@@ -1,6 +1,7 @@
 import { getFromLocalStorage, LOCALSTORAGE_KEYS, updateLocalStorage } from "./browser-util";
 import taskData from '../resources/taskData.json';
 import relicData from '../resources/relicData.json';
+import { INITIAL_TASKS_STATE_V3 } from '../hooks/useTaskStatus';
 
 const TASKS_BY_NAME = getTaskLookupByName();
 const RELICS_BY_NAME = getRelicLookupByName();
@@ -30,11 +31,9 @@ export async function updateLocalStorageFromRuneliteJson(json) {
         for (let [key, value] of Object.entries(runeliteImport)) {
             if (key === "tasks") {
                 const tasksImport = JSON.parse(value);
-                let tasks = getFromLocalStorage("tasks", {version:0, tasks:[], hidden:[], todoList:[]});
+                const tasks = getFromLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE_V3);
                 tasks.tasks = tasksImport;
-                tasks.version = 3;
                 updateLocalStorage("tasks", tasks);
-
             } else {
                 updateLocalStorage(key, JSON.parse(value));
             }
@@ -47,7 +46,7 @@ export async function updateLocalStorageFromRuneliteJson(json) {
     catch (e) {
         return {
             success: false,
-            message: "Error parsing the import data: " + e
+            message: "Error parsing the import data: " + e.message
         };
     }
 }
@@ -74,18 +73,23 @@ function getRelicLookupByName() {
     return lookup;
 }
 
-function isValidRuneliteJson(json)
-{
+function isValidRuneliteJson(json) {
     return (
         json.hasOwnProperty("relics") &&
         json.hasOwnProperty("areas") &&
-        json.hasOwnProperty("tasks"));
+        json.hasOwnProperty("tasks")
+    );
+}
+
+function isOldVersion(json) {
+    return json.hasOwnProperty("unlockedRegions");
 }
 
 function runeliteJsonToStorageFormat(json) {
     const parsedJson = JSON.parse(json);
-    if(!isValidRuneliteJson(parsedJson))
-    {
+    if (isOldVersion(parsedJson)) {
+        throw new Error("Your Runelite plugin is out of date! Update your client by closing and reopening Runelite, then try importing again.");
+    } else if (!isValidRuneliteJson(parsedJson)) {
         throw new Error("The Runelite import data is invalid.");
     }
 
@@ -102,7 +106,9 @@ function extractRuneliteTasks(runeliteJson) {
         .filter(task => task.completed)
         .map(task => {
             const match = TASKS_BY_NAME[sanitizeTaskName(task.name)];
-            if (!match) throw new Error("Task match not found for " + task.name);
+            if (!match) {
+                throw new Error("Task match not found for " + task.name);
+            }
             return match.id;
         });
 
@@ -117,9 +123,13 @@ function extractRuneliteRelics(runeliteJson) {
     const relics = {};
     runeliteJson.relics.forEach(relic => {
         const relicName = RELIC_ENUM_TO_NAME[relic];
-        if (!relicName) throw new Error("Relic name not found for enum: " + relic);
+        if (!relicName) {
+            throw new Error("Relic name not found for enum: " + relic);
+        }
         const matched = RELICS_BY_NAME[relicName];
-        if (!matched) throw new Error("Relic match not found for " + relicName);
+        if (!matched) {
+            throw new Error("Relic match not found for " + relicName);
+        }
         relics[matched.slot] = matched.relic;
     });
 
@@ -127,7 +137,9 @@ function extractRuneliteRelics(runeliteJson) {
 }
 
 function toPascalCase(areaName) {
-    if (typeof areaName !== "string") return "";
+    if (typeof areaName !== "string") {
+        return "";
+    }
     areaName = areaName.toLowerCase();
     return areaName.charAt(0).toUpperCase() + areaName.slice(1);
 }

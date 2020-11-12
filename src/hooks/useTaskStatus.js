@@ -11,7 +11,7 @@ const INITIAL_TASKS_STATE_V2 = {
     tasks: [],
     todoList: []
 }
-const INITIAL_TASKS_STATE_V3 = {
+export const INITIAL_TASKS_STATE_V3 = {
     version: 3,
     tasks: [],
     todoList: [],
