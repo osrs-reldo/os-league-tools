@@ -1,5 +1,5 @@
 {
-    "Burn Some Oak Logs": {
+    "50": {
         "skills": [
             {
                 "name": "Firemaking",
@@ -7,7 +7,7 @@
             }
         ]
     },
-    "Catch a Baby Impling": {
+    "52": {
         "skills": [
             {
                 "name": "Hunter",
@@ -15,7 +15,7 @@
             }
         ]
     },
-    "Catch a Herring": {
+    "38": {
         "skills": [
             {
                 "name": "Fishing",
@@ -23,7 +23,7 @@
             }
         ]
     },
-    "Catch an Anchovy": {
+    "39": {
         "skills": [
             {
                 "name": "Fishing",
@@ -31,7 +31,7 @@
             }
         ]
     },
-    "Chop Some Logs With a Steel Axe": {
+    "19": {
         "skills": [
             {
                 "name": "Woodcutting",
@@ -39,7 +39,7 @@
             }
         ]
     },
-    "Clean a Grimy Guam": {
+    "56": {
         "skills": [
             {
                 "name": "Herblore",
@@ -47,7 +47,7 @@
             }
         ]
     },
-    "Complete a Rooftop Agility Course": {
+    "55": {
         "skills": [
             {
                 "name": "Agility",
@@ -55,11 +55,11 @@
             }
         ]
     },
-    "Complete the Easy Western Provinces Diary": {
+    "82": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Craft a Leather Body": {
+    "36": {
         "skills": [
             {
                 "name": "Crafting",
@@ -67,7 +67,7 @@
             }
         ]
     },
-    "Cut a Sapphire": {
+    "35": {
         "skills": [
             {
                 "name": "Crafting",
@@ -75,7 +75,7 @@
             }
         ]
     },
-    "Earn Some Slayer Points": {
+    "32": {
         "skills": [
             {
                 "name": "Combat",
@@ -83,7 +83,7 @@
             }
         ]
     },
-    "Equip a Full Mithril Set": {
+    "63": {
         "skills": [
             {
                 "name": "Defence",
@@ -91,7 +91,7 @@
             }
         ]
     },
-    "Equip a Maple Shortbow": {
+    "65": {
         "skills": [
             {
                 "name": "Ranged",
@@ -99,7 +99,7 @@
             }
         ]
     },
-    "Equip a Mithril Weapon": {
+    "62": {
         "skills": [
             {
                 "name": "Attack",
@@ -107,7 +107,7 @@
             }
         ]
     },
-    "Equip a Spiny Helmet": {
+    "31": {
         "skills": [
             {
                 "name": "Defence",
@@ -115,7 +115,7 @@
             }
         ]
     },
-    "Equip a Studded Body and Chaps": {
+    "64": {
         "skills": [
             {
                 "name": "Ranged",
@@ -127,7 +127,7 @@
             }
         ]
     },
-    "Fletch 150 Iron Arrows": {
+    "29": {
         "skills": [
             {
                 "name": "Fletching",
@@ -135,7 +135,7 @@
             }
         ]
     },
-    "Fletch an Oak Shortbow": {
+    "28": {
         "skills": [
             {
                 "name": "Fletching",
@@ -143,7 +143,7 @@
             }
         ]
     },
-    "Make an Attack Potion": {
+    "57": {
         "skills": [
             {
                 "name": "Herblore",
@@ -151,7 +151,7 @@
             }
         ]
     },
-    "Mine some Ore With a Steel Pickaxe": {
+    "25": {
         "skills": [
             {
                 "name": "Mining",
@@ -159,7 +159,7 @@
             }
         ]
     },
-    "Obtain a Mark of Grace": {
+    "54": {
         "skills": [
             {
                 "name": "Agility",
@@ -167,7 +167,7 @@
             }
         ]
     },
-    "Restore 5 Prayer Points at an Altar": {
+    "70": {
         "skills": [
             {
                 "name": "Prayer",
@@ -175,7 +175,7 @@
             }
         ]
     },
-    "Smelt an Iron Bar": {
+    "41": {
         "skills": [
             {
                 "name": "Smithing",
@@ -183,7 +183,7 @@
             }
         ]
     },
-    "Smith 150 Iron Arrowtips": {
+    "42": {
         "skills": [
             {
                 "name": "Smithing",
@@ -191,7 +191,7 @@
             }
         ]
     },
-    "Steal a Chocolate Slice": {
+    "14": {
         "skills": [
             {
                 "name": "Thieving",
@@ -199,7 +199,7 @@
             }
         ]
     },
-    "Superhuman Strength and Improved Reflexes": {
+    "71": {
         "skills": [
             {
                 "name": "Prayer",
@@ -207,7 +207,7 @@
             }
         ]
     },
-    "Pickpocket a Guard": {
+    "92": {
         "skills": [
             {
                 "name": "Thieving",
@@ -215,7 +215,7 @@
             }
         ]
     },
-    "Obtain 800 Coins From Coin Pouches At Once": {
+    "93": {
         "skills": [
             {
                 "name": "Thieving",
@@ -223,7 +223,7 @@
             }
         ]
     },
-    "Pickpocket a Ranarr Seed": {
+    "94": {
         "skills": [
             {
                 "name": "Thieving",
@@ -231,7 +231,7 @@
             }
         ]
     },
-    "Harvest an Irit Leaf": {
+    "95": {
         "skills": [
             {
                 "name": "Farming",
@@ -239,7 +239,7 @@
             }
         ]
     },
-    "Check a grown Fruit Tree": {
+    "97": {
         "skills": [
             {
                 "name": "Farming",
@@ -247,7 +247,7 @@
             }
         ]
     },
-    "Chop 100 Willow Logs": {
+    "98": {
         "skills": [
             {
                 "name": "Woodcutting",
@@ -255,7 +255,7 @@
             }
         ]
     },
-    "Chop Some Logs With a Rune Axe": {
+    "99": {
         "skills": [
             {
                 "name": "Woodcutting",
@@ -263,7 +263,7 @@
             }
         ]
     },
-    "Build a Waka Canoe": {
+    "100": {
         "skills": [
             {
                 "name": "Woodcutting",
@@ -271,7 +271,7 @@
             }
         ]
     },
-    "Ferment 100 Jugs of Wine": {
+    "101": {
         "skills": [
             {
                 "name": "Cooking",
@@ -279,7 +279,7 @@
             }
         ]
     },
-    "Cook 100 Lobsters": {
+    "102": {
         "skills": [
             {
                 "name": "Cooking",
@@ -287,7 +287,7 @@
             }
         ]
     },
-    "Make a Pineapple Pizza": {
+    "103": {
         "skills": [
             {
                 "name": "Cooking",
@@ -295,7 +295,7 @@
             }
         ]
     },
-    "Mine 50 Iron Ore": {
+    "104": {
         "skills": [
             {
                 "name": "Mining",
@@ -303,7 +303,7 @@
             }
         ]
     },
-    "Mine some Ore With a Rune Pickaxe": {
+    "105": {
         "skills": [
             {
                 "name": "Mining",
@@ -311,7 +311,7 @@
             }
         ]
     },
-    "Fletch a Willow Shortbow": {
+    "107": {
         "skills": [
             {
                 "name": "Fletching",
@@ -319,7 +319,7 @@
             }
         ]
     },
-    "Create a Mithril Grapple": {
+    "108": {
         "skills": [
             {
                 "name": "Fletching",
@@ -327,7 +327,7 @@
             }
         ]
     },
-    "Fletch some Broad Arrows or Bolts": {
+    "109": {
         "skills": [
             {
                 "name": "Fletching",
@@ -335,7 +335,7 @@
             }
         ]
     },
-    "Defeat a Superior Slayer Creature": {
+    "112": {
         "skills": [
             {
                 "name": "Slayer",
@@ -343,7 +343,7 @@
             }
         ]
     },
-    "Craft 100 Unpowered Orbs": {
+    "113": {
         "skills": [
             {
                 "name": "Crafting",
@@ -351,7 +351,7 @@
             }
         ]
     },
-    "Craft an Emerald Ring": {
+    "114": {
         "skills": [
             {
                 "name": "Crafting",
@@ -359,7 +359,7 @@
             }
         ]
     },
-    "Craft a Ruby Amulet": {
+    "115": {
         "skills": [
             {
                 "name": "Crafting",
@@ -367,7 +367,7 @@
             }
         ]
     },
-    "Catch 100 Lobsters": {
+    "116": {
         "skills": [
             {
                 "name": "Fishing",
@@ -375,7 +375,7 @@
             }
         ]
     },
-    "Catch 50 Swordfish": {
+    "117": {
         "skills": [
             {
                 "name": "Fishing",
@@ -383,7 +383,7 @@
             }
         ]
     },
-    "Catch 50 Salmon": {
+    "118": {
         "skills": [
             {
                 "name": "Fishing",
@@ -391,7 +391,7 @@
             }
         ]
     },
-    "Smith a Steel Platebody": {
+    "119": {
         "skills": [
             {
                 "name": "Smithing",
@@ -399,7 +399,7 @@
             }
         ]
     },
-    "Smelt a Steel Bar": {
+    "120": {
         "skills": [
             {
                 "name": "Smithing",
@@ -407,7 +407,7 @@
             }
         ]
     },
-    "Build a Mahogany Portal": {
+    "121": {
         "skills": [
             {
                 "name": "Construction",
@@ -415,7 +415,7 @@
             }
         ]
     },
-    "Build an Oak Larder": {
+    "122": {
         "skills": [
             {
                 "name": "Construction",
@@ -423,7 +423,7 @@
             }
         ]
     },
-    "Fill a Medium S.T.A.S.H. Unit": {
+    "123": {
         "skills": [
             {
                 "name": "Construction",
@@ -431,7 +431,7 @@
             }
         ]
     },
-    "Craft 4 Runes With 1 Essence": {
+    "125": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -439,7 +439,7 @@
             }
         ]
     },
-    "Craft Any Combination Rune": {
+    "126": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -447,7 +447,7 @@
             }
         ]
     },
-    "Burn 100 Willow Logs": {
+    "127": {
         "skills": [
             {
                 "name": "Firemaking",
@@ -455,7 +455,7 @@
             }
         ]
     },
-    "Equip a Harpie Bug Lantern": {
+    "128": {
         "skills": [
             {
                 "name": "Firemaking",
@@ -467,7 +467,7 @@
             }
         ]
     },
-    "Light a Bullseye Lantern": {
+    "129": {
         "skills": [
             {
                 "name": "Firemaking",
@@ -475,7 +475,7 @@
             }
         ]
     },
-    "Equip full Graahk, Larupia or Kyatt": {
+    "130": {
         "skills": [
             {
                 "name": "Hunter",
@@ -483,7 +483,7 @@
             }
         ]
     },
-    "Catch a Swamp Lizard or Salamander": {
+    "131": {
         "skills": [
             {
                 "name": "Hunter",
@@ -491,7 +491,7 @@
             }
         ]
     },
-    "Catch a Butterfly": {
+    "132": {
         "skills": [
             {
                 "name": "Hunter",
@@ -499,7 +499,7 @@
             }
         ]
     },
-    "Complete 50 Laps of a Rooftop Agility Course": {
+    "133": {
         "skills": [
             {
                 "name": "Agility",
@@ -507,7 +507,7 @@
             }
         ]
     },
-    "Make 30 Prayer Potions": {
+    "134": {
         "skills": [
             {
                 "name": "Herblore",
@@ -515,7 +515,7 @@
             }
         ]
     },
-    "Clean a Grimy Avantoe": {
+    "135": {
         "skills": [
             {
                 "name": "Herblore",
@@ -523,7 +523,7 @@
             }
         ]
     },
-    "Make a Potion With an Amulet of Chemistry": {
+    "136": {
         "skills": [
             {
                 "name": "Crafting",
@@ -533,9 +533,10 @@
                 "name": "Magic",
                 "level": "27"
             }
-        ]
+        ],
+        "notes": "Botanist Relic or skill requirements for Amulet of Chemistry"
     },
-    "Equip an Adamant Weapon": {
+    "140": {
         "skills": [
             {
                 "name": "Attack",
@@ -543,7 +544,7 @@
             }
         ]
     },
-    "Equip a Rune Weapon": {
+    "141": {
         "skills": [
             {
                 "name": "Attack",
@@ -551,7 +552,7 @@
             }
         ]
     },
-    "Equip a Full Adamant Set": {
+    "142": {
         "skills": [
             {
                 "name": "Defence",
@@ -559,7 +560,7 @@
             }
         ]
     },
-    "Equip a Full Rune Set": {
+    "143": {
         "skills": [
             {
                 "name": "Defence",
@@ -567,7 +568,7 @@
             }
         ]
     },
-    "Equip a Full Green Dragonhide Set": {
+    "144": {
         "skills": [
             {
                 "name": "Ranged",
@@ -579,7 +580,7 @@
             }
         ]
     },
-    "Equip a Full Blue Dragonhide Set": {
+    "145": {
         "skills": [
             {
                 "name": "Ranged",
@@ -591,7 +592,7 @@
             }
         ]
     },
-    "Equip a Full Red Dragonhide Set": {
+    "146": {
         "skills": [
             {
                 "name": "Ranged",
@@ -603,7 +604,7 @@
             }
         ]
     },
-    "Equip a Yew Shortbow": {
+    "147": {
         "skills": [
             {
                 "name": "Ranged",
@@ -611,7 +612,7 @@
             }
         ]
     },
-    "Equip an Elemental Battlestaff or Mystic Staff": {
+    "148": {
         "skills": [
             {
                 "name": "Magic",
@@ -623,7 +624,7 @@
             }
         ]
     },
-    "Cast a Blast Spell": {
+    "149": {
         "skills": [
             {
                 "name": "Magic",
@@ -631,7 +632,7 @@
             }
         ]
     },
-    "Teleport Using Law Runes": {
+    "150": {
         "skills": [
             {
                 "name": "Magic",
@@ -639,7 +640,7 @@
             }
         ]
     },
-    "Cast High Level Alchemy": {
+    "151": {
         "skills": [
             {
                 "name": "Magic",
@@ -647,7 +648,7 @@
             }
         ]
     },
-    "Equip a Piece of a Mystic Set": {
+    "152": {
         "skills": [
             {
                 "name": "Magic",
@@ -659,7 +660,7 @@
             }
         ]
     },
-    "Use the Protect from Melee Prayer": {
+    "153": {
         "skills": [
             {
                 "name": "Prayer",
@@ -667,11 +668,11 @@
             }
         ]
     },
-    "Complete the Medium Western Provinces Diary": {
+    "172": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Steal From a Gem Stall": {
+    "180": {
         "skills": [
             {
                 "name": "Thieving",
@@ -679,7 +680,7 @@
             }
         ]
     },
-    "Check a grown Palm Tree": {
+    "181": {
         "skills": [
             {
                 "name": "Farming",
@@ -687,7 +688,7 @@
             }
         ]
     },
-    "Dig Up Some Magic Roots": {
+    "182": {
         "skills": [
             {
                 "name": "Farming",
@@ -695,7 +696,7 @@
             }
         ]
     },
-    "Chop 75 Magic Logs": {
+    "183": {
         "skills": [
             {
                 "name": "Woodcutting",
@@ -703,7 +704,7 @@
             }
         ]
     },
-    "Cook 100 Sharks": {
+    "184": {
         "skills": [
             {
                 "name": "Cooking",
@@ -711,7 +712,7 @@
             }
         ]
     },
-    "Mine 50 Adamantite Ore": {
+    "185": {
         "skills": [
             {
                 "name": "Mining",
@@ -719,7 +720,7 @@
             }
         ]
     },
-    "Fletch a Magic Shortbow": {
+    "186": {
         "skills": [
             {
                 "name": "Fletching",
@@ -727,7 +728,7 @@
             }
         ]
     },
-    "Fletch a Rune Crossbow": {
+    "187": {
         "skills": [
             {
                 "name": "Fletching",
@@ -735,7 +736,7 @@
             }
         ]
     },
-    "Defeat a Slayer Boss": {
+    "188": {
         "skills": [
             {
                 "name": "Slayer",
@@ -743,7 +744,7 @@
             }
         ]
     },
-    "Defeat 10 Superior Slayer Creatures": {
+    "191": {
         "skills": [
             {
                 "name": "Slayer",
@@ -751,7 +752,7 @@
             }
         ]
     },
-    "Defeat 20 Superior Slayer Creatures": {
+    "192": {
         "skills": [
             {
                 "name": "Slayer",
@@ -759,7 +760,7 @@
             }
         ]
     },
-    "Craft a Dragonstone Amulet": {
+    "193": {
         "skills": [
             {
                 "name": "Crafting",
@@ -767,7 +768,7 @@
             }
         ]
     },
-    "Craft 30 Blue Dragonhide Bodies": {
+    "194": {
         "skills": [
             {
                 "name": "Crafting",
@@ -775,7 +776,7 @@
             }
         ]
     },
-    "Catch 100 Shark": {
+    "195": {
         "skills": [
             {
                 "name": "Fishing",
@@ -783,7 +784,7 @@
             }
         ]
     },
-    "Smelt a Runite Bar": {
+    "196": {
         "skills": [
             {
                 "name": "Smithing",
@@ -791,7 +792,7 @@
             }
         ]
     },
-    "Fill a Hard S.T.A.S.H. Unit": {
+    "197": {
         "skills": [
             {
                 "name": "Construction",
@@ -799,7 +800,7 @@
             }
         ]
     },
-    "Build an Achievement Gallery": {
+    "198": {
         "skills": [
             {
                 "name": "Construction",
@@ -807,7 +808,7 @@
             }
         ]
     },
-    "Burn 100 Yew Logs": {
+    "200": {
         "skills": [
             {
                 "name": "Firemaking",
@@ -815,7 +816,7 @@
             }
         ]
     },
-    "Burn Some Magic Logs": {
+    "201": {
         "skills": [
             {
                 "name": "Firemaking",
@@ -823,7 +824,7 @@
             }
         ]
     },
-    "Catch a Dragon Impling": {
+    "202": {
         "skills": [
             {
                 "name": "Hunter",
@@ -831,7 +832,7 @@
             }
         ]
     },
-    "Complete 250 Laps of a Rooftop Agility Course": {
+    "203": {
         "skills": [
             {
                 "name": "Agility",
@@ -839,7 +840,7 @@
             }
         ]
     },
-    "Make a Saradomin Brew": {
+    "204": {
         "skills": [
             {
                 "name": "Herblore",
@@ -847,7 +848,7 @@
             }
         ]
     },
-    "Clean 100 Grimy Dwarf Weed": {
+    "205": {
         "skills": [
             {
                 "name": "Herblore",
@@ -855,7 +856,7 @@
             }
         ]
     },
-    "Equip a Dragon Weapon": {
+    "208": {
         "skills": [
             {
                 "name": "Attack",
@@ -863,7 +864,7 @@
             }
         ]
     },
-    "Equip a Full Black Dragonhide Set": {
+    "209": {
         "skills": [
             {
                 "name": "Ranged",
@@ -875,7 +876,7 @@
             }
         ]
     },
-    "Equip a Magic Shortbow": {
+    "210": {
         "skills": [
             {
                 "name": "Ranged",
@@ -883,7 +884,7 @@
             }
         ]
     },
-    "Equip a Rune Crossbow": {
+    "211": {
         "skills": [
             {
                 "name": "Ranged",
@@ -891,7 +892,7 @@
             }
         ]
     },
-    "Equip a Combination Battlestaff or Mystic Staff": {
+    "212": {
         "skills": [
             {
                 "name": "Magic",
@@ -903,7 +904,7 @@
             }
         ]
     },
-    "Cast a Wave Spell": {
+    "213": {
         "skills": [
             {
                 "name": "Magic",
@@ -911,7 +912,7 @@
             }
         ]
     },
-    "Cast a Surge Spell": {
+    "214": {
         "skills": [
             {
                 "name": "Magic",
@@ -919,7 +920,7 @@
             }
         ]
     },
-    "Restore 75 Prayer Points at an Altar": {
+    "215": {
         "skills": [
             {
                 "name": "Prayer",
@@ -927,11 +928,11 @@
             }
         ]
     },
-    "Complete the Hard Western Provinces Diary": {
+    "240": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Reach Level 99 Attack": {
+    "248": {
         "skills": [
             {
                 "name": "Attack",
@@ -939,7 +940,7 @@
             }
         ]
     },
-    "Obtain 25 Million Attack XP": {
+    "249": {
         "skills": [
             {
                 "name": "Attack",
@@ -947,7 +948,7 @@
             }
         ]
     },
-    "Reach Level 99 Strength": {
+    "250": {
         "skills": [
             {
                 "name": "Strength",
@@ -955,7 +956,7 @@
             }
         ]
     },
-    "Obtain 25 Million Strength XP": {
+    "251": {
         "skills": [
             {
                 "name": "Strength",
@@ -963,7 +964,7 @@
             }
         ]
     },
-    "Reach Level 99 Defence": {
+    "252": {
         "skills": [
             {
                 "name": "Defence",
@@ -971,7 +972,7 @@
             }
         ]
     },
-    "Obtain 25 Million Defence XP": {
+    "253": {
         "skills": [
             {
                 "name": "Defence",
@@ -979,7 +980,7 @@
             }
         ]
     },
-    "Reach Level 99 Ranged": {
+    "254": {
         "skills": [
             {
                 "name": "Ranged",
@@ -987,7 +988,7 @@
             }
         ]
     },
-    "Obtain 25 Million Ranged XP": {
+    "255": {
         "skills": [
             {
                 "name": "Ranged",
@@ -995,7 +996,7 @@
             }
         ]
     },
-    "Reach Level 99 Prayer": {
+    "256": {
         "skills": [
             {
                 "name": "Prayer",
@@ -1003,7 +1004,7 @@
             }
         ]
     },
-    "Obtain 25 Million Prayer XP": {
+    "257": {
         "skills": [
             {
                 "name": "Prayer",
@@ -1011,7 +1012,7 @@
             }
         ]
     },
-    "Reach Level 99 Magic": {
+    "258": {
         "skills": [
             {
                 "name": "Magic",
@@ -1019,7 +1020,7 @@
             }
         ]
     },
-    "Obtain 25 Million Magic XP": {
+    "259": {
         "skills": [
             {
                 "name": "Magic",
@@ -1027,7 +1028,7 @@
             }
         ]
     },
-    "Reach Level 99 Runecraft": {
+    "260": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -1035,7 +1036,7 @@
             }
         ]
     },
-    "Obtain 25 Million Runecraft XP": {
+    "261": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -1043,7 +1044,7 @@
             }
         ]
     },
-    "Reach Level 99 Construction": {
+    "262": {
         "skills": [
             {
                 "name": "Construction",
@@ -1051,7 +1052,7 @@
             }
         ]
     },
-    "Obtain 25 Million Construction XP": {
+    "263": {
         "skills": [
             {
                 "name": "Construction",
@@ -1059,7 +1060,7 @@
             }
         ]
     },
-    "Reach Level 99 Hitpoints": {
+    "264": {
         "skills": [
             {
                 "name": "Hitpoints",
@@ -1067,7 +1068,7 @@
             }
         ]
     },
-    "Obtain 25 Million Hitpoints XP": {
+    "265": {
         "skills": [
             {
                 "name": "Hitpoints",
@@ -1075,7 +1076,7 @@
             }
         ]
     },
-    "Reach Level 99 Agility": {
+    "266": {
         "skills": [
             {
                 "name": "Agility",
@@ -1083,7 +1084,7 @@
             }
         ]
     },
-    "Obtain 25 Million Agility XP": {
+    "267": {
         "skills": [
             {
                 "name": "Agility",
@@ -1091,7 +1092,7 @@
             }
         ]
     },
-    "Reach Level 99 Herblore": {
+    "268": {
         "skills": [
             {
                 "name": "Herblore",
@@ -1099,7 +1100,7 @@
             }
         ]
     },
-    "Obtain 25 Million Herblore XP": {
+    "269": {
         "skills": [
             {
                 "name": "Herblore",
@@ -1107,7 +1108,7 @@
             }
         ]
     },
-    "Reach Level 99 Thieving": {
+    "270": {
         "skills": [
             {
                 "name": "Thieving",
@@ -1115,7 +1116,7 @@
             }
         ]
     },
-    "Obtain 25 Million Thieving XP": {
+    "271": {
         "skills": [
             {
                 "name": "Thieving",
@@ -1123,7 +1124,7 @@
             }
         ]
     },
-    "Reach Level 99 Crafting": {
+    "272": {
         "skills": [
             {
                 "name": "Crafting",
@@ -1131,7 +1132,7 @@
             }
         ]
     },
-    "Obtain 25 Million Crafting XP": {
+    "273": {
         "skills": [
             {
                 "name": "Crafting",
@@ -1139,7 +1140,7 @@
             }
         ]
     },
-    "Reach Level 99 Fletching": {
+    "274": {
         "skills": [
             {
                 "name": "Fletching",
@@ -1147,7 +1148,7 @@
             }
         ]
     },
-    "Obtain 25 Million Fletching XP": {
+    "275": {
         "skills": [
             {
                 "name": "Fletching",
@@ -1155,7 +1156,7 @@
             }
         ]
     },
-    "Reach Level 99 Slayer": {
+    "276": {
         "skills": [
             {
                 "name": "Slayer",
@@ -1163,7 +1164,7 @@
             }
         ]
     },
-    "Obtain 25 Million Slayer XP": {
+    "277": {
         "skills": [
             {
                 "name": "Slayer",
@@ -1171,7 +1172,7 @@
             }
         ]
     },
-    "Reach Level 99 Hunter": {
+    "278": {
         "skills": [
             {
                 "name": "Hunter",
@@ -1179,7 +1180,7 @@
             }
         ]
     },
-    "Obtain 25 Million Hunter XP": {
+    "279": {
         "skills": [
             {
                 "name": "Hunter",
@@ -1187,7 +1188,7 @@
             }
         ]
     },
-    "Reach Level 99 Mining": {
+    "280": {
         "skills": [
             {
                 "name": "Mining",
@@ -1195,7 +1196,7 @@
             }
         ]
     },
-    "Obtain 25 Million Mining XP": {
+    "281": {
         "skills": [
             {
                 "name": "Mining",
@@ -1203,7 +1204,7 @@
             }
         ]
     },
-    "Reach Level 99 Smithing": {
+    "282": {
         "skills": [
             {
                 "name": "Smithing",
@@ -1211,7 +1212,7 @@
             }
         ]
     },
-    "Obtain 25 Million Smithing XP": {
+    "283": {
         "skills": [
             {
                 "name": "Smithing",
@@ -1219,7 +1220,7 @@
             }
         ]
     },
-    "Reach Level 99 Fishing": {
+    "284": {
         "skills": [
             {
                 "name": "Fishing",
@@ -1227,7 +1228,7 @@
             }
         ]
     },
-    "Obtain 25 Million Fishing XP": {
+    "285": {
         "skills": [
             {
                 "name": "Fishing",
@@ -1235,7 +1236,7 @@
             }
         ]
     },
-    "Reach Level 99 Cooking": {
+    "286": {
         "skills": [
             {
                 "name": "Cooking",
@@ -1243,7 +1244,7 @@
             }
         ]
     },
-    "Obtain 25 Million Cooking XP": {
+    "287": {
         "skills": [
             {
                 "name": "Cooking",
@@ -1251,7 +1252,7 @@
             }
         ]
     },
-    "Reach Level 99 Firemaking": {
+    "288": {
         "skills": [
             {
                 "name": "Firemaking",
@@ -1259,7 +1260,7 @@
             }
         ]
     },
-    "Obtain 25 Million Firemaking XP": {
+    "289": {
         "skills": [
             {
                 "name": "Firemaking",
@@ -1267,7 +1268,7 @@
             }
         ]
     },
-    "Reach Level 99 Woodcutting": {
+    "290": {
         "skills": [
             {
                 "name": "Woodcutting",
@@ -1275,7 +1276,7 @@
             }
         ]
     },
-    "Obtain 25 Million Woodcutting XP": {
+    "291": {
         "skills": [
             {
                 "name": "Woodcutting",
@@ -1283,7 +1284,7 @@
             }
         ]
     },
-    "Reach Level 99 Farming": {
+    "292": {
         "skills": [
             {
                 "name": "Farming",
@@ -1291,7 +1292,7 @@
             }
         ]
     },
-    "Obtain 25 Million Farming XP": {
+    "293": {
         "skills": [
             {
                 "name": "Farming",
@@ -1299,7 +1300,7 @@
             }
         ]
     },
-    "Travel Between Your Spirit Trees": {
+    "295": {
         "skills": [
             {
                 "name": "Farming",
@@ -1307,7 +1308,7 @@
             }
         ]
     },
-    "Slay an Abyssal Demon": {
+    "296": {
         "skills": [
             {
                 "name": "Slayer",
@@ -1315,7 +1316,7 @@
             }
         ]
     },
-    "Defeat 50 Superior Slayer Creatures": {
+    "298": {
         "skills": [
             {
                 "name": "Slayer",
@@ -1323,7 +1324,7 @@
             }
         ]
     },
-    "Craft an Onyx Amulet": {
+    "299": {
         "skills": [
             {
                 "name": "Crafting",
@@ -1331,7 +1332,7 @@
             }
         ]
     },
-    "Smith a Dragonfire Shield": {
+    "300": {
         "skills": [
             {
                 "name": "Smithing",
@@ -1339,7 +1340,7 @@
             }
         ]
     },
-    "Catch a Lucky Impling Bare-Handed": {
+    "301": {
         "skills": [
             {
                 "name": "Hunter",
@@ -1347,7 +1348,7 @@
             }
         ]
     },
-    "Make a Super Combat Potion": {
+    "302": {
         "skills": [
             {
                 "name": "Herblore",
@@ -1355,7 +1356,7 @@
             }
         ]
     },
-    "Equip a Full Dragon Set": {
+    "304": {
         "skills": [
             {
                 "name": "Defence",
@@ -1363,7 +1364,7 @@
             }
         ]
     },
-    "Equip an Abyssal Whip": {
+    "308": {
         "skills": [
             {
                 "name": "Attack",
@@ -1371,11 +1372,11 @@
             }
         ]
     },
-    "Complete the Elite Western Provinces Diary": {
+    "960": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Pickpocket a H.A.M. Member": {
+    "326": {
         "skills": [
             {
                 "name": "Thieving",
@@ -1383,7 +1384,7 @@
             }
         ]
     },
-    "Steal From the Varrock Tea Stall": {
+    "327": {
         "skills": [
             {
                 "name": "Thieving",
@@ -1391,7 +1392,7 @@
             }
         ]
     },
-    "Complete the Draynor Agility Course": {
+    "328": {
         "skills": [
             {
                 "name": "Agility",
@@ -1399,7 +1400,7 @@
             }
         ]
     },
-    "Craft 50 Water Runes": {
+    "329": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -1407,15 +1408,15 @@
             }
         ]
     },
-    "Complete the Easy Varrock Diary": {
+    "330": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Complete the Easy Lumbridge & Draynor Diary": {
+    "333": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Build a Bank on Fossil Island": {
+    "344": {
         "skills": [
             {
                 "name": "Construction",
@@ -1423,7 +1424,7 @@
             }
         ]
     },
-    "Dismantle 20 Filled Bird Houses": {
+    "349": {
         "skills": [
             {
                 "name": "Hunter",
@@ -1435,7 +1436,7 @@
             }
         ]
     },
-    "Build a Yew Bird House": {
+    "350": {
         "skills": [
             {
                 "name": "Hunter",
@@ -1447,7 +1448,7 @@
             }
         ]
     },
-    "Catch 50 Implings in Puro-Puro": {
+    "351": {
         "skills": [
             {
                 "name": "Hunter",
@@ -1455,7 +1456,7 @@
             }
         ]
     },
-    "Complete a Volcanic Mine Game": {
+    "352": {
         "skills": [
             {
                 "name": "Mining",
@@ -1463,7 +1464,7 @@
             }
         ]
     },
-    "Enter the Cooks' Guild": {
+    "353": {
         "skills": [
             {
                 "name": "Cooking",
@@ -1471,7 +1472,7 @@
             }
         ]
     },
-    "Pickpocket a Varrock Guard": {
+    "354": {
         "skills": [
             {
                 "name": "Thieving",
@@ -1479,7 +1480,7 @@
             }
         ]
     },
-    "Pickpocket a Bullseye Lantern From a Cave Goblin": {
+    "355": {
         "skills": [
             {
                 "name": "Thieving",
@@ -1487,7 +1488,7 @@
             }
         ]
     },
-    "Complete 30 Laps of the Draynor Agility Course": {
+    "356": {
         "skills": [
             {
                 "name": "Agility",
@@ -1495,7 +1496,7 @@
             }
         ]
     },
-    "Craft 50 Cosmic Runes": {
+    "357": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -1503,7 +1504,7 @@
             }
         ]
     },
-    "Chop a Sulliuscep Cap": {
+    "359": {
         "skills": [
             {
                 "name": "Woodcutting",
@@ -1511,11 +1512,11 @@
             }
         ]
     },
-    "Complete the Medium Varrock Diary": {
+    "360": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Defeat a Fossil Island Wyvern": {
+    "361": {
         "skills": [
             {
                 "name": "Slayer",
@@ -1523,7 +1524,7 @@
             }
         ]
     },
-    "Defeat a Wall Beast": {
+    "363": {
         "skills": [
             {
                 "name": "Slayer",
@@ -1531,7 +1532,7 @@
             }
         ]
     },
-    "Equip a Dorgeshuun Crossbow": {
+    "365": {
         "skills": [
             {
                 "name": "Ranged",
@@ -1539,11 +1540,11 @@
             }
         ]
     },
-    "Complete the Medium Lumbridge & Draynor Diary": {
+    "366": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Use a Digsite Pendant to Teleport to Fossil Island": {
+    "371": {
         "skills": [
             {
                 "name": "Crafting",
@@ -1555,7 +1556,7 @@
             }
         ]
     },
-    "Build a Magic Bird House": {
+    "373": {
         "skills": [
             {
                 "name": "Hunter",
@@ -1567,11 +1568,11 @@
             }
         ]
     },
-    "Complete the Hard Varrock Diary": {
+    "374": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Catch 200 Implings in Puro-Puro": {
+    "375": {
         "skills": [
             {
                 "name": "Hunter",
@@ -1579,7 +1580,7 @@
             }
         ]
     },
-    "Buy an Ash Covered Tome": {
+    "376": {
         "skills": [
             {
                 "name": "Mining",
@@ -1587,7 +1588,7 @@
             }
         ]
     },
-    "Check a grown Magic Tree in Lumbridge": {
+    "377": {
         "skills": [
             {
                 "name": "Farming",
@@ -1595,7 +1596,7 @@
             }
         ]
     },
-    "Check a grown Mahogany Tree": {
+    "378": {
         "skills": [
             {
                 "name": "Farming",
@@ -1603,7 +1604,7 @@
             }
         ]
     },
-    "Steal a Diamond in Dorgesh-Kaan": {
+    "379": {
         "skills": [
             {
                 "name": "Thieving",
@@ -1611,7 +1612,7 @@
             }
         ]
     },
-    "Take the Advanced Shortcut to the Cosmic Altar": {
+    "380": {
         "skills": [
             {
                 "name": "Agility",
@@ -1619,7 +1620,7 @@
             }
         ]
     },
-    "Equip a Hill Giant Club": {
+    "382": {
         "skills": [
             {
                 "name": "Attack",
@@ -1627,7 +1628,7 @@
             }
         ]
     },
-    "Equip Bryophyta's Staff": {
+    "383": {
         "skills": [
             {
                 "name": "Attack",
@@ -1639,7 +1640,7 @@
             }
         ]
     },
-    "Defeat the Abyssal Sire": {
+    "384": {
         "skills": [
             {
                 "name": "Slayer",
@@ -1647,7 +1648,7 @@
             }
         ]
     },
-    "Defeat an Ancient Wyvern": {
+    "385": {
         "skills": [
             {
                 "name": "Slayer",
@@ -1655,11 +1656,11 @@
             }
         ]
     },
-    "Complete the Hard Lumbridge & Draynor Diary": {
+    "386": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Catch a Herbiboar 100 Times": {
+    "387": {
         "skills": [
             {
                 "name": "Hunter",
@@ -1667,7 +1668,7 @@
             }
         ]
     },
-    "Catch a Herbiboar 250 Times": {
+    "388": {
         "skills": [
             {
                 "name": "Hunter",
@@ -1675,7 +1676,7 @@
             }
         ]
     },
-    "Catch a Herbiboar 500 Times": {
+    "389": {
         "skills": [
             {
                 "name": "Hunter",
@@ -1683,7 +1684,7 @@
             }
         ]
     },
-    "Receive a Torstol From a Herbiboar": {
+    "390": {
         "skills": [
             {
                 "name": "Hunter",
@@ -1695,11 +1696,11 @@
             }
         ]
     },
-    "Complete the Elite Varrock Diary": {
+    "391": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Mine a Runite Ore Fragment": {
+    "392": {
         "skills": [
             {
                 "name": "Mining",
@@ -1707,7 +1708,7 @@
             }
         ]
     },
-    "Equip a Dragon Crossbow": {
+    "393": {
         "skills": [
             {
                 "name": "Fletching",
@@ -1715,7 +1716,7 @@
             }
         ]
     },
-    "Equip a Dragonfire Shield": {
+    "394": {
         "skills": [
             {
                 "name": "Smithing",
@@ -1727,7 +1728,7 @@
             }
         ]
     },
-    "Equip an Ancient Wyvern Shield": {
+    "395": {
         "skills": [
             {
                 "name": "Smithing",
@@ -1743,7 +1744,7 @@
             }
         ]
     },
-    "Equip an Abyssal Bludgeon": {
+    "396": {
         "skills": [
             {
                 "name": "Slayer",
@@ -1751,7 +1752,7 @@
             }
         ]
     },
-    "Equip an Abyssal Dagger": {
+    "397": {
         "skills": [
             {
                 "name": "Slayer",
@@ -1759,7 +1760,7 @@
             }
         ]
     },
-    "Offer an Unsired to the Font of Consumption": {
+    "398": {
         "skills": [
             {
                 "name": "Slayer",
@@ -1767,7 +1768,7 @@
             }
         ]
     },
-    "Defeat the Abyssal Sire 100 Times": {
+    "399": {
         "skills": [
             {
                 "name": "Slayer",
@@ -1775,7 +1776,7 @@
             }
         ]
     },
-    "Defeat the Abyssal Sire 250 Times": {
+    "400": {
         "skills": [
             {
                 "name": "Slayer",
@@ -1783,7 +1784,7 @@
             }
         ]
     },
-    "Defeat the Abyssal Sire 500 Times": {
+    "401": {
         "skills": [
             {
                 "name": "Slayer",
@@ -1791,11 +1792,11 @@
             }
         ]
     },
-    "Complete the Elite Lumbridge & Draynor Diary": {
+    "402": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Equip a Dragon Platebody or Dragon Kiteshield": {
+    "403": {
         "skills": [
             {
                 "name": "Smithing",
@@ -1807,7 +1808,7 @@
             }
         ]
     },
-    "Catch a Karambwanji": {
+    "405": {
         "skills": [
             {
                 "name": "Fishing",
@@ -1815,7 +1816,7 @@
             }
         ]
     },
-    "Receive a Slayer Task From Duradel": {
+    "407": {
         "skills": [
             {
                 "name": "Combat",
@@ -1827,11 +1828,11 @@
             }
         ]
     },
-    "Complete the Easy Karamja Diary": {
+    "409": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Catch a Salmon on Karamja": {
+    "414": {
         "skills": [
             {
                 "name": "Fishing",
@@ -1839,7 +1840,7 @@
             }
         ]
     },
-    "Craft 50 Nature Runes": {
+    "415": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -1847,11 +1848,11 @@
             }
         ]
     },
-    "Complete the Medium Karamja Diary": {
+    "417": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Cook 100 Karambwans": {
+    "421": {
         "skills": [
             {
                 "name": "Cooking",
@@ -1859,7 +1860,7 @@
             }
         ]
     },
-    "Take a Shortcut Across the Shilo Village River": {
+    "422": {
         "skills": [
             {
                 "name": "Agility",
@@ -1867,7 +1868,7 @@
             }
         ]
     },
-    "Catch 100 Karambwans": {
+    "423": {
         "skills": [
             {
                 "name": "Fishing",
@@ -1875,7 +1876,7 @@
             }
         ]
     },
-    "Check a grown Calquat Tree": {
+    "424": {
         "skills": [
             {
                 "name": "Farming",
@@ -1883,7 +1884,7 @@
             }
         ]
     },
-    "Equip a Full Obsidian Armour Set": {
+    "425": {
         "skills": [
             {
                 "name": "Defence",
@@ -1891,7 +1892,7 @@
             }
         ]
     },
-    "Equip Some Dragon Platelegs or a Dragon Plateskirt": {
+    "427": {
         "skills": [
             {
                 "name": "Defence",
@@ -1899,7 +1900,7 @@
             }
         ]
     },
-    "Equip a Toktz-Ket-Xil": {
+    "429": {
         "skills": [
             {
                 "name": "Defence",
@@ -1907,7 +1908,7 @@
             }
         ]
     },
-    "Equip a Tzhaar-Ket-Om": {
+    "430": {
         "skills": [
             {
                 "name": "Strength",
@@ -1915,7 +1916,7 @@
             }
         ]
     },
-    "Equip a Toktz-Xil-Ak": {
+    "431": {
         "skills": [
             {
                 "name": "Attack",
@@ -1923,7 +1924,7 @@
             }
         ]
     },
-    "Equip a Toktz-Xil-Ek": {
+    "432": {
         "skills": [
             {
                 "name": "Attack",
@@ -1931,11 +1932,11 @@
             }
         ]
     },
-    "Complete the Hard Karamja Diary": {
+    "433": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Receive 60 Agility Arena Tickets With No Mistakes": {
+    "436": {
         "skills": [
             {
                 "name": "Agility",
@@ -1943,7 +1944,7 @@
             }
         ]
     },
-    "Pickpocket a Diamond From a TzHaar": {
+    "437": {
         "skills": [
             {
                 "name": "Thieving",
@@ -1951,11 +1952,11 @@
             }
         ]
     },
-    "Complete the Elite Karamja Diary": {
+    "447": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Craft an Air Rune": {
+    "453": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -1963,7 +1964,7 @@
             }
         ]
     },
-    "Move Your House to Taverley": {
+    "454": {
         "skills": [
             {
                 "name": "Construction",
@@ -1971,7 +1972,7 @@
             }
         ]
     },
-    "Receive a Slayer Task From Turael or Spria": {
+    "455": {
         "skills": [
             {
                 "name": "Slayer",
@@ -1979,11 +1980,11 @@
             }
         ]
     },
-    "Complete the Easy Falador Diary": {
+    "459": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Complete a Game of Novice Pest Control": {
+    "462": {
         "skills": [
             {
                 "name": "Combat",
@@ -1991,7 +1992,7 @@
             }
         ]
     },
-    "Complete the Falador Agility Course": {
+    "463": {
         "skills": [
             {
                 "name": "Agility",
@@ -1999,7 +2000,7 @@
             }
         ]
     },
-    "Obtain 20 Golden Nuggets": {
+    "464": {
         "skills": [
             {
                 "name": "Mining",
@@ -2007,7 +2008,7 @@
             }
         ]
     },
-    "Enter the Crafting Guild": {
+    "465": {
         "skills": [
             {
                 "name": "Crafting",
@@ -2015,7 +2016,7 @@
             }
         ]
     },
-    "Craft a Body Rune": {
+    "466": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -2023,7 +2024,7 @@
             }
         ]
     },
-    "Harvest Any Herb at the Troll Stronghold": {
+    "467": {
         "skills": [
             {
                 "name": "Farming",
@@ -2031,7 +2032,7 @@
             }
         ]
     },
-    "Defeat a Skeletal Wyvern": {
+    "469": {
         "skills": [
             {
                 "name": "Slayer",
@@ -2039,7 +2040,7 @@
             }
         ]
     },
-    "Equip Some Granite Legs": {
+    "470": {
         "skills": [
             {
                 "name": "Slayer",
@@ -2047,23 +2048,23 @@
             }
         ]
     },
-    "Charge an Amulet of Glory in the Heroes' Guild": {
+    "471": {
         "skills": [],
         "notes": "See quest page"
     },
-    "Complete the Medium Falador Diary": {
+    "473": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Enter the Warriors' Guild": {
+    "474": {
         "skills": [],
         "notes": "Combination of Attack and Strength >= 130"
     },
-    "Complete A Porcine of Interest": {
+    "475": {
         "skills": [],
         "notes": "See quest page"
     },
-    "Complete a Game of Intermediate Pest Control": {
+    "478": {
         "skills": [
             {
                 "name": "Combat",
@@ -2071,7 +2072,7 @@
             }
         ]
     },
-    "Equip a Full Rogue Outfit": {
+    "480": {
         "skills": [
             {
                 "name": "Thieving",
@@ -2083,7 +2084,7 @@
             }
         ]
     },
-    "Equip a Full Prospector Outfit": {
+    "481": {
         "skills": [
             {
                 "name": "Mining",
@@ -2091,7 +2092,7 @@
             }
         ]
     },
-    "Craft 50 Law Runes": {
+    "482": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -2099,7 +2100,7 @@
             }
         ]
     },
-    "Make 20 Ranging Potions": {
+    "483": {
         "skills": [
             {
                 "name": "Herblore",
@@ -2107,7 +2108,7 @@
             }
         ]
     },
-    "Make 20 Stamina Potions": {
+    "484": {
         "skills": [
             {
                 "name": "Herblore",
@@ -2115,7 +2116,7 @@
             }
         ]
     },
-    "Defeat K'ril Tsutsaroth": {
+    "486": {
         "skills": [
             {
                 "name": "Hitpoints",
@@ -2123,7 +2124,7 @@
             }
         ]
     },
-    "Defeat General Graardor": {
+    "487": {
         "skills": [
             {
                 "name": "Strength",
@@ -2131,7 +2132,7 @@
             }
         ]
     },
-    "Defeat Kree'arra": {
+    "488": {
         "skills": [
             {
                 "name": "Ranged",
@@ -2139,7 +2140,7 @@
             }
         ]
     },
-    "Defeat Commander Zilyana": {
+    "489": {
         "skills": [
             {
                 "name": "Agility",
@@ -2147,7 +2148,7 @@
             }
         ]
     },
-    "Equip a Pair of Dragon Boots": {
+    "490": {
         "skills": [
             {
                 "name": "Slayer",
@@ -2155,11 +2156,11 @@
             }
         ]
     },
-    "Complete the Hard Falador Diary": {
+    "491": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Keep the Veteran Void Knight Above 150 Hitpoints": {
+    "494": {
         "skills": [
             {
                 "name": "Combat",
@@ -2167,7 +2168,7 @@
             }
         ]
     },
-    "Complete a Game of Veteran Pest Control": {
+    "495": {
         "skills": [
             {
                 "name": "Combat",
@@ -2175,7 +2176,7 @@
             }
         ]
     },
-    "Equip a Staff of the Dead": {
+    "497": {
         "skills": [
             {
                 "name": "Attack",
@@ -2187,7 +2188,7 @@
             }
         ]
     },
-    "Equip a Zamorakian Spear": {
+    "498": {
         "skills": [
             {
                 "name": "Attack",
@@ -2195,7 +2196,7 @@
             }
         ]
     },
-    "Equip a Piece of the Armadyl Armour Set": {
+    "499": {
         "skills": [
             {
                 "name": "Ranged",
@@ -2207,7 +2208,7 @@
             }
         ]
     },
-    "Equip a Saradomin Sword": {
+    "500": {
         "skills": [
             {
                 "name": "Attack",
@@ -2215,7 +2216,7 @@
             }
         ]
     },
-    "Equip a Piece of the Bandos Armour Set": {
+    "501": {
         "skills": [
             {
                 "name": "Defence",
@@ -2223,7 +2224,7 @@
             }
         ]
     },
-    "Equip an Armadyl Crossbow": {
+    "502": {
         "skills": [
             {
                 "name": "Ranged",
@@ -2231,7 +2232,7 @@
             }
         ]
     },
-    "Equip Some Primordial, Pegasian or Eternal Boots": {
+    "503": {
         "skills": [
             {
                 "name": "Defence",
@@ -2239,7 +2240,7 @@
             }
         ]
     },
-    "Equip a Godsword": {
+    "504": {
         "skills": [
             {
                 "name": "Attack",
@@ -2247,7 +2248,7 @@
             }
         ]
     },
-    "Defeat Cerberus": {
+    "505": {
         "skills": [
             {
                 "name": "Slayer",
@@ -2255,11 +2256,11 @@
             }
         ]
     },
-    "Complete the Elite Falador Diary": {
+    "512": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Defeat Cerberus Before She Summons Souls": {
+    "513": {
         "skills": [
             {
                 "name": "Slayer",
@@ -2267,7 +2268,7 @@
             }
         ]
     },
-    "Equip Every Godsword": {
+    "514": {
         "skills": [
             {
                 "name": "Attack",
@@ -2275,7 +2276,7 @@
             }
         ]
     },
-    "Equip a Full Armadyl Armour Set": {
+    "515": {
         "skills": [
             {
                 "name": "Ranged",
@@ -2287,7 +2288,7 @@
             }
         ]
     },
-    "Equip a Full Bandos Armour Set": {
+    "516": {
         "skills": [
             {
                 "name": "Defence",
@@ -2295,7 +2296,7 @@
             }
         ]
     },
-    "Equip Some Primordial, Pegasian and Eternal Boots": {
+    "517": {
         "skills": [
             {
                 "name": "Defence",
@@ -2315,7 +2316,7 @@
             }
         ]
     },
-    "Defeat a Cockatrice in the Fremennik Province": {
+    "520": {
         "skills": [
             {
                 "name": "Slayer",
@@ -2323,7 +2324,7 @@
             }
         ]
     },
-    "Defeat a Pyrefiend in the Fremennik Province": {
+    "521": {
         "skills": [
             {
                 "name": "Slayer",
@@ -2331,11 +2332,11 @@
             }
         ]
     },
-    "Complete the Easy Fremennik Diary": {
+    "523": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Cast Moonclan Teleport": {
+    "528": {
         "skills": [
             {
                 "name": "Magic",
@@ -2343,7 +2344,7 @@
             }
         ]
     },
-    "Move Your House to Rellekka": {
+    "529": {
         "skills": [
             {
                 "name": "Construction",
@@ -2351,7 +2352,7 @@
             }
         ]
     },
-    "Craft 50 Astral Runes": {
+    "530": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -2359,7 +2360,7 @@
             }
         ]
     },
-    "Complete the Penguin Agility Course": {
+    "531": {
         "skills": [
             {
                 "name": "Agility",
@@ -2367,7 +2368,7 @@
             }
         ]
     },
-    "Catch a Snowy Knight": {
+    "532": {
         "skills": [
             {
                 "name": "Hunter",
@@ -2375,7 +2376,7 @@
             }
         ]
     },
-    "Unlock Free Use of the Blast Furnace": {
+    "533": {
         "skills": [
             {
                 "name": "Smithing",
@@ -2383,7 +2384,7 @@
             }
         ]
     },
-    "Defeat a Basilisk Knight": {
+    "535": {
         "skills": [
             {
                 "name": "Slayer",
@@ -2391,7 +2392,7 @@
             }
         ]
     },
-    "Defeat a Kurask in the Fremennik Province": {
+    "536": {
         "skills": [
             {
                 "name": "Slayer",
@@ -2399,7 +2400,7 @@
             }
         ]
     },
-    "Equip a Granite Shield": {
+    "537": {
         "skills": [
             {
                 "name": "Defence",
@@ -2411,7 +2412,7 @@
             }
         ]
     },
-    "Equip a Brine Sabre": {
+    "538": {
         "skills": [
             {
                 "name": "Attack",
@@ -2419,7 +2420,7 @@
             }
         ]
     },
-    "Defeat a Turoth in the Fremennik Province": {
+    "541": {
         "skills": [
             {
                 "name": "Slayer",
@@ -2427,7 +2428,7 @@
             }
         ]
     },
-    "Defeat a Jelly in the Fremennik Province": {
+    "542": {
         "skills": [
             {
                 "name": "Slayer",
@@ -2435,7 +2436,7 @@
             }
         ]
     },
-    "Equip a Leaf-Bladed Sword": {
+    "543": {
         "skills": [
             {
                 "name": "Attack",
@@ -2447,23 +2448,23 @@
             }
         ]
     },
-    "Complete the Medium Fremennik Diary": {
+    "544": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Complete Throne of Miscellania": {
+    "545": {
         "skills": [],
         "notes": "See quest page"
     },
-    "Complete Royal Trouble": {
+    "546": {
         "skills": [],
         "notes": "See quest page"
     },
-    "Complete Olaf's Quest": {
+    "547": {
         "skills": [],
         "notes": "See quest page"
     },
-    "Cast Fertile Soil": {
+    "548": {
         "skills": [
             {
                 "name": "Magic",
@@ -2471,7 +2472,7 @@
             }
         ]
     },
-    "Build a Gilded Altar": {
+    "549": {
         "skills": [
             {
                 "name": "Construction",
@@ -2479,7 +2480,7 @@
             }
         ]
     },
-    "Complete the Rellekka Agility Course": {
+    "550": {
         "skills": [
             {
                 "name": "Agility",
@@ -2487,7 +2488,7 @@
             }
         ]
     },
-    "Harvest a Snapdragon in Weiss": {
+    "551": {
         "skills": [
             {
                 "name": "Farming",
@@ -2495,7 +2496,7 @@
             }
         ]
     },
-    "Trap a Sabre-Toothed Kyatt": {
+    "552": {
         "skills": [
             {
                 "name": "Hunter",
@@ -2503,7 +2504,7 @@
             }
         ]
     },
-    "Use Your Portal Nexus to Teleport to Weiss": {
+    "553": {
         "skills": [
             {
                 "name": "Construction",
@@ -2511,7 +2512,7 @@
             }
         ]
     },
-    "Use the Special Attack of a Dragon Axe": {
+    "562": {
         "skills": [
             {
                 "name": "Attack",
@@ -2519,7 +2520,7 @@
             }
         ]
     },
-    "Equip a Mud Battlestaff": {
+    "563": {
         "skills": [
             {
                 "name": "Magic",
@@ -2531,7 +2532,7 @@
             }
         ]
     },
-    "Equip a Seercull": {
+    "564": {
         "skills": [
             {
                 "name": "Ranged",
@@ -2539,7 +2540,7 @@
             }
         ]
     },
-    "Equip a Leaf-Bladed Battleaxe": {
+    "565": {
         "skills": [
             {
                 "name": "Attack",
@@ -2551,7 +2552,7 @@
             }
         ]
     },
-    "Equip a Full Skeletal Armour Set": {
+    "566": {
         "skills": [
             {
                 "name": "Magic",
@@ -2563,7 +2564,7 @@
             }
         ]
     },
-    "Equip a Full Spined Armour Set": {
+    "567": {
         "skills": [
             {
                 "name": "Ranged",
@@ -2575,7 +2576,7 @@
             }
         ]
     },
-    "Equip a Full Rockshell Armour Set": {
+    "568": {
         "skills": [
             {
                 "name": "Defence",
@@ -2583,11 +2584,11 @@
             }
         ]
     },
-    "Complete the Hard Fremennik Diary": {
+    "569": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Cast Spellbook Swap": {
+    "571": {
         "skills": [
             {
                 "name": "Magic",
@@ -2595,7 +2596,7 @@
             }
         ]
     },
-    "Build a Gilded Portal Nexus": {
+    "572": {
         "skills": [
             {
                 "name": "Construction",
@@ -2603,7 +2604,7 @@
             }
         ]
     },
-    "Equip a Dragonfire Ward": {
+    "573": {
         "skills": [
             {
                 "name": "Ranged",
@@ -2615,7 +2616,7 @@
             }
         ]
     },
-    "Create a Catherby Teleport Tablet": {
+    "574": {
         "skills": [
             {
                 "name": "Magic",
@@ -2623,7 +2624,7 @@
             }
         ]
     },
-    "Equip a Dragonbone Necklace": {
+    "575": {
         "skills": [
             {
                 "name": "Prayer",
@@ -2631,7 +2632,7 @@
             }
         ]
     },
-    "Equip a Neitiznot Faceguard": {
+    "578": {
         "skills": [
             {
                 "name": "Defence",
@@ -2639,11 +2640,11 @@
             }
         ]
     },
-    "Complete the Elite Fremennik Diary": {
+    "587": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Build a Demonic Throne": {
+    "589": {
         "skills": [
             {
                 "name": "Construction",
@@ -2651,7 +2652,7 @@
             }
         ]
     },
-    "Complete the Gnome Stronghold Agility Course": {
+    "593": {
         "skills": [
             {
                 "name": "Agility",
@@ -2659,7 +2660,7 @@
             }
         ]
     },
-    "Catch a Crimson Swift in the Feldip Hills": {
+    "594": {
         "skills": [
             {
                 "name": "Hunter",
@@ -2667,7 +2668,7 @@
             }
         ]
     },
-    "Receive a Slayer Task From Steve": {
+    "596": {
         "skills": [
             {
                 "name": "Combat",
@@ -2675,27 +2676,27 @@
             }
         ]
     },
-    "Complete Monk's Friend": {
+    "600": {
         "skills": [],
         "notes": "See quest page"
     },
-    "Complete Tower of Life": {
+    "601": {
         "skills": [],
         "notes": "See quest page"
     },
-    "Complete Sea Slug": {
+    "602": {
         "skills": [],
         "notes": "See quest page"
     },
-    "Complete the Easy Ardougne Diary": {
+    "606": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Complete the Easy Kandarin Diary": {
+    "607": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Fletch 50 Maple Longbow (u) in Kandarin": {
+    "608": {
         "skills": [
             {
                 "name": "Fletching",
@@ -2703,7 +2704,7 @@
             }
         ]
     },
-    "Pickpocket a Knight of Ardougne 50 Times": {
+    "609": {
         "skills": [
             {
                 "name": "Thieving",
@@ -2711,7 +2712,7 @@
             }
         ]
     },
-    "Complete the Barbarian Outpost Agility Course": {
+    "610": {
         "skills": [
             {
                 "name": "Agility",
@@ -2719,7 +2720,7 @@
             }
         ]
     },
-    "Trap a Spined Larupia in the Feldip Hills": {
+    "611": {
         "skills": [
             {
                 "name": "Hunter",
@@ -2727,7 +2728,7 @@
             }
         ]
     },
-    "Equip a Spottier Cape": {
+    "612": {
         "skills": [
             {
                 "name": "Hunter",
@@ -2735,7 +2736,7 @@
             }
         ]
     },
-    "Catch a Red Salamander": {
+    "613": {
         "skills": [
             {
                 "name": "Hunter",
@@ -2743,7 +2744,7 @@
             }
         ]
     },
-    "Enter the Fishing Guild": {
+    "614": {
         "skills": [
             {
                 "name": "Fishing",
@@ -2751,7 +2752,7 @@
             }
         ]
     },
-    "Move Your House to Yanille": {
+    "615": {
         "skills": [
             {
                 "name": "Construction",
@@ -2759,7 +2760,7 @@
             }
         ]
     },
-    "Check a grown Papaya Tree in the Gnome Stronghold": {
+    "616": {
         "skills": [
             {
                 "name": "Farming",
@@ -2767,7 +2768,7 @@
             }
         ]
     },
-    "Equip a Dragon Scimitar": {
+    "618": {
         "skills": [
             {
                 "name": "Attack",
@@ -2775,7 +2776,7 @@
             }
         ]
     },
-    "Enter the Ranging Guild": {
+    "620": {
         "skills": [
             {
                 "name": "Ranged",
@@ -2783,7 +2784,7 @@
             }
         ]
     },
-    "Enter the Wizards' Guild": {
+    "621": {
         "skills": [
             {
                 "name": "Magic",
@@ -2791,7 +2792,7 @@
             }
         ]
     },
-    "Defeat a Bloodveld in Kandarin": {
+    "622": {
         "skills": [
             {
                 "name": "Slayer",
@@ -2799,15 +2800,7 @@
             }
         ]
     },
-    "Defeat an Aberrant Spectre in Kandarin": {
-        "skills": [
-            {
-                "name": "Slayer",
-                "level": "60"
-            }
-        ]
-    },
-    "Use the Chivalry Prayer": {
+    "624": {
         "skills": [
             {
                 "name": "Prayer",
@@ -2819,7 +2812,7 @@
             }
         ]
     },
-    "Equip an Iban's Staff (u)": {
+    "625": {
         "skills": [
             {
                 "name": "Magic",
@@ -2831,19 +2824,19 @@
             }
         ]
     },
-    "Complete Elemental Workshop II": {
+    "627": {
         "skills": [],
         "notes": "See quest page"
     },
-    "Complete the Observatory Quest": {
+    "628": {
         "skills": [],
         "notes": "See quest page"
     },
-    "Complete the Medium Ardougne Diary": {
+    "630": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Equip an Ogre Forester Chompy Hat": {
+    "631": {
         "skills": [
             {
                 "name": "Ranged",
@@ -2855,7 +2848,7 @@
             }
         ]
     },
-    "Equip a Karamja Monkey Backpack": {
+    "632": {
         "skills": [
             {
                 "name": "Agility",
@@ -2863,11 +2856,11 @@
             }
         ]
     },
-    "Complete the Medium Kandarin Diary": {
+    "633": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Pickpocket a Hero": {
+    "634": {
         "skills": [
             {
                 "name": "Thieving",
@@ -2875,7 +2868,7 @@
             }
         ]
     },
-    "Complete the Seers' Village Agility Course": {
+    "635": {
         "skills": [
             {
                 "name": "Agility",
@@ -2883,7 +2876,7 @@
             }
         ]
     },
-    "Catch 50 Red Chinchompas in the Hunting Ground": {
+    "636": {
         "skills": [
             {
                 "name": "Hunter",
@@ -2891,7 +2884,7 @@
             }
         ]
     },
-    "Catch a Monkfish": {
+    "637": {
         "skills": [
             {
                 "name": "Fishing",
@@ -2899,7 +2892,7 @@
             }
         ]
     },
-    "Defeat a Cave Kraken": {
+    "641": {
         "skills": [
             {
                 "name": "Slayer",
@@ -2911,7 +2904,7 @@
             }
         ]
     },
-    "Equip a Trident of the Seas": {
+    "642": {
         "skills": [
             {
                 "name": "Magic",
@@ -2919,7 +2912,7 @@
             }
         ]
     },
-    "Use the Piety Prayer": {
+    "643": {
         "skills": [
             {
                 "name": "Prayer",
@@ -2931,11 +2924,11 @@
             }
         ]
     },
-    "Complete the Hard Ardougne Diary": {
+    "645": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Equip an Ogre Expert Chompy Hat": {
+    "647": {
         "skills": [
             {
                 "name": "Ranged",
@@ -2947,7 +2940,7 @@
             }
         ]
     },
-    "Equip a Maniacal Monkey Backpack": {
+    "648": {
         "skills": [
             {
                 "name": "Agility",
@@ -2955,11 +2948,11 @@
             }
         ]
     },
-    "Complete the Hard Kandarin Diary": {
+    "649": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Complete the Ardougne Agility Course": {
+    "650": {
         "skills": [
             {
                 "name": "Agility",
@@ -2967,7 +2960,7 @@
             }
         ]
     },
-    "Check a grown Dragonfruit Tree in Catherby": {
+    "651": {
         "skills": [
             {
                 "name": "Farming",
@@ -2975,7 +2968,7 @@
             }
         ]
     },
-    "Defeat a Smoke Devil": {
+    "652": {
         "skills": [
             {
                 "name": "Slayer",
@@ -2983,7 +2976,7 @@
             }
         ]
     },
-    "Equip a Heavy Ballista": {
+    "654": {
         "skills": [
             {
                 "name": "Ranged",
@@ -2991,7 +2984,7 @@
             }
         ]
     },
-    "Equip an Abyssal Tentacle": {
+    "655": {
         "skills": [
             {
                 "name": "Attack",
@@ -2999,7 +2992,7 @@
             }
         ]
     },
-    "Defeat the Thermonuclear Smoke Devil": {
+    "656": {
         "skills": [
             {
                 "name": "Slayer",
@@ -3007,7 +3000,7 @@
             }
         ]
     },
-    "Equip an Occult Necklace": {
+    "657": {
         "skills": [
             {
                 "name": "Magic",
@@ -3015,7 +3008,7 @@
             }
         ]
     },
-    "Equip a Dragon Archer Chompy Hat": {
+    "666": {
         "skills": [
             {
                 "name": "Ranged",
@@ -3027,7 +3020,7 @@
             }
         ]
     },
-    "Equip a Kruk Jr. Monkey Backpack": {
+    "667": {
         "skills": [
             {
                 "name": "Agility",
@@ -3035,15 +3028,15 @@
             }
         ]
     },
-    "Complete the Elite Kandarin Diary": {
+    "668": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Complete the Elite Ardougne Diary": {
+    "669": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Equip a Prince Awowogei Monkey Back": {
+    "673": {
         "skills": [
             {
                 "name": "Agility",
@@ -3051,7 +3044,7 @@
             }
         ]
     },
-    "Complete Room 1 of Pyramid Plunder": {
+    "674": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3059,7 +3052,7 @@
             }
         ]
     },
-    "Complete Room 2 of Pyramid Plunder": {
+    "675": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3067,7 +3060,7 @@
             }
         ]
     },
-    "Complete the Al Kharid Agility Course": {
+    "678": {
         "skills": [
             {
                 "name": "Agility",
@@ -3075,7 +3068,7 @@
             }
         ]
     },
-    "Craft a Fire Rune": {
+    "679": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -3083,11 +3076,11 @@
             }
         ]
     },
-    "Complete the Easy Desert Diary": {
+    "681": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Complete Room 3 of Pyramid Plunder": {
+    "689": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3095,7 +3088,7 @@
             }
         ]
     },
-    "Complete Room 4 of Pyramid Plunder": {
+    "690": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3103,7 +3096,7 @@
             }
         ]
     },
-    "Complete Room 5 of Pyramid Plunder": {
+    "691": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3111,7 +3104,7 @@
             }
         ]
     },
-    "Pick a Spring Sq'irk": {
+    "692": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3119,7 +3112,7 @@
             }
         ]
     },
-    "Pick a Autumn Sq'irk": {
+    "693": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3127,7 +3120,7 @@
             }
         ]
     },
-    "Turn in 10 Spring Sq'irkjuices to Osman": {
+    "694": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3135,7 +3128,7 @@
             }
         ]
     },
-    "Pickpocket a Bandit in the Desert": {
+    "695": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3143,7 +3136,7 @@
             }
         ]
     },
-    "Smith 1000 Mithril Dart Tips": {
+    "696": {
         "skills": [
             {
                 "name": "Smithing",
@@ -3151,7 +3144,7 @@
             }
         ]
     },
-    "Make a Combat Potion": {
+    "697": {
         "skills": [
             {
                 "name": "Herblore",
@@ -3159,7 +3152,7 @@
             }
         ]
     },
-    "Turn in a Pyramid Top to Simon Templeton": {
+    "699": {
         "skills": [
             {
                 "name": "Agility",
@@ -3167,7 +3160,7 @@
             }
         ]
     },
-    "Craft a Lava Rune at the Fire Altar": {
+    "700": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -3175,7 +3168,7 @@
             }
         ]
     },
-    "Catch 30 Orange Salamanders": {
+    "701": {
         "skills": [
             {
                 "name": "Hunter",
@@ -3183,7 +3176,7 @@
             }
         ]
     },
-    "Mine 30 Chunks of Granite": {
+    "702": {
         "skills": [
             {
                 "name": "Mining",
@@ -3191,7 +3184,7 @@
             }
         ]
     },
-    "Move Your House to Pollnivneach": {
+    "705": {
         "skills": [
             {
                 "name": "Construction",
@@ -3199,7 +3192,7 @@
             }
         ]
     },
-    "Cast Ice Rush": {
+    "706": {
         "skills": [
             {
                 "name": "Magic",
@@ -3207,11 +3200,11 @@
             }
         ]
     },
-    "Complete the Medium Desert Diary": {
+    "707": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Cast Bones to Peaches": {
+    "708": {
         "skills": [
             {
                 "name": "Magic",
@@ -3219,7 +3212,7 @@
             }
         ]
     },
-    "Complete Room 6 of Pyramid Plunder": {
+    "713": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3227,7 +3220,7 @@
             }
         ]
     },
-    "Complete Room 7 of Pyramid Plunder": {
+    "714": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3235,7 +3228,7 @@
             }
         ]
     },
-    "Pick a Summer Sq'irk": {
+    "715": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3243,7 +3236,7 @@
             }
         ]
     },
-    "Turn in 25 Autumn Sq'irkjuices to Osman": {
+    "716": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3251,7 +3244,7 @@
             }
         ]
     },
-    "Pickpocket a Menaphite Thug 50 Times": {
+    "717": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3259,7 +3252,7 @@
             }
         ]
     },
-    "Make 20 Magic Potions": {
+    "718": {
         "skills": [
             {
                 "name": "Herblore",
@@ -3267,7 +3260,7 @@
             }
         ]
     },
-    "Smith 1000 Adamant Dart Tips": {
+    "719": {
         "skills": [
             {
                 "name": "Smithing",
@@ -3275,7 +3268,7 @@
             }
         ]
     },
-    "Check a grown Cactus": {
+    "720": {
         "skills": [
             {
                 "name": "Farming",
@@ -3283,7 +3276,7 @@
             }
         ]
     },
-    "Check a grown Potato Cactus": {
+    "721": {
         "skills": [
             {
                 "name": "Farming",
@@ -3291,7 +3284,7 @@
             }
         ]
     },
-    "Defeat a Dust Devil in the Kharidian Desert": {
+    "722": {
         "skills": [
             {
                 "name": "Slayer",
@@ -3299,7 +3292,7 @@
             }
         ]
     },
-    "Cast Ice Burst": {
+    "723": {
         "skills": [
             {
                 "name": "Magic",
@@ -3307,7 +3300,7 @@
             }
         ]
     },
-    "Cast Ice Blitz": {
+    "724": {
         "skills": [
             {
                 "name": "Magic",
@@ -3315,7 +3308,7 @@
             }
         ]
     },
-    "Cast Smoke Barrage": {
+    "725": {
         "skills": [
             {
                 "name": "Magic",
@@ -3323,7 +3316,7 @@
             }
         ]
     },
-    "Cast Shadow Barrage": {
+    "726": {
         "skills": [
             {
                 "name": "Magic",
@@ -3331,11 +3324,11 @@
             }
         ]
     },
-    "Complete the Hard Desert Diary": {
+    "728": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Equip a Piece of the Infinity Robe Set": {
+    "729": {
         "skills": [
             {
                 "name": "Magic",
@@ -3347,7 +3340,7 @@
             }
         ]
     },
-    "Cast Paddewwa Teleport": {
+    "731": {
         "skills": [
             {
                 "name": "Magic",
@@ -3355,7 +3348,7 @@
             }
         ]
     },
-    "Complete Room 8 of Pyramid Plunder": {
+    "733": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3363,7 +3356,7 @@
             }
         ]
     },
-    "Complete Room 8 of Pyramid Plunder 50 Times": {
+    "734": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3371,7 +3364,7 @@
             }
         ]
     },
-    "Complete Room 8 of Pyramid Plunder 100 Times": {
+    "735": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3379,7 +3372,7 @@
             }
         ]
     },
-    "Complete Room 8 of Pyramid Plunder 250 Times": {
+    "736": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3387,7 +3380,7 @@
             }
         ]
     },
-    "Turn in 100 Summer Sq'irkjuices to Osman": {
+    "737": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3395,7 +3388,7 @@
             }
         ]
     },
-    "Smith 1000 Rune Dart Tips": {
+    "738": {
         "skills": [
             {
                 "name": "Smithing",
@@ -3403,7 +3396,7 @@
             }
         ]
     },
-    "Cast Blood Barrage": {
+    "741": {
         "skills": [
             {
                 "name": "Magic",
@@ -3411,7 +3404,7 @@
             }
         ]
     },
-    "Cast Ice Barrage": {
+    "742": {
         "skills": [
             {
                 "name": "Magic",
@@ -3419,11 +3412,11 @@
             }
         ]
     },
-    "Complete the Elite Desert Diary": {
+    "746": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Equip a Full Infinity Robe Set": {
+    "747": {
         "skills": [
             {
                 "name": "Magic",
@@ -3435,7 +3428,7 @@
             }
         ]
     },
-    "Equip a Master Wand": {
+    "748": {
         "skills": [
             {
                 "name": "Magic",
@@ -3443,7 +3436,7 @@
             }
         ]
     },
-    "Craft a Ghorrock Teleport Tablet": {
+    "749": {
         "skills": [
             {
                 "name": "Magic",
@@ -3451,7 +3444,7 @@
             }
         ]
     },
-    "Equip a Mage's Book": {
+    "750": {
         "skills": [
             {
                 "name": "Magic",
@@ -3459,7 +3452,7 @@
             }
         ]
     },
-    "Craft a Snelm": {
+    "751": {
         "skills": [
             {
                 "name": "Crafting",
@@ -3467,11 +3460,11 @@
             }
         ]
     },
-    "Complete the Easy Morytania Diary": {
+    "756": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Obtain a Rune Crossbow From a Lucky Impling": {
+    "760": {
         "skills": [
             {
                 "name": "Hunter",
@@ -3479,7 +3472,7 @@
             }
         ]
     },
-    "Complete Floor 1 of the Hallowed Sepulchre": {
+    "763": {
         "skills": [
             {
                 "name": "Agility",
@@ -3487,7 +3480,7 @@
             }
         ]
     },
-    "Complete Floor 2 of the Hallowed Sepulchre": {
+    "764": {
         "skills": [
             {
                 "name": "Agility",
@@ -3495,7 +3488,7 @@
             }
         ]
     },
-    "Complete the Canifis Agility Course": {
+    "765": {
         "skills": [
             {
                 "name": "Agility",
@@ -3503,7 +3496,7 @@
             }
         ]
     },
-    "Complete the Werewolf Agility Course": {
+    "766": {
         "skills": [
             {
                 "name": "Agility",
@@ -3511,7 +3504,7 @@
             }
         ]
     },
-    "Catch a Swamp Lizard in Morytania": {
+    "767": {
         "skills": [
             {
                 "name": "Hunter",
@@ -3519,7 +3512,7 @@
             }
         ]
     },
-    "Convert 2,000 Daeyalt Shards Into Essence": {
+    "768": {
         "skills": [
             {
                 "name": "Mining",
@@ -3527,7 +3520,7 @@
             }
         ]
     },
-    "Craft a Rune Using Daeyalt Essence": {
+    "769": {
         "skills": [
             {
                 "name": "Mining",
@@ -3535,7 +3528,7 @@
             }
         ]
     },
-    "Assemble a Slayer Helm": {
+    "770": {
         "skills": [
             {
                 "name": "Crafting",
@@ -3543,15 +3536,15 @@
             }
         ]
     },
-    "Defeat a Fiyr Shade": {
+    "772": {
         "skills": [],
         "notes": "Firemaking 65 if killing the shade in Temple Trekking doesn't count"
     },
-    "Complete the Medium Morytania Diary": {
+    "775": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Complete Floor 3 of the Hallowed Sepulchre": {
+    "781": {
         "skills": [
             {
                 "name": "Agility",
@@ -3559,7 +3552,7 @@
             }
         ]
     },
-    "Complete Floor 4 of the Hallowed Sepulchre": {
+    "782": {
         "skills": [
             {
                 "name": "Agility",
@@ -3567,7 +3560,7 @@
             }
         ]
     },
-    "Complete the Hallowed Sepulchre in 8:00": {
+    "783": {
         "skills": [
             {
                 "name": "Agility",
@@ -3575,7 +3568,7 @@
             }
         ]
     },
-    "Purchase a Reward From the Hallowed Sepulchre": {
+    "784": {
         "skills": [
             {
                 "name": "Agility",
@@ -3583,7 +3576,7 @@
             }
         ]
     },
-    "Obtain Every Hallowed Tool": {
+    "785": {
         "skills": [
             {
                 "name": "Agility",
@@ -3591,7 +3584,7 @@
             }
         ]
     },
-    "Pickpocket a Vyre 50 Times": {
+    "786": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3599,7 +3592,7 @@
             }
         ]
     },
-    "Defeat a Gargoyle in Morytania": {
+    "787": {
         "skills": [
             {
                 "name": "Slayer",
@@ -3607,7 +3600,7 @@
             }
         ]
     },
-    "Defeat an Abyssal Demon in Morytania": {
+    "788": {
         "skills": [
             {
                 "name": "Slayer",
@@ -3615,7 +3608,7 @@
             }
         ]
     },
-    "Defeat the Grotesque Guardians 100 Times": {
+    "789": {
         "skills": [
             {
                 "name": "Slayer",
@@ -3623,7 +3616,7 @@
             }
         ]
     },
-    "Equip a Granite Hammer or Granite Ring": {
+    "791": {
         "skills": [
             {
                 "name": "Slayer",
@@ -3631,7 +3624,7 @@
             }
         ]
     },
-    "Defeat the Grotesque Guardians": {
+    "792": {
         "skills": [
             {
                 "name": "Slayer",
@@ -3639,11 +3632,11 @@
             }
         ]
     },
-    "Complete the Hard Morytania Diary": {
+    "793": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Complete Floor 5 of the Hallowed Sepulchre": {
+    "796": {
         "skills": [
             {
                 "name": "Agility",
@@ -3651,7 +3644,7 @@
             }
         ]
     },
-    "Complete the Hallowed Sepulchre in 6:30": {
+    "797": {
         "skills": [
             {
                 "name": "Agility",
@@ -3659,7 +3652,7 @@
             }
         ]
     },
-    "Equip a Ring of Endurance": {
+    "798": {
         "skills": [
             {
                 "name": "Agility",
@@ -3667,7 +3660,7 @@
             }
         ]
     },
-    "Equip Some Guardian Boots": {
+    "801": {
         "skills": [
             {
                 "name": "Defence",
@@ -3675,7 +3668,7 @@
             }
         ]
     },
-    "Equip Every Barrows Armour Set": {
+    "802": {
         "skills": [
             {
                 "name": "Defence",
@@ -3699,7 +3692,7 @@
             }
         ]
     },
-    "Equip an Inquisitor's Mace": {
+    "803": {
         "skills": [
             {
                 "name": "Attack",
@@ -3707,7 +3700,7 @@
             }
         ]
     },
-    "Equip a Piece of the Inquisitor's Set": {
+    "804": {
         "skills": [
             {
                 "name": "Defence",
@@ -3719,7 +3712,7 @@
             }
         ]
     },
-    "Equip a Nightmare Staff": {
+    "805": {
         "skills": [
             {
                 "name": "Magic",
@@ -3731,7 +3724,7 @@
             }
         ]
     },
-    "Create an Amulet of Blood Fury": {
+    "806": {
         "skills": [
             {
                 "name": "Crafting",
@@ -3743,7 +3736,7 @@
             }
         ]
     },
-    "Equip an Avernic Defender": {
+    "807": {
         "skills": [
             {
                 "name": "Defence",
@@ -3755,7 +3748,7 @@
             }
         ]
     },
-    "Equip a Sanguinesti Staff": {
+    "808": {
         "skills": [
             {
                 "name": "Magic",
@@ -3763,7 +3756,7 @@
             }
         ]
     },
-    "Equip a Scythe of Vitur": {
+    "809": {
         "skills": [
             {
                 "name": "Attack",
@@ -3775,7 +3768,7 @@
             }
         ]
     },
-    "Equip a Piece of the Justiciar Set": {
+    "810": {
         "skills": [
             {
                 "name": "Defence",
@@ -3783,7 +3776,7 @@
             }
         ]
     },
-    "Equip a Ghrazi Rapier": {
+    "811": {
         "skills": [
             {
                 "name": "Attack",
@@ -3791,7 +3784,7 @@
             }
         ]
     },
-    "Defeat the Grotesque Guardians 250 Times": {
+    "818": {
         "skills": [
             {
                 "name": "Slayer",
@@ -3799,11 +3792,11 @@
             }
         ]
     },
-    "Complete the Elite Morytania Diary": {
+    "819": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Equip a Full Inquisitor's Set": {
+    "820": {
         "skills": [
             {
                 "name": "Defence",
@@ -3815,7 +3808,7 @@
             }
         ]
     },
-    "Equip a Nightmare Staff With an Orb": {
+    "821": {
         "skills": [
             {
                 "name": "Magic",
@@ -3827,7 +3820,7 @@
             }
         ]
     },
-    "Equip a Full Justiciar Set": {
+    "822": {
         "skills": [
             {
                 "name": "Defence",
@@ -3835,7 +3828,7 @@
             }
         ]
     },
-    "Harvest some Sweetcorn in Prifddinas": {
+    "825": {
         "skills": [
             {
                 "name": "Farming",
@@ -3843,7 +3836,7 @@
             }
         ]
     },
-    "Check a grown Papaya Tree in Lletya": {
+    "833": {
         "skills": [
             {
                 "name": "Farming",
@@ -3851,7 +3844,7 @@
             }
         ]
     },
-    "Craft 50 Death Runes": {
+    "834": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -3859,7 +3852,7 @@
             }
         ]
     },
-    "Defeat a Bloodveld in Tirannwn": {
+    "837": {
         "skills": [
             {
                 "name": "Slayer",
@@ -3867,7 +3860,7 @@
             }
         ]
     },
-    "Defeat a Kurask in Tirannwn": {
+    "838": {
         "skills": [
             {
                 "name": "Slayer",
@@ -3875,7 +3868,7 @@
             }
         ]
     },
-    "Check a grown Crystal Tree": {
+    "840": {
         "skills": [
             {
                 "name": "Farming",
@@ -3883,7 +3876,7 @@
             }
         ]
     },
-    "Catch a Crystal Impling": {
+    "841": {
         "skills": [
             {
                 "name": "Hunter",
@@ -3891,7 +3884,7 @@
             }
         ]
     },
-    "Complete the Prifddinas Agility Course": {
+    "842": {
         "skills": [
             {
                 "name": "Agility",
@@ -3899,7 +3892,7 @@
             }
         ]
     },
-    "Complete the Prifddinas Agility Course in 1:10": {
+    "843": {
         "skills": [
             {
                 "name": "Agility",
@@ -3907,7 +3900,7 @@
             }
         ]
     },
-    "Pickpocket an Elf 50 Times": {
+    "844": {
         "skills": [
             {
                 "name": "Thieving",
@@ -3915,7 +3908,7 @@
             }
         ]
     },
-    "Craft a Piece of Crystal Armour": {
+    "845": {
         "skills": [
             {
                 "name": "Smithing",
@@ -3927,7 +3920,7 @@
             }
         ]
     },
-    "Defeat a Dark Beast in Tirannwn": {
+    "849": {
         "skills": [
             {
                 "name": "Slayer",
@@ -3935,7 +3928,7 @@
             }
         ]
     },
-    "Equip a Dark Bow": {
+    "850": {
         "skills": [
             {
                 "name": "Ranged",
@@ -3943,7 +3936,7 @@
             }
         ]
     },
-    "Equip a Crystal Bow": {
+    "853": {
         "skills": [
             {
                 "name": "Ranged",
@@ -3955,7 +3948,7 @@
             }
         ]
     },
-    "Equip a Crystal Shield": {
+    "854": {
         "skills": [
             {
                 "name": "Defence",
@@ -3967,7 +3960,7 @@
             }
         ]
     },
-    "Equip a Crystal Halberd": {
+    "855": {
         "skills": [
             {
                 "name": "Attack",
@@ -3983,7 +3976,7 @@
             }
         ]
     },
-    "Defeat a Nechryael in Tirannwn": {
+    "856": {
         "skills": [
             {
                 "name": "Slayer",
@@ -3991,7 +3984,7 @@
             }
         ]
     },
-    "Craft an Eternal Teleport Crystal": {
+    "857": {
         "skills": [
             {
                 "name": "Smithing",
@@ -4003,7 +3996,7 @@
             }
         ]
     },
-    "Open the Enhanced Crystal Chest": {
+    "858": {
         "skills": [
             {
                 "name": "Smithing",
@@ -4015,7 +4008,7 @@
             }
         ]
     },
-    "Dissect 50 Sacred Eels": {
+    "859": {
         "skills": [
             {
                 "name": "Fishing",
@@ -4023,7 +4016,7 @@
             }
         ]
     },
-    "Equip an Elven Signet": {
+    "860": {
         "skills": [
             {
                 "name": "Hunter",
@@ -4031,7 +4024,7 @@
             }
         ]
     },
-    "Equip a Full Crystal Armour Set": {
+    "862": {
         "skills": [
             {
                 "name": "Smithing",
@@ -4043,11 +4036,11 @@
             }
         ]
     },
-    "Complete the Easy Wilderness Diary": {
+    "889": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Complete the Wilderness Agility Course": {
+    "900": {
         "skills": [
             {
                 "name": "Agility",
@@ -4055,7 +4048,7 @@
             }
         ]
     },
-    "Catch a Black Salamander": {
+    "901": {
         "skills": [
             {
                 "name": "Hunter",
@@ -4063,7 +4056,7 @@
             }
         ]
     },
-    "Fill a Large Pouch": {
+    "902": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -4071,11 +4064,11 @@
             }
         ]
     },
-    "Complete the Medium Wilderness Diary": {
+    "915": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Catch 100 Dark Crabs": {
+    "919": {
         "skills": [
             {
                 "name": "Fishing",
@@ -4083,7 +4076,7 @@
             }
         ]
     },
-    "Catch a Black Chinchompa": {
+    "920": {
         "skills": [
             {
                 "name": "Hunter",
@@ -4091,7 +4084,7 @@
             }
         ]
     },
-    "Craft an Air Battlestaff in the Wilderness": {
+    "921": {
         "skills": [
             {
                 "name": "Crafting",
@@ -4099,7 +4092,7 @@
             }
         ]
     },
-    "Fill a Giant Pouch": {
+    "922": {
         "skills": [
             {
                 "name": "Runecraft",
@@ -4107,11 +4100,11 @@
             }
         ]
     },
-    "Complete the Hard Wilderness Diary": {
+    "932": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Equip a Piece of the Dagon'Hai Set": {
+    "933": {
         "skills": [
             {
                 "name": "Magic",
@@ -4123,7 +4116,7 @@
             }
         ]
     },
-    "Cook a Dark Crab": {
+    "934": {
         "skills": [
             {
                 "name": "Cooking",
@@ -4131,7 +4124,7 @@
             }
         ]
     },
-    "Make an Extended Antifire Potion": {
+    "935": {
         "skills": [
             {
                 "name": "Herblore",
@@ -4139,7 +4132,7 @@
             }
         ]
     },
-    "Equip 250 Black Chinchompas": {
+    "936": {
         "skills": [
             {
                 "name": "Hunter",
@@ -4147,7 +4140,7 @@
             }
         ]
     },
-    "Equip 500 Black Chinchompas": {
+    "937": {
         "skills": [
             {
                 "name": "Hunter",
@@ -4155,7 +4148,7 @@
             }
         ]
     },
-    "Equip 1000 Black Chinchompas": {
+    "938": {
         "skills": [
             {
                 "name": "Hunter",
@@ -4163,7 +4156,7 @@
             }
         ]
     },
-    "Mine Some Runite Ore in the Wilderness": {
+    "939": {
         "skills": [
             {
                 "name": "Mining",
@@ -4171,7 +4164,7 @@
             }
         ]
     },
-    "Equip a Craw's Bow": {
+    "943": {
         "skills": [
             {
                 "name": "Ranged",
@@ -4179,7 +4172,7 @@
             }
         ]
     },
-    "Equip a Viggora's Chainmace": {
+    "944": {
         "skills": [
             {
                 "name": "Attack",
@@ -4187,7 +4180,7 @@
             }
         ]
     },
-    "Equip a Thammaron's Sceptre": {
+    "945": {
         "skills": [
             {
                 "name": "Magic",
@@ -4195,7 +4188,7 @@
             }
         ]
     },
-    "Equip a Blessed Spirit Shield": {
+    "950": {
         "skills": [
             {
                 "name": "Defence",
@@ -4207,7 +4200,7 @@
             }
         ]
     },
-    "Equip a Malediction Ward": {
+    "951": {
         "skills": [
             {
                 "name": "Defence",
@@ -4215,7 +4208,7 @@
             }
         ]
     },
-    "Equip an Odium Ward": {
+    "952": {
         "skills": [
             {
                 "name": "Defence",
@@ -4223,7 +4216,7 @@
             }
         ]
     },
-    "Build an Obelisk": {
+    "953": {
         "skills": [
             {
                 "name": "Construction",
@@ -4231,11 +4224,11 @@
             }
         ]
     },
-    "Complete the Elite Wilderness Diary": {
+    "954": {
         "skills": [],
         "notes": "See diary page"
     },
-    "Equip a Full Dagon'Hai Set": {
+    "955": {
         "skills": [
             {
                 "name": "Magic",
@@ -4247,7 +4240,7 @@
             }
         ]
     },
-    "Equip a Spectral or Arcane Spirit Shield": {
+    "956": {
         "skills": [
             {
                 "name": "Defence",
@@ -4263,7 +4256,7 @@
             }
         ]
     },
-    "Equip an Elysian Spirit Shield": {
+    "957": {
         "skills": [
             {
                 "name": "Defence",
