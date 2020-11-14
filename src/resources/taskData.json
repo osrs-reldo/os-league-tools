@@ -6541,7 +6541,7 @@
         {
             "id": "695",
             "name": "Pickpocket a Bandit in the Bandit Camp",
-            "description": "Pickpocket a Bandit in the Kharidian Desert\u2019s Bandit Camp.",
+            "description": "Pickpocket a Bandit in the Kharidian Desert\u00ef\u00bf\u00bds Bandit Camp.",
             "difficulty": "Medium",
             "category": "Skilling",
             "subcategory": "Thieving",
@@ -7237,7 +7237,7 @@
             "description": "Defeat a Fiyr Shade.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
+            "subcategory": "Shades of Mort'ton",
             "area": "Morytania"
         },
         {
@@ -7300,7 +7300,7 @@
             "description": "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
+            "subcategory": "Shades of Mort'ton",
             "area": "Morytania"
         },
         {
@@ -8209,7 +8209,7 @@
             "description": "Defeat Zulrah at the Poison Waste in 0:42 or less.",
             "difficulty": "Master",
             "category": "Bossing",
-            "subcategory": "Gauntlet",
+            "subcategory": "Zulrah",
             "area": "Tirannwn"
         },
         {
@@ -15205,7 +15205,7 @@
             {
                 "id": "695",
                 "name": "Pickpocket a Bandit in the Bandit Camp",
-                "description": "Pickpocket a Bandit in the Kharidian Desert\u2019s Bandit Camp.",
+                "description": "Pickpocket a Bandit in the Kharidian Desert\u00ef\u00bf\u00bds Bandit Camp.",
                 "difficulty": "Medium",
                 "category": "Skilling",
                 "subcategory": "Thieving",
@@ -15903,7 +15903,7 @@
                 "description": "Defeat a Fiyr Shade.",
                 "difficulty": "Medium",
                 "category": "Minigames",
-                "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
+                "subcategory": "Shades of Mort'ton",
                 "area": "Morytania"
             },
             {
@@ -15966,7 +15966,7 @@
                 "description": "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
                 "difficulty": "Medium",
                 "category": "Minigames",
-                "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
+                "subcategory": "Shades of Mort'ton",
                 "area": "Morytania"
             },
             {
@@ -16877,7 +16877,7 @@
                 "description": "Defeat Zulrah at the Poison Waste in 0:42 or less.",
                 "difficulty": "Master",
                 "category": "Bossing",
-                "subcategory": "Gauntlet",
+                "subcategory": "Zulrah",
                 "area": "Tirannwn"
             },
             {
@@ -23863,7 +23863,7 @@
         "695": {
             "id": "695",
             "name": "Pickpocket a Bandit in the Bandit Camp",
-            "description": "Pickpocket a Bandit in the Kharidian Desert\u2019s Bandit Camp.",
+            "description": "Pickpocket a Bandit in the Kharidian Desert\u00ef\u00bf\u00bds Bandit Camp.",
             "difficulty": "Medium",
             "category": "Skilling",
             "subcategory": "Thieving",
@@ -24559,7 +24559,7 @@
             "description": "Defeat a Fiyr Shade.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
+            "subcategory": "Shades of Mort'ton",
             "area": "Morytania"
         },
         "773": {
@@ -24622,7 +24622,7 @@
             "description": "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
+            "subcategory": "Shades of Mort'ton",
             "area": "Morytania"
         },
         "780": {
@@ -25531,7 +25531,7 @@
             "description": "Defeat Zulrah at the Poison Waste in 0:42 or less.",
             "difficulty": "Master",
             "category": "Bossing",
-            "subcategory": "Gauntlet",
+            "subcategory": "Zulrah",
             "area": "Tirannwn"
         },
         "881": {

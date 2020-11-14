@@ -697,7 +697,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 692,Pick a Spring Sq'irk ,Pick a Spring Sq'irk in the Sorceress's Garden. ,Medium,Skilling,Thieving,,Desert
 693,Pick a Autumn Sq'irk ,Pick a Autumn Sq'irk in the Sorceress's Garden. ,Medium,Skilling,Thieving,,Desert
 694,Turn in 10 Spring Sq'irkjuices to Osman ,Turn in 10 Spring sq'irkjuices to Osman in Al Kharid in one go. ,Medium,Skilling,Thieving,,Desert
-695,Pickpocket a Bandit in the Bandit Camp ,Pickpocket a Bandit in the Kharidian Desert’s Bandit Camp.,Medium,Skilling,Thieving,,Desert
+695,Pickpocket a Bandit in the Bandit Camp ,Pickpocket a Bandit in the Kharidian Desertï¿½s Bandit Camp.,Medium,Skilling,Thieving,,Desert
 696,Smith 1000 Mithril Dart Tips ,Use an Anvil to smith 1000 Mithril dart tips. ,Medium,Skilling,Smithing,,Desert
 697,Make a Combat Potion ,Make a Combat Potion. ,Medium,Skilling,Herblore,,Desert
 698,Defeat a Crocodile ,Defeat a Crocodile in the Kharidian Desert.,Medium,Combat,Other,,Desert
@@ -774,14 +774,14 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 769,Craft a Rune Using Daeyalt Essence ,Craft any rune using Daeyalt Essence. ,Medium,Skilling,Runecraft,,Morytania
 770,Assemble a Slayer Helm ,Assemble a Slayer Helm. ,Medium,Combat,Slayer,,Morytania
 771,Loot a Barrows Chest ,Loot a Barrows Chest once.,Medium,Bossing,Barrows,,Morytania
-772,Defeat a Fiyr Shade ,Defeat a Fiyr Shade. ,Medium,Minigames,Shades of Mortï¿½ton,,Morytania
+772,Defeat a Fiyr Shade ,Defeat a Fiyr Shade. ,Medium,Minigames,Shades of Mort'ton,,Morytania
 773,Defeat a Vyrewatch Sentinel ,Defeat a Vyrewatch Sentinel in Darkmeyer.,Medium,Combat,Other,,Morytania
 774,Equip a Piece of any Barrows Armour Set ,Equip any piece of any Barrows armour set.,Medium,Bossing,Barrows,,Morytania
 775,Complete the Medium Morytania Diary ,Complete all of the medium tasks in the Morytania Achievement Diary. ,Medium,Diaries,Morytania,,Morytania
 776,Complete a Medium Temple Trek ,Complete a medium Temple Trek,Medium,Minigames,Temple trekking,,Morytania
 777,Complete Haunted Mine ,Complete the Haunted Mine quest.,Medium,Quests,Experienced,,Morytania
 778,Complete A Taste of Hope ,Complete the A Taste of Hope quest.,Medium,Quests,Experienced,,Morytania
-779,Achieve 100% Shades of Mort'ton Sanctity ,Achieve 100% Sanctity during the Shades of Mort'ton minigame.,Medium,Minigames,Shades of Mortï¿½ton,,Morytania
+779,Achieve 100% Shades of Mort'ton Sanctity ,Achieve 100% Sanctity during the Shades of Mort'ton minigame.,Medium,Minigames,Shades of Mort'ton,,Morytania
 780,Equip a Salve Amulet (e) ,Equip a Salve amulet (e).,Medium,Quests,Experienced,,Morytania
 781,Complete Floor 3 of the Hallowed Sepulchre ,Complete floor 3 of the Hallowed Sepulchre in Darkmeyer. ,Hard,Skilling,Agility,,Morytania
 782,Complete Floor 4 of the Hallowed Sepulchre ,Complete floor 4 of the Hallowed Sepulchre in Darkmeyer. ,Hard,Skilling,Agility,,Morytania
@@ -882,7 +882,7 @@ Id,Name,Description,Difficulty,Type,Subcategory,Skill requirements,Area
 877,Defeat Zulrah 500 Times ,Defeat Zulrah at the Poison Waste 500 times.,Elite,Bossing,Zulrah,,Tirannwn
 878,Equip a Piece of the Dragonstone Armour Set ,Equip any piece of the Dragonstone armour set.,Elite,Other,Crystal chests,,Tirannwn
 879,Equip a Corrupted Blade of Saeldor ,Equip a Corrupted Blade of Saeldor.,Master,Bossing,Gauntlet,,Tirannwn
-880,Defeat Zulrah in 0:42 ,Defeat Zulrah at the Poison Waste in 0:42 or less.,Master,Bossing,Gauntlet,,Tirannwn
+880,Defeat Zulrah in 0:42 ,Defeat Zulrah at the Poison Waste in 0:42 or less.,Master,Bossing,Zulrah,,Tirannwn
 881,Complete the Corrupted Gauntlet in 5:00 ,Complete the Corrupted Gauntlet in Prifddinas in 5:00 or less.,Master,Bossing,Gauntlet,,Tirannwn
 882,Equip a Crystal Crown ,Equip a Crystal crown. ,Master,Other,Shops,,Tirannwn
 883,Sacrifice Some Bones at the Chaos Temple ,Sacrifice some Bones at the Western Chaos Temple altar.,Easy,Combat,Prayer,,Wilderness
