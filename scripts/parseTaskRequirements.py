@@ -17,7 +17,9 @@ def make_json(csvFilePath, jsonFilePath):
 				# Strip empty columns
 				if row[val] != '':
 					rowOutput[val] = row[val]
-			data[key] = rowOutput 
+
+			if len(rowOutput) > 0:
+				data[key] = rowOutput 
 
 	with open(jsonFilePath, 'w', encoding='utf-8') as jsonf: 
 		jsonf.write(json.dumps(data, indent=4)) 

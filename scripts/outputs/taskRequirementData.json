@@ -1,18 +1,8 @@
 {
-    "Achieve Your First Level 10": {},
-    "Achieve Your First Level 20": {},
-    "Achieve Your First Level 5": {},
-    "Achieve Your First Level Up": {},
-    "Build a Room in Your Player Owned House": {},
-    "Burn Some Coloured Logs": {},
-    "Burn Some Food": {},
-    "Burn Some Normal Logs": {},
     "Burn Some Oak Logs": {
         "Skill1": "Firemaking",
         "Level1": "15"
     },
-    "Bury Some Bones": {},
-    "Cast Home Teleport": {},
     "Catch a Baby Impling": {
         "Skill1": "Hunter",
         "Level1": "17"
@@ -21,13 +11,10 @@
         "Skill1": "Fishing",
         "Level1": "10"
     },
-    "Catch a Shrimp": {},
     "Catch an Anchovy": {
         "Skill1": "Fishing",
         "Level1": "15"
     },
-    "Check Your Slayer Task": {},
-    "Chop Some Logs": {},
     "Chop Some Logs With a Steel Axe": {
         "Skill1": "Woodcutting",
         "Level1": "6"
@@ -36,36 +23,25 @@
         "Skill1": "Herblore",
         "Level1": "3"
     },
-    "Complete a Beginner Clue Scroll": {},
     "Complete a Rooftop Agility Course": {
         "Skill1": "Agility",
         "Level1": "10"
     },
-    "Complete an Easy Clue Scroll": {},
     "Complete the Easy Western Provinces Diary": {
         "Notes": "See diary page"
     },
-    "Complete the Leagues Tutorial": {},
-    "Cook a Shrimp": {},
     "Craft a Leather Body": {
         "Skill1": "Crafting",
         "Level1": "14"
     },
-    "Craft Any Rune": {},
     "Cut a Sapphire": {
         "Skill1": "Crafting",
         "Level1": "20"
     },
-    "Defeat a Goblin": {},
-    "Defeat a Guard": {},
-    "Defeat a Moss Giant": {},
-    "Drink a Strength Potion": {},
     "Earn Some Slayer Points": {
         "Skill1": "Combat",
         "Level1": "20"
     },
-    "Eat some Purple Sweets": {},
-    "Enter your Player Owned House": {},
     "Equip a Full Mithril Set": {
         "Skill1": "Defence",
         "Level1": "20"
@@ -88,8 +64,6 @@
         "Skill2": "Defence",
         "Level2": "20"
     },
-    "Equip a Wizard Robe and Hat": {},
-    "Equip an Elemental Staff": {},
     "Fletch 150 Iron Arrows": {
         "Skill1": "Fletching",
         "Level1": "15"
@@ -98,47 +72,22 @@
         "Skill1": "Fletching",
         "Level1": "20"
     },
-    "Fletch Some Arrow Shafts": {},
-    "Gain a Unique Item From a Beginner Clue": {},
-    "Gain a Unique Item From an Easy Clue": {},
-    "Light a Torch": {},
-    "Locate a Runecrafting Altar With a Talisman": {},
     "Make an Attack Potion": {
         "Skill1": "Herblore",
         "Level1": "3"
     },
-    "Mine some Copper Ore": {},
     "Mine some Ore With a Steel Pickaxe": {
         "Skill1": "Mining",
         "Level1": "6"
     },
-    "Obtain a Bird Nest": {},
-    "Obtain a Gem While Mining": {},
     "Obtain a Mark of Grace": {
         "Skill1": "Agility",
         "Level1": "10"
     },
-    "Open 28 Coin Pouches At Once": {},
-    "Open the Leagues Menu": {},
-    "Pickpocket a Citizen": {},
-    "Plant Seeds in an Allotment Patch": {},
-    "Protect Your Crops": {},
-    "Purchase a Player Owned House": {},
-    "Rake a Farming Patch": {},
-    "Reach Base Level 10": {},
-    "Reach Base Level 20": {},
-    "Reach Base Level 5": {},
-    "Reach Combat Level 10": {},
-    "Reach Combat Level 25": {},
-    "Reach Total Level 100": {},
-    "Reach Total Level 250": {},
-    "Reach Total Level 500": {},
-    "Receive a Slayer Task": {},
     "Restore 5 Prayer Points at an Altar": {
         "Skill1": "Prayer",
         "Level1": "5"
     },
-    "Smelt a Bronze Bar": {},
     "Smelt an Iron Bar": {
         "Skill1": "Smithing",
         "Level1": "15"
@@ -147,29 +96,14 @@
         "Skill1": "Smithing",
         "Level1": "20"
     },
-    "Snare a Bird": {},
-    "Spin a Ball of Wool": {},
     "Steal a Chocolate Slice": {
         "Skill1": "Thieving",
         "Level1": "5"
     },
-    "Successfully Cook 5 Pieces of Food": {},
     "Superhuman Strength and Improved Reflexes": {
         "Skill1": "Prayer",
         "Level1": "16"
     },
-    "Turn a Log Into a Plank": {},
-    "Visit Death's Domain": {},
-    "Visit the Rune Essence Mine": {},
-    "Achieve Your First Level 30": {},
-    "Achieve Your First Level 40": {},
-    "Achieve Your First Level 50": {},
-    "Reach Total Level 750": {},
-    "Reach Total Level 1000": {},
-    "Reach Total Level 1250": {},
-    "Reach Base Level 30": {},
-    "Reach Base Level 40": {},
-    "Reach Base Level 50": {},
     "Pickpocket a Guard": {
         "Skill1": "Thieving",
         "Level1": "40"
@@ -186,7 +120,6 @@
         "Skill1": "Farming",
         "Level1": "44"
     },
-    "Fill a Bucket With Supercompost": {},
     "Check a grown Fruit Tree": {
         "Skill1": "Farming",
         "Level1": "27"
@@ -223,7 +156,6 @@
         "Skill1": "Mining",
         "Level1": "41"
     },
-    "Obtain a Clue Geode While Mining": {},
     "Fletch a Willow Shortbow": {
         "Skill1": "Fletching",
         "Level1": "35"
@@ -236,8 +168,6 @@
         "Skill1": "Fletching",
         "Level1": "52"
     },
-    "Unlock Bigger and Badder": {},
-    "Slay 250 Creatures": {},
     "Defeat a Superior Slayer Creature": {
         "Skill1": "Slayer",
         "Level1": "5"
@@ -286,7 +216,6 @@
         "Skill1": "Construction",
         "Level1": "42"
     },
-    "Craft 200 Essence Into Runes": {},
     "Craft 4 Runes With 1 Essence": {
         "Skill1": "Runecraft",
         "Level1": "33"
@@ -339,9 +268,6 @@
         "Skill2": "Magic",
         "Level2": "27"
     },
-    "Reach Combat Level 50": {},
-    "Reach Combat Level 75": {},
-    "Perform a Special Attack": {},
     "Equip an Adamant Weapon": {
         "Skill1": "Attack",
         "Level1": "30"
@@ -408,34 +334,9 @@
         "Skill1": "Prayer",
         "Level1": "43"
     },
-    "Bury Some Wyvern or Dragon Bones": {},
-    "Reach a Prayer Bonus of 15": {},
-    "Defeat a Lesser Demon": {},
-    "Defeat an Adult Chromatic Dragon": {},
-    "Complete a Medium Clue Scroll": {},
-    "Complete a Hard Clue Scroll": {},
-    "Gain a Unique Item From a Medium Clue": {},
-    "Gain a Unique Item From a Hard Clue": {},
-    "Gain 10 Unique Items From Beginner Clues": {},
-    "Gain 10 Unique Items From Easy Clues": {},
-    "Gain 10 Unique Items From Medium Clues": {},
-    "Gain 5 Unique Items From Hard Clues": {},
-    "Fill 5 Beginner Clue Collection Log Slots": {},
-    "Fill 5 Easy Clue Collection Log Slots": {},
-    "Fill 5 Medium Clue Collection Log Slots": {},
-    "Fill 3 Hard Clue Collection Log Slots": {},
-    "Fill 3 Elite Clue Collection Log Slots": {},
-    "Equip a Trimmed Amulet": {},
     "Complete the Medium Western Provinces Diary": {
         "Notes": "See diary page"
     },
-    "Achieve Your First Level 60": {},
-    "Achieve Your First Level 70": {},
-    "Achieve Your First Level 80": {},
-    "Reach Total Level 1500": {},
-    "Reach Total Level 1750": {},
-    "Reach Base Level 60": {},
-    "Reach Base Level 70": {},
     "Steal From a Gem Stall": {
         "Skill1": "Thieving",
         "Level1": "75"
@@ -472,8 +373,6 @@
         "Skill1": "Slayer",
         "Level1": "75"
     },
-    "Complete 50 Slayer Tasks": {},
-    "Complete 100 Slayer Tasks": {},
     "Defeat 10 Superior Slayer Creatures": {
         "Skill1": "Slayer",
         "Level1": "5"
@@ -506,7 +405,6 @@
         "Skill1": "Construction",
         "Level1": "80"
     },
-    "Craft 2500 Essence Into Runes": {},
     "Burn 100 Yew Logs": {
         "Skill1": "Firemaking",
         "Level1": "60"
@@ -531,8 +429,6 @@
         "Skill1": "Herblore",
         "Level1": "70"
     },
-    "Reach Combat Level 100": {},
-    "Reach Combat Level 110": {},
     "Equip a Dragon Weapon": {
         "Skill1": "Attack",
         "Level1": "60"
@@ -569,40 +465,9 @@
         "Skill1": "Prayer",
         "Level1": "75"
     },
-    "Reach a Prayer Bonus of 30": {},
-    "Complete an Elite Clue Scroll": {},
-    "Complete a Master Clue Scroll": {},
-    "Gain a Unique Item From an Elite Clue": {},
-    "Gain a Unique Item From a Master Clue": {},
-    "Gain 35 Unique Items From Beginner Clues": {},
-    "Gain 35 Unique Items From Easy Clues": {},
-    "Gain 25 Unique Items From Medium Clues": {},
-    "Gain 20 Unique Items From Hard Clues": {},
-    "Gain 10 Unique Items From Elite Clues": {},
-    "Gain 10 Unique Items From Master Clues": {},
-    "Fill 10 Beginner Clue Collection Log Slots": {},
-    "Fill 20 Easy Clue Collection Log Slots": {},
-    "Fill 20 Medium Clue Collection Log Slots": {},
-    "Fill 15 Hard Clue Collection Log Slots": {},
-    "Fill 10 Elite Clue Collection Log Slots": {},
-    "Fill 5 Master Clue Collection Log Slots": {},
-    "Equip a Full Gilded or Trimmed Wizard Set": {},
-    "Equip a Full Gilded Set": {},
-    "Equip a Full Vestment Set": {},
-    "Equip a Full God Rune Set": {},
-    "Equip a Full God Dragonhide Set": {},
-    "Equip an Ornament Kit Item": {},
-    "Equip Some Ranger Boots": {},
     "Complete the Hard Western Provinces Diary": {
         "Notes": "See diary page"
     },
-    "Achieve Your First Level 90": {},
-    "Achieve Your First Level 95": {},
-    "Reach Total Level 2000": {},
-    "Reach Total Level 2100": {},
-    "Reach Total Level 2200": {},
-    "Reach Base Level 80": {},
-    "Reach Base Level 90": {},
     "Reach Level 99 Attack": {
         "Skill1": "Attack",
         "Level1": "99"
@@ -787,7 +652,6 @@
         "Skill1": "Farming",
         "Level1": "99"
     },
-    "Obtain a Skilling Pet": {},
     "Travel Between Your Spirit Trees": {
         "Skill1": "Farming",
         "Level1": "91"
@@ -796,7 +660,6 @@
         "Skill1": "Slayer",
         "Level1": "85"
     },
-    "Complete 200 Slayer Tasks": {},
     "Defeat 50 Superior Slayer Creatures": {
         "Skill1": "Slayer",
         "Level1": "5"
@@ -817,38 +680,17 @@
         "Skill1": "Herblore",
         "Level1": "90"
     },
-    "Obtain a Boss Pet": {},
     "Equip a Full Dragon Set": {
         "Skill1": "Defence",
         "Level1": "60"
     },
-    "Reach Combat Level 120": {},
-    "Reach Combat Level 126": {},
-    "Add a Jar to a Display Case": {},
     "Equip an Abyssal Whip": {
         "Skill1": "Attack",
         "Level1": "70"
     },
-    "Gain 50 Unique Items From Hard Clues": {},
-    "Gain 25 Unique Items From Elite Clues": {},
-    "Gain 25 Unique Items From Master Clues": {},
-    "Fill Every Beginner Clue Collection Log Slot": {},
-    "Fill 50 Easy Clue Collection Log Slots": {},
-    "Fill 40 Medium Clue Collection Log Slots": {},
-    "Fill 30 Hard Clue Collection Log Slots": {},
-    "Fill 25 Elite Clue Collection Log Slots": {},
-    "Fill 25 Master Clue Collection Log Slots": {},
-    "Use the Explore Emote": {},
-    "Read a Clueless Scroll": {},
-    "Equip a Heavy Casket": {},
-    "Equip a Scroll Sack": {},
-    "Transform into Uri": {},
     "Complete the Elite Western Provinces Diary": {
         "Notes": "See diary page"
     },
-    "Reach Total Level 2277": {},
-    "Reach Base Level 95": {},
-    "Use the Range in Lumbridge Castle": {},
     "Pickpocket a H.A.M. Member": {
         "Skill1": "Thieving",
         "Level1": "15"
@@ -868,29 +710,13 @@
     "Complete the Easy Varrock Diary": {
         "Notes": "See diary page"
     },
-    "Defeat the Lesser Demon in the Wizards' Tower": {},
-    "Receive a Slayer Task From Vannaka": {},
     "Complete the Easy Lumbridge & Draynor Diary": {
         "Notes": "See diary page"
     },
-    "Complete Rune Mysteries": {},
-    "Enter Zanaris": {},
-    "Travel to Fossil Island": {},
-    "Pet a Stray Dog in Varrock": {},
-    "Complete Sheep Shearer": {},
-    "Complete Gertrude's Cat": {},
-    "Complete Romeo & Juliet": {},
-    "Drink From the Tears of Guthix": {},
-    "Complete Vampyre Slayer": {},
-    "Fully Unlock the Mycelium Transportation System": {},
     "Build a Bank on Fossil Island": {
         "Skill1": "Construction",
         "Level1": "21"
     },
-    "Use a Fairy Ring": {},
-    "Complete the Natural History Quiz": {},
-    "Enter Draynor Manor": {},
-    "Equip Some Fancy Boots or Fighting Boots": {},
     "Dismantle 20 Filled Bird Houses": {
         "Skill1": "Hunter",
         "Level1": "5",
@@ -931,7 +757,6 @@
         "Skill1": "Runecraft",
         "Level1": "59"
     },
-    "Use Enriched Bones on the Strange Machine": {},
     "Chop a Sulliuscep Cap": {
         "Skill1": "Woodcutting",
         "Level1": "65"
@@ -943,12 +768,10 @@
         "Skill1": "Slayer",
         "Level1": "66"
     },
-    "Defeat Obor": {},
     "Defeat a Wall Beast": {
         "Skill1": "Slayer",
         "Level1": "35"
     },
-    "Defeat Bryophyta": {},
     "Equip a Dorgeshuun Crossbow": {
         "Skill1": "Ranged",
         "Level1": "28"
@@ -956,17 +779,12 @@
     "Complete the Medium Lumbridge & Draynor Diary": {
         "Notes": "See diary page"
     },
-    "Equip Some Mithril Gloves": {},
-    "Complete The Lost Tribe": {},
-    "Complete Death to the Dorgeshuun": {},
-    "Complete Demon Slayer": {},
     "Use a Digsite Pendant to Teleport to Fossil Island": {
         "Skill1": "Crafting",
         "Level1": "40",
         "Skill2": "Magic",
         "Level2": "49"
     },
-    "Complete a Soul's Bane": {},
     "Build a Magic Bird House": {
         "Skill1": "Hunter",
         "Level1": "74",
@@ -1000,7 +818,6 @@
         "Skill1": "Agility",
         "Level1": "66"
     },
-    "Defeat a Rune Dragon": {},
     "Equip a Hill Giant Club": {
         "Skill1": "Attack",
         "Level1": "40"
@@ -1098,26 +915,19 @@
         "Skill2": "Defence",
         "Level2": "75"
     },
-    "Receive an Agility Arena Ticket": {},
     "Catch a Karambwanji": {
         "Skill1": "Fishing",
         "Level1": "5"
     },
-    "Defeat a TzHaar": {},
     "Receive a Slayer Task From Duradel": {
         "Skill1": "Combat",
         "Level1": "100",
         "Skill2": "Slayer",
         "Level2": "50"
     },
-    "Defeat a Greater Demon on Karamja": {},
     "Complete the Easy Karamja Diary": {
         "Notes": "See diary page"
     },
-    "Fill a Crate With Bananas": {},
-    "Pick a Pineapple on Karamja": {},
-    "Enter the Brimhaven Dungeon": {},
-    "Buy a Snapdragon From Pirate Jackie the Fruit": {},
     "Catch a Salmon on Karamja": {
         "Skill1": "Fishing",
         "Level1": "30"
@@ -1126,13 +936,9 @@
         "Skill1": "Runecraft",
         "Level1": "44"
     },
-    "Defeat a Steel Dragon on Karamja": {},
     "Complete the Medium Karamja Diary": {
         "Notes": "See diary page"
     },
-    "Enter the Tai Bwo Wannai Hardwood Grove": {},
-    "Equip a Matching Tribal Mask and Broodoo Shield": {},
-    "Equip a Full Tai Bwo Wannai Villager Set": {},
     "Cook 100 Karambwans": {
         "Skill1": "Cooking",
         "Level1": "30"
@@ -1153,12 +959,10 @@
         "Skill1": "Defence",
         "Level1": "70"
     },
-    "Survive a Hit From TzTok-Jad Without Prayer": {},
     "Equip Some Dragon Platelegs or a Dragon Plateskirt": {
         "Skill1": "Defence",
         "Level1": "60"
     },
-    "Equip an Obsidian Cape": {},
     "Equip a Toktz-Ket-Xil": {
         "Skill1": "Defence",
         "Level1": "60"
@@ -1178,8 +982,6 @@
     "Complete the Hard Karamja Diary": {
         "Notes": "See diary page"
     },
-    "Equip a Red Topaz Machete": {},
-    "Find a Gout Tubor": {},
     "Receive 60 Agility Arena Tickets With No Mistakes": {
         "Skill1": "Agility",
         "Level1": "40"
@@ -1188,23 +990,9 @@
         "Skill1": "Thieving",
         "Level1": "90"
     },
-    "Equip a Fire Cape": {},
-    "Complete the Fight Caves in 35:00": {},
-    "Sacrifice a Fire Cape to Access the Inferno": {},
-    "Complete the Fight Caves 5 Times": {},
-    "Complete the Fight Caves 15 Times": {},
-    "Complete the Fight Caves 30 Times": {},
-    "Complete the Inferno 5 Times": {},
-    "Complete the Inferno 10 Times": {},
-    "Complete the Inferno 20 Times": {},
     "Complete the Elite Karamja Diary": {
         "Notes": "See diary page"
     },
-    "Purchase an Onyx in Mor Ul Rek": {},
-    "Trade 1,000 Agility Arena Tickets for XP": {},
-    "Equip an Infernal Cape": {},
-    "Complete the Fight Caves in 25:00": {},
-    "Complete the Inferno in 75:00": {},
     "Craft an Air Rune": {
         "Skill1": "Runecraft",
         "Level1": "1"
@@ -1217,14 +1005,9 @@
         "Skill1": "Slayer",
         "Level1": "1"
     },
-    "Defeat a Troll in Asgarnia": {},
-    "Defeat a Blue Dragon in Asgarnia": {},
-    "Defeat a Black Demon in Asgarnia": {},
     "Complete the Easy Falador Diary": {
         "Notes": "See diary page"
     },
-    "Unlock a Gate in Taverley Dungeon": {},
-    "Enter the Taverly Dungeon": {},
     "Complete a Game of Novice Pest Control": {
         "Skill1": "Combat",
         "Level1": "40"
@@ -1249,7 +1032,6 @@
         "Skill1": "Farming",
         "Level1": "1"
     },
-    "Defeat the Giant Mole": {},
     "Defeat a Skeletal Wyvern": {
         "Skill1": "Slayer",
         "Level1": "72"
@@ -1261,7 +1043,6 @@
     "Charge an Amulet of Glory in the Heroes' Guild": {
         "Notes": "See quest page"
     },
-    "Defeat 30 Black Dragons in Asgarnia": {},
     "Complete the Medium Falador Diary": {
         "Notes": "See diary page"
     },
@@ -1271,13 +1052,10 @@
     "Complete A Porcine of Interest": {
         "Notes": "See quest page"
     },
-    "Defeat Some Animated Rune Armour": {},
-    "Open the Crystal Chest": {},
     "Complete a Game of Intermediate Pest Control": {
         "Skill1": "Combat",
         "Level1": "70"
     },
-    "Equip a Full Graceful Outfit": {},
     "Equip a Full Rogue Outfit": {
         "Skill1": "Thieving",
         "Level1": "50",
@@ -1300,7 +1078,6 @@
         "Skill1": "Herblore",
         "Level1": "77"
     },
-    "Equip a Dragon Defender": {},
     "Defeat K'ril Tsutsaroth": {
         "Skill1": "Hitpoints",
         "Level1": "70"
@@ -1324,8 +1101,6 @@
     "Complete the Hard Falador Diary": {
         "Notes": "See diary page"
     },
-    "Equip a Full Void Knight Set": {},
-    "Turn in 100 Mole Claws to Wyson the Gardener": {},
     "Keep the Veteran Void Knight Above 150 Hitpoints": {
         "Skill1": "Combat",
         "Level1": "100"
@@ -1334,7 +1109,6 @@
         "Skill1": "Combat",
         "Level1": "100"
     },
-    "Equip an Infernal Tool": {},
     "Equip a Staff of the Dead": {
         "Skill1": "Attack",
         "Level1": "75",
@@ -1375,12 +1149,6 @@
         "Skill1": "Slayer",
         "Level1": "91"
     },
-    "Defeat Any God Wars Dungeon Boss 100 Times": {},
-    "Defeat Any God Wars Dungeon Boss 250 Times": {},
-    "Defeat Any God Wars Dungeon Boss 500 Times": {},
-    "Defeat the Giant Mole 250 Times": {},
-    "Defeat the Giant Mole 500 Times": {},
-    "Defeat the Giant Mole 750 Times": {},
     "Complete the Elite Falador Diary": {
         "Notes": "See diary page"
     },
@@ -1412,9 +1180,6 @@
         "Skill4": "Ranged",
         "Level4": "75"
     },
-    "Fremennik Provinces": {},
-    "Switch to the Lunar Spellbook": {},
-    "Defeat a Rock Crab in the Fremennik Province": {},
     "Defeat a Cockatrice in the Fremennik Province": {
         "Skill1": "Slayer",
         "Level1": "25"
@@ -1423,14 +1188,9 @@
         "Skill1": "Slayer",
         "Level1": "30"
     },
-    "Defeat a Troll in the Fremennik Province": {},
     "Complete the Easy Fremennik Diary": {
         "Notes": "See diary page"
     },
-    "Deposit an Item Using Peer the Seer": {},
-    "Use the Bank on Jatizso": {},
-    "Use the Bank on Neitiznot": {},
-    "Use the Bank on Lunar Isle": {},
     "Cast Moonclan Teleport": {
         "Skill1": "Magic",
         "Level1": "69"
@@ -1455,7 +1215,6 @@
         "Skill1": "Smithing",
         "Level1": "60"
     },
-    "Use Some Icy Basalt to Teleport to Weiss": {},
     "Defeat a Basilisk Knight": {
         "Skill1": "Slayer",
         "Level1": "60"
@@ -1474,8 +1233,6 @@
         "Skill1": "Attack",
         "Level1": "40"
     },
-    "Defeat a Dagannoth in the Fremennik Province": {},
-    "Equip a Helm of Neitiznot": {},
     "Defeat a Turoth in the Fremennik Province": {
         "Skill1": "Slayer",
         "Level1": "55"
@@ -1526,14 +1283,6 @@
         "Skill1": "Construction",
         "Level1": "72"
     },
-    "Defeat Vorkath": {},
-    "Equip an Ava's Assembler": {},
-    "Defeat Vorkath in 1:45": {},
-    "Defeat the Dagannoth Kings Without Leaving": {},
-    "Equip a Berserker Ring": {},
-    "Equip a Warrior Ring": {},
-    "Equip a Seers Ring": {},
-    "Equip an Archers Ring": {},
     "Use the Special Attack of a Dragon Axe": {
         "Skill1": "Attack",
         "Level1": "60"
@@ -1573,7 +1322,6 @@
     "Complete the Hard Fremennik Diary": {
         "Notes": "See diary page"
     },
-    "Collect Miscellania Resources at Full Approval": {},
     "Cast Spellbook Swap": {
         "Skill1": "Magic",
         "Level1": "96"
@@ -1595,31 +1343,17 @@
         "Skill1": "Prayer",
         "Level1": "80"
     },
-    "Defeat Vorkath in 1:00": {},
-    "Equip Every Dagannoth King Ring": {},
     "Equip a Neitiznot Faceguard": {
         "Skill1": "Defence",
         "Level1": "70"
     },
-    "Defeat Vorkath 5 Times Without Special Damage": {},
-    "Defeat Vorkath 15 Times Without Leaving": {},
-    "Defeat Vorkath 250 Times": {},
-    "Defeat Vorkath 500 Times": {},
-    "Defeat Vorkath 750 Times": {},
-    "Defeat Each Dagannoth King 300 Times": {},
-    "Defeat Each Dagannoth King 650 Times": {},
-    "Defeat Each Dagannoth King 1000 Times": {},
     "Complete the Elite Fremennik Diary": {
         "Notes": "See diary page"
     },
-    "Equip a Completed God Book": {},
     "Build a Demonic Throne": {
         "Skill1": "Construction",
         "Level1": "99"
     },
-    "Equip Every Draconic Shield": {},
-    "Defeat Vorkath in 0:45": {},
-    "Equip Every Completed God Book": {},
     "Complete the Gnome Stronghold Agility Course": {
         "Skill1": "Agility",
         "Level1": "1"
@@ -1628,14 +1362,10 @@
         "Skill1": "Hunter",
         "Level1": "1"
     },
-    "Complete a Fishing Trawler Game": {},
     "Receive a Slayer Task From Steve": {
         "Skill1": "Combat",
         "Level1": "85"
     },
-    "Defeat a Tortoise With Riders in Kandarin": {},
-    "Visit the Tree Gnome Village": {},
-    "Visit the Tree Gnome Stronghold": {},
     "Complete Monk's Friend": {
         "Notes": "See quest page"
     },
@@ -1645,9 +1375,6 @@
     "Complete Sea Slug": {
         "Notes": "See quest page"
     },
-    "Brimstail Rune Essence Mine teleport": {},
-    "Equip a Marksman Chompy Hat": {},
-    "Equip a Monkey Backpack": {},
     "Complete the Easy Ardougne Diary": {
         "Notes": "See diary page"
     },
@@ -1690,12 +1417,10 @@
         "Skill1": "Farming",
         "Level1": "57"
     },
-    "Defeat a Mithril Dragon": {},
     "Equip a Dragon Scimitar": {
         "Skill1": "Attack",
         "Level1": "60"
     },
-    "Set Up a Dwarf Cannon": {},
     "Enter the Ranging Guild": {
         "Skill1": "Ranged",
         "Level1": "40"
@@ -1724,14 +1449,12 @@
         "Skill2": "Attack",
         "Level2": "50"
     },
-    "Win a Game of Castle Wars": {},
     "Complete Elemental Workshop II": {
         "Notes": "See quest page"
     },
     "Complete the Observatory Quest": {
         "Notes": "See quest page"
     },
-    "Defeat the Penance Queen": {},
     "Complete the Medium Ardougne Diary": {
         "Notes": "See diary page"
     },
@@ -1764,9 +1487,6 @@
         "Skill1": "Fishing",
         "Level1": "62"
     },
-    "Equip a Full Angler's Outfit": {},
-    "Defeat a Demonic Gorilla": {},
-    "Equip a Fighter Torso": {},
     "Defeat a Cave Kraken": {
         "Skill1": "Slayer",
         "Level1": "87",
@@ -1783,11 +1503,9 @@
         "Skill2": "Defence",
         "Level2": "70"
     },
-    "Enter the Myths' Guild": {},
     "Complete the Hard Ardougne Diary": {
         "Notes": "See diary page"
     },
-    "Reach Level 5 in Any Barbarian Assault Role": {},
     "Equip an Ogre Expert Chompy Hat": {
         "Skill1": "Ranged",
         "Level1": "30",
@@ -1813,7 +1531,6 @@
         "Skill1": "Slayer",
         "Level1": "93"
     },
-    "Equip Some Zenyte Jewelry": {},
     "Equip a Heavy Ballista": {
         "Skill1": "Ranged",
         "Level1": "75"
@@ -1830,14 +1547,6 @@
         "Skill1": "Magic",
         "Level1": "70"
     },
-    "Equip a Dragon Full Helm": {},
-    "Defeat the Kraken Boss 250 Times": {},
-    "Defeat the Kraken Boss 500 Times": {},
-    "Defeat the Kraken Boss 750 Times": {},
-    "Defeat 300 Demonic Gorillas": {},
-    "Defeat 750 Demonic Gorillas": {},
-    "Defeat 1500 Demonic Gorillas": {},
-    "Reach Level 5 in Every Barbarian Assault Role": {},
     "Equip a Dragon Archer Chompy Hat": {
         "Skill1": "Ranged",
         "Level1": "30",
@@ -1854,9 +1563,6 @@
     "Complete the Elite Ardougne Diary": {
         "Notes": "See diary page"
     },
-    "Equip All Zenyte Jewelry": {},
-    "Enhance a Trident of the Seas": {},
-    "Equip an Expert Dragon Archer Chompy Hat": {},
     "Equip a Prince Awowogei Monkey Back": {
         "Skill1": "Agility",
         "Level1": "48"
@@ -1869,8 +1575,6 @@
         "Skill1": "Thieving",
         "Level1": "31"
     },
-    "Pick a Winter Sq'irk": {},
-    "Turn in a Winter Sq'irkjuice to Osman": {},
     "Complete the Al Kharid Agility Course": {
         "Skill1": "Agility",
         "Level1": "20"
@@ -1879,17 +1583,9 @@
         "Skill1": "Runecraft",
         "Level1": "14"
     },
-    "Defeat an Al Kharid Warrior": {},
     "Complete the Easy Desert Diary": {
         "Notes": "See diary page"
     },
-    "Go Through the Al Kharid Gate": {},
-    "Tan a Cow Hide in the Kharidian Desert": {},
-    "Use the Bank in Nardah": {},
-    "Cut a Cactus in the Kharidian Desert": {},
-    "Take a Carpet Ride from Pollnivneach to Sophanem": {},
-    "Enter the Kalphite Lair": {},
-    "Complete The Golem": {},
     "Complete Room 3 of Pyramid Plunder": {
         "Skill1": "Thieving",
         "Level1": "41"
@@ -1926,7 +1622,6 @@
         "Skill1": "Herblore",
         "Level1": "36"
     },
-    "Defeat a Crocodile": {},
     "Turn in a Pyramid Top to Simon Templeton": {
         "Skill1": "Agility",
         "Level1": "30"
@@ -1943,8 +1638,6 @@
         "Skill1": "Mining",
         "Level1": "45"
     },
-    "Defeat a Scarab Mage": {},
-    "Defeat a Kalphite Guardian": {},
     "Move Your House to Pollnivneach": {
         "Skill1": "Construction",
         "Level1": "20"
@@ -1960,10 +1653,6 @@
         "Skill1": "Magic",
         "Level1": "60"
     },
-    "Complete Spirits of the Elid": {},
-    "Pray at the Elidinis Statuette": {},
-    "Enter Sophanem": {},
-    "Complete Shadow of the Storm": {},
     "Complete Room 6 of Pyramid Plunder": {
         "Skill1": "Thieving",
         "Level1": "71"
@@ -2020,7 +1709,6 @@
         "Skill1": "Magic",
         "Level1": "88"
     },
-    "Equip a Dragon 2H Sword": {},
     "Complete the Hard Desert Diary": {
         "Notes": "See diary page"
     },
@@ -2030,12 +1718,10 @@
         "Skill2": "Defence",
         "Level2": "25"
     },
-    "Complete Enakhra's Lament": {},
     "Cast Paddewwa Teleport": {
         "Skill1": "Magic",
         "Level1": "54"
     },
-    "Have Zahur Make 1,000 Unfinished Potions At Once": {},
     "Complete Room 8 of Pyramid Plunder": {
         "Skill1": "Thieving",
         "Level1": "91"
@@ -2060,8 +1746,6 @@
         "Skill1": "Smithing",
         "Level1": "89"
     },
-    "Defeat the Kalphite Queen": {},
-    "Equip a Dragon Chainbody in the Kharidian Desert": {},
     "Cast Blood Barrage": {
         "Skill1": "Magic",
         "Level1": "92"
@@ -2070,9 +1754,6 @@
         "Skill1": "Magic",
         "Level1": "94"
     },
-    "Defeat the Kalphite Queen 100 Times": {},
-    "Defeat the Kalphite Queen 250 Times": {},
-    "Defeat the Kalphite Queen 500 Times": {},
     "Complete the Elite Desert Diary": {
         "Notes": "See diary page"
     },
@@ -2094,27 +1775,17 @@
         "Skill1": "Magic",
         "Level1": "60"
     },
-    "There are no master tasks for the Kharidian Desert.": {},
     "Craft a Snelm": {
         "Skill1": "Crafting",
         "Level1": "15"
     },
-    "Receive a Slayer Task From Mazchna": {},
-    "Defeat a Werewolf in Morytania": {},
-    "Defeat One of Fenkenstrain's Experiments": {},
-    "Defeat a Ghast": {},
     "Complete the Easy Morytania Diary": {
         "Notes": "See diary page"
     },
-    "Complete an Easy Temple Trek": {},
-    "Visit Port Phasmatys": {},
-    "Pet Frank": {},
     "Obtain a Rune Crossbow From a Lucky Impling": {
         "Skill1": "Hunter",
         "Level1": "89"
     },
-    "Visit Harmony Island": {},
-    "Visit Mos Le'Harmless": {},
     "Complete Floor 1 of the Hallowed Sepulchre": {
         "Skill1": "Agility",
         "Level1": "52"
@@ -2147,20 +1818,12 @@
         "Skill1": "Crafting",
         "Level1": "55"
     },
-    "Loot a Barrows Chest": {},
     "Defeat a Fiyr Shade": {
         "Notes": "Firemaking 65 if killing the shade in Temple Trekking doesn't count"
     },
-    "Defeat a Vyrewatch Sentinel": {},
-    "Equip a Piece of any Barrows Armour Set": {},
     "Complete the Medium Morytania Diary": {
         "Notes": "See diary page"
     },
-    "Complete a Medium Temple Trek": {},
-    "Complete Haunted Mine": {},
-    "Complete A Taste of Hope": {},
-    "Achieve 100% Shades of Mort'Ton Sanctity": {},
-    "Equip a Salve Amulet (e)": {},
     "Complete Floor 3 of the Hallowed Sepulchre": {
         "Skill1": "Agility",
         "Level1": "72"
@@ -2197,7 +1860,6 @@
         "Skill1": "Slayer",
         "Level1": "75"
     },
-    "Equip any Full Barrows Armour Set": {},
     "Equip a Granite Hammer or Granite Ring": {
         "Skill1": "Slayer",
         "Level1": "75"
@@ -2209,8 +1871,6 @@
     "Complete the Hard Morytania Diary": {
         "Notes": "See diary page"
     },
-    "Complete a Hard Temple Trek": {},
-    "Complete Sins of the Father": {},
     "Complete Floor 5 of the Hallowed Sepulchre": {
         "Skill1": "Agility",
         "Level1": "92"
@@ -2223,8 +1883,6 @@
         "Skill1": "Agility",
         "Level1": "92"
     },
-    "Defeat The Nightmare": {},
-    "Complete the Theatre of Blood With No Deaths": {},
     "Equip Some Guardian Boots": {
         "Skill1": "Defence",
         "Level1": "75"
@@ -2287,12 +1945,6 @@
         "Skill1": "Attack",
         "Level1": "75"
     },
-    "Complete the Theatre of Blood in 20:00": {},
-    "Defeat The Nightmare in 3:00": {},
-    "Complete the Theatre of Blood 100 Times": {},
-    "Complete the Theatre of Blood 200 Times": {},
-    "Complete the Theatre of Blood 350 Times": {},
-    "Complete the Theatre of Blood 500 Times": {},
     "Defeat the Grotesque Guardians 250 Times": {
         "Skill1": "Slayer",
         "Level1": "75"
@@ -2316,19 +1968,10 @@
         "Skill1": "Defence",
         "Level1": "75"
     },
-    "Complete the Theatre of Blood in 16:00": {},
-    "Cook a Rabbit in Tirannwn": {},
     "Harvest some Sweetcorn in Prifddinas": {
         "Skill1": "Farming",
         "Level1": "20"
     },
-    "Cross a Trap in Isafdar": {},
-    "Defeat a Waterfiend in Tirannwn": {},
-    "Defeat a Moss Giant in Tirannwn": {},
-    "Use the Bank in Lletya": {},
-    "Find Every Memoriam Crystal": {},
-    "Charter a Ship From Prifddinas to Port Tyras": {},
-    "Talk to Ilfeen in Tirannwn": {},
     "Check a grown Papaya Tree in Lletya": {
         "Skill1": "Farming",
         "Level1": "57"
@@ -2337,8 +1980,6 @@
         "Skill1": "Runecraft",
         "Level1": "65"
     },
-    "Move Your House to Prifddinas": {},
-    "Defeat an Elf in Tirannwn": {},
     "Defeat a Bloodveld in Tirannwn": {
         "Skill1": "Slayer",
         "Level1": "50"
@@ -2347,7 +1988,6 @@
         "Skill1": "Slayer",
         "Level1": "70"
     },
-    "Use an Elven Teleport Crystal": {},
     "Check a grown Crystal Tree": {
         "Skill1": "Farming",
         "Level1": "74"
@@ -2374,9 +2014,6 @@
         "Skill2": "Crafting",
         "Level2": "50"
     },
-    "Complete the Gauntlet": {},
-    "Defeat Zalcano": {},
-    "Defeat Zulrah": {},
     "Defeat a Dark Beast in Tirannwn": {
         "Skill1": "Slayer",
         "Level1": "90"
@@ -2385,8 +2022,6 @@
         "Skill1": "Ranged",
         "Level1": "60"
     },
-    "Defeat Zulrah in 1:30": {},
-    "Complete the Gauntlet in 8:00": {},
     "Equip a Crystal Bow": {
         "Skill1": "Ranged",
         "Level1": "70",
@@ -2430,52 +2065,15 @@
         "Skill1": "Hunter",
         "Level1": "80"
     },
-    "Obtain a Zalcano Shard": {},
     "Equip a Full Crystal Armour Set": {
         "Skill1": "Smithing",
         "Level1": "74",
         "Skill2": "Crafting",
         "Level2": "74"
     },
-    "Complete the Corrupted Gauntlet": {},
-    "Obtain a Crystal Tool Seed": {},
-    "Equip a Serpentine Helm": {},
-    "Craft a Toxic Blowpipe": {},
-    "Craft a Toxic Trident": {},
-    "Defeat Zulrah in 0:54": {},
-    "Complete the Gauntlet in 5:00": {},
-    "Complete the Corrupted Gauntlet in 8:30": {},
-    "Complete the Corrupted Gauntlet in 7:00": {},
-    "Complete the Corrupted Gauntlet 100 Times": {},
-    "Complete the Corrupted Gauntlet 250 Times": {},
-    "Defeat Zalcano 250 Times": {},
-    "Defeat Zalcano 500 Times": {},
-    "Defeat Zulrah 250 Times": {},
-    "Defeat Zulrah 500 Times": {},
-    "Equip a Piece of the Dragonstone Armour Set": {},
-    "Equip a Corrupted Blade of Saeldor": {},
-    "Defeat Zulrah in 0:42": {},
-    "Complete the Corrupted Gauntlet in 5:00": {},
-    "Equip a Crystal Crown": {},
-    "Sacrifice Some Bones at the Chaos Temple": {},
-    "Use the Abyss": {},
-    "Defeat a Lava Dragon in the Wilderness": {},
-    "Defeat a Fire Giant in the Wilderness": {},
-    "Defeat a Chaos Dwarf in the Wilderness": {},
-    "Defeat a Green Dragon in the Wilderness": {},
     "Complete the Easy Wilderness Diary": {
         "Notes": "See diary page"
     },
-    "Order a Drink at the Old Nite": {},
-    "Use a Lever to Teleport to Edgeville": {},
-    "Pray at the Southern Chaos Temple": {},
-    "Pray at the Western Chaos Temple": {},
-    "Enter the Wilderness Resource Area": {},
-    "Enter the Wilderness God Wars Dungeon": {},
-    "Use the Bank at the Mage Arena": {},
-    "Visit Ferox Enclave": {},
-    "Sacrifice Some Dragon Bones at the Chaos Temple": {},
-    "Bury Some Lava Dragon Bones": {},
     "Complete the Wilderness Agility Course": {
         "Skill1": "Agility",
         "Level1": "52"
@@ -2488,24 +2086,9 @@
         "Skill1": "Runecraft",
         "Level1": "50"
     },
-    "Defeat the Crazy Archaeologist": {},
-    "Defeat Scorpia": {},
-    "Defeat the Chaos Fanatic": {},
-    "Defeat the Chaos Elemental": {},
-    "Equip a Fedora": {},
-    "Obtain an Ecumenical Key": {},
-    "Equip a Lava Battlestaff": {},
-    "Equip a Bracelet of Ethereum": {},
-    "Equip a God Cape": {},
-    "Cast Saradomin Strike": {},
-    "Cast Claws of Guthix": {},
-    "Cast Flames of Zamorak": {},
     "Complete the Medium Wilderness Diary": {
         "Notes": "See diary page"
     },
-    "Open a Looting Bag": {},
-    "Enter the Deep Wilderness Dungeon": {},
-    "Open One of Larran's Chests": {},
     "Catch 100 Dark Crabs": {
         "Skill1": "Fishing",
         "Level1": "85"
@@ -2522,15 +2105,6 @@
         "Skill1": "Runecraft",
         "Level1": "75"
     },
-    "Defeat Venenatis": {},
-    "Defeat Callisto": {},
-    "Defeat Vet'ion": {},
-    "Defeat the King Black Dragon": {},
-    "Equip a Dragon Pickaxe": {},
-    "Equip a Dragon 2H Sword in the Wilderness": {},
-    "Equip an Enchanted Slayer Staff": {},
-    "Trade With the Emblem Trader": {},
-    "Imbue a God Cape": {},
     "Complete the Hard Wilderness Diary": {
         "Notes": "See diary page"
     },
@@ -2564,9 +2138,6 @@
         "Skill1": "Mining",
         "Level1": "85"
     },
-    "Equip a Treasonous Ring": {},
-    "Equip a Tyrannical Ring": {},
-    "Equip a Ring of the Gods": {},
     "Equip a Craw's Bow": {
         "Skill1": "Ranged",
         "Level1": "60"
@@ -2579,10 +2150,6 @@
         "Skill1": "Magic",
         "Level1": "60"
     },
-    "Defeat the Corporeal Beast": {},
-    "Defeat the Corporeal Beast 100 Times": {},
-    "Defeat the Corporeal Beast 250 Times": {},
-    "Defeat the Corporeal Beast 500 Times": {},
     "Equip a Blessed Spirit Shield": {
         "Skill1": "Defence",
         "Level1": "70",
@@ -2623,7 +2190,5 @@
         "Level1": "75",
         "Skill2": "Prayer",
         "Level2": "75"
-    },
-    "Obtain Every Revenant Weapon": {},
-    "Equip an Amulet of Eternal Glory": {}
+    }
 }
