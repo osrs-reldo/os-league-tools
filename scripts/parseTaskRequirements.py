@@ -11,14 +11,23 @@ def make_json(csvFilePath, jsonFilePath):
 		csvReader = csv.DictReader(csvf) 
 
 		for row in csvReader: 
-			rowOutput = {}
+			rowOutput = {'skills':[]}
 			key = row.pop('Task') # This is the primary key
-			for val in row:
-				# Strip empty columns
-				if row[val] != '':
-					rowOutput[val] = row[val]
 
-			if len(rowOutput) > 0:
+			for prop in row:
+				# Skip empty columns
+				if row[prop] == '':
+					continue
+				if prop == 'Notes': 
+					rowOutput['notes'] = row[prop]
+					continue
+				if prop.startswith('Skill'):
+					skill = {}
+					skill['name'] = row[prop]
+					skill['level'] = row['Level' + prop[5]]
+					rowOutput['skills'].append(skill)
+
+			if len(rowOutput['skills']) > 0 or 'notes' in rowOutput:
 				data[key] = rowOutput 
 
 	with open(jsonFilePath, 'w', encoding='utf-8') as jsonf: 
