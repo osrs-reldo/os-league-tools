@@ -1,0 +1,4278 @@
+{
+    "Burn Some Oak Logs": {
+        "skills": [
+            {
+                "name": "Firemaking",
+                "level": "15"
+            }
+        ]
+    },
+    "Catch a Baby Impling": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "17"
+            }
+        ]
+    },
+    "Catch a Herring": {
+        "skills": [
+            {
+                "name": "Fishing",
+                "level": "10"
+            }
+        ]
+    },
+    "Catch an Anchovy": {
+        "skills": [
+            {
+                "name": "Fishing",
+                "level": "15"
+            }
+        ]
+    },
+    "Chop Some Logs With a Steel Axe": {
+        "skills": [
+            {
+                "name": "Woodcutting",
+                "level": "6"
+            }
+        ]
+    },
+    "Clean a Grimy Guam": {
+        "skills": [
+            {
+                "name": "Herblore",
+                "level": "3"
+            }
+        ]
+    },
+    "Complete a Rooftop Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "10"
+            }
+        ]
+    },
+    "Complete the Easy Western Provinces Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Craft a Leather Body": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "14"
+            }
+        ]
+    },
+    "Cut a Sapphire": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "20"
+            }
+        ]
+    },
+    "Earn Some Slayer Points": {
+        "skills": [
+            {
+                "name": "Combat",
+                "level": "20"
+            }
+        ]
+    },
+    "Equip a Full Mithril Set": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "20"
+            }
+        ]
+    },
+    "Equip a Maple Shortbow": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "30"
+            }
+        ]
+    },
+    "Equip a Mithril Weapon": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "20"
+            }
+        ]
+    },
+    "Equip a Spiny Helmet": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "5"
+            }
+        ]
+    },
+    "Equip a Studded Body and Chaps": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "20"
+            },
+            {
+                "name": "Defence",
+                "level": "20"
+            }
+        ]
+    },
+    "Fletch 150 Iron Arrows": {
+        "skills": [
+            {
+                "name": "Fletching",
+                "level": "15"
+            }
+        ]
+    },
+    "Fletch an Oak Shortbow": {
+        "skills": [
+            {
+                "name": "Fletching",
+                "level": "20"
+            }
+        ]
+    },
+    "Make an Attack Potion": {
+        "skills": [
+            {
+                "name": "Herblore",
+                "level": "3"
+            }
+        ]
+    },
+    "Mine some Ore With a Steel Pickaxe": {
+        "skills": [
+            {
+                "name": "Mining",
+                "level": "6"
+            }
+        ]
+    },
+    "Obtain a Mark of Grace": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "10"
+            }
+        ]
+    },
+    "Restore 5 Prayer Points at an Altar": {
+        "skills": [
+            {
+                "name": "Prayer",
+                "level": "5"
+            }
+        ]
+    },
+    "Smelt an Iron Bar": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "15"
+            }
+        ]
+    },
+    "Smith 150 Iron Arrowtips": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "20"
+            }
+        ]
+    },
+    "Steal a Chocolate Slice": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "5"
+            }
+        ]
+    },
+    "Superhuman Strength and Improved Reflexes": {
+        "skills": [
+            {
+                "name": "Prayer",
+                "level": "16"
+            }
+        ]
+    },
+    "Pickpocket a Guard": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "40"
+            }
+        ]
+    },
+    "Obtain 800 Coins From Coin Pouches At Once": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "40"
+            }
+        ]
+    },
+    "Pickpocket a Ranarr Seed": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "38"
+            }
+        ]
+    },
+    "Harvest an Irit Leaf": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "44"
+            }
+        ]
+    },
+    "Check a grown Fruit Tree": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "27"
+            }
+        ]
+    },
+    "Chop 100 Willow Logs": {
+        "skills": [
+            {
+                "name": "Woodcutting",
+                "level": "30"
+            }
+        ]
+    },
+    "Chop Some Logs With a Rune Axe": {
+        "skills": [
+            {
+                "name": "Woodcutting",
+                "level": "41"
+            }
+        ]
+    },
+    "Build a Waka Canoe": {
+        "skills": [
+            {
+                "name": "Woodcutting",
+                "level": "57"
+            }
+        ]
+    },
+    "Ferment 100 Jugs of Wine": {
+        "skills": [
+            {
+                "name": "Cooking",
+                "level": "35"
+            }
+        ]
+    },
+    "Cook 100 Lobsters": {
+        "skills": [
+            {
+                "name": "Cooking",
+                "level": "40"
+            }
+        ]
+    },
+    "Make a Pineapple Pizza": {
+        "skills": [
+            {
+                "name": "Cooking",
+                "level": "65"
+            }
+        ]
+    },
+    "Mine 50 Iron Ore": {
+        "skills": [
+            {
+                "name": "Mining",
+                "level": "15"
+            }
+        ]
+    },
+    "Mine some Ore With a Rune Pickaxe": {
+        "skills": [
+            {
+                "name": "Mining",
+                "level": "41"
+            }
+        ]
+    },
+    "Fletch a Willow Shortbow": {
+        "skills": [
+            {
+                "name": "Fletching",
+                "level": "35"
+            }
+        ]
+    },
+    "Create a Mithril Grapple": {
+        "skills": [
+            {
+                "name": "Fletching",
+                "level": "59"
+            }
+        ]
+    },
+    "Fletch some Broad Arrows or Bolts": {
+        "skills": [
+            {
+                "name": "Fletching",
+                "level": "52"
+            }
+        ]
+    },
+    "Defeat a Superior Slayer Creature": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "5"
+            }
+        ]
+    },
+    "Craft 100 Unpowered Orbs": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "46"
+            }
+        ]
+    },
+    "Craft an Emerald Ring": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "27"
+            }
+        ]
+    },
+    "Craft a Ruby Amulet": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "50"
+            }
+        ]
+    },
+    "Catch 100 Lobsters": {
+        "skills": [
+            {
+                "name": "Fishing",
+                "level": "40"
+            }
+        ]
+    },
+    "Catch 50 Swordfish": {
+        "skills": [
+            {
+                "name": "Fishing",
+                "level": "50"
+            }
+        ]
+    },
+    "Catch 50 Salmon": {
+        "skills": [
+            {
+                "name": "Fishing",
+                "level": "30"
+            }
+        ]
+    },
+    "Smith a Steel Platebody": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "48"
+            }
+        ]
+    },
+    "Smelt a Steel Bar": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "30"
+            }
+        ]
+    },
+    "Build a Mahogany Portal": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "65"
+            }
+        ]
+    },
+    "Build an Oak Larder": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "33"
+            }
+        ]
+    },
+    "Fill a Medium S.T.A.S.H. Unit": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "42"
+            }
+        ]
+    },
+    "Craft 4 Runes With 1 Essence": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "33"
+            }
+        ]
+    },
+    "Craft Any Combination Rune": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "6"
+            }
+        ]
+    },
+    "Burn 100 Willow Logs": {
+        "skills": [
+            {
+                "name": "Firemaking",
+                "level": "30"
+            }
+        ]
+    },
+    "Equip a Harpie Bug Lantern": {
+        "skills": [
+            {
+                "name": "Firemaking",
+                "level": "33"
+            },
+            {
+                "name": "Slayer",
+                "level": "33"
+            }
+        ]
+    },
+    "Light a Bullseye Lantern": {
+        "skills": [
+            {
+                "name": "Firemaking",
+                "level": "49"
+            }
+        ]
+    },
+    "Equip full Graahk, Larupia or Kyatt": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "31"
+            }
+        ]
+    },
+    "Catch a Swamp Lizard or Salamander": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "29"
+            }
+        ]
+    },
+    "Catch a Butterfly": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "15"
+            }
+        ]
+    },
+    "Complete 50 Laps of a Rooftop Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "10"
+            }
+        ]
+    },
+    "Make 30 Prayer Potions": {
+        "skills": [
+            {
+                "name": "Herblore",
+                "level": "38"
+            }
+        ]
+    },
+    "Clean a Grimy Avantoe": {
+        "skills": [
+            {
+                "name": "Herblore",
+                "level": "48"
+            }
+        ]
+    },
+    "Make a Potion With an Amulet of Chemistry": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "34"
+            },
+            {
+                "name": "Magic",
+                "level": "27"
+            }
+        ]
+    },
+    "Equip an Adamant Weapon": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "30"
+            }
+        ]
+    },
+    "Equip a Rune Weapon": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "40"
+            }
+        ]
+    },
+    "Equip a Full Adamant Set": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "30"
+            }
+        ]
+    },
+    "Equip a Full Rune Set": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "40"
+            }
+        ]
+    },
+    "Equip a Full Green Dragonhide Set": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "40"
+            },
+            {
+                "name": "Defence",
+                "level": "40"
+            }
+        ]
+    },
+    "Equip a Full Blue Dragonhide Set": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "50"
+            },
+            {
+                "name": "Defence",
+                "level": "40"
+            }
+        ]
+    },
+    "Equip a Full Red Dragonhide Set": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "60"
+            },
+            {
+                "name": "Defence",
+                "level": "40"
+            }
+        ]
+    },
+    "Equip a Yew Shortbow": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "60"
+            }
+        ]
+    },
+    "Equip an Elemental Battlestaff or Mystic Staff": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "30"
+            },
+            {
+                "name": "Attack",
+                "level": "40"
+            }
+        ]
+    },
+    "Cast a Blast Spell": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "41"
+            }
+        ]
+    },
+    "Teleport Using Law Runes": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "25"
+            }
+        ]
+    },
+    "Cast High Level Alchemy": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "55"
+            }
+        ]
+    },
+    "Equip a Piece of a Mystic Set": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "40"
+            },
+            {
+                "name": "Defence",
+                "level": "20"
+            }
+        ]
+    },
+    "Use the Protect from Melee Prayer": {
+        "skills": [
+            {
+                "name": "Prayer",
+                "level": "43"
+            }
+        ]
+    },
+    "Complete the Medium Western Provinces Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Steal From a Gem Stall": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "75"
+            }
+        ]
+    },
+    "Check a grown Palm Tree": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "68"
+            }
+        ]
+    },
+    "Dig Up Some Magic Roots": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "75"
+            }
+        ]
+    },
+    "Chop 75 Magic Logs": {
+        "skills": [
+            {
+                "name": "Woodcutting",
+                "level": "75"
+            }
+        ]
+    },
+    "Cook 100 Sharks": {
+        "skills": [
+            {
+                "name": "Cooking",
+                "level": "80"
+            }
+        ]
+    },
+    "Mine 50 Adamantite Ore": {
+        "skills": [
+            {
+                "name": "Mining",
+                "level": "70"
+            }
+        ]
+    },
+    "Fletch a Magic Shortbow": {
+        "skills": [
+            {
+                "name": "Fletching",
+                "level": "80"
+            }
+        ]
+    },
+    "Fletch a Rune Crossbow": {
+        "skills": [
+            {
+                "name": "Fletching",
+                "level": "91"
+            }
+        ]
+    },
+    "Defeat a Slayer Boss": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "75"
+            }
+        ]
+    },
+    "Defeat 10 Superior Slayer Creatures": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "5"
+            }
+        ]
+    },
+    "Defeat 20 Superior Slayer Creatures": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "5"
+            }
+        ]
+    },
+    "Craft a Dragonstone Amulet": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "80"
+            }
+        ]
+    },
+    "Craft 30 Blue Dragonhide Bodies": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "71"
+            }
+        ]
+    },
+    "Catch 100 Shark": {
+        "skills": [
+            {
+                "name": "Fishing",
+                "level": "76"
+            }
+        ]
+    },
+    "Smelt a Runite Bar": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "85"
+            }
+        ]
+    },
+    "Fill a Hard S.T.A.S.H. Unit": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "55"
+            }
+        ]
+    },
+    "Build an Achievement Gallery": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "80"
+            }
+        ]
+    },
+    "Burn 100 Yew Logs": {
+        "skills": [
+            {
+                "name": "Firemaking",
+                "level": "60"
+            }
+        ]
+    },
+    "Burn Some Magic Logs": {
+        "skills": [
+            {
+                "name": "Firemaking",
+                "level": "75"
+            }
+        ]
+    },
+    "Catch a Dragon Impling": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "83"
+            }
+        ]
+    },
+    "Complete 250 Laps of a Rooftop Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "10"
+            }
+        ]
+    },
+    "Make a Saradomin Brew": {
+        "skills": [
+            {
+                "name": "Herblore",
+                "level": "81"
+            }
+        ]
+    },
+    "Clean 100 Grimy Dwarf Weed": {
+        "skills": [
+            {
+                "name": "Herblore",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip a Dragon Weapon": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "60"
+            }
+        ]
+    },
+    "Equip a Full Black Dragonhide Set": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "70"
+            },
+            {
+                "name": "Defence",
+                "level": "40"
+            }
+        ]
+    },
+    "Equip a Magic Shortbow": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "50"
+            }
+        ]
+    },
+    "Equip a Rune Crossbow": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "61"
+            }
+        ]
+    },
+    "Equip a Combination Battlestaff or Mystic Staff": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "30"
+            },
+            {
+                "name": "Attack",
+                "level": "30"
+            }
+        ]
+    },
+    "Cast a Wave Spell": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "62"
+            }
+        ]
+    },
+    "Cast a Surge Spell": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "81"
+            }
+        ]
+    },
+    "Restore 75 Prayer Points at an Altar": {
+        "skills": [
+            {
+                "name": "Prayer",
+                "level": "75"
+            }
+        ]
+    },
+    "Complete the Hard Western Provinces Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Reach Level 99 Attack": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Attack XP": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Strength": {
+        "skills": [
+            {
+                "name": "Strength",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Strength XP": {
+        "skills": [
+            {
+                "name": "Strength",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Defence": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Defence XP": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Ranged": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Ranged XP": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Prayer": {
+        "skills": [
+            {
+                "name": "Prayer",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Prayer XP": {
+        "skills": [
+            {
+                "name": "Prayer",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Magic": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Magic XP": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Runecraft": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Runecraft XP": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Construction": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Construction XP": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Hitpoints": {
+        "skills": [
+            {
+                "name": "Hitpoints",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Hitpoints XP": {
+        "skills": [
+            {
+                "name": "Hitpoints",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Agility": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Agility XP": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Herblore": {
+        "skills": [
+            {
+                "name": "Herblore",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Herblore XP": {
+        "skills": [
+            {
+                "name": "Herblore",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Thieving": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Thieving XP": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Crafting": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Crafting XP": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Fletching": {
+        "skills": [
+            {
+                "name": "Fletching",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Fletching XP": {
+        "skills": [
+            {
+                "name": "Fletching",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Slayer": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Slayer XP": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Hunter": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Hunter XP": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Mining": {
+        "skills": [
+            {
+                "name": "Mining",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Mining XP": {
+        "skills": [
+            {
+                "name": "Mining",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Smithing": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Smithing XP": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Fishing": {
+        "skills": [
+            {
+                "name": "Fishing",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Fishing XP": {
+        "skills": [
+            {
+                "name": "Fishing",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Cooking": {
+        "skills": [
+            {
+                "name": "Cooking",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Cooking XP": {
+        "skills": [
+            {
+                "name": "Cooking",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Firemaking": {
+        "skills": [
+            {
+                "name": "Firemaking",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Firemaking XP": {
+        "skills": [
+            {
+                "name": "Firemaking",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Woodcutting": {
+        "skills": [
+            {
+                "name": "Woodcutting",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Woodcutting XP": {
+        "skills": [
+            {
+                "name": "Woodcutting",
+                "level": "99"
+            }
+        ]
+    },
+    "Reach Level 99 Farming": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "99"
+            }
+        ]
+    },
+    "Obtain 25 Million Farming XP": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "99"
+            }
+        ]
+    },
+    "Travel Between Your Spirit Trees": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "91"
+            }
+        ]
+    },
+    "Slay an Abyssal Demon": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "85"
+            }
+        ]
+    },
+    "Defeat 50 Superior Slayer Creatures": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "5"
+            }
+        ]
+    },
+    "Craft an Onyx Amulet": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "90"
+            }
+        ]
+    },
+    "Smith a Dragonfire Shield": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "90"
+            }
+        ]
+    },
+    "Catch a Lucky Impling Bare-Handed": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "99"
+            }
+        ]
+    },
+    "Make a Super Combat Potion": {
+        "skills": [
+            {
+                "name": "Herblore",
+                "level": "90"
+            }
+        ]
+    },
+    "Equip a Full Dragon Set": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "60"
+            }
+        ]
+    },
+    "Equip an Abyssal Whip": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "70"
+            }
+        ]
+    },
+    "Complete the Elite Western Provinces Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Pickpocket a H.A.M. Member": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "15"
+            }
+        ]
+    },
+    "Steal From the Varrock Tea Stall": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "5"
+            }
+        ]
+    },
+    "Complete the Draynor Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "10"
+            }
+        ]
+    },
+    "Craft 50 Water Runes": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "5"
+            }
+        ]
+    },
+    "Complete the Easy Varrock Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Complete the Easy Lumbridge & Draynor Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Build a Bank on Fossil Island": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "21"
+            }
+        ]
+    },
+    "Dismantle 20 Filled Bird Houses": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "5"
+            },
+            {
+                "name": "Crafting",
+                "level": "5"
+            }
+        ]
+    },
+    "Build a Yew Bird House": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "59"
+            },
+            {
+                "name": "Crafting",
+                "level": "60"
+            }
+        ]
+    },
+    "Catch 50 Implings in Puro-Puro": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "17"
+            }
+        ]
+    },
+    "Complete a Volcanic Mine Game": {
+        "skills": [
+            {
+                "name": "Mining",
+                "level": "50"
+            }
+        ]
+    },
+    "Enter the Cooks' Guild": {
+        "skills": [
+            {
+                "name": "Cooking",
+                "level": "32"
+            }
+        ]
+    },
+    "Pickpocket a Varrock Guard": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "40"
+            }
+        ]
+    },
+    "Pickpocket a Bullseye Lantern From a Cave Goblin": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "36"
+            }
+        ]
+    },
+    "Complete 30 Laps of the Draynor Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "10"
+            }
+        ]
+    },
+    "Craft 50 Cosmic Runes": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "59"
+            }
+        ]
+    },
+    "Chop a Sulliuscep Cap": {
+        "skills": [
+            {
+                "name": "Woodcutting",
+                "level": "65"
+            }
+        ]
+    },
+    "Complete the Medium Varrock Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Defeat a Fossil Island Wyvern": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "66"
+            }
+        ]
+    },
+    "Defeat a Wall Beast": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "35"
+            }
+        ]
+    },
+    "Equip a Dorgeshuun Crossbow": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "28"
+            }
+        ]
+    },
+    "Complete the Medium Lumbridge & Draynor Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Use a Digsite Pendant to Teleport to Fossil Island": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "40"
+            },
+            {
+                "name": "Magic",
+                "level": "49"
+            }
+        ]
+    },
+    "Build a Magic Bird House": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "74"
+            },
+            {
+                "name": "Crafting",
+                "level": "75"
+            }
+        ]
+    },
+    "Complete the Hard Varrock Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Catch 200 Implings in Puro-Puro": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "17"
+            }
+        ]
+    },
+    "Buy an Ash Covered Tome": {
+        "skills": [
+            {
+                "name": "Mining",
+                "level": "50"
+            }
+        ]
+    },
+    "Check a grown Magic Tree in Lumbridge": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "75"
+            }
+        ]
+    },
+    "Check a grown Mahogany Tree": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "55"
+            }
+        ]
+    },
+    "Steal a Diamond in Dorgesh-Kaan": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "78"
+            }
+        ]
+    },
+    "Take the Advanced Shortcut to the Cosmic Altar": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "66"
+            }
+        ]
+    },
+    "Equip a Hill Giant Club": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "40"
+            }
+        ]
+    },
+    "Equip Bryophyta's Staff": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "30"
+            },
+            {
+                "name": "Magic",
+                "level": "30"
+            }
+        ]
+    },
+    "Defeat the Abyssal Sire": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "85"
+            }
+        ]
+    },
+    "Defeat an Ancient Wyvern": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "82"
+            }
+        ]
+    },
+    "Complete the Hard Lumbridge & Draynor Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Catch a Herbiboar 100 Times": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "80"
+            }
+        ]
+    },
+    "Catch a Herbiboar 250 Times": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "80"
+            }
+        ]
+    },
+    "Catch a Herbiboar 500 Times": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "80"
+            }
+        ]
+    },
+    "Receive a Torstol From a Herbiboar": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "80"
+            },
+            {
+                "name": "Herblore",
+                "level": "77"
+            }
+        ]
+    },
+    "Complete the Elite Varrock Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Mine a Runite Ore Fragment": {
+        "skills": [
+            {
+                "name": "Mining",
+                "level": "85"
+            }
+        ]
+    },
+    "Equip a Dragon Crossbow": {
+        "skills": [
+            {
+                "name": "Fletching",
+                "level": "78"
+            }
+        ]
+    },
+    "Equip a Dragonfire Shield": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "90"
+            },
+            {
+                "name": "Defence",
+                "level": "75"
+            }
+        ]
+    },
+    "Equip an Ancient Wyvern Shield": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "66"
+            },
+            {
+                "name": "Defence",
+                "level": "75"
+            },
+            {
+                "name": "Magic",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip an Abyssal Bludgeon": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "85"
+            }
+        ]
+    },
+    "Equip an Abyssal Dagger": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "85"
+            }
+        ]
+    },
+    "Offer an Unsired to the Font of Consumption": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "85"
+            }
+        ]
+    },
+    "Defeat the Abyssal Sire 100 Times": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "85"
+            }
+        ]
+    },
+    "Defeat the Abyssal Sire 250 Times": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "85"
+            }
+        ]
+    },
+    "Defeat the Abyssal Sire 500 Times": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "85"
+            }
+        ]
+    },
+    "Complete the Elite Lumbridge & Draynor Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Equip a Dragon Platebody or Dragon Kiteshield": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "90"
+            },
+            {
+                "name": "Defence",
+                "level": "75"
+            }
+        ]
+    },
+    "Catch a Karambwanji": {
+        "skills": [
+            {
+                "name": "Fishing",
+                "level": "5"
+            }
+        ]
+    },
+    "Receive a Slayer Task From Duradel": {
+        "skills": [
+            {
+                "name": "Combat",
+                "level": "100"
+            },
+            {
+                "name": "Slayer",
+                "level": "50"
+            }
+        ]
+    },
+    "Complete the Easy Karamja Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Catch a Salmon on Karamja": {
+        "skills": [
+            {
+                "name": "Fishing",
+                "level": "30"
+            }
+        ]
+    },
+    "Craft 50 Nature Runes": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "44"
+            }
+        ]
+    },
+    "Complete the Medium Karamja Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Cook 100 Karambwans": {
+        "skills": [
+            {
+                "name": "Cooking",
+                "level": "30"
+            }
+        ]
+    },
+    "Take a Shortcut Across the Shilo Village River": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "77"
+            }
+        ]
+    },
+    "Catch 100 Karambwans": {
+        "skills": [
+            {
+                "name": "Fishing",
+                "level": "65"
+            }
+        ]
+    },
+    "Check a grown Calquat Tree": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "72"
+            }
+        ]
+    },
+    "Equip a Full Obsidian Armour Set": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip Some Dragon Platelegs or a Dragon Plateskirt": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "60"
+            }
+        ]
+    },
+    "Equip a Toktz-Ket-Xil": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "60"
+            }
+        ]
+    },
+    "Equip a Tzhaar-Ket-Om": {
+        "skills": [
+            {
+                "name": "Strength",
+                "level": "60"
+            }
+        ]
+    },
+    "Equip a Toktz-Xil-Ak": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "60"
+            }
+        ]
+    },
+    "Equip a Toktz-Xil-Ek": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "60"
+            }
+        ]
+    },
+    "Complete the Hard Karamja Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Receive 60 Agility Arena Tickets With No Mistakes": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "40"
+            }
+        ]
+    },
+    "Pickpocket a Diamond From a TzHaar": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "90"
+            }
+        ]
+    },
+    "Complete the Elite Karamja Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Craft an Air Rune": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "1"
+            }
+        ]
+    },
+    "Move Your House to Taverley": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "10"
+            }
+        ]
+    },
+    "Receive a Slayer Task From Turael or Spria": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "1"
+            }
+        ]
+    },
+    "Complete the Easy Falador Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Complete a Game of Novice Pest Control": {
+        "skills": [
+            {
+                "name": "Combat",
+                "level": "40"
+            }
+        ]
+    },
+    "Complete the Falador Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "50"
+            }
+        ]
+    },
+    "Obtain 20 Golden Nuggets": {
+        "skills": [
+            {
+                "name": "Mining",
+                "level": "30"
+            }
+        ]
+    },
+    "Enter the Crafting Guild": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "40"
+            }
+        ]
+    },
+    "Craft a Body Rune": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "20"
+            }
+        ]
+    },
+    "Harvest Any Herb at the Troll Stronghold": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "1"
+            }
+        ]
+    },
+    "Defeat a Skeletal Wyvern": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "72"
+            }
+        ]
+    },
+    "Equip Some Granite Legs": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "72"
+            }
+        ]
+    },
+    "Charge an Amulet of Glory in the Heroes' Guild": {
+        "skills": [],
+        "notes": "See quest page"
+    },
+    "Complete the Medium Falador Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Enter the Warriors' Guild": {
+        "skills": [],
+        "notes": "Combination of Attack and Strength >= 130"
+    },
+    "Complete A Porcine of Interest": {
+        "skills": [],
+        "notes": "See quest page"
+    },
+    "Complete a Game of Intermediate Pest Control": {
+        "skills": [
+            {
+                "name": "Combat",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip a Full Rogue Outfit": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "50"
+            },
+            {
+                "name": "Agility",
+                "level": "50"
+            }
+        ]
+    },
+    "Equip a Full Prospector Outfit": {
+        "skills": [
+            {
+                "name": "Mining",
+                "level": "30"
+            }
+        ]
+    },
+    "Craft 50 Law Runes": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "54"
+            }
+        ]
+    },
+    "Make 20 Ranging Potions": {
+        "skills": [
+            {
+                "name": "Herblore",
+                "level": "72"
+            }
+        ]
+    },
+    "Make 20 Stamina Potions": {
+        "skills": [
+            {
+                "name": "Herblore",
+                "level": "77"
+            }
+        ]
+    },
+    "Defeat K'ril Tsutsaroth": {
+        "skills": [
+            {
+                "name": "Hitpoints",
+                "level": "70"
+            }
+        ]
+    },
+    "Defeat General Graardor": {
+        "skills": [
+            {
+                "name": "Strength",
+                "level": "70"
+            }
+        ]
+    },
+    "Defeat Kree'arra": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "70"
+            }
+        ]
+    },
+    "Defeat Commander Zilyana": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip a Pair of Dragon Boots": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "83"
+            }
+        ]
+    },
+    "Complete the Hard Falador Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Keep the Veteran Void Knight Above 150 Hitpoints": {
+        "skills": [
+            {
+                "name": "Combat",
+                "level": "100"
+            }
+        ]
+    },
+    "Complete a Game of Veteran Pest Control": {
+        "skills": [
+            {
+                "name": "Combat",
+                "level": "100"
+            }
+        ]
+    },
+    "Equip a Staff of the Dead": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "75"
+            },
+            {
+                "name": "Magic",
+                "level": "75"
+            }
+        ]
+    },
+    "Equip a Zamorakian Spear": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip a Piece of the Armadyl Armour Set": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "70"
+            },
+            {
+                "name": "Defence",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip a Saradomin Sword": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip a Piece of the Bandos Armour Set": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "65"
+            }
+        ]
+    },
+    "Equip an Armadyl Crossbow": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip Some Primordial, Pegasian or Eternal Boots": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "75"
+            }
+        ]
+    },
+    "Equip a Godsword": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "75"
+            }
+        ]
+    },
+    "Defeat Cerberus": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "91"
+            }
+        ]
+    },
+    "Complete the Elite Falador Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Defeat Cerberus Before She Summons Souls": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "91"
+            }
+        ]
+    },
+    "Equip Every Godsword": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "75"
+            }
+        ]
+    },
+    "Equip a Full Armadyl Armour Set": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "70"
+            },
+            {
+                "name": "Defence",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip a Full Bandos Armour Set": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "65"
+            }
+        ]
+    },
+    "Equip Some Primordial, Pegasian and Eternal Boots": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "75"
+            },
+            {
+                "name": "Strength",
+                "level": "75"
+            },
+            {
+                "name": "Magic",
+                "level": "75"
+            },
+            {
+                "name": "Ranged",
+                "level": "75"
+            }
+        ]
+    },
+    "Defeat a Cockatrice in the Fremennik Province": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "25"
+            }
+        ]
+    },
+    "Defeat a Pyrefiend in the Fremennik Province": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "30"
+            }
+        ]
+    },
+    "Complete the Easy Fremennik Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Cast Moonclan Teleport": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "69"
+            }
+        ]
+    },
+    "Move Your House to Rellekka": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "30"
+            }
+        ]
+    },
+    "Craft 50 Astral Runes": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "40"
+            }
+        ]
+    },
+    "Complete the Penguin Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "30"
+            }
+        ]
+    },
+    "Catch a Snowy Knight": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "35"
+            }
+        ]
+    },
+    "Unlock Free Use of the Blast Furnace": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "60"
+            }
+        ]
+    },
+    "Defeat a Basilisk Knight": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "60"
+            }
+        ]
+    },
+    "Defeat a Kurask in the Fremennik Province": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip a Granite Shield": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "50"
+            },
+            {
+                "name": "Strength",
+                "level": "50"
+            }
+        ]
+    },
+    "Equip a Brine Sabre": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "40"
+            }
+        ]
+    },
+    "Defeat a Turoth in the Fremennik Province": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "55"
+            }
+        ]
+    },
+    "Defeat a Jelly in the Fremennik Province": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "52"
+            }
+        ]
+    },
+    "Equip a Leaf-Bladed Sword": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "50"
+            },
+            {
+                "name": "Slayer",
+                "level": "55"
+            }
+        ]
+    },
+    "Complete the Medium Fremennik Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Complete Throne of Miscellania": {
+        "skills": [],
+        "notes": "See quest page"
+    },
+    "Complete Royal Trouble": {
+        "skills": [],
+        "notes": "See quest page"
+    },
+    "Complete Olaf's Quest": {
+        "skills": [],
+        "notes": "See quest page"
+    },
+    "Cast Fertile Soil": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "83"
+            }
+        ]
+    },
+    "Build a Gilded Altar": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "75"
+            }
+        ]
+    },
+    "Complete the Rellekka Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "80"
+            }
+        ]
+    },
+    "Harvest a Snapdragon in Weiss": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "62"
+            }
+        ]
+    },
+    "Trap a Sabre-Toothed Kyatt": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "55"
+            }
+        ]
+    },
+    "Use Your Portal Nexus to Teleport to Weiss": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "72"
+            }
+        ]
+    },
+    "Use the Special Attack of a Dragon Axe": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "60"
+            }
+        ]
+    },
+    "Equip a Mud Battlestaff": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "30"
+            },
+            {
+                "name": "Attack",
+                "level": "30"
+            }
+        ]
+    },
+    "Equip a Seercull": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "50"
+            }
+        ]
+    },
+    "Equip a Leaf-Bladed Battleaxe": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "65"
+            },
+            {
+                "name": "Slayer",
+                "level": "55"
+            }
+        ]
+    },
+    "Equip a Full Skeletal Armour Set": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "40"
+            },
+            {
+                "name": "Defence",
+                "level": "40"
+            }
+        ]
+    },
+    "Equip a Full Spined Armour Set": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "40"
+            },
+            {
+                "name": "Defence",
+                "level": "40"
+            }
+        ]
+    },
+    "Equip a Full Rockshell Armour Set": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "40"
+            }
+        ]
+    },
+    "Complete the Hard Fremennik Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Cast Spellbook Swap": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "96"
+            }
+        ]
+    },
+    "Build a Gilded Portal Nexus": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "82"
+            }
+        ]
+    },
+    "Equip a Dragonfire Ward": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "75"
+            },
+            {
+                "name": "Defence",
+                "level": "70"
+            }
+        ]
+    },
+    "Create a Catherby Teleport Tablet": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": ""
+            }
+        ]
+    },
+    "Equip a Dragonbone Necklace": {
+        "skills": [
+            {
+                "name": "Prayer",
+                "level": "80"
+            }
+        ]
+    },
+    "Equip a Neitiznot Faceguard": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "70"
+            }
+        ]
+    },
+    "Complete the Elite Fremennik Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Build a Demonic Throne": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "99"
+            }
+        ]
+    },
+    "Complete the Gnome Stronghold Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "1"
+            }
+        ]
+    },
+    "Catch a Crimson Swift in the Feldip Hills": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "1"
+            }
+        ]
+    },
+    "Receive a Slayer Task From Steve": {
+        "skills": [
+            {
+                "name": "Combat",
+                "level": "85"
+            }
+        ]
+    },
+    "Complete Monk's Friend": {
+        "skills": [],
+        "notes": "See quest page"
+    },
+    "Complete Tower of Life": {
+        "skills": [],
+        "notes": "See quest page"
+    },
+    "Complete Sea Slug": {
+        "skills": [],
+        "notes": "See quest page"
+    },
+    "Complete the Easy Ardougne Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Complete the Easy Kandarin Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Fletch 50 Maple Longbow (u) in Kandarin": {
+        "skills": [
+            {
+                "name": "Fletching",
+                "level": "55"
+            }
+        ]
+    },
+    "Pickpocket a Knight of Ardougne 50 Times": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "55"
+            }
+        ]
+    },
+    "Complete the Barbarian Outpost Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "35"
+            }
+        ]
+    },
+    "Trap a Spined Larupia in the Feldip Hills": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "31"
+            }
+        ]
+    },
+    "Equip a Spottier Cape": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "66"
+            }
+        ]
+    },
+    "Catch a Red Salamander": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "59"
+            }
+        ]
+    },
+    "Enter the Fishing Guild": {
+        "skills": [
+            {
+                "name": "Fishing",
+                "level": "68"
+            }
+        ]
+    },
+    "Move Your House to Yanille": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "50"
+            }
+        ]
+    },
+    "Check a grown Papaya Tree in the Gnome Stronghold": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "57"
+            }
+        ]
+    },
+    "Equip a Dragon Scimitar": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "60"
+            }
+        ]
+    },
+    "Enter the Ranging Guild": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "40"
+            }
+        ]
+    },
+    "Enter the Wizards' Guild": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "66"
+            }
+        ]
+    },
+    "Defeat a Bloodveld in Kandarin": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "50"
+            }
+        ]
+    },
+    "Defeat an Aberrant Spectre in Kandarin": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "60"
+            }
+        ]
+    },
+    "Use the Chivalry Prayer": {
+        "skills": [
+            {
+                "name": "Prayer",
+                "level": "60"
+            },
+            {
+                "name": "Defence",
+                "level": "65"
+            }
+        ]
+    },
+    "Equip an Iban's Staff (u)": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "50"
+            },
+            {
+                "name": "Attack",
+                "level": "50"
+            }
+        ]
+    },
+    "Complete Elemental Workshop II": {
+        "skills": [],
+        "notes": "See quest page"
+    },
+    "Complete the Observatory Quest": {
+        "skills": [],
+        "notes": "See quest page"
+    },
+    "Complete the Medium Ardougne Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Equip an Ogre Forester Chompy Hat": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "30"
+            },
+            {
+                "name": "Fletching",
+                "level": "5"
+            }
+        ]
+    },
+    "Equip a Karamja Monkey Backpack": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "48"
+            }
+        ]
+    },
+    "Complete the Medium Kandarin Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Pickpocket a Hero": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "80"
+            }
+        ]
+    },
+    "Complete the Seers' Village Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "60"
+            }
+        ]
+    },
+    "Catch 50 Red Chinchompas in the Hunting Ground": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "63"
+            }
+        ]
+    },
+    "Catch a Monkfish": {
+        "skills": [
+            {
+                "name": "Fishing",
+                "level": "62"
+            }
+        ]
+    },
+    "Defeat a Cave Kraken": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "87"
+            },
+            {
+                "name": "Magic",
+                "level": "50"
+            }
+        ]
+    },
+    "Equip a Trident of the Seas": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "75"
+            }
+        ]
+    },
+    "Use the Piety Prayer": {
+        "skills": [
+            {
+                "name": "Prayer",
+                "level": "70"
+            },
+            {
+                "name": "Defence",
+                "level": "70"
+            }
+        ]
+    },
+    "Complete the Hard Ardougne Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Equip an Ogre Expert Chompy Hat": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "30"
+            },
+            {
+                "name": "Fletching",
+                "level": "5"
+            }
+        ]
+    },
+    "Equip a Maniacal Monkey Backpack": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "48"
+            }
+        ]
+    },
+    "Complete the Hard Kandarin Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Complete the Ardougne Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "90"
+            }
+        ]
+    },
+    "Check a grown Dragonfruit Tree in Catherby": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "81"
+            }
+        ]
+    },
+    "Defeat a Smoke Devil": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "93"
+            }
+        ]
+    },
+    "Equip a Heavy Ballista": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "75"
+            }
+        ]
+    },
+    "Equip an Abyssal Tentacle": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "75"
+            }
+        ]
+    },
+    "Defeat the Thermonuclear Smoke Devil": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "93"
+            }
+        ]
+    },
+    "Equip an Occult Necklace": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip a Dragon Archer Chompy Hat": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "30"
+            },
+            {
+                "name": "Fletching",
+                "level": "5"
+            }
+        ]
+    },
+    "Equip a Kruk Jr. Monkey Backpack": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "48"
+            }
+        ]
+    },
+    "Complete the Elite Kandarin Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Complete the Elite Ardougne Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Equip a Prince Awowogei Monkey Back": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "48"
+            }
+        ]
+    },
+    "Complete Room 1 of Pyramid Plunder": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "21"
+            }
+        ]
+    },
+    "Complete Room 2 of Pyramid Plunder": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "31"
+            }
+        ]
+    },
+    "Complete the Al Kharid Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "20"
+            }
+        ]
+    },
+    "Craft a Fire Rune": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "14"
+            }
+        ]
+    },
+    "Complete the Easy Desert Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Complete Room 3 of Pyramid Plunder": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "41"
+            }
+        ]
+    },
+    "Complete Room 4 of Pyramid Plunder": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "51"
+            }
+        ]
+    },
+    "Complete Room 5 of Pyramid Plunder": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "61"
+            }
+        ]
+    },
+    "Pick a Spring Sq'irk": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "25"
+            }
+        ]
+    },
+    "Pick a Autumn Sq'irk": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "45"
+            }
+        ]
+    },
+    "Turn in 10 Spring Sq'irkjuices to Osman": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "25"
+            }
+        ]
+    },
+    "Pickpocket a Bandit in the Desert": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "45"
+            }
+        ]
+    },
+    "Smith 1000 Mithril Dart Tips": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "54"
+            }
+        ]
+    },
+    "Make a Combat Potion": {
+        "skills": [
+            {
+                "name": "Herblore",
+                "level": "36"
+            }
+        ]
+    },
+    "Turn in a Pyramid Top to Simon Templeton": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "30"
+            }
+        ]
+    },
+    "Craft a Lava Rune at the Fire Altar": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "23"
+            }
+        ]
+    },
+    "Catch 30 Orange Salamanders": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "47"
+            }
+        ]
+    },
+    "Mine 30 Chunks of Granite": {
+        "skills": [
+            {
+                "name": "Mining",
+                "level": "45"
+            }
+        ]
+    },
+    "Move Your House to Pollnivneach": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "20"
+            }
+        ]
+    },
+    "Cast Ice Rush": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "58"
+            }
+        ]
+    },
+    "Complete the Medium Desert Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Cast Bones to Peaches": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "60"
+            }
+        ]
+    },
+    "Complete Room 6 of Pyramid Plunder": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "71"
+            }
+        ]
+    },
+    "Complete Room 7 of Pyramid Plunder": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "81"
+            }
+        ]
+    },
+    "Pick a Summer Sq'irk": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "65"
+            }
+        ]
+    },
+    "Turn in 25 Autumn Sq'irkjuices to Osman": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "45"
+            }
+        ]
+    },
+    "Pickpocket a Menaphite Thug 50 Times": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "65"
+            }
+        ]
+    },
+    "Make 20 Magic Potions": {
+        "skills": [
+            {
+                "name": "Herblore",
+                "level": "76"
+            }
+        ]
+    },
+    "Smith 1000 Adamant Dart Tips": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "74"
+            }
+        ]
+    },
+    "Check a grown Cactus": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "55"
+            }
+        ]
+    },
+    "Check a grown Potato Cactus": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "64"
+            }
+        ]
+    },
+    "Defeat a Dust Devil in the Kharidian Desert": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "65"
+            }
+        ]
+    },
+    "Cast Ice Burst": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "70"
+            }
+        ]
+    },
+    "Cast Ice Blitz": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "82"
+            }
+        ]
+    },
+    "Cast Smoke Barrage": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "86"
+            }
+        ]
+    },
+    "Cast Shadow Barrage": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "88"
+            }
+        ]
+    },
+    "Complete the Hard Desert Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Equip a Piece of the Infinity Robe Set": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "50"
+            },
+            {
+                "name": "Defence",
+                "level": "25"
+            }
+        ]
+    },
+    "Cast Paddewwa Teleport": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "54"
+            }
+        ]
+    },
+    "Complete Room 8 of Pyramid Plunder": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "91"
+            }
+        ]
+    },
+    "Complete Room 8 of Pyramid Plunder 50 Times": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "91"
+            }
+        ]
+    },
+    "Complete Room 8 of Pyramid Plunder 100 Times": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "91"
+            }
+        ]
+    },
+    "Complete Room 8 of Pyramid Plunder 250 Times": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "91"
+            }
+        ]
+    },
+    "Turn in 100 Summer Sq'irkjuices to Osman": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "65"
+            }
+        ]
+    },
+    "Smith 1000 Rune Dart Tips": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "89"
+            }
+        ]
+    },
+    "Cast Blood Barrage": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "92"
+            }
+        ]
+    },
+    "Cast Ice Barrage": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "94"
+            }
+        ]
+    },
+    "Complete the Elite Desert Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Equip a Full Infinity Robe Set": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "50"
+            },
+            {
+                "name": "Defence",
+                "level": "25"
+            }
+        ]
+    },
+    "Equip a Master Wand": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "60"
+            }
+        ]
+    },
+    "Craft a Ghorrock Teleport Tablet": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "96"
+            }
+        ]
+    },
+    "Equip a Mage's Book": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "60"
+            }
+        ]
+    },
+    "Craft a Snelm": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "15"
+            }
+        ]
+    },
+    "Complete the Easy Morytania Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Obtain a Rune Crossbow From a Lucky Impling": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "89"
+            }
+        ]
+    },
+    "Complete Floor 1 of the Hallowed Sepulchre": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "52"
+            }
+        ]
+    },
+    "Complete Floor 2 of the Hallowed Sepulchre": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "62"
+            }
+        ]
+    },
+    "Complete the Canifis Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "40"
+            }
+        ]
+    },
+    "Complete the Werewolf Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "60"
+            }
+        ]
+    },
+    "Catch a Swamp Lizard in Morytania": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "29"
+            }
+        ]
+    },
+    "Convert 2,000 Daeyalt Shards Into Essence": {
+        "skills": [
+            {
+                "name": "Mining",
+                "level": "60"
+            }
+        ]
+    },
+    "Craft a Rune Using Daeyalt Essence": {
+        "skills": [
+            {
+                "name": "Mining",
+                "level": "60"
+            }
+        ]
+    },
+    "Assemble a Slayer Helm": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "55"
+            }
+        ]
+    },
+    "Defeat a Fiyr Shade": {
+        "skills": [],
+        "notes": "Firemaking 65 if killing the shade in Temple Trekking doesn't count"
+    },
+    "Complete the Medium Morytania Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Complete Floor 3 of the Hallowed Sepulchre": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "72"
+            }
+        ]
+    },
+    "Complete Floor 4 of the Hallowed Sepulchre": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "82"
+            }
+        ]
+    },
+    "Complete the Hallowed Sepulchre in 8:00": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "92"
+            }
+        ]
+    },
+    "Purchase a Reward From the Hallowed Sepulchre": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "52"
+            }
+        ]
+    },
+    "Obtain Every Hallowed Tool": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "52"
+            }
+        ]
+    },
+    "Pickpocket a Vyre 50 Times": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "82"
+            }
+        ]
+    },
+    "Defeat a Gargoyle in Morytania": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "75"
+            }
+        ]
+    },
+    "Defeat an Abyssal Demon in Morytania": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "85"
+            }
+        ]
+    },
+    "Defeat the Grotesque Guardians 100 Times": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "75"
+            }
+        ]
+    },
+    "Equip a Granite Hammer or Granite Ring": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "75"
+            }
+        ]
+    },
+    "Defeat the Grotesque Guardians": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "75"
+            }
+        ]
+    },
+    "Complete the Hard Morytania Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Complete Floor 5 of the Hallowed Sepulchre": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "92"
+            }
+        ]
+    },
+    "Complete the Hallowed Sepulchre in 6:30": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "92"
+            }
+        ]
+    },
+    "Equip a Ring of Endurance": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "92"
+            }
+        ]
+    },
+    "Equip Some Guardian Boots": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "75"
+            }
+        ]
+    },
+    "Equip Every Barrows Armour Set": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "70"
+            },
+            {
+                "name": "Magic",
+                "level": "70"
+            },
+            {
+                "name": "Ranged",
+                "level": "70"
+            },
+            {
+                "name": "Attack",
+                "level": "70"
+            },
+            {
+                "name": "Strength",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip an Inquisitor's Mace": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "75"
+            }
+        ]
+    },
+    "Equip a Piece of the Inquisitor's Set": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "30"
+            },
+            {
+                "name": "Strength",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip a Nightmare Staff": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "65"
+            },
+            {
+                "name": "Hitpoints",
+                "level": "50"
+            }
+        ]
+    },
+    "Create an Amulet of Blood Fury": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "90"
+            },
+            {
+                "name": "Magic",
+                "level": "87"
+            }
+        ]
+    },
+    "Equip an Avernic Defender": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "70"
+            },
+            {
+                "name": "Attack",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip a Sanguinesti Staff": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "75"
+            }
+        ]
+    },
+    "Equip a Scythe of Vitur": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "75"
+            },
+            {
+                "name": "Strength",
+                "level": "75"
+            }
+        ]
+    },
+    "Equip a Piece of the Justiciar Set": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "75"
+            }
+        ]
+    },
+    "Equip a Ghrazi Rapier": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "75"
+            }
+        ]
+    },
+    "Defeat the Grotesque Guardians 250 Times": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "75"
+            }
+        ]
+    },
+    "Complete the Elite Morytania Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Equip a Full Inquisitor's Set": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "30"
+            },
+            {
+                "name": "Strength",
+                "level": "70"
+            }
+        ]
+    },
+    "Equip a Nightmare Staff With an Orb": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "75"
+            },
+            {
+                "name": "Hitpoints",
+                "level": "50"
+            }
+        ]
+    },
+    "Equip a Full Justiciar Set": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "75"
+            }
+        ]
+    },
+    "Harvest some Sweetcorn in Prifddinas": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "20"
+            }
+        ]
+    },
+    "Check a grown Papaya Tree in Lletya": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "57"
+            }
+        ]
+    },
+    "Craft 50 Death Runes": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "65"
+            }
+        ]
+    },
+    "Defeat a Bloodveld in Tirannwn": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "50"
+            }
+        ]
+    },
+    "Defeat a Kurask in Tirannwn": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "70"
+            }
+        ]
+    },
+    "Check a grown Crystal Tree": {
+        "skills": [
+            {
+                "name": "Farming",
+                "level": "74"
+            }
+        ]
+    },
+    "Catch a Crystal Impling": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "80"
+            }
+        ]
+    },
+    "Complete the Prifddinas Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "75"
+            }
+        ]
+    },
+    "Complete the Prifddinas Agility Course in 1:10": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "75"
+            }
+        ]
+    },
+    "Pickpocket an Elf 50 Times": {
+        "skills": [
+            {
+                "name": "Thieving",
+                "level": "85"
+            }
+        ]
+    },
+    "Craft a Piece of Crystal Armour": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "70"
+            },
+            {
+                "name": "Crafting",
+                "level": "50"
+            }
+        ]
+    },
+    "Defeat a Dark Beast in Tirannwn": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": "90"
+            }
+        ]
+    },
+    "Equip a Dark Bow": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "60"
+            }
+        ]
+    },
+    "Equip a Crystal Bow": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "70"
+            },
+            {
+                "name": "Agility",
+                "level": "50"
+            }
+        ]
+    },
+    "Equip a Crystal Shield": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "70"
+            },
+            {
+                "name": "Agility",
+                "level": "50"
+            }
+        ]
+    },
+    "Equip a Crystal Halberd": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "70"
+            },
+            {
+                "name": "Agility",
+                "level": "50"
+            },
+            {
+                "name": "Strength",
+                "level": "35"
+            }
+        ]
+    },
+    "Defeat a Nechryael in Tirannwn": {
+        "skills": [
+            {
+                "name": "Slayer",
+                "level": ""
+            }
+        ]
+    },
+    "Craft an Eternal Teleport Crystal": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "80"
+            },
+            {
+                "name": "Crafting",
+                "level": "80"
+            }
+        ]
+    },
+    "Open the Enhanced Crystal Chest": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "80"
+            },
+            {
+                "name": "Crafting",
+                "level": "80"
+            }
+        ]
+    },
+    "Dissect 50 Sacred Eels": {
+        "skills": [
+            {
+                "name": "Fishing",
+                "level": "87"
+            }
+        ]
+    },
+    "Equip an Elven Signet": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "80"
+            }
+        ]
+    },
+    "Equip a Full Crystal Armour Set": {
+        "skills": [
+            {
+                "name": "Smithing",
+                "level": "74"
+            },
+            {
+                "name": "Crafting",
+                "level": "74"
+            }
+        ]
+    },
+    "Complete the Easy Wilderness Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Complete the Wilderness Agility Course": {
+        "skills": [
+            {
+                "name": "Agility",
+                "level": "52"
+            }
+        ]
+    },
+    "Catch a Black Salamander": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "67"
+            }
+        ]
+    },
+    "Fill a Large Pouch": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "50"
+            }
+        ]
+    },
+    "Complete the Medium Wilderness Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Catch 100 Dark Crabs": {
+        "skills": [
+            {
+                "name": "Fishing",
+                "level": "85"
+            }
+        ]
+    },
+    "Catch a Black Chinchompa": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "73"
+            }
+        ]
+    },
+    "Craft an Air Battlestaff in the Wilderness": {
+        "skills": [
+            {
+                "name": "Crafting",
+                "level": "66"
+            }
+        ]
+    },
+    "Fill a Giant Pouch": {
+        "skills": [
+            {
+                "name": "Runecraft",
+                "level": "75"
+            }
+        ]
+    },
+    "Complete the Hard Wilderness Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Equip a Piece of the Dagon'Hai Set": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "70"
+            },
+            {
+                "name": "Defence",
+                "level": "40"
+            }
+        ]
+    },
+    "Cook a Dark Crab": {
+        "skills": [
+            {
+                "name": "Cooking",
+                "level": "90"
+            }
+        ]
+    },
+    "Make an Extended Antifire Potion": {
+        "skills": [
+            {
+                "name": "Herblore",
+                "level": "84"
+            }
+        ]
+    },
+    "Equip 250 Black Chinchompas": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "73"
+            }
+        ]
+    },
+    "Equip 500 Black Chinchompas": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "73"
+            }
+        ]
+    },
+    "Equip 1000 Black Chinchompas": {
+        "skills": [
+            {
+                "name": "Hunter",
+                "level": "73"
+            }
+        ]
+    },
+    "Mine Some Runite Ore in the Wilderness": {
+        "skills": [
+            {
+                "name": "Mining",
+                "level": "85"
+            }
+        ]
+    },
+    "Equip a Craw's Bow": {
+        "skills": [
+            {
+                "name": "Ranged",
+                "level": "60"
+            }
+        ]
+    },
+    "Equip a Viggora's Chainmace": {
+        "skills": [
+            {
+                "name": "Attack",
+                "level": "60"
+            }
+        ]
+    },
+    "Equip a Thammaron's Sceptre": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "60"
+            }
+        ]
+    },
+    "Equip a Blessed Spirit Shield": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "70"
+            },
+            {
+                "name": "Prayer",
+                "level": "60"
+            }
+        ]
+    },
+    "Equip a Malediction Ward": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "60"
+            }
+        ]
+    },
+    "Equip an Odium Ward": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "60"
+            }
+        ]
+    },
+    "Build an Obelisk": {
+        "skills": [
+            {
+                "name": "Construction",
+                "level": "80"
+            }
+        ]
+    },
+    "Complete the Elite Wilderness Diary": {
+        "skills": [],
+        "notes": "See diary page"
+    },
+    "Equip a Full Dagon'Hai Set": {
+        "skills": [
+            {
+                "name": "Magic",
+                "level": "70"
+            },
+            {
+                "name": "Defence",
+                "level": "40"
+            }
+        ]
+    },
+    "Equip a Spectral or Arcane Spirit Shield": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "75"
+            },
+            {
+                "name": "Prayer",
+                "level": "70"
+            },
+            {
+                "name": "Magic",
+                "level": "65"
+            }
+        ]
+    },
+    "Equip an Elysian Spirit Shield": {
+        "skills": [
+            {
+                "name": "Defence",
+                "level": "75"
+            },
+            {
+                "name": "Prayer",
+                "level": "75"
+            }
+        ]
+    }
+}
