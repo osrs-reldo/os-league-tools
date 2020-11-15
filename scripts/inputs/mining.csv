@@ -1,36 +1,36 @@
-SKILL,icon,type,isCombatSkill,,,,,,,,
-Mining,https://oldschool.runescape.wiki/images/4/4a/Mining_icon.png?00870,gathering,FALSE,,,,,,,,
-,,,,,,,,,,,
-CATEGORIES,,,,,,,,,,,
-Ore/Rock,Essence,Other,,,,,,,,,
-,,,,,,,,,,,
-EXP MULTIPLIERS,name,multiplier,,,,,,,,,
-0,Prospector Kit (102.5%) ,1.025,,,,,,,,,
-,,,,,,,,,,,
-INPUT MULTIPLIERS,name,multiplier,,,,,,,,,
-,,,,,,,,,,,
-OUTPUT MULTIPLIERS,name,multiplier,,,,,,,,,
-,,,,,,,,,,,
-ACTIONS,name,category,exp,level,icon,inputs,outputs,areas,exp multipliers,input multipliers,output multipliers
-0,Clay,Ore/Rock,5,1,,,1 Clay,Asgarnia; Kandarin; Fremennik; Misthalin; Morytania; Desert,0,,All
-1,Rune essence,Essence,5,1,,,1 Rune essence,All,0,,All
-2,Copper ore,Ore/Rock,17.5,1,,,1 Copper,Asgarnia; Kandarin; Fremennik; Misthalin; Morytania; Desert; Kandarin,0,,All
-3,Tin ore,Ore/Rock,17.5,1,,,1 Tin,Asgarnia; Kandarin; Fremennik; Misthalin; Morytania; Desert; Kandarin,0,,All
-4,Limestone,Ore/Rock,26.5,10,,,1 Limestone,Misthalin; Tirannwn,0,,All
-5,Blurite,Ore/Rock,17.5,10,,,1 Blurite,Asgarnia,0,,All
-6,Iron ore,Ore/Rock,35,15,,,1 Iron,All,0,,All
-7,Silver ore,Ore/Rock,40,20,,,1 Silver,Asgarnia; Kandarin; Fremennik; Misthalin; Desert; Karamja; Tirannwn,0,,All
-8,Volcanic ash,Other,10,22,,,1 Volcanic ash,Misthalin,0,,All
-9,Pure essence,Essence,5,30,,,1 Pure essence,All,0,,All
-10,Coal,Ore/Rock,50,30,,,1 Coal,All,0,,All
-11,Sandstone,Ore/Rock,45,35,,,1 Sandstone,Desert,0,,All
-13,Gem rocks,Ore/Rock,65,40,,,1 Gem rocks,Karamja,0,,All
-14,Gold ore,Ore/Rock,65,40,,,1 Gold,Asgarnia; Kandarin; Fremennik; Misthalin; Desert; Karamja; Tirannwn; Kandarin; Wilderness,0,,All
-16,Granite,Ore/Rock,61.7,45,,,1 Granite,Desert,0,,All
-17,Mithril ore,Ore/Rock,80,55,,,1 Mithril,All,0,,All
-18,Daeyalt shard,Essence,5,60,,,1 Daeyalt shard,Morytania,0,,All
-20,Soft clay,Ore/Rock,5,70,,,1 Soft clay,Tirannwn,0,,All
-21,Adamantite ore,Ore/Rock,95,70,,,1 Adamantite,Asgarnia; Fremennik; Karamja; Misthalin; Morytania; Tirannwn; Kandarin; Wilderness,0,,All
-22,Salts (any kind),Other,5,72,,,1 Salt,Asgarnia,0,,All
-23,Runite ore,Ore/Rock,125,85,,,1 Runite,Fremennik; Misthalin; Wilderness; Asgarnia; Tirannwn; Kandarin; Karamja,0,,All
-24,Amethyst,Ore/Rock,240,92,,,1 Amethyst,Asgarnia,0,,All
+SKILL,icon,type,isCombatSkill,,,,,,,,,,
+Mining,https://oldschool.runescape.wiki/images/4/4a/Mining_icon.png?00870,gathering,FALSE,,,,,,,,,,
+,,,,,,,,,,,,,
+CATEGORIES,,,,,,,,,,,,,
+Ore/Rock,Essence,Other,,,,,,,,,,,
+,,,,,,,,,,,,,
+EXP MULTIPLIERS,name,multiplier,,,,,,,,,,,
+0,Prospector Kit (102.5%) ,1.025,,,,,,,,,,,
+,,,,,,,,,,,,,
+INPUT MULTIPLIERS,name,multiplier,,,,,,,,,,,
+,,,,,,,,,,,,,
+OUTPUT MULTIPLIERS,name,multiplier,,,,,,,,,,,
+,,,,,,,,,,,,,
+ACTIONS,name,category,exp,level,icon,inputs,outputs,areas,exp multipliers,input multipliers,output multipliers,exp actions,tooltip
+0,Clay,Ore/Rock,5,1,,,1 Clay,Asgarnia; Kandarin; Fremennik; Misthalin; Morytania; Desert,0,,All,1,
+1,Rune essence,Essence,5,1,,,1 Rune essence,All,0,,All,1,
+2,Copper ore,Ore/Rock,17.5,1,,,1 Copper,Asgarnia; Kandarin; Fremennik; Misthalin; Morytania; Desert; Kandarin,0,,All,1,
+3,Tin ore,Ore/Rock,17.5,1,,,1 Tin,Asgarnia; Kandarin; Fremennik; Misthalin; Morytania; Desert; Kandarin,0,,All,1,
+4,Limestone,Ore/Rock,26.5,10,,,1 Limestone,Misthalin; Tirannwn,0,,All,1,
+5,Blurite,Ore/Rock,17.5,10,,,1 Blurite,Asgarnia,0,,All,1,
+6,Iron ore,Ore/Rock,35,15,,,1 Iron,All,0,,All,1,
+7,Silver ore,Ore/Rock,40,20,,,1 Silver,Asgarnia; Kandarin; Fremennik; Misthalin; Desert; Karamja; Tirannwn,0,,All,1,
+8,Volcanic ash,Other,10,22,,,1 Volcanic ash,Misthalin,0,,All,1,
+9,Pure essence,Essence,5,30,,,1 Pure essence,All,0,,All,1,
+10,Coal,Ore/Rock,50,30,,,1 Coal,All,0,,All,1,
+11,Sandstone,Ore/Rock,45,35,,,1 Sandstone,Desert,0,,All,1,
+13,Gem rocks,Ore/Rock,65,40,,,1 Gem rocks,Karamja,0,,All,1,
+14,Gold ore,Ore/Rock,65,40,,,1 Gold,Asgarnia; Kandarin; Fremennik; Misthalin; Desert; Karamja; Tirannwn; Kandarin; Wilderness,0,,All,1,
+16,Granite,Ore/Rock,61.7,45,,,1 Granite,Desert,0,,All,1,
+17,Mithril ore,Ore/Rock,80,55,,,1 Mithril,All,0,,All,1,
+18,Daeyalt shard,Essence,5,60,,,1 Daeyalt shard,Morytania,0,,All,1,
+20,Soft clay,Ore/Rock,5,70,,,1 Soft clay,Tirannwn,0,,All,1,
+21,Adamantite ore,Ore/Rock,95,70,,,1 Adamantite,Asgarnia; Fremennik; Karamja; Misthalin; Morytania; Tirannwn; Kandarin; Wilderness,0,,All,1,
+22,Salts (any kind),Other,5,72,,,1 Salt,Asgarnia,0,,All,1,
+23,Runite ore,Ore/Rock,125,85,,,1 Runite,Fremennik; Misthalin; Wilderness; Asgarnia; Tirannwn; Kandarin; Karamja,0,,All,1,
+24,Amethyst,Ore/Rock,240,92,,,1 Amethyst,Asgarnia,0,,All,1,

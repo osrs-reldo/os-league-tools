@@ -111,6 +111,8 @@ def parseCsv(skillName):
                     'expMultipliers': [] if lineSplit[9] == '' else re.split('; ?', lineSplit[9]),
                     'inputMultipliers': [] if lineSplit[10] == '' else re.split('; ?', lineSplit[10]),
                     'outputMultipliers': [] if lineSplit[11] == '' else re.split('; ?', lineSplit[11]),
+                    'expActions': float(lineSplit[12]),
+                    'tooltip': lineSplit[13],
                 }
                 actions.append(actionJson)
     csvFile.close()
@@ -125,7 +127,7 @@ def parseCsv(skillName):
 
 SKILLS = ['agility', 'construction', 'cooking', 'crafting', 'farming',
           'firemaking', 'fishing', 'fletching', 'herblore', 'hunter',
-          'magic', 'mining', 'prayer', 'runecrafting', 'smithing',
+          'magic', 'mining', 'prayer', 'runecraft', 'smithing',
           'thieving', 'woodcutting']
 
 
