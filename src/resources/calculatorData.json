@@ -40058,7 +40058,7 @@
                     "inputs": [
                         {
                             "name": "Bronze bar",
-                            "amount": 1.0,
+                            "amount": 2.0,
                             "chance": 1
                         }
                     ],
@@ -40088,12 +40088,12 @@
                     "inputs": [
                         {
                             "name": "Copper ore",
-                            "amount": 1.0,
+                            "amount": 2.0,
                             "chance": 1
                         },
                         {
                             "name": "Tin ore",
-                            "amount": 1.0,
+                            "amount": 2.0,
                             "chance": 1
                         }
                     ],
@@ -40110,7 +40110,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 3.0,
                     "tooltip": ""
                 },
                 {
@@ -40213,7 +40213,7 @@
                     "inputs": [
                         {
                             "name": "Bronze bar",
-                            "amount": 1.0,
+                            "amount": 3.0,
                             "chance": 1
                         }
                     ],
@@ -40243,12 +40243,12 @@
                     "inputs": [
                         {
                             "name": "Copper ore",
-                            "amount": 1.0,
+                            "amount": 3.0,
                             "chance": 1
                         },
                         {
                             "name": "Tin ore",
-                            "amount": 1.0,
+                            "amount": 3.0,
                             "chance": 1
                         }
                     ],
@@ -40265,7 +40265,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 4.0,
                     "tooltip": ""
                 },
                 {
@@ -40372,7 +40372,7 @@
                     "inputs": [
                         {
                             "name": "Bronze bar",
-                            "amount": 1.0,
+                            "amount": 5.0,
                             "chance": 1
                         }
                     ],
@@ -40402,12 +40402,12 @@
                     "inputs": [
                         {
                             "name": "Copper ore",
-                            "amount": 1.0,
+                            "amount": 5.0,
                             "chance": 1
                         },
                         {
                             "name": "Tin ore",
-                            "amount": 1.0,
+                            "amount": 5.0,
                             "chance": 1
                         }
                     ],
@@ -40424,7 +40424,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 6.0,
                     "tooltip": ""
                 },
                 {
@@ -40467,7 +40467,7 @@
                     "inputs": [
                         {
                             "name": "Iron bar",
-                            "amount": 1.0,
+                            "amount": 2.0,
                             "chance": 1
                         }
                     ],
@@ -40497,7 +40497,7 @@
                     "inputs": [
                         {
                             "name": "Iron ore",
-                            "amount": 2.0,
+                            "amount": 4.0,
                             "chance": 1
                         }
                     ],
@@ -40516,7 +40516,7 @@
                         "0"
                     ],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 3.0,
                     "tooltip": ""
                 },
                 {
@@ -40529,7 +40529,7 @@
                     "inputs": [
                         {
                             "name": "Iron bar",
-                            "amount": 1.0,
+                            "amount": 3.0,
                             "chance": 1
                         }
                     ],
@@ -40559,7 +40559,7 @@
                     "inputs": [
                         {
                             "name": "Iron ore",
-                            "amount": 2.0,
+                            "amount": 6.0,
                             "chance": 1
                         }
                     ],
@@ -40578,7 +40578,7 @@
                         "0"
                     ],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 4.0,
                     "tooltip": ""
                 },
                 {
@@ -40691,7 +40691,7 @@
                     "inputs": [
                         {
                             "name": "Iron bar",
-                            "amount": 1.0,
+                            "amount": 5.0,
                             "chance": 1
                         }
                     ],
@@ -40721,7 +40721,7 @@
                     "inputs": [
                         {
                             "name": "Iron ore",
-                            "amount": 2.0,
+                            "amount": 10.0,
                             "chance": 1
                         }
                     ],
@@ -40740,7 +40740,7 @@
                         "0"
                     ],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 6.0,
                     "tooltip": ""
                 },
                 {
@@ -40783,7 +40783,7 @@
                     "inputs": [
                         {
                             "name": "Steel bar",
-                            "amount": 1.0,
+                            "amount": 2.0,
                             "chance": 1
                         }
                     ],
@@ -40813,12 +40813,12 @@
                     "inputs": [
                         {
                             "name": "Iron ore",
-                            "amount": 1.0,
+                            "amount": 2.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 2.0,
+                            "amount": 4.0,
                             "chance": 1
                         }
                     ],
@@ -40835,7 +40835,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 3.0,
                     "tooltip": ""
                 },
                 {
@@ -40848,7 +40848,7 @@
                     "inputs": [
                         {
                             "name": "Steel bar",
-                            "amount": 1.0,
+                            "amount": 3.0,
                             "chance": 1
                         }
                     ],
@@ -40878,12 +40878,12 @@
                     "inputs": [
                         {
                             "name": "Iron ore",
-                            "amount": 1.0,
+                            "amount": 3.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 2.0,
+                            "amount": 6.0,
                             "chance": 1
                         }
                     ],
@@ -40900,7 +40900,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 4.0,
                     "tooltip": ""
                 },
                 {
@@ -40945,7 +40945,7 @@
                     "inputs": [
                         {
                             "name": "Steel bar",
-                            "amount": 1.0,
+                            "amount": 5.0,
                             "chance": 1
                         }
                     ],
@@ -40975,12 +40975,12 @@
                     "inputs": [
                         {
                             "name": "Iron ore",
-                            "amount": 1.0,
+                            "amount": 2.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 2.0,
+                            "amount": 10.0,
                             "chance": 1
                         }
                     ],
@@ -40997,7 +40997,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 6.0,
                     "tooltip": ""
                 },
                 {
@@ -41110,7 +41110,7 @@
                     "inputs": [
                         {
                             "name": "Mithril bar",
-                            "amount": 1.0,
+                            "amount": 2.0,
                             "chance": 1
                         }
                     ],
@@ -41140,12 +41140,12 @@
                     "inputs": [
                         {
                             "name": "Mithril ore",
-                            "amount": 1.0,
+                            "amount": 2.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 4.0,
+                            "amount": 8.0,
                             "chance": 1
                         }
                     ],
@@ -41162,7 +41162,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 3.0,
                     "tooltip": ""
                 },
                 {
@@ -41175,7 +41175,7 @@
                     "inputs": [
                         {
                             "name": "Mithril bar",
-                            "amount": 1.0,
+                            "amount": 3.0,
                             "chance": 1
                         }
                     ],
@@ -41205,12 +41205,12 @@
                     "inputs": [
                         {
                             "name": "Mithril ore",
-                            "amount": 1.0,
+                            "amount": 3.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 4.0,
+                            "amount": 12.0,
                             "chance": 1
                         }
                     ],
@@ -41227,7 +41227,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 4.0,
                     "tooltip": ""
                 },
                 {
@@ -41240,7 +41240,7 @@
                     "inputs": [
                         {
                             "name": "Mithril bar",
-                            "amount": 1.0,
+                            "amount": 5.0,
                             "chance": 1
                         }
                     ],
@@ -41270,12 +41270,12 @@
                     "inputs": [
                         {
                             "name": "Mithril ore",
-                            "amount": 1.0,
+                            "amount": 5.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 4.0,
+                            "amount": 20.0,
                             "chance": 1
                         }
                     ],
@@ -41292,7 +41292,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 6.0,
                     "tooltip": ""
                 },
                 {
@@ -41510,7 +41510,7 @@
                     "inputs": [
                         {
                             "name": "Adamant bar",
-                            "amount": 1.0,
+                            "amount": 2.0,
                             "chance": 1
                         }
                     ],
@@ -41540,12 +41540,12 @@
                     "inputs": [
                         {
                             "name": "Adamant ore",
-                            "amount": 1.0,
+                            "amount": 2.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 6.0,
+                            "amount": 12.0,
                             "chance": 1
                         }
                     ],
@@ -41562,7 +41562,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 3.0,
                     "tooltip": ""
                 },
                 {
@@ -41730,7 +41730,7 @@
                     "inputs": [
                         {
                             "name": "Adamant bar",
-                            "amount": 1.0,
+                            "amount": 3.0,
                             "chance": 1
                         }
                     ],
@@ -41760,12 +41760,12 @@
                     "inputs": [
                         {
                             "name": "Adamant ore",
-                            "amount": 1.0,
+                            "amount": 3.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 6.0,
+                            "amount": 18.0,
                             "chance": 1
                         }
                     ],
@@ -41782,7 +41782,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 4.0,
                     "tooltip": ""
                 },
                 {
@@ -41965,7 +41965,7 @@
                     "inputs": [
                         {
                             "name": "Adamant bar",
-                            "amount": 1.0,
+                            "amount": 5.0,
                             "chance": 1
                         }
                     ],
@@ -41995,12 +41995,12 @@
                     "inputs": [
                         {
                             "name": "Adamant ore",
-                            "amount": 1.0,
+                            "amount": 5.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 6.0,
+                            "amount": 30.0,
                             "chance": 1
                         }
                     ],
@@ -42017,7 +42017,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 6.0,
                     "tooltip": ""
                 },
                 {
@@ -42030,7 +42030,7 @@
                     "inputs": [
                         {
                             "name": "Rune bar",
-                            "amount": 1.0,
+                            "amount": 2.0,
                             "chance": 1
                         }
                     ],
@@ -42060,12 +42060,12 @@
                     "inputs": [
                         {
                             "name": "Rune ore",
-                            "amount": 1.0,
+                            "amount": 2.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 8.0,
+                            "amount": 16.0,
                             "chance": 1
                         }
                     ],
@@ -42082,7 +42082,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 3.0,
                     "tooltip": ""
                 },
                 {
@@ -42095,7 +42095,7 @@
                     "inputs": [
                         {
                             "name": "Rune bar",
-                            "amount": 1.0,
+                            "amount": 3.0,
                             "chance": 1
                         }
                     ],
@@ -42125,12 +42125,12 @@
                     "inputs": [
                         {
                             "name": "Rune ore",
-                            "amount": 1.0,
+                            "amount": 3.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 8.0,
+                            "amount": 24.0,
                             "chance": 1
                         }
                     ],
@@ -42147,7 +42147,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 4.0,
                     "tooltip": ""
                 },
                 {
@@ -42160,7 +42160,7 @@
                     "inputs": [
                         {
                             "name": "Rune bar",
-                            "amount": 1.0,
+                            "amount": 5.0,
                             "chance": 1
                         }
                     ],
@@ -42190,12 +42190,12 @@
                     "inputs": [
                         {
                             "name": "Rune ore",
-                            "amount": 1.0,
+                            "amount": 5.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 8.0,
+                            "amount": 40.0,
                             "chance": 1
                         }
                     ],
@@ -42212,7 +42212,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 6.0,
                     "tooltip": ""
                 }
             ]
