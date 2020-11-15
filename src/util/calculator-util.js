@@ -44,7 +44,8 @@ function expFormatter(cell, row, rowIndex, props) {
         props.baseMultiplier,
         props.expMultiplier,
         row.expMultipliers,
-        props.totalLevel
+        props.totalLevel,
+        row.expActions
     );
 }
 
@@ -56,7 +57,8 @@ function amountFormatter(cell, row, rowIndex, props) {
         props.baseMultiplier,
         props.expMultiplier,
         row.expMultipliers,
-        props.totalLevel
+        props.totalLevel,
+        row.expActions
     );
 }
 
@@ -69,7 +71,8 @@ function outputListFormatter(cell, row, rowIndex, props) {
         props.baseMultiplier,
         props.expMultiplier,
         row.expMultipliers,
-        props.totalLevel
+        props.totalLevel,
+        row.expActions
     );
     if (props.hasBotanist) {
         return itemListBotanistFormatter(cell, countMultiplier, actionsRemaining);
@@ -87,7 +90,8 @@ function inputListFormatter(cell, row, rowIndex, props) {
         props.baseMultiplier,
         props.expMultiplier,
         row.expMultipliers,
-        props.totalLevel
+        props.totalLevel,
+        row.expActions
     );
     if (props.hasDoubleCast) {
         return itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining);
@@ -150,19 +154,26 @@ function itemListBotanistFormatter(cell, countMultiplier, actionsRemaining) {
 }
 
 
-function calcExpPerAction(baseExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel) {
+function calcExpPerAction(baseExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel, numExpActions) {
     const baseMultiplier = parseInt(baseMultiplierStr);
     const secondaryMultiplier = baseMultiplier * expMultiplier.apply(validMultipliers);
-    const equilibriumBonus = expMultiplier.get().hasOwnProperty("G0") ? totalLevel *.1 : 0;
+    const equilibriumBonus =  getEquilibriumBonusExp(expMultiplier, totalLevel, numExpActions);
     return Math.round((baseExp * secondaryMultiplier + equilibriumBonus) * 10) / 10;
 }
 
-export function calcActionsRemaining(curExp, targetExp, activityExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel) {
+function calcActionsRemaining(curExp, targetExp, activityExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel, numExpActions) {
     const expLeft = targetExp - curExp;
-    const expPerAction = calcExpPerAction(activityExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel);
+    const expPerAction = calcExpPerAction(activityExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel, numExpActions);
     return Math.ceil(expLeft / expPerAction);
 }
 
 export function getBoostedLevel(currentLevel, isSkillingProdigy) {
     return isSkillingProdigy ? Math.min(99, currentLevel + 12) : currentLevel;
+}
+
+function getEquilibriumBonusExp(expMultiplier, totalLevel, numExpActions) {
+    if (!expMultiplier.get().hasOwnProperty("G0")) {
+        return 0;
+    }
+    return totalLevel *.1 * numExpActions;
 }

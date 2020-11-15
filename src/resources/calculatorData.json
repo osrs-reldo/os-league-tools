@@ -219,7 +219,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 8.0,
+                    "expActions": 7.0,
                     "tooltip": ""
                 },
                 {
@@ -315,7 +315,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 9.0,
+                    "expActions": 8.0,
                     "tooltip": ""
                 },
                 {
@@ -411,7 +411,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 10.0,
+                    "expActions": 9.0,
                     "tooltip": ""
                 },
                 {
@@ -429,7 +429,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 6.0,
+                    "expActions": 5.0,
                     "tooltip": ""
                 },
                 {
@@ -597,7 +597,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 9.0,
+                    "expActions": 8.0,
                     "tooltip": ""
                 },
                 {
@@ -675,7 +675,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 14.0,
+                    "expActions": 13.0,
                     "tooltip": ""
                 },
                 {
@@ -711,7 +711,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 6.0,
+                    "expActions": 5.0,
                     "tooltip": ""
                 },
                 {
@@ -753,7 +753,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 7.0,
+                    "expActions": 6.0,
                     "tooltip": ""
                 },
                 {
@@ -771,7 +771,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 7.0,
+                    "expActions": 6.0,
                     "tooltip": ""
                 },
                 {
@@ -885,7 +885,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 10.0,
+                    "expActions": 9.0,
                     "tooltip": ""
                 },
                 {
@@ -945,7 +945,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 13.0,
+                    "expActions": 12.0,
                     "tooltip": ""
                 },
                 {
@@ -1023,7 +1023,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 8.0,
+                    "expActions": 7.0,
                     "tooltip": ""
                 },
                 {
@@ -1101,7 +1101,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 8.0,
+                    "expActions": 7.0,
                     "tooltip": ""
                 }
             ]
@@ -39904,20 +39904,32 @@
             "isCombatSkill": false,
             "categories": [
                 {
-                    "value": "Smelting",
-                    "label": "Smelting"
+                    "value": "Bronze",
+                    "label": "Bronze"
                 },
                 {
-                    "value": "Smithing",
-                    "label": "Smithing"
+                    "value": "Iron",
+                    "label": "Iron"
                 },
                 {
-                    "value": "Smelting + Smithing",
-                    "label": "Smelting + Smithing"
+                    "value": "Steel",
+                    "label": "Steel"
                 },
                 {
-                    "value": "Crystal",
-                    "label": "Crystal"
+                    "value": "Mithril",
+                    "label": "Mithril"
+                },
+                {
+                    "value": "Adamant",
+                    "label": "Adamant"
+                },
+                {
+                    "value": "Rune",
+                    "label": "Rune"
+                },
+                {
+                    "value": "Other",
+                    "label": "Other"
                 }
             ],
             "expMultipliers": [
@@ -39935,7 +39947,2275 @@
                 }
             ],
             "outputMultipliers": [],
-            "actions": []
+            "actions": [
+                {
+                    "id": 0,
+                    "name": "Bronze bar (smelt)",
+                    "category": "Bronze",
+                    "exp": 6.2,
+                    "level": 1,
+                    "icon": "https://oldschool.runescape.wiki/images/c/cd/Bronze_bar.png?4f105",
+                    "inputs": [
+                        {
+                            "name": "Copper ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Tin ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Bronze bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 1,
+                    "name": "Bronze bar (smith 1 at a time)",
+                    "category": "Bronze",
+                    "exp": 12.5,
+                    "level": 1,
+                    "icon": "https://oldschool.runescape.wiki/images/0/0c/Bronze_arrowtips.png?42d40",
+                    "inputs": [
+                        {
+                            "name": "Bronze bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Bronze item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 8,
+                    "name": "Bronze bar (from scratch - smith 1 at a time)",
+                    "category": "Bronze",
+                    "exp": 18.7,
+                    "level": 1,
+                    "icon": "https://oldschool.runescape.wiki/images/0/0c/Bronze_arrowtips.png?42d40",
+                    "inputs": [
+                        {
+                            "name": "Copper ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Tin ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Bronze item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 2,
+                    "name": "Bronze bar (smith 2 at a time)",
+                    "category": "Bronze",
+                    "exp": 25.0,
+                    "level": 5,
+                    "icon": "https://oldschool.runescape.wiki/images/f/f7/Bronze_scimitar.png?49cfc",
+                    "inputs": [
+                        {
+                            "name": "Bronze bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Bronze item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 9,
+                    "name": "Bronze bar (from scratch - smith 2 at a time)",
+                    "category": "Bronze",
+                    "exp": 31.2,
+                    "level": 5,
+                    "icon": "https://oldschool.runescape.wiki/images/f/f7/Bronze_scimitar.png?49cfc",
+                    "inputs": [
+                        {
+                            "name": "Copper ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Tin ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Bronze item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 3,
+                    "name": "Blurite bar (smelt)",
+                    "category": "Other",
+                    "exp": 8.0,
+                    "level": 8,
+                    "icon": "https://oldschool.runescape.wiki/images/f/f8/Blurite_bar.png?ae056",
+                    "inputs": [
+                        {
+                            "name": "Blurite ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Blurite bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Asgarnia"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 4,
+                    "name": "Blurite bar (smith)",
+                    "category": "Other",
+                    "exp": 17.5,
+                    "level": 8,
+                    "icon": "https://oldschool.runescape.wiki/images/3/3a/Blurite_bolts_%28unf%29_5.png?f1d3a",
+                    "inputs": [
+                        {
+                            "name": "Blurite bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Blurite item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Asgarnia"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 5,
+                    "name": "Blurite bar (from scratch)",
+                    "category": "Other",
+                    "exp": 25.5,
+                    "level": 8,
+                    "icon": "https://oldschool.runescape.wiki/images/3/3a/Blurite_bolts_%28unf%29_5.png?f1d3a",
+                    "inputs": [
+                        {
+                            "name": "Blurite ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Blurite item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Asgarnia"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 6,
+                    "name": "Bronze bar (smith 3 at a time)",
+                    "category": "Bronze",
+                    "exp": 37.5,
+                    "level": 9,
+                    "icon": "https://oldschool.runescape.wiki/images/2/24/Bronze_platelegs.png?bb859",
+                    "inputs": [
+                        {
+                            "name": "Bronze bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Bronze item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 10,
+                    "name": "Bronze bar (from scratch - smith 3 at a time)",
+                    "category": "Bronze",
+                    "exp": 43.7,
+                    "level": 9,
+                    "icon": "https://oldschool.runescape.wiki/images/2/24/Bronze_platelegs.png?bb859",
+                    "inputs": [
+                        {
+                            "name": "Copper ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Tin ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Bronze item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 12,
+                    "name": "Iron bar (smelt)",
+                    "category": "Iron",
+                    "exp": 12.5,
+                    "level": 15,
+                    "icon": "https://oldschool.runescape.wiki/images/1/14/Iron_bar.png?5d806",
+                    "inputs": [
+                        {
+                            "name": "Iron ore",
+                            "amount": 2.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Iron bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [
+                        "0"
+                    ],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 13,
+                    "name": "Iron bar (smith 1 at a time)",
+                    "category": "Iron",
+                    "exp": 25.0,
+                    "level": 15,
+                    "icon": "https://oldschool.runescape.wiki/images/8/81/Iron_arrowtips.png?50992",
+                    "inputs": [
+                        {
+                            "name": "Iron bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Iron item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 18,
+                    "name": "Iron bar (from scratch - smith 1 at a time)",
+                    "category": "Iron",
+                    "exp": 37.5,
+                    "level": 15,
+                    "icon": "https://oldschool.runescape.wiki/images/8/81/Iron_arrowtips.png?50992",
+                    "inputs": [
+                        {
+                            "name": "Iron ore",
+                            "amount": 2.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Iron item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [
+                        "0"
+                    ],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 7,
+                    "name": "Bronze bar (smith 5 at a time)",
+                    "category": "Bronze",
+                    "exp": 62.5,
+                    "level": 18,
+                    "icon": "https://oldschool.runescape.wiki/images/c/cd/Bronze_platebody.png?740cc",
+                    "inputs": [
+                        {
+                            "name": "Bronze bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Bronze item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 11,
+                    "name": "Bronze bar (from scratch - smith 5 at a time)",
+                    "category": "Bronze",
+                    "exp": 68.7,
+                    "level": 18,
+                    "icon": "https://oldschool.runescape.wiki/images/c/cd/Bronze_platebody.png?740cc",
+                    "inputs": [
+                        {
+                            "name": "Copper ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Tin ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Bronze item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 14,
+                    "name": "Silver bar",
+                    "category": "Other",
+                    "exp": 13.6,
+                    "level": 20,
+                    "icon": "https://oldschool.runescape.wiki/images/b/b2/Silver_bar.png?5648a",
+                    "inputs": [
+                        {
+                            "name": "Silver ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Silver bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 15,
+                    "name": "Iron bar (smith 2 at a time)",
+                    "category": "Iron",
+                    "exp": 50.0,
+                    "level": 20,
+                    "icon": "https://oldschool.runescape.wiki/images/b/b3/Iron_scimitar.png?e5c40",
+                    "inputs": [
+                        {
+                            "name": "Iron bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Iron item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 19,
+                    "name": "Iron bar (from scratch - smith 2 at a time)",
+                    "category": "Iron",
+                    "exp": 62.5,
+                    "level": 20,
+                    "icon": "https://oldschool.runescape.wiki/images/b/b3/Iron_scimitar.png?e5c40",
+                    "inputs": [
+                        {
+                            "name": "Iron ore",
+                            "amount": 2.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Iron item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [
+                        "0"
+                    ],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 16,
+                    "name": "Iron bar (smith 3 at a time)",
+                    "category": "Iron",
+                    "exp": 75.0,
+                    "level": 24,
+                    "icon": "https://oldschool.runescape.wiki/images/8/80/Iron_platelegs.png?58ba8",
+                    "inputs": [
+                        {
+                            "name": "Iron bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Iron item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 20,
+                    "name": "Iron bar (from scratch - smith 3 at a time)",
+                    "category": "Iron",
+                    "exp": 87.5,
+                    "level": 24,
+                    "icon": "https://oldschool.runescape.wiki/images/8/80/Iron_platelegs.png?58ba8",
+                    "inputs": [
+                        {
+                            "name": "Iron ore",
+                            "amount": 2.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Iron item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [
+                        "0"
+                    ],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 22,
+                    "name": "Steel bar (smelt)",
+                    "category": "Steel",
+                    "exp": 17.5,
+                    "level": 30,
+                    "icon": "https://oldschool.runescape.wiki/images/a/a2/Steel_bar.png?47c87",
+                    "inputs": [
+                        {
+                            "name": "Iron ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 2.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Steel bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 23,
+                    "name": "Steel bar (smith 1 at a time)",
+                    "category": "Steel",
+                    "exp": 37.5,
+                    "level": 30,
+                    "icon": "https://oldschool.runescape.wiki/images/2/2f/Steel_arrowtips.png?1038e",
+                    "inputs": [
+                        {
+                            "name": "Steel bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Steel item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 29,
+                    "name": "Steel bar (from scratch - smith 1 at a time)",
+                    "category": "Steel",
+                    "exp": 55.0,
+                    "level": 30,
+                    "icon": "https://oldschool.runescape.wiki/images/2/2f/Steel_arrowtips.png?1038e",
+                    "inputs": [
+                        {
+                            "name": "Iron ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 2.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Steel item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 17,
+                    "name": "Iron bar (smith 5 at a time)",
+                    "category": "Iron",
+                    "exp": 125.0,
+                    "level": 33,
+                    "icon": "https://oldschool.runescape.wiki/images/c/cd/Iron_platebody.png?bbbfd",
+                    "inputs": [
+                        {
+                            "name": "Iron bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Iron item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 21,
+                    "name": "Iron bar (from scratch - smith 5 at a time)",
+                    "category": "Iron",
+                    "exp": 137.5,
+                    "level": 33,
+                    "icon": "https://oldschool.runescape.wiki/images/c/cd/Iron_platebody.png?bbbfd",
+                    "inputs": [
+                        {
+                            "name": "Iron ore",
+                            "amount": 2.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Iron item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [
+                        "0"
+                    ],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 24,
+                    "name": "Cannonball",
+                    "category": "Steel",
+                    "exp": 25.6,
+                    "level": 35,
+                    "icon": "https://oldschool.runescape.wiki/images/f/fa/Cannonball.png?06286",
+                    "inputs": [
+                        {
+                            "name": "Steel bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Cannonball",
+                            "amount": 4.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Kandarin"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 25,
+                    "name": "Steel bar (smith 2 at a time)",
+                    "category": "Steel",
+                    "exp": 75.0,
+                    "level": 35,
+                    "icon": "https://oldschool.runescape.wiki/images/7/78/Steel_scimitar.png?d11f2",
+                    "inputs": [
+                        {
+                            "name": "Steel bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Steel item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 30,
+                    "name": "Steel bar (from scratch - smith 2 at a time)",
+                    "category": "Steel",
+                    "exp": 92.5,
+                    "level": 35,
+                    "icon": "https://oldschool.runescape.wiki/images/7/78/Steel_scimitar.png?d11f2",
+                    "inputs": [
+                        {
+                            "name": "Iron ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 2.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Steel item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 26,
+                    "name": "Steel bar (smith 3 at a time)",
+                    "category": "Steel",
+                    "exp": 112.5,
+                    "level": 39,
+                    "icon": "https://oldschool.runescape.wiki/images/1/1e/Steel_platelegs.png?8e445",
+                    "inputs": [
+                        {
+                            "name": "Steel bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Steel item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 31,
+                    "name": "Steel bar (from scratch - smith 3 at a time)",
+                    "category": "Steel",
+                    "exp": 130.0,
+                    "level": 39,
+                    "icon": "https://oldschool.runescape.wiki/images/1/1e/Steel_platelegs.png?8e445",
+                    "inputs": [
+                        {
+                            "name": "Iron ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 2.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Steel item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 27,
+                    "name": "Gold bar",
+                    "category": "Other",
+                    "exp": 22.5,
+                    "level": 40,
+                    "icon": "https://oldschool.runescape.wiki/images/0/07/Gold_bar.png?05c77",
+                    "inputs": [
+                        {
+                            "name": "Gold ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Gold bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [
+                        "0"
+                    ],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 28,
+                    "name": "Steel bar (smith 5 at a time)",
+                    "category": "Steel",
+                    "exp": 187.5,
+                    "level": 48,
+                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "inputs": [
+                        {
+                            "name": "Steel bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Steel item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 32,
+                    "name": "Steel bar (from scratch - smith 5 at a time)",
+                    "category": "Steel",
+                    "exp": 205.0,
+                    "level": 48,
+                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "inputs": [
+                        {
+                            "name": "Iron ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 2.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Steel item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 33,
+                    "name": "Mithril bar (smelt)",
+                    "category": "Mithril",
+                    "exp": 30.0,
+                    "level": 50,
+                    "icon": "https://oldschool.runescape.wiki/images/1/18/Mithril_bar.png?a3d3b",
+                    "inputs": [
+                        {
+                            "name": "Mithril ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 4.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Mithril bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 34,
+                    "name": "Mithril bar (smith 1 at a time)",
+                    "category": "Mithril",
+                    "exp": 50.0,
+                    "level": 50,
+                    "icon": "https://oldschool.runescape.wiki/images/f/f3/Mithril_arrowtips.png?625eb",
+                    "inputs": [
+                        {
+                            "name": "Mithril bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Mithril item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 38,
+                    "name": "Mithril bar (from scratch - smith 1 at a time)",
+                    "category": "Mithril",
+                    "exp": 80.0,
+                    "level": 50,
+                    "icon": "https://oldschool.runescape.wiki/images/f/f3/Mithril_arrowtips.png?625eb",
+                    "inputs": [
+                        {
+                            "name": "Mithril ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 4.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Mithril item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 35,
+                    "name": "Mithril bar (smith 2 at a time)",
+                    "category": "Mithril",
+                    "exp": 100.0,
+                    "level": 55,
+                    "icon": "https://oldschool.runescape.wiki/images/0/04/Mithril_scimitar.png?dd3b6",
+                    "inputs": [
+                        {
+                            "name": "Mithril bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Mithril item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 39,
+                    "name": "Mithril bar (from scratch - smith 2 at a time)",
+                    "category": "Mithril",
+                    "exp": 130.0,
+                    "level": 55,
+                    "icon": "https://oldschool.runescape.wiki/images/0/04/Mithril_scimitar.png?dd3b6",
+                    "inputs": [
+                        {
+                            "name": "Mithril ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 4.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Mithril item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 36,
+                    "name": "Mithril bar (smith 3 at a time)",
+                    "category": "Mithril",
+                    "exp": 150.0,
+                    "level": 59,
+                    "icon": "https://oldschool.runescape.wiki/images/5/53/Mithril_platelegs.png?847d1",
+                    "inputs": [
+                        {
+                            "name": "Mithril bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Mithril item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 40,
+                    "name": "Mithril bar (from scratch - smith 3 at a time)",
+                    "category": "Mithril",
+                    "exp": 180.0,
+                    "level": 59,
+                    "icon": "https://oldschool.runescape.wiki/images/5/53/Mithril_platelegs.png?847d1",
+                    "inputs": [
+                        {
+                            "name": "Mithril ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 4.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Mithril item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 37,
+                    "name": "Mithril bar (smith 5 at a time)",
+                    "category": "Mithril",
+                    "exp": 250.0,
+                    "level": 68,
+                    "icon": "https://oldschool.runescape.wiki/images/b/b5/Mithril_platebody.png?c1ded",
+                    "inputs": [
+                        {
+                            "name": "Mithril bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Mithril item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 41,
+                    "name": "Mithril bar (from scratch - smith 5 at a time)",
+                    "category": "Mithril",
+                    "exp": 280.0,
+                    "level": 68,
+                    "icon": "https://oldschool.runescape.wiki/images/b/b5/Mithril_platebody.png?c1ded",
+                    "inputs": [
+                        {
+                            "name": "Mithril ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 4.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Mithril item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 42,
+                    "name": "Adamant bar (smelt)",
+                    "category": "Adamant",
+                    "exp": 37.5,
+                    "level": 70,
+                    "icon": "https://oldschool.runescape.wiki/images/e/eb/Adamantite_bar.png?06d1e",
+                    "inputs": [
+                        {
+                            "name": "Adamant ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 6.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Adamant bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 43,
+                    "name": "Adamant bar (smith 1 at a time)",
+                    "category": "Adamant",
+                    "exp": 62.5,
+                    "level": 70,
+                    "icon": "https://oldschool.runescape.wiki/images/e/e2/Adamant_arrowtips.png?53d15",
+                    "inputs": [
+                        {
+                            "name": "Adamant bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Adamant item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 47,
+                    "name": "Adamant bar (from scratch - smith 1 at a time)",
+                    "category": "Adamant",
+                    "exp": 100.0,
+                    "level": 70,
+                    "icon": "https://oldschool.runescape.wiki/images/e/e2/Adamant_arrowtips.png?53d15",
+                    "inputs": [
+                        {
+                            "name": "Adamant ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 6.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Adamant item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 48,
+                    "name": "Crystal helm",
+                    "category": "Other",
+                    "exp": 2500.0,
+                    "level": 70,
+                    "icon": "https://oldschool.runescape.wiki/images/0/0c/Crystal_helm.png?4c21e",
+                    "inputs": [
+                        {
+                            "name": "Crystal shard",
+                            "amount": 50.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Crystal armour seed",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Crystal helm",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Tirannwn"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 49,
+                    "name": "Crystal legs",
+                    "category": "Other",
+                    "exp": 5000.0,
+                    "level": 72,
+                    "icon": "https://oldschool.runescape.wiki/images/8/8d/Crystal_legs.png?4c21e",
+                    "inputs": [
+                        {
+                            "name": "Crystal shard",
+                            "amount": 100.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Crystal armour seed",
+                            "amount": 2.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Crystal legs",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Tirannwn"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 50,
+                    "name": "Crystal body",
+                    "category": "Other",
+                    "exp": 7500.0,
+                    "level": 74,
+                    "icon": "https://oldschool.runescape.wiki/images/3/3e/Crystal_body.png?4c21e",
+                    "inputs": [
+                        {
+                            "name": "Crystal shard",
+                            "amount": 150.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Crystal armour seed",
+                            "amount": 3.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Crystal body",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Tirannwn"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 44,
+                    "name": "Adamant bar (smith 2 at a time)",
+                    "category": "Adamant",
+                    "exp": 125.0,
+                    "level": 75,
+                    "icon": "https://oldschool.runescape.wiki/images/b/be/Adamant_scimitar.png?b94c4",
+                    "inputs": [
+                        {
+                            "name": "Adamant bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Adamant item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 51,
+                    "name": "Adamant bar (from scratch - smith 2 at a time)",
+                    "category": "Adamant",
+                    "exp": 162.5,
+                    "level": 75,
+                    "icon": "https://oldschool.runescape.wiki/images/b/be/Adamant_scimitar.png?b94c4",
+                    "inputs": [
+                        {
+                            "name": "Adamant ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 6.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Adamant item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 52,
+                    "name": "Crystal axe",
+                    "category": "Other",
+                    "exp": 6000.0,
+                    "level": 76,
+                    "icon": "https://oldschool.runescape.wiki/images/9/9d/Crystal_axe.png?41819",
+                    "inputs": [
+                        {
+                            "name": "Crystal shard",
+                            "amount": 120.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Crystal tool seed",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Dragon axe",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Crystal axe",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Tirannwn"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 53,
+                    "name": "Crystal harpoon",
+                    "category": "Other",
+                    "exp": 6000.0,
+                    "level": 76,
+                    "icon": "https://oldschool.runescape.wiki/images/1/1a/Crystal_harpoon.png?41819",
+                    "inputs": [
+                        {
+                            "name": "Crystal shard",
+                            "amount": 120.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Crystal tool seed",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Dragon harpoon",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Crystal harpoon",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Tirannwn"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 54,
+                    "name": "Crystal pickaxe",
+                    "category": "Other",
+                    "exp": 6000.0,
+                    "level": 76,
+                    "icon": "https://oldschool.runescape.wiki/images/2/23/Crystal_pickaxe.png?41819",
+                    "inputs": [
+                        {
+                            "name": "Crystal shard",
+                            "amount": 120.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Crystal tool seed",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Dragon pickaxe",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Crystal pickaxe",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Tirannwn"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 55,
+                    "name": "Crystal halberd",
+                    "category": "Other",
+                    "exp": 2000.0,
+                    "level": 78,
+                    "icon": "https://oldschool.runescape.wiki/images/b/bf/Crystal_halberd.png?ac4a4",
+                    "inputs": [
+                        {
+                            "name": "Crystal shard",
+                            "amount": 40.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Crystal weapon seed",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Crystal halberd",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Tirannwn"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 45,
+                    "name": "Adamant bar (smith 3 at a time)",
+                    "category": "Adamant",
+                    "exp": 187.5,
+                    "level": 79,
+                    "icon": "https://oldschool.runescape.wiki/images/b/b7/Adamant_platelegs.png?b8df5",
+                    "inputs": [
+                        {
+                            "name": "Adamant bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Adamant item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 56,
+                    "name": "Adamant bar (from scratch - smith 3 at a time)",
+                    "category": "Adamant",
+                    "exp": 225.0,
+                    "level": 79,
+                    "icon": "https://oldschool.runescape.wiki/images/b/b7/Adamant_platelegs.png?b8df5",
+                    "inputs": [
+                        {
+                            "name": "Adamant ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 6.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Adamant item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 57,
+                    "name": "Enhanced crystal key",
+                    "category": "Other",
+                    "exp": 500.0,
+                    "level": 80,
+                    "icon": "https://oldschool.runescape.wiki/images/e/e2/Enhanced_crystal_key.png?dec88",
+                    "inputs": [
+                        {
+                            "name": "Crystal shard",
+                            "amount": 10.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Crystal key",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Enhanced crystal key",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Tirannwn"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 58,
+                    "name": "Eternal teleport crystal",
+                    "category": "Other",
+                    "exp": 5000.0,
+                    "level": 80,
+                    "icon": "https://oldschool.runescape.wiki/images/0/01/Eternal_teleport_crystal.png?dec88",
+                    "inputs": [
+                        {
+                            "name": "Crystal shard",
+                            "amount": 100.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Enhanced crystal teleport seed",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Eternal teleport crystal",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Tirannwn"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 60,
+                    "name": "Rune bar (smelt)",
+                    "category": "Rune",
+                    "exp": 50.0,
+                    "level": 85,
+                    "icon": "https://oldschool.runescape.wiki/images/8/83/Runite_bar.png?10c4d",
+                    "inputs": [
+                        {
+                            "name": "Rune ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 8.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Rune bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 61,
+                    "name": "Rune bar (smith 1 at a time)",
+                    "category": "Rune",
+                    "exp": 75.0,
+                    "level": 85,
+                    "icon": "https://oldschool.runescape.wiki/images/e/ed/Rune_arrowtips.png?c371b",
+                    "inputs": [
+                        {
+                            "name": "Rune bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Rune item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 65,
+                    "name": "Rune bar (from scratch - smith 1 at a time)",
+                    "category": "Rune",
+                    "exp": 125.0,
+                    "level": 85,
+                    "icon": "https://oldschool.runescape.wiki/images/e/ed/Rune_arrowtips.png?c371b",
+                    "inputs": [
+                        {
+                            "name": "Rune ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 8.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Rune item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 46,
+                    "name": "Adamant bar (smith 5 at a time)",
+                    "category": "Adamant",
+                    "exp": 312.5,
+                    "level": 88,
+                    "icon": "https://oldschool.runescape.wiki/images/7/71/Adamant_platebody.png?b8df5",
+                    "inputs": [
+                        {
+                            "name": "Adamant bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Adamant item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 59,
+                    "name": "Adamant bar (from scratch - smith 5 at a time)",
+                    "category": "Adamant",
+                    "exp": 350.0,
+                    "level": 88,
+                    "icon": "https://oldschool.runescape.wiki/images/7/71/Adamant_platebody.png?b8df5",
+                    "inputs": [
+                        {
+                            "name": "Adamant ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 6.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Adamant item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 62,
+                    "name": "Rune bar (smith 2 at a time)",
+                    "category": "Rune",
+                    "exp": 150.0,
+                    "level": 90,
+                    "icon": "https://oldschool.runescape.wiki/images/d/d9/Rune_scimitar.png?a7233",
+                    "inputs": [
+                        {
+                            "name": "Rune bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Rune item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 66,
+                    "name": "Rune bar (from scratch - smith 2 at a time)",
+                    "category": "Rune",
+                    "exp": 200.0,
+                    "level": 90,
+                    "icon": "https://oldschool.runescape.wiki/images/d/d9/Rune_scimitar.png?a7233",
+                    "inputs": [
+                        {
+                            "name": "Rune ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 8.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Rune item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 63,
+                    "name": "Rune bar (smith 3 at a time)",
+                    "category": "Rune",
+                    "exp": 225.0,
+                    "level": 94,
+                    "icon": "https://oldschool.runescape.wiki/images/9/9a/Rune_platelegs.png?1b3fe",
+                    "inputs": [
+                        {
+                            "name": "Rune bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Rune item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 67,
+                    "name": "Rune bar (from scratch - smith 3 at a time)",
+                    "category": "Rune",
+                    "exp": 275.0,
+                    "level": 94,
+                    "icon": "https://oldschool.runescape.wiki/images/9/9a/Rune_platelegs.png?1b3fe",
+                    "inputs": [
+                        {
+                            "name": "Rune ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 8.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Rune item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 64,
+                    "name": "Rune bar (smith 5 at a time)",
+                    "category": "Rune",
+                    "exp": 375.0,
+                    "level": 99,
+                    "icon": "https://oldschool.runescape.wiki/images/7/7c/Rune_platebody.png?3666d",
+                    "inputs": [
+                        {
+                            "name": "Rune bar",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Rune item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 68,
+                    "name": "Rune bar (from scratch - smith 5 at a time)",
+                    "category": "Rune",
+                    "exp": 425.0,
+                    "level": 99,
+                    "icon": "https://oldschool.runescape.wiki/images/7/7c/Rune_platebody.png?3666d",
+                    "inputs": [
+                        {
+                            "name": "Rune ore",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Coal",
+                            "amount": 8.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Rune item",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 2.0,
+                    "tooltip": ""
+                }
+            ]
         },
         "thieving": {
             "name": "Thieving",
