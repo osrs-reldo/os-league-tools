@@ -59,7 +59,7 @@ export default function SkillCalculator() {
     const isMagic = skillData.name === "Magic" ? true : false;
     const isFarming = skillData.name === "Farming" ? true : false;
 
-    const { levelFormatter, iconFormatter, amountFormatter, outputListFormatter, inputListFormatter, expFormatter } = getFormatters();
+    const { nameFormatter, levelFormatter, amountFormatter, outputListFormatter, inputListFormatter, expFormatter } = getFormatters();
     const columns = [
         {
             "dataField": "id",
@@ -82,7 +82,7 @@ export default function SkillCalculator() {
             "text": "Activity",
             "sort": true,
             "headerStyle": { width: '15rem' },
-            "formatter": iconFormatter,
+            "formatter": nameFormatter,
             "filter": textFilter({ placeholder: "Filter..." })
         },
         {
@@ -123,7 +123,7 @@ export default function SkillCalculator() {
         },
         {
             "dataField": "inputs",
-            "text": isMagic ? hasDoubleCast ? "Minimum Inputs" : "Inputs" : "Inputs",
+            "text": "Inputs",
             "formatter": inputListFormatter,
             "headerStyle": { width: '10rem' },
             "classes": "small",

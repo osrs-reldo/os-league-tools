@@ -1,9 +1,10 @@
 import React from "react";
+import { OverlayTrigger, Badge, Tooltip } from "react-bootstrap";
 
 export function getFormatters() {
     return {
+        nameFormatter: nameFormatter,
         levelFormatter: levelFormatter,
-        iconFormatter: iconFormatter,
         amountFormatter: amountFormatter,
         outputListFormatter: outputListFormatter,
         inputListFormatter: inputListFormatter,
@@ -11,19 +12,29 @@ export function getFormatters() {
     }
 }
 
+function nameFormatter(cell, row, rowIndex, props) {
+    return (
+        <React.Fragment>
+            {row.icon && <img src={row.icon} alt='' />}
+            {' ' + cell}
+            {row.tooltip && <OverlayTrigger
+                placement='top'
+                overlay={
+                    <Tooltip>
+                        {row.tooltip}
+                    </Tooltip>
+                }
+            >
+                <Badge variant="dark" pill>...</Badge>
+            </OverlayTrigger>}
+        </React.Fragment>
+    );
+}
+
 function levelFormatter(cell, row, rowIndex, props) {
     const boostedLevel = getBoostedLevel(props.level, props.isSkillingProdigy);
     return (
         <div className={cell <= boostedLevel ? "unlocked" : "locked"}>{cell}</div>
-    );
-}
-
-function iconFormatter(cell, row) {
-    return (
-        <React.Fragment>
-            {row.icon && <img src={row.icon} alt={cell} />}
-            {' ' + cell}
-        </React.Fragment>
     );
 }
 
