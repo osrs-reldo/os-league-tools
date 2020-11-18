@@ -155,6 +155,8 @@ export default function SkillCalculator() {
         }
     ];
 
+    const data = applyFilters(skillData.actions, currentLevel.level, useLevelFilter, isSkillingProdigy, useAreaFilter, includedAreas);
+
     return (
         <div className="content-wrapper">
             <h1 className="mt-2 light-text text-center">{skillData.name}</h1>
@@ -357,8 +359,8 @@ export default function SkillCalculator() {
                         <BootstrapTable
                             bootstrap4
                             keyField='id'
-                            data={applyFilters(skillData.actions, currentLevel.level, useLevelFilter, isSkillingProdigy, useAreaFilter, includedAreas)}
-                            columns={columns}
+                            data={data}
+                            columns={columnsWithData(columns, data)}
                             bordered={false}
                             classes="light-text"
                             filter={filterFactory()}
@@ -386,4 +388,21 @@ function applyFilters(actions, currentLevel, useLevelFilter, isSkillingProdigy, 
         });
     }
     return filteredActions;
+}
+
+function columnsWithData(columns, data) {
+    const hasNoInputs = !data.some((datum) => datum.inputs.length > 0);
+    const hasNoOutputs = !data.some((datum) => datum.outputs.length > 0);
+
+    if (hasNoInputs) {
+        const inputsIndex = columns.findIndex((column) => column.dataField === "inputs");
+        columns.splice(inputsIndex, 1);
+    }
+
+    if (hasNoOutputs) {
+        const outputsIndex = columns.findIndex((column) => column.dataField === "outputs");
+        columns.splice(outputsIndex, 1);
+    }
+
+    return columns;
 }
