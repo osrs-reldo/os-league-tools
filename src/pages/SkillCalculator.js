@@ -60,6 +60,9 @@ export default function SkillCalculator() {
     const isFarming = skillData.name === "Farming" ? true : false;
 
     const { nameFormatter, levelFormatter, amountFormatter, outputListFormatter, inputListFormatter, expFormatter } = getFormatters();
+
+    const data = applyFilters(skillData.actions, currentLevel.level, useLevelFilter, isSkillingProdigy, useAreaFilter, includedAreas);
+
     const columns = [
         {
             "dataField": "id",
@@ -135,7 +138,8 @@ export default function SkillCalculator() {
                 "totalLevel": totalLevel,
                 "countMultiplier": inputMultiplier,
                 "hasDoubleCast": isMagic ? hasDoubleCast : false,
-            }
+            },
+            "hidden": !data.some((datum) => datum.inputs.length > 0)
         },
         {
             "dataField": "outputs",
@@ -151,7 +155,8 @@ export default function SkillCalculator() {
                 "totalLevel": totalLevel,
                 "countMultiplier": outputMultiplier,
                 "hasBotanist": isFarming ? hasBotanist : false,
-            }
+            },
+            "hidden": !data.some((datum) => datum.outputs.length > 0)
         }
     ];
 
@@ -357,7 +362,7 @@ export default function SkillCalculator() {
                         <BootstrapTable
                             bootstrap4
                             keyField='id'
-                            data={applyFilters(skillData.actions, currentLevel.level, useLevelFilter, isSkillingProdigy, useAreaFilter, includedAreas)}
+                            data={data}
                             columns={columns}
                             bordered={false}
                             classes="light-text"
