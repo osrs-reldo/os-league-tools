@@ -29727,6 +29727,51 @@
                     "tooltip": ""
                 },
                 {
+                  "id": 294,
+                  "name": "Paddewwa Teleport (tablet)",
+                  "category": "Tablets",
+                  "exp": 64.0,
+                  "level": 54,
+                  "icon": "",
+                  "inputs": [
+                      {
+                          "name": "Air rune",
+                          "amount": 1.0,
+                          "chance": 1
+                      },
+                      {
+                          "name": "Fire rune",
+                          "amount": 1.0,
+                          "chance": 1
+                      },
+                      {
+                          "name": "Law rune",
+                          "amount": 2.0,
+                          "chance": 1
+                      },
+                      {
+                          "name": "Soft clay",
+                          "amount": 1.0,
+                          "chance": 1
+                      }
+                  ],
+                  "outputs": [
+                      {
+                          "name": "Paddewwa teleport (tablet)",
+                          "amount": 1.0,
+                          "chance": 1
+                      }
+                  ],
+                  "areas": [
+                      "Desert"
+                  ],
+                  "expMultipliers": [],
+                  "inputMultipliers": [],
+                  "outputMultipliers": [],
+                  "expActions": 1.0,
+                  "tooltip": ""
+                },
+                {
                     "id": 111,
                     "name": "High Level Alchemy",
                     "category": "Standard spellbook (utility)",
@@ -30515,6 +30560,46 @@
                     "outputMultipliers": [],
                     "expActions": 1.0,
                     "tooltip": ""
+                },
+                {
+                  "id": 295,
+                  "name": "Senntisten Teleport (tablet)",
+                  "category": "Tablets",
+                  "exp": 70.0,
+                  "level": 60,
+                  "icon": "",
+                  "inputs": [
+                      {
+                          "name": "Soul rune",
+                          "amount": 1.0,
+                          "chance": 1
+                      },
+                      {
+                          "name": "Law rune",
+                          "amount": 2.0,
+                          "chance": 1
+                      },
+                      {
+                          "name": "Soft clay",
+                          "amount": 1.0,
+                          "chance": 1
+                      }
+                  ],
+                  "outputs": [
+                      {
+                          "name": "Senntisten teleport (tablet)",
+                          "amount": 1.0,
+                          "chance": 1
+                      }
+                  ],
+                  "areas": [
+                      "Desert"
+                  ],
+                  "expMultipliers": [],
+                  "inputMultipliers": [],
+                  "outputMultipliers": [],
+                  "expActions": 1.0,
+                  "tooltip": ""
                 },
                 {
                     "id": 133,
@@ -31463,6 +31548,46 @@
                     "tooltip": ""
                 },
                 {
+                  "id": 296,
+                  "name": "Kharyrll Teleport (tablet)",
+                  "category": "Tablets",
+                  "exp": 76.0,
+                  "level": 66,
+                  "icon": "",
+                  "inputs": [
+                      {
+                          "name": "Blood rune",
+                          "amount": 1.0,
+                          "chance": 1
+                      },
+                      {
+                          "name": "Law rune",
+                          "amount": 2.0,
+                          "chance": 1
+                      },
+                      {
+                          "name": "Soft clay",
+                          "amount": 1.0,
+                          "chance": 1
+                      }
+                  ],
+                  "outputs": [
+                      {
+                          "name": "Kharyll teleport (tablet)",
+                          "amount": 1.0,
+                          "chance": 1
+                      }
+                  ],
+                  "areas": [
+                      "Desert"
+                  ],
+                  "expMultipliers": [],
+                  "inputMultipliers": [],
+                  "outputMultipliers": [],
+                  "expActions": 1.0,
+                  "tooltip": ""
+                },
+                {
                     "id": 168,
                     "name": "Vulnerability",
                     "category": "Standard spellbook (combat)",
@@ -31921,6 +32046,51 @@
                     "tooltip": ""
                 },
                 {
+                    "id": 302,
+                    "name": "Moonclan Teleport",
+                    "category": "Tablets",
+                    "exp": 66.0,
+                    "level": 69,
+                    "icon": "",
+                    "inputs": [
+                        {
+                            "name": "Astral rune",
+                            "amount": 2.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Earth rune",
+                            "amount": 2.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Law rune",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Soft clay",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Moonclan teleport (tablet)",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Fremennik"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
                     "id": 179,
                     "name": "Kourend Castle Teleport",
                     "category": "Standard spellbook (teleport)",
@@ -32266,6 +32436,51 @@
                     "tooltip": ""
                 },
                 {
+                    "id": 303,
+                    "name": "Ourania Teleport (tablet)",
+                    "category": "Tablets",
+                    "exp": 69.0,
+                    "level": 71,
+                    "icon": "",
+                    "inputs": [
+                        {
+                            "name": "Astral rune",
+                            "amount": 2.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Earth rune",
+                            "amount": 6.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Law rune",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Soft clay",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Ourania teleport (tablet)",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Fremennik"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
                     "id": 190,
                     "name": "Hunter Kit",
                     "category": "Lunar magic (utility)",
@@ -32335,6 +32550,51 @@
                     "tooltip": ""
                 },
                 {
+                    "id": 304,
+                    "name": "Waterbirth Teleport (tablet)",
+                    "category": "Tablets",
+                    "exp": 71.0,
+                    "level": 72,
+                    "icon": "",
+                    "inputs": [
+                        {
+                            "name": "Astral rune",
+                            "amount": 2.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Law rune",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Water rune",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Soft clay",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Waterbirth teleport (tablet)",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Fremennik"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
                     "id": 194,
                     "name": "Lassar Teleport",
                     "category": "Ancient magicks (teleport)",
@@ -32362,6 +32622,46 @@
                     "outputMultipliers": [],
                     "expActions": 1.0,
                     "tooltip": ""
+                },
+                {
+                  "id": 297,
+                  "name": "Lassar Teleport (tablet)",
+                  "category": "Tablets",
+                  "exp": 82.0,
+                  "level": 72,
+                  "icon": "",
+                  "inputs": [
+                      {
+                          "name": "Law rune",
+                          "amount": 2.0,
+                          "chance": 1
+                      },
+                      {
+                          "name": "Water rune",
+                          "amount": 4.0,
+                          "chance": 1
+                      },
+                      {
+                          "name": "Soft clay",
+                          "amount": 1.0,
+                          "chance": 1
+                      }
+                  ],
+                  "outputs": [
+                    {
+                        "name": "Lassar teleport (tablet)",
+                        "amount": 1.0,
+                        "chance": 1
+                    }
+                  ],
+                  "areas": [
+                      "Desert"
+                  ],
+                  "expMultipliers": [],
+                  "inputMultipliers": [],
+                  "outputMultipliers": [],
+                  "expActions": 1.0,
+                  "tooltip": ""
                 },
                 {
                     "id": 196,
@@ -32753,6 +33053,51 @@
                     "tooltip": ""
                 },
                 {
+                    "id": 305,
+                    "name": "Barbarian Teleport (tablet)",
+                    "category": "Tablets",
+                    "exp": 76.0,
+                    "level": 75,
+                    "icon": "",
+                    "inputs": [
+                        {
+                            "name": "Astral rune",
+                            "amount": 2.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Fire rune",
+                            "amount": 3.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Law rune",
+                            "amount": 2.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Soft clay",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Barbarian teleport (tablet)",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Fremennik"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
                     "id": 207,
                     "name": "Stat Spy",
                     "category": "Lunar magic (utility)",
@@ -33117,6 +33462,51 @@
                     "tooltip": ""
                 },
                 {
+                    "id": 306,
+                    "name": "Khazard Teleport (tablet)",
+                    "category": "Tablets",
+                    "exp": 80.0,
+                    "level": 78,
+                    "icon": "",
+                    "inputs": [
+                        {
+                            "name": "Astral rune",
+                            "amount": 2.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Law rune",
+                            "amount": 2.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Water rune",
+                            "amount": 4.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Soft clay",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Khazard teleport (tablet)",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Fremennik"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
                     "id": 216,
                     "name": "Tan Leather",
                     "category": "Lunar magic (utility)",
@@ -33194,6 +33584,51 @@
                     "outputMultipliers": [],
                     "expActions": 1.0,
                     "tooltip": ""
+                },
+                {
+                  "id": 298,
+                  "name": "Dareeyak Teleport (tablet)",
+                  "category": "Tablets",
+                  "exp": 88.0,
+                  "level": 78,
+                  "icon": "",
+                  "inputs": [
+                      {
+                          "name": "Air rune",
+                          "amount": 2.0,
+                          "chance": 1
+                      },
+                      {
+                          "name": "Fire rune",
+                          "amount": 3.0,
+                          "chance": 1
+                      },
+                      {
+                          "name": "Law rune",
+                          "amount": 2.0,
+                          "chance": 1
+                      },
+                      {
+                          "name": "Soft clay",
+                          "amount": 1.0,
+                          "chance": 1
+                      }
+                  ],
+                  "outputs": [
+                      {
+                          "name": "Dareeyak teleport (tablet)",
+                          "amount": 1.0,
+                          "chance": 1
+                      }
+                  ],
+                  "areas": [
+                      "Desert"
+                  ],
+                  "expMultipliers": [],
+                  "inputMultipliers": [],
+                  "outputMultipliers": [],
+                  "expActions": 1.0,
+                  "tooltip": ""
                 },
                 {
                     "id": 220,
@@ -33896,6 +34331,46 @@
                     "tooltip": ""
                 },
                 {
+                    "id": 299,
+                    "name": "Carrallangar Teleport (tablet)",
+                    "category": "Tablets",
+                    "exp": 94.0,
+                    "level": 84,
+                    "icon": "",
+                    "inputs": [
+                        {
+                            "name": "Law rune",
+                            "amount": 2.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Soul rune",
+                            "amount": 2.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Soft clay",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Carrallangar teleport (tablet)",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                      "areas": [
+                          "Desert"
+                      ],
+                      "expMultipliers": [],
+                      "inputMultipliers": [],
+                      "outputMultipliers": [],
+                      "expActions": 1.0,
+                      "tooltip": ""
+                },
+                {
                     "id": 243,
                     "name": "Teleport to Bounty Target",
                     "category": "Standard spellbook (teleport)",
@@ -34090,6 +34565,51 @@
                         }
                     ],
                     "outputs": [],
+                    "areas": [
+                        "Fremennik"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 307,
+                    "name": "Fishing Guild Teleport (tablet)",
+                    "category": "Tablets",
+                    "exp": 89.0,
+                    "level": 85,
+                    "icon": "",
+                    "inputs": [
+                        {
+                            "name": "Astral rune",
+                            "amount": 3.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Law rune",
+                            "amount": 3.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Water rune",
+                            "amount": 10.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Soft clay",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Fishing guild teleport (tablet)",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
                     "areas": [
                         "Fremennik"
                     ],
@@ -34461,6 +34981,51 @@
                     "tooltip": ""
                 },
                 {
+                    "id": 308,
+                    "name": "Catherby Teleport (tablet)",
+                    "category": "Tablets",
+                    "exp": 92.0,
+                    "level": 87,
+                    "icon": "",
+                    "inputs": [
+                        {
+                            "name": "Astral rune",
+                            "amount": 3.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Law rune",
+                            "amount": 3.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Water rune",
+                            "amount": 10.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Soft clay",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Catherby teleport (tablet)",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Fremennik"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
                     "id": 259,
                     "name": "Onyx Bolt Enchant",
                     "category": "Standard spellbook (utility)",
@@ -34781,6 +35346,51 @@
                     "tooltip": ""
                 },
                 {
+                    "id": 309,
+                    "name": "Ice Plateau Teleport (tablet)",
+                    "category": "Tablets",
+                    "exp": 96.0,
+                    "level": 89,
+                    "icon": "",
+                    "inputs": [
+                        {
+                            "name": "Astral rune",
+                            "amount": 3.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Law rune",
+                            "amount": 3.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Water rune",
+                            "amount": 8.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Soft clay",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Ice plateau teleport (tablet)",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "Fremennik"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
                     "id": 267,
                     "name": "Recharge Dragonstone",
                     "category": "Lunar magic (utility)",
@@ -34981,6 +35591,46 @@
                         }
                     ],
                     "outputs": [],
+                    "areas": [
+                        "Desert"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 300,
+                    "name": "Annakarl Teleport (tablet)",
+                    "category": "Tablets",
+                    "exp": 100.0,
+                    "level": 90,
+                    "icon": "",
+                    "inputs": [
+                        {
+                            "name": "Blood rune",
+                            "amount": 2.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Law rune",
+                            "amount": 2.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Soft clay",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Annakarl teleport (tablet)",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
                     "areas": [
                         "Desert"
                     ],
@@ -35560,6 +36210,46 @@
                         }
                     ],
                     "outputs": [],
+                    "areas": [
+                        "Desert"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 1.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 301,
+                    "name": "Ghorrock Teleport (tablet)",
+                    "category": "Tablets",
+                    "exp": 106.0,
+                    "level": 96,
+                    "icon": "",
+                    "inputs": [
+                        {
+                            "name": "Law rune",
+                            "amount": 2.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Water rune",
+                            "amount": 8.0,
+                            "chance": 1
+                        },
+                        {
+                          "name": "Soft clay",
+                          "amount": 1.0,
+                          "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                          "name": "Ghorrock teleport (tablet)",
+                          "amount": 1.0,
+                          "chance": 1
+                        }
+                    ],
                     "areas": [
                         "Desert"
                     ],
