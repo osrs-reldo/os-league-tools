@@ -60,6 +60,9 @@ export default function SkillCalculator() {
     const isFarming = skillData.name === "Farming" ? true : false;
 
     const { nameFormatter, levelFormatter, amountFormatter, outputListFormatter, inputListFormatter, expFormatter } = getFormatters();
+
+    const data = applyFilters(skillData.actions, currentLevel.level, useLevelFilter, isSkillingProdigy, useAreaFilter, includedAreas);
+
     const columns = [
         {
             "dataField": "id",
@@ -135,7 +138,8 @@ export default function SkillCalculator() {
                 "totalLevel": totalLevel,
                 "countMultiplier": inputMultiplier,
                 "hasDoubleCast": isMagic ? hasDoubleCast : false,
-            }
+            },
+            "hidden": !data.some((datum) => datum.inputs.length > 0)
         },
         {
             "dataField": "outputs",
@@ -151,11 +155,10 @@ export default function SkillCalculator() {
                 "totalLevel": totalLevel,
                 "countMultiplier": outputMultiplier,
                 "hasBotanist": isFarming ? hasBotanist : false,
-            }
+            },
+            "hidden": !data.some((datum) => datum.outputs.length > 0)
         }
     ];
-
-    const data = applyFilters(skillData.actions, currentLevel.level, useLevelFilter, isSkillingProdigy, useAreaFilter, includedAreas);
 
     return (
         <div className="content-wrapper">
@@ -360,7 +363,7 @@ export default function SkillCalculator() {
                             bootstrap4
                             keyField='id'
                             data={data}
-                            columns={columnsWithData(columns, data)}
+                            columns={columns}
                             bordered={false}
                             classes="light-text"
                             filter={filterFactory()}
@@ -388,21 +391,4 @@ function applyFilters(actions, currentLevel, useLevelFilter, isSkillingProdigy, 
         });
     }
     return filteredActions;
-}
-
-function columnsWithData(columns, data) {
-    const hasNoInputs = !data.some((datum) => datum.inputs.length > 0);
-    const hasNoOutputs = !data.some((datum) => datum.outputs.length > 0);
-
-    if (hasNoInputs) {
-        const inputsIndex = columns.findIndex((column) => column.dataField === "inputs");
-        columns.splice(inputsIndex, 1);
-    }
-
-    if (hasNoOutputs) {
-        const outputsIndex = columns.findIndex((column) => column.dataField === "outputs");
-        columns.splice(outputsIndex, 1);
-    }
-
-    return columns;
 }
