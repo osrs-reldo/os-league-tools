@@ -6,9 +6,8 @@ import taskData from '../resources/taskData.json';
 import DoubleScrollbar from "../components/DoubleScrollbar";
 import { applyFilters, getFormatters, getRenderers, isTaskComplete, isTaskHidden, isTaskOnTodoList } from "../util/task-util";
 
-export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters }) {
-    const { completedFormatter, pointsFormatter, todoFormatter, nameFormatter, hideFormatter, difficultyFormatter } = getFormatters();
-
+export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters, hiscores }) {
+    const { completedFormatter, pointsFormatter, todoFormatter, nameFormatter, hideFormatter, difficultyFormatter, skillsFormatter } = getFormatters();
     const taskTableContent = area === "All" ? taskData.tasks : taskData.tasksByRegion[area];
 
     const setTaskCompletion = (isComplete, taskId) => {
@@ -91,6 +90,13 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             "headerStyle": { width: '10rem' },
             "sort": true,
             "filter": textFilter({ placeholder: "Filter..." }),
+        },
+        {
+            "dataField": "skills",
+            "text": "Requirements",
+            "formatter": skillsFormatter,
+            "formatExtraData": { "hiscores": hiscores?.skills },
+            "headerStyle": { width: '10rem' }
         },
         {
             "dataField": "todo",

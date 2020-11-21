@@ -14,5 +14,9 @@ export default function useLocalStorage(key, initialValue, useSessionStorage = f
         updateLocalStorage(key, valueToStore, setStoredValue, useSessionStorage);
     };
 
-    return [storedValue, setValue];
+    const refreshStoredValue = () => {
+        setStoredValue(getValue());
+    }
+
+    return [storedValue, setValue, refreshStoredValue];
 }

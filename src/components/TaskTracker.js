@@ -6,16 +6,18 @@ import { getMaxCompletablePoints } from "../util/relic-util"
 import TaskTable from "./TaskTable";
 import { INITIAL_REGIONS_STATE } from '../util/region-util';
 import useLocalStorage from "../hooks/useLocalStorage";
-import { LOCALSTORAGE_KEYS } from "../util/browser-util";
+import { LOCALSTORAGE_KEYS, SESSIONSTORAGE_KEYS } from "../util/browser-util";
 import { CardDeck } from "../../node_modules/react-bootstrap/esm/index";
 import useScreenSize from "../hooks/useScreenSize";
 import Divider from "./Divider";
+import HiscoreLookup from './HiscoreLookup';
 
 export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegions = INITIAL_REGIONS_STATE }) {
     const [hideLockedAreas, setHideLockedAreas] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_HIDE_LOCKED_AREAS, true);
     const [selectedStatus, setSelectedStatus] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_SELECTED_STATUS, 'All');
     const [showHiddenTasks, setShowHiddenTasks] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_SHOW_HIDDEN_TASKS, false);
     const [hideTodoTasks, setHideTodoTasks] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_HIDE_TODO_TASKS, false);
+    const [hiscores, , refreshHiscores] = useLocalStorage(SESSIONSTORAGE_KEYS.HISCORES_CACHE, null, true);
     const screenSize = useScreenSize();
 
     const regionsToShow = [ 'Common', ...unlockedRegions ]
@@ -108,6 +110,8 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                             setShowHiddenTasks={setShowHiddenTasks}
                             hideTodoTasks={hideTodoTasks}
                             setHideTodoTasks={setHideTodoTasks}
+                            hiscores={hiscores}
+                            refreshHiscores={refreshHiscores}
                         />
                     </Tab>
                     <Tab eventKey="todo" title="To-Do List">
@@ -124,6 +128,8 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                             plannedOnTodoList={plannedOnTodoList}
                             showHiddenTasks={showHiddenTasks}
                             setShowHiddenTasks={setShowHiddenTasks}
+                            hiscores={hiscores}
+                            refreshHiscores={refreshHiscores}
                         />
                     </Tab>
                 </Tabs>
@@ -146,6 +152,8 @@ function TaskTableWrapper({
         setShowHiddenTasks,
         hideTodoTasks,
         setHideTodoTasks,
+        hiscores,
+        refreshHiscores,
         taskFilters = []
 }) {
     const [selectedArea, setSelectedArea] = useState('All');
@@ -176,6 +184,7 @@ function TaskTableWrapper({
                 <Row>
                     <Col lg={2}>
                         <Tab.Container activeKey={selectedArea}>
+                            <HiscoreLookup refreshStateCallback={refreshHiscores} />
                             <Form.Check
                                 label="Hide locked areas"
                                 checked={hideLockedAreas}
@@ -268,6 +277,7 @@ function TaskTableWrapper({
                                 taskStatus={taskStatus}
                                 updateTaskStatus={updateTaskStatus}
                                 taskFilters={allFilters}
+                                hiscores={hiscores}
                             />
                         </Nav>
                     </Col>

@@ -7,6 +7,8 @@ import uncheckedIcon from '@iconify/icons-mdi/checkbox-blank-circle-outline';
 import closeIcon from '@iconify/icons-mdi/close';
 import plusIcon from '@iconify/icons-mdi/plus';
 import taskData from '../resources/taskData.json';
+import Badge from 'react-bootstrap/Badge';
+import calculatorData from '../resources/calculatorData.json';
 
 export const DIFFICULTY_POINTS = {
     'Easy': 10,
@@ -24,6 +26,7 @@ export function getFormatters() {
         todoFormatter: todoFormatter,
         nameFormatter: nameFormatter,
         hideFormatter: hideFormatter,
+        skillsFormatter: skillsFormatter,
     }
 }
 
@@ -88,6 +91,21 @@ function todoFormatter(cell, row, rowIndex, props) {
 function hideFormatter(cell, row, rowIndex, props) {
     const isHidden = isTaskHidden(row.id, props.taskStatus);
     return <InlineIcon icon={isHidden ? plusIcon : closeIcon} height='20px' />
+}
+
+function skillsFormatter(cell, row, rowIndex, props) {
+    const playerSkills = props.hiscores;
+    return cell.map(skill => {
+        const name = skill.name.toLowerCase();
+        const level = skill.level;
+        const isReqMet = playerSkills ? playerSkills[name] && playerSkills[name].level >= skill.level : null;
+        const icon = calculatorData.calculators[name]?.icon;
+        return (
+            <Badge pill variant={playerSkills ? (isReqMet ? "primary" : "danger") : "light"}>
+                    <img src={icon} style={{ "width": "20px" }} alt=''/> {level}
+            </Badge>
+        );
+    });
 }
 
 function pageButtonRenderer({ page, active, disable, title, onPageChange }) {
