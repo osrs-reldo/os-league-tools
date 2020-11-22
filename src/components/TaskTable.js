@@ -4,10 +4,10 @@ import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import taskData from '../resources/taskData.json';
 import DoubleScrollbar from "../components/DoubleScrollbar";
-import { applyFilters, getFormatters, getRenderers, isTaskComplete, isTaskHidden, isTaskOnTodoList } from "../util/task-util";
+import { applyFilters, getFormatters, getRenderers, isTaskComplete } from "../util/task-util";
 
 export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters, hiscores }) {
-    const { completedFormatter, pointsFormatter, todoFormatter, nameFormatter, hideFormatter, difficultyFormatter, skillsFormatter } = getFormatters();
+    const { completedFormatter, pointsFormatter, nameFormatter, difficultyFormatter, skillsFormatter, manageFormatter } = getFormatters();
     const taskTableContent = area === "All" ? taskData.tasks : taskData.tasksByRegion[area];
 
     const setTaskCompletion = (isComplete, taskId) => {
@@ -97,36 +97,13 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             "formatter": skillsFormatter,
             "formatExtraData": { "hiscores": hiscores?.skills },
             "headerStyle": { width: '10rem' }
-        },
-        {
-            "dataField": "todo",
-            "text": "To-Do",
+        },{
+            "dataField": "manage",
+            "text": "Manage",
             "isDummyField": true,
-            "headerStyle": { width: '8rem' },
-            "formatter": todoFormatter,
-            "formatExtraData": { "taskStatus": taskStatus },
-            "classes": "clickable",
-            "events": {
-                onClick: (event, column, columnIndex, row, rowIndex) => {
-                    const isTodo = isTaskOnTodoList(row.id, taskStatus);
-                    setTaskTodo(!isTodo, row.id);
-                }
-            },
-        },
-        {
-            "dataField": "hide",
-            "text": "Hide",
-            "isDummyField": true,
-            "headerStyle": { width: '5rem' },
-            "formatter": hideFormatter,
-            "formatExtraData": { "taskStatus": taskStatus },
-            "classes": "clickable",
-            "events": {
-                onClick: (event, column, columnIndex, row, rowIndex) => {
-                    const isHidden = isTaskHidden(row.id, taskStatus);
-                    setTaskHidden(!isHidden, row.id);
-                }
-            },
+            "headerStyle": { width: '10rem' },
+            "formatter": manageFormatter,
+            "formatExtraData": { "taskStatus": taskStatus, "setTaskTodo": setTaskTodo, "setTaskHidden": setTaskHidden },
         },
     ];
 

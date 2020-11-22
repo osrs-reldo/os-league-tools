@@ -33,7 +33,7 @@ code {
 }
 
 .content-wrapper {
-  width: 80%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -64,6 +64,10 @@ code {
 
 .clickable {
   cursor: pointer;
+}
+
+.hover-highlight:hover {
+  background-color: #343a40;
 }
 
 .completed {

@@ -1,14 +1,11 @@
 import React from "react";
 import { InlineIcon } from '@iconify/react';
-import addToListIcon from '@iconify/icons-mdi/text-box-plus-outline';
-import removeFromListIcon from '@iconify/icons-mdi/text-box-remove-outline';
 import checkedIcon from '@iconify/icons-mdi/check-circle-outline';
 import uncheckedIcon from '@iconify/icons-mdi/checkbox-blank-circle-outline';
 import closeIcon from '@iconify/icons-mdi/close';
 import plusIcon from '@iconify/icons-mdi/plus';
 import taskData from '../resources/taskData.json';
 import Badge from 'react-bootstrap/Badge';
-import calculatorData from '../resources/calculatorData.json';
 
 export const DIFFICULTY_POINTS = {
     'Easy': 10,
@@ -23,10 +20,9 @@ export function getFormatters() {
         completedFormatter: completedFormatter,
         pointsFormatter: pointsFormatter,
         difficultyFormatter: difficultyFormatter,
-        todoFormatter: todoFormatter,
         nameFormatter: nameFormatter,
-        hideFormatter: hideFormatter,
         skillsFormatter: skillsFormatter,
+        manageFormatter: manageFormatter,
     }
 }
 
@@ -78,19 +74,24 @@ function nameFormatter(cell, row, rowIndex, props) {
     );
 }
 
-function todoFormatter(cell, row, rowIndex, props) {
+function manageFormatter(cell, row, rowIndex, props) {
     const isOnTodoList = isTaskOnTodoList(row.id, props.taskStatus);
+    const isHidden = isTaskHidden(row.id, props.taskStatus);
     return (
-        <div>
-            <InlineIcon icon={isOnTodoList ? removeFromListIcon : addToListIcon} />
-            {isOnTodoList ? ' Remove' : ' Add'}
+        <div className="d-flex justify-content-around">
+            <div
+                className='clickable mb-1 hover-highlight'
+                onClick={() => props.setTaskTodo(!isOnTodoList, row.id)}
+            >
+                <InlineIcon icon={isOnTodoList ? closeIcon : plusIcon} />
+                {' To-do'}
+            </div>
+            <div className='clickable hover-highlight' onClick={() => props.setTaskHidden(!isHidden, row.id)}>
+                <InlineIcon icon={isHidden ? plusIcon : closeIcon} />
+                {isHidden ? ' Unhide' : ' Hide'}
+            </div>
         </div>
     );
-}
-
-function hideFormatter(cell, row, rowIndex, props) {
-    const isHidden = isTaskHidden(row.id, props.taskStatus);
-    return <InlineIcon icon={isHidden ? plusIcon : closeIcon} height='20px' />
 }
 
 function skillsFormatter(cell, row, rowIndex, props) {
@@ -98,11 +99,11 @@ function skillsFormatter(cell, row, rowIndex, props) {
     return cell.map(skill => {
         const name = skill.name.toLowerCase();
         const level = skill.level;
-        const isReqMet = playerSkills ? playerSkills[name] && playerSkills[name].level >= skill.level : null;
-        const icon = calculatorData.calculators[name]?.icon;
+        const isReqMet = playerSkills && playerSkills[name] && playerSkills[name].level >= skill.level;
+        const icon = `/${name}.gif`
         return (
-            <Badge pill variant={playerSkills ? (isReqMet ? "primary" : "danger") : "light"}>
-                    <img src={icon} style={{ "width": "20px" }} alt=''/> {level}
+            <Badge pill key={name} variant={playerSkills ? (isReqMet ? "success" : "danger") : "light"}>
+                    <img src={icon} alt=''/> {level}
             </Badge>
         );
     });
