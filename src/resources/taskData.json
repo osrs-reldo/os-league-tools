@@ -614,12 +614,7 @@
             "category": "Combat",
             "subcategory": "Slayer",
             "area": "Common",
-            "skills": [
-                {
-                    "name": "Combat",
-                    "level": 20
-                }
-            ]
+            "skills": []
         },
         {
             "id": "33",
@@ -5421,10 +5416,6 @@
             "area": "Karamja",
             "skills": [
                 {
-                    "name": "Combat",
-                    "level": 100
-                },
-                {
                     "name": "Slayer",
                     "level": 50
                 }
@@ -6063,12 +6054,7 @@
             "category": "Minigames",
             "subcategory": "Pest control",
             "area": "Asgarnia",
-            "skills": [
-                {
-                    "name": "Combat",
-                    "level": 40
-                }
-            ]
+            "skills": []
         },
         {
             "id": "463",
@@ -6313,12 +6299,7 @@
             "category": "Minigames",
             "subcategory": "Pest control",
             "area": "Asgarnia",
-            "skills": [
-                {
-                    "name": "Combat",
-                    "level": 70
-                }
-            ]
+            "skills": []
         },
         {
             "id": "479",
@@ -6547,12 +6528,7 @@
             "category": "Minigames",
             "subcategory": "Pest control",
             "area": "Asgarnia",
-            "skills": [
-                {
-                    "name": "Combat",
-                    "level": 100
-                }
-            ]
+            "skills": []
         },
         {
             "id": "495",
@@ -6562,12 +6538,7 @@
             "category": "Minigames",
             "subcategory": "Pest control",
             "area": "Asgarnia",
-            "skills": [
-                {
-                    "name": "Combat",
-                    "level": 100
-                }
-            ]
+            "skills": []
         },
         {
             "id": "496",
@@ -7909,12 +7880,7 @@
             "category": "Combat",
             "subcategory": "Slayer",
             "area": "Kandarin",
-            "skills": [
-                {
-                    "name": "Combat",
-                    "level": 85
-                }
-            ]
+            "skills": []
         },
         {
             "id": "597",
@@ -12858,12 +12824,7 @@
                 "category": "Combat",
                 "subcategory": "Slayer",
                 "area": "Common",
-                "skills": [
-                    {
-                        "name": "Combat",
-                        "level": 20
-                    }
-                ]
+                "skills": []
             },
             {
                 "id": "33",
@@ -17669,10 +17630,6 @@
                 "area": "Karamja",
                 "skills": [
                     {
-                        "name": "Combat",
-                        "level": 100
-                    },
-                    {
                         "name": "Slayer",
                         "level": 50
                     }
@@ -18313,12 +18270,7 @@
                 "category": "Minigames",
                 "subcategory": "Pest control",
                 "area": "Asgarnia",
-                "skills": [
-                    {
-                        "name": "Combat",
-                        "level": 40
-                    }
-                ]
+                "skills": []
             },
             {
                 "id": "463",
@@ -18563,12 +18515,7 @@
                 "category": "Minigames",
                 "subcategory": "Pest control",
                 "area": "Asgarnia",
-                "skills": [
-                    {
-                        "name": "Combat",
-                        "level": 70
-                    }
-                ]
+                "skills": []
             },
             {
                 "id": "479",
@@ -18797,12 +18744,7 @@
                 "category": "Minigames",
                 "subcategory": "Pest control",
                 "area": "Asgarnia",
-                "skills": [
-                    {
-                        "name": "Combat",
-                        "level": 100
-                    }
-                ]
+                "skills": []
             },
             {
                 "id": "495",
@@ -18812,12 +18754,7 @@
                 "category": "Minigames",
                 "subcategory": "Pest control",
                 "area": "Asgarnia",
-                "skills": [
-                    {
-                        "name": "Combat",
-                        "level": 100
-                    }
-                ]
+                "skills": []
             },
             {
                 "id": "496",
@@ -20163,12 +20100,7 @@
                 "category": "Combat",
                 "subcategory": "Slayer",
                 "area": "Kandarin",
-                "skills": [
-                    {
-                        "name": "Combat",
-                        "level": 85
-                    }
-                ]
+                "skills": []
             },
             {
                 "id": "597",
@@ -25120,12 +25052,7 @@
             "category": "Combat",
             "subcategory": "Slayer",
             "area": "Common",
-            "skills": [
-                {
-                    "name": "Combat",
-                    "level": 20
-                }
-            ]
+            "skills": []
         },
         "33": {
             "id": "33",
@@ -29927,10 +29854,6 @@
             "area": "Karamja",
             "skills": [
                 {
-                    "name": "Combat",
-                    "level": 100
-                },
-                {
                     "name": "Slayer",
                     "level": 50
                 }
@@ -30569,12 +30492,7 @@
             "category": "Minigames",
             "subcategory": "Pest control",
             "area": "Asgarnia",
-            "skills": [
-                {
-                    "name": "Combat",
-                    "level": 40
-                }
-            ]
+            "skills": []
         },
         "463": {
             "id": "463",
@@ -30819,12 +30737,7 @@
             "category": "Minigames",
             "subcategory": "Pest control",
             "area": "Asgarnia",
-            "skills": [
-                {
-                    "name": "Combat",
-                    "level": 70
-                }
-            ]
+            "skills": []
         },
         "479": {
             "id": "479",
@@ -31053,12 +30966,7 @@
             "category": "Minigames",
             "subcategory": "Pest control",
             "area": "Asgarnia",
-            "skills": [
-                {
-                    "name": "Combat",
-                    "level": 100
-                }
-            ]
+            "skills": []
         },
         "495": {
             "id": "495",
@@ -31068,12 +30976,7 @@
             "category": "Minigames",
             "subcategory": "Pest control",
             "area": "Asgarnia",
-            "skills": [
-                {
-                    "name": "Combat",
-                    "level": 100
-                }
-            ]
+            "skills": []
         },
         "496": {
             "id": "496",
@@ -32415,12 +32318,7 @@
             "category": "Combat",
             "subcategory": "Slayer",
             "area": "Kandarin",
-            "skills": [
-                {
-                    "name": "Combat",
-                    "level": 85
-                }
-            ]
+            "skills": []
         },
         "597": {
             "id": "597",

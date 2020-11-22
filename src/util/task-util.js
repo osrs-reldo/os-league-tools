@@ -95,15 +95,13 @@ function manageFormatter(cell, row, rowIndex, props) {
 }
 
 function skillsFormatter(cell, row, rowIndex, props) {
-    const playerSkills = props.hiscores;
     return cell.map(skill => {
         const name = skill.name.toLowerCase();
-        const level = skill.level;
-        const isReqMet = playerSkills && playerSkills[name] && playerSkills[name].level >= skill.level;
+        const isReqMet = meetsSkillRequirement(props.hiscores, name, skill.level);
         const icon = `/${name}.gif`
         return (
-            <Badge pill key={name} variant={playerSkills ? (isReqMet ? "success" : "danger") : "light"}>
-                    <img src={icon} alt=''/> {level}
+            <Badge pill key={name} variant={props.hiscores ? (isReqMet ? "success" : "danger") : "light"}>
+                <img src={icon} alt={skill.name} title={skill.name}/> {skill.level}
             </Badge>
         );
     });
@@ -176,6 +174,20 @@ export function isTaskOnTodoList(taskId, taskState) {
 
 export function isTaskHidden(taskId, taskState) {
     return taskState.hidden.includes(taskId);
+}
+
+export function isTaskCompletable(taskId, hiscores) {
+    const taskReqs = taskData.tasksById[taskId].skills;
+    for (const skillReq of taskReqs) {
+        if (!meetsSkillRequirement(hiscores, skillReq.name.toLowerCase(), skillReq.level)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+export function meetsSkillRequirement(hiscores, reqSkill, reqLevel) {
+    return hiscores && hiscores.skills[reqSkill] && hiscores.skills[reqSkill].level >= reqLevel;
 }
 
 export function removeCompletedFromTodo(taskStatus, setIsTodoCallback) {

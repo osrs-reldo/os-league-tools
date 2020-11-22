@@ -1,7 +1,18 @@
 import React, { useState } from "react";
 import { Card, Row, Col, Tabs, Tab, Nav, Form, Button } from "react-bootstrap";
 import taskData from '../resources/taskData.json';
-import { getMaxCompletableTasks, isTaskComplete, isTaskOnTodoList, getTaskPointsOnTodoList, getCompletedTasksInArea, getCompletedTasksWithDifficulty, getPointsEarned, isTaskHidden, removeCompletedFromTodo } from "../util/task-util";
+import {
+    getMaxCompletableTasks,
+    isTaskComplete,
+    isTaskOnTodoList,
+    getTaskPointsOnTodoList,
+    getCompletedTasksInArea,
+    getCompletedTasksWithDifficulty,
+    getPointsEarned,
+    isTaskHidden,
+    removeCompletedFromTodo,
+    isTaskCompletable
+} from "../util/task-util";
 import { getMaxCompletablePoints } from "../util/relic-util"
 import TaskTable from "./TaskTable";
 import { INITIAL_REGIONS_STATE } from '../util/region-util';
@@ -157,12 +168,12 @@ function TaskTableWrapper({
         taskFilters = []
 }) {
     const [selectedArea, setSelectedArea] = useState('All');
+    const [selectedReqs, setSelectedReqs] = useState('All');
 
     let allFilters = [...taskFilters];
     if (selectedStatus === "Incomplete") {
         allFilters.push((task) => !isTaskComplete(task.id, taskStatus));
-    }
-    if (selectedStatus === "Complete") {
+    } else if (selectedStatus === "Complete") {
         allFilters.push((task) => isTaskComplete(task.id, taskStatus));
     }
     if (hideLockedAreas) {
@@ -177,33 +188,40 @@ function TaskTableWrapper({
     if (hideTodoTasks) {
         allFilters.push((task) => !isTaskOnTodoList(task.id, taskStatus));
     }
+    if (selectedReqs === 'Missing') {
+        allFilters.push((task) => !isTaskCompletable(task.id, hiscores));
+    } else if (selectedReqs === 'Have') {
+        allFilters.push((task) => isTaskCompletable(task.id, hiscores));
+    }
 
     return (
         <Card bg='dark' text='white' style={{ border: '2px solid #6c757d', borderRadius: '0rem 0rem .25rem .25rem' }}>
             <div className="m-3 text-center">
                 <Row>
                     <Col lg={2}>
+                        Hiscores lookup:
+                        <HiscoreLookup refreshStateCallback={refreshHiscores} />
+                        <Divider />
+                        <Form.Check
+                            label="Hide locked areas"
+                            checked={hideLockedAreas}
+                            onChange={() => setHideLockedAreas(prevHideLocked => !prevHideLocked)}
+                        />
+                        <Form.Check
+                            label="Show hidden tasks"
+                            checked={showHiddenTasks}
+                            onChange={() => setShowHiddenTasks(prevShowHidden => !prevShowHidden)}
+                        />
+                        { !plannedOnTodoList &&
+                            <React.Fragment>
+                                <Form.Check
+                                    label="Hide to-do tasks"
+                                    checked={hideTodoTasks}
+                                    onChange={() => setHideTodoTasks((prevHideTodo) => !prevHideTodo)}
+                                />
+                            </React.Fragment>
+                        }
                         <Tab.Container activeKey={selectedArea}>
-                            <HiscoreLookup refreshStateCallback={refreshHiscores} />
-                            <Form.Check
-                                label="Hide locked areas"
-                                checked={hideLockedAreas}
-                                onChange={() => setHideLockedAreas(prevHideLocked => !prevHideLocked)}
-                            />
-                            <Form.Check
-                                label="Show hidden tasks"
-                                checked={showHiddenTasks}
-                                onChange={() => setShowHiddenTasks(prevShowHidden => !prevShowHidden)}
-                            />
-                            { !plannedOnTodoList &&
-                                <React.Fragment>
-                                    <Form.Check
-                                        label="Hide to-do tasks"
-                                        checked={hideTodoTasks}
-                                        onChange={() => setHideTodoTasks((prevHideTodo) => !prevHideTodo)}
-                                    />
-                                </React.Fragment>
-                            }
                             <Divider />
                             <h5>Areas:</h5>
                             <Nav
@@ -244,6 +262,25 @@ function TaskTableWrapper({
                                 </Nav.Item>
                                 <Nav.Item key='Incomplete'>
                                     <Nav.Link eventKey='Incomplete' onClick={() => setSelectedStatus('Incomplete')}>Incomplete</Nav.Link>
+                                </Nav.Item>
+                            </Nav>
+                        </Tab.Container>
+
+                        <Tab.Container activeKey={selectedReqs}>
+                            <Divider />
+                            <h5>Skill requirements:</h5>
+                            <Nav
+                                variant="pills"
+                                className={"mt-3 mb-3 tab-bar-secondary " + (screenSize.isSizeOrLarger('lg')  ? "flex-column" : "d-flex justify-content-around") }
+                            >
+                                <Nav.Item key='All'>
+                                    <Nav.Link eventKey='All' onClick={() => setSelectedReqs('All')}>All tasks</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item key='Missing'>
+                                    <Nav.Link eventKey='Missing' onClick={() => setSelectedReqs('Missing')}>Missing requirements</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item key='Have'>
+                                    <Nav.Link eventKey='Have' onClick={() => setSelectedReqs('Have')}>Have requirements</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                         </Tab.Container>
