@@ -1,5 +1,13 @@
 [
     {
+        "title": "Skill requirement filters",
+        "date": "Nov 21 2020",
+        "type": "blog",
+        "thumbnail": "https://oldschool.runescape.wiki/images/f/f9/Toggle_Health_Overlay.png?bdd3e",
+        "leadText": "New feature: Filter tasks by your current skill levels!",
+        "htmlContent": "<p>New feature: Filter tasks by your current skill levels!</p> <p>You've been asking for it, so here it is - the task tracker is now filterable by what you can complete given your character's current skill levels.</p> <p>Just import your character's levels by doing a hiscores lookup (on the task UI to the left) and you can toggle the filters to show only tasks you can complete (or only tasks you can't yet)."
+    },
+    {
         "title": "Improved mobile support",
         "date": "Nov 08 2020",
         "type": "blog",
