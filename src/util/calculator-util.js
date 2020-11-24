@@ -27,6 +27,9 @@ function nameFormatter(cell, row, rowIndex, props) {
             >
                 <Badge variant="dark" pill>...</Badge>
             </OverlayTrigger>}
+            <div className='small'>
+                {row.subtitle}
+            </div>
         </React.Fragment>
     );
 }

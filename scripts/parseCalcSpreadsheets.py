@@ -100,19 +100,20 @@ def parseCsv(skillName):
             else:
                 actionJson = {
                     'id': int(lineSplit[0]),
-                    'name': lineSplit[1],
-                    'category': lineSplit[2],
-                    'exp': float(lineSplit[3]),
-                    'level': int(lineSplit[4]),
-                    'icon': lineSplit[5],
-                    'inputs': parseInputOutputLine(lineSplit[6]),
-                    'outputs': parseInputOutputLine(lineSplit[7]),
-                    'areas': re.split('; ?', lineSplit[8]),
-                    'expMultipliers': [] if lineSplit[9] == '' else re.split('; ?', lineSplit[9]),
-                    'inputMultipliers': [] if lineSplit[10] == '' else re.split('; ?', lineSplit[10]),
-                    'outputMultipliers': [] if lineSplit[11] == '' else re.split('; ?', lineSplit[11]),
-                    'expActions': float(lineSplit[12]),
-                    'tooltip': lineSplit[13],
+                    'name': lineSplit[1].strip(),
+                    'subtitle': lineSplit[2].strip(),
+                    'category': lineSplit[3].strip(),
+                    'exp': float(lineSplit[4]),
+                    'level': int(lineSplit[5]),
+                    'icon': lineSplit[6].strip(),
+                    'inputs': parseInputOutputLine(lineSplit[7]),
+                    'outputs': parseInputOutputLine(lineSplit[8]),
+                    'areas': re.split('; ?', lineSplit[9]),
+                    'expMultipliers': [] if lineSplit[10] == '' else re.split('; ?', lineSplit[10]),
+                    'inputMultipliers': [] if lineSplit[11] == '' else re.split('; ?', lineSplit[11]),
+                    'outputMultipliers': [] if lineSplit[12] == '' else re.split('; ?', lineSplit[12]),
+                    'expActions': float(lineSplit[13]),
+                    'tooltip': lineSplit[14],
                 }
                 actions.append(actionJson)
     csvFile.close()
