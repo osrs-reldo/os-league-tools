@@ -19872,12 +19872,12 @@
                     "icon": "https://oldschool.runescape.wiki/images/8/84/Broad_arrows_5.png?7488c",
                     "inputs": [
                         {
-                            "name": "log",
+                            "name": "Log",
                             "amount": 1.0,
                             "chance": 1
                         },
                         {
-                            "name": "feathers",
+                            "name": "Feathers",
                             "amount": 15.0,
                             "chance": 1
                         },
