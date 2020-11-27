@@ -1542,6 +1542,10 @@
                 {
                     "name": "Fletching",
                     "level": 59
+                },
+                {
+                    "name": "Smithing",
+                    "level": 59
                 }
             ]
         },
@@ -2131,7 +2135,7 @@
             "skills": [
                 {
                     "name": "Ranged",
-                    "level": 60
+                    "level": 40
                 }
             ]
         },
@@ -2535,6 +2539,10 @@
                 {
                     "name": "Farming",
                     "level": 75
+                },
+                {
+                    "name": "Woodcutting",
+                    "level": 75
                 }
             ]
         },
@@ -2609,7 +2617,7 @@
             "skills": [
                 {
                     "name": "Fletching",
-                    "level": 91
+                    "level": 69
                 }
             ]
         },
@@ -3229,7 +3237,16 @@
             "category": "Clues",
             "subcategory": "Shared",
             "area": "Common",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Prayer",
+                    "level": 40
+                },
+                {
+                    "name": "Magic",
+                    "level": 40
+                }
+            ]
         },
         {
             "id": "236",
@@ -3239,7 +3256,12 @@
             "category": "Clues",
             "subcategory": "Hard",
             "area": "Common",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 40
+                }
+            ]
         },
         {
             "id": "237",
@@ -3249,7 +3271,16 @@
             "category": "Clues",
             "subcategory": "Hard",
             "area": "Common",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Ranged",
+                    "level": 70
+                },
+                {
+                    "name": "Defence",
+                    "level": 40
+                }
+            ]
         },
         {
             "id": "238",
@@ -3269,7 +3300,12 @@
             "category": "Clues",
             "subcategory": "Medium",
             "area": "Common",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Ranged",
+                    "level": 40
+                }
+            ]
         },
         {
             "id": "240",
@@ -4233,6 +4269,10 @@
                 {
                     "name": "Attack",
                     "level": 70
+                },
+                {
+                    "name": "Slayer",
+                    "level": 85
                 }
             ]
         },
@@ -4795,7 +4835,7 @@
             "skills": [
                 {
                     "name": "Runecraft",
-                    "level": 59
+                    "level": 27
                 }
             ]
         },
@@ -4871,6 +4911,10 @@
                 {
                     "name": "Slayer",
                     "level": 35
+                },
+                {
+                    "name": "Defence",
+                    "level": 5
                 }
             ]
         },
@@ -5264,6 +5308,14 @@
                 {
                     "name": "Slayer",
                     "level": 85
+                },
+                {
+                    "name": "Attack",
+                    "level": 70
+                },
+                {
+                    "name": "Strength",
+                    "level": 70
                 }
             ]
         },
@@ -5279,6 +5331,10 @@
                 {
                     "name": "Slayer",
                     "level": 85
+                },
+                {
+                    "name": "Attack",
+                    "level": 70
                 }
             ]
         },
@@ -5414,12 +5470,7 @@
             "category": "Combat",
             "subcategory": "Slayer",
             "area": "Karamja",
-            "skills": [
-                {
-                    "name": "Slayer",
-                    "level": 50
-                }
-            ]
+            "skills": []
         },
         {
             "id": "408",
@@ -5632,7 +5683,7 @@
             "skills": [
                 {
                     "name": "Defence",
-                    "level": 70
+                    "level": 60
                 }
             ]
         },
@@ -6127,7 +6178,7 @@
             "skills": [
                 {
                     "name": "Farming",
-                    "level": 1
+                    "level": 9
                 }
             ]
         },
@@ -6183,6 +6234,14 @@
                 {
                     "name": "Slayer",
                     "level": 72
+                },
+                {
+                    "name": "Defence",
+                    "level": 50
+                },
+                {
+                    "name": "Strength",
+                    "level": 50
                 }
             ]
         },
@@ -6309,7 +6368,12 @@
             "category": "Skilling",
             "subcategory": "Agility",
             "area": "Asgarnia",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Agility",
+                    "level": 10
+                }
+            ]
         },
         {
             "id": "480",
@@ -6413,7 +6477,12 @@
             "category": "Combat",
             "subcategory": "Melee",
             "area": "Asgarnia",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 60
+                }
+            ]
         },
         {
             "id": "486",
@@ -6508,7 +6577,36 @@
             "category": "Minigames",
             "subcategory": "Pest control",
             "area": "Asgarnia",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 42
+                },
+                {
+                    "name": "Strength",
+                    "level": 42
+                },
+                {
+                    "name": "Defence",
+                    "level": 42
+                },
+                {
+                    "name": "Hitpoints",
+                    "level": 42
+                },
+                {
+                    "name": "Ranged",
+                    "level": 42
+                },
+                {
+                    "name": "Magic",
+                    "level": 42
+                },
+                {
+                    "name": "Prayer",
+                    "level": 22
+                }
+            ]
         },
         {
             "id": "493",
@@ -6548,7 +6646,12 @@
             "category": "Bossing",
             "subcategory": "Slayer",
             "area": "Asgarnia",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 60
+                }
+            ]
         },
         {
             "id": "497",
@@ -6836,6 +6939,14 @@
             "subcategory": "Slayer",
             "area": "Asgarnia",
             "skills": [
+                {
+                    "name": "Slayer",
+                    "level": 91
+                },
+                {
+                    "name": "Runecraft",
+                    "level": 60
+                },
                 {
                     "name": "Defence",
                     "level": 75
@@ -7125,6 +7236,10 @@
                 {
                     "name": "Attack",
                     "level": 40
+                },
+                {
+                    "name": "Slayer",
+                    "level": 47
                 }
             ]
         },
@@ -7345,7 +7460,12 @@
             "category": "Bossing",
             "subcategory": "Vorkath",
             "area": "Fremennik",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Ranged",
+                    "level": 70
+                }
+            ]
         },
         {
             "id": "556",
@@ -7669,6 +7789,10 @@
                 {
                     "name": "Defence",
                     "level": 70
+                },
+                {
+                    "name": "Slayer",
+                    "level": 60
                 }
             ]
         },
@@ -7840,12 +7964,7 @@
             "category": "Skilling",
             "subcategory": "Agility",
             "area": "Kandarin",
-            "skills": [
-                {
-                    "name": "Agility",
-                    "level": 1
-                }
-            ]
+            "skills": []
         },
         {
             "id": "594",
@@ -7855,12 +7974,7 @@
             "category": "Skilling",
             "subcategory": "Hunter",
             "area": "Kandarin",
-            "skills": [
-                {
-                    "name": "Hunter",
-                    "level": 1
-                }
-            ]
+            "skills": []
         },
         {
             "id": "595",
@@ -8063,7 +8177,7 @@
             "skills": [
                 {
                     "name": "Hunter",
-                    "level": 66
+                    "level": 69
                 }
             ]
         },
@@ -8417,7 +8531,12 @@
             "category": "Minigames",
             "subcategory": "Fishing Trawler",
             "area": "Kandarin",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Fishing",
+                    "level": 34
+                }
+            ]
         },
         {
             "id": "639",
@@ -8437,7 +8556,12 @@
             "category": "Minigames",
             "subcategory": "Barbarian assault",
             "area": "Kandarin",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 40
+                }
+            ]
         },
         {
             "id": "641",
@@ -8470,6 +8594,10 @@
                 {
                     "name": "Magic",
                     "level": 75
+                },
+                {
+                    "name": "Slayer",
+                    "level": 87
                 }
             ]
         },
@@ -8648,6 +8776,14 @@
                 {
                     "name": "Attack",
                     "level": 75
+                },
+                {
+                    "name": "Slayer",
+                    "level": 87
+                },
+                {
+                    "name": "Magic",
+                    "level": 50
                 }
             ]
         },
@@ -8678,6 +8814,10 @@
                 {
                     "name": "Magic",
                     "level": 70
+                },
+                {
+                    "name": "Slayer",
+                    "level": 93
                 }
             ]
         },
@@ -8689,7 +8829,12 @@
             "category": "Combat",
             "subcategory": "Other",
             "area": "Kandarin",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 60
+                }
+            ]
         },
         {
             "id": "659",
@@ -8699,7 +8844,12 @@
             "category": "Bossing",
             "subcategory": "Slayer",
             "area": "Kandarin",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Slayer",
+                    "level": 87
+                }
+            ]
         },
         {
             "id": "660",
@@ -8709,7 +8859,12 @@
             "category": "Bossing",
             "subcategory": "Slayer",
             "area": "Kandarin",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Slayer",
+                    "level": 87
+                }
+            ]
         },
         {
             "id": "661",
@@ -8719,7 +8874,12 @@
             "category": "Bossing",
             "subcategory": "Slayer",
             "area": "Kandarin",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Slayer",
+                    "level": 87
+                }
+            ]
         },
         {
             "id": "662",
@@ -9131,7 +9291,7 @@
             "skills": [
                 {
                     "name": "Thieving",
-                    "level": 45
+                    "level": 53
                 }
             ]
         },
@@ -9568,7 +9728,12 @@
             "category": "Bossing",
             "subcategory": "Kalphite Queen",
             "area": "Desert",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 60
+                }
+            ]
         },
         {
             "id": "728",
@@ -9742,7 +9907,12 @@
             "category": "Bossing",
             "subcategory": "Kalphite Queen",
             "area": "Desert",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 60
+                }
+            ]
         },
         {
             "id": "741",
@@ -10144,9 +10314,14 @@
             "description": "Defeat a Fiyr Shade.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
+            "subcategory": "Shades of Mort\u2019ton",
             "area": "Morytania",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Firemaking",
+                    "level": 65
+                }
+            ]
         },
         {
             "id": "773",
@@ -10214,7 +10389,7 @@
             "description": "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
+            "subcategory": "Shades of Mort\u2019ton",
             "area": "Morytania",
             "skills": []
         },
@@ -10920,7 +11095,12 @@
             "category": "Other",
             "subcategory": "Other",
             "area": "Tirannwn",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Agility",
+                    "level": 75
+                }
+            ]
         },
         {
             "id": "831",
@@ -10980,7 +11160,12 @@
             "category": "Skilling",
             "subcategory": "Construction",
             "area": "Tirannwn",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Construction",
+                    "level": 70
+                }
+            ]
         },
         {
             "id": "836",
@@ -11183,6 +11368,10 @@
                 {
                     "name": "Ranged",
                     "level": 60
+                },
+                {
+                    "name": "Slayer",
+                    "level": 90
                 }
             ]
         },
@@ -11332,6 +11521,10 @@
                 {
                     "name": "Fishing",
                     "level": 87
+                },
+                {
+                    "name": "Cooking",
+                    "level": 72
                 }
             ]
         },
@@ -11407,7 +11600,16 @@
             "category": "Bossing",
             "subcategory": "Zulrah",
             "area": "Tirannwn",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 75
+                },
+                {
+                    "name": "Crafting",
+                    "level": 74
+                }
+            ]
         },
         {
             "id": "866",
@@ -11417,7 +11619,12 @@
             "category": "Bossing",
             "subcategory": "Zulrah",
             "area": "Tirannwn",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Fletching",
+                    "level": 53
+                }
+            ]
         },
         {
             "id": "867",
@@ -11427,7 +11634,16 @@
             "category": "Bossing",
             "subcategory": "Zulrah",
             "area": "Tirannwn",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Crafting",
+                    "level": 59
+                },
+                {
+                    "name": "Slayer",
+                    "level": 87
+                }
+            ]
         },
         {
             "id": "868",
@@ -11537,7 +11753,20 @@
             "category": "Other",
             "subcategory": "Crystal chests",
             "area": "Tirannwn",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 40
+                },
+                {
+                    "name": "Crafting",
+                    "level": 80
+                },
+                {
+                    "name": "Smithing",
+                    "level": 80
+                }
+            ]
         },
         {
             "id": "879",
@@ -11547,7 +11776,12 @@
             "category": "Bossing",
             "subcategory": "Gauntlet",
             "area": "Tirannwn",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 75
+                }
+            ]
         },
         {
             "id": "880",
@@ -11555,7 +11789,7 @@
             "description": "Defeat Zulrah at the Poison Waste in 0:42 or less.",
             "difficulty": "Master",
             "category": "Bossing",
-            "subcategory": "Gauntlet",
+            "subcategory": "Zulrah",
             "area": "Tirannwn",
             "skills": []
         },
@@ -11847,7 +12081,16 @@
             "category": "Combat",
             "subcategory": "Magic",
             "area": "Wilderness",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 30
+                },
+                {
+                    "name": "Magic",
+                    "level": 30
+                }
+            ]
         },
         {
             "id": "910",
@@ -11877,7 +12120,12 @@
             "category": "Combat",
             "subcategory": "Magic",
             "area": "Wilderness",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Magic",
+                    "level": 60
+                }
+            ]
         },
         {
             "id": "913",
@@ -11887,7 +12135,12 @@
             "category": "Combat",
             "subcategory": "Magic",
             "area": "Wilderness",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Magic",
+                    "level": 60
+                }
+            ]
         },
         {
             "id": "914",
@@ -11897,7 +12150,12 @@
             "category": "Combat",
             "subcategory": "Magic",
             "area": "Wilderness",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Magic",
+                    "level": 60
+                }
+            ]
         },
         {
             "id": "915",
@@ -12010,7 +12268,7 @@
             "description": "Defeat Vet'ion in the Wilderness.",
             "difficulty": "Hard",
             "category": "Bossing",
-            "subcategory": "Vet\u00ef\u00bf\u00bdion",
+            "subcategory": "Vet\u2019ion",
             "area": "Wilderness",
             "skills": []
         },
@@ -12032,7 +12290,12 @@
             "category": "Bossing",
             "subcategory": "Wilderness",
             "area": "Wilderness",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 60
+                }
+            ]
         },
         {
             "id": "928",
@@ -12042,7 +12305,12 @@
             "category": "Bossing",
             "subcategory": "Wilderness",
             "area": "Wilderness",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 60
+                }
+            ]
         },
         {
             "id": "929",
@@ -12052,7 +12320,16 @@
             "category": "Combat",
             "subcategory": "Slayer",
             "area": "Wilderness",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Magic",
+                    "level": 75
+                },
+                {
+                    "name": "Slayer",
+                    "level": 55
+                }
+            ]
         },
         {
             "id": "930",
@@ -12145,6 +12422,10 @@
                 {
                     "name": "Hunter",
                     "level": 73
+                },
+                {
+                    "name": "Ranged",
+                    "level": 65
                 }
             ]
         },
@@ -12160,6 +12441,10 @@
                 {
                     "name": "Hunter",
                     "level": 73
+                },
+                {
+                    "name": "Ranged",
+                    "level": 65
                 }
             ]
         },
@@ -12175,6 +12460,10 @@
                 {
                     "name": "Hunter",
                     "level": 73
+                },
+                {
+                    "name": "Ranged",
+                    "level": 65
                 }
             ]
         },
@@ -13752,6 +14041,10 @@
                     {
                         "name": "Fletching",
                         "level": 59
+                    },
+                    {
+                        "name": "Smithing",
+                        "level": 59
                     }
                 ]
             },
@@ -14341,7 +14634,7 @@
                 "skills": [
                     {
                         "name": "Ranged",
-                        "level": 60
+                        "level": 40
                     }
                 ]
             },
@@ -14745,6 +15038,10 @@
                     {
                         "name": "Farming",
                         "level": 75
+                    },
+                    {
+                        "name": "Woodcutting",
+                        "level": 75
                     }
                 ]
             },
@@ -14819,7 +15116,7 @@
                 "skills": [
                     {
                         "name": "Fletching",
-                        "level": 91
+                        "level": 69
                     }
                 ]
             },
@@ -15439,7 +15736,16 @@
                 "category": "Clues",
                 "subcategory": "Shared",
                 "area": "Common",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Prayer",
+                        "level": 40
+                    },
+                    {
+                        "name": "Magic",
+                        "level": 40
+                    }
+                ]
             },
             {
                 "id": "236",
@@ -15449,7 +15755,12 @@
                 "category": "Clues",
                 "subcategory": "Hard",
                 "area": "Common",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Defence",
+                        "level": 40
+                    }
+                ]
             },
             {
                 "id": "237",
@@ -15459,7 +15770,16 @@
                 "category": "Clues",
                 "subcategory": "Hard",
                 "area": "Common",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Ranged",
+                        "level": 70
+                    },
+                    {
+                        "name": "Defence",
+                        "level": 40
+                    }
+                ]
             },
             {
                 "id": "238",
@@ -15479,7 +15799,12 @@
                 "category": "Clues",
                 "subcategory": "Medium",
                 "area": "Common",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Ranged",
+                        "level": 40
+                    }
+                ]
             },
             {
                 "id": "240",
@@ -16443,6 +16768,10 @@
                     {
                         "name": "Attack",
                         "level": 70
+                    },
+                    {
+                        "name": "Slayer",
+                        "level": 85
                     }
                 ]
             },
@@ -17007,7 +17336,7 @@
                 "skills": [
                     {
                         "name": "Runecraft",
-                        "level": 59
+                        "level": 27
                     }
                 ]
             },
@@ -17083,6 +17412,10 @@
                     {
                         "name": "Slayer",
                         "level": 35
+                    },
+                    {
+                        "name": "Defence",
+                        "level": 5
                     }
                 ]
             },
@@ -17476,6 +17809,14 @@
                     {
                         "name": "Slayer",
                         "level": 85
+                    },
+                    {
+                        "name": "Attack",
+                        "level": 70
+                    },
+                    {
+                        "name": "Strength",
+                        "level": 70
                     }
                 ]
             },
@@ -17491,6 +17832,10 @@
                     {
                         "name": "Slayer",
                         "level": 85
+                    },
+                    {
+                        "name": "Attack",
+                        "level": 70
                     }
                 ]
             },
@@ -17628,12 +17973,7 @@
                 "category": "Combat",
                 "subcategory": "Slayer",
                 "area": "Karamja",
-                "skills": [
-                    {
-                        "name": "Slayer",
-                        "level": 50
-                    }
-                ]
+                "skills": []
             },
             {
                 "id": "408",
@@ -17846,7 +18186,7 @@
                 "skills": [
                     {
                         "name": "Defence",
-                        "level": 70
+                        "level": 60
                     }
                 ]
             },
@@ -18343,7 +18683,7 @@
                 "skills": [
                     {
                         "name": "Farming",
-                        "level": 1
+                        "level": 9
                     }
                 ]
             },
@@ -18399,6 +18739,14 @@
                     {
                         "name": "Slayer",
                         "level": 72
+                    },
+                    {
+                        "name": "Defence",
+                        "level": 50
+                    },
+                    {
+                        "name": "Strength",
+                        "level": 50
                     }
                 ]
             },
@@ -18525,7 +18873,12 @@
                 "category": "Skilling",
                 "subcategory": "Agility",
                 "area": "Asgarnia",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Agility",
+                        "level": 10
+                    }
+                ]
             },
             {
                 "id": "480",
@@ -18629,7 +18982,12 @@
                 "category": "Combat",
                 "subcategory": "Melee",
                 "area": "Asgarnia",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Defence",
+                        "level": 60
+                    }
+                ]
             },
             {
                 "id": "486",
@@ -18724,7 +19082,36 @@
                 "category": "Minigames",
                 "subcategory": "Pest control",
                 "area": "Asgarnia",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Attack",
+                        "level": 42
+                    },
+                    {
+                        "name": "Strength",
+                        "level": 42
+                    },
+                    {
+                        "name": "Defence",
+                        "level": 42
+                    },
+                    {
+                        "name": "Hitpoints",
+                        "level": 42
+                    },
+                    {
+                        "name": "Ranged",
+                        "level": 42
+                    },
+                    {
+                        "name": "Magic",
+                        "level": 42
+                    },
+                    {
+                        "name": "Prayer",
+                        "level": 22
+                    }
+                ]
             },
             {
                 "id": "493",
@@ -18764,7 +19151,12 @@
                 "category": "Bossing",
                 "subcategory": "Slayer",
                 "area": "Asgarnia",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Attack",
+                        "level": 60
+                    }
+                ]
             },
             {
                 "id": "497",
@@ -19052,6 +19444,14 @@
                 "subcategory": "Slayer",
                 "area": "Asgarnia",
                 "skills": [
+                    {
+                        "name": "Slayer",
+                        "level": 91
+                    },
+                    {
+                        "name": "Runecraft",
+                        "level": 60
+                    },
                     {
                         "name": "Defence",
                         "level": 75
@@ -19343,6 +19743,10 @@
                     {
                         "name": "Attack",
                         "level": 40
+                    },
+                    {
+                        "name": "Slayer",
+                        "level": 47
                     }
                 ]
             },
@@ -19563,7 +19967,12 @@
                 "category": "Bossing",
                 "subcategory": "Vorkath",
                 "area": "Fremennik",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Ranged",
+                        "level": 70
+                    }
+                ]
             },
             {
                 "id": "556",
@@ -19887,6 +20296,10 @@
                     {
                         "name": "Defence",
                         "level": 70
+                    },
+                    {
+                        "name": "Slayer",
+                        "level": 60
                     }
                 ]
             },
@@ -20060,12 +20473,7 @@
                 "category": "Skilling",
                 "subcategory": "Agility",
                 "area": "Kandarin",
-                "skills": [
-                    {
-                        "name": "Agility",
-                        "level": 1
-                    }
-                ]
+                "skills": []
             },
             {
                 "id": "594",
@@ -20075,12 +20483,7 @@
                 "category": "Skilling",
                 "subcategory": "Hunter",
                 "area": "Kandarin",
-                "skills": [
-                    {
-                        "name": "Hunter",
-                        "level": 1
-                    }
-                ]
+                "skills": []
             },
             {
                 "id": "595",
@@ -20283,7 +20686,7 @@
                 "skills": [
                     {
                         "name": "Hunter",
-                        "level": 66
+                        "level": 69
                     }
                 ]
             },
@@ -20637,7 +21040,12 @@
                 "category": "Minigames",
                 "subcategory": "Fishing Trawler",
                 "area": "Kandarin",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Fishing",
+                        "level": 34
+                    }
+                ]
             },
             {
                 "id": "639",
@@ -20657,7 +21065,12 @@
                 "category": "Minigames",
                 "subcategory": "Barbarian assault",
                 "area": "Kandarin",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Defence",
+                        "level": 40
+                    }
+                ]
             },
             {
                 "id": "641",
@@ -20690,6 +21103,10 @@
                     {
                         "name": "Magic",
                         "level": 75
+                    },
+                    {
+                        "name": "Slayer",
+                        "level": 87
                     }
                 ]
             },
@@ -20868,6 +21285,14 @@
                     {
                         "name": "Attack",
                         "level": 75
+                    },
+                    {
+                        "name": "Slayer",
+                        "level": 87
+                    },
+                    {
+                        "name": "Magic",
+                        "level": 50
                     }
                 ]
             },
@@ -20898,6 +21323,10 @@
                     {
                         "name": "Magic",
                         "level": 70
+                    },
+                    {
+                        "name": "Slayer",
+                        "level": 93
                     }
                 ]
             },
@@ -20909,7 +21338,12 @@
                 "category": "Combat",
                 "subcategory": "Other",
                 "area": "Kandarin",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Defence",
+                        "level": 60
+                    }
+                ]
             },
             {
                 "id": "659",
@@ -20919,7 +21353,12 @@
                 "category": "Bossing",
                 "subcategory": "Slayer",
                 "area": "Kandarin",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Slayer",
+                        "level": 87
+                    }
+                ]
             },
             {
                 "id": "660",
@@ -20929,7 +21368,12 @@
                 "category": "Bossing",
                 "subcategory": "Slayer",
                 "area": "Kandarin",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Slayer",
+                        "level": 87
+                    }
+                ]
             },
             {
                 "id": "661",
@@ -20939,7 +21383,12 @@
                 "category": "Bossing",
                 "subcategory": "Slayer",
                 "area": "Kandarin",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Slayer",
+                        "level": 87
+                    }
+                ]
             },
             {
                 "id": "662",
@@ -21353,7 +21802,7 @@
                 "skills": [
                     {
                         "name": "Thieving",
-                        "level": 45
+                        "level": 53
                     }
                 ]
             },
@@ -21790,7 +22239,12 @@
                 "category": "Bossing",
                 "subcategory": "Kalphite Queen",
                 "area": "Desert",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Attack",
+                        "level": 60
+                    }
+                ]
             },
             {
                 "id": "728",
@@ -21964,7 +22418,12 @@
                 "category": "Bossing",
                 "subcategory": "Kalphite Queen",
                 "area": "Desert",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Defence",
+                        "level": 60
+                    }
+                ]
             },
             {
                 "id": "741",
@@ -22368,9 +22827,14 @@
                 "description": "Defeat a Fiyr Shade.",
                 "difficulty": "Medium",
                 "category": "Minigames",
-                "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
+                "subcategory": "Shades of Mort\u2019ton",
                 "area": "Morytania",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Firemaking",
+                        "level": 65
+                    }
+                ]
             },
             {
                 "id": "773",
@@ -22438,7 +22902,7 @@
                 "description": "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
                 "difficulty": "Medium",
                 "category": "Minigames",
-                "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
+                "subcategory": "Shades of Mort\u2019ton",
                 "area": "Morytania",
                 "skills": []
             },
@@ -23146,7 +23610,12 @@
                 "category": "Other",
                 "subcategory": "Other",
                 "area": "Tirannwn",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Agility",
+                        "level": 75
+                    }
+                ]
             },
             {
                 "id": "831",
@@ -23206,7 +23675,12 @@
                 "category": "Skilling",
                 "subcategory": "Construction",
                 "area": "Tirannwn",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Construction",
+                        "level": 70
+                    }
+                ]
             },
             {
                 "id": "836",
@@ -23409,6 +23883,10 @@
                     {
                         "name": "Ranged",
                         "level": 60
+                    },
+                    {
+                        "name": "Slayer",
+                        "level": 90
                     }
                 ]
             },
@@ -23558,6 +24036,10 @@
                     {
                         "name": "Fishing",
                         "level": 87
+                    },
+                    {
+                        "name": "Cooking",
+                        "level": 72
                     }
                 ]
             },
@@ -23633,7 +24115,16 @@
                 "category": "Bossing",
                 "subcategory": "Zulrah",
                 "area": "Tirannwn",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Defence",
+                        "level": 75
+                    },
+                    {
+                        "name": "Crafting",
+                        "level": 74
+                    }
+                ]
             },
             {
                 "id": "866",
@@ -23643,7 +24134,12 @@
                 "category": "Bossing",
                 "subcategory": "Zulrah",
                 "area": "Tirannwn",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Fletching",
+                        "level": 53
+                    }
+                ]
             },
             {
                 "id": "867",
@@ -23653,7 +24149,16 @@
                 "category": "Bossing",
                 "subcategory": "Zulrah",
                 "area": "Tirannwn",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Crafting",
+                        "level": 59
+                    },
+                    {
+                        "name": "Slayer",
+                        "level": 87
+                    }
+                ]
             },
             {
                 "id": "868",
@@ -23763,7 +24268,20 @@
                 "category": "Other",
                 "subcategory": "Crystal chests",
                 "area": "Tirannwn",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Defence",
+                        "level": 40
+                    },
+                    {
+                        "name": "Crafting",
+                        "level": 80
+                    },
+                    {
+                        "name": "Smithing",
+                        "level": 80
+                    }
+                ]
             },
             {
                 "id": "879",
@@ -23773,7 +24291,12 @@
                 "category": "Bossing",
                 "subcategory": "Gauntlet",
                 "area": "Tirannwn",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Attack",
+                        "level": 75
+                    }
+                ]
             },
             {
                 "id": "880",
@@ -23781,7 +24304,7 @@
                 "description": "Defeat Zulrah at the Poison Waste in 0:42 or less.",
                 "difficulty": "Master",
                 "category": "Bossing",
-                "subcategory": "Gauntlet",
+                "subcategory": "Zulrah",
                 "area": "Tirannwn",
                 "skills": []
             },
@@ -24075,7 +24598,16 @@
                 "category": "Combat",
                 "subcategory": "Magic",
                 "area": "Wilderness",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Attack",
+                        "level": 30
+                    },
+                    {
+                        "name": "Magic",
+                        "level": 30
+                    }
+                ]
             },
             {
                 "id": "910",
@@ -24105,7 +24637,12 @@
                 "category": "Combat",
                 "subcategory": "Magic",
                 "area": "Wilderness",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Magic",
+                        "level": 60
+                    }
+                ]
             },
             {
                 "id": "913",
@@ -24115,7 +24652,12 @@
                 "category": "Combat",
                 "subcategory": "Magic",
                 "area": "Wilderness",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Magic",
+                        "level": 60
+                    }
+                ]
             },
             {
                 "id": "914",
@@ -24125,7 +24667,12 @@
                 "category": "Combat",
                 "subcategory": "Magic",
                 "area": "Wilderness",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Magic",
+                        "level": 60
+                    }
+                ]
             },
             {
                 "id": "915",
@@ -24238,7 +24785,7 @@
                 "description": "Defeat Vet'ion in the Wilderness.",
                 "difficulty": "Hard",
                 "category": "Bossing",
-                "subcategory": "Vet\u00ef\u00bf\u00bdion",
+                "subcategory": "Vet\u2019ion",
                 "area": "Wilderness",
                 "skills": []
             },
@@ -24260,7 +24807,12 @@
                 "category": "Bossing",
                 "subcategory": "Wilderness",
                 "area": "Wilderness",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Attack",
+                        "level": 60
+                    }
+                ]
             },
             {
                 "id": "928",
@@ -24270,7 +24822,12 @@
                 "category": "Bossing",
                 "subcategory": "Wilderness",
                 "area": "Wilderness",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Attack",
+                        "level": 60
+                    }
+                ]
             },
             {
                 "id": "929",
@@ -24280,7 +24837,16 @@
                 "category": "Combat",
                 "subcategory": "Slayer",
                 "area": "Wilderness",
-                "skills": []
+                "skills": [
+                    {
+                        "name": "Magic",
+                        "level": 75
+                    },
+                    {
+                        "name": "Slayer",
+                        "level": 55
+                    }
+                ]
             },
             {
                 "id": "930",
@@ -24373,6 +24939,10 @@
                     {
                         "name": "Hunter",
                         "level": 73
+                    },
+                    {
+                        "name": "Ranged",
+                        "level": 65
                     }
                 ]
             },
@@ -24388,6 +24958,10 @@
                     {
                         "name": "Hunter",
                         "level": 73
+                    },
+                    {
+                        "name": "Ranged",
+                        "level": 65
                     }
                 ]
             },
@@ -24403,6 +24977,10 @@
                     {
                         "name": "Hunter",
                         "level": 73
+                    },
+                    {
+                        "name": "Ranged",
+                        "level": 65
                     }
                 ]
             },
@@ -25980,6 +26558,10 @@
                 {
                     "name": "Fletching",
                     "level": 59
+                },
+                {
+                    "name": "Smithing",
+                    "level": 59
                 }
             ]
         },
@@ -26569,7 +27151,7 @@
             "skills": [
                 {
                     "name": "Ranged",
-                    "level": 60
+                    "level": 40
                 }
             ]
         },
@@ -26973,6 +27555,10 @@
                 {
                     "name": "Farming",
                     "level": 75
+                },
+                {
+                    "name": "Woodcutting",
+                    "level": 75
                 }
             ]
         },
@@ -27047,7 +27633,7 @@
             "skills": [
                 {
                     "name": "Fletching",
-                    "level": 91
+                    "level": 69
                 }
             ]
         },
@@ -27667,7 +28253,16 @@
             "category": "Clues",
             "subcategory": "Shared",
             "area": "Common",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Prayer",
+                    "level": 40
+                },
+                {
+                    "name": "Magic",
+                    "level": 40
+                }
+            ]
         },
         "236": {
             "id": "236",
@@ -27677,7 +28272,12 @@
             "category": "Clues",
             "subcategory": "Hard",
             "area": "Common",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 40
+                }
+            ]
         },
         "237": {
             "id": "237",
@@ -27687,7 +28287,16 @@
             "category": "Clues",
             "subcategory": "Hard",
             "area": "Common",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Ranged",
+                    "level": 70
+                },
+                {
+                    "name": "Defence",
+                    "level": 40
+                }
+            ]
         },
         "238": {
             "id": "238",
@@ -27707,7 +28316,12 @@
             "category": "Clues",
             "subcategory": "Medium",
             "area": "Common",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Ranged",
+                    "level": 40
+                }
+            ]
         },
         "240": {
             "id": "240",
@@ -28671,6 +29285,10 @@
                 {
                     "name": "Attack",
                     "level": 70
+                },
+                {
+                    "name": "Slayer",
+                    "level": 85
                 }
             ]
         },
@@ -29233,7 +29851,7 @@
             "skills": [
                 {
                     "name": "Runecraft",
-                    "level": 59
+                    "level": 27
                 }
             ]
         },
@@ -29309,6 +29927,10 @@
                 {
                     "name": "Slayer",
                     "level": 35
+                },
+                {
+                    "name": "Defence",
+                    "level": 5
                 }
             ]
         },
@@ -29702,6 +30324,14 @@
                 {
                     "name": "Slayer",
                     "level": 85
+                },
+                {
+                    "name": "Attack",
+                    "level": 70
+                },
+                {
+                    "name": "Strength",
+                    "level": 70
                 }
             ]
         },
@@ -29717,6 +30347,10 @@
                 {
                     "name": "Slayer",
                     "level": 85
+                },
+                {
+                    "name": "Attack",
+                    "level": 70
                 }
             ]
         },
@@ -29852,12 +30486,7 @@
             "category": "Combat",
             "subcategory": "Slayer",
             "area": "Karamja",
-            "skills": [
-                {
-                    "name": "Slayer",
-                    "level": 50
-                }
-            ]
+            "skills": []
         },
         "408": {
             "id": "408",
@@ -30070,7 +30699,7 @@
             "skills": [
                 {
                     "name": "Defence",
-                    "level": 70
+                    "level": 60
                 }
             ]
         },
@@ -30565,7 +31194,7 @@
             "skills": [
                 {
                     "name": "Farming",
-                    "level": 1
+                    "level": 9
                 }
             ]
         },
@@ -30621,6 +31250,14 @@
                 {
                     "name": "Slayer",
                     "level": 72
+                },
+                {
+                    "name": "Defence",
+                    "level": 50
+                },
+                {
+                    "name": "Strength",
+                    "level": 50
                 }
             ]
         },
@@ -30747,7 +31384,12 @@
             "category": "Skilling",
             "subcategory": "Agility",
             "area": "Asgarnia",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Agility",
+                    "level": 10
+                }
+            ]
         },
         "480": {
             "id": "480",
@@ -30851,7 +31493,12 @@
             "category": "Combat",
             "subcategory": "Melee",
             "area": "Asgarnia",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 60
+                }
+            ]
         },
         "486": {
             "id": "486",
@@ -30946,7 +31593,36 @@
             "category": "Minigames",
             "subcategory": "Pest control",
             "area": "Asgarnia",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 42
+                },
+                {
+                    "name": "Strength",
+                    "level": 42
+                },
+                {
+                    "name": "Defence",
+                    "level": 42
+                },
+                {
+                    "name": "Hitpoints",
+                    "level": 42
+                },
+                {
+                    "name": "Ranged",
+                    "level": 42
+                },
+                {
+                    "name": "Magic",
+                    "level": 42
+                },
+                {
+                    "name": "Prayer",
+                    "level": 22
+                }
+            ]
         },
         "493": {
             "id": "493",
@@ -30986,7 +31662,12 @@
             "category": "Bossing",
             "subcategory": "Slayer",
             "area": "Asgarnia",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 60
+                }
+            ]
         },
         "497": {
             "id": "497",
@@ -31274,6 +31955,14 @@
             "subcategory": "Slayer",
             "area": "Asgarnia",
             "skills": [
+                {
+                    "name": "Slayer",
+                    "level": 91
+                },
+                {
+                    "name": "Runecraft",
+                    "level": 60
+                },
                 {
                     "name": "Defence",
                     "level": 75
@@ -31563,6 +32252,10 @@
                 {
                     "name": "Attack",
                     "level": 40
+                },
+                {
+                    "name": "Slayer",
+                    "level": 47
                 }
             ]
         },
@@ -31783,7 +32476,12 @@
             "category": "Bossing",
             "subcategory": "Vorkath",
             "area": "Fremennik",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Ranged",
+                    "level": 70
+                }
+            ]
         },
         "556": {
             "id": "556",
@@ -32107,6 +32805,10 @@
                 {
                     "name": "Defence",
                     "level": 70
+                },
+                {
+                    "name": "Slayer",
+                    "level": 60
                 }
             ]
         },
@@ -32278,12 +32980,7 @@
             "category": "Skilling",
             "subcategory": "Agility",
             "area": "Kandarin",
-            "skills": [
-                {
-                    "name": "Agility",
-                    "level": 1
-                }
-            ]
+            "skills": []
         },
         "594": {
             "id": "594",
@@ -32293,12 +32990,7 @@
             "category": "Skilling",
             "subcategory": "Hunter",
             "area": "Kandarin",
-            "skills": [
-                {
-                    "name": "Hunter",
-                    "level": 1
-                }
-            ]
+            "skills": []
         },
         "595": {
             "id": "595",
@@ -32501,7 +33193,7 @@
             "skills": [
                 {
                     "name": "Hunter",
-                    "level": 66
+                    "level": 69
                 }
             ]
         },
@@ -32855,7 +33547,12 @@
             "category": "Minigames",
             "subcategory": "Fishing Trawler",
             "area": "Kandarin",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Fishing",
+                    "level": 34
+                }
+            ]
         },
         "639": {
             "id": "639",
@@ -32875,7 +33572,12 @@
             "category": "Minigames",
             "subcategory": "Barbarian assault",
             "area": "Kandarin",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 40
+                }
+            ]
         },
         "641": {
             "id": "641",
@@ -32908,6 +33610,10 @@
                 {
                     "name": "Magic",
                     "level": 75
+                },
+                {
+                    "name": "Slayer",
+                    "level": 87
                 }
             ]
         },
@@ -33086,6 +33792,14 @@
                 {
                     "name": "Attack",
                     "level": 75
+                },
+                {
+                    "name": "Slayer",
+                    "level": 87
+                },
+                {
+                    "name": "Magic",
+                    "level": 50
                 }
             ]
         },
@@ -33116,6 +33830,10 @@
                 {
                     "name": "Magic",
                     "level": 70
+                },
+                {
+                    "name": "Slayer",
+                    "level": 93
                 }
             ]
         },
@@ -33127,7 +33845,12 @@
             "category": "Combat",
             "subcategory": "Other",
             "area": "Kandarin",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 60
+                }
+            ]
         },
         "659": {
             "id": "659",
@@ -33137,7 +33860,12 @@
             "category": "Bossing",
             "subcategory": "Slayer",
             "area": "Kandarin",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Slayer",
+                    "level": 87
+                }
+            ]
         },
         "660": {
             "id": "660",
@@ -33147,7 +33875,12 @@
             "category": "Bossing",
             "subcategory": "Slayer",
             "area": "Kandarin",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Slayer",
+                    "level": 87
+                }
+            ]
         },
         "661": {
             "id": "661",
@@ -33157,7 +33890,12 @@
             "category": "Bossing",
             "subcategory": "Slayer",
             "area": "Kandarin",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Slayer",
+                    "level": 87
+                }
+            ]
         },
         "662": {
             "id": "662",
@@ -33569,7 +34307,7 @@
             "skills": [
                 {
                     "name": "Thieving",
-                    "level": 45
+                    "level": 53
                 }
             ]
         },
@@ -34006,7 +34744,12 @@
             "category": "Bossing",
             "subcategory": "Kalphite Queen",
             "area": "Desert",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 60
+                }
+            ]
         },
         "728": {
             "id": "728",
@@ -34180,7 +34923,12 @@
             "category": "Bossing",
             "subcategory": "Kalphite Queen",
             "area": "Desert",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 60
+                }
+            ]
         },
         "741": {
             "id": "741",
@@ -34582,9 +35330,14 @@
             "description": "Defeat a Fiyr Shade.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
+            "subcategory": "Shades of Mort\u2019ton",
             "area": "Morytania",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Firemaking",
+                    "level": 65
+                }
+            ]
         },
         "773": {
             "id": "773",
@@ -34652,7 +35405,7 @@
             "description": "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
+            "subcategory": "Shades of Mort\u2019ton",
             "area": "Morytania",
             "skills": []
         },
@@ -35358,7 +36111,12 @@
             "category": "Other",
             "subcategory": "Other",
             "area": "Tirannwn",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Agility",
+                    "level": 75
+                }
+            ]
         },
         "831": {
             "id": "831",
@@ -35418,7 +36176,12 @@
             "category": "Skilling",
             "subcategory": "Construction",
             "area": "Tirannwn",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Construction",
+                    "level": 70
+                }
+            ]
         },
         "836": {
             "id": "836",
@@ -35621,6 +36384,10 @@
                 {
                     "name": "Ranged",
                     "level": 60
+                },
+                {
+                    "name": "Slayer",
+                    "level": 90
                 }
             ]
         },
@@ -35770,6 +36537,10 @@
                 {
                     "name": "Fishing",
                     "level": 87
+                },
+                {
+                    "name": "Cooking",
+                    "level": 72
                 }
             ]
         },
@@ -35845,7 +36616,16 @@
             "category": "Bossing",
             "subcategory": "Zulrah",
             "area": "Tirannwn",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 75
+                },
+                {
+                    "name": "Crafting",
+                    "level": 74
+                }
+            ]
         },
         "866": {
             "id": "866",
@@ -35855,7 +36635,12 @@
             "category": "Bossing",
             "subcategory": "Zulrah",
             "area": "Tirannwn",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Fletching",
+                    "level": 53
+                }
+            ]
         },
         "867": {
             "id": "867",
@@ -35865,7 +36650,16 @@
             "category": "Bossing",
             "subcategory": "Zulrah",
             "area": "Tirannwn",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Crafting",
+                    "level": 59
+                },
+                {
+                    "name": "Slayer",
+                    "level": 87
+                }
+            ]
         },
         "868": {
             "id": "868",
@@ -35975,7 +36769,20 @@
             "category": "Other",
             "subcategory": "Crystal chests",
             "area": "Tirannwn",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 40
+                },
+                {
+                    "name": "Crafting",
+                    "level": 80
+                },
+                {
+                    "name": "Smithing",
+                    "level": 80
+                }
+            ]
         },
         "879": {
             "id": "879",
@@ -35985,7 +36792,12 @@
             "category": "Bossing",
             "subcategory": "Gauntlet",
             "area": "Tirannwn",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 75
+                }
+            ]
         },
         "880": {
             "id": "880",
@@ -35993,7 +36805,7 @@
             "description": "Defeat Zulrah at the Poison Waste in 0:42 or less.",
             "difficulty": "Master",
             "category": "Bossing",
-            "subcategory": "Gauntlet",
+            "subcategory": "Zulrah",
             "area": "Tirannwn",
             "skills": []
         },
@@ -36285,7 +37097,16 @@
             "category": "Combat",
             "subcategory": "Magic",
             "area": "Wilderness",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 30
+                },
+                {
+                    "name": "Magic",
+                    "level": 30
+                }
+            ]
         },
         "910": {
             "id": "910",
@@ -36315,7 +37136,12 @@
             "category": "Combat",
             "subcategory": "Magic",
             "area": "Wilderness",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Magic",
+                    "level": 60
+                }
+            ]
         },
         "913": {
             "id": "913",
@@ -36325,7 +37151,12 @@
             "category": "Combat",
             "subcategory": "Magic",
             "area": "Wilderness",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Magic",
+                    "level": 60
+                }
+            ]
         },
         "914": {
             "id": "914",
@@ -36335,7 +37166,12 @@
             "category": "Combat",
             "subcategory": "Magic",
             "area": "Wilderness",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Magic",
+                    "level": 60
+                }
+            ]
         },
         "915": {
             "id": "915",
@@ -36448,7 +37284,7 @@
             "description": "Defeat Vet'ion in the Wilderness.",
             "difficulty": "Hard",
             "category": "Bossing",
-            "subcategory": "Vet\u00ef\u00bf\u00bdion",
+            "subcategory": "Vet\u2019ion",
             "area": "Wilderness",
             "skills": []
         },
@@ -36470,7 +37306,12 @@
             "category": "Bossing",
             "subcategory": "Wilderness",
             "area": "Wilderness",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 60
+                }
+            ]
         },
         "928": {
             "id": "928",
@@ -36480,7 +37321,12 @@
             "category": "Bossing",
             "subcategory": "Wilderness",
             "area": "Wilderness",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 60
+                }
+            ]
         },
         "929": {
             "id": "929",
@@ -36490,7 +37336,16 @@
             "category": "Combat",
             "subcategory": "Slayer",
             "area": "Wilderness",
-            "skills": []
+            "skills": [
+                {
+                    "name": "Magic",
+                    "level": 75
+                },
+                {
+                    "name": "Slayer",
+                    "level": 55
+                }
+            ]
         },
         "930": {
             "id": "930",
@@ -36583,6 +37438,10 @@
                 {
                     "name": "Hunter",
                     "level": 73
+                },
+                {
+                    "name": "Ranged",
+                    "level": 65
                 }
             ]
         },
@@ -36598,6 +37457,10 @@
                 {
                     "name": "Hunter",
                     "level": 73
+                },
+                {
+                    "name": "Ranged",
+                    "level": 65
                 }
             ]
         },
@@ -36613,6 +37476,10 @@
                 {
                     "name": "Hunter",
                     "level": 73
+                },
+                {
+                    "name": "Ranged",
+                    "level": 65
                 }
             ]
         },
