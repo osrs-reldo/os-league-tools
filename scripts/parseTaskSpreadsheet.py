@@ -23,7 +23,8 @@ def parse_csv(skillName):
                 'category': line['Type'].strip(),
                 'subcategory': line['Subcategory'].strip(),
                 'area': area,
-                'skills': parseSkillReqs(line['Skill requirements'].strip())
+                'additionalAreas': parse_additional_areas(line['Additional areas'].strip()),
+                'skills': parse_skill_reqs(line['Skill requirements'].strip())
             }
 
             updated_area = task_data.get(area, [])
@@ -35,7 +36,7 @@ def parse_csv(skillName):
     return task_data, all_tasks_list, tasks_by_id
 
 
-def parseSkillReqs(line):
+def parse_skill_reqs(line):
     if line == '':
         return []
 
@@ -50,6 +51,21 @@ def parseSkillReqs(line):
             'boostable': '(ub)' not in skill
         })
     return results
+
+
+def parse_additional_areas(line):
+    if line == '':
+        return {}
+
+    if 'OR' in line:
+        reqs = line.split(' OR ')
+        return {'oneOf': reqs}
+
+    if 'AND' in line:
+        reqs = line.split(' AND ')
+        return {'allOf': reqs}
+
+    return {'allOf': [line.strip()]}
 
 
 with open('src/resources/taskData.json', 'r') as task_data_file:

@@ -93,11 +93,12 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
         },
         {
             "dataField": "skills",
-            "text": "Required",
+            "text": "Requires",
             "formatter": skillsFormatter,
             "formatExtraData": { "hiscores": hiscores, "isSkillingProdigy": isSkillingProdigy },
             "headerStyle": { width: '8rem' }
-        },{
+        },
+        {
             "dataField": "manage",
             "text": "Manage",
             "isDummyField": true,

@@ -214,6 +214,35 @@ export function applyFilters(tasks, area, filterFunctions) {
     });
 }
 
+export function isTaskCompletableWithRegions(taskId, unlockedRegions) {
+    const task = taskData.tasksById[taskId];
+    if (!unlockedRegions.includes(task.area)) {
+        return false;
+    }
+
+    const reqAllOfRegions = task.additionalAreas.allOf;
+    if (reqAllOfRegions) {
+        console.log(`task ${task.name} requires regions ${reqAllOfRegions}`)
+        for (const reqReqion of reqAllOfRegions) {
+            if (!unlockedRegions.includes(reqReqion)) {
+                return false;
+            }
+        }
+    }
+
+    const reqOneOfRegions = task.additionalAreas.oneOf;
+    if (reqOneOfRegions) {
+        console.log(`task ${task.name} requires one of regions ${reqOneOfRegions}`)
+        for (const reqReqion of reqOneOfRegions) {
+            if (unlockedRegions.includes(reqReqion)) {
+                return true;
+            }
+        }
+    }
+
+    return true;
+}
+
 export function getCompletedTasksInArea(area, taskStatus) {
     const completedTasks = [];
     taskStatus.tasks.forEach(taskId => {
@@ -255,32 +284,39 @@ export function getPointsEarned(taskStatus, area, difficulty) {
     return totalPoints;
 }
 
-export function getMaxCompletableTasks(unlockedRegions, taskStatus) {
-    const maxTasks = {
-        Total: 0,
-        Easy: 0,
-        Medium: 0,
-        Hard: 0,
-        Elite: 0,
-        Master: 0,
+export function getMaxCompletableTaskPoints(unlockedRegions, taskStatus) {
+    const maxTaskPoints = {
+        tasks: {
+            Total: 0,
+            Easy: 0,
+            Medium: 0,
+            Hard: 0,
+            Elite: 0,
+            Master: 0,
+        },
+        points: {
+            Total: 0,
+            Easy: 0,
+            Medium: 0,
+            Hard: 0,
+            Elite: 0,
+            Master: 0,
+        }
     }
-    unlockedRegions.forEach(region => {
-        const regionValues = taskData.taskCounts[region];
-        maxTasks.Total = maxTasks.Total + regionValues.Total;
-        maxTasks.Easy = maxTasks.Easy + regionValues.Easy;
-        maxTasks.Medium = maxTasks.Medium + regionValues.Medium;
-        maxTasks.Hard = maxTasks.Hard + regionValues.Hard;
-        maxTasks.Elite = maxTasks.Elite + regionValues.Elite;
-        maxTasks.Master = maxTasks.Master + regionValues.Master;
-        maxTasks[region] = regionValues.Total;
-    })
-    taskStatus.hidden.forEach(taskId => {
-        const task = taskData.tasksById[taskId];
-        maxTasks[task.difficulty] = maxTasks[task.difficulty] - 1;
-        maxTasks.Total = maxTasks.Total - 1;
-        maxTasks[task.area] = maxTasks[task.area] - 1;
-    })
-    return maxTasks;
+    for (let [id, task] of Object.entries(taskData.tasksById)) {
+        if (isTaskCompletableWithRegions(id, unlockedRegions) && !isTaskHidden(id, taskStatus)) {
+            const region = task.area;
+            const difficulty = task.difficulty;
+            const pointValue = DIFFICULTY_POINTS[difficulty];
+            maxTaskPoints.tasks.Total += 1;
+            maxTaskPoints.points.Total += pointValue;
+            maxTaskPoints.tasks[difficulty] += 1;
+            maxTaskPoints.points[difficulty] += pointValue;
+            maxTaskPoints.tasks[region] = maxTaskPoints.tasks[region] ? maxTaskPoints.tasks[region] + 1 : 1;
+            maxTaskPoints.points[region] = maxTaskPoints.points[region] ? maxTaskPoints.points[region] + pointValue : pointValue;
+        }
+    }
+    return maxTaskPoints;
 }
 
 export function getTaskPointsOnTodoList(taskStatus, regions) {

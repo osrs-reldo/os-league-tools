@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Card, Row, Col, Tabs, Tab, Nav, Form, Button } from "react-bootstrap";
 import taskData from '../resources/taskData.json';
 import {
-    getMaxCompletableTasks,
+    getMaxCompletableTaskPoints,
     isTaskComplete,
     isTaskOnTodoList,
     getTaskPointsOnTodoList,
@@ -11,9 +11,10 @@ import {
     getPointsEarned,
     isTaskHidden,
     removeCompletedFromTodo,
-    isTaskCompletable
+    isTaskCompletable,
+    isTaskCompletableWithRegions
 } from "../util/task-util";
-import { getMaxCompletablePoints, isRelicUnlocked } from "../util/relic-util"
+import { isRelicUnlocked } from "../util/relic-util"
 import TaskTable from "./TaskTable";
 import { INITIAL_REGIONS_STATE } from '../util/region-util';
 import useLocalStorage from "../hooks/useLocalStorage";
@@ -32,8 +33,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
     const screenSize = useScreenSize();
 
     const regionsToShow = [ 'Common', ...unlockedRegions ]
-    const maxCompletableTasks = getMaxCompletableTasks(regionsToShow, taskStatus);
-    const maxCompletablePoints = getMaxCompletablePoints(regionsToShow, taskStatus);
+    const maxCompletableTaskPoints = getMaxCompletableTaskPoints(regionsToShow, taskStatus);
     const plannedOnTodoList = getTaskPointsOnTodoList(taskStatus, regionsToShow);
 
     const todoListFilter = (task, area) => {
@@ -46,15 +46,15 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                 <Card bg='dark' text='white' className="mt-3 p-2 text-center">
                     <h2>
                         {`Tasks Completed: ${taskStatus.tasks.length
-                            } / ${maxCompletableTasks.Total
-                            } (${Math.round((taskStatus.tasks.length / maxCompletableTasks.Total) * 100)
+                            } / ${maxCompletableTaskPoints.tasks.Total
+                            } (${Math.round((taskStatus.tasks.length / maxCompletableTaskPoints.tasks.Total) * 100)
                             }%)`}
                     </h2>
                     <div className="d-flex justify-content-around">
                         <div className="d-flex flex-column">
                             {taskData.difficulties.map(difficultyJson => {
                                 const numComplete = getCompletedTasksWithDifficulty(difficultyJson.value, taskStatus).length;
-                                const totalTasks = maxCompletableTasks[difficultyJson.value];
+                                const totalTasks = maxCompletableTaskPoints.tasks[difficultyJson.value];
                                 return (
                                     <div key={difficultyJson.value}>
                                         {`${difficultyJson.label}: ${numComplete} / ${totalTasks}`}
@@ -65,7 +65,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                         <div className="d-flex flex-column">
                             {regionsToShow.map(region => {
                                 const numComplete = getCompletedTasksInArea(region, taskStatus).length;
-                                const totalTasks = maxCompletableTasks[region];
+                                const totalTasks = maxCompletableTaskPoints.tasks[region];
                                 return (
                                     <div key={region}>
                                         {`${region}: ${numComplete} / ${totalTasks}`}
@@ -77,13 +77,13 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                 </Card>
                 <Card bg='dark' text='white' className="mt-3 p-2 text-center">
                     <h2>
-                        {`Points Earned: ${getPointsEarned(taskStatus)} / ${maxCompletablePoints.Total}`}
+                        {`Points Earned: ${getPointsEarned(taskStatus)} / ${maxCompletableTaskPoints.points.Total}`}
                     </h2>
                     <div className="d-flex justify-content-around">
                         <div className="d-flex flex-column">
                             {taskData.difficulties.map(difficultyJson => {
                                 const numEarned = getPointsEarned(taskStatus, null, difficultyJson.value);
-                                const totalPoints = maxCompletablePoints[difficultyJson.value];
+                                const totalPoints = maxCompletableTaskPoints.points[difficultyJson.value];
                                 return (
                                     <div key={difficultyJson.value}>
                                         {`${difficultyJson.label}: ${numEarned} / ${totalPoints}`}
@@ -94,7 +94,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                         <div className="d-flex flex-column">
                             {regionsToShow.map(region => {
                                 const numEarned = getPointsEarned(taskStatus, region);
-                                const totalPoints = maxCompletablePoints[region];
+                                const totalPoints = maxCompletableTaskPoints.points[region];
                                 return (
                                     <div key={region}>
                                         {`${region}: ${numEarned} / ${totalPoints}`}
@@ -178,9 +178,8 @@ function TaskTableWrapper({
         allFilters.push((task) => isTaskComplete(task.id, taskStatus));
     }
     if (hideLockedAreas) {
-        allFilters.push((task, area) => {
-            const taskArea = area === "All" ? taskData.tasksById[task.id].area : area;
-            return unlockedRegions.includes(taskArea);
+        allFilters.push((task) => {
+            return isTaskCompletableWithRegions(task.id, unlockedRegions);
         });
     }
     if (!showHiddenTasks) {
