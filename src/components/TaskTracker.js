@@ -214,11 +214,13 @@ function TaskTableWrapper({
                             checked={hideLockedAreas}
                             onChange={() => setHideLockedAreas(prevHideLocked => !prevHideLocked)}
                         />
-                        <Form.Check
-                            label="Show hidden tasks"
-                            checked={showHiddenTasks}
-                            onChange={() => setShowHiddenTasks(prevShowHidden => !prevShowHidden)}
-                        />
+                        {taskStatus.hidden.length > 0 &&
+                            <Form.Check
+                                label={`Show hidden tasks (${taskStatus.hidden.length} tasks)`}
+                                checked={showHiddenTasks}
+                                onChange={() => setShowHiddenTasks(prevShowHidden => !prevShowHidden)}
+                            />
+                        }
                         {!plannedOnTodoList &&
                             <React.Fragment>
                                 <Form.Check
