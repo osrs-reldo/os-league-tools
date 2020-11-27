@@ -46,7 +46,8 @@ def parseSkillReqs(line):
         skillSplit = skill.split(' ')
         results.append({
             'name': skillSplit[1],
-            'level': int(skillSplit[0])
+            'level': int(skillSplit[0]),
+            'boostable': '(ub)' not in skill
         })
     return results
 

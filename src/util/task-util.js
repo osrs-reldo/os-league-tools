@@ -6,6 +6,7 @@ import closeIcon from '@iconify/icons-mdi/close';
 import plusIcon from '@iconify/icons-mdi/plus';
 import taskData from '../resources/taskData.json';
 import Badge from 'react-bootstrap/Badge';
+import calculatorData from '../resources/calculatorData.json';
 
 export const DIFFICULTY_POINTS = {
     'Easy': 10,
@@ -97,7 +98,7 @@ function manageFormatter(cell, row, rowIndex, props) {
 function skillsFormatter(cell, row, rowIndex, props) {
     return cell.map(skill => {
         const name = skill.name.toLowerCase();
-        const isReqMet = meetsSkillRequirement(props.hiscores, name, skill.level);
+        const isReqMet = meetsSkillRequirement(props.hiscores, name, skill.level, skill.boostable, props.isSkillingProdigy);
         const icon = `/${name}.gif`
         return (
             <Badge pill key={name} variant={props.hiscores ? (isReqMet ? "success" : "danger") : "light"}>
@@ -176,18 +177,23 @@ export function isTaskHidden(taskId, taskState) {
     return taskState.hidden.includes(taskId);
 }
 
-export function isTaskCompletable(taskId, hiscores) {
+export function isTaskCompletable(taskId, hiscores, isSkillingProdigy) {
     const taskReqs = taskData.tasksById[taskId].skills;
     for (const skillReq of taskReqs) {
-        if (!meetsSkillRequirement(hiscores, skillReq.name.toLowerCase(), skillReq.level)) {
+        if (!meetsSkillRequirement(hiscores, skillReq.name.toLowerCase(), skillReq.level, skillReq.boostable, isSkillingProdigy)) {
             return false;
         }
     }
     return true;
 }
 
-export function meetsSkillRequirement(hiscores, reqSkill, reqLevel) {
-    return hiscores && hiscores.skills[reqSkill] && hiscores.skills[reqSkill].level >= reqLevel;
+export function meetsSkillRequirement(hiscores, reqSkill, reqLevel, isBoostable, isSkillingProdigy) {
+    let currentLevel = hiscores && hiscores.skills[reqSkill] && hiscores.skills[reqSkill].level;
+    if (isBoostable && isSkillingProdigy) {
+        const isNoncombatSkill = calculatorData.calculators[reqSkill] && !calculatorData.calculators[reqSkill].isCombatSkill;
+        currentLevel = isNoncombatSkill ? currentLevel + 12 : currentLevel;
+    }
+    return currentLevel >= reqLevel;
 }
 
 export function removeCompletedFromTodo(taskStatus, setIsTodoCallback) {

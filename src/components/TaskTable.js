@@ -6,7 +6,7 @@ import taskData from '../resources/taskData.json';
 import DoubleScrollbar from "../components/DoubleScrollbar";
 import { applyFilters, getFormatters, getRenderers, isTaskComplete } from "../util/task-util";
 
-export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters, hiscores }) {
+export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters, hiscores, isSkillingProdigy }) {
     const { completedFormatter, pointsFormatter, nameFormatter, difficultyFormatter, skillsFormatter, manageFormatter } = getFormatters();
     const taskTableContent = area === "All" ? taskData.tasks : taskData.tasksByRegion[area];
 
@@ -95,7 +95,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             "dataField": "skills",
             "text": "Required",
             "formatter": skillsFormatter,
-            "formatExtraData": { "hiscores": hiscores },
+            "formatExtraData": { "hiscores": hiscores, "isSkillingProdigy": isSkillingProdigy },
             "headerStyle": { width: '8rem' }
         },{
             "dataField": "manage",

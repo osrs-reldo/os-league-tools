@@ -13,7 +13,7 @@ import {
     removeCompletedFromTodo,
     isTaskCompletable
 } from "../util/task-util";
-import { getMaxCompletablePoints } from "../util/relic-util"
+import { getMaxCompletablePoints, isRelicUnlocked } from "../util/relic-util"
 import TaskTable from "./TaskTable";
 import { INITIAL_REGIONS_STATE } from '../util/region-util';
 import useLocalStorage from "../hooks/useLocalStorage";
@@ -169,6 +169,7 @@ function TaskTableWrapper({
 }) {
     const [selectedArea, setSelectedArea] = useState('All');
     const [selectedReqs, setSelectedReqs] = useState('All');
+    const [isSkillingProdigy, setIsSkillingProdigy] = useState(isRelicUnlocked('1,3'));
 
     let allFilters = [...taskFilters];
     if (selectedStatus === "Incomplete") {
@@ -189,9 +190,9 @@ function TaskTableWrapper({
         allFilters.push((task) => !isTaskOnTodoList(task.id, taskStatus));
     }
     if (selectedReqs === 'Missing') {
-        allFilters.push((task) => !isTaskCompletable(task.id, hiscores));
+        allFilters.push((task) => !isTaskCompletable(task.id, hiscores, isSkillingProdigy));
     } else if (selectedReqs === 'Have') {
-        allFilters.push((task) => isTaskCompletable(task.id, hiscores));
+        allFilters.push((task) => isTaskCompletable(task.id, hiscores, isSkillingProdigy));
     }
 
     return (
@@ -201,6 +202,13 @@ function TaskTableWrapper({
                     <Col lg={2}>
                         Hiscores lookup:
                         <HiscoreLookup refreshStateCallback={refreshHiscores} />
+                        <Form.Check
+                            label="Include Skilling Prodigy boost"
+                            defaultChecked={isSkillingProdigy}
+                            onChange={(event) => {
+                                setIsSkillingProdigy(event.target.checked);
+                            }}
+                        />
                         <Divider />
                         <Form.Check
                             label="Hide locked areas"
@@ -212,7 +220,7 @@ function TaskTableWrapper({
                             checked={showHiddenTasks}
                             onChange={() => setShowHiddenTasks(prevShowHidden => !prevShowHidden)}
                         />
-                        { !plannedOnTodoList &&
+                        {!plannedOnTodoList &&
                             <React.Fragment>
                                 <Form.Check
                                     label="Hide to-do tasks"
@@ -315,6 +323,7 @@ function TaskTableWrapper({
                                 updateTaskStatus={updateTaskStatus}
                                 taskFilters={allFilters}
                                 hiscores={hiscores}
+                                isSkillingProdigy={isSkillingProdigy}
                             />
                         </Nav>
                     </Col>
