@@ -19864,6 +19864,47 @@
                 },
                 {
                     "id": 88,
+                    "name": "Broad arrows (x15)",
+                    "subtitle": "From scratch",
+                    "category": "Arrows",
+                    "exp": 180.0,
+                    "level": 52,
+                    "icon": "https://oldschool.runescape.wiki/images/8/84/Broad_arrows_5.png?7488c",
+                    "inputs": [
+                        {
+                            "name": "Log",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Feathers",
+                            "amount": 15.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Broad arrowtip",
+                            "amount": 15.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Broad arrow",
+                            "amount": 15.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 3.0,
+                    "tooltip": ""
+                },
+                {
+                    "id": 89,
                     "name": "Mithril darts (x10)",
                     "subtitle": "",
                     "category": "Darts",
@@ -19899,7 +19940,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 89,
+                    "id": 90,
                     "name": "Mithril bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -19935,7 +19976,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 90,
+                    "id": 91,
                     "name": "Maple stock",
                     "subtitle": "",
                     "category": "Crossbows",
@@ -19966,7 +20007,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 91,
+                    "id": 92,
                     "name": "Mithril crossbow",
                     "subtitle": "Stringing",
                     "category": "Crossbows",
@@ -20002,7 +20043,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 92,
+                    "id": 93,
                     "name": "Mithril crossbow",
                     "subtitle": "Attach limbs",
                     "category": "Crossbows",
@@ -20038,7 +20079,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 93,
+                    "id": 94,
                     "name": "Mithril crossbow",
                     "subtitle": "From scratch",
                     "category": "Crossbows",
@@ -20079,7 +20120,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 94,
+                    "id": 95,
                     "name": "Broad bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -20115,7 +20156,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 95,
+                    "id": 96,
                     "name": "Maple longbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -20146,7 +20187,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 96,
+                    "id": 97,
                     "name": "Maple longbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -20182,7 +20223,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 97,
+                    "id": 98,
                     "name": "Maple longbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -20218,7 +20259,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 98,
+                    "id": 99,
                     "name": "Sapphire bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -20254,7 +20295,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 99,
+                    "id": 100,
                     "name": "Sapphire bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
@@ -20285,7 +20326,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 100,
+                    "id": 101,
                     "name": "Maple shield",
                     "subtitle": "",
                     "category": "Shields",
@@ -20316,7 +20357,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 101,
+                    "id": 102,
                     "name": "Emerald bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -20352,7 +20393,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 102,
+                    "id": 103,
                     "name": "Emerald bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
@@ -20383,7 +20424,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 103,
+                    "id": 104,
                     "name": "Adamant arrows (x15)",
                     "subtitle": "",
                     "category": "Arrows",
@@ -20419,7 +20460,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 104,
+                    "id": 105,
                     "name": "Arrow shafts (x75)",
                     "subtitle": "",
                     "category": "Arrows",
@@ -20450,7 +20491,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 105,
+                    "id": 106,
                     "name": "Adamant bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -20486,7 +20527,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 106,
+                    "id": 107,
                     "name": "Mahogany stock",
                     "subtitle": "",
                     "category": "Crossbows",
@@ -20517,7 +20558,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 107,
+                    "id": 108,
                     "name": "Adamant crossbow",
                     "subtitle": "Stringing",
                     "category": "Crossbows",
@@ -20553,7 +20594,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 108,
+                    "id": 109,
                     "name": "Adamant crossbow",
                     "subtitle": "Attach limbs",
                     "category": "Crossbows",
@@ -20589,7 +20630,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 109,
+                    "id": 110,
                     "name": "Adamant crossbow",
                     "subtitle": "From scratch",
                     "category": "Crossbows",
@@ -20630,7 +20671,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 110,
+                    "id": 111,
                     "name": "Adamant javelins (x15)",
                     "subtitle": "",
                     "category": "Javelins",
@@ -20666,7 +20707,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 111,
+                    "id": 112,
                     "name": "Adamant brutal (x6)",
                     "subtitle": "",
                     "category": "Arrows",
@@ -20702,7 +20743,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 112,
+                    "id": 113,
                     "name": "Ruby bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -20738,7 +20779,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 113,
+                    "id": 114,
                     "name": "Ruby bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
@@ -20769,7 +20810,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 114,
+                    "id": 115,
                     "name": "Diamond bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -20805,7 +20846,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 115,
+                    "id": 116,
                     "name": "Diamond bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
@@ -20836,7 +20877,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 116,
+                    "id": 117,
                     "name": "Yew shortbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -20867,7 +20908,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 117,
+                    "id": 118,
                     "name": "Yew shortbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -20903,7 +20944,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 118,
+                    "id": 119,
                     "name": "Yew shortbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -20939,7 +20980,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 119,
+                    "id": 120,
                     "name": "Adamant darts (x10)",
                     "subtitle": "",
                     "category": "Darts",
@@ -20975,7 +21016,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 120,
+                    "id": 121,
                     "name": "Runite bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -21011,7 +21052,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 121,
+                    "id": 122,
                     "name": "Yew stock",
                     "subtitle": "",
                     "category": "Crossbows",
@@ -21042,7 +21083,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 122,
+                    "id": 123,
                     "name": "Rune crossbow",
                     "subtitle": "Stringing",
                     "category": "Crossbows",
@@ -21078,7 +21119,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 123,
+                    "id": 124,
                     "name": "Rune crossbow",
                     "subtitle": "Attach limbs",
                     "category": "Crossbows",
@@ -21114,7 +21155,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 124,
+                    "id": 125,
                     "name": "Rune crossbow",
                     "subtitle": "From scratch",
                     "category": "Crossbows",
@@ -21155,7 +21196,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 125,
+                    "id": 126,
                     "name": "Yew longbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -21186,7 +21227,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 126,
+                    "id": 127,
                     "name": "Yew longbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -21222,7 +21263,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 127,
+                    "id": 128,
                     "name": "Yew longbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -21258,7 +21299,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 128,
+                    "id": 129,
                     "name": "Dragonstone bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -21294,7 +21335,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 129,
+                    "id": 130,
                     "name": "Dragonstone bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
@@ -21325,7 +21366,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 130,
+                    "id": 131,
                     "name": "Yew shield",
                     "subtitle": "",
                     "category": "Shields",
@@ -21356,7 +21397,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 131,
+                    "id": 132,
                     "name": "Onyx bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -21392,7 +21433,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 132,
+                    "id": 133,
                     "name": "Onyx bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
@@ -21423,7 +21464,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 133,
+                    "id": 134,
                     "name": "Rune arrows (x15)",
                     "subtitle": "",
                     "category": "Arrows",
@@ -21459,7 +21500,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 134,
+                    "id": 135,
                     "name": "Arrow shafts (x90)",
                     "subtitle": "",
                     "category": "Arrows",
@@ -21490,7 +21531,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 135,
+                    "id": 136,
                     "name": "Amethyst broad bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -21526,7 +21567,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 136,
+                    "id": 137,
                     "name": "Rune javelins (x15)",
                     "subtitle": "",
                     "category": "Javelins",
@@ -21562,7 +21603,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 137,
+                    "id": 138,
                     "name": "Rune brutal (x6)",
                     "subtitle": "",
                     "category": "Arrows",
@@ -21598,7 +21639,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 138,
+                    "id": 139,
                     "name": "Magic stock",
                     "subtitle": "",
                     "category": "Crossbows",
@@ -21629,7 +21670,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 139,
+                    "id": 140,
                     "name": "Dragon crossbow",
                     "subtitle": "Stringing",
                     "category": "Crossbows",
@@ -21665,7 +21706,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 140,
+                    "id": 141,
                     "name": "Dragon crossbow",
                     "subtitle": "Attach limbs",
                     "category": "Crossbows",
@@ -21701,7 +21742,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 141,
+                    "id": 142,
                     "name": "Dragon crossbow",
                     "subtitle": "From scratch",
                     "category": "Crossbows",
@@ -21742,7 +21783,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 142,
+                    "id": 143,
                     "name": "Magic shortbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -21773,7 +21814,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 143,
+                    "id": 144,
                     "name": "Magic shortbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -21809,7 +21850,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 144,
+                    "id": 145,
                     "name": "Magic shortbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -21845,7 +21886,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 145,
+                    "id": 146,
                     "name": "Rune darts (x10)",
                     "subtitle": "",
                     "category": "Darts",
@@ -21881,7 +21922,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 146,
+                    "id": 147,
                     "name": "Amethyst arrows (x15)",
                     "subtitle": "",
                     "category": "Arrows",
@@ -21917,7 +21958,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 147,
+                    "id": 148,
                     "name": "Opal dragon bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -21953,7 +21994,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 148,
+                    "id": 149,
                     "name": "Jade dragon bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -21989,7 +22030,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 149,
+                    "id": 150,
                     "name": "Pearl dragon bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -22025,7 +22066,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 150,
+                    "id": 151,
                     "name": "Topaz dragon bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -22061,7 +22102,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 151,
+                    "id": 152,
                     "name": "Sapphire dragon bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -22097,7 +22138,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 152,
+                    "id": 153,
                     "name": "Emerald dragon bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -22133,7 +22174,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 153,
+                    "id": 154,
                     "name": "Ruby dragon bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -22169,7 +22210,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 154,
+                    "id": 155,
                     "name": "Diamond dragon bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -22205,7 +22246,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 155,
+                    "id": 156,
                     "name": "Dragonstone dragon bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -22241,7 +22282,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 156,
+                    "id": 157,
                     "name": "Onyx dragon bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -22277,7 +22318,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 157,
+                    "id": 158,
                     "name": "Dragon bolts (x10)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -22313,7 +22354,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 158,
+                    "id": 159,
                     "name": "Amethyst javelins (x15)",
                     "subtitle": "",
                     "category": "Javelins",
@@ -22349,7 +22390,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 159,
+                    "id": 160,
                     "name": "Magic longbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -22380,7 +22421,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 160,
+                    "id": 161,
                     "name": "Magic longbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -22416,7 +22457,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 161,
+                    "id": 162,
                     "name": "Magic longbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -22452,7 +22493,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 162,
+                    "id": 163,
                     "name": "Magic shield",
                     "subtitle": "",
                     "category": "Shields",
@@ -22483,7 +22524,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 163,
+                    "id": 164,
                     "name": "Dragon arrows (x15)",
                     "subtitle": "",
                     "category": "Arrows",
@@ -22555,7 +22596,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 167,
+                    "id": 166,
                     "name": "Dragon darts (x10)",
                     "subtitle": "",
                     "category": "Darts",
