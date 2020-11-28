@@ -57,7 +57,7 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                                 <RegionMap unlockedRegions={unlockedRegions} />
                             </div>
                         </Col>
-                        <Col className="m-2" sm={4}>
+                        <Col className='m-2' sm={4}>
                             <div className='text-center mb-2'>
                                 <h3>{selectedRegion}</h3>
                                 {!INITIAL_REGIONS_STATE.includes(selectedRegion) &&
@@ -83,7 +83,7 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                                         </Button>
                                     ))}
                             </div>
-                            <div className="relic-table-cell p-2" style={{ maxHeight: '700px', overflowY: 'scroll' }}>
+                            <div className='relic-table-cell p-2' style={{ maxHeight: '700px', overflowY: 'scroll' }}>
                                 <h5>Overview:</h5>
                                 <p>{regionsData[selectedRegion].overview}</p>
                                 {regionsData[selectedRegion].travel && (

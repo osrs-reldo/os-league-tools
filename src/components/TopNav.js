@@ -55,8 +55,9 @@ export default function TopNav() {
                     onClose={() => setHideAlertBanner(true)}
                     dismissible
                 >
-                    {`${<b>OS League Tools is in BETA!</b>} If you find any bugs or incorrect data, or if you have feedback/suggestions,
-                    please come by the ${<Alert.Link href='https://discord.gg/GQ5kVyU'>discord</Alert.Link>}!`}
+                    <b>OS League Tools is in BETA!</b> If you find any bugs or incorrect data, or if you have
+                    feedback/suggestions, please come by the{' '}
+                    <Alert.Link href='https://discord.gg/GQ5kVyU'>discord</Alert.Link>!
                 </Alert>
             )}
             <ManageDataModal

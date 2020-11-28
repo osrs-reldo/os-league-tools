@@ -29,7 +29,7 @@ export default function MultiplierGroup({ title, multiplierData, globalMultiplie
     return (
         <>
             <h4>{`${title}:`}</h4>
-            <div className="pl-2 pb-2">
+            <div className='pl-2 pb-2'>
                 {globalMultiplierData.length > 0 &&
                     globalMultiplierData.map(multiplier => {
                         return (

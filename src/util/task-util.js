@@ -220,7 +220,9 @@ export function removeCompletedFromTodo(taskStatus, setIsTodoCallback) {
 export function applyFilters(tasks, area, filterFunctions) {
     return tasks.filter(task => {
         let status = true;
-        filterFunctions.forEach(filterFunction => {status = status && filterFunction(task, area)});
+        filterFunctions.forEach(filterFunction => {
+            status = status && filterFunction(task, area);
+        });
         return status;
     });
 }
@@ -314,7 +316,7 @@ export function getMaxCompletableTaskPoints(unlockedRegions, taskStatus) {
     };
     for (const [id, task] of Object.entries(taskData.tasksById)) {
         if (isTaskCompletableWithRegions(id, unlockedRegions) && !isTaskHidden(id, taskStatus)) {
-            const {difficulty, area } = task;
+            const { difficulty, area } = task;
             const pointValue = DIFFICULTY_POINTS[difficulty];
             maxTaskPoints.tasks.Total += 1;
             maxTaskPoints.points.Total += pointValue;

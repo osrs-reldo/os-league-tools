@@ -36,7 +36,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
     const maxCompletableTaskPoints = getMaxCompletableTaskPoints(regionsToShow, taskStatus);
     const plannedOnTodoList = getTaskPointsOnTodoList(taskStatus, regionsToShow);
 
-    const todoListFilter = (task) => {
+    const todoListFilter = task => {
         return isTaskOnTodoList(task.id, taskStatus);
     };
 
@@ -100,7 +100,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
             <Card bg='dark' text='white' className='mt-3'>
                 <Tabs
                     fill
-                    defaultActiveKey="all"
+                    defaultActiveKey='all'
                     className='tab-bar-secondary'
                     style={{ margin: '0', borderRadius: '.25rem .25rem 0rem 0rem' }}
                 >
@@ -211,13 +211,11 @@ function TaskTableWrapper({
                             checked={hideLockedAreas}
                             onChange={() => setHideLockedAreas(prevHideLocked => !prevHideLocked)}
                         />
-                        {taskStatus.hidden.length > 0 && (
-                            <Form.Check
-                                label={`Show hidden tasks (${taskStatus.hidden.length} tasks)`}
-                                checked={showHiddenTasks}
-                                onChange={() => setShowHiddenTasks(prevShowHidden => !prevShowHidden)}
-                            />
-                        )}
+                        <Form.Check
+                            label={`Show hidden tasks (${taskStatus.hidden.length} tasks)`}
+                            checked={showHiddenTasks}
+                            onChange={() => setShowHiddenTasks(prevShowHidden => !prevShowHidden)}
+                        />
                         {!plannedOnTodoList && (
                             <>
                                 <Form.Check
@@ -232,9 +230,9 @@ function TaskTableWrapper({
                             <h5>Areas:</h5>
                             <Nav
                                 variant='pills'
-                                className={
-                                    `mt-3 tab-bar-secondary ${screenSize.isSizeOrLarger('xl') ? 'flex-column' : 'd-flex justify-content-around'}`
-                                }
+                                className={`mt-3 tab-bar-secondary ${
+                                    screenSize.isSizeOrLarger('xl') ? 'flex-column' : 'd-flex justify-content-around'
+                                }`}
                             >
                                 <Nav.Item key='All'>
                                     <Nav.Link eventKey='All' onClick={() => setSelectedArea('All')}>
@@ -263,9 +261,9 @@ function TaskTableWrapper({
                             <h5>Status:</h5>
                             <Nav
                                 variant='pills'
-                                className={
-                                    `mt-3 mb-3 tab-bar-secondary ${screenSize.isSizeOrLarger('lg') ? 'flex-column' : 'd-flex justify-content-around'}`
-                                }
+                                className={`mt-3 mb-3 tab-bar-secondary ${
+                                    screenSize.isSizeOrLarger('lg') ? 'flex-column' : 'd-flex justify-content-around'
+                                }`}
                             >
                                 <Nav.Item key='All'>
                                     <Nav.Link eventKey='All' onClick={() => setSelectedStatus('All')}>
@@ -289,9 +287,9 @@ function TaskTableWrapper({
                             <h5>Skill requirements:</h5>
                             <Nav
                                 variant='pills'
-                                className={
-                                    `mt-3 mb-3 tab-bar-secondary ${screenSize.isSizeOrLarger('lg') ? 'flex-column' : 'd-flex justify-content-around'}`
-                                }
+                                className={`mt-3 mb-3 tab-bar-secondary ${
+                                    screenSize.isSizeOrLarger('lg') ? 'flex-column' : 'd-flex justify-content-around'
+                                }`}
                             >
                                 <Nav.Item key='All'>
                                     <Nav.Link eventKey='All' onClick={() => setSelectedReqs('All')}>

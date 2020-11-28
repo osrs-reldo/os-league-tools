@@ -16,13 +16,7 @@ export default function useQueryString(key, initialValue) {
 }
 
 function setQueryStringWithoutPageReload(qsValue) {
-    const newurl =
-        `${window.location.protocol}//
-        ${window.location.host}
-        ${window.location.pathname}
-        ${qsValue}
-        ${window.location.hash}`;
-
+    const newurl = `${window.location.protocol}//${window.location.host}${window.location.pathname}${qsValue}${window.location.hash}`;
     window.history.pushState({ path: newurl }, '', newurl);
 }
 

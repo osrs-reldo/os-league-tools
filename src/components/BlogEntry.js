@@ -19,7 +19,7 @@ export default function NewsEntry({ title, date, thumbnail, leadText, htmlConten
                         <Col>
                             {expanded ? (
                                 <>
-                                    { /* eslint-disable-next-line react/no-danger */ }
+                                    {/* eslint-disable-next-line react/no-danger */}
                                     <div dangerouslySetInnerHTML={{ __html: htmlContent }} className='mb-1' />
                                     <Button variant='outline-light' onClick={() => setExpanded(!expanded)}>
                                         Show less
@@ -27,7 +27,7 @@ export default function NewsEntry({ title, date, thumbnail, leadText, htmlConten
                                 </>
                             ) : (
                                 <>
-                                    { /* eslint-disable-next-line react/no-danger */ }
+                                    {/* eslint-disable-next-line react/no-danger */}
                                     <div dangerouslySetInnerHTML={{ __html: `${leadText}...` }} className='mb-1' />
                                     <Button variant='outline-light' onClick={() => setExpanded(!expanded)}>
                                         Show more

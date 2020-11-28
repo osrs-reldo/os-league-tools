@@ -74,7 +74,6 @@ function outputListFormatter(cell, row, rowIndex, props) {
         return itemListBotanistFormatter(cell, countMultiplier, actionsRemaining);
     }
     return itemListFormatter(cell, countMultiplier, actionsRemaining);
-
 }
 
 function inputListFormatter(cell, row, rowIndex, props) {

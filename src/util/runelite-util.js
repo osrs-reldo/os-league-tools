@@ -52,7 +52,9 @@ export default async function updateLocalStorageFromRuneliteJson(json) {
 
 function getTaskLookupByName() {
     const lookup = {};
-    taskData.tasks.forEach(task => {lookup[sanitizeTaskName(task.name)] = task});
+    taskData.tasks.forEach(task => {
+        lookup[sanitizeTaskName(task.name)] = task;
+    });
     return lookup;
 }
 
@@ -73,13 +75,15 @@ function getRelicLookupByName() {
 }
 
 function isValidRuneliteJson(json) {
-    return Object.prototype.hasOwnProperty.call(json, 'relics')
-        && Object.prototype.hasOwnProperty.call(json, 'areas')
-        && Object.prototype.hasOwnProperty.call(json, 'tasks');
+    return (
+        Object.prototype.hasOwnProperty.call(json, 'relics') &&
+        Object.prototype.hasOwnProperty.call(json, 'areas') &&
+        Object.prototype.hasOwnProperty.call(json, 'tasks')
+    );
 }
 
 function isOldVersion(json) {
-    return  Object.prototype.hasOwnProperty.call(json, 'unlockedRegions');
+    return Object.prototype.hasOwnProperty.call(json, 'unlockedRegions');
 }
 
 function runeliteJsonToStorageFormat(json) {

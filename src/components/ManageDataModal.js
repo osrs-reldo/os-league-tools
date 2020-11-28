@@ -61,7 +61,7 @@ export default function ManageDataModal({ show, onClose }) {
                     <Tab eventKey='import' title='Import'>
                         <div className='text-center mt-3'>
                             <Alert variant='warning' className='small'>
-                                {`${<b>Warning!</b>} Importing a backup will ${<b>overwrite</b>} your current profile.`}
+                                <b>Warning!</b> Importing a backup will <b>overwrite</b> your current profile.
                             </Alert>
                             <p>Restore a previously exported character backup:</p>
                             <FilePicker
@@ -87,14 +87,15 @@ export default function ManageDataModal({ show, onClose }) {
                                 <h5>How to use:</h5>
                                 <ol>
                                     <li>
-                                        {'Install the "OsLeague" plugin using the '}
+                                        Install the "OsLeague" plugin using the{' '}
                                         <a href={pluginHubLink} target='_blank' rel='noopener noreferrer'>
                                             plugin hub
                                         </a>
                                     </li>
                                     <li>
-                                        {`Go to the Leagues tab ingame and open/close each interface to make sure your
-                                        data is up-to-date. ${<b>NOTE: Make sure you have disabled all task filters on the ingame UI.</b>}`}
+                                        Go to the Leagues tab ingame and open/close each interface to make sure your
+                                        data is up-to-date.{' '}
+                                        <b>NOTE: Make sure you have disabled all task filters on the ingame UI.</b>
                                     </li>
                                     <li>Click on the OS League Tools icon on the top toolbar to copy your data</li>
                                     <li>Paste the copied text into the box below</li>
@@ -119,7 +120,7 @@ export default function ManageDataModal({ show, onClose }) {
                     <Tab eventKey='reset' title='Reset'>
                         <div className='text-center mt-3'>
                             <Alert variant='danger' className='small'>
-                                {`${<b>Resetting your data is irreversible.</b>} Proceed with caution.`}
+                                <b>Resetting your data is irreversible.</b> Proceed with caution.
                             </Alert>
                             <p>Permanently delete your data and start fresh:</p>
                             <Button className='m-2' variant='dark' onClick={resetData}>

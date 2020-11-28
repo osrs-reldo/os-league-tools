@@ -15,7 +15,7 @@ import {
 } from '../util/relic-util';
 import useLocalStorage from '../hooks/useLocalStorage';
 import { LOCALSTORAGE_KEYS } from '../util/browser-util';
-import DoubleScrollbar from "./DoubleScrollbar";
+import DoubleScrollbar from './DoubleScrollbar';
 
 export default function RelicsTracker({ totalPoints }) {
     const [selectedRelic, setSelectedRelic] = useState();
@@ -75,7 +75,7 @@ export default function RelicsTracker({ totalPoints }) {
                     <RelicInfoTile
                         relicKey={selectedRelic}
                         isWide
-                        additionalContent={(
+                        additionalContent={
                             <>
                                 {!isPassiveRelic(selectedRelic) &&
                                     (isRelicUnlocked(selectedRelic, unlockedRelics) ? (
@@ -102,7 +102,7 @@ export default function RelicsTracker({ totalPoints }) {
                                         </Button>
                                     ))}
                             </>
-                          )}
+                        }
                     />
                 ) : (
                     <p className='m-1'>Select a relic to view more information or unlock it.</p>

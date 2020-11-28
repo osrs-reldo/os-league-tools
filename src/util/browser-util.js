@@ -29,12 +29,7 @@ export function getFromLocalStorage(key, initialValue, useSessionStorage = false
     }
 }
 
-export function updateLocalStorage(
-    key,
-    value,
-    setValueCallback = () => {},
-    useSessionStorage = false
-) {
+export function updateLocalStorage(key, value, setValueCallback = () => {}, useSessionStorage = false) {
     try {
         setValueCallback(value);
         if (useSessionStorage) {

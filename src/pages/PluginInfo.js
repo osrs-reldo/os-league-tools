@@ -15,17 +15,18 @@ export default function PluginInfo() {
                 <h4>Instructions:</h4>
                 <ol>
                     <li>
-                        {`Install the "OsLeague" plugin using the ${
-                            <a href='https://github.com/runelite/runelite/wiki/Information-about-the-Plugin-Hub'>
-                                plugin hub
-                            </a>
-                        }`}
+                        Install the "OsLeague" plugin using the{' '}
+                        <a href='https://github.com/runelite/runelite/wiki/Information-about-the-Plugin-Hub'>
+                            plugin hub
+                        </a>
                     </li>
                     <li>
                         Go to the Leagues tab ingame and open/close each interface to make sure your data is up-to-date.
                     </li>
                     <li>Click on the OS League Tools checkmark icon on the top toolbar to copy your data</li>
-                    <li>Open the Manage Data window (top right) and paste the copied data in to the Runelite Import tab</li>
+                    <li>
+                        Open the Manage Data window (top right) and paste the copied data in to the Runelite Import tab
+                    </li>
                 </ol>
 
                 <a href='https://user-images.githubusercontent.com/17709869/98069290-0535cd00-1e24-11eb-90a1-49a8a04b7072.gif'>

@@ -184,7 +184,7 @@ export default function SkillCalculator() {
                 <Card bg='dark' text='white' className='mt-2 mb-2' style={{ minWidth: '300px' }}>
                     <div className='p-3'>
                         <h4>League base multiplier:</h4>
-                        <div className="pl-2 pb-2">
+                        <div className='pl-2 pb-2'>
                             <Form.Check
                                 label='5x'
                                 inline
@@ -354,7 +354,7 @@ export default function SkillCalculator() {
                                 disabled={!useAreaFilter}
                                 value={includedAreas}
                                 onChange={event => {
-                                    const {options} = event.target;
+                                    const { options } = event.target;
                                     const selectedAreas = [];
                                     for (let i = 0, l = options.length; i < l; i++) {
                                         if (options[i].selected) {
