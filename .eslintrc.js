@@ -14,7 +14,7 @@ module.exports = {
     plugins: ['react', 'react-hooks'],
     rules: {
         indent: 'off',
-        'no-console': ['warn', { allow: ['warn', 'error'] }],
+        'no-console': ['error', { allow: ['warn', 'error'] }],
         'no-else-return': ['error', { allowElseIf: true }],
         'no-plusplus': 'off',
         'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],

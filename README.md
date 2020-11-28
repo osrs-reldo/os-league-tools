@@ -30,6 +30,10 @@ To update any data relating to tasks or skill calculators, you'll first need to 
 
 After making your changes, run either `parseCalcSpreadsheets.py` or `parseTaskSpreadsheet.py` (depending on which one you edited) to generate the json resource files. Once that's done, you will see your changes reflected in the site.
 
+### Code style
+
+This project uses [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) to maintain a consistent code style. Any violations will be automatically fixed at commit time if possible, otherwise if they need manual attention, the commit will fail with a message letting you know what went wrong.
+
 ### Backend
 
 The hiscores functionality relies on a backend api that you can find over at [os-league-tools-api](https://github.com/chaiinchomp/os-league-tools-api).
