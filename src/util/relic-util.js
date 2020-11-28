@@ -28,7 +28,7 @@ export function unlockRelicInState(currentRelicState, relicKey) {
 }
 
 export function lockRelicInState(currentRelicState, relicKey) {
-    const [tierId,] = getRelicIndices(relicKey);
+    const [tierId] = getRelicIndices(relicKey);
 
     const stateWithPassive = immutablyUpdateRelicState(currentRelicState, tierId, 'passive', false);
     return immutablyUpdateRelicState(stateWithPassive, tierId, 'relic', -1);
@@ -41,10 +41,7 @@ export function isPassiveRelic(relicKey) {
 
 function immutablyUpdateRelicState(currentRelicState, tierId, fieldToUpdate, valueToUpdate) {
     return update(currentRelicState, {
-        [tierId]: prevTierState =>
-            update(prevTierState || {},
-                { [fieldToUpdate]: { $set: valueToUpdate } }
-            )
+        [tierId]: prevTierState => update(prevTierState || {}, { [fieldToUpdate]: { $set: valueToUpdate } }),
     });
 }
 

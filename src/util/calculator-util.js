@@ -1,5 +1,5 @@
-import React from "react";
-import { OverlayTrigger, Badge, Tooltip } from "react-bootstrap";
+import React from 'react';
+import { OverlayTrigger, Badge, Tooltip } from 'react-bootstrap';
 
 export function getFormatters() {
     return {
@@ -8,8 +8,8 @@ export function getFormatters() {
         amountFormatter: amountFormatter,
         outputListFormatter: outputListFormatter,
         inputListFormatter: inputListFormatter,
-        expFormatter: expFormatter
-    }
+        expFormatter: expFormatter,
+    };
 }
 
 function nameFormatter(cell, row, rowIndex, props) {
@@ -17,28 +17,21 @@ function nameFormatter(cell, row, rowIndex, props) {
         <React.Fragment>
             {row.icon && <img src={row.icon} alt='' />}
             {' ' + cell}
-            {row.tooltip && <OverlayTrigger
-                placement='top'
-                overlay={
-                    <Tooltip>
-                        {row.tooltip}
-                    </Tooltip>
-                }
-            >
-                <Badge variant="dark" pill>...</Badge>
-            </OverlayTrigger>}
-            <div className='small'>
-                {row.subtitle}
-            </div>
+            {row.tooltip && (
+                <OverlayTrigger placement='top' overlay={<Tooltip>{row.tooltip}</Tooltip>}>
+                    <Badge variant='dark' pill>
+                        ...
+                    </Badge>
+                </OverlayTrigger>
+            )}
+            <div className='small'>{row.subtitle}</div>
         </React.Fragment>
     );
 }
 
 function levelFormatter(cell, row, rowIndex, props) {
     const boostedLevel = getBoostedLevel(props.level, props.isSkillingProdigy);
-    return (
-        <div className={cell <= boostedLevel ? "unlocked" : "locked"}>{cell}</div>
-    );
+    return <div className={cell <= boostedLevel ? 'unlocked' : 'locked'}>{cell}</div>;
 }
 
 function expFormatter(cell, row, rowIndex, props) {
@@ -100,13 +93,12 @@ function inputListFormatter(cell, row, rowIndex, props) {
         return itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining);
     } else {
         return itemListFormatter(cell, countMultiplier, actionsRemaining);
-	}
-
+    }
 }
 
 function itemListFormatter(cell, countMultiplier, actionsRemaining) {
     return (
-        <ul className="mb-0">
+        <ul className='mb-0'>
             {cell.map(item => {
                 if (item.amount) {
                     var amount = actionsRemaining * item.amount * item.chance * countMultiplier;
@@ -121,13 +113,13 @@ function itemListFormatter(cell, countMultiplier, actionsRemaining) {
 
 function itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining) {
     return (
-        <ul className="mb-0">
+        <ul className='mb-0'>
             {cell.map(item => {
                 if (item.amount) {
-                    var amount
-                    if (item.name.includes('rune')){
+                    var amount;
+                    if (item.name.includes('rune')) {
                         amount = actionsRemaining * item.amount * (item.chance * 0.1) * countMultiplier;
-                        amount = Math.ceil(amount)
+                        amount = Math.ceil(amount);
                     } else {
                         amount = actionsRemaining * item.amount * item.chance * countMultiplier;
                         amount = +amount.toFixed(2);
@@ -142,12 +134,12 @@ function itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining) {
 
 function itemListBotanistFormatter(cell, countMultiplier, actionsRemaining) {
     return (
-        <ul className="mb-0">
+        <ul className='mb-0'>
             {cell.map(item => {
                 if (item.amount) {
                     var amount = actionsRemaining * item.amount * item.chance * countMultiplier;
                     amount = +amount.toFixed(2);
-                    amount = amount*2;
+                    amount = amount * 2;
                     return <li key={item.name}>{amount + ' ' + item.name}</li>;
                 }
                 return <li key={item.name}>{item.name}</li>;
@@ -156,17 +148,32 @@ function itemListBotanistFormatter(cell, countMultiplier, actionsRemaining) {
     );
 }
 
-
 function calcExpPerAction(baseExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel, numExpActions) {
     const baseMultiplier = parseInt(baseMultiplierStr);
     const secondaryMultiplier = baseMultiplier * expMultiplier.apply(validMultipliers);
-    const equilibriumBonus =  getEquilibriumBonusExp(expMultiplier, totalLevel, numExpActions);
+    const equilibriumBonus = getEquilibriumBonusExp(expMultiplier, totalLevel, numExpActions);
     return Math.round((baseExp * secondaryMultiplier + equilibriumBonus) * 10) / 10;
 }
 
-function calcActionsRemaining(curExp, targetExp, activityExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel, numExpActions) {
+function calcActionsRemaining(
+    curExp,
+    targetExp,
+    activityExp,
+    baseMultiplierStr,
+    expMultiplier,
+    validMultipliers,
+    totalLevel,
+    numExpActions
+) {
     const expLeft = targetExp - curExp;
-    const expPerAction = calcExpPerAction(activityExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel, numExpActions);
+    const expPerAction = calcExpPerAction(
+        activityExp,
+        baseMultiplierStr,
+        expMultiplier,
+        validMultipliers,
+        totalLevel,
+        numExpActions
+    );
     return Math.ceil(expLeft / expPerAction);
 }
 
@@ -175,8 +182,8 @@ export function getBoostedLevel(currentLevel, isSkillingProdigy) {
 }
 
 function getEquilibriumBonusExp(expMultiplier, totalLevel, numExpActions) {
-    if (!expMultiplier.get().hasOwnProperty("G0")) {
+    if (!expMultiplier.get().hasOwnProperty('G0')) {
         return 0;
     }
-    return totalLevel *.1 * numExpActions;
+    return totalLevel * 0.1 * numExpActions;
 }

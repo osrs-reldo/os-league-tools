@@ -932,11 +932,7 @@
             "subcategory": "Hunter",
             "area": "Common",
             "additionalAreas": {
-                "oneOf": [
-                    "Kandarin",
-                    "Fremennik",
-                    "Desert"
-                ]
+                "oneOf": ["Kandarin", "Fremennik", "Desert"]
             },
             "skills": []
         },
@@ -1322,9 +1318,7 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin"
-                ]
+                "allOf": ["Kandarin"]
             },
             "skills": []
         },
@@ -2113,10 +2107,7 @@
             "subcategory": "Hunter",
             "area": "Common",
             "additionalAreas": {
-                "oneOf": [
-                    "Kandarin",
-                    "Fremennik"
-                ]
+                "oneOf": ["Kandarin", "Fremennik"]
             },
             "skills": [
                 {
@@ -2702,9 +2693,7 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin"
-                ]
+                "allOf": ["Kandarin"]
             },
             "skills": []
         },
@@ -3374,10 +3363,7 @@
             "subcategory": "Magic",
             "area": "Common",
             "additionalAreas": {
-                "oneOf": [
-                    "Kandarin",
-                    "Wilderness"
-                ]
+                "oneOf": ["Kandarin", "Wilderness"]
             },
             "skills": [
                 {
@@ -3711,10 +3697,7 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin",
-                    "Tirannwn"
-                ]
+                "allOf": ["Kandarin", "Tirannwn"]
             },
             "skills": []
         },
@@ -4597,9 +4580,7 @@
             "subcategory": "Farming",
             "area": "Common",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin"
-                ]
+                "allOf": ["Kandarin"]
             },
             "skills": [
                 {
@@ -4742,10 +4723,7 @@
             "subcategory": "Melee",
             "area": "Common",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin",
-                    "Fremennik"
-                ]
+                "allOf": ["Kandarin", "Fremennik"]
             },
             "skills": [
                 {
@@ -4973,10 +4951,7 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin",
-                    "Tirannwn"
-                ]
+                "allOf": ["Kandarin", "Tirannwn"]
             },
             "skills": []
         },
@@ -5562,10 +5537,7 @@
             "subcategory": "Grandmaster",
             "area": "Misthalin",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin",
-                    "Asgarnia"
-                ]
+                "allOf": ["Kandarin", "Asgarnia"]
             },
             "skills": []
         },
@@ -6102,10 +6074,7 @@
             "subcategory": "Melee",
             "area": "Misthalin",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin",
-                    "Fremennik"
-                ]
+                "allOf": ["Kandarin", "Fremennik"]
             },
             "skills": [
                 {
@@ -7475,10 +7444,7 @@
             "subcategory": "Slayer",
             "area": "Asgarnia",
             "additionalAreas": {
-                "oneOf": [
-                    "Wilderness",
-                    "Fremennik"
-                ]
+                "oneOf": ["Wilderness", "Fremennik"]
             },
             "skills": [
                 {
@@ -7810,9 +7776,7 @@
             "subcategory": "Slayer",
             "area": "Asgarnia",
             "additionalAreas": {
-                "allOf": [
-                    "Desert"
-                ]
+                "allOf": ["Desert"]
             },
             "skills": [
                 {
@@ -9316,9 +9280,7 @@
             "subcategory": "Novice",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": [
-                    "Asgarnia"
-                ]
+                "allOf": ["Asgarnia"]
             },
             "skills": []
         },
@@ -9365,12 +9327,7 @@
             "subcategory": "Slayer",
             "area": "Kandarin",
             "additionalAreas": {
-                "oneOf": [
-                    "Morytania",
-                    "Asgarnia",
-                    "Tirannwn",
-                    "Wilderness"
-                ]
+                "oneOf": ["Morytania", "Asgarnia", "Tirannwn", "Wilderness"]
             },
             "skills": [
                 {
@@ -9400,9 +9357,7 @@
             "subcategory": "Prayer",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": [
-                    "Asgarnia"
-                ]
+                "allOf": ["Asgarnia"]
             },
             "skills": [
                 {
@@ -9426,10 +9381,7 @@
             "subcategory": "Magic",
             "area": "Kandarin",
             "additionalAreas": {
-                "oneOf": [
-                    "Fremennik",
-                    "Tirannwn"
-                ]
+                "oneOf": ["Fremennik", "Tirannwn"]
             },
             "skills": [
                 {
@@ -9715,9 +9667,7 @@
             "subcategory": "Experienced",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": [
-                    "Asgarnia"
-                ]
+                "allOf": ["Asgarnia"]
             },
             "skills": [
                 {
@@ -9741,9 +9691,7 @@
             "subcategory": "Grandmaster",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": [
-                    "Fremennik"
-                ]
+                "allOf": ["Fremennik"]
             },
             "skills": []
         },
@@ -12934,9 +12882,7 @@
             "subcategory": "Gauntlet",
             "area": "Tirannwn",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin"
-                ]
+                "allOf": ["Kandarin"]
             },
             "skills": [
                 {
@@ -13164,9 +13110,7 @@
             "subcategory": "Zulrah",
             "area": "Tirannwn",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin"
-                ]
+                "allOf": ["Kandarin"]
             },
             "skills": [
                 {
@@ -13820,11 +13764,7 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": [
-                    "Kandarin",
-                    "Fremennik",
-                    "Desert"
-                ]
+                "oneOf": ["Kandarin", "Fremennik", "Desert"]
             },
             "skills": [
                 {
@@ -14049,11 +13989,7 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": [
-                    "Kandarin",
-                    "Fremennik",
-                    "Desert"
-                ]
+                "oneOf": ["Kandarin", "Fremennik", "Desert"]
             },
             "skills": [
                 {
@@ -14077,11 +14013,7 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": [
-                    "Kandarin",
-                    "Fremennik",
-                    "Desert"
-                ]
+                "oneOf": ["Kandarin", "Fremennik", "Desert"]
             },
             "skills": [
                 {
@@ -14105,11 +14037,7 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": [
-                    "Kandarin",
-                    "Fremennik",
-                    "Desert"
-                ]
+                "oneOf": ["Kandarin", "Fremennik", "Desert"]
             },
             "skills": [
                 {
@@ -14334,9 +14262,7 @@
             "subcategory": "Construction",
             "area": "Wilderness",
             "additionalAreas": {
-                "allOf": [
-                    "Fremennik"
-                ]
+                "allOf": ["Fremennik"]
             },
             "skills": [
                 {
@@ -14448,10 +14374,7 @@
             "subcategory": "Other",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": [
-                    "Fremennik",
-                    "Asgarnia"
-                ]
+                "oneOf": ["Fremennik", "Asgarnia"]
             },
             "skills": []
         }
@@ -15134,11 +15057,7 @@
                 "subcategory": "Hunter",
                 "area": "Common",
                 "additionalAreas": {
-                    "oneOf": [
-                        "Kandarin",
-                        "Fremennik",
-                        "Desert"
-                    ]
+                    "oneOf": ["Kandarin", "Fremennik", "Desert"]
                 },
                 "skills": []
             },
@@ -15524,9 +15443,7 @@
                 "subcategory": "Western Provinces",
                 "area": "Common",
                 "additionalAreas": {
-                    "allOf": [
-                        "Kandarin"
-                    ]
+                    "allOf": ["Kandarin"]
                 },
                 "skills": []
             },
@@ -16315,10 +16232,7 @@
                 "subcategory": "Hunter",
                 "area": "Common",
                 "additionalAreas": {
-                    "oneOf": [
-                        "Kandarin",
-                        "Fremennik"
-                    ]
+                    "oneOf": ["Kandarin", "Fremennik"]
                 },
                 "skills": [
                     {
@@ -16904,9 +16818,7 @@
                 "subcategory": "Western Provinces",
                 "area": "Common",
                 "additionalAreas": {
-                    "allOf": [
-                        "Kandarin"
-                    ]
+                    "allOf": ["Kandarin"]
                 },
                 "skills": []
             },
@@ -17576,10 +17488,7 @@
                 "subcategory": "Magic",
                 "area": "Common",
                 "additionalAreas": {
-                    "oneOf": [
-                        "Kandarin",
-                        "Wilderness"
-                    ]
+                    "oneOf": ["Kandarin", "Wilderness"]
                 },
                 "skills": [
                     {
@@ -17913,10 +17822,7 @@
                 "subcategory": "Western Provinces",
                 "area": "Common",
                 "additionalAreas": {
-                    "allOf": [
-                        "Kandarin",
-                        "Tirannwn"
-                    ]
+                    "allOf": ["Kandarin", "Tirannwn"]
                 },
                 "skills": []
             },
@@ -18799,9 +18705,7 @@
                 "subcategory": "Farming",
                 "area": "Common",
                 "additionalAreas": {
-                    "allOf": [
-                        "Kandarin"
-                    ]
+                    "allOf": ["Kandarin"]
                 },
                 "skills": [
                     {
@@ -18944,10 +18848,7 @@
                 "subcategory": "Melee",
                 "area": "Common",
                 "additionalAreas": {
-                    "allOf": [
-                        "Kandarin",
-                        "Fremennik"
-                    ]
+                    "allOf": ["Kandarin", "Fremennik"]
                 },
                 "skills": [
                     {
@@ -19175,10 +19076,7 @@
                 "subcategory": "Western Provinces",
                 "area": "Common",
                 "additionalAreas": {
-                    "allOf": [
-                        "Kandarin",
-                        "Tirannwn"
-                    ]
+                    "allOf": ["Kandarin", "Tirannwn"]
                 },
                 "skills": []
             },
@@ -19766,10 +19664,7 @@
                 "subcategory": "Grandmaster",
                 "area": "Misthalin",
                 "additionalAreas": {
-                    "allOf": [
-                        "Kandarin",
-                        "Asgarnia"
-                    ]
+                    "allOf": ["Kandarin", "Asgarnia"]
                 },
                 "skills": []
             },
@@ -20306,10 +20201,7 @@
                 "subcategory": "Melee",
                 "area": "Misthalin",
                 "additionalAreas": {
-                    "allOf": [
-                        "Kandarin",
-                        "Fremennik"
-                    ]
+                    "allOf": ["Kandarin", "Fremennik"]
                 },
                 "skills": [
                     {
@@ -21683,10 +21575,7 @@
                 "subcategory": "Slayer",
                 "area": "Asgarnia",
                 "additionalAreas": {
-                    "oneOf": [
-                        "Wilderness",
-                        "Fremennik"
-                    ]
+                    "oneOf": ["Wilderness", "Fremennik"]
                 },
                 "skills": [
                     {
@@ -22018,9 +21907,7 @@
                 "subcategory": "Slayer",
                 "area": "Asgarnia",
                 "additionalAreas": {
-                    "allOf": [
-                        "Desert"
-                    ]
+                    "allOf": ["Desert"]
                 },
                 "skills": [
                     {
@@ -23528,9 +23415,7 @@
                 "subcategory": "Novice",
                 "area": "Kandarin",
                 "additionalAreas": {
-                    "allOf": [
-                        "Asgarnia"
-                    ]
+                    "allOf": ["Asgarnia"]
                 },
                 "skills": []
             },
@@ -23577,12 +23462,7 @@
                 "subcategory": "Slayer",
                 "area": "Kandarin",
                 "additionalAreas": {
-                    "oneOf": [
-                        "Morytania",
-                        "Asgarnia",
-                        "Tirannwn",
-                        "Wilderness"
-                    ]
+                    "oneOf": ["Morytania", "Asgarnia", "Tirannwn", "Wilderness"]
                 },
                 "skills": [
                     {
@@ -23612,9 +23492,7 @@
                 "subcategory": "Prayer",
                 "area": "Kandarin",
                 "additionalAreas": {
-                    "allOf": [
-                        "Asgarnia"
-                    ]
+                    "allOf": ["Asgarnia"]
                 },
                 "skills": [
                     {
@@ -23638,10 +23516,7 @@
                 "subcategory": "Magic",
                 "area": "Kandarin",
                 "additionalAreas": {
-                    "oneOf": [
-                        "Fremennik",
-                        "Tirannwn"
-                    ]
+                    "oneOf": ["Fremennik", "Tirannwn"]
                 },
                 "skills": [
                     {
@@ -23927,9 +23802,7 @@
                 "subcategory": "Experienced",
                 "area": "Kandarin",
                 "additionalAreas": {
-                    "allOf": [
-                        "Asgarnia"
-                    ]
+                    "allOf": ["Asgarnia"]
                 },
                 "skills": [
                     {
@@ -23953,9 +23826,7 @@
                 "subcategory": "Grandmaster",
                 "area": "Kandarin",
                 "additionalAreas": {
-                    "allOf": [
-                        "Fremennik"
-                    ]
+                    "allOf": ["Fremennik"]
                 },
                 "skills": []
             },
@@ -27152,9 +27023,7 @@
                 "subcategory": "Gauntlet",
                 "area": "Tirannwn",
                 "additionalAreas": {
-                    "allOf": [
-                        "Kandarin"
-                    ]
+                    "allOf": ["Kandarin"]
                 },
                 "skills": [
                     {
@@ -27382,9 +27251,7 @@
                 "subcategory": "Zulrah",
                 "area": "Tirannwn",
                 "additionalAreas": {
-                    "allOf": [
-                        "Kandarin"
-                    ]
+                    "allOf": ["Kandarin"]
                 },
                 "skills": [
                     {
@@ -28040,11 +27907,7 @@
                 "subcategory": "Hunter",
                 "area": "Wilderness",
                 "additionalAreas": {
-                    "oneOf": [
-                        "Kandarin",
-                        "Fremennik",
-                        "Desert"
-                    ]
+                    "oneOf": ["Kandarin", "Fremennik", "Desert"]
                 },
                 "skills": [
                     {
@@ -28269,11 +28132,7 @@
                 "subcategory": "Hunter",
                 "area": "Wilderness",
                 "additionalAreas": {
-                    "oneOf": [
-                        "Kandarin",
-                        "Fremennik",
-                        "Desert"
-                    ]
+                    "oneOf": ["Kandarin", "Fremennik", "Desert"]
                 },
                 "skills": [
                     {
@@ -28297,11 +28156,7 @@
                 "subcategory": "Hunter",
                 "area": "Wilderness",
                 "additionalAreas": {
-                    "oneOf": [
-                        "Kandarin",
-                        "Fremennik",
-                        "Desert"
-                    ]
+                    "oneOf": ["Kandarin", "Fremennik", "Desert"]
                 },
                 "skills": [
                     {
@@ -28325,11 +28180,7 @@
                 "subcategory": "Hunter",
                 "area": "Wilderness",
                 "additionalAreas": {
-                    "oneOf": [
-                        "Kandarin",
-                        "Fremennik",
-                        "Desert"
-                    ]
+                    "oneOf": ["Kandarin", "Fremennik", "Desert"]
                 },
                 "skills": [
                     {
@@ -28554,9 +28405,7 @@
                 "subcategory": "Construction",
                 "area": "Wilderness",
                 "additionalAreas": {
-                    "allOf": [
-                        "Fremennik"
-                    ]
+                    "allOf": ["Fremennik"]
                 },
                 "skills": [
                     {
@@ -28668,10 +28517,7 @@
                 "subcategory": "Other",
                 "area": "Wilderness",
                 "additionalAreas": {
-                    "oneOf": [
-                        "Fremennik",
-                        "Asgarnia"
-                    ]
+                    "oneOf": ["Fremennik", "Asgarnia"]
                 },
                 "skills": []
             }
@@ -29354,11 +29200,7 @@
             "subcategory": "Hunter",
             "area": "Common",
             "additionalAreas": {
-                "oneOf": [
-                    "Kandarin",
-                    "Fremennik",
-                    "Desert"
-                ]
+                "oneOf": ["Kandarin", "Fremennik", "Desert"]
             },
             "skills": []
         },
@@ -29744,9 +29586,7 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin"
-                ]
+                "allOf": ["Kandarin"]
             },
             "skills": []
         },
@@ -30535,10 +30375,7 @@
             "subcategory": "Hunter",
             "area": "Common",
             "additionalAreas": {
-                "oneOf": [
-                    "Kandarin",
-                    "Fremennik"
-                ]
+                "oneOf": ["Kandarin", "Fremennik"]
             },
             "skills": [
                 {
@@ -31124,9 +30961,7 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin"
-                ]
+                "allOf": ["Kandarin"]
             },
             "skills": []
         },
@@ -31796,10 +31631,7 @@
             "subcategory": "Magic",
             "area": "Common",
             "additionalAreas": {
-                "oneOf": [
-                    "Kandarin",
-                    "Wilderness"
-                ]
+                "oneOf": ["Kandarin", "Wilderness"]
             },
             "skills": [
                 {
@@ -32133,10 +31965,7 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin",
-                    "Tirannwn"
-                ]
+                "allOf": ["Kandarin", "Tirannwn"]
             },
             "skills": []
         },
@@ -33019,9 +32848,7 @@
             "subcategory": "Farming",
             "area": "Common",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin"
-                ]
+                "allOf": ["Kandarin"]
             },
             "skills": [
                 {
@@ -33164,10 +32991,7 @@
             "subcategory": "Melee",
             "area": "Common",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin",
-                    "Fremennik"
-                ]
+                "allOf": ["Kandarin", "Fremennik"]
             },
             "skills": [
                 {
@@ -33395,10 +33219,7 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin",
-                    "Tirannwn"
-                ]
+                "allOf": ["Kandarin", "Tirannwn"]
             },
             "skills": []
         },
@@ -33984,10 +33805,7 @@
             "subcategory": "Grandmaster",
             "area": "Misthalin",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin",
-                    "Asgarnia"
-                ]
+                "allOf": ["Kandarin", "Asgarnia"]
             },
             "skills": []
         },
@@ -34524,10 +34342,7 @@
             "subcategory": "Melee",
             "area": "Misthalin",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin",
-                    "Fremennik"
-                ]
+                "allOf": ["Kandarin", "Fremennik"]
             },
             "skills": [
                 {
@@ -35897,10 +35712,7 @@
             "subcategory": "Slayer",
             "area": "Asgarnia",
             "additionalAreas": {
-                "oneOf": [
-                    "Wilderness",
-                    "Fremennik"
-                ]
+                "oneOf": ["Wilderness", "Fremennik"]
             },
             "skills": [
                 {
@@ -36232,9 +36044,7 @@
             "subcategory": "Slayer",
             "area": "Asgarnia",
             "additionalAreas": {
-                "allOf": [
-                    "Desert"
-                ]
+                "allOf": ["Desert"]
             },
             "skills": [
                 {
@@ -37738,9 +37548,7 @@
             "subcategory": "Novice",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": [
-                    "Asgarnia"
-                ]
+                "allOf": ["Asgarnia"]
             },
             "skills": []
         },
@@ -37787,12 +37595,7 @@
             "subcategory": "Slayer",
             "area": "Kandarin",
             "additionalAreas": {
-                "oneOf": [
-                    "Morytania",
-                    "Asgarnia",
-                    "Tirannwn",
-                    "Wilderness"
-                ]
+                "oneOf": ["Morytania", "Asgarnia", "Tirannwn", "Wilderness"]
             },
             "skills": [
                 {
@@ -37822,9 +37625,7 @@
             "subcategory": "Prayer",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": [
-                    "Asgarnia"
-                ]
+                "allOf": ["Asgarnia"]
             },
             "skills": [
                 {
@@ -37848,10 +37649,7 @@
             "subcategory": "Magic",
             "area": "Kandarin",
             "additionalAreas": {
-                "oneOf": [
-                    "Fremennik",
-                    "Tirannwn"
-                ]
+                "oneOf": ["Fremennik", "Tirannwn"]
             },
             "skills": [
                 {
@@ -38137,9 +37935,7 @@
             "subcategory": "Experienced",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": [
-                    "Asgarnia"
-                ]
+                "allOf": ["Asgarnia"]
             },
             "skills": [
                 {
@@ -38163,9 +37959,7 @@
             "subcategory": "Grandmaster",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": [
-                    "Fremennik"
-                ]
+                "allOf": ["Fremennik"]
             },
             "skills": []
         },
@@ -41356,9 +41150,7 @@
             "subcategory": "Gauntlet",
             "area": "Tirannwn",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin"
-                ]
+                "allOf": ["Kandarin"]
             },
             "skills": [
                 {
@@ -41586,9 +41378,7 @@
             "subcategory": "Zulrah",
             "area": "Tirannwn",
             "additionalAreas": {
-                "allOf": [
-                    "Kandarin"
-                ]
+                "allOf": ["Kandarin"]
             },
             "skills": [
                 {
@@ -42242,11 +42032,7 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": [
-                    "Kandarin",
-                    "Fremennik",
-                    "Desert"
-                ]
+                "oneOf": ["Kandarin", "Fremennik", "Desert"]
             },
             "skills": [
                 {
@@ -42471,11 +42257,7 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": [
-                    "Kandarin",
-                    "Fremennik",
-                    "Desert"
-                ]
+                "oneOf": ["Kandarin", "Fremennik", "Desert"]
             },
             "skills": [
                 {
@@ -42499,11 +42281,7 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": [
-                    "Kandarin",
-                    "Fremennik",
-                    "Desert"
-                ]
+                "oneOf": ["Kandarin", "Fremennik", "Desert"]
             },
             "skills": [
                 {
@@ -42527,11 +42305,7 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": [
-                    "Kandarin",
-                    "Fremennik",
-                    "Desert"
-                ]
+                "oneOf": ["Kandarin", "Fremennik", "Desert"]
             },
             "skills": [
                 {
@@ -42756,9 +42530,7 @@
             "subcategory": "Construction",
             "area": "Wilderness",
             "additionalAreas": {
-                "allOf": [
-                    "Fremennik"
-                ]
+                "allOf": ["Fremennik"]
             },
             "skills": [
                 {
@@ -42870,10 +42642,7 @@
             "subcategory": "Other",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": [
-                    "Fremennik",
-                    "Asgarnia"
-                ]
+                "oneOf": ["Fremennik", "Asgarnia"]
             },
             "skills": []
         }

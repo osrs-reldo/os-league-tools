@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
-import { Card, CardDeck, Form, FormControl, InputGroup } from "react-bootstrap";
+import React, { useState, useEffect } from 'react';
+import { Card, CardDeck, Form, FormControl, InputGroup } from 'react-bootstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
-import { useParams } from "react-router";
+import { useParams } from 'react-router';
 import { INITIAL_REGIONS_STATE, REGIONS } from '../util/region-util';
 import { getFormatters, getBoostedLevel } from '../util/calculator-util';
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import calculatorData from '../resources/calculatorData.json';
-import MultiplierGroup from "../components/MultiplierGroup";
-import LevelExpInput from "../components/LevelExpInput";
-import useLevel from "../hooks/useLevel";
-import useMultiplier from "../hooks/useMultiplier";
-import { isRelicUnlocked } from "../util/relic-util";
-import { getFromLocalStorage, LOCALSTORAGE_KEYS } from "../util/browser-util";
-import DoubleScrollbar from "../components/DoubleScrollbar";
-import HiscoreLookup from "../components/HiscoreLookup";
-import { getLevelForExp } from "../util/exp-table";
+import MultiplierGroup from '../components/MultiplierGroup';
+import LevelExpInput from '../components/LevelExpInput';
+import useLevel from '../hooks/useLevel';
+import useMultiplier from '../hooks/useMultiplier';
+import { isRelicUnlocked } from '../util/relic-util';
+import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../util/browser-util';
+import DoubleScrollbar from '../components/DoubleScrollbar';
+import HiscoreLookup from '../components/HiscoreLookup';
+import { getLevelForExp } from '../util/exp-table';
 
 export default function SkillCalculator() {
     const currentLevel = useLevel(1);
@@ -29,7 +29,9 @@ export default function SkillCalculator() {
     const [hasDoubleCast, setHasDoubleCast] = useState(isRelicUnlocked('3,3'));
     const [hasBotanist, setHasBotanist] = useState(isRelicUnlocked('5,1'));
     const [useAreaFilter, setUseAreaFilter] = useState(true);
-    const [includedAreas, setIncludedAreas] = useState(getFromLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_REGIONS, INITIAL_REGIONS_STATE));
+    const [includedAreas, setIncludedAreas] = useState(
+        getFromLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_REGIONS, INITIAL_REGIONS_STATE)
+    );
     const { skill } = useParams();
 
     useEffect(() => {
@@ -38,143 +40,157 @@ export default function SkillCalculator() {
         }
 
         if (isRelicUnlocked('6,4')) {
-            setBaseExpMultiplier('16')
+            setBaseExpMultiplier('16');
         } else if (isRelicUnlocked('4,4')) {
-            setBaseExpMultiplier('12')
+            setBaseExpMultiplier('12');
         } else if (isRelicUnlocked('2,4')) {
-            setBaseExpMultiplier('8')
+            setBaseExpMultiplier('8');
         }
-    // only want this to run a single time on first load, so don't depend on anything here
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // only want this to run a single time on first load, so don't depend on anything here
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const skillData = calculatorData.calculators[skill];
     if (!skillData) {
         return (
-            <h4 className="mt-5 light-text text-center">
+            <h4 className='mt-5 light-text text-center'>
                 No calculator found for "{skill}". Check your link and try again.
             </h4>
         );
     }
-    const isMagic = skillData.name === "Magic" ? true : false;
-    const isFarming = skillData.name === "Farming" ? true : false;
+    const isMagic = skillData.name === 'Magic' ? true : false;
+    const isFarming = skillData.name === 'Farming' ? true : false;
 
-    const { nameFormatter, levelFormatter, amountFormatter, outputListFormatter, inputListFormatter, expFormatter } = getFormatters();
+    const {
+        nameFormatter,
+        levelFormatter,
+        amountFormatter,
+        outputListFormatter,
+        inputListFormatter,
+        expFormatter,
+    } = getFormatters();
 
-    const data = applyFilters(skillData.actions, currentLevel.level, useLevelFilter, isSkillingProdigy, useAreaFilter, includedAreas);
+    const data = applyFilters(
+        skillData.actions,
+        currentLevel.level,
+        useLevelFilter,
+        isSkillingProdigy,
+        useAreaFilter,
+        includedAreas
+    );
 
     const columns = [
         {
-            "dataField": "id",
-            "text": "id",
-            "hidden": true
+            dataField: 'id',
+            text: 'id',
+            hidden: true,
         },
         {
-            "dataField": "level",
-            "text": "Level",
-            "sort": true,
-            "headerStyle": { width: '5.5rem' },
-            "formatter": levelFormatter,
-            "formatExtraData": {
-                "level": currentLevel.level,
-                "isSkillingProdigy": isSkillingProdigy
-            }
-        },
-        {
-            "dataField": "name",
-            "text": "Activity",
-            "sort": true,
-            "headerStyle": { width: '15rem' },
-            "formatter": nameFormatter,
-            "filter": textFilter({ placeholder: "Filter..." })
-        },
-        {
-            "dataField": "exp",
-            "text": "Exp",
-            "sort": true,
-            "headerStyle": { width: '5rem' },
-            "formatter": expFormatter,
-            "formatExtraData": {
-                "baseMultiplier": baseExpMultiplier,
-                "expMultiplier": expMultiplier,
-                "totalLevel": totalLevel
+            dataField: 'level',
+            text: 'Level',
+            sort: true,
+            headerStyle: { width: '5.5rem' },
+            formatter: levelFormatter,
+            formatExtraData: {
+                level: currentLevel.level,
+                isSkillingProdigy: isSkillingProdigy,
             },
         },
         {
-            "dataField": "category",
-            "text": "Category",
-            "headerStyle": { width: '10rem' },
-            "filter": selectFilter({
-                "options": skillData.categories
-            })
+            dataField: 'name',
+            text: 'Activity',
+            sort: true,
+            headerStyle: { width: '15rem' },
+            formatter: nameFormatter,
+            filter: textFilter({ placeholder: 'Filter...' }),
         },
         {
-            "dataField": "amount",
-            "text": "Amount",
-            "isDummyField": true,
-            "sort": true,
-            "headerStyle": { width: '7rem' },
-            "formatter": amountFormatter,
-            "sortValue": (cell, row) => row.exp,
-            "formatExtraData": {
-                "current": currentLevel.exp,
-                "target": targetLevel.exp,
-                "baseMultiplier": baseExpMultiplier,
-                "expMultiplier": expMultiplier,
-                "totalLevel": totalLevel
-            }
-        },
-        {
-            "dataField": "inputs",
-            "text": "Inputs",
-            "formatter": inputListFormatter,
-            "headerStyle": { width: '10rem' },
-            "classes": "small",
-            "formatExtraData": {
-                "current": currentLevel.exp,
-                "target": targetLevel.exp,
-                "baseMultiplier": baseExpMultiplier,
-                "expMultiplier": expMultiplier,
-                "totalLevel": totalLevel,
-                "countMultiplier": inputMultiplier,
-                "hasDoubleCast": isMagic ? hasDoubleCast : false,
+            dataField: 'exp',
+            text: 'Exp',
+            sort: true,
+            headerStyle: { width: '5rem' },
+            formatter: expFormatter,
+            formatExtraData: {
+                baseMultiplier: baseExpMultiplier,
+                expMultiplier: expMultiplier,
+                totalLevel: totalLevel,
             },
-            "hidden": !data.some((datum) => datum.inputs.length > 0)
         },
         {
-            "dataField": "outputs",
-            "text": "Outputs",
-            "headerStyle": { width: '10rem' },
-            "classes": "small",
-            "formatter": outputListFormatter,
-            "formatExtraData": {
-                "current": currentLevel.exp,
-                "target": targetLevel.exp,
-                "baseMultiplier": baseExpMultiplier,
-                "expMultiplier": expMultiplier,
-                "totalLevel": totalLevel,
-                "countMultiplier": outputMultiplier,
-                "hasBotanist": isFarming ? hasBotanist : false,
+            dataField: 'category',
+            text: 'Category',
+            headerStyle: { width: '10rem' },
+            filter: selectFilter({
+                options: skillData.categories,
+            }),
+        },
+        {
+            dataField: 'amount',
+            text: 'Amount',
+            isDummyField: true,
+            sort: true,
+            headerStyle: { width: '7rem' },
+            formatter: amountFormatter,
+            sortValue: (cell, row) => row.exp,
+            formatExtraData: {
+                current: currentLevel.exp,
+                target: targetLevel.exp,
+                baseMultiplier: baseExpMultiplier,
+                expMultiplier: expMultiplier,
+                totalLevel: totalLevel,
             },
-            "hidden": !data.some((datum) => datum.outputs.length > 0)
-        }
+        },
+        {
+            dataField: 'inputs',
+            text: 'Inputs',
+            formatter: inputListFormatter,
+            headerStyle: { width: '10rem' },
+            classes: 'small',
+            formatExtraData: {
+                current: currentLevel.exp,
+                target: targetLevel.exp,
+                baseMultiplier: baseExpMultiplier,
+                expMultiplier: expMultiplier,
+                totalLevel: totalLevel,
+                countMultiplier: inputMultiplier,
+                hasDoubleCast: isMagic ? hasDoubleCast : false,
+            },
+            hidden: !data.some(datum => datum.inputs.length > 0),
+        },
+        {
+            dataField: 'outputs',
+            text: 'Outputs',
+            headerStyle: { width: '10rem' },
+            classes: 'small',
+            formatter: outputListFormatter,
+            formatExtraData: {
+                current: currentLevel.exp,
+                target: targetLevel.exp,
+                baseMultiplier: baseExpMultiplier,
+                expMultiplier: expMultiplier,
+                totalLevel: totalLevel,
+                countMultiplier: outputMultiplier,
+                hasBotanist: isFarming ? hasBotanist : false,
+            },
+            hidden: !data.some(datum => datum.outputs.length > 0),
+        },
     ];
 
     return (
-        <div className="content-wrapper">
-            <h1 className="mt-2 light-text text-center">{skillData.name}</h1>
+        <div className='content-wrapper'>
+            <h1 className='mt-2 light-text text-center'>{skillData.name}</h1>
             <CardDeck>
-                <Card bg='dark' text='white' className="mt-2 mb-2" style={{ minWidth: '300px' }}>
-                    <div className="p-3">
-                        <h4>{"League base multiplier:"}</h4>
-                        <div className={"pl-2 pb-2"}>
+                <Card bg='dark' text='white' className='mt-2 mb-2' style={{ minWidth: '300px' }}>
+                    <div className='p-3'>
+                        <h4>{'League base multiplier:'}</h4>
+                        <div className={'pl-2 pb-2'}>
                             <Form.Check
                                 label='5x'
                                 inline
                                 type='radio'
                                 id='5'
                                 checked={baseExpMultiplier === '5'}
-                                onChange={(event) => {
+                                onChange={event => {
                                     setBaseExpMultiplier(event.target.id);
                                 }}
                             />
@@ -184,7 +200,7 @@ export default function SkillCalculator() {
                                 type='radio'
                                 id='8'
                                 checked={baseExpMultiplier === '8'}
-                                onChange={(event) => {
+                                onChange={event => {
                                     setBaseExpMultiplier(event.target.id);
                                 }}
                             />
@@ -194,7 +210,7 @@ export default function SkillCalculator() {
                                 type='radio'
                                 id='12'
                                 checked={baseExpMultiplier === '12'}
-                                onChange={(event) => {
+                                onChange={event => {
                                     setBaseExpMultiplier(event.target.id);
                                 }}
                             />
@@ -204,49 +220,49 @@ export default function SkillCalculator() {
                                 type='radio'
                                 id='16'
                                 checked={baseExpMultiplier === '16'}
-                                onChange={(event) => {
+                                onChange={event => {
                                     setBaseExpMultiplier(event.target.id);
                                 }}
                             />
                         </div>
                         <MultiplierGroup
-                            title="Exp multipliers"
+                            title='Exp multipliers'
                             multiplierData={skillData.expMultipliers}
                             globalMultiplierData={calculatorData.globalMultipliers.expMultipliers}
                             multipliers={expMultiplier}
                         />
                         <MultiplierGroup
-                            title="Input multipliers"
+                            title='Input multipliers'
                             multiplierData={skillData.inputMultipliers}
                             multipliers={inputMultiplier}
                         />
                         {isFarming && (
                             <React.Fragment>
-                            <h4>Output multiplier:</h4>
-                            <div className="pl-2">
-                                <Form.Check
-                                    label="Relic - Botanist"
-                                    defaultChecked={hasBotanist}
-                                    onChange={(event) => {
-                                        setHasBotanist(event.target.checked);
-                                    }}
-                                />
-                            </div>
-                        </React.Fragment>
+                                <h4>Output multiplier:</h4>
+                                <div className='pl-2'>
+                                    <Form.Check
+                                        label='Relic - Botanist'
+                                        defaultChecked={hasBotanist}
+                                        onChange={event => {
+                                            setHasBotanist(event.target.checked);
+                                        }}
+                                    />
+                                </div>
+                            </React.Fragment>
                         )}
                         <MultiplierGroup
-                            title="Output multipliers"
+                            title='Output multipliers'
                             multiplierData={skillData.outputMultipliers}
                             multipliers={outputMultiplier}
                         />
                         {!skillData.isCombatSkill && (
                             <React.Fragment>
                                 <h4>Boosts:</h4>
-                                <div className="pl-2">
+                                <div className='pl-2'>
                                     <Form.Check
-                                        label="Relic - Skilling Prodigy (+12)"
+                                        label='Relic - Skilling Prodigy (+12)'
                                         defaultChecked={isSkillingProdigy}
-                                        onChange={(event) => {
+                                        onChange={event => {
                                             setIsSkillingProdigy(event.target.checked);
                                         }}
                                     />
@@ -256,11 +272,11 @@ export default function SkillCalculator() {
                         {isMagic && (
                             <React.Fragment>
                                 <h4>Input Modifiers:</h4>
-                                <div className="pl-2">
+                                <div className='pl-2'>
                                     <Form.Check
-                                        label="Relic - Double Cast"
+                                        label='Relic - Double Cast'
                                         defaultChecked={hasDoubleCast}
-                                        onChange={(event) => {
+                                        onChange={event => {
                                             setHasDoubleCast(event.target.checked);
                                         }}
                                     />
@@ -269,40 +285,37 @@ export default function SkillCalculator() {
                         )}
                     </div>
                 </Card>
-                <Card bg='dark' text='white' className="mt-2 mb-2" style={{ minWidth: '300px' }}>
-                    <h4 className="pt-3 pl-3">Level/Experience:</h4>
+                <Card bg='dark' text='white' className='mt-2 mb-2' style={{ minWidth: '300px' }}>
+                    <h4 className='pt-3 pl-3'>Level/Experience:</h4>
                     <HiscoreLookup
                         skill={skill}
-                        setExpCallback={(newExp) => {
+                        setExpCallback={newExp => {
                             currentLevel.updateByExp(newExp);
                             targetLevel.updateByLevel(Math.min(getLevelForExp(newExp) + 1, 99));
                         }}
                         setTotalLvlCallback={setTotalLevel}
                     />
                     <LevelExpInput
-                        title="Current"
+                        title='Current'
                         level={currentLevel.level}
                         exp={currentLevel.exp}
                         setLevelCallback={currentLevel.updateByLevel}
                         setExpCallback={currentLevel.updateByExp}
                     />
                     <LevelExpInput
-                        title="Target"
+                        title='Target'
                         level={targetLevel.level}
                         exp={targetLevel.exp}
                         setLevelCallback={targetLevel.updateByLevel}
                         setExpCallback={targetLevel.updateByExp}
                     />
-                    <InputGroup className="p-3">
+                    <InputGroup className='p-3'>
                         <InputGroup.Prepend>
                             <InputGroup.Text>Total Level</InputGroup.Text>
                         </InputGroup.Prepend>
-                        <FormControl
-                            value={totalLevel}
-                            onChange={(event) => setTotalLevel(event.target.value)}
-                        />
+                        <FormControl value={totalLevel} onChange={event => setTotalLevel(event.target.value)} />
                     </InputGroup>
-                    <div className="p-3">
+                    <div className='p-3'>
                         <h5>Remaining until goal:</h5>
                         <ul>
                             <li>{targetLevel.exp - currentLevel.exp} Experience</li>
@@ -310,23 +323,23 @@ export default function SkillCalculator() {
                         </ul>
                     </div>
                 </Card>
-                <Card bg='dark' text='white' className="mt-2 mb-2" style={{ minWidth: '300px' }}>
-                    <div className="p-3">
+                <Card bg='dark' text='white' className='mt-2 mb-2' style={{ minWidth: '300px' }}>
+                    <div className='p-3'>
                         <h4>Filters:</h4>
-                        <div className="pl-2 mb-1">
+                        <div className='pl-2 mb-1'>
                             <Form.Check
-                                label="Hide actions with missing level requirement"
-                                onChange={(event) => {
+                                label='Hide actions with missing level requirement'
+                                onChange={event => {
                                     setUseLevelFilter(event.target.checked);
                                 }}
                             />
                         </div>
                         <h4>Areas:</h4>
-                        <div className="pl-2">
+                        <div className='pl-2'>
                             <Form.Check
-                                label="Include all areas"
+                                label='Include all areas'
                                 checked={!useAreaFilter}
-                                onChange={(event) => {
+                                onChange={event => {
                                     setUseAreaFilter(!event.target.checked);
                                     if (event.target.checked) {
                                         setIncludedAreas(REGIONS);
@@ -334,7 +347,7 @@ export default function SkillCalculator() {
                                 }}
                             />
                             <Form.Control
-                                as="select"
+                                as='select'
                                 multiple
                                 htmlSize='8'
                                 disabled={!useAreaFilter}
@@ -347,16 +360,18 @@ export default function SkillCalculator() {
                                             selectedAreas.push(options[i].value);
                                         }
                                     }
-                                    setIncludedAreas(selectedAreas)
+                                    setIncludedAreas(selectedAreas);
                                 }}
                             >
-                                {REGIONS.map(area => <option key={area}>{area}</option>)}
+                                {REGIONS.map(area => (
+                                    <option key={area}>{area}</option>
+                                ))}
                             </Form.Control>
                         </div>
                     </div>
                 </Card>
             </CardDeck>
-            <Card bg='dark' text='white' className="mt-3">
+            <Card bg='dark' text='white' className='mt-3'>
                 <Card.Body>
                     <DoubleScrollbar>
                         <BootstrapTable
@@ -365,9 +380,9 @@ export default function SkillCalculator() {
                             data={data}
                             columns={columns}
                             bordered={false}
-                            classes="light-text"
+                            classes='light-text'
                             filter={filterFactory()}
-                            filterPosition="top"
+                            filterPosition='top'
                         />
                     </DoubleScrollbar>
                 </Card.Body>
@@ -384,7 +399,7 @@ function applyFilters(actions, currentLevel, useLevelFilter, isSkillingProdigy, 
     }
     if (useAreaFilter) {
         filteredActions = filteredActions.filter(action => {
-            if (action.areas.includes("All")) {
+            if (action.areas.includes('All')) {
                 return true;
             }
             return action.areas.some(r => includedAreas.includes(r));

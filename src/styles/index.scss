@@ -1,186 +1,182 @@
-@import "node_modules/bootstrap/scss/bootstrap";
+@import 'node_modules/bootstrap/scss/bootstrap';
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #4f575e;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+        'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #4f575e;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .light-text {
-  color: #eeeeee;
+    color: #eeeeee;
 }
 
 .unlocked {
-  color: #17c878;
+    color: #17c878;
 }
 
 .locked {
-  color: #d62b2b;
+    color: #d62b2b;
 }
 
 .content-center {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content-wrapper {
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @include media-breakpoint-down(md) {
-  .content-wrapper {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .content-wrapper {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @include media-breakpoint-down(sm) {
-  .content-wrapper {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .content-wrapper {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @include media-breakpoint-down(xs) {
-  .content-wrapper {
-    width: 98%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .content-wrapper {
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .clickable {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .hover-highlight:hover {
-  background-color: #343a40;
+    background-color: #343a40;
 }
 
 .completed {
-  text-decoration: line-through;
-  color: #99b83d;
+    text-decoration: line-through;
+    color: #99b83d;
 }
 
 ul.calc-list {
-  list-style-type: none;
-  padding: 0;
-  columns: 3;
-  column-gap: 40px;
-  -webkit-columns: 3;
-  -moz-columns: 3;
+    list-style-type: none;
+    padding: 0;
+    columns: 3;
+    column-gap: 40px;
+    -webkit-columns: 3;
+    -moz-columns: 3;
 }
 
 @include media-breakpoint-down(lg) {
-  ul.calc-list {
-    list-style-type: none;
-    padding: 0;
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-  }
+    ul.calc-list {
+        list-style-type: none;
+        padding: 0;
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
 }
 
 /* modified from https://codepen.io/matthewbeta/pen/fzoHI */
 .shadowed-scrollbox {
-	overflow: auto;
-  background-image:
-  linear-gradient(to right, #343a40, #343a40),
-  linear-gradient(to right, #343a40, #343a40),
-  linear-gradient(to right, rgba(0,0,0,.25), rgba(255,255,255,0)),
-  linear-gradient(to left, rgba(0,0,0,.25), rgba(255,255,255,0));
-  background-position: left center, right center, left center, right center;
-  background-repeat: no-repeat;
-	background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
-	background-attachment: local, local, scroll, scroll;
+    overflow: auto;
+    background-image: linear-gradient(to right, #343a40, #343a40), linear-gradient(to right, #343a40, #343a40),
+        linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0)),
+        linear-gradient(to left, rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0));
+    background-position: left center, right center, left center, right center;
+    background-repeat: no-repeat;
+    background-size: 20px 100%, 20px 100%, 10px 100%, 10px 100%;
+    background-attachment: local, local, scroll, scroll;
 }
 
 /* Inactive tab */
 .tab-bar-dark .nav-link {
-  color: #f7f7f7;
+    color: #f7f7f7;
 }
 .tab-bar-dark .nav-link:hover {
-  background-color: #6c757d;
+    background-color: #6c757d;
 }
 
 /* Active tab */
 .tab-bar-dark .nav-link.active,
 .tab-bar-dark .nav-link.active:hover,
 .tab-bar-dark .nav-link.active:focus {
-  background-color: #343a40;
-  color: #f7f7f7;
-  border: 1px solid rgba(0,0,0,.125);
+    background-color: #343a40;
+    color: #f7f7f7;
+    border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 /* Disabled tab */
 .tab-bar-dark .nav-link.disabled {
-  color:  #6c757d;
+    color: #6c757d;
 }
 
 /* Inactive tab */
 .tab-bar-secondary .nav-link {
-  color: #f7f7f7;
+    color: #f7f7f7;
 }
 .tab-bar-secondary .nav-link:hover {
-  background-color: #535c64;
+    background-color: #535c64;
 }
 
 /* Active tab */
 .tab-bar-secondary .nav-link.active,
 .tab-bar-secondary .nav-link.active:hover,
 .tab-bar-secondary .nav-link.active:focus {
-  background-color: #6c757d;
-  color: #f7f7f7;
-  border: 1px solid rgba(0,0,0,.125);
+    background-color: #6c757d;
+    color: #f7f7f7;
+    border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 /* Disabled tab */
 .tab-bar-secondary .nav-link.disabled {
-  color:  #6c757d;
+    color: #6c757d;
 }
 
 /* Progress bar steps */
 .progressStep {
-  filter: grayscale(1);
+    filter: grayscale(1);
 }
 
 .progressStep.accomplished {
-  filter: grayscale(0);
+    filter: grayscale(0);
 }
 
 /* Relic table */
 .relic-table-cell {
-  // background-color: #484e53;
-  border: 2px solid #484e53;
-  margin: 2px;
+    // background-color: #484e53;
+    border: 2px solid #484e53;
+    margin: 2px;
 }
 
 .relic-table-cell.selected {
-  border: 2px solid #a3ce27;
-  margin: 2px;
+    border: 2px solid #a3ce27;
+    margin: 2px;
 }
 
 .react-bootstrap-table-pagination {
-  margin: auto;
-  flex-wrap: wrap-reverse;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: center;
+    margin: auto;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .react-bootstrap-table-page-btns-ul {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }

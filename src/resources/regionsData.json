@@ -73,10 +73,7 @@
         "diaryUnlocks": [
             {
                 "area": "Lumbridge & Draynor",
-                "easyTasks": [
-                    "Catch some anchovies in Al-Kharid",
-                    "Mine some iron ore at the Al-Kharid mine"
-                ],
+                "easyTasks": ["Catch some anchovies in Al-Kharid", "Mine some iron ore at the Al-Kharid mine"],
                 "medTasks": [
                     "Complete a lap of the Al-Kharid rooftop course",
                     "Grapple across the River Lum",
@@ -98,9 +95,7 @@
             },
             {
                 "area": "Varrock",
-                "easyTasks": [
-                    "None"
-                ],
+                "easyTasks": ["None"],
                 "medTasks": [
                     "Trade furs with the Fancy Dress Seller for a Spottier cape and equip it",
                     "Teleport to Paddewwa"
@@ -186,10 +181,7 @@
             "Steel dragons",
             "Tzhaar"
         ],
-        "questUnlocks": [
-            "Shilo Village",
-            "Jungle Potion"
-        ],
+        "questUnlocks": ["Shilo Village", "Jungle Potion"],
         "diaryUnlocks": [
             {
                 "area": "Karamja",
@@ -207,9 +199,7 @@
                     "Kill a deathwing in the dungeon under the Kharazi Jungle.",
                     "Collect 5 palm leaves."
                 ],
-                "eliteTasks": [
-                    "Create an antivenom potion whilst standing in the horse shoe mine."
-                ]
+                "eliteTasks": ["Create an antivenom potion whilst standing in the horse shoe mine."]
             }
         ],
         "notableDrops": [
@@ -291,18 +281,10 @@
         "diaryUnlocks": [
             {
                 "area": "Falador",
-                "easyTasks": [
-                    "None"
-                ],
-                "medTasks": [
-                    "Visit the Port Sarim Rat Pits"
-                ],
-                "hardTasks": [
-                    "Recharge your Prayer in the Port Sarim church while wearing full Proselyte"
-                ],
-                "eliteTasks": [
-                    "Purchase a white 2h sword from Sir Vyvin"
-                ]
+                "easyTasks": ["None"],
+                "medTasks": ["Visit the Port Sarim Rat Pits"],
+                "hardTasks": ["Recharge your Prayer in the Port Sarim church while wearing full Proselyte"],
+                "eliteTasks": ["Purchase a white 2h sword from Sir Vyvin"]
             }
         ],
         "notableDrops": [
@@ -352,20 +334,8 @@
             "Astral altar",
             "Keldagrim Stonemason Construction shop"
         ],
-        "shops":[
-            "Mawnis Burowgar",
-            "Skulgrimen's Battle Gear",
-            "Baba Yaga's Magic Shop.",
-            "Moon Clan Fine Clothes."
-        ],
-        "slayerTasks": [
-            "Basilisks",
-            "Cockatrice",
-            "Dagannoth",
-            "Jellies",
-            "Kurasks",
-            "Turoth"
-        ],
+        "shops": ["Mawnis Burowgar", "Skulgrimen's Battle Gear", "Baba Yaga's Magic Shop.", "Moon Clan Fine Clothes."],
+        "slayerTasks": ["Basilisks", "Cockatrice", "Dagannoth", "Jellies", "Kurasks", "Turoth"],
         "questUnlocks": [
             "Horror from the Deep",
             "Alfred Grimhand's Barcrawl",
@@ -413,16 +383,9 @@
         "diaryUnlocks": [
             {
                 "area": "Fremennik",
-                "easyTasks": [
-                    "Enter the Troll Stronghold"
-                ],
-                "medTasks": [
-                    "Mine some gold at the Arzinian Mine",
-                    "Travel to the Snowy Hunter Area via Eagle"
-                ],
-                "hardTasks": [
-                    "Teleport to Trollheim"
-                ],
+                "easyTasks": ["Enter the Troll Stronghold"],
+                "medTasks": ["Mine some gold at the Arzinian Mine", "Travel to the Snowy Hunter Area via Eagle"],
+                "hardTasks": ["Teleport to Trollheim"],
                 "eliteTasks": [
                     "Kill each of the God Wars Dungeon Generals",
                     "Slay a spiritual mage within the God Wars Dungeon"
@@ -512,14 +475,7 @@
             "Magic Guild Store (Mystic Robes)",
             "Aleck's Hunter Emporium."
         ],
-        "slayerTasks": [
-            "Black demons",
-            "Cave kraken",
-            "Chaos druids",
-            "Mithril dragons",
-            "Ogres",
-            "Smoke devils"
-        ],
+        "slayerTasks": ["Black demons", "Cave kraken", "Chaos druids", "Mithril dragons", "Ogres", "Smoke devils"],
         "questUnlocks": [
             "Monkey Madness II",
             "Enlightened Journey",
@@ -545,21 +501,14 @@
         "diaryUnlocks": [
             {
                 "area": "Kandarin",
-                "easyTasks": [
-                    "None"
-                ],
-                "medTasks": [
-                    "Use the Grapple Shortcut to get from the water to the Catherby shore"
-                ],
+                "easyTasks": ["None"],
+                "medTasks": ["Use the Grapple Shortcut to get from the water to the Catherby shore"],
                 "hardTasks": [
                     "Charge a water orb",
                     "Kill a shadow hound in the Shadow Dungeon",
                     "Enter the Seers' Village courthouse with Piety turned on"
                 ],
-                "eliteTasks": [
-                    "Fish and cook 5 sharks in Catherby using the cooking gauntlets",
-                    "Teleport to Catherby"
-                ]
+                "eliteTasks": ["Fish and cook 5 sharks in Catherby using the cooking gauntlets", "Teleport to Catherby"]
             },
             {
                 "area": "Western Provinces",
@@ -567,16 +516,12 @@
                     "Complete a novice game of Pest Control",
                     "Teleport to Pest control using the Minigame teleports"
                 ],
-                "medTasks": [
-                    "Complete an intermediate game of Pest Control"
-                ],
+                "medTasks": ["Complete an intermediate game of Pest Control"],
                 "hardTasks": [
                     "Complete a veteran game of Pest Control",
                     "Build an Isafdar painting in your POH Quest Hall"
                 ],
-                "eliteTasks": [
-                    "Equip any complete void set"
-                ]
+                "eliteTasks": ["Equip any complete void set"]
             },
             {
                 "area": "Ardougne",
@@ -612,25 +557,13 @@
     },
     "Tirannwn": {
         "overview": "The Tirannwn area covers the entirety of Tirannwn along with the Temple of Light and the Underground Pass.",
-        "settlements": [
-            "Gwenith",
-            "Iorwerth Camp",
-            "Lletya",
-            "Prifddinas",
-            "Tyras Camp",
-            "Zul-Andra"
-        ],
+        "settlements": ["Gwenith", "Iorwerth Camp", "Lletya", "Prifddinas", "Tyras Camp", "Zul-Andra"],
         "travel": [
             "The gate in Arandar leading to Kandarin",
             "The entrance to the Mourner Headquarters near the Temple of Light",
             "The Underground Pass exit to West Ardougne"
         ],
-        "combatActivities": [
-            "A 'Rabbit'",
-            "Iorwerth Dungeon",
-            "The Gauntlet",
-            "Zulrah"
-        ],
+        "combatActivities": ["A 'Rabbit'", "Iorwerth Dungeon", "The Gauntlet", "Zulrah"],
         "nonCombatActivities": [
             "Elven Crystal Chest",
             "Lletya Fruit Tree Patch",
@@ -643,20 +576,8 @@
             "Sacred Eel fishing",
             "Zalcano"
         ],
-        "shops": [
-            "Sian's Ranged Weaponry",
-            "Iorwerth's Arms",
-            "Amlodd's Magical Supplies",
-            "Gwyn's Mining Emporium"
-        ],
-        "slayerTasks": [
-            "Bloodveld",
-            "Dark beast",
-            "Elf",
-            "Kurask",
-            "Nechryael",
-            "Waterfiend"
-        ],
+        "shops": ["Sian's Ranged Weaponry", "Iorwerth's Arms", "Amlodd's Magical Supplies", "Gwyn's Mining Emporium"],
+        "slayerTasks": ["Bloodveld", "Dark beast", "Elf", "Kurask", "Nechryael", "Waterfiend"],
         "questUnlocks": [
             "Eagles' Peak",
             "Song of the Elves",
@@ -707,11 +628,7 @@
             "The grapple shortcut across the river Lum to al-Khraid",
             "The stepping stone south of Lumbridge swamp leading to the Kharidian Desert"
         ],
-        "combatActivities": [
-            "Bandits",
-            "Kalphite Queen",
-            "Smoke Dungeon"
-        ],
+        "combatActivities": ["Bandits", "Kalphite Queen", "Smoke Dungeon"],
         "nonCombatActivities": [
             "Agility Pyramid",
             "Mage Training Arena",
@@ -756,12 +673,8 @@
         "diaryUnlocks": [
             {
                 "area": "Desert",
-                "easyTasks": [
-                    "None"
-                ],
-                "medTasks": [
-                    "Travel to the Desert via the Eagle transport system"
-                ],
+                "easyTasks": ["None"],
+                "medTasks": ["Travel to the Desert via the Eagle transport system"],
                 "hardTasks": [
                     "Slay a dust devil in the desert cave with a Slayer Helmet equipped",
                     "Refill your waterskins in the Desert using Lunar spells"
@@ -819,18 +732,8 @@
             "Vyrelord pickpocketing",
             "Werewolf Agility Course"
         ],
-        "shops": [
-            "Ak-Haranu's Exotic Shop.",
-            "Smithing Smith's Shop"
-        ],
-        "slayerTasks": [
-            "Banshees",
-            "Bloodveld",
-            "Cave horrors",
-            "Gargoyles",
-            "Nechryaels",
-            "Vampyres"
-        ],
+        "shops": ["Ak-Haranu's Exotic Shop.", "Smithing Smith's Shop"],
+        "slayerTasks": ["Banshees", "Bloodveld", "Cave horrors", "Gargoyles", "Nechryaels", "Vampyres"],
         "questUnlocks": [
             "Darkness of Hallowvale",
             "In Aid of the Myreque",
@@ -849,12 +752,8 @@
         "diaryUnlocks": [
             {
                 "area": "Morytania",
-                "easyTasks": [
-                    "None"
-                ],
-                "medTasks": [
-                    "Make a batch of cannonballs at the Port Phasmatys furnace"
-                ],
+                "easyTasks": ["None"],
+                "medTasks": ["Make a batch of cannonballs at the Port Phasmatys furnace"],
                 "hardTasks": [
                     "Enter the Kharyrll portal in your PoH through a Portal Chamber",
                     "Pray at the altar of nature in the nature grotto with piety activated"
@@ -920,41 +819,19 @@
             "Wilderness Agility Course",
             "Wilderness Resource Area"
         ],
-        "shops": [
-            "Battle Runes",
-            "Mage Arena Staffs",
-            "Lundail's Arena-side Rune Shop",
-            "Bandit Duty Free"
-        ],
-        "slayerTasks": [
-            "Bear",
-            "Ent",
-            "Ice giant",
-            "Lava dragon",
-            "Revenants",
-            "Skeleton"
-        ],
-        "questUnlocks": [
-            "Eagles' Peak",
-            "Enter the Abyss",
-            "Rune Mysteries"
-        ],
+        "shops": ["Battle Runes", "Mage Arena Staffs", "Lundail's Arena-side Rune Shop", "Bandit Duty Free"],
+        "slayerTasks": ["Bear", "Ent", "Ice giant", "Lava dragon", "Revenants", "Skeleton"],
+        "questUnlocks": ["Eagles' Peak", "Enter the Abyss", "Rune Mysteries"],
         "diaryUnlocks": [
             {
                 "area": "Wilderness",
-                "easyTasks": [
-                    "None"
-                ],
-                "medTasks": [
-                    "Smith a gold helmet in the resource area"
-                ],
+                "easyTasks": ["None"],
+                "medTasks": ["Smith a gold helmet in the resource area"],
                 "hardTasks": [
                     "Take the agility shortcut from Trollheim into the Wilderness",
                     "Fish a raw lava eel in the Wilderness"
                 ],
-                "eliteTasks": [
-                    "Teleport to Ghorrock"
-                ]
+                "eliteTasks": ["Teleport to Ghorrock"]
             }
         ],
         "notableDrops": [

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { getExpForLevel, getLevelForExp } from '../util/exp-table'
+import { getExpForLevel, getLevelForExp } from '../util/exp-table';
 
 export default function useLevel(initialLevel) {
     const [level, setLevel] = useState(initialLevel);
@@ -14,7 +14,7 @@ export default function useLevel(initialLevel) {
             setLevel(parsedLevel);
             setExp(getExpForLevel(parsedLevel));
         }
-    }
+    };
     const updateByExp = newExp => {
         const parsedExp = parseInt(newExp);
         if (isNaN(parsedExp)) {
@@ -24,7 +24,7 @@ export default function useLevel(initialLevel) {
             setExp(parsedExp);
             setLevel(getLevelForExp(parsedExp));
         }
-    }
+    };
 
     return { level, exp, updateByLevel, updateByExp };
 }

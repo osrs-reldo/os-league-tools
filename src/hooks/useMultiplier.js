@@ -9,17 +9,17 @@ export default function useMultiplier() {
         if (isGlobal) {
             setGlobalMultipliers(
                 update(globalMultipliers, {
-                    [id]: { $set: amount }
+                    [id]: { $set: amount },
                 })
             );
         } else {
             setMultipliers(
                 update(globalMultipliers, {
-                    [id]: { $set: amount }
+                    [id]: { $set: amount },
                 })
             );
         }
-    }
+    };
 
     const removeMultiplier = (id, isGlobal = false) => {
         if (isGlobal) {
@@ -27,15 +27,15 @@ export default function useMultiplier() {
                 let prevStateCopy = Object.assign({}, prevState);
                 delete prevStateCopy[id];
                 return prevStateCopy;
-            })
+            });
         } else {
             setMultipliers(prevState => {
                 let prevStateCopy = Object.assign({}, prevState);
                 delete prevStateCopy[id];
                 return prevStateCopy;
-            })
+            });
         }
-    }
+    };
 
     const applyMultipliers = applicableIds => {
         let totalMultiplier = 1;
@@ -48,14 +48,19 @@ export default function useMultiplier() {
             }
         });
         return totalMultiplier;
-    }
+    };
 
     const getMultipliers = () => {
         return {
             ...multipliers,
-            ...globalMultipliers
-        }
-    }
+            ...globalMultipliers,
+        };
+    };
 
-    return { add: addMultiplier, remove: removeMultiplier, apply: applyMultipliers, get: getMultipliers };
+    return {
+        add: addMultiplier,
+        remove: removeMultiplier,
+        apply: applyMultipliers,
+        get: getMultipliers,
+    };
 }

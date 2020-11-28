@@ -1,4 +1,9 @@
-import { deleteFromLocalStorage, getFromLocalStorage, SESSIONSTORAGE_KEYS, updateLocalStorage } from "../util/browser-util";
+import {
+    deleteFromLocalStorage,
+    getFromLocalStorage,
+    SESSIONSTORAGE_KEYS,
+    updateLocalStorage,
+} from '../util/browser-util';
 
 const HOSTNAME = 'https://os-league-tools-api.herokuapp.com';
 
@@ -8,26 +13,26 @@ export async function getHiscores(rsn) {
     await fetch(url)
         .then(res => res.json())
         .then(
-            (result) => {
+            result => {
                 if (result.status && result.status === 404) {
                     hiscores = {
                         success: false,
-                        message: `Username "${rsn}" not found.`
+                        message: `Username "${rsn}" not found.`,
                     };
                     deleteFromLocalStorage(SESSIONSTORAGE_KEYS.HISCORES_CACHE, true);
                 } else {
                     hiscores = {
                         success: true,
-                        hiscores: result
+                        hiscores: result,
                     };
                     updateLocalStorage(SESSIONSTORAGE_KEYS.HISCORES_CACHE, result, () => {}, true);
                 }
             },
-            (error) => {
+            error => {
                 console.warn(error);
                 hiscores = {
                     success: false,
-                    message: `Unable to retrieve hiscores, please try again later.`
+                    message: `Unable to retrieve hiscores, please try again later.`,
                 };
                 deleteFromLocalStorage(SESSIONSTORAGE_KEYS.HISCORES_CACHE, true);
             }

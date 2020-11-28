@@ -1,11 +1,16 @@
-import React, { useEffect, useState } from "react";
-import { InputGroup, FormControl, Button, Spinner, Form } from "react-bootstrap";
-import { getCachedHiscores, getHiscores } from "../client/hiscores-client";
-import useLocalStorage from "../hooks/useLocalStorage";
-import { LOCALSTORAGE_KEYS } from "../util/browser-util";
+import React, { useEffect, useState } from 'react';
+import { InputGroup, FormControl, Button, Spinner, Form } from 'react-bootstrap';
+import { getCachedHiscores, getHiscores } from '../client/hiscores-client';
+import useLocalStorage from '../hooks/useLocalStorage';
+import { LOCALSTORAGE_KEYS } from '../util/browser-util';
 
-export default function HiscoreLookup({ skill, setExpCallback = ()=>{}, setTotalLvlCallback = ()=>{}, refreshStateCallback = ()=>{}}) {
-    const [username, setUsername] = useLocalStorage(LOCALSTORAGE_KEYS.USERNAME, "");
+export default function HiscoreLookup({
+    skill,
+    setExpCallback = () => {},
+    setTotalLvlCallback = () => {},
+    refreshStateCallback = () => {},
+}) {
+    const [username, setUsername] = useLocalStorage(LOCALSTORAGE_KEYS.USERNAME, '');
     const [errorText, setErrorText] = useState('');
     const [isLoading, setIsLoading] = useState(false);
 
@@ -32,8 +37,8 @@ export default function HiscoreLookup({ skill, setExpCallback = ()=>{}, setTotal
                 refreshStateCallback();
             });
         }
-    // only want this to run once on first load
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // only want this to run once on first load
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const doHiscoresLookup = () => {
@@ -60,34 +65,32 @@ export default function HiscoreLookup({ skill, setExpCallback = ()=>{}, setTotal
     };
 
     return (
-        <div className="p-3">
-            <Form onSubmit={event => event.preventDefault()} >
+        <div className='p-3'>
+            <Form onSubmit={event => event.preventDefault()}>
                 <InputGroup>
                     <FormControl
-                        placeholder="Username"
+                        placeholder='Username'
                         value={username}
                         onChange={event => setUsername(event.target.value)}
                     />
                     <InputGroup.Append>
-                        <Button
-                            variant="outline-light"
-                            type="submit"
-                            onClick={() => doHiscoresLookup()}
-                        >
-                            {isLoading && <Spinner
-                                as="span"
-                                animation="border"
-                                size="sm"
-                                role="status"
-                                aria-hidden="true"
-                                className="mr-1"
-                            />}
+                        <Button variant='outline-light' type='submit' onClick={() => doHiscoresLookup()}>
+                            {isLoading && (
+                                <Spinner
+                                    as='span'
+                                    animation='border'
+                                    size='sm'
+                                    role='status'
+                                    aria-hidden='true'
+                                    className='mr-1'
+                                />
+                            )}
                             Lookup
                         </Button>
                     </InputGroup.Append>
                 </InputGroup>
             </Form>
-            {errorText && <div className="text-danger small">{errorText}</div>}
+            {errorText && <div className='text-danger small'>{errorText}</div>}
         </div>
     );
 }

@@ -1,17 +1,17 @@
 export const MAX_TASKS = 300;
 export const REGION_UNLOCKS = [0, 60, 140, 300];
 export const REGIONS = [
-    "Asgarnia",
-    "Desert",
-    "Fremennik",
-    "Kandarin",
-    "Karamja",
-    "Misthalin",
-    "Morytania",
-    "Tirannwn",
-    "Wilderness",
+    'Asgarnia',
+    'Desert',
+    'Fremennik',
+    'Kandarin',
+    'Karamja',
+    'Misthalin',
+    'Morytania',
+    'Tirannwn',
+    'Wilderness',
 ];
-export const INITIAL_REGIONS_STATE = ["Misthalin", "Karamja"]
+export const INITIAL_REGIONS_STATE = ['Misthalin', 'Karamja'];
 
 export function isRegionUnlocked(region, unlockedRegions) {
     return unlockedRegions.includes(region);

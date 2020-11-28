@@ -1,4 +1,4 @@
-import { getFromLocalStorage, LOCALSTORAGE_KEYS, updateLocalStorage } from "./browser-util";
+import { getFromLocalStorage, LOCALSTORAGE_KEYS, updateLocalStorage } from './browser-util';
 import taskData from '../resources/taskData.json';
 import relicData from '../resources/relicData.json';
 import { INITIAL_TASKS_STATE_V3 } from '../hooks/useTaskStatus';
@@ -6,67 +6,66 @@ import { INITIAL_TASKS_STATE_V3 } from '../hooks/useTaskStatus';
 const TASKS_BY_NAME = getTaskLookupByName();
 const RELICS_BY_NAME = getRelicLookupByName();
 const RELIC_ENUM_TO_NAME = {
-    ENDLESS_HARVEST: "Endless Harvest",
-    PRODUCTION_MASTER: "Production Master",
-    SKILLING_PRODIGY: "Skilling Prodigy",
+    ENDLESS_HARVEST: 'Endless Harvest',
+    PRODUCTION_MASTER: 'Production Master',
+    SKILLING_PRODIGY: 'Skilling Prodigy',
     FAIRYS_FLIGHT: "Fairy's Flight",
-    ETERNAL_JEWELLER: "Eternal Jeweller",
-    LAST_RECALL: "Last Recall",
-    QUICK_SHOT: "Quick Shot",
-    FLUID_STRIKES: "Fluid Strikes",
-    DOUBLE_CAST: "Double Cast",
-    TREASURE_SEEKER: "Treasure Seeker",
-    UNNATURAL_SELECTION: "Unnatural Selection",
-    THE_BOTANIST: "Botanist",
-    INFERNAL_GATHERING: "Infernal Gathering",
-    EQUILIBRIUM: "Equilibrium",
-    DRAINING_STRIKES: "Draining Strikes",
-    EXPLODING_ATTACKS: "Exploding Attacks",
-    WEAPON_SPECIALIST: "Weapon Specialist",
-}
+    ETERNAL_JEWELLER: 'Eternal Jeweller',
+    LAST_RECALL: 'Last Recall',
+    QUICK_SHOT: 'Quick Shot',
+    FLUID_STRIKES: 'Fluid Strikes',
+    DOUBLE_CAST: 'Double Cast',
+    TREASURE_SEEKER: 'Treasure Seeker',
+    UNNATURAL_SELECTION: 'Unnatural Selection',
+    THE_BOTANIST: 'Botanist',
+    INFERNAL_GATHERING: 'Infernal Gathering',
+    EQUILIBRIUM: 'Equilibrium',
+    DRAINING_STRIKES: 'Draining Strikes',
+    EXPLODING_ATTACKS: 'Exploding Attacks',
+    WEAPON_SPECIALIST: 'Weapon Specialist',
+};
 
 export async function updateLocalStorageFromRuneliteJson(json) {
     try {
         const runeliteImport = runeliteJsonToStorageFormat(json);
         for (let [key, value] of Object.entries(runeliteImport)) {
-            if (key === "tasks") {
+            if (key === 'tasks') {
                 const tasksImport = JSON.parse(value);
                 const tasks = getFromLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_TASKS_STATE_V3);
                 tasks.tasks = tasksImport;
-                updateLocalStorage("tasks", tasks);
+                updateLocalStorage('tasks', tasks);
             } else {
                 updateLocalStorage(key, JSON.parse(value));
             }
         }
         return {
             success: true,
-            message: runeliteImport
+            message: runeliteImport,
         };
-    }
-    catch (e) {
+    } catch (e) {
         return {
             success: false,
-            message: "Error parsing the import data: " + e.message
+            message: 'Error parsing the import data: ' + e.message,
         };
     }
 }
 
 function getTaskLookupByName() {
     let lookup = {};
-    taskData.tasks.forEach(task => lookup[sanitizeTaskName(task.name)] = task);
+    taskData.tasks.forEach(task => (lookup[sanitizeTaskName(task.name)] = task));
     return lookup;
 }
 
 function getRelicLookupByName() {
-    let lookup = {}
+    let lookup = {};
     relicData.forEach((slot, slotIndex) => {
         slot.relics.forEach((relic, relicIndex) => {
             lookup[relic.name] = {
                 slot: slotIndex,
                 relic: {
                     passive: true,
-                    relic: relicIndex
-                }
+                    relic: relicIndex,
+                },
             };
         });
     });
@@ -74,23 +73,21 @@ function getRelicLookupByName() {
 }
 
 function isValidRuneliteJson(json) {
-    return (
-        json.hasOwnProperty("relics") &&
-        json.hasOwnProperty("areas") &&
-        json.hasOwnProperty("tasks")
-    );
+    return json.hasOwnProperty('relics') && json.hasOwnProperty('areas') && json.hasOwnProperty('tasks');
 }
 
 function isOldVersion(json) {
-    return json.hasOwnProperty("unlockedRegions");
+    return json.hasOwnProperty('unlockedRegions');
 }
 
 function runeliteJsonToStorageFormat(json) {
     const parsedJson = JSON.parse(json);
     if (isOldVersion(parsedJson)) {
-        throw new Error("Your Runelite plugin is out of date! Update your client by closing and reopening Runelite, then try importing again.");
+        throw new Error(
+            'Your Runelite plugin is out of date! Update your client by closing and reopening Runelite, then try importing again.'
+        );
     } else if (!isValidRuneliteJson(parsedJson)) {
-        throw new Error("The Runelite import data is invalid.");
+        throw new Error('The Runelite import data is invalid.');
     }
 
     let storageFormat = {};
@@ -107,7 +104,7 @@ function extractRuneliteTasks(runeliteJson) {
         .map(task => {
             const match = TASKS_BY_NAME[sanitizeTaskName(task.name)];
             if (!match) {
-                throw new Error("Task match not found for " + task.name);
+                throw new Error('Task match not found for ' + task.name);
             }
             return match.id;
         });
@@ -124,11 +121,11 @@ function extractRuneliteRelics(runeliteJson) {
     runeliteJson.relics.forEach(relic => {
         const relicName = RELIC_ENUM_TO_NAME[relic];
         if (!relicName) {
-            throw new Error("Relic name not found for enum: " + relic);
+            throw new Error('Relic name not found for enum: ' + relic);
         }
         const matched = RELICS_BY_NAME[relicName];
         if (!matched) {
-            throw new Error("Relic match not found for " + relicName);
+            throw new Error('Relic match not found for ' + relicName);
         }
         relics[matched.slot] = matched.relic;
     });
@@ -137,15 +134,15 @@ function extractRuneliteRelics(runeliteJson) {
 }
 
 function toPascalCase(areaName) {
-    if (typeof areaName !== "string") {
-        return "";
+    if (typeof areaName !== 'string') {
+        return '';
     }
     areaName = areaName.toLowerCase();
     return areaName.charAt(0).toUpperCase() + areaName.slice(1);
 }
 
 function sanitizeTaskName(taskName) {
-    taskName = taskName.replaceAll(",", "");
+    taskName = taskName.replaceAll(',', '');
     taskName = taskName.toLowerCase();
     return taskName;
 }

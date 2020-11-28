@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { getRelicInfo } from '../util/relic-util';
 
 export default function RelicInfoTile({ relicKey, selected, onClickEvent, isWide, additionalContent }) {
@@ -6,21 +6,27 @@ export default function RelicInfoTile({ relicKey, selected, onClickEvent, isWide
 
     const cellStyle = {
         width: '100%',
-        minWidth: '150px'
-    }
+        minWidth: '150px',
+    };
 
     if (!name) {
-        return (<div className={'relic-table-cell p-2'} style={cellStyle}></div>);
+        return <div className={'relic-table-cell p-2'} style={cellStyle}></div>;
     }
 
     if (isWide) {
         return (
-            <div className={'relic-table-cell p-2' + (selected ? ' selected' : '')} style={cellStyle} onClick={onClickEvent}>
+            <div
+                className={'relic-table-cell p-2' + (selected ? ' selected' : '')}
+                style={cellStyle}
+                onClick={onClickEvent}
+            >
                 {icon && <img src={icon} alt='' height={75} width={75} className='float-left m-3' />}
                 <div>
                     <h5>{name}</h5>
                     <ul>
-                        {description.map(listItem => <li>{listItem}</li>)}
+                        {description.map(listItem => (
+                            <li>{listItem}</li>
+                        ))}
                     </ul>
                     {additionalContent}
                 </div>
@@ -30,7 +36,10 @@ export default function RelicInfoTile({ relicKey, selected, onClickEvent, isWide
 
     return (
         <div
-            className={'relic-table-cell p-2 d-flex flex-column align-items-center justify-content-center text-center' + (selected ? ' selected' : '')}
+            className={
+                'relic-table-cell p-2 d-flex flex-column align-items-center justify-content-center text-center' +
+                (selected ? ' selected' : '')
+            }
             onClick={onClickEvent}
             style={cellStyle}
         >

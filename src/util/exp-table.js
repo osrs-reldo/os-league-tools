@@ -98,7 +98,7 @@ const expTable = {
     97: 10692629,
     98: 11805606,
     99: 13034431,
-}
+};
 
 const reverseExpTable = {
     0: 1,
@@ -200,7 +200,7 @@ const reverseExpTable = {
     10692629: 97,
     11805606: 98,
     13034431: 99,
-}
+};
 
 export function getExpForLevel(level) {
     if (level < 1) {

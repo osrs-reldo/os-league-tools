@@ -14,7 +14,7 @@ module.exports = {
     plugins: ['react'],
     rules: {
         indent: 'off',
-        "react/jsx-indent": 'off',
+        'react/jsx-indent': 'off',
         'react/prop-types': 'off',
         'react/jsx-filename-extension': 'off',
     },

@@ -1,12 +1,21 @@
-import React, { useState } from "react";
-import { Card, Button } from "react-bootstrap";
-import ProgressBar from "./UnlockProgressBar";
-import RelicInfoTile from "./RelicInfoTile";
+import React, { useState } from 'react';
+import { Card, Button } from 'react-bootstrap';
+import ProgressBar from './UnlockProgressBar';
+import RelicInfoTile from './RelicInfoTile';
 import relicData from '../resources/relicData.json';
-import { getRelicKey, MAX_POINTS, RELIC_UNLOCKS, unlockRelicInState, lockRelicInState, isRelicUnlocked, getPointsToNextRelic, isPassiveRelic } from '../util/relic-util';
-import useLocalStorage from "../hooks/useLocalStorage";
+import {
+    getRelicKey,
+    MAX_POINTS,
+    RELIC_UNLOCKS,
+    unlockRelicInState,
+    lockRelicInState,
+    isRelicUnlocked,
+    getPointsToNextRelic,
+    isPassiveRelic,
+} from '../util/relic-util';
+import useLocalStorage from '../hooks/useLocalStorage';
 import { LOCALSTORAGE_KEYS } from '../util/browser-util';
-import DoubleScrollbar from "../components/DoubleScrollbar";
+import DoubleScrollbar from '../components/DoubleScrollbar';
 
 export default function RelicsTracker({ totalPoints }) {
     const [selectedRelic, setSelectedRelic] = useState();
@@ -14,19 +23,13 @@ export default function RelicsTracker({ totalPoints }) {
     const pointsToNextRelic = getPointsToNextRelic(totalPoints);
 
     return (
-        <Card bg='dark' text='white' className="mt-3">
-            <h1 className="m-3 text-center">
-                {
-                    pointsToNextRelic > 0 ?
-                    `${totalPoints} Points - ${pointsToNextRelic} To Next Unlock`
-                    : 'All relics unlocked!'
-                }
+        <Card bg='dark' text='white' className='mt-3'>
+            <h1 className='m-3 text-center'>
+                {pointsToNextRelic > 0
+                    ? `${totalPoints} Points - ${pointsToNextRelic} To Next Unlock`
+                    : 'All relics unlocked!'}
             </h1>
-            <ProgressBar
-                curValue={totalPoints}
-                maxValue={MAX_POINTS}
-                steps={RELIC_UNLOCKS}
-            />
+            <ProgressBar curValue={totalPoints} maxValue={MAX_POINTS} steps={RELIC_UNLOCKS} />
             <Card bg='dark' style={{ border: 'none' }}>
                 <Card.Body>
                     <DoubleScrollbar>
@@ -35,7 +38,11 @@ export default function RelicsTracker({ totalPoints }) {
                                 {Array.from({ length: 6 }, (_, i) => {
                                     const relicCategory = relicData[i].category;
                                     return (
-                                        <div key={i} className='relic-table-cell d-flex flex-column align-items-center' style={{ width: '100%', minWidth: '150px' }}>
+                                        <div
+                                            key={i}
+                                            className='relic-table-cell d-flex flex-column align-items-center'
+                                            style={{ width: '100%', minWidth: '150px' }}
+                                        >
                                             <h3>{'Tier ' + (i + 1)}</h3>
                                             <h5 className='text-muted'>{relicCategory}</h5>
                                         </div>
@@ -64,32 +71,42 @@ export default function RelicsTracker({ totalPoints }) {
                 </Card.Body>
             </Card>
             <div className='relic-table-cell m-4'>
-                {
-                    selectedRelic ? (
-                        <RelicInfoTile
-                            relicKey={selectedRelic}
-                            isWide
-                            additionalContent={
-                                <React.Fragment>
-                                    {!isPassiveRelic(selectedRelic) && (
-                                        isRelicUnlocked(selectedRelic, unlockedRelics) ?
-                                            <Button
-                                                variant='dark' onClick={() => setUnlockedRelics(prevState => { return lockRelicInState(prevState, selectedRelic) })}>
-                                                Re-lock this relic
-                                            </Button>
-                                            :
-                                            <Button variant='light' onClick={() => setUnlockedRelics(prevState => { return unlockRelicInState(prevState, selectedRelic) })}>
-                                                Unlock this relic
-                                            </Button>
-                                    )
-                                    }
-                                </React.Fragment>
-                            }
-                        />
-                    ) : (
-                            <p className='m-1'>Select a relic to view more information or unlock it.</p>
-                        )
-                }
+                {selectedRelic ? (
+                    <RelicInfoTile
+                        relicKey={selectedRelic}
+                        isWide
+                        additionalContent={
+                            <React.Fragment>
+                                {!isPassiveRelic(selectedRelic) &&
+                                    (isRelicUnlocked(selectedRelic, unlockedRelics) ? (
+                                        <Button
+                                            variant='dark'
+                                            onClick={() =>
+                                                setUnlockedRelics(prevState => {
+                                                    return lockRelicInState(prevState, selectedRelic);
+                                                })
+                                            }
+                                        >
+                                            Re-lock this relic
+                                        </Button>
+                                    ) : (
+                                        <Button
+                                            variant='light'
+                                            onClick={() =>
+                                                setUnlockedRelics(prevState => {
+                                                    return unlockRelicInState(prevState, selectedRelic);
+                                                })
+                                            }
+                                        >
+                                            Unlock this relic
+                                        </Button>
+                                    ))}
+                            </React.Fragment>
+                        }
+                    />
+                ) : (
+                    <p className='m-1'>Select a relic to view more information or unlock it.</p>
+                )}
             </div>
         </Card>
     );

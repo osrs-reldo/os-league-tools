@@ -6,24 +6,24 @@ import { useMediaQuery } from 'react-responsive';
  */
 const MEDIA_QUERIES = {
     XS: {
-        maxWidth: 575.98
+        maxWidth: 575.98,
     },
     SM: {
         minWidth: 576,
-        maxWidth: 767.98
+        maxWidth: 767.98,
     },
     MD: {
         minWidth: 768,
-        maxWidth: 991.98
+        maxWidth: 991.98,
     },
     LG: {
         minWidth: 992,
-        maxWidth: 1199.98
+        maxWidth: 1199.98,
     },
     XL: {
-        minWidth: 1200
-    }
-}
+        minWidth: 1200,
+    },
+};
 
 export default function useScreenSize() {
     const isXs = useMediaQuery(MEDIA_QUERIES.XS);
@@ -32,7 +32,7 @@ export default function useScreenSize() {
     const isLg = useMediaQuery(MEDIA_QUERIES.LG);
     const isXl = useMediaQuery(MEDIA_QUERIES.XL);
 
-    const isSizeOrSmaller = (size) => {
+    const isSizeOrSmaller = size => {
         switch (size) {
             case 'xs':
                 return isXs;
@@ -45,11 +45,11 @@ export default function useScreenSize() {
             case 'xl':
                 return isXs || isSm || isMd || isLg || isXl;
             default:
-               return false;
+                return false;
         }
-    }
+    };
 
-    const isSizeOrLarger = (size) => {
+    const isSizeOrLarger = size => {
         switch (size) {
             case 'xl':
                 return isXl;
@@ -63,7 +63,7 @@ export default function useScreenSize() {
             default:
                 return true;
         }
-    }
+    };
 
-    return {isXs, isSm, isMd, isLg, isXl, isSizeOrSmaller, isSizeOrLarger}
+    return { isXs, isSm, isMd, isLg, isXl, isSizeOrSmaller, isSizeOrLarger };
 }

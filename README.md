@@ -37,6 +37,7 @@ The hiscores functionality relies on a backend api that you can find over at [os
 ## Credits
 
 Data/Images sourced from:
-- The official OSRS wiki
-- OSRS Leagues discord
-- Tweeting questions at Mod Ash
+
+-   The official OSRS wiki
+-   OSRS Leagues discord
+-   Tweeting questions at Mod Ash

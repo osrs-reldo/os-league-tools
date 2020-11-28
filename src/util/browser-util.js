@@ -8,11 +8,11 @@ export const LOCALSTORAGE_KEYS = {
     FILTER_HIDE_TODO_TASKS: 'filterHideTodoTasks',
     HIDE_ALERT_BANNER: 'hideAlertBanner',
     USERNAME: 'hiscoresUsername',
-}
+};
 
 export const SESSIONSTORAGE_KEYS = {
     HISCORES_CACHE: 'hiscoresCache',
-}
+};
 
 export function getFromLocalStorage(key, initialValue, useSessionStorage = false) {
     try {
@@ -29,7 +29,14 @@ export function getFromLocalStorage(key, initialValue, useSessionStorage = false
     }
 }
 
-export function updateLocalStorage(key, value, setValueCallback = () => { return; }, useSessionStorage = false) {
+export function updateLocalStorage(
+    key,
+    value,
+    setValueCallback = () => {
+        return;
+    },
+    useSessionStorage = false
+) {
     try {
         setValueCallback(value);
         if (useSessionStorage) {

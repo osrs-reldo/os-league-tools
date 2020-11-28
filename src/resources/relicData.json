@@ -33,9 +33,7 @@
             },
             {
                 "name": "Endless Run",
-                "description": [
-                    "Your Run Energy will never drain while running."
-                ]
+                "description": ["Your Run Energy will never drain while running."]
             }
         ]
     },
@@ -69,9 +67,7 @@
             },
             {
                 "name": "8x Exp",
-                "description": [
-                    "Your League XP multiplier will increase from 5x to 8x."
-                ]
+                "description": ["Your League XP multiplier will increase from 5x to 8x."]
             }
         ]
     },
@@ -108,9 +104,7 @@
             },
             {
                 "name": "2x Drop Rate",
-                "description": [
-                    "Your drop rate modifier will increase from 1x to 2x."
-                ]
+                "description": ["Your drop rate modifier will increase from 1x to 2x."]
             }
         ]
     },
@@ -138,15 +132,11 @@
             {
                 "name": "",
                 "icon": "",
-                "description": [
-                    ""
-                ]
+                "description": [""]
             },
             {
                 "name": "12x Exp",
-                "description": [
-                    "Your League XP multiplier will increase from 8x to 12x."
-                ]
+                "description": ["Your League XP multiplier will increase from 8x to 12x."]
             }
         ]
     },
@@ -185,9 +175,7 @@
             },
             {
                 "name": "3x Drop Rate",
-                "description": [
-                    "Your drop rate modifier will increase from 2x to 3x."
-                ]
+                "description": ["Your drop rate modifier will increase from 2x to 3x."]
             }
         ]
     },
@@ -223,9 +211,7 @@
             },
             {
                 "name": "16x Exp",
-                "description": [
-                    "Your League XP multiplier will increase from 12x to 16x."
-                ]
+                "description": ["Your League XP multiplier will increase from 12x to 16x."]
             }
         ]
     }

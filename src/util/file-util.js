@@ -1,12 +1,9 @@
-import { saveAs } from "file-saver";
-import { updateLocalStorage } from "./browser-util";
+import { saveAs } from 'file-saver';
+import { updateLocalStorage } from './browser-util';
 
 export function saveLocalStorageToFile() {
-    var blob = new Blob(
-        [JSON.stringify(localStorage)],
-        { type: "text/plain;charset=utf-8" }
-    );
-    saveAs(blob, "osLeagueTools_backup_" + Date.now() + ".txt");
+    var blob = new Blob([JSON.stringify(localStorage)], { type: 'text/plain;charset=utf-8' });
+    saveAs(blob, 'osLeagueTools_backup_' + Date.now() + '.txt');
 }
 
 export async function loadLocalStorageFromFile(fileObject) {
@@ -16,7 +13,7 @@ export async function loadLocalStorageFromFile(fileObject) {
     } catch (err) {
         return {
             success: false,
-            message: "Unable to load file. Please try again."
+            message: 'Unable to load file. Please try again.',
         };
     }
 
@@ -26,7 +23,7 @@ export async function loadLocalStorageFromFile(fileObject) {
     } catch (err) {
         return {
             success: false,
-            message: "Unable to parse file, please check the file and try again."
+            message: 'Unable to parse file, please check the file and try again.',
         };
     }
 
@@ -35,5 +32,5 @@ export async function loadLocalStorageFromFile(fileObject) {
         updateLocalStorage(key, JSON.parse(value));
     }
 
-    return { success: true, message: "" };
+    return { success: true, message: '' };
 }
