@@ -19,12 +19,13 @@ export default function Calculators() {
                                 return (
                                     <li className='mt-2' key={skillData.name}>
                                         <Link
-                                            to={'/calculators/' + skill}
+                                            to={`/calculators/${skill}`}
                                             className='text-light'
                                             key={skill}
                                             style={{ textDecoration: 'none' }}
                                         >
-                                            <img src={skillData.icon} alt={skillData.name} /> {skillData.name}
+                                            <img src={skillData.icon} alt={skillData.name} />
+                                            {skillData.name}
                                         </Link>
                                     </li>
                                 );

@@ -6,8 +6,8 @@ export default function useLevel(initialLevel) {
     const [exp, setExp] = useState(getExpForLevel(initialLevel));
 
     const updateByLevel = newLevel => {
-        const parsedLevel = parseInt(newLevel);
-        if (isNaN(parsedLevel)) {
+        const parsedLevel = parseInt(newLevel, 10);
+        if (Number.isNaN(parsedLevel)) {
             setLevel(newLevel);
             setExp(0);
         } else {
@@ -16,8 +16,8 @@ export default function useLevel(initialLevel) {
         }
     };
     const updateByExp = newExp => {
-        const parsedExp = parseInt(newExp);
-        if (isNaN(parsedExp)) {
+        const parsedExp = parseInt(newExp, 10);
+        if (Number.isNaN(parsedExp)) {
             setExp(newExp);
             setLevel(0);
         } else {

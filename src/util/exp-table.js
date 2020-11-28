@@ -225,8 +225,8 @@ export function getLevelForExp(exp) {
 
 function binarySearch(arr, i) {
     const mid = Math.floor(arr.length / 2);
-    const midVal = parseInt(arr[mid]);
-    const lowerVal = mid > 0 ? parseInt(arr[mid - 1]) : 0;
+    const midVal = parseInt(arr[mid], 10);
+    const lowerVal = mid > 0 ? parseInt(arr[mid - 1], 10) : 0;
 
     if (midVal === i) {
         return midVal;
@@ -236,7 +236,6 @@ function binarySearch(arr, i) {
         return binarySearch(arr.splice(mid, Number.MAX_VALUE), i);
     } else if (midVal > i && arr.length > 1) {
         return binarySearch(arr.splice(0, mid), i);
-    } else {
-        return -1;
     }
+    return -1;
 }

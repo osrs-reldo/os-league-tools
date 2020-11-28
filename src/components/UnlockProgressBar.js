@@ -6,11 +6,11 @@ import useScreenSize from '../hooks/useScreenSize';
 export default function UnlockProgressBar({ curValue, maxValue, steps }) {
     const screenSize = useScreenSize();
 
-    let barHeight = 30,
-        imgHeight = 40,
-        imgIcon = '/img/relic-check.png',
-        showEndIcons = true,
-        marginClass = 'mt-3 mb-3 mr-5 ml-5';
+    let barHeight = 30;
+    let imgHeight = 40;
+    let imgIcon = '/img/relic-check.png';
+    let showEndIcons = true;
+    let marginClass = 'mt-3 mb-3 mr-5 ml-5';
     if (screenSize.isSizeOrSmaller('sm')) {
         barHeight = 20;
         imgHeight = 20;
@@ -49,7 +49,7 @@ export default function UnlockProgressBar({ curValue, maxValue, steps }) {
                 {stepsToShow.map(step => {
                     return (
                         <Step key={step} transition='scale'>
-                            {({ accomplished, index }) => (
+                            {({ accomplished }) => (
                                 <div className={`progressStep ${accomplished ? 'accomplished' : null}`}>
                                     <img src={imgIcon} alt='' height={imgHeight} />
                                 </div>

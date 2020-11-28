@@ -3,20 +3,20 @@ import { OverlayTrigger, Badge, Tooltip } from 'react-bootstrap';
 
 export function getFormatters() {
     return {
-        nameFormatter: nameFormatter,
-        levelFormatter: levelFormatter,
-        amountFormatter: amountFormatter,
-        outputListFormatter: outputListFormatter,
-        inputListFormatter: inputListFormatter,
-        expFormatter: expFormatter,
+        nameFormatter,
+        levelFormatter,
+        amountFormatter,
+        outputListFormatter,
+        inputListFormatter,
+        expFormatter,
     };
 }
 
-function nameFormatter(cell, row, rowIndex, props) {
+function nameFormatter(cell, row) {
     return (
-        <React.Fragment>
+        <>
             {row.icon && <img src={row.icon} alt='' />}
-            {' ' + cell}
+            {` ${cell}`}
             {row.tooltip && (
                 <OverlayTrigger placement='top' overlay={<Tooltip>{row.tooltip}</Tooltip>}>
                     <Badge variant='dark' pill>
@@ -25,7 +25,7 @@ function nameFormatter(cell, row, rowIndex, props) {
                 </OverlayTrigger>
             )}
             <div className='small'>{row.subtitle}</div>
-        </React.Fragment>
+        </>
     );
 }
 
@@ -72,9 +72,9 @@ function outputListFormatter(cell, row, rowIndex, props) {
     );
     if (props.hasBotanist) {
         return itemListBotanistFormatter(cell, countMultiplier, actionsRemaining);
-    } else {
-        return itemListFormatter(cell, countMultiplier, actionsRemaining);
     }
+    return itemListFormatter(cell, countMultiplier, actionsRemaining);
+
 }
 
 function inputListFormatter(cell, row, rowIndex, props) {
@@ -91,9 +91,8 @@ function inputListFormatter(cell, row, rowIndex, props) {
     );
     if (props.hasDoubleCast) {
         return itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining);
-    } else {
-        return itemListFormatter(cell, countMultiplier, actionsRemaining);
     }
+    return itemListFormatter(cell, countMultiplier, actionsRemaining);
 }
 
 function itemListFormatter(cell, countMultiplier, actionsRemaining) {
@@ -101,9 +100,9 @@ function itemListFormatter(cell, countMultiplier, actionsRemaining) {
         <ul className='mb-0'>
             {cell.map(item => {
                 if (item.amount) {
-                    var amount = actionsRemaining * item.amount * item.chance * countMultiplier;
+                    let amount = actionsRemaining * item.amount * item.chance * countMultiplier;
                     amount = +amount.toFixed(2);
-                    return <li key={item.name}>{amount + ' ' + item.name}</li>;
+                    return <li key={item.name}>{`${amount} ${item.name}`}</li>;
                 }
                 return <li key={item.name}>{item.name}</li>;
             })}
@@ -116,7 +115,7 @@ function itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining) {
         <ul className='mb-0'>
             {cell.map(item => {
                 if (item.amount) {
-                    var amount;
+                    let amount;
                     if (item.name.includes('rune')) {
                         amount = actionsRemaining * item.amount * (item.chance * 0.1) * countMultiplier;
                         amount = Math.ceil(amount);
@@ -124,7 +123,7 @@ function itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining) {
                         amount = actionsRemaining * item.amount * item.chance * countMultiplier;
                         amount = +amount.toFixed(2);
                     }
-                    return <li key={item.name}>{amount + ' ' + item.name}</li>;
+                    return <li key={item.name}>{`${amount} ${item.name}`}</li>;
                 }
                 return <li key={item.name}>{item.name}</li>;
             })}
@@ -137,10 +136,10 @@ function itemListBotanistFormatter(cell, countMultiplier, actionsRemaining) {
         <ul className='mb-0'>
             {cell.map(item => {
                 if (item.amount) {
-                    var amount = actionsRemaining * item.amount * item.chance * countMultiplier;
+                    let amount = actionsRemaining * item.amount * item.chance * countMultiplier;
                     amount = +amount.toFixed(2);
-                    amount = amount * 2;
-                    return <li key={item.name}>{amount + ' ' + item.name}</li>;
+                    amount *= 2;
+                    return <li key={item.name}>{`${amount} ${item.name}`}</li>;
                 }
                 return <li key={item.name}>{item.name}</li>;
             })}
@@ -149,7 +148,7 @@ function itemListBotanistFormatter(cell, countMultiplier, actionsRemaining) {
 }
 
 function calcExpPerAction(baseExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel, numExpActions) {
-    const baseMultiplier = parseInt(baseMultiplierStr);
+    const baseMultiplier = parseInt(baseMultiplierStr, 10);
     const secondaryMultiplier = baseMultiplier * expMultiplier.apply(validMultipliers);
     const equilibriumBonus = getEquilibriumBonusExp(expMultiplier, totalLevel, numExpActions);
     return Math.round((baseExp * secondaryMultiplier + equilibriumBonus) * 10) / 10;
@@ -182,7 +181,7 @@ export function getBoostedLevel(currentLevel, isSkillingProdigy) {
 }
 
 function getEquilibriumBonusExp(expMultiplier, totalLevel, numExpActions) {
-    if (!expMultiplier.get().hasOwnProperty('G0')) {
+    if (!Object.prototype.hasOwnProperty.call(expMultiplier.get(), 'G0')) {
         return 0;
     }
     return totalLevel * 0.1 * numExpActions;

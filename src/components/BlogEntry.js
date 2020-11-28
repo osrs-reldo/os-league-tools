@@ -18,19 +18,21 @@ export default function NewsEntry({ title, date, thumbnail, leadText, htmlConten
                         </Col>
                         <Col>
                             {expanded ? (
-                                <React.Fragment>
+                                <>
+                                    { /* eslint-disable-next-line react/no-danger */ }
                                     <div dangerouslySetInnerHTML={{ __html: htmlContent }} className='mb-1' />
                                     <Button variant='outline-light' onClick={() => setExpanded(!expanded)}>
                                         Show less
                                     </Button>
-                                </React.Fragment>
+                                </>
                             ) : (
-                                <React.Fragment>
-                                    <div dangerouslySetInnerHTML={{ __html: leadText + '...' }} className='mb-1' />
+                                <>
+                                    { /* eslint-disable-next-line react/no-danger */ }
+                                    <div dangerouslySetInnerHTML={{ __html: `${leadText}...` }} className='mb-1' />
                                     <Button variant='outline-light' onClick={() => setExpanded(!expanded)}>
                                         Show more
                                     </Button>
-                                </React.Fragment>
+                                </>
                             )}
                         </Col>
                     </Row>

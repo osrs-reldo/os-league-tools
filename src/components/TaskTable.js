@@ -3,7 +3,7 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import taskData from '../resources/taskData.json';
-import DoubleScrollbar from '../components/DoubleScrollbar';
+import DoubleScrollbar from "./DoubleScrollbar";
 import { applyFilters, getFormatters, getRenderers, isTaskComplete } from '../util/task-util';
 
 export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters, hiscores, isSkillingProdigy }) {
@@ -34,10 +34,10 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             isDummyField: true,
             headerStyle: { width: '5rem' },
             formatter: completedFormatter,
-            formatExtraData: { taskStatus: taskStatus },
+            formatExtraData: { taskStatus },
             classes: 'clickable',
             events: {
-                onClick: (event, column, columnIndex, row, rowIndex) => {
+                onClick: (event, column, columnIndex, row) => {
                     const isComplete = isTaskComplete(row.id, taskStatus);
                     setTaskCompletion(!isComplete, row.id);
                 },
@@ -55,10 +55,10 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             headerStyle: { width: '22rem' },
             filter: textFilter({ placeholder: 'Filter...' }),
             formatter: nameFormatter,
-            formatExtraData: { taskStatus: taskStatus },
+            formatExtraData: { taskStatus },
             classes: 'clickable',
             events: {
-                onClick: (event, column, columnIndex, row, rowIndex) => {
+                onClick: (event, column, columnIndex, row) => {
                     const isComplete = isTaskComplete(row.id, taskStatus);
                     setTaskCompletion(!isComplete, row.id);
                 },
@@ -102,7 +102,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             dataField: 'skills',
             text: 'Requires',
             formatter: skillsFormatter,
-            formatExtraData: { hiscores: hiscores, isSkillingProdigy: isSkillingProdigy },
+            formatExtraData: { hiscores, isSkillingProdigy },
             headerStyle: { width: '8rem' },
         },
         {
@@ -112,9 +112,9 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             headerStyle: { width: '10rem' },
             formatter: manageFormatter,
             formatExtraData: {
-                taskStatus: taskStatus,
-                setTaskTodo: setTaskTodo,
-                setTaskHidden: setTaskHidden,
+                taskStatus,
+                setTaskTodo,
+                setTaskHidden,
             },
         },
     ];

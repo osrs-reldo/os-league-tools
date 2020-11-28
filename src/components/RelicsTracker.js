@@ -15,7 +15,7 @@ import {
 } from '../util/relic-util';
 import useLocalStorage from '../hooks/useLocalStorage';
 import { LOCALSTORAGE_KEYS } from '../util/browser-util';
-import DoubleScrollbar from '../components/DoubleScrollbar';
+import DoubleScrollbar from "./DoubleScrollbar";
 
 export default function RelicsTracker({ totalPoints }) {
     const [selectedRelic, setSelectedRelic] = useState();
@@ -43,7 +43,7 @@ export default function RelicsTracker({ totalPoints }) {
                                             className='relic-table-cell d-flex flex-column align-items-center'
                                             style={{ width: '100%', minWidth: '150px' }}
                                         >
-                                            <h3>{'Tier ' + (i + 1)}</h3>
+                                            <h3>{`Tier ${i + 1}`}</h3>
                                             <h5 className='text-muted'>{relicCategory}</h5>
                                         </div>
                                     );
@@ -52,7 +52,7 @@ export default function RelicsTracker({ totalPoints }) {
                             {Array.from({ length: 4 }, (_, i) => {
                                 return (
                                     <div className='d-flex no-wrap align-items-stretch' key={i}>
-                                        {Array.from({ length: 6 }, (_, j) => {
+                                        {Array.from({ length: 6 }, (n, j) => {
                                             const relicKey = getRelicKey(j, i);
                                             return (
                                                 <RelicInfoTile
@@ -75,8 +75,8 @@ export default function RelicsTracker({ totalPoints }) {
                     <RelicInfoTile
                         relicKey={selectedRelic}
                         isWide
-                        additionalContent={
-                            <React.Fragment>
+                        additionalContent={(
+                            <>
                                 {!isPassiveRelic(selectedRelic) &&
                                     (isRelicUnlocked(selectedRelic, unlockedRelics) ? (
                                         <Button
@@ -101,8 +101,8 @@ export default function RelicsTracker({ totalPoints }) {
                                             Unlock this relic
                                         </Button>
                                     ))}
-                            </React.Fragment>
-                        }
+                            </>
+                          )}
                     />
                 ) : (
                     <p className='m-1'>Select a relic to view more information or unlock it.</p>

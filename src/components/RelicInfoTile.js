@@ -10,13 +10,13 @@ export default function RelicInfoTile({ relicKey, selected, onClickEvent, isWide
     };
 
     if (!name) {
-        return <div className={'relic-table-cell p-2'} style={cellStyle}></div>;
+        return <div className="relic-table-cell p-2" style={cellStyle} />;
     }
 
     if (isWide) {
         return (
             <div
-                className={'relic-table-cell p-2' + (selected ? ' selected' : '')}
+                className={`relic-table-cell p-2${selected ? ' selected' : ''}`}
                 style={cellStyle}
                 onClick={onClickEvent}
             >
@@ -37,8 +37,7 @@ export default function RelicInfoTile({ relicKey, selected, onClickEvent, isWide
     return (
         <div
             className={
-                'relic-table-cell p-2 d-flex flex-column align-items-center justify-content-center text-center' +
-                (selected ? ' selected' : '')
+                `relic-table-cell p-2 d-flex flex-column align-items-center justify-content-center text-center${selected ? ' selected' : ''}`
             }
             onClick={onClickEvent}
             style={cellStyle}

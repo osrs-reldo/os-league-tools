@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import { createHashHistory } from 'history';
+import ReactGA from 'react-ga';
 import TopNav from './components/TopNav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
@@ -10,7 +11,6 @@ import Calculators from './pages/Calculators';
 import Calculator from './pages/SkillCalculator';
 import CharacterTracker from './pages/CharacterTracker';
 import About from './pages/About';
-import ReactGA from 'react-ga';
 import PluginInfo from './pages/PluginInfo';
 
 const history = createHashHistory();
@@ -20,11 +20,11 @@ ReactGA.initialize(trackingId, {
         siteSpeedSampleRate: 100,
     },
 });
-history.listen((location, action) => {
+history.listen(() => {
     ReactGA.pageview(window.location.pathname + window.location.search + window.location.hash);
 });
 
-export default function App(props) {
+export default function App() {
     useEffect(() => {
         ReactGA.pageview(window.location.pathname + window.location.search + window.location.hash);
     }, []);

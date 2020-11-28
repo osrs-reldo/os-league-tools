@@ -36,12 +36,12 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
     const maxCompletableTaskPoints = getMaxCompletableTaskPoints(regionsToShow, taskStatus);
     const plannedOnTodoList = getTaskPointsOnTodoList(taskStatus, regionsToShow);
 
-    const todoListFilter = (task, area) => {
+    const todoListFilter = (task) => {
         return isTaskOnTodoList(task.id, taskStatus);
     };
 
     return (
-        <React.Fragment>
+        <>
             <CardDeck>
                 <Card bg='dark' text='white' className='mt-3 p-2 text-center'>
                     <h2>
@@ -100,7 +100,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
             <Card bg='dark' text='white' className='mt-3'>
                 <Tabs
                     fill
-                    defaultActiveKey={'all'}
+                    defaultActiveKey="all"
                     className='tab-bar-secondary'
                     style={{ margin: '0', borderRadius: '.25rem .25rem 0rem 0rem' }}
                 >
@@ -142,7 +142,7 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                     </Tab>
                 </Tabs>
             </Card>
-        </React.Fragment>
+        </>
     );
 }
 
@@ -168,7 +168,7 @@ function TaskTableWrapper({
     const [selectedReqs, setSelectedReqs] = useState('All');
     const [isSkillingProdigy, setIsSkillingProdigy] = useState(isRelicUnlocked('1,3'));
 
-    let allFilters = [...taskFilters];
+    const allFilters = [...taskFilters];
     if (selectedStatus === 'Incomplete') {
         allFilters.push(task => !isTaskComplete(task.id, taskStatus));
     } else if (selectedStatus === 'Complete') {
@@ -219,13 +219,13 @@ function TaskTableWrapper({
                             />
                         )}
                         {!plannedOnTodoList && (
-                            <React.Fragment>
+                            <>
                                 <Form.Check
                                     label='Hide to-do tasks'
                                     checked={hideTodoTasks}
                                     onChange={() => setHideTodoTasks(prevHideTodo => !prevHideTodo)}
                                 />
-                            </React.Fragment>
+                            </>
                         )}
                         <Tab.Container activeKey={selectedArea}>
                             <Divider />
@@ -233,12 +233,11 @@ function TaskTableWrapper({
                             <Nav
                                 variant='pills'
                                 className={
-                                    'mt-3 tab-bar-secondary ' +
-                                    (screenSize.isSizeOrLarger('xl') ? 'flex-column' : 'd-flex justify-content-around')
+                                    `mt-3 tab-bar-secondary ${screenSize.isSizeOrLarger('xl') ? 'flex-column' : 'd-flex justify-content-around'}`
                                 }
                             >
                                 <Nav.Item key='All'>
-                                    <Nav.Link eventKey='All' onClick={event => setSelectedArea('All')}>
+                                    <Nav.Link eventKey='All' onClick={() => setSelectedArea('All')}>
                                         All
                                     </Nav.Link>
                                 </Nav.Item>
@@ -265,8 +264,7 @@ function TaskTableWrapper({
                             <Nav
                                 variant='pills'
                                 className={
-                                    'mt-3 mb-3 tab-bar-secondary ' +
-                                    (screenSize.isSizeOrLarger('lg') ? 'flex-column' : 'd-flex justify-content-around')
+                                    `mt-3 mb-3 tab-bar-secondary ${screenSize.isSizeOrLarger('lg') ? 'flex-column' : 'd-flex justify-content-around'}`
                                 }
                             >
                                 <Nav.Item key='All'>
@@ -292,8 +290,7 @@ function TaskTableWrapper({
                             <Nav
                                 variant='pills'
                                 className={
-                                    'mt-3 mb-3 tab-bar-secondary ' +
-                                    (screenSize.isSizeOrLarger('lg') ? 'flex-column' : 'd-flex justify-content-around')
+                                    `mt-3 mb-3 tab-bar-secondary ${screenSize.isSizeOrLarger('lg') ? 'flex-column' : 'd-flex justify-content-around'}`
                                 }
                             >
                                 <Nav.Item key='All'>
@@ -317,14 +314,14 @@ function TaskTableWrapper({
 
                     <Col lg={10}>
                         {plannedOnTodoList && (
-                            <React.Fragment>
+                            <>
                                 {screenSize.isSizeOrSmaller('md') && <Divider />}
                                 <div className='d-flex justify-content-around align-items-center flex-wrap mb-2'>
                                     <h5 className='mb-1 mt-1 mr-2'>
-                                        Incomplete Tasks on To-do List: {plannedOnTodoList.tasks}
+                                        {`Incomplete Tasks on To-do List: ${plannedOnTodoList.tasks}`}
                                     </h5>
                                     <h5 className='mb-1 mt-1 mr-2'>
-                                        Points Remaining on To-do List: {plannedOnTodoList.points}
+                                        {`Points Remaining on To-do List: ${plannedOnTodoList.points}`}
                                     </h5>
                                     <div className='mb-1 mt-1'>
                                         <Button
@@ -337,7 +334,7 @@ function TaskTableWrapper({
                                         </Button>
                                     </div>
                                 </div>
-                            </React.Fragment>
+                            </>
                         )}
                         <Nav>
                             <TaskTable

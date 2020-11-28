@@ -5,12 +5,12 @@ import useLocalStorage from '../hooks/useLocalStorage';
 import { LOCALSTORAGE_KEYS, reloadPage } from '../util/browser-util';
 import ManageDataModal from './ManageDataModal';
 
-export default function () {
+export default function TopNav() {
     const [hideAlertBanner, setHideAlertBanner] = useLocalStorage(LOCALSTORAGE_KEYS.HIDE_ALERT_BANNER, false);
     const [showDataModal, setShowDataModal] = useState(false);
 
     return (
-        <React.Fragment>
+        <>
             <Navbar bg='dark' variant='dark' expand='lg'>
                 <Navbar.Brand href='/'>
                     <img
@@ -55,9 +55,8 @@ export default function () {
                     onClose={() => setHideAlertBanner(true)}
                     dismissible
                 >
-                    <b>OS League Tools is in BETA!</b> If you find any bugs or incorrect data, or if you have
-                    feedback/suggestions, please come by the{' '}
-                    <Alert.Link href='https://discord.gg/GQ5kVyU'>discord</Alert.Link>!
+                    {`${<b>OS League Tools is in BETA!</b>} If you find any bugs or incorrect data, or if you have feedback/suggestions,
+                    please come by the ${<Alert.Link href='https://discord.gg/GQ5kVyU'>discord</Alert.Link>}!`}
                 </Alert>
             )}
             <ManageDataModal
@@ -69,6 +68,6 @@ export default function () {
                     }
                 }}
             />
-        </React.Fragment>
+        </>
     );
 }

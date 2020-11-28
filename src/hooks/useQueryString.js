@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
 import { parse, stringify } from 'query-string';
 
-/** shamelessly copy/pasted https://medium.com/swlh/81ccdfcb174f **/
+/** shamelessly copy/pasted https://medium.com/swlh/81ccdfcb174f */
 export default function useQueryString(key, initialValue) {
     const [value, setValue] = useState(getQueryStringValue(key) || initialValue);
     const onSetValue = useCallback(
@@ -17,12 +17,11 @@ export default function useQueryString(key, initialValue) {
 
 function setQueryStringWithoutPageReload(qsValue) {
     const newurl =
-        window.location.protocol +
-        '//' +
-        window.location.host +
-        window.location.pathname +
-        qsValue +
-        window.location.hash;
+        `${window.location.protocol}//
+        ${window.location.host}
+        ${window.location.pathname}
+        ${qsValue}
+        ${window.location.hash}`;
 
     window.history.pushState({ path: newurl }, '', newurl);
 }

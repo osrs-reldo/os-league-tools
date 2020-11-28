@@ -24,13 +24,13 @@ export default function useMultiplier() {
     const removeMultiplier = (id, isGlobal = false) => {
         if (isGlobal) {
             setGlobalMultipliers(prevState => {
-                let prevStateCopy = Object.assign({}, prevState);
+                const prevStateCopy = { ...prevState};
                 delete prevStateCopy[id];
                 return prevStateCopy;
             });
         } else {
             setMultipliers(prevState => {
-                let prevStateCopy = Object.assign({}, prevState);
+                const prevStateCopy = { ...prevState};
                 delete prevStateCopy[id];
                 return prevStateCopy;
             });
@@ -39,12 +39,12 @@ export default function useMultiplier() {
 
     const applyMultipliers = applicableIds => {
         let totalMultiplier = 1;
-        Object.values(globalMultipliers).forEach(function (multiplier, index) {
-            totalMultiplier = totalMultiplier * multiplier;
+        Object.values(globalMultipliers).forEach((multiplier) => {
+            totalMultiplier *= multiplier;
         });
-        applicableIds.forEach(function (id, index) {
+        applicableIds.forEach((id) => {
             if (multipliers[id] !== undefined) {
-                totalMultiplier = totalMultiplier * multipliers[id];
+                totalMultiplier *= multipliers[id];
             }
         });
         return totalMultiplier;

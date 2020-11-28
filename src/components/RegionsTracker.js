@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Container, Row, Col, Button } from 'react-bootstrap';
+import _ from 'lodash';
 import ProgressBar from './UnlockProgressBar';
 import {
     MAX_TASKS,
@@ -11,14 +12,13 @@ import {
 } from '../util/region-util';
 import RegionMap from './RegionMap';
 import regionsData from '../resources/regionsData.json';
-import _ from 'lodash';
 
 export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlockedRegionsCallback }) {
     const [selectedRegion, setSelectedRegion] = useState('Misthalin');
     const tasksToNextRegion = getTasksToNextRegion(totalTasks);
 
     return (
-        <React.Fragment>
+        <>
             <Card bg='dark' text='white' className='mt-3'>
                 <h1 className='m-3 text-center'>
                     {tasksToNextRegion > 0
@@ -57,7 +57,7 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                                 <RegionMap unlockedRegions={unlockedRegions} />
                             </div>
                         </Col>
-                        <Col className={'m-2'} sm={4}>
+                        <Col className="m-2" sm={4}>
                             <div className='text-center mb-2'>
                                 <h3>{selectedRegion}</h3>
                                 {!INITIAL_REGIONS_STATE.includes(selectedRegion) &&
@@ -83,11 +83,11 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                                         </Button>
                                     ))}
                             </div>
-                            <div className={'relic-table-cell p-2'} style={{ maxHeight: '700px', overflowY: 'scroll' }}>
+                            <div className="relic-table-cell p-2" style={{ maxHeight: '700px', overflowY: 'scroll' }}>
                                 <h5>Overview:</h5>
                                 <p>{regionsData[selectedRegion].overview}</p>
                                 {regionsData[selectedRegion].travel && (
-                                    <React.Fragment>
+                                    <>
                                         <p>
                                             The following travel options are restricted unless you have access to the
                                             appropriate area:
@@ -97,7 +97,7 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                                                 <li key={listItem}>{listItem}</li>
                                             ))}
                                         </ul>
-                                    </React.Fragment>
+                                    </>
                                 )}
                                 <h5>Key Info:</h5>
                                 <p>Notable Settlements:</p>
@@ -119,14 +119,14 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                                     ))}
                                 </ul>
                                 {regionsData[selectedRegion].shops && (
-                                    <React.Fragment>
+                                    <>
                                         Notable shops:
                                         <ul>
                                             {regionsData[selectedRegion].shops.map(listItem => (
                                                 <li key={listItem}>{listItem}</li>
                                             ))}
                                         </ul>
-                                    </React.Fragment>
+                                    </>
                                 )}
                                 <p>
                                     All Slayer Masters will assign tasks from the same Slayer list and assign the same
@@ -150,12 +150,12 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                                     ))}
                                 </ul>
                                 {regionsData[selectedRegion].diaryUnlocks && (
-                                    <React.Fragment>
+                                    <>
                                         {regionsData[selectedRegion].diaryUnlocks.map(diaryData => (
                                             <React.Fragment key={diaryData.area}>
                                                 <p>
-                                                    The following tasks in the {diaryData.area} Achievement Diary are
-                                                    automatically completed.
+                                                    {`The following tasks in the ${diaryData.area} Achievement Diary are
+                                                    automatically completed.`}
                                                 </p>
                                                 <p>Easy Tasks:</p>
                                                 <ul>
@@ -183,13 +183,13 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                                                 </ul>
                                             </React.Fragment>
                                         ))}
-                                    </React.Fragment>
+                                    </>
                                 )}
                                 <h5>Drops:</h5>
                                 <p>
-                                    The drops listed below are affected by the drop rate modifier perks granted by
+                                    {`The drops listed below are affected by the drop rate modifier perks granted by
                                     passive Relic unlocks. Drop rates affected are always rounded down and are not tied
-                                    to area unlocks, this list represents the key drops affected in {selectedRegion}.
+                                    to area unlocks, this list represents the key drops affected in ${selectedRegion}.`}
                                 </p>
                                 <ul>
                                     {regionsData[selectedRegion].notableDrops.map(listItem => (
@@ -201,6 +201,6 @@ export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlocke
                     </Row>
                 </Container>
             </Card>
-        </React.Fragment>
+        </>
     );
 }

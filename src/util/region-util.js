@@ -18,7 +18,7 @@ export function isRegionUnlocked(region, unlockedRegions) {
 }
 
 export function getTasksToNextRegion(currentTasks) {
-    for (var i = 0; i < REGION_UNLOCKS.length; i++) {
+    for (let i = 0; i < REGION_UNLOCKS.length; i++) {
         if (currentTasks < REGION_UNLOCKS[i]) {
             return REGION_UNLOCKS[i] - currentTasks;
         }

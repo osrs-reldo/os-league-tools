@@ -24,7 +24,7 @@ export function getFromLocalStorage(key, initialValue, useSessionStorage = false
         }
         return item ? JSON.parse(item) : initialValue;
     } catch (error) {
-        console.log(error);
+        console.warn(error);
         return initialValue;
     }
 }
@@ -32,9 +32,7 @@ export function getFromLocalStorage(key, initialValue, useSessionStorage = false
 export function updateLocalStorage(
     key,
     value,
-    setValueCallback = () => {
-        return;
-    },
+    setValueCallback = () => {},
     useSessionStorage = false
 ) {
     try {
@@ -45,7 +43,7 @@ export function updateLocalStorage(
             window.localStorage.setItem(key, JSON.stringify(value));
         }
     } catch (error) {
-        console.log(error);
+        console.warn(error);
     }
 }
 
@@ -57,7 +55,7 @@ export function deleteFromLocalStorage(key, useSessionStorage = false) {
             window.localStorage.removeItem(key);
         }
     } catch (error) {
-        console.log(error);
+        console.warn(error);
     }
 }
 

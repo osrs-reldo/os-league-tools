@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Card, CardDeck, Form, FormControl, InputGroup } from 'react-bootstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 import { useParams } from 'react-router';
+import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import { INITIAL_REGIONS_STATE, REGIONS } from '../util/region-util';
 import { getFormatters, getBoostedLevel } from '../util/calculator-util';
-import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import calculatorData from '../resources/calculatorData.json';
 import MultiplierGroup from '../components/MultiplierGroup';
 import LevelExpInput from '../components/LevelExpInput';
@@ -34,6 +34,7 @@ export default function SkillCalculator() {
     );
     const { skill } = useParams();
 
+    let skillData;
     useEffect(() => {
         if (!skillData) {
             return;
@@ -50,16 +51,16 @@ export default function SkillCalculator() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    const skillData = calculatorData.calculators[skill];
+    skillData = calculatorData.calculators[skill];
     if (!skillData) {
         return (
             <h4 className='mt-5 light-text text-center'>
-                No calculator found for "{skill}". Check your link and try again.
+                {`No calculator found for "${skill}". Check your link and try again.`}
             </h4>
         );
     }
-    const isMagic = skillData.name === 'Magic' ? true : false;
-    const isFarming = skillData.name === 'Farming' ? true : false;
+    const isMagic = skillData.name === 'Magic';
+    const isFarming = skillData.name === 'Farming';
 
     const {
         nameFormatter,
@@ -93,7 +94,7 @@ export default function SkillCalculator() {
             formatter: levelFormatter,
             formatExtraData: {
                 level: currentLevel.level,
-                isSkillingProdigy: isSkillingProdigy,
+                isSkillingProdigy,
             },
         },
         {
@@ -112,8 +113,8 @@ export default function SkillCalculator() {
             formatter: expFormatter,
             formatExtraData: {
                 baseMultiplier: baseExpMultiplier,
-                expMultiplier: expMultiplier,
-                totalLevel: totalLevel,
+                expMultiplier,
+                totalLevel,
             },
         },
         {
@@ -136,8 +137,8 @@ export default function SkillCalculator() {
                 current: currentLevel.exp,
                 target: targetLevel.exp,
                 baseMultiplier: baseExpMultiplier,
-                expMultiplier: expMultiplier,
-                totalLevel: totalLevel,
+                expMultiplier,
+                totalLevel,
             },
         },
         {
@@ -150,8 +151,8 @@ export default function SkillCalculator() {
                 current: currentLevel.exp,
                 target: targetLevel.exp,
                 baseMultiplier: baseExpMultiplier,
-                expMultiplier: expMultiplier,
-                totalLevel: totalLevel,
+                expMultiplier,
+                totalLevel,
                 countMultiplier: inputMultiplier,
                 hasDoubleCast: isMagic ? hasDoubleCast : false,
             },
@@ -167,8 +168,8 @@ export default function SkillCalculator() {
                 current: currentLevel.exp,
                 target: targetLevel.exp,
                 baseMultiplier: baseExpMultiplier,
-                expMultiplier: expMultiplier,
-                totalLevel: totalLevel,
+                expMultiplier,
+                totalLevel,
                 countMultiplier: outputMultiplier,
                 hasBotanist: isFarming ? hasBotanist : false,
             },
@@ -182,8 +183,8 @@ export default function SkillCalculator() {
             <CardDeck>
                 <Card bg='dark' text='white' className='mt-2 mb-2' style={{ minWidth: '300px' }}>
                     <div className='p-3'>
-                        <h4>{'League base multiplier:'}</h4>
-                        <div className={'pl-2 pb-2'}>
+                        <h4>League base multiplier:</h4>
+                        <div className="pl-2 pb-2">
                             <Form.Check
                                 label='5x'
                                 inline
@@ -237,7 +238,7 @@ export default function SkillCalculator() {
                             multipliers={inputMultiplier}
                         />
                         {isFarming && (
-                            <React.Fragment>
+                            <>
                                 <h4>Output multiplier:</h4>
                                 <div className='pl-2'>
                                     <Form.Check
@@ -248,7 +249,7 @@ export default function SkillCalculator() {
                                         }}
                                     />
                                 </div>
-                            </React.Fragment>
+                            </>
                         )}
                         <MultiplierGroup
                             title='Output multipliers'
@@ -256,7 +257,7 @@ export default function SkillCalculator() {
                             multipliers={outputMultiplier}
                         />
                         {!skillData.isCombatSkill && (
-                            <React.Fragment>
+                            <>
                                 <h4>Boosts:</h4>
                                 <div className='pl-2'>
                                     <Form.Check
@@ -267,10 +268,10 @@ export default function SkillCalculator() {
                                         }}
                                     />
                                 </div>
-                            </React.Fragment>
+                            </>
                         )}
                         {isMagic && (
-                            <React.Fragment>
+                            <>
                                 <h4>Input Modifiers:</h4>
                                 <div className='pl-2'>
                                     <Form.Check
@@ -281,7 +282,7 @@ export default function SkillCalculator() {
                                         }}
                                     />
                                 </div>
-                            </React.Fragment>
+                            </>
                         )}
                     </div>
                 </Card>
@@ -318,8 +319,8 @@ export default function SkillCalculator() {
                     <div className='p-3'>
                         <h5>Remaining until goal:</h5>
                         <ul>
-                            <li>{targetLevel.exp - currentLevel.exp} Experience</li>
-                            <li>{targetLevel.level - currentLevel.level} Levels</li>
+                            <li>{`${targetLevel.exp - currentLevel.exp} Experience`}</li>
+                            <li>{`${targetLevel.level - currentLevel.level} Levels`}</li>
                         </ul>
                     </div>
                 </Card>
@@ -353,9 +354,9 @@ export default function SkillCalculator() {
                                 disabled={!useAreaFilter}
                                 value={includedAreas}
                                 onChange={event => {
-                                    const options = event.target.options;
+                                    const {options} = event.target;
                                     const selectedAreas = [];
-                                    for (var i = 0, l = options.length; i < l; i++) {
+                                    for (let i = 0, l = options.length; i < l; i++) {
                                         if (options[i].selected) {
                                             selectedAreas.push(options[i].value);
                                         }

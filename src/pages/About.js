@@ -30,20 +30,19 @@ export default function About() {
                             longtime spreadsheet enthusiast.
                         </p>
                         <p>
-                            The site is developed in React JS, with images and data from the official OSRS wiki. It is
-                            open source - head over to{' '}
-                            <a href='https://github.com/chaiinchomp/os-league-tools'>Github</a> if you're interested in
-                            contributing.
+                            {`The site is developed in React JS, with images and data from the official OSRS wiki. It is
+                            open source - head over to ${<a href='https://github.com/chaiinchomp/os-league-tools'>Github</a>}
+                            if you're interested in contributing.`}
                         </p>
                         <p>
-                            If you'd like to keep up-to-date on site changes, report bugs, make suggestions, or just
-                            hang out, please come by the <a href='https://discord.gg/GQ5kVyU'>discord server</a>.
+                            {`If you'd like to keep up-to-date on site changes, report bugs, make suggestions, or just
+                            hang out, please come by the ${<a href='https://discord.gg/GQ5kVyU'>discord server</a>}.`}
                         </p>
                         <p>You can also message me ingame (RSN: chaiinchomp) where I usually have private chat on.</p>
                         <p>
-                            If you're enjoying the site and want to throw a few bucks my way in support, you can do so
-                            here: <a href='https://ko-fi.com/chaiinchomp'>https://ko-fi.com/chaiinchomp</a> (but
-                            seriously, it's free, you don't have to).
+                            {`If you're enjoying the site and want to throw a few bucks my way in support, you can do so
+                            here: ${<a href='https://ko-fi.com/chaiinchomp'>https://ko-fi.com/chaiinchomp</a>} (but
+                            seriously, it's free, you don't have to).`}
                         </p>
                     </div>
                 </Card>

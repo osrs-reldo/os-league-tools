@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Form } from 'react-bootstrap';
-import { isRelicUnlocked } from '../util/relic-util';
 import _ from 'lodash';
+import { isRelicUnlocked } from '../util/relic-util';
 
 export default function MultiplierGroup({ title, multiplierData, globalMultiplierData = [], multipliers }) {
     const [checkedGlobalMultipliers, setCheckedGlobalMultipliers] = useState([]);
 
     useEffect(() => {
-        let toCheckByDefault = [];
+        const toCheckByDefault = [];
         globalMultiplierData.forEach(multiplier => {
             if (multiplier.autoApply) {
                 const checkByDefault = multiplier.autoApply === 'always' || isRelicUnlocked(multiplier.autoApply);
@@ -27,9 +27,9 @@ export default function MultiplierGroup({ title, multiplierData, globalMultiplie
     }
 
     return (
-        <React.Fragment>
-            <h4>{title + ':'}</h4>
-            <div className={'pl-2 pb-2'}>
+        <>
+            <h4>{`${title}:`}</h4>
+            <div className="pl-2 pb-2">
                 {globalMultiplierData.length > 0 &&
                     globalMultiplierData.map(multiplier => {
                         return (
@@ -66,6 +66,6 @@ export default function MultiplierGroup({ title, multiplierData, globalMultiplie
                         );
                     })}
             </div>
-        </React.Fragment>
+        </>
     );
 }

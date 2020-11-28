@@ -1,7 +1,6 @@
-import relicData from '../resources/relicData.json';
-import { LOCALSTORAGE_KEYS } from './browser-util';
-import { getFromLocalStorage } from '../util/browser-util';
 import update from 'immutability-helper';
+import relicData from '../resources/relicData.json';
+import { LOCALSTORAGE_KEYS, getFromLocalStorage } from './browser-util';
 
 export const MAX_POINTS = 15000;
 export const RELIC_UNLOCKS = [0, 500, 2000, 4000, 7500, 15000];
@@ -51,17 +50,16 @@ export function isRelicUnlocked(relicKey, unlockedRelics) {
     }
 
     const [tierId, relicId] = getRelicIndices(relicKey);
-    const relics = unlockedRelics ? unlockedRelics : getFromLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_RELICS, {});
+    const relics = unlockedRelics || getFromLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_RELICS, {});
 
     if (relicId === 3) {
-        return relics && relics[tierId] && relics[tierId]['passive'];
-    } else {
-        return relics && relics[tierId] && relics[tierId]['relic'] === relicId;
+        return relics && relics[tierId] && relics[tierId].passive;
     }
+    return relics && relics[tierId] && relics[tierId].relic === relicId;
 }
 
 export function getPointsToNextRelic(currentPoints) {
-    for (var i = 0; i < RELIC_UNLOCKS.length; i++) {
+    for (let i = 0; i < RELIC_UNLOCKS.length; i++) {
         if (currentPoints < RELIC_UNLOCKS[i]) {
             return RELIC_UNLOCKS[i] - currentPoints;
         }

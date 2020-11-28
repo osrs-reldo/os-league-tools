@@ -1,8 +1,8 @@
+import update from 'immutability-helper';
+import _ from 'lodash';
 import { LOCALSTORAGE_KEYS } from '../util/browser-util';
 import { REGIONS } from '../util/region-util';
 import useLocalStorage from './useLocalStorage';
-import update from 'immutability-helper';
-import _ from 'lodash';
 
 const CURRENT_VERSION = 3;
 
@@ -85,6 +85,7 @@ function updateTaskStatusVersion(taskStatus, prevVersion) {
     } else if (prevVersion === 2) {
         return updateToVersion3(taskStatus);
     }
+    return taskStatus;
 }
 
 function updateToVersion2(taskStatus) {
@@ -92,7 +93,7 @@ function updateToVersion2(taskStatus) {
     const regions = ['Common', ...REGIONS];
     regions.forEach(region => {
         const taskStatusInRegion = taskStatus[region].tasks;
-        for (let [id, status] of Object.entries(taskStatusInRegion)) {
+        for (const [id, status] of Object.entries(taskStatusInRegion)) {
             if (status.complete) {
                 newTaskStatus.tasks.push(id);
             }

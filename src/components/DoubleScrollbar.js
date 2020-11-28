@@ -4,18 +4,18 @@ import React, { useEffect, useRef, useState } from 'react';
  * adapted from https://github.com/umchee/react-double-scrollbar
  * rewritten in pure functional style
  */
-export default function DoubleScrollbar(props) {
+export default function DoubleScrollbar({ children }) {
     const [width, setWidth] = useState('auto');
     const innerDiv = useRef();
     const outerDiv = useRef();
     const childWrapper = useRef();
 
     const getChildWrapperWidth = () => {
-        let width = null;
+        let childWidth = null;
         if (childWrapper.current && childWrapper.current.scrollWidth) {
-            width = childWrapper.current.scrollWidth + 'px';
+            childWidth = `${childWrapper.current.scrollWidth}px`;
         }
-        return width;
+        return childWidth;
     };
 
     const calculateWidth = () => {
@@ -34,13 +34,13 @@ export default function DoubleScrollbar(props) {
     window.addEventListener('resize', calculateWidth());
 
     if (outerDiv.current) {
-        outerDiv.current.onscroll = function () {
+        outerDiv.current.onscroll = () => {
             childWrapper.current.scrollLeft = outerDiv.current.scrollLeft;
         };
     }
 
     if (childWrapper.current) {
-        childWrapper.current.onscroll = function () {
+        childWrapper.current.onscroll = () => {
             outerDiv.current.scrollLeft = childWrapper.current.scrollLeft;
         };
     }
@@ -48,10 +48,10 @@ export default function DoubleScrollbar(props) {
     return (
         <div>
             <div ref={outerDiv} style={{ overflowX: 'auto', overflowY: 'hidden' }}>
-                <div ref={innerDiv} style={{ paddingTop: '1px', width: width }}></div>
+                <div ref={innerDiv} style={{ paddingTop: '1px', width }} />
             </div>
             <div ref={childWrapper} style={{ overflow: 'auto', overflowY: 'hidden' }} className='shadowed-scrollbox'>
-                {props.children}
+                {children}
             </div>
         </div>
     );

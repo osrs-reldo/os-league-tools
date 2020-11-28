@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { getFromLocalStorage, updateLocalStorage } from '../util/browser-util';
 
-/** originally from https://usehooks.com/useLocalStorage **/
+/** originally from https://usehooks.com/useLocalStorage */
 export default function useLocalStorage(key, initialValue, useSessionStorage = false) {
     const getValue = () => {
         return getFromLocalStorage(key, initialValue, useSessionStorage);

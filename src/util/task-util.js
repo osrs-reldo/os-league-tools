@@ -4,8 +4,8 @@ import checkedIcon from '@iconify/icons-mdi/check-circle-outline';
 import uncheckedIcon from '@iconify/icons-mdi/checkbox-blank-circle-outline';
 import closeIcon from '@iconify/icons-mdi/close';
 import plusIcon from '@iconify/icons-mdi/plus';
-import taskData from '../resources/taskData.json';
 import Badge from 'react-bootstrap/Badge';
+import taskData from '../resources/taskData.json';
 import calculatorData from '../resources/calculatorData.json';
 
 export const DIFFICULTY_POINTS = {
@@ -18,20 +18,20 @@ export const DIFFICULTY_POINTS = {
 
 export function getFormatters() {
     return {
-        completedFormatter: completedFormatter,
-        pointsFormatter: pointsFormatter,
-        difficultyFormatter: difficultyFormatter,
-        nameFormatter: nameFormatter,
-        skillsFormatter: skillsFormatter,
-        manageFormatter: manageFormatter,
+        completedFormatter,
+        pointsFormatter,
+        difficultyFormatter,
+        nameFormatter,
+        skillsFormatter,
+        manageFormatter,
     };
 }
 
 export function getRenderers() {
     return {
-        pageButtonRenderer: pageButtonRenderer,
-        pageListRenderer: pageListRenderer,
-        sizePerPageRenderer: sizePerPageRenderer,
+        pageButtonRenderer,
+        pageListRenderer,
+        sizePerPageRenderer,
     };
 }
 
@@ -44,7 +44,7 @@ function completedFormatter(cell, row, rowIndex, props) {
     );
 }
 
-function pointsFormatter(cell, row, rowIndex) {
+function pointsFormatter(cell, row) {
     const points = DIFFICULTY_POINTS[row.difficulty];
     if (!points) {
         return 0;
@@ -93,23 +93,28 @@ function manageFormatter(cell, row, rowIndex, props) {
 function skillsFormatter(cell, row, rowIndex, props) {
     return cell.map(skill => {
         const name = skill.name.toLowerCase();
-        const isReqMet = meetsSkillRequirement(
-            props.hiscores,
-            name,
-            skill.level,
-            skill.boostable,
-            props.isSkillingProdigy
-        );
+        let variant = 'light';
+        if (props.hiscores) {
+            const isReqMet = meetsSkillRequirement(
+                props.hiscores,
+                name,
+                skill.level,
+                skill.boostable,
+                props.isSkillingProdigy
+            );
+            variant = isReqMet ? 'success' : 'danger';
+        }
         const icon = `/img/${name}.gif`;
         return (
-            <Badge pill key={name} variant={props.hiscores ? (isReqMet ? 'success' : 'danger') : 'light'}>
-                <img src={icon} alt={skill.name} title={skill.name} /> {skill.level}
+            <Badge pill key={name} variant={variant}>
+                <img src={icon} alt={skill.name} title={skill.name} />
+                {skill.level}
             </Badge>
         );
     });
 }
 
-function pageButtonRenderer({ page, active, disable, title, onPageChange }) {
+function pageButtonRenderer({ page, active, onPageChange }) {
     const handleClick = e => {
         e.preventDefault();
         onPageChange(page);
@@ -203,7 +208,7 @@ export function meetsSkillRequirement(hiscores, reqSkill, reqLevel, isBoostable,
 }
 
 export function removeCompletedFromTodo(taskStatus, setIsTodoCallback) {
-    let idsToRemove = [];
+    const idsToRemove = [];
     taskStatus.todoList.forEach(taskId => {
         if (isTaskComplete(taskId, taskStatus)) {
             idsToRemove.push(taskId);
@@ -215,7 +220,7 @@ export function removeCompletedFromTodo(taskStatus, setIsTodoCallback) {
 export function applyFilters(tasks, area, filterFunctions) {
     return tasks.filter(task => {
         let status = true;
-        filterFunctions.forEach(filterFunction => (status = status && filterFunction(task, area)));
+        filterFunctions.forEach(filterFunction => {status = status && filterFunction(task, area)});
         return status;
     });
 }
@@ -228,7 +233,6 @@ export function isTaskCompletableWithRegions(taskId, unlockedRegions) {
 
     const reqAllOfRegions = task.additionalAreas.allOf;
     if (reqAllOfRegions) {
-        console.log(`task ${task.name} requires regions ${reqAllOfRegions}`);
         for (const reqReqion of reqAllOfRegions) {
             if (!unlockedRegions.includes(reqReqion)) {
                 return false;
@@ -238,7 +242,6 @@ export function isTaskCompletableWithRegions(taskId, unlockedRegions) {
 
     const reqOneOfRegions = task.additionalAreas.oneOf;
     if (reqOneOfRegions) {
-        console.log(`task ${task.name} requires one of regions ${reqOneOfRegions}`);
         for (const reqReqion of reqOneOfRegions) {
             if (unlockedRegions.includes(reqReqion)) {
                 return true;
@@ -309,18 +312,17 @@ export function getMaxCompletableTaskPoints(unlockedRegions, taskStatus) {
             Master: 0,
         },
     };
-    for (let [id, task] of Object.entries(taskData.tasksById)) {
+    for (const [id, task] of Object.entries(taskData.tasksById)) {
         if (isTaskCompletableWithRegions(id, unlockedRegions) && !isTaskHidden(id, taskStatus)) {
-            const region = task.area;
-            const difficulty = task.difficulty;
+            const {difficulty, area } = task;
             const pointValue = DIFFICULTY_POINTS[difficulty];
             maxTaskPoints.tasks.Total += 1;
             maxTaskPoints.points.Total += pointValue;
             maxTaskPoints.tasks[difficulty] += 1;
             maxTaskPoints.points[difficulty] += pointValue;
-            maxTaskPoints.tasks[region] = maxTaskPoints.tasks[region] ? maxTaskPoints.tasks[region] + 1 : 1;
-            maxTaskPoints.points[region] = maxTaskPoints.points[region]
-                ? maxTaskPoints.points[region] + pointValue
+            maxTaskPoints.tasks[area] = maxTaskPoints.tasks[area] ? maxTaskPoints.tasks[area] + 1 : 1;
+            maxTaskPoints.points[area] = maxTaskPoints.points[area]
+                ? maxTaskPoints.points[area] + pointValue
                 : pointValue;
         }
     }
@@ -337,8 +339,8 @@ export function getTaskPointsOnTodoList(taskStatus, regions) {
         const task = taskData.tasksById[taskId];
         if (regions.includes(task.area) && !isTaskComplete(taskId, taskStatus) && !isTaskHidden(taskId, taskStatus)) {
             const pointValue = DIFFICULTY_POINTS[task.difficulty];
-            todoListStatus.tasks = todoListStatus.tasks + 1;
-            todoListStatus.points = todoListStatus.points + pointValue;
+            todoListStatus.tasks += 1;
+            todoListStatus.points += pointValue;
         }
     });
     return todoListStatus;

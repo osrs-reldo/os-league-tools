@@ -2,8 +2,8 @@ import { saveAs } from 'file-saver';
 import { updateLocalStorage } from './browser-util';
 
 export function saveLocalStorageToFile() {
-    var blob = new Blob([JSON.stringify(localStorage)], { type: 'text/plain;charset=utf-8' });
-    saveAs(blob, 'osLeagueTools_backup_' + Date.now() + '.txt');
+    const blob = new Blob([JSON.stringify(localStorage)], { type: 'text/plain;charset=utf-8' });
+    saveAs(blob, `osLeagueTools_backup_${Date.now()}.txt`);
 }
 
 export async function loadLocalStorageFromFile(fileObject) {
@@ -28,7 +28,7 @@ export async function loadLocalStorageFromFile(fileObject) {
     }
 
     localStorage.clear();
-    for (let [key, value] of Object.entries(storageJson)) {
+    for (const [key, value] of Object.entries(storageJson)) {
         updateLocalStorage(key, JSON.parse(value));
     }
 

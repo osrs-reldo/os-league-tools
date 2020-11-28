@@ -17,6 +17,7 @@ export default function NewsEntry({ title, date, thumbnail, leadText, buttonLink
                             )}
                         </Col>
                         <Col>
+                            {/* eslint-disable-next-line react/no-danger */}
                             <div dangerouslySetInnerHTML={{ __html: leadText }} className='mb-2' />
                             <Button variant='outline-light' as='a' href={buttonLink}>
                                 {buttonText}
