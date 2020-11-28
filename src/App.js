@@ -11,6 +11,7 @@ import Calculator from "./pages/SkillCalculator";
 import CharacterTracker from "./pages/CharacterTracker";
 import About from "./pages/About";
 import ReactGA from 'react-ga';
+import PluginInfo from "./pages/PluginInfo";
 
 const history = createHashHistory();
 const trackingId = process.env.REACT_APP_GA_TRACKING || "";
@@ -38,6 +39,7 @@ export default function App(props) {
                     <Route exact path="/calculators" component={Calculators} />
                     <Route path="/calculators/:skill" component={Calculator} />
                     <Route path="/about" component={About} />
+                    <Route path="/plugin" component={PluginInfo} />
                 </Switch>
             </HashRouter>
         </div>

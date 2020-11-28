@@ -36,6 +36,9 @@ export default function () {
                         </Link>
                     </Nav>
                     <Nav>
+                        <Link to="/plugin" className="nav-link mr-2">
+                            RuneLite Plugin
+                        </Link>
                         <Navbar.Text
                             onClick={() => setShowDataModal(true)}
                             className="clickable mr-2"
