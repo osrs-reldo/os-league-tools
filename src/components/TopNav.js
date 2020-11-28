@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Navbar, Nav, Alert } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useLocalStorage from "../hooks/useLocalStorage";
-import RelicCheckImg from '../resources/img/relic-check.png';
 import { LOCALSTORAGE_KEYS, reloadPage } from "../util/browser-util";
 import ManageDataModal from "./ManageDataModal";
 
@@ -15,7 +14,7 @@ export default function () {
             <Navbar bg="dark" variant="dark" expand="lg">
                 <Navbar.Brand href="/">
                     <img
-                        src={RelicCheckImg}
+                        src='/img/relic-check.png'
                         width="30"
                         height="30"
                         className="d-inline-block align-top mr-2"

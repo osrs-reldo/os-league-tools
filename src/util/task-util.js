@@ -99,7 +99,7 @@ function skillsFormatter(cell, row, rowIndex, props) {
     return cell.map(skill => {
         const name = skill.name.toLowerCase();
         const isReqMet = meetsSkillRequirement(props.hiscores, name, skill.level, skill.boostable, props.isSkillingProdigy);
-        const icon = `/${name}.gif`
+        const icon = `/img/${name}.gif`
         return (
             <Badge pill key={name} variant={props.hiscores ? (isReqMet ? "success" : "danger") : "light"}>
                 <img src={icon} alt={skill.name} title={skill.name}/> {skill.level}

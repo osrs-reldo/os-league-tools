@@ -2,29 +2,27 @@ import React from "react";
 import "react-step-progress-bar/styles.css";
 import { ProgressBar, Step } from "react-step-progress-bar";
 import useScreenSize from "../hooks/useScreenSize";
-import RelicCheckImg from '../resources/img/relic-check.png';
-import RelicNotchImg from '../resources/img/notch.png';
 
 export default function UnlockProgressBar({ curValue, maxValue, steps }) {
     const screenSize = useScreenSize();
 
-    let barHeight = 30, imgHeight = 40, imgIcon = RelicCheckImg, showEndIcons = true, marginClass = "mt-3 mb-3 mr-5 ml-5";
+    let barHeight = 30, imgHeight = 40, imgIcon = '/img/relic-check.png', showEndIcons = true, marginClass = "mt-3 mb-3 mr-5 ml-5";
     if (screenSize.isSizeOrSmaller('sm')) {
         barHeight = 20;
         imgHeight = 20;
-        imgIcon = RelicNotchImg;
+        imgIcon = '/img/notch.png';
         showEndIcons = false;
         marginClass = "m-2";
     } else if (screenSize.isMd) {
         barHeight = 25;
         imgHeight = 25;
-        imgIcon = RelicNotchImg;
+        imgIcon = '/img/notch.png';
         showEndIcons = false;
         marginClass = "m-2";
     } else if (screenSize.isLg) {
         barHeight = 30;
         imgHeight = 30;
-        imgIcon = RelicNotchImg;
+        imgIcon = '/img/notch.png';
         showEndIcons = false;
         marginClass = "m-3";
     }
