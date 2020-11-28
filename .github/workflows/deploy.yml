@@ -1,24 +1,24 @@
 name: Build and Deploy to GH Pages
 on: [workflow_dispatch]
 jobs:
-  publish:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+    publish:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
 
-      - name: Install and build
-        run: |
-          npm install
-          npm run build
-        env:
-          REACT_APP_GA_TRACKING: ${{ secrets.REACT_APP_GA_TRACKING }}
+            - name: Install and build
+              run: |
+                  npm install
+                  npm run build
+              env:
+                  REACT_APP_GA_TRACKING: ${{ secrets.REACT_APP_GA_TRACKING }}
 
-      - name: Deploy to GitHub Pages
-        if: success()
-        uses: crazy-max/ghaction-github-pages@v2
-        with:
-          target_branch: gh-pages
-          build_dir: build
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            - name: Deploy to GitHub Pages
+              if: success()
+              uses: crazy-max/ghaction-github-pages@v2
+              with:
+                  target_branch: gh-pages
+                  build_dir: build
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
