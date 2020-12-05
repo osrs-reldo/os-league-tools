@@ -26,7 +26,7 @@ and open [http://localhost:3000](http://localhost:3000) to view it in the browse
 
 ### Updating task/calculator data
 
-To update any data relating to tasks or skill calculators, you'll first need to edit the corresponding .csv file found in `/tools/inputs`.
+To update any data relating to tasks or skill calculators, you'll first need to edit the corresponding .csv file found in `/scripts/inputs`.
 
 After making your changes, run either `parseCalcSpreadsheets.py` or `parseTaskSpreadsheet.py` (depending on which one you edited) to generate the json resource files. Once that's done, you will see your changes reflected in the site.
 

@@ -207,7 +207,7 @@ function TaskTableWrapper({
                         />
                         <Divider />
                         <Form.Check
-                            label='Hide locked areas'
+                            label='Hide tasks in locked areas'
                             checked={hideLockedAreas}
                             onChange={() => setHideLockedAreas(prevHideLocked => !prevHideLocked)}
                         />

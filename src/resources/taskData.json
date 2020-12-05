@@ -932,7 +932,11 @@
             "subcategory": "Hunter",
             "area": "Common",
             "additionalAreas": {
-                "oneOf": ["Kandarin", "Fremennik", "Desert"]
+                "oneOf": [
+                    "Kandarin",
+                    "Fremennik",
+                    "Desert"
+                ]
             },
             "skills": []
         },
@@ -1318,7 +1322,9 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": ["Kandarin"]
+                "allOf": [
+                    "Kandarin"
+                ]
             },
             "skills": []
         },
@@ -2107,7 +2113,10 @@
             "subcategory": "Hunter",
             "area": "Common",
             "additionalAreas": {
-                "oneOf": ["Kandarin", "Fremennik"]
+                "oneOf": [
+                    "Kandarin",
+                    "Fremennik"
+                ]
             },
             "skills": [
                 {
@@ -2292,6 +2301,50 @@
             ]
         },
         {
+            "id": "537",
+            "name": "Equip a Granite Shield",
+            "description": "Equip a granite shield.",
+            "difficulty": "Medium",
+            "category": "Combat",
+            "subcategory": "Slayer",
+            "area": "Common",
+            "additionalAreas": {},
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 50,
+                    "boostable": true
+                },
+                {
+                    "name": "Strength",
+                    "level": 50,
+                    "boostable": true
+                }
+            ]
+        },
+        {
+            "id": "543",
+            "name": "Equip a Leaf-Bladed Sword",
+            "description": "Equip a leaf-bladed sword.",
+            "difficulty": "Medium",
+            "category": "Combat",
+            "subcategory": "Slayer",
+            "area": "Common",
+            "additionalAreas": {},
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 50,
+                    "boostable": false
+                },
+                {
+                    "name": "Slayer",
+                    "level": 55,
+                    "boostable": true
+                }
+            ]
+        },
+        {
             "id": "144",
             "name": "Equip a Full Green Dragonhide Set",
             "description": "Equip a green d'hide body some green d'hide chaps and some green d'hide vambs.",
@@ -2392,6 +2445,28 @@
                 {
                     "name": "Attack",
                     "level": 40,
+                    "boostable": false
+                }
+            ]
+        },
+        {
+            "id": "909",
+            "name": "Equip a Lava Battlestaff",
+            "description": "Equip a Lava battlestaff.",
+            "difficulty": "Medium",
+            "category": "Combat",
+            "subcategory": "Magic",
+            "area": "Common",
+            "additionalAreas": {},
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 30,
+                    "boostable": false
+                },
+                {
+                    "name": "Magic",
+                    "level": 30,
                     "boostable": false
                 }
             ]
@@ -2693,7 +2768,9 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": ["Kandarin"]
+                "allOf": [
+                    "Kandarin"
+                ]
             },
             "skills": []
         },
@@ -3363,7 +3440,10 @@
             "subcategory": "Magic",
             "area": "Common",
             "additionalAreas": {
-                "oneOf": ["Kandarin", "Wilderness"]
+                "oneOf": [
+                    "Kandarin",
+                    "Wilderness"
+                ]
             },
             "skills": [
                 {
@@ -3697,7 +3777,10 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": ["Kandarin", "Tirannwn"]
+                "allOf": [
+                    "Kandarin",
+                    "Tirannwn"
+                ]
             },
             "skills": []
         },
@@ -4580,7 +4663,9 @@
             "subcategory": "Farming",
             "area": "Common",
             "additionalAreas": {
-                "allOf": ["Kandarin"]
+                "allOf": [
+                    "Kandarin"
+                ]
             },
             "skills": [
                 {
@@ -4611,6 +4696,17 @@
             "id": "297",
             "name": "Complete 200 Slayer Tasks",
             "description": "Complete 200 Slayer Tasks.",
+            "difficulty": "Elite",
+            "category": "Combat",
+            "subcategory": "Slayer",
+            "area": "Common",
+            "additionalAreas": {},
+            "skills": []
+        },
+        {
+            "id": "965",
+            "name": "200 Slayer Tasks",
+            "description": "NOTE: This task is a duplicate of \u201cComplete 200 Slayer Tasks\u201d and is currently bugged. Most players are unable to complete it, but some are, so it will remain on this list until Jagex fixes it.",
             "difficulty": "Elite",
             "category": "Combat",
             "subcategory": "Slayer",
@@ -4723,7 +4819,10 @@
             "subcategory": "Melee",
             "area": "Common",
             "additionalAreas": {
-                "allOf": ["Kandarin", "Fremennik"]
+                "allOf": [
+                    "Kandarin",
+                    "Fremennik"
+                ]
             },
             "skills": [
                 {
@@ -4951,7 +5050,10 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": ["Kandarin", "Tirannwn"]
+                "allOf": [
+                    "Kandarin",
+                    "Tirannwn"
+                ]
             },
             "skills": []
         },
@@ -5537,7 +5639,10 @@
             "subcategory": "Grandmaster",
             "area": "Misthalin",
             "additionalAreas": {
-                "allOf": ["Kandarin", "Asgarnia"]
+                "allOf": [
+                    "Kandarin",
+                    "Asgarnia"
+                ]
             },
             "skills": []
         },
@@ -6074,7 +6179,10 @@
             "subcategory": "Melee",
             "area": "Misthalin",
             "additionalAreas": {
-                "allOf": ["Kandarin", "Fremennik"]
+                "allOf": [
+                    "Kandarin",
+                    "Fremennik"
+                ]
             },
             "skills": [
                 {
@@ -7444,7 +7552,10 @@
             "subcategory": "Slayer",
             "area": "Asgarnia",
             "additionalAreas": {
-                "oneOf": ["Wilderness", "Fremennik"]
+                "oneOf": [
+                    "Wilderness",
+                    "Fremennik"
+                ]
             },
             "skills": [
                 {
@@ -7776,7 +7887,9 @@
             "subcategory": "Slayer",
             "area": "Asgarnia",
             "additionalAreas": {
-                "allOf": ["Desert"]
+                "allOf": [
+                    "Desert"
+                ]
             },
             "skills": [
                 {
@@ -8081,28 +8194,6 @@
             ]
         },
         {
-            "id": "537",
-            "name": "Equip a Granite Shield",
-            "description": "Equip a granite shield.",
-            "difficulty": "Medium",
-            "category": "Combat",
-            "subcategory": "Slayer",
-            "area": "Fremennik",
-            "additionalAreas": {},
-            "skills": [
-                {
-                    "name": "Defence",
-                    "level": 50,
-                    "boostable": true
-                },
-                {
-                    "name": "Strength",
-                    "level": 50,
-                    "boostable": true
-                }
-            ]
-        },
-        {
             "id": "538",
             "name": "Equip a Brine Sabre",
             "description": "Equip a brine sabre.",
@@ -8176,28 +8267,6 @@
                 {
                     "name": "Slayer",
                     "level": 52,
-                    "boostable": true
-                }
-            ]
-        },
-        {
-            "id": "543",
-            "name": "Equip a Leaf-Bladed Sword",
-            "description": "Equip a leaf-bladed sword.",
-            "difficulty": "Medium",
-            "category": "Combat",
-            "subcategory": "Slayer",
-            "area": "Fremennik",
-            "additionalAreas": {},
-            "skills": [
-                {
-                    "name": "Attack",
-                    "level": 50,
-                    "boostable": false
-                },
-                {
-                    "name": "Slayer",
-                    "level": 55,
                     "boostable": true
                 }
             ]
@@ -9280,7 +9349,9 @@
             "subcategory": "Novice",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": ["Asgarnia"]
+                "allOf": [
+                    "Asgarnia"
+                ]
             },
             "skills": []
         },
@@ -9327,7 +9398,12 @@
             "subcategory": "Slayer",
             "area": "Kandarin",
             "additionalAreas": {
-                "oneOf": ["Morytania", "Asgarnia", "Tirannwn", "Wilderness"]
+                "oneOf": [
+                    "Morytania",
+                    "Asgarnia",
+                    "Tirannwn",
+                    "Wilderness"
+                ]
             },
             "skills": [
                 {
@@ -9357,7 +9433,9 @@
             "subcategory": "Prayer",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": ["Asgarnia"]
+                "allOf": [
+                    "Asgarnia"
+                ]
             },
             "skills": [
                 {
@@ -9381,7 +9459,10 @@
             "subcategory": "Magic",
             "area": "Kandarin",
             "additionalAreas": {
-                "oneOf": ["Fremennik", "Tirannwn"]
+                "oneOf": [
+                    "Fremennik",
+                    "Tirannwn"
+                ]
             },
             "skills": [
                 {
@@ -9667,7 +9748,9 @@
             "subcategory": "Experienced",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": ["Asgarnia"]
+                "allOf": [
+                    "Asgarnia"
+                ]
             },
             "skills": [
                 {
@@ -9691,7 +9774,9 @@
             "subcategory": "Grandmaster",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": ["Fremennik"]
+                "allOf": [
+                    "Fremennik"
+                ]
             },
             "skills": []
         },
@@ -12882,7 +12967,9 @@
             "subcategory": "Gauntlet",
             "area": "Tirannwn",
             "additionalAreas": {
-                "allOf": ["Kandarin"]
+                "allOf": [
+                    "Kandarin"
+                ]
             },
             "skills": [
                 {
@@ -13110,7 +13197,9 @@
             "subcategory": "Zulrah",
             "area": "Tirannwn",
             "additionalAreas": {
-                "allOf": ["Kandarin"]
+                "allOf": [
+                    "Kandarin"
+                ]
             },
             "skills": [
                 {
@@ -13600,28 +13689,6 @@
             "skills": []
         },
         {
-            "id": "909",
-            "name": "Equip a Lava Battlestaff",
-            "description": "Equip a Lava battlestaff.",
-            "difficulty": "Medium",
-            "category": "Combat",
-            "subcategory": "Magic",
-            "area": "Wilderness",
-            "additionalAreas": {},
-            "skills": [
-                {
-                    "name": "Attack",
-                    "level": 30,
-                    "boostable": false
-                },
-                {
-                    "name": "Magic",
-                    "level": 30,
-                    "boostable": false
-                }
-            ]
-        },
-        {
             "id": "910",
             "name": "Equip a Bracelet of Ethereum",
             "description": "Equip a Bracelet of ethereum.",
@@ -13764,7 +13831,11 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": ["Kandarin", "Fremennik", "Desert"]
+                "oneOf": [
+                    "Kandarin",
+                    "Fremennik",
+                    "Desert"
+                ]
             },
             "skills": [
                 {
@@ -13989,7 +14060,11 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": ["Kandarin", "Fremennik", "Desert"]
+                "oneOf": [
+                    "Kandarin",
+                    "Fremennik",
+                    "Desert"
+                ]
             },
             "skills": [
                 {
@@ -14013,7 +14088,11 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": ["Kandarin", "Fremennik", "Desert"]
+                "oneOf": [
+                    "Kandarin",
+                    "Fremennik",
+                    "Desert"
+                ]
             },
             "skills": [
                 {
@@ -14037,7 +14116,11 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": ["Kandarin", "Fremennik", "Desert"]
+                "oneOf": [
+                    "Kandarin",
+                    "Fremennik",
+                    "Desert"
+                ]
             },
             "skills": [
                 {
@@ -14262,7 +14345,9 @@
             "subcategory": "Construction",
             "area": "Wilderness",
             "additionalAreas": {
-                "allOf": ["Fremennik"]
+                "allOf": [
+                    "Fremennik"
+                ]
             },
             "skills": [
                 {
@@ -14374,7 +14459,10 @@
             "subcategory": "Other",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": ["Fremennik", "Asgarnia"]
+                "oneOf": [
+                    "Fremennik",
+                    "Asgarnia"
+                ]
             },
             "skills": []
         }
@@ -15057,7 +15145,11 @@
                 "subcategory": "Hunter",
                 "area": "Common",
                 "additionalAreas": {
-                    "oneOf": ["Kandarin", "Fremennik", "Desert"]
+                    "oneOf": [
+                        "Kandarin",
+                        "Fremennik",
+                        "Desert"
+                    ]
                 },
                 "skills": []
             },
@@ -15443,7 +15535,9 @@
                 "subcategory": "Western Provinces",
                 "area": "Common",
                 "additionalAreas": {
-                    "allOf": ["Kandarin"]
+                    "allOf": [
+                        "Kandarin"
+                    ]
                 },
                 "skills": []
             },
@@ -16232,7 +16326,10 @@
                 "subcategory": "Hunter",
                 "area": "Common",
                 "additionalAreas": {
-                    "oneOf": ["Kandarin", "Fremennik"]
+                    "oneOf": [
+                        "Kandarin",
+                        "Fremennik"
+                    ]
                 },
                 "skills": [
                     {
@@ -16417,6 +16514,50 @@
                 ]
             },
             {
+                "id": "537",
+                "name": "Equip a Granite Shield",
+                "description": "Equip a granite shield.",
+                "difficulty": "Medium",
+                "category": "Combat",
+                "subcategory": "Slayer",
+                "area": "Common",
+                "additionalAreas": {},
+                "skills": [
+                    {
+                        "name": "Defence",
+                        "level": 50,
+                        "boostable": true
+                    },
+                    {
+                        "name": "Strength",
+                        "level": 50,
+                        "boostable": true
+                    }
+                ]
+            },
+            {
+                "id": "543",
+                "name": "Equip a Leaf-Bladed Sword",
+                "description": "Equip a leaf-bladed sword.",
+                "difficulty": "Medium",
+                "category": "Combat",
+                "subcategory": "Slayer",
+                "area": "Common",
+                "additionalAreas": {},
+                "skills": [
+                    {
+                        "name": "Attack",
+                        "level": 50,
+                        "boostable": false
+                    },
+                    {
+                        "name": "Slayer",
+                        "level": 55,
+                        "boostable": true
+                    }
+                ]
+            },
+            {
                 "id": "144",
                 "name": "Equip a Full Green Dragonhide Set",
                 "description": "Equip a green d'hide body some green d'hide chaps and some green d'hide vambs.",
@@ -16517,6 +16658,28 @@
                     {
                         "name": "Attack",
                         "level": 40,
+                        "boostable": false
+                    }
+                ]
+            },
+            {
+                "id": "909",
+                "name": "Equip a Lava Battlestaff",
+                "description": "Equip a Lava battlestaff.",
+                "difficulty": "Medium",
+                "category": "Combat",
+                "subcategory": "Magic",
+                "area": "Common",
+                "additionalAreas": {},
+                "skills": [
+                    {
+                        "name": "Attack",
+                        "level": 30,
+                        "boostable": false
+                    },
+                    {
+                        "name": "Magic",
+                        "level": 30,
                         "boostable": false
                     }
                 ]
@@ -16818,7 +16981,9 @@
                 "subcategory": "Western Provinces",
                 "area": "Common",
                 "additionalAreas": {
-                    "allOf": ["Kandarin"]
+                    "allOf": [
+                        "Kandarin"
+                    ]
                 },
                 "skills": []
             },
@@ -17488,7 +17653,10 @@
                 "subcategory": "Magic",
                 "area": "Common",
                 "additionalAreas": {
-                    "oneOf": ["Kandarin", "Wilderness"]
+                    "oneOf": [
+                        "Kandarin",
+                        "Wilderness"
+                    ]
                 },
                 "skills": [
                     {
@@ -17822,7 +17990,10 @@
                 "subcategory": "Western Provinces",
                 "area": "Common",
                 "additionalAreas": {
-                    "allOf": ["Kandarin", "Tirannwn"]
+                    "allOf": [
+                        "Kandarin",
+                        "Tirannwn"
+                    ]
                 },
                 "skills": []
             },
@@ -18705,7 +18876,9 @@
                 "subcategory": "Farming",
                 "area": "Common",
                 "additionalAreas": {
-                    "allOf": ["Kandarin"]
+                    "allOf": [
+                        "Kandarin"
+                    ]
                 },
                 "skills": [
                     {
@@ -18736,6 +18909,17 @@
                 "id": "297",
                 "name": "Complete 200 Slayer Tasks",
                 "description": "Complete 200 Slayer Tasks.",
+                "difficulty": "Elite",
+                "category": "Combat",
+                "subcategory": "Slayer",
+                "area": "Common",
+                "additionalAreas": {},
+                "skills": []
+            },
+            {
+                "id": "965",
+                "name": "200 Slayer Tasks",
+                "description": "NOTE: This task is a duplicate of \u201cComplete 200 Slayer Tasks\u201d and is currently bugged. Most players are unable to complete it, but some are, so it will remain on this list until Jagex fixes it.",
                 "difficulty": "Elite",
                 "category": "Combat",
                 "subcategory": "Slayer",
@@ -18848,7 +19032,10 @@
                 "subcategory": "Melee",
                 "area": "Common",
                 "additionalAreas": {
-                    "allOf": ["Kandarin", "Fremennik"]
+                    "allOf": [
+                        "Kandarin",
+                        "Fremennik"
+                    ]
                 },
                 "skills": [
                     {
@@ -19076,7 +19263,10 @@
                 "subcategory": "Western Provinces",
                 "area": "Common",
                 "additionalAreas": {
-                    "allOf": ["Kandarin", "Tirannwn"]
+                    "allOf": [
+                        "Kandarin",
+                        "Tirannwn"
+                    ]
                 },
                 "skills": []
             },
@@ -19664,7 +19854,10 @@
                 "subcategory": "Grandmaster",
                 "area": "Misthalin",
                 "additionalAreas": {
-                    "allOf": ["Kandarin", "Asgarnia"]
+                    "allOf": [
+                        "Kandarin",
+                        "Asgarnia"
+                    ]
                 },
                 "skills": []
             },
@@ -20201,7 +20394,10 @@
                 "subcategory": "Melee",
                 "area": "Misthalin",
                 "additionalAreas": {
-                    "allOf": ["Kandarin", "Fremennik"]
+                    "allOf": [
+                        "Kandarin",
+                        "Fremennik"
+                    ]
                 },
                 "skills": [
                     {
@@ -21575,7 +21771,10 @@
                 "subcategory": "Slayer",
                 "area": "Asgarnia",
                 "additionalAreas": {
-                    "oneOf": ["Wilderness", "Fremennik"]
+                    "oneOf": [
+                        "Wilderness",
+                        "Fremennik"
+                    ]
                 },
                 "skills": [
                     {
@@ -21907,7 +22106,9 @@
                 "subcategory": "Slayer",
                 "area": "Asgarnia",
                 "additionalAreas": {
-                    "allOf": ["Desert"]
+                    "allOf": [
+                        "Desert"
+                    ]
                 },
                 "skills": [
                     {
@@ -22214,28 +22415,6 @@
                 ]
             },
             {
-                "id": "537",
-                "name": "Equip a Granite Shield",
-                "description": "Equip a granite shield.",
-                "difficulty": "Medium",
-                "category": "Combat",
-                "subcategory": "Slayer",
-                "area": "Fremennik",
-                "additionalAreas": {},
-                "skills": [
-                    {
-                        "name": "Defence",
-                        "level": 50,
-                        "boostable": true
-                    },
-                    {
-                        "name": "Strength",
-                        "level": 50,
-                        "boostable": true
-                    }
-                ]
-            },
-            {
                 "id": "538",
                 "name": "Equip a Brine Sabre",
                 "description": "Equip a brine sabre.",
@@ -22309,28 +22488,6 @@
                     {
                         "name": "Slayer",
                         "level": 52,
-                        "boostable": true
-                    }
-                ]
-            },
-            {
-                "id": "543",
-                "name": "Equip a Leaf-Bladed Sword",
-                "description": "Equip a leaf-bladed sword.",
-                "difficulty": "Medium",
-                "category": "Combat",
-                "subcategory": "Slayer",
-                "area": "Fremennik",
-                "additionalAreas": {},
-                "skills": [
-                    {
-                        "name": "Attack",
-                        "level": 50,
-                        "boostable": false
-                    },
-                    {
-                        "name": "Slayer",
-                        "level": 55,
                         "boostable": true
                     }
                 ]
@@ -23415,7 +23572,9 @@
                 "subcategory": "Novice",
                 "area": "Kandarin",
                 "additionalAreas": {
-                    "allOf": ["Asgarnia"]
+                    "allOf": [
+                        "Asgarnia"
+                    ]
                 },
                 "skills": []
             },
@@ -23462,7 +23621,12 @@
                 "subcategory": "Slayer",
                 "area": "Kandarin",
                 "additionalAreas": {
-                    "oneOf": ["Morytania", "Asgarnia", "Tirannwn", "Wilderness"]
+                    "oneOf": [
+                        "Morytania",
+                        "Asgarnia",
+                        "Tirannwn",
+                        "Wilderness"
+                    ]
                 },
                 "skills": [
                     {
@@ -23492,7 +23656,9 @@
                 "subcategory": "Prayer",
                 "area": "Kandarin",
                 "additionalAreas": {
-                    "allOf": ["Asgarnia"]
+                    "allOf": [
+                        "Asgarnia"
+                    ]
                 },
                 "skills": [
                     {
@@ -23516,7 +23682,10 @@
                 "subcategory": "Magic",
                 "area": "Kandarin",
                 "additionalAreas": {
-                    "oneOf": ["Fremennik", "Tirannwn"]
+                    "oneOf": [
+                        "Fremennik",
+                        "Tirannwn"
+                    ]
                 },
                 "skills": [
                     {
@@ -23802,7 +23971,9 @@
                 "subcategory": "Experienced",
                 "area": "Kandarin",
                 "additionalAreas": {
-                    "allOf": ["Asgarnia"]
+                    "allOf": [
+                        "Asgarnia"
+                    ]
                 },
                 "skills": [
                     {
@@ -23826,7 +23997,9 @@
                 "subcategory": "Grandmaster",
                 "area": "Kandarin",
                 "additionalAreas": {
-                    "allOf": ["Fremennik"]
+                    "allOf": [
+                        "Fremennik"
+                    ]
                 },
                 "skills": []
             },
@@ -27023,7 +27196,9 @@
                 "subcategory": "Gauntlet",
                 "area": "Tirannwn",
                 "additionalAreas": {
-                    "allOf": ["Kandarin"]
+                    "allOf": [
+                        "Kandarin"
+                    ]
                 },
                 "skills": [
                     {
@@ -27251,7 +27426,9 @@
                 "subcategory": "Zulrah",
                 "area": "Tirannwn",
                 "additionalAreas": {
-                    "allOf": ["Kandarin"]
+                    "allOf": [
+                        "Kandarin"
+                    ]
                 },
                 "skills": [
                     {
@@ -27743,28 +27920,6 @@
                 "skills": []
             },
             {
-                "id": "909",
-                "name": "Equip a Lava Battlestaff",
-                "description": "Equip a Lava battlestaff.",
-                "difficulty": "Medium",
-                "category": "Combat",
-                "subcategory": "Magic",
-                "area": "Wilderness",
-                "additionalAreas": {},
-                "skills": [
-                    {
-                        "name": "Attack",
-                        "level": 30,
-                        "boostable": false
-                    },
-                    {
-                        "name": "Magic",
-                        "level": 30,
-                        "boostable": false
-                    }
-                ]
-            },
-            {
                 "id": "910",
                 "name": "Equip a Bracelet of Ethereum",
                 "description": "Equip a Bracelet of ethereum.",
@@ -27907,7 +28062,11 @@
                 "subcategory": "Hunter",
                 "area": "Wilderness",
                 "additionalAreas": {
-                    "oneOf": ["Kandarin", "Fremennik", "Desert"]
+                    "oneOf": [
+                        "Kandarin",
+                        "Fremennik",
+                        "Desert"
+                    ]
                 },
                 "skills": [
                     {
@@ -28132,7 +28291,11 @@
                 "subcategory": "Hunter",
                 "area": "Wilderness",
                 "additionalAreas": {
-                    "oneOf": ["Kandarin", "Fremennik", "Desert"]
+                    "oneOf": [
+                        "Kandarin",
+                        "Fremennik",
+                        "Desert"
+                    ]
                 },
                 "skills": [
                     {
@@ -28156,7 +28319,11 @@
                 "subcategory": "Hunter",
                 "area": "Wilderness",
                 "additionalAreas": {
-                    "oneOf": ["Kandarin", "Fremennik", "Desert"]
+                    "oneOf": [
+                        "Kandarin",
+                        "Fremennik",
+                        "Desert"
+                    ]
                 },
                 "skills": [
                     {
@@ -28180,7 +28347,11 @@
                 "subcategory": "Hunter",
                 "area": "Wilderness",
                 "additionalAreas": {
-                    "oneOf": ["Kandarin", "Fremennik", "Desert"]
+                    "oneOf": [
+                        "Kandarin",
+                        "Fremennik",
+                        "Desert"
+                    ]
                 },
                 "skills": [
                     {
@@ -28405,7 +28576,9 @@
                 "subcategory": "Construction",
                 "area": "Wilderness",
                 "additionalAreas": {
-                    "allOf": ["Fremennik"]
+                    "allOf": [
+                        "Fremennik"
+                    ]
                 },
                 "skills": [
                     {
@@ -28517,7 +28690,10 @@
                 "subcategory": "Other",
                 "area": "Wilderness",
                 "additionalAreas": {
-                    "oneOf": ["Fremennik", "Asgarnia"]
+                    "oneOf": [
+                        "Fremennik",
+                        "Asgarnia"
+                    ]
                 },
                 "skills": []
             }
@@ -29200,7 +29376,11 @@
             "subcategory": "Hunter",
             "area": "Common",
             "additionalAreas": {
-                "oneOf": ["Kandarin", "Fremennik", "Desert"]
+                "oneOf": [
+                    "Kandarin",
+                    "Fremennik",
+                    "Desert"
+                ]
             },
             "skills": []
         },
@@ -29586,7 +29766,9 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": ["Kandarin"]
+                "allOf": [
+                    "Kandarin"
+                ]
             },
             "skills": []
         },
@@ -30375,7 +30557,10 @@
             "subcategory": "Hunter",
             "area": "Common",
             "additionalAreas": {
-                "oneOf": ["Kandarin", "Fremennik"]
+                "oneOf": [
+                    "Kandarin",
+                    "Fremennik"
+                ]
             },
             "skills": [
                 {
@@ -30559,6 +30744,50 @@
                 }
             ]
         },
+        "537": {
+            "id": "537",
+            "name": "Equip a Granite Shield",
+            "description": "Equip a granite shield.",
+            "difficulty": "Medium",
+            "category": "Combat",
+            "subcategory": "Slayer",
+            "area": "Common",
+            "additionalAreas": {},
+            "skills": [
+                {
+                    "name": "Defence",
+                    "level": 50,
+                    "boostable": true
+                },
+                {
+                    "name": "Strength",
+                    "level": 50,
+                    "boostable": true
+                }
+            ]
+        },
+        "543": {
+            "id": "543",
+            "name": "Equip a Leaf-Bladed Sword",
+            "description": "Equip a leaf-bladed sword.",
+            "difficulty": "Medium",
+            "category": "Combat",
+            "subcategory": "Slayer",
+            "area": "Common",
+            "additionalAreas": {},
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 50,
+                    "boostable": false
+                },
+                {
+                    "name": "Slayer",
+                    "level": 55,
+                    "boostable": true
+                }
+            ]
+        },
         "144": {
             "id": "144",
             "name": "Equip a Full Green Dragonhide Set",
@@ -30660,6 +30889,28 @@
                 {
                     "name": "Attack",
                     "level": 40,
+                    "boostable": false
+                }
+            ]
+        },
+        "909": {
+            "id": "909",
+            "name": "Equip a Lava Battlestaff",
+            "description": "Equip a Lava battlestaff.",
+            "difficulty": "Medium",
+            "category": "Combat",
+            "subcategory": "Magic",
+            "area": "Common",
+            "additionalAreas": {},
+            "skills": [
+                {
+                    "name": "Attack",
+                    "level": 30,
+                    "boostable": false
+                },
+                {
+                    "name": "Magic",
+                    "level": 30,
                     "boostable": false
                 }
             ]
@@ -30961,7 +31212,9 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": ["Kandarin"]
+                "allOf": [
+                    "Kandarin"
+                ]
             },
             "skills": []
         },
@@ -31631,7 +31884,10 @@
             "subcategory": "Magic",
             "area": "Common",
             "additionalAreas": {
-                "oneOf": ["Kandarin", "Wilderness"]
+                "oneOf": [
+                    "Kandarin",
+                    "Wilderness"
+                ]
             },
             "skills": [
                 {
@@ -31965,7 +32221,10 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": ["Kandarin", "Tirannwn"]
+                "allOf": [
+                    "Kandarin",
+                    "Tirannwn"
+                ]
             },
             "skills": []
         },
@@ -32848,7 +33107,9 @@
             "subcategory": "Farming",
             "area": "Common",
             "additionalAreas": {
-                "allOf": ["Kandarin"]
+                "allOf": [
+                    "Kandarin"
+                ]
             },
             "skills": [
                 {
@@ -32879,6 +33140,17 @@
             "id": "297",
             "name": "Complete 200 Slayer Tasks",
             "description": "Complete 200 Slayer Tasks.",
+            "difficulty": "Elite",
+            "category": "Combat",
+            "subcategory": "Slayer",
+            "area": "Common",
+            "additionalAreas": {},
+            "skills": []
+        },
+        "965": {
+            "id": "965",
+            "name": "200 Slayer Tasks",
+            "description": "NOTE: This task is a duplicate of \u201cComplete 200 Slayer Tasks\u201d and is currently bugged. Most players are unable to complete it, but some are, so it will remain on this list until Jagex fixes it.",
             "difficulty": "Elite",
             "category": "Combat",
             "subcategory": "Slayer",
@@ -32991,7 +33263,10 @@
             "subcategory": "Melee",
             "area": "Common",
             "additionalAreas": {
-                "allOf": ["Kandarin", "Fremennik"]
+                "allOf": [
+                    "Kandarin",
+                    "Fremennik"
+                ]
             },
             "skills": [
                 {
@@ -33219,7 +33494,10 @@
             "subcategory": "Western Provinces",
             "area": "Common",
             "additionalAreas": {
-                "allOf": ["Kandarin", "Tirannwn"]
+                "allOf": [
+                    "Kandarin",
+                    "Tirannwn"
+                ]
             },
             "skills": []
         },
@@ -33805,7 +34083,10 @@
             "subcategory": "Grandmaster",
             "area": "Misthalin",
             "additionalAreas": {
-                "allOf": ["Kandarin", "Asgarnia"]
+                "allOf": [
+                    "Kandarin",
+                    "Asgarnia"
+                ]
             },
             "skills": []
         },
@@ -34342,7 +34623,10 @@
             "subcategory": "Melee",
             "area": "Misthalin",
             "additionalAreas": {
-                "allOf": ["Kandarin", "Fremennik"]
+                "allOf": [
+                    "Kandarin",
+                    "Fremennik"
+                ]
             },
             "skills": [
                 {
@@ -35712,7 +35996,10 @@
             "subcategory": "Slayer",
             "area": "Asgarnia",
             "additionalAreas": {
-                "oneOf": ["Wilderness", "Fremennik"]
+                "oneOf": [
+                    "Wilderness",
+                    "Fremennik"
+                ]
             },
             "skills": [
                 {
@@ -36044,7 +36331,9 @@
             "subcategory": "Slayer",
             "area": "Asgarnia",
             "additionalAreas": {
-                "allOf": ["Desert"]
+                "allOf": [
+                    "Desert"
+                ]
             },
             "skills": [
                 {
@@ -36348,28 +36637,6 @@
                 }
             ]
         },
-        "537": {
-            "id": "537",
-            "name": "Equip a Granite Shield",
-            "description": "Equip a granite shield.",
-            "difficulty": "Medium",
-            "category": "Combat",
-            "subcategory": "Slayer",
-            "area": "Fremennik",
-            "additionalAreas": {},
-            "skills": [
-                {
-                    "name": "Defence",
-                    "level": 50,
-                    "boostable": true
-                },
-                {
-                    "name": "Strength",
-                    "level": 50,
-                    "boostable": true
-                }
-            ]
-        },
         "538": {
             "id": "538",
             "name": "Equip a Brine Sabre",
@@ -36444,28 +36711,6 @@
                 {
                     "name": "Slayer",
                     "level": 52,
-                    "boostable": true
-                }
-            ]
-        },
-        "543": {
-            "id": "543",
-            "name": "Equip a Leaf-Bladed Sword",
-            "description": "Equip a leaf-bladed sword.",
-            "difficulty": "Medium",
-            "category": "Combat",
-            "subcategory": "Slayer",
-            "area": "Fremennik",
-            "additionalAreas": {},
-            "skills": [
-                {
-                    "name": "Attack",
-                    "level": 50,
-                    "boostable": false
-                },
-                {
-                    "name": "Slayer",
-                    "level": 55,
                     "boostable": true
                 }
             ]
@@ -37548,7 +37793,9 @@
             "subcategory": "Novice",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": ["Asgarnia"]
+                "allOf": [
+                    "Asgarnia"
+                ]
             },
             "skills": []
         },
@@ -37595,7 +37842,12 @@
             "subcategory": "Slayer",
             "area": "Kandarin",
             "additionalAreas": {
-                "oneOf": ["Morytania", "Asgarnia", "Tirannwn", "Wilderness"]
+                "oneOf": [
+                    "Morytania",
+                    "Asgarnia",
+                    "Tirannwn",
+                    "Wilderness"
+                ]
             },
             "skills": [
                 {
@@ -37625,7 +37877,9 @@
             "subcategory": "Prayer",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": ["Asgarnia"]
+                "allOf": [
+                    "Asgarnia"
+                ]
             },
             "skills": [
                 {
@@ -37649,7 +37903,10 @@
             "subcategory": "Magic",
             "area": "Kandarin",
             "additionalAreas": {
-                "oneOf": ["Fremennik", "Tirannwn"]
+                "oneOf": [
+                    "Fremennik",
+                    "Tirannwn"
+                ]
             },
             "skills": [
                 {
@@ -37935,7 +38192,9 @@
             "subcategory": "Experienced",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": ["Asgarnia"]
+                "allOf": [
+                    "Asgarnia"
+                ]
             },
             "skills": [
                 {
@@ -37959,7 +38218,9 @@
             "subcategory": "Grandmaster",
             "area": "Kandarin",
             "additionalAreas": {
-                "allOf": ["Fremennik"]
+                "allOf": [
+                    "Fremennik"
+                ]
             },
             "skills": []
         },
@@ -41150,7 +41411,9 @@
             "subcategory": "Gauntlet",
             "area": "Tirannwn",
             "additionalAreas": {
-                "allOf": ["Kandarin"]
+                "allOf": [
+                    "Kandarin"
+                ]
             },
             "skills": [
                 {
@@ -41378,7 +41641,9 @@
             "subcategory": "Zulrah",
             "area": "Tirannwn",
             "additionalAreas": {
-                "allOf": ["Kandarin"]
+                "allOf": [
+                    "Kandarin"
+                ]
             },
             "skills": [
                 {
@@ -41867,28 +42132,6 @@
             "additionalAreas": {},
             "skills": []
         },
-        "909": {
-            "id": "909",
-            "name": "Equip a Lava Battlestaff",
-            "description": "Equip a Lava battlestaff.",
-            "difficulty": "Medium",
-            "category": "Combat",
-            "subcategory": "Magic",
-            "area": "Wilderness",
-            "additionalAreas": {},
-            "skills": [
-                {
-                    "name": "Attack",
-                    "level": 30,
-                    "boostable": false
-                },
-                {
-                    "name": "Magic",
-                    "level": 30,
-                    "boostable": false
-                }
-            ]
-        },
         "910": {
             "id": "910",
             "name": "Equip a Bracelet of Ethereum",
@@ -42032,7 +42275,11 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": ["Kandarin", "Fremennik", "Desert"]
+                "oneOf": [
+                    "Kandarin",
+                    "Fremennik",
+                    "Desert"
+                ]
             },
             "skills": [
                 {
@@ -42257,7 +42504,11 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": ["Kandarin", "Fremennik", "Desert"]
+                "oneOf": [
+                    "Kandarin",
+                    "Fremennik",
+                    "Desert"
+                ]
             },
             "skills": [
                 {
@@ -42281,7 +42532,11 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": ["Kandarin", "Fremennik", "Desert"]
+                "oneOf": [
+                    "Kandarin",
+                    "Fremennik",
+                    "Desert"
+                ]
             },
             "skills": [
                 {
@@ -42305,7 +42560,11 @@
             "subcategory": "Hunter",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": ["Kandarin", "Fremennik", "Desert"]
+                "oneOf": [
+                    "Kandarin",
+                    "Fremennik",
+                    "Desert"
+                ]
             },
             "skills": [
                 {
@@ -42530,7 +42789,9 @@
             "subcategory": "Construction",
             "area": "Wilderness",
             "additionalAreas": {
-                "allOf": ["Fremennik"]
+                "allOf": [
+                    "Fremennik"
+                ]
             },
             "skills": [
                 {
@@ -42642,7 +42903,10 @@
             "subcategory": "Other",
             "area": "Wilderness",
             "additionalAreas": {
-                "oneOf": ["Fremennik", "Asgarnia"]
+                "oneOf": [
+                    "Fremennik",
+                    "Asgarnia"
+                ]
             },
             "skills": []
         }
