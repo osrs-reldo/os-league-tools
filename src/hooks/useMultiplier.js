@@ -57,10 +57,16 @@ export default function useMultiplier() {
         };
     };
 
+    const clearMultipliers = () => {
+        setMultipliers({});
+        setGlobalMultipliers({});
+    };
+
     return {
         add: addMultiplier,
         remove: removeMultiplier,
         apply: applyMultipliers,
         get: getMultipliers,
+        clear: clearMultipliers,
     };
 }

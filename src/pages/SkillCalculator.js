@@ -51,6 +51,12 @@ export default function SkillCalculator() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
+    useEffect(() => {
+        expMultiplier.clear();
+        inputMultiplier.clear();
+        outputMultiplier.clear();
+    }, [skill]);
+
     skillData = calculatorData.calculators[skill];
     if (!skillData) {
         return (
