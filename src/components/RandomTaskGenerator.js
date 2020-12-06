@@ -14,7 +14,13 @@ import HiscoreLookup from './HiscoreLookup';
 import taskData from '../resources/taskData.json';
 import useLocalStorage from '../hooks/useLocalStorage';
 
-export default function RandomTaskGenerator({ taskStatus, setTaskStatus, refreshHiscores, hiscores, unlockedRegions }) {
+export default function RandomTaskGenerator({
+    taskStatus,
+    updateTaskStatus,
+    refreshHiscores,
+    hiscores,
+    unlockedRegions,
+}) {
     const [onlyMetRequirements, setOnlyMetRequirements] = useState(false);
     const [currentTaskId, setCurrentTaskId] = useLocalStorage(LOCALSTORAGE_KEYS.GENERATED_TASK, -1);
     const [includedAreas, setIncludedAreas] = useState(unlockedRegions);
@@ -193,7 +199,7 @@ export default function RandomTaskGenerator({ taskStatus, setTaskStatus, refresh
                                     className='ml-2'
                                     onClick={() => {
                                         setCompleteButtonEnabled(false);
-                                        setTaskStatus.setCompleted(currentTaskId, true);
+                                        updateTaskStatus.setCompleted(currentTaskId, true);
                                         setCurrentTaskId(-1);
                                     }}
                                     disabled={!completeButtonEnabled}

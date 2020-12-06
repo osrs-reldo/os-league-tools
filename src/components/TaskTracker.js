@@ -123,6 +123,15 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                             refreshHiscores={refreshHiscores}
                         />
                     </Tab>
+                    <Tab eventKey='random' title='Generate Random Task'>
+                        <RandomTaskGenerator
+                            refreshHiscores={refreshHiscores}
+                            hiscores={hiscores}
+                            unlockedRegions={regionsToShow}
+                            taskStatus={taskStatus}
+                            updateTaskStatus={updateTaskStatus}
+                        />
+                    </Tab>
                     <Tab eventKey='todo' title='To-Do List'>
                         <TaskTableWrapper
                             taskStatus={taskStatus}
@@ -139,15 +148,6 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                             setShowHiddenTasks={setShowHiddenTasks}
                             hiscores={hiscores}
                             refreshHiscores={refreshHiscores}
-                        />
-                    </Tab>
-                    <Tab eventKey='random' title='Generate Random Task'>
-                        <RandomTaskGenerator
-                            refreshHiscores={refreshHiscores}
-                            hiscores={hiscores}
-                            unlockedRegions={regionsToShow}
-                            taskStatus={taskStatus}
-                            updateTaskStatus={updateTaskStatus}
                         />
                     </Tab>
                 </Tabs>
