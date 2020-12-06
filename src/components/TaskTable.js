@@ -120,7 +120,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
     ];
 
     const { pageButtonRenderer, pageListRenderer, sizePerPageRenderer } = getRenderers();
-    const tableData = taskFilters ? applyFilters(taskTableContent, area, taskFilters) : taskTableContent;
+    const tableData = taskFilters ? applyFilters(taskTableContent, taskFilters) : taskTableContent;
 
     return (
         <div style={{ maxWidth: '100%' }}>

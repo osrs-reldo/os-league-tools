@@ -8,6 +8,7 @@ import Badge from 'react-bootstrap/Badge';
 import taskData from '../resources/taskData.json';
 import calculatorData from '../resources/calculatorData.json';
 
+export const DIFFICULTIES = ['Easy', 'Medium', 'Hard', 'Elite', 'Master'];
 export const DIFFICULTY_POINTS = {
     Easy: 10,
     Medium: 50,
@@ -217,11 +218,11 @@ export function removeCompletedFromTodo(taskStatus, setIsTodoCallback) {
     setIsTodoCallback(idsToRemove, false);
 }
 
-export function applyFilters(tasks, area, filterFunctions) {
+export function applyFilters(tasks, filterFunctions) {
     return tasks.filter(task => {
         let status = true;
         filterFunctions.forEach(filterFunction => {
-            status = status && filterFunction(task, area);
+            status = status && filterFunction(task);
         });
         return status;
     });

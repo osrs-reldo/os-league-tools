@@ -16,6 +16,7 @@ import {
 } from '../util/task-util';
 import { isRelicUnlocked } from '../util/relic-util';
 import TaskTable from './TaskTable';
+import RandomTaskGenerator from './RandomTaskGenerator';
 import { INITIAL_REGIONS_STATE } from '../util/region-util';
 import useLocalStorage from '../hooks/useLocalStorage';
 import { LOCALSTORAGE_KEYS, SESSIONSTORAGE_KEYS } from '../util/browser-util';
@@ -138,6 +139,15 @@ export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegi
                             setShowHiddenTasks={setShowHiddenTasks}
                             hiscores={hiscores}
                             refreshHiscores={refreshHiscores}
+                        />
+                    </Tab>
+                    <Tab eventKey='random' title='Generate Random Task'>
+                        <RandomTaskGenerator
+                            refreshHiscores={refreshHiscores}
+                            hiscores={hiscores}
+                            unlockedRegions={regionsToShow}
+                            taskStatus={taskStatus}
+                            updateTaskStatus={updateTaskStatus}
                         />
                     </Tab>
                 </Tabs>

@@ -8,6 +8,7 @@ export const LOCALSTORAGE_KEYS = {
     FILTER_HIDE_TODO_TASKS: 'filterHideTodoTasks',
     HIDE_ALERT_BANNER: 'hideAlertBanner',
     USERNAME: 'hiscoresUsername',
+    GENERATED_TASK: 'generatedTask',
 };
 
 export const SESSIONSTORAGE_KEYS = {
