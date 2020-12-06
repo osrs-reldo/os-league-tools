@@ -148,6 +148,6 @@ function toPascalCase(areaName) {
 }
 
 function sanitizeTaskName(taskName) {
-    const sanitizedName = taskName.replaceAll(',', '');
+    const sanitizedName = taskName.replace(/,/g, '');
     return sanitizedName.toLowerCase();
 }
