@@ -14,3 +14,7 @@ export const CONTENT_WIDTH_DEFAULT = CONTENT_WIDTH_VALUES.PADDED;
 export function getContentWidthClass() {
     return getFromLocalStorage(SETTINGS_KEYS.CONTENT_WIDTH, CONTENT_WIDTH_DEFAULT);
 }
+
+export function isColumnHidden(columnName) {
+    return getFromLocalStorage(SETTINGS_KEYS.HIDDEN_COLUMNS, []).includes(columnName);
+}

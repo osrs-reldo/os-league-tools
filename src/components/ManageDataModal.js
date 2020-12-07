@@ -7,7 +7,8 @@ import { resetLocalStorageData } from '../util/browser-util';
 
 export default function ManageDataModal({ show, onClose }) {
     const [errorText, setErrorText] = useState('');
-    const [successText, setSuccessText] = useState('');
+    const [successTextImport, setSuccessTextImport] = useState('');
+    const [successTextReset, setSuccessTextReset] = useState('');
     const [updated, setUpdated] = useState(false);
     const [runeliteImportJson, setRuneliteImportJson] = useState({});
 
@@ -16,11 +17,11 @@ export default function ManageDataModal({ show, onClose }) {
     const loadFile = async FileObject => {
         const response = await loadLocalStorageFromFile(FileObject);
         if (response.success) {
-            setSuccessText('Successfully imported character data.');
+            setSuccessTextImport('Successfully imported character data.');
             setErrorText('');
             setUpdated(true);
         } else {
-            setSuccessText('');
+            setSuccessTextImport('');
             setErrorText(response.message);
         }
     };
@@ -28,17 +29,17 @@ export default function ManageDataModal({ show, onClose }) {
     const resetData = () => {
         resetLocalStorageData();
         setUpdated(true);
-        setSuccessText('Data successfully deleted');
+        setSuccessTextReset('Data successfully deleted');
     };
 
     const loadRuneliteImport = async () => {
         const response = await updateLocalStorageFromRuneliteJson(runeliteImportJson);
         if (response.success) {
-            setSuccessText('Successfully imported character data from Runelite.');
+            setSuccessTextImport('Successfully imported character data from Runelite.');
             setErrorText('');
             setUpdated(true);
         } else {
-            setSuccessText('');
+            setSuccessTextImport('');
             setErrorText(response.message);
         }
     };
@@ -66,10 +67,10 @@ export default function ManageDataModal({ show, onClose }) {
                             <p>Restore a previously exported character backup:</p>
                             <FilePicker
                                 onChange={FileObject => {
-                                    loadFile(FileObject, setSuccessText, setErrorText, setUpdated);
+                                    loadFile(FileObject, setSuccessTextImport, setErrorText, setUpdated);
                                 }}
                                 onError={errMsg => {
-                                    setSuccessText('');
+                                    setSuccessTextImport('');
                                     setErrorText(errMsg);
                                 }}
                             >
@@ -78,7 +79,7 @@ export default function ManageDataModal({ show, onClose }) {
                                 </Button>
                             </FilePicker>
                             {errorText && <p className='text-danger small'>{errorText}</p>}
-                            {successText && <p className='text-success small'>{successText}</p>}
+                            {successTextImport && <p className='text-success small'>{successTextImport}</p>}
                         </div>
                     </Tab>
                     <Tab eventKey='runelite' title='Runelite Import'>
@@ -114,7 +115,7 @@ export default function ManageDataModal({ show, onClose }) {
                                 Import
                             </Button>
                             {errorText && <p className='text-danger small'>{errorText}</p>}
-                            {successText && <p className='text-success small'>{successText}</p>}
+                            {successTextImport && <p className='text-success small'>{successTextImport}</p>}
                         </div>
                     </Tab>
                     <Tab eventKey='reset' title='Reset'>
@@ -126,6 +127,7 @@ export default function ManageDataModal({ show, onClose }) {
                             <Button className='m-2' variant='dark' onClick={resetData}>
                                 Reset all data
                             </Button>
+                            {successTextReset && <p className='text-success small'>{successTextReset}</p>}
                         </div>
                     </Tab>
                 </Tabs>
@@ -135,7 +137,8 @@ export default function ManageDataModal({ show, onClose }) {
                     variant='secondary'
                     onClick={() => {
                         setErrorText('');
-                        setSuccessText('');
+                        setSuccessTextImport('');
+                        setSuccessTextReset('');
                         onClose(updated);
                     }}
                 >

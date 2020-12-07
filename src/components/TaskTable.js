@@ -5,6 +5,7 @@ import paginationFactory from 'react-bootstrap-table2-paginator';
 import taskData from '../resources/taskData.json';
 import DoubleScrollbar from './DoubleScrollbar';
 import { applyFilters, getFormatters, getRenderers, isTaskComplete } from '../util/task-util';
+import { isColumnHidden } from '../util/settings-util';
 
 export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters, hiscores, isSkillingProdigy }) {
     const {
@@ -80,6 +81,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
                 options: taskData.difficulties,
             }),
             formatter: difficultyFormatter,
+            hidden: isColumnHidden('Difficulty'),
         },
         {
             dataField: 'category',
@@ -90,6 +92,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
                 placeholder: '(all)',
                 options: taskData.categories,
             }),
+            hidden: isColumnHidden('Category'),
         },
         {
             dataField: 'subcategory',
@@ -97,6 +100,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             headerStyle: { width: '10rem' },
             sort: true,
             filter: textFilter({ placeholder: 'Filter...' }),
+            hidden: isColumnHidden('Subcategory'),
         },
         {
             dataField: 'skills',
@@ -104,6 +108,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
             formatter: skillsFormatter,
             formatExtraData: { hiscores, isSkillingProdigy },
             headerStyle: { width: '8rem' },
+            hidden: isColumnHidden('Requirements'),
         },
         {
             dataField: 'manage',
@@ -116,6 +121,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
                 setTaskTodo,
                 setTaskHidden,
             },
+            hidden: isColumnHidden('Manage'),
         },
     ];
 
