@@ -1,17 +1,18 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import { getContentWidthClass } from '../util/settings-util';
 
 export default function PluginInfo() {
     return (
-        <div className='content-wrapper'>
-            <Card bg='dark' text='white' className='m-2 p-2 text-center'>
+        <div className={getContentWidthClass()}>
+            <Card bg='dark' text='white' className='mt-3 p-2 text-center'>
                 <h2 className='mt-2 light-text text-center'>OS League Tools RuneLite Plugin</h2>
                 <p>
                     {`OS League Tools has RuneLite integration! The official plugin can export your tasks, regions, and
                     relics to the site so you don't have to input them manually.`}
                 </p>
             </Card>
-            <Card bg='dark' text='white' className='m-2 p-2 text-center'>
+            <Card bg='dark' text='white' className='mt-3 p-2 text-center'>
                 <h4>Instructions:</h4>
                 <ol>
                     <li>

@@ -1,15 +1,16 @@
 import React from 'react';
 import { Card, CardDeck } from 'react-bootstrap';
+import { getContentWidthClass } from '../util/settings-util';
 
 export default function About() {
     return (
-        <div className='content-wrapper'>
-            <Card bg='dark' text='white' style={{ margin: '1rem' }}>
+        <div className={getContentWidthClass()}>
+            <Card bg='dark' text='white' className='mt-3'>
                 <h1 className='mt-2 light-text text-center'>OS LEAGUE TOOLS</h1>
                 <p className='text-center'>Your hub for all your OSRS leagues needs.</p>
             </Card>
             <CardDeck>
-                <Card bg='dark' text='white' style={{ margin: '1rem' }}>
+                <Card bg='dark' text='white' className='mt-3'>
                     <h3 className='mt-2 light-text text-center'>Features:</h3>
                     <div className='d-flex flex-column text-center mb-2'>
                         <div>Plan your relic and area unlocks</div>
@@ -22,7 +23,7 @@ export default function About() {
                         <div>...and more coming soon!</div>
                     </div>
                 </Card>
-                <Card bg='dark' text='white' style={{ margin: '1rem' }}>
+                <Card bg='dark' text='white' className='mt-3'>
                     <h3 className='mt-2 light-text text-center'>About the site:</h3>
                     <div className='text-center p-1'>
                         <p>

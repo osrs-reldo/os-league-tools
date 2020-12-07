@@ -15,6 +15,7 @@ import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../util/browser-util';
 import DoubleScrollbar from '../components/DoubleScrollbar';
 import HiscoreLookup from '../components/HiscoreLookup';
 import { getLevelForExp } from '../util/exp-table';
+import { getContentWidthClass } from '../util/settings-util';
 
 export default function SkillCalculator() {
     const currentLevel = useLevel(1);
@@ -184,7 +185,7 @@ export default function SkillCalculator() {
     ];
 
     return (
-        <div className='content-wrapper'>
+        <div className={getContentWidthClass()}>
             <h1 className='mt-2 light-text text-center'>{skillData.name}</h1>
             <CardDeck>
                 <Card bg='dark' text='white' className='mt-2 mb-2' style={{ minWidth: '300px' }}>

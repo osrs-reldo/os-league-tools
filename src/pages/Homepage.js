@@ -2,10 +2,11 @@ import React from 'react';
 import BlogEntry from '../components/BlogEntry';
 import NewsEntry from '../components/NewsEntry';
 import newsPosts from '../resources/newsPosts.json';
+import { getContentWidthClass } from '../util/settings-util';
 
 export default function Homepage() {
     return (
-        <div className='content-wrapper'>
+        <div className={getContentWidthClass()}>
             <h1 className='mt-2 light-text'>News & Updates</h1>
             {newsPosts.map(newsPost =>
                 newsPost.type === 'news' ? (

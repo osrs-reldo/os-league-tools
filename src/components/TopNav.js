@@ -42,6 +42,9 @@ export default function TopNav() {
                         <Navbar.Text onClick={() => setShowDataModal(true)} className='clickable mr-2'>
                             Manage Data
                         </Navbar.Text>
+                        <Link to='/settings' className='nav-link'>
+                            Settings
+                        </Link>
                         <Link to='/about' className='nav-link'>
                             About
                         </Link>

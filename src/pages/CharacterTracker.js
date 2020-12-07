@@ -9,6 +9,7 @@ import { LOCALSTORAGE_KEYS } from '../util/browser-util';
 import { INITIAL_REGIONS_STATE } from '../util/region-util';
 import useTaskStatus from '../hooks/useTaskStatus';
 import { getPointsEarned } from '../util/task-util';
+import { getContentWidthClass } from '../util/settings-util';
 
 export default function CharacterTracker() {
     const [selectedTab, onSetSelectedTab] = useQueryString('tab');
@@ -19,7 +20,7 @@ export default function CharacterTracker() {
     );
 
     return (
-        <div className='content-wrapper mb-4'>
+        <div className={`${getContentWidthClass()} mb-4`}>
             <h1 className='mt-2 light-text text-center'>Character Tracker</h1>
             <Tabs
                 fill

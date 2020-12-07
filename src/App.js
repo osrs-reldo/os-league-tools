@@ -12,6 +12,7 @@ import Calculator from './pages/SkillCalculator';
 import CharacterTracker from './pages/CharacterTracker';
 import About from './pages/About';
 import PluginInfo from './pages/PluginInfo';
+import Settings from './pages/Settings';
 
 const history = createHashHistory();
 const trackingId = process.env.REACT_APP_GA_TRACKING || '';
@@ -40,6 +41,7 @@ export default function App() {
                     <Route path='/calculators/:skill' component={Calculator} />
                     <Route path='/about' component={About} />
                     <Route path='/plugin' component={PluginInfo} />
+                    <Route path='/settings' component={Settings} />
                 </Switch>
             </HashRouter>
         </div>

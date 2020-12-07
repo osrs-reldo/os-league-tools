@@ -3,7 +3,7 @@ import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 
 export default function NewsEntry({ title, date, thumbnail, leadText, buttonLink, buttonText }) {
     return (
-        <Card bg='dark' key={title} text='white' style={{ margin: '1rem' }}>
+        <Card bg='dark' key={title} text='white' className='mt-3'>
             <Card.Body>
                 <Card.Title>
                     <h4>{title}</h4>

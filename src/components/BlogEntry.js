@@ -5,7 +5,7 @@ export default function NewsEntry({ title, date, thumbnail, leadText, htmlConten
     const [expanded, setExpanded] = useState(false);
 
     return (
-        <Card bg='dark' key={title} text='white' style={{ margin: '1rem' }}>
+        <Card bg='dark' key={title} text='white' className='mt-3'>
             <Card.Body>
                 <Card.Title>
                     <h4>{title}</h4>

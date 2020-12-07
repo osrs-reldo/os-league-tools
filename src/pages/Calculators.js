@@ -2,10 +2,11 @@ import React from 'react';
 import { Card, CardDeck } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import calculatorData from '../resources/calculatorData.json';
+import { getContentWidthClass } from '../util/settings-util';
 
 export default function Calculators() {
     return (
-        <div className='content-wrapper'>
+        <div className={getContentWidthClass()}>
             <CardDeck>
                 <Card bg='dark' text='white' className='mt-2 mb-2'>
                     <h1 className='mt-2 light-text text-center'>Skill Calculators</h1>
