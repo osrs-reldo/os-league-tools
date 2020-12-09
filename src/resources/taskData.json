@@ -4705,11 +4705,11 @@
         },
         {
             "id": "965",
-            "name": "200 Slayer Tasks",
-            "description": "NOTE: This task is a duplicate of \u201cComplete 200 Slayer Tasks\u201d and is currently bugged. Most players are unable to complete it, but some are, so it will remain on this list until Jagex fixes it.",
+            "name": "Trailblazer Boon",
+            "description": "Receive a free 250 points for re-opening a League Menu. See game update newspost on 09/12/20 for more information.",
             "difficulty": "Elite",
-            "category": "Combat",
-            "subcategory": "Slayer",
+            "category": "Other",
+            "subcategory": "Other",
             "area": "Common",
             "additionalAreas": {},
             "skills": []
@@ -9874,7 +9874,7 @@
             "name": "Check a grown Dragonfruit Tree in Catherby",
             "description": "Check the health of a dragonfruit tree you've grown in Catherby.",
             "difficulty": "Elite",
-            "category": "Diaries",
+            "category": "Skilling",
             "subcategory": "Farming",
             "area": "Kandarin",
             "additionalAreas": {},
@@ -10529,7 +10529,7 @@
         {
             "id": "695",
             "name": "Pickpocket a Bandit in the Bandit Camp",
-            "description": "Pickpocket a Bandit in the Kharidian Desert\u00ef\u00bf\u00bds Bandit Camp.",
+            "description": "Pickpocket a Bandit in the Kharidian Desert's Bandit Camp.",
             "difficulty": "Medium",
             "category": "Skilling",
             "subcategory": "Thieving",
@@ -11689,7 +11689,7 @@
             "description": "Defeat a Fiyr Shade.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u2019ton",
+            "subcategory": "Shades of Mort'ton",
             "area": "Morytania",
             "additionalAreas": {},
             "skills": [
@@ -11772,7 +11772,7 @@
             "description": "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u2019ton",
+            "subcategory": "Shades of Mort'ton",
             "area": "Morytania",
             "additionalAreas": {},
             "skills": []
@@ -13890,7 +13890,7 @@
             "description": "Defeat Vet'ion in the Wilderness.",
             "difficulty": "Hard",
             "category": "Bossing",
-            "subcategory": "Vet\u2019ion",
+            "subcategory": "Vet'ion",
             "area": "Wilderness",
             "additionalAreas": {},
             "skills": []
@@ -14180,7 +14180,7 @@
             "description": "Equip a Ring of the gods.",
             "difficulty": "Elite",
             "category": "Bossing",
-            "subcategory": "Vet\u00ef\u00bf\u00bdion",
+            "subcategory": "Vet'ion",
             "area": "Wilderness",
             "additionalAreas": {},
             "skills": []
@@ -18918,11 +18918,11 @@
             },
             {
                 "id": "965",
-                "name": "200 Slayer Tasks",
-                "description": "NOTE: This task is a duplicate of \u201cComplete 200 Slayer Tasks\u201d and is currently bugged. Most players are unable to complete it, but some are, so it will remain on this list until Jagex fixes it.",
+                "name": "Trailblazer Boon",
+                "description": "Receive a free 250 points for re-opening a League Menu. See game update newspost on 09/12/20 for more information.",
                 "difficulty": "Elite",
-                "category": "Combat",
-                "subcategory": "Slayer",
+                "category": "Other",
+                "subcategory": "Other",
                 "area": "Common",
                 "additionalAreas": {},
                 "skills": []
@@ -24097,7 +24097,7 @@
                 "name": "Check a grown Dragonfruit Tree in Catherby",
                 "description": "Check the health of a dragonfruit tree you've grown in Catherby.",
                 "difficulty": "Elite",
-                "category": "Diaries",
+                "category": "Skilling",
                 "subcategory": "Farming",
                 "area": "Kandarin",
                 "additionalAreas": {},
@@ -24754,7 +24754,7 @@
             {
                 "id": "695",
                 "name": "Pickpocket a Bandit in the Bandit Camp",
-                "description": "Pickpocket a Bandit in the Kharidian Desert\u00ef\u00bf\u00bds Bandit Camp.",
+                "description": "Pickpocket a Bandit in the Kharidian Desert's Bandit Camp.",
                 "difficulty": "Medium",
                 "category": "Skilling",
                 "subcategory": "Thieving",
@@ -25916,7 +25916,7 @@
                 "description": "Defeat a Fiyr Shade.",
                 "difficulty": "Medium",
                 "category": "Minigames",
-                "subcategory": "Shades of Mort\u2019ton",
+                "subcategory": "Shades of Mort'ton",
                 "area": "Morytania",
                 "additionalAreas": {},
                 "skills": [
@@ -25999,7 +25999,7 @@
                 "description": "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
                 "difficulty": "Medium",
                 "category": "Minigames",
-                "subcategory": "Shades of Mort\u2019ton",
+                "subcategory": "Shades of Mort'ton",
                 "area": "Morytania",
                 "additionalAreas": {},
                 "skills": []
@@ -28121,7 +28121,7 @@
                 "description": "Defeat Vet'ion in the Wilderness.",
                 "difficulty": "Hard",
                 "category": "Bossing",
-                "subcategory": "Vet\u2019ion",
+                "subcategory": "Vet'ion",
                 "area": "Wilderness",
                 "additionalAreas": {},
                 "skills": []
@@ -28411,7 +28411,7 @@
                 "description": "Equip a Ring of the gods.",
                 "difficulty": "Elite",
                 "category": "Bossing",
-                "subcategory": "Vet\u00ef\u00bf\u00bdion",
+                "subcategory": "Vet'ion",
                 "area": "Wilderness",
                 "additionalAreas": {},
                 "skills": []
@@ -33149,11 +33149,11 @@
         },
         "965": {
             "id": "965",
-            "name": "200 Slayer Tasks",
-            "description": "NOTE: This task is a duplicate of \u201cComplete 200 Slayer Tasks\u201d and is currently bugged. Most players are unable to complete it, but some are, so it will remain on this list until Jagex fixes it.",
+            "name": "Trailblazer Boon",
+            "description": "Receive a free 250 points for re-opening a League Menu. See game update newspost on 09/12/20 for more information.",
             "difficulty": "Elite",
-            "category": "Combat",
-            "subcategory": "Slayer",
+            "category": "Other",
+            "subcategory": "Other",
             "area": "Common",
             "additionalAreas": {},
             "skills": []
@@ -38318,7 +38318,7 @@
             "name": "Check a grown Dragonfruit Tree in Catherby",
             "description": "Check the health of a dragonfruit tree you've grown in Catherby.",
             "difficulty": "Elite",
-            "category": "Diaries",
+            "category": "Skilling",
             "subcategory": "Farming",
             "area": "Kandarin",
             "additionalAreas": {},
@@ -38973,7 +38973,7 @@
         "695": {
             "id": "695",
             "name": "Pickpocket a Bandit in the Bandit Camp",
-            "description": "Pickpocket a Bandit in the Kharidian Desert\u00ef\u00bf\u00bds Bandit Camp.",
+            "description": "Pickpocket a Bandit in the Kharidian Desert's Bandit Camp.",
             "difficulty": "Medium",
             "category": "Skilling",
             "subcategory": "Thieving",
@@ -40133,7 +40133,7 @@
             "description": "Defeat a Fiyr Shade.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u2019ton",
+            "subcategory": "Shades of Mort'ton",
             "area": "Morytania",
             "additionalAreas": {},
             "skills": [
@@ -40216,7 +40216,7 @@
             "description": "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u2019ton",
+            "subcategory": "Shades of Mort'ton",
             "area": "Morytania",
             "additionalAreas": {},
             "skills": []
@@ -42334,7 +42334,7 @@
             "description": "Defeat Vet'ion in the Wilderness.",
             "difficulty": "Hard",
             "category": "Bossing",
-            "subcategory": "Vet\u2019ion",
+            "subcategory": "Vet'ion",
             "area": "Wilderness",
             "additionalAreas": {},
             "skills": []
@@ -42624,7 +42624,7 @@
             "description": "Equip a Ring of the gods.",
             "difficulty": "Elite",
             "category": "Bossing",
-            "subcategory": "Vet\u00ef\u00bf\u00bdion",
+            "subcategory": "Vet'ion",
             "area": "Wilderness",
             "additionalAreas": {},
             "skills": []
