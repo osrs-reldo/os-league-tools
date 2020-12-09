@@ -4706,7 +4706,7 @@
         {
             "id": "965",
             "name": "200 Slayer Tasks",
-            "description": "NOTE: This task is a duplicate of \u201cComplete 200 Slayer Tasks\u201d and is currently bugged. Most players are unable to complete it, but some are, so it will remain on this list until Jagex fixes it.",
+            "description": "NOTE: This task is a duplicate of \u00ef\u00bf\u00bdComplete 200 Slayer Tasks\u00ef\u00bf\u00bd and is currently bugged. Most players are unable to complete it, but some are, so it will remain on this list until Jagex fixes it.",
             "difficulty": "Elite",
             "category": "Combat",
             "subcategory": "Slayer",
@@ -11689,7 +11689,7 @@
             "description": "Defeat a Fiyr Shade.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u2019ton",
+            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
             "area": "Morytania",
             "additionalAreas": {},
             "skills": [
@@ -11772,7 +11772,7 @@
             "description": "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u2019ton",
+            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
             "area": "Morytania",
             "additionalAreas": {},
             "skills": []
@@ -13890,7 +13890,7 @@
             "description": "Defeat Vet'ion in the Wilderness.",
             "difficulty": "Hard",
             "category": "Bossing",
-            "subcategory": "Vet\u2019ion",
+            "subcategory": "Vet\u00ef\u00bf\u00bdion",
             "area": "Wilderness",
             "additionalAreas": {},
             "skills": []
@@ -14464,6 +14464,17 @@
                     "Asgarnia"
                 ]
             },
+            "skills": []
+        },
+        {
+            "id": "960",
+            "name": "Trailblazer Boon",
+            "description": "Receive a free 250 points for re-opening a League Menu. See game update newspost on 09/12/20 for more information.",
+            "difficulty": "Elite",
+            "category": "Other",
+            "subcategory": "Other",
+            "area": "Common",
+            "additionalAreas": {},
             "skills": []
         }
     ],
@@ -18919,7 +18930,7 @@
             {
                 "id": "965",
                 "name": "200 Slayer Tasks",
-                "description": "NOTE: This task is a duplicate of \u201cComplete 200 Slayer Tasks\u201d and is currently bugged. Most players are unable to complete it, but some are, so it will remain on this list until Jagex fixes it.",
+                "description": "NOTE: This task is a duplicate of \u00ef\u00bf\u00bdComplete 200 Slayer Tasks\u00ef\u00bf\u00bd and is currently bugged. Most players are unable to complete it, but some are, so it will remain on this list until Jagex fixes it.",
                 "difficulty": "Elite",
                 "category": "Combat",
                 "subcategory": "Slayer",
@@ -19288,6 +19299,17 @@
                 "difficulty": "Master",
                 "category": "Overall",
                 "subcategory": "Base level",
+                "area": "Common",
+                "additionalAreas": {},
+                "skills": []
+            },
+            {
+                "id": "960",
+                "name": "Trailblazer Boon",
+                "description": "Receive a free 250 points for re-opening a League Menu. See game update newspost on 09/12/20 for more information.",
+                "difficulty": "Elite",
+                "category": "Other",
+                "subcategory": "Other",
                 "area": "Common",
                 "additionalAreas": {},
                 "skills": []
@@ -25916,7 +25938,7 @@
                 "description": "Defeat a Fiyr Shade.",
                 "difficulty": "Medium",
                 "category": "Minigames",
-                "subcategory": "Shades of Mort\u2019ton",
+                "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
                 "area": "Morytania",
                 "additionalAreas": {},
                 "skills": [
@@ -25999,7 +26021,7 @@
                 "description": "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
                 "difficulty": "Medium",
                 "category": "Minigames",
-                "subcategory": "Shades of Mort\u2019ton",
+                "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
                 "area": "Morytania",
                 "additionalAreas": {},
                 "skills": []
@@ -28121,7 +28143,7 @@
                 "description": "Defeat Vet'ion in the Wilderness.",
                 "difficulty": "Hard",
                 "category": "Bossing",
-                "subcategory": "Vet\u2019ion",
+                "subcategory": "Vet\u00ef\u00bf\u00bdion",
                 "area": "Wilderness",
                 "additionalAreas": {},
                 "skills": []
@@ -33150,7 +33172,7 @@
         "965": {
             "id": "965",
             "name": "200 Slayer Tasks",
-            "description": "NOTE: This task is a duplicate of \u201cComplete 200 Slayer Tasks\u201d and is currently bugged. Most players are unable to complete it, but some are, so it will remain on this list until Jagex fixes it.",
+            "description": "NOTE: This task is a duplicate of \u00ef\u00bf\u00bdComplete 200 Slayer Tasks\u00ef\u00bf\u00bd and is currently bugged. Most players are unable to complete it, but some are, so it will remain on this list until Jagex fixes it.",
             "difficulty": "Elite",
             "category": "Combat",
             "subcategory": "Slayer",
@@ -33487,18 +33509,13 @@
         },
         "960": {
             "id": "960",
-            "name": "Complete the Elite Western Provinces Diary",
-            "description": "Complete all of the elite tasks in the Western Provinces Achievement Diary.",
+            "name": "Trailblazer Boon",
+            "description": "Receive a free 250 points for re-opening a League Menu. See game update newspost on 09/12/20 for more information.",
             "difficulty": "Elite",
-            "category": "Diaries",
-            "subcategory": "Western Provinces",
+            "category": "Other",
+            "subcategory": "Other",
             "area": "Common",
-            "additionalAreas": {
-                "allOf": [
-                    "Kandarin",
-                    "Tirannwn"
-                ]
-            },
+            "additionalAreas": {},
             "skills": []
         },
         "323": {
@@ -40133,7 +40150,7 @@
             "description": "Defeat a Fiyr Shade.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u2019ton",
+            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
             "area": "Morytania",
             "additionalAreas": {},
             "skills": [
@@ -40216,7 +40233,7 @@
             "description": "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
             "difficulty": "Medium",
             "category": "Minigames",
-            "subcategory": "Shades of Mort\u2019ton",
+            "subcategory": "Shades of Mort\u00ef\u00bf\u00bdton",
             "area": "Morytania",
             "additionalAreas": {},
             "skills": []
@@ -42334,7 +42351,7 @@
             "description": "Defeat Vet'ion in the Wilderness.",
             "difficulty": "Hard",
             "category": "Bossing",
-            "subcategory": "Vet\u2019ion",
+            "subcategory": "Vet\u00ef\u00bf\u00bdion",
             "area": "Wilderness",
             "additionalAreas": {},
             "skills": []
