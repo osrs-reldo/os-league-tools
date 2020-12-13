@@ -26,7 +26,7 @@ export default function SkillCalculator() {
     const inputMultiplier = useMultiplier();
     const outputMultiplier = useMultiplier();
     const [useLevelFilter, setUseLevelFilter] = useState(false);
-    const [isSkillingProdigy, setIsSkillingProdigy] = useState(isRelicUnlocked('1,3'));
+    const [useSkillingProdigy, setUseSkillingProdigy] = useState(isRelicUnlocked('1,3'));
     const [hasDoubleCast, setHasDoubleCast] = useState(isRelicUnlocked('3,3'));
     const [hasBotanist, setHasBotanist] = useState(isRelicUnlocked('5,1'));
     const [useAreaFilter, setUseAreaFilter] = useState(true);
@@ -50,6 +50,7 @@ export default function SkillCalculator() {
         expMultiplier.clear();
         inputMultiplier.clear();
         outputMultiplier.clear();
+        setUseSkillingProdigy(isRelicUnlocked('1,3') && !skillData.isCombatSkill);
     }, [skill]);
 
     skillData = calculatorData.calculators[skill];
@@ -76,7 +77,7 @@ export default function SkillCalculator() {
         skillData.actions,
         currentLevel.level,
         useLevelFilter,
-        isSkillingProdigy,
+        useSkillingProdigy,
         useAreaFilter,
         includedAreas
     );
@@ -95,7 +96,7 @@ export default function SkillCalculator() {
             formatter: levelFormatter,
             formatExtraData: {
                 level: currentLevel.level,
-                isSkillingProdigy,
+                isSkillingProdigy: useSkillingProdigy,
             },
         },
         {
@@ -263,9 +264,9 @@ export default function SkillCalculator() {
                                 <div className='pl-2'>
                                     <Form.Check
                                         label='Relic - Skilling Prodigy (+12)'
-                                        defaultChecked={isSkillingProdigy}
+                                        defaultChecked={useSkillingProdigy}
                                         onChange={event => {
-                                            setIsSkillingProdigy(event.target.checked);
+                                            setUseSkillingProdigy(event.target.checked);
                                         }}
                                     />
                                 </div>
