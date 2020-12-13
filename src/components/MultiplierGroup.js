@@ -1,22 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Form } from 'react-bootstrap';
 import _ from 'lodash';
-import { isRelicUnlocked } from '../util/relic-util';
+import { getDefaultCheckedMultipliers } from '../util/calculator-util';
 
 export default function MultiplierGroup({ title, multiplierData, globalMultiplierData = [], multipliers }) {
     const [checkedGlobalMultipliers, setCheckedGlobalMultipliers] = useState([]);
 
     useEffect(() => {
-        const toCheckByDefault = [];
-        globalMultiplierData.forEach(multiplier => {
-            if (multiplier.autoApply) {
-                const checkByDefault = multiplier.autoApply === 'always' || isRelicUnlocked(multiplier.autoApply);
-                if (checkByDefault) {
-                    toCheckByDefault.push(multiplier.id);
-                    multipliers.add(multiplier.id, multiplier.multiplier, true);
-                }
-            }
-        });
+        const toCheckByDefault = getDefaultCheckedMultipliers(globalMultiplierData, multipliers);
         setCheckedGlobalMultipliers(toCheckByDefault);
         // only want this to run a single time on first load, so don't depend on anything here
         // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -1,5 +1,6 @@
 import React from 'react';
 import { OverlayTrigger, Badge, Tooltip } from 'react-bootstrap';
+import { isRelicUnlocked } from './relic-util';
 
 export function getFormatters() {
     return {
@@ -184,4 +185,29 @@ function getEquilibriumBonusExp(expMultiplier, totalLevel, numExpActions) {
         return 0;
     }
     return totalLevel * 0.1 * numExpActions;
+}
+
+export function getBaseMultiplier() {
+    if (isRelicUnlocked('6,4')) {
+        return '16';
+    } else if (isRelicUnlocked('4,4')) {
+        return '12';
+    } else if (isRelicUnlocked('2,4')) {
+        return '8';
+    }
+    return '5';
+}
+
+export function getDefaultCheckedMultipliers(globalMultiplierData, multipliers) {
+    const toCheckByDefault = [];
+    globalMultiplierData.forEach(multiplier => {
+        if (multiplier.autoApply) {
+            const checkByDefault = multiplier.autoApply === 'always' || isRelicUnlocked(multiplier.autoApply);
+            if (checkByDefault) {
+                toCheckByDefault.push(multiplier.id);
+                multipliers.add(multiplier.id, multiplier.multiplier, true);
+            }
+        }
+    });
+    return toCheckByDefault;
 }

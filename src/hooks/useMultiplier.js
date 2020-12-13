@@ -59,7 +59,6 @@ export default function useMultiplier() {
 
     const clearMultipliers = () => {
         setMultipliers({});
-        setGlobalMultipliers({});
     };
 
     return {

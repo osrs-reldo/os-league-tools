@@ -4,7 +4,7 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import { useParams } from 'react-router';
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import { INITIAL_REGIONS_STATE, REGIONS } from '../util/region-util';
-import { getFormatters, getBoostedLevel } from '../util/calculator-util';
+import { getFormatters, getBoostedLevel, getBaseMultiplier } from '../util/calculator-util';
 import calculatorData from '../resources/calculatorData.json';
 import MultiplierGroup from '../components/MultiplierGroup';
 import LevelExpInput from '../components/LevelExpInput';
@@ -41,13 +41,7 @@ export default function SkillCalculator() {
             return;
         }
 
-        if (isRelicUnlocked('6,4')) {
-            setBaseExpMultiplier('16');
-        } else if (isRelicUnlocked('4,4')) {
-            setBaseExpMultiplier('12');
-        } else if (isRelicUnlocked('2,4')) {
-            setBaseExpMultiplier('8');
-        }
+        setBaseExpMultiplier(getBaseMultiplier());
         // only want this to run a single time on first load, so don't depend on anything here
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
