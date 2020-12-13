@@ -44038,7 +44038,7 @@
                     "category": "Mithril",
                     "exp": 30.0,
                     "level": 50,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/1/18/Mithril_bar.png?a3d3b",
                     "inputs": [
                         {
                             "name": "Mithril ore",
@@ -44074,7 +44074,7 @@
                     "category": "Mithril",
                     "exp": 810.0,
                     "level": 50,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/1/18/Mithril_bar.png?a3d3b",
                     "inputs": [
                         {
                             "name": "Mithril ore",
@@ -44110,7 +44110,7 @@
                     "category": "Mithril",
                     "exp": 50.0,
                     "level": 50,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/f/f3/Mithril_arrowtips.png?625eb",
                     "inputs": [
                         {
                             "name": "Mithril bar",
@@ -44141,7 +44141,7 @@
                     "category": "Mithril",
                     "exp": 80.0,
                     "level": 50,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/f/f3/Mithril_arrowtips.png?625eb",
                     "inputs": [
                         {
                             "name": "Mithril ore",
@@ -44177,7 +44177,7 @@
                     "category": "Mithril",
                     "exp": 100.0,
                     "level": 55,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/0/04/Mithril_scimitar.png?dd3b6",
                     "inputs": [
                         {
                             "name": "Mithril bar",
@@ -44208,7 +44208,7 @@
                     "category": "Mithril",
                     "exp": 130.0,
                     "level": 55,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/0/04/Mithril_scimitar.png?dd3b6",
                     "inputs": [
                         {
                             "name": "Mithril ore",
@@ -44244,7 +44244,7 @@
                     "category": "Mithril",
                     "exp": 150.0,
                     "level": 59,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/5/53/Mithril_platelegs.png?847d1",
                     "inputs": [
                         {
                             "name": "Mithril bar",
@@ -44275,7 +44275,7 @@
                     "category": "Mithril",
                     "exp": 180.0,
                     "level": 59,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/5/53/Mithril_platelegs.png?847d1",
                     "inputs": [
                         {
                             "name": "Mithril ore",
@@ -44311,7 +44311,7 @@
                     "category": "Mithril",
                     "exp": 250.0,
                     "level": 68,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/b/b5/Mithril_platebody.png?c1ded",
                     "inputs": [
                         {
                             "name": "Mithril bar",
@@ -44342,7 +44342,7 @@
                     "category": "Mithril",
                     "exp": 280.0,
                     "level": 68,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/b/b5/Mithril_platebody.png?c1ded",
                     "inputs": [
                         {
                             "name": "Mithril ore",
@@ -44378,7 +44378,7 @@
                     "category": "Adamant",
                     "exp": 37.5,
                     "level": 70,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/e/eb/Adamantite_bar.png?06d1e",
                     "inputs": [
                         {
                             "name": "Adamant ore",
@@ -44414,7 +44414,7 @@
                     "category": "Adamant",
                     "exp": 1012.5,
                     "level": 70,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/e/eb/Adamantite_bar.png?06d1e",
                     "inputs": [
                         {
                             "name": "Adamant ore",
@@ -44450,7 +44450,7 @@
                     "category": "Adamant",
                     "exp": 62.5,
                     "level": 70,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/e/e2/Adamant_arrowtips.png?53d15",
                     "inputs": [
                         {
                             "name": "Adamant bar",
@@ -44481,7 +44481,7 @@
                     "category": "Adamant",
                     "exp": 100.0,
                     "level": 70,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/e/e2/Adamant_arrowtips.png?53d15",
                     "inputs": [
                         {
                             "name": "Adamant ore",
@@ -44517,7 +44517,7 @@
                     "category": "Other",
                     "exp": 2500.0,
                     "level": 70,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/0/0c/Crystal_helm.png?4c21e",
                     "inputs": [
                         {
                             "name": "Crystal shard",
@@ -44553,7 +44553,7 @@
                     "category": "Other",
                     "exp": 5000.0,
                     "level": 72,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/8/8d/Crystal_legs.png?4c21e",
                     "inputs": [
                         {
                             "name": "Crystal shard",
@@ -44589,7 +44589,7 @@
                     "category": "Other",
                     "exp": 7500.0,
                     "level": 74,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/3/3e/Crystal_body.png?4c21e",
                     "inputs": [
                         {
                             "name": "Crystal shard",
@@ -44625,7 +44625,7 @@
                     "category": "Adamant",
                     "exp": 125.0,
                     "level": 75,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/b/be/Adamant_scimitar.png?b94c4",
                     "inputs": [
                         {
                             "name": "Adamant bar",
@@ -44656,7 +44656,7 @@
                     "category": "Adamant",
                     "exp": 162.5,
                     "level": 75,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/b/be/Adamant_scimitar.png?b94c4",
                     "inputs": [
                         {
                             "name": "Adamant ore",
@@ -44687,12 +44687,12 @@
                 },
                 {
                     "id": 52,
-                    "name": "Crystal axe",
+                    "name": "Crystal tool",
                     "subtitle": "",
                     "category": "Other",
                     "exp": 6000.0,
                     "level": 76,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/9/9d/Crystal_axe.png?41819",
                     "inputs": [
                         {
                             "name": "Crystal shard",
@@ -44705,96 +44705,14 @@
                             "chance": 1
                         },
                         {
-                            "name": "Dragon axe",
+                            "name": "Dragon tool",
                             "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
-                            "name": "Crystal axe",
-                            "amount": 1.0,
-                            "chance": 1
-                        }
-                    ],
-                    "areas": [
-                        "Tirannwn"
-                    ],
-                    "expMultipliers": [],
-                    "inputMultipliers": [],
-                    "outputMultipliers": [],
-                    "expActions": 1.0,
-                    "tooltip": ""
-                },
-                {
-                    "id": 53,
-                    "name": "Crystal harpoon",
-                    "subtitle": "",
-                    "category": "Other",
-                    "exp": 6000.0,
-                    "level": 76,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
-                    "inputs": [
-                        {
-                            "name": "Crystal shard",
-                            "amount": 120.0,
-                            "chance": 1
-                        },
-                        {
-                            "name": "Crystal tool seed",
-                            "amount": 1.0,
-                            "chance": 1
-                        },
-                        {
-                            "name": "Dragon harpoon",
-                            "amount": 1.0,
-                            "chance": 1
-                        }
-                    ],
-                    "outputs": [
-                        {
-                            "name": "Crystal harpoon",
-                            "amount": 1.0,
-                            "chance": 1
-                        }
-                    ],
-                    "areas": [
-                        "Tirannwn"
-                    ],
-                    "expMultipliers": [],
-                    "inputMultipliers": [],
-                    "outputMultipliers": [],
-                    "expActions": 1.0,
-                    "tooltip": ""
-                },
-                {
-                    "id": 54,
-                    "name": "Crystal pickaxe",
-                    "subtitle": "",
-                    "category": "Other",
-                    "exp": 6000.0,
-                    "level": 76,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
-                    "inputs": [
-                        {
-                            "name": "Crystal shard",
-                            "amount": 120.0,
-                            "chance": 1
-                        },
-                        {
-                            "name": "Crystal tool seed",
-                            "amount": 1.0,
-                            "chance": 1
-                        },
-                        {
-                            "name": "Dragon pickaxe",
-                            "amount": 1.0,
-                            "chance": 1
-                        }
-                    ],
-                    "outputs": [
-                        {
-                            "name": "Crystal pickaxe",
+                            "name": "Crystal tool",
                             "amount": 1.0,
                             "chance": 1
                         }
@@ -44810,12 +44728,12 @@
                 },
                 {
                     "id": 55,
-                    "name": "Crystal halberd",
+                    "name": "Crystal weapon",
                     "subtitle": "",
                     "category": "Other",
                     "exp": 2000.0,
                     "level": 78,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/b/bf/Crystal_halberd.png?ac4a4",
                     "inputs": [
                         {
                             "name": "Crystal shard",
@@ -44830,7 +44748,7 @@
                     ],
                     "outputs": [
                         {
-                            "name": "Crystal halberd",
+                            "name": "Crystal weapon",
                             "amount": 1.0,
                             "chance": 1
                         }
@@ -44851,7 +44769,7 @@
                     "category": "Adamant",
                     "exp": 187.5,
                     "level": 79,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/b/b7/Adamant_platelegs.png?b8df5",
                     "inputs": [
                         {
                             "name": "Adamant bar",
@@ -44882,7 +44800,7 @@
                     "category": "Adamant",
                     "exp": 225.0,
                     "level": 79,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/b/b7/Adamant_platelegs.png?b8df5",
                     "inputs": [
                         {
                             "name": "Adamant ore",
@@ -44918,7 +44836,7 @@
                     "category": "Other",
                     "exp": 500.0,
                     "level": 80,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/e/e2/Enhanced_crystal_key.png?dec88",
                     "inputs": [
                         {
                             "name": "Crystal shard",
@@ -44954,7 +44872,7 @@
                     "category": "Other",
                     "exp": 5000.0,
                     "level": 80,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/0/01/Eternal_teleport_crystal.png?dec88",
                     "inputs": [
                         {
                             "name": "Crystal shard",
@@ -44990,7 +44908,7 @@
                     "category": "Rune",
                     "exp": 50.0,
                     "level": 85,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/8/83/Runite_bar.png?10c4d",
                     "inputs": [
                         {
                             "name": "Rune ore",
@@ -45026,7 +44944,7 @@
                     "category": "Rune",
                     "exp": 1350.0,
                     "level": 85,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/8/83/Runite_bar.png?10c4d",
                     "inputs": [
                         {
                             "name": "Rune ore",
@@ -45062,7 +44980,7 @@
                     "category": "Rune",
                     "exp": 75.0,
                     "level": 85,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/e/ed/Rune_arrowtips.png?c371b",
                     "inputs": [
                         {
                             "name": "Rune bar",
@@ -45093,7 +45011,7 @@
                     "category": "Rune",
                     "exp": 125.0,
                     "level": 85,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/e/ed/Rune_arrowtips.png?c371b",
                     "inputs": [
                         {
                             "name": "Rune ore",
@@ -45129,7 +45047,7 @@
                     "category": "Adamant",
                     "exp": 312.5,
                     "level": 88,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/7/71/Adamant_platebody.png?b8df5",
                     "inputs": [
                         {
                             "name": "Adamant bar",
@@ -45160,7 +45078,7 @@
                     "category": "Adamant",
                     "exp": 350.0,
                     "level": 88,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/7/71/Adamant_platebody.png?b8df5",
                     "inputs": [
                         {
                             "name": "Adamant ore",
@@ -45196,7 +45114,7 @@
                     "category": "Rune",
                     "exp": 150.0,
                     "level": 90,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/d/d9/Rune_scimitar.png?a7233",
                     "inputs": [
                         {
                             "name": "Rune bar",
@@ -45227,7 +45145,7 @@
                     "category": "Rune",
                     "exp": 200.0,
                     "level": 90,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/d/d9/Rune_scimitar.png?a7233",
                     "inputs": [
                         {
                             "name": "Rune ore",
@@ -45263,7 +45181,7 @@
                     "category": "Rune",
                     "exp": 225.0,
                     "level": 94,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/9/9a/Rune_platelegs.png?1b3fe",
                     "inputs": [
                         {
                             "name": "Rune bar",
@@ -45294,7 +45212,7 @@
                     "category": "Rune",
                     "exp": 275.0,
                     "level": 94,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/9/9a/Rune_platelegs.png?1b3fe",
                     "inputs": [
                         {
                             "name": "Rune ore",
@@ -45330,7 +45248,7 @@
                     "category": "Rune",
                     "exp": 375.0,
                     "level": 99,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/7/7c/Rune_platebody.png?3666d",
                     "inputs": [
                         {
                             "name": "Rune bar",
@@ -45361,7 +45279,7 @@
                     "category": "Rune",
                     "exp": 425.0,
                     "level": 99,
-                    "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
+                    "icon": "https://oldschool.runescape.wiki/images/7/7c/Rune_platebody.png?3666d",
                     "inputs": [
                         {
                             "name": "Rune ore",
