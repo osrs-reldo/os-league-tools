@@ -25,15 +25,15 @@ export default function SkillCalculator() {
     const expMultiplier = useMultiplier();
     const inputMultiplier = useMultiplier();
     const outputMultiplier = useMultiplier();
+    const { skill } = useParams();
     const [useLevelFilter, setUseLevelFilter] = useState(false);
     const [useSkillingProdigy, setUseSkillingProdigy] = useState(isRelicUnlocked('1,3'));
-    const [hasDoubleCast, setHasDoubleCast] = useState(isRelicUnlocked('3,3'));
-    const [hasBotanist, setHasBotanist] = useState(isRelicUnlocked('5,1'));
+    const [useDoubleCast, setUseDoubleCast] = useState(isRelicUnlocked('3,3') && skill === 'magic');
+    const [useBotanist, setUseBotanist] = useState(isRelicUnlocked('5,1') && skill === 'farming');
     const [useAreaFilter, setUseAreaFilter] = useState(true);
     const [includedAreas, setIncludedAreas] = useState(
         getFromLocalStorage(LOCALSTORAGE_KEYS.UNLOCKED_REGIONS, INITIAL_REGIONS_STATE)
     );
-    const { skill } = useParams();
 
     let skillData;
     useEffect(() => {
@@ -51,6 +51,8 @@ export default function SkillCalculator() {
         inputMultiplier.clear();
         outputMultiplier.clear();
         setUseSkillingProdigy(isRelicUnlocked('1,3') && !skillData.isCombatSkill);
+        setUseDoubleCast(isRelicUnlocked('3,3') && skill === 'magic');
+        setUseBotanist(isRelicUnlocked('5,1') && skill === 'farming');
     }, [skill]);
 
     skillData = calculatorData.calculators[skill];
@@ -61,8 +63,6 @@ export default function SkillCalculator() {
             </h4>
         );
     }
-    const isMagic = skillData.name === 'Magic';
-    const isFarming = skillData.name === 'Farming';
 
     const {
         nameFormatter,
@@ -156,7 +156,7 @@ export default function SkillCalculator() {
                 expMultiplier,
                 totalLevel,
                 countMultiplier: inputMultiplier,
-                hasDoubleCast: isMagic ? hasDoubleCast : false,
+                useDoubleCast,
             },
             hidden: !data.some(datum => datum.inputs.length > 0),
         },
@@ -173,7 +173,7 @@ export default function SkillCalculator() {
                 expMultiplier,
                 totalLevel,
                 countMultiplier: outputMultiplier,
-                hasBotanist: isFarming ? hasBotanist : false,
+                useBotanist,
             },
             hidden: !data.some(datum => datum.outputs.length > 0),
         },
@@ -239,15 +239,15 @@ export default function SkillCalculator() {
                             multiplierData={skillData.inputMultipliers}
                             multipliers={inputMultiplier}
                         />
-                        {isFarming && (
+                        {skill === 'farming' && (
                             <>
                                 <h4>Output multiplier:</h4>
                                 <div className='pl-2'>
                                     <Form.Check
                                         label='Relic - Botanist'
-                                        defaultChecked={hasBotanist}
+                                        defaultChecked={useBotanist}
                                         onChange={event => {
-                                            setHasBotanist(event.target.checked);
+                                            setUseBotanist(event.target.checked);
                                         }}
                                     />
                                 </div>
@@ -272,15 +272,15 @@ export default function SkillCalculator() {
                                 </div>
                             </>
                         )}
-                        {isMagic && (
+                        {skill === 'magic' && (
                             <>
                                 <h4>Input Modifiers:</h4>
                                 <div className='pl-2'>
                                     <Form.Check
                                         label='Relic - Double Cast'
-                                        defaultChecked={hasDoubleCast}
+                                        defaultChecked={useDoubleCast}
                                         onChange={event => {
-                                            setHasDoubleCast(event.target.checked);
+                                            setUseDoubleCast(event.target.checked);
                                         }}
                                     />
                                 </div>

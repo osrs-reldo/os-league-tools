@@ -60,7 +60,10 @@ function amountFormatter(cell, row, rowIndex, props) {
 }
 
 function outputListFormatter(cell, row, rowIndex, props) {
-    const countMultiplier = props.countMultiplier.apply(row.outputMultipliers);
+    let countMultiplier = props.countMultiplier.apply(row.outputMultipliers);
+    if (props.useBotanist) {
+        countMultiplier *= 2;
+    }
     const actionsRemaining = calcActionsRemaining(
         props.current,
         props.target,
@@ -71,9 +74,6 @@ function outputListFormatter(cell, row, rowIndex, props) {
         props.totalLevel,
         row.expActions
     );
-    if (props.hasBotanist) {
-        return itemListBotanistFormatter(cell, countMultiplier, actionsRemaining);
-    }
     return itemListFormatter(cell, countMultiplier, actionsRemaining);
 }
 
@@ -89,56 +89,17 @@ function inputListFormatter(cell, row, rowIndex, props) {
         props.totalLevel,
         row.expActions
     );
-    if (props.hasDoubleCast) {
-        return itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining);
-    }
-    return itemListFormatter(cell, countMultiplier, actionsRemaining);
+    return itemListFormatter(cell, countMultiplier, actionsRemaining, true, props.useDoubleCast);
 }
 
-function itemListFormatter(cell, countMultiplier, actionsRemaining) {
+function itemListFormatter(cell, countMultiplier, actionsRemaining, roundAmounts = false, useDoubleCast = false) {
     return (
         <ul className='mb-0'>
             {cell.map(item => {
                 if (item.amount) {
-                    let amount = actionsRemaining * item.amount * item.chance * countMultiplier;
-                    amount = +amount.toFixed(2);
-                    return <li key={item.name}>{`${amount} ${item.name}`}</li>;
-                }
-                return <li key={item.name}>{item.name}</li>;
-            })}
-        </ul>
-    );
-}
-
-function itemListDoubleCastFormatter(cell, countMultiplier, actionsRemaining) {
-    return (
-        <ul className='mb-0'>
-            {cell.map(item => {
-                if (item.amount) {
-                    let amount;
-                    if (item.name.includes('rune')) {
-                        amount = actionsRemaining * item.amount * (item.chance * 0.1) * countMultiplier;
-                        amount = Math.ceil(amount);
-                    } else {
-                        amount = actionsRemaining * item.amount * item.chance * countMultiplier;
-                        amount = +amount.toFixed(2);
-                    }
-                    return <li key={item.name}>{`${amount} ${item.name}`}</li>;
-                }
-                return <li key={item.name}>{item.name}</li>;
-            })}
-        </ul>
-    );
-}
-
-function itemListBotanistFormatter(cell, countMultiplier, actionsRemaining) {
-    return (
-        <ul className='mb-0'>
-            {cell.map(item => {
-                if (item.amount) {
-                    let amount = actionsRemaining * item.amount * item.chance * countMultiplier;
-                    amount = +amount.toFixed(2);
-                    amount *= 2;
+                    const chanceMultiplier = useDoubleCast && item.name.includes('rune') ? 0.1 : 1;
+                    let amount = actionsRemaining * item.amount * chanceMultiplier * countMultiplier;
+                    amount = roundAmounts ? Math.ceil(amount) : +amount.toFixed(2);
                     return <li key={item.name}>{`${amount} ${item.name}`}</li>;
                 }
                 return <li key={item.name}>{item.name}</li>;
