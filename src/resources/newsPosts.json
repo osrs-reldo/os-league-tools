@@ -1,11 +1,19 @@
 [
     {
+        "title": "Feature: Skill Planners",
+        "date": "Dec 13 2020",
+        "type": "blog",
+        "thumbnail": "https://oldschool.runescape.wiki/images/9/9c/Main_page_calculator.png?b9d54",
+        "leadText": "Skill planners are now available to calculate your banked exp",
+        "htmlContent": "<p>Skill planners are now available to calculate your banked exp!</p> <p>Calculators are great for finding out what you need to do to reach the next level, but what about when you want to find out how many levels you can get with the materials you already have?</p><p>That's where Skill Planners come in. Choose which activities you plan to do and how many of each, and the planner will tell you exactly where you'll end up.</p> <p>Check them out over on the Calculators page!</p>"
+    },
+    {
         "title": "Skill requirement filters",
         "date": "Nov 21 2020",
         "type": "blog",
         "thumbnail": "https://oldschool.runescape.wiki/images/f/f9/Toggle_Health_Overlay.png?bdd3e",
         "leadText": "New feature: Filter tasks by your current skill levels!",
-        "htmlContent": "<p>New feature: Filter tasks by your current skill levels!</p> <p>You've been asking for it, so here it is - the task tracker is now filterable by what you can complete given your character's current skill levels.</p> <p>Just import your character's levels by doing a hiscores lookup (on the task UI to the left) and you can toggle the filters to show only tasks you can complete (or only tasks you can't yet)."
+        "htmlContent": "<p>New feature: Filter tasks by your current skill levels!</p> <p>You've been asking for it, so here it is - the task tracker is now filterable by what you can complete given your character's current skill levels.</p> <p>Just import your character's levels by doing a hiscores lookup (on the task UI to the left) and you can toggle the filters to show only tasks you can complete (or only tasks you can't yet).</p>"
     },
     {
         "title": "Improved mobile support",
