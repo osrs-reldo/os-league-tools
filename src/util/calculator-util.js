@@ -137,7 +137,8 @@ function plannerTotalExpFormatter(cell, row, rowIndex, { baseMultiplier, expMult
         totalLevel,
         row.expActions
     );
-    return expEach * row.amount;
+    const totalGained = expEach * row.amount;
+    return +totalGained.toFixed(2);
 }
 
 function deleteFormatter() {
@@ -260,13 +261,15 @@ export function calculateTotalGained(currentExp, plannedActivities, baseMultipli
         gainedExp += expEach * activity.amount;
     });
 
-    const newExp = Math.floor(currentExp + gainedExp);
+    gainedExp = Math.floor(gainedExp);
+    const newExp = currentExp + gainedExp;
     const newLevel = getLevelForExp(newExp);
     const expToNextLevel = getExpForLevel(newLevel + 1) - newExp;
 
     return {
         exp: newExp,
         level: newLevel,
+        gainedExp,
         expToNextLevel,
     };
 }

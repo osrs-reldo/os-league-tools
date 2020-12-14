@@ -67,10 +67,10 @@ export default function Calculators() {
                     </div>
                 </Card>
             </CardDeck>
-            <Card bg='dark' text='white'>
+            {/* <Card bg='dark' text='white'>
                 <h1 className='mt-2 light-text text-center'>Other Calculators</h1>
                 <div className='m-3 text-center'>Coming soon!</div>
-            </Card>
+            </Card> */}
         </div>
     );
 }

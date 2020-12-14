@@ -318,8 +318,9 @@ export default function SkillPlanner() {
                         <Card bg='dark' text='white' className='mt-2'>
                             <Card.Body>
                                 <p>
-                                    Upon completion, you will be level <b>{totalGained.level}</b> with{' '}
-                                    <b>{totalGained.exp}</b> exp ({totalGained.expToNextLevel} exp from next level).
+                                    Your plan is worth <b>{totalGained.gainedExp}</b> exp. Upon completion, you will be
+                                    level <b>{totalGained.level}</b> with <b>{totalGained.exp}</b> exp (
+                                    {totalGained.expToNextLevel} exp from next level).
                                 </p>
 
                                 <DoubleScrollbar>
