@@ -10,7 +10,7 @@ export default function Calculators() {
             <CardDeck>
                 <Card bg='dark' text='white' className='mt-2 mb-2'>
                     <h1 className='mt-2 light-text text-center'>Skill Calculators</h1>
-                    <div className='content-center ml-2 mr-2'>
+                    <div className='content-center'>
                         <p className='mb-2 text-center'>
                             Input a target level or exp, and find out how many actions you need to get there.
                         </p>
@@ -39,7 +39,7 @@ export default function Calculators() {
                 </Card>
                 <Card bg='dark' text='white' className='mt-2 mb-2'>
                     <h1 className='mt-2 light-text text-center'>Skill Planners</h1>
-                    <div className='content-center ml-2 mr-2'>
+                    <div className='content-center'>
                         <p className='mb-2 text-center'>
                             Input how many actions you plan to do, and find out how much exp it'll give you.
                         </p>
