@@ -9,6 +9,7 @@ import './styles/index.scss';
 import Homepage from './pages/Homepage';
 import Calculators from './pages/Calculators';
 import Calculator from './pages/SkillCalculator';
+import Planner from './pages/SkillPlanner';
 import CharacterTracker from './pages/CharacterTracker';
 import About from './pages/About';
 import PluginInfo from './pages/PluginInfo';
@@ -39,6 +40,7 @@ export default function App() {
                     <Route path='/tracker' component={CharacterTracker} />
                     <Route exact path='/calculators' component={Calculators} />
                     <Route path='/calculators/:skill' component={Calculator} />
+                    <Route path='/planners/:skill' component={Planner} />
                     <Route path='/about' component={About} />
                     <Route path='/plugin' component={PluginInfo} />
                     <Route path='/settings' component={Settings} />

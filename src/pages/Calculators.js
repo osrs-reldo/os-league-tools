@@ -10,7 +10,10 @@ export default function Calculators() {
             <CardDeck>
                 <Card bg='dark' text='white' className='mt-2 mb-2'>
                     <h1 className='mt-2 light-text text-center'>Skill Calculators</h1>
-                    <div className='content-center'>
+                    <div className='content-center ml-2 mr-2'>
+                        <p className='mb-2 text-center'>
+                            Input a target level or exp, and find out how many actions you need to get there.
+                        </p>
                         <ul className='calc-list'>
                             {calculatorData.skills.map(skill => {
                                 const skillData = calculatorData.calculators[skill];
@@ -26,7 +29,7 @@ export default function Calculators() {
                                             style={{ textDecoration: 'none' }}
                                         >
                                             <img src={skillData.icon} alt={skillData.name} />
-                                            {skillData.name}
+                                            {` ${skillData.name}`}
                                         </Link>
                                     </li>
                                 );
@@ -36,7 +39,32 @@ export default function Calculators() {
                 </Card>
                 <Card bg='dark' text='white' className='mt-2 mb-2'>
                     <h1 className='mt-2 light-text text-center'>Skill Planners</h1>
-                    <div className='m-3 text-center'>Coming soon!</div>
+                    <div className='content-center ml-2 mr-2'>
+                        <p className='mb-2 text-center'>
+                            Input how many actions you plan to do, and find out how much exp it'll give you.
+                        </p>
+                        <ul className='calc-list'>
+                            {calculatorData.skills.map(skill => {
+                                const skillData = calculatorData.calculators[skill];
+                                if (!skillData) {
+                                    return null;
+                                }
+                                return (
+                                    <li className='mt-2' key={skillData.name}>
+                                        <Link
+                                            to={`/planners/${skill}`}
+                                            className='text-light'
+                                            key={skill}
+                                            style={{ textDecoration: 'none' }}
+                                        >
+                                            <img src={skillData.icon} alt={skillData.name} />
+                                            {` ${skillData.name}`}
+                                        </Link>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
                 </Card>
             </CardDeck>
             <Card bg='dark' text='white'>

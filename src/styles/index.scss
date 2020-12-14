@@ -36,7 +36,7 @@ code {
     margin-right: auto;
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
     .content-wrapper {
         width: 90%;
         margin-left: auto;
@@ -185,4 +185,17 @@ ul.calc-list {
 
 .react-bootstrap-table-page-btns-ul {
     margin-bottom: 0;
+}
+
+// Search dropdown style overrides
+.select-search {
+    width: 100% !important;
+}
+
+.select-search__group-header {
+    color: #000;
+}
+
+.select-search__options {
+    padding: 0;
 }

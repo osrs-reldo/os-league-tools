@@ -1,6 +1,11 @@
 import React from 'react';
-import { OverlayTrigger, Badge, Tooltip } from 'react-bootstrap';
+import { OverlayTrigger, Badge, Tooltip, Form } from 'react-bootstrap';
+import { Icon } from '@iconify/react';
+import closeIcon from '@iconify/icons-mdi/close';
+import _ from 'lodash';
 import { isRelicUnlocked } from './relic-util';
+import calculatorData from '../resources/calculatorData.json';
+import { getExpForLevel, getLevelForExp } from './exp-table';
 
 export function getFormatters() {
     return {
@@ -10,6 +15,9 @@ export function getFormatters() {
         outputListFormatter,
         inputListFormatter,
         expFormatter,
+        inputAmountFormatter,
+        plannerTotalExpFormatter,
+        deleteFormatter,
     };
 }
 
@@ -108,6 +116,34 @@ function itemListFormatter(cell, countMultiplier, actionsRemaining, roundAmounts
     );
 }
 
+function inputAmountFormatter(cell, row, rowIndex, { onChange }) {
+    const debouncedOnChange = _.debounce(onChange, 700);
+    return (
+        <Form.Control
+            defaultValue={row.amount}
+            onChange={event => debouncedOnChange(row.id, event.target.value)}
+            style={{ width: '100px' }}
+            type='number'
+        />
+    );
+}
+
+function plannerTotalExpFormatter(cell, row, rowIndex, { baseMultiplier, expMultiplier, totalLevel }) {
+    const expEach = calcExpPerAction(
+        row.exp,
+        baseMultiplier,
+        expMultiplier,
+        row.expMultipliers,
+        totalLevel,
+        row.expActions
+    );
+    return expEach * row.amount;
+}
+
+function deleteFormatter() {
+    return <Icon icon={closeIcon} width='20px' height='20px' />;
+}
+
 function calcExpPerAction(baseExp, baseMultiplierStr, expMultiplier, validMultipliers, totalLevel, numExpActions) {
     const baseMultiplier = parseInt(baseMultiplierStr, 10);
     const secondaryMultiplier = baseMultiplier * expMultiplier.apply(validMultipliers);
@@ -171,4 +207,66 @@ export function getDefaultCheckedMultipliers(globalMultiplierData, multipliers) 
         }
     });
     return toCheckByDefault;
+}
+
+export function generatePlannerActivities(skill) {
+    const allActions = {};
+    calculatorData.calculators[skill].actions.forEach(action => {
+        if (allActions[action.category] !== undefined) {
+            allActions[action.category].push({
+                name: action.name,
+                description: action.subtitle,
+                value: action.id,
+                icon: action.icon,
+            });
+        } else {
+            allActions[action.category] = [
+                {
+                    name: action.name,
+                    description: action.subtitle,
+                    value: action.id,
+                    icon: action.icon,
+                },
+            ];
+        }
+    });
+
+    const activities = [];
+    calculatorData.calculators[skill].categories.forEach(category => {
+        activities.push({
+            type: 'group',
+            name: category.label,
+            items: allActions[category.label],
+        });
+    });
+    return activities;
+}
+
+export function getCalcData(skill, id) {
+    return calculatorData.calculators[skill].actions.find(action => action.id === id);
+}
+
+export function calculateTotalGained(currentExp, plannedActivities, baseMultiplier, expMultiplier, totalLevel) {
+    let gainedExp = 0;
+    plannedActivities.forEach(activity => {
+        const expEach = calcExpPerAction(
+            activity.exp,
+            baseMultiplier,
+            expMultiplier,
+            activity.expMultipliers,
+            totalLevel,
+            activity.expActions
+        );
+        gainedExp += expEach * activity.amount;
+    });
+
+    const newExp = Math.floor(currentExp + gainedExp);
+    const newLevel = getLevelForExp(newExp);
+    const expToNextLevel = getExpForLevel(newLevel + 1) - newExp;
+
+    return {
+        exp: newExp,
+        level: newLevel,
+        expToNextLevel,
+    };
 }
