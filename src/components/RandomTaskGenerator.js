@@ -8,6 +8,7 @@ import {
     DIFFICULTIES,
     isTaskHidden,
     isTaskCompletableWithRegions,
+    isTaskOnTodoList,
 } from '../util/task-util';
 import { LOCALSTORAGE_KEYS } from '../util/browser-util';
 import HiscoreLookup from './HiscoreLookup';
@@ -22,9 +23,10 @@ export default function RandomTaskGenerator({
     unlockedRegions,
 }) {
     const [onlyMetRequirements, setOnlyMetRequirements] = useState(false);
+    const [onlyTodoList, setOnlyTodoList] = useState(false);
     const [currentTaskId, setCurrentTaskId] = useLocalStorage(LOCALSTORAGE_KEYS.GENERATED_TASK, -1);
     const [includedAreas, setIncludedAreas] = useState(unlockedRegions);
-    const [useAreaFilter, setUseAreaFilter] = useState(true);
+    const [useAreaFilter, setUseAreaFilter] = useState(false);
     const [includedDifficulties, setIncludedDifficulties] = useState(DIFFICULTIES);
     const [useDifficultyFilter, setUseDifficultyFilter] = useState(false);
     const [completeButtonEnabled, setCompleteButtonEnabled] = useState(currentTaskId >= 0);
@@ -40,6 +42,7 @@ export default function RandomTaskGenerator({
     taskFilters.push(task => !onlyMetRequirements || !hiscores || isTaskCompletable(task.id, hiscores));
     taskFilters.push(task => !useAreaFilter || includedAreas.includes(task.area));
     taskFilters.push(task => !useDifficultyFilter || includedDifficulties.includes(task.difficulty));
+    taskFilters.push(task => !onlyTodoList || isTaskOnTodoList(task.id, taskStatus));
 
     return (
         <Card bg='dark' text='white' style={{ border: '2px solid #6c757d', borderRadius: '0rem 0rem .25rem .25rem' }}>
@@ -49,10 +52,26 @@ export default function RandomTaskGenerator({
                         <h4>Configure task generator:</h4>
                         <Accordion>
                             <Card bg='dark' text='white' style={{ border: '1px solid #6c757d' }} className='clickable'>
-                                <Accordion.Toggle as={Card.Header} eventKey='0'>
+                                <Accordion.Toggle as={Card.Header} eventKey='general'>
+                                    <h5>General</h5>
+                                </Accordion.Toggle>
+                                <Accordion.Collapse eventKey='general'>
+                                    <div className='p-3'>
+                                        <div className='pl-3'>
+                                            <Form.Check
+                                                label='Only include tasks on your to-do list'
+                                                checked={onlyTodoList}
+                                                onChange={() => setOnlyTodoList(prevState => !prevState)}
+                                            />
+                                        </div>
+                                    </div>
+                                </Accordion.Collapse>
+                            </Card>
+                            <Card bg='dark' text='white' style={{ border: '1px solid #6c757d' }} className='clickable'>
+                                <Accordion.Toggle as={Card.Header} eventKey='skills'>
                                     <h5>Skills</h5>
                                 </Accordion.Toggle>
-                                <Accordion.Collapse eventKey='0'>
+                                <Accordion.Collapse eventKey='skills'>
                                     <div className='p-3'>
                                         <div className='pl-3'>
                                             <Form.Check
@@ -66,10 +85,10 @@ export default function RandomTaskGenerator({
                                 </Accordion.Collapse>
                             </Card>
                             <Card bg='dark' text='white' style={{ border: '1px solid #6c757d' }} className='clickable'>
-                                <Accordion.Toggle as={Card.Header} eventKey='1'>
+                                <Accordion.Toggle as={Card.Header} eventKey='areas'>
                                     <h5>Areas</h5>
                                 </Accordion.Toggle>
-                                <Accordion.Collapse eventKey='1'>
+                                <Accordion.Collapse eventKey='areas'>
                                     <div className='p-3'>
                                         <Form.Check
                                             label='Include all areas'
@@ -106,10 +125,10 @@ export default function RandomTaskGenerator({
                                 </Accordion.Collapse>
                             </Card>
                             <Card bg='dark' text='white' style={{ border: '1px solid #6c757d' }} className='clickable'>
-                                <Accordion.Toggle as={Card.Header} eventKey='2'>
+                                <Accordion.Toggle as={Card.Header} eventKey='difficulties'>
                                     <h5>Difficulties</h5>
                                 </Accordion.Toggle>
-                                <Accordion.Collapse eventKey='2'>
+                                <Accordion.Collapse eventKey='difficulties'>
                                     <div className='p-3'>
                                         <Form.Check
                                             label='Include all difficulties'
