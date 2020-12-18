@@ -16729,28 +16729,28 @@
             "actions": [
                 {
                     "id": 0,
-                    "name": "Headless arrows (x15)",
+                    "name": "Headless arrows",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 15.0,
+                    "exp": 1.0,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/c/c6/Headless_arrow.png?2a2da",
                     "inputs": [
                         {
                             "name": "Arrow shafts",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Feather",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Headless arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -16760,33 +16760,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
                     "id": 1,
-                    "name": "Bronze arrows (x15)",
+                    "name": "Bronze arrows",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 19.5,
+                    "exp": 1.3,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/f/f6/Bronze_arrow_5.png?908c0",
                     "inputs": [
                         {
                             "name": "Headless arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Bronze arrowtip",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Bronze arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -16796,28 +16796,69 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
                     "id": 2,
-                    "name": "Arrow shafts (x15)",
+                    "name": "Bronze arrows",
+                    "subtitle": "From scratch",
+                    "category": "Arrows",
+                    "exp": 2.63,
+                    "level": 1,
+                    "icon": "https://oldschool.runescape.wiki/images/f/f6/Bronze_arrow_5.png?908c0",
+                    "inputs": [
+                        {
+                            "name": "Logs",
+                            "amount": 0.0666666666666667,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Feather",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Bronze arrowtip",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Bronze arrow",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 0.2,
+                    "tooltip": ""
+                },
+                {
+                    "id": 3,
+                    "name": "Arrow shafts",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 5.0,
+                    "exp": 0.33,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/c/cb/Arrow_shaft_5.png?3ba7a",
                     "inputs": [
                         {
                             "name": "Logs",
-                            "amount": 1.0,
+                            "amount": 0.0666666666666667,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Arrow shafts",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -16827,64 +16868,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 3,
-                    "name": "Bronze javelins (x15)",
+                    "id": 4,
+                    "name": "Bronze javelins",
                     "subtitle": "",
                     "category": "Javelins",
-                    "exp": 15.0,
+                    "exp": 1.0,
                     "level": 3,
                     "icon": "https://oldschool.runescape.wiki/images/0/02/Bronze_javelin.png?bbb83",
                     "inputs": [
                         {
                             "name": "Javelin shafts",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Bronze javelin heads",
-                            "amount": 15.0,
-                            "chance": 1
-                        }
-                    ],
-                    "outputs": [
-                        {
-                            "name": "Bronze javelins",
-                            "amount": 15.0,
-                            "chance": 1
-                        }
-                    ],
-                    "areas": [
-                        "All"
-                    ],
-                    "expMultipliers": [],
-                    "inputMultipliers": [],
-                    "outputMultipliers": [],
-                    "expActions": 1.0,
-                    "tooltip": ""
-                },
-                {
-                    "id": 4,
-                    "name": "Javelin shafts",
-                    "subtitle": "",
-                    "category": "Javelins",
-                    "exp": 5.0,
-                    "level": 3,
-                    "icon": "https://oldschool.runescape.wiki/images/4/49/Javelin_shaft_5.png?c5108",
-                    "inputs": [
-                        {
-                            "name": "Logs",
                             "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
-                            "name": "Javelin shafts",
-                            "amount": 15.0,
+                            "name": "Bronze javelins",
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -16894,33 +16904,64 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
                     "id": 5,
-                    "name": "Flighted ogre arrow (x6)",
+                    "name": "Javelin shafts",
+                    "subtitle": "",
+                    "category": "Javelins",
+                    "exp": 0.33,
+                    "level": 3,
+                    "icon": "https://oldschool.runescape.wiki/images/4/49/Javelin_shaft_5.png?c5108",
+                    "inputs": [
+                        {
+                            "name": "Logs",
+                            "amount": 0.066666666666667,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Javelin shafts",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 0.066666666666667,
+                    "tooltip": ""
+                },
+                {
+                    "id": 6,
+                    "name": "Flighted ogre arrow",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 9.0,
+                    "exp": 1.5,
                     "level": 5,
                     "icon": "https://oldschool.runescape.wiki/images/e/e5/Flighted_ogre_arrow_5.png?83978",
                     "inputs": [
                         {
                             "name": "Ogre arrow shaft",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Feather",
-                            "amount": 24.0,
+                            "amount": 4.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Flighted ogre arrow",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -16930,33 +16971,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.166666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 6,
-                    "name": "Ogre arrow (x6)",
+                    "id": 7,
+                    "name": "Ogre arrow",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 6.0,
+                    "exp": 1.0,
                     "level": 5,
                     "icon": "https://oldschool.runescape.wiki/images/3/36/Ogre_arrow_5.png?3a552",
                     "inputs": [
                         {
                             "name": "Flighted ogre arrow",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Wolfbone arrowtips",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Ogre arrow",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -16966,11 +17007,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.166666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 7,
+                    "id": 8,
                     "name": "Shortbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -17001,7 +17042,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 8,
+                    "id": 9,
                     "name": "Shortbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -17037,24 +17078,24 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 9,
-                    "name": "Ogre arrow shaft (x6)",
+                    "id": 10,
+                    "name": "Ogre arrow shaft",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 7.2,
+                    "exp": 1.2,
                     "level": 5,
                     "icon": "https://oldschool.runescape.wiki/images/e/e5/Ogre_arrow_shaft_5.png?db25b",
                     "inputs": [
                         {
                             "name": "Achey tree logs",
-                            "amount": 1.0,
+                            "amount": 0.166666666666667,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Ogre arrow shaft",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -17064,11 +17105,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.166666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 10,
+                    "id": 11,
                     "name": "Shortbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -17100,15 +17141,15 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 11,
-                    "name": "Wolfbone arrowtips (x6)",
+                    "id": 12,
+                    "name": "Wolfbone arrowtips",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 15.0,
+                    "exp": 2.5,
                     "level": 5,
                     "icon": "https://oldschool.runescape.wiki/images/1/15/Wolfbone_arrowtips.png?b0bb9",
                     "inputs": [
@@ -17121,7 +17162,7 @@
                     "outputs": [
                         {
                             "name": "Wolfbone arrowtips",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -17131,33 +17172,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.166666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 12,
-                    "name": "Bronze brutal (x6)",
+                    "id": 13,
+                    "name": "Bronze brutal",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 8.4,
+                    "exp": 1.4,
                     "level": 7,
                     "icon": "https://oldschool.runescape.wiki/images/d/df/Bronze_brutal_5.png?7dd94",
                     "inputs": [
                         {
                             "name": "Flighted ogre arrow",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Bronze nails",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Bronze brutal",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -17167,33 +17208,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.166666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 13,
-                    "name": "Bronze bolts (x10)",
+                    "id": 14,
+                    "name": "Bronze bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 5.0,
+                    "exp": 0.5,
                     "level": 9,
                     "icon": "https://oldschool.runescape.wiki/images/3/39/Bronze_bolts_5.png?171b1",
                     "inputs": [
                         {
                             "name": "Bronze bolts (unf)",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Bronze bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -17203,11 +17244,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 14,
+                    "id": 15,
                     "name": "Wooden stock",
                     "subtitle": "",
                     "category": "Crossbows",
@@ -17238,7 +17279,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 15,
+                    "id": 16,
                     "name": "Bronze crossbow",
                     "subtitle": "Stringing",
                     "category": "Crossbows",
@@ -17274,7 +17315,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 16,
+                    "id": 17,
                     "name": "Mith grapple (unf)",
                     "subtitle": "",
                     "category": "Other",
@@ -17310,7 +17351,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 17,
+                    "id": 18,
                     "name": "Bronze crossbow",
                     "subtitle": "Attach limbs",
                     "category": "Crossbows",
@@ -17346,7 +17387,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 18,
+                    "id": 19,
                     "name": "Bronze crossbow",
                     "subtitle": "From scratch",
                     "category": "Crossbows",
@@ -17383,33 +17424,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 3.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 19,
-                    "name": "Bronze darts (x10)",
+                    "id": 20,
+                    "name": "Bronze darts",
                     "subtitle": "",
                     "category": "Darts",
-                    "exp": 18.0,
+                    "exp": 1.8,
                     "level": 10,
                     "icon": "https://oldschool.runescape.wiki/images/1/13/Bronze_dart.png?a018f",
                     "inputs": [
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Bronze dart tip",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Bronze darts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -17419,11 +17460,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 20,
+                    "id": 21,
                     "name": "Longbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -17454,7 +17495,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 21,
+                    "id": 22,
                     "name": "Longbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -17490,7 +17531,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 22,
+                    "id": 23,
                     "name": "Longbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -17522,33 +17563,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 23,
-                    "name": "Opal bolts (x10)",
+                    "id": 24,
+                    "name": "Opal bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 16.0,
+                    "exp": 1.6,
                     "level": 11,
                     "icon": "https://oldschool.runescape.wiki/images/2/2d/Opal_bolts_5.png?4cfa7",
                     "inputs": [
                         {
                             "name": "Bronze bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Opal bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Opal bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -17558,11 +17599,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 24,
+                    "id": 25,
                     "name": "Opal bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
@@ -17593,29 +17634,29 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 25,
-                    "name": "Iron arrows (x15)",
+                    "id": 26,
+                    "name": "Iron arrows",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 37.5,
+                    "exp": 2.5,
                     "level": 15,
                     "icon": "https://oldschool.runescape.wiki/images/e/ec/Iron_arrow_5.png?8d7e7",
                     "inputs": [
                         {
                             "name": "Headless arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Iron arrowtip",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Iron arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -17625,21 +17666,62 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 26,
-                    "name": "Arrow shafts (x30)",
-                    "subtitle": "",
+                    "id": 27,
+                    "name": "Iron arrows",
+                    "subtitle": "From scratch",
                     "category": "Arrows",
-                    "exp": 10.0,
+                    "exp": 3.83,
+                    "level": 15,
+                    "icon": "https://oldschool.runescape.wiki/images/e/ec/Iron_arrow_5.png?8d7e7",
+                    "inputs": [
+                        {
+                            "name": "Logs",
+                            "amount": 0.0666666666666667,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Feather",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Iron arrowtip",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Iron arrow",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 0.2,
+                    "tooltip": ""
+                },
+                {
+                    "id": 28,
+                    "name": "Arrow shafts",
+                    "subtitle": "From oak logs",
+                    "category": "Arrows",
+                    "exp": 0.33,
                     "level": 15,
                     "icon": "https://oldschool.runescape.wiki/images/c/cb/Arrow_shaft_5.png?3ba7a",
                     "inputs": [
                         {
                             "name": "Oak logs",
-                            "amount": 1.0,
+                            "amount": 0.033333333333333,
                             "chance": 1
                         }
                     ],
@@ -17656,33 +17738,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.033333333333333,
                     "tooltip": ""
                 },
                 {
-                    "id": 27,
-                    "name": "Iron javelins (x15)",
+                    "id": 29,
+                    "name": "Iron javelins",
                     "subtitle": "",
                     "category": "Javelins",
-                    "exp": 30.0,
+                    "exp": 2.0,
                     "level": 17,
                     "icon": "https://oldschool.runescape.wiki/images/f/ff/Iron_javelin.png?bbb83",
                     "inputs": [
                         {
                             "name": "Javelin shafts",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Iron javelin heads",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Iron javelins",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -17692,33 +17774,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 28,
-                    "name": "Iron brutal (x6)",
+                    "id": 30,
+                    "name": "Iron brutal",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 15.6,
+                    "exp": 2.6,
                     "level": 18,
                     "icon": "https://oldschool.runescape.wiki/images/f/fe/Iron_brutal_5.png?3d2e8",
                     "inputs": [
                         {
                             "name": "Flighted ogre arrow",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Iron nails",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Iron brutal",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -17728,11 +17810,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.166666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 29,
+                    "id": 31,
                     "name": "Oak shortbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -17763,7 +17845,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 30,
+                    "id": 32,
                     "name": "Oak shortbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -17799,7 +17881,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 31,
+                    "id": 33,
                     "name": "Oak shortbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -17831,33 +17913,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 32,
-                    "name": "Iron darts (x10)",
+                    "id": 34,
+                    "name": "Iron darts",
                     "subtitle": "",
                     "category": "Darts",
-                    "exp": 38.0,
+                    "exp": 3.8,
                     "level": 22,
                     "icon": "https://oldschool.runescape.wiki/images/2/2d/Iron_dart.png?4a4ba",
                     "inputs": [
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Iron dart tip",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Iron darts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -17867,33 +17949,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 33,
-                    "name": "Blurite bolts (x10)",
+                    "id": 35,
+                    "name": "Blurite bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 10.0,
+                    "exp": 1.0,
                     "level": 24,
                     "icon": "https://oldschool.runescape.wiki/images/1/10/Blurite_bolts_5.png?f7075",
                     "inputs": [
                         {
                             "name": "Blurite bolts (unf)",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Blurite bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -17903,11 +17985,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 34,
+                    "id": 36,
                     "name": "Oak stock",
                     "subtitle": "",
                     "category": "Crossbows",
@@ -17938,7 +18020,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 35,
+                    "id": 37,
                     "name": "Blurite crossbow",
                     "subtitle": "Stringing",
                     "category": "Crossbows",
@@ -17974,7 +18056,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 36,
+                    "id": 38,
                     "name": "Blurite crossbow",
                     "subtitle": "Attach limbs",
                     "category": "Crossbows",
@@ -18010,7 +18092,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 37,
+                    "id": 39,
                     "name": "Blurite crossbow",
                     "subtitle": "From scratch",
                     "category": "Crossbows",
@@ -18047,11 +18129,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 3.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 38,
+                    "id": 40,
                     "name": "Oak longbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -18082,7 +18164,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 39,
+                    "id": 41,
                     "name": "Oak longbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -18118,7 +18200,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 40,
+                    "id": 42,
                     "name": "Oak longbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -18150,33 +18232,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 41,
-                    "name": "Jade bolts (x10)",
+                    "id": 43,
+                    "name": "Jade bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 24.0,
+                    "exp": 2.4,
                     "level": 26,
                     "icon": "https://oldschool.runescape.wiki/images/d/d9/Jade_bolts_5.png?3c375",
                     "inputs": [
                         {
                             "name": "Blurite bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Jade bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Jade bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -18186,11 +18268,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 42,
+                    "id": 44,
                     "name": "Jade bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
@@ -18221,7 +18303,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 43,
+                    "id": 45,
                     "name": "Oak shield",
                     "subtitle": "",
                     "category": "Shields",
@@ -18252,29 +18334,29 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 44,
-                    "name": "Steel arrows (x15)",
+                    "id": 46,
+                    "name": "Steel arrows",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 75.0,
+                    "exp": 5.0,
                     "level": 30,
                     "icon": "https://oldschool.runescape.wiki/images/6/64/Steel_arrow_5.png?2c4a2",
                     "inputs": [
                         {
                             "name": "Headless arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Steel arrowtip",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Steel arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -18284,21 +18366,62 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 45,
-                    "name": "Arrow shafts (x45)",
-                    "subtitle": "",
+                    "id": 47,
+                    "name": "Steel arrows",
+                    "subtitle": "From scratch",
                     "category": "Arrows",
-                    "exp": 15.0,
+                    "exp": 6.33,
+                    "level": 30,
+                    "icon": "https://oldschool.runescape.wiki/images/6/64/Steel_arrow_5.png?2c4a2",
+                    "inputs": [
+                        {
+                            "name": "Logs",
+                            "amount": 0.0666666666666667,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Feather",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Steel arrowtip",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Steel arrow",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 0.2,
+                    "tooltip": ""
+                },
+                {
+                    "id": 48,
+                    "name": "Arrow shafts",
+                    "subtitle": "From willow logs",
+                    "category": "Arrows",
+                    "exp": 0.33,
                     "level": 30,
                     "icon": "https://oldschool.runescape.wiki/images/c/cb/Arrow_shaft_5.png?3ba7a",
                     "inputs": [
                         {
                             "name": "Willow logs",
-                            "amount": 1.0,
+                            "amount": 0.022222222222222,
                             "chance": 1
                         }
                     ],
@@ -18315,11 +18438,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.022222222222222,
                     "tooltip": ""
                 },
                 {
-                    "id": 46,
+                    "id": 49,
                     "name": "Comp ogre bow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -18355,7 +18478,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 47,
+                    "id": 50,
                     "name": "Comp ogre bow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -18391,7 +18514,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 48,
+                    "id": 51,
                     "name": "Comp ogre bow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -18428,33 +18551,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 49,
-                    "name": "Steel javelins (x15)",
+                    "id": 52,
+                    "name": "Steel javelins",
                     "subtitle": "",
                     "category": "Javelins",
-                    "exp": 75.0,
+                    "exp": 5.0,
                     "level": 32,
                     "icon": "https://oldschool.runescape.wiki/images/3/3f/Steel_javelin.png?9ecc2",
                     "inputs": [
                         {
                             "name": "Javelin shafts",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Steel javelin heads",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Steel javelins",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -18464,11 +18587,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 50,
+                    "id": 53,
                     "name": "Kebbit bolts",
                     "subtitle": "",
                     "category": "Bolts",
@@ -18485,7 +18608,7 @@
                     "outputs": [
                         {
                             "name": "Kebbit bolts",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -18499,29 +18622,29 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 51,
-                    "name": "Steel brutal (x6)",
+                    "id": 54,
+                    "name": "Steel brutal",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 30.6,
+                    "exp": 5.1,
                     "level": 33,
                     "icon": "https://oldschool.runescape.wiki/images/c/c8/Steel_brutal_5.png?bf55d",
                     "inputs": [
                         {
                             "name": "Flighted ogre arrow",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Steel nails",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Steel brutal",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -18531,11 +18654,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.166666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 52,
+                    "id": 55,
                     "name": "Willow shortbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -18566,7 +18689,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 53,
+                    "id": 56,
                     "name": "Willow shortbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -18602,7 +18725,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 54,
+                    "id": 57,
                     "name": "Willow shortbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -18634,33 +18757,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 55,
-                    "name": "Steel darts (x10)",
+                    "id": 58,
+                    "name": "Steel darts",
                     "subtitle": "",
                     "category": "Darts",
-                    "exp": 75.0,
+                    "exp": 7.5,
                     "level": 37,
                     "icon": "https://oldschool.runescape.wiki/images/c/c8/Steel_dart.png?ebaf5",
                     "inputs": [
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Steel dart tip",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Steel darts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -18670,33 +18793,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 56,
-                    "name": "Black brutal (x6)",
+                    "id": 59,
+                    "name": "Black brutal",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 39.0,
+                    "exp": 6.5,
                     "level": 38,
                     "icon": "https://oldschool.runescape.wiki/images/a/a5/Black_brutal_5.png?60886",
                     "inputs": [
                         {
                             "name": "Flighted ogre arrow",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Black nails",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Black brutal",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -18706,33 +18829,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.166666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 57,
-                    "name": "Iron bolts (x10)",
+                    "id": 60,
+                    "name": "Iron bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 15.0,
+                    "exp": 1.5,
                     "level": 39,
                     "icon": "https://oldschool.runescape.wiki/images/e/ea/Iron_bolts_5.png?f1c11",
                     "inputs": [
                         {
                             "name": "Iron bolts (unf)",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Iron bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -18742,11 +18865,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 58,
+                    "id": 61,
                     "name": "Willow stock",
                     "subtitle": "",
                     "category": "Crossbows",
@@ -18777,7 +18900,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 59,
+                    "id": 62,
                     "name": "Iron crossbow",
                     "subtitle": "Stringing",
                     "category": "Crossbows",
@@ -18813,7 +18936,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 60,
+                    "id": 63,
                     "name": "Iron crossbow",
                     "subtitle": "Attach limbs",
                     "category": "Crossbows",
@@ -18849,7 +18972,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 61,
+                    "id": 64,
                     "name": "Iron crossbow",
                     "subtitle": "From scratch",
                     "category": "Crossbows",
@@ -18886,11 +19009,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 3.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 62,
+                    "id": 65,
                     "name": "Willow longbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -18921,7 +19044,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 63,
+                    "id": 66,
                     "name": "Willow longbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -18957,7 +19080,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 64,
+                    "id": 67,
                     "name": "Battlestaff",
                     "subtitle": "",
                     "category": "Other",
@@ -18988,7 +19111,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 65,
+                    "id": 68,
                     "name": "Willow longbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -19020,33 +19143,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 66,
-                    "name": "Pearl bolts (x10)",
+                    "id": 69,
+                    "name": "Pearl bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 32.0,
+                    "exp": 3.2,
                     "level": 41,
                     "icon": "https://oldschool.runescape.wiki/images/4/4f/Pearl_bolts_5.png?d7406",
                     "inputs": [
                         {
                             "name": "Iron bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Pearl bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Pearl bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -19056,15 +19179,15 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 67,
-                    "name": "Pearl bolt tips (x6)",
+                    "id": 70,
+                    "name": "Pearl bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 3.2,
+                    "exp": 0.53,
                     "level": 41,
                     "icon": "https://oldschool.runescape.wiki/images/f/f6/Pearl_bolt_tips_5.png?a665c",
                     "inputs": [
@@ -19077,7 +19200,7 @@
                     "outputs": [
                         {
                             "name": "Pearl bolt tips",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -19087,11 +19210,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.166666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 68,
+                    "id": 71,
                     "name": "Pearl bolt tips (x24)",
                     "subtitle": "",
                     "category": "Bolts",
@@ -19122,7 +19245,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 69,
+                    "id": 72,
                     "name": "Long kebbit bolts",
                     "subtitle": "",
                     "category": "Bolts",
@@ -19139,7 +19262,7 @@
                     "outputs": [
                         {
                             "name": "Long kebbit bolts",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -19153,7 +19276,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 70,
+                    "id": 73,
                     "name": "Willow shield",
                     "subtitle": "",
                     "category": "Shields",
@@ -19184,29 +19307,29 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 71,
-                    "name": "Silver bolts (x10)",
+                    "id": 74,
+                    "name": "Silver bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 25.0,
+                    "exp": 2.5,
                     "level": 43,
                     "icon": "https://oldschool.runescape.wiki/images/a/a6/Silver_bolts_5.png?f1c11",
                     "inputs": [
                         {
                             "name": "Silver bolts (unf)",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Silver bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -19216,33 +19339,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 72,
-                    "name": "Mithril arrows (x15)",
+                    "id": 75,
+                    "name": "Mithril arrows",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 112.5,
+                    "exp": 7.5,
                     "level": 45,
                     "icon": "https://oldschool.runescape.wiki/images/0/09/Mithril_arrow_5.png?bb85d",
                     "inputs": [
                         {
                             "name": "Headless arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Mithril arrowtip",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Mithril arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -19252,21 +19375,62 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 73,
-                    "name": "Arrow shafts (x60)",
-                    "subtitle": "",
+                    "id": 76,
+                    "name": "Mithril arrows",
+                    "subtitle": "From scratch",
                     "category": "Arrows",
-                    "exp": 20.0,
+                    "exp": 8.83,
+                    "level": 45,
+                    "icon": "https://oldschool.runescape.wiki/images/0/09/Mithril_arrow_5.png?bb85d",
+                    "inputs": [
+                        {
+                            "name": "Logs",
+                            "amount": 0.0666666666666667,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Feather",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Mithril arrowtip",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Mithril arrow",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 0.2,
+                    "tooltip": ""
+                },
+                {
+                    "id": 77,
+                    "name": "Arrow shafts",
+                    "subtitle": "From maple logs",
+                    "category": "Arrows",
+                    "exp": 3.33,
                     "level": 45,
                     "icon": "https://oldschool.runescape.wiki/images/c/cb/Arrow_shaft_5.png?3ba7a",
                     "inputs": [
                         {
                             "name": "Maple logs",
-                            "amount": 1.0,
+                            "amount": 0.016666666666667,
                             "chance": 1
                         }
                     ],
@@ -19283,33 +19447,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.016666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 74,
-                    "name": "Steel bolts (x10)",
+                    "id": 78,
+                    "name": "Steel bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 35.0,
+                    "exp": 3.5,
                     "level": 46,
                     "icon": "https://oldschool.runescape.wiki/images/9/99/Steel_bolts_5.png?f1c11",
                     "inputs": [
                         {
                             "name": "Steel bolts (unf)",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Steel bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -19319,11 +19483,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 75,
+                    "id": 79,
                     "name": "Teak stock",
                     "subtitle": "",
                     "category": "Crossbows",
@@ -19354,7 +19518,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 76,
+                    "id": 80,
                     "name": "Steel crossbow",
                     "subtitle": "Stringing",
                     "category": "Crossbows",
@@ -19390,7 +19554,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 77,
+                    "id": 81,
                     "name": "Steel crossbow",
                     "subtitle": "Attach limbs",
                     "category": "Crossbows",
@@ -19426,7 +19590,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 78,
+                    "id": 82,
                     "name": "Steel crossbow",
                     "subtitle": "From scratch",
                     "category": "Crossbows",
@@ -19463,33 +19627,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 3.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 79,
-                    "name": "Mithril javelins (x15)",
+                    "id": 83,
+                    "name": "Mithril javelins",
                     "subtitle": "",
                     "category": "Javelins",
-                    "exp": 120.0,
+                    "exp": 8.0,
                     "level": 47,
                     "icon": "https://oldschool.runescape.wiki/images/2/2c/Mithril_javelin.png?9ecc2",
                     "inputs": [
                         {
                             "name": "Javelin shafts",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Mithril javelin heads",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Mithril javelins",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -19499,11 +19663,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 80,
+                    "id": 84,
                     "name": "Topaz bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
@@ -19534,29 +19698,29 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 81,
-                    "name": "Topaz bolts (x10)",
+                    "id": 85,
+                    "name": "Topaz bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 40.0,
+                    "exp": 4.0,
                     "level": 48,
                     "icon": "https://oldschool.runescape.wiki/images/4/48/Topaz_bolts_5.png?3ea59",
                     "inputs": [
                         {
                             "name": "Silver bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Topaz bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Topaz bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -19566,33 +19730,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 82,
-                    "name": "Mithril brutal (x6)",
+                    "id": 86,
+                    "name": "Mithril brutal",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 45.0,
+                    "exp": 7.5,
                     "level": 49,
                     "icon": "https://oldschool.runescape.wiki/images/c/ce/Mithril_brutal_5.png?8f530",
                     "inputs": [
                         {
                             "name": "Flighted ogre arrow",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Mithril nails",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Mithril brutal",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -19602,11 +19766,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.166666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 83,
+                    "id": 87,
                     "name": "Maple shortbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -19637,7 +19801,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 84,
+                    "id": 88,
                     "name": "Maple shortbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -19673,7 +19837,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 85,
+                    "id": 89,
                     "name": "Maple shortbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -19705,33 +19869,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 86,
-                    "name": "Barbed bolts (x10)",
+                    "id": 90,
+                    "name": "Barbed bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 95.0,
+                    "exp": 9.5,
                     "level": 51,
                     "icon": "https://oldschool.runescape.wiki/images/8/82/Barbed_bolts_5.png?5c039",
                     "inputs": [
                         {
                             "name": "Bronze bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Barb bolttips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Barbed bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -19741,33 +19905,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 87,
-                    "name": "Broad arrows (x15)",
+                    "id": 91,
+                    "name": "Broad arrows",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 150.0,
+                    "exp": 10.0,
                     "level": 52,
                     "icon": "https://oldschool.runescape.wiki/images/8/84/Broad_arrows_5.png?7488c",
                     "inputs": [
                         {
                             "name": "Headless arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Broad arrowtip",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Broad arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -19777,38 +19941,38 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 88,
-                    "name": "Broad arrows (x15)",
+                    "id": 92,
+                    "name": "Broad arrows",
                     "subtitle": "From scratch",
                     "category": "Arrows",
-                    "exp": 180.0,
+                    "exp": 12.0,
                     "level": 52,
                     "icon": "https://oldschool.runescape.wiki/images/8/84/Broad_arrows_5.png?7488c",
                     "inputs": [
                         {
                             "name": "Log",
-                            "amount": 1.0,
+                            "amount": 0.0666666666666667,
                             "chance": 1
                         },
                         {
                             "name": "Feathers",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Broad arrowtip",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Broad arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -19818,33 +19982,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 3.0,
+                    "expActions": 0.2,
                     "tooltip": ""
                 },
                 {
-                    "id": 89,
-                    "name": "Mithril darts (x10)",
+                    "id": 93,
+                    "name": "Mithril darts",
                     "subtitle": "",
                     "category": "Darts",
-                    "exp": 112.0,
+                    "exp": 11.2,
                     "level": 52,
                     "icon": "https://oldschool.runescape.wiki/images/a/aa/Mithril_dart.png?10522",
                     "inputs": [
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Mithril dart tip",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Mithril darts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -19854,33 +20018,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 90,
-                    "name": "Mithril bolts (x10)",
+                    "id": 94,
+                    "name": "Mithril bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 50.0,
+                    "exp": 5.0,
                     "level": 54,
                     "icon": "https://oldschool.runescape.wiki/images/e/ea/Mithril_bolts_5.png?34418",
                     "inputs": [
                         {
                             "name": "Mithril bolts (unf)",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Mithril bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -19890,11 +20054,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 91,
+                    "id": 95,
                     "name": "Maple stock",
                     "subtitle": "",
                     "category": "Crossbows",
@@ -19925,7 +20089,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 92,
+                    "id": 96,
                     "name": "Mithril crossbow",
                     "subtitle": "Stringing",
                     "category": "Crossbows",
@@ -19961,7 +20125,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 93,
+                    "id": 97,
                     "name": "Mithril crossbow",
                     "subtitle": "Attach limbs",
                     "category": "Crossbows",
@@ -19997,7 +20161,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 94,
+                    "id": 98,
                     "name": "Mithril crossbow",
                     "subtitle": "From scratch",
                     "category": "Crossbows",
@@ -20034,33 +20198,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 3.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 95,
-                    "name": "Broad bolts (x10)",
+                    "id": 99,
+                    "name": "Broad bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 30.0,
+                    "exp": 3.0,
                     "level": 55,
                     "icon": "https://oldschool.runescape.wiki/images/0/05/Broad_bolts_5.png?e50a2",
                     "inputs": [
                         {
                             "name": "Broad bolts (unf)",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Broad bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -20070,11 +20234,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 96,
+                    "id": 100,
                     "name": "Maple longbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -20105,7 +20269,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 97,
+                    "id": 101,
                     "name": "Maple longbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -20141,7 +20305,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 98,
+                    "id": 102,
                     "name": "Maple longbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -20173,33 +20337,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 99,
-                    "name": "Sapphire bolts (x10)",
+                    "id": 103,
+                    "name": "Sapphire bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 47.0,
+                    "exp": 4.7,
                     "level": 56,
                     "icon": "https://oldschool.runescape.wiki/images/b/b4/Sapphire_bolts_5.png?23bd2",
                     "inputs": [
                         {
                             "name": "Steel bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Sapphire bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Sapphire bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -20209,11 +20373,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 100,
+                    "id": 104,
                     "name": "Sapphire bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
@@ -20244,7 +20408,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 101,
+                    "id": 105,
                     "name": "Maple shield",
                     "subtitle": "",
                     "category": "Shields",
@@ -20275,29 +20439,29 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 102,
-                    "name": "Emerald bolts (x10)",
+                    "id": 106,
+                    "name": "Emerald bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 55.0,
+                    "exp": 5.5,
                     "level": 58,
                     "icon": "https://oldschool.runescape.wiki/images/1/12/Emerald_bolts_5.png?3d4cc",
                     "inputs": [
                         {
                             "name": "Mithril bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Emerald bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Emerald bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -20307,11 +20471,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 103,
+                    "id": 107,
                     "name": "Emerald bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
@@ -20342,29 +20506,29 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 104,
-                    "name": "Adamant arrows (x15)",
+                    "id": 108,
+                    "name": "Adamant arrows",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 150.0,
+                    "exp": 10.0,
                     "level": 60,
                     "icon": "https://oldschool.runescape.wiki/images/6/63/Adamant_arrow_5.png?d0b33",
                     "inputs": [
                         {
                             "name": "Headless arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Adamant arrowtip",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Adamant arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -20374,21 +20538,62 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 105,
-                    "name": "Arrow shafts (x75)",
-                    "subtitle": "",
+                    "id": 109,
+                    "name": "Adamant arrows",
+                    "subtitle": "From scratch",
                     "category": "Arrows",
-                    "exp": 25.0,
+                    "exp": 11.33,
+                    "level": 60,
+                    "icon": "https://oldschool.runescape.wiki/images/6/63/Adamant_arrow_5.png?d0b33",
+                    "inputs": [
+                        {
+                            "name": "Logs",
+                            "amount": 0.0666666666666667,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Feather",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Adamant arrowtip",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Adamant arrow",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 0.2,
+                    "tooltip": ""
+                },
+                {
+                    "id": 110,
+                    "name": "Arrow shafts",
+                    "subtitle": "From yew logs",
+                    "category": "Arrows",
+                    "exp": 0.33,
                     "level": 60,
                     "icon": "https://oldschool.runescape.wiki/images/c/cb/Arrow_shaft_5.png?3ba7a",
                     "inputs": [
                         {
                             "name": "Yew logs",
-                            "amount": 1.0,
+                            "amount": 0.013333333333333,
                             "chance": 1
                         }
                     ],
@@ -20405,33 +20610,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.013333333333333,
                     "tooltip": ""
                 },
                 {
-                    "id": 106,
-                    "name": "Adamant bolts (x10)",
+                    "id": 111,
+                    "name": "Adamant bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 70.0,
+                    "exp": 7.0,
                     "level": 61,
                     "icon": "https://oldschool.runescape.wiki/images/4/4c/Adamant_bolts_5.png?9c874",
                     "inputs": [
                         {
                             "name": "Adamant bolts (unf)",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Adamant bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -20441,11 +20646,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 107,
+                    "id": 112,
                     "name": "Mahogany stock",
                     "subtitle": "",
                     "category": "Crossbows",
@@ -20476,7 +20681,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 108,
+                    "id": 113,
                     "name": "Adamant crossbow",
                     "subtitle": "Stringing",
                     "category": "Crossbows",
@@ -20512,7 +20717,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 109,
+                    "id": 114,
                     "name": "Adamant crossbow",
                     "subtitle": "Attach limbs",
                     "category": "Crossbows",
@@ -20548,7 +20753,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 110,
+                    "id": 115,
                     "name": "Adamant crossbow",
                     "subtitle": "From scratch",
                     "category": "Crossbows",
@@ -20585,33 +20790,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 3.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 111,
-                    "name": "Adamant javelins (x15)",
+                    "id": 116,
+                    "name": "Adamant javelins",
                     "subtitle": "",
                     "category": "Javelins",
-                    "exp": 150.0,
+                    "exp": 10.0,
                     "level": 62,
                     "icon": "https://oldschool.runescape.wiki/images/5/57/Adamant_javelin.png?bbb83",
                     "inputs": [
                         {
                             "name": "Javelin shafts",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Adamant javelin heads",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Adamant javelins",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -20621,33 +20826,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 112,
-                    "name": "Adamant brutal (x6)",
+                    "id": 117,
+                    "name": "Adamant brutal",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 61.2,
+                    "exp": 10.2,
                     "level": 62,
                     "icon": "https://oldschool.runescape.wiki/images/0/06/Adamant_brutal_5.png?72b68",
                     "inputs": [
                         {
                             "name": "Flighted ogre arrow",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Adamant nails",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Adamant brutal",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -20657,33 +20862,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.166666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 113,
-                    "name": "Ruby bolts (x10)",
+                    "id": 118,
+                    "name": "Ruby bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 63.0,
+                    "exp": 6.3,
                     "level": 63,
                     "icon": "https://oldschool.runescape.wiki/images/f/fa/Ruby_bolts_5.png?c0357",
                     "inputs": [
                         {
                             "name": "Broad bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Ruby bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Ruby bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -20693,11 +20898,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 114,
+                    "id": 119,
                     "name": "Ruby bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
@@ -20728,29 +20933,29 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 115,
-                    "name": "Diamond bolts (x10)",
+                    "id": 120,
+                    "name": "Diamond bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 70.0,
+                    "exp": 7.0,
                     "level": 65,
                     "icon": "https://oldschool.runescape.wiki/images/e/e1/Diamond_bolts_5.png?1d951",
                     "inputs": [
                         {
                             "name": "Adamant bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Diamond bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Diamond bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -20760,11 +20965,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 116,
+                    "id": 121,
                     "name": "Diamond bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
@@ -20795,7 +21000,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 117,
+                    "id": 122,
                     "name": "Yew shortbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -20826,7 +21031,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 118,
+                    "id": 123,
                     "name": "Yew shortbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -20862,7 +21067,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 119,
+                    "id": 124,
                     "name": "Yew shortbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -20894,33 +21099,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 120,
-                    "name": "Adamant darts (x10)",
+                    "id": 125,
+                    "name": "Adamant darts",
                     "subtitle": "",
                     "category": "Darts",
-                    "exp": 150.0,
+                    "exp": 15.0,
                     "level": 67,
                     "icon": "https://oldschool.runescape.wiki/images/8/82/Adamant_dart.png?111d6",
                     "inputs": [
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Adamant dart tip",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Adamant darts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -20930,33 +21135,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 121,
-                    "name": "Runite bolts (x10)",
+                    "id": 126,
+                    "name": "Runite bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 100.0,
+                    "exp": 10.0,
                     "level": 69,
                     "icon": "https://oldschool.runescape.wiki/images/f/f3/Runite_bolts_5.png?09305",
                     "inputs": [
                         {
                             "name": "Runite bolts (unf)",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Runite bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -20966,11 +21171,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 122,
+                    "id": 127,
                     "name": "Yew stock",
                     "subtitle": "",
                     "category": "Crossbows",
@@ -21001,7 +21206,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 123,
+                    "id": 128,
                     "name": "Rune crossbow",
                     "subtitle": "Stringing",
                     "category": "Crossbows",
@@ -21037,7 +21242,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 124,
+                    "id": 129,
                     "name": "Rune crossbow",
                     "subtitle": "Attach limbs",
                     "category": "Crossbows",
@@ -21073,7 +21278,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 125,
+                    "id": 130,
                     "name": "Rune crossbow",
                     "subtitle": "From scratch",
                     "category": "Crossbows",
@@ -21110,11 +21315,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 3.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 126,
+                    "id": 131,
                     "name": "Yew longbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -21145,7 +21350,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 127,
+                    "id": 132,
                     "name": "Yew longbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -21181,7 +21386,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 128,
+                    "id": 133,
                     "name": "Yew longbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -21213,33 +21418,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 129,
-                    "name": "Dragonstone bolts (x10)",
+                    "id": 134,
+                    "name": "Dragonstone bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 82.0,
+                    "exp": 8.2,
                     "level": 71,
                     "icon": "https://oldschool.runescape.wiki/images/a/aa/Dragonstone_bolts_5.png?86e71",
                     "inputs": [
                         {
                             "name": "Runite bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Dragonstone bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Dragonstone bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -21249,11 +21454,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 130,
+                    "id": 135,
                     "name": "Dragonstone bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
@@ -21284,7 +21489,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 131,
+                    "id": 136,
                     "name": "Yew shield",
                     "subtitle": "",
                     "category": "Shields",
@@ -21315,29 +21520,29 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 132,
-                    "name": "Onyx bolts (x10)",
+                    "id": 137,
+                    "name": "Onyx bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 94.0,
+                    "exp": 9.4,
                     "level": 73,
                     "icon": "https://oldschool.runescape.wiki/images/3/38/Onyx_bolts_5.png?44c74",
                     "inputs": [
                         {
                             "name": "Runite bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Onyx bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Onyx bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -21347,11 +21552,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 133,
+                    "id": 138,
                     "name": "Onyx bolt tips",
                     "subtitle": "",
                     "category": "Bolts",
@@ -21382,29 +21587,29 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 134,
-                    "name": "Rune arrows (x15)",
+                    "id": 139,
+                    "name": "Rune arrows",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 187.5,
+                    "exp": 12.5,
                     "level": 75,
                     "icon": "https://oldschool.runescape.wiki/images/2/27/Rune_arrow_5.png?31136",
                     "inputs": [
                         {
                             "name": "Headless arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Rune arrowtip",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Rune arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -21414,21 +21619,62 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 135,
-                    "name": "Arrow shafts (x90)",
-                    "subtitle": "",
+                    "id": 140,
+                    "name": "Rune arrows",
+                    "subtitle": "From scratch",
                     "category": "Arrows",
-                    "exp": 30.0,
+                    "exp": 13.83,
+                    "level": 75,
+                    "icon": "https://oldschool.runescape.wiki/images/2/27/Rune_arrow_5.png?31136",
+                    "inputs": [
+                        {
+                            "name": "Logs",
+                            "amount": 0.0666666666666667,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Feather",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Rune arrowtip",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Rune arrow",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 0.2,
+                    "tooltip": ""
+                },
+                {
+                    "id": 141,
+                    "name": "Arrow shafts",
+                    "subtitle": "From magic logs",
+                    "category": "Arrows",
+                    "exp": 0.33,
                     "level": 75,
                     "icon": "https://oldschool.runescape.wiki/images/c/cb/Arrow_shaft_5.png?3ba7a",
                     "inputs": [
                         {
                             "name": "Magic logs",
-                            "amount": 1.0,
+                            "amount": 0.011111111111111,
                             "chance": 1
                         }
                     ],
@@ -21445,33 +21691,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.011111111111111,
                     "tooltip": ""
                 },
                 {
-                    "id": 136,
-                    "name": "Amethyst broad bolts (x10)",
+                    "id": 142,
+                    "name": "Amethyst broad bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 106.0,
+                    "exp": 10.6,
                     "level": 76,
                     "icon": "https://oldschool.runescape.wiki/images/b/b5/Amethyst_broad_bolts_5.png?8e6f7",
                     "inputs": [
                         {
                             "name": "Broad bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Amethyst bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Amethyst broad bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -21481,33 +21727,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 137,
-                    "name": "Rune javelins (x15)",
+                    "id": 143,
+                    "name": "Rune javelins",
                     "subtitle": "",
                     "category": "Javelins",
-                    "exp": 187.5,
+                    "exp": 12.5,
                     "level": 77,
                     "icon": "https://oldschool.runescape.wiki/images/7/79/Rune_javelin.png?9ecc2",
                     "inputs": [
                         {
                             "name": "Javelin shafts",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Rune javelin heads",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Rune javelins",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -21517,33 +21763,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 138,
-                    "name": "Rune brutal (x6)",
+                    "id": 144,
+                    "name": "Rune brutal",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 75.0,
+                    "exp": 12.5,
                     "level": 77,
                     "icon": "https://oldschool.runescape.wiki/images/e/e2/Rune_brutal_5.png?816f0",
                     "inputs": [
                         {
                             "name": "Flighted ogre arrow",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Rune nails",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Rune brutal",
-                            "amount": 6.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -21553,11 +21799,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.166666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 139,
+                    "id": 145,
                     "name": "Magic stock",
                     "subtitle": "",
                     "category": "Crossbows",
@@ -21588,7 +21834,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 140,
+                    "id": 146,
                     "name": "Dragon crossbow",
                     "subtitle": "Stringing",
                     "category": "Crossbows",
@@ -21624,7 +21870,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 141,
+                    "id": 147,
                     "name": "Dragon crossbow",
                     "subtitle": "Attach limbs",
                     "category": "Crossbows",
@@ -21660,7 +21906,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 142,
+                    "id": 148,
                     "name": "Dragon crossbow",
                     "subtitle": "From scratch",
                     "category": "Crossbows",
@@ -21697,11 +21943,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 3.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 143,
+                    "id": 149,
                     "name": "Magic shortbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -21732,7 +21978,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 144,
+                    "id": 150,
                     "name": "Magic shortbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -21768,7 +22014,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 145,
+                    "id": 151,
                     "name": "Magic shortbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -21800,33 +22046,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 146,
-                    "name": "Rune darts (x10)",
+                    "id": 152,
+                    "name": "Rune darts",
                     "subtitle": "",
                     "category": "Darts",
-                    "exp": 188.0,
+                    "exp": 18.8,
                     "level": 81,
                     "icon": "https://oldschool.runescape.wiki/images/9/93/Rune_dart.png?ebd5c",
                     "inputs": [
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Rune dart tip",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Rune darts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -21836,33 +22082,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 147,
-                    "name": "Amethyst arrows (x15)",
+                    "id": 153,
+                    "name": "Amethyst arrows",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 202.5,
+                    "exp": 13.5,
                     "level": 82,
                     "icon": "https://oldschool.runescape.wiki/images/7/7e/Amethyst_arrow_5.png?544e3",
                     "inputs": [
                         {
                             "name": "Headless arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Amethyst arrowtip",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Amethyst arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -21872,33 +22118,74 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 148,
-                    "name": "Opal dragon bolts (x10)",
+                    "id": 154,
+                    "name": "Amethyst arrows",
+                    "subtitle": "From scratch",
+                    "category": "Arrows",
+                    "exp": 14.83,
+                    "level": 82,
+                    "icon": "https://oldschool.runescape.wiki/images/7/7e/Amethyst_arrow_5.png?544e3",
+                    "inputs": [
+                        {
+                            "name": "Logs",
+                            "amount": 0.0666666666666667,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Feather",
+                            "amount": 1.0,
+                            "chance": 1
+                        },
+                        {
+                            "name": "Amethyst arrowtip",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Amethyst arrow",
+                            "amount": 1.0,
+                            "chance": 1
+                        }
+                    ],
+                    "areas": [
+                        "All"
+                    ],
+                    "expMultipliers": [],
+                    "inputMultipliers": [],
+                    "outputMultipliers": [],
+                    "expActions": 0.2,
+                    "tooltip": ""
+                },
+                {
+                    "id": 155,
+                    "name": "Opal dragon bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 16.0,
+                    "exp": 1.6,
                     "level": 84,
                     "icon": "https://oldschool.runescape.wiki/images/e/e8/Opal_dragon_bolts_5.png?547a9",
                     "inputs": [
                         {
                             "name": "Opal bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Opal dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -21908,33 +22195,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 149,
-                    "name": "Jade dragon bolts (x10)",
+                    "id": 156,
+                    "name": "Jade dragon bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 24.0,
+                    "exp": 2.4,
                     "level": 84,
                     "icon": "https://oldschool.runescape.wiki/images/1/13/Jade_dragon_bolts_5.png?a5de2",
                     "inputs": [
                         {
                             "name": "Jade bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Jade dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -21944,33 +22231,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 150,
-                    "name": "Pearl dragon bolts (x10)",
+                    "id": 157,
+                    "name": "Pearl dragon bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 32.0,
+                    "exp": 3.2,
                     "level": 84,
                     "icon": "https://oldschool.runescape.wiki/images/0/05/Pearl_dragon_bolts_5.png?ee818",
                     "inputs": [
                         {
                             "name": "Pearl bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Pearl dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -21980,33 +22267,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 151,
-                    "name": "Topaz dragon bolts (x10)",
+                    "id": 158,
+                    "name": "Topaz dragon bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 40.0,
+                    "exp": 4.0,
                     "level": 84,
                     "icon": "https://oldschool.runescape.wiki/images/2/26/Topaz_dragon_bolts_5.png?6c2a6",
                     "inputs": [
                         {
                             "name": "Topaz bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Topaz dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -22016,33 +22303,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 152,
-                    "name": "Sapphire dragon bolts (x10)",
+                    "id": 159,
+                    "name": "Sapphire dragon bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 47.0,
+                    "exp": 4.7,
                     "level": 84,
                     "icon": "https://oldschool.runescape.wiki/images/0/06/Sapphire_dragon_bolts_5.png?7c1b6",
                     "inputs": [
                         {
                             "name": "Sapphire bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Sapphire dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -22052,33 +22339,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 153,
-                    "name": "Emerald dragon bolts (x10)",
+                    "id": 160,
+                    "name": "Emerald dragon bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 55.0,
+                    "exp": 5.5,
                     "level": 84,
                     "icon": "https://oldschool.runescape.wiki/images/3/30/Emerald_dragon_bolts_5.png?40eaa",
                     "inputs": [
                         {
                             "name": "Emerald bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Emerald dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -22088,33 +22375,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 154,
-                    "name": "Ruby dragon bolts (x10)",
+                    "id": 161,
+                    "name": "Ruby dragon bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 63.0,
+                    "exp": 6.3,
                     "level": 84,
                     "icon": "https://oldschool.runescape.wiki/images/3/3e/Ruby_dragon_bolts_5.png?8d2f7",
                     "inputs": [
                         {
                             "name": "Ruby bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Ruby dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -22124,33 +22411,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 155,
-                    "name": "Diamond dragon bolts (x10)",
+                    "id": 162,
+                    "name": "Diamond dragon bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 70.0,
+                    "exp": 7.0,
                     "level": 84,
                     "icon": "https://oldschool.runescape.wiki/images/3/36/Diamond_dragon_bolts_5.png?2b456",
                     "inputs": [
                         {
                             "name": "Diamond bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Diamond dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -22160,33 +22447,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 156,
-                    "name": "Dragonstone dragon bolts (x10)",
+                    "id": 163,
+                    "name": "Dragonstone dragon bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 82.0,
+                    "exp": 8.2,
                     "level": 84,
                     "icon": "https://oldschool.runescape.wiki/images/c/c9/Dragonstone_dragon_bolts_5.png?f6a6e",
                     "inputs": [
                         {
                             "name": "Dragonstone bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Dragonstone dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -22196,33 +22483,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 157,
-                    "name": "Onyx dragon bolts (x10)",
+                    "id": 164,
+                    "name": "Onyx dragon bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 94.0,
+                    "exp": 9.4,
                     "level": 84,
                     "icon": "https://oldschool.runescape.wiki/images/8/8e/Onyx_dragon_bolts_5.png?73a37",
                     "inputs": [
                         {
                             "name": "Onyx bolt tips",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Onyx dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -22232,33 +22519,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 158,
-                    "name": "Dragon bolts (x10)",
+                    "id": 165,
+                    "name": "Dragon bolts",
                     "subtitle": "",
                     "category": "Bolts",
-                    "exp": 120.0,
+                    "exp": 12.0,
                     "level": 84,
                     "icon": "https://oldschool.runescape.wiki/images/3/33/Dragon_bolts_5.png?b8215",
                     "inputs": [
                         {
                             "name": "Dragon bolts (unf)",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Dragon bolts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -22268,33 +22555,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 },
                 {
-                    "id": 159,
-                    "name": "Amethyst javelins (x15)",
+                    "id": 166,
+                    "name": "Amethyst javelins",
                     "subtitle": "",
                     "category": "Javelins",
-                    "exp": 202.5,
+                    "exp": 13.5,
                     "level": 84,
                     "icon": "https://oldschool.runescape.wiki/images/8/89/Amethyst_javelin.png?dfa45",
                     "inputs": [
                         {
                             "name": "Javelin shafts",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Amethyst javelin heads",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Amethyst javelins",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -22304,11 +22591,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 160,
+                    "id": 167,
                     "name": "Magic longbow",
                     "subtitle": "Unstrung",
                     "category": "Bows",
@@ -22339,7 +22626,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 161,
+                    "id": 168,
                     "name": "Magic longbow",
                     "subtitle": "Stringing",
                     "category": "Bows",
@@ -22375,7 +22662,7 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 162,
+                    "id": 169,
                     "name": "Magic longbow",
                     "subtitle": "From scratch",
                     "category": "Bows",
@@ -22407,11 +22694,11 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 2.0,
+                    "expActions": 1.0,
                     "tooltip": ""
                 },
                 {
-                    "id": 163,
+                    "id": 170,
                     "name": "Magic shield",
                     "subtitle": "",
                     "category": "Shields",
@@ -22442,29 +22729,29 @@
                     "tooltip": ""
                 },
                 {
-                    "id": 164,
-                    "name": "Dragon arrows (x15)",
+                    "id": 171,
+                    "name": "Dragon arrows",
                     "subtitle": "",
                     "category": "Arrows",
-                    "exp": 225.0,
+                    "exp": 15.0,
                     "level": 90,
                     "icon": "https://oldschool.runescape.wiki/images/f/f7/Dragon_arrow_5.png?2bd1d",
                     "inputs": [
                         {
                             "name": "Headless arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Dragon arrowtip",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Dragon arrow",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -22474,33 +22761,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 165,
-                    "name": "Dragon javelins (x15)",
+                    "id": 172,
+                    "name": "Dragon javelins",
                     "subtitle": "",
                     "category": "Javelins",
-                    "exp": 225.0,
+                    "exp": 15.0,
                     "level": 92,
                     "icon": "https://oldschool.runescape.wiki/images/b/b5/Dragon_javelin.png?d5499",
                     "inputs": [
                         {
                             "name": "Javelin shafts",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Dragon javelin heads",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Dragon javelins",
-                            "amount": 15.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -22510,33 +22797,33 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.066666666666667,
                     "tooltip": ""
                 },
                 {
-                    "id": 166,
-                    "name": "Dragon darts (x10)",
+                    "id": 173,
+                    "name": "Dragon darts",
                     "subtitle": "",
                     "category": "Darts",
-                    "exp": 250.0,
+                    "exp": 25.0,
                     "level": 95,
                     "icon": "https://oldschool.runescape.wiki/images/c/c2/Dragon_dart.png?a2fd4",
                     "inputs": [
                         {
                             "name": "Feather",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Dragon dart tip",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Dragon darts",
-                            "amount": 10.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -22546,7 +22833,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.1,
                     "tooltip": ""
                 }
             ]
@@ -42738,25 +43025,25 @@
                     "name": "Bronze bar",
                     "subtitle": "Smelting; Blast furnace",
                     "category": "Bronze",
-                    "exp": 173.6,
+                    "exp": 6.2,
                     "level": 1,
                     "icon": "https://oldschool.runescape.wiki/images/c/cd/Bronze_bar.png?4f105",
                     "inputs": [
                         {
                             "name": "Copper ore",
-                            "amount": 28.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Tin ore",
-                            "amount": 28.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Bronze bar",
-                            "amount": 28.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -42766,7 +43053,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.035714285714286,
                     "tooltip": "Assumes 28 bars smelted at a time"
                 },
                 {
@@ -42872,7 +43159,7 @@
                     "name": "Bronze item",
                     "subtitle": "From scratch; Smith 2 bars at a time",
                     "category": "Bronze",
-                    "exp": 31.2,
+                    "exp": 37.4,
                     "level": 5,
                     "icon": "https://oldschool.runescape.wiki/images/f/f7/Bronze_scimitar.png?49cfc",
                     "inputs": [
@@ -43032,7 +43319,7 @@
                     "name": "Bronze item",
                     "subtitle": "From scratch; Smith 3 bars at a time",
                     "category": "Bronze",
-                    "exp": 43.7,
+                    "exp": 56.1,
                     "level": 9,
                     "icon": "https://oldschool.runescape.wiki/images/2/24/Bronze_platelegs.png?bb859",
                     "inputs": [
@@ -43101,20 +43388,20 @@
                     "name": "Iron bar",
                     "subtitle": "Smelting; Blast furnace",
                     "category": "Iron",
-                    "exp": 350.0,
+                    "exp": 12.5,
                     "level": 15,
                     "icon": "https://oldschool.runescape.wiki/images/1/14/Iron_bar.png?5d806",
                     "inputs": [
                         {
                             "name": "Iron ore",
-                            "amount": 28.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Iron bar",
-                            "amount": 28.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -43124,7 +43411,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.035714285714286,
                     "tooltip": "Assumes 28 bars smelted at a time"
                 },
                 {
@@ -43227,7 +43514,7 @@
                     "name": "Bronze item",
                     "subtitle": "From scratch; Smith 5 bars at a time",
                     "category": "Bronze",
-                    "exp": 68.7,
+                    "exp": 93.5,
                     "level": 18,
                     "icon": "https://oldschool.runescape.wiki/images/c/cd/Bronze_platebody.png?740cc",
                     "inputs": [
@@ -43294,20 +43581,20 @@
                     "name": "Silver bar",
                     "subtitle": "Blast furnace",
                     "category": "Other",
-                    "exp": 380.8,
+                    "exp": 13.6,
                     "level": 20,
                     "icon": "https://oldschool.runescape.wiki/images/b/b2/Silver_bar.png?5648a",
                     "inputs": [
                         {
                             "name": "Silver ore",
-                            "amount": 28.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Silver bar",
-                            "amount": 28.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -43317,7 +43604,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.037037037037037,
                     "tooltip": "Assumes 28 bars smelted at a time"
                 },
                 {
@@ -43356,7 +43643,7 @@
                     "name": "Iron item",
                     "subtitle": "From scratch; Smith 2 bars at a time",
                     "category": "Iron",
-                    "exp": 62.5,
+                    "exp": 75.0,
                     "level": 20,
                     "icon": "https://oldschool.runescape.wiki/images/b/b3/Iron_scimitar.png?e5c40",
                     "inputs": [
@@ -43420,7 +43707,7 @@
                     "name": "Iron item",
                     "subtitle": "From scratch; Smith 3 bars at a time",
                     "category": "Iron",
-                    "exp": 87.5,
+                    "exp": 112.5,
                     "level": 24,
                     "icon": "https://oldschool.runescape.wiki/images/8/80/Iron_platelegs.png?58ba8",
                     "inputs": [
@@ -43489,25 +43776,25 @@
                     "name": "Steel bar",
                     "subtitle": "Smelting; Blast furnace",
                     "category": "Steel",
-                    "exp": 472.5,
+                    "exp": 17.5,
                     "level": 30,
                     "icon": "https://oldschool.runescape.wiki/images/a/a2/Steel_bar.png?47c87",
                     "inputs": [
                         {
                             "name": "Iron ore",
-                            "amount": 27.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 27.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Steel bar",
-                            "amount": 27.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -43517,7 +43804,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.037037037037037,
                     "tooltip": "Assumes 27 bars smelted at a time (1 slot for coal bag)"
                 },
                 {
@@ -43623,7 +43910,7 @@
                     "name": "Iron item",
                     "subtitle": "From scratch; Smith 5 bars at a time",
                     "category": "Iron",
-                    "exp": 137.5,
+                    "exp": 187.5,
                     "level": 33,
                     "icon": "https://oldschool.runescape.wiki/images/c/cd/Iron_platebody.png?bbbfd",
                     "inputs": [
@@ -43718,7 +44005,7 @@
                     "name": "Steel item",
                     "subtitle": "From scratch; Smith 2 bars at a time",
                     "category": "Steel",
-                    "exp": 92.5,
+                    "exp": 110.0,
                     "level": 35,
                     "icon": "https://oldschool.runescape.wiki/images/7/78/Steel_scimitar.png?d11f2",
                     "inputs": [
@@ -43785,7 +44072,7 @@
                     "name": "Steel item",
                     "subtitle": "From scratch; Smith 3 bars at a time",
                     "category": "Steel",
-                    "exp": 130.0,
+                    "exp": 165.0,
                     "level": 39,
                     "icon": "https://oldschool.runescape.wiki/images/1/1e/Steel_platelegs.png?8e445",
                     "inputs": [
@@ -43854,20 +44141,20 @@
                     "name": "Gold bar",
                     "subtitle": "Blast furnace",
                     "category": "Other",
-                    "exp": 630.0,
+                    "exp": 22.5,
                     "level": 40,
                     "icon": "https://oldschool.runescape.wiki/images/0/07/Gold_bar.png?05c77",
                     "inputs": [
                         {
                             "name": "Gold ore",
-                            "amount": 28.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Gold bar",
-                            "amount": 28.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -43879,7 +44166,7 @@
                     ],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.037037037037037,
                     "tooltip": "Assumes 28 bars smelted at a time"
                 },
                 {
@@ -43918,7 +44205,7 @@
                     "name": "Steel item",
                     "subtitle": "From scratch; Smith 5 bars at a time",
                     "category": "Steel",
-                    "exp": 205.0,
+                    "exp": 275.0,
                     "level": 48,
                     "icon": "https://oldschool.runescape.wiki/images/9/90/Steel_platebody.png?c304e",
                     "inputs": [
@@ -43990,25 +44277,25 @@
                     "name": "Mithril bar",
                     "subtitle": "Smelting; Blast furnace",
                     "category": "Mithril",
-                    "exp": 810.0,
+                    "exp": 30.0,
                     "level": 50,
                     "icon": "https://oldschool.runescape.wiki/images/1/18/Mithril_bar.png?a3d3b",
                     "inputs": [
                         {
                             "name": "Mithril ore",
-                            "amount": 27.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 54.0,
+                            "amount": 2.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Mithril bar",
-                            "amount": 27.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -44018,7 +44305,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.037037037037037,
                     "tooltip": "Assumes 27 bars smelted at a time (1 slot for coal bag)"
                 },
                 {
@@ -44124,7 +44411,7 @@
                     "name": "Mithril item",
                     "subtitle": "From scratch; Smith 2 bars at a time",
                     "category": "Mithril",
-                    "exp": 130.0,
+                    "exp": 160.0,
                     "level": 55,
                     "icon": "https://oldschool.runescape.wiki/images/0/04/Mithril_scimitar.png?dd3b6",
                     "inputs": [
@@ -44191,7 +44478,7 @@
                     "name": "Mithril item",
                     "subtitle": "From scratch; Smith 3 bars at a time",
                     "category": "Mithril",
-                    "exp": 180.0,
+                    "exp": 240.0,
                     "level": 59,
                     "icon": "https://oldschool.runescape.wiki/images/5/53/Mithril_platelegs.png?847d1",
                     "inputs": [
@@ -44258,7 +44545,7 @@
                     "name": "Mithril item",
                     "subtitle": "From scratch; Smith 5 bars at a time",
                     "category": "Mithril",
-                    "exp": 280.0,
+                    "exp": 400.0,
                     "level": 68,
                     "icon": "https://oldschool.runescape.wiki/images/b/b5/Mithril_platebody.png?c1ded",
                     "inputs": [
@@ -44330,25 +44617,25 @@
                     "name": "Adamant bar",
                     "subtitle": "Smelting; Blast furnace",
                     "category": "Adamant",
-                    "exp": 1012.5,
+                    "exp": 37.5,
                     "level": 70,
                     "icon": "https://oldschool.runescape.wiki/images/e/eb/Adamantite_bar.png?06d1e",
                     "inputs": [
                         {
                             "name": "Adamant ore",
-                            "amount": 27.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 81.0,
+                            "amount": 3.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Adamant bar",
-                            "amount": 27.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -44358,7 +44645,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.037037037037037,
                     "tooltip": "Assumes 27 bars smelted at a time (1 slot for coal bag)"
                 },
                 {
@@ -44572,7 +44859,7 @@
                     "name": "Adamant item",
                     "subtitle": "From scratch; Smith 2 bars at a time",
                     "category": "Adamant",
-                    "exp": 162.5,
+                    "exp": 200.0,
                     "level": 75,
                     "icon": "https://oldschool.runescape.wiki/images/b/be/Adamant_scimitar.png?b94c4",
                     "inputs": [
@@ -44716,7 +45003,7 @@
                     "name": "Adamant item",
                     "subtitle": "From scratch; Smith 3 bars at a time",
                     "category": "Adamant",
-                    "exp": 225.0,
+                    "exp": 300.0,
                     "level": 79,
                     "icon": "https://oldschool.runescape.wiki/images/b/b7/Adamant_platelegs.png?b8df5",
                     "inputs": [
@@ -44860,25 +45147,25 @@
                     "name": "Rune bar",
                     "subtitle": "Smelting; Blast furnace",
                     "category": "Rune",
-                    "exp": 1350.0,
+                    "exp": 50.0,
                     "level": 85,
                     "icon": "https://oldschool.runescape.wiki/images/8/83/Runite_bar.png?10c4d",
                     "inputs": [
                         {
                             "name": "Rune ore",
-                            "amount": 27.0,
+                            "amount": 1.0,
                             "chance": 1
                         },
                         {
                             "name": "Coal",
-                            "amount": 108.0,
+                            "amount": 4.0,
                             "chance": 1
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Rune bar",
-                            "amount": 28.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -44888,7 +45175,7 @@
                     "expMultipliers": [],
                     "inputMultipliers": [],
                     "outputMultipliers": [],
-                    "expActions": 1.0,
+                    "expActions": 0.037037037037037,
                     "tooltip": "Assumes 27 bars smelted at a time (1 slot for coal bag)"
                 },
                 {
@@ -44994,7 +45281,7 @@
                     "name": "Adamant item",
                     "subtitle": "From scratch; Smith 5 bars at a time",
                     "category": "Adamant",
-                    "exp": 350.0,
+                    "exp": 500.0,
                     "level": 88,
                     "icon": "https://oldschool.runescape.wiki/images/7/71/Adamant_platebody.png?b8df5",
                     "inputs": [
@@ -45061,7 +45348,7 @@
                     "name": "Rune item",
                     "subtitle": "From scratch; Smith 2 bars at a time",
                     "category": "Rune",
-                    "exp": 200.0,
+                    "exp": 250.0,
                     "level": 90,
                     "icon": "https://oldschool.runescape.wiki/images/d/d9/Rune_scimitar.png?a7233",
                     "inputs": [
@@ -45128,7 +45415,7 @@
                     "name": "Rune item",
                     "subtitle": "From scratch; Smith 3 bars at a time",
                     "category": "Rune",
-                    "exp": 275.0,
+                    "exp": 375.0,
                     "level": 94,
                     "icon": "https://oldschool.runescape.wiki/images/9/9a/Rune_platelegs.png?1b3fe",
                     "inputs": [
@@ -45195,7 +45482,7 @@
                     "name": "Rune item",
                     "subtitle": "From scratch; Smith 5 bars at a time",
                     "category": "Rune",
-                    "exp": 425.0,
+                    "exp": 625.0,
                     "level": 99,
                     "icon": "https://oldschool.runescape.wiki/images/7/7c/Rune_platebody.png?3666d",
                     "inputs": [
