@@ -17728,7 +17728,7 @@
                     "outputs": [
                         {
                             "name": "Arrow shafts",
-                            "amount": 30.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -18428,7 +18428,7 @@
                     "outputs": [
                         {
                             "name": "Arrow shafts",
-                            "amount": 45.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -19437,7 +19437,7 @@
                     "outputs": [
                         {
                             "name": "Arrow shafts",
-                            "amount": 60.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -20600,7 +20600,7 @@
                     "outputs": [
                         {
                             "name": "Arrow shafts",
-                            "amount": 75.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
@@ -21681,7 +21681,7 @@
                     "outputs": [
                         {
                             "name": "Arrow shafts",
-                            "amount": 90.0,
+                            "amount": 1.0,
                             "chance": 1
                         }
                     ],
