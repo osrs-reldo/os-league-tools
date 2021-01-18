@@ -3,6 +3,7 @@ import { Card, Col, Row, Form, FormControl, InputGroup, Button } from 'react-boo
 import BootstrapTable from 'react-bootstrap-table-next';
 import { useParams } from 'react-router';
 import SelectSearch from 'react-select-search';
+import DoubleScrollbar from 'react-shadowed-double-scrollbar';
 import update from 'immutability-helper';
 import _ from 'lodash';
 import { InlineIcon } from '@iconify/react';
@@ -23,7 +24,6 @@ import { isRelicUnlocked } from '../util/relic-util';
 import HiscoreLookup from '../components/HiscoreLookup';
 import { getLevelForExp } from '../util/exp-table';
 import { getContentWidthClass } from '../util/settings-util';
-import DoubleScrollbar from '../components/DoubleScrollbar';
 import 'react-select-search/style.css';
 import { Container } from '../../node_modules/react-bootstrap/esm/index';
 
@@ -323,7 +323,7 @@ export default function SkillPlanner() {
                                     {totalGained.expToNextLevel} exp from next level).
                                 </p>
 
-                                <DoubleScrollbar>
+                                <DoubleScrollbar backgroundColor='#343a40'>
                                     <BootstrapTable
                                         bootstrap4
                                         keyField='id'

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Button } from 'react-bootstrap';
+import DoubleScrollbar from 'react-shadowed-double-scrollbar';
 import ProgressBar from './UnlockProgressBar';
 import RelicInfoTile from './RelicInfoTile';
 import relicData from '../resources/relicData.json';
@@ -15,7 +16,6 @@ import {
 } from '../util/relic-util';
 import useLocalStorage from '../hooks/useLocalStorage';
 import { LOCALSTORAGE_KEYS } from '../util/browser-util';
-import DoubleScrollbar from './DoubleScrollbar';
 
 export default function RelicsTracker({ totalPoints }) {
     const [selectedRelic, setSelectedRelic] = useState();
@@ -32,7 +32,7 @@ export default function RelicsTracker({ totalPoints }) {
             <ProgressBar curValue={totalPoints} maxValue={MAX_POINTS} steps={RELIC_UNLOCKS} />
             <Card bg='dark' style={{ border: 'none' }}>
                 <Card.Body>
-                    <DoubleScrollbar>
+                    <DoubleScrollbar backgroundColor='#343a40'>
                         <div>
                             <div className='d-flex no-wrap align-items-stretch'>
                                 {Array.from({ length: 6 }, (_, i) => {

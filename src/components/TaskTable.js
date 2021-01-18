@@ -2,8 +2,8 @@ import React from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import paginationFactory from 'react-bootstrap-table2-paginator';
+import DoubleScrollbar from 'react-shadowed-double-scrollbar';
 import taskData from '../resources/taskData.json';
-import DoubleScrollbar from './DoubleScrollbar';
 import { applyFilters, getFormatters, getRenderers, isTaskComplete } from '../util/task-util';
 import { isColumnHidden } from '../util/settings-util';
 
@@ -130,7 +130,7 @@ export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilt
 
     return (
         <div style={{ maxWidth: '100%' }}>
-            <DoubleScrollbar>
+            <DoubleScrollbar backgroundColor='#343a40'>
                 <BootstrapTable
                     bootstrap4
                     keyField='id'

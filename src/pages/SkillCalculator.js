@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Card, CardDeck, Form, FormControl, InputGroup } from 'react-bootstrap';
 import BootstrapTable from 'react-bootstrap-table-next';
 import { useParams } from 'react-router';
+import DoubleScrollbar from 'react-shadowed-double-scrollbar';
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import { INITIAL_REGIONS_STATE, REGIONS } from '../util/region-util';
 import { getFormatters, getBoostedLevel, getBaseMultiplier } from '../util/calculator-util';
@@ -12,7 +13,6 @@ import useLevel from '../hooks/useLevel';
 import useMultiplier from '../hooks/useMultiplier';
 import { isRelicUnlocked } from '../util/relic-util';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../util/browser-util';
-import DoubleScrollbar from '../components/DoubleScrollbar';
 import HiscoreLookup from '../components/HiscoreLookup';
 import { getLevelForExp } from '../util/exp-table';
 import { getContentWidthClass } from '../util/settings-util';
@@ -376,7 +376,7 @@ export default function SkillCalculator() {
             </CardDeck>
             <Card bg='dark' text='white' className='mt-3'>
                 <Card.Body>
-                    <DoubleScrollbar>
+                    <DoubleScrollbar backgroundColor='#343a40'>
                         <BootstrapTable
                             bootstrap4
                             keyField='id'
