@@ -14,6 +14,7 @@ import CharacterTracker from './pages/CharacterTracker';
 import About from './pages/About';
 import PluginInfo from './pages/PluginInfo';
 import Settings from './pages/Settings';
+import ComingSoon from './pages/ComingSoon';
 
 const history = createHashHistory();
 const trackingId = process.env.REACT_APP_GA_TRACKING || '';
@@ -36,7 +37,8 @@ export default function App() {
             <HashRouter basename='/'>
                 <TopNav />
                 <Switch>
-                    <Route exact path='/' component={Homepage} />
+                    <Route exact path='/' component={ComingSoon} />
+                    <Route path='/news' component={Homepage} />
                     <Route path='/tracker' component={CharacterTracker} />
                     <Route exact path='/calculators' component={Calculators} />
                     <Route path='/calculators/:skill' component={Calculator} />

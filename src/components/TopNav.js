@@ -9,6 +9,10 @@ export default function TopNav() {
     const [hideAlertBanner, setHideAlertBanner] = useLocalStorage(LOCALSTORAGE_KEYS.HIDE_ALERT_BANNER, false);
     const [showDataModal, setShowDataModal] = useState(false);
 
+    if (window.location.hash === '#/') {
+        return null;
+    }
+
     return (
         <>
             <Navbar bg='dark' variant='dark' expand='lg'>
