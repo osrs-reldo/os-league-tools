@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import { createHashHistory } from 'history';
 import ReactGA from 'react-ga';
-import TopNav from './components/TopNav';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
-import './styles/index.scss';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
+// import './styles/index.scss';
+import './styles/compiled.css';
 import Homepage from './pages/Homepage';
 import Calculators from './pages/Calculators';
 import Calculator from './pages/SkillCalculator';
@@ -14,7 +14,7 @@ import CharacterTracker from './pages/CharacterTracker';
 import About from './pages/About';
 import PluginInfo from './pages/PluginInfo';
 import Settings from './pages/Settings';
-import ComingSoon from './pages/ComingSoon';
+import Main from './sandbox/Main';
 
 const history = createHashHistory();
 const trackingId = process.env.REACT_APP_GA_TRACKING || '';
@@ -35,9 +35,8 @@ export default function App() {
     return (
         <div className='App'>
             <HashRouter basename='/'>
-                <TopNav />
                 <Switch>
-                    <Route exact path='/' component={ComingSoon} />
+                    <Route exact path='/' component={Main} />
                     <Route path='/news' component={Homepage} />
                     <Route path='/tracker' component={CharacterTracker} />
                     <Route exact path='/calculators' component={Calculators} />

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Sharp');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /* ICON FONT */
+    .icon-xs {
+        @apply material-icons-sharp text-xs;
+    }
+    .icon-sm {
+        @apply material-icons-sharp text-sm;
+    }
+    .icon-base {
+        @apply material-icons-sharp text-base;
+    }
+    .icon-lg {
+        @apply material-icons-sharp text-lg;
+    }
+    .icon-xl {
+        @apply material-icons-sharp text-xl;
+    }
+    .icon-2xl {
+        @apply material-icons-sharp text-2xl;
+    }
+    .icon-3xl {
+        @apply material-icons-sharp text-3xl;
+    }
+    .icon-4xl {
+        @apply material-icons-sharp text-4xl;
+    }
+}
+
+@layer components {
+    /* NAVBAR */
+    .navbar {
+        @apply absolute top-0 left-0 w-full z-10 sm:p-4 p-2;
+        @apply filter drop-shadow-overlay;
+    }
+    .navbar-content {
+        @apply flex items-center justify-between flex-nowrap;
+        @apply md:px-9 px-5;
+    }
+    .navbar-brand-logo {
+        @apply md:h-8 h-6;
+        @apply md:w-8 w-6;
+    }
+    .navbar-brand {
+        @apply md:text-2xl text-lg;
+        @apply uppercase font-semibold;
+    }
+    .navbar-link {
+        @apply md:text-base text-sm;
+        @apply font-mono font-medium uppercase;
+    }
+    .navbar-link-alt {
+        @apply md:text-base text-sm;
+        @apply font-sans-alt font-medium;
+        @apply flex flex-nowrap items-center;
+    }
+    .navbar-icon-link {
+        @apply h-full hover:bg-gray-200 px-2 py-2;
+    }
+}
+
+@layer utilities {
+}

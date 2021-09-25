@@ -23,6 +23,7 @@ module.exports = {
         'react/jsx-filename-extension': 'off',
         'react/jsx-indent': 'off',
         'react/jsx-indent-props': 'off',
+        'react/jsx-props-no-spreading': 'off',
         'react/no-unescaped-entities': 'off',
         'react/jsx-one-expression-per-line': 'off',
         'react/prop-types': 'off',
