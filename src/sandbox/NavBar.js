@@ -14,7 +14,7 @@ const PRIMARY_ITEMS = [
     {
         text: 'Trackers',
         href: '/',
-        icon: 'fact_check',
+        icon: 'checklist_rtl',
     },
     {
         text: 'Calculators',
@@ -96,6 +96,10 @@ export default function NavBar() {
                     </div>
                     <div className='right-1 mt-1 absolute'>
                         <Dropdown show={showMenuExpanded} innerRef={menuRef} widthClass={WIDTH_PRESETS.SM}>
+                            <Dropdown.Link href='/' icon='settings'>
+                                Settings
+                            </Dropdown.Link>
+                            <Dropdown.Separator />
                             {TERTIARY_ITEMS.map(navItem => (
                                 <Dropdown.Link href={navItem.href} icon={navItem.icon}>
                                     {navItem.text}

@@ -1,5 +1,13 @@
 [
     {
+        "title": "LEAGUES THREE BAYBEEEEE",
+        "date": "Sept 09 2021",
+        "type": "blog",
+        "thumbnail": "https://oldschool.runescape.wiki/images/thumb/3/36/Shattered_Relics_League_logo.png/1280px-Shattered_Relics_League_logo.png?a7f6f",
+        "leadText": "Get ready to shatter Gielinor on November 3rd!",
+        "htmlContent": "<p>Get ready to shatter Gielinor on November 3rd!</p> <p>Yep, OS League Tools is back.</p>"
+    },
+    {
         "title": "Feature: Skill Planners",
         "date": "Dec 13 2020",
         "type": "blog",
@@ -11,7 +19,7 @@
         "title": "Skill requirement filters",
         "date": "Nov 21 2020",
         "type": "blog",
-        "thumbnail": "https://oldschool.runescape.wiki/images/f/f9/Toggle_Health_Overlay.png?bdd3e",
+        "thumbnail": "https://oldschool.runescape.wiki/images/9/9e/Skills_tab.png?5bd59",
         "leadText": "New feature: Filter tasks by your current skill levels!",
         "htmlContent": "<p>New feature: Filter tasks by your current skill levels!</p> <p>You've been asking for it, so here it is - the task tracker is now filterable by what you can complete given your character's current skill levels.</p> <p>Just import your character's levels by doing a hiscores lookup (on the task UI to the left) and you can toggle the filters to show only tasks you can complete (or only tasks you can't yet).</p>"
     },
@@ -19,7 +27,7 @@
         "title": "Improved mobile support",
         "date": "Nov 08 2020",
         "type": "blog",
-        "thumbnail": "https://cdn.runescape.com/assets/img/external/oldschool/2017/newsposts/2017-06-27/News-Thumb-OS.jpg",
+        "thumbnail": "http://cdn.runescape.com/assets/img/external/oldschool/2017/newsposts/2017-06-27/osrsmobilemock.png",
         "leadText": "OS League Tools is now fully compatible with mobile devices (and screens of all other sizes).",
         "htmlContent": "<p>OS League Tools is now fully compatible with mobile devices (and screens of all other sizes).</p> <p>I've been hard at work this weekend improving the site experience on mobile, so you can now track and plan your tasks on the go. While my focus was on mobile, you should see some improvements all across the site for just about any screen size, as many components were revamped completely to be more responsive to the size of your screen.</p> <p>If you come across any parts of the site that still look strange on mobile devices, please make a bug report in the <a href='https://discord.gg/GQ5kVyU'>discord</a>, preferably with a screenshot and information about what device and browser you're using.</p>"
     },
