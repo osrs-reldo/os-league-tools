@@ -16,12 +16,12 @@ import {
     getFormatters,
 } from '../util/calculator-util';
 import calculatorData from '../resources/calculatorData.json';
-import MultiplierGroup from '../components/MultiplierGroup';
-import LevelExpInput from '../components/LevelExpInput';
+import MultiplierGroup from '../components/legacy/MultiplierGroup';
+import LevelExpInput from '../components/legacy/LevelExpInput';
 import useLevel from '../hooks/useLevel';
 import useMultiplier from '../hooks/useMultiplier';
 import { isRelicUnlocked } from '../util/relic-util';
-import HiscoreLookup from '../components/HiscoreLookup';
+import HiscoreLookup from '../components/legacy/HiscoreLookup';
 import { getLevelForExp } from '../util/exp-table';
 import { getContentWidthClass } from '../util/settings-util';
 import 'react-select-search/style.css';

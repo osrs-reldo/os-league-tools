@@ -1,8 +1,8 @@
 import React from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
-import RegionsTracker from '../components/RegionsTracker';
-import RelicsTracker from '../components/RelicsTracker';
-import TaskTracker from '../components/TaskTracker';
+import RegionsTracker from '../components/legacy/RegionsTracker';
+import RelicsTracker from '../components/legacy/RelicsTracker';
+import TaskTracker from '../components/legacy/TaskTracker';
 import useLocalStorage from '../hooks/useLocalStorage';
 import useQueryString from '../hooks/useQueryString';
 import { LOCALSTORAGE_KEYS } from '../util/browser-util';

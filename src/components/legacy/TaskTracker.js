@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Row, Col, Tabs, Tab, Nav, Form, Button } from 'react-bootstrap';
-import taskData from '../resources/taskData.json';
+import taskData from '../../resources/taskData.json';
 import {
     getMaxCompletableTaskPoints,
     isTaskComplete,
@@ -13,15 +13,15 @@ import {
     removeCompletedFromTodo,
     isTaskCompletable,
     isTaskCompletableWithRegions,
-} from '../util/task-util';
-import { isRelicUnlocked } from '../util/relic-util';
+} from '../../util/task-util';
+import { isRelicUnlocked } from '../../util/relic-util';
 import TaskTable from './TaskTable';
 import RandomTaskGenerator from './RandomTaskGenerator';
-import { INITIAL_REGIONS_STATE } from '../util/region-util';
-import useLocalStorage from '../hooks/useLocalStorage';
-import { LOCALSTORAGE_KEYS, SESSIONSTORAGE_KEYS } from '../util/browser-util';
-import { CardDeck } from '../../node_modules/react-bootstrap/esm/index';
-import useScreenSize from '../hooks/useScreenSize';
+import { INITIAL_REGIONS_STATE } from '../../util/region-util';
+import useLocalStorage from '../../hooks/useLocalStorage';
+import { LOCALSTORAGE_KEYS, SESSIONSTORAGE_KEYS } from '../../util/browser-util';
+import { CardDeck } from '../../../node_modules/react-bootstrap/esm/index';
+import useScreenSize from '../../hooks/useScreenSize';
 import Divider from './Divider';
 import HiscoreLookup from './HiscoreLookup';
 

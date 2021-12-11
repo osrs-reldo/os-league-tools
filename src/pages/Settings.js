@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Row, Col, Nav, Form, Tab, Button } from 'react-bootstrap';
 import _ from 'lodash';
-import Divider from '../components/Divider';
+import Divider from '../components/legacy/Divider';
 import useLocalStorage from '../hooks/useLocalStorage';
 import {
     SETTINGS_KEYS,

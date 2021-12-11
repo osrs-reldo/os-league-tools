@@ -3,7 +3,7 @@ import { Card, Button } from 'react-bootstrap';
 import DoubleScrollbar from 'react-shadowed-double-scrollbar';
 import ProgressBar from './UnlockProgressBar';
 import RelicInfoTile from './RelicInfoTile';
-import relicData from '../resources/relicData.json';
+import relicData from '../../resources/relicData.json';
 import {
     getRelicKey,
     MAX_POINTS,
@@ -13,9 +13,9 @@ import {
     isRelicUnlocked,
     getPointsToNextRelic,
     isPassiveRelic,
-} from '../util/relic-util';
-import useLocalStorage from '../hooks/useLocalStorage';
-import { LOCALSTORAGE_KEYS } from '../util/browser-util';
+} from '../../util/relic-util';
+import useLocalStorage from '../../hooks/useLocalStorage';
+import { LOCALSTORAGE_KEYS } from '../../util/browser-util';
 
 export default function RelicsTracker({ totalPoints }) {
     const [selectedRelic, setSelectedRelic] = useState();

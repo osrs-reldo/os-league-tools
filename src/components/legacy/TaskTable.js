@@ -3,9 +3,9 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 import DoubleScrollbar from 'react-shadowed-double-scrollbar';
-import taskData from '../resources/taskData.json';
-import { applyFilters, getFormatters, getRenderers, isTaskComplete } from '../util/task-util';
-import { isColumnHidden } from '../util/settings-util';
+import taskData from '../../resources/taskData.json';
+import { applyFilters, getFormatters, getRenderers, isTaskComplete } from '../../util/task-util';
+import { isColumnHidden } from '../../util/settings-util';
 
 export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters, hiscores, isSkillingProdigy }) {
     const {

@@ -7,13 +7,13 @@ import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-
 import { INITIAL_REGIONS_STATE, REGIONS } from '../util/region-util';
 import { getFormatters, getBoostedLevel, getBaseMultiplier } from '../util/calculator-util';
 import calculatorData from '../resources/calculatorData.json';
-import MultiplierGroup from '../components/MultiplierGroup';
-import LevelExpInput from '../components/LevelExpInput';
+import MultiplierGroup from '../components/legacy/MultiplierGroup';
+import LevelExpInput from '../components/legacy/LevelExpInput';
 import useLevel from '../hooks/useLevel';
 import useMultiplier from '../hooks/useMultiplier';
 import { isRelicUnlocked } from '../util/relic-util';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../util/browser-util';
-import HiscoreLookup from '../components/HiscoreLookup';
+import HiscoreLookup from '../components/legacy/HiscoreLookup';
 import { getLevelForExp } from '../util/exp-table';
 import { getContentWidthClass } from '../util/settings-util';
 

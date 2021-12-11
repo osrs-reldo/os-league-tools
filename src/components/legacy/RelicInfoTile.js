@@ -1,5 +1,5 @@
 import React from 'react';
-import { getRelicInfo } from '../util/relic-util';
+import { getRelicInfo } from '../../util/relic-util';
 
 export default function RelicInfoTile({ relicKey, selected, onClickEvent, isWide, additionalContent }) {
     const { name, description, icon } = getRelicInfo(relicKey);

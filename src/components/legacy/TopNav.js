@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Alert } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import useLocalStorage from '../hooks/useLocalStorage';
-import { LOCALSTORAGE_KEYS, reloadPage } from '../util/browser-util';
+import useLocalStorage from '../../hooks/useLocalStorage';
+import { LOCALSTORAGE_KEYS, reloadPage } from '../../util/browser-util';
 import ManageDataModal from './ManageDataModal';
 
 export default function TopNav() {
