@@ -1,6 +1,6 @@
 module.exports = {
-    purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-    darkMode: false, // or 'media' or 'class'
+    content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+    darkMode: 'class',
     theme: {
         extend: {
             colors: {
@@ -27,11 +27,6 @@ module.exports = {
             fontFamily: {
                 'sans-alt': ['Inconsolata', 'sans-serif'],
             },
-        },
-    },
-    variants: {
-        extend: {
-            ringWidth: ['hover'],
         },
     },
     plugins: [],
