@@ -77,7 +77,7 @@
         "start": "node scripts/start.js",
         "build": "node scripts/build.js",
         "test": "node scripts/test.js",
-        "build:styles": "postcss src/styles/sandbox.css -o src/styles/compiled.css",
+        "build:styles": "postcss src/styles/index.css -o src/styles/compiled.css",
         "prebuild": "npm run build:styles",
         "prestart": "npm run build:styles",
         "predeploy": "npm run build",

@@ -11,9 +11,11 @@ export default function IconLinkCard({ title, href = '/', srcOverride = null, ic
 
     return (
         <Card
-            borderStyle={Card.BORDER_PRESET.BOTTOM}
-            cornerStyle={Card.CORNER_PRESET.MEDIUM}
-            contentStyle='p-2 m-auto'
+            borders='accent-bottom'
+            corners={null}
+            padding='sm'
+            valign='center'
+            halign='center'
             extraClassNames='h-24 w-24 md:inline hidden'
         >
             <Card.Body>

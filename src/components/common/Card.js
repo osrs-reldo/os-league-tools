@@ -1,45 +1,39 @@
 import React from 'react';
 import { getLayoutSlots, withSlot, LayoutSlot } from './layout';
 
-// TODO move these to css
-const COVER_IMAGE_PRESET = {
-    SMALL: 'h-32 md:w-32',
-    MEDIUM: 'h-40 md:w-40',
-    LARGE: 'h-48 md:w-48',
-};
-const HEADING_PRESET = {
-    SIMPLE: 'block mt-1 text-lg leading-tight font-medium text-black',
-    ACCENT: 'uppercase tracking-wide text-sm text-tl-sage font-semibold',
-};
-const CORNER_PRESET = {
-    SMALL: 'rounded-sm',
-    MEDIUM: 'rounded',
-    LARGE: 'rounded-xl',
-};
-const BORDER_PRESET = {
-    NONE: '',
-    BOTTOM: 'border-b-2 border-tl-lime',
-};
-const CONTENT_PRESET = {
-    DEFAULT: 'p-8',
-};
-
+/**
+ * @property {children} [Component] Card content.
+ * @property {image} String Cover image src. Optional.
+ * @property {imageSize} String Cover image size. ['small', 'medium', 'large']
+ * @property {corners} String Corner rounding radius. Leave empty/null for default rounding. ['none', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', 'full']
+ * @property {borders} String Border settings. Black by default, or prefix with 'accent-' to use accent color.  ['none', 'top', 'bottom, 'left', 'right', 'full']
+ * @property {padding} String Amount of padding around card contents. ['none', 'xs', 'sm', 'md', 'lg', 'xl']
+ * @property {halign} String Card content horizontal alignment. ['none', 'left', 'right', 'center']
+ * @property {valign} String Card content vertical alignment. ['none', 'top', 'bottom', 'center']
+ * @property {extraClassNames} String Optional additional class names to apply to the entire card.
+ */
 function Card({
     children,
     image = null,
-    cornerStyle = CORNER_PRESET.LARGE,
-    borderStyle = BORDER_PRESET.NONE,
-    imageStyle = COVER_IMAGE_PRESET.MEDIUM,
-    contentStyle = CONTENT_PRESET.DEFAULT,
+    imageSize = 'medium',
+    corners = 'xl',
+    borders = 'none',
+    padding = 'md',
+    halign = 'none',
+    valign = 'none',
     extraClassNames = '',
 }) {
     const { header, body, footer } = getLayoutSlots(children);
 
     return (
-        <div className={`bg-white ${cornerStyle} ${borderStyle} shadow overflow-hidden m-2 ${extraClassNames}`}>
-            <div className='md:flex h-full'>
-                {image && <Image src={image} style={imageStyle} />}
-                <div className={contentStyle}>
+        <div
+            className={`bg-white ${
+                corners ? `rounded-${corners}` : 'rounded'
+            } card-border-${borders} shadow overflow-hidden m-2 ${extraClassNames}`}
+        >
+            <div className='flex md:flex-row flex-col h-full'>
+                {image && <Image src={image} style={imageSize} />}
+                <div className={`card-padding-${padding} card-halign-${halign} card-valign-${valign}`}>
                     {header && <div>{header}</div>}
                     {body && <div className={header ? 'mt-2' : ''}>{body}</div>}
                     {footer && <div className='mt-auto'>{footer}</div>}
@@ -49,12 +43,12 @@ function Card({
     );
 }
 
-function Image({ src, style = COVER_IMAGE_PRESET.MEDIUM }) {
-    return <img className={`md:flex-shrink-0 w-full object-cover ${style}`} src={src} alt='' />;
+function Image({ src, size = 'medium' }) {
+    return <img className={`card-img-${size}`} src={src} alt='' />;
 }
 
-function Header({ children, style = HEADING_PRESET.SIMPLE }) {
-    return <div className={style}>{children}</div>;
+function Header({ children, className = 'heading-block-md' }) {
+    return <div className={className}>{children}</div>;
 }
 
 function Footer({ children }) {
@@ -65,10 +59,5 @@ Card.Image = Image;
 Card.Header = withSlot(Header, 'header');
 Card.Body = LayoutSlot('body');
 Card.Footer = withSlot(Footer, 'footer');
-Card.HEADING_PRESET = HEADING_PRESET;
-Card.COVER_IMAGE_PRESET = COVER_IMAGE_PRESET;
-Card.CORNER_PRESET = CORNER_PRESET;
-Card.BORDER_PRESET = BORDER_PRESET;
-Card.CONTENT_PRESET = CONTENT_PRESET;
 
 export default Card;

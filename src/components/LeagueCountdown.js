@@ -44,12 +44,14 @@ export default function LeagueCountdown() {
 
     return (
         <Card
-            borderStyle={Card.BORDER_PRESET.BOTTOM}
-            cornerStyle={Card.CORNER_PRESET.SMALL}
-            contentStyle='m-auto text-center'
-            extraClassNames='h-24 w-96 md:mx-2 mx-auto px-2'
+            borders='accent-bottom'
+            corners='sm'
+            padding='sm'
+            valign='center'
+            halign='center'
+            extraClassNames='text-center h-24 w-96 md:mx-2 mx-auto'
         >
-            <Card.Header style={Card.HEADING_PRESET.ACCENT}>{text}</Card.Header>
+            <Card.Header className='heading-accent-md'>{text}</Card.Header>
             {(launchCountdown || endCountdown) && (
                 <Card.Body>
                     <div className='font-bold font-mono text-xl'>{launchCountdown || endCountdown}</div>

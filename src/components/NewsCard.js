@@ -4,8 +4,8 @@ import Card from './common/Card';
 export default function NewsCard({ title, date, coverImg, leadText, htmlContent }) {
     const [expanded, setExpanded] = useState(false);
     return (
-        <Card image={coverImg}>
-            <Card.Header style={Card.HEADING_PRESET.ACCENT}>{date}</Card.Header>
+        <Card image={coverImg} padding='xl'>
+            <Card.Header className='heading-accent-md'>{date}</Card.Header>
             <Card.Header>{title}</Card.Header>
             <Card.Body>
                 <p className='text-gray-500'>
