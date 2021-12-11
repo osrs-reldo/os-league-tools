@@ -1,9 +1,6 @@
-/* eslint-disable react/jsx-props-no-spreading */
-/* I have no idea why this isn't being picked up from my eslintrc */
-
 import React, { useState, useRef } from 'react';
-import Dropdown, { WIDTH_PRESETS } from './Dropdown';
-import useClickListener from './useClickListener';
+import Dropdown, { WIDTH_PRESETS } from './common/Dropdown';
+import useClickListener from '../hooks/useClickListener';
 
 const PRIMARY_ITEMS = [
     {

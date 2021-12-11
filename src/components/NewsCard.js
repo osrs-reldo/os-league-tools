@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import Card from './Card';
+import Card from './common/Card';
 
 export default function NewsCard({ title, date, coverImg, leadText, htmlContent }) {
     const [expanded, setExpanded] = useState(false);
     return (
-        <Card coverImage={coverImg}>
-            <Card.Subheading>{date}</Card.Subheading>
-            <Card.Heading>{title}</Card.Heading>
-            <Card.Content>
+        <Card image={coverImg}>
+            <Card.Header style={Card.HEADING_PRESET.ACCENT}>{date}</Card.Header>
+            <Card.Header>{title}</Card.Header>
+            <Card.Body>
                 <p className='text-gray-500'>
                     {expanded ? (
                         <>
@@ -32,7 +32,7 @@ export default function NewsCard({ title, date, coverImg, leadText, htmlContent 
                         </>
                     )}
                 </p>
-            </Card.Content>
+            </Card.Body>
         </Card>
     );
 }
