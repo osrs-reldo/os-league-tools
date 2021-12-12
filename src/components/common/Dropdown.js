@@ -9,7 +9,11 @@ export const WIDTH_PRESETS = {
 
 function Dropdown({ children, innerRef, show, widthClass = WIDTH_PRESETS.CONTENT }) {
     return (
-        <ul role='menu' className={`${widthClass} bg-white border inline-block${!show && ' hidden'}`} ref={innerRef}>
+        <ul
+            role='menu'
+            className={`${widthClass} bg-primary border border-primary inline-block ${!show && 'hidden'}`}
+            ref={innerRef}
+        >
             {children}
         </ul>
     );
@@ -22,8 +26,8 @@ function TextItem({ children, isHeading = false }) {
 function LinkItem({ children, href, icon = null }) {
     return (
         <li>
-            <a href={href} className='px-3 py-2 block hover:bg-gray-200'>
-                {icon && <span className='text-gray-900 icon-lg align-middle mr-1'>{icon}</span>}
+            <a href={href} className='text-primary-alt px-3 py-2 block bg-hover'>
+                {icon && <span className='icon-lg align-middle mr-1'>{icon}</span>}
                 {children}
             </a>
         </li>
@@ -31,7 +35,7 @@ function LinkItem({ children, href, icon = null }) {
 }
 
 function Separator() {
-    return <li className='h-px w-full bg-gray-300' />;
+    return <li className='h-px w-full bg-subdued' />;
 }
 
 Dropdown.Text = TextItem;

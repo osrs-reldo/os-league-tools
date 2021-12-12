@@ -449,6 +449,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 /* THEMING */
 
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.dark .bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+}
+
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -456,10 +466,110 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .dark .bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.bg-subdued {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.dark .bg-subdued {
+  --tw-bg-opacity: 1;
+  background-color: rgb(113 113 122 / var(--tw-bg-opacity));
+}
+
+.bg-hover:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.dark .bg-hover:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.dark .text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(244 244 245 / var(--tw-text-opacity));
+}
+
+.text-primary-alt {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.dark .text-primary-alt {
+  --tw-text-opacity: 1;
+  color: rgb(244 244 245 / var(--tw-text-opacity));
+}
+
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.dark .text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(228 228 231 / var(--tw-text-opacity));
+}
+
+.text-secondary-alt {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.dark .text-secondary-alt {
+  --tw-text-opacity: 1;
+  color: rgb(161 161 170 / var(--tw-text-opacity));
+}
+
+.img-primary {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.dark .img-primary {
+        /* Compatibility class for applying primary text color to svg images */
+        filter: invert(100%) sepia(15%) saturate(2475%) hue-rotate(180deg) brightness(102%) contrast(81%);
+    }
+
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.dark .border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(113 113 122 / var(--tw-border-opacity));
+}
+
+.shadow-primary {
+  --tw-shadow-color: rgb(0 0 0 / 0.1);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.dark .shadow-primary {
+  --tw-shadow-color: rgb(0 0 0 / 0.7);
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 /* TEXT STYLES */
+
+.heading-block-md {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.dark .heading-block-md {
+  --tw-text-opacity: 1;
+  color: rgb(244 244 245 / var(--tw-text-opacity));
+}
 
 .heading-block-md {
   margin-top: 0.25rem;
@@ -467,8 +577,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.25;
+}
+
+.heading-accent-md {
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(100 144 68 / var(--tw-text-opacity));
+}
+
+.dark .heading-accent-md {
+  --tw-text-opacity: 1;
+  color: rgb(164 206 39 / var(--tw-text-opacity));
 }
 
 .heading-accent-md {
@@ -477,8 +595,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.025em;
-  --tw-text-opacity: 1;
-  color: rgb(100 144 68 / var(--tw-text-opacity));
 }
 
 /* TYPOGRAPHY */
@@ -493,8 +609,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Material Icons Sharp';
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;
-  line-height: 1;
   letter-spacing: normal;
   text-transform: none;
   display: inline-block;
@@ -503,14 +617,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .icon-xl {
   font-family: 'Material Icons Sharp';
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;
-  line-height: 1;
   letter-spacing: normal;
   text-transform: none;
   display: inline-block;
@@ -519,14 +633,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .icon-4xl {
   font-family: 'Material Icons Sharp';
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;
-  line-height: 1;
   letter-spacing: normal;
   text-transform: none;
   display: inline-block;
@@ -535,13 +649,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 /* LAYOUT */
 .page-wrapper {
         width: 95%;
         margin-left: auto;
         margin-right: auto;
+        --tw-text-opacity: 1;
+        color: rgb(0 0 0 / var(--tw-text-opacity));
     }
+.dark .page-wrapper {
+  --tw-text-opacity: 1;
+  color: rgb(244 244 245 / var(--tw-text-opacity));
+}
 .sidebar-wrapper {
   width: 100%;
 }
@@ -702,16 +824,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-wrap: nowrap;
   align-items: center;
 }
+.navbar-icon-link:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+.dark .navbar-icon-link:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
 .navbar-icon-link {
   height: 100%;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-.navbar-icon-link:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 /* CARD */
 .card-img-medium {
@@ -857,6 +983,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .block {
   display: block;
 }
+.inline-block {
+  display: inline-block;
+}
 .inline {
   display: inline;
 }
@@ -961,14 +1090,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border {
   border-width: 1px;
 }
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
 .p-1 {
   padding: 0.25rem;
 }
@@ -1034,9 +1155,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .font-bold {
   font-weight: 700;
@@ -1046,22 +1167,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .leading-tight {
   line-height: 1.25;
-}
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -1077,10 +1182,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-.hover\:bg-gray-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 .hover\:underline:hover {
   text-decoration: underline;

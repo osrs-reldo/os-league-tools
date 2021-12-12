@@ -71,25 +71,25 @@ export default function NavBar() {
         <>
             <div className='pl-4 sm:flex hidden'>
                 {PRIMARY_ITEMS.map(navItem => (
-                    <a className='text-black navbar-link hover:underline mr-4' href={navItem.href}>
+                    <a className='text-primary navbar-link hover:underline mr-4' href={navItem.href}>
                         {navItem.text}
                     </a>
                 ))}
             </div>
             <div className='sm:flex hidden flex-grow' />
             <div className='sm:flex hidden justify-between items-center'>
-                <a className='md:inline hidden navbar-link-alt hover:bg-gray-200 px-2 py-1' href='/'>
+                <a className='text-primary md:inline hidden navbar-link-alt bg-hover px-2 py-1' href='/'>
                     Login
                 </a>
                 <a className='md:hidden inline navbar-icon-link' href='/'>
-                    <span className='text-gray-900 icon-lg leading-tight align-middle'>login</span>
+                    <span className='text-primary-alt icon-lg leading-tight align-middle'>login</span>
                 </a>
                 <a className='navbar-icon-link' href='/'>
-                    <img className='h-4' src='/img/runelite-icon.svg' alt='' />
+                    <img className='h-4 img-primary' src='/img/runelite-icon.svg' alt='' />
                 </a>
                 <div className='relative cursor-pointer' onClick={() => setShowMenuExpanded(!showMenuExpanded)}>
-                    <div className='hover:bg-gray-200 px-2 py-1'>
-                        <span className='text-gray-900 icon-xl leading-tight md:align-top align-middle'>menu</span>
+                    <div className='bg-hover px-2 py-1'>
+                        <span className='text-primary-alt icon-xl leading-tight md:align-top align-middle'>menu</span>
                     </div>
                     <div className='right-1 mt-1 absolute'>
                         <Dropdown show={showMenuExpanded} innerRef={menuRef} widthClass={WIDTH_PRESETS.SM}>
@@ -116,8 +116,8 @@ export default function NavBar() {
                 className='sm:hidden inline relative cursor-pointer'
                 onClick={() => setShowMenuCollapsed(!showMenuCollapsed)}
             >
-                <div className='hover:bg-gray-200 px-2 py-1'>
-                    <span className='text-gray-900 icon-4xl leading-tight'>
+                <div className='bg-hover px-2 py-1'>
+                    <span className='text-primary-alt icon-4xl leading-tight'>
                         {showMenuCollapsed ? 'expand_less' : 'expand_more'}
                     </span>
                 </div>
@@ -129,11 +129,11 @@ export default function NavBar() {
             {[PRIMARY_ITEMS, SECONDARY_ITEMS, TERTIARY_ITEMS].map(items => {
                 return (
                     <>
-                        <div className='h-px w-full bg-gray-300' />
+                        <div className='h-px w-full bg-subdued' />
                         {items.map(navItem => (
-                            <a className='text-black hover:bg-gray-200 py-1' href={navItem.href}>
+                            <a className='text-primary bg-hover py-1' href={navItem.href}>
                                 {navItem.icon && (
-                                    <span className='text-gray-900 icon-lg inline align-middle mr-1'>
+                                    <span className='text-primary-alt icon-lg inline align-middle mr-1'>
                                         {navItem.icon}
                                     </span>
                                 )}
@@ -147,11 +147,11 @@ export default function NavBar() {
     );
 
     return (
-        <nav className='bg-white navbar h-auto'>
+        <nav className='bg-primary navbar h-auto'>
             <div className='navbar-content'>
                 <div className='flex flex-row flex-nowrap'>
                     <img src='/img/relic-check.png' className='navbar-brand-logo mr-3' alt='' />
-                    <a className='text-black navbar-brand whitespace-nowrap' href='/'>
+                    <a className='text-primary navbar-brand whitespace-nowrap' href='/'>
                         OS League Tools
                     </a>
                 </div>

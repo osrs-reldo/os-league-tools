@@ -16,7 +16,7 @@ export default function Homepage() {
                     <IconLinkCard title='Wiki' iconOverride='menu_book' />
                     <IconLinkCard title='Feedback' iconOverride='pest_control' />
                 </div>
-                <p className='text-4xl small-caps ml-1'>Site News</p>
+                <p className='text-3xl small-caps ml-1 mt-2'>Updates</p>
                 {newsPosts.map(
                     newsPost =>
                         newsPost.type === 'blog' && (

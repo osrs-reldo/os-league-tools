@@ -27,9 +27,9 @@ function Card({
 
     return (
         <div
-            className={`bg-white ${
+            className={`bg-primary ${
                 corners ? `rounded-${corners}` : 'rounded'
-            } card-border-${borders} shadow overflow-hidden m-2 ${extraClassNames}`}
+            } card-border-${borders} shadow shadow-primary overflow-hidden m-2 ${extraClassNames}`}
         >
             <div className='flex md:flex-row flex-col h-full'>
                 {image && <Image src={image} style={imageSize} />}

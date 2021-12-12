@@ -4,7 +4,7 @@ import Card from './common/Card';
 export default function IconLinkCard({ title, href = '/', srcOverride = null, iconOverride = null }) {
     let icon;
     if (srcOverride) {
-        icon = <img className='h-9 mb-1' src={srcOverride} alt='' />;
+        icon = <img className='h-9 mb-1 img-primary' src={srcOverride} alt='' />;
     } else {
         icon = <span className='icon-4xl text-center'>{iconOverride || title.toLowerCase()}</span>;
     }

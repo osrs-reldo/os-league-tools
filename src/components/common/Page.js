@@ -5,7 +5,7 @@ import { getLayoutSlots, LayoutSlot } from './layout';
 function DefaultPage({ children, sidebarPosition = 'left' }) {
     const { banner, sidebar, body } = getLayoutSlots(children);
     return (
-        <div className='bg-gray-200 w-full h-full'>
+        <div className='bg-secondary w-full h-full'>
             <NavBar />
             <div className='mt-5 page-wrapper'>
                 {banner && <div>{banner}</div>}

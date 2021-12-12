@@ -29,7 +29,7 @@ export default function App() {
     }, []);
 
     return (
-        <div className='App'>
+        <div className='App dark'>
             <HashRouter basename='/'>
                 <Switch>
                     <Route exact path='/' component={Homepage} />

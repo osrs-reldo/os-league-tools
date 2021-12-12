@@ -6,12 +6,53 @@
 @tailwind utilities;
 
 @layer base {
+    /* THEMING */
+    .bg-primary {
+        @apply bg-white dark:bg-zinc-700;
+    }
+    .bg-secondary {
+        @apply bg-gray-200 dark:bg-zinc-800;
+    }
+    .bg-subdued {
+        @apply bg-gray-300 dark:bg-zinc-500;
+    }
+    .bg-hover {
+        @apply hover:bg-gray-200 dark:hover:bg-zinc-800;
+    }
+    .text-primary {
+        @apply text-black dark:text-zinc-100;
+    }
+    .text-primary-alt {
+        @apply text-gray-900 dark:text-zinc-100;
+    }
+    .text-secondary {
+        @apply text-gray-500 dark:text-zinc-200;
+    }
+    .text-secondary-alt {
+        @apply text-gray-700 dark:text-zinc-400;
+    }
+    .text-accent {
+        @apply text-tl-sage dark:text-tl-lime;
+    }
+    .dark-mode-img-compat {
+        /* Compatibility class for applying primary text color to svg images */
+        filter: invert(100%) sepia(15%) saturate(2475%) hue-rotate(180deg) brightness(102%) contrast(81%);
+    }
+    .img-primary {
+        @apply text-black dark:dark-mode-img-compat;
+    }
+    .border-primary {
+        @apply border-black dark:border-zinc-500;
+    }
+    .shadow-primary {
+        @apply shadow-black/10 dark:shadow-black/70;
+    }
     /* TEXT STYLES */
     .heading-block-md {
-        @apply block mt-1 text-lg leading-tight font-medium text-black;
+        @apply block mt-1 text-lg leading-tight font-medium text-primary;
     }
     .heading-accent-md {
-        @apply uppercase tracking-wide text-sm text-tl-sage font-semibold;
+        @apply uppercase tracking-wide text-sm text-accent font-semibold;
     }
     /* TYPOGRAPHY */
     .small-caps {
@@ -19,28 +60,36 @@
     }
     /* ICON FONT */
     .icon-xs {
-        @apply material-icons-sharp text-xs;
+        @apply material-icons-sharp;
+        @apply text-xs;
     }
     .icon-sm {
-        @apply material-icons-sharp text-sm;
+        @apply material-icons-sharp;
+        @apply text-sm;
     }
     .icon-base {
-        @apply material-icons-sharp text-base;
+        @apply material-icons-sharp;
+        @apply text-base;
     }
     .icon-lg {
-        @apply material-icons-sharp text-lg;
+        @apply material-icons-sharp;
+        @apply text-lg;
     }
     .icon-xl {
-        @apply material-icons-sharp text-xl;
+        @apply material-icons-sharp;
+        @apply text-xl;
     }
     .icon-2xl {
-        @apply material-icons-sharp text-2xl;
+        @apply material-icons-sharp;
+        @apply text-2xl;
     }
     .icon-3xl {
-        @apply material-icons-sharp text-3xl;
+        @apply material-icons-sharp;
+        @apply text-3xl;
     }
     .icon-4xl {
-        @apply material-icons-sharp text-4xl;
+        @apply material-icons-sharp;
+        @apply text-4xl;
     }
 }
 
@@ -48,6 +97,7 @@
     /* LAYOUT */
     .page-wrapper {
         @apply w-95p mx-auto;
+        @apply text-primary;
     }
     .sidebar-wrapper {
         @apply container lg:max-w-sm md:max-w-xs;
@@ -115,7 +165,7 @@
         @apply flex flex-nowrap items-center;
     }
     .navbar-icon-link {
-        @apply h-full hover:bg-gray-200 px-2 py-2;
+        @apply h-full bg-hover px-2 py-2;
     }
     /* CARD */
     .card-img-base {

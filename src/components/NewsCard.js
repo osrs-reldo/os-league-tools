@@ -8,13 +8,13 @@ export default function NewsCard({ title, date, coverImg, leadText, htmlContent 
             <Card.Header className='heading-accent-md'>{date}</Card.Header>
             <Card.Header>{title}</Card.Header>
             <Card.Body>
-                <p className='text-gray-500'>
+                <p className='text-secondary'>
                     {expanded ? (
                         <>
                             {/* eslint-disable-next-line react/no-danger */}
                             <div dangerouslySetInnerHTML={{ __html: htmlContent }} className='space-y-2' />
                             <div
-                                className='font-semibold cursor-pointer text-gray-700'
+                                className='font-semibold cursor-pointer text-secondary-alt'
                                 onClick={() => setExpanded(!expanded)}
                             >
                                 Show less
@@ -24,7 +24,7 @@ export default function NewsCard({ title, date, coverImg, leadText, htmlContent 
                         <>
                             <p className='inline'>{leadText}</p>{' '}
                             <div
-                                className='inline font-semibold cursor-pointer text-gray-700'
+                                className='inline font-semibold cursor-pointer text-secondary-alt'
                                 onClick={() => setExpanded(!expanded)}
                             >
                                 Read more...
