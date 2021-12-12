@@ -68,7 +68,7 @@ def parse_additional_areas(line):
     return {'allOf': [line.strip()]}
 
 
-with open('src/resources/taskData.json', 'r') as task_data_file:
+with open('src/resources/legacy/taskData.json', 'r') as task_data_file:
     task_data = json.load(task_data_file)
 
 tasks_by_region, all_tasks_list, tasks_by_id = parse_csv(task_data)
@@ -77,5 +77,5 @@ task_data['tasks'] = all_tasks_list
 task_data['tasksByRegion'] = tasks_by_region
 task_data['tasksById'] = tasks_by_id
 
-with open('src/resources/taskData.json', 'w') as task_data_file:
+with open('src/resources/legacy/taskData.json', 'w') as task_data_file:
     task_data_file.write(json.dumps(task_data, indent=4))

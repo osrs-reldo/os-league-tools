@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { InputGroup, FormControl, Button, Spinner, Form } from 'react-bootstrap';
 import { getCachedHiscores, getHiscores } from '../../client/hiscores-client';
-import useLocalStorage from '../../hooks/useLocalStorage';
-import { LOCALSTORAGE_KEYS } from '../../util/browser-util';
+import useLocalStorage from '../../hooks/legacy/useLocalStorage';
+import { LOCALSTORAGE_KEYS } from '../../util/legacy/browser-util';
 
 export default function HiscoreLookup({
     skill,

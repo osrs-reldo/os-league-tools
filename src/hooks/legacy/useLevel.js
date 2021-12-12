@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { getExpForLevel, getLevelForExp } from '../util/exp-table';
+import { getExpForLevel, getLevelForExp } from '../../util/legacy/exp-table';
 
 export default function useLevel(initialLevel) {
     const [level, setLevel] = useState(initialLevel);

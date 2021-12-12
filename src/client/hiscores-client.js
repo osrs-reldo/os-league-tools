@@ -3,7 +3,7 @@ import {
     getFromLocalStorage,
     SESSIONSTORAGE_KEYS,
     // updateLocalStorage,
-} from '../util/browser-util';
+} from '../util/legacy/browser-util';
 
 // const HOSTNAME = 'https://os-league-tools-api.herokuapp.com';
 

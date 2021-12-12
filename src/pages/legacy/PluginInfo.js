@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import { getContentWidthClass } from '../util/settings-util';
+import { getContentWidthClass } from '../../util/legacy/settings-util';
 
 export default function PluginInfo() {
     return (

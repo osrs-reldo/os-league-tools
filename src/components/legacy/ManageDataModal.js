@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Button, Modal, Alert, Tabs, Tab, InputGroup, FormControl } from 'react-bootstrap';
 import { FilePicker } from 'react-file-picker';
-import { saveLocalStorageToFile, loadLocalStorageFromFile } from '../../util/file-util';
-import updateLocalStorageFromRuneliteJson from '../../util/runelite-util';
-import { resetLocalStorageData } from '../../util/browser-util';
+import { saveLocalStorageToFile, loadLocalStorageFromFile } from '../../util/legacy/file-util';
+import updateLocalStorageFromRuneliteJson from '../../util/legacy/runelite-util';
+import { resetLocalStorageData } from '../../util/legacy/browser-util';
 
 export default function ManageDataModal({ show, onClose }) {
     const [errorText, setErrorText] = useState('');

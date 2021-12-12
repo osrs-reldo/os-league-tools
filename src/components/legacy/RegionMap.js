@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Image } from 'react-bootstrap';
-import { isRegionUnlocked } from '../../util/region-util';
+import { isRegionUnlocked } from '../../util/legacy/region-util';
 
 const MAX_WIDTH = 1433;
 

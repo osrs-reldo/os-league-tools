@@ -5,8 +5,8 @@ import uncheckedIcon from '@iconify/icons-mdi/checkbox-blank-circle-outline';
 import closeIcon from '@iconify/icons-mdi/close';
 import plusIcon from '@iconify/icons-mdi/plus';
 import Badge from 'react-bootstrap/Badge';
-import taskData from '../resources/taskData.json';
-import calculatorData from '../resources/calculatorData.json';
+import taskData from '../../resources/legacy/taskData.json';
+import calculatorData from '../../resources/legacy/calculatorData.json';
 
 export const DIFFICULTIES = ['Easy', 'Medium', 'Hard', 'Elite', 'Master'];
 export const DIFFICULTY_POINTS = {

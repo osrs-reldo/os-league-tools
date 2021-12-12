@@ -9,11 +9,11 @@ import {
     isTaskHidden,
     isTaskCompletableWithRegions,
     isTaskOnTodoList,
-} from '../../util/task-util';
-import { LOCALSTORAGE_KEYS } from '../../util/browser-util';
+} from '../../util/legacy/task-util';
+import { LOCALSTORAGE_KEYS } from '../../util/legacy/browser-util';
 import HiscoreLookup from './HiscoreLookup';
-import taskData from '../../resources/taskData.json';
-import useLocalStorage from '../../hooks/useLocalStorage';
+import taskData from '../../resources/legacy/taskData.json';
+import useLocalStorage from '../../hooks/legacy/useLocalStorage';
 
 export default function RandomTaskGenerator({
     taskStatus,

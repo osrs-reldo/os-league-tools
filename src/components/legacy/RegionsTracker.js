@@ -9,9 +9,9 @@ import {
     isRegionUnlocked,
     INITIAL_REGIONS_STATE,
     getTasksToNextRegion,
-} from '../../util/region-util';
+} from '../../util/legacy/region-util';
 import RegionMap from './RegionMap';
-import regionsData from '../../resources/regionsData.json';
+import regionsData from '../../resources/legacy/regionsData.json';
 
 export default function RegionsTracker({ totalTasks, unlockedRegions, setUnlockedRegionsCallback }) {
     const [selectedRegion, setSelectedRegion] = useState('Misthalin');

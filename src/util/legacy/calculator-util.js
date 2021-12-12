@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 import closeIcon from '@iconify/icons-mdi/close';
 import _ from 'lodash';
 import { isRelicUnlocked } from './relic-util';
-import calculatorData from '../resources/calculatorData.json';
+import calculatorData from '../../resources/legacy/calculatorData.json';
 import { getExpForLevel, getLevelForExp } from './exp-table';
 
 export function getFormatters() {

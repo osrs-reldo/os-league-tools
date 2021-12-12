@@ -1,8 +1,8 @@
 import React from 'react';
 import { Card, CardDeck } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import calculatorData from '../resources/calculatorData.json';
-import { getContentWidthClass } from '../util/settings-util';
+import calculatorData from '../../resources/legacy/calculatorData.json';
+import { getContentWidthClass } from '../../util/legacy/settings-util';
 
 export default function Calculators() {
     return (

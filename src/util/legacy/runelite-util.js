@@ -1,7 +1,7 @@
 import { getFromLocalStorage, LOCALSTORAGE_KEYS, updateLocalStorage } from './browser-util';
-import taskData from '../resources/taskData.json';
-import relicData from '../resources/relicData.json';
-import { INITIAL_TASKS_STATE_V3 } from '../hooks/useTaskStatus';
+import taskData from '../../resources/legacy/taskData.json';
+import relicData from '../../resources/legacy/relicData.json';
+import { INITIAL_TASKS_STATE_V3 } from '../../hooks/legacy/useTaskStatus';
 
 const TASKS_BY_NAME = getTaskLookupByName();
 const RELICS_BY_NAME = getRelicLookupByName();

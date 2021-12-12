@@ -1,5 +1,5 @@
 import update from 'immutability-helper';
-import relicData from '../resources/relicData.json';
+import relicData from '../../resources/legacy/relicData.json';
 import { LOCALSTORAGE_KEYS, getFromLocalStorage } from './browser-util';
 
 export const MAX_POINTS = 15000;

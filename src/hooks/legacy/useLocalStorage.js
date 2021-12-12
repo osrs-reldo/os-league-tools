@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { getFromLocalStorage, updateLocalStorage } from '../util/browser-util';
+import { getFromLocalStorage, updateLocalStorage } from '../../util/legacy/browser-util';
 
 /** originally from https://usehooks.com/useLocalStorage */
 export default function useLocalStorage(key, initialValue, useSessionStorage = false) {

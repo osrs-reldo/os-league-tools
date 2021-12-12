@@ -1,15 +1,15 @@
 import React from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
-import RegionsTracker from '../components/legacy/RegionsTracker';
-import RelicsTracker from '../components/legacy/RelicsTracker';
-import TaskTracker from '../components/legacy/TaskTracker';
-import useLocalStorage from '../hooks/useLocalStorage';
-import useQueryString from '../hooks/useQueryString';
-import { LOCALSTORAGE_KEYS } from '../util/browser-util';
-import { INITIAL_REGIONS_STATE } from '../util/region-util';
-import useTaskStatus from '../hooks/useTaskStatus';
-import { getPointsEarned } from '../util/task-util';
-import { getContentWidthClass } from '../util/settings-util';
+import RegionsTracker from '../../components/legacy/RegionsTracker';
+import RelicsTracker from '../../components/legacy/RelicsTracker';
+import TaskTracker from '../../components/legacy/TaskTracker';
+import useLocalStorage from '../../hooks/legacy/useLocalStorage';
+import useQueryString from '../../hooks/legacy/useQueryString';
+import { LOCALSTORAGE_KEYS } from '../../util/legacy/browser-util';
+import { INITIAL_REGIONS_STATE } from '../../util/legacy/region-util';
+import useTaskStatus from '../../hooks/legacy/useTaskStatus';
+import { getPointsEarned } from '../../util/legacy/task-util';
+import { getContentWidthClass } from '../../util/legacy/settings-util';
 
 export default function CharacterTracker() {
     const [selectedTab, onSetSelectedTab] = useQueryString('tab');

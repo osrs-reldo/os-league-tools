@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Form } from 'react-bootstrap';
 import _ from 'lodash';
-import { getDefaultCheckedMultipliers } from '../../util/calculator-util';
+import { getDefaultCheckedMultipliers } from '../../util/legacy/calculator-util';
 
 export default function MultiplierGroup({ title, multiplierData, globalMultiplierData = [], multipliers }) {
     const [checkedGlobalMultipliers, setCheckedGlobalMultipliers] = useState([]);

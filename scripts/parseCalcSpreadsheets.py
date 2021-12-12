@@ -132,7 +132,7 @@ SKILLS = ['agility', 'construction', 'cooking', 'crafting', 'farming',
           'thieving', 'woodcutting']
 
 
-with open('src/resources/calculatorData.json', 'r') as calc_data_file:
+with open('src/resources/legacy/calculatorData.json', 'r') as calc_data_file:
     calc_data = json.load(calc_data_file)
 
 updated_skill_data = {}
@@ -140,5 +140,5 @@ for skill in SKILLS:
     updated_skill_data[skill] = parseCsv(skill)
 calc_data['calculators'] = updated_skill_data
 
-with open('src/resources/calculatorData.json', 'w') as calc_data_file:
+with open('src/resources/legacy/calculatorData.json', 'w') as calc_data_file:
     calc_data_file.write(json.dumps(calc_data, indent=4))
