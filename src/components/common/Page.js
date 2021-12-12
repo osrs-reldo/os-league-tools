@@ -1,12 +1,11 @@
 import React from 'react';
-import NavBar from '../NavBar';
 import { getLayoutSlots, LayoutSlot } from './layout';
 
-function DefaultPage({ children, sidebarPosition = 'left' }) {
-    const { banner, sidebar, body } = getLayoutSlots(children);
+function Page({ children, sidebarPosition = 'left' }) {
+    const { nav, banner, sidebar, body } = getLayoutSlots(children);
     return (
         <div className='bg-secondary w-full h-full'>
-            <NavBar />
+            {nav}
             <div className='mt-5 page-wrapper'>
                 {banner && <div>{banner}</div>}
                 <div className='flex md:flex-row flex-col justify-center'>
@@ -19,8 +18,9 @@ function DefaultPage({ children, sidebarPosition = 'left' }) {
     );
 }
 
-DefaultPage.Banner = LayoutSlot('banner');
-DefaultPage.Sidebar = LayoutSlot('sidebar');
-DefaultPage.Body = LayoutSlot('body');
+Page.Nav = LayoutSlot('nav');
+Page.Banner = LayoutSlot('banner');
+Page.Sidebar = LayoutSlot('sidebar');
+Page.Body = LayoutSlot('body');
 
-export default DefaultPage;
+export default Page;

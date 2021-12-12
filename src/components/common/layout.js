@@ -14,9 +14,10 @@ export function filterBySlot(children, slot, filterOptions = {}) {
     return filteredResults;
 }
 
-export function getLayoutSlots(children) {
+export function getLayoutSlots(items) {
+    const children = Array.isArray(items) ? items : React.Children.toArray(items);
     const layoutSlots = {};
-    for (const child of React.Children.toArray(children)) {
+    for (const child of children) {
         const slot = child?.props?.slot;
         if (layoutSlots[slot]) {
             layoutSlots[slot].push(child);
