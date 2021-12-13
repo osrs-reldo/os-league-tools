@@ -1,6 +1,9 @@
+/* eslint-disable react/no-array-index-key */
+/* linter is grumpy and won't pick this up from eslintrc right now */
+
 import React, { useState, useRef } from 'react';
 import _ from 'lodash';
-import Dropdown, { WIDTH_PRESETS } from './Dropdown';
+import Dropdown from './Dropdown';
 import useClickListener from '../../hooks/useClickListener';
 import { getLayoutSlots } from './layout';
 
@@ -93,10 +96,10 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                             </span>
                         </div>
                         <div className='right-1 mt-1 absolute'>
-                            <Dropdown show={showMenuExpanded} innerRef={menuRef} widthClass={WIDTH_PRESETS.SM}>
-                                {getCollapseGroups(overflowNavItems).map(group => {
+                            <Dropdown show={showMenuExpanded} innerRef={menuRef} width='sm'>
+                                {getCollapseGroups(overflowNavItems).map((group, i) => {
                                     return (
-                                        <>
+                                        <React.Fragment key={i}>
                                             <Dropdown.Separator />
                                             {group.map(item => {
                                                 return (
@@ -105,7 +108,7 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                                                     </Dropdown.Link>
                                                 );
                                             })}
-                                        </>
+                                        </React.Fragment>
                                     );
                                 })}
                             </Dropdown>
@@ -125,19 +128,20 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                 </div>
             </div>
             <div className={`sm:hidden ${showMenuCollapsed ? 'flex flex-col gap-1' : 'hidden'}`}>
-                {collapseGroups.map(group => {
+                {collapseGroups.map((group, i) => {
                     return (
-                        <>
+                        <React.Fragment key={i}>
                             <div className='h-px w-full bg-subdued' />
                             {group.map(navItem => (
                                 <CollapsedMenuLink
+                                    key={navItem.id}
                                     text={navItem.text}
                                     href={navItem.href}
                                     iconText={navItem.iconText}
                                     iconSrc={navItem.iconSrc}
                                 />
                             ))}
-                        </>
+                        </React.Fragment>
                     );
                 })}
             </div>

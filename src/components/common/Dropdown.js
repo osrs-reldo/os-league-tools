@@ -1,17 +1,13 @@
 import React from 'react';
+import { DROPDOWN } from './theme';
 
-export const WIDTH_PRESETS = {
-    SM: 'w-32',
-    MD: 'w-60',
-    LG: 'w-96',
-    CONTENT: 'w-max',
-};
-
-function Dropdown({ children, innerRef, show, widthClass = WIDTH_PRESETS.CONTENT }) {
+function Dropdown({ children, innerRef, show, width = DROPDOWN.content }) {
     return (
         <ul
             role='menu'
-            className={`${widthClass} bg-primary border-x border-b border-primary inline-block ${!show && 'hidden'}`}
+            className={`${DROPDOWN[width] || width} bg-primary border-x border-b border-primary inline-block ${
+                !show && 'hidden'
+            }`}
             ref={innerRef}
         >
             {children}
@@ -20,7 +16,7 @@ function Dropdown({ children, innerRef, show, widthClass = WIDTH_PRESETS.CONTENT
 }
 
 function TextItem({ children, isHeading = false }) {
-    return <li className={`px-3 py-2 block${isHeading && ' font-semibold'}`}>{children}</li>;
+    return <li className={`px-3 py-2 block ${isHeading && 'font-semibold'}`}>{children}</li>;
 }
 
 function LinkItem({ children, href, icon = null }) {

@@ -170,101 +170,13 @@
     .navbar-icon-link {
         @apply h-full bg-hover px-2 py-2;
     }
-    /* CARD */
-    .card-img-base {
-        @apply md:flex-shrink-0 w-full object-cover;
-    }
-    .card-img-small {
-        @apply card-img-base;
-        @apply h-32 md:w-32;
-    }
-    .card-img-medium {
-        @apply card-img-base;
-        @apply h-40 md:w-40;
-    }
-    .card-img-large {
-        @apply card-img-base;
-        @apply h-48 md:w-48;
-    }
-    .card-border-none {
-        @apply border-none;
-    }
-    .card-border-top {
-        @apply border-t-2 border-black;
-    }
-    .card-border-bottom {
-        @apply border-b-2 border-black;
-    }
-    .card-border-left {
-        @apply border-l-2 border-black;
-    }
-    .card-border-right {
-        @apply border-r-2 border-black;
-    }
-    .card-border-full {
-        @apply border-2 border-black;
-    }
-    .card-border-accent-top {
-        @apply border-t-2 border-tl-lime;
-    }
-    .card-border-accent-bottom {
-        @apply border-b-2 border-tl-lime;
-    }
-    .card-border-accent-left {
-        @apply border-l-2 border-tl-lime;
-    }
-    .card-border-accent-right {
-        @apply border-r-2 border-tl-lime;
-    }
-    .card-border-accent-full {
-        @apply border-2 border-tl-lime;
-    }
-    .card-padding-none {
-        @apply p-0;
-    }
-    .card-padding-xs {
-        @apply p-1;
-    }
-    .card-padding-sm {
-        @apply p-2;
-    }
-    .card-padding-md {
-        @apply p-4;
-    }
-    .card-padding-lg {
-        @apply p-6;
-    }
-    .card-padding-xl {
-        @apply p-8;
-    }
-    .card-halign-none {
-    }
-    .card-halign-center {
-        @apply mx-auto;
-    }
-    .card-halign-left {
-        @apply mr-auto;
-    }
-    .card-halign-right {
-        @apply ml-auto;
-    }
-    .card-valign-none {
-    }
-    .card-valign-center {
-        @apply my-auto;
-    }
-    .card-valign-top {
-        @apply mb-auto;
-    }
-    .card-valign-bottom {
-        @apply mt-auto;
-    }
     /* MISC */
     .shadow-top {
-        box-shadow: 3px -3px 3px -3px var(--tw-shadow-color);
+        box-shadow: 3px -3px 3px -3px var(--tw-shadow-color), -3px -3px 3px -3px var(--tw-shadow-color);
     }
     .shadow-top-under {
-        box-shadow: inset 0px -7px 5px -5px var(--tw-shadow-color), 3px -3px 3px -3px var(--tw-shadow-color);
+        box-shadow: inset 0px -7px 5px -5px var(--tw-shadow-color), 3px -3px 3px -3px var(--tw-shadow-color),
+            -3px -3px 3px -3px var(--tw-shadow-color);
     }
 }
 

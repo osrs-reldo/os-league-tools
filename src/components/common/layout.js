@@ -14,11 +14,11 @@ export function filterBySlot(children, slot, filterOptions = {}) {
     return filteredResults;
 }
 
-export function getLayoutSlots(items) {
+export function getLayoutSlots(items, slotPropName = 'slot') {
     const children = Array.isArray(items) ? items : React.Children.toArray(items);
     const layoutSlots = {};
     for (const child of children) {
-        const slot = child?.props?.slot;
+        const slot = child?.props?.[slotPropName];
         if (layoutSlots[slot]) {
             layoutSlots[slot].push(child);
         } else {
@@ -33,8 +33,8 @@ export function LayoutSlot(slot) {
     return withSlot(Component, slot);
 }
 
-export function withSlot(Component, slot) {
+export function withSlot(Component, slotName) {
     // eslint-disable-next-line no-param-reassign
-    Component.defaultProps = { slot };
+    Component.defaultProps = { slot: slotName };
     return Component;
 }

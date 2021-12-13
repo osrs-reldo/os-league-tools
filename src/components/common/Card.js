@@ -1,40 +1,38 @@
 import React from 'react';
 import { getLayoutSlots, withSlot, LayoutSlot } from './layout';
+import { getCardStyle } from './theme';
 
-/**
- * @property {children} [Component] Card content.
- * @property {image} String Cover image src. Optional.
- * @property {imageSize} String Cover image size. ['small', 'medium', 'large']
- * @property {corners} String Corner rounding radius. Leave empty/null for default rounding. ['none', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', 'full']
- * @property {borders} String Border settings. Black by default, or prefix with 'accent-' to use accent color.  ['none', 'top', 'bottom, 'left', 'right', 'full']
- * @property {padding} String Amount of padding around card contents. ['none', 'xs', 'sm', 'md', 'lg', 'xl']
- * @property {halign} String Card content horizontal alignment. ['none', 'left', 'right', 'center']
- * @property {valign} String Card content vertical alignment. ['none', 'top', 'bottom', 'center']
- * @property {extraClassNames} String Optional additional class names to apply to the entire card.
- */
 function Card({
     children,
     image = null,
-    imageSize = 'medium',
-    corners = null,
+    imageSize = 'md',
+    corners = 'default',
     borders = 'none',
     padding = 'md',
     halign = 'none',
     valign = 'none',
-    shadow = null,
-    extraClassNames = '',
+    shadow = 'default',
+    onClick = () => {},
+    className = '',
 }) {
     const { header, body, footer } = getLayoutSlots(children);
 
     return (
         <div
-            className={`bg-primary ${corners ? `rounded-${corners}` : 'rounded'} card-border-${borders} ${
-                shadow ? `shadow-${shadow}` : 'shadow'
-            } shadow-primary overflow-hidden ${extraClassNames}`}
+            className={`bg-primary ${getCardStyle('corners', corners)} ${getCardStyle(
+                'borders',
+                borders
+            )} ${getCardStyle('shadow', shadow)} shadow-primary overflow-hidden ${className}`}
+            onClick={onClick}
         >
             <div className='flex md:flex-row flex-col h-full'>
-                {image && <Image src={image} style={imageSize} />}
-                <div className={`card-padding-${padding} card-halign-${halign} card-valign-${valign}`}>
+                {image && <Image src={image} style={getCardStyle('imageSize', imageSize)} />}
+                <div
+                    className={`${getCardStyle('padding', padding)} ${getCardStyle('halign', halign)} ${getCardStyle(
+                        'valign',
+                        valign
+                    )}`}
+                >
                     {header && <div>{header}</div>}
                     {body && <div className={header ? 'mt-2' : ''}>{body}</div>}
                     {footer && <div className='mt-auto'>{footer}</div>}
@@ -44,8 +42,8 @@ function Card({
     );
 }
 
-function Image({ src, size = 'medium' }) {
-    return <img className={`card-img-${size}`} src={src} alt='' />;
+function Image({ src, style }) {
+    return <img className={style} src={src} alt='' />;
 }
 
 function Header({ children, className = 'heading-block-md' }) {
