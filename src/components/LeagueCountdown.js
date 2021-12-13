@@ -49,7 +49,7 @@ export default function LeagueCountdown() {
             padding='sm'
             valign='center'
             halign='center'
-            extraClassNames='text-center h-24 w-96 md:mx-2 mx-auto'
+            extraClassNames='m-2 text-center h-24 w-96 md:mx-2 mx-auto'
         >
             <Card.Header className='heading-accent-md'>{text}</Card.Header>
             {(launchCountdown || endCountdown) && (

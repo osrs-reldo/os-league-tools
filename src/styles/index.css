@@ -23,7 +23,7 @@
         @apply text-black dark:text-zinc-100;
     }
     .text-primary-alt {
-        @apply text-gray-900 dark:text-zinc-100;
+        @apply text-gray-900 dark:text-zinc-200;
     }
     .text-secondary {
         @apply text-gray-500 dark:text-zinc-200;
@@ -49,7 +49,7 @@
     }
     /* TEXT STYLES */
     .heading-block-md {
-        @apply block mt-1 text-lg leading-tight font-medium text-primary;
+        @apply block mt-1 text-lg leading-tight font-medium;
     }
     .heading-accent-md {
         @apply uppercase tracking-wide text-sm text-accent font-semibold;
@@ -96,20 +96,23 @@
 @layer components {
     /* LAYOUT */
     .page-wrapper {
-        @apply w-95p mx-auto;
+        @apply mx-auto;
         @apply text-primary;
     }
     .sidebar-wrapper {
-        @apply container lg:max-w-sm md:max-w-xs;
+        @apply w-full lg:max-w-sm md:max-w-xs;
     }
     .content-wrapper {
-        @apply container;
+        @apply 2xl:container w-full;
     }
     .w-90p {
         width: 90%;
     }
     .w-95p {
         width: 95%;
+    }
+    .w-99p {
+        width: 99%;
     }
     .flex-basis-10 {
         flex-basis: 10%;
@@ -255,6 +258,13 @@
     }
     .card-valign-bottom {
         @apply mt-auto;
+    }
+    /* MISC */
+    .shadow-top {
+        box-shadow: 3px -3px 3px -3px var(--tw-shadow-color);
+    }
+    .shadow-top-under {
+        box-shadow: inset 0px -7px 5px -5px var(--tw-shadow-color), 3px -3px 3px -3px var(--tw-shadow-color);
     }
 }
 

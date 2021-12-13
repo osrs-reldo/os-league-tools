@@ -11,7 +11,7 @@ function Dropdown({ children, innerRef, show, widthClass = WIDTH_PRESETS.CONTENT
     return (
         <ul
             role='menu'
-            className={`${widthClass} bg-primary border border-primary inline-block ${!show && 'hidden'}`}
+            className={`${widthClass} bg-primary border-x border-b border-primary inline-block ${!show && 'hidden'}`}
             ref={innerRef}
         >
             {children}

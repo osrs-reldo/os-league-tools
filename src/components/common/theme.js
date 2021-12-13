@@ -16,4 +16,7 @@ export default [
     'card-valign-center',
     'rounded-sm',
     'rounded-xl',
+    'rounded-t-md',
+    'shadow-top',
+    'shadow-top-under',
 ];

@@ -68,7 +68,7 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                 <div className='pl-4 sm:flex hidden'>
                     {primaryNavItems &&
                         primaryNavItems.map(navItem => (
-                            <PrimaryLink key={navItem.id} text={navItem.text} href={navItem.text} />
+                            <PrimaryLink key={navItem.id} text={navItem.text} href={navItem.href} />
                         ))}
                 </div>
                 {/* Spacer */}

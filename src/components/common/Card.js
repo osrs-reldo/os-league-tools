@@ -16,20 +16,21 @@ function Card({
     children,
     image = null,
     imageSize = 'medium',
-    corners = 'xl',
+    corners = null,
     borders = 'none',
     padding = 'md',
     halign = 'none',
     valign = 'none',
+    shadow = null,
     extraClassNames = '',
 }) {
     const { header, body, footer } = getLayoutSlots(children);
 
     return (
         <div
-            className={`bg-primary ${
-                corners ? `rounded-${corners}` : 'rounded'
-            } card-border-${borders} shadow shadow-primary overflow-hidden m-2 ${extraClassNames}`}
+            className={`bg-primary ${corners ? `rounded-${corners}` : 'rounded'} card-border-${borders} ${
+                shadow ? `shadow-${shadow}` : 'shadow'
+            } shadow-primary overflow-hidden ${extraClassNames}`}
         >
             <div className='flex md:flex-row flex-col h-full'>
                 {image && <Image src={image} style={imageSize} />}

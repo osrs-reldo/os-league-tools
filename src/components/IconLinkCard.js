@@ -16,7 +16,7 @@ export default function IconLinkCard({ title, href = '/', srcOverride = null, ic
             padding='sm'
             valign='center'
             halign='center'
-            extraClassNames='h-24 w-24 md:inline hidden'
+            extraClassNames='m-2 h-24 w-24 md:inline hidden'
         >
             <Card.Body>
                 <a className='flex flex-col' href={href}>
