@@ -52,7 +52,7 @@ export const CARD = {
 };
 
 export function getCardStyle(type, id) {
-    if (CARD[type] && CARD[type][id]) {
+    if (CARD[type] && CARD[type][id] !== undefined) {
         return CARD[type][id];
     }
     return id || '';

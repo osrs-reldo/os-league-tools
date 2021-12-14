@@ -19,6 +19,9 @@
     .bg-hover {
         @apply hover:bg-gray-200 dark:hover:bg-zinc-800;
     }
+    .bg-inverted {
+        @apply bg-gray-200 dark:bg-zinc-100;
+    }
     .text-primary {
         @apply text-black dark:text-zinc-100;
     }
@@ -34,6 +37,9 @@
     .text-accent {
         @apply text-tl-sage dark:text-tl-lime;
     }
+    .text-error {
+        @apply text-red-600 dark:text-red-500;
+    }
     .dark-mode-img-compat {
         /* Compatibility class for applying primary text color to svg images */
         filter: invert(100%) sepia(15%) saturate(2475%) hue-rotate(180deg) brightness(102%) contrast(81%);
@@ -46,13 +52,6 @@
     }
     .shadow-primary {
         @apply shadow-black/10 dark:shadow-black/70;
-    }
-    /* TEXT STYLES */
-    .heading-block-md {
-        @apply block mt-1 text-lg leading-tight font-medium;
-    }
-    .heading-accent-md {
-        @apply uppercase tracking-wide text-sm text-accent font-semibold;
     }
     /* TYPOGRAPHY */
     .small-caps {
@@ -169,6 +168,25 @@
     }
     .navbar-icon-link {
         @apply h-full bg-hover px-2 py-2;
+    }
+    /* TEXT STYLES */
+    .heading-block-md {
+        @apply block mt-1 text-lg leading-tight font-medium;
+    }
+    .heading-accent-md {
+        @apply uppercase tracking-wide text-sm text-accent font-semibold;
+    }
+    /* FORMS */
+    .input-primary {
+        @apply rounded-md bg-inverted border-transparent text-black focus:ring-2 focus:ring-tl-lime;
+    }
+    .button-filled {
+        @apply p-2 rounded active:ring-2 active:ring-tl-lime;
+        @apply bg-tl-sage text-gray-50 dark:bg-tl-lime dark:text-black;
+    }
+    .button-outline {
+        @apply p-2 rounded active:ring-2 active:ring-tl-lime;
+        @apply border border-tl-sage text-tl-sage dark:border-tl-lime dark:text-tl-lime;
     }
     /* MISC */
     .shadow-top {

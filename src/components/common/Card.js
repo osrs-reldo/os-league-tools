@@ -28,13 +28,13 @@ function Card({
             <div className='flex md:flex-row flex-col h-full'>
                 {image && <Image src={image} style={getCardStyle('imageSize', imageSize)} />}
                 <div
-                    className={`${getCardStyle('padding', padding)} ${getCardStyle('halign', halign)} ${getCardStyle(
-                        'valign',
-                        valign
-                    )}`}
+                    className={`w-full ${getCardStyle('padding', padding)} ${getCardStyle(
+                        'halign',
+                        halign
+                    )} ${getCardStyle('valign', valign)}`}
                 >
-                    {header && <div>{header}</div>}
-                    {body && <div className={header ? 'mt-2' : ''}>{body}</div>}
+                    {header}
+                    {body && (header ? <div className='mt-2'>{body}</div> : body)}
                     {footer && <div className='mt-auto'>{footer}</div>}
                 </div>
             </div>

@@ -45,7 +45,7 @@ function TabbedCard({ children, defaultActiveTab = null }) {
 
 function Tab({ title, onClick, active = false }) {
     const hoverStyle = active ? '' : 'bg-hover cursor-pointer';
-    const titleStyle = active ? 'text-accent' : 'text-primary';
+    const titleStyle = active ? 'text-accent font-semibold' : 'text-primary';
     const shadowStyle = active ? 'shadow-top' : 'shadow-top-under';
 
     return (
@@ -58,12 +58,15 @@ function Tab({ title, onClick, active = false }) {
 }
 
 function Content({ children, active = false }) {
-    return <div className={active ? '' : 'hidden'}>{children}</div>;
+    if (active) {
+        return children;
+    }
+    return <div className='hidden'>{children}</div>;
 }
 
 function TabWrapper({ id, title, children }) {
     return (
-        <div id={id} title={title}>
+        <div id={id} title={title} className='w-full h-full'>
             {children}
         </div>
     );
