@@ -11,9 +11,9 @@ import {
     isTaskOnTodoList,
 } from '../../util/legacy/task-util';
 import { LOCALSTORAGE_KEYS } from '../../util/legacy/browser-util';
-import HiscoreLookup from './HiscoreLookup';
+import HiscoreLookup from '../HiscoreLookup';
 import taskData from '../../resources/legacy/taskData.json';
-import useLocalStorage from '../../hooks/legacy/useLocalStorage';
+import useLocalStorage from '../../hooks/useLocalStorage';
 
 export default function RandomTaskGenerator({
     taskStatus,

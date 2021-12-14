@@ -1,4 +1,4 @@
-import { getFromLocalStorage } from './browser-util';
+import { getFromLocalStorage } from '../../client/localstorage-client';
 
 export const SETTINGS_KEYS = {
     CONTENT_WIDTH: 'contentWidth',

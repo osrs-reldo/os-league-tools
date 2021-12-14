@@ -1086,9 +1086,6 @@ select {
 .mt-2 {
   margin-top: 0.5rem;
 }
-.mt-3 {
-  margin-top: 0.75rem;
-}
 .mt-auto {
   margin-top: auto;
 }
@@ -1115,6 +1112,9 @@ select {
 }
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+.mt-3 {
+  margin-top: 0.75rem;
 }
 .mb-3 {
   margin-bottom: 0.75rem;
@@ -1268,11 +1268,11 @@ select {
 .justify-around {
   justify-content: space-around;
 }
-.gap-1 {
-  gap: 0.25rem;
-}
 .gap-2 {
   gap: 0.5rem;
+}
+.gap-1 {
+  gap: 0.25rem;
 }
 .gap-x-1 {
   column-gap: 0.25rem;
@@ -1433,13 +1433,13 @@ select {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .font-bold {
   font-weight: 700;

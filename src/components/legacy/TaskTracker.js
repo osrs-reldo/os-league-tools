@@ -18,12 +18,12 @@ import { isRelicUnlocked } from '../../util/legacy/relic-util';
 import TaskTable from './TaskTable';
 import RandomTaskGenerator from './RandomTaskGenerator';
 import { INITIAL_REGIONS_STATE } from '../../util/legacy/region-util';
-import useLocalStorage from '../../hooks/legacy/useLocalStorage';
+import useLocalStorage from '../../hooks/useLocalStorage';
 import { LOCALSTORAGE_KEYS, SESSIONSTORAGE_KEYS } from '../../util/legacy/browser-util';
 import { CardDeck } from '../../../node_modules/react-bootstrap/esm/index';
 import useScreenSize from '../../hooks/legacy/useScreenSize';
 import Divider from './Divider';
-import HiscoreLookup from './HiscoreLookup';
+import HiscoreLookup from '../HiscoreLookup';
 
 export default function TaskTracker({ taskStatus, updateTaskStatus, unlockedRegions = INITIAL_REGIONS_STATE }) {
     const [hideLockedAreas, setHideLockedAreas] = useLocalStorage(LOCALSTORAGE_KEYS.FILTER_HIDE_LOCKED_AREAS, true);

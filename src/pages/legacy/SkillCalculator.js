@@ -12,8 +12,9 @@ import LevelExpInput from '../../components/legacy/LevelExpInput';
 import useLevel from '../../hooks/legacy/useLevel';
 import useMultiplier from '../../hooks/legacy/useMultiplier';
 import { isRelicUnlocked } from '../../util/legacy/relic-util';
-import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../../util/legacy/browser-util';
-import HiscoreLookup from '../../components/legacy/HiscoreLookup';
+import { LOCALSTORAGE_KEYS } from '../../util/legacy/browser-util';
+import { getFromLocalStorage } from '../../client/localstorage-client';
+import HiscoreLookup from '../../components/HiscoreLookup';
 import { getLevelForExp } from '../../util/legacy/exp-table';
 import { getContentWidthClass } from '../../util/legacy/settings-util';
 

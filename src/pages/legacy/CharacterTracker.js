@@ -3,7 +3,7 @@ import { Tabs, Tab } from 'react-bootstrap';
 import RegionsTracker from '../../components/legacy/RegionsTracker';
 import RelicsTracker from '../../components/legacy/RelicsTracker';
 import TaskTracker from '../../components/legacy/TaskTracker';
-import useLocalStorage from '../../hooks/legacy/useLocalStorage';
+import useLocalStorage from '../../hooks/useLocalStorage';
 import useQueryString from '../../hooks/legacy/useQueryString';
 import { LOCALSTORAGE_KEYS } from '../../util/legacy/browser-util';
 import { INITIAL_REGIONS_STATE } from '../../util/legacy/region-util';

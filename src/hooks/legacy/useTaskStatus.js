@@ -2,7 +2,7 @@ import update from 'immutability-helper';
 import _ from 'lodash';
 import { LOCALSTORAGE_KEYS } from '../../util/legacy/browser-util';
 import { REGIONS } from '../../util/legacy/region-util';
-import useLocalStorage from './useLocalStorage';
+import useLocalStorage from '../useLocalStorage';
 
 const CURRENT_VERSION = 3;
 

@@ -14,7 +14,7 @@ import {
     getPointsToNextRelic,
     isPassiveRelic,
 } from '../../util/legacy/relic-util';
-import useLocalStorage from '../../hooks/legacy/useLocalStorage';
+import useLocalStorage from '../../hooks/useLocalStorage';
 import { LOCALSTORAGE_KEYS } from '../../util/legacy/browser-util';
 
 export default function RelicsTracker({ totalPoints }) {

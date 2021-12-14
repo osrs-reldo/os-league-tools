@@ -21,7 +21,7 @@ import LevelExpInput from '../../components/legacy/LevelExpInput';
 import useLevel from '../../hooks/legacy/useLevel';
 import useMultiplier from '../../hooks/legacy/useMultiplier';
 import { isRelicUnlocked } from '../../util/legacy/relic-util';
-import HiscoreLookup from '../../components/legacy/HiscoreLookup';
+import HiscoreLookup from '../../components/HiscoreLookup';
 import { getLevelForExp } from '../../util/legacy/exp-table';
 import { getContentWidthClass } from '../../util/legacy/settings-util';
 import 'react-select-search/style.css';

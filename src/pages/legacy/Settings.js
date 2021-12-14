@@ -2,14 +2,14 @@ import React from 'react';
 import { Card, Row, Col, Nav, Form, Tab, Button } from 'react-bootstrap';
 import _ from 'lodash';
 import Divider from '../../components/legacy/Divider';
-import useLocalStorage from '../../hooks/legacy/useLocalStorage';
+import useLocalStorage from '../../hooks/useLocalStorage';
 import {
     SETTINGS_KEYS,
     getContentWidthClass,
     CONTENT_WIDTH_DEFAULT,
     CONTENT_WIDTH_VALUES,
 } from '../../util/legacy/settings-util';
-import { resetLocalStorageData } from '../../util/legacy/browser-util';
+import { resetLocalStorageData } from '../../client/localstorage-client';
 
 export default function Settings() {
     const [contentWidth, setContentWidth] = useLocalStorage(SETTINGS_KEYS.CONTENT_WIDTH, CONTENT_WIDTH_DEFAULT);

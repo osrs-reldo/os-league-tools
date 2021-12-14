@@ -1,6 +1,7 @@
 import update from 'immutability-helper';
 import relicData from '../../resources/legacy/relicData.json';
-import { LOCALSTORAGE_KEYS, getFromLocalStorage } from './browser-util';
+import { LOCALSTORAGE_KEYS } from './browser-util';
+import { getFromLocalStorage } from '../../client/localstorage-client';
 
 export const MAX_POINTS = 15000;
 export const RELIC_UNLOCKS = [0, 500, 2000, 4000, 7500, 15000];
