@@ -181,7 +181,7 @@ function IconLink({ href, iconText, iconSrc }) {
     if (iconText) {
         return (
             <div className='bg-hover px-2 py-1'>
-                <span className='text-primary-alt icon-xl leading-tight md:align-top align-middle'>iconText</span>
+                <span className='text-primary-alt icon-xl leading-tight md:align-top align-middle'>{iconText}</span>
             </div>
         );
     }

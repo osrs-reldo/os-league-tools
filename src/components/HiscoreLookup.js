@@ -49,15 +49,15 @@ export default function HiscoreLookup({ handleResultCallback = () => {} }) {
     };
 
     return (
-        <div>
+        <div className='flex flex-row'>
             <input
                 type='text'
-                className='input-primary'
+                className='input-primary grow'
                 placeholder='Username'
                 value={username}
                 onChange={event => setUsername(event.target.value)}
             />
-            <button className='ml-2 button-filled' type='button' onClick={() => doHiscoresLookup()}>
+            <button className='ml-2 button-md button-filled' type='button' onClick={() => doHiscoresLookup()}>
                 {isLoading && (
                     <span className='mr-1'>
                         <Spinner />

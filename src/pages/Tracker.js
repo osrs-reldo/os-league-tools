@@ -10,7 +10,7 @@ export default function Tracker() {
             <TabbedCard>
                 <TabbedCard.Tab id='chr' title='Character'>
                     <div className='flex md:flex-row flex-col justify-around w-full h-full items-stretch gap-1'>
-                        <div className='basis-1/4 flex flex-col justify-around items-center'>
+                        <div className='basis-1/4 flex flex-col justify-around items-center gap-3 md:gap-0'>
                             <HiscoreLookup />
                             <SkillsPanel />
                         </div>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Sharp');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 @tailwind base;
@@ -50,6 +51,9 @@
     .border-primary {
         @apply border-black dark:border-zinc-500;
     }
+    .border-subdued {
+        @apply border-gray-300 dark:border-zinc-500;
+    }
     .shadow-primary {
         @apply shadow-black/10 dark:shadow-black/70;
     }
@@ -89,6 +93,9 @@
     .icon-4xl {
         @apply material-icons-sharp;
         @apply text-4xl;
+    }
+    .icon-outline {
+        @apply material-icons-outlined;
     }
 }
 
@@ -180,12 +187,15 @@
     .input-primary {
         @apply rounded-md bg-inverted border-transparent text-black focus:ring-2 focus:ring-tl-lime;
     }
+    .button-md {
+        @apply p-2;
+    }
     .button-filled {
-        @apply p-2 rounded active:ring-2 active:ring-tl-lime;
+        @apply rounded active:ring-2 active:ring-tl-lime;
         @apply bg-tl-sage text-gray-50 dark:bg-tl-lime dark:text-black;
     }
     .button-outline {
-        @apply p-2 rounded active:ring-2 active:ring-tl-lime;
+        @apply rounded active:ring-2 active:ring-tl-lime;
         @apply border border-tl-sage text-tl-sage dark:border-tl-lime dark:text-tl-lime;
     }
     /* MISC */

@@ -1,100 +1,86 @@
-import React from 'react';
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+import React, { useState } from 'react';
+
+const SKILLS = [
+    'Attack',
+    'Hitpoints',
+    'Mining',
+    'Strength',
+    'Agility',
+    'Smithing',
+    'Defence',
+    'Herblore',
+    'Fishing',
+    'Ranged',
+    'Thieving',
+    'Cooking',
+    'Prayer',
+    'Crafting',
+    'Firemaking',
+    'Magic',
+    'Fletching',
+    'Woodcutting',
+    'Runecraft',
+    'Slayer',
+    'Farming',
+    'Construction',
+    'Hunter',
+];
+const UNLOCKED_SKILLS = ['Runecraft', 'Agility', 'Firemaking'];
 
 export default function SkillsPanel() {
+    const [selectedSkill, setSelectedSkill] = useState(null);
+
+    const SkillTile = ({ skill }) => {
+        return (
+            <td
+                className={`p-1 border-r border-subdued last:border-none bg-hover cursor-pointer ${
+                    selectedSkill === skill && 'bg-secondary'
+                }`}
+                onClick={() => setSelectedSkill(skill)}
+            >
+                <div className='flex items-center'>
+                    <img src={`/img/${skill.toLowerCase()}.gif`} alt={skill} className='inline mx-1' />
+                    {UNLOCKED_SKILLS.includes(skill) ? (
+                        <span className='text-center grow mr-1'>99 / 99</span>
+                    ) : (
+                        <span className='text-error icon-outline text-lg text-center grow'>lock</span>
+                    )}
+                </div>
+            </td>
+        );
+    };
+
     return (
-        <div className='grid grid-cols-3 gap-2'>
-            <span className='text-lg'>
-                <img src='/img/attack.gif' alt='Attack' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/hitpoints.gif' alt='Hitpoints' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/mining.gif' alt='Mining' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/strength.gif' alt='Strength' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/agility.gif' alt='Agility' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/smithing.gif' alt='Smithing' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/defence.gif' alt='Defence' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/herblore.gif' alt='Herblore' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/fishing.gif' alt='Fishing' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/ranged.gif' alt='Ranged' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/thieving.gif' alt='Thieving' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/cooking.gif' alt='Cooking' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/prayer.gif' alt='Prayer' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/crafting.gif' alt='Crafting' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/firemaking.gif' alt='Firemaking' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/magic.gif' alt='Magic' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/fletching.gif' alt='Fletching' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/woodcutting.gif' alt='Woodcutting' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/runecraft.gif' alt='Runecraft' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/slayer.gif' alt='Slayer' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/farming.gif' alt='Farming' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/construction.gif' alt='Construction' className='inline mr-1' />
-                99 / 99
-            </span>
-            <span className='text-lg'>
-                <img src='/img/hunter.gif' alt='Hunter' className='inline mr-1' />
-                99 / 99
-            </span>
+        <div>
+            <table className='table-auto'>
+                <tbody>
+                    {Array.from({ length: 8 }, (_, i) => {
+                        return (
+                            <tr key={i} className='border-b border-subdued last:border-none'>
+                                <SkillTile skill={SKILLS[i * 3]} />
+                                <SkillTile skill={SKILLS[i * 3 + 1]} />
+                                {i * 3 + 2 < SKILLS.length ? <SkillTile skill={SKILLS[i * 3 + 2]} /> : <td />}
+                            </tr>
+                        );
+                    })}
+                </tbody>
+            </table>
+            <div className='w-full px-1 mt-2 align-top'>
+                {selectedSkill ? (
+                    <>
+                        <span className='heading-accent-md'>{selectedSkill}</span>
+                        <p className='italic text-sm'>Cost: 500 league points</p>
+                        <button className='button-outline px-1 my-1 w-full' type='button'>
+                            {UNLOCKED_SKILLS.includes(selectedSkill)
+                                ? `Re-lock ${selectedSkill}`
+                                : `Unlock ${selectedSkill}`}
+                        </button>
+                    </>
+                ) : (
+                    <span className='italic text-sm'>Click on a skill to lock/unlock it.</span>
+                )}
+            </div>
         </div>
     );
 }
