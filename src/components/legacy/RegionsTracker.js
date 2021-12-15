@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, Container, Row, Col, Button } from 'react-bootstrap';
 import _ from 'lodash';
-import ProgressBar from './UnlockProgressBar';
+import ProgressBar from '../common/ProgressBar';
 import {
     MAX_TASKS,
     REGIONS,

@@ -20,7 +20,7 @@ export default function IconLinkCard({ title, href = '/', srcOverride = null, ic
             <Card.Body>
                 <a className='flex flex-col' href={href}>
                     {icon}
-                    <p className='font-sans-alt'>{title}</p>
+                    <p className='font-sans-alt text-center'>{title}</p>
                 </a>
             </Card.Body>
         </Card>

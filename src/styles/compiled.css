@@ -636,7 +636,7 @@ select {
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .dark .bg-primary {
@@ -1019,6 +1019,21 @@ select {
   font-weight: 500;
   line-height: 1.25;
 }
+.heading-primary-md {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.dark .heading-primary-md {
+  --tw-text-opacity: 1;
+  color: rgb(244 244 245 / var(--tw-text-opacity));
+}
+.heading-primary-md {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
 .heading-accent-md {
   --tw-text-opacity: 1;
   color: rgb(100 144 68 / var(--tw-text-opacity));
@@ -1121,24 +1136,35 @@ select {
 .right-1 {
   right: 0.25rem;
 }
+.order-3 {
+  order: 3;
+}
+.order-2 {
+  order: 2;
+}
+.order-1 {
+  order: 1;
+}
+.order-4 {
+  order: 4;
+}
+.order-5 {
+  order: 5;
+}
 .float-left {
   float: left;
 }
 .m-2 {
   margin: 0.5rem;
 }
-.m-3 {
-  margin: 0.75rem;
-}
 .m-1 {
   margin: 0.25rem;
 }
+.m-3 {
+  margin: 0.75rem;
+}
 .m-4 {
   margin: 1rem;
-}
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 .mx-1 {
   margin-left: 0.25rem;
@@ -1148,24 +1174,31 @@ select {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
 }
-.ml-2 {
-  margin-left: 0.5rem;
-}
 .mr-1 {
   margin-right: 0.25rem;
-}
-.mb-1 {
-  margin-bottom: 0.25rem;
 }
 .mt-2 {
   margin-top: 0.5rem;
 }
+.ml-2 {
+  margin-left: 0.5rem;
+}
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
 .ml-1 {
   margin-left: 0.25rem;
+}
+.mt-3 {
+  margin-top: 0.75rem;
 }
 .mt-auto {
   margin-top: auto;
@@ -1194,20 +1227,11 @@ select {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
-.mt-3 {
-  margin-top: 0.75rem;
-}
 .mb-3 {
   margin-bottom: 0.75rem;
 }
 .mr-2 {
   margin-right: 0.5rem;
-}
-.mr-5 {
-  margin-right: 1.25rem;
-}
-.ml-5 {
-  margin-left: 1.25rem;
 }
 .mb-4 {
   margin-bottom: 1rem;
@@ -1245,11 +1269,14 @@ select {
 .h-24 {
   height: 6rem;
 }
-.h-full {
-  height: 100%;
-}
 .h-px {
   height: 1px;
+}
+.h-6 {
+  height: 1.5rem;
+}
+.h-full {
+  height: 100%;
 }
 .h-auto {
   height: auto;
@@ -1272,14 +1299,17 @@ select {
 .min-h-screen {
   min-height: 100vh;
 }
+.w-full {
+  width: 100%;
+}
 .w-24 {
   width: 6rem;
 }
 .w-96 {
   width: 24rem;
 }
-.w-full {
-  width: 100%;
+.w-11\/12 {
+  width: 91.666667%;
 }
 .w-5 {
   width: 1.25rem;
@@ -1293,17 +1323,20 @@ select {
 .w-max {
   width: max-content;
 }
+.shrink {
+  flex-shrink: 1;
+}
 .flex-grow {
   flex-grow: 1;
 }
 .grow {
   flex-grow: 1;
 }
-.basis-1\/4 {
-  flex-basis: 25%;
+.basis-2\/5 {
+  flex-basis: 40%;
 }
-.basis-3\/4 {
-  flex-basis: 75%;
+.basis-full {
+  flex-basis: 100%;
 }
 .table-auto {
   table-layout: auto;
@@ -1349,11 +1382,17 @@ select {
 .justify-around {
   justify-content: space-around;
 }
-.gap-1 {
-  gap: 0.25rem;
+.justify-evenly {
+  justify-content: space-evenly;
 }
 .gap-3 {
   gap: 0.75rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-1 {
+  gap: 0.25rem;
 }
 .gap-x-1 {
   column-gap: 0.25rem;
@@ -1513,6 +1552,10 @@ select {
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1521,9 +1564,9 @@ select {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .text-3xl {
   font-size: 1.875rem;
@@ -1540,6 +1583,9 @@ select {
 }
 .leading-tight {
   line-height: 1.25;
+}
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 .opacity-25 {
   opacity: 0.25;
@@ -1611,10 +1657,33 @@ select {
   .md\:flex-row {
     flex-direction: row;
   }
-  .md\:gap-0 {
-    gap: 0px;
+  .md\:gap-1 {
+    gap: 0.25rem;
   }
   .md\:align-top {
     vertical-align: top;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:order-1 {
+    order: 1;
+  }
+  .lg\:order-3 {
+    order: 3;
+  }
+  .lg\:h-full {
+    height: 100%;
+  }
+  .lg\:w-px {
+    width: 1px;
+  }
+  .lg\:basis-1\/4 {
+    flex-basis: 25%;
+  }
+  .lg\:basis-1\/2 {
+    flex-basis: 50%;
+  }
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 }

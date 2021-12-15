@@ -9,7 +9,7 @@
 @layer base {
     /* THEMING */
     .bg-primary {
-        @apply bg-white dark:bg-zinc-700;
+        @apply bg-gray-100 dark:bg-zinc-700;
     }
     .bg-secondary {
         @apply bg-gray-200 dark:bg-zinc-800;
@@ -179,6 +179,9 @@
     /* TEXT STYLES */
     .heading-block-md {
         @apply block mt-1 text-lg leading-tight font-medium;
+    }
+    .heading-primary-md {
+        @apply uppercase tracking-wide text-sm text-primary font-semibold;
     }
     .heading-accent-md {
         @apply uppercase tracking-wide text-sm text-accent font-semibold;

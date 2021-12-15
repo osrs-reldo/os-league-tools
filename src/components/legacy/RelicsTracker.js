@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, Button } from 'react-bootstrap';
 import DoubleScrollbar from 'react-shadowed-double-scrollbar';
-import ProgressBar from './UnlockProgressBar';
+import ProgressBar from '../common/ProgressBar';
 import RelicInfoTile from './RelicInfoTile';
 import relicData from '../../resources/legacy/relicData.json';
 import {
