@@ -7,6 +7,12 @@
 @tailwind utilities;
 
 @layer base {
+    body {
+        @apply h-full min-h-screen;
+    }
+    .outline {
+        outline: 1px solid #f00 !important;
+    }
     /* THEMING */
     .bg-primary {
         @apply bg-gray-100 dark:bg-zinc-700;

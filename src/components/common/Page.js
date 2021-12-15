@@ -6,7 +6,7 @@ function Page({ children, sidebarPosition = 'left' }) {
     return (
         <div className='bg-secondary w-full h-full min-h-screen'>
             {nav}
-            <div className='mt-5 page-wrapper'>
+            <div className='py-5 page-wrapper'>
                 {banner && <div>{banner}</div>}
                 <div className='flex md:flex-row flex-col justify-center'>
                     {sidebar && sidebarPosition === 'left' && <div className='sidebar-wrapper'>{sidebar}</div>}
