@@ -7,18 +7,15 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply h-full min-h-screen;
-    }
-    .outline {
-        outline: 1px solid #f00 !important;
-    }
     /* THEMING */
     .bg-primary {
         @apply bg-gray-100 dark:bg-zinc-700;
     }
     .bg-secondary {
         @apply bg-gray-200 dark:bg-zinc-800;
+    }
+    .bg-accent {
+        @apply bg-tl-sage dark:bg-tl-lime;
     }
     .bg-subdued {
         @apply bg-gray-300 dark:bg-zinc-500;
@@ -62,6 +59,9 @@
     }
     .shadow-primary {
         @apply shadow-black/10 dark:shadow-black/70;
+    }
+    .shadow-subdued {
+        @apply shadow-black/10 dark:shadow-black/50;
     }
     /* TYPOGRAPHY */
     .small-caps {
@@ -194,7 +194,10 @@
     }
     /* FORMS */
     .input-primary {
-        @apply rounded-md bg-inverted border-transparent text-black focus:ring-2 focus:ring-tl-lime;
+        @apply rounded-md shadow-subdued bg-inverted border-transparent text-black focus:ring-2 focus:ring-tl-lime;
+    }
+    .input-disabled {
+        @apply rounded-md shadow-subdued bg-subdued border-transparent text-secondary-alt;
     }
     .button-md {
         @apply p-2;
@@ -206,6 +209,24 @@
     .button-outline {
         @apply rounded active:ring-2 active:ring-tl-lime;
         @apply border border-tl-sage text-tl-sage dark:border-tl-lime dark:text-tl-lime;
+    }
+    .button-group-base {
+        @apply p-2 first:rounded-l last:rounded-r;
+    }
+    .button-group-active {
+        @apply active:ring-2 active:ring-tl-lime;
+    }
+    .button-group-selected {
+        @apply bg-tl-sage text-gray-50 dark:bg-tl-lime dark:text-black font-semibold;
+    }
+    .button-group-unselected {
+        @apply bg-inverted text-black;
+    }
+    .button-group-disabled {
+        @apply bg-subdued text-secondary-alt;
+    }
+    .checkbox-primary {
+        @apply rounded accent-tl-lime bg-hover;
     }
     /* MISC */
     .shadow-top {

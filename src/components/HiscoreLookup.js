@@ -52,7 +52,7 @@ export default function HiscoreLookup({ handleResultCallback = () => {} }) {
         <div className='flex flex-row'>
             <input
                 type='text'
-                className='input-primary grow'
+                className='input-primary form-input grow'
                 placeholder='Username'
                 value={username}
                 onChange={event => setUsername(event.target.value)}

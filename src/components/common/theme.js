@@ -64,3 +64,16 @@ export const DROPDOWN = {
     lg: 'w-96',
     content: 'w-max',
 };
+
+export const SEPARATOR = {
+    variant: {
+        horizontal: 'w-full h-px',
+        vertical: 'h-full w-px',
+    },
+    'variant-with-breakpoint': {
+        'horizontal-md': 'md:h-px h-full md:w-full w-px',
+        'horizontal-lg': 'lg:h-px h-full lg:w-full w-px',
+        'vertical-md': 'md:w-px w-full md:h-full h-px',
+        'vertical-lg': 'lg:w-px w-full lg:h-full h-px',
+    },
+};

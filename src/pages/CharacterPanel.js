@@ -3,6 +3,7 @@ import HiscoreLookup from '../components/HiscoreLookup';
 import SkillsPanel from '../components/SkillsPanel';
 import ProgressBar from '../components/common/ProgressBar';
 import BossesPanel from '../components/BossesPanel';
+import Separator from '../components/common/Separator';
 
 export default function CharacterPanel() {
     return (
@@ -11,7 +12,7 @@ export default function CharacterPanel() {
                 <HiscoreLookup />
                 <SkillsPanel />
             </div>
-            <div className='lg:w-px w-full lg:h-full h-px bg-subdued order-2' />
+            <Separator variant='vertical' breakpoint='lg' className='order-2' />
             <div className='lg:basis-1/2 basis-full flex flex-col items-center gap-3 order-1 lg:order-3 shrink'>
                 <div className='flex justify-around w-full'>
                     <div className='flex flex-col items-center text-sm'>
@@ -33,7 +34,7 @@ export default function CharacterPanel() {
                         <span>Master: 0 / 10000</span>
                     </div>
                 </div>
-                <div className='w-full h-px bg-subdued' />
+                <Separator />
                 <div className='flex w-full flex-wrap justify-around text-center align-middle tracking-wide text-md text-primary gap-3'>
                     <span>Relic slots unlocked: 3 / 10</span>
                     <span>Relic fragments found: 18 / 100</span>
@@ -73,7 +74,7 @@ export default function CharacterPanel() {
                     </div>
                 </div>
             </div>
-            <div className='md:w-px w-full md:h-full h-px bg-subdued order-4' />
+            <Separator variant='vertical' breakpoint='md' className='order-4' />
             <div className='lg:basis-1/4 basis-2/5 flex flex-col items-center order-5'>
                 <div className='mt-3'>
                     <BossesPanel />
