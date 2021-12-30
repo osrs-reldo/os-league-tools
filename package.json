@@ -61,6 +61,7 @@
         "react-select-search": "^2.2.3",
         "react-shadowed-double-scrollbar": "^1.0.5",
         "react-step-progress-bar": "^1.0.3",
+        "react-table": "^7.7.0",
         "resolve": "1.15.0",
         "resolve-url-loader": "3.1.1",
         "sass-loader": "^10.1.0",

@@ -3,7 +3,7 @@ import Page from './common/Page';
 import NavBar, { NavItem } from './common/NavBar';
 
 const navItems = [
-    new NavItem('Stats', 'primary', 0, 0).withHref('/legacy/tracker').withIconText('query_stats'),
+    new NavItem('Stats', 'primary', 0, 0).withHref('/').withIconText('query_stats'),
     new NavItem('Trackers', 'primary', 0, 1).withHref('/tracker').withIconText('checklist_rtl'),
     new NavItem('Calculators', 'primary', 0, 2).withHref('/').withIconText('calculate'),
     new NavItem('Login', 'secondary', 1, 0).withHref('/').withIconText('login'),

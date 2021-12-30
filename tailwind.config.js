@@ -20,6 +20,9 @@ module.exports = {
                 'sl-brown': '#714a37',
                 'sl-burntorange': '#b95b21',
                 'sl-khaki': '#91796c',
+                zinc: {
+                    550: '#46464e',
+                },
             },
             dropShadow: {
                 overlay: '0 8px 4px rgba(0, 0, 0, 0.3)',

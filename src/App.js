@@ -7,7 +7,6 @@ import Homepage from './pages/Homepage';
 import Calculators from './pages/legacy/Calculators';
 import Calculator from './pages/legacy/SkillCalculator';
 import Planner from './pages/legacy/SkillPlanner';
-import CharacterTracker from './pages/legacy/CharacterTracker';
 import Tracker from './pages/Tracker';
 import About from './pages/legacy/About';
 import PluginInfo from './pages/legacy/PluginInfo';
@@ -36,7 +35,6 @@ export default function App() {
                     <Route exact path='/' component={Homepage} />
                     <Route path='/news' component={Homepage} />
                     <Route path='/tracker' component={Tracker} />
-                    <Route path='/legacy/tracker' component={CharacterTracker} />
                     <Route exact path='/calculators' component={Calculators} />
                     <Route path='/calculators/:skill' component={Calculator} />
                     <Route path='/planners/:skill' component={Planner} />

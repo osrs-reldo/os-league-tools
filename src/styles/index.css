@@ -11,6 +11,10 @@
     .bg-primary {
         @apply bg-gray-100 dark:bg-zinc-700;
     }
+    .bg-primary-alt {
+        /* TODO generate light mode color between gray-100 and gray-200 */
+        @apply bg-gray-200 dark:bg-zinc-550;
+    }
     .bg-secondary {
         @apply bg-gray-200 dark:bg-zinc-800;
     }
@@ -53,6 +57,9 @@
     }
     .border-primary {
         @apply border-black dark:border-zinc-500;
+    }
+    .border-accent {
+        @apply border-tl-sage dark:border-tl-lime;
     }
     .border-subdued {
         @apply border-gray-300 dark:border-zinc-500;
@@ -227,6 +234,22 @@
     }
     .checkbox-primary {
         @apply rounded accent-tl-lime bg-hover;
+    }
+    /* TABLES */
+    .resizer {
+        display: inline-block;
+        width: 18px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        touch-action: none;
+
+        @apply rotate-90 translate-x-1/4 select-none;
+    }
+    .task-table-row {
+        @apply odd:bg-primary even:bg-primary-alt;
     }
     /* MISC */
     .shadow-top {

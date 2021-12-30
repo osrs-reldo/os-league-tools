@@ -444,6 +444,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.resizer {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .button-outline, .border-2, .border, .border-x, .border-r, .border-b, .border-l, .border-t-2, .border-b-2, .border-l-2, .border-r-2 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -654,6 +665,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(113 113 122 / var(--tw-border-opacity));
 }
 
+.border-accent {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 144 68 / var(--tw-border-opacity));
+}
+
+.dark .border-accent {
+  --tw-border-opacity: 1;
+  border-color: rgb(164 206 39 / var(--tw-border-opacity));
+}
+
 .border-subdued {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -692,6 +713,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 /* ICON FONT */
 
+.icon-base {
+  font-family: 'Material Icons Sharp';
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .icon-lg {
   font-family: 'Material Icons Sharp';
   font-weight: normal;
@@ -722,6 +759,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-font-smoothing: antialiased;
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.icon-2xl {
+  font-family: 'Material Icons Sharp';
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .icon-4xl {
@@ -1136,6 +1189,39 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.25rem;
   accent-color: #a4ce27;
 }
+/* TABLES */
+.resizer {
+        display: inline-block;
+        width: 18px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        touch-action: none;
+        --tw-translate-x: 25%;
+        --tw-rotate: 90deg;
+        transform: var(--tw-transform);
+        -webkit-user-select: none;
+                user-select: none;
+    }
+.task-table-row:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+.dark .task-table-row:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+}
+.task-table-row:nth-child(even) {
+        /* TODO generate light mode color between gray-100 and gray-200 */
+        --tw-bg-opacity: 1;
+        background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+    }
+.dark .task-table-row:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(70 70 78 / var(--tw-bg-opacity));
+}
 /* MISC */
 .shadow-top {
         box-shadow: 3px -3px 3px -3px var(--tw-shadow-color), -3px -3px 3px -3px var(--tw-shadow-color);
@@ -1211,20 +1297,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-1 {
   margin-bottom: 0.25rem;
 }
-.ml-1 {
-  margin-left: 0.25rem;
-}
 .mt-3 {
   margin-top: 0.75rem;
-}
-.mb-3 {
-  margin-bottom: 0.75rem;
 }
 .mt-1 {
   margin-top: 0.25rem;
 }
+.ml-1 {
+  margin-left: 0.25rem;
+}
 .ml-3 {
   margin-left: 0.75rem;
+}
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 .mt-auto {
   margin-top: auto;
@@ -1286,11 +1372,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-24 {
   height: 6rem;
 }
-.h-6 {
-  height: 1.5rem;
-}
 .h-full {
   height: 100%;
+}
+.h-\[18px\] {
+  height: 18px;
+}
+.h-\[13px\] {
+  height: 13px;
+}
+.h-6 {
+  height: 1.5rem;
 }
 .h-px {
   height: 1px;
@@ -1418,14 +1510,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-evenly {
   justify-content: space-evenly;
 }
-.gap-3 {
-  gap: 0.75rem;
-}
 .gap-2 {
   gap: 0.5rem;
 }
 .gap-1 {
   gap: 0.25rem;
+}
+.gap-3 {
+  gap: 0.75rem;
 }
 .gap-x-1 {
   column-gap: 0.25rem;
@@ -1434,6 +1526,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+.overflow-auto {
+  overflow: auto;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -1556,6 +1651,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.pl-6 {
+  padding-left: 1.5rem;
+}
+.pr-2 {
+  padding-right: 0.5rem;
+}
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1604,6 +1705,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1621,15 +1726,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .italic {
   font-style: italic;
 }
+.leading-loose {
+  line-height: 2;
+}
 .leading-tight {
   line-height: 1.25;
 }
 .tracking-wide {
   letter-spacing: 0.025em;
-}
-.text-zinc-700 {
-  --tw-text-opacity: 1;
-  color: rgb(63 63 70 / var(--tw-text-opacity));
 }
 .opacity-25 {
   opacity: 0.25;
