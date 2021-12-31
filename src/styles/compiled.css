@@ -1189,6 +1189,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.25rem;
   accent-color: #a4ce27;
 }
+select[multiple]:focus option:checked {
+        background: #71717a linear-gradient(0deg, #71717a 0%, #71717a 100%);
+    }
 /* TABLES */
 .resizer {
         display: inline-block;

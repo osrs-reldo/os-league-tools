@@ -1,5 +1,6 @@
 export const LOCALSTORAGE_KEYS = {
     USERNAME: 'hiscoresUsername',
+    FILTER_STATE: 'filterState',
 };
 
 export const SESSIONSTORAGE_KEYS = {

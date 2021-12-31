@@ -1,55 +1,58 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 
 export default function InputSelect({
     label,
     options,
-    defaultSelection,
-    onChangeCallback = () => {},
+    selection = null,
+    setSelection = () => {},
     multiple = false,
-    disabled = false,
+    enabled = true,
     className = '',
 }) {
-    let initialSelect = disabled ? null : defaultSelection;
-    if (!initialSelect) {
-        initialSelect = multiple ? [] : options[0];
-    }
-    if (multiple && initialSelect === 'all') {
-        initialSelect = options;
-    }
-
-    const [selected, setSelected] = useState(initialSelect);
+    useEffect(() => {
+        if (multiple && selection === 'all') {
+            setSelection(options.map(x => x.value));
+        }
+    }, [selection]);
 
     const onChange = e => {
-        let selection;
         if (multiple) {
-            const items = e.target.options;
-            selection = [];
-            for (let i = 0, l = items.length; i < l; i++) {
-                if (items[i].selected) {
-                    selection.push(items[i].value);
-                }
-            }
+            setSelection([...e.target.options].filter(option => option.selected).map(x => x.value));
         } else {
-            selection = e.target.value;
+            setSelection(e.target.value);
         }
-        setSelected(selection);
-        onChangeCallback(selection);
     };
 
+    if (!enabled) {
+        return (
+            <select
+                label={label}
+                className={`${
+                    multiple ? 'form-multiselect' : 'form-select'
+                } input-disabled shadow-subdued ${className}`}
+                value={multiple ? [] : options[0].value}
+                multiple={multiple}
+                disabled
+            >
+                {options.map(option => (
+                    <option key={option.value} value={option.value}>
+                        {option.label}
+                    </option>
+                ))}
+            </select>
+        );
+    }
     return (
         <select
             label={label}
-            className={`${multiple ? 'form-multiselect' : 'form-select'} ${
-                disabled ? 'input-disabled' : 'input-primary'
-            } shadow-subdued ${className}`}
-            value={selected}
+            className={`${multiple ? 'form-multiselect' : 'form-select'} input-primary shadow-subdued ${className}`}
+            value={selection}
             onChange={onChange}
             multiple={multiple}
-            disabled={disabled}
         >
             {options.map(option => (
-                <option key={option} value={option}>
-                    {option}
+                <option key={option.value} value={option.value}>
+                    {option.label}
                 </option>
             ))}
         </select>

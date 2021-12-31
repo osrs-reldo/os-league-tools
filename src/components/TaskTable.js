@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React, { useMemo } from 'react';
-import { useTable, useFlexLayout, useResizeColumns } from 'react-table';
+import { useTable, useFlexLayout, useResizeColumns, useSortBy } from 'react-table';
 import tasks from '../resources/tasks';
 
-export default function TaskTable() {
+export default function TaskTable({ filterState }) {
     const data = React.useMemo(() => tasks, []);
     const defaultColumn = React.useMemo(
         () => ({
@@ -124,6 +125,7 @@ export default function TaskTable() {
             columns,
             data,
             defaultColumn,
+            manualSortBy: true,
         },
         useFlexLayout,
         useResizeColumns
@@ -144,12 +146,12 @@ export default function TaskTable() {
                                 className='heading-accent-md leading-loose border-b border-accent overflow-hidden'
                             >
                                 {headerGroup.headers.map(column => (
-                                    <th {...column.getHeaderProps()} className='relative'>
+                                    <div {...column.getHeaderProps()} className='relative font-bold text-center'>
                                         {column.render('Header')}
                                         <span {...column.getResizerProps()} className='resizer icon-lg'>
                                             drag_handle
                                         </span>
-                                    </th>
+                                    </div>
                                 ))}
                             </div>
                         ))}
@@ -161,9 +163,9 @@ export default function TaskTable() {
                                 <div {...row.getRowProps()} className='task-table-row'>
                                     {row.cells.map(cell => {
                                         return (
-                                            <td {...cell.getCellProps()} className='relative'>
+                                            <div {...cell.getCellProps()} className='relative'>
                                                 {cell.render('Cell')}
-                                            </td>
+                                            </div>
                                         );
                                     })}
                                 </div>

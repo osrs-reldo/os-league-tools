@@ -235,6 +235,15 @@
     .checkbox-primary {
         @apply rounded accent-tl-lime bg-hover;
     }
+    select[multiple]:focus option:checked {
+        /*
+            css hack to override browser default color for selected/focused multi-select
+            options. background color is set with !important so it can't be directly overriden
+            with another color, but setting it to an image background (in this case a solid
+            color gradient) will do the trick. doesn't seem to work on safari though.
+         */
+        background: #71717a linear-gradient(0deg, #71717a 0%, #71717a 100%);
+    }
     /* TABLES */
     .resizer {
         display: inline-block;
