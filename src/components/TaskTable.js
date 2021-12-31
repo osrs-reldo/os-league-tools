@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { useTable, useFlexLayout, useResizeColumns, useSortBy } from 'react-table';
 import tasks from '../resources/tasks';
 
-export default function TaskTable({ filterState }) {
+export default function TaskTable() {
     const data = React.useMemo(() => tasks, []);
     const defaultColumn = React.useMemo(
         () => ({

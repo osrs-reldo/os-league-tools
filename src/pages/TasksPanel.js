@@ -4,11 +4,9 @@ import Separator from '../components/common/Separator';
 import TaskFilters from '../components/TaskFilters';
 import TaskGenerator from '../components/TaskGenerator';
 import TaskTable from '../components/TaskTable';
-import useFilterState from '../hooks/useFilterState';
 
 export default function TasksPanel() {
     const [showSidebar, setShowSidebar] = useState(true);
-    const [filterState, setFilterState] = useFilterState();
 
     return (
         <div className='h-full'>
@@ -27,7 +25,7 @@ export default function TasksPanel() {
             <div className='flex md:flex-row flex-col justify-around w-full'>
                 {showSidebar && (
                     <div className='basis-1/5 flex flex-col gap-3'>
-                        <TaskFilters filterState={filterState} setFilterState={setFilterState} />
+                        <TaskFilters />
                         <Separator />
                         <TaskGenerator />
                     </div>
@@ -40,7 +38,7 @@ export default function TasksPanel() {
                 </span>
                 <div className='basis-3/4 grow flex flex-col ml-1'>
                     <div className='border-l border-subdued grow mt-3'>
-                        <TaskTable filterState={filterState} />
+                        <TaskTable />
                     </div>
                 </div>
             </div>

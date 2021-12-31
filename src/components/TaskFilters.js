@@ -1,14 +1,19 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { update } from '../reducer/filters';
 import ButtonGroup from './common/ButtonGroup';
 import InputSelect from './common/InputSelect';
 
-export default function TaskFilters({ filterState, setFilterState }) {
+export default function TaskFilters() {
+    const filterState = useSelector(state => state.filters);
+    const dispatch = useDispatch();
+
     return (
         <div className='flex flex-col gap-2 mt-3'>
             <span className='heading-accent-md mt-1'>Sort</span>
             <div className='w-full px-3'>
                 <InputSelect
-                    label='sort'
+                    label='sortBy'
                     options={[
                         { value: 'default', label: 'Default (ingame)' },
                         { value: 'task', label: 'Task' },
@@ -20,7 +25,7 @@ export default function TaskFilters({ filterState, setFilterState }) {
                         { value: 'custom', label: 'Custom' },
                     ]}
                     selection={filterState.sortBy || 'default'}
-                    setSelection={setFilterState.sortBy}
+                    setSelection={val => dispatch(update({ field: 'sortBy', value: val }))}
                     className='text-sm'
                 />
             </div>
@@ -33,7 +38,7 @@ export default function TaskFilters({ filterState, setFilterState }) {
                         { id: 'cmpl', text: 'Complete' },
                     ]}
                     selection={filterState.status}
-                    setSelection={setFilterState.status}
+                    setSelection={val => dispatch(update({ field: 'status', value: val }))}
                 />
             </div>
             <span className='heading-accent-md mt-1'>To-do tasks</span>
@@ -45,7 +50,7 @@ export default function TaskFilters({ filterState, setFilterState }) {
                         { id: 'only', text: 'To-do only' },
                     ]}
                     selection={filterState.todo}
-                    setSelection={setFilterState.todo}
+                    setSelection={val => dispatch(update({ field: 'todo', value: val }))}
                 />
             </div>
             <span className='heading-accent-md mt-1'>Ignored tasks</span>
@@ -57,7 +62,7 @@ export default function TaskFilters({ filterState, setFilterState }) {
                         { id: 'only', text: 'Ignored only' },
                     ]}
                     selection={filterState.ignored}
-                    setSelection={setFilterState.ignored}
+                    setSelection={val => dispatch(update({ field: 'ignored', value: val }))}
                 />
             </div>
             <span className='heading-accent-md mt-1'>Difficulty</span>
@@ -68,8 +73,11 @@ export default function TaskFilters({ filterState, setFilterState }) {
                         className='checkbox-primary'
                         defaultChecked={!filterState.difficulty}
                         onClick={e =>
-                            setFilterState.difficulty(
-                                e.target.checked ? null : ['easy', 'med', 'hard', 'elite', 'mstr']
+                            dispatch(
+                                update({
+                                    field: 'difficulty',
+                                    value: e.target.checked ? null : ['easy', 'med', 'hard', 'elite', 'mstr'],
+                                })
                             )
                         }
                     />
@@ -85,7 +93,7 @@ export default function TaskFilters({ filterState, setFilterState }) {
                     ]}
                     enabled={!!filterState.difficulty}
                     selection={filterState.difficulty || ['easy', 'med', 'hard', 'elite', 'mstr']}
-                    setSelection={setFilterState.difficulty}
+                    setSelection={val => dispatch(update({ field: 'difficulty', value: val }))}
                     multi
                 />
             </div>
@@ -97,7 +105,9 @@ export default function TaskFilters({ filterState, setFilterState }) {
                             type='checkbox'
                             className='checkbox-primary'
                             defaultChecked={!filterState.categories}
-                            onClick={e => setFilterState.categories(e.target.checked ? null : 'all')}
+                            onClick={e =>
+                                dispatch(update({ field: 'categories', value: e.target.checked ? null : 'all' }))
+                            }
                         />
                         <span className='ml-1 font-semibold'>All categories</span>
                     </div>
@@ -118,7 +128,7 @@ export default function TaskFilters({ filterState, setFilterState }) {
                         className='text-sm'
                         enabled={!!filterState.categories}
                         selection={filterState.categories}
-                        setSelection={setFilterState.categories}
+                        setSelection={val => dispatch(update({ field: 'categories', value: val }))}
                     />
                 </div>
                 <div>
@@ -127,7 +137,9 @@ export default function TaskFilters({ filterState, setFilterState }) {
                             type='checkbox'
                             className='checkbox-primary'
                             defaultChecked={!filterState.subcategories}
-                            onClick={e => setFilterState.subcategories(e.target.checked ? null : 'all')}
+                            onClick={e =>
+                                dispatch(update({ field: 'subcategories', value: e.target.checked ? null : 'all' }))
+                            }
                         />
                         <span className='ml-1 font-semibold'>All subcategories</span>
                     </div>
@@ -230,7 +242,7 @@ export default function TaskFilters({ filterState, setFilterState }) {
                         className='text-sm'
                         enabled={!!filterState.subcategories}
                         selection={filterState.subcategories}
-                        setSelection={setFilterState.subcategories}
+                        setSelection={val => dispatch(update({ field: 'subcategories', value: val }))}
                     />
                 </div>
             </div>
@@ -242,7 +254,7 @@ export default function TaskFilters({ filterState, setFilterState }) {
                             type='checkbox'
                             className='checkbox-primary'
                             defaultChecked={!filterState.skills}
-                            onClick={e => setFilterState.skills(e.target.checked ? null : 'all')}
+                            onClick={e => dispatch(update({ field: 'skills', value: e.target.checked ? null : 'all' }))}
                         />
                         <span className='ml-1 font-semibold'>All skills</span>
                     </div>
@@ -277,7 +289,7 @@ export default function TaskFilters({ filterState, setFilterState }) {
                         className='w-full text-sm'
                         enabled={!!filterState.skills}
                         selection={filterState.skills}
-                        setSelection={setFilterState.skills}
+                        setSelection={val => dispatch(update({ field: 'skills', value: val }))}
                     />
                 </div>
                 <div className='mb-1'>

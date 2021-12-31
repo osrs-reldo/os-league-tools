@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 import './styles/compiled.css';
+import { Provider } from 'react-redux';
 import Homepage from './pages/Homepage';
 import Calculators from './pages/legacy/Calculators';
 import Calculator from './pages/legacy/SkillCalculator';
@@ -11,6 +12,7 @@ import Tracker from './pages/Tracker';
 import About from './pages/legacy/About';
 import PluginInfo from './pages/legacy/PluginInfo';
 import Settings from './pages/legacy/Settings';
+import store from './store';
 
 const history = createBrowserHistory();
 const trackingId = process.env.REACT_APP_GA_TRACKING || '';
@@ -29,20 +31,22 @@ export default function App() {
     }, []);
 
     return (
-        <div className='App dark'>
-            <BrowserRouter basename='/'>
-                <Switch>
-                    <Route exact path='/' component={Homepage} />
-                    <Route path='/news' component={Homepage} />
-                    <Route path='/tracker' component={Tracker} />
-                    <Route exact path='/calculators' component={Calculators} />
-                    <Route path='/calculators/:skill' component={Calculator} />
-                    <Route path='/planners/:skill' component={Planner} />
-                    <Route path='/about' component={About} />
-                    <Route path='/plugin' component={PluginInfo} />
-                    <Route path='/settings' component={Settings} />
-                </Switch>
-            </BrowserRouter>
-        </div>
+        <Provider store={store}>
+            <div className='App dark'>
+                <BrowserRouter basename='/'>
+                    <Switch>
+                        <Route exact path='/' component={Homepage} />
+                        <Route path='/news' component={Homepage} />
+                        <Route path='/tracker' component={Tracker} />
+                        <Route exact path='/calculators' component={Calculators} />
+                        <Route path='/calculators/:skill' component={Calculator} />
+                        <Route path='/planners/:skill' component={Planner} />
+                        <Route path='/about' component={About} />
+                        <Route path='/plugin' component={PluginInfo} />
+                        <Route path='/settings' component={Settings} />
+                    </Switch>
+                </BrowserRouter>
+            </div>
+        </Provider>
     );
 }
