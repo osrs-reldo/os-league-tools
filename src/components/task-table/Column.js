@@ -16,15 +16,16 @@ export default {
     sort: {
         task: (a, b) => a.values.task.text.localeCompare(b.values.task.text),
         difficulty: (a, b) => {
-            if (a.values.difficulty.value === b.values.difficulty.value) {
-                return 0;
-            }
-            return a.values.difficulty.value < b.values.difficulty.value ? -1 : 1;
+            return a.values.difficulty.value - b.values.difficulty.value;
         },
         category: (a, b) => {
             const compareVal = a.values.category.category.text.localeCompare(b.values.category.category.text);
             if (compareVal === 0) {
-                return a.values.category.subcategory.text.localeCompare(b.values.category.subcategory.text);
+                const subA = a.values.category.subcategory;
+                const subB = b.values.category.subcategory;
+                return subA.customSort && subB.customSort
+                    ? subA.customSort - subB.customSort
+                    : subA.text.localeCompare(subB.text);
             }
             return compareVal;
         },

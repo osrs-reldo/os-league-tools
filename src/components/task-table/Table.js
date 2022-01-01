@@ -1,14 +1,20 @@
-import React, { useMemo, useState, useCallback } from 'react';
+import React, { useMemo, useState, useCallback, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { useTable, useFlexLayout, useResizeColumns, useSortBy, useFilters, useGlobalFilter } from 'react-table';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import update from 'immutability-helper';
 import Row from './Row';
 import Column from './Column';
-import { GlobalTextSearch, filterTypes, fuzzyTextFilter } from './Filter';
+import { GlobalTextSearch, filterTypes, fuzzyTextFilter, applyTaskFilters } from './Filter';
 
 export default function Table({ columns, data }) {
     const [records, setRecords] = useState(data);
+
+    const filterState = useSelector(state => state.filters);
+    useEffect(() => {
+        setRecords(applyTaskFilters(data, filterState));
+    }, [filterState]);
 
     const table = useTable(
         {
@@ -41,8 +47,8 @@ export default function Table({ columns, data }) {
 
     return (
         <>
-            <div className='flex flex-row flex-wrap justify-between pl-6 p-3 items-end'>
-                <span className='italic'>Showing: {table.rows.length} tasks</span>
+            <div className='flex flex-row flex-wrap justify-between pb-3 px-3 items-end'>
+                <span className='italic text-sm'>Showing: {table.rows.length} tasks</span>
                 <GlobalTextSearch globalFilter={table.state.globalFilter} setGlobalFilter={table.setGlobalFilter} />
             </div>
             <div className='block overflow-auto ml-3 pr-2'>

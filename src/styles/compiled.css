@@ -1675,8 +1675,8 @@ select[multiple]:focus option:checked {
 .pl-3 {
   padding-left: 0.75rem;
 }
-.pl-6 {
-  padding-left: 1.5rem;
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 .pr-2 {
   padding-right: 0.5rem;

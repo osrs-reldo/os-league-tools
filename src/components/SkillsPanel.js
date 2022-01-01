@@ -1,31 +1,6 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from 'react';
+import { SKILLS } from '../util/constants';
 
-const SKILLS = [
-    'Attack',
-    'Hitpoints',
-    'Mining',
-    'Strength',
-    'Agility',
-    'Smithing',
-    'Defence',
-    'Herblore',
-    'Fishing',
-    'Ranged',
-    'Thieving',
-    'Cooking',
-    'Prayer',
-    'Crafting',
-    'Firemaking',
-    'Magic',
-    'Fletching',
-    'Woodcutting',
-    'Runecraft',
-    'Slayer',
-    'Farming',
-    'Construction',
-    'Hunter',
-];
 const UNLOCKED_SKILLS = ['Runecraft', 'Agility', 'Firemaking'];
 
 export default function SkillsPanel() {
@@ -58,9 +33,13 @@ export default function SkillsPanel() {
                     {Array.from({ length: 8 }, (_, i) => {
                         return (
                             <tr key={i} className='border-b border-subdued last:border-none'>
-                                <SkillTile skill={SKILLS[i * 3]} />
-                                <SkillTile skill={SKILLS[i * 3 + 1]} />
-                                {i * 3 + 2 < SKILLS.length ? <SkillTile skill={SKILLS[i * 3 + 2]} /> : <td />}
+                                <SkillTile skill={SKILLS.SKILL_PANEL[i * 3]} />
+                                <SkillTile skill={SKILLS.SKILL_PANEL[i * 3 + 1]} />
+                                {i * 3 + 2 < SKILLS.SKILL_PANEL.length ? (
+                                    <SkillTile skill={SKILLS.SKILL_PANEL[i * 3 + 2]} />
+                                ) : (
+                                    <td />
+                                )}
                             </tr>
                         );
                     })}
