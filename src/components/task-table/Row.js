@@ -54,8 +54,8 @@ export default function Row({ row, index, moveRow }) {
     drag(dragRef);
 
     return (
-        <div ref={dropRef} className={isDragging ? 'opacity-0' : 'opacity-1'}>
-            <div {...row.getRowProps()} className='task-table-row' ref={dragRef}>
+        <div ref={dropRef} className={`task-table-row ${isDragging ? 'opacity-25' : 'opacity-1'}`}>
+            <div {...row.getRowProps()} ref={dragRef}>
                 {row.cells.map(cell => {
                     return (
                         <div {...cell.getCellProps()} className='relative'>

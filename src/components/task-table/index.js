@@ -60,15 +60,5 @@ export default function TaskTable() {
         []
     );
 
-    return (
-        <>
-            <div className='flex flex-row flex-wrap justify-between pl-6 p-3 items-end'>
-                <span className='italic'>Showing: 22 tasks</span>
-                <input type='text' className='input-primary form-input text-sm' placeholder='Filter...' />
-            </div>
-            <div className='block overflow-auto ml-3 pr-2'>
-                <Table columns={columns} data={data} />
-            </div>
-        </>
-    );
+    return <Table columns={columns} data={data} />;
 }

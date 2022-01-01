@@ -1,5 +1,10 @@
 export default {
     initialState: { hiddenColumns: ['id'] },
+    defaultColumn: () => ({
+        minWidth: 30,
+        width: 150,
+        maxWidth: 1000,
+    }),
     data: {
         task: row => {
             return { text: row.text, description: row.description };
