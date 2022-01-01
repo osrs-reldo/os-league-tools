@@ -1,4 +1,5 @@
 export default {
+    initialState: { hiddenColumns: ['id'] },
     data: {
         task: row => {
             return { text: row.text, description: row.description };

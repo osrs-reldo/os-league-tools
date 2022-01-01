@@ -9,6 +9,11 @@ export default function TaskTable() {
     const columns = useMemo(
         () => [
             {
+                Header: 'Id',
+                id: 'id',
+                accessor: 'id',
+            },
+            {
                 Header: 'Task',
                 id: 'task',
                 width: 470,
