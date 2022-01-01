@@ -10,25 +10,6 @@ export default function TaskFilters() {
 
     return (
         <div className='flex flex-col gap-2 mt-3'>
-            <span className='heading-accent-md mt-1'>Sort</span>
-            <div className='w-full px-3'>
-                <InputSelect
-                    label='sortBy'
-                    options={[
-                        { value: 'default', label: 'Default (ingame)' },
-                        { value: 'task', label: 'Task' },
-                        { value: 'difficulty', label: 'Difficulty' },
-                        { value: 'status', label: 'Status' },
-                        { value: 'category', label: 'Category' },
-                        { value: 'subcategory', label: 'Subcategory' },
-                        { value: 'date', label: 'Date completed' },
-                        { value: 'custom', label: 'Custom' },
-                    ]}
-                    selection={filterState.sortBy || 'default'}
-                    setSelection={val => dispatch(update({ field: 'sortBy', value: val }))}
-                    className='text-sm'
-                />
-            </div>
             <span className='heading-accent-md mt-1'>Status</span>
             <div className='w-full px-3 text-sm'>
                 <ButtonGroup

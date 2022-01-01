@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useMemo } from 'react';
 import { useTable, useFlexLayout, useResizeColumns, useSortBy } from 'react-table';
 import tasks from '../resources/tasks';
@@ -17,11 +16,12 @@ export default function TaskTable() {
         () => [
             {
                 Header: 'Task',
-                id: 'text',
+                id: 'task',
                 width: 470,
                 accessor: row => {
                     return { text: row.text, description: row.description };
                 },
+                sortType: (a, b) => a.values.task.text.localeCompare(b.values.task.text),
                 Cell: ({ value }) => {
                     return (
                         <div className='flex flex-row items-center h-full gap-2'>
@@ -36,10 +36,16 @@ export default function TaskTable() {
             },
             {
                 Header: 'Difficulty',
-                id: 'difficulty.value',
+                id: 'difficulty',
                 minWidth: 95,
                 width: 150,
                 accessor: row => row.difficulty,
+                sortType: (a, b) => {
+                    if (a.values.difficulty.value === b.values.difficulty.value) {
+                        return 0;
+                    }
+                    return a.values.difficulty.value < b.values.difficulty.value ? -1 : 1;
+                },
                 Cell: ({ value }) => {
                     return (
                         <TaskTag
@@ -53,11 +59,18 @@ export default function TaskTable() {
             },
             {
                 Header: 'Category',
-                id: 'category.text',
+                id: 'category',
                 minWidth: 90,
                 width: 150,
                 accessor: row => {
                     return { category: row.category, subcategory: row.subcategory };
+                },
+                sortType: (a, b) => {
+                    const compareVal = a.values.category.category.text.localeCompare(b.values.category.category.text);
+                    if (compareVal === 0) {
+                        return a.values.category.subcategory.text.localeCompare(b.values.category.subcategory.text);
+                    }
+                    return compareVal;
                 },
                 Cell: ({ value }) => {
                     return (
@@ -73,6 +86,7 @@ export default function TaskTable() {
                 id: 'requirements',
                 minWidth: 120,
                 width: 150,
+                disableSortBy: true,
                 accessor: row => row.skillReqs,
                 Cell: ({ value }) => {
                     return (
@@ -94,6 +108,7 @@ export default function TaskTable() {
                 accessor: 'wiki',
                 minWidth: 70,
                 width: 190,
+                disableSortBy: true,
                 Cell: () => {
                     return (
                         <div className='flex flex-wrap h-full items-center justify-center gap-1'>
@@ -125,10 +140,10 @@ export default function TaskTable() {
             columns,
             data,
             defaultColumn,
-            manualSortBy: true,
         },
         useFlexLayout,
-        useResizeColumns
+        useResizeColumns,
+        useSortBy
     );
 
     return (
@@ -146,8 +161,16 @@ export default function TaskTable() {
                                 className='heading-accent-md leading-loose border-b border-accent overflow-hidden'
                             >
                                 {headerGroup.headers.map(column => (
-                                    <div {...column.getHeaderProps()} className='relative font-bold text-center'>
+                                    <div
+                                        {...column.getHeaderProps(column.getSortByToggleProps())}
+                                        className='relative font-bold text-center'
+                                    >
                                         {column.render('Header')}
+                                        {column.isSorted && (
+                                            <span className='icon-base absolute'>
+                                                {column.isSortedDesc ? 'arrow_drop_up' : 'arrow_drop_down'}
+                                            </span>
+                                        )}
                                         <span {...column.getResizerProps()} className='resizer icon-lg'>
                                             drag_handle
                                         </span>
