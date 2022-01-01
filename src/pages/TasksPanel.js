@@ -3,7 +3,7 @@ import ProgressBar from '../components/common/ProgressBar';
 import Separator from '../components/common/Separator';
 import TaskFilters from '../components/TaskFilters';
 import TaskGenerator from '../components/TaskGenerator';
-import TaskTable from '../components/TaskTable';
+import TaskTable from '../components/task-table/index';
 
 export default function TasksPanel() {
     const [showSidebar, setShowSidebar] = useState(true);
