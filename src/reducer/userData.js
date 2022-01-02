@@ -5,18 +5,12 @@ import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-c
 
 const INITIAL_STATE = {
     version: 1,
-    status: 'all',
-    todo: 'all',
-    ignored: 'hide',
-    difficulty: null,
-    categories: null,
-    subcategories: null,
-    skills: null,
-    reorderEnabled: false,
+    username: null,
+    taskOrder: null, // TODO
 };
 
-export const filterSlice = createSlice({
-    name: 'filters',
+export const userSlice = createSlice({
+    name: 'user',
     initialState: INITIAL_STATE,
     reducers: {
         update: (state, action) => {
@@ -28,8 +22,8 @@ export const filterSlice = createSlice({
     },
 });
 
-export const loadState = () => getFromLocalStorage(LOCALSTORAGE_KEYS.FILTER_STATE, INITIAL_STATE);
+export const loadState = () => getFromLocalStorage(LOCALSTORAGE_KEYS.USER_DATA, INITIAL_STATE);
 
-export const { update, reset } = filterSlice.actions;
+export const { update, reset } = userSlice.actions;
 
-export default filterSlice.reducer;
+export default userSlice.reducer;

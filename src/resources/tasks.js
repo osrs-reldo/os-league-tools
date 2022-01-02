@@ -3,7 +3,7 @@ import { DIFFICULTY, CATEGORY, SUBCATEGORY } from '../util/constants';
 export default [
     {
         id: 1,
-        text: 'Equip an Abyssal Bludgeon',
+        label: 'Equip an Abyssal Bludgeon',
         description: 'Equip an Abyssal Bludgeon.',
         difficulty: DIFFICULTY.ELITE,
         category: CATEGORY.BOSSING,
@@ -17,7 +17,7 @@ export default [
     },
     {
         id: 10,
-        text: 'Complete the Inferno in 75:00',
+        label: 'Complete the Inferno in 75:00',
         description: 'Complete the Inferno in Mor Ul Rek in 75:00 or less.',
         difficulty: DIFFICULTY.MASTER,
         category: CATEGORY.BOSSING,
@@ -27,7 +27,7 @@ export default [
     },
     {
         id: 2,
-        text: 'Complete a Beginner Clue Scroll',
+        label: 'Complete a Beginner Clue Scroll',
         description: 'Complete a beginner clue scroll by opening a reward casket.',
         difficulty: DIFFICULTY.EASY,
         category: CATEGORY.CLUES,
@@ -37,7 +37,7 @@ export default [
     },
     {
         id: 3,
-        text: 'Complete an Easy Clue Scroll',
+        label: 'Complete an Easy Clue Scroll',
         description: 'Complete an easy clue scroll by opening a reward casket.',
         difficulty: DIFFICULTY.EASY,
         category: CATEGORY.CLUES,
@@ -47,7 +47,7 @@ export default [
     },
     {
         id: 4,
-        text: 'Complete a Medium Clue Scroll',
+        label: 'Complete a Medium Clue Scroll',
         description: 'Complete a medium clue scroll by opening a reward casket.',
         difficulty: DIFFICULTY.MEDIUM,
         category: CATEGORY.CLUES,
@@ -57,7 +57,7 @@ export default [
     },
     {
         id: 5,
-        text: 'Complete a Hard Clue Scroll',
+        label: 'Complete a Hard Clue Scroll',
         description: 'Complete a hard clue scroll by opening a reward casket.',
         difficulty: DIFFICULTY.MEDIUM,
         category: CATEGORY.CLUES,
@@ -67,7 +67,7 @@ export default [
     },
     {
         id: 6,
-        text: 'Complete an Elite Clue Scroll',
+        label: 'Complete an Elite Clue Scroll',
         description: 'Complete an elite clue scroll by opening a reward casket.',
         difficulty: DIFFICULTY.HARD,
         category: CATEGORY.CLUES,
@@ -77,7 +77,7 @@ export default [
     },
     {
         id: 7,
-        text: 'Complete a Master Clue Scroll',
+        label: 'Complete a Master Clue Scroll',
         description: 'Complete a master clue scroll by opening a reward casket.',
         difficulty: DIFFICULTY.HARD,
         category: CATEGORY.CLUES,
@@ -87,7 +87,7 @@ export default [
     },
     {
         id: 0,
-        text: 'Equip a Full Rune Set',
+        label: 'Equip a Full Rune Set',
         description: 'Equip a Rune Platebody, a Rune Full Helm, and either some Rune Platelegs or a Rune Plateskirt.',
         difficulty: DIFFICULTY.MEDIUM,
         category: CATEGORY.COMBAT,
@@ -97,7 +97,7 @@ export default [
     },
     {
         id: 8,
-        text: 'Reach Level 99 Ranged',
+        label: 'Reach Level 99 Ranged',
         description: 'Reach level 99 in your Ranged skill.',
         difficulty: DIFFICULTY.ELITE,
         category: CATEGORY.COMBAT,
@@ -107,7 +107,7 @@ export default [
     },
     {
         id: 9,
-        text: "Enter the Wizards' Guild",
+        label: "Enter the Wizards' Guild",
         description: "Enter the Wizards' Guild in Yanille.",
         difficulty: DIFFICULTY.MEDIUM,
         category: CATEGORY.COMBAT,
@@ -117,7 +117,7 @@ export default [
     },
     {
         id: 11,
-        text: 'Complete the Medium Lumbridge & Draynor Diary',
+        label: 'Complete the Medium Lumbridge & Draynor Diary',
         description: 'Complete all of the medium tasks in the Lumbridge & Draynor Achievement Diary.',
         difficulty: DIFFICULTY.MEDIUM,
         category: CATEGORY.DIARIES,
@@ -127,7 +127,7 @@ export default [
     },
     {
         id: 12,
-        text: 'Equip a Full Void Knight Set',
+        label: 'Equip a Full Void Knight Set',
         description: 'Equip a full set of Void Knight equipment.',
         difficulty: DIFFICULTY.HARD,
         category: CATEGORY.DIARIES,
@@ -145,7 +145,7 @@ export default [
     },
     {
         id: 13,
-        text: 'Reach Total Level 500',
+        label: 'Reach Total Level 500',
         description: 'Reach a Total Level of 500.',
         difficulty: DIFFICULTY.EASY,
         category: CATEGORY.STATS,
@@ -155,7 +155,7 @@ export default [
     },
     {
         id: 14,
-        text: 'Achieve Your First Level 60',
+        label: 'Achieve Your First Level 60',
         description: 'Reach level 60 in any skill.',
         difficulty: DIFFICULTY.HARD,
         category: CATEGORY.STATS,
@@ -165,7 +165,7 @@ export default [
     },
     {
         id: 15,
-        text: 'Reach Combat Level 100',
+        label: 'Reach Combat Level 100',
         description: 'Reach Combat Level 100.',
         difficulty: DIFFICULTY.HARD,
         category: CATEGORY.STATS,
@@ -175,7 +175,7 @@ export default [
     },
     {
         id: 16,
-        text: 'Reach Base Level 80',
+        label: 'Reach Base Level 80',
         description: 'Reach level 80 in every skill.',
         difficulty: DIFFICULTY.ELITE,
         category: CATEGORY.STATS,
@@ -209,7 +209,7 @@ export default [
     },
     {
         id: 17,
-        text: "Charge an Amulet of Glory in the Heroes' Guild",
+        label: "Charge an Amulet of Glory in the Heroes' Guild",
         description: "Charge an amulet of glory at the Fountain of Heroes in the Heroes' Guild.",
         difficulty: DIFFICULTY.MEDIUM,
         category: CATEGORY.QUESTS,
@@ -227,7 +227,7 @@ export default [
     },
     {
         id: 18,
-        text: "Enter the Myths' Guild",
+        label: "Enter the Myths' Guild",
         description: "Enter the Myths' Guild.",
         difficulty: DIFFICULTY.HARD,
         category: CATEGORY.QUESTS,
@@ -258,7 +258,7 @@ export default [
     },
     {
         id: 19,
-        text: 'Complete the Theatre of Blood With No Deaths',
+        label: 'Complete the Theatre of Blood With No Deaths',
         description: 'Complete the Theatre of Blood without any party member dying.',
         difficulty: DIFFICULTY.ELITE,
         category: CATEGORY.RAIDS,
@@ -268,7 +268,7 @@ export default [
     },
     {
         id: 20,
-        text: 'Complete Room 8 of Pyramid Plunder',
+        label: 'Complete Room 8 of Pyramid Plunder',
         description: 'Search the Golden Chest in Room 8 of Pyramid Plunder in Sophanem.',
         difficulty: DIFFICULTY.ELITE,
         category: CATEGORY.SKILLING,
@@ -278,7 +278,7 @@ export default [
     },
     {
         id: 21,
-        text: 'Unlock a Gate in Taverley Dungeon',
+        label: 'Unlock a Gate in Taverley Dungeon',
         description: 'Unlock a gate in Taverley Dungeon using the dusty key.',
         difficulty: DIFFICULTY.EASY,
         category: CATEGORY.OTHER,
@@ -288,7 +288,7 @@ export default [
     },
     // {
     //     id: ,
-    //     text: '',
+    //     label: '',
     //     description: '',
     //     difficulty: DIFFICULTY.,
     //     category: CATEGORY.,

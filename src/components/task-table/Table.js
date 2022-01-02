@@ -1,34 +1,32 @@
-import React, { useMemo, useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { useTable, useFlexLayout, useResizeColumns, useSortBy, useFilters, useGlobalFilter } from 'react-table';
+import { useTable, useFlexLayout, useResizeColumns, useSortBy, useGlobalFilter } from 'react-table';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import update from 'immutability-helper';
 import Row from './Row';
-import Column from './Column';
-import { GlobalTextSearch, filterTypes, fuzzyTextFilter, applyTaskFilters } from './Filter';
+import SearchBox from './Search';
+import { fuzzyTextFilter, applyFilterSet } from './filter';
 
-export default function Table({ columns, data }) {
+export default function Table({ columns, data, filters, defaultColumn }) {
     const [records, setRecords] = useState(data);
 
     const filterState = useSelector(state => state.filters);
     useEffect(() => {
-        setRecords(applyTaskFilters(data, filterState));
+        setRecords(applyFilterSet(data, filterState, filters));
     }, [filterState]);
 
     const table = useTable(
         {
-            initialState: { ...Column.initialState },
+            initialState: { hiddenColumns: ['id'] },
             columns,
             data: records,
-            defaultColumn: useMemo(Column.defaultColumn, []),
-            filterTypes: useMemo(filterTypes, []),
+            defaultColumn,
             globalFilter: fuzzyTextFilter,
             getRowId: useCallback(row => row.id, []),
         },
         useFlexLayout,
         useResizeColumns,
-        useFilters,
         useGlobalFilter,
         useSortBy
     );
@@ -49,7 +47,7 @@ export default function Table({ columns, data }) {
         <>
             <div className='flex flex-row flex-wrap justify-between pb-3 px-3 items-end'>
                 <span className='italic text-sm'>Showing: {table.rows.length} tasks</span>
-                <GlobalTextSearch globalFilter={table.state.globalFilter} setGlobalFilter={table.setGlobalFilter} />
+                <SearchBox globalFilter={table.state.globalFilter} setGlobalFilter={table.setGlobalFilter} />
             </div>
             <div className='block overflow-auto ml-3 pr-2'>
                 <DndProvider backend={HTML5Backend}>
@@ -83,7 +81,13 @@ export default function Table({ columns, data }) {
                             {table.rows.map(
                                 (row, index) =>
                                     table.prepareRow(row) || (
-                                        <Row index={index} row={row} moveRow={moveRow} {...row.getRowProps()} />
+                                        <Row
+                                            index={index}
+                                            row={row}
+                                            moveRow={moveRow}
+                                            isReorderEnabled={filterState.reorderEnabled}
+                                            {...row.getRowProps()}
+                                        />
                                     )
                             )}
                         </div>

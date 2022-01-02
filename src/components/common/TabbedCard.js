@@ -24,7 +24,7 @@ function TabbedCard({ children, defaultActiveTab = null }) {
                 {Object.keys(tabs).map(tabId => (
                     <Tab
                         key={tabId}
-                        text={tabs[tabId][0].props.text}
+                        label={tabs[tabId][0].props.label}
                         active={tabId === activeTabId}
                         onClick={() => setActiveTabId(tabId)}
                     />
@@ -43,7 +43,7 @@ function TabbedCard({ children, defaultActiveTab = null }) {
     );
 }
 
-function Tab({ text, onClick, active = false }) {
+function Tab({ label, onClick, active = false }) {
     const hoverStyle = active ? '' : 'bg-hover cursor-pointer';
     const textStyle = active ? 'text-accent font-semibold' : 'text-primary';
     const shadowStyle = active ? 'shadow-top' : 'shadow-top-under';
@@ -51,7 +51,7 @@ function Tab({ text, onClick, active = false }) {
     return (
         <Card onClick={onClick} corners='rounded-t-md' shadow={shadowStyle} className={`h-full grow ${hoverStyle}`}>
             <Card.Body>
-                <span className={`heading-block-md small-caps ${textStyle}`}>{text}</span>
+                <span className={`heading-block-md small-caps ${textStyle}`}>{label}</span>
             </Card.Body>
         </Card>
     );
@@ -64,9 +64,9 @@ function Content({ children, active = false }) {
     return <div className='hidden'>{children}</div>;
 }
 
-function TabWrapper({ id, text, children }) {
+function TabWrapper({ id, label, children }) {
     return (
-        <div id={id} text={text} className='w-full h-full'>
+        <div id={id} label={label} className='w-full h-full'>
             {children}
         </div>
     );

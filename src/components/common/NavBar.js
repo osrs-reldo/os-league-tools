@@ -8,9 +8,9 @@ import useClickListener from '../../hooks/useClickListener';
 import { getLayoutSlots } from './layout';
 
 export class NavItem {
-    constructor(text, variant = 'primary', collapseGroup = -1, collapseOrder = -1) {
-        this.id = text;
-        this.text = text;
+    constructor(label, variant = 'primary', collapseGroup = -1, collapseOrder = -1) {
+        this.id = label;
+        this.label = label;
         this.variant = variant; // primary, secondary, icon, overflow
         this.props = {};
         this.props.slot = variant;
@@ -18,7 +18,7 @@ export class NavItem {
         this.collapseOrder = collapseOrder;
         this.href = null;
         this.onClick = null;
-        this.iconText = null;
+        this.iconFont = null;
         this.iconSrc = null;
     }
 
@@ -32,8 +32,8 @@ export class NavItem {
         return this;
     }
 
-    withIconText(iconText) {
-        this.iconText = iconText;
+    withIconFont(iconFont) {
+        this.iconFont = iconFont;
         return this;
     }
 
@@ -71,7 +71,7 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                 <div className='pl-4 sm:flex hidden'>
                     {primaryNavItems &&
                         primaryNavItems.map(navItem => (
-                            <PrimaryLink key={navItem.id} text={navItem.text} href={navItem.href} />
+                            <PrimaryLink key={navItem.id} label={navItem.label} href={navItem.href} />
                         ))}
                 </div>
                 {/* Spacer */}
@@ -80,11 +80,11 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                 <div className='sm:flex hidden justify-between items-center'>
                     {secondaryNavItems &&
                         secondaryNavItems.map(navItem => (
-                            <SecondaryLink key={navItem.id} text={navItem.text} href={navItem.text} />
+                            <SecondaryLink key={navItem.id} label={navItem.label} href={navItem.href} />
                         ))}
                     {iconNavItems &&
                         iconNavItems.map(navItem => (
-                            <IconLink key={navItem.id} iconText={navItem.iconText} iconSrc={navItem.iconSrc} href='/' />
+                            <IconLink key={navItem.id} iconFont={navItem.iconFont} iconSrc={navItem.iconSrc} href='/' />
                         ))}
                 </div>
                 {/* Overflow dropdown menu */}
@@ -103,8 +103,8 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                                             <Dropdown.Separator />
                                             {group.map(item => {
                                                 return (
-                                                    <Dropdown.Link key={item.id} href={item.href} icon={item.iconText}>
-                                                        {item.text}
+                                                    <Dropdown.Link key={item.id} href={item.href} icon={item.iconFont}>
+                                                        {item.label}
                                                     </Dropdown.Link>
                                                 );
                                             })}
@@ -135,9 +135,9 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                             {group.map(navItem => (
                                 <CollapsedMenuLink
                                     key={navItem.id}
-                                    text={navItem.text}
+                                    label={navItem.label}
                                     href={navItem.href}
-                                    iconText={navItem.iconText}
+                                    iconFont={navItem.iconFont}
                                     iconSrc={navItem.iconSrc}
                                 />
                             ))}
@@ -149,23 +149,23 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
     );
 }
 
-function PrimaryLink({ text, href }) {
+function PrimaryLink({ label, href }) {
     return (
         <a className='text-primary navbar-link hover:underline mr-4' href={href}>
-            {text}
+            {label}
         </a>
     );
 }
 
-function SecondaryLink({ text, href, iconText, iconSrc }) {
+function SecondaryLink({ label, href, iconFont, iconSrc }) {
     return (
         <>
             <a className='text-primary md:inline hidden navbar-link-alt bg-hover px-2 py-1' href={href}>
-                {text}
+                {label}
             </a>
-            {iconText && (
+            {iconFont && (
                 <a className='md:hidden inline navbar-icon-link' href={href}>
-                    <span className='text-primary-alt icon-lg leading-tight align-middle'>{iconText}</span>
+                    <span className='text-primary-alt icon-lg leading-tight align-middle'>{iconFont}</span>
                 </a>
             )}
             {iconSrc && (
@@ -177,11 +177,11 @@ function SecondaryLink({ text, href, iconText, iconSrc }) {
     );
 }
 
-function IconLink({ href, iconText, iconSrc }) {
-    if (iconText) {
+function IconLink({ href, iconFont, iconSrc }) {
+    if (iconFont) {
         return (
             <div className='bg-hover px-2 py-1'>
-                <span className='text-primary-alt icon-xl leading-tight md:align-top align-middle'>{iconText}</span>
+                <span className='text-primary-alt icon-xl leading-tight md:align-top align-middle'>{iconFont}</span>
             </div>
         );
     }
@@ -192,12 +192,12 @@ function IconLink({ href, iconText, iconSrc }) {
     );
 }
 
-function CollapsedMenuLink({ text, href, iconText, iconSrc }) {
+function CollapsedMenuLink({ label, href, iconFont, iconSrc }) {
     return (
         <a className='text-primary bg-hover py-1' href={href}>
-            {iconText && <span className='text-primary-alt icon-lg inline align-middle mr-1'>{iconText}</span>}
+            {iconFont && <span className='text-primary-alt icon-lg inline align-middle mr-1'>{iconFont}</span>}
             {iconSrc && <img className='h-4 img-primary inline align-middle mr-1' src={iconSrc} alt='' />}
-            <p className='h-4 inline pl-1 font-sans-alt'>{text}</p>
+            <p className='h-4 inline pl-1 font-sans-alt'>{label}</p>
         </a>
     );
 }

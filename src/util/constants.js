@@ -53,27 +53,27 @@ export const SKILLS = {
 
 export const DIFFICULTY = {
     EASY: {
-        text: 'Easy',
+        label: 'Easy',
         value: 10,
         icon: '/img/task-easy.png',
     },
     MEDIUM: {
-        text: 'Medium',
+        label: 'Medium',
         value: 50,
         icon: '/img/task-medium.png',
     },
     HARD: {
-        text: 'Hard',
+        label: 'Hard',
         value: 100,
         icon: '/img/task-hard.png',
     },
     ELITE: {
-        text: 'Elite',
+        label: 'Elite',
         value: 250,
         icon: '/img/task-elite.png',
     },
     MASTER: {
-        text: 'Master',
+        label: 'Master',
         value: 500,
         icon: '/img/task-master.png',
     },
@@ -83,151 +83,151 @@ export const SUBCATEGORY = {
     // Bossing
     INFERNO: {
         id: 0,
-        text: 'Inferno',
+        label: 'Inferno',
         icon: '/img/task-inferno.png',
     },
     SIRE: {
         id: 1,
-        text: 'Abyssal Sire',
+        label: 'Abyssal Sire',
         icon: '/img/abyssal-sire.png',
     },
     // Clues & Diaries
     BEGINNER: {
         id: 2,
         customSort: 0,
-        text: 'Beginner',
+        label: 'Beginner',
         icon: '/img/task-grey.png',
     },
     EASY: {
         id: 3,
         customSort: 1,
-        text: 'Easy',
+        label: 'Easy',
         icon: '/img/task-green.png',
     },
     MEDIUM: {
         id: 4,
         customSort: 2,
-        text: 'Medium',
+        label: 'Medium',
         icon: '/img/task-blue.png',
     },
     HARD: {
         id: 5,
         customSort: 3,
-        text: 'Hard',
+        label: 'Hard',
         icon: '/img/task-purple.png',
     },
     ELITE: {
         id: 6,
         customSort: 4,
-        text: 'Elite',
+        label: 'Elite',
         icon: '/img/task-yellow.png',
     },
     MASTER: {
         id: 7,
         customSort: 5,
-        text: 'Master',
+        label: 'Master',
         icon: '/img/task-red.png',
     },
     // Combat
     MELEE: {
         id: 8,
-        text: 'Melee',
+        label: 'Melee',
         icon: '/img/task-combat-melee.png',
     },
     RANGED: {
         id: 9,
-        text: 'Ranged',
+        label: 'Ranged',
         icon: '/img/task-combat-ranged.png',
     },
     MAGIC: {
         id: 10,
-        text: 'Magic',
+        label: 'Magic',
         icon: '/img/task-combat-magic.png',
     },
     // Minigames
     PEST_CONTROL: {
         id: 11,
-        text: 'Pest Control',
+        label: 'Pest Control',
         icon: '/img/task-guthix.png',
     },
     // Stats
     TOTAL_LVL: {
         id: 12,
-        text: 'Total Level',
+        label: 'Total Level',
         icon: '/img/task-level.png',
     },
     MILESTONE_LVL: {
         id: 13,
-        text: 'Milestone Level',
+        label: 'Milestone Level',
         icon: '/img/task-bronze-star.png',
     },
     BASE_LVL: {
         id: 14,
-        text: 'Base Level',
+        label: 'Base Level',
         icon: '/img/task-gold-star.png',
     },
     COMBAT_LVL: {
         id: 15,
-        text: 'Combat Level',
+        label: 'Combat Level',
         icon: '/img/task-combat.png',
     },
     // Quests
     NOVICE_QUEST: {
         id: 16,
         customSort: 0,
-        text: 'Novice',
+        label: 'Novice',
         icon: '/img/task-bronze-star.png',
     },
     INTERMEDIATE_QUEST: {
         id: 17,
         customSort: 1,
-        text: 'Intermediate',
+        label: 'Intermediate',
         icon: '/img/task-silver-star.png',
     },
     EXPERIENCED_QUEST: {
         id: 18,
         customSort: 2,
-        text: 'Experienced',
+        label: 'Experienced',
         icon: '/img/task-gold-star.png',
     },
     MASTER_QUEST: {
         id: 19,
         customSort: 3,
-        text: 'Master (quest)',
+        label: 'Master (quest)',
         icon: '/img/task-two-stars.png',
     },
     GRANDMASTER_QUEST: {
         id: 20,
         customSort: 4,
-        text: 'Grandmaster',
+        label: 'Grandmaster',
         icon: '/img/task-three-stars.png',
     },
     // Raids
     TOB: {
         id: 21,
-        text: 'Theatre of Blood',
+        label: 'Theatre of Blood',
         icon: '/img/theatre-of-blood.png',
     },
     COX: {
         id: 22,
-        text: 'Chambers of Xeric',
+        label: 'Chambers of Xeric',
         icon: '/img/chambers-of-xeric.png',
     },
     // Skilling
     THIEVING: {
         id: 23,
-        text: 'Thieving',
+        label: 'Thieving',
         icon: '/img/task-thieving.png',
     },
     // Other
     LOCATIONS: {
         id: 24,
-        text: 'Locations',
+        label: 'Locations',
         icon: '/img/task-boot.png',
     },
     // : {
     //     id: ,
-    //     text: '',
+    //     label: '',
     //     icon: '/img/task-.png',
     // },
 };
@@ -235,13 +235,13 @@ export const SUBCATEGORY = {
 export const CATEGORY = {
     BOSSING: {
         id: 0,
-        text: 'Bossing',
+        label: 'Bossing',
         icon: '/img/task-bossing.png',
         subcategories: [SUBCATEGORY.SIRE, SUBCATEGORY.INFERNO],
     },
     CLUES: {
         id: 1,
-        text: 'Clues',
+        label: 'Clues',
         icon: '/img/task-clue.png',
         subcategories: [
             SUBCATEGORY.BEGINNER,
@@ -254,31 +254,31 @@ export const CATEGORY = {
     },
     COMBAT: {
         id: 2,
-        text: 'Combat',
+        label: 'Combat',
         icon: '/img/task-combat.png',
         subcategories: [SUBCATEGORY.MELEE, SUBCATEGORY.RANGED, SUBCATEGORY.MAGIC],
     },
     DIARIES: {
         id: 3,
-        text: 'Diaries',
+        label: 'Diaries',
         icon: '/img/task-diary.png',
         subcategories: [SUBCATEGORY.EASY, SUBCATEGORY.MEDIUM, SUBCATEGORY.HARD, SUBCATEGORY.ELITE],
     },
     MINIGAMES: {
         id: 4,
-        text: 'Minigames',
+        label: 'Minigames',
         icon: '/img/task-minigame.png',
         subcategories: [SUBCATEGORY.PEST_CONTROL],
     },
     STATS: {
         id: 5,
-        text: 'Stats',
+        label: 'Stats',
         icon: '/img/task-total.png',
         subcategories: [SUBCATEGORY.TOTAL_LVL, SUBCATEGORY.BASE_LVL, SUBCATEGORY.MILESTONE_LVL, SUBCATEGORY.COMBAT_LVL],
     },
     QUESTS: {
         id: 6,
-        text: 'Quests',
+        label: 'Quests',
         icon: '/img/task-quest.png',
         subcategories: [
             SUBCATEGORY.NOVICE_QUEST,
@@ -290,19 +290,19 @@ export const CATEGORY = {
     },
     RAIDS: {
         id: 7,
-        text: 'Raids',
+        label: 'Raids',
         icon: '/img/task-raid.png',
         subcategories: [SUBCATEGORY.COX, SUBCATEGORY.TOB],
     },
     SKILLING: {
         id: 8,
-        text: 'Skilling',
+        label: 'Skilling',
         icon: '/img/task-fish.png',
         subcategories: [SUBCATEGORY.THIEVING],
     },
     OTHER: {
         id: 9,
-        text: 'Other',
+        label: 'Other',
         icon: '/img/task-inventory.png',
         subcategories: [],
     },

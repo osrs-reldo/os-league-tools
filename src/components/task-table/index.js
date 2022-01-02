@@ -1,8 +1,9 @@
 import React, { useMemo } from 'react';
 import tasks from '../../resources/tasks';
 import Cell from './Cell';
-import Column from './Column';
 import Table from './Table';
+import { sortTask, sortDifficulty, sortCategory } from './sort';
+import { difficultyFilter, categoryFilter, subcategoryFilter, skillFilter } from './filter';
 
 export default function TaskTable() {
     const data = useMemo(() => tasks, []);
@@ -17,8 +18,10 @@ export default function TaskTable() {
                 Header: 'Task',
                 id: 'task',
                 width: 470,
-                accessor: Column.data.task,
-                sortType: Column.sort.task,
+                accessor: row => {
+                    return { label: row.label, description: row.description };
+                },
+                sortType: sortTask,
                 Cell: Cell.Task,
             },
             {
@@ -27,7 +30,7 @@ export default function TaskTable() {
                 minWidth: 95,
                 width: 150,
                 accessor: row => row.difficulty,
-                sortType: Column.sort.difficulty,
+                sortType: sortDifficulty,
                 Cell: Cell.Difficulty,
             },
             {
@@ -35,8 +38,10 @@ export default function TaskTable() {
                 id: 'category',
                 minWidth: 90,
                 width: 150,
-                accessor: Column.data.category,
-                sortType: Column.sort.category,
+                accessor: row => {
+                    return { category: row.category, subcategory: row.subcategory };
+                },
+                sortType: sortCategory,
                 Cell: Cell.Category,
             },
             {
@@ -59,6 +64,15 @@ export default function TaskTable() {
         ],
         []
     );
+    const defaultColumn = useMemo(
+        () => ({
+            minWidth: 30,
+            width: 150,
+            maxWidth: 1000,
+        }),
+        []
+    );
+    const filters = [difficultyFilter, categoryFilter, subcategoryFilter, skillFilter];
 
-    return <Table columns={columns} data={data} />;
+    return <Table columns={columns} data={data} filters={filters} defaultColumn={defaultColumn} />;
 }

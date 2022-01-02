@@ -1,10 +1,12 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch, batch } from 'react-redux';
 import _ from 'lodash';
-import { update, reset } from '../reducer/filters';
+import { update as updateFilter, reset } from '../reducer/filters';
+import { update as updateUserData } from '../reducer/userData';
 import ButtonGroup from './common/ButtonGroup';
 import InputSelect from './common/InputSelect';
 import { CATEGORY, SUBCATEGORY, DIFFICULTY, SKILLS } from '../util/constants';
+import LabeledCheckbox from './common/LabeledCheckbox';
 
 export default function TaskFilters() {
     const filterState = useSelector(state => state.filters);
@@ -16,112 +18,103 @@ export default function TaskFilters() {
             <div className='w-full px-3 text-sm'>
                 <ButtonGroup
                     buttons={[
-                        { id: 'all', text: 'All tasks' },
-                        { id: 'incl', text: 'Incomplete' },
-                        { id: 'cmpl', text: 'Complete' },
+                        { value: 'all', label: 'All tasks' },
+                        { value: 'incl', label: 'Incomplete' },
+                        { value: 'cmpl', label: 'Complete' },
                     ]}
                     selection={filterState.status}
-                    setSelection={val => dispatch(update({ field: 'status', value: val }))}
+                    setSelection={val => dispatch(updateFilter({ field: 'status', value: val }))}
                 />
             </div>
             <span className='heading-accent-md mt-1'>To-do tasks</span>
             <div className='w-full px-3 text-sm'>
                 <ButtonGroup
                     buttons={[
-                        { id: 'all', text: 'All tasks' },
-                        { id: 'hide', text: 'Hide to-do' },
-                        { id: 'only', text: 'To-do only' },
+                        { value: 'all', label: 'All tasks' },
+                        { value: 'hide', label: 'Hide to-do' },
+                        { value: 'only', label: 'To-do only' },
                     ]}
                     selection={filterState.todo}
-                    setSelection={val => dispatch(update({ field: 'todo', value: val }))}
+                    setSelection={val => dispatch(updateFilter({ field: 'todo', value: val }))}
                 />
             </div>
             <span className='heading-accent-md mt-1'>Ignored tasks</span>
             <div className='w-full px-3 text-sm'>
                 <ButtonGroup
                     buttons={[
-                        { id: 'all', text: 'All tasks' },
-                        { id: 'hide', text: 'Hide ignored' },
-                        { id: 'only', text: 'Ignored only' },
+                        { value: 'all', label: 'All tasks' },
+                        { value: 'hide', label: 'Hide ignored' },
+                        { value: 'only', label: 'Ignored only' },
                     ]}
                     selection={filterState.ignored}
-                    setSelection={val => dispatch(update({ field: 'ignored', value: val }))}
+                    setSelection={val => dispatch(updateFilter({ field: 'ignored', value: val }))}
                 />
             </div>
             <span className='heading-accent-md mt-1'>Difficulty</span>
             <div className='w-full px-3 text-sm flex flex-col'>
-                <div className='mb-1'>
-                    <input
-                        type='checkbox'
-                        className='checkbox-primary'
-                        defaultChecked={!filterState.difficulty}
-                        onClick={e =>
-                            dispatch(
-                                update({
-                                    field: 'difficulty',
-                                    value: e.target.checked ? null : Object.values(DIFFICULTY).map(x => x.text),
-                                })
-                            )
-                        }
-                    />
-                    <span className='ml-1 font-semibold'>All difficulties</span>
-                </div>
+                <LabeledCheckbox
+                    label='All difficulties'
+                    defaultChecked={!filterState.difficulty}
+                    onClick={e =>
+                        dispatch(
+                            updateFilter({
+                                field: 'difficulty',
+                                value: e.target.checked ? null : Object.values(DIFFICULTY).map(x => x.label),
+                            })
+                        )
+                    }
+                    className='mb-1'
+                />
                 <ButtonGroup
                     buttons={Object.values(DIFFICULTY).map(difficulty => ({
-                        id: difficulty.text,
-                        text: difficulty.text,
+                        value: difficulty.label,
+                        label: difficulty.label,
                     }))}
                     enabled={!!filterState.difficulty}
-                    selection={filterState.difficulty || Object.values(DIFFICULTY).map(x => x.text)}
-                    setSelection={val => dispatch(update({ field: 'difficulty', value: val }))}
+                    selection={filterState.difficulty || Object.values(DIFFICULTY).map(x => x.label)}
+                    setSelection={val => dispatch(updateFilter({ field: 'difficulty', value: val }))}
                     multi
                 />
             </div>
             <span className='heading-accent-md mt-1'>Category</span>
             <div className='w-full px-3 text-sm flex gap-1'>
                 <div>
-                    <div className='mb-1'>
-                        <input
-                            type='checkbox'
-                            className='checkbox-primary'
-                            defaultChecked={!filterState.categories}
-                            onClick={e =>
-                                dispatch(update({ field: 'categories', value: e.target.checked ? null : 'all' }))
-                            }
-                        />
-                        <span className='ml-1 font-semibold'>All categories</span>
-                    </div>
+                    <LabeledCheckbox
+                        label='All categories'
+                        defaultChecked={!filterState.categories}
+                        onClick={e =>
+                            dispatch(updateFilter({ field: 'categories', value: e.target.checked ? null : 'all' }))
+                        }
+                        className='mb-1'
+                    />
                     <InputSelect
                         label='categories'
                         options={Object.values(CATEGORY).map(category => ({
-                            value: category.text,
-                            label: category.text,
+                            value: category.label,
+                            label: category.label,
                         }))}
                         multiple
                         className='text-sm'
                         enabled={!!filterState.categories}
                         selection={filterState.categories}
-                        setSelection={val => dispatch(update({ field: 'categories', value: val }))}
+                        setSelection={val => dispatch(updateFilter({ field: 'categories', value: val }))}
                     />
                 </div>
                 <div>
-                    <div className='mb-1'>
-                        <input
-                            type='checkbox'
-                            className='checkbox-primary'
-                            defaultChecked={!filterState.subcategories}
-                            onClick={e =>
-                                dispatch(update({ field: 'subcategories', value: e.target.checked ? null : 'all' }))
-                            }
-                        />
-                        <span className='ml-1 font-semibold'>All subcategories</span>
-                    </div>
+                    <LabeledCheckbox
+                        label='All subcategories'
+                        defaultChecked={!filterState.subcategories}
+                        onClick={e =>
+                            dispatch(updateFilter({ field: 'subcategories', value: e.target.checked ? null : 'all' }))
+                        }
+                        className='mb-1'
+                    />
                     <InputSelect
                         label='subcategories'
                         options={_.sortBy(
                             Object.values(SUBCATEGORY).map(subcategory => ({
-                                value: subcategory.text,
-                                label: subcategory.text,
+                                value: subcategory.label,
+                                label: subcategory.label,
                             })),
                             ['label']
                         )}
@@ -129,45 +122,54 @@ export default function TaskFilters() {
                         className='text-sm'
                         enabled={!!filterState.subcategories}
                         selection={filterState.subcategories}
-                        setSelection={val => dispatch(update({ field: 'subcategories', value: val }))}
+                        setSelection={val => dispatch(updateFilter({ field: 'subcategories', value: val }))}
                     />
                 </div>
             </div>
             <span className='heading-accent-md mt-1'>Skills</span>
             <div className='w-full px-3 text-sm flex flex-col gap-2'>
-                <div>
-                    <div className='mb-1'>
-                        <input
-                            type='checkbox'
-                            className='checkbox-primary'
-                            defaultChecked={!filterState.skills}
-                            onClick={e => dispatch(update({ field: 'skills', value: e.target.checked ? null : 'all' }))}
-                        />
-                        <span className='ml-1 font-semibold'>All skills</span>
-                    </div>
-                    <InputSelect
-                        label='skills'
-                        options={SKILLS.ALPHABETICAL.map(skill => ({ value: skill, label: skill }))}
-                        multiple
-                        className='w-full text-sm'
-                        enabled={!!filterState.skills}
-                        selection={filterState.skills}
-                        setSelection={val => dispatch(update({ field: 'skills', value: val }))}
-                    />
-                </div>
-                <div className='mb-1'>
-                    <input type='checkbox' className='checkbox-primary' />
-                    <span className='ml-1 font-semibold'>Hide tasks with missing skill requirements</span>
-                </div>
+                <LabeledCheckbox
+                    label='All skills'
+                    defaultChecked={!filterState.skills}
+                    onClick={e => dispatch(updateFilter({ field: 'skills', value: e.target.checked ? null : 'all' }))}
+                />
+                <InputSelect
+                    label='skills'
+                    options={SKILLS.ALPHABETICAL.map(skill => ({ value: skill, label: skill }))}
+                    multiple
+                    className='w-full text-sm'
+                    enabled={!!filterState.skills}
+                    selection={filterState.skills}
+                    setSelection={val => dispatch(updateFilter({ field: 'skills', value: val }))}
+                />
+                <LabeledCheckbox label='Hide tasks with unmet requirements' className='mb-1' />
             </div>
-            <span className='heading-accent-md mt-1'>Manage</span>
             <div className='w-full px-3'>
                 <button type='button' className='button-outline w-full mb-1' onClick={() => dispatch(reset())}>
                     Clear filters
                 </button>
-                <button type='button' className='button-outline w-full'>
-                    Undo last completed task
-                </button>
+                {filterState.reorderEnabled ? (
+                    <button
+                        type='button'
+                        className='button-outline w-full mb-1'
+                        onClick={() =>
+                            batch(() => {
+                                dispatch(updateFilter({ field: 'reorderEnabled', value: false }));
+                                dispatch(updateUserData({ field: 'taskOrder', value: null })); // TODO
+                            })
+                        }
+                    >
+                        Save custom task order
+                    </button>
+                ) : (
+                    <button
+                        type='button'
+                        className='button-outline w-full mb-1'
+                        onClick={() => dispatch(updateFilter({ field: 'reorderEnabled', value: true }))}
+                    >
+                        Enable drag-and-drop reordering
+                    </button>
+                )}
             </div>
         </div>
     );

@@ -1,36 +1,14 @@
-import React, { useState } from 'react';
-import { useAsyncDebounce } from 'react-table';
 import { matchSorter } from 'match-sorter';
 import _ from 'lodash';
-
-export function GlobalTextSearch({ globalFilter, setGlobalFilter }) {
-    const [value, setValue] = useState(globalFilter);
-    const onChange = useAsyncDebounce(newVal => {
-        setGlobalFilter(newVal || undefined);
-    }, 200);
-
-    return (
-        <input
-            type='text'
-            className='input-primary form-input text-xs'
-            placeholder='Filter...'
-            value={value || ''}
-            onChange={e => {
-                setValue(e.target.value);
-                onChange(e.target.value);
-            }}
-        />
-    );
-}
 
 function fuzzyTextFilter(rows, __, filterValue) {
     return matchSorter(rows, filterValue, {
         threshold: matchSorter.rankings.CONTAINS,
         keys: [
-            'values.task.text',
+            'values.task.label',
             'values.task.description',
-            'values.category.category.text',
-            'values.category.subcategory.text',
+            'values.category.category.label',
+            'values.category.subcategory.label',
             'values.requirements.*.skill',
         ],
     });
@@ -38,42 +16,35 @@ function fuzzyTextFilter(rows, __, filterValue) {
 fuzzyTextFilter.autoRemove = val => !val;
 export { fuzzyTextFilter };
 
-function difficultyFilter(task, values) {
-    if (values === null) {
+export function difficultyFilter(record, filterState) {
+    if (filterState.difficulty === null) {
         return true;
     }
-    return values.includes(task.difficulty.text);
+    return filterState.difficulty.includes(record.difficulty.label);
 }
 
-function categoryFilter(task, values, useSubcategory = false) {
-    if (values === null) {
+export function categoryFilter(record, filterState) {
+    if (filterState.categories === null) {
         return true;
     }
-    const taskCategory = useSubcategory ? task.subcategory.text : task.category.text;
-    return values.includes(taskCategory);
+    return filterState.categories.includes(record.category.label);
 }
 
-function skillFilter(task, values) {
-    if (values === null) {
+export function subcategoryFilter(record, filterState) {
+    if (filterState.subcategories === null) {
         return true;
     }
-    const taskSkills = task.skillReqs.map(req => req.skill);
-    return _.intersection(taskSkills, values).length > 0;
+    return filterState.subcategories.includes(record.subcategory.label);
 }
 
-export function applyTaskFilters(tasks, filterState) {
-    return tasks.filter(task => {
-        return (
-            skillFilter(task, filterState.skills) &&
-            difficultyFilter(task, filterState.difficulty) &&
-            categoryFilter(task, filterState.categories) &&
-            categoryFilter(task, filterState.subcategories, true)
-        );
-    });
+export function skillFilter(record, filterState) {
+    if (filterState.skills === null) {
+        return true;
+    }
+    const taskSkills = record.skillReqs.map(req => req.skill);
+    return _.intersection(taskSkills, filterState.skills).length > 0;
 }
 
-export function filterTypes() {
-    return {
-        fuzzyText: fuzzyTextFilter,
-    };
+export function applyFilterSet(data, filterState, filterSet) {
+    return data.filter(record => filterSet.every(filter => filter(record, filterState)));
 }

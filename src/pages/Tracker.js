@@ -8,16 +8,16 @@ export default function Tracker() {
     return (
         <PageWrapper>
             <TabbedCard defaultActiveTab='tsk'>
-                <TabbedCard.Tab id='chr' text='Character'>
+                <TabbedCard.Tab id='chr' label='Character'>
                     <CharacterPanel />
                 </TabbedCard.Tab>
-                <TabbedCard.Tab id='rlc' text='Relics'>
+                <TabbedCard.Tab id='rlc' label='Relics'>
                     <div>Relics tracker page</div>
                 </TabbedCard.Tab>
-                <TabbedCard.Tab id='tsk' text='Tasks'>
+                <TabbedCard.Tab id='tsk' label='Tasks'>
                     <TasksPanel />
                 </TabbedCard.Tab>
-                <TabbedCard.Tab id='qst' text='Other'>
+                <TabbedCard.Tab id='qst' label='Other'>
                     <div>Quests, diaries, etc tracker page</div>
                 </TabbedCard.Tab>
             </TabbedCard>
