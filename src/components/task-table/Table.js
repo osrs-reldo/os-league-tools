@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { useTable, useFlexLayout, useResizeColumns, useSortBy, useGlobalFilter } from 'react-table';
+import { useTable, useFlexLayout, useResizeColumns, useSortBy, useGlobalFilter, useExpanded } from 'react-table';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import update from 'immutability-helper';
@@ -8,7 +8,7 @@ import Row from './Row';
 import SearchBox from './Search';
 import { fuzzyTextFilter, applyFilterSet } from './filter';
 
-export default function Table({ columns, data, filters, defaultColumn }) {
+export default function Table({ columns, data, filters, defaultColumn, ExpandedRow }) {
     const [records, setRecords] = useState(data);
 
     const filterState = useSelector(state => state.filters);
@@ -28,7 +28,8 @@ export default function Table({ columns, data, filters, defaultColumn }) {
         useFlexLayout,
         useResizeColumns,
         useGlobalFilter,
-        useSortBy
+        useSortBy,
+        useExpanded
     );
 
     const moveRow = (dragIndex, hoverIndex) => {
@@ -66,7 +67,7 @@ export default function Table({ columns, data, filters, defaultColumn }) {
                                             {column.render('Header')}
                                             {column.isSorted && (
                                                 <span className='icon-base absolute'>
-                                                    {column.isSortedDesc ? 'arrow_drop_up' : 'arrow_drop_down'}
+                                                    {column.isSortedDesc ? 'arrow_drop_down' : 'arrow_drop_up'}
                                                 </span>
                                             )}
                                             <span {...column.getResizerProps()} className='resizer icon-lg'>
@@ -86,6 +87,7 @@ export default function Table({ columns, data, filters, defaultColumn }) {
                                             row={row}
                                             moveRow={moveRow}
                                             isReorderEnabled={filterState.reorderEnabled}
+                                            ExpandedRow={ExpandedRow}
                                             {...row.getRowProps()}
                                         />
                                     )

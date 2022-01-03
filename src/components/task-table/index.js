@@ -44,23 +44,6 @@ export default function TaskTable() {
                 sortType: sortCategory,
                 Cell: Cell.Category,
             },
-            {
-                Header: 'Requirements',
-                id: 'requirements',
-                minWidth: 120,
-                width: 150,
-                disableSortBy: true,
-                accessor: row => row.skillReqs,
-                Cell: Cell.Requirements,
-            },
-            {
-                Header: 'Manage',
-                accessor: 'wiki',
-                minWidth: 70,
-                width: 190,
-                disableSortBy: true,
-                Cell: Cell.Manage,
-            },
         ],
         []
     );
@@ -74,5 +57,13 @@ export default function TaskTable() {
     );
     const filters = [difficultyFilter, categoryFilter, subcategoryFilter, skillFilter];
 
-    return <Table columns={columns} data={data} filters={filters} defaultColumn={defaultColumn} />;
+    return (
+        <Table
+            columns={columns}
+            data={data}
+            filters={filters}
+            defaultColumn={defaultColumn}
+            ExpandedRow={Cell.ExpandedTask}
+        />
+    );
 }

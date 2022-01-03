@@ -58,6 +58,9 @@
     .border-primary {
         @apply border-black dark:border-zinc-500;
     }
+    .border-secondary {
+        @apply border-gray-100 dark:border-zinc-700;
+    }
     .border-accent {
         @apply border-tl-sage dark:border-tl-lime;
     }
