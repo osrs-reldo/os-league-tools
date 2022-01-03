@@ -55,7 +55,7 @@ export default function Table({
     return (
         <>
             <div className='flex flex-row flex-wrap justify-between pb-3 px-3 items-end'>
-                <span className='italic text-sm'>Showing: {table.rows.length} tasks</span>
+                <span className='italic text-sm'>Showing: {table.rows.length} rows</span>
                 <SearchBox globalFilter={table.state.globalFilter} setGlobalFilter={table.setGlobalFilter} />
             </div>
             <div className='block overflow-auto ml-3 pr-2'>

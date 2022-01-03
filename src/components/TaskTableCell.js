@@ -1,5 +1,6 @@
 import React from 'react';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
+import LabeledIcon from './common/LabeledIcon';
 
 function Task({ row, value }) {
     const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
@@ -54,15 +55,17 @@ function Difficulty({ value }) {
     let label = `${value.label} (${value.value})`;
     label = isMdOrSmallerViewport ? value.value : label;
     label = isXsViewport ? '' : label;
-    return <TaskTag label={label} icon={value.icon} size='lg' className='flex justify-center h-full items-center' />;
+    return (
+        <LabeledIcon label={label} icon={value.icon} size='lg' className='flex justify-center h-full items-center' />
+    );
 }
 
 function Category({ value }) {
     const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
     return (
         <div className='flex lg:flex-col flex-row flex-wrap items-center justify-center h-full'>
-            <TaskTag label={isMdOrSmallerViewport ? '' : value.category.label} icon={value.category.icon} />
-            <TaskTag label={isMdOrSmallerViewport ? '' : value.subcategory.label} icon={value.subcategory.icon} />
+            <LabeledIcon label={isMdOrSmallerViewport ? '' : value.category.label} icon={value.category.icon} />
+            <LabeledIcon label={isMdOrSmallerViewport ? '' : value.subcategory.label} icon={value.subcategory.icon} />
         </div>
     );
 }
@@ -74,9 +77,9 @@ function Requirements({ value, maxLength = 100, className = '' }) {
     return (
         <div className={`flex flex-wrap items-center content-center gap-x-1 ${className}`}>
             {value.slice(0, maxLength).map(({ skill, level }) => (
-                <TaskTag key={`${skill}${level}`} label={level} icon={`/img/task-${skill.toLowerCase()}.png`} />
+                <LabeledIcon key={`${skill}${level}`} label={level} icon={`/img/task-${skill.toLowerCase()}.png`} />
             ))}
-            {value.length > maxLength && <TaskTag label='...' />}
+            {value.length > maxLength && <LabeledIcon label='...' />}
         </div>
     );
 }
@@ -112,15 +115,6 @@ function Manage({ className = '' }) {
             />
             <TaskLink label='Notes' icon='edit' />
             <TaskLink label='Wiki' icon='launch' />
-        </div>
-    );
-}
-
-function TaskTag({ label, icon, size = 'md', className = '' }) {
-    return (
-        <div className={className}>
-            {icon && <img className={`inline mr-1 ${size === 'lg' ? 'h-[18px]' : 'h-[13px]'}`} src={icon} alt='' />}
-            <span className={size === 'lg' ? 'text-sm' : 'text-xs'}>{label}</span>
         </div>
     );
 }

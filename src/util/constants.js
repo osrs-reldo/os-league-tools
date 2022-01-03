@@ -307,3 +307,152 @@ export const CATEGORY = {
         subcategories: [],
     },
 };
+
+export const QUEST_DIFFICULTY = {
+    NOVICE: {
+        id: 0,
+        label: 'Novice',
+        icon: '/img/task-bronze-star.png',
+    },
+    INTERMEDIATE: {
+        id: 1,
+        label: 'Intermediate',
+        icon: '/img/task-silver-star.png',
+    },
+    EXPERIENCED: {
+        id: 2,
+        label: 'Experienced',
+        icon: '/img/task-gold-star.png',
+    },
+    MASTER: {
+        id: 3,
+        label: 'Master',
+        icon: '/img/task-two-stars.png',
+    },
+    GRANDMASTER: {
+        id: 4,
+        label: 'Grandmaster',
+        icon: '/img/task-three-stars.png',
+    },
+};
+
+export const QUEST_LENGTH = {
+    VERY_SHORT: {
+        id: 0,
+        label: 'Very Short',
+        icon: '/img/task-bronze-sword.png',
+    },
+    SHORT: {
+        id: 1,
+        label: 'Short',
+        icon: '/img/task-iron-sword.png',
+    },
+    MEDIUM: {
+        id: 2,
+        label: 'Medium',
+        icon: '/img/task-mith-sword.png',
+    },
+    LONG: {
+        id: 3,
+        label: 'Long',
+        icon: '/img/task-rune-sword.png',
+    },
+    VERY_LONG: {
+        id: 4,
+        label: 'Very Long',
+        icon: '/img/task-dragon-sword.png',
+    },
+};
+
+export const QUEST_SERIES = {
+    CAMELOT: {
+        id: 0,
+        label: 'Camelot',
+        icon: '/img/task-kandarin.png',
+    },
+    DESERT: {
+        id: 1,
+        label: 'Desert',
+        icon: '/img/task-kharidian.png',
+    },
+    DORGESHUUN: {
+        id: 2,
+        label: 'Dorgeshuun',
+        icon: '/img/task-bandos.png',
+    },
+    GUILDS: {
+        id: 3,
+        label: 'Guilds / Dragonkin',
+        icon: '/img/task-legend.png',
+    },
+    ELEMENTAL: {
+        id: 4,
+        label: 'Elemental Workshop',
+        icon: '/img/task-elemental.png',
+    },
+    ELF: {
+        id: 5,
+        label: 'Elven',
+        icon: '/img/task-tiranwnn.png',
+    },
+    GNOME: {
+        id: 6,
+        label: 'Gnome',
+        icon: '/img/task-gnome.png',
+    },
+    FAIRY: {
+        id: 7,
+        label: 'Fairy Tale',
+        icon: '/img/task-cosmic.png',
+    },
+    FREMENNIK: {
+        id: 8,
+        label: 'Fremennik',
+        icon: '/img/task-fremennik.png',
+    },
+    KOUREND: {
+        id: 9,
+        label: 'Great Kourend',
+        icon: '/img/task-xeric.png',
+    },
+    KARAMJA: {
+        id: 10,
+        label: 'Karamja',
+        icon: '/img/task-karamja.png',
+    },
+    MAHJARRAT: {
+        id: 11,
+        label: 'Mahjarrat / Return of Zaros',
+        icon: '/img/task-zaros.png',
+    },
+    MYREQUE: {
+        id: 12,
+        label: 'Myreque',
+        icon: '/img/task-morytania.png',
+    },
+    OGRE: {
+        id: 13,
+        label: 'Ogre',
+        icon: '/img/task-goblin.png',
+    },
+    PIRATE: {
+        id: 14,
+        label: 'Pirate',
+        icon: '/img/task-steel-scim.png',
+    },
+    RED_AXE: {
+        id: 15,
+        label: 'Rise of the Red Axe',
+        icon: '/img/task-dragon-baxe.png',
+    },
+    TEMPLE_KNIGHT: {
+        id: 16,
+        label: 'Temple Knight / Sea Slug',
+        icon: '/img/task-steel-kite.png',
+    },
+    TROLL: {
+        id: 17,
+        label: 'Troll',
+        icon: '/img/task-bossing.png',
+    },
+};

@@ -3,6 +3,7 @@ import CharacterPanel from './CharacterPanel';
 import TabbedCard from '../components/common/TabbedCard';
 import PageWrapper from '../components/PageWrapper';
 import TasksPanel from './TasksPanel';
+import QuestTable from '../components/QuestTable';
 
 export default function Tracker() {
     return (
@@ -18,7 +19,9 @@ export default function Tracker() {
                     <TasksPanel />
                 </TabbedCard.Tab>
                 <TabbedCard.Tab id='qst' label='Other'>
-                    <div>Quests, diaries, etc tracker page</div>
+                    <div className='h-full'>
+                        <QuestTable />
+                    </div>
                 </TabbedCard.Tab>
             </TabbedCard>
         </PageWrapper>
