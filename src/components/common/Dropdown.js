@@ -1,5 +1,5 @@
 import React from 'react';
-import { DROPDOWN } from './theme';
+import { DROPDOWN } from './util/theme';
 
 function Dropdown({ children, innerRef, show, width = DROPDOWN.content }) {
     return (

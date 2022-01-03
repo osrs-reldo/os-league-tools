@@ -1,5 +1,5 @@
 import React from 'react';
-import { SEPARATOR } from './theme';
+import { SEPARATOR } from './util/theme';
 
 export default function Separator({ variant = 'horizontal', breakpoint = null, className = '' }) {
     let dimensions = '';

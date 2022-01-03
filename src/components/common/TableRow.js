@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import useRowDrag from './useRowDrag';
-import useRowDrop from './useRowDrop';
+import useRowDrag from './hooks/useRowDrag';
+import useRowDrop from './hooks/useRowDrop';
 
 const DND_ITEM_TYPE = 'row';
 

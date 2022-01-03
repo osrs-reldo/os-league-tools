@@ -1,5 +1,5 @@
 import React from 'react';
-import useBreakpoint, { MEDIA_QUERIES, MODE } from '../../hooks/useBreakpoint';
+import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 
 function Task({ row, value }) {
     const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);

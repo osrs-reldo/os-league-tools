@@ -1,6 +1,6 @@
 import React from 'react';
-import { getLayoutSlots, withSlot, LayoutSlot } from './layout';
-import { getCardStyle } from './theme';
+import { getLayoutSlots, withSlot, LayoutSlot } from './util/layout';
+import { getCardStyle } from './util/theme';
 
 function Card({
     children,

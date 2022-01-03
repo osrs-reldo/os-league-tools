@@ -1,5 +1,5 @@
 import React from 'react';
-import { getLayoutSlots, LayoutSlot } from './layout';
+import { getLayoutSlots, LayoutSlot } from './util/layout';
 
 function Page({ children, sidebarPosition = 'left' }) {
     const { nav, banner, sidebar, body } = getLayoutSlots(children);

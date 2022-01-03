@@ -5,7 +5,7 @@ import React, { useState, useRef } from 'react';
 import _ from 'lodash';
 import Dropdown from './Dropdown';
 import useClickListener from '../../hooks/useClickListener';
-import { getLayoutSlots } from './layout';
+import { getLayoutSlots } from './util/layout';
 
 export class NavItem {
     constructor(label, variant = 'primary', collapseGroup = -1, collapseOrder = -1) {

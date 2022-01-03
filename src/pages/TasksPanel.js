@@ -3,7 +3,7 @@ import ProgressBar from '../components/common/ProgressBar';
 import Separator from '../components/common/Separator';
 import TaskFilters from '../components/TaskFilters';
 import TaskGenerator from '../components/TaskGenerator';
-import TaskTable from '../components/table/index';
+import TaskTable from '../components/TaskTable';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 
 export default function TasksPanel() {

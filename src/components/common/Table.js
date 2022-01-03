@@ -4,14 +4,14 @@ import { useTable, useFlexLayout, useResizeColumns, useSortBy, useGlobalFilter, 
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import update from 'immutability-helper';
-import Row from './Row';
-import SearchBox from './Search';
-import { fuzzyTextFilter, applyFilterSet } from './filter';
+import Row from './TableRow';
+import SearchBox from './TableSearchBox';
 
 export default function Table({
     columns,
     data,
     filters,
+    globalFilter,
     defaultColumn,
     initialState,
     ExpandedRow,
@@ -21,7 +21,7 @@ export default function Table({
 
     const filterState = useSelector(state => state.filters);
     useEffect(() => {
-        setRecords(applyFilterSet(data, filterState, filters));
+        setRecords(data.filter(record => filters.every(filter => filter(record, filterState))));
     }, [filterState]);
 
     const table = useTable(
@@ -30,7 +30,7 @@ export default function Table({
             columns,
             data: records,
             defaultColumn,
-            globalFilter: fuzzyTextFilter,
+            globalFilter,
             getRowId: useCallback(row => row.id, []),
         },
         useFlexLayout,

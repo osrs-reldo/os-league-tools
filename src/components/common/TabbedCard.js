@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Card from './Card';
-import { getLayoutSlots } from './layout';
+import { getLayoutSlots } from './util/layout';
 
 function TabbedCard({ children, defaultActiveTab = null }) {
     const [activeTabId, setActiveTabId] = useState(defaultActiveTab);
