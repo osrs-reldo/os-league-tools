@@ -11,7 +11,7 @@ export default function SearchBox({ globalFilter, setGlobalFilter }) {
         <input
             type='text'
             className='input-primary form-input text-xs'
-            placeholder='Filter...'
+            placeholder='Search...'
             value={value || ''}
             onChange={e => {
                 setValue(e.target.value);

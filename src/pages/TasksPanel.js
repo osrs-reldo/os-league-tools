@@ -4,9 +4,12 @@ import Separator from '../components/common/Separator';
 import TaskFilters from '../components/TaskFilters';
 import TaskGenerator from '../components/TaskGenerator';
 import TaskTable from '../components/task-table/index';
+import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 
 export default function TasksPanel() {
-    const [showSidebar, setShowSidebar] = useState(true);
+    const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.LESS_OR_EQ);
+    const isXlViewport = useBreakpoint(MEDIA_QUERIES.XL);
+    const [showSidebar, setShowSidebar] = useState(isXlViewport);
 
     return (
         <div className='h-full'>
@@ -22,22 +25,36 @@ export default function TasksPanel() {
                 </div>
             </div>
             <Separator />
-            <div className='flex md:flex-row flex-col justify-around w-full'>
+            <div className='flex xl:flex-row flex-col justify-around w-full'>
+                {isSmViewport && showSidebar && (
+                    <div className='mt-3 bg-hover cursor-pointer' onClick={() => setShowSidebar(!showSidebar)}>
+                        <span className='icon-xl align-middle'>keyboard_double_arrow_up</span>
+                        <span className='text-sm'>Hide filters</span>
+                    </div>
+                )}
                 {showSidebar && (
-                    <div className='basis-1/5 flex flex-col gap-3'>
+                    <div className='basis-[23%] flex flex-col gap-3'>
                         <TaskFilters />
                         <Separator />
                         <TaskGenerator />
                     </div>
                 )}
-                <span
-                    className='icon-xl mt-3 bg-hover cursor-pointer align-middle'
-                    onClick={() => setShowSidebar(!showSidebar)}
-                >
-                    {showSidebar ? 'keyboard_double_arrow_left' : 'keyboard_double_arrow_right'}
-                </span>
-                <div className='basis-3/4 grow flex flex-col ml-1'>
-                    <div className='border-l border-subdued grow mt-3'>
+                <div className='mt-3 bg-hover cursor-pointer' onClick={() => setShowSidebar(!showSidebar)}>
+                    {isXlViewport ? (
+                        <span className='icon-xl align-middle'>
+                            {showSidebar ? 'keyboard_double_arrow_left' : 'keyboard_double_arrow_right'}
+                        </span>
+                    ) : (
+                        <>
+                            <span className='icon-xl align-middle'>
+                                {showSidebar ? 'keyboard_double_arrow_up' : 'keyboard_double_arrow_down'}
+                            </span>
+                            <span className='text-sm italic ml-1'>{showSidebar ? 'Hide filters' : 'Show filters'}</span>
+                        </>
+                    )}
+                </div>
+                <div className='basis-3/4 grow flex flex-col xl:ml-1'>
+                    <div className='border-t xl:border-l xl:border-t-0 pt-2 xl:pt-[0] border-subdued grow mt-3'>
                         <TaskTable />
                     </div>
                 </div>

@@ -1,6 +1,9 @@
 import React from 'react';
+import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 
 export default function TaskGenerator() {
+    const isLgViewport = useBreakpoint(MEDIA_QUERIES.LG, MODE.STRICT);
+
     return (
         <div className='flex flex-col gap-2'>
             <span className='heading-accent-md'>Random Task Generator</span>
@@ -13,10 +16,17 @@ export default function TaskGenerator() {
                     <button type='button' className='button-outline w-full'>
                         Complete task
                     </button>
+                    {isLgViewport && (
+                        <button type='button' className='button-outline w-full'>
+                            Configure task generator
+                        </button>
+                    )}
                 </div>
-                <button type='button' className='button-outline w-full'>
-                    Configure task generator
-                </button>
+                {!isLgViewport && (
+                    <button type='button' className='button-outline w-full'>
+                        Configure task generator
+                    </button>
+                )}
             </div>
         </div>
     );

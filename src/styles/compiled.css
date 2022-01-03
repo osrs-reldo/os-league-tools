@@ -455,7 +455,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.button-outline, .border, .border-2, .border-x, .border-r, .border-b, .border-l, .border-l-\[1rem\], .border-t-2, .border-b-2, .border-l-2, .border-r-2 {
+.button-outline, .border, .border-2, .border-x, .border-r, .border-b, .border-t, .border-l-\[1rem\], .border-t-2, .border-b-2, .border-l-2, .border-r-2, .xl\:border-l, .xl\:border-t-0 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
@@ -1270,20 +1270,29 @@ select[multiple]:focus option:checked {
 .z-10 {
   z-index: 10;
 }
-.order-3 {
-  order: 3;
+.order-1 {
+  order: 1;
 }
 .order-2 {
   order: 2;
 }
-.order-1 {
-  order: 1;
+.order-3 {
+  order: 3;
 }
 .order-4 {
   order: 4;
 }
 .order-5 {
   order: 5;
+}
+.order-6 {
+  order: 6;
+}
+.order-7 {
+  order: 7;
+}
+.row-span-2 {
+  grid-row: span 2 / span 2;
 }
 .float-left {
   float: left;
@@ -1394,6 +1403,9 @@ select[multiple]:focus option:checked {
 .table {
   display: table;
 }
+.grid {
+  display: grid;
+}
 .hidden {
   display: none;
 }
@@ -1402,6 +1414,10 @@ select[multiple]:focus option:checked {
 }
 .h-24 {
   height: 6rem;
+}
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .h-6 {
   height: 1.5rem;
@@ -1448,12 +1464,12 @@ select[multiple]:focus option:checked {
 .w-96 {
   width: 24rem;
 }
-.w-11\/12 {
-  width: 91.666667%;
-}
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+.w-11\/12 {
+  width: 91.666667%;
 }
 .w-5 {
   width: 1.25rem;
@@ -1488,8 +1504,8 @@ select[multiple]:focus option:checked {
 .basis-full {
   flex-basis: 100%;
 }
-.basis-1\/5 {
-  flex-basis: 20%;
+.basis-\[23\%\] {
+  flex-basis: 23%;
 }
 .basis-3\/4 {
   flex-basis: 75%;
@@ -1525,6 +1541,9 @@ select[multiple]:focus option:checked {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -1635,8 +1654,8 @@ select[multiple]:focus option:checked {
 .border-b {
   border-bottom-width: 1px;
 }
-.border-l {
-  border-left-width: 1px;
+.border-t {
+  border-top-width: 1px;
 }
 .border-l-\[1rem\] {
   border-left-width: 1rem;
@@ -1711,6 +1730,9 @@ select[multiple]:focus option:checked {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+.pt-2 {
+  padding-top: 0.5rem;
 }
 .pb-1 {
   padding-bottom: 0.25rem;
@@ -1830,11 +1852,32 @@ select[multiple]:focus option:checked {
   text-decoration: underline;
 }
 @media (min-width: 640px) {
+  .sm\:order-3 {
+    order: 3;
+  }
+  .sm\:order-4 {
+    order: 4;
+  }
+  .sm\:order-6 {
+    order: 6;
+  }
+  .sm\:order-2 {
+    order: 2;
+  }
+  .sm\:order-5 {
+    order: 5;
+  }
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
   .sm\:flex {
     display: flex;
   }
   .sm\:hidden {
     display: none;
+  }
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media (min-width: 768px) {
@@ -1857,6 +1900,9 @@ select[multiple]:focus option:checked {
   .md\:h-full {
     height: 100%;
   }
+  .md\:w-full {
+    width: 100%;
+  }
   .md\:w-32 {
     width: 8rem;
   }
@@ -1865,9 +1911,6 @@ select[multiple]:focus option:checked {
   }
   .md\:w-48 {
     width: 12rem;
-  }
-  .md\:w-full {
-    width: 100%;
   }
   .md\:w-px {
     width: 1px;
@@ -1886,11 +1929,26 @@ select[multiple]:focus option:checked {
   }
 }
 @media (min-width: 1024px) {
-  .lg\:order-1 {
-    order: 1;
+  .lg\:order-4 {
+    order: 4;
+  }
+  .lg\:order-6 {
+    order: 6;
+  }
+  .lg\:order-2 {
+    order: 2;
+  }
+  .lg\:order-5 {
+    order: 5;
   }
   .lg\:order-3 {
     order: 3;
+  }
+  .lg\:order-1 {
+    order: 1;
+  }
+  .lg\:col-span-1 {
+    grid-column: span 1 / span 1;
   }
   .lg\:h-px {
     height: 1px;
@@ -1910,7 +1968,45 @@ select[multiple]:focus option:checked {
   .lg\:basis-1\/2 {
     flex-basis: 50%;
   }
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
   .lg\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+}
+@media (min-width: 1280px) {
+  .xl\:order-2 {
+    order: 2;
+  }
+  .xl\:order-3 {
+    order: 3;
+  }
+  .xl\:order-4 {
+    order: 4;
+  }
+  .xl\:order-6 {
+    order: 6;
+  }
+  .xl\:ml-1 {
+    margin-left: 0.25rem;
+  }
+  .xl\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+  .xl\:border-l {
+    border-left-width: 1px;
+  }
+  .xl\:border-t-0 {
+    border-top-width: 0px;
+  }
+  .xl\:pt-\[0\] {
+    padding-top: 0;
   }
 }
