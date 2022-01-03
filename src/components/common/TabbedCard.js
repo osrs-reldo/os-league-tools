@@ -25,6 +25,7 @@ function TabbedCard({ children, defaultActiveTab = null }) {
                     <Tab
                         key={tabId}
                         label={tabs[tabId][0].props.label}
+                        icon={tabs[tabId][0].props.icon}
                         active={tabId === activeTabId}
                         onClick={() => setActiveTabId(tabId)}
                     />
@@ -43,7 +44,7 @@ function TabbedCard({ children, defaultActiveTab = null }) {
     );
 }
 
-function Tab({ label, onClick, active = false }) {
+function Tab({ label, icon, onClick, active = false }) {
     const hoverStyle = active ? '' : 'bg-hover cursor-pointer';
     const textStyle = active ? 'text-accent font-semibold' : 'text-primary';
     const shadowStyle = active ? 'shadow-top' : 'shadow-top-under';
@@ -51,7 +52,10 @@ function Tab({ label, onClick, active = false }) {
     return (
         <Card onClick={onClick} corners='rounded-t-md' shadow={shadowStyle} className={`h-full grow ${hoverStyle}`}>
             <Card.Body>
-                <span className={`heading-block-md small-caps ${textStyle}`}>{label}</span>
+                <div className='flex flex-row items-center'>
+                    {icon && <img className='inline mr-2 h-[18px] mt-1' src={icon} alt='' />}
+                    <span className={`heading-block-md small-caps ${textStyle}`}>{label}</span>
+                </div>
             </Card.Body>
         </Card>
     );
