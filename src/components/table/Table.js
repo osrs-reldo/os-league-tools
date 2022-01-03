@@ -8,7 +8,15 @@ import Row from './Row';
 import SearchBox from './Search';
 import { fuzzyTextFilter, applyFilterSet } from './filter';
 
-export default function Table({ columns, data, filters, defaultColumn, ExpandedRow }) {
+export default function Table({
+    columns,
+    data,
+    filters,
+    defaultColumn,
+    initialState,
+    ExpandedRow,
+    enableResizeColumns = true,
+}) {
     const [records, setRecords] = useState(data);
 
     const filterState = useSelector(state => state.filters);
@@ -18,7 +26,7 @@ export default function Table({ columns, data, filters, defaultColumn, ExpandedR
 
     const table = useTable(
         {
-            initialState: { hiddenColumns: ['id'] },
+            initialState,
             columns,
             data: records,
             defaultColumn,
@@ -70,9 +78,11 @@ export default function Table({ columns, data, filters, defaultColumn, ExpandedR
                                                     {column.isSortedDesc ? 'arrow_drop_down' : 'arrow_drop_up'}
                                                 </span>
                                             )}
-                                            <span {...column.getResizerProps()} className='resizer icon-lg'>
-                                                drag_handle
-                                            </span>
+                                            {enableResizeColumns && (
+                                                <span {...column.getResizerProps()} className='resizer icon-lg'>
+                                                    drag_handle
+                                                </span>
+                                            )}
                                         </div>
                                     ))}
                                 </div>

@@ -557,12 +557,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .dark .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.bg-secondary-alt {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.dark .bg-secondary-alt {
+  --tw-bg-opacity: 1;
+  background-color: rgb(53 53 59 / var(--tw-bg-opacity));
 }
 
 .bg-subdued {
@@ -1239,10 +1249,9 @@ select[multiple]:focus option:checked {
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 .task-table-row:nth-child(even) {
-        /* TODO generate light mode color between gray-100 and gray-200 */
-        --tw-bg-opacity: 1;
-        background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-    }
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
 .dark .task-table-row:nth-child(even) {
   --tw-bg-opacity: 1;
   background-color: rgb(70 70 78 / var(--tw-bg-opacity));
@@ -1290,6 +1299,9 @@ select[multiple]:focus option:checked {
 }
 .order-7 {
   order: 7;
+}
+.col-span-4 {
+  grid-column: span 4 / span 4;
 }
 .row-span-2 {
   grid-row: span 2 / span 2;
@@ -1486,8 +1498,11 @@ select[multiple]:focus option:checked {
 .w-px {
   width: 1px;
 }
-.max-w-\[50\%\] {
-  max-width: 50%;
+.max-w-\[90\%\] {
+  max-width: 90%;
+}
+.max-w-\[350px\] {
+  max-width: 350px;
 }
 .shrink {
   flex-shrink: 1;
@@ -1544,6 +1559,9 @@ select[multiple]:focus option:checked {
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -1731,6 +1749,9 @@ select[multiple]:focus option:checked {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.pl-2 {
+  padding-left: 0.5rem;
+}
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1742,9 +1763,6 @@ select[multiple]:focus option:checked {
 }
 .pl-1 {
   padding-left: 0.25rem;
-}
-.pl-2 {
-  padding-left: 0.5rem;
 }
 .pb-2 {
   padding-bottom: 0.5rem;
@@ -1915,6 +1933,9 @@ select[multiple]:focus option:checked {
   .md\:w-px {
     width: 1px;
   }
+  .md\:max-w-\[75\%\] {
+    max-width: 75%;
+  }
   .md\:flex-shrink-0 {
     flex-shrink: 0;
   }
@@ -1962,6 +1983,9 @@ select[multiple]:focus option:checked {
   .lg\:w-px {
     width: 1px;
   }
+  .lg\:max-w-\[60\%\] {
+    max-width: 60%;
+  }
   .lg\:basis-1\/4 {
     flex-basis: 25%;
   }
@@ -1974,39 +1998,53 @@ select[multiple]:focus option:checked {
   .lg\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+  .lg\:flex-col {
+    flex-direction: column;
+  }
   .lg\:flex-nowrap {
     flex-wrap: nowrap;
   }
 }
 @media (min-width: 1280px) {
-  .xl\:order-2 {
+    .xl\:bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  }
+    .dark .xl\:bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+  }
+    .xl\:order-2 {
     order: 2;
   }
-  .xl\:order-3 {
+    .xl\:order-3 {
     order: 3;
   }
-  .xl\:order-4 {
+    .xl\:order-4 {
     order: 4;
   }
-  .xl\:order-6 {
+    .xl\:order-6 {
     order: 6;
   }
-  .xl\:ml-1 {
+    .xl\:ml-1 {
     margin-left: 0.25rem;
   }
-  .xl\:grid-cols-1 {
+    .xl\:mt-3 {
+    margin-top: 0.75rem;
+  }
+    .xl\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .xl\:flex-row {
+    .xl\:flex-row {
     flex-direction: row;
   }
-  .xl\:border-l {
+    .xl\:border-l {
     border-left-width: 1px;
   }
-  .xl\:border-t-0 {
+    .xl\:border-t-0 {
     border-top-width: 0px;
   }
-  .xl\:pt-\[0\] {
+    .xl\:pt-\[0\] {
     padding-top: 0;
   }
 }

@@ -20,8 +20,12 @@ module.exports = {
                 'sl-brown': '#714a37',
                 'sl-burntorange': '#b95b21',
                 'sl-khaki': '#91796c',
+                gray: {
+                    150: '#f1f2f5',
+                },
                 zinc: {
                     550: '#46464e',
+                    750: '#35353b',
                 },
             },
             dropShadow: {

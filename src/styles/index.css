@@ -12,11 +12,13 @@
         @apply bg-gray-100 dark:bg-zinc-700;
     }
     .bg-primary-alt {
-        /* TODO generate light mode color between gray-100 and gray-200 */
         @apply bg-gray-200 dark:bg-zinc-550;
     }
     .bg-secondary {
-        @apply bg-gray-200 dark:bg-zinc-800;
+        @apply bg-gray-300 dark:bg-zinc-800;
+    }
+    .bg-secondary-alt {
+        @apply bg-gray-200 dark:bg-zinc-750;
     }
     .bg-accent {
         @apply bg-tl-sage dark:bg-tl-lime;
