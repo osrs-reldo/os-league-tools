@@ -53,7 +53,7 @@ function Tab({ label, icon, onClick, active = false }) {
         <Card onClick={onClick} corners='rounded-t-md' shadow={shadowStyle} className={`h-full grow ${hoverStyle}`}>
             <Card.Body>
                 <div className='flex flex-row items-center'>
-                    {icon && <img className='inline mr-2 h-[18px] mt-1' src={icon} alt='' />}
+                    {icon && <img className='inline mr-2 h-[18px]' src={icon} alt='' />}
                     <span className={`heading-block-md small-caps ${textStyle}`}>{label}</span>
                 </div>
             </Card.Body>

@@ -1,25 +1,19 @@
+/* eslint-disable global-require */
 module.exports = {
     content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
     darkMode: 'class',
     theme: {
+        themeVariants: ['tl-dark', 'tb-dark', 'sl-dark', 'mono-dark', 'tl-light', 'tb-light', 'sl-light', 'mono-light'],
         extend: {
             colors: {
                 'tl-lime': '#a4ce27',
                 'tl-sage': '#649044',
-                'tl-charcoal': '#171717',
-                'tl-iron': '#303030',
-                'tl-steel': '#505050',
-                'tb-blue': '#85b1b2',
                 'tb-sand': '#e5d993',
-                'tb-taupe': '#937b6a',
                 'tb-brown': '#634228',
-                'sl-mint': '#beffec',
                 'sl-ecto': '#21eca5',
-                'sl-teal': '#00a294',
-                'sl-cobalt': '#484a5d',
-                'sl-brown': '#714a37',
-                'sl-burntorange': '#b95b21',
-                'sl-khaki': '#91796c',
+                'sl-teal': '#008076',
+                'mono-dark': '#f9fafb',
+                'mono-white': '#374151',
                 gray: {
                     150: '#f1f2f5',
                 },
@@ -37,9 +31,9 @@ module.exports = {
         },
     },
     plugins: [
-        // eslint-disable-next-line global-require
         require('@tailwindcss/forms')({
             strategy: 'class',
         }),
+        require('tailwindcss-multi-theme'),
     ],
 };

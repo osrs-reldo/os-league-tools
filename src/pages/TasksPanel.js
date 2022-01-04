@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ProgressBar from '../components/common/ProgressBar';
+import { ThemedProgressBar } from '../components/ThemeProvider';
 import Separator from '../components/common/Separator';
 import TaskFilters from '../components/TaskFilters';
 import TaskGenerator from '../components/TaskGenerator';
@@ -15,7 +15,11 @@ export default function TasksPanel() {
         <div className='h-full'>
             <div className='flex flex-col gap-3 mb-3'>
                 <div className='shadow-subdued'>
-                    <ProgressBar curValue={1250} maxValue={30000} steps={[500, 1000, 2000, 4000, 7500, 15000, 30000]} />
+                    <ThemedProgressBar
+                        curValue={1250}
+                        maxValue={30000}
+                        steps={[500, 1000, 2000, 4000, 7500, 15000, 30000]}
+                    />
                 </div>
                 <div className='flex flex-row flex-wrap text-accent font-semibold justify-evenly gap-2'>
                     <span>Tasks: 83 / 730</span>

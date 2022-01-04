@@ -17,13 +17,15 @@ export class NavItem {
         this.collapseGroup = collapseGroup;
         this.collapseOrder = collapseOrder;
         this.href = null;
+        this.target = null;
         this.onClick = null;
         this.iconFont = null;
         this.iconSrc = null;
     }
 
-    withHref(href) {
+    withHref(href, target = '_self') {
         this.href = href;
+        this.target = target;
         return this;
     }
 
@@ -71,7 +73,12 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                 <div className='pl-4 sm:flex hidden'>
                     {primaryNavItems &&
                         primaryNavItems.map(navItem => (
-                            <PrimaryLink key={navItem.id} label={navItem.label} href={navItem.href} />
+                            <PrimaryLink
+                                key={navItem.id}
+                                label={navItem.label}
+                                href={navItem.href}
+                                target={navItem.target}
+                            />
                         ))}
                 </div>
                 {/* Spacer */}
@@ -80,11 +87,22 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                 <div className='sm:flex hidden justify-between items-center'>
                     {secondaryNavItems &&
                         secondaryNavItems.map(navItem => (
-                            <SecondaryLink key={navItem.id} label={navItem.label} href={navItem.href} />
+                            <SecondaryLink
+                                key={navItem.id}
+                                label={navItem.label}
+                                href={navItem.href}
+                                target={navItem.target}
+                            />
                         ))}
                     {iconNavItems &&
                         iconNavItems.map(navItem => (
-                            <IconLink key={navItem.id} iconFont={navItem.iconFont} iconSrc={navItem.iconSrc} href='/' />
+                            <IconLink
+                                key={navItem.id}
+                                iconFont={navItem.iconFont}
+                                iconSrc={navItem.iconSrc}
+                                href={navItem.href}
+                                target={navItem.target}
+                            />
                         ))}
                 </div>
                 {/* Overflow dropdown menu */}
@@ -103,7 +121,12 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                                             <Dropdown.Separator />
                                             {group.map(item => {
                                                 return (
-                                                    <Dropdown.Link key={item.id} href={item.href} icon={item.iconFont}>
+                                                    <Dropdown.Link
+                                                        key={item.id}
+                                                        href={item.href}
+                                                        icon={item.iconFont}
+                                                        target={item.target}
+                                                    >
                                                         {item.label}
                                                     </Dropdown.Link>
                                                 );
@@ -139,6 +162,7 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                                     href={navItem.href}
                                     iconFont={navItem.iconFont}
                                     iconSrc={navItem.iconSrc}
+                                    target={navItem.target}
                                 />
                             ))}
                         </React.Fragment>
@@ -149,27 +173,27 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
     );
 }
 
-function PrimaryLink({ label, href }) {
+function PrimaryLink({ label, href, target }) {
     return (
-        <a className='text-primary navbar-link hover:underline mr-4' href={href}>
+        <a className='text-primary navbar-link hover:underline mr-4' href={href} target={target}>
             {label}
         </a>
     );
 }
 
-function SecondaryLink({ label, href, iconFont, iconSrc }) {
+function SecondaryLink({ label, href, iconFont, iconSrc, target }) {
     return (
         <>
-            <a className='text-primary md:inline hidden navbar-link-alt bg-hover px-2 py-1' href={href}>
+            <a className='text-primary md:inline hidden navbar-link-alt bg-hover px-2 py-1' href={href} target={target}>
                 {label}
             </a>
             {iconFont && (
-                <a className='md:hidden inline navbar-icon-link' href={href}>
+                <a className='md:hidden inline navbar-icon-link' href={href} target={target}>
                     <span className='text-primary-alt icon-lg leading-tight align-middle'>{iconFont}</span>
                 </a>
             )}
             {iconSrc && (
-                <a className='md:hidden inline navbar-icon-link' href={href}>
+                <a className='md:hidden inline navbar-icon-link' href={href} target={target}>
                     <img className='h-4 img-primary' src={iconSrc} alt='' />
                 </a>
             )}
@@ -177,24 +201,24 @@ function SecondaryLink({ label, href, iconFont, iconSrc }) {
     );
 }
 
-function IconLink({ href, iconFont, iconSrc }) {
+function IconLink({ href, iconFont, iconSrc, target }) {
     if (iconFont) {
         return (
-            <div className='bg-hover px-2 py-1'>
+            <a className='bg-hover px-2 py-1' href={href} target={target}>
                 <span className='text-primary-alt icon-xl leading-tight md:align-top align-middle'>{iconFont}</span>
-            </div>
+            </a>
         );
     }
     return (
-        <a className='navbar-icon-link' href={href}>
+        <a className='navbar-icon-link' href={href} target={target}>
             <img className='h-4 img-primary' src={iconSrc} alt='' />
         </a>
     );
 }
 
-function CollapsedMenuLink({ label, href, iconFont, iconSrc }) {
+function CollapsedMenuLink({ label, href, iconFont, iconSrc, target }) {
     return (
-        <a className='text-primary bg-hover py-1' href={href}>
+        <a className='text-primary bg-hover py-1' href={href} target={target}>
             {iconFont && <span className='text-primary-alt icon-lg inline align-middle mr-1'>{iconFont}</span>}
             {iconSrc && <img className='h-4 img-primary inline align-middle mr-1' src={iconSrc} alt='' />}
             <p className='h-4 inline pl-1 font-sans-alt'>{label}</p>

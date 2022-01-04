@@ -12,6 +12,7 @@ function Card({
     halign = 'none',
     valign = 'none',
     shadow = 'default',
+    width = 'w-full',
     onClick = () => {},
     className = '',
 }) {
@@ -28,7 +29,7 @@ function Card({
             <div className='flex md:flex-row flex-col h-full'>
                 {image && <Image src={image} style={getCardStyle('imageSize', imageSize)} />}
                 <div
-                    className={`w-full ${getCardStyle('padding', padding)} ${getCardStyle(
+                    className={`${width} ${getCardStyle('padding', padding)} ${getCardStyle(
                         'halign',
                         halign
                     )} ${getCardStyle('valign', valign)}`}

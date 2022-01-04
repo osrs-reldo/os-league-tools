@@ -4,7 +4,7 @@ export default function LabeledCheckbox({ label, defaultChecked = false, onClick
     return (
         <div className={className}>
             <input type='checkbox' className='checkbox-primary' defaultChecked={defaultChecked} onClick={onClick} />
-            <span className='ml-1 font-semibold'>{label}</span>
+            <span className='ml-1'>{label}</span>
         </div>
     );
 }

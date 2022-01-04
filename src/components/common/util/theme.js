@@ -20,11 +20,11 @@ export const CARD = {
         left: 'border-l-2 border-black',
         right: 'border-r-2 border-black',
         full: 'border-2 border-black',
-        'accent-top': 'border-t-2 border-tl-lime',
-        'accent-bottom': 'border-b-2 border-tl-lime',
-        'accent-left': 'border-l-2 border-tl-lime',
-        'accent-right': 'border-r-2 border-tl-lime',
-        'accent-full': 'border-2 border-tl-lime',
+        'accent-top': 'border-t-2 border-accent',
+        'accent-bottom': 'border-b-2 border-accent',
+        'accent-left': 'border-l-2 border-accent',
+        'accent-right': 'border-r-2 border-accent',
+        'accent-full': 'border-2 border-accent',
     },
     padding: {
         none: 'p-0',
@@ -47,6 +47,7 @@ export const CARD = {
         center: 'my-auto',
     },
     shadow: {
+        none: '',
         default: 'shadow',
     },
 };

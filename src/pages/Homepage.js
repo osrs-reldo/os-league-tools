@@ -9,10 +9,15 @@ export default function Homepage() {
     return (
         <PageWrapper>
             <div className='md:flex md:flex-row justify-center'>
-                <IconLinkCard title='Discord' />
+                <IconLinkCard title='Discord' href='https://discord.gg/GQ5kVyU' target='_blank' />
                 <IconLinkCard title='Plugin' srcOverride='/img/runelite-icon.svg' />
                 <LeagueCountdown />
-                <IconLinkCard title='Wiki' iconOverride='menu_book' />
+                <IconLinkCard
+                    title='Wiki'
+                    iconOverride='menu_book'
+                    href='https://oldschool.runescape.wiki/w/Shattered_Relics_League'
+                    target='_blank'
+                />
                 <IconLinkCard title='Feedback' iconOverride='pest_control' />
             </div>
             <p className='text-3xl small-caps ml-1 mt-2'>Updates</p>

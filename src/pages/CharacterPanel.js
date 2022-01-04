@@ -1,9 +1,9 @@
 import React from 'react';
 import HiscoreLookup from '../components/HiscoreLookup';
 import SkillsPanel from '../components/SkillsPanel';
-import ProgressBar from '../components/common/ProgressBar';
 import BossesPanel from '../components/BossesPanel';
 import Separator from '../components/common/Separator';
+import { ThemedProgressBar } from '../components/ThemeProvider';
 
 export default function CharacterPanel() {
     return (
@@ -41,7 +41,11 @@ export default function CharacterPanel() {
                     <span>Next unlock at 2000 pts (750 remaining)</span>
                 </div>
                 <div className='w-11/12'>
-                    <ProgressBar curValue={1250} maxValue={30000} steps={[500, 1000, 2000, 4000, 7500, 15000, 30000]} />
+                    <ThemedProgressBar
+                        curValue={1250}
+                        maxValue={30000}
+                        steps={[500, 1000, 2000, 4000, 7500, 15000, 30000]}
+                    />
                 </div>
                 <div className='flex flex-row flex-wrap items-center w-11/12 gap-2'>
                     <div className='m-1 grow'>

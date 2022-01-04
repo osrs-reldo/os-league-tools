@@ -1,11 +1,12 @@
 import React from 'react';
 import 'react-step-progress-bar/styles.css';
-import { ProgressBar, Step } from 'react-step-progress-bar';
+import { ProgressBar as WrappedProgressBar, Step } from 'react-step-progress-bar';
 
-export default function UnlockProgressBar({
+export default function ProgressBar({
     curValue,
     maxValue,
     steps,
+    backgroundColor,
     iconSrc = '/img/notch.png',
     showEndIcons = false,
 }) {
@@ -17,8 +18,8 @@ export default function UnlockProgressBar({
     const curPercentage = Math.min((curValue / maxValue) * 100, 100);
 
     return (
-        <ProgressBar
-            filledBackground='linear-gradient(to right, #649044, #a4ce27)'
+        <WrappedProgressBar
+            filledBackground={backgroundColor}
             percent={curPercentage}
             height={20}
             stepPositions={stepPercentages}
@@ -30,6 +31,6 @@ export default function UnlockProgressBar({
                     </Step>
                 );
             })}
-        </ProgressBar>
+        </WrappedProgressBar>
     );
 }

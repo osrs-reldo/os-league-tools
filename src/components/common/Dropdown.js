@@ -19,10 +19,10 @@ function TextItem({ children, isHeading = false }) {
     return <li className={`px-3 py-2 block ${isHeading && 'font-semibold'}`}>{children}</li>;
 }
 
-function LinkItem({ children, href, icon = null }) {
+function LinkItem({ children, href, target = '_self', icon = null }) {
     return (
         <li>
-            <a href={href} className='text-primary-alt px-3 py-2 block bg-hover'>
+            <a href={href} target={target} className='text-primary-alt px-3 py-2 block bg-hover'>
                 {icon && <span className='icon-lg align-middle mr-1'>{icon}</span>}
                 {children}
             </a>

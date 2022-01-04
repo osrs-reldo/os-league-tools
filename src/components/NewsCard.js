@@ -6,7 +6,7 @@ export default function NewsCard({ title, date, coverImg, leadText, htmlContent 
     return (
         <Card image={coverImg} padding='xl' corners='xl' className='m-2'>
             <Card.Header className='heading-accent-md'>{date}</Card.Header>
-            <Card.Header>{title}</Card.Header>
+            <Card.Header className='heading-block-md mt-1'>{title}</Card.Header>
             <Card.Body>
                 <p className='text-secondary'>
                     {expanded ? (
