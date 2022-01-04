@@ -22,8 +22,9 @@ const navItems = [
 
 export default function PageWrapper({ children }) {
     const theme = useSelector(state => state.settings.theme);
+    const limitContentWidth = useSelector(state => state.settings.limitContentWidth);
     return (
-        <Page>
+        <Page limitContentWidth={limitContentWidth}>
             <Page.Nav>
                 <NavBar navItems={navItems} brandName='OS League Tools' brandLogo={`/img/icon-${theme}.png`} />
             </Page.Nav>

@@ -10,7 +10,7 @@ module.exports = {
                 'tl-sage': '#649044',
                 'tb-sand': '#e5d993',
                 'tb-brown': '#634228',
-                'sl-ecto': '#21eca5',
+                'sl-ecto': '#13d591',
                 'sl-teal': '#008076',
                 'mono-dark': '#f9fafb',
                 'mono-white': '#374151',

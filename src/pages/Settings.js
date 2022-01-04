@@ -11,7 +11,7 @@ export default function Tracker() {
 
     return (
         <PageWrapper>
-            <div className='container mx-auto'>
+            <div className='mx-auto'>
                 <TabbedCard defaultActiveTab='interface'>
                     <TabbedCard.Tab id='interface' label='Interface'>
                         <div className='grid xl:grid-cols-2'>

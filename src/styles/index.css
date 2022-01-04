@@ -140,9 +140,6 @@
     .sidebar-wrapper {
         @apply w-full lg:max-w-sm md:max-w-xs;
     }
-    .content-wrapper {
-        @apply 2xl:container w-full;
-    }
     .w-90p {
         width: 90%;
     }
@@ -246,7 +243,7 @@
         @apply active:ring-2 active:ring-accent;
     }
     .button-group-selected {
-        @apply bg-accent text-gray-50 dark:text-black font-semibold;
+        @apply bg-accent mono-dark:bg-zinc-400 text-gray-50 dark:text-black font-semibold;
     }
     .button-group-unselected {
         @apply bg-inverted text-black;

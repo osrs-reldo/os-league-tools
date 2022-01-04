@@ -667,7 +667,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .theme-sl-dark .text-accent {
   --tw-text-opacity: 1;
-  color: rgb(33 236 165 / var(--tw-text-opacity));
+  color: rgb(19 213 145 / var(--tw-text-opacity));
 }
 
 .theme-mono-dark .text-accent {
@@ -737,7 +737,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .theme-sl-dark .border-accent {
   --tw-border-opacity: 1;
-  border-color: rgb(33 236 165 / var(--tw-border-opacity));
+  border-color: rgb(19 213 145 / var(--tw-border-opacity));
 }
 
 .theme-mono-dark .border-accent {
@@ -898,34 +898,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
-.container {
-  width: 100%;
-}
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
 /* LAYOUT */
 .page-wrapper {
   margin-left: auto;
@@ -948,39 +920,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1024px) {
   .sidebar-wrapper {
     max-width: 24rem;
-  }
-}
-.content-wrapper {
-  width: 100%;
-}
-@media (min-width: 1536px) {
-  .content-wrapper {
-    width: 100%;
-  }
-  @media (min-width: 640px) {
-    .content-wrapper {
-      max-width: 640px;
-    }
-  }
-  @media (min-width: 768px) {
-    .content-wrapper {
-      max-width: 768px;
-    }
-  }
-  @media (min-width: 1024px) {
-    .content-wrapper {
-      max-width: 1024px;
-    }
-  }
-  @media (min-width: 1280px) {
-    .content-wrapper {
-      max-width: 1280px;
-    }
-  }
-  @media (min-width: 1536px) {
-    .content-wrapper {
-      max-width: 1536px;
-    }
   }
 }
 /* NAVBAR */
@@ -1130,7 +1069,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .theme-sl-dark .heading-accent-md {
   --tw-text-opacity: 1;
-  color: rgb(33 236 165 / var(--tw-text-opacity));
+  color: rgb(19 213 145 / var(--tw-text-opacity));
 }
 .theme-mono-dark .heading-accent-md {
   --tw-text-opacity: 1;
@@ -1233,7 +1172,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .theme-sl-dark .button-filled:active {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(33 236 165 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(19 213 145 / var(--tw-ring-opacity));
 }
 .theme-mono-dark .button-filled:active {
   --tw-ring-opacity: 1;
@@ -1270,7 +1209,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .theme-sl-dark .button-filled {
   --tw-bg-opacity: 1;
-  background-color: rgb(33 236 165 / var(--tw-bg-opacity));
+  background-color: rgb(19 213 145 / var(--tw-bg-opacity));
 }
 .theme-mono-dark .button-filled {
   --tw-bg-opacity: 1;
@@ -1313,7 +1252,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .theme-sl-dark .button-outline:active {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(33 236 165 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(19 213 145 / var(--tw-ring-opacity));
 }
 .theme-mono-dark .button-outline:active {
   --tw-ring-opacity: 1;
@@ -1350,7 +1289,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .theme-sl-dark .button-outline {
   --tw-text-opacity: 1;
-  color: rgb(33 236 165 / var(--tw-text-opacity));
+  color: rgb(19 213 145 / var(--tw-text-opacity));
 }
 .theme-mono-dark .button-outline {
   --tw-text-opacity: 1;
@@ -1382,7 +1321,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .theme-sl-dark .button-outline {
   --tw-border-opacity: 1;
-  border-color: rgb(33 236 165 / var(--tw-border-opacity));
+  border-color: rgb(19 213 145 / var(--tw-border-opacity));
 }
 .theme-mono-dark .button-outline {
   --tw-border-opacity: 1;
@@ -1428,7 +1367,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .theme-sl-dark .button-group-active:active {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(33 236 165 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(19 213 145 / var(--tw-ring-opacity));
 }
 .theme-mono-dark .button-group-active:active {
   --tw-ring-opacity: 1;
@@ -1465,7 +1404,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .theme-sl-dark .button-group-selected {
   --tw-bg-opacity: 1;
-  background-color: rgb(33 236 165 / var(--tw-bg-opacity));
+  background-color: rgb(19 213 145 / var(--tw-bg-opacity));
 }
 .theme-mono-dark .button-group-selected {
   --tw-bg-opacity: 1;
@@ -1491,6 +1430,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(249 250 251 / var(--tw-text-opacity));
+}
+.theme-mono-dark .button-group-selected {
+  --tw-bg-opacity: 1;
+  background-color: rgb(161 161 170 / var(--tw-bg-opacity));
 }
 .dark .button-group-selected {
   --tw-text-opacity: 1;
@@ -1539,7 +1482,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   accent-color: #e5d993;
 }
 .theme-sl-dark .checkbox-primary {
-  accent-color: #21eca5;
+  accent-color: #13d591;
 }
 .theme-mono-dark .checkbox-primary {
   accent-color: #f9fafb;
@@ -1709,6 +1652,9 @@ select[multiple]:focus option:checked {
 .ml-1 {
   margin-left: 0.25rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .ml-5 {
   margin-left: 1.25rem;
 }
@@ -1726,9 +1672,6 @@ select[multiple]:focus option:checked {
 }
 .mr-2 {
   margin-right: 0.5rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 .mr-auto {
   margin-right: auto;
@@ -2409,5 +2352,35 @@ select[multiple]:focus option:checked {
   }
     .xl\:pt-\[0\] {
     padding-top: 0;
+  }
+}
+@media (min-width: 1536px) {
+  .\32xl\:container {
+    width: 100%;
+  }
+  @media (min-width: 640px) {
+    .\32xl\:container {
+      max-width: 640px;
+    }
+  }
+  @media (min-width: 768px) {
+    .\32xl\:container {
+      max-width: 768px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .\32xl\:container {
+      max-width: 1024px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .\32xl\:container {
+      max-width: 1280px;
+    }
+  }
+  @media (min-width: 1536px) {
+    .\32xl\:container {
+      max-width: 1536px;
+    }
   }
 }
