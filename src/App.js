@@ -9,7 +9,7 @@ import Calculators from './pages/legacy/Calculators';
 import Calculator from './pages/legacy/SkillCalculator';
 import Planner from './pages/legacy/SkillPlanner';
 import Tracker from './pages/Tracker';
-import About from './pages/legacy/About';
+import About from './pages/About';
 import PluginInfo from './pages/legacy/PluginInfo';
 import Settings from './pages/Settings';
 import store from './store';

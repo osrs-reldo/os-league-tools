@@ -685,6 +685,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+.text-code {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.dark .text-code {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.text-code {
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .img-primary {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1590,6 +1608,9 @@ select[multiple]:focus option:checked {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
@@ -1652,14 +1673,14 @@ select[multiple]:focus option:checked {
 .ml-1 {
   margin-left: 0.25rem;
 }
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
 .ml-5 {
   margin-left: 1.25rem;
-}
-.mb-3 {
-  margin-bottom: 0.75rem;
 }
 .mt-auto {
   margin-top: auto;
@@ -1774,6 +1795,9 @@ select[multiple]:focus option:checked {
   width: -moz-fit-content;
   width: fit-content;
 }
+.w-1\/2 {
+  width: 50%;
+}
 .w-11\/12 {
   width: 91.666667%;
 }
@@ -1860,11 +1884,17 @@ select[multiple]:focus option:checked {
 .cursor-pointer {
   cursor: pointer;
 }
+.list-disc {
+  list-style-type: disc;
+}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -2088,11 +2118,17 @@ select[multiple]:focus option:checked {
 .text-center {
   text-align: center;
 }
+.indent-8 {
+  text-indent: 2rem;
+}
 .align-top {
   vertical-align: top;
 }
 .align-middle {
   vertical-align: middle;
+}
+.align-sub {
+  vertical-align: sub;
 }
 .font-sans-alt {
   font-family: Inconsolata, sans-serif;
@@ -2115,6 +2151,10 @@ select[multiple]:focus option:checked {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .text-base {
   font-size: 1rem;
@@ -2139,11 +2179,15 @@ select[multiple]:focus option:checked {
 .leading-loose {
   line-height: 2;
 }
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
 .tracking-wide {
   letter-spacing: 0.025em;
 }
-.tracking-widest {
-  letter-spacing: 0.1em;
+.text-tl-sage {
+  --tw-text-opacity: 1;
+  color: rgb(100 144 68 / var(--tw-text-opacity));
 }
 .opacity-25 {
   opacity: 0.25;
@@ -2171,6 +2215,10 @@ select[multiple]:focus option:checked {
 }
 .hover\:underline:hover {
   text-decoration: underline;
+}
+.dark .dark\:text-tl-lime {
+  --tw-text-opacity: 1;
+  color: rgb(164 206 39 / var(--tw-text-opacity));
 }
 @media (min-width: 640px) {
   .sm\:order-3 {

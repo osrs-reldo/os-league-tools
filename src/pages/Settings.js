@@ -5,7 +5,7 @@ import LabeledCheckbox from '../components/common/LabeledCheckbox';
 import TabbedCard from '../components/common/TabbedCard';
 import PageWrapper from '../components/PageWrapper';
 
-export default function Tracker() {
+export default function Settings() {
     const settingsState = useSelector(state => state.settings);
     const dispatch = useDispatch();
 

@@ -17,7 +17,7 @@ const navItems = [
     new NavItem('Tip Jar', 'overflow', 2, 2)
         .withHref('https://ko-fi.com/chaiinchomp', '_blank')
         .withIconFont('savings'),
-    new NavItem('About', 'overflow', 2, 3).withHref('/').withIconFont('help_outline'),
+    new NavItem('About', 'overflow', 2, 3).withHref('/about').withIconFont('help_outline'),
 ];
 
 export default function PageWrapper({ children }) {

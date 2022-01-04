@@ -52,6 +52,9 @@
     .text-error {
         @apply text-red-600 dark:text-red-500;
     }
+    .text-code {
+        @apply font-mono bg-secondary rounded text-sm p-0.5;
+    }
     .dark-mode-img-compat {
         /* Compatibility class for applying primary text color to svg images */
         filter: invert(100%) sepia(15%) saturate(2475%) hue-rotate(180deg) brightness(102%) contrast(81%);
