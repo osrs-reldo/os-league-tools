@@ -7,7 +7,7 @@ export default function About() {
     const emphasisedText = 'text-tl-sage dark:text-tl-lime font-semibold';
     return (
         <PageWrapper>
-            <div className='w-1/2 mx-auto'>
+            <div className='container max-w-[1024px] mx-auto'>
                 <Card>
                     <Card.Header className=''>
                         <p className='text-accent font-bold text-center small-caps text-2xl tracking-widest'>
@@ -90,14 +90,16 @@ export default function About() {
                             .
                         </p>
                         <p className='indent-8 m-2'>
-                            Eventually, my goal is to launch a companion site for the main game, with all the features
-                            from the leagues version, plus even more trackers, calculators, and tools to make this the
-                            #1 hub for OSRS completionists. It's hard to put a launch date on it since the development
-                            speed depends entirely on how much free time I have IRL, but it is coming (...someday)!
+                            Eventually, the aim is to launch a companion site for the main game, with all the features
+                            from the leagues version, plus even more trackers, calculators, and tools. My goal is to
+                            create the #1 hub for OSRS completionists, efficiencyscape nerds, staunch anti-efficiency
+                            activists, noobs, main accounts, snowflake ironmen, and everyone in between. It's hard to
+                            put a launch date on it since the development speed depends entirely on how much free time I
+                            have IRL, but it is coming (...someday)!
                         </p>
                         <Separator />
                         <p className='text-accent font-semibold text-center tracking-widest m-2'>credits</p>
-                        <div className='m-2 grid grid-cols-3'>
+                        <div className='m-2 grid md:grid-cols-3 grid-cols-2'>
                             <span className={`${emphasisedText} whitespace-nowrap`}>developed with:</span>
                             <ul className='col-span-2 list-disc text-sm mb-3'>
                                 <li>React/JS</li>
