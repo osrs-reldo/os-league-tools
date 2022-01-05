@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Card from './Card';
 import { getLayoutSlots } from './util/layout';
 
-function TabbedCard({ children, defaultActiveTab = null }) {
+function TabbedCard({ children, defaultActiveTab = null, setTabCallback = () => {} }) {
     const [activeTabId, setActiveTabId] = useState(defaultActiveTab);
 
     const tabs = getLayoutSlots(children, 'id');
@@ -15,7 +15,9 @@ function TabbedCard({ children, defaultActiveTab = null }) {
     }
 
     if (!activeTabId) {
-        setActiveTabId(Object.keys(tabs)[0]);
+        const tabId = Object.keys(tabs)[0];
+        setActiveTabId(tabId);
+        setTabCallback(tabId);
     }
 
     return (
@@ -27,7 +29,10 @@ function TabbedCard({ children, defaultActiveTab = null }) {
                         label={tabs[tabId][0].props.label}
                         icon={tabs[tabId][0].props.icon}
                         active={tabId === activeTabId}
-                        onClick={() => setActiveTabId(tabId)}
+                        onClick={() => {
+                            setActiveTabId(tabId);
+                            setTabCallback(tabId);
+                        }}
                     />
                 ))}
             </div>
