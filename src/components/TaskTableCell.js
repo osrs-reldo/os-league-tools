@@ -28,7 +28,7 @@ function Task({ row, value }) {
     );
 }
 
-function ExpandedTask(row) {
+function ExpandedTask({ original }) {
     return (
         <div className='flex flex-row items-center h-full gap-2 max-w-[90%] md:max-w-[75%] lg:max-w-[60%]'>
             {/* hack: invisible dummy icons to align the expanded text with the previous row */}
@@ -38,7 +38,7 @@ function ExpandedTask(row) {
             </div>
             <div className='w-full flex flex-col gap-0.5'>
                 <span className='text-xs mr-1'>Requires:</span>
-                <Requirements value={row.original.skillReqs} className='ml-3' />
+                <Requirements value={original.skillReqs} className='ml-3' />
                 <span className='text-xs mr-1'>Notes:</span>
                 <Notes className='ml-3 my-1' />
                 <span className='text-xs mr-1'>Actions:</span>

@@ -33,7 +33,7 @@ export default function TasksPanel() {
                 {isSmViewport && showSidebar && (
                     <div className='mt-3 bg-hover cursor-pointer' onClick={() => setShowSidebar(!showSidebar)}>
                         <span className='icon-xl align-middle'>keyboard_double_arrow_up</span>
-                        <span className='text-sm'>Hide filters</span>
+                        <span className='text-sm italic ml-1'>Hide filters</span>
                     </div>
                 )}
                 {showSidebar && (

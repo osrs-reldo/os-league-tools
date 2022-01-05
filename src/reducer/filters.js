@@ -22,9 +22,7 @@ export const filterSlice = createSlice({
         update: (state, action) => {
             state[action.payload.field] = action.payload.value;
         },
-        reset: () => {
-            return INITIAL_STATE;
-        },
+        reset: () => INITIAL_STATE,
     },
 });
 

@@ -18,13 +18,11 @@ export default function Row({ row, index, moveRow, isReorderEnabled = false, Exp
     return (
         <div ref={dropRef} className={`task-table-row ${isDragging ? 'opacity-25' : 'opacity-1'}`}>
             <div {...row.getRowProps()} ref={isReorderEnabled ? dragRef : null}>
-                {row.cells.map(cell => {
-                    return (
-                        <div {...cell.getCellProps()} className='relative'>
-                            {cell.render('Cell')}
-                        </div>
-                    );
-                })}
+                {row.cells.map(cell => (
+                    <div {...cell.getCellProps()} className='relative'>
+                        {cell.render('Cell')}
+                    </div>
+                ))}
             </div>
             {row.isExpanded && <div className='w-full'>{ExpandedRow(row)}</div>}
         </div>

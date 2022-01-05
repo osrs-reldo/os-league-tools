@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from 'react';
 
 const BOSSES = [
@@ -62,49 +61,55 @@ const UNLOCKED_BOSSES = [
 export default function BossesPanel() {
     const [selectedBoss, setSelectedBoss] = useState(null);
 
-    const BossTile = ({ boss }) => {
-        return (
-            <td
-                className={`p-1 border-r border-subdued last:border-none bg-hover cursor-pointer ${
-                    selectedBoss === boss && 'bg-secondary'
-                }`}
-                onClick={() => setSelectedBoss(boss)}
-            >
-                <div className='flex items-center'>
-                    <img
-                        src={`/img/${boss
-                            .toLowerCase()
-                            .replaceAll(':', '')
-                            .replaceAll("'", '')
-                            .replaceAll(' ', '-')}.png`}
-                        alt={boss}
-                        className='inline mx-1'
-                    />
-                    {UNLOCKED_BOSSES.includes(boss) ? (
-                        <span className='text-center grow mr-1'>50</span>
-                    ) : (
-                        <span className='text-error icon-outline text-lg text-center grow'>lock</span>
-                    )}
-                </div>
-            </td>
-        );
-    };
-
     return (
         <div>
             <table className='table-auto'>
                 <tbody>
-                    {Array.from({ length: 10 }, (_, i) => {
-                        return (
-                            <tr key={i} className='border-b border-subdued last:border-none'>
-                                <BossTile boss={BOSSES[i * 5]} />
-                                {i * 5 + 1 < BOSSES.length ? <BossTile boss={BOSSES[i * 5 + 1]} /> : <td />}
-                                {i * 5 + 2 < BOSSES.length ? <BossTile boss={BOSSES[i * 5 + 2]} /> : <td />}
-                                {i * 5 + 3 < BOSSES.length ? <BossTile boss={BOSSES[i * 5 + 3]} /> : <td />}
-                                {i * 5 + 3 < BOSSES.length ? <BossTile boss={BOSSES[i * 5 + 4]} /> : <td />}
-                            </tr>
-                        );
-                    })}
+                    {Array.from({ length: 10 }, (_, i) => (
+                        <tr key={i} className='border-b border-subdued last:border-none'>
+                            <BossTile
+                                boss={BOSSES[i * 5]}
+                                selectedBoss={selectedBoss}
+                                setSelectedBoss={setSelectedBoss}
+                            />
+                            {i * 5 + 1 < BOSSES.length ? (
+                                <BossTile
+                                    boss={BOSSES[i * 5 + 1]}
+                                    selectedBoss={selectedBoss}
+                                    setSelectedBoss={setSelectedBoss}
+                                />
+                            ) : (
+                                <td />
+                            )}
+                            {i * 5 + 2 < BOSSES.length ? (
+                                <BossTile
+                                    boss={BOSSES[i * 5 + 2]}
+                                    selectedBoss={selectedBoss}
+                                    setSelectedBoss={setSelectedBoss}
+                                />
+                            ) : (
+                                <td />
+                            )}
+                            {i * 5 + 3 < BOSSES.length ? (
+                                <BossTile
+                                    boss={BOSSES[i * 5 + 3]}
+                                    selectedBoss={selectedBoss}
+                                    setSelectedBoss={setSelectedBoss}
+                                />
+                            ) : (
+                                <td />
+                            )}
+                            {i * 5 + 3 < BOSSES.length ? (
+                                <BossTile
+                                    boss={BOSSES[i * 5 + 4]}
+                                    selectedBoss={selectedBoss}
+                                    setSelectedBoss={setSelectedBoss}
+                                />
+                            ) : (
+                                <td />
+                            )}
+                        </tr>
+                    ))}
                 </tbody>
             </table>
             <div className='w-full px-1 mt-2 align-top'>
@@ -123,5 +128,29 @@ export default function BossesPanel() {
                 )}
             </div>
         </div>
+    );
+}
+
+function BossTile({ boss, selectedBoss, setSelectedBoss }) {
+    return (
+        <td
+            className={`p-1 border-r border-subdued last:border-none bg-hover cursor-pointer ${
+                selectedBoss === boss && 'bg-secondary'
+            }`}
+            onClick={() => setSelectedBoss(boss)}
+        >
+            <div className='flex items-center'>
+                <img
+                    src={`/img/${boss.toLowerCase().replaceAll(':', '').replaceAll("'", '').replaceAll(' ', '-')}.png`}
+                    alt={boss}
+                    className='inline mx-1'
+                />
+                {UNLOCKED_BOSSES.includes(boss) ? (
+                    <span className='text-center grow mr-1'>50</span>
+                ) : (
+                    <span className='text-error icon-outline text-lg text-center grow'>lock</span>
+                )}
+            </div>
+        </td>
     );
 }

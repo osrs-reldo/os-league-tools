@@ -26,17 +26,7 @@ export default function QuestTable() {
                 id: 'points',
                 accessor: 'points',
                 width: 80,
-                Cell: ({ value }) => {
-                    return (
-                        <div className='flex items-center h-full justify-center'>
-                            {value ? (
-                                <LabeledIcon label={value} icon='/img/task-quest.png' />
-                            ) : (
-                                <span className='text-xs italic'>n/a</span>
-                            )}
-                        </div>
-                    );
-                },
+                Cell: PointsCell,
             },
             {
                 Header: 'Difficulty',
@@ -44,11 +34,7 @@ export default function QuestTable() {
                 accessor: 'difficulty',
                 width: 175,
                 sortType: (a, b) => a.values.difficulty.id - b.values.difficulty.id,
-                Cell: ({ value }) => (
-                    <div className='flex items-center h-full justify-center'>
-                        <LabeledIcon label={value.label} icon={value.icon} />
-                    </div>
-                ),
+                Cell: IconCell,
             },
             {
                 Header: 'Length',
@@ -56,11 +42,7 @@ export default function QuestTable() {
                 accessor: 'length',
                 width: 175,
                 sortType: (a, b) => a.values.length.id - b.values.length.id,
-                Cell: ({ value }) => (
-                    <div className='flex items-center h-full justify-center'>
-                        <LabeledIcon label={value.label} icon={value.icon} />
-                    </div>
-                ),
+                Cell: IconCell,
             },
             {
                 Header: 'Series',
@@ -72,16 +54,7 @@ export default function QuestTable() {
                     const labelB = b.values.series ? b.values.series.label : 'zzz';
                     return labelA.localeCompare(labelB);
                 },
-                Cell: ({ value }) => {
-                    if (value) {
-                        return (
-                            <div className='flex items-center h-full justify-center'>
-                                <LabeledIcon label={value.label} icon={value.icon} />
-                            </div>
-                        );
-                    }
-                    return null;
-                },
+                Cell: IconCell,
             },
         ],
         []
@@ -125,4 +98,27 @@ function QuestCell({ value }) {
             <span className='inline align-middle'>{value}</span>
         </div>
     );
+}
+
+function PointsCell({ value }) {
+    return (
+        <div className='flex items-center h-full justify-center'>
+            {value ? (
+                <LabeledIcon label={value} icon='/img/task-quest.png' />
+            ) : (
+                <span className='text-xs italic'>n/a</span>
+            )}
+        </div>
+    );
+}
+
+function IconCell({ value }) {
+    if (value) {
+        return (
+            <div className='flex items-center h-full justify-center'>
+                <LabeledIcon label={value.label} icon={value.icon} />
+            </div>
+        );
+    }
+    return null;
 }

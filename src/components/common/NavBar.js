@@ -115,25 +115,21 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                         </div>
                         <div className='right-1 mt-1 absolute'>
                             <Dropdown show={showMenuExpanded} innerRef={menuRef} width='sm'>
-                                {getCollapseGroups(overflowNavItems).map((group, i) => {
-                                    return (
-                                        <React.Fragment key={i}>
-                                            <Dropdown.Separator />
-                                            {group.map(item => {
-                                                return (
-                                                    <Dropdown.Link
-                                                        key={item.id}
-                                                        href={item.href}
-                                                        icon={item.iconFont}
-                                                        target={item.target}
-                                                    >
-                                                        {item.label}
-                                                    </Dropdown.Link>
-                                                );
-                                            })}
-                                        </React.Fragment>
-                                    );
-                                })}
+                                {getCollapseGroups(overflowNavItems).map((group, i) => (
+                                    <React.Fragment key={i}>
+                                        <Dropdown.Separator />
+                                        {group.map(item => (
+                                            <Dropdown.Link
+                                                key={item.id}
+                                                href={item.href}
+                                                icon={item.iconFont}
+                                                target={item.target}
+                                            >
+                                                {item.label}
+                                            </Dropdown.Link>
+                                        ))}
+                                    </React.Fragment>
+                                ))}
                             </Dropdown>
                         </div>
                     </div>
@@ -151,23 +147,21 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                 </div>
             </div>
             <div className={`sm:hidden ${showMenuCollapsed ? 'flex flex-col gap-1' : 'hidden'}`}>
-                {collapseGroups.map((group, i) => {
-                    return (
-                        <React.Fragment key={i}>
-                            <div className='h-px w-full bg-subdued' />
-                            {group.map(navItem => (
-                                <CollapsedMenuLink
-                                    key={navItem.id}
-                                    label={navItem.label}
-                                    href={navItem.href}
-                                    iconFont={navItem.iconFont}
-                                    iconSrc={navItem.iconSrc}
-                                    target={navItem.target}
-                                />
-                            ))}
-                        </React.Fragment>
-                    );
-                })}
+                {collapseGroups.map((group, i) => (
+                    <React.Fragment key={i}>
+                        <div className='h-px w-full bg-subdued' />
+                        {group.map(navItem => (
+                            <CollapsedMenuLink
+                                key={navItem.id}
+                                label={navItem.label}
+                                href={navItem.href}
+                                iconFont={navItem.iconFont}
+                                iconSrc={navItem.iconSrc}
+                                target={navItem.target}
+                            />
+                        ))}
+                    </React.Fragment>
+                ))}
             </div>
         </nav>
     );

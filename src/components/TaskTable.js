@@ -24,9 +24,7 @@ export default function TaskTable() {
                 id: 'task',
                 // eslint-disable-next-line no-nested-ternary
                 width: isXsViewport ? 0 : isSmViewport ? 375 : 470,
-                accessor: row => {
-                    return { label: row.label, description: row.description };
-                },
+                accessor: row => ({ label: row.label, description: row.description }),
                 sortType: sortTask,
                 Cell: Cell.Task,
             },
@@ -44,9 +42,7 @@ export default function TaskTable() {
                 id: 'category',
                 minWidth: 90,
                 width: isMdOrSmallerViewport ? 100 : 150,
-                accessor: row => {
-                    return { category: row.category, subcategory: row.subcategory };
-                },
+                accessor: row => ({ category: row.category, subcategory: row.subcategory }),
                 sortType: sortCategory,
                 Cell: Cell.Category,
             },

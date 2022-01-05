@@ -24,13 +24,11 @@ export default function ProgressBar({
             height={20}
             stepPositions={stepPercentages}
         >
-            {stepsToShow.map(step => {
-                return (
-                    <Step key={step} transition='scale'>
-                        {() => <img src={iconSrc} alt='' className='h-5' />}
-                    </Step>
-                );
-            })}
+            {stepsToShow.map(step => (
+                <Step key={step} transition='scale'>
+                    {() => <img src={iconSrc} alt='' className='h-5' />}
+                </Step>
+            ))}
         </WrappedProgressBar>
     );
 }
