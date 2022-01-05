@@ -1636,8 +1636,8 @@ select[multiple]:focus option:checked {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
-.col-span-2 {
-  grid-column: span 2 / span 2;
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
 .row-span-2 {
   grid-row: span 2 / span 2;
@@ -1703,6 +1703,9 @@ select[multiple]:focus option:checked {
 }
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+.ml-6 {
+  margin-left: 1.5rem;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -1855,9 +1858,6 @@ select[multiple]:focus option:checked {
 }
 .max-w-\[350px\] {
   max-width: 350px;
-}
-.max-w-\[1024px\] {
-  max-width: 1024px;
 }
 .shrink {
   flex-shrink: 1;
@@ -2213,10 +2213,6 @@ select[multiple]:focus option:checked {
 .tracking-wide {
   letter-spacing: 0.025em;
 }
-.text-tl-sage {
-  --tw-text-opacity: 1;
-  color: rgb(100 144 68 / var(--tw-text-opacity));
-}
 .opacity-25 {
   opacity: 0.25;
 }
@@ -2243,10 +2239,6 @@ select[multiple]:focus option:checked {
 }
 .hover\:underline:hover {
   text-decoration: underline;
-}
-.dark .dark\:text-tl-lime {
-  --tw-text-opacity: 1;
-  color: rgb(164 206 39 / var(--tw-text-opacity));
 }
 @media (min-width: 640px) {
   .sm\:order-3 {
@@ -2318,14 +2310,17 @@ select[multiple]:focus option:checked {
   .md\:flex-shrink-0 {
     flex-shrink: 0;
   }
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .md\:flex-row {
     flex-direction: row;
   }
   .md\:gap-1 {
     gap: 0.25rem;
+  }
+  .md\:text-right {
+    text-align: right;
   }
   .md\:align-top {
     vertical-align: top;
@@ -2367,6 +2362,9 @@ select[multiple]:focus option:checked {
   }
   .lg\:max-w-\[60\%\] {
     max-width: 60%;
+  }
+  .lg\:max-w-\[768px\] {
+    max-width: 768px;
   }
   .lg\:basis-1\/4 {
     flex-basis: 25%;

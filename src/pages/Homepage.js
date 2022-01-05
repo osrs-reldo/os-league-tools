@@ -12,13 +12,8 @@ export default function Homepage() {
                 <IconLinkCard title='Discord' href='https://discord.gg/GQ5kVyU' target='_blank' />
                 <IconLinkCard title='Plugin' srcOverride='/img/runelite-icon.svg' />
                 <LeagueCountdown />
-                <IconLinkCard
-                    title='Wiki'
-                    iconOverride='menu_book'
-                    href='https://oldschool.runescape.wiki/w/Shattered_Relics_League'
-                    target='_blank'
-                />
                 <IconLinkCard title='Feedback' iconOverride='pest_control' />
+                <IconLinkCard title='About' iconOverride='help_outline' href='/about' />
             </div>
             <p className='text-3xl small-caps ml-1 mt-2'>Updates</p>
             {newsPosts.map(newsPost => (
