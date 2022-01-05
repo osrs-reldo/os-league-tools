@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 import './styles/compiled.css';
@@ -32,17 +32,20 @@ export default function App() {
             <ThemeProvider>
                 <div className='App'>
                     <BrowserRouter basename='/'>
-                        <Switch>
-                            <Route exact path='/' component={Homepage} />
-                            <Route path='/news' component={Homepage} />
-                            <Route path='/tracker' component={Tracker} />
-                            {/* <Route exact path='/calculators' component={Calculators} />
-                            <Route path='/calculators/:skill' component={Calculator} />
-                            <Route path='/planners/:skill' component={Planner} /> */}
-                            <Route path='/about' component={About} />
-                            {/* <Route path='/plugin' component={PluginInfo} /> */}
-                            <Route path='/settings' component={Settings} />
-                        </Switch>
+                        <Routes>
+                            <Route path='/' element={<Homepage />} />
+                            <Route path='news' element={<Homepage />} />
+                            <Route path='tracker' element={<Tracker />} />
+                            <Route path='calculators' element={<div />}>
+                                <Route path=':skill' element={<div />} />
+                            </Route>
+                            <Route path='planners' element={<div />}>
+                                <Route path=':skill' element={<div />} />
+                            </Route>
+                            <Route path='about' element={<About />} />
+                            <Route path='plugin' element={<div />} />
+                            <Route path='settings' element={<Settings />} />
+                        </Routes>
                     </BrowserRouter>
                 </div>
             </ThemeProvider>
