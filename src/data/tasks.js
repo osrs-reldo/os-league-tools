@@ -1,4 +1,4 @@
-import { DIFFICULTY, CATEGORY, SUBCATEGORY } from '../util/constants';
+import { DIFFICULTY, CATEGORY, SUBCATEGORY } from './constants';
 
 export default [
     {

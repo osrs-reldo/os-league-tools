@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SKILLS } from '../util/constants';
+import { SKILLS } from '../data/constants';
 
 const UNLOCKED_SKILLS = ['Runecraft', 'Agility', 'Firemaking'];
 

@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { matchSorter } from 'match-sorter';
-import quests from '../resources/quests';
+import quests from '../data/quests';
 import Cell from './TaskTableCell';
 import Table from './common/Table';
 import LabeledIcon from './common/LabeledIcon';

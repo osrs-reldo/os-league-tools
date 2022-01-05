@@ -5,7 +5,7 @@ import { update as updateFilter, reset } from '../reducer/filters';
 import { update as updateUserData } from '../reducer/userData';
 import ButtonGroup from './common/ButtonGroup';
 import InputSelect from './common/InputSelect';
-import { CATEGORY, SUBCATEGORY, DIFFICULTY, SKILLS } from '../util/constants';
+import { CATEGORY, SUBCATEGORY, DIFFICULTY, SKILLS } from '../data/constants';
 import LabeledCheckbox from './common/LabeledCheckbox';
 
 export default function TaskFilters() {

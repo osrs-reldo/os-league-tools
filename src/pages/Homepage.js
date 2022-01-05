@@ -1,5 +1,5 @@
 import React from 'react';
-import newsPosts from '../resources/newsPosts.json';
+import newsPosts from '../data/newsPosts.json';
 import NewsCard from '../components/NewsCard';
 import PageWrapper from '../components/PageWrapper';
 import IconLinkCard from '../components/IconLinkCard';

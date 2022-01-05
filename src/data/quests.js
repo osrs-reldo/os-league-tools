@@ -1,4 +1,4 @@
-import { QUEST_DIFFICULTY, QUEST_LENGTH, QUEST_SERIES } from '../util/constants';
+import { QUEST_DIFFICULTY, QUEST_LENGTH, QUEST_SERIES } from './constants';
 
 export default [
     {

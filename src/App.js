@@ -5,12 +5,8 @@ import ReactGA from 'react-ga';
 import './styles/compiled.css';
 import { Provider } from 'react-redux';
 import Homepage from './pages/Homepage';
-import Calculators from './pages/legacy/Calculators';
-import Calculator from './pages/legacy/SkillCalculator';
-import Planner from './pages/legacy/SkillPlanner';
 import Tracker from './pages/Tracker';
 import About from './pages/About';
-import PluginInfo from './pages/legacy/PluginInfo';
 import Settings from './pages/Settings';
 import store from './store';
 import ThemeProvider from './components/ThemeProvider';
@@ -40,11 +36,11 @@ export default function App() {
                             <Route exact path='/' component={Homepage} />
                             <Route path='/news' component={Homepage} />
                             <Route path='/tracker' component={Tracker} />
-                            <Route exact path='/calculators' component={Calculators} />
+                            {/* <Route exact path='/calculators' component={Calculators} />
                             <Route path='/calculators/:skill' component={Calculator} />
-                            <Route path='/planners/:skill' component={Planner} />
+                            <Route path='/planners/:skill' component={Planner} /> */}
                             <Route path='/about' component={About} />
-                            <Route path='/plugin' component={PluginInfo} />
+                            {/* <Route path='/plugin' component={PluginInfo} /> */}
                             <Route path='/settings' component={Settings} />
                         </Switch>
                     </BrowserRouter>

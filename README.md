@@ -24,12 +24,6 @@ npm start
 
 and open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Updating task/calculator data
-
-To update any data relating to tasks or skill calculators, you'll first need to edit the corresponding .csv file found in `/scripts/inputs`.
-
-After making your changes, run either `parseCalcSpreadsheets.py` or `parseTaskSpreadsheet.py` (depending on which one you edited) to generate the json resource files. Once that's done, you will see your changes reflected in the site.
-
 ### Code style
 
 This project uses [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) to maintain a consistent code style. Any violations will be automatically fixed at commit time if possible, otherwise if they need manual attention, the commit will fail with a message letting you know what went wrong.

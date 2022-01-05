@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import _ from 'lodash';
 import { matchSorter } from 'match-sorter';
-import tasks from '../resources/tasks';
+import tasks from '../data/tasks';
 import Cell from './TaskTableCell';
 import Table from './common/Table';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
