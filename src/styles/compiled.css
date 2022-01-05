@@ -1642,20 +1642,11 @@ select[multiple]:focus option:checked {
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
-.float-left {
-  float: left;
-}
 .m-2 {
   margin: 0.5rem;
 }
 .m-1 {
   margin: 0.25rem;
-}
-.m-3 {
-  margin: 0.75rem;
-}
-.m-4 {
-  margin: 1rem;
 }
 .mx-1 {
   margin-left: 0.25rem;
@@ -1727,18 +1718,6 @@ select[multiple]:focus option:checked {
 }
 .mr-auto {
   margin-right: auto;
-}
-.mb-4 {
-  margin-bottom: 1rem;
-}
-.mt-0 {
-  margin-top: 0px;
-}
-.mt-5 {
-  margin-top: 1.25rem;
-}
-.mb-0 {
-  margin-bottom: 0px;
 }
 .ml-auto {
   margin-left: auto;
@@ -2071,9 +2050,6 @@ select[multiple]:focus option:checked {
 .p-2 {
   padding: 0.5rem;
 }
-.p-3 {
-  padding: 0.75rem;
-}
 .p-0 {
   padding: 0px;
 }
@@ -2130,18 +2106,6 @@ select[multiple]:focus option:checked {
 }
 .pr-2 {
   padding-right: 0.5rem;
-}
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-.pl-3 {
-  padding-left: 0.75rem;
-}
-.pt-3 {
-  padding-top: 0.75rem;
-}
-.text-left {
-  text-align: left;
 }
 .text-center {
   text-align: center;
