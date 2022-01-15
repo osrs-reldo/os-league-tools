@@ -27,6 +27,7 @@ const BOSSES = [
     "Kree'Arra",
     "K'ril Tsutsaroth",
     'Mimic',
+    'Nex',
     'Nightmare',
     "Phosani's Nightmare",
     'Obor',
