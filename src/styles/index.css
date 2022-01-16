@@ -75,6 +75,9 @@
     .border-subdued {
         @apply border-gray-300 dark:border-zinc-500;
     }
+    .border-error {
+        @apply border-red-600 dark:border-red-500;
+    }
     .shadow-primary {
         @apply shadow-black/10 dark:shadow-black/70;
     }
@@ -84,6 +87,9 @@
     .ring-accent {
         @apply tl-light:ring-tl-sage tb-light:ring-tb-brown sl-light:ring-sl-teal mono-light:ring-mono-white;
         @apply tl-dark:ring-tl-lime tb-dark:ring-tb-sand sl-dark:ring-sl-ecto mono-dark:ring-mono-dark;
+    }
+    .ring-error {
+        @apply ring-red-600 dark:ring-red-500;
     }
     .form-accent {
         @apply tl-light:accent-tl-sage tb-light:accent-tb-brown sl-light:accent-sl-teal mono-light:accent-mono-white;

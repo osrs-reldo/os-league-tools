@@ -1,6 +1,3 @@
-/* eslint-disable react/no-array-index-key */
-/* linter is grumpy and won't pick this up from eslintrc right now */
-
 import React, { useState, useRef } from 'react';
 import _ from 'lodash';
 import Dropdown from './Dropdown';

@@ -7,13 +7,14 @@ export default function ButtonGroup({
     setSelection = () => {},
     enabled = true,
     multi = false,
+    className = '',
 }) {
     if (!selection) {
         setSelection(multi ? [] : buttons[Object.keys(buttons)[0]].id);
     }
 
     return (
-        <div className='flex text-sm shadow rounded w-fit'>
+        <div className={`flex text-sm shadow rounded w-fit ${className}`}>
             {buttons.map(({ value, label }) => {
                 if (!enabled) {
                     return (

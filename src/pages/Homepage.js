@@ -1,20 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import newsPosts from '../data/newsPosts.json';
 import NewsCard from '../components/NewsCard';
 import PageWrapper from '../components/PageWrapper';
 import IconLinkCard from '../components/IconLinkCard';
 import LeagueCountdown from '../components/LeagueCountdown';
+import FeedbackModal from '../components/FeedbackModal';
 
 export default function Homepage() {
+    const [isFeedbackModalOpen, setFeedbackModalOpen] = useState(false);
+
     return (
         <PageWrapper>
             <div className='md:flex md:flex-row justify-center'>
                 <IconLinkCard title='Discord' href='https://discord.gg/GQ5kVyU' target='_blank' />
-                <IconLinkCard title='Plugin' srcOverride='/img/runelite-icon.svg' />
+                <IconLinkCard title='Plugin' iconSrc='/img/runelite-icon.svg' />
                 <LeagueCountdown />
-                <IconLinkCard title='Feedback' iconOverride='pest_control' />
-                <IconLinkCard title='About' iconOverride='help_outline' href='/about' />
+                <IconLinkCard title='Feedback' iconText='pest_control' onClick={() => setFeedbackModalOpen(true)} />
+                <IconLinkCard title='About' iconText='help_outline' href='/about' />
             </div>
+            <FeedbackModal isOpen={isFeedbackModalOpen} setIsOpen={val => setFeedbackModalOpen(val)} />
             <p className='text-3xl small-caps ml-1 mt-2'>Updates</p>
             {newsPosts.map(newsPost => (
                 <NewsCard
