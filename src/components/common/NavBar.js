@@ -21,6 +21,8 @@ export class NavItem {
         this.onClick = null;
         this.iconFont = null;
         this.iconSrc = null;
+        this.renderFn = null;
+        this.renderAsDropdownFn = null;
     }
 
     withHref(href, target = '_self') {
@@ -41,6 +43,12 @@ export class NavItem {
 
     withIconSrc(iconSrc) {
         this.iconSrc = iconSrc;
+        return this;
+    }
+
+    withCustomRenderFn(renderFn, renderAsDropdownFn) {
+        this.renderFn = renderFn;
+        this.renderAsDropdownFn = renderAsDropdownFn;
         return this;
     }
 }
@@ -72,38 +80,50 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                 {/* Primary nav links */}
                 <div className='pl-4 sm:flex hidden'>
                     {primaryNavItems &&
-                        primaryNavItems.map(navItem => (
-                            <PrimaryLink
-                                key={navItem.id}
-                                label={navItem.label}
-                                href={navItem.href}
-                                target={navItem.target}
-                            />
-                        ))}
+                        primaryNavItems.map(navItem =>
+                            navItem.renderFn ? (
+                                navItem.renderFn()
+                            ) : (
+                                <PrimaryLink
+                                    key={navItem.id}
+                                    label={navItem.label}
+                                    href={navItem.href}
+                                    target={navItem.target}
+                                />
+                            )
+                        )}
                 </div>
                 {/* Spacer */}
                 <div className='sm:flex hidden flex-grow' />
                 {/* Secondary nav links */}
                 <div className='sm:flex hidden justify-between items-center'>
                     {secondaryNavItems &&
-                        secondaryNavItems.map(navItem => (
-                            <SecondaryLink
-                                key={navItem.id}
-                                label={navItem.label}
-                                href={navItem.href}
-                                target={navItem.target}
-                            />
-                        ))}
+                        secondaryNavItems.map(navItem =>
+                            navItem.renderFn ? (
+                                navItem.renderFn()
+                            ) : (
+                                <SecondaryLink
+                                    key={navItem.id}
+                                    label={navItem.label}
+                                    href={navItem.href}
+                                    target={navItem.target}
+                                />
+                            )
+                        )}
                     {iconNavItems &&
-                        iconNavItems.map(navItem => (
-                            <IconLink
-                                key={navItem.id}
-                                iconFont={navItem.iconFont}
-                                iconSrc={navItem.iconSrc}
-                                href={navItem.href}
-                                target={navItem.target}
-                            />
-                        ))}
+                        iconNavItems.map(navItem =>
+                            navItem.renderFn ? (
+                                navItem.renderFn()
+                            ) : (
+                                <IconLink
+                                    key={navItem.id}
+                                    iconFont={navItem.iconFont}
+                                    iconSrc={navItem.iconSrc}
+                                    href={navItem.href}
+                                    target={navItem.target}
+                                />
+                            )
+                        )}
                 </div>
                 {/* Overflow dropdown menu */}
                 <div className='sm:flex hidden justify-between items-center'>
@@ -118,16 +138,20 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                                 {getCollapseGroups(overflowNavItems).map((group, i) => (
                                     <React.Fragment key={i}>
                                         <Dropdown.Separator />
-                                        {group.map(item => (
-                                            <Dropdown.Link
-                                                key={item.id}
-                                                href={item.href}
-                                                icon={item.iconFont}
-                                                target={item.target}
-                                            >
-                                                {item.label}
-                                            </Dropdown.Link>
-                                        ))}
+                                        {group.map(item =>
+                                            item.renderFn ? (
+                                                item.renderFn()
+                                            ) : (
+                                                <Dropdown.Link
+                                                    key={item.id}
+                                                    href={item.href}
+                                                    icon={item.iconFont}
+                                                    target={item.target}
+                                                >
+                                                    {item.label}
+                                                </Dropdown.Link>
+                                            )
+                                        )}
                                     </React.Fragment>
                                 ))}
                             </Dropdown>
@@ -150,16 +174,20 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                 {collapseGroups.map((group, i) => (
                     <React.Fragment key={i}>
                         <div className='h-px w-full bg-subdued' />
-                        {group.map(navItem => (
-                            <CollapsedMenuLink
-                                key={navItem.id}
-                                label={navItem.label}
-                                href={navItem.href}
-                                iconFont={navItem.iconFont}
-                                iconSrc={navItem.iconSrc}
-                                target={navItem.target}
-                            />
-                        ))}
+                        {group.map(navItem =>
+                            navItem.renderAsDropdownFn ? (
+                                navItem.renderAsDropdownFn()
+                            ) : (
+                                <CollapsedMenuLink
+                                    key={navItem.id}
+                                    label={navItem.label}
+                                    href={navItem.href}
+                                    iconFont={navItem.iconFont}
+                                    iconSrc={navItem.iconSrc}
+                                    target={navItem.target}
+                                />
+                            )
+                        )}
                     </React.Fragment>
                 ))}
             </div>

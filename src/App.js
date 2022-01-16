@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
+import { Auth0Provider } from '@auth0/auth0-react';
 import './styles/compiled.css';
 import { Provider } from 'react-redux';
 import Homepage from './pages/Homepage';
@@ -32,20 +33,26 @@ export default function App() {
             <ThemeProvider>
                 <div className='App'>
                     <BrowserRouter basename='/'>
-                        <Routes>
-                            <Route path='/' element={<Homepage />} />
-                            <Route path='news' element={<Homepage />} />
-                            <Route path='tracker' element={<Tracker />} />
-                            <Route path='calculators' element={<div />}>
-                                <Route path=':skill' element={<div />} />
-                            </Route>
-                            <Route path='planners' element={<div />}>
-                                <Route path=':skill' element={<div />} />
-                            </Route>
-                            <Route path='about' element={<About />} />
-                            <Route path='plugin' element={<div />} />
-                            <Route path='settings' element={<Settings />} />
-                        </Routes>
+                        <Auth0Provider
+                            domain='login.osleague.tools'
+                            clientId='yfqwKEhQO8FL7MlxWmWo7ekuGgzSrfmh'
+                            redirectUri={window.location.origin}
+                        >
+                            <Routes>
+                                <Route path='/' element={<Homepage />} />
+                                <Route path='news' element={<Homepage />} />
+                                <Route path='tracker' element={<Tracker />} />
+                                <Route path='calculators' element={<div />}>
+                                    <Route path=':skill' element={<div />} />
+                                </Route>
+                                <Route path='planners' element={<div />}>
+                                    <Route path=':skill' element={<div />} />
+                                </Route>
+                                <Route path='about' element={<About />} />
+                                <Route path='plugin' element={<div />} />
+                                <Route path='settings' element={<Settings />} />
+                            </Routes>
+                        </Auth0Provider>
                     </BrowserRouter>
                 </div>
             </ThemeProvider>

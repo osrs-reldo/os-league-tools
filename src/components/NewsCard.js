@@ -8,7 +8,7 @@ export default function NewsCard({ title, date, coverImg, leadText, htmlContent 
             <Card.Header className='heading-accent-md'>{date}</Card.Header>
             <Card.Header className='heading-block-md mt-1'>{title}</Card.Header>
             <Card.Body>
-                <p className='text-secondary'>
+                <div className='text-secondary'>
                     {expanded ? (
                         <>
                             {/* eslint-disable-next-line react/no-danger */}
@@ -31,7 +31,7 @@ export default function NewsCard({ title, date, coverImg, leadText, htmlContent 
                             </div>
                         </>
                     )}
-                </p>
+                </div>
             </Card.Body>
         </Card>
     );

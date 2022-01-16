@@ -4,6 +4,7 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@auth0/auth0-react": "^1.8.0",
         "@reduxjs/toolkit": "^1.7.1",
         "@tailwindcss/forms": "^0.4.0",
         "history": "^5.2.0",

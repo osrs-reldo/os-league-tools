@@ -2,12 +2,16 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Page from './common/Page';
 import NavBar, { NavItem } from './common/NavBar';
+import AuthButton from './AuthButton';
 
 const navItems = [
     new NavItem('Stats', 'primary', 0, 0).withHref('/').withIconFont('query_stats'),
     new NavItem('Trackers', 'primary', 0, 1).withHref('/tracker').withIconFont('checklist_rtl'),
     new NavItem('Calculators', 'primary', 0, 2).withHref('/').withIconFont('calculate'),
-    new NavItem('Login', 'secondary', 1, 0).withHref('/').withIconFont('login'),
+    new NavItem('Login', 'secondary', 1, 0).withCustomRenderFn(
+        () => <AuthButton key='login' />,
+        () => <AuthButton key='login' useDropdownVariant />
+    ),
     new NavItem('RuneLite Plugin', 'icon', 1, 2).withHref('/').withIconSrc('/img/runelite-icon.svg'),
     new NavItem('Settings', 'overflow', 1, 1).withHref('/settings').withIconFont('settings'),
     new NavItem('Discord', 'overflow', 2, 0).withHref('https://discord.gg/GQ5kVyU', '_blank').withIconFont('discord'),

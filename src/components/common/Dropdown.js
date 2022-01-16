@@ -30,12 +30,24 @@ function LinkItem({ children, href, target = '_self', icon = null }) {
     );
 }
 
+function ButtonItem({ children, onClick, icon = null }) {
+    return (
+        <li>
+            <button onClick={onClick} type='button' className='text-primary-alt px-3 py-2 block bg-hover'>
+                {icon && <span className='icon-lg align-middle mr-1'>{icon}</span>}
+                {children}
+            </button>
+        </li>
+    );
+}
+
 function Separator() {
     return <li className='h-px w-full bg-subdued' />;
 }
 
 Dropdown.Text = TextItem;
 Dropdown.Link = LinkItem;
+Dropdown.Button = ButtonItem;
 Dropdown.Separator = Separator;
 
 export default Dropdown;
