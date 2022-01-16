@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SKILLS } from '../data/constants';
 
-const UNLOCKED_SKILLS = ['Runecraft', 'Agility', 'Firemaking'];
+const UNLOCKED_SKILLS = ['Defence', 'Thieving', 'Fishing'];
 
 export default function SkillsPanel() {
     const [selectedSkill, setSelectedSkill] = useState(null);
