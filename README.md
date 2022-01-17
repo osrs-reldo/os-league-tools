@@ -42,7 +42,7 @@ npm run build:styles
 
 ### Backend
 
-Some functionality (hiscores, submitting feedback, anything to do with user data) relies on the Reldo backend API. If you need to test any of these features during local development, you will either need to clone [osrs-reldo-api](https://github.com/osrs-reldo/osrs-reldo-api) and start it up locally (app will look for it on port 8080 by default), or set an env variable `RELDO_URL` to the endpoint that should receive the calls.
+Some functionality (hiscores, submitting feedback, anything to do with user data) relies on the Reldo backend API. If you need to test any of these features during local development, you will either need to clone [osrs-reldo-api](https://github.com/osrs-reldo/osrs-reldo-api) and start it up locally (app will look for it on port 8080 by default), or set an env variable `REACT_APP_RELDO_URL` to the endpoint that should receive the calls.
 
 ## Credits
 

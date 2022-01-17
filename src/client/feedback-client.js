@@ -1,4 +1,4 @@
-const BASE_URL = process.env.RELDO_URL || 'http://localhost:8080';
+const BASE_URL = process.env.REACT_APP_RELDO_URL || 'http://localhost:8080';
 
 export function submitBug(formData) {
     return submitFeedback(formData, '/bug');

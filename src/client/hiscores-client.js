@@ -5,7 +5,7 @@ import {
     updateLocalStorage,
 } from './localstorage-client';
 
-const BASE_URL = process.env.RELDO_URL || 'http://localhost:8080';
+const BASE_URL = process.env.REACT_APP_RELDO_URL || 'http://localhost:8080';
 
 export async function getHiscores(rsn) {
     const url = `${BASE_URL}/hiscores/${rsn}`;
