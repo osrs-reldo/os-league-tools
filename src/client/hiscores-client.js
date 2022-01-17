@@ -5,10 +5,10 @@ import {
     updateLocalStorage,
 } from './localstorage-client';
 
-const HOSTNAME = 'https://os-league-tools-api.herokuapp.com';
+const BASE_URL = process.env.RELDO_URL || 'http://localhost:8080';
 
 export async function getHiscores(rsn) {
-    const url = `${HOSTNAME}/hiscores/${rsn}`;
+    const url = `${BASE_URL}/hiscores/${rsn}`;
     let hiscores;
     await fetch(url)
         .then(res => res.json())

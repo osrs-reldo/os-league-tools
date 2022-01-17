@@ -27,3 +27,6 @@ yarn-error.log*
 
 # misc docs that don't need to be published
 /docs
+
+# production configs
+.env

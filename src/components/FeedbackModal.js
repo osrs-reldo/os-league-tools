@@ -61,6 +61,7 @@ function BugReportFields({ onSubmit }) {
     const [browserFreeText, setBrowserFreeText] = useState(null);
     const [client, setClient] = useState('unselected');
     const [clientFreeText, setClientFreeText] = useState(null);
+    const [submitError, setSubmitError] = useState(false);
 
     return (
         <>
@@ -241,6 +242,11 @@ function BugReportFields({ onSubmit }) {
                     />
                 )}
             </div>
+            {submitError && (
+                <span className='ml-2 text-xs text-error'>
+                    Unable to submit feedback at this time. Please try again later.
+                </span>
+            )}
             <div className='flex justify-around py-2'>
                 <button type='button' onClick={() => onSubmit()} className='py-1 px-2 button-outline'>
                     Cancel
@@ -255,8 +261,13 @@ function BugReportFields({ onSubmit }) {
                                 device: device === 'other' ? deviceFreeText : device,
                                 browser: browser === 'other' ? browserFreeText : browser,
                                 client: client === 'other' ? clientFreeText : client,
+                            }).then(res => {
+                                if (res.success) {
+                                    onSubmit();
+                                } else {
+                                    setSubmitError(true);
+                                }
                             });
-                            onSubmit();
                         } else {
                             setBugDescriptionError(true);
                         }
@@ -273,6 +284,7 @@ function BugReportFields({ onSubmit }) {
 function TextInputField({ title, prompt, placeholder, onSubmit, submitFn }) {
     const [userInput, setUserInput] = useState(null);
     const [inputError, setInputError] = useState(false);
+    const [submitError, setSubmitError] = useState(false);
 
     return (
         <>
@@ -287,6 +299,11 @@ function TextInputField({ title, prompt, placeholder, onSubmit, submitFn }) {
                 }}
             />
             {inputError && <span className='ml-2 text-xs text-error'>Please enter your feedback.</span>}
+            {submitError && (
+                <span className='ml-2 text-xs text-error'>
+                    Unable to submit feedback at this time. Please try again later.
+                </span>
+            )}
             <div className='flex justify-around py-2'>
                 <button type='button' onClick={() => onSubmit()} className='py-1 px-2 button-outline'>
                     Cancel
@@ -297,8 +314,13 @@ function TextInputField({ title, prompt, placeholder, onSubmit, submitFn }) {
                         if (userInput) {
                             submitFn({
                                 description: userInput,
+                            }).then(res => {
+                                if (res.success) {
+                                    onSubmit();
+                                } else {
+                                    setSubmitError(true);
+                                }
                             });
-                            onSubmit();
                         } else {
                             setInputError(true);
                         }

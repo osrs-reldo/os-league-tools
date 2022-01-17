@@ -1,12 +1,27 @@
-/* eslint-disable no-unused-vars */
+const BASE_URL = process.env.RELDO_URL || 'http://localhost:8080';
+
 export function submitBug(formData) {
-    // TODO
+    return submitFeedback(formData, '/bug');
 }
 
 export function submitSuggestion(formData) {
-    // TODO
+    return submitFeedback(formData, '/suggestion');
 }
 
-export function submitFeedback(formData) {
-    // TODO
+export function submitFeedback(formData, subroute = '') {
+    return fetch(`${BASE_URL}/feedback${subroute}`, {
+        method: 'POST',
+        headers: {
+            'Content-type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+    })
+        .then(res => res.json())
+        .then(
+            result => ({ success: result.status && result.status === 201 }),
+            error => {
+                console.warn(error);
+                return { success: false };
+            }
+        );
 }
