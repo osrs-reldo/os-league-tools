@@ -1,7 +1,7 @@
 {
     "name": "os-league-tools",
     "homepage": "http://www.osleague.tools",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "private": true,
     "dependencies": {
         "@auth0/auth0-react": "^1.8.0",
