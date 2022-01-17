@@ -1,35 +1,35 @@
-import React from 'react';
-import BlogEntry from '../components/BlogEntry';
-import NewsEntry from '../components/NewsEntry';
-import newsPosts from '../resources/newsPosts.json';
-import { getContentWidthClass } from '../util/settings-util';
+import React, { useState } from 'react';
+import newsPosts from '../data/newsPosts.json';
+import NewsCard from '../components/NewsCard';
+import PageWrapper from '../components/PageWrapper';
+import IconLinkCard from '../components/IconLinkCard';
+import LeagueCountdown from '../components/LeagueCountdown';
+import FeedbackModal from '../components/FeedbackModal';
 
 export default function Homepage() {
+    const [isFeedbackModalOpen, setFeedbackModalOpen] = useState(false);
+
     return (
-        <div className={getContentWidthClass()}>
-            <h1 className='mt-2 light-text'>News & Updates</h1>
-            {newsPosts.map(newsPost =>
-                newsPost.type === 'news' ? (
-                    <NewsEntry
-                        key={newsPost.title}
-                        title={newsPost.title}
-                        date={newsPost.date}
-                        leadText={newsPost.leadText}
-                        thumbnail={newsPost.thumbnail}
-                        buttonLink={newsPost.buttonLink}
-                        buttonText={newsPost.buttonText}
-                    />
-                ) : (
-                    <BlogEntry
-                        key={newsPost.title}
-                        title={newsPost.title}
-                        date={newsPost.date}
-                        thumbnail={newsPost.thumbnail}
-                        leadText={newsPost.leadText}
-                        htmlContent={newsPost.htmlContent}
-                    />
-                )
-            )}
-        </div>
+        <PageWrapper>
+            <div className='md:flex md:flex-row justify-center'>
+                <IconLinkCard title='Discord' href='https://discord.gg/GQ5kVyU' target='_blank' />
+                <IconLinkCard title='Plugin' iconSrc='/img/runelite-icon.svg' />
+                <LeagueCountdown />
+                <IconLinkCard title='Feedback' iconText='pest_control' onClick={() => setFeedbackModalOpen(true)} />
+                <IconLinkCard title='About' iconText='help_outline' href='/about' />
+            </div>
+            <FeedbackModal isOpen={isFeedbackModalOpen} setIsOpen={val => setFeedbackModalOpen(val)} />
+            <p className='text-3xl small-caps ml-1 mt-2'>Updates</p>
+            {newsPosts.map(newsPost => (
+                <NewsCard
+                    key={newsPost.title}
+                    title={newsPost.title}
+                    date={newsPost.date}
+                    coverImg={newsPost.thumbnail}
+                    leadText={newsPost.leadText}
+                    htmlContent={newsPost.htmlContent}
+                />
+            ))}
+        </PageWrapper>
     );
 }

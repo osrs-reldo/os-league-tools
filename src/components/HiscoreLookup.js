@@ -1,15 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { InputGroup, FormControl, Button, Spinner, Form } from 'react-bootstrap';
+import Spinner from './common/Spinner';
 import { getCachedHiscores, getHiscores } from '../client/hiscores-client';
 import useLocalStorage from '../hooks/useLocalStorage';
-import { LOCALSTORAGE_KEYS } from '../util/browser-util';
+import { LOCALSTORAGE_KEYS } from '../client/localstorage-client';
 
-export default function HiscoreLookup({
-    skill,
-    setExpCallback = () => {},
-    setTotalLvlCallback = () => {},
-    refreshStateCallback = () => {},
-}) {
+export default function HiscoreLookup({ handleResultCallback = () => {} }) {
     const [username, setUsername] = useLocalStorage(LOCALSTORAGE_KEYS.USERNAME, '');
     const [errorText, setErrorText] = useState('');
     const [isLoading, setIsLoading] = useState(false);
@@ -17,24 +12,17 @@ export default function HiscoreLookup({
     useEffect(() => {
         const cachedHiscores = getCachedHiscores();
         if (cachedHiscores) {
-            if (skill) {
-                setExpCallback(cachedHiscores.skills[skill].xp);
-                setTotalLvlCallback(cachedHiscores.skills.overall.level);
-            }
+            handleResultCallback(cachedHiscores);
         } else if (username) {
             setIsLoading(true);
             getHiscores(username).then(res => {
                 if (res.success) {
-                    if (skill) {
-                        setExpCallback(res.hiscores.skills[skill].xp);
-                        setTotalLvlCallback(res.hiscores.skills.overall.level);
-                    }
+                    handleResultCallback(res.hiscores);
                     setIsLoading(false);
                 } else {
                     setErrorText(res.message);
                     setIsLoading(false);
                 }
-                refreshStateCallback();
             });
         }
         // only want this to run once on first load
@@ -47,16 +35,12 @@ export default function HiscoreLookup({
         if (username) {
             getHiscores(username).then(res => {
                 if (res.success) {
-                    if (skill) {
-                        setExpCallback(res.hiscores.skills[skill].xp);
-                        setTotalLvlCallback(res.hiscores.skills.overall.level);
-                    }
+                    handleResultCallback(res.hiscores);
                     setIsLoading(false);
                 } else {
                     setErrorText(res.message);
                     setIsLoading(false);
                 }
-                refreshStateCallback();
             });
         } else {
             setErrorText('Please enter a username.');
@@ -65,32 +49,23 @@ export default function HiscoreLookup({
     };
 
     return (
-        <div className='p-3'>
-            <Form onSubmit={event => event.preventDefault()}>
-                <InputGroup>
-                    <FormControl
-                        placeholder='Username'
-                        value={username}
-                        onChange={event => setUsername(event.target.value)}
-                    />
-                    <InputGroup.Append>
-                        <Button variant='outline-light' type='submit' onClick={() => doHiscoresLookup()}>
-                            {isLoading && (
-                                <Spinner
-                                    as='span'
-                                    animation='border'
-                                    size='sm'
-                                    role='status'
-                                    aria-hidden='true'
-                                    className='mr-1'
-                                />
-                            )}
-                            Lookup
-                        </Button>
-                    </InputGroup.Append>
-                </InputGroup>
-            </Form>
-            {errorText && <div className='text-danger small'>{errorText}</div>}
+        <div className='flex flex-row'>
+            <input
+                type='text'
+                className='input-primary form-input grow'
+                placeholder='Username'
+                value={username}
+                onChange={event => setUsername(event.target.value)}
+            />
+            <button className='ml-2 button-md button-filled' type='button' onClick={() => doHiscoresLookup()}>
+                {isLoading && (
+                    <span className='mr-1'>
+                        <Spinner />
+                    </span>
+                )}
+                Lookup
+            </button>
+            {errorText && <div className='text-error text-sm'>{errorText}</div>}
         </div>
     );
 }

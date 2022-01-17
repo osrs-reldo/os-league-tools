@@ -1,115 +1,82 @@
 import React from 'react';
-import { Card, Row, Col, Nav, Form, Tab, Button } from 'react-bootstrap';
-import _ from 'lodash';
-import Divider from '../components/Divider';
-import useLocalStorage from '../hooks/useLocalStorage';
-import {
-    SETTINGS_KEYS,
-    getContentWidthClass,
-    CONTENT_WIDTH_DEFAULT,
-    CONTENT_WIDTH_VALUES,
-} from '../util/settings-util';
-import { resetLocalStorageData } from '../util/browser-util';
+import { useSelector, useDispatch, batch } from 'react-redux';
+import { update } from '../reducer/settings';
+import LabeledCheckbox from '../components/common/LabeledCheckbox';
+import TabbedCard from '../components/common/TabbedCard';
+import PageWrapper from '../components/PageWrapper';
 
 export default function Settings() {
-    const [contentWidth, setContentWidth] = useLocalStorage(SETTINGS_KEYS.CONTENT_WIDTH, CONTENT_WIDTH_DEFAULT);
-    const [hiddenColumns, setHiddenColumns] = useLocalStorage(SETTINGS_KEYS.HIDDEN_COLUMNS, []);
+    const settingsState = useSelector(state => state.settings);
+    const dispatch = useDispatch();
 
     return (
-        <div className={getContentWidthClass()}>
-            <Card bg='dark' text='white' className='mt-3'>
-                <h3 className='text-center mt-3'>Settings</h3>
-                <Tab.Container defaultActiveKey='interface'>
-                    <Row className='m-3'>
-                        <Col lg={4}>
-                            <Card bg='dark' text='white' style={{ border: '0' }} className='p-3'>
-                                <Nav variant='pills' className='flex-column tab-bar-secondary' fill>
-                                    <Nav.Item>
-                                        <Nav.Link eventKey='interface'>
-                                            <h5>Interface</h5>
-                                        </Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link eventKey='user-data'>
-                                            <h5>User Data</h5>
-                                        </Nav.Link>
-                                    </Nav.Item>
-                                </Nav>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card
-                                bg='dark'
-                                text='white'
-                                style={{ border: '1px solid #6c757d', borderRadius: '1rem' }}
-                                className='p-3'
-                            >
-                                <div className='m-3'>
-                                    <Tab.Content>
-                                        <Tab.Pane eventKey='interface'>
-                                            <Form.Check
-                                                label='Use full screen width for site content (no sidebar padding)'
-                                                checked={contentWidth === CONTENT_WIDTH_VALUES.MAX}
-                                                onChange={event =>
-                                                    setContentWidth(
-                                                        event.target.checked
-                                                            ? CONTENT_WIDTH_VALUES.MAX
-                                                            : CONTENT_WIDTH_VALUES.PADDED
-                                                    )
-                                                }
-                                            />
-                                            <Divider spacingProps='mt-3 mb-3' />
-                                            Configure visibility of columns on task tracker:
-                                            <div className='mt-1 ml-3'>
-                                                {[
-                                                    'Difficulty',
-                                                    'Category',
-                                                    'Subcategory',
-                                                    'Requirements',
-                                                    'Manage',
-                                                ].map(columnName => (
-                                                    <Form.Check
-                                                        key={columnName}
-                                                        label={`Hide "${columnName}" column`}
-                                                        checked={hiddenColumns.includes(columnName)}
-                                                        onChange={event => {
-                                                            if (event.target.checked) {
-                                                                setHiddenColumns(prevState => [
-                                                                    ...prevState,
-                                                                    columnName,
-                                                                ]);
-                                                            } else {
-                                                                setHiddenColumns(prevState =>
-                                                                    _.without(prevState, columnName)
-                                                                );
-                                                            }
-                                                        }}
-                                                    />
-                                                ))}
-                                            </div>
-                                        </Tab.Pane>
-                                    </Tab.Content>
-                                    <Tab.Content>
-                                        <Tab.Pane eventKey='user-data'>
-                                            <p>
-                                                <b>WARNING: Resetting your data is irreversible.</b> Proceed with
-                                                caution.
-                                            </p>
-                                            <Button
-                                                className='m-2'
-                                                variant='light'
-                                                onClick={() => resetLocalStorageData()}
-                                            >
-                                                Reset all user data and settings to default
-                                            </Button>
-                                        </Tab.Pane>
-                                    </Tab.Content>
+        <PageWrapper>
+            <div className='mx-auto'>
+                <TabbedCard defaultActiveTab='interface'>
+                    <TabbedCard.Tab id='interface' label='Interface'>
+                        <div className='grid xl:grid-cols-2'>
+                            <div>
+                                <span className='heading-block-md small-caps mb-2'>General</span>
+                                <div className='ml-2'>
+                                    <LabeledCheckbox
+                                        label='Limit maximum content width'
+                                        defaultChecked={settingsState.limitContentWidth}
+                                        onClick={e =>
+                                            dispatch(update({ field: 'limitContentWidth', value: e.target.checked }))
+                                        }
+                                    />
+                                    <div className='ml-5'>
+                                        <p className='text-sm italic'>
+                                            <span className='icon-outline text-xs inline mr-1'>info</span>On large
+                                            screens, site content will be limited to a maximum of 1536px wide.
+                                        </p>
+                                        <p className='text-sm italic'>
+                                            Uncheck if you wish to use the full width of your browser window.
+                                        </p>
+                                    </div>
                                 </div>
-                            </Card>
-                        </Col>
-                    </Row>
-                </Tab.Container>
-            </Card>
+                            </div>
+                            <div>
+                                <span className='heading-block-md small-caps my-2'>Theme</span>
+                                <div className='ml-2 grid grid-cols-4 gap-1'>
+                                    <ThemeSelectCard label='Twisted Dusk' theme='tl-dark' />
+                                    <ThemeSelectCard label='Malevolent Trailblazer' theme='tb-dark' />
+                                    <ThemeSelectCard label='Shattered Shadows' theme='sl-dark' />
+                                    <ThemeSelectCard label='Mono Dark' theme='mono-dark' />
+                                    <ThemeSelectCard label='Twisted Dawn' theme='tl-light' />
+                                    <ThemeSelectCard label='Benevolent Trailblazer' theme='tb-light' />
+                                    <ThemeSelectCard label='Shattered Lights' theme='sl-light' />
+                                    <ThemeSelectCard label='Mono Bright' theme='mono-light' />
+                                </div>
+                            </div>
+                        </div>
+                    </TabbedCard.Tab>
+                </TabbedCard>
+            </div>
+        </PageWrapper>
+    );
+}
+
+function ThemeSelectCard({ label, theme }) {
+    const activeTheme = useSelector(state => state.settings.theme);
+    const dispatch = useDispatch();
+
+    const selected = activeTheme === theme;
+    const selectedStyle = selected ? 'border-x-2 border-accent bg-secondary-alt' : 'cursor-pointer bg-hover';
+    return (
+        <div
+            className={`rounded p-2 w-[100px] min-w-[100px] ${selectedStyle}`}
+            onClick={() =>
+                batch(() => {
+                    dispatch(update({ field: 'theme', value: theme }));
+                    dispatch(update({ field: 'mode', value: theme.split('-')[1] }));
+                })
+            }
+        >
+            <img className='h-9 w-9 mx-auto' src={`/img/icon-${theme}.png`} alt='' />
+            <span className={`text-center heading-block-sm small-caps force-wrap ${selected && 'text-accent'}`}>
+                {label}
+            </span>
         </div>
     );
 }

@@ -1,22 +1,20 @@
 import React, { useEffect } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
-import { createHashHistory } from 'history';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
-import TopNav from './components/TopNav';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
-import './styles/index.scss';
+import { Auth0Provider } from '@auth0/auth0-react';
+import './styles/compiled.css';
+import { Provider } from 'react-redux';
 import Homepage from './pages/Homepage';
-import Calculators from './pages/Calculators';
-import Calculator from './pages/SkillCalculator';
-import Planner from './pages/SkillPlanner';
-import CharacterTracker from './pages/CharacterTracker';
+import Tracker from './pages/Tracker';
 import About from './pages/About';
-import PluginInfo from './pages/PluginInfo';
 import Settings from './pages/Settings';
-import ComingSoon from './pages/ComingSoon';
+import store from './store';
+import ThemeProvider from './components/ThemeProvider';
+import Statistics from './pages/Statistics';
+import Calculators from './pages/Calculators';
 
-const history = createHashHistory();
+const history = createBrowserHistory();
 const trackingId = process.env.REACT_APP_GA_TRACKING || '';
 ReactGA.initialize(trackingId, {
     gaOptions: {
@@ -24,30 +22,42 @@ ReactGA.initialize(trackingId, {
     },
 });
 history.listen(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search + window.location.hash);
+    ReactGA.pageview(window.location.pathname + window.location.search);
 });
 
 export default function App() {
     useEffect(() => {
-        ReactGA.pageview(window.location.pathname + window.location.search + window.location.hash);
+        ReactGA.pageview(window.location.pathname + window.location.search);
     }, []);
 
     return (
-        <div className='App'>
-            <HashRouter basename='/'>
-                <TopNav />
-                <Switch>
-                    <Route exact path='/' component={ComingSoon} />
-                    <Route path='/news' component={Homepage} />
-                    <Route path='/tracker' component={CharacterTracker} />
-                    <Route exact path='/calculators' component={Calculators} />
-                    <Route path='/calculators/:skill' component={Calculator} />
-                    <Route path='/planners/:skill' component={Planner} />
-                    <Route path='/about' component={About} />
-                    <Route path='/plugin' component={PluginInfo} />
-                    <Route path='/settings' component={Settings} />
-                </Switch>
-            </HashRouter>
-        </div>
+        <Provider store={store}>
+            <ThemeProvider>
+                <div className='App'>
+                    <BrowserRouter basename='/'>
+                        <Auth0Provider
+                            domain='login.osleague.tools'
+                            clientId='yfqwKEhQO8FL7MlxWmWo7ekuGgzSrfmh'
+                            redirectUri={window.location.origin}
+                        >
+                            <Routes>
+                                <Route path='/' element={<Homepage />} />
+                                <Route path='stats' element={<Statistics />} />
+                                <Route path='news' element={<Homepage />} />
+                                <Route path='tracker' element={<Tracker />} />
+                                <Route path='calculators' element={<Calculators />}>
+                                    <Route path=':skill' element={<Calculators />} />
+                                </Route>
+                                <Route path='planners' element={<Calculators />}>
+                                    <Route path=':skill' element={<Calculators />} />
+                                </Route>
+                                <Route path='about' element={<About />} />
+                                <Route path='settings' element={<Settings />} />
+                            </Routes>
+                        </Auth0Provider>
+                    </BrowserRouter>
+                </div>
+            </ThemeProvider>
+        </Provider>
     );
 }

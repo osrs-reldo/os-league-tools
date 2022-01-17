@@ -1,162 +1,138 @@
-import React from 'react';
-import BootstrapTable from 'react-bootstrap-table-next';
-import filterFactory, { textFilter, selectFilter } from 'react-bootstrap-table2-filter';
-import paginationFactory from 'react-bootstrap-table2-paginator';
-import DoubleScrollbar from 'react-shadowed-double-scrollbar';
-import taskData from '../resources/taskData.json';
-import { applyFilters, getFormatters, getRenderers, isTaskComplete } from '../util/task-util';
-import { isColumnHidden } from '../util/settings-util';
+import React, { useMemo } from 'react';
+import _ from 'lodash';
+import { matchSorter } from 'match-sorter';
+import tasks from '../data/tasks';
+import Cell from './TaskTableCell';
+import Table from './common/Table';
+import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 
-export default function TaskTable({ area, taskStatus, updateTaskStatus, taskFilters, hiscores, isSkillingProdigy }) {
-    const {
-        completedFormatter,
-        pointsFormatter,
-        nameFormatter,
-        difficultyFormatter,
-        skillsFormatter,
-        manageFormatter,
-    } = getFormatters();
-    const taskTableContent = area === 'All' ? taskData.tasks : taskData.tasksByRegion[area];
+export default function TaskTable() {
+    const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
+    const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.STRICT);
+    const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
 
-    const setTaskCompletion = (isComplete, taskId) => {
-        updateTaskStatus.setCompleted(taskId, isComplete);
-    };
-    const setTaskTodo = (isOnTodoList, taskId) => {
-        updateTaskStatus.setTodoListed(taskId, isOnTodoList);
-    };
-    const setTaskHidden = (isHidden, taskId) => {
-        updateTaskStatus.setHidden(taskId, isHidden);
-    };
-
-    const columns = [
-        {
-            dataField: 'done',
-            text: 'Done',
-            isDummyField: true,
-            headerStyle: { width: '5rem' },
-            formatter: completedFormatter,
-            formatExtraData: { taskStatus },
-            classes: 'clickable',
-            events: {
-                onClick: (event, column, columnIndex, row) => {
-                    const isComplete = isTaskComplete(row.id, taskStatus);
-                    setTaskCompletion(!isComplete, row.id);
-                },
+    const data = useMemo(() => tasks, []);
+    const columns = useMemo(
+        () => [
+            {
+                Header: 'Id',
+                id: 'id',
+                accessor: 'id',
             },
-        },
-        {
-            dataField: 'spacer',
-            text: '',
-            isDummyField: true,
-        },
-        {
-            dataField: 'name',
-            text: 'Task',
-            sort: true,
-            headerStyle: { width: '22rem' },
-            filter: textFilter({ placeholder: 'Filter...' }),
-            formatter: nameFormatter,
-            formatExtraData: { taskStatus },
-            classes: 'clickable',
-            events: {
-                onClick: (event, column, columnIndex, row) => {
-                    const isComplete = isTaskComplete(row.id, taskStatus);
-                    setTaskCompletion(!isComplete, row.id);
-                },
+            {
+                Header: 'Task',
+                id: 'task',
+                // eslint-disable-next-line no-nested-ternary
+                width: isXsViewport ? 0 : isSmViewport ? 375 : 470,
+                accessor: row => ({ label: row.label, description: row.description }),
+                sortType: sortTask,
+                Cell: Cell.Task,
             },
-        },
-        {
-            dataField: 'spacer2',
-            text: '',
-            isDummyField: true,
-        },
-        {
-            dataField: 'difficulty',
-            text: 'Difficulty',
-            sort: true,
-            sortValue: pointsFormatter,
-            headerStyle: { width: '10rem' },
-            filter: selectFilter({
-                placeholder: '(all)',
-                options: taskData.difficulties,
-            }),
-            formatter: difficultyFormatter,
-            hidden: isColumnHidden('Difficulty'),
-        },
-        {
-            dataField: 'category',
-            text: 'Category',
-            headerStyle: { width: '10rem' },
-            sort: true,
-            filter: selectFilter({
-                placeholder: '(all)',
-                options: taskData.categories,
-            }),
-            hidden: isColumnHidden('Category'),
-        },
-        {
-            dataField: 'subcategory',
-            text: 'Subcategory',
-            headerStyle: { width: '10rem' },
-            sort: true,
-            filter: textFilter({ placeholder: 'Filter...' }),
-            hidden: isColumnHidden('Subcategory'),
-        },
-        {
-            dataField: 'skills',
-            text: 'Requires',
-            formatter: skillsFormatter,
-            formatExtraData: { hiscores, isSkillingProdigy },
-            headerStyle: { width: '8rem' },
-            hidden: isColumnHidden('Requirements'),
-        },
-        {
-            dataField: 'manage',
-            text: 'Manage',
-            isDummyField: true,
-            headerStyle: { width: '10rem' },
-            formatter: manageFormatter,
-            formatExtraData: {
-                taskStatus,
-                setTaskTodo,
-                setTaskHidden,
+            {
+                Header: 'Difficulty',
+                id: 'difficulty',
+                minWidth: 95,
+                width: isMdOrSmallerViewport ? 100 : 150,
+                accessor: row => row.difficulty,
+                sortType: sortDifficulty,
+                Cell: Cell.Difficulty,
             },
-            hidden: isColumnHidden('Manage'),
-        },
-    ];
-
-    const { pageButtonRenderer, pageListRenderer, sizePerPageRenderer } = getRenderers();
-    const tableData = taskFilters ? applyFilters(taskTableContent, taskFilters) : taskTableContent;
+            {
+                Header: 'Category',
+                id: 'category',
+                minWidth: 90,
+                width: isMdOrSmallerViewport ? 100 : 150,
+                accessor: row => ({ category: row.category, subcategory: row.subcategory }),
+                sortType: sortCategory,
+                Cell: Cell.Category,
+            },
+        ],
+        [isXsViewport, isSmViewport, isMdOrSmallerViewport]
+    );
+    const defaultColumn = useMemo(
+        () => ({
+            minWidth: 30,
+            width: 150,
+            maxWidth: 1000,
+        }),
+        []
+    );
+    const filters = [difficultyFilter, categoryFilter, subcategoryFilter, skillFilter];
+    const initialState = isXsViewport ? { hiddenColumns: ['id', 'difficulty', 'category'] } : { hiddenColumns: ['id'] };
 
     return (
-        <div style={{ maxWidth: '100%' }}>
-            <DoubleScrollbar backgroundColor='#343a40'>
-                <BootstrapTable
-                    bootstrap4
-                    keyField='id'
-                    data={tableData}
-                    columns={columns}
-                    bordered={false}
-                    classes='light-text'
-                    filter={filterFactory()}
-                    filterPosition='top'
-                    hover
-                    rowClasses='text-light'
-                    pagination={paginationFactory({
-                        pageButtonRenderer,
-                        pageListRenderer,
-                        sizePerPageRenderer,
-                        sizePerPage: 20,
-                        sizePerPageList: [
-                            { text: '20', value: 20 },
-                            { text: '50', value: 50 },
-                            { text: '100', value: 100 },
-                            { text: 'All', value: 1000 },
-                        ],
-                        alwaysShowAllBtns: true,
-                    })}
-                />
-            </DoubleScrollbar>
-        </div>
+        <Table
+            columns={columns}
+            data={data}
+            filters={filters}
+            globalFilter={fuzzyTextFilter}
+            defaultColumn={defaultColumn}
+            initialState={initialState}
+            ExpandedRow={Cell.ExpandedTask}
+            enableResizeColumns={!isXsViewport}
+        />
     );
 }
+
+function difficultyFilter(record, filterState) {
+    if (filterState.difficulty === null) {
+        return true;
+    }
+    return filterState.difficulty.includes(record.difficulty.label);
+}
+
+function categoryFilter(record, filterState) {
+    if (filterState.categories === null) {
+        return true;
+    }
+    return filterState.categories.includes(record.category.label);
+}
+
+function subcategoryFilter(record, filterState) {
+    if (filterState.subcategories === null) {
+        return true;
+    }
+    return filterState.subcategories.includes(record.subcategory.label);
+}
+
+function skillFilter(record, filterState) {
+    if (filterState.skills === null) {
+        return true;
+    }
+    const taskSkills = record.skillReqs.map(req => req.skill);
+    return _.intersection(taskSkills, filterState.skills).length > 0;
+}
+
+function sortTask(a, b) {
+    return a.values.task.label.localeCompare(b.values.task.label);
+}
+
+function sortDifficulty(a, b) {
+    return a.values.difficulty.value - b.values.difficulty.value;
+}
+
+function sortCategory(a, b) {
+    const compareVal = a.values.category.category.label.localeCompare(b.values.category.category.label);
+    if (compareVal === 0) {
+        const subA = a.values.category.subcategory;
+        const subB = b.values.category.subcategory;
+        return subA.customSort && subB.customSort
+            ? subA.customSort - subB.customSort
+            : subA.label.localeCompare(subB.label);
+    }
+    return compareVal;
+}
+
+function fuzzyTextFilter(rows, __, filterValue) {
+    return matchSorter(rows, filterValue, {
+        threshold: matchSorter.rankings.CONTAINS,
+        keys: [
+            'values.task.label',
+            'values.task.description',
+            'values.category.category.label',
+            'values.category.subcategory.label',
+            'values.requirements.*.skill',
+        ],
+    });
+}
+fuzzyTextFilter.autoRemove = val => !val;

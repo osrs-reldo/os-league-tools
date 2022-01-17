@@ -1,0 +1,51 @@
+[
+    {
+        "title": "New Website Launch",
+        "date": "Jan 17 2022",
+        "thumbnail": "https://oldschool.runescape.wiki/images/Twisted_dragon_trophy_detail.png",
+        "leadText": "Welcome to the new OS League Tools!",
+        "htmlContent": "<p>Welcome to the new OS League Tools! We're back with a brand new website.</p> <p>Everything has been rewritten from the ground up, with a new look (and new themes - check out the Settings menu), new features (quest tracker, boss tracker, plus loads more options on the task tracker like custom notes, custom reordering, and improved filtering), and lots more on the way.</p> <p>Oh, and the companion RuneLite plugin is getting a rework too! Soon you will be able to sync your leagues to-do list with the plugin and view your planned tasks in the client sidebar while you play.</p> <p>We've got a ton of other things in store too, like multiple character support, and a stats tracker to see your daily average point gain and other personal league statistics. To take full advantage of all these new features, you will need to sign up for an OS League Tools account. Just click on the Login link in the top right to get started.</p> <p>We're working hard to get everything else ready for the Shattered Relics launch on Jan 19th, and hope to see you there. Until then, happy scaping!</p>"
+    },
+    {
+        "title": "LEAGUES THREE BAYBEEEEE",
+        "date": "Sept 09 2021",
+        "thumbnail": "https://oldschool.runescape.wiki/images/thumb/3/36/Shattered_Relics_League_logo.png/1280px-Shattered_Relics_League_logo.png?a7f6f",
+        "leadText": "Get ready to shatter Gielinor on January 19th!",
+        "htmlContent": "<p>Get ready to shatter Gielinor on January 19th!</p> <p>OS League Tools is coming back, and better than ever. See you in January!</p>"
+    },
+    {
+        "title": "Feature: Skill Planners",
+        "date": "Dec 13 2020",
+        "thumbnail": "https://oldschool.runescape.wiki/images/9/9c/Main_page_calculator.png?b9d54",
+        "leadText": "Skill planners are now available to calculate your banked exp",
+        "htmlContent": "<p>Skill planners are now available to calculate your banked exp!</p> <p>Calculators are great for finding out what you need to do to reach the next level, but what about when you want to find out how many levels you can get with the materials you already have?</p><p>That's where Skill Planners come in. Choose which activities you plan to do and how many of each, and the planner will tell you exactly where you'll end up.</p> <p>Check them out over on the Calculators page!</p>"
+    },
+    {
+        "title": "Skill requirement filters",
+        "date": "Nov 21 2020",
+        "thumbnail": "https://oldschool.runescape.wiki/images/9/9e/Skills_tab.png?5bd59",
+        "leadText": "New feature: Filter tasks by your current skill levels!",
+        "htmlContent": "<p>New feature: Filter tasks by your current skill levels!</p> <p>You've been asking for it, so here it is - the task tracker is now filterable by what you can complete given your character's current skill levels.</p> <p>Just import your character's levels by doing a hiscores lookup (on the task UI to the left) and you can toggle the filters to show only tasks you can complete (or only tasks you can't yet).</p>"
+    },
+    {
+        "title": "Improved mobile support",
+        "date": "Nov 08 2020",
+        "thumbnail": "http://cdn.runescape.com/assets/img/external/oldschool/2017/newsposts/2017-06-27/osrsmobilemock.png",
+        "leadText": "OS League Tools is now fully compatible with mobile devices (and screens of all other sizes).",
+        "htmlContent": "<p>OS League Tools is now fully compatible with mobile devices (and screens of all other sizes).</p> <p>I've been hard at work this weekend improving the site experience on mobile, so you can now track and plan your tasks on the go. While my focus was on mobile, you should see some improvements all across the site for just about any screen size, as many components were revamped completely to be more responsive to the size of your screen.</p> <p>If you come across any parts of the site that still look strange on mobile devices, please make a bug report in the <a href='https://discord.gg/GQ5kVyU'>discord</a>, preferably with a screenshot and information about what device and browser you're using.</p>"
+    },
+    {
+        "title": "Runelite Plugin Now Available!",
+        "date": "Nov 05 2020",
+        "thumbnail": "https://i.imgur.com/swFNR96.png",
+        "leadText": "You can now import your tasks, areas, and relics to the website using Runelite!",
+        "htmlContent": "<p>You can now import your tasks, areas, and relics to the website using Runelite!</p> <p>[UPDATE - FIXED!] Some bugs were introduced due to the game update this morning, these have been fixed now. Please make sure to close and reopen your runelite client to update to the latest plugin version before using. Enjoy!</p> <p><h5>How to use:</h5> <ol><li>Install the plugin using the <a href='https://github.com/runelite/runelite/wiki/Information-about-the-Plugin-Hub'>plugin hub</a></li> <li>Go to the Leagues tab ingame and open/close each interface to make sure your data is up-to-date. <b>NOTE: Make sure you have disabled all task filters on the ingame UI.</b></li> <li>Click on the OS League Tools icon on the top toolbar to copy your data</li> <li>Open the 'Manage Data' window and paste the copied data in to the 'Runelite Import' tab</li></ol> </p><p>Huge thanks to Perterter for implementing this plugin! :D</p><a href='https://user-images.githubusercontent.com/17709869/98069290-0535cd00-1e24-11eb-90a1-49a8a04b7072.gif'><img style='width:100%; max-width:1069px;' src='https://user-images.githubusercontent.com/17709869/98069290-0535cd00-1e24-11eb-90a1-49a8a04b7072.gif'/></a> <p class='small mt-0'><i>(click to enlarge gif)</i></p>"
+    },
+    {
+        "title": "WEBSITE LAUNCH!",
+        "date": "Oct 29 2020",
+        "thumbnail": "https://oldschool.runescape.wiki/images/6/63/Leagues_II_-_Trailblazer_Reward_Poll_Blog_%287%29.png?ef6ef",
+        "leadText": "OS League Tools is officially live!",
+        "htmlContent": "<p>OS League Tools is officially live!</p> <p>I've been working on this site off and on for the past couple of months and I am really hyped to finally get to launch it into beta and share it with all of you. I really hope you'll find it useful.</p> <p>If you have any site feedback, suggestions, or bug reports, please come by the <a href='https://discord.gg/GQ5kVyU'>discord</a>!</p>"
+    }
+]
