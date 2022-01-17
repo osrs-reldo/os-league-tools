@@ -54,27 +54,27 @@ export const SKILLS = {
 export const DIFFICULTY = {
     EASY: {
         label: 'Easy',
-        value: 10,
+        value: 5,
         icon: '/img/task-easy.png',
     },
     MEDIUM: {
         label: 'Medium',
-        value: 50,
+        value: 25,
         icon: '/img/task-medium.png',
     },
     HARD: {
         label: 'Hard',
-        value: 100,
+        value: 50,
         icon: '/img/task-hard.png',
     },
     ELITE: {
         label: 'Elite',
-        value: 250,
+        value: 125,
         icon: '/img/task-elite.png',
     },
     MASTER: {
         label: 'Master',
-        value: 500,
+        value: 250,
         icon: '/img/task-master.png',
     },
 };
