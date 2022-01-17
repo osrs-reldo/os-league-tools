@@ -16,7 +16,9 @@ export default function Tracker() {
                     <CharacterPanel />
                 </TabbedCard.Tab>
                 <TabbedCard.Tab id='relics' label='Relics' icon='/img/tab-relics.png'>
-                    <div>Relics tracker page</div>
+                    <p className='text-accent font-bold text-center small-caps text-2xl tracking-widest'>
+                        Relics tracker coming soon!
+                    </p>
                 </TabbedCard.Tab>
                 <TabbedCard.Tab id='tasks' label='Tasks' icon='/img/tab-tasks.png'>
                     <TasksPanel />

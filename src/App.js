@@ -11,6 +11,8 @@ import About from './pages/About';
 import Settings from './pages/Settings';
 import store from './store';
 import ThemeProvider from './components/ThemeProvider';
+import Statistics from './pages/Statistics';
+import Calculators from './pages/Calculators';
 
 const history = createBrowserHistory();
 const trackingId = process.env.REACT_APP_GA_TRACKING || '';
@@ -40,16 +42,16 @@ export default function App() {
                         >
                             <Routes>
                                 <Route path='/' element={<Homepage />} />
+                                <Route path='stats' element={<Statistics />} />
                                 <Route path='news' element={<Homepage />} />
                                 <Route path='tracker' element={<Tracker />} />
-                                <Route path='calculators' element={<div />}>
-                                    <Route path=':skill' element={<div />} />
+                                <Route path='calculators' element={<Calculators />}>
+                                    <Route path=':skill' element={<Calculators />} />
                                 </Route>
-                                <Route path='planners' element={<div />}>
-                                    <Route path=':skill' element={<div />} />
+                                <Route path='planners' element={<Calculators />}>
+                                    <Route path=':skill' element={<Calculators />} />
                                 </Route>
                                 <Route path='about' element={<About />} />
-                                <Route path='plugin' element={<div />} />
                                 <Route path='settings' element={<Settings />} />
                             </Routes>
                         </Auth0Provider>

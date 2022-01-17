@@ -1,10 +1,17 @@
 [
     {
+        "title": "New Website Launch",
+        "date": "Jan 17 2022",
+        "thumbnail": "https://oldschool.runescape.wiki/images/Twisted_dragon_trophy_detail.png",
+        "leadText": "Welcome to the new OS League Tools!",
+        "htmlContent": "<p>Welcome to the new OS League Tools! We're back with a brand new website.</p> <p>Everything has been rewritten from the ground up, with a new look (and new themes - check out the Settings menu), new features (quest tracker, boss tracker, plus loads more options on the task tracker like custom notes, custom reordering, and improved filtering), and lots more on the way.</p> <p>Oh, and the companion RuneLite plugin is getting a rework too! Soon you will be able to sync your leagues to-do list with the plugin and view your planned tasks in the client sidebar while you play.</p> <p>We've got a ton of other things in store too, like multiple character support, and a stats tracker to see your daily average point gain and other personal league statistics. To take full advantage of all these new features, you will need to sign up for an OS League Tools account. Just click on the Login link in the top right to get started.</p> <p>We're working hard to get everything else ready for the Shattered Relics launch on Jan 19th, and hope to see you there. Until then, happy scaping!</p>"
+    },
+    {
         "title": "LEAGUES THREE BAYBEEEEE",
         "date": "Sept 09 2021",
         "thumbnail": "https://oldschool.runescape.wiki/images/thumb/3/36/Shattered_Relics_League_logo.png/1280px-Shattered_Relics_League_logo.png?a7f6f",
         "leadText": "Get ready to shatter Gielinor on January 19th!",
-        "htmlContent": "<p>Get ready to shatter Gielinor on January 19th!</p> <p>Yep, OS League Tools is back.</p>"
+        "htmlContent": "<p>Get ready to shatter Gielinor on January 19th!</p> <p>OS League Tools is coming back, and better than ever. See you in January!</p>"
     },
     {
         "title": "Feature: Skill Planners",
