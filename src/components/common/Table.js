@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback } from 'react';
 import { useSelector } from 'react-redux';
 import { useTable, useFlexLayout, useResizeColumns, useSortBy, useGlobalFilter, useExpanded } from 'react-table';
 import { DndProvider } from 'react-dnd';
@@ -19,12 +19,7 @@ export default function Table({
     customRowRenderFn = null,
 }) {
     const [records, setRecords] = useState(data);
-
     const filterState = useSelector(state => state.filters);
-    useEffect(() => {
-        setRecords(data.filter(record => filters.every(filter => filter(record, filterState))));
-    }, [filterState]);
-
     const table = useTable(
         {
             initialState,
@@ -97,6 +92,7 @@ export default function Table({
                                         customRowRenderFn({
                                             index,
                                             row,
+                                            filters,
                                             moveRow,
                                             isReorderEnabled: filterState.reorderEnabled,
                                             ExpandedRow,
@@ -106,6 +102,7 @@ export default function Table({
                                         <Row
                                             index={index}
                                             row={row}
+                                            filters={filters}
                                             moveRow={moveRow}
                                             isReorderEnabled={filterState.reorderEnabled}
                                             ExpandedRow={ExpandedRow}

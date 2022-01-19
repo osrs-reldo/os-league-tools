@@ -58,7 +58,15 @@ export default function TaskTable() {
         }),
         []
     );
-    const filters = [difficultyFilter, categoryFilter, subcategoryFilter, skillFilter];
+    const filters = [
+        difficultyFilter,
+        categoryFilter,
+        subcategoryFilter,
+        skillFilter,
+        completedFilter,
+        todoFilter,
+        ignoredFilter,
+    ];
     const initialState = isXsViewport ? { hiddenColumns: ['id', 'difficulty', 'category'] } : { hiddenColumns: ['id'] };
 
     return (
@@ -103,6 +111,27 @@ function skillFilter(record, filterState) {
     }
     const taskSkills = record.skillReqs.map(req => req.skill);
     return _.intersection(taskSkills, filterState.skills).length > 0;
+}
+
+function completedFilter(record, filterState, taskState) {
+    if (filterState.status === 'all') {
+        return true;
+    }
+    return (filterState.status === 'cmpl') === !!taskState.completed;
+}
+
+function todoFilter(record, filterState, taskState) {
+    if (filterState.todo === 'all') {
+        return true;
+    }
+    return (filterState.todo === 'only') === !!taskState.todo;
+}
+
+function ignoredFilter(record, filterState, taskState) {
+    if (filterState.ignored === 'all') {
+        return true;
+    }
+    return (filterState.ignored === 'only') === !!taskState.ignored;
 }
 
 function sortTask(a, b) {
