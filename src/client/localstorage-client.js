@@ -3,6 +3,7 @@ export const LOCALSTORAGE_KEYS = {
     FILTER_STATE: 'filterState',
     USER_DATA: 'user',
     SETTINGS: 'settings',
+    TASKS: 'tasks',
 };
 
 export const SESSIONSTORAGE_KEYS = {

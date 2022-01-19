@@ -456,3 +456,5 @@ export const QUEST_SERIES = {
         icon: '/img/task-bossing.png',
     },
 };
+
+export const DEFAULT_NOTES_TEXT = '(none)';

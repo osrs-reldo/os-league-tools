@@ -5,6 +5,7 @@ import tasks from '../data/tasks';
 import Cell from './TaskTableCell';
 import Table from './common/Table';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
+import TaskTableRow from './TaskTableRow';
 
 export default function TaskTable() {
     const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
@@ -70,6 +71,7 @@ export default function TaskTable() {
             initialState={initialState}
             ExpandedRow={Cell.ExpandedTask}
             enableResizeColumns={!isXsViewport}
+            customRowRenderFn={TaskTableRow}
         />
     );
 }

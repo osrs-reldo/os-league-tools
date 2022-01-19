@@ -5,7 +5,14 @@ import useRowDrop from './hooks/useRowDrop';
 const DND_ITEM_TYPE = 'row';
 
 /* adapted from https://react-table.tanstack.com/docs/examples/row-dnd */
-export default function Row({ row, index, moveRow, isReorderEnabled = false, ExpandedRow = <div /> }) {
+export default function TableRow({
+    row,
+    index,
+    moveRow,
+    isReorderEnabled = false,
+    ExpandedRow = <div />,
+    customCellProps = {},
+}) {
     const dropRef = useRef(null);
     const dragRef = useRef(null);
 
@@ -20,11 +27,11 @@ export default function Row({ row, index, moveRow, isReorderEnabled = false, Exp
             <div {...row.getRowProps()} ref={isReorderEnabled ? dragRef : null}>
                 {row.cells.map(cell => (
                     <div {...cell.getCellProps()} className='relative'>
-                        {cell.render('Cell')}
+                        {cell.render('Cell', customCellProps)}
                     </div>
                 ))}
             </div>
-            {row.isExpanded && <div className='w-full'>{ExpandedRow(row)}</div>}
+            {row.isExpanded && <div className='w-full'>{ExpandedRow({ ...row, ...customCellProps })}</div>}
         </div>
     );
 }

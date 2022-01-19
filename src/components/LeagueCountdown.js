@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Card from './common/Card';
 
-const LAUNCH_DATE = new Date('2022-01-19T11:30:00+00:00');
-const END_DATE = new Date('2022-03-02T11:30:00+00:00');
+const LAUNCH_DATE = new Date('2022-01-19T12:00:00+00:00');
+const END_DATE = new Date('2022-03-02T12:00:00+00:00');
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;

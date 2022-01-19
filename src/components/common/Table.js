@@ -16,6 +16,7 @@ export default function Table({
     initialState,
     ExpandedRow,
     enableResizeColumns = true,
+    customRowRenderFn = null,
 }) {
     const [records, setRecords] = useState(data);
 
@@ -91,7 +92,17 @@ export default function Table({
                         <div {...table.getTableBodyProps()}>
                             {table.rows.map(
                                 (row, index) =>
-                                    table.prepareRow(row) || (
+                                    table.prepareRow(row) ||
+                                    (customRowRenderFn ? (
+                                        customRowRenderFn({
+                                            index,
+                                            row,
+                                            moveRow,
+                                            isReorderEnabled: filterState.reorderEnabled,
+                                            ExpandedRow,
+                                            ...row.getRowProps(),
+                                        })
+                                    ) : (
                                         <Row
                                             index={index}
                                             row={row}
@@ -100,7 +111,7 @@ export default function Table({
                                             ExpandedRow={ExpandedRow}
                                             {...row.getRowProps()}
                                         />
-                                    )
+                                    ))
                             )}
                         </div>
                     </div>
