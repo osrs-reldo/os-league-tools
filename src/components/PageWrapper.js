@@ -25,6 +25,7 @@ export default function PageWrapper({ children }) {
         new NavItem('RuneLite Plugin', 'icon', 0, 3).withCustomRenderFn(
             () => (
                 <button
+                    key='plugin'
                     className='text-primary md:inline hidden navbar-link-alt bg-hover p-2'
                     type='button'
                     onClick={() => setPluginModalOpen(true)}
@@ -34,6 +35,7 @@ export default function PageWrapper({ children }) {
             ),
             () => (
                 <button
+                    key='plugin'
                     className='text-primary bg-hover py-1 text-left'
                     onClick={() => setPluginModalOpen(true)}
                     type='button'
@@ -55,6 +57,7 @@ export default function PageWrapper({ children }) {
             ),
             () => (
                 <button
+                    key='feedback'
                     className='text-primary bg-hover py-1 text-left'
                     onClick={() => setFeedbackModalOpen(true)}
                     type='button'
