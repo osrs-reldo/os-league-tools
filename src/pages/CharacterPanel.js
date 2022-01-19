@@ -3,7 +3,7 @@ import HiscoreLookup from '../components/HiscoreLookup';
 import SkillsPanel from '../components/SkillsPanel';
 import BossesPanel from '../components/BossesPanel';
 import Separator from '../components/common/Separator';
-import { ThemedProgressBar } from '../components/ThemeProvider';
+// import { ThemedProgressBar } from '../components/ThemeProvider';
 
 export default function CharacterPanel() {
     const [characterStats, setCharacterStats] = useState(null);
@@ -16,7 +16,11 @@ export default function CharacterPanel() {
             </div>
             <Separator variant='vertical' breakpoint='lg' className='order-2' />
             <div className='lg:basis-1/2 basis-full flex flex-col items-center gap-3 order-1 lg:order-3 shrink'>
-                <div className='flex justify-around w-full'>
+                <p className='text-accent font-bold text-center small-caps text-2xl tracking-widest'>
+                    More character tracker features coming soon!
+                </p>
+                {/* TODO connect to real values */}
+                {/* <div className='flex justify-around w-full'>
                     <div className='flex flex-col items-center text-sm'>
                         <span className='text-lg text-accent font-semibold'>Tasks</span>
                         <span className='text-base text-accent'>83 / 730 (11.4%)</span>
@@ -78,7 +82,7 @@ export default function CharacterPanel() {
                         <img className='h-6 inline' src='/img/relic-outline.png' alt='' />
                         <span className='text-center ml-1 align-middle heading-primary-md'>Passive relic #7</span>
                     </div>
-                </div>
+                </div> */}
             </div>
             <Separator variant='vertical' breakpoint='md' className='order-4' />
             <div className='lg:basis-1/4 basis-2/5 flex flex-col items-center order-5'>

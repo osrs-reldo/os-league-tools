@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { useSelector, useDispatch, batch } from 'react-redux';
 import _ from 'lodash';
@@ -157,14 +158,16 @@ export default function TaskFilters() {
                         selection={filterState.skills}
                         setSelection={val => dispatch(updateFilter({ field: 'skills', value: val }))}
                     />
-                    <LabeledCheckbox label='Hide tasks with unmet requirements' className='mb-1' />
+                    {/* TODO add skill req filtering */}
+                    {/* <LabeledCheckbox label='Hide tasks with unmet requirements' className='mb-1' /> */}
                 </div>
             </div>
             <div className='w-full px-3 gap-1 grid lg:grid-cols-1 sm:grid-cols-2 grid-cols-1 order-7 sm:col-span-2 lg:col-span-1'>
                 <button type='button' className='button-outline w-full mb-1 h-fit' onClick={() => dispatch(reset())}>
                     Clear filters
                 </button>
-                {filterState.reorderEnabled ? (
+                {/* TODO save reordered task state */}
+                {/* {filterState.reorderEnabled ? (
                     <button
                         type='button'
                         className='button-outline w-full mb-1 h-fit'
@@ -185,7 +188,7 @@ export default function TaskFilters() {
                     >
                         Enable drag-and-drop reordering
                     </button>
-                )}
+                )} */}
             </div>
         </div>
     );

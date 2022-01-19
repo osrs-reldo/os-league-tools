@@ -94,7 +94,8 @@ fuzzyTextFilter.autoRemove = val => !val;
 function QuestCell({ value }) {
     return (
         <div className='flex flex-row items-center h-full gap-2'>
-            <span className='icon-2xl text-accent'>check_box_outline_blank</span>
+            {/* TODO make quest tracker functional */}
+            {/* <span className='icon-2xl text-accent'>check_box_outline_blank</span> */}
             <span className='inline align-middle'>{value}</span>
         </div>
     );

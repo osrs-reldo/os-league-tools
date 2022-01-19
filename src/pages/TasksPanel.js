@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { ThemedProgressBar } from '../components/ThemeProvider';
-import Separator from '../components/common/Separator';
+// import { ThemedProgressBar } from '../components/ThemeProvider';
+// import Separator from '../components/common/Separator';
 import TaskFilters from '../components/TaskFilters';
-import TaskGenerator from '../components/TaskGenerator';
+// import TaskGenerator from '../components/TaskGenerator';
 import TaskTable from '../components/TaskTable';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 
@@ -13,7 +13,8 @@ export default function TasksPanel() {
 
     return (
         <div className='h-full'>
-            <div className='flex flex-col gap-3 mb-3'>
+            {/* TODO connect to real values */}
+            {/* <div className='flex flex-col gap-3 mb-3'>
                 <div className='shadow-subdued'>
                     <ThemedProgressBar
                         curValue={1250}
@@ -28,7 +29,7 @@ export default function TasksPanel() {
                     <span>Next unlock at 2000 pts (750 remaining)</span>
                 </div>
             </div>
-            <Separator />
+            <Separator /> */}
             <div className='flex xl:flex-row flex-col justify-around w-full bg-secondary-alt xl:bg-primary'>
                 {isSmViewport && showSidebar && (
                     <div className='mt-3 bg-hover cursor-pointer' onClick={() => setShowSidebar(!showSidebar)}>
@@ -39,8 +40,9 @@ export default function TasksPanel() {
                 {showSidebar && (
                     <div className='basis-[23%] flex flex-col gap-3 pl-2'>
                         <TaskFilters />
+                        {/* TODO implement task generator
                         <Separator />
-                        <TaskGenerator />
+                        <TaskGenerator /> */}
                     </div>
                 )}
                 <div className='mt-3 mb-3 bg-hover cursor-pointer' onClick={() => setShowSidebar(!showSidebar)}>

@@ -5,7 +5,7 @@ import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import update from 'immutability-helper';
 import Row from './TableRow';
-import SearchBox from './TableSearchBox';
+// import SearchBox from './TableSearchBox';
 
 export default function Table({
     columns,
@@ -50,10 +50,11 @@ export default function Table({
 
     return (
         <>
-            <div className='flex flex-row flex-wrap justify-between pb-3 px-3 items-end'>
+            {/* TODO search box is broken due to new filtering logic */}
+            {/* <div className='flex flex-row flex-wrap justify-between pb-3 px-3 items-end'>
                 <span className='italic text-sm'>Showing: {table.rows.length} rows</span>
                 <SearchBox globalFilter={table.state.globalFilter} setGlobalFilter={table.setGlobalFilter} />
-            </div>
+            </div> */}
             <div className='block overflow-auto ml-3 pr-2'>
                 <DndProvider backend={HTML5Backend}>
                     <div {...table.getTableProps()}>
