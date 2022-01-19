@@ -6,12 +6,14 @@ import userReducer, { loadState as loadUserState } from './reducer/userData';
 import settingsReducer, { loadState as loadSettingsState } from './reducer/settings';
 import tasksReducer, { loadState as loadTasksState } from './reducer/tasks';
 import tempReducer, { loadState as loadTempState } from './reducer/temp';
+import unlocksReducer, { loadState as loadUnlocksState } from './reducer/unlocks';
 
 const reducer = {
     filters: filterReducer,
     user: userReducer,
     settings: settingsReducer,
     tasks: tasksReducer,
+    unlocks: unlocksReducer,
     temp: tempReducer,
 };
 
@@ -20,6 +22,7 @@ const preloadedState = {
     user: loadUserState(),
     settings: loadSettingsState(),
     tasks: loadTasksState(),
+    unlocks: loadUnlocksState(),
     temp: loadTempState(),
 };
 
@@ -34,6 +37,7 @@ store.subscribe(
         updateLocalStorage(LOCALSTORAGE_KEYS.USER_DATA, store.getState().user);
         updateLocalStorage(LOCALSTORAGE_KEYS.SETTINGS, store.getState().settings);
         updateLocalStorage(LOCALSTORAGE_KEYS.TASKS, store.getState().tasks);
+        updateLocalStorage(LOCALSTORAGE_KEYS.UNLOCKS, store.getState().unlocks);
     }, 200)
 );
 

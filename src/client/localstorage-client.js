@@ -4,6 +4,7 @@ export const LOCALSTORAGE_KEYS = {
     USER_DATA: 'user',
     SETTINGS: 'settings',
     TASKS: 'tasks',
+    UNLOCKS: 'unlocks',
 };
 
 export const SESSIONSTORAGE_KEYS = {
