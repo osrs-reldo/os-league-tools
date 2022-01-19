@@ -84,7 +84,7 @@ export default function PageWrapper({ children }) {
                     <div className='flex flex-col'>
                         <span className='text-xl text-bold small-caps text-accent'>Under construction!</span>
                         <p className='text-primary text-sm'>
-                            Stay with us, we're working on it! we're doing our best to get you all the task and league
+                            Stay with us, we're working on it! We're doing our best to get you all the task and league
                             info we can - but sometimes IRL gets in the way. All the latest updates and announcements
                             can be found on our{' '}
                             <a
