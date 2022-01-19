@@ -82,14 +82,11 @@ export default function PageWrapper({ children }) {
                 <Banner className='mx-auto mb-4 max-w-[60rem]'>
                     <span className='material-icons-sharp text-5xl text-accent float-left mr-2'>warning_amber</span>
                     <div className='flex flex-col'>
-                        <span className='text-xl text-bold small-caps text-accent'>
-                            OS League Tools is under construction!
-                        </span>
+                        <span className='text-xl text-bold small-caps text-accent'>Under construction!</span>
                         <p className='text-primary text-sm'>
-                            We're hard at work getting things ready for Shattered Relics league. The entire site has
-                            been rewritten from the ground up and it's not quite finished, so you may notice some things
-                            around here aren't working just yet. All the latest updates and announcements can be found
-                            on our{' '}
+                            Stay with us, we're working on it! we're doing our best to get you all the task and league
+                            info we can - but sometimes IRL gets in the way. All the latest updates and announcements
+                            can be found on our{' '}
                             <a
                                 href='https://discord.gg/GQ5kVyU'
                                 target='_blank'
@@ -98,7 +95,7 @@ export default function PageWrapper({ children }) {
                             >
                                 discord server
                             </a>
-                            . Until then, stay with us, and we'll see you on launch day! :)
+                            .
                         </p>
                     </div>
                 </Banner>
