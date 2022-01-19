@@ -86,6 +86,11 @@ function Difficulty({ value }) {
 
 function Category({ value }) {
     const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
+
+    if (!value.category) {
+        return null;
+    }
+
     return (
         <div className='flex lg:flex-col flex-row flex-wrap items-center justify-center h-full'>
             <LabeledIcon label={isMdOrSmallerViewport ? '' : value.category.label} icon={value.category.icon} />
