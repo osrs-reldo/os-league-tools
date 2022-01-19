@@ -87,14 +87,16 @@ export default function TaskFilters() {
             </div>
             <div className='lg:order-5 sm:order-2 order-5 row-span-2'>
                 <span className='heading-accent-md mt-1'>Category</span>
+                <p className='text-sm italic'>Filter temporarily disabled until new tasks are finished importing!</p>
                 <div className='w-full px-3 text-sm flex gap-1'>
                     <div>
                         <LabeledCheckbox
                             label='All categories'
-                            defaultChecked={!filterState.categories}
-                            onClick={e =>
-                                dispatch(updateFilter({ field: 'categories', value: e.target.checked ? null : 'all' }))
-                            }
+                            defaultChecked
+                            // defaultChecked={!filterState.categories}
+                            // onClick={e =>
+                            //     dispatch(updateFilter({ field: 'categories', value: e.target.checked ? null : 'all' }))
+                            // }
                             className='mb-1'
                         />
                         <InputSelect
@@ -105,7 +107,8 @@ export default function TaskFilters() {
                             }))}
                             multiple
                             className='text-sm'
-                            enabled={!!filterState.categories}
+                            enabled={false}
+                            // enabled={!!filterState.categories}
                             selection={filterState.categories}
                             setSelection={val => dispatch(updateFilter({ field: 'categories', value: val }))}
                         />
@@ -113,12 +116,13 @@ export default function TaskFilters() {
                     <div>
                         <LabeledCheckbox
                             label='All subcategories'
-                            defaultChecked={!filterState.subcategories}
-                            onClick={e =>
-                                dispatch(
-                                    updateFilter({ field: 'subcategories', value: e.target.checked ? null : 'all' })
-                                )
-                            }
+                            defaultChecked
+                            // defaultChecked={!filterState.subcategories}
+                            // onClick={e =>
+                            //     dispatch(
+                            //         updateFilter({ field: 'subcategories', value: e.target.checked ? null : 'all' })
+                            //     )
+                            // }
                             className='mb-1'
                         />
                         <InputSelect
@@ -132,7 +136,8 @@ export default function TaskFilters() {
                             )}
                             multiple
                             className='text-sm'
-                            enabled={!!filterState.subcategories}
+                            enabled={false}
+                            // enabled={!!filterState.subcategories}
                             selection={filterState.subcategories}
                             setSelection={val => dispatch(updateFilter({ field: 'subcategories', value: val }))}
                         />

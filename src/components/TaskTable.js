@@ -95,14 +95,14 @@ function categoryFilter(record, filterState) {
     if (filterState.categories === null) {
         return true;
     }
-    return filterState.categories.includes(record.category.label);
+    return filterState.categories.includes(record?.category?.label);
 }
 
 function subcategoryFilter(record, filterState) {
     if (filterState.subcategories === null) {
         return true;
     }
-    return filterState.subcategories.includes(record.subcategory.label);
+    return filterState.subcategories.includes(record?.subcategory?.label);
 }
 
 function skillFilter(record, filterState) {
