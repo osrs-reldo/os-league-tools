@@ -36,7 +36,8 @@
         "prestart": "npm run build:styles",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "refresh:tasks": "node scripts/formatTaskScraperJson.js"
     },
     "browserslist": {
         "production": [

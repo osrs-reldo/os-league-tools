@@ -52,6 +52,11 @@ export const SKILLS = {
 };
 
 export const DIFFICULTY = {
+    BEGINNER: {
+        label: 'Beginner',
+        value: 5,
+        icon: '/img/task-beginner.png',
+    },
     EASY: {
         label: 'Easy',
         value: 5,
