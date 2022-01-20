@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import {
     useTable,
@@ -23,15 +23,21 @@ export default function Table({
     defaultColumn,
     initialState,
     ExpandedRow,
+    customFilterProps = {},
     customRowProps = {},
     enableResizeColumns = true,
     customRowRenderFn = null,
 }) {
     const [records, setRecords] = useState(data);
     const filterState = useSelector(state => state.filters);
+
+    useEffect(() => {
+        setRecords(data.filter(record => filters.every(filter => filter(record, filterState, customFilterProps))));
+    }, [filterState]);
+
     const table = useTable(
         {
-            initialState,
+            initialState: { pageSize: 25, ...initialState },
             columns,
             data: records,
             defaultColumn,
@@ -102,8 +108,6 @@ export default function Table({
                                         customRowRenderFn({
                                             index,
                                             row,
-                                            filters,
-                                            filterState,
                                             moveRow,
                                             isReorderEnabled: filterState.reorderEnabled,
                                             ExpandedRow,
@@ -114,7 +118,6 @@ export default function Table({
                                         <Row
                                             index={index}
                                             row={row}
-                                            filters={filters}
                                             moveRow={moveRow}
                                             isReorderEnabled={filterState.reorderEnabled}
                                             ExpandedRow={ExpandedRow}

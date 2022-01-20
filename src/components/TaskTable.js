@@ -81,6 +81,7 @@ export default function TaskTable() {
             data={data}
             filters={filters}
             globalFilter={fuzzyTextFilter}
+            customFilterProps={{ tasksState }}
             defaultColumn={defaultColumn}
             initialState={initialState}
             ExpandedRow={Cell.ExpandedTask}
@@ -113,32 +114,35 @@ function subcategoryFilter(record, filterState) {
 }
 
 function skillFilter(record, filterState) {
-    if (filterState.skills === null) {
+    const taskSkills = record.skillReqs.map(req => req.skill);
+    if (filterState.skills === null || taskSkills.length === 0) {
         return true;
     }
-    const taskSkills = record.skillReqs.map(req => req.skill);
     return _.intersection(taskSkills, filterState.skills).length > 0;
 }
 
-function completedFilter(record, filterState, taskState) {
+function completedFilter(record, filterState, { tasksState }) {
     if (filterState.status === 'all') {
         return true;
     }
-    return (filterState.status === 'cmpl') === !!taskState.completed;
+    const status = !!tasksState[record.id]?.completed;
+    return (filterState.status === 'cmpl') === !!status;
 }
 
-function todoFilter(record, filterState, taskState) {
+function todoFilter(record, filterState, { tasksState }) {
     if (filterState.todo === 'all') {
         return true;
     }
-    return (filterState.todo === 'only') === !!taskState.todo;
+    const todo = !!tasksState[record.id]?.todo;
+    return (filterState.todo === 'only') === !!todo;
 }
 
-function ignoredFilter(record, filterState, taskState) {
+function ignoredFilter(record, filterState, { tasksState }) {
     if (filterState.ignored === 'all') {
         return true;
     }
-    return (filterState.ignored === 'only') === !!taskState.ignored;
+    const ignored = !!tasksState[record.id]?.ignored;
+    return (filterState.ignored === 'only') === !!ignored;
 }
 
 function sortTask(a, b) {

@@ -6,8 +6,6 @@ export default function TaskTableRow({
     row,
     index,
     moveRow,
-    filters,
-    filterState,
     tasksState,
     tempState,
     dispatch,
@@ -18,10 +16,6 @@ export default function TaskTableRow({
     const taskState = tasksState[taskId] || INITIAL_TASK_STATE;
     const isEditNotesMode = tempState[`editNotes${taskId}`] || false;
     const notesTempVal = tempState[`tempNotes${taskId}`] || taskState.notes;
-
-    if (!filters.every(filter => filter(row.original, filterState, taskState))) {
-        return null;
-    }
 
     return (
         <TableRow
