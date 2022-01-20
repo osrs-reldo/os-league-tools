@@ -1,24 +1,24 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { selectTask } from '../reducer/tasks';
-import { selectTempField } from '../reducer/temp';
 import TableRow from './common/TableRow';
+import { INITIAL_TASK_STATE } from '../reducer/tasks';
 
 export default function TaskTableRow({
     row,
     index,
     moveRow,
     filters,
+    filterState,
+    tasksState,
+    tempState,
+    dispatch,
     isReorderEnabled = false,
     ExpandedRow = <div />,
 }) {
     const taskId = row.values.id;
-    const taskState = useSelector(state => selectTask(state, taskId));
-    const isEditNotesMode = useSelector(state => selectTempField(state, `editNotes${taskId}`, false));
-    const notesTempVal = useSelector(state => selectTempField(state, `tempNotes${taskId}`, taskState.notes));
-    const dispatch = useDispatch();
+    const taskState = tasksState[taskId] || INITIAL_TASK_STATE;
+    const isEditNotesMode = tempState[`editNotes${taskId}`] || false;
+    const notesTempVal = tempState[`tempNotes${taskId}`] || taskState.notes;
 
-    const filterState = useSelector(state => state.filters);
     if (!filters.every(filter => filter(row.original, filterState, taskState))) {
         return null;
     }

@@ -11,7 +11,7 @@ const INITIAL_STATE = {
     tasks: {},
 };
 
-const INITIAL_TASK_STATE = {
+export const INITIAL_TASK_STATE = {
     completed: null,
     todo: null,
     ignored: null,

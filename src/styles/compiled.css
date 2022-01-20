@@ -1786,6 +1786,9 @@ select[multiple]:focus option:checked {
 .table {
   display: table;
 }
+.\!table {
+  display: table !important;
+}
 .grid {
   display: grid;
 }
@@ -2183,6 +2186,9 @@ select[multiple]:focus option:checked {
 .pr-2 {
   padding-right: 0.5rem;
 }
+.pr-4 {
+  padding-right: 1rem;
+}
 .text-left {
   text-align: left;
 }
@@ -2259,6 +2265,9 @@ select[multiple]:focus option:checked {
 }
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+.tracking-tighter {
+  letter-spacing: -0.05em;
 }
 .opacity-25 {
   opacity: 0.25;

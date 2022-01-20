@@ -1,11 +1,19 @@
 import React, { useState, useCallback } from 'react';
 import { useSelector } from 'react-redux';
-import { useTable, useFlexLayout, useResizeColumns, useSortBy, useGlobalFilter, useExpanded } from 'react-table';
+import {
+    useTable,
+    useFlexLayout,
+    useResizeColumns,
+    useSortBy,
+    useGlobalFilter,
+    useExpanded,
+    usePagination,
+} from 'react-table';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import update from 'immutability-helper';
 import Row from './TableRow';
-// import SearchBox from './TableSearchBox';
+import SearchBox from './TableSearchBox';
 
 export default function Table({
     columns,
@@ -15,6 +23,7 @@ export default function Table({
     defaultColumn,
     initialState,
     ExpandedRow,
+    customRowProps = {},
     enableResizeColumns = true,
     customRowRenderFn = null,
 }) {
@@ -33,7 +42,8 @@ export default function Table({
         useResizeColumns,
         useGlobalFilter,
         useSortBy,
-        useExpanded
+        useExpanded,
+        usePagination
     );
 
     const moveRow = (dragIndex, hoverIndex) => {
@@ -50,11 +60,10 @@ export default function Table({
 
     return (
         <>
-            {/* TODO search box is broken due to new filtering logic */}
-            {/* <div className='flex flex-row flex-wrap justify-between pb-3 px-3 items-end'>
-                <span className='italic text-sm'>Showing: {table.rows.length} rows</span>
+            <div className='flex flex-row flex-wrap justify-between pb-3 px-3 items-end'>
+                <span className='italic text-sm'>Showing: {table.page.length} rows</span>
                 <SearchBox globalFilter={table.state.globalFilter} setGlobalFilter={table.setGlobalFilter} />
-            </div> */}
+            </div>
             <div className='block overflow-auto ml-3 pr-2'>
                 <DndProvider backend={HTML5Backend}>
                     <div {...table.getTableProps()}>
@@ -86,7 +95,7 @@ export default function Table({
                             ))}
                         </div>
                         <div {...table.getTableBodyProps()}>
-                            {table.rows.map(
+                            {table.page.map(
                                 (row, index) =>
                                     table.prepareRow(row) ||
                                     (customRowRenderFn ? (
@@ -94,9 +103,11 @@ export default function Table({
                                             index,
                                             row,
                                             filters,
+                                            filterState,
                                             moveRow,
                                             isReorderEnabled: filterState.reorderEnabled,
                                             ExpandedRow,
+                                            ...customRowProps,
                                             ...row.getRowProps(),
                                         })
                                     ) : (
@@ -112,9 +123,57 @@ export default function Table({
                                     ))
                             )}
                         </div>
+                        <div className='flex flex-col justify-center text-center'>
+                            <div>
+                                <PageButton
+                                    onClick={() => table.gotoPage(0)}
+                                    disabled={!table.canPreviousPage}
+                                    text='<<'
+                                />
+                                <PageButton
+                                    onClick={() => table.previousPage()}
+                                    disabled={!table.canPreviousPage}
+                                    text='<'
+                                />
+                                <span className='text-xs'>
+                                    {table.state.pageIndex + 1} of {table.pageOptions.length}
+                                </span>
+                                <PageButton onClick={() => table.nextPage()} disabled={!table.canNextPage} text='>' />
+                                <PageButton
+                                    onClick={() => table.gotoPage(table.pageCount - 1)}
+                                    disabled={!table.canNextPage}
+                                    text='>>'
+                                />
+                            </div>
+
+                            <span className='text-xs'>
+                                Show:
+                                <select
+                                    className='input-primary text-xs p-0 ml-1 text-center'
+                                    value={table.state.pageSize}
+                                    onChange={e => {
+                                        table.setPageSize(Number(e.target.value));
+                                    }}
+                                >
+                                    {[25, 50, 100, 200].map(pageSize => (
+                                        <option key={pageSize} value={pageSize}>
+                                            {pageSize}
+                                        </option>
+                                    ))}
+                                </select>
+                            </span>
+                        </div>
                     </div>
                 </DndProvider>
             </div>
         </>
+    );
+}
+
+function PageButton({ onClick, disabled, text }) {
+    return (
+        <button onClick={onClick} disabled={disabled} type='button' className='tracking-tighter m-1 hover:underline'>
+            {text}
+        </button>
     );
 }

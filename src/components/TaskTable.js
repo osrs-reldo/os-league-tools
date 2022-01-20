@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import _ from 'lodash';
 import { matchSorter } from 'match-sorter';
+import { useDispatch, useSelector } from 'react-redux';
 import tasks from '../data/tasks';
 import Cell from './TaskTableCell';
 import Table from './common/Table';
@@ -68,6 +69,11 @@ export default function TaskTable() {
         ignoredFilter,
     ];
     const initialState = isXsViewport ? { hiddenColumns: ['id', 'difficulty', 'category'] } : { hiddenColumns: ['id'] };
+    initialState.pageSize = 50;
+
+    const tasksState = useSelector(state => state.tasks.tasks);
+    const tempState = useSelector(state => state.temp);
+    const dispatch = useDispatch();
 
     return (
         <Table
@@ -80,6 +86,7 @@ export default function TaskTable() {
             ExpandedRow={Cell.ExpandedTask}
             enableResizeColumns={!isXsViewport}
             customRowRenderFn={TaskTableRow}
+            customRowProps={{ tasksState, tempState, dispatch }}
         />
     );
 }
