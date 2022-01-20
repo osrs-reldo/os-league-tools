@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { SKILLS } from '../data/constants';
 import { lockSkill, unlockSkill } from '../reducer/unlocks';
@@ -72,6 +72,13 @@ export default function SkillsPanel({ characterStats }) {
 }
 
 function SkillTile({ skill, selectedSkill, setSelectedSkill, unlockedSkills, level = 1 }) {
+    const dispatch = useDispatch();
+    const isSkillUnlocked = unlockedSkills.includes(skill);
+
+    useEffect(() => {
+        if (level > 1 && !isSkillUnlocked) dispatch(unlockSkill({ skill }));
+    }, [level]);
+
     return (
         <td
             className={`p-1 border-r border-subdued last:border-none bg-hover cursor-pointer ${
@@ -81,7 +88,7 @@ function SkillTile({ skill, selectedSkill, setSelectedSkill, unlockedSkills, lev
         >
             <div className='flex items-center'>
                 <img src={`/img/${skill.toLowerCase()}.gif`} alt={skill} className='inline mx-1' />
-                {unlockedSkills.includes(skill) ? (
+                {isSkillUnlocked ? (
                     <span className='text-center grow mr-1'>
                         {level} / {level}
                     </span>
