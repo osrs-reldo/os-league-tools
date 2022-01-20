@@ -58,13 +58,14 @@ export default function HiscoreLookup({ handleResultCallback = () => {} }) {
                     value={username}
                     onChange={event => setUsername(event.target.value)}
                 />
-                <button className='ml-2 button-md button-filled' type='button' onClick={() => doHiscoresLookup()}>
-                    {isLoading && (
-                        <span className='mr-1'>
+                <button className='ml-2 button-md button-filled w-20' type='button' onClick={() => doHiscoresLookup()}>
+                    {isLoading ? (
+                        <span>
                             <Spinner />
                         </span>
+                    ) : (
+                        'Lookup'
                     )}
-                    Lookup
                 </button>
             </div>
             {errorText && <div className='text-error text-sm'>{errorText}</div>}
