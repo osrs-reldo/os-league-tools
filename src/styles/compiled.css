@@ -1079,6 +1079,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 500;
   text-transform: uppercase;
 }
+.theme-tl-dark a.active {
+  --tw-text-opacity: 1;
+  color: rgb(164 206 39 / var(--tw-text-opacity));
+}
+.theme-tb-dark a.active {
+  --tw-text-opacity: 1;
+  color: rgb(229 217 147 / var(--tw-text-opacity));
+}
+.theme-sl-dark a.active {
+  --tw-text-opacity: 1;
+  color: rgb(19 213 145 / var(--tw-text-opacity));
+}
+.theme-mono-dark a.active {
+  --tw-text-opacity: 1;
+  color: rgb(249 250 251 / var(--tw-text-opacity));
+}
+.theme-tl-light a.active {
+  --tw-text-opacity: 1;
+  color: rgb(100 144 68 / var(--tw-text-opacity));
+}
+.theme-tb-light a.active {
+  --tw-text-opacity: 1;
+  color: rgb(99 66 40 / var(--tw-text-opacity));
+}
+.theme-sl-light a.active {
+  --tw-text-opacity: 1;
+  color: rgb(0 128 118 / var(--tw-text-opacity));
+}
+.theme-mono-light a.active {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
 .navbar-link-alt {
   font-size: 0.875rem;
   line-height: 1.25rem;

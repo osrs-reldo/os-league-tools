@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { DROPDOWN } from './util/theme';
 
 function Dropdown({ children, innerRef, show, width = DROPDOWN.content }) {
@@ -19,15 +20,32 @@ function TextItem({ children, isHeading = false }) {
     return <li className={`px-3 py-2 block ${isHeading && 'font-semibold'}`}>{children}</li>;
 }
 
-function LinkItem({ children, href, target = '_self', icon = null }) {
-    return (
-        <li>
-            <a href={href} target={target} className='text-primary-alt px-3 py-2 block bg-hover'>
-                {icon && <span className='icon-lg align-middle mr-1'>{icon}</span>}
-                {children}
-            </a>
-        </li>
+function LinkItem({ children, href, target = '_self', icon = null, to }) {
+    const linkContent = (
+        <>
+            {icon && <span className='icon-lg align-middle mr-1'>{icon}</span>}
+            {children}
+        </>
     );
+    const linkClassName = 'text-primary-alt px-3 py-2 block bg-hover';
+
+    if (href) {
+        return (
+            <li>
+                <a href={href} target={target} className={linkClassName}>
+                    {linkContent}
+                </a>
+            </li>
+        );
+    }
+    if (to) {
+        return (
+            <NavLink className={linkClassName} exact to={to}>
+                {linkContent}
+            </NavLink>
+        );
+    }
+    return null;
 }
 
 function ButtonItem({ children, onClick, icon = null }) {
