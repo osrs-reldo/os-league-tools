@@ -15,9 +15,9 @@ export default function PageWrapper({ children }) {
     const [isPluginModalOpen, setPluginModalOpen] = useState(false);
 
     const navItems = [
-        new NavItem('Stats', 'primary', 0, 0).withHref('/stats').withIconFont('query_stats'),
-        new NavItem('Trackers', 'primary', 0, 1).withHref('/tracker').withIconFont('checklist_rtl'),
-        new NavItem('Calculators', 'primary', 0, 2).withHref('/calculators').withIconFont('calculate'),
+        new NavItem('Stats', 'primary', 0, 0).withRouterLink('/stats').withIconFont('query_stats'),
+        new NavItem('Trackers', 'primary', 0, 1).withRouterLink('/tracker').withIconFont('checklist_rtl'),
+        new NavItem('Calculators', 'primary', 0, 2).withRouterLink('/calculators').withIconFont('calculate'),
         new NavItem('Login', 'secondary', 1, 0).withCustomRenderFn(
             () => <AuthButton key='login' />,
             () => <AuthButton key='login' useDropdownVariant />
@@ -45,7 +45,7 @@ export default function PageWrapper({ children }) {
                 </button>
             )
         ),
-        new NavItem('Settings', 'overflow', 1, 1).withHref('/settings').withIconFont('settings'),
+        new NavItem('Settings', 'overflow', 1, 1).withRouterLink('/settings').withIconFont('settings'),
         new NavItem('Discord', 'overflow', 2, 0)
             .withHref('https://discord.gg/GQ5kVyU', '_blank')
             .withIconFont('discord'),
@@ -73,7 +73,7 @@ export default function PageWrapper({ children }) {
         new NavItem('Tip Jar', 'overflow', 2, 3)
             .withHref('https://ko-fi.com/chaiinchomp', '_blank')
             .withIconFont('savings'),
-        new NavItem('About', 'overflow', 2, 4).withHref('/about').withIconFont('help_outline'),
+        new NavItem('About', 'overflow', 2, 4).withRouterLink('/about').withIconFont('help_outline'),
     ];
 
     return (

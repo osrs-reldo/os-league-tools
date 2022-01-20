@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import _ from 'lodash';
 import Dropdown from './Dropdown';
 import useClickListener from '../../hooks/useClickListener';
@@ -6,25 +7,31 @@ import { getLayoutSlots } from './util/layout';
 
 export class NavItem {
     constructor(label, variant = 'primary', collapseGroup = -1, collapseOrder = -1) {
-        this.id = label;
-        this.label = label;
-        this.variant = variant; // primary, secondary, icon, overflow
-        this.props = {};
-        this.props.slot = variant;
         this.collapseGroup = collapseGroup;
         this.collapseOrder = collapseOrder;
         this.href = null;
-        this.target = null;
-        this.onClick = null;
         this.iconFont = null;
         this.iconSrc = null;
-        this.renderFn = null;
+        this.id = label;
+        this.label = label;
+        this.onClick = null;
+        this.props = {};
+        this.props.slot = variant;
         this.renderAsDropdownFn = null;
+        this.renderFn = null;
+        this.target = null;
+        this.to = null;
+        this.variant = variant; // primary, secondary, icon, overflow
     }
 
     withHref(href, target = '_self') {
         this.href = href;
         this.target = target;
+        return this;
+    }
+
+    withRouterLink(to) {
+        this.to = to;
         return this;
     }
 
@@ -70,9 +77,9 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                 {/* Brand */}
                 <div className='flex flex-row flex-nowrap'>
                     <img src={brandLogo} className='navbar-brand-logo mr-3' alt='' />
-                    <a className='text-primary navbar-brand whitespace-nowrap' href='/'>
+                    <Link className='text-primary navbar-brand whitespace-nowrap' to='/'>
                         {brandName}
-                    </a>
+                    </Link>
                 </div>
                 {/* Primary nav links */}
                 <div className='pl-4 sm:flex hidden'>
@@ -84,8 +91,7 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                                 <PrimaryLink
                                     key={navItem.id}
                                     label={navItem.label}
-                                    href={navItem.href}
-                                    target={navItem.target}
+                                    to={navItem.to}
                                 />
                             )
                         )}
@@ -113,10 +119,10 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                                 navItem.renderFn()
                             ) : (
                                 <IconLink
-                                    key={navItem.id}
+                                    href={navItem.href}
                                     iconFont={navItem.iconFont}
                                     iconSrc={navItem.iconSrc}
-                                    href={navItem.href}
+                                    key={navItem.id}
                                     target={navItem.target}
                                 />
                             )
@@ -144,6 +150,7 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                                                     href={item.href}
                                                     icon={item.iconFont}
                                                     target={item.target}
+                                                    to={item.to}
                                                 >
                                                     {item.label}
                                                 </Dropdown.Link>
@@ -176,12 +183,13 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                                 navItem.renderAsDropdownFn()
                             ) : (
                                 <CollapsedMenuLink
-                                    key={navItem.id}
-                                    label={navItem.label}
                                     href={navItem.href}
                                     iconFont={navItem.iconFont}
                                     iconSrc={navItem.iconSrc}
+                                    key={navItem.id}
+                                    label={navItem.label}
                                     target={navItem.target}
+                                    to={navItem.to}
                                 />
                             )
                         )}
@@ -192,11 +200,11 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
     );
 }
 
-function PrimaryLink({ label, href, target }) {
+function PrimaryLink({ label, to }) {
     return (
-        <a className='text-primary navbar-link hover:underline mr-4' href={href} target={target}>
+        <NavLink className='text-primary navbar-link hover:underline mr-4' exact to={to}>
             {label}
-        </a>
+        </NavLink>
     );
 }
 
@@ -235,14 +243,30 @@ function IconLink({ href, iconFont, iconSrc, target }) {
     );
 }
 
-function CollapsedMenuLink({ label, href, iconFont, iconSrc, target }) {
-    return (
-        <a className='text-primary bg-hover py-1' href={href} target={target}>
+function CollapsedMenuLink({ iconFont, iconSrc, label, href, target, to }) {
+    const linkContent = (
+        <>
             {iconFont && <span className='text-primary-alt icon-lg inline align-middle mr-1'>{iconFont}</span>}
             {iconSrc && <img className='h-4 img-primary inline align-middle mr-1' src={iconSrc} alt='' />}
             <p className='h-4 inline pl-1 font-sans-alt'>{label}</p>
-        </a>
+        </>
     );
+
+    if (href) {
+        return (
+            <a className='text-primary bg-hover py-1' href={href} target={target}>
+                {linkContent}
+            </a>
+        );
+    }
+
+    if (to) {
+        return (
+        <NavLink className='text-primary bg-hover py-1' exact to={to}>
+                {linkContent}
+            </NavLink>
+        );
+    }
 }
 
 function getCollapseGroups(items) {

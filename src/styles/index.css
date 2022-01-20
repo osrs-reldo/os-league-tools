@@ -206,6 +206,9 @@
         @apply md:text-base text-sm;
         @apply font-mono font-medium uppercase;
     }
+    a.active {
+        @apply text-accent;
+    }
     .navbar-link-alt {
         @apply md:text-base text-sm;
         @apply font-sans-alt font-medium;
