@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { SKILLS } from '../data/constants';
-import { DEFAULT_UNLOCKED_SKILLS, lockSkill, unlockSkill } from '../reducer/unlocks';
+import { lockSkill, unlockSkill } from '../reducer/unlocks';
 
 export default function SkillsPanel({ characterStats }) {
     const [selectedSkill, setSelectedSkill] = useState(null);
@@ -74,11 +74,9 @@ export default function SkillsPanel({ characterStats }) {
 function SkillTile({ skill, selectedSkill, setSelectedSkill, unlockedSkills, level = 1 }) {
     const dispatch = useDispatch();
     const isSkillUnlocked = unlockedSkills.includes(skill);
-    const isDefaultSkill = DEFAULT_UNLOCKED_SKILLS.includes(skill);
 
     useEffect(() => {
         if (level > 1 && !isSkillUnlocked) dispatch(unlockSkill({ skill }));
-        if (level === 1 && isSkillUnlocked && !isDefaultSkill) dispatch(lockSkill({ skill }));
     }, [level]);
 
     return (
