@@ -1767,6 +1767,9 @@ select[multiple]:focus option:checked {
 .mr-2 {
   margin-right: 0.5rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -1778,9 +1781,6 @@ select[multiple]:focus option:checked {
 }
 .ml-6 {
   margin-left: 1.5rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 .ml-5 {
   margin-left: 1.25rem;
@@ -2235,6 +2235,9 @@ select[multiple]:focus option:checked {
 }
 .align-middle {
   vertical-align: middle;
+}
+.align-bottom {
+  vertical-align: bottom;
 }
 .align-sub {
   vertical-align: sub;
