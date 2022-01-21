@@ -2,8 +2,8 @@
 import React from 'react';
 import { useSelector, useDispatch, batch } from 'react-redux';
 import _ from 'lodash';
-import { update as updateFilter, reset } from '../reducer/filters';
-import { update as updateUserData } from '../reducer/userData';
+import { update as updateFilter, reset } from '../store/tasks/filters';
+import { update as updateUserData } from '../store/user/userData';
 import ButtonGroup from './common/ButtonGroup';
 import InputSelect from './common/InputSelect';
 import { CATEGORY, SUBCATEGORY, DIFFICULTY, SKILLS } from '../data/constants';

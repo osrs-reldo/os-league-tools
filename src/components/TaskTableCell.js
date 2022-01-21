@@ -1,9 +1,9 @@
 import React from 'react';
-import { toggleTodo, toggleIgnored, toggleCompleted, updateNotes } from '../reducer/tasks';
+import { toggleTodo, toggleIgnored, toggleCompleted, updateNotes } from '../store/tasks/tasks';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import LabeledIcon from './common/LabeledIcon';
 import { DEFAULT_NOTES_TEXT } from '../data/constants';
-import { clearTempField, setTempField } from '../reducer/temp';
+import { clearTempField, setTempField } from '../store/tasks/temp';
 
 function Task({ row, value, taskState, dispatchFn }) {
     const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);

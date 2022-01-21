@@ -9,7 +9,7 @@ import Homepage from './pages/Homepage';
 import Tracker from './pages/Tracker';
 import About from './pages/About';
 import Settings from './pages/Settings';
-import store from './store';
+import store from './store/store';
 import ThemeProvider from './components/ThemeProvider';
 import Statistics from './pages/Statistics';
 import Calculators from './pages/Calculators';

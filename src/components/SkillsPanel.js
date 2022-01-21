@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { SKILLS } from '../data/constants';
-import { lockSkill, unlockSkill } from '../reducer/unlocks';
+import { lockSkill, unlockSkill } from '../store/user/unlocks';
 
 export default function SkillsPanel({ characterStats }) {
     const [selectedSkill, setSelectedSkill] = useState(null);

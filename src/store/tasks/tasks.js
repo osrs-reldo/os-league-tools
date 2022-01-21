@@ -1,7 +1,7 @@
 /* Redux toolkit middleware handles updates immutably, but eslint doesn't know that */
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
-import { getFromLocalStorage, deleteFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
+import { getFromLocalStorage, deleteFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorage-client';
 
 const SHATTERED_RELICS_MIN_VERSION = 4;
 const CURRENT_VERSION = 4;

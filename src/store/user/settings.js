@@ -1,16 +1,17 @@
 /* Redux toolkit middleware handles updates immutably, but eslint doesn't know that */
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
-import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
+import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorage-client';
 
 const INITIAL_STATE = {
     version: 1,
-    username: null,
-    taskOrder: null, // TODO
+    limitContentWidth: true,
+    mode: 'dark',
+    theme: 'sl-dark',
 };
 
 export const userSlice = createSlice({
-    name: 'user',
+    name: 'settings',
     initialState: INITIAL_STATE,
     reducers: {
         update: (state, action) => {
@@ -20,7 +21,7 @@ export const userSlice = createSlice({
     },
 });
 
-export const loadState = () => getFromLocalStorage(LOCALSTORAGE_KEYS.USER_DATA, INITIAL_STATE);
+export const loadState = () => getFromLocalStorage(LOCALSTORAGE_KEYS.SETTINGS, INITIAL_STATE);
 
 export const { update, reset } = userSlice.actions;
 
