@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { lockBoss, unlockBoss } from '../store/user/unlocks';
+import { lockBoss, unlockBoss } from '../store/unlocks';
 
 const BOSSES = [
     'Alchemical Hydra',

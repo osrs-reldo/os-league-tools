@@ -1,24 +1,9 @@
 /* Redux toolkit middleware handles updates immutably, but eslint doesn't know that */
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
-import { getFromLocalStorage, deleteFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorage-client';
-
-const SHATTERED_RELICS_MIN_VERSION = 4;
-const CURRENT_VERSION = 4;
-const INITIAL_STATE = {
-    version: CURRENT_VERSION,
-    rsn: null,
-    tasks: {},
-};
-
-export const INITIAL_TASK_STATE = {
-    completed: null,
-    todo: null,
-    ignored: null,
-    order: null,
-    notes: null,
-    lastUpdated: null,
-};
+import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorage-client';
+import { INITIAL_STATE, INITIAL_TASK_STATE } from './constants';
+import updateTasksVersion from './updateTasksVersion';
 
 export const taskSlice = createSlice({
     name: 'tasks',
@@ -41,8 +26,6 @@ export const taskSlice = createSlice({
             state.tasks[action.payload.taskId].lastUpdated = Date.now();
         },
         toggleCompleted: (state, action) => {
-            // eslint-disable-next-line no-console
-            console.log('received dispatch');
             if (!state.tasks[action.payload.taskId]) {
                 state.tasks[action.payload.taskId] = { ...INITIAL_TASK_STATE };
             }
@@ -84,19 +67,7 @@ export const taskSlice = createSlice({
 
 export const loadState = () => {
     const prevState = getFromLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_STATE);
-    if (prevState && prevState.version < SHATTERED_RELICS_MIN_VERSION) {
-        // Storage contains old data from last league, reset it and clean up other stale fields
-        deleteFromLocalStorage('contentWidth');
-        deleteFromLocalStorage('filterHideLocked');
-        deleteFromLocalStorage('filterHideTodoTasks');
-        deleteFromLocalStorage('filterShowHiddenTasks');
-        deleteFromLocalStorage('hideAlertBanner');
-        deleteFromLocalStorage('unlockedRegions');
-        deleteFromLocalStorage('unlockedRelics');
-        deleteFromLocalStorage('tasks');
-        return INITIAL_STATE;
-    }
-    return prevState;
+    return updateTasksVersion(prevState);
 };
 
 export const { toggleTodo, toggleIgnored, toggleCompleted, updateNotes, updateOrder, reset } = taskSlice.actions;

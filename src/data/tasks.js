@@ -2,7 +2,7 @@ import { DIFFICULTY } from './constants';
 
 export default [
     {
-        id: 1336,
+        id: 383,
         label: 'Visit Ferox Enclave',
         description: 'Visit Ferox Enclave.',
         skillReqs: [],
@@ -11,7 +11,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3879651989,
+        id: 428,
         label: 'Turn in 1 Library Book',
         description: 'Find and turn in a book in the Arceuus Library.',
         skillReqs: [],
@@ -20,7 +20,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1190,
+        id: 429,
         label: 'Turn in 10 Library Books',
         description: 'Find and turn in 10 books in the Arceuus Library.',
         skillReqs: [],
@@ -29,7 +29,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3073202395,
+        id: 477,
         label: "Bank at Land's End",
         description: "Open your bank using the bank at Land's End.",
         skillReqs: [],
@@ -38,7 +38,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 976,
+        id: 478,
         label: 'Bank at Mount Quidamortem',
         description: 'Open your bank using the bank at Mount Quidamortem.',
         skillReqs: [],
@@ -47,7 +47,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 540,
+        id: 479,
         label: 'Travel to Molch Island',
         description: 'Take one of the boats around Lake Molch to Molch Island.',
         skillReqs: [],
@@ -56,7 +56,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1054,
+        id: 495,
         label: 'Open the Leagues Menu',
         description: 'Open the Leagues Menu found within the Journal Panel.',
         skillReqs: [],
@@ -65,7 +65,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1290,
+        id: 496,
         label: 'Complete the Leagues Tutorial',
         description: 'Complete the Leagues Tutorial and begin your adventure.',
         skillReqs: [],
@@ -74,7 +74,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1963543429,
+        id: 497,
         label: 'Achieve Your First Level Up',
         description: 'Level up any of your skills for the first time.',
         skillReqs: [],
@@ -83,7 +83,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 580,
+        id: 498,
         label: 'Achieve Your First Level 5',
         description: 'Reach level 5 in any skill (not including Agility, Hitpoints and Runecraft).',
         skillReqs: [],
@@ -92,7 +92,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 500,
+        id: 499,
         label: 'Achieve Your First Level 10',
         description: 'Reach level 10 in any skill (not including Agility and Hitpoints).',
         skillReqs: [],
@@ -101,7 +101,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 578,
+        id: 500,
         label: 'Achieve Your First Level 20',
         description: 'Reach level 20 in any skill.',
         skillReqs: [],
@@ -110,7 +110,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 706,
+        id: 709,
         label: 'Reach Combat Level 10',
         description: 'Reach Combat Level 10.',
         skillReqs: [],
@@ -119,7 +119,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1334,
+        id: 807,
         label: 'Pet a Stray Dog in Varrock',
         description: 'Pet a Stray Dog in Varrock.',
         skillReqs: [],
@@ -128,7 +128,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3815582848,
+        id: 822,
         label: 'Enter Draynor Manor',
         description: 'Enter Draynor Manor.',
         skillReqs: [],
@@ -137,7 +137,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 699,
+        id: 998,
         label: 'Fill a Crate With Bananas',
         description: 'Fill a crate with Bananas for Luthas at Musa Point.',
         skillReqs: [],
@@ -146,7 +146,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 999,
+        id: 1057,
         label: 'Visit the Tree Gnome Village',
         description: 'Visit the Tree Gnome Village.',
         skillReqs: [],
@@ -155,7 +155,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 971,
+        id: 1060,
         label: 'Visit the Tree Gnome Stronghold',
         description: 'Visit the Tree Gnome Stronghold.',
         skillReqs: [],
@@ -164,7 +164,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 848,
+        id: 1146,
         label: 'Enter the Taverly Dungeon',
         description: 'Enter the Taverly Dungeon.',
         skillReqs: [],
@@ -173,7 +173,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 924,
+        id: 1205,
         label: 'Go Through the Al Kharid Gate',
         description: 'Go through the Al Kharid gate.',
         skillReqs: [],
@@ -182,7 +182,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 900,
+        id: 1213,
         label: 'Use the Bank in Nardah',
         description: 'Use the bank in Nardah.',
         skillReqs: [],
@@ -191,7 +191,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 530,
+        id: 1217,
         label: 'Cut a Cactus in the Kharidian Desert',
         description: 'Cut a Cactus in the Kharidian Desert.',
         skillReqs: [],
@@ -200,7 +200,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1017,
+        id: 1219,
         label: 'Enter the Kalphite Lair',
         description: 'Enter the Kalphite Lair.',
         skillReqs: [],
@@ -209,7 +209,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 635,
+        id: 1346,
         label: 'Order a Drink at the Old Nite',
         description: 'Order a drink at The Old Nite.',
         skillReqs: [],
@@ -218,7 +218,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1191,
+        id: 1504,
         label: 'Pick Wheat in Catherby',
         description: 'Pick some wheat in the field by the Catherby farming patches.',
         skillReqs: [],
@@ -227,7 +227,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 645,
+        id: 1505,
         label: 'Buy Something From Trader Crewmembers',
         description: 'Buy something from the Trader Crewmembers.',
         skillReqs: [],
@@ -236,7 +236,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1178,
+        id: 1506,
         label: 'Get Stung By Bees',
         description: 'Get stung by bees at the Beehives.',
         skillReqs: [],
@@ -245,7 +245,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 553,
+        id: 1507,
         label: 'Drink a Poison Chalice',
         description: 'Drink a Poison Chalice.',
         skillReqs: [],
@@ -254,7 +254,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1300258764,
+        id: 1508,
         label: 'Make some Flour',
         description: 'Make some Flour in a windmill.',
         skillReqs: [],
@@ -263,7 +263,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3493753543,
+        id: 266,
         label: 'Friend of House Hosidius',
         description: 'Achieve 100% favour with the Hosidius house.',
         skillReqs: [],
@@ -272,7 +272,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1265,
+        id: 267,
         label: 'Friend of House Shayzien',
         description: 'Achieve 100% favour with the Shayzien house.',
         skillReqs: [],
@@ -281,7 +281,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3115308537,
+        id: 268,
         label: 'Friend of House Arceuus',
         description: 'Achieve 100% favour with the Arceuus house.',
         skillReqs: [],
@@ -290,7 +290,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 437143202,
+        id: 269,
         label: 'Friend of House Lovakengj',
         description: 'Achieve 100% favour with the Lovakengj house.',
         skillReqs: [],
@@ -299,16 +299,16 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 501824003,
-        label: 'Friend of House piscarilius',
-        description: 'Achieve 100% favour with the piscarilius house.',
+        id: 270,
+        label: 'Friend of House Piscarilius',
+        description: 'Achieve 100% favour with the Piscarilius house.',
         skillReqs: [],
         difficulty: DIFFICULTY.EASY,
         category: undefined,
         subcategory: undefined,
     },
     {
-        id: 2270822262,
+        id: 410,
         label: 'Kourend and Kebos Easy Diary Tasks',
         description: 'Complete all tasks in the easy tier of the Kourend and Kebos achievement diary.',
         skillReqs: [],
@@ -317,7 +317,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1438357173,
+        id: 414,
         label: 'Open 1 Grubby Chest',
         description: 'Open the grubby chest in the Forthos Dungeon.',
         skillReqs: [{ skill: 'Thieving', level: 57 }],
@@ -326,7 +326,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 345685312,
+        id: 430,
         label: 'Turn in 25 Library Books',
         description: 'Find and turn in 25 books in the Arceuus Library.',
         skillReqs: [],
@@ -335,7 +335,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4161225624,
+        id: 431,
         label: 'Turn in 50 Library Books',
         description: 'Find and turn in 50 books in the Arceuus Library.',
         skillReqs: [],
@@ -344,7 +344,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 868,
+        id: 432,
         label: 'Turn in 100 Library Books',
         description: 'Find and turn in 100 books in the Arceuus Library.',
         skillReqs: [],
@@ -353,7 +353,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1207,
+        id: 475,
         label: 'Enter Level 3 of the Chasm of Fire',
         description: 'Enter the 3rd level of the Chasm of Fire in Shayzien.',
         skillReqs: [],
@@ -362,7 +362,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 605,
+        id: 481,
         label: 'Unlock All Catacombs Entrances',
         description: 'Unlock all entrances to the Catacombs of Kourend, around the kingdom.',
         skillReqs: [],
@@ -371,7 +371,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 582,
+        id: 509,
         label: 'Reach Total Level 100',
         description: 'Reach a Total Level of 100.',
         skillReqs: [],
@@ -380,7 +380,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 503,
+        id: 510,
         label: 'Reach Total Level 250',
         description: 'Reach a Total Level of 250.',
         skillReqs: [],
@@ -389,7 +389,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 581,
+        id: 511,
         label: 'Reach Total Level 500',
         description: 'Reach a Total Level of 500.',
         skillReqs: [],
@@ -398,7 +398,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 633,
+        id: 710,
         label: 'Reach Combat Level 25',
         description: 'Reach Combat Level 25.',
         skillReqs: [],
@@ -407,7 +407,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1061,
+        id: 717,
         label: "Visit Death's Domain",
         description: "Visit Death's Domain.",
         skillReqs: [],
@@ -416,7 +416,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1331,
+        id: 797,
         label: 'Complete the Easy Lumbridge & Draynor Diary',
         description: 'Complete all of the easy tasks in the Lumbridge & Draynor Achievement Diary.',
         skillReqs: [],
@@ -425,7 +425,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3079818810,
+        id: 803,
         label: 'Enter Zanaris',
         description: 'Enter the lost city of Zanaris.',
         skillReqs: [],
@@ -434,7 +434,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 527,
+        id: 810,
         label: 'Drink From the Tears of Guthix',
         description: 'Drink from the Tears of Guthix in the Lumbridge Swamp Caves.',
         skillReqs: [],
@@ -443,7 +443,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 844,
+        id: 811,
         label: 'Equip Some Fancy Boots or Fighting Boots',
         description: 'Equip either a pair of Fancy Boots or a pair of Fighting Boots.',
         skillReqs: [],
@@ -452,7 +452,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 658,
+        id: 814,
         label: 'Fully Unlock the Mycelium Transportation System',
         description: 'Unlock every destination of the Mycelium Transportation System on Fossil Island.',
         skillReqs: [],
@@ -461,7 +461,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1217708891,
+        id: 816,
         label: 'Build a Bank on Fossil Island',
         description: 'Build a Bank at the Museum Camp on Fossil Island.',
         skillReqs: [{ skill: 'Construction', level: 21 }],
@@ -470,7 +470,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 980,
+        id: 943,
         label: 'Complete the Easy Fremennik Diary',
         description: 'Complete all of the easy tasks in the Fremennik Achievement Diary.',
         skillReqs: [],
@@ -479,7 +479,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1255,
+        id: 994,
         label: 'Complete the Easy Karamja Diary',
         description: 'Complete all of the easy tasks in the Karamja Achievement Diary.',
         skillReqs: [],
@@ -488,7 +488,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1188,
+        id: 1002,
         label: 'Pick a Pineapple on Karamja',
         description: 'Pick a Pineapple on Karamja.',
         skillReqs: [],
@@ -497,7 +497,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1275,
+        id: 1006,
         label: 'Enter the Brimhaven Dungeon',
         description: 'Enter the Brimhaven Dungeon.',
         skillReqs: [],
@@ -506,7 +506,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1266,
+        id: 1070,
         label: 'Brimstail Rune Essence Mine teleport',
         description: 'Have Brimstail teleport you to the Rune Essence Mine.',
         skillReqs: [],
@@ -515,7 +515,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3948034980,
+        id: 1072,
         label: 'Equip a Marksman Chompy Hat',
         description: 'Equip a chompy bird hat.',
         skillReqs: [],
@@ -524,7 +524,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1126,
+        id: 1082,
         label: 'Complete the Easy Kandarin Diary',
         description: 'Complete all of the easy tasks in the Kandarin Achievement Diary.',
         skillReqs: [],
@@ -533,7 +533,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1053,
+        id: 1086,
         label: 'Complete the Easy Western Provinces Diary',
         description: 'Complete all of the easy tasks in the Western Provinces Achievement Diary.',
         skillReqs: [],
@@ -542,7 +542,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 898,
+        id: 1138,
         label: 'Complete the Easy Falador Diary',
         description: 'Complete all of the easy tasks in the Falador Achievement Diary.',
         skillReqs: [],
@@ -551,7 +551,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 141745381,
+        id: 1144,
         label: 'Unlock a Gate in Taverley Dungeon',
         description: 'Unlock a gate in Taverley Dungeon using the dusty key.',
         skillReqs: [],
@@ -560,7 +560,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 870,
+        id: 1150,
         label: 'Complete a Game of Novice Pest Control',
         description: 'Complete a game of novice Pest Control.',
         skillReqs: [{ skill: 'Combat', level: 40 }],
@@ -569,7 +569,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 833,
+        id: 1201,
         label: 'Complete the Easy Desert Diary',
         description: 'Complete all of the easy tasks in the Desert Achievement Diary.',
         skillReqs: [],
@@ -578,7 +578,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2718990503,
+        id: 1209,
         label: 'Tan a Cow Hide in the Kharidian Desert',
         description: 'Tan a cow hide in the Kharidian Desert.',
         skillReqs: [],
@@ -587,7 +587,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1252,
+        id: 1280,
         label: 'Complete the Easy Morytania Diary',
         description: 'Complete all of the easy tasks in the Morytania Achievement Diary.',
         skillReqs: [],
@@ -596,7 +596,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 717,
+        id: 1284,
         label: 'Complete an Easy Temple Trek',
         description: 'Complete an easy Temple Trek',
         skillReqs: [],
@@ -605,7 +605,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 541,
+        id: 1287,
         label: 'Visit Port Phasmatys',
         description: 'Visit Port Phasmatys.',
         skillReqs: [],
@@ -614,7 +614,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2669101951,
+        id: 1293,
         label: 'Obtain a Rune Crossbow From a Lucky Impling',
         description: 'Obtain a rune crossbow from a Lucky Impling in Morytania.',
         skillReqs: [{ skill: 'Hunter', level: 89 }],
@@ -623,7 +623,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1337,
+        id: 1295,
         label: 'Visit Harmony Island',
         description: 'Visit Harmony Island.',
         skillReqs: [],
@@ -632,7 +632,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1333,
+        id: 1297,
         label: "Visit Mos Le'Harmless",
         description: "Visit Mos Le'Harmless.",
         skillReqs: [],
@@ -641,7 +641,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2490849209,
+        id: 1356,
         label: 'Complete the Easy Wilderness Diary',
         description: 'Complete all of the easy tasks in the Wilderness Achievement Diary.',
         skillReqs: [],
@@ -650,7 +650,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1414,
+        id: 1361,
         label: 'Use a Lever to Teleport to Edgeville',
         description: 'Use the lever near the Mage Arena to teleport to Edgeville.',
         skillReqs: [],
@@ -659,7 +659,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1057,
+        id: 1363,
         label: 'Pray at the Southern Chaos Temple',
         description: 'Pray at the altar in the Southern Chaos Temple.',
         skillReqs: [],
@@ -668,7 +668,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 512,
+        id: 1364,
         label: 'Pray at the Western Chaos Temple',
         description: 'Pray at the altar in the Western Chaos Temple.',
         skillReqs: [],
@@ -677,7 +677,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 994,
+        id: 1365,
         label: 'Enter the Wilderness Resource Area',
         description: 'Enter the Wilderness Resource Area.',
         skillReqs: [],
@@ -686,7 +686,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1058,
+        id: 1367,
         label: 'Enter the Wilderness God Wars Dungeon',
         description: 'Enter the Wilderness God Wars Dungeon.',
         skillReqs: [],
@@ -695,7 +695,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1404,
+        id: 1368,
         label: 'Use the Bank at the Mage Arena',
         description: 'Use the bank at the Mage Arena.',
         skillReqs: [],
@@ -704,7 +704,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1139,
+        id: 1375,
         label: 'Take a Carpet Ride from Pollnivneach to Sophanem',
         description: 'Take a carpet ride from Pollnivneach to Sophanem.',
         skillReqs: [],
@@ -713,7 +713,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 577,
+        id: 1377,
         label: 'Complete the Easy Varrock Diary',
         description: 'Complete all of the easy tasks in the Varrock Achievement Diary.',
         skillReqs: [],
@@ -722,7 +722,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1177,
+        id: 1383,
         label: 'Complete the Easy Ardougne Diary',
         description: 'Complete all of the easy tasks in the Ardougne Achievement Diary.',
         skillReqs: [],
@@ -731,7 +731,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 601,
+        id: 1402,
         label: 'Obtain a Casket from Fishing',
         description: 'Obtain a Casket from Fishing.',
         skillReqs: [],
@@ -740,7 +740,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3446366674,
+        id: 1407,
         label: 'Equip an Imcando Hammer',
         description: 'Equip an Imcando hammer.',
         skillReqs: [
@@ -752,7 +752,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1080,
+        id: 1408,
         label: 'Open an Ornate Lockbox',
         description: 'Open an Ornate Lockbox from the Camdozaal Vault.',
         skillReqs: [],
@@ -761,7 +761,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3860611538,
+        id: 1435,
         label: '1 Easy Combat Achievement',
         description: 'Complete an Easy Combat Achievement.',
         skillReqs: [],
@@ -770,7 +770,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3838920029,
+        id: 1436,
         label: '5 Easy Combat Achievements',
         description: 'Complete 5 Easy Combat Achievements.',
         skillReqs: [],
@@ -779,7 +779,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1567967952,
+        id: 1478,
         label: 'Open a Bronze Chest',
         description: 'Open a Bronze Chest from Shades of Morton.',
         skillReqs: [{ skill: 'Firemaking', level: 5 }],
@@ -788,7 +788,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 9556763,
+        id: 1495,
         label: 'Pet the Museum Camp dog',
         description: 'Pet the dog in the Museum Camp on Fossil Island.',
         skillReqs: [],
@@ -797,7 +797,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 625,
+        id: 411,
         label: 'Kourend and Kebos Medium Diary Tasks',
         description: 'Complete all tasks in the medium tier of the Kourend and Kebos achievement diary.',
         skillReqs: [],
@@ -806,7 +806,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1084822136,
+        id: 415,
         label: 'Open 10 Grubby Chests',
         description: 'Open the grubby chest in the Forthos Dungeon 10 times.',
         skillReqs: [{ skill: 'Thieving', level: 57 }],
@@ -815,7 +815,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3817079708,
+        id: 416,
         label: 'Open 25 Grubby Chests',
         description: 'Open the grubby chest in the Forthos Dungeon 25 times.',
         skillReqs: [{ skill: 'Thieving', level: 57 }],
@@ -824,7 +824,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3337652724,
+        id: 417,
         label: 'Open 50 Grubby Chests',
         description: 'Open the grubby chest in the Forthos Dungeon 50 times.',
         skillReqs: [{ skill: 'Thieving', level: 57 }],
@@ -833,7 +833,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3720753050,
+        id: 433,
         label: 'Turn in 250 Library Books',
         description: 'Find and turn in 250 books in the Arceuus Library.',
         skillReqs: [],
@@ -842,7 +842,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 596,
+        id: 482,
         label: "Equip Xeric's Talisman",
         description: "Obtain and equip Xeric's talisman.",
         skillReqs: [],
@@ -851,7 +851,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 560815062,
+        id: 484,
         label: 'Obtain the Temple Key',
         description: 'Obtain the Temple key in the Forthos Dungeon.',
         skillReqs: [],
@@ -860,7 +860,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 374598484,
+        id: 485,
         label: "Purchase Gricoller's Can",
         description: "Purchase Gricoller's can from the Tithe Farm minigame.",
         skillReqs: [{ skill: 'Farming', level: 34 }],
@@ -869,7 +869,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2060484826,
+        id: 486,
         label: 'Purchase a Seed Box',
         description: 'Purchase a Seed box from the Tithe Farm minigame.',
         skillReqs: [{ skill: 'Farming', level: 34 }],
@@ -878,7 +878,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 648,
+        id: 490,
         label: 'Equip a Pearl Fishing Rod',
         description: 'Equip a Pearl fishing rod, purchased from Alry on Molch Island.',
         skillReqs: [],
@@ -887,7 +887,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 231962836,
+        id: 491,
         label: 'Equip a Pearl Barbarian Rod',
         description: 'Equip a Pearl barbarian rod, purchased from Alry on Molch Island.',
         skillReqs: [],
@@ -896,7 +896,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 579,
+        id: 501,
         label: 'Achieve Your First Level 30',
         description: 'Reach level 30 in any skill.',
         skillReqs: [],
@@ -905,7 +905,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 498,
+        id: 502,
         label: 'Achieve Your First Level 40',
         description: 'Reach level 40 in any skill.',
         skillReqs: [],
@@ -914,7 +914,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 672,
+        id: 503,
         label: 'Achieve Your First Level 50',
         description: 'Reach level 50 in any skill.',
         skillReqs: [],
@@ -923,7 +923,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 741526413,
+        id: 512,
         label: 'Reach Total Level 750',
         description: 'Reach a Total Level of 750.',
         skillReqs: [],
@@ -932,7 +932,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 583,
+        id: 513,
         label: 'Reach Total Level 1000',
         description: 'Reach a Total Level of 1000.',
         skillReqs: [],
@@ -941,7 +941,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 675,
+        id: 514,
         label: 'Reach Total Level 1250',
         description: 'Reach a Total Level of 1250.',
         skillReqs: [],
@@ -950,7 +950,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 586,
+        id: 521,
         label: 'Reach Base Level 5',
         description: 'Reach level 5 in every skill.',
         skillReqs: [],
@@ -959,7 +959,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 506,
+        id: 522,
         label: 'Reach Base Level 10',
         description: 'Reach level 10 in every skill.',
         skillReqs: [],
@@ -968,7 +968,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 584,
+        id: 523,
         label: 'Reach Base Level 20',
         description: 'Reach level 20 in every skill.',
         skillReqs: [],
@@ -977,7 +977,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 585,
+        id: 524,
         label: 'Reach Base Level 30',
         description: 'Reach level 30 in every skill.',
         skillReqs: [],
@@ -986,7 +986,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 504,
+        id: 525,
         label: 'Reach Base Level 40',
         description: 'Reach level 40 in every skill.',
         skillReqs: [],
@@ -995,7 +995,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 677,
+        id: 526,
         label: 'Reach Base Level 50',
         description: 'Reach level 50 in every skill.',
         skillReqs: [],
@@ -1004,7 +1004,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 634,
+        id: 711,
         label: 'Reach Combat Level 50',
         description: 'Reach Combat Level 50.',
         skillReqs: [],
@@ -1013,7 +1013,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1019,
+        id: 712,
         label: 'Reach Combat Level 75',
         description: 'Reach Combat Level 75.',
         skillReqs: [],
@@ -1022,7 +1022,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1259,
+        id: 718,
         label: 'Perform a Special Attack',
         description: 'Perform any special attack.',
         skillReqs: [],
@@ -1031,7 +1031,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1223,
+        id: 788,
         label: 'Equip a Dorgeshuun Crossbow',
         description: 'Equip a Dorgeshuun Crossbow.',
         skillReqs: [{ skill: 'Ranged', level: 28 }],
@@ -1040,7 +1040,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1350,
+        id: 798,
         label: 'Complete the Medium Lumbridge & Draynor Diary',
         description: 'Complete all of the medium tasks in the Lumbridge & Draynor Achievement Diary.',
         skillReqs: [],
@@ -1049,7 +1049,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 719390321,
+        id: 802,
         label: 'Equip Some Mithril Gloves',
         description: 'Equip a pair of Mithril Gloves.',
         skillReqs: [],
@@ -1058,7 +1058,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1239096362,
+        id: 805,
         label: 'Travel to Fossil Island',
         description: 'Take the Museum Barge to Fossil Island.',
         skillReqs: [],
@@ -1067,7 +1067,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1055,
+        id: 817,
         label: 'Use a Fairy Ring',
         description: 'Use any Fairy Ring.',
         skillReqs: [],
@@ -1076,7 +1076,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1267,
+        id: 818,
         label: 'Use a Digsite Pendant to Teleport to Fossil Island',
         description: 'Use a Digsite Pendant to teleport to Fossil Island.',
         skillReqs: [
@@ -1088,7 +1088,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1180,
+        id: 873,
         label: 'Use the Bank in Lletya',
         description: 'Use the bank in Lletya.',
         skillReqs: [],
@@ -1097,7 +1097,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1280,
+        id: 874,
         label: 'Use an Elven Teleport Crystal',
         description: 'Use a Teleport crystal.',
         skillReqs: [],
@@ -1106,7 +1106,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3384859890,
+        id: 881,
         label: 'Talk to Ilfeen in Tirannwn',
         description: 'Talk to Ilfeen in Tirannwn.',
         skillReqs: [],
@@ -1115,7 +1115,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 624,
+        id: 910,
         label: 'Equip a Granite Shield',
         description: 'Equip a granite shield.',
         skillReqs: [
@@ -1127,7 +1127,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1304,
+        id: 923,
         label: 'Equip a Helm of Neitiznot',
         description: 'Equip a helm of neitiznot.',
         skillReqs: [],
@@ -1136,7 +1136,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4205883401,
+        id: 936,
         label: 'Equip a Leaf-Bladed Sword',
         description: 'Equip a leaf-bladed sword.',
         skillReqs: [
@@ -1148,7 +1148,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1006,
+        id: 944,
         label: 'Complete the Medium Fremennik Diary',
         description: 'Complete all of the medium tasks in the Fremennik Achievement Diary.',
         skillReqs: [],
@@ -1157,7 +1157,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3424412820,
+        id: 947,
         label: 'Deposit an Item Using Peer the Seer',
         description: 'Deposit an item into your bank using Peer the Seer.',
         skillReqs: [],
@@ -1166,7 +1166,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 902,
+        id: 952,
         label: 'Use the Bank on Jatizso',
         description: 'Use the bank on Jatizso.',
         skillReqs: [],
@@ -1175,7 +1175,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 997,
+        id: 954,
         label: 'Use the Bank on Neitiznot',
         description: 'Use the bank on Neitiznot.',
         skillReqs: [],
@@ -1184,7 +1184,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 901,
+        id: 956,
         label: 'Use the Bank on Lunar Isle',
         description: 'Use the bank on Lunar Isle.',
         skillReqs: [],
@@ -1193,7 +1193,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1288,
+        id: 995,
         label: 'Complete the Medium Karamja Diary',
         description: 'Complete all of the medium tasks in the Karamja Achievement Diary.',
         skillReqs: [],
@@ -1202,7 +1202,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 430104856,
+        id: 999,
         label: 'Enter the Tai Bwo Wannai Hardwood Grove',
         description: 'Enter the Hardwood Grove in Tai Bwo Wannai.',
         skillReqs: [],
@@ -1211,7 +1211,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2635610952,
+        id: 1003,
         label: 'Equip a Matching Tribal Mask and Broodoo Shield',
         description: 'Equip a matching Tribal Mask and Broodoo Shield.',
         skillReqs: [],
@@ -1220,7 +1220,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 735,
+        id: 1005,
         label: 'Equip a Full Tai Bwo Wannai Villager Set',
         description: 'Equip a full set of Tai Bwo Wannai villager clothing.',
         skillReqs: [],
@@ -1229,7 +1229,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1239973294,
+        id: 1032,
         label: 'Equip a Dragon Scimitar',
         description: 'Equip a dragon scimitar.',
         skillReqs: [{ skill: 'Attack', level: 60 }],
@@ -1238,7 +1238,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1295,
+        id: 1034,
         label: 'Set Up a Dwarf Cannon',
         description: 'Set up a dwarf multicannon.',
         skillReqs: [],
@@ -1247,7 +1247,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1135,
+        id: 1037,
         label: 'Enter the Ranging Guild',
         description: 'Enter the Ranging Guild.',
         skillReqs: [{ skill: 'Ranged', level: 40 }],
@@ -1256,7 +1256,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4193448777,
+        id: 1040,
         label: "Enter the Wizards' Guild",
         description: "Enter the Wizards' Guild in Yanille.",
         skillReqs: [{ skill: 'Magic', level: 66 }],
@@ -1265,7 +1265,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2051541659,
+        id: 1049,
         label: 'Use the Chivalry Prayer',
         description: 'Use the Chivalry prayer.',
         skillReqs: [
@@ -1277,7 +1277,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 686880465,
+        id: 1058,
         label: "Equip an Iban's Staff (u)",
         description: "Equip an iban's staff (u).",
         skillReqs: [
@@ -1289,7 +1289,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4001946133,
+        id: 1061,
         label: 'Win a Game of Castle Wars',
         description: 'Win a game of Castle Wars.',
         skillReqs: [],
@@ -1298,7 +1298,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 738,
+        id: 1073,
         label: 'Equip an Ogre Forester Chompy Hat',
         description: 'Equip an ogre forester chompy hat.',
         skillReqs: [
@@ -1310,7 +1310,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1134,
+        id: 1083,
         label: 'Complete the Medium Kandarin Diary',
         description: 'Complete all of the medium tasks in the Kandarin Achievement Diary.',
         skillReqs: [],
@@ -1319,7 +1319,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1077,
+        id: 1087,
         label: 'Complete the Medium Western Provinces Diary',
         description: 'Complete all of the medium tasks in the Western Provinces Achievement Diary.',
         skillReqs: [],
@@ -1328,7 +1328,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3428606463,
+        id: 1115,
         label: 'Equip Some Granite Legs',
         description: 'Equip some granite legs.',
         skillReqs: [
@@ -1341,7 +1341,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1406,
+        id: 1127,
         label: "Charge an Amulet of Glory in the Heroes' Guild",
         description: "Charge an amulet of glory at the Fountain of Heroes in the Heroes' Guild.",
         skillReqs: [],
@@ -1350,7 +1350,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 917,
+        id: 1139,
         label: 'Complete the Medium Falador Diary',
         description: 'Complete all of the medium tasks in the Falador Achievement Diary.',
         skillReqs: [],
@@ -1359,7 +1359,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1059,
+        id: 1147,
         label: "Enter the Warriors' Guild",
         description: "Enter the Warriors' Guild.",
         skillReqs: [],
@@ -1368,7 +1368,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 836,
+        id: 1151,
         label: 'Complete a Game of Intermediate Pest Control',
         description: 'Complete a game of intermediate Pest Control.',
         skillReqs: [{ skill: 'Combat', level: 70 }],
@@ -1377,7 +1377,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1433,
+        id: 1153,
         label: 'Open the Crystal Chest',
         description: 'Open the crystal chest in Taverley.',
         skillReqs: [],
@@ -1386,7 +1386,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 847,
+        id: 1202,
         label: 'Complete the Medium Desert Diary',
         description: 'Complete all of the medium tasks in the Desert Achievement Diary.',
         skillReqs: [],
@@ -1395,7 +1395,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1075,
+        id: 1206,
         label: 'Cast Bones to Peaches',
         description: 'Cast the Bones to Peaches spell.',
         skillReqs: [{ skill: 'Magic', level: 60 }],
@@ -1404,7 +1404,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1056,
+        id: 1214,
         label: 'Pray at the Elidinis Statuette',
         description: 'Pray at the Elidinis Statuette in Nardah.',
         skillReqs: [],
@@ -1413,7 +1413,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1129,
+        id: 1218,
         label: 'Enter Sophanem',
         description: 'Enter Sophanem.',
         skillReqs: [],
@@ -1422,7 +1422,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1708996738,
+        id: 1253,
         label: 'Equip a Piece of any Barrows Armour Set',
         description: 'Equip any piece of any Barrows armour set.',
         skillReqs: [],
@@ -1431,7 +1431,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1214,
+        id: 1256,
         label: 'Loot a Barrows Chest',
         description: 'Loot a Barrows Chest once.',
         skillReqs: [],
@@ -1440,7 +1440,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1282,
+        id: 1281,
         label: 'Complete the Medium Morytania Diary',
         description: 'Complete all of the medium tasks in the Morytania Achievement Diary.',
         skillReqs: [],
@@ -1449,7 +1449,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 849,
+        id: 1285,
         label: 'Complete a Medium Temple Trek',
         description: 'Complete a medium Temple Trek',
         skillReqs: [],
@@ -1458,7 +1458,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 499,
+        id: 1294,
         label: "Achieve 100% Shades of Mort'Ton Sanctity",
         description: "Achieve 100% Sanctity during the Shades of Mort'ton minigame.",
         skillReqs: [],
@@ -1467,7 +1467,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2725721152,
+        id: 1296,
         label: 'Equip a Salve Amulet (e)',
         description: 'Equip a Salve amulet (e).',
         skillReqs: [],
@@ -1476,7 +1476,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1013,
+        id: 1330,
         label: 'Equip a Fedora',
         description: 'Equip a Fedora.',
         skillReqs: [],
@@ -1485,7 +1485,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1360,
+        id: 1340,
         label: 'Obtain an Ecumenical Key',
         description: 'Obtain an Ecumenical key as a drop in the Wilderness God Wars Dungeon.',
         skillReqs: [
@@ -1497,7 +1497,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 938,
+        id: 1341,
         label: 'Equip a Lava Battlestaff',
         description: 'Equip a Lava battlestaff.',
         skillReqs: [
@@ -1509,7 +1509,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2078992311,
+        id: 1343,
         label: 'Equip a Bracelet of Ethereum',
         description: 'Equip a Bracelet of ethereum.',
         skillReqs: [],
@@ -1518,7 +1518,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1268,
+        id: 1357,
         label: 'Complete the Medium Wilderness Diary',
         description: 'Complete all of the medium tasks in the Wilderness Achievement Diary.',
         skillReqs: [],
@@ -1527,7 +1527,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 252537453,
+        id: 1362,
         label: 'Open a Looting Bag',
         description: 'Open a looting bag.',
         skillReqs: [],
@@ -1536,7 +1536,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2393805029,
+        id: 1366,
         label: 'Enter the Deep Wilderness Dungeon',
         description: 'Enter the Deep Wilderness Dungeon.',
         skillReqs: [],
@@ -1545,7 +1545,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 851,
+        id: 1369,
         label: "Open One of Larran's Chests",
         description: "Open either Larran's small chest or Larran's big chest.",
         skillReqs: [],
@@ -1554,7 +1554,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 670,
+        id: 1378,
         label: 'Complete the Medium Varrock Diary',
         description: 'Complete all of the medium tasks in the Varrock Achievement Diary.',
         skillReqs: [],
@@ -1563,7 +1563,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1203,
+        id: 1384,
         label: 'Complete the Medium Ardougne Diary',
         description: 'Complete all of the medium tasks in the Ardougne Achievement Diary.',
         skillReqs: [],
@@ -1572,7 +1572,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3558267571,
+        id: 1437,
         label: '10 Easy Combat Achievements',
         description: 'Complete 10 Easy Combat Achievements.',
         skillReqs: [],
@@ -1581,7 +1581,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 224914292,
+        id: 1438,
         label: '20 Easy Combat Achievements',
         description: 'Complete 20 Easy Combat Achievements.',
         skillReqs: [],
@@ -1590,7 +1590,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3913943871,
+        id: 1440,
         label: '1 Medium Combat Achievement',
         description: 'Complete a Medium Combat Achievement.',
         skillReqs: [],
@@ -1599,7 +1599,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3355141037,
+        id: 1441,
         label: '10 Medium Combat Achievement',
         description: 'Complete 10 Medium Combat Achievements.',
         skillReqs: [],
@@ -1608,7 +1608,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3100404492,
+        id: 1442,
         label: '20 Medium Combat Achievement',
         description: 'Complete 20 Medium Combat Achievements.',
         skillReqs: [],
@@ -1617,7 +1617,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1114142443,
+        id: 1479,
         label: 'Open a Black Chest',
         description: 'Open a Black Chest from Shades of Morton.',
         skillReqs: [{ skill: 'Firemaking', level: 35 }],
@@ -1626,7 +1626,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2126145146,
+        id: 1481,
         label: 'Win a Game of Soul Wars',
         description: 'Win a game of Soul Wars.',
         skillReqs: [],
@@ -1635,7 +1635,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4055852968,
+        id: 1482,
         label: 'Purchase an Ectoplasmator',
         description: 'Purchase an Ectoplasmator from Nomad on the Isle of Souls.',
         skillReqs: [],
@@ -1644,7 +1644,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 538,
+        id: 1486,
         label: 'Purchase a Celestial ring',
         description: "Purchase a Celestial ring from Dusuri's Star Shop.",
         skillReqs: [{ skill: 'Mining', level: 10 }],
@@ -1653,7 +1653,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1225,
+        id: 1488,
         label: 'Equip a Piece of the Golden Prospector set',
         description:
             'Equip either a Golden prospector helmet, a Golden prospector jacket, some Golden prospector legs or Golden prospector boots.',
@@ -1663,7 +1663,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2655445997,
+        id: 1498,
         label: 'Max out 1 Fragment',
         description: 'Achieve the maximum level on 1 Fragment.',
         skillReqs: [],
@@ -1672,7 +1672,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3575056523,
+        id: 1501,
         label: 'Activate 1 Set Effect',
         description: 'Fully activate 1 Set Effect with your equipped Fragments.',
         skillReqs: [],
@@ -1681,7 +1681,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3561106566,
+        id: 22,
         label: 'Equip an Ornament Kit Item',
         description: 'Equip any item that has an Ornament Kit attached to it.',
         skillReqs: [],
@@ -1690,7 +1690,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3671022364,
+        id: 377,
         label: 'Receive 1 Chambers of Xeric Unique',
         description: 'Receive a unique drop from completing the Chambers of Xeric.',
         skillReqs: [],
@@ -1699,7 +1699,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 646,
+        id: 381,
         label: "Teleport to Xeric's Honour",
         description: "Teleport to Xeric's Honour, using Xeric's talisman.",
         skillReqs: [],
@@ -1708,7 +1708,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1305,
+        id: 384,
         label: 'Equip Boots of Brimstone',
         description: 'Obtain and equip a pair of Boots of brimstone.',
         skillReqs: [
@@ -1722,7 +1722,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3111274207,
+        id: 412,
         label: 'Kourend and Kebos Hard Diary Tasks',
         description: 'Complete all tasks in the hard tier of the Kourend and Kebos achievement diary.',
         skillReqs: [],
@@ -1731,7 +1731,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1072792478,
+        id: 418,
         label: 'Open 100 Grubby Chests',
         description: 'Open the grubby chest in the Forthos Dungeon 100 times.',
         skillReqs: [{ skill: 'Thieving', level: 57 }],
@@ -1740,7 +1740,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1195,
+        id: 434,
         label: 'Turn in 500 Library Books',
         description: 'Find and turn in 500 books in the Arceuus Library.',
         skillReqs: [],
@@ -1749,7 +1749,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 673,
+        id: 504,
         label: 'Achieve Your First Level 60',
         description: 'Reach level 60 in any skill.',
         skillReqs: [],
@@ -1758,7 +1758,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 674,
+        id: 505,
         label: 'Achieve Your First Level 70',
         description: 'Reach level 70 in any skill.',
         skillReqs: [],
@@ -1767,7 +1767,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1963542466,
+        id: 506,
         label: 'Achieve Your First Level 80',
         description: 'Reach level 80 in any skill.',
         skillReqs: [],
@@ -1776,7 +1776,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 676,
+        id: 515,
         label: 'Reach Total Level 1500',
         description: 'Reach a Total Level of 1500.',
         skillReqs: [],
@@ -1785,7 +1785,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1512305702,
+        id: 516,
         label: 'Reach Total Level 1750',
         description: 'Reach a Total Level of 1750.',
         skillReqs: [],
@@ -1794,7 +1794,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 678,
+        id: 527,
         label: 'Reach Base Level 60',
         description: 'Reach level 60 in every skill.',
         skillReqs: [],
@@ -1803,7 +1803,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2951372119,
+        id: 528,
         label: 'Reach Base Level 70',
         description: 'Reach level 70 in every skill.',
         skillReqs: [],
@@ -1812,7 +1812,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 707,
+        id: 713,
         label: 'Reach Combat Level 100',
         description: 'Reach Combat Level 100.',
         skillReqs: [{ skill: 'Combat', level: 100 }],
@@ -1821,7 +1821,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3314298997,
+        id: 714,
         label: 'Reach Combat Level 110',
         description: 'Reach Combat Level 110.',
         skillReqs: [{ skill: 'Combat', level: 110 }],
@@ -1830,7 +1830,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1368,
+        id: 799,
         label: 'Complete the Hard Lumbridge & Draynor Diary',
         description: 'Complete all of the hard tasks in the Lumbridge & Draynor Achievement Diary.',
         skillReqs: [],
@@ -1839,7 +1839,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2588058705,
+        id: 863,
         label: 'Equip a Crystal Bow',
         description: 'Equip a crystal bow.',
         skillReqs: [
@@ -1851,7 +1851,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1425,
+        id: 866,
         label: 'Equip a Crystal Shield',
         description: 'Equip a crystal shield.',
         skillReqs: [
@@ -1863,7 +1863,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1429,
+        id: 869,
         label: 'Equip a Crystal Halberd',
         description: 'Equip a crystal halberd.',
         skillReqs: [
@@ -1876,7 +1876,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 524,
+        id: 878,
         label: 'Find Every Memoriam Crystal',
         description: 'Find every memoriam crystal in Prifddinas and add them to the Memoriam Device.',
         skillReqs: [{ skill: 'Agility', level: 75 }],
@@ -1885,7 +1885,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 495,
+        id: 879,
         label: 'Open the Enhanced Crystal Chest',
         description: 'Open the Elven Crystal Chest in Prifddinas.',
         skillReqs: [
@@ -1897,7 +1897,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1216,
+        id: 880,
         label: 'Charter a Ship From Prifddinas to Port Tyras',
         description: 'Take a Charter Ship from Prifddinas to Port Tyras.',
         skillReqs: [],
@@ -1906,7 +1906,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3971594072,
+        id: 919,
         label: 'Equip a Berserker Ring',
         description: 'Equip a berserker ring.',
         skillReqs: [],
@@ -1915,7 +1915,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2594897405,
+        id: 921,
         label: 'Equip a Warrior Ring',
         description: 'Equip a warrior ring.',
         skillReqs: [],
@@ -1924,7 +1924,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3029901419,
+        id: 924,
         label: 'Equip a Seers Ring',
         description: 'Equip a seers ring.',
         skillReqs: [],
@@ -1933,7 +1933,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4016467011,
+        id: 927,
         label: 'Equip an Archers Ring',
         description: 'Equip an archers ring.',
         skillReqs: [],
@@ -1942,7 +1942,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 926,
+        id: 932,
         label: 'Use the Special Attack of a Dragon Axe',
         description: 'Use the special attack of a dragon axe.',
         skillReqs: [{ skill: 'Attack', level: 60 }],
@@ -1951,7 +1951,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 933,
+        id: 938,
         label: 'Equip a Seercull',
         description: 'Equip a seercull.',
         skillReqs: [{ skill: 'Ranged', level: 50 }],
@@ -1960,7 +1960,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 669,
+        id: 939,
         label: 'Equip a Leaf-Bladed Battleaxe',
         description: 'Equip a leaf-bladed battleaxe in The Fremennik Provinces.',
         skillReqs: [
@@ -1984,7 +1984,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1137,
+        id: 941,
         label: 'Equip a Full Spined Armour Set',
         description: 'Equip a full set of spined armour.',
         skillReqs: [
@@ -1996,7 +1996,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 854,
+        id: 942,
         label: 'Equip a Full Rockshell Armour Set',
         description: 'Equip a full set of rock-shell armour.',
         skillReqs: [{ skill: 'Defence', level: 40 }],
@@ -2005,7 +2005,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1022,
+        id: 945,
         label: 'Complete the Hard Fremennik Diary',
         description: 'Complete all of the hard tasks in the Fremennik Achievement Diary.',
         skillReqs: [],
@@ -2014,7 +2014,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 684985306,
+        id: 949,
         label: 'Collect Miscellania Resources at Full Approval',
         description: 'Collect some resources on Miscellania with an approval rating of 100%.',
         skillReqs: [],
@@ -2023,7 +2023,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1593083093,
+        id: 971,
         label: 'Equip an Obsidian Cape',
         description: 'Equip an Obsidian Cape.',
         skillReqs: [],
@@ -2032,7 +2032,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 893,
+        id: 977,
         label: 'Survive a Hit From TzTok-Jad Without Prayer',
         description:
             'Survive a Magic or Ranged hit from TzTok-Jad in the Tzhaar Fight Caves without using a protection prayer.',
@@ -2042,7 +2042,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1308,
+        id: 996,
         label: 'Complete the Hard Karamja Diary',
         description: 'Complete all of the hard tasks in the Karamja Achievement Diary.',
         skillReqs: [],
@@ -2051,7 +2051,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2594339949,
+        id: 1000,
         label: 'Equip a Red Topaz Machete',
         description: 'Equip a Red Topaz Machete.',
         skillReqs: [],
@@ -2060,7 +2060,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1405,
+        id: 1004,
         label: 'Find a Gout Tuber',
         description: 'Find a Gout Tuber in Tai Bwo Wannai.',
         skillReqs: [],
@@ -2069,7 +2069,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2166383361,
+        id: 1038,
         label: 'Equip a Fighter Torso',
         description: 'Equip a fighter torso.',
         skillReqs: [{ skill: 'Defence', level: 40 }],
@@ -2078,7 +2078,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 667,
+        id: 1045,
         label: 'Equip a Trident of the Seas',
         description: 'Equip a trident of the seas.',
         skillReqs: [{ skill: 'Magic', level: 75 }],
@@ -2087,7 +2087,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 649,
+        id: 1050,
         label: 'Use the Piety Prayer',
         description: 'Use the Piety prayer.',
         skillReqs: [
@@ -2099,7 +2099,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 993,
+        id: 1059,
         label: "Enter the Myths' Guild",
         description: "Enter the Myths' Guild.",
         skillReqs: [],
@@ -2108,7 +2108,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2725364030,
+        id: 1062,
         label: 'Reach Level 5 in Any Barbarian Assault Role',
         description: 'Reach level 5 in any Barbarian Assault Role.',
         skillReqs: [],
@@ -2117,7 +2117,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1004,
+        id: 1074,
         label: 'Equip an Ogre Expert Chompy Hat',
         description: 'Equip an ogre expert chompy hat.',
         skillReqs: [
@@ -2129,7 +2129,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 936,
+        id: 1077,
         label: 'Equip a Monkey Backpack',
         description: 'Equip a monkey backpack.',
         skillReqs: [],
@@ -2138,7 +2138,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1150,
+        id: 1084,
         label: 'Complete the Hard Kandarin Diary',
         description: 'Complete all of the hard tasks in the Kandarin Achievement Diary.',
         skillReqs: [],
@@ -2147,7 +2147,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1093,
+        id: 1088,
         label: 'Complete the Hard Western Provinces Diary',
         description: 'Complete all of the hard tasks in the Western Provinces Achievement Diary.',
         skillReqs: [],
@@ -2156,7 +2156,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2549487489,
+        id: 1106,
         label: 'Equip a Dragon Defender',
         description: 'Equip a dragon defender.',
         skillReqs: [{ skill: 'Defence', level: 60 }],
@@ -2165,7 +2165,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 942,
+        id: 1140,
         label: 'Complete the Hard Falador Diary',
         description: 'Complete all of the hard tasks in the Falador Achievement Diary.',
         skillReqs: [],
@@ -2174,7 +2174,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1206542137,
+        id: 1143,
         label: 'Equip a Full Void Knight Set',
         description: 'Equip a full set of Void Knight equipment.',
         skillReqs: [
@@ -2191,7 +2191,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 509010396,
+        id: 1145,
         label: 'Turn in 100 Mole Claws to Wyson the Gardener',
         description: 'Turn in 100 mole claws to Wyson the Gardener in Falador.',
         skillReqs: [],
@@ -2200,7 +2200,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2928662509,
+        id: 1149,
         label: 'Keep the Veteran Void Knight Above 150 Hitpoints',
         description:
             'Complete a game of veteran Pest Control without letting the Void Knight fall below 150 Hitpoints.',
@@ -2210,7 +2210,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 655,
+        id: 1152,
         label: 'Complete a Game of Veteran Pest Control',
         description: 'Complete a game of veteran Pest Control.',
         skillReqs: [{ skill: 'Combat', level: 100 }],
@@ -2219,7 +2219,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 866,
+        id: 1203,
         label: 'Complete the Hard Desert Diary',
         description: 'Complete all of the hard tasks in the Desert Achievement Diary.',
         skillReqs: [],
@@ -2228,7 +2228,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1092,
+        id: 1215,
         label: 'Have Zahur Make 1,000 Unfinished Potions At Once',
         description: 'Have Zahur make 1,000 Unfinished Potions in one go.',
         skillReqs: [],
@@ -2237,7 +2237,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2777563859,
+        id: 1254,
         label: 'Equip any Full Barrows Armour Set',
         description: 'Equip a full set of any Barrows armour.',
         skillReqs: [],
@@ -2246,7 +2246,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 668,
+        id: 1258,
         label: 'Equip a Granite Hammer or Granite Ring',
         description: 'Equip either a granite hammer or a granite ring.',
         skillReqs: [{ skill: 'Slayer', level: 75 }],
@@ -2255,7 +2255,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1296,
+        id: 1282,
         label: 'Complete the Hard Morytania Diary',
         description: 'Complete all of the hard tasks in the Morytania Achievement Diary.',
         skillReqs: [],
@@ -2264,7 +2264,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 718,
+        id: 1286,
         label: 'Complete a Hard Temple Trek',
         description: 'Complete a hard Temple Trek',
         skillReqs: [],
@@ -2273,7 +2273,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2218199825,
+        id: 1329,
         label: 'Pet Frank',
         description: "Pet Darkmeyer's goodest boy.",
         skillReqs: [],
@@ -2282,7 +2282,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3085548015,
+        id: 1331,
         label: 'Equip a Dragon Pickaxe',
         description: 'Equip a dragon pickaxe.',
         skillReqs: [{ skill: 'Attack', level: 60 }],
@@ -2291,7 +2291,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3901127369,
+        id: 1342,
         label: 'Equip an Enchanted Slayer Staff',
         description: 'Equip an Enchanted Slayer Staff.',
         skillReqs: [
@@ -2303,7 +2303,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4112701319,
+        id: 1350,
         label: 'Trade With the Emblem Trader',
         description:
             'Trade an ancient medallion, an ancient effigy or an ancient relic with the Emblem Trader in the Forinthry Dungeon.',
@@ -2313,7 +2313,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3433056752,
+        id: 1358,
         label: 'Complete the Hard Wilderness Diary',
         description: 'Complete all of the hard tasks in the Wilderness Achievement Diary.',
         skillReqs: [],
@@ -2322,7 +2322,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 740,
+        id: 1379,
         label: 'Complete the Hard Varrock Diary',
         description: 'Complete all of the hard tasks in the Varrock Achievement Diary.',
         skillReqs: [],
@@ -2331,7 +2331,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1224,
+        id: 1385,
         label: 'Complete the Hard Ardougne Diary',
         description: 'Complete all of the hard tasks in the Ardougne Achievement Diary.',
         skillReqs: [],
@@ -2340,7 +2340,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2647134609,
+        id: 1439,
         label: 'All Easy Combat Achievements',
         description: 'Complete all Easy Combat Achievements.',
         skillReqs: [],
@@ -2349,7 +2349,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2845667947,
+        id: 1443,
         label: '30 Medium Combat Achievement',
         description: 'Complete 30 Medium Combat Achievements.',
         skillReqs: [],
@@ -2358,7 +2358,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1504709060,
+        id: 1444,
         label: 'All Medium Combat Achievements',
         description: 'Complete all Medium Combat Achievements.',
         skillReqs: [],
@@ -2367,7 +2367,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3083960905,
+        id: 1445,
         label: '1 Hard Combat Achievement',
         description: 'Complete a Hard Combat Achievement.',
         skillReqs: [],
@@ -2376,7 +2376,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2386173495,
+        id: 1446,
         label: '10 Hard Combat Achievement',
         description: 'Complete 10 Hard Combat Achievements.',
         skillReqs: [],
@@ -2385,7 +2385,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2417193302,
+        id: 1447,
         label: '20 Hard Combat Achievement',
         description: 'Complete 20 Hard Combat Achievements.',
         skillReqs: [],
@@ -2394,7 +2394,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2448213109,
+        id: 1448,
         label: '30 Hard Combat Achievement',
         description: 'Complete 30 Hard Combat Achievements.',
         skillReqs: [],
@@ -2403,7 +2403,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 683120793,
+        id: 1449,
         label: '45 Hard Combat Achievement',
         description: 'Complete 45 Hard Combat Achievements.',
         skillReqs: [],
@@ -2412,7 +2412,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1533679583,
+        id: 1451,
         label: '1 Elite Combat Achievement',
         description: 'Complete an Elite Combat Achievement.',
         skillReqs: [],
@@ -2421,7 +2421,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1377106353,
+        id: 1452,
         label: '10 Elite Combat Achievement',
         description: 'Complete 10 Elite Combat Achievements.',
         skillReqs: [],
@@ -2430,7 +2430,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2338720370,
+        id: 1453,
         label: '20 Elite Combat Achievement',
         description: 'Complete 20 Elite Combat Achievements.',
         skillReqs: [],
@@ -2439,7 +2439,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3300334387,
+        id: 1454,
         label: '30 Elite Combat Achievement',
         description: 'Complete 30 Elite Combat Achievements.',
         skillReqs: [],
@@ -2448,7 +2448,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3599017778,
+        id: 1458,
         label: '1 Master Combat Achievement',
         description: 'Complete a Master Combat Achievement.',
         skillReqs: [],
@@ -2457,7 +2457,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3040214944,
+        id: 1459,
         label: '10 Master Combat Achievement',
         description: 'Complete 10 Master Combat Achievements.',
         skillReqs: [],
@@ -2466,7 +2466,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1487063298,
+        id: 1476,
         label: "Equip a Piece of Zealot's Robes",
         description: "Equip either a Zealot's helm, a Zealot's robe top, a Zealot's robe bottom or a Zealot's boots.",
         skillReqs: [{ skill: 'Firemaking', level: 80 }],
@@ -2475,7 +2475,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 939,
+        id: 1477,
         label: "Equip a Full Set of Zealot's Robes",
         description: "Equip a Zealot's helm, a Zealot's robe top, a Zealot's robe bottom and a Zealot's boots.",
         skillReqs: [{ skill: 'Firemaking', level: 80 }],
@@ -2484,7 +2484,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1078,
+        id: 1480,
         label: 'Open a Gold Chest',
         description: 'Open a Gold Chest from Shades of Morton.',
         skillReqs: [{ skill: 'Firemaking', level: 80 }],
@@ -2493,7 +2493,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3615960989,
+        id: 1489,
         label: 'Equip a Full set of Golden Prospector',
         description:
             'Equip a Golden prospector helmet, a Golden prospector jacket, some Golden prospector legs and Golden prospector boots.',
@@ -2503,7 +2503,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1395686017,
+        id: 1490,
         label: 'Equip a Full set of Swampbark armour',
         description:
             'Equip a Swampbark helm, a Swampbark body, some Swampbark legs, some Swampbark gauntlets and Swampbark boots.',
@@ -2516,7 +2516,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1451035184,
+        id: 1499,
         label: 'Max out 10 Fragments',
         description: 'Achieve the maximum level on 10 Fragments.',
         skillReqs: [],
@@ -2525,7 +2525,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3159166921,
+        id: 1502,
         label: 'Activate 2 Set Effects',
         description: 'Fully activate 2 Set Effects simultaneously with your equipped Fragments.',
         skillReqs: [],
@@ -2534,7 +2534,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 771172118,
+        id: 1517,
         label: 'Equip a Piece of Torva Armour',
         description: 'Equip either a Torva full helm, a Torva platebody or some Torva platelegs.',
         skillReqs: [{ skill: 'Defence', level: 80 }],
@@ -2543,7 +2543,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2625311500,
+        id: 1519,
         label: 'Equip an Ancient godsword',
         description: 'Obtain and equip an Ancient godsword.',
         skillReqs: [{ skill: 'Attack', level: 75 }],
@@ -2552,7 +2552,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1545430044,
+        id: 1520,
         label: 'Equip a Zaryte Crossbow',
         description: 'Obtain and equip a Zaryte Crossbow.',
         skillReqs: [{ skill: 'Ranged', level: 80 }],
@@ -2561,7 +2561,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1781164957,
+        id: 1521,
         label: 'Equip some Zaryte Vambraces',
         description: 'Obtain and equip some Zaryte Vambraces.',
         skillReqs: [
@@ -2573,7 +2573,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1684032475,
+        id: 378,
         label: 'Receive 5 Chambers of Xeric Uniques',
         description: 'Receive 5 unique drops from completing the Chambers of Xeric.',
         skillReqs: [],
@@ -2582,7 +2582,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2785402207,
+        id: 379,
         label: 'Receive 10 Chambers of Xeric Uniques',
         description: 'Receive 10 unique drops from completing the Chambers of Xeric.',
         skillReqs: [],
@@ -2591,7 +2591,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1060069122,
+        id: 388,
         label: 'Activate an Imbued Heart',
         description: 'Obtain and activate an Imbued heart.',
         skillReqs: [],
@@ -2600,7 +2600,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 626,
+        id: 389,
         label: 'Equip Ferocious Gloves',
         description: 'Obtain and equip a pair of Ferocious gloves.',
         skillReqs: [
@@ -2613,7 +2613,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1088,
+        id: 390,
         label: 'Equip a Dragon Hunter Lance',
         description: 'Obtain and equip a Dragon hunter lance.',
         skillReqs: [
@@ -2625,7 +2625,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3585233185,
+        id: 413,
         label: 'Kourend and Kebos Elite Diary Tasks',
         description: 'Complete all tasks in the elite tier of the Kourend and Kebos achievement diary.',
         skillReqs: [],
@@ -2634,7 +2634,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 508,
+        id: 419,
         label: 'Open 250 Grubby Chests',
         description: 'Open the grubby chest in the Forthos Dungeon 250 times.',
         skillReqs: [{ skill: 'Thieving', level: 57 }],
@@ -2643,7 +2643,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2191063970,
+        id: 420,
         label: 'Open 500 Grubby Chests',
         description: 'Open the grubby chest in the Forthos Dungeon 500 times.',
         skillReqs: [{ skill: 'Thieving', level: 57 }],
@@ -2652,7 +2652,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 638,
+        id: 492,
         label: 'Equip a Fish Sack',
         description: 'Equip a Fish sack, purchased from Alry on Molch Island.',
         skillReqs: [
@@ -2664,7 +2664,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1963542497,
+        id: 507,
         label: 'Achieve Your First Level 90',
         description: 'Reach level 90 in any skill.',
         skillReqs: [],
@@ -2673,7 +2673,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 497,
+        id: 508,
         label: 'Achieve Your First Level 95',
         description: 'Reach level 95 in any skill.',
         skillReqs: [],
@@ -2682,7 +2682,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1512328611,
+        id: 517,
         label: 'Reach Total Level 2000',
         description: 'Reach a Total Level of 2000.',
         skillReqs: [],
@@ -2691,7 +2691,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1512329572,
+        id: 518,
         label: 'Reach Total Level 2100',
         description: 'Reach a Total Level of 2100.',
         skillReqs: [],
@@ -2700,7 +2700,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1512330533,
+        id: 519,
         label: 'Reach Total Level 2200',
         description: 'Reach a Total Level of 2200.',
         skillReqs: [],
@@ -2709,7 +2709,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2951372150,
+        id: 529,
         label: 'Reach Base Level 80',
         description: 'Reach level 80 in every skill.',
         skillReqs: [],
@@ -2718,7 +2718,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2951372181,
+        id: 530,
         label: 'Reach Base Level 90',
         description: 'Reach level 90 in every skill.',
         skillReqs: [],
@@ -2727,7 +2727,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2665399946,
+        id: 578,
         label: 'Obtain a Skilling Pet',
         description: 'Obtain any skilling pet.',
         skillReqs: [],
@@ -2736,7 +2736,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3829772550,
+        id: 708,
         label: 'Obtain a Boss Pet',
         description: 'Obtain any Boss Pet.',
         skillReqs: [],
@@ -2745,7 +2745,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3314299028,
+        id: 715,
         label: 'Reach Combat Level 120',
         description: 'Reach Combat Level 120.',
         skillReqs: [{ skill: 'Combat', level: 120 }],
@@ -2754,7 +2754,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 555,
+        id: 716,
         label: 'Reach Combat Level 126',
         description: 'Reach Combat Level 126.',
         skillReqs: [{ skill: 'Combat', level: 126 }],
@@ -2763,7 +2763,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1246009775,
+        id: 719,
         label: 'Add a Jar to a Display Case',
         description: 'Add a Jar to a Display Case in your Player Owned House Achievement Gallery.',
         skillReqs: [{ skill: 'Construction', level: 80 }],
@@ -2772,7 +2772,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 860,
+        id: 778,
         label: 'Equip a Dragon Crossbow',
         description: 'Equip a Dragon Crossbow.',
         skillReqs: [{ skill: 'Fletching', level: 78 }],
@@ -2781,7 +2781,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 665200273,
+        id: 783,
         label: 'Equip a Dragonfire Shield',
         description: 'Equip a Dragonfire Shield.',
         skillReqs: [
@@ -2793,7 +2793,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 934,
+        id: 787,
         label: 'Equip an Ancient Wyvern Shield',
         description: 'Equip an Ancient Wyvern Shield.',
         skillReqs: [
@@ -2806,7 +2806,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3558310742,
+        id: 790,
         label: 'Equip an Abyssal Bludgeon',
         description: 'Equip an Abyssal Bludgeon.',
         skillReqs: [
@@ -2819,7 +2819,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1784464330,
+        id: 792,
         label: 'Equip an Abyssal Dagger',
         description: 'Equip an Abyssal Dagger.',
         skillReqs: [
@@ -2831,7 +2831,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3447587934,
+        id: 800,
         label: 'Complete the Elite Lumbridge & Draynor Diary',
         description: 'Complete all of the elite tasks in the Lumbridge & Draynor Achievement Diary.',
         skillReqs: [],
@@ -2840,7 +2840,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4042337598,
+        id: 840,
         label: 'Equip a Full Crystal Armour Set',
         description: 'Equip a full set of Crystal armour.',
         skillReqs: [
@@ -2852,7 +2852,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2978686404,
+        id: 844,
         label: 'Complete the Corrupted Gauntlet',
         description: 'Complete the Corrupted Gauntlet in Prifddinas.',
         skillReqs: [],
@@ -2861,7 +2861,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 521,
+        id: 848,
         label: 'Obtain a Crystal Tool Seed',
         description: 'Obtain a Crystal tool seed as a drop from Zalcano.',
         skillReqs: [],
@@ -2870,7 +2870,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 790029706,
+        id: 850,
         label: 'Equip a Serpentine Helm',
         description: 'Equip a Serpentine helm.',
         skillReqs: [
@@ -2882,7 +2882,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1968325416,
+        id: 852,
         label: 'Craft a Toxic Blowpipe',
         description: 'Craft a Toxic blowpipe.',
         skillReqs: [{ skill: 'Fletching', level: 53 }],
@@ -2891,7 +2891,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1083,
+        id: 854,
         label: 'Craft a Toxic Trident',
         description: 'Craft a Toxic trident.',
         skillReqs: [
@@ -2903,7 +2903,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 647935191,
+        id: 876,
         label: 'Equip a Piece of the Dragonstone Armour Set',
         description: 'Equip any piece of the Dragonstone armour set.',
         skillReqs: [
@@ -2916,7 +2916,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3495773092,
+        id: 903,
         label: 'Equip a Dragonfire Ward',
         description: 'Equip a dragonfire ward.',
         skillReqs: [
@@ -2928,7 +2928,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1195420112,
+        id: 908,
         label: 'Equip a Dragonbone Necklace',
         description: 'Equip a dragonbone necklace.',
         skillReqs: [{ skill: 'Prayer', level: 80 }],
@@ -2937,7 +2937,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3696958160,
+        id: 917,
         label: 'Equip Every Dagannoth King Ring',
         description: 'Equip an archers ring, a berserker ring, a seers ring and a warrior ring.',
         skillReqs: [],
@@ -2946,7 +2946,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4000640985,
+        id: 920,
         label: 'Equip a Neitiznot Faceguard',
         description: 'Equip a neitiznot faceguard.',
         skillReqs: [{ skill: 'Defence', level: 70 }],
@@ -2955,7 +2955,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 258808275,
+        id: 946,
         label: 'Complete the Elite Fremennik Diary',
         description: 'Complete all of the elite tasks in the Fremennik Achievement Diary.',
         skillReqs: [],
@@ -2964,7 +2964,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 556416721,
+        id: 950,
         label: 'Equip a Completed God Book',
         description: 'Equip a completed god book.',
         skillReqs: [],
@@ -2973,7 +2973,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2862409070,
+        id: 973,
         label: 'Equip a Fire Cape',
         description: 'Equip a Fire Cape.',
         skillReqs: [],
@@ -2982,7 +2982,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1047,
+        id: 983,
         label: 'Sacrifice a Fire Cape to Access the Inferno',
         description: 'Sacrifice a Fire Cape to access the Inferno in Mor Ul Rek.',
         skillReqs: [],
@@ -2991,7 +2991,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1616473983,
+        id: 997,
         label: 'Complete the Elite Karamja Diary',
         description: 'Complete all of the elite tasks in the Karamja Achievement Diary.',
         skillReqs: [],
@@ -3000,7 +3000,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3864290924,
+        id: 1001,
         label: 'Purchase an Onyx in Mor Ul Rek',
         description: 'Purchase an Onyx from an Ore and Gem Store in Mor Ul Rek.',
         skillReqs: [],
@@ -3009,7 +3009,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1146,
+        id: 1020,
         label: "Equip a Thammaron's Sceptre",
         description: "Equip a Thammaron's Sceptre.",
         skillReqs: [{ skill: 'Magic', level: 60 }],
@@ -3018,7 +3018,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1079208525,
+        id: 1033,
         label: 'Equip Some Zenyte Jewelry',
         description: 'Equip any piece of zenyte jewellery.',
         skillReqs: [],
@@ -3027,7 +3027,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2398304958,
+        id: 1035,
         label: 'Equip a Heavy Ballista',
         description: 'Equip a heavy ballista.',
         skillReqs: [{ skill: 'Ranged', level: 75 }],
@@ -3036,7 +3036,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2760758738,
+        id: 1039,
         label: 'Equip an Abyssal Tentacle',
         description: 'Equip an abyssal tentacle.',
         skillReqs: [{ skill: 'Attack', level: 75 }],
@@ -3045,7 +3045,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3353579557,
+        id: 1046,
         label: 'Equip an Occult Necklace',
         description: 'Equip an occult necklace.',
         skillReqs: [{ skill: 'Magic', level: 70 }],
@@ -3054,7 +3054,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1382543473,
+        id: 1048,
         label: 'Equip a Dragon Full Helm',
         description: 'Equip a dragon full helm.',
         skillReqs: [{ skill: 'Defence', level: 60 }],
@@ -3063,7 +3063,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 491527535,
+        id: 1063,
         label: 'Reach Level 5 in Every Barbarian Assault Role',
         description: 'Reach level 5 in all four Barbarian Assault Roles.',
         skillReqs: [],
@@ -3072,7 +3072,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1773256614,
+        id: 1075,
         label: 'Equip a Dragon Archer Chompy Hat',
         description: 'Equip a dragon archer chompy hat.',
         skillReqs: [
@@ -3084,7 +3084,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2536057160,
+        id: 1085,
         label: 'Complete the Elite Kandarin Diary',
         description: 'Complete all of the elite tasks in the Kandarin Achievement Diary.',
         skillReqs: [],
@@ -3093,7 +3093,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2021643861,
+        id: 1089,
         label: 'Complete the Elite Western Provinces Diary',
         description: 'Complete all of the elite tasks in the Western Provinces Achievement Diary.',
         skillReqs: [],
@@ -3102,7 +3102,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3811931626,
+        id: 1090,
         label: 'Equip an Infernal Tool',
         description: 'Equip either an infernal axe, an infernal pickaxe or an infernal harpoon.',
         skillReqs: [{ skill: 'Attack', level: 60 }],
@@ -3111,7 +3111,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 559,
+        id: 1107,
         label: 'Equip a Staff of the Dead',
         description: 'Equip a staff of the dead.',
         skillReqs: [
@@ -3123,7 +3123,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4086909547,
+        id: 1112,
         label: 'Equip a Zamorakian Spear',
         description: 'Equip a zamorakian spear.',
         skillReqs: [{ skill: 'Attack', level: 70 }],
@@ -3132,7 +3132,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 662497207,
+        id: 1113,
         label: 'Equip a Piece of the Armadyl Armour Set',
         description: 'Equip any piece of the Armadyl armour set.',
         skillReqs: [
@@ -3144,7 +3144,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 316838744,
+        id: 1117,
         label: 'Equip a Saradomin Sword',
         description: 'Equip a saradomin sword.',
         skillReqs: [{ skill: 'Attack', level: 70 }],
@@ -3153,7 +3153,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1094,
+        id: 1118,
         label: 'Equip a Piece of the Bandos Armour Set',
         description: 'Equip any piece of the Bandos armour set.',
         skillReqs: [{ skill: 'Defence', level: 65 }],
@@ -3162,7 +3162,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 928,
+        id: 1121,
         label: 'Equip an Armadyl Crossbow',
         description: 'Equip an armadyl crossbow.',
         skillReqs: [{ skill: 'Ranged', level: 70 }],
@@ -3171,7 +3171,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 739,
+        id: 1122,
         label: 'Equip Some Primordial, Pegasian or Eternal Boots',
         description: 'Equip either some primordial boots, some pegasian boots or some eternal boots.',
         skillReqs: [{ skill: 'Defence', level: 75 }],
@@ -3180,7 +3180,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 124652048,
+        id: 1125,
         label: 'Equip a Godsword',
         description: 'Equip any godsword.',
         skillReqs: [{ skill: 'Attack', level: 75 }],
@@ -3189,7 +3189,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2394294039,
+        id: 1141,
         label: 'Complete the Elite Falador Diary',
         description: 'Complete all of the elite tasks in the Falador Achievement Diary.',
         skillReqs: [],
@@ -3198,7 +3198,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1349333207,
+        id: 1190,
         label: 'Equip a Dragon Chainbody in the Kharidian Desert',
         description: 'Equip a Dragon chainbody in the Kharidian Desert.',
         skillReqs: [{ skill: 'Defence', level: 60 }],
@@ -3207,7 +3207,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 158416699,
+        id: 1204,
         label: 'Complete the Elite Desert Diary',
         description: 'Complete all of the elite tasks in the Desert Achievement Diary.',
         skillReqs: [],
@@ -3216,7 +3216,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1341,
+        id: 1247,
         label: 'Complete the Theatre of Blood With No Deaths',
         description: 'Complete the Theatre of Blood without any party member dying.',
         skillReqs: [],
@@ -3225,7 +3225,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1289,
+        id: 1251,
         label: 'Equip Some Guardian Boots',
         description: 'Equip a pair of Guardian Boots.',
         skillReqs: [{ skill: 'Defence', level: 75 }],
@@ -3234,7 +3234,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3935360859,
+        id: 1255,
         label: 'Equip Every Barrows Armour Set',
         description: 'Equip all six sets of Barrows armour.',
         skillReqs: [
@@ -3249,7 +3249,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1145,
+        id: 1257,
         label: "Equip an Inquisitor's Mace",
         description: "Equip an Inquisitor's mace.",
         skillReqs: [{ skill: 'Attack', level: 75 }],
@@ -3258,7 +3258,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3726979590,
+        id: 1259,
         label: "Equip a Piece of the Inquisitor's Set",
         description: "Equip any piece of the Inquisitor's armour set.",
         skillReqs: [
@@ -3270,7 +3270,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2484472912,
+        id: 1261,
         label: 'Equip a Nightmare Staff',
         description: 'Equip a normal Nightmare staff.',
         skillReqs: [
@@ -3282,7 +3282,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1401,
+        id: 1263,
         label: 'Create an Amulet of Blood Fury',
         description: 'Create an amulet of blood fury.',
         skillReqs: [
@@ -3294,7 +3294,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1936504160,
+        id: 1264,
         label: 'Equip an Avernic Defender',
         description: 'Equip an Avernic defender.',
         skillReqs: [
@@ -3306,7 +3306,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 937,
+        id: 1266,
         label: 'Equip a Scythe of Vitur',
         description: 'Equip a Scythe of Vitur.',
         skillReqs: [
@@ -3318,7 +3318,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2558272496,
+        id: 1283,
         label: 'Complete the Elite Morytania Diary',
         description: 'Complete all of the elite tasks in the Morytania Achievement Diary.',
         skillReqs: [],
@@ -3327,7 +3327,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1015,
+        id: 1318,
         label: 'Equip a Treasonous Ring',
         description: 'Equip a Treasonous ring.',
         skillReqs: [],
@@ -3336,7 +3336,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1147,
+        id: 1322,
         label: 'Equip a Tyrannical Ring',
         description: 'Equip a Tyrannical ring.',
         skillReqs: [],
@@ -3345,7 +3345,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 711,
+        id: 1326,
         label: 'Equip a Ring of the Gods',
         description: 'Equip a Ring of the gods.',
         skillReqs: [],
@@ -3354,7 +3354,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1052170499,
+        id: 1339,
         label: 'Equip a Blessed Spirit Shield',
         description: 'Equip a Blessed Spirit Shield.',
         skillReqs: [
@@ -3366,7 +3366,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1021,
+        id: 1344,
         label: 'Equip a Malediction Ward',
         description: 'Equip a Malediction Ward.',
         skillReqs: [{ skill: 'Defence', level: 60 }],
@@ -3375,7 +3375,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1020,
+        id: 1345,
         label: 'Equip an Odium Ward',
         description: 'Equip an Odium Ward.',
         skillReqs: [{ skill: 'Defence', level: 60 }],
@@ -3384,7 +3384,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 837,
+        id: 1359,
         label: 'Complete the Elite Wilderness Diary',
         description: 'Complete all of the elite tasks in the Wilderness Achievement Diary.',
         skillReqs: [],
@@ -3393,7 +3393,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 993668748,
+        id: 1380,
         label: 'Complete the Elite Varrock Diary',
         description: 'Complete all of the elite tasks in the Varrock Achievement Diary.',
         skillReqs: [],
@@ -3402,7 +3402,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 79997928,
+        id: 1382,
         label: 'Obtain a Zalcano Shard',
         description: 'Obtain a Zalcano shard as a drop from Zalcano in Prifddinas.',
         skillReqs: [],
@@ -3411,7 +3411,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2519714987,
+        id: 1386,
         label: 'Complete the Elite Ardougne Diary',
         description: 'Complete all of the elite tasks in the Ardougne Achievement Diary.',
         skillReqs: [],
@@ -3420,7 +3420,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 289418988,
+        id: 1390,
         label: 'Equip a Dragon Hunter Crossbow',
         description: 'Equip a Dragon Hunter Crossbow.',
         skillReqs: [{ skill: 'Ranged', level: 65 }],
@@ -3429,7 +3429,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1708423701,
+        id: 1391,
         label: 'Equip a Twisted Buckler',
         description: 'Equip a Twisted Buckler.',
         skillReqs: [
@@ -3441,7 +3441,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1287,
+        id: 1393,
         label: "Equip a Dinh's Bulwark",
         description: "Equip a Dinh's Bulwardk.",
         skillReqs: [
@@ -3453,7 +3453,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1365,
+        id: 1394,
         label: 'Equip any Ancestral piece',
         description: 'Equip either an Ancestral Hat, an Ancestral robe top or an Ancestral robe bottom.',
         skillReqs: [
@@ -3465,7 +3465,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2941594745,
+        id: 1396,
         label: 'Equip a pair of Dragon Claws',
         description: 'Equip a pair of Dragon Claws.',
         skillReqs: [{ skill: 'Attack', level: 60 }],
@@ -3474,7 +3474,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 565,
+        id: 1397,
         label: 'Recolour a piece of Ancestral',
         description: 'Recolour a piece of Ancestral using a Twisted ancestral colour kit.',
         skillReqs: [],
@@ -3483,7 +3483,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1072,
+        id: 1400,
         label: 'Equip a Bonecrusher necklace',
         description: 'Equip a Bonecrusher necklace.',
         skillReqs: [{ skill: 'Prayer', level: 70 }],
@@ -3492,7 +3492,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 45801466,
+        id: 1450,
         label: 'All Hard Combat Achievements',
         description: 'Complete all Hard Combat Achievements.',
         skillReqs: [],
@@ -3501,7 +3501,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 928595125,
+        id: 1455,
         label: '50 Elite Combat Achievement',
         description: 'Complete 50 Elite Combat Achievements.',
         skillReqs: [],
@@ -3510,7 +3510,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3006922194,
+        id: 1456,
         label: '75 Elite Combat Achievement',
         description: 'Complete 75 Elite Combat Achievements.',
         skillReqs: [],
@@ -3519,7 +3519,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2785478399,
+        id: 1460,
         label: '20 Master Combat Achievement',
         description: 'Complete 20 Master Combat Achievements.',
         skillReqs: [],
@@ -3528,7 +3528,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2530741854,
+        id: 1461,
         label: '30 Master Combat Achievement',
         description: 'Complete 30 Master Combat Achievements.',
         skillReqs: [],
@@ -3537,7 +3537,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2021268764,
+        id: 1462,
         label: '50 Master Combat Achievement',
         description: 'Complete 50 Master Combat Achievements.',
         skillReqs: [],
@@ -3546,7 +3546,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 93962468,
+        id: 1465,
         label: '1 Grandmaster Combat Achievement',
         description: 'Complete a Grandmaster Combat Achievement.',
         skillReqs: [],
@@ -3555,7 +3555,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2478079286,
+        id: 1466,
         label: '10 Grandmaster Combat Achievement',
         description: 'Complete 10 Grandmaster Combat Achievements.',
         skillReqs: [],
@@ -3564,7 +3564,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 294402359,
+        id: 1467,
         label: '20 Grandmaster Combat Achievement',
         description: 'Complete 20 Grandmaster Combat Achievements.',
         skillReqs: [],
@@ -3573,7 +3573,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2405692728,
+        id: 1468,
         label: '30 Grandmaster Combat Achievement',
         description: 'Complete 30 Grandmaster Combat Achievements.',
         skillReqs: [],
@@ -3582,7 +3582,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2654909467,
+        id: 1483,
         label: 'Attach a Sanguine ornament kit to the Scythe of Vitur',
         description: 'Attach a Sanguine ornament kit to the Scythe of Vitur.',
         skillReqs: [],
@@ -3591,7 +3591,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 749895837,
+        id: 1484,
         label: 'Attach a Holy ornament kit to the Scythe of Vitur',
         description: 'Attach a Holy ornament kit to the Scythe of Vitur.',
         skillReqs: [],
@@ -3600,7 +3600,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1723219953,
+        id: 1485,
         label: "Metamorph Lil' Zik",
         description: "Metamorph Lil' Zik by using Sanguine dust on the pet.",
         skillReqs: [],
@@ -3609,7 +3609,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1457946919,
+        id: 1491,
         label: 'Equip a Full set of Bloodbark armour',
         description:
             'Equip a Bloodbark helm, a Bloodbark body, some Bloodbark legs, some Bloodbark gauntlets and Bloodbark boots.',
@@ -3622,7 +3622,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2865763914,
+        id: 1503,
         label: 'Activate 3 Set Effects',
         description: 'Fully activate 3 Set Effects simultaneously with your equipped Fragments.',
         skillReqs: [],
@@ -3631,7 +3631,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 700533015,
+        id: 1518,
         label: 'Equip a Full Set of Torva Armour',
         description: 'Equip a Torva full helm, a Torva platebody and some Torva platelegs.',
         skillReqs: [{ skill: 'Defence', level: 80 }],
@@ -3640,7 +3640,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 83717921,
+        id: 392,
         label: 'Equip a Twisted Bow',
         description: 'Obtain and equip a Twisted bow.',
         skillReqs: [{ skill: 'Ranged', level: 75 }],
@@ -3649,7 +3649,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 644,
+        id: 393,
         label: 'Equip an Elder Maul',
         description: 'Obtain and equip an Elder maul.',
         skillReqs: [
@@ -3661,7 +3661,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3770680039,
+        id: 394,
         label: 'Equip a Kodai Wand',
         description: 'Obtain and equip a Kodai wand.',
         skillReqs: [{ skill: 'Magic', level: 75 }],
@@ -3670,7 +3670,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1121,
+        id: 407,
         label: 'Receive All Chambers of Xeric Uniques',
         description: 'Receive all unique drops from completing the Chambers of Xeric.',
         skillReqs: [],
@@ -3679,7 +3679,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1198,
+        id: 409,
         label: 'Metamorphise the Olmlet',
         description: 'Use metamorphic dust on an Olmlet pet, to metamorphise it.',
         skillReqs: [],
@@ -3688,7 +3688,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1366,
+        id: 493,
         label: 'Equip a Golden Tench',
         description: 'Equip a Golden tench, caught by aerial fishing on Molch Island.',
         skillReqs: [
@@ -3700,7 +3700,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 502,
+        id: 520,
         label: 'Reach Total Level 2277',
         description: 'Reach the highest possible Total Level of 2277.',
         skillReqs: [],
@@ -3709,7 +3709,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 554,
+        id: 531,
         label: 'Reach Base Level 95',
         description: 'Reach level 95 in every skill.',
         skillReqs: [],
@@ -3718,7 +3718,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 991,
+        id: 779,
         label: 'Equip a Dragon Platebody or Dragon Kiteshield',
         description: 'Equip either a Dragon platebody or a Dragon kiteshield.',
         skillReqs: [
@@ -3730,7 +3730,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4275556596,
+        id: 845,
         label: 'Equip a Corrupted Blade of Saeldor',
         description: 'Equip a Corrupted Blade of Saeldor.',
         skillReqs: [],
@@ -3739,7 +3739,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1430,
+        id: 877,
         label: 'Equip a Crystal Crown',
         description: 'Equip a Crystal crown.',
         skillReqs: [],
@@ -3748,7 +3748,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4194772939,
+        id: 904,
         label: 'Equip Every Draconic Shield',
         description: 'Equip a dragonfire ward, a dragonfire shield and an ancient wyvern shield.',
         skillReqs: [],
@@ -3757,7 +3757,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 379513335,
+        id: 951,
         label: 'Equip Every Completed God Book',
         description: 'Equip every completed god book.',
         skillReqs: [],
@@ -3766,7 +3766,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3811411749,
+        id: 974,
         label: 'Equip an Infernal Cape',
         description: 'Equip an Infernal Cape.',
         skillReqs: [],
@@ -3775,7 +3775,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 236442720,
+        id: 1036,
         label: 'Equip All Zenyte Jewelry',
         description: 'Equip every piece of zenyte jewellery.',
         skillReqs: [],
@@ -3784,7 +3784,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1269,
+        id: 1043,
         label: 'Enhance a Trident of the Seas',
         description: 'Enhance a trident of the seas or Trident of the swamp.',
         skillReqs: [],
@@ -3793,7 +3793,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 998,
+        id: 1076,
         label: 'Equip an Expert Dragon Archer Chompy Hat',
         description: 'Equip an expert dragon archer chompy hat.',
         skillReqs: [],
@@ -3802,7 +3802,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2789297334,
+        id: 1108,
         label: 'Equip Every Godsword',
         description: 'Equip all four godswords.',
         skillReqs: [{ skill: 'Attack', level: 75 }],
@@ -3811,7 +3811,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3254094882,
+        id: 1114,
         label: 'Equip a Full Armadyl Armour Set',
         description: 'Equip a full set of Armadyl armour.',
         skillReqs: [
@@ -3823,7 +3823,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 709,
+        id: 1119,
         label: 'Equip a Full Bandos Armour Set',
         description: 'Equip a full set of Bandos armour.',
         skillReqs: [{ skill: 'Defence', level: 65 }],
@@ -3832,7 +3832,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2317167408,
+        id: 1123,
         label: 'Equip Some Primordial, Pegasian and Eternal Boots',
         description: 'Equip some primordial boots, some pegasian boots and some eternal boots.',
         skillReqs: [
@@ -3846,7 +3846,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2898392369,
+        id: 1260,
         label: "Equip a Full Inquisitor's Set",
         description: "Equip a full set of Inquisitor's armour.",
         skillReqs: [
@@ -3858,7 +3858,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 865,
+        id: 1262,
         label: 'Equip a Nightmare Staff With an Orb',
         description:
             'Equip either an Eldritch Nightmare Staff, a Harmonised Nightmare Staff or a Volatile Nightmare Staff.',
@@ -3871,7 +3871,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 526,
+        id: 1337,
         label: 'Equip a Spectral or Arcane Spirit Shield',
         description: 'Equip either a Spectral Spirit Shield or an Arcane Spirit Shield.',
         skillReqs: [
@@ -3884,7 +3884,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1090,
+        id: 1338,
         label: 'Equip an Elysian Spirit Shield',
         description: 'Equip an Elysian Spirit Shield.',
         skillReqs: [
@@ -3896,7 +3896,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3444167617,
+        id: 1348,
         label: 'Obtain Every Revenant Weapon',
         description: "Obtain Craw's Bow, Viggora's Chainmace and Thammaron's Sceptre as drops from Revenants.",
         skillReqs: [],
@@ -3905,7 +3905,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1531688688,
+        id: 1360,
         label: 'Equip an Amulet of Eternal Glory',
         description: 'Equip an amulet of eternal glory.',
         skillReqs: [],
@@ -3914,7 +3914,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3787351268,
+        id: 1395,
         label: 'Equip a full set of Ancestral',
         description: 'Equip an Ancestral Hat, an Ancestral robe top and an Ancestral robe bottom.',
         skillReqs: [
@@ -3926,7 +3926,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1560273348,
+        id: 1457,
         label: 'All Elite Combat Achievements',
         description: 'Complete all Elite Combat Achievements.',
         skillReqs: [],
@@ -3935,7 +3935,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2024898463,
+        id: 1463,
         label: '75 Master Combat Achievement',
         description: 'Complete 75 Master Combat Achievements.',
         skillReqs: [],
@@ -3944,7 +3944,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 331934769,
+        id: 1464,
         label: 'All Master Combat Achievements',
         description: 'Complete all Master Combat Achievements.',
         skillReqs: [],
@@ -3953,7 +3953,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2333306170,
+        id: 1469,
         label: '50 Grandmaster Combat Achievement',
         description: 'Complete 50 Grandmaster Combat Achievements.',
         skillReqs: [],
@@ -3962,7 +3962,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 800334999,
+        id: 1470,
         label: '75 Grandmaster Combat Achievement',
         description: 'Complete 75 Grandmaster Combat Achievements.',
         skillReqs: [],
@@ -3971,7 +3971,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2496011615,
+        id: 1471,
         label: 'All Grandmaster Combat Achievements',
         description: 'Complete all Grandmaster Combat Achievements.',
         skillReqs: [],
@@ -3980,7 +3980,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 324107030,
+        id: 1500,
         label: 'Max out all Fragments',
         description: 'Achieve the maximum level on all fragments.',
         skillReqs: [],
@@ -3989,7 +3989,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 907,
+        id: 648,
         label: 'Catch a Shrimp',
         description: 'Catch a Raw Shrimp whilst fishing.',
         skillReqs: [],
@@ -3998,7 +3998,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1122,
+        id: 649,
         label: 'Catch a Herring',
         description: 'Catch a Raw Herring whilst fishing.',
         skillReqs: [{ skill: 'Fishing', level: 10 }],
@@ -4007,7 +4007,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 845,
+        id: 650,
         label: 'Catch an Anchovy',
         description: 'Catch a Raw Anchovy whilst fishing.',
         skillReqs: [{ skill: 'Fishing', level: 15 }],
@@ -4016,7 +4016,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4019366629,
+        id: 964,
         label: 'Catch a Karambwanji',
         description: 'Catch a Karambwanji on Karamja.',
         skillReqs: [{ skill: 'Fishing', level: 5 }],
@@ -4025,7 +4025,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 852,
+        id: 1021,
         label: 'Complete a Fishing Trawler Game',
         description: 'Complete a Fishing Trawler game at Port Khazard.',
         skillReqs: [],
@@ -4034,7 +4034,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 694,
+        id: 651,
         label: 'Catch 100 Lobsters',
         description: 'Catch 100 Raw Lobsters whilst fishing.',
         skillReqs: [{ skill: 'Fishing', level: 40 }],
@@ -4043,7 +4043,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 547,
+        id: 652,
         label: 'Catch 50 Swordfish',
         description: 'Catch 50 Raw Swordfish whilst fishing.',
         skillReqs: [{ skill: 'Fishing', level: 50 }],
@@ -4052,7 +4052,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 612,
+        id: 653,
         label: 'Catch 50 Salmon',
         description: 'Catch 50 Raw Salmon whilst fishing.',
         skillReqs: [{ skill: 'Fishing', level: 30 }],
@@ -4061,7 +4061,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 532,
+        id: 965,
         label: 'Catch a Salmon on Karamja',
         description: 'Catch a Salmon on Karamja.',
         skillReqs: [{ skill: 'Fishing', level: 30 }],
@@ -4070,7 +4070,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1183,
+        id: 1018,
         label: 'Enter the Fishing Guild',
         description: 'Enter the Fishing Guild.',
         skillReqs: [{ skill: 'Fishing', level: 68 }],
@@ -4079,7 +4079,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2416350101,
+        id: 1424,
         label: '1 Tempoross Kill',
         description: 'Help the Spirit Anglers subdue the Tempoross.',
         skillReqs: [{ skill: 'Fishing', level: 35 }],
@@ -4088,7 +4088,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 401703312,
+        id: 1425,
         label: '25 Tempoross Kills',
         description: 'Help the Spirit Anglers subdue the Tempoross 25 times.',
         skillReqs: [{ skill: 'Fishing', level: 35 }],
@@ -4097,7 +4097,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3528839656,
+        id: 1426,
         label: '50 Tempoross Kills',
         description: 'Help the Spirit Anglers subdue the Tempoross 50 times.',
         skillReqs: [{ skill: 'Fishing', level: 35 }],
@@ -4106,7 +4106,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4006276139,
+        id: 1427,
         label: '75 Tempoross Kills',
         description: 'Help the Spirit Anglers subdue the Tempoross 75 times.',
         skillReqs: [{ skill: 'Fishing', level: 35 }],
@@ -4115,7 +4115,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1297,
+        id: 654,
         label: 'Catch 100 Shark',
         description: 'Catch 100 raw shark whilst fishing.',
         skillReqs: [{ skill: 'Fishing', level: 76 }],
@@ -4124,7 +4124,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 611,
+        id: 966,
         label: 'Catch 100 Karambwans',
         description: 'Catch 100 Karambwans on Karamja.',
         skillReqs: [{ skill: 'Fishing', level: 65 }],
@@ -4133,7 +4133,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 986,
+        id: 1019,
         label: 'Catch a Monkfish',
         description: 'Catch a monkfish at the Piscatoris Fishing Colony.',
         skillReqs: [{ skill: 'Fishing', level: 62 }],
@@ -4142,7 +4142,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3656013142,
+        id: 1022,
         label: "Equip a Full Angler's Outfit",
         description: 'Equip a full set of angler gear.',
         skillReqs: [{ skill: 'Fishing', level: 34 }],
@@ -4151,7 +4151,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1140,
+        id: 1301,
         label: 'Catch 100 Dark Crabs',
         description: 'Catch 100 Dark Crabs in the Wilderness.',
         skillReqs: [{ skill: 'Fishing', level: 85 }],
@@ -4160,7 +4160,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1494818110,
+        id: 1428,
         label: '100 Tempoross Kills',
         description: 'Help the Spirit Anglers subdue the Tempoross 100 times.',
         skillReqs: [{ skill: 'Fishing', level: 35 }],
@@ -4169,7 +4169,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 804423641,
+        id: 1429,
         label: '150 Tempoross Kills',
         description: 'Help the Spirit Anglers subdue the Tempoross 150 times.',
         skillReqs: [{ skill: 'Fishing', level: 35 }],
@@ -4178,7 +4178,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 650346239,
+        id: 1430,
         label: '200 Tempoross Kills',
         description: 'Help the Spirit Anglers subdue the Tempoross 200 times.',
         skillReqs: [{ skill: 'Fishing', level: 35 }],
@@ -4187,7 +4187,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4254919066,
+        id: 1431,
         label: '250 Tempoross Kills',
         description: 'Help the Spirit Anglers subdue the Tempoross 250 times.',
         skillReqs: [{ skill: 'Fishing', level: 35 }],
@@ -4196,7 +4196,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1570417363,
+        id: 568,
         label: 'Reach Level 99 Fishing',
         description: 'Reach level 99 in your Fishing skill.',
         skillReqs: [{ skill: 'Fishing', level: 99 }],
@@ -4205,7 +4205,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 457391780,
+        id: 569,
         label: 'Obtain 25 Million Fishing XP',
         description: 'Obtain 25 million experience in your Fishing skill.',
         skillReqs: [{ skill: 'Fishing', level: 99 }],
@@ -4214,7 +4214,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4094266741,
+        id: 824,
         label: 'Dissect 50 Sacred Eels',
         description: 'Dissect 50 Sacred eels.',
         skillReqs: [
@@ -4226,7 +4226,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2411897922,
+        id: 1432,
         label: '500 Tempoross Kills',
         description: 'Help the Spirit Anglers subdue the Tempoross 500 times.',
         skillReqs: [{ skill: 'Fishing', level: 35 }],
@@ -4235,7 +4235,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 32559711,
+        id: 1433,
         label: '750 Tempoross Kills',
         description: 'Help the Spirit Anglers subdue the Tempoross 750 times.',
         skillReqs: [{ skill: 'Fishing', level: 35 }],
@@ -4244,7 +4244,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3781739436,
+        id: 1434,
         label: '1000 Tempoross Kills',
         description: 'Help the Spirit Anglers subdue the Tempoross 1000 times.',
         skillReqs: [{ skill: 'Fishing', level: 35 }],
@@ -4253,7 +4253,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1184,
+        id: 1009,
         label: 'Complete the Gnome Stronghold Agility Course',
         description: 'Complete a lap of the Gnome Stronghold Agility Course.',
         skillReqs: [{ skill: 'Agility', level: 1 }],
@@ -4262,7 +4262,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1335,
+        id: 694,
         label: 'Obtain a Mark of Grace',
         description: 'Obtain a Mark of Grace from any Rooftop Agility Course.',
         skillReqs: [{ skill: 'Agility', level: 10 }],
@@ -4271,7 +4271,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1294,
+        id: 696,
         label: 'Complete a Rooftop Agility Course',
         description: 'Complete a lap of any Rooftop Agility Course.',
         skillReqs: [{ skill: 'Agility', level: 10 }],
@@ -4280,7 +4280,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 979,
+        id: 768,
         label: 'Complete the Draynor Agility Course',
         description: 'Complete a lap of the Draynor Rooftop Agility Course.',
         skillReqs: [{ skill: 'Agility', level: 10 }],
@@ -4289,7 +4289,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1617794646,
+        id: 958,
         label: 'Receive an Agility Arena Ticket',
         description: 'Receive an Agility Arena Ticket from the Brimhaven Agility Arena.',
         skillReqs: [],
@@ -4298,7 +4298,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 405242286,
+        id: 1175,
         label: 'Complete the Al Kharid Agility Course',
         description: 'Complete a lap of the Al Kharid Rooftop Agility Course.',
         skillReqs: [{ skill: 'Agility', level: 20 }],
@@ -4307,7 +4307,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 688,
+        id: 697,
         label: 'Complete 50 Laps of a Rooftop Agility Course',
         description: 'Complete 50 laps of any Rooftop Agility Course.',
         skillReqs: [{ skill: 'Agility', level: 10 }],
@@ -4316,7 +4316,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1842376055,
+        id: 769,
         label: 'Complete 30 Laps of the Draynor Agility Course',
         description: 'Complete 30 laps of the Draynor Rooftop Agility Course.',
         skillReqs: [{ skill: 'Agility', level: 10 }],
@@ -4325,7 +4325,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3166404415,
+        id: 830,
         label: 'Cross a Trap in Isafdar',
         description: 'Successfully cross any kind of trap in Isafdar.',
         skillReqs: [],
@@ -4334,7 +4334,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1417,
+        id: 891,
         label: 'Complete the Penguin Agility Course',
         description: 'Complete a lap of the Penguin Agility Course.',
         skillReqs: [{ skill: 'Agility', level: 30 }],
@@ -4343,7 +4343,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1298,
+        id: 959,
         label: 'Buy a Snapdragon From Pirate Jackie the Fruit',
         description: 'Buy a Snapdragon From Pirate Jackie the Fruit in Brimhaven.',
         skillReqs: [],
@@ -4352,7 +4352,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1340,
+        id: 1010,
         label: 'Complete the Barbarian Outpost Agility Course',
         description: 'Complete a lap of the Barbarian Outpost Agility Course.',
         skillReqs: [{ skill: 'Agility', level: 35 }],
@@ -4361,7 +4361,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1262667733,
+        id: 1091,
         label: 'Complete the Falador Agility Course',
         description: 'Complete a lap of the Falador Rooftop Course.',
         skillReqs: [{ skill: 'Agility', level: 50 }],
@@ -4370,7 +4370,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1173,
+        id: 1176,
         label: 'Turn in a Pyramid Top to Simon Templeton',
         description: 'Turn in a Pyramid top to Simon Templeton at the Agility Pyramid.',
         skillReqs: [{ skill: 'Agility', level: 30 }],
@@ -4379,7 +4379,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2063778005,
+        id: 1232,
         label: 'Complete the Canifis Agility Course',
         description: 'Complete a lap of the Canifis Rooftop Agility Course.',
         skillReqs: [{ skill: 'Agility', level: 40 }],
@@ -4388,7 +4388,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1064,
+        id: 1233,
         label: 'Complete the Werewolf Agility Course',
         description: 'Complete a lap of the Werewolf Agility Course.',
         skillReqs: [{ skill: 'Agility', level: 60 }],
@@ -4397,7 +4397,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 918,
+        id: 1304,
         label: 'Complete the Wilderness Agility Course',
         description: 'Complete a lap of the Wilderness Agility Course.',
         skillReqs: [{ skill: 'Agility', level: 52 }],
@@ -4406,7 +4406,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1278,
+        id: 698,
         label: 'Complete 250 Laps of a Rooftop Agility Course',
         description: 'Complete 250 laps of any Rooftop Agility Course.',
         skillReqs: [{ skill: 'Agility', level: 10 }],
@@ -4415,7 +4415,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 807050474,
+        id: 770,
         label: 'Take the Advanced Shortcut to the Cosmic Altar',
         description: 'Use the Advanced Narrow Walkway Agility Shortcut near the Cosmic Altar.',
         skillReqs: [{ skill: 'Agility', level: 66 }],
@@ -4424,7 +4424,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1418,
+        id: 831,
         label: 'Complete the Prifddinas Agility Course',
         description: 'Complete a lap of the Prifddinas Agility Course.',
         skillReqs: [{ skill: 'Agility', level: 75 }],
@@ -4433,7 +4433,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 923,
+        id: 832,
         label: 'Complete the Prifddinas Agility Course in 1:10',
         description: 'Complete a lap of the Prifddinas Agility Course in 1:10 or less.',
         skillReqs: [{ skill: 'Agility', level: 75 }],
@@ -4442,7 +4442,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1008,
+        id: 892,
         label: 'Complete the Rellekka Agility Course',
         description: 'Complete a lap of the Rellekka Rooftop Course.',
         skillReqs: [{ skill: 'Agility', level: 80 }],
@@ -4451,7 +4451,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1302,
+        id: 960,
         label: 'Take a Shortcut Across the Shilo Village River',
         description: 'Use the Stepping Stones Agility Shortcut in Shilo Village.',
         skillReqs: [{ skill: 'Agility', level: 77 }],
@@ -4460,7 +4460,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 287459329,
+        id: 1011,
         label: "Complete the Seers' Village Agility Course",
         description: "Complete a lap of the Seers' Village Rooftop Course.",
         skillReqs: [{ skill: 'Agility', level: 60 }],
@@ -4469,7 +4469,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 856448605,
+        id: 1078,
         label: 'Equip a Karamja Monkey Backpack',
         description: 'Equip a Karamja monkey backpack.',
         skillReqs: [{ skill: 'Agility', level: 48 }],
@@ -4478,7 +4478,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 560,
+        id: 1079,
         label: 'Equip a Maniacal Monkey Backpack',
         description: 'Equip a maniacal monkey backpack.',
         skillReqs: [{ skill: 'Agility', level: 48 }],
@@ -4487,7 +4487,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 640,
+        id: 1092,
         label: 'Equip a Full Graceful Outfit',
         description: 'Equip a full set of graceful outfit.',
         skillReqs: [{ skill: 'Agility', level: 10 }],
@@ -4496,7 +4496,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1339,
+        id: 1222,
         label: 'Complete Floor 1 of the Hallowed Sepulchre',
         description: 'Complete floor 1 of the Hallowed Sepulchre in Darkmeyer.',
         skillReqs: [{ skill: 'Agility', level: 52 }],
@@ -4505,7 +4505,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1356,
+        id: 1223,
         label: 'Complete Floor 2 of the Hallowed Sepulchre',
         description: 'Complete floor 2 of the Hallowed Sepulchre in Darkmeyer.',
         skillReqs: [{ skill: 'Agility', level: 62 }],
@@ -4514,7 +4514,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1357,
+        id: 1224,
         label: 'Complete Floor 3 of the Hallowed Sepulchre',
         description: 'Complete floor 3 of the Hallowed Sepulchre in Darkmeyer.',
         skillReqs: [{ skill: 'Agility', level: 72 }],
@@ -4523,7 +4523,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3726839486,
+        id: 1225,
         label: 'Complete Floor 4 of the Hallowed Sepulchre',
         description: 'Complete floor 4 of the Hallowed Sepulchre in Darkmeyer.',
         skillReqs: [{ skill: 'Agility', level: 82 }],
@@ -4532,7 +4532,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1018,
+        id: 1227,
         label: 'Complete the Hallowed Sepulchre in 8:00',
         description: 'Complete the Hallowed Sepulchre in Darkmeyer in 8:00 or less.',
         skillReqs: [{ skill: 'Agility', level: 92 }],
@@ -4541,7 +4541,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2390970879,
+        id: 1230,
         label: 'Purchase a Reward From the Hallowed Sepulchre',
         description: 'Purchase a reward from the Hallowed Sepulchre.',
         skillReqs: [{ skill: 'Agility', level: 52 }],
@@ -4550,7 +4550,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 114004280,
+        id: 1231,
         label: 'Obtain Every Hallowed Tool',
         description: 'Obtain all four Hallowed Tools from the Hallowed Sepulchre.',
         skillReqs: [{ skill: 'Agility', level: 52 }],
@@ -4559,7 +4559,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1361492110,
+        id: 550,
         label: 'Reach Level 99 Agility',
         description: 'Reach level 99 in your Agility skill.',
         skillReqs: [{ skill: 'Agility', level: 99 }],
@@ -4568,7 +4568,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4067758857,
+        id: 551,
         label: 'Obtain 25 Million Agility XP',
         description: 'Obtain 25 million experience in your Agility skill.',
         skillReqs: [{ skill: 'Agility', level: 99 }],
@@ -4577,7 +4577,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3688379856,
+        id: 961,
         label: 'Receive 60 Agility Arena Tickets With No Mistakes',
         description: 'Receive 60 Agility Arena Tickets without missing any pillars.',
         skillReqs: [{ skill: 'Agility', level: 40 }],
@@ -4586,7 +4586,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 983,
+        id: 1012,
         label: 'Complete the Ardougne Agility Course',
         description: 'Complete a lap of the Ardougne Rooftop Course.',
         skillReqs: [{ skill: 'Agility', level: 90 }],
@@ -4595,7 +4595,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 671,
+        id: 1080,
         label: 'Equip a Kruk Jr. Monkey Backpack',
         description: 'Equip a kruk jr. monkey backpack.',
         skillReqs: [{ skill: 'Agility', level: 48 }],
@@ -4604,7 +4604,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1261,
+        id: 1226,
         label: 'Complete Floor 5 of the Hallowed Sepulchre',
         description: 'Complete floor 5 of the Hallowed Sepulchre in Darkmeyer.',
         skillReqs: [{ skill: 'Agility', level: 92 }],
@@ -4613,7 +4613,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1358,
+        id: 1228,
         label: 'Complete the Hallowed Sepulchre in 6:30',
         description: 'Complete the Hallowed Sepulchre in Darkmeyer in 6:30 or less.',
         skillReqs: [{ skill: 'Agility', level: 92 }],
@@ -4622,7 +4622,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3588112543,
+        id: 1229,
         label: 'Equip a Ring of Endurance',
         description: 'Equip a Ring of Endurance.',
         skillReqs: [{ skill: 'Agility', level: 92 }],
@@ -4631,7 +4631,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1091,
+        id: 962,
         label: 'Trade 1,000 Agility Arena Tickets for XP',
         description: 'Trade in 1,000 or more Agility Arena Tickets for XP in one go.',
         skillReqs: [],
@@ -4640,7 +4640,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1151,
+        id: 1081,
         label: 'Equip a Prince Awowogei Monkey Back',
         description: 'Equip a Prince Awowogei Monkey Back.',
         skillReqs: [{ skill: 'Agility', level: 48 }],
@@ -4649,7 +4649,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 978,
+        id: 720,
         label: 'Equip a Mithril Weapon',
         description: 'Equip any Mithril weapon.',
         skillReqs: [{ skill: 'Attack', level: 20 }],
@@ -4658,7 +4658,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3411677127,
+        id: 721,
         label: 'Equip an Adamant Weapon',
         description: 'Equip any Adamant weapon.',
         skillReqs: [{ skill: 'Attack', level: 30 }],
@@ -4667,7 +4667,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1355,
+        id: 722,
         label: 'Equip a Rune Weapon',
         description: 'Equip any Rune weapon.',
         skillReqs: [{ skill: 'Attack', level: 40 }],
@@ -4676,7 +4676,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 712,
+        id: 915,
         label: 'Equip a Brine Sabre',
         description: 'Equip a brine sabre.',
         skillReqs: [{ skill: 'Attack', level: 40 }],
@@ -4685,7 +4685,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2790041402,
+        id: 723,
         label: 'Equip a Dragon Weapon',
         description: 'Equip any Dragon weapon.',
         skillReqs: [{ skill: 'Attack', level: 60 }],
@@ -4694,7 +4694,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1005,
+        id: 782,
         label: 'Equip a Hill Giant Club',
         description: 'Equip a Hill Giant Club.',
         skillReqs: [{ skill: 'Attack', level: 40 }],
@@ -4703,7 +4703,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1149,
+        id: 985,
         label: 'Equip a Toktz-Xil-Ak',
         description: 'Equip a Toktz-Xil-Ak.',
         skillReqs: [{ skill: 'Attack', level: 60 }],
@@ -4712,7 +4712,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1021898174,
+        id: 986,
         label: 'Equip a Toktz-Xil-Ek',
         description: 'Equip a Toktz-Xil-Ek.',
         skillReqs: [{ skill: 'Attack', level: 60 }],
@@ -4721,7 +4721,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1089,
+        id: 1200,
         label: 'Equip a Dragon 2H Sword',
         description: 'Equip a Dragon 2h sword in the Kharidian Desert.',
         skillReqs: [{ skill: 'Attack', level: 60 }],
@@ -4730,7 +4730,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4274905865,
+        id: 1332,
         label: 'Equip a Dragon 2H Sword in the Wilderness',
         description: 'Equip a dragon 2h sword in the Wilderness.',
         skillReqs: [{ skill: 'Attack', level: 60 }],
@@ -4739,7 +4739,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 264093365,
+        id: 1398,
         label: 'Equip a Sarachnis Cudgel',
         description: 'Equip a Sarachnis Cudgel.',
         skillReqs: [{ skill: 'Attack', level: 65 }],
@@ -4748,7 +4748,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2827188447,
+        id: 532,
         label: 'Reach Level 99 Attack',
         description: 'Reach level 99 in your Attack skill.',
         skillReqs: [{ skill: 'Attack', level: 99 }],
@@ -4757,7 +4757,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4242918074,
+        id: 533,
         label: 'Obtain 25 Million Attack XP',
         description: 'Obtain 25 million experience in your Attack skill.',
         skillReqs: [{ skill: 'Attack', level: 99 }],
@@ -4766,7 +4766,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 636,
+        id: 724,
         label: 'Equip an Abyssal Whip',
         description: 'Equip an Abyssal Whip.',
         skillReqs: [
@@ -4778,7 +4778,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 932,
+        id: 1234,
         label: "Equip a Viggora's Chainmace",
         description: "Equip a Viggora's Chainmace.",
         skillReqs: [{ skill: 'Attack', level: 60 }],
@@ -4787,7 +4787,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1073,
+        id: 1269,
         label: 'Equip a Ghrazi Rapier',
         description: 'Equip a Ghrazi rapier.',
         skillReqs: [{ skill: 'Attack', level: 75 }],
@@ -4796,7 +4796,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 968,
+        id: 202,
         label: 'Complete a Beginner Clue Scroll',
         description: 'Complete a beginner clue scroll by opening a Reward Casket.',
         skillReqs: [],
@@ -4805,7 +4805,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 517,
+        id: 11,
         label: 'Burn Some Coloured Logs',
         description: 'Burn some logs that have been coloured with a firelighter.',
         skillReqs: [],
@@ -4814,7 +4814,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2838387747,
+        id: 15,
         label: 'Eat some Purple Sweets',
         description: 'Eat some Purple Sweets.',
         skillReqs: [],
@@ -4823,7 +4823,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 719,
+        id: 165,
         label: 'Gain a Unique Item From an Easy Clue',
         description: 'Gain a unique item from an Easy Clue Scroll Reward Casket.',
         skillReqs: [],
@@ -4832,7 +4832,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 657,
+        id: 175,
         label: 'Gain a Unique Item From a Beginner Clue',
         description: 'Gain a unique item from a Beginner Clue Scroll Reward Casket.',
         skillReqs: [],
@@ -4841,7 +4841,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1332,
+        id: 192,
         label: 'Complete an Easy Clue Scroll',
         description: 'Complete an easy clue scroll by opening a Reward Casket.',
         skillReqs: [],
@@ -4850,7 +4850,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3668539927,
+        id: 19,
         label: 'Equip a Trimmed Amulet',
         description: 'Equip a Trimmed Amulet.',
         skillReqs: [],
@@ -4859,7 +4859,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 665,
+        id: 30,
         label: 'Fill 3 Elite Clue Collection Log Slots',
         description: 'Fill 3 slots in the Elite Clue section of the Collection Log.',
         skillReqs: [],
@@ -4868,7 +4868,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4168238515,
+        id: 49,
         label: 'Fill 3 Hard Clue Collection Log Slots',
         description: 'Fill 3 slots in the Hard Clue section of the Collection Log.',
         skillReqs: [],
@@ -4877,7 +4877,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 577120635,
+        id: 57,
         label: 'Fill 5 Medium Clue Collection Log Slots',
         description: 'Fill 5 slots in the Medium Clue section of the Collection Log.',
         skillReqs: [],
@@ -4886,7 +4886,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 732,
+        id: 76,
         label: 'Fill 5 Easy Clue Collection Log Slots',
         description: 'Fill 5 slots in the Easy Clue section of the Collection Log.',
         skillReqs: [],
@@ -4895,7 +4895,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 663,
+        id: 84,
         label: 'Fill 5 Beginner Clue Collection Log Slots',
         description: 'Fill 5 slots in the Beginner Clue section of the Collection Log.',
         skillReqs: [],
@@ -4904,7 +4904,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 13431480,
+        id: 121,
         label: 'Gain 5 Unique Items From Hard Clues',
         description: 'Gain 5 unique items from Hard Clue Scroll Reward Caskets.',
         skillReqs: [],
@@ -4913,7 +4913,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 724,
+        id: 130,
         label: 'Gain 10 Unique Items From Medium Clues',
         description: 'Gain 10 unique items from Medium Clue Scroll Reward Caskets.',
         skillReqs: [],
@@ -4922,7 +4922,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 725,
+        id: 139,
         label: 'Gain 10 Unique Items From Easy Clues',
         description: 'Gain 10 unique items from Easy Clue Scroll Reward Caskets.',
         skillReqs: [],
@@ -4931,7 +4931,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 659,
+        id: 148,
         label: 'Gain 10 Unique Items From Beginner Clues',
         description: 'Gain 10 unique items from Beginner Clue Scroll Reward Caskets.',
         skillReqs: [],
@@ -4940,7 +4940,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 720,
+        id: 156,
         label: 'Gain a Unique Item From a Hard Clue',
         description: 'Gain a unique item from a Hard Clue Scroll Reward Casket.',
         skillReqs: [],
@@ -4949,7 +4949,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 573,
+        id: 166,
         label: 'Gain a Unique Item From a Medium Clue',
         description: 'Gain a unique item from a Medium Clue Scroll Reward Casket.',
         skillReqs: [],
@@ -4958,7 +4958,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1369,
+        id: 183,
         label: 'Complete a Hard Clue Scroll',
         description: 'Complete a hard clue scroll by opening a Reward Casket.',
         skillReqs: [],
@@ -4967,7 +4967,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1351,
+        id: 193,
         label: 'Complete a Medium Clue Scroll',
         description: 'Complete a medium clue scroll by opening a Reward Casket.',
         skillReqs: [],
@@ -4976,7 +4976,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 734,
+        id: 12,
         label: 'Equip a Full Gilded or Trimmed Wizard Set',
         description: 'Equip either a full set of gilded Wizard robes or a full set of trimmed Wizard robes.',
         skillReqs: [],
@@ -4985,7 +4985,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 867,
+        id: 13,
         label: 'Equip a Full Vestment Set',
         description: 'Equip a full set of Vestment robes with all pieces aligned to the same God.',
         skillReqs: [
@@ -4997,7 +4997,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 664,
+        id: 9,
         label: 'Fill 5 Master Clue Collection Log Slots',
         description: 'Fill 5 slots in the Master Clue section of the Collection Log.',
         skillReqs: [],
@@ -5006,7 +5006,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 730,
+        id: 31,
         label: 'Fill 10 Elite Clue Collection Log Slots',
         description: 'Fill 10 slots in the Elite Clue section of the Collection Log.',
         skillReqs: [],
@@ -5015,7 +5015,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 728,
+        id: 39,
         label: 'Fill 15 Hard Clue Collection Log Slots',
         description: 'Fill 15 slots in the Hard Clue section of the Collection Log.',
         skillReqs: [],
@@ -5024,7 +5024,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 445224184,
+        id: 58,
         label: 'Fill 20 Medium Clue Collection Log Slots',
         description: 'Fill 20 slots in the Medium Clue section of the Collection Log.',
         skillReqs: [],
@@ -5033,7 +5033,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 729,
+        id: 66,
         label: 'Fill 20 Easy Clue Collection Log Slots',
         description: 'Fill 20 slots in the Easy Clue section of the Collection Log.',
         skillReqs: [],
@@ -5042,7 +5042,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 731,
+        id: 85,
         label: 'Fill 10 Beginner Clue Collection Log Slots',
         description: 'Fill 10 slots in the Beginner Clue section of the Collection Log.',
         skillReqs: [],
@@ -5051,7 +5051,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 660,
+        id: 93,
         label: 'Gain 10 Unique Items From Master Clues',
         description: 'Gain 10 unique items from Master Clue Scroll Reward Caskets.',
         skillReqs: [],
@@ -5060,7 +5060,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 726,
+        id: 102,
         label: 'Gain 10 Unique Items From Elite Clues',
         description: 'Gain 10 unique items from Elite Clue Scroll Reward Caskets.',
         skillReqs: [],
@@ -5069,7 +5069,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 81338413,
+        id: 111,
         label: 'Gain 20 Unique Items From Hard Clues',
         description: 'Gain 20 unique items from Hard Clue Scroll Reward Caskets.',
         skillReqs: [],
@@ -5078,7 +5078,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 721,
+        id: 120,
         label: 'Gain 25 Unique Items From Medium Clues',
         description: 'Gain 25 unique items from Medium Clue Scroll Reward Caskets.',
         skillReqs: [],
@@ -5087,7 +5087,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 661,
+        id: 129,
         label: 'Gain 35 Unique Items From Easy Clues',
         description: 'Gain 35 unique items from Easy Clue Scroll Reward Caskets.',
         skillReqs: [],
@@ -5096,7 +5096,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 722,
+        id: 138,
         label: 'Gain 35 Unique Items From Beginner Clues',
         description: 'Gain 35 unique items from Beginner Clue Scroll Reward Caskets.',
         skillReqs: [],
@@ -5105,7 +5105,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 656,
+        id: 147,
         label: 'Gain a Unique Item From a Master Clue',
         description: 'Gain a unique item from a Master Clue Scroll Reward Casket.',
         skillReqs: [],
@@ -5114,7 +5114,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3280232769,
+        id: 157,
         label: 'Gain a Unique Item From an Elite Clue',
         description: 'Gain a unique item from an Elite Clue Scroll Reward Casket.',
         skillReqs: [],
@@ -5123,7 +5123,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 654,
+        id: 174,
         label: 'Complete a Master Clue Scroll',
         description: 'Complete a master clue scroll by opening a Reward Casket.',
         skillReqs: [],
@@ -5132,7 +5132,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1291,
+        id: 184,
         label: 'Complete an Elite Clue Scroll',
         description: 'Complete an elite clue scroll by opening a Reward Casket.',
         skillReqs: [],
@@ -5141,7 +5141,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2050020977,
+        id: 8,
         label: 'Fill 25 Elite Clue Collection Log Slots',
         description: 'Fill 25 slots in the Elite Clue section of the Collection Log.',
         skillReqs: [],
@@ -5150,7 +5150,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 666,
+        id: 10,
         label: 'Fill 25 Master Clue Collection Log Slots',
         description: 'Fill 25 slots in the Master Clue section of the Collection Log.',
         skillReqs: [],
@@ -5159,7 +5159,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1016,
+        id: 14,
         label: 'Use the Explore Emote',
         description: 'Use the Explore emote.',
         skillReqs: [],
@@ -5168,7 +5168,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4266036018,
+        id: 18,
         label: 'Read a Clueless Scroll',
         description: 'Read a Clueless scroll.',
         skillReqs: [],
@@ -5177,7 +5177,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 914,
+        id: 21,
         label: 'Equip a Heavy Casket',
         description: 'Equip a Heavy casket.',
         skillReqs: [],
@@ -5186,7 +5186,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1381535578,
+        id: 23,
         label: 'Equip a Scroll Sack',
         description: 'Equip a Scroll sack.',
         skillReqs: [],
@@ -5195,7 +5195,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 925,
+        id: 25,
         label: 'Transform into Uri',
         description: 'Use the Uri Transform emote.',
         skillReqs: [],
@@ -5204,7 +5204,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 985442351,
+        id: 40,
         label: 'Fill 30 Hard Clue Collection Log Slots',
         description: 'Fill 30 slots in the Hard Clue section of the Collection Log.',
         skillReqs: [],
@@ -5213,7 +5213,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 662,
+        id: 48,
         label: 'Fill 40 Medium Clue Collection Log Slots',
         description: 'Fill 40 slots in the Medium Clue section of the Collection Log.',
         skillReqs: [],
@@ -5222,7 +5222,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 591,
+        id: 67,
         label: 'Fill 50 Easy Clue Collection Log Slots',
         description: 'Fill 50 slots in the Easy Clue section of the Collection Log.',
         skillReqs: [],
@@ -5231,7 +5231,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1152,
+        id: 75,
         label: 'Fill Every Beginner Clue Collection Log Slot',
         description: 'Fill every slot in the Beginner Clue section of the Collection Log.',
         skillReqs: [],
@@ -5240,7 +5240,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 723,
+        id: 94,
         label: 'Gain 25 Unique Items From Master Clues',
         description: 'Gain 25 unique items from Master Clue Scroll Reward Caskets.',
         skillReqs: [],
@@ -5249,7 +5249,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 185218122,
+        id: 103,
         label: 'Gain 25 Unique Items From Elite Clues',
         description: 'Gain 25 unique items from Elite Clue Scroll Reward Caskets.',
         skillReqs: [],
@@ -5258,7 +5258,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 572,
+        id: 112,
         label: 'Gain 50 Unique Items From Hard Clues',
         description: 'Gain 50 unique items from Hard Clue Scroll Reward Caskets.',
         skillReqs: [],
@@ -5267,7 +5267,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1356761207,
+        id: 462,
         label: '500 Elite Clue Scrolls',
         description: 'Open 500 reward caskets for completing elite clue scrolls.',
         skillReqs: [],
@@ -5276,7 +5276,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1125,
+        id: 219,
         label: 'Defeat a Goblin',
         description: 'Defeat a Goblin. After all, this is not the Goblin League.',
         skillReqs: [],
@@ -5285,7 +5285,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1403,
+        id: 210,
         label: 'Defeat a Moss Giant',
         description: 'Defeat a Moss Giant.',
         skillReqs: [],
@@ -5294,7 +5294,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3901752377,
+        id: 220,
         label: 'Defeat a Guard',
         description: 'Defeat a Guard.',
         skillReqs: [],
@@ -5303,7 +5303,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 240749503,
+        id: 775,
         label: "Defeat the Lesser Demon in the Wizards' Tower",
         description: "Defeat the Lesser Demon at the top of the Wizards' Tower.",
         skillReqs: [],
@@ -5312,7 +5312,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1303,
+        id: 900,
         label: 'Defeat a Rock Crab in the Fremennik Province',
         description: 'Defeat a rock crab in the Fremennik Province.',
         skillReqs: [],
@@ -5321,7 +5321,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 915,
+        id: 914,
         label: 'Defeat a Troll in the Fremennik Province',
         description: 'Defeat a troll in the Fremennik Province.',
         skillReqs: [],
@@ -5330,7 +5330,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1348,
+        id: 970,
         label: 'Defeat a TzHaar',
         description: 'Defeat any TzHaar in Mor Ul Rek.',
         skillReqs: [],
@@ -5339,7 +5339,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1052,
+        id: 980,
         label: 'Defeat a Greater Demon on Karamja',
         description: 'Defeat a Greater Demon on Karamja.',
         skillReqs: [],
@@ -5348,7 +5348,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 830,
+        id: 1031,
         label: 'Defeat a Tortoise With Riders in Kandarin',
         description: 'Defeat a tortoise with riders in Kandarin.',
         skillReqs: [],
@@ -5357,7 +5357,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 897,
+        id: 1109,
         label: 'Defeat a Troll in Asgarnia',
         description: 'Defeat a Troll in Asgarnia.',
         skillReqs: [],
@@ -5366,7 +5366,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1014,
+        id: 1126,
         label: 'Defeat a Blue Dragon in Asgarnia',
         description: 'Defeat a blue dragon in Asgarnia.',
         skillReqs: [],
@@ -5375,7 +5375,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 995,
+        id: 1128,
         label: 'Defeat a Black Demon in Asgarnia',
         description: 'Defeat a black demon in Asgarnia.',
         skillReqs: [],
@@ -5384,7 +5384,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1307,
+        id: 1184,
         label: 'Defeat an Al Kharid Warrior',
         description: 'Defeat an Al Kharid Warrior.',
         skillReqs: [],
@@ -5393,7 +5393,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1363,
+        id: 1244,
         label: 'Defeat a Werewolf in Morytania',
         description: 'Defeat a Werewolf in Morytania.',
         skillReqs: [],
@@ -5402,7 +5402,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 766411710,
+        id: 1248,
         label: "Defeat One of Fenkenstrain's Experiments",
         description: "Defeat one of Fenkenstrain's Experiments in the Experiment Cave.",
         skillReqs: [],
@@ -5411,7 +5411,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 567,
+        id: 1252,
         label: 'Defeat a Ghast',
         description: 'Defeat a Ghast in Mort Myre.',
         skillReqs: [],
@@ -5420,7 +5420,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 652,
+        id: 1315,
         label: 'Defeat a Lava Dragon in the Wilderness',
         description: 'Defeat a Lava dragon in the Wilderness.',
         skillReqs: [],
@@ -5429,7 +5429,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1347,
+        id: 1319,
         label: 'Defeat a Fire Giant in the Wilderness',
         description: 'Defeat a Fire Giant in the Wilderness.',
         skillReqs: [],
@@ -5438,7 +5438,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 895,
+        id: 1323,
         label: 'Defeat a Chaos Dwarf in the Wilderness',
         description: 'Defeat a Chaos Dwarf in the Wilderness.',
         skillReqs: [],
@@ -5447,7 +5447,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 568,
+        id: 1327,
         label: 'Defeat a Green Dragon in the Wilderness',
         description: 'Defeat a Green Dragon in the Wilderness.',
         skillReqs: [],
@@ -5456,7 +5456,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4060276647,
+        id: 201,
         label: 'Defeat an Adult Chromatic Dragon',
         description: 'Defeat either an adult Green Dragon, Blue Dragon, Red Dragon or Black Dragon.',
         skillReqs: [],
@@ -5465,7 +5465,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 990,
+        id: 211,
         label: 'Defeat a Lesser Demon',
         description: 'Defeat a Lesser Demon.',
         skillReqs: [],
@@ -5474,7 +5474,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2073362226,
+        id: 322,
         label: '100 Lizardmen Shaman Kills',
         description: 'Help the Shayzien house by killing 100 Lizardmen shamans.',
         skillReqs: [{ skill: 'Slayer', level: 1 }],
@@ -5483,7 +5483,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2197441454,
+        id: 323,
         label: '500 Lizardmen Shaman Kills',
         description: 'Help the Shayzien house by killing 500 Lizardmen shamans.',
         skillReqs: [{ skill: 'Slayer', level: 1 }],
@@ -5492,7 +5492,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1916788996,
+        id: 324,
         label: '1000 Lizardmen Shaman Kills',
         description: 'Help the Shayzien house by killing 1000 Lizardmen shamans.',
         skillReqs: [{ skill: 'Slayer', level: 1 }],
@@ -5501,7 +5501,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1329,
+        id: 781,
         label: 'Defeat Obor',
         description: 'Defeat Obor in Edgeville Dungeon.',
         skillReqs: [],
@@ -5510,7 +5510,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1085,
+        id: 785,
         label: 'Defeat Bryophyta',
         description: 'Defeat Bryophyta in Edgeville Dungeon.',
         skillReqs: [],
@@ -5519,7 +5519,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2507769487,
+        id: 838,
         label: 'Defeat an Elf in Tirannwn',
         description: 'Defeat an Elf in Tirannwn.',
         skillReqs: [],
@@ -5528,7 +5528,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1424,
+        id: 918,
         label: 'Defeat a Dagannoth in the Fremennik Province',
         description: 'Defeat a Dagannoth in the Fremennik Province.',
         skillReqs: [],
@@ -5537,7 +5537,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 607,
+        id: 993,
         label: 'Defeat a Steel Dragon on Karamja',
         description: 'Defeat a Steel Dragon on Karamja.',
         skillReqs: [],
@@ -5546,7 +5546,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 569,
+        id: 1028,
         label: 'Defeat a Mithril Dragon',
         description: 'Defeat a mithril dragon in the Ancient Cavern.',
         skillReqs: [],
@@ -5555,7 +5555,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1184751542,
+        id: 1071,
         label: 'Defeat the Penance Queen',
         description: 'Defeat the Penance Queen in Barbarian Assault.',
         skillReqs: [],
@@ -5564,7 +5564,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2411634130,
+        id: 1105,
         label: 'Defeat the Giant Mole',
         description: 'Defeat the Giant Mole beneath Falador.',
         skillReqs: [],
@@ -5573,7 +5573,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1810504196,
+        id: 1129,
         label: 'Defeat 30 Black Dragons in Asgarnia',
         description: 'Defeat 30 black dragons in Asgarnia.',
         skillReqs: [],
@@ -5582,7 +5582,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1306,
+        id: 1148,
         label: 'Defeat Some Animated Rune Armour',
         description: "Defeat some Animated Rune Armour in the Warriors' Guild.",
         skillReqs: [],
@@ -5591,7 +5591,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 843,
+        id: 1185,
         label: 'Defeat a Scarab Mage',
         description: 'Defeat a Scarab Mage in the Sophanem Dungeon.',
         skillReqs: [],
@@ -5600,7 +5600,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 911,
+        id: 1188,
         label: 'Defeat a Kalphite Guardian',
         description: 'Defeat a Kalphite Guardian in the Kharidian Desert.',
         skillReqs: [],
@@ -5609,7 +5609,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1283,
+        id: 1245,
         label: 'Defeat a Fiyr Shade',
         description: 'Defeat a Fiyr Shade.',
         skillReqs: [{ skill: 'Firemaking', level: 65 }],
@@ -5618,7 +5618,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1285,
+        id: 1249,
         label: 'Defeat a Vyrewatch Sentinel',
         description: 'Defeat a Vyrewatch Sentinel in Darkmeyer.',
         skillReqs: [],
@@ -5627,7 +5627,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 930,
+        id: 1316,
         label: 'Defeat the Crazy Archaeologist',
         description: 'Defeat the Crazy Archaeologist in the Wilderness.',
         skillReqs: [],
@@ -5636,7 +5636,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 850,
+        id: 1320,
         label: 'Defeat Scorpia',
         description: 'Defeat Scorpia in the Wilderness.',
         skillReqs: [],
@@ -5645,7 +5645,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3413353028,
+        id: 1324,
         label: 'Defeat the Chaos Fanatic',
         description: 'Defeat the Chaos Fanatic in the Wilderness.',
         skillReqs: [],
@@ -5654,7 +5654,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1068,
+        id: 1328,
         label: 'Defeat the Chaos Elemental',
         description: 'Defeat the Chaos Elemental in the Wilderness.',
         skillReqs: [],
@@ -5663,7 +5663,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 913,
+        id: 1374,
         label: 'Defeat a Crocodile',
         description: 'Defeat a Crocodile in the Kharidian Desert.',
         skillReqs: [],
@@ -5672,7 +5672,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3033502048,
+        id: 325,
         label: '2500 Lizardmen Shaman Kills',
         description: 'Help the Shayzien house by killing 2500 Lizardmen shamans.',
         skillReqs: [{ skill: 'Slayer', level: 1 }],
@@ -5681,7 +5681,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1468277768,
+        id: 326,
         label: '5000 Lizardmen Shaman Kills',
         description: 'Help the Shayzien house by killing 5000 Lizardmen shamans.',
         skillReqs: [{ skill: 'Slayer', level: 1 }],
@@ -5690,7 +5690,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2855358615,
+        id: 328,
         label: '1 Sarachnis Kill',
         description: 'Kill Sarachnis in the Forthos Dungeon.',
         skillReqs: [],
@@ -5699,7 +5699,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1126065358,
+        id: 329,
         label: '25 Sarachnis Kills',
         description: 'Kill Sarachnis in the Forthos Dungeon 25 times.',
         skillReqs: [],
@@ -5708,7 +5708,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4253201702,
+        id: 330,
         label: '50 Sarachnis Kills',
         description: 'Kill Sarachnis in the Forthos Dungeon 50 times.',
         skillReqs: [],
@@ -5717,7 +5717,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 435670889,
+        id: 331,
         label: '75 Sarachnis Kills',
         description: 'Kill Sarachnis in the Forthos Dungeon 75 times.',
         skillReqs: [],
@@ -5726,7 +5726,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2219180156,
+        id: 332,
         label: '100 Sarachnis Kills',
         description: 'Kill Sarachnis in the Forthos Dungeon 100 times.',
         skillReqs: [],
@@ -5735,7 +5735,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 684313816,
+        id: 333,
         label: '250 Sarachnis Kills',
         description: 'Kill Sarachnis in the Forthos Dungeon 250 times.',
         skillReqs: [],
@@ -5744,7 +5744,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3136259968,
+        id: 334,
         label: '500 Sarachnis Kills',
         description: 'Kill Sarachnis in the Forthos Dungeon 500 times.',
         skillReqs: [],
@@ -5753,7 +5753,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1900168684,
+        id: 339,
         label: '1 Skotizo Kill',
         description: 'Kill Skotizo beneath the Catacombs of Kourend.',
         skillReqs: [],
@@ -5762,7 +5762,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2316731765,
+        id: 340,
         label: '10 Skotizo Kills',
         description: 'Kill Skotizo beneath the Catacombs of Kourend 10 times.',
         skillReqs: [],
@@ -5771,7 +5771,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 734344242,
+        id: 359,
         label: '1 Chambers of Xeric',
         description: 'Complete the Chambers of Xeric.',
         skillReqs: [],
@@ -5780,7 +5780,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2685049284,
+        id: 360,
         label: '25 Chambers of Xeric',
         description: 'Complete the Chambers of Xeric 25 times.',
         skillReqs: [],
@@ -5789,7 +5789,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1385968668,
+        id: 361,
         label: '50 Chambers of Xeric',
         description: 'Complete the Chambers of Xeric 50 times.',
         skillReqs: [],
@@ -5798,7 +5798,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 640928159,
+        id: 362,
         label: '75 Chambers of Xeric',
         description: 'Complete the Chambers of Xeric 75 times.',
         skillReqs: [],
@@ -5807,7 +5807,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 901382642,
+        id: 363,
         label: '100 Chambers of Xeric',
         description: 'Complete the Chambers of Xeric 100 times.',
         skillReqs: [],
@@ -5816,7 +5816,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 21503278,
+        id: 368,
         label: '1 Chambers of Xeric Challenge Mode',
         description: 'Complete the Chambers of Xeric Challenge Mode.',
         skillReqs: [],
@@ -5825,7 +5825,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1940196608,
+        id: 369,
         label: '10 Chambers of Xeric Challenge Mode',
         description: 'Complete the Chambers of Xeric Challenge Mode 10 times.',
         skillReqs: [],
@@ -5834,7 +5834,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4158937794,
+        id: 470,
         label: '1 Mimic Kill',
         description: 'Kill the Mimic as part of a treasure trail.',
         skillReqs: [],
@@ -5843,7 +5843,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3199408117,
+        id: 471,
         label: '5 Mimic Kills',
         description: 'Kill the Mimic as part of a treasure trail 5 times.',
         skillReqs: [],
@@ -5852,7 +5852,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1199,
+        id: 777,
         label: 'Defeat a Rune Dragon',
         description: 'Defeat a Rune Dragon in the Lithkren Vault.',
         skillReqs: [],
@@ -5861,7 +5861,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1567755458,
+        id: 789,
         label: 'Defeat the Abyssal Sire',
         description: 'Defeat the Abyssal Sire in the Abyssal Nexus.',
         skillReqs: [{ skill: 'Slayer', level: 85 }],
@@ -5870,7 +5870,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1328,
+        id: 837,
         label: 'Defeat a Waterfiend in Tirannwn',
         description: 'Defeat a Waterfiend in Tirannwn.',
         skillReqs: [],
@@ -5879,7 +5879,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1431,
+        id: 841,
         label: 'Defeat a Moss Giant in Tirannwn',
         description: 'Defeat a Moss Giant in Tirannwn.',
         skillReqs: [],
@@ -5888,7 +5888,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2191580912,
+        id: 843,
         label: 'Complete the Gauntlet',
         description: 'Complete the Gauntlet in Prifddinas.',
         skillReqs: [],
@@ -5897,7 +5897,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3878722647,
+        id: 847,
         label: 'Defeat Zalcano',
         description: 'Defeat Zalcano in Prifddinas.',
         skillReqs: [],
@@ -5906,7 +5906,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2498909557,
+        id: 849,
         label: 'Defeat Zulrah',
         description: 'Defeat Zulrah at the Poison Waste.',
         skillReqs: [],
@@ -5915,7 +5915,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 899,
+        id: 855,
         label: 'Defeat Zulrah in 1:30',
         description: 'Defeat Zulrah at the Poison Waste in 1:30 or less.',
         skillReqs: [],
@@ -5924,7 +5924,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 966,
+        id: 858,
         label: 'Complete the Gauntlet in 8:00',
         description: 'Complete the Gauntlet in Prifddinas in 8:00 or less.',
         skillReqs: [],
@@ -5933,7 +5933,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 735295670,
+        id: 902,
         label: 'Defeat Vorkath',
         description: 'Defeat Vorkath on Ungael.',
         skillReqs: [],
@@ -5942,7 +5942,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1422,
+        id: 911,
         label: 'Defeat Vorkath in 2:00',
         description: 'Defeat Vorkath on Ungael in 2:00 or less.',
         skillReqs: [],
@@ -5951,7 +5951,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 842,
+        id: 916,
         label: 'Defeat the Dagannoth Kings Without Leaving',
         description:
             'Defeat all three of the Dagannoth Kings in the Waterbirth Island Dungeon without leaving their area.',
@@ -5961,7 +5961,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3746460155,
+        id: 1029,
         label: 'Defeat a Demonic Gorilla',
         description: 'Defeat a demonic gorilla in the Crash Site Cavern.',
         skillReqs: [],
@@ -5970,7 +5970,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 863,
+        id: 1111,
         label: "Defeat K'ril Tsutsaroth",
         description: "Defeat K'ril Tsutsaroth in the God Wars Dungeon.",
         skillReqs: [{ skill: 'Hitpoints', level: 70 }],
@@ -5979,7 +5979,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 861,
+        id: 1116,
         label: 'Defeat General Graardor',
         description: 'Defeat General Graardor in the God Wars Dungeon.',
         skillReqs: [{ skill: 'Strength', level: 70 }],
@@ -5988,7 +5988,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2706590771,
+        id: 1120,
         label: "Defeat Kree'arra",
         description: "Defeat Kree'arra in the God Wars Dungeon.",
         skillReqs: [{ skill: 'Ranged', level: 70 }],
@@ -5997,7 +5997,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 891283107,
+        id: 1124,
         label: 'Defeat Commander Zilyana',
         description: 'Defeat Commander Zilyana in the God Wars Dungeon.',
         skillReqs: [{ skill: 'Agility', level: 70 }],
@@ -6006,7 +6006,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1086,
+        id: 1317,
         label: 'Defeat Venenatis',
         description: 'Defeat Venenatis in the Wilderness.',
         skillReqs: [],
@@ -6015,7 +6015,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2854908112,
+        id: 1321,
         label: 'Defeat Callisto',
         description: 'Defeat Callisto in the Wilderness.',
         skillReqs: [],
@@ -6024,7 +6024,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 927,
+        id: 1325,
         label: "Defeat Vet'ion",
         description: "Defeat Vet'ion in the Wilderness.",
         skillReqs: [],
@@ -6033,7 +6033,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2447666785,
+        id: 90000,
         label: 'Defeat the King Black Dragon',
         description: 'Defeat the King Black Dragon in the Wilderness.',
         skillReqs: [],
@@ -6042,7 +6042,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1067,
+        id: 1410,
         label: "Defeat Phosani's Nightmare",
         description: "Defeat Phosani's Nightmare in the Sisterhood Sanctuary.",
         skillReqs: [],
@@ -6051,7 +6051,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 201506054,
+        id: 1411,
         label: "Defeat The Nightmare or Phosani's Nightmare 5 times",
         description: "Defeat The Nightmare or Phosani's Nightmare 5 times combined.",
         skillReqs: [],
@@ -6060,7 +6060,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2490768890,
+        id: 1412,
         label: "Defeat The Nightmare or Phosani's Nightmare 10 times",
         description: "Defeat The Nightmare or Phosani's Nightmare 10 times combined.",
         skillReqs: [],
@@ -6069,7 +6069,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 81163038,
+        id: 1413,
         label: "Defeat The Nightmare or Phosani's Nightmare 25 times",
         description: "Defeat The Nightmare or Phosani's Nightmare 25 times combined.",
         skillReqs: [],
@@ -6078,7 +6078,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1359450420,
+        id: 1510,
         label: 'Defeat Nex',
         description: 'Defeat Nex in the God Wars Dungeon.',
         skillReqs: [
@@ -6092,7 +6092,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2954184529,
+        id: 1511,
         label: 'Defeat Nex 10 Times',
         description: 'Defeat Nex in the God Wars Dungeon 10 times.',
         skillReqs: [
@@ -6106,7 +6106,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 544578677,
+        id: 1512,
         label: 'Defeat Nex 25 Times',
         description: 'Defeat Nex in the God Wars Dungeon 25 times.',
         skillReqs: [
@@ -6120,7 +6120,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1335491277,
+        id: 1513,
         label: 'Defeat Nex 50 Times',
         description: 'Defeat Nex in the God Wars Dungeon 50 times.',
         skillReqs: [
@@ -6134,7 +6134,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 754022041,
+        id: 341,
         label: '25 Skotizo Kills',
         description: 'Kill Skotizo beneath the Catacombs of Kourend 25 times.',
         skillReqs: [],
@@ -6143,7 +6143,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 274595057,
+        id: 342,
         label: '50 Skotizo Kills',
         description: 'Kill Skotizo beneath the Catacombs of Kourend 50 times.',
         skillReqs: [],
@@ -6152,7 +6152,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2496318452,
+        id: 343,
         label: '75 Skotizo Kills',
         description: 'Kill Skotizo beneath the Catacombs of Kourend 75 times.',
         skillReqs: [],
@@ -6161,7 +6161,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 419964359,
+        id: 344,
         label: '100 Skotizo Kills',
         description: 'Kill Skotizo beneath the Catacombs of Kourend 100 times.',
         skillReqs: [],
@@ -6170,7 +6170,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2162260770,
+        id: 345,
         label: '150 Skotizo Kills',
         description: 'Kill Skotizo beneath the Catacombs of Kourend 150 times.',
         skillReqs: [],
@@ -6179,7 +6179,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1773274056,
+        id: 346,
         label: '200 Skotizo Kills',
         description: 'Kill Skotizo beneath the Catacombs of Kourend 200 times.',
         skillReqs: [],
@@ -6188,7 +6188,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3515570467,
+        id: 347,
         label: '250 Skotizo Kills',
         description: 'Kill Skotizo beneath the Catacombs of Kourend 250 times.',
         skillReqs: [],
@@ -6197,7 +6197,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3363579726,
+        id: 364,
         label: '250 Chambers of Xeric',
         description: 'Complete the Chambers of Xeric 250 times.',
         skillReqs: [],
@@ -6206,7 +6206,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 203202908,
+        id: 370,
         label: '25 Chambers of Xeric Challenge Mode',
         description: 'Complete the Chambers of Xeric Challenge Mode 25 times.',
         skillReqs: [],
@@ -6215,7 +6215,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 252185604,
+        id: 371,
         label: '50 Chambers of Xeric Challenge Mode',
         description: 'Complete the Chambers of Xeric Challenge Mode 50 times.',
         skillReqs: [],
@@ -6224,7 +6224,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1290147694,
+        id: 372,
         label: '100 Chambers of Xeric Challenge Mode',
         description: 'Complete the Chambers of Xeric Challenge Mode 100 times.',
         skillReqs: [],
@@ -6233,7 +6233,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3691280643,
+        id: 472,
         label: '25 Mimic Kills',
         description: 'Kill the Mimic as part of a treasure trail 25 times.',
         skillReqs: [],
@@ -6242,7 +6242,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3641619803,
+        id: 473,
         label: '50 Mimic Kills',
         description: 'Kill the Mimic as part of a treasure trail 50 times.',
         skillReqs: [],
@@ -6251,7 +6251,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1426,
+        id: 856,
         label: 'Defeat Zulrah in 0:54',
         description: 'Defeat Zulrah at the Poison Waste in 0:54 or less.',
         skillReqs: [],
@@ -6260,7 +6260,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1427,
+        id: 859,
         label: 'Complete the Gauntlet in 5:00',
         description: 'Complete the Gauntlet in Prifddinas in 5:00 or less.',
         skillReqs: [],
@@ -6269,7 +6269,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1250,
+        id: 860,
         label: 'Complete the Corrupted Gauntlet in 8:30',
         description: 'Complete the Corrupted Gauntlet in Prifddinas in 8:30 or less.',
         skillReqs: [],
@@ -6278,7 +6278,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3407933410,
+        id: 861,
         label: 'Complete the Corrupted Gauntlet in 7:00',
         description: 'Complete the Corrupted Gauntlet in Prifddinas in 7:00 or less.',
         skillReqs: [],
@@ -6287,7 +6287,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 399561947,
+        id: 864,
         label: 'Complete the Corrupted Gauntlet 100 Times',
         description: 'Complete the Corrupted Gauntlet in Prifddinas 100 times.',
         skillReqs: [],
@@ -6296,7 +6296,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3011191863,
+        id: 865,
         label: 'Complete the Corrupted Gauntlet 250 Times',
         description: 'Complete the Corrupted Gauntlet in Prifddinas 250 times.',
         skillReqs: [],
@@ -6305,7 +6305,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3365388042,
+        id: 867,
         label: 'Defeat Zalcano 250 Times',
         description: 'Defeat Zalcano in Prifddinas 250 times.',
         skillReqs: [],
@@ -6314,7 +6314,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1423,
+        id: 868,
         label: 'Defeat Zalcano 500 Times',
         description: 'Defeat Zalcano in Prifddinas 500 times.',
         skillReqs: [],
@@ -6323,7 +6323,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2970823336,
+        id: 870,
         label: 'Defeat Zulrah 250 Times',
         description: 'Defeat Zulrah at the Poison Waste 250 times.',
         skillReqs: [],
@@ -6332,7 +6332,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1719310160,
+        id: 871,
         label: 'Defeat Zulrah 500 Times',
         description: 'Defeat Zulrah at the Poison Waste 500 times.',
         skillReqs: [],
@@ -6341,7 +6341,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 929,
+        id: 912,
         label: 'Defeat Vorkath in 1:00',
         description: 'Defeat Vorkath on Ungael in 1:00 or less.',
         skillReqs: [],
@@ -6350,7 +6350,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3782892125,
+        id: 922,
         label: 'Defeat Vorkath 5 Times Without Special Damage',
         description:
             'Defeat Vorkath on Ungael 5 times without taking any damage from his special attacks and without leaving his area.',
@@ -6360,7 +6360,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 59403344,
+        id: 925,
         label: 'Defeat Vorkath 15 Times Without Leaving',
         description: 'Defeat Vorkath on Ungael 15 times without leaving his area.',
         skillReqs: [],
@@ -6369,7 +6369,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 568733865,
+        id: 928,
         label: 'Defeat Vorkath 250 Times',
         description: 'Defeat Vorkath on Ungael 250 times.',
         skillReqs: [],
@@ -6378,7 +6378,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3612187985,
+        id: 929,
         label: 'Defeat Vorkath 500 Times',
         description: 'Defeat Vorkath on Ungael 500 times.',
         skillReqs: [],
@@ -6387,7 +6387,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 121396142,
+        id: 930,
         label: 'Defeat Vorkath 750 Times',
         description: 'Defeat Vorkath on Ungael 750 times.',
         skillReqs: [],
@@ -6396,7 +6396,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3676802358,
+        id: 933,
         label: 'Defeat Each Dagannoth King 300 Times',
         description: 'Defeat all three of the Dagannoth Kings in the Waterbirth Island Dungeon 300 times.',
         skillReqs: [],
@@ -6405,7 +6405,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 862,
+        id: 934,
         label: 'Defeat Each Dagannoth King 650 Times',
         description: 'Defeat all three of the Dagannoth Kings in the Waterbirth Island Dungeon 650 times.',
         skillReqs: [],
@@ -6414,7 +6414,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2511685832,
+        id: 935,
         label: 'Defeat Each Dagannoth King 1000 Times',
         description: 'Defeat all three of the Dagannoth Kings in the Waterbirth Island Dungeon 1000 times.',
         skillReqs: [],
@@ -6423,7 +6423,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1421,
+        id: 978,
         label: 'Complete the Fight Caves in 35:00',
         description: 'Complete the Tzhaar Fight Cave in Mor Ul Rek in 35:00 or less.',
         skillReqs: [],
@@ -6432,7 +6432,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4235375515,
+        id: 987,
         label: 'Complete the Fight Caves 5 Times',
         description: 'Complete the Tzhaar Fight Cave in Mor Ul Rek 5 times.',
         skillReqs: [],
@@ -6441,7 +6441,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4015801866,
+        id: 988,
         label: 'Complete the Fight Caves 15 Times',
         description: 'Complete the Tzhaar Fight Cave in Mor Ul Rek 15 times.',
         skillReqs: [],
@@ -6450,7 +6450,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3063904131,
+        id: 989,
         label: 'Complete the Fight Caves 30 Times',
         description: 'Complete the Tzhaar Fight Cave in Mor Ul Rek 30 times.',
         skillReqs: [],
@@ -6459,7 +6459,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2166021076,
+        id: 990,
         label: 'Complete the Inferno 5 Times',
         description: 'Complete the Inferno in Mor Ul Rek 5 times.',
         skillReqs: [],
@@ -6468,7 +6468,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4147772588,
+        id: 991,
         label: 'Complete the Inferno 10 Times',
         description: 'Complete the Inferno in Mor Ul Rek 10 times.',
         skillReqs: [],
@@ -6477,7 +6477,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1595615627,
+        id: 992,
         label: 'Complete the Inferno 20 Times',
         description: 'Complete the Inferno in Mor Ul Rek 20 times.',
         skillReqs: [],
@@ -6486,7 +6486,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3669158986,
+        id: 1051,
         label: 'Defeat the Kraken Boss 250 Times',
         description: 'Defeat the Kraken boss in Kraken Cove 250 times.',
         skillReqs: [{ skill: 'Slayer', level: 87 }],
@@ -6495,7 +6495,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2417645810,
+        id: 1052,
         label: 'Defeat the Kraken Boss 500 Times',
         description: 'Defeat the Kraken boss in Kraken Cove 500 times.',
         skillReqs: [{ skill: 'Slayer', level: 87 }],
@@ -6504,7 +6504,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1253,
+        id: 1053,
         label: 'Defeat the Kraken Boss 750 Times',
         description: 'Defeat the Kraken boss in Kraken Cove 750 times.',
         skillReqs: [{ skill: 'Slayer', level: 87 }],
@@ -6513,7 +6513,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 869943238,
+        id: 1054,
         label: 'Defeat 300 Demonic Gorillas',
         description: 'Defeat 300 demonic gorillas in the Crash Site Cavern.',
         skillReqs: [],
@@ -6522,7 +6522,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 910,
+        id: 1055,
         label: 'Defeat 750 Demonic Gorillas',
         description: 'Defeat 750 demonic gorillas in the Crash Site Cavern.',
         skillReqs: [],
@@ -6531,7 +6531,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 691,
+        id: 1056,
         label: 'Defeat 1500 Demonic Gorillas',
         description: 'Defeat 1500 demonic gorillas in the Crash Site Cavern.',
         skillReqs: [],
@@ -6540,7 +6540,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2128042586,
+        id: 1132,
         label: 'Defeat Any God Wars Dungeon Boss 100 Times',
         description: 'Defeat any God Wars Dungeon boss 100 times.',
         skillReqs: [],
@@ -6549,7 +6549,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 444705206,
+        id: 1133,
         label: 'Defeat Any God Wars Dungeon Boss 250 Times',
         description: 'Defeat any God Wars Dungeon boss 250 times.',
         skillReqs: [],
@@ -6558,7 +6558,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1286,
+        id: 1134,
         label: 'Defeat Any God Wars Dungeon Boss 500 Times',
         description: 'Defeat any God Wars Dungeon boss 500 times.',
         skillReqs: [],
@@ -6567,7 +6567,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 104489669,
+        id: 1135,
         label: 'Defeat the Giant Mole 250 Times',
         description: 'Defeat the Giant Mole beneath Falador 250 times.',
         skillReqs: [],
@@ -6576,7 +6576,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3147943789,
+        id: 1136,
         label: 'Defeat the Giant Mole 500 Times',
         description: 'Defeat the Giant Mole beneath Falador 500 times.',
         skillReqs: [],
@@ -6585,7 +6585,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1367,
+        id: 1137,
         label: 'Defeat the Giant Mole 750 Times',
         description: 'Defeat the Giant Mole beneath Falador 750 times.',
         skillReqs: [],
@@ -6594,7 +6594,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3595585810,
+        id: 1187,
         label: 'Defeat the Kalphite Queen',
         description: 'Defeat the Kalphite Queen in the Kalphite Lair.',
         skillReqs: [],
@@ -6603,7 +6603,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1819586217,
+        id: 1197,
         label: 'Defeat the Kalphite Queen 100 Times',
         description: 'Defeat the Kalphite Queen in the Kalphite Lair 100 times.',
         skillReqs: [],
@@ -6612,7 +6612,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 136248837,
+        id: 1198,
         label: 'Defeat the Kalphite Queen 250 Times',
         description: 'Defeat the Kalphite Queen in the Kalphite Lair 250 times.',
         skillReqs: [],
@@ -6621,7 +6621,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1087,
+        id: 1199,
         label: 'Defeat the Kalphite Queen 500 Times',
         description: 'Defeat the Kalphite Queen in the Kalphite Lair 500 times.',
         skillReqs: [],
@@ -6630,7 +6630,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2939901347,
+        id: 1243,
         label: 'Defeat The Nightmare',
         description: 'Defeat The Nightmare in the Sisterhood Sanctuary.',
         skillReqs: [],
@@ -6639,7 +6639,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1184080145,
+        id: 1270,
         label: 'Complete the Theatre of Blood in 20:00',
         description: 'Complete the Theatre of Blood in 20:00 or less challenge time with 3 players or less.',
         skillReqs: [],
@@ -6648,7 +6648,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3503095621,
+        id: 1272,
         label: 'Defeat The Nightmare in 3:00',
         description: 'Defeat The Nightmare in the Sisterhood Sanctuary in 3:00 or less with 5 players or less.',
         skillReqs: [],
@@ -6657,7 +6657,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1594751089,
+        id: 1496,
         label: 'Complete the Theatre of Blood 50 Times',
         description: 'Complete the Theatre of Blood on Normal or Hard Mode 50 times.',
         skillReqs: [],
@@ -6666,7 +6666,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 639462183,
+        id: 1273,
         label: 'Complete the Theatre of Blood 100 Times',
         description: 'Complete the Theatre of Blood 100 times.',
         skillReqs: [],
@@ -6675,7 +6675,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3126975016,
+        id: 1274,
         label: 'Complete the Theatre of Blood 200 Times',
         description: 'Complete the Theatre of Blood 200 times.',
         skillReqs: [],
@@ -6684,7 +6684,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1319520553,
+        id: 1497,
         label: 'Complete the Theatre of Blood 300 Times',
         description: 'Complete the Theatre of Blood on Normal or Hard Mode 300 times.',
         skillReqs: [],
@@ -6693,7 +6693,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1443637636,
+        id: 1275,
         label: 'Complete the Theatre of Blood 350 Times',
         description: 'Complete the Theatre of Blood 350 times.',
         skillReqs: [],
@@ -6702,7 +6702,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1999578923,
+        id: 1276,
         label: 'Complete the Theatre of Blood 500 Times',
         description: 'Complete the Theatre of Blood 500 times.',
         skillReqs: [],
@@ -6711,7 +6711,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3444359654,
+        id: 1333,
         label: 'Defeat the Corporeal Beast',
         description: 'Defeat the Corporeal Beast in the Wilderness.',
         skillReqs: [],
@@ -6720,7 +6720,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1503604349,
+        id: 1334,
         label: 'Defeat the Corporeal Beast 100 Times',
         description: 'Defeat the Corporeal Beast in the Wilderness 100 times.',
         skillReqs: [],
@@ -6729,7 +6729,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4115234265,
+        id: 1335,
         label: 'Defeat the Corporeal Beast 250 Times',
         description: 'Defeat the Corporeal Beast in the Wilderness 250 times.',
         skillReqs: [],
@@ -6738,7 +6738,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1066,
+        id: 1336,
         label: 'Defeat the Corporeal Beast 500 Times',
         description: 'Defeat the Corporeal Beast in the Wilderness 500 times.',
         skillReqs: [],
@@ -6747,7 +6747,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 756921757,
+        id: 1399,
         label: '750 Sarachnis Kills',
         description: 'Kill Sarachnis in the Forthos Dungeon 750 times.',
         skillReqs: [],
@@ -6756,7 +6756,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 872075638,
+        id: 1414,
         label: "Defeat The Nightmare or Phosani's Nightmare 50 times",
         description: "Defeat The Nightmare or Phosani's Nightmare 50 times combined.",
         skillReqs: [],
@@ -6765,7 +6765,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3119746818,
+        id: 1415,
         label: "Defeat The Nightmare or Phosani's Nightmare 100 times",
         description: "Defeat The Nightmare or Phosani's Nightmare 100 times combined.",
         skillReqs: [],
@@ -6774,7 +6774,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1436409438,
+        id: 1416,
         label: "Defeat The Nightmare or Phosani's Nightmare 250 times",
         description: "Defeat The Nightmare or Phosani's Nightmare 250 times combined.",
         skillReqs: [],
@@ -6783,7 +6783,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 184896262,
+        id: 1417,
         label: "Defeat The Nightmare or Phosani's Nightmare 500 times",
         description: "Defeat The Nightmare or Phosani's Nightmare 500 times combined.",
         skillReqs: [],
@@ -6792,7 +6792,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1002,
+        id: 1418,
         label: "Defeat The Nightmare or Phosani's Nightmare 750 times",
         description: "Defeat The Nightmare or Phosani's Nightmare 750 times combined.",
         skillReqs: [],
@@ -6801,7 +6801,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1763886776,
+        id: 1419,
         label: 'Defeat the Theatre of Blood Hardmode',
         description: 'Defeat the Theatre of Blood Hardmode.',
         skillReqs: [],
@@ -6810,7 +6810,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 583486353,
+        id: 1420,
         label: 'Defeat the Theatre of Blood Hardmode 25 times',
         description: 'Defeat the Theatre of Blood Hardmode 25 times.',
         skillReqs: [],
@@ -6819,7 +6819,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1374398953,
+        id: 1421,
         label: 'Defeat the Theatre of Blood Hardmode 50 times',
         description: 'Defeat the Theatre of Blood Hardmode 50 times.',
         skillReqs: [],
@@ -6828,7 +6828,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1511900399,
+        id: 1422,
         label: 'Defeat the Theatre of Blood Hardmode 100 times',
         description: 'Defeat the Theatre of Blood Hardmode 100 times.',
         skillReqs: [],
@@ -6837,7 +6837,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1636017482,
+        id: 1423,
         label: 'Defeat the Theatre of Blood Hardmode 150 times',
         description: 'Defeat the Theatre of Blood Hardmode 150 times.',
         skillReqs: [],
@@ -6846,7 +6846,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1192342603,
+        id: 1514,
         label: 'Defeat Nex 100 Times',
         description: 'Defeat Nex in the God Wars Dungeon 100 times.',
         skillReqs: [
@@ -6860,7 +6860,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3679855436,
+        id: 1515,
         label: 'Defeat Nex 200 Times',
         description: 'Defeat Nex in the God Wars Dungeon 200 times.',
         skillReqs: [
@@ -6874,7 +6874,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3240447949,
+        id: 373,
         label: '200 Chambers of Xeric Challenge Mode',
         description: 'Complete the Chambers of Xeric Challenge Mode 200 times.',
         skillReqs: [],
@@ -6883,7 +6883,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 943,
+        id: 395,
         label: 'CM Chambers of Xeric in Target Time',
         description: 'Complete the Chambers of Xeric Challenge Mode in the target time.',
         skillReqs: [],
@@ -6892,7 +6892,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 529,
+        id: 396,
         label: 'Solo CM Chambers of Xeric in Target Time',
         description: 'Complete the Chambers of Xeric Challenge Mode in the target time, alone.',
         skillReqs: [],
@@ -6901,7 +6901,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2050520578,
+        id: 397,
         label: '30 Minutes Chambers of Xeric Solo',
         description: 'Complete the Chambers of Xeric in 30 minutes or less, alone.',
         skillReqs: [],
@@ -6910,7 +6910,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1423178222,
+        id: 398,
         label: '26 Minute Chambers of Xeric Solo',
         description: 'Complete the Chambers of Xeric in 26 minutes or less, alone.',
         skillReqs: [],
@@ -6919,7 +6919,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 19978474,
+        id: 399,
         label: '22 Minute Chambers of Xeric Solo',
         description: 'Complete the Chambers of Xeric in 22 minutes or less, alone.',
         skillReqs: [],
@@ -6928,7 +6928,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4134881937,
+        id: 400,
         label: '18 Minute Chambers of Xeric Solo',
         description: 'Complete the Chambers of Xeric in 18 minutes or less, alone.',
         skillReqs: [],
@@ -6937,7 +6937,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3433282063,
+        id: 401,
         label: '16 Minute Chambers of Xeric Solo',
         description: 'Complete the Chambers of Xeric in 16 minutes or less, alone.',
         skillReqs: [],
@@ -6946,7 +6946,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3459501556,
+        id: 402,
         label: '55 Minute Chambers of Xeric Challenge Mode Solo',
         description: 'Complete the Chambers of Xeric Challenge Mode in 55 minutes or less, alone.',
         skillReqs: [],
@@ -6955,7 +6955,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 786303449,
+        id: 403,
         label: '50 Minute Chambers of Xeric Challenge Mode Solo',
         description: 'Complete the Chambers of Xeric Challenge Mode in 50 minutes or less, alone.',
         skillReqs: [],
@@ -6964,7 +6964,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 305214802,
+        id: 404,
         label: '46 Minute Chambers of Xeric Challenge Mode Solo',
         description: 'Complete the Chambers of Xeric Challenge Mode in 46 minutes or less, alone.',
         skillReqs: [],
@@ -6973,7 +6973,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 743636694,
+        id: 405,
         label: '42 Minute Chambers of Xeric Challenge Mode Solo',
         description: 'Complete the Chambers of Xeric Challenge Mode in 42 minutes or less, alone.',
         skillReqs: [],
@@ -6982,7 +6982,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 262548047,
+        id: 406,
         label: '38 Minute Chambers of Xeric Challenge Mode Solo',
         description: 'Complete the Chambers of Xeric Challenge Mode in 38 minutes or less, alone.',
         skillReqs: [],
@@ -6991,7 +6991,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2730040241,
+        id: 474,
         label: '100 Mimic Kills',
         description: 'Kill the Mimic as part of a treasure trail 100 times.',
         skillReqs: [],
@@ -7000,7 +7000,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1798746232,
+        id: 857,
         label: 'Defeat Zulrah in 0:42',
         description: 'Defeat Zulrah at the Poison Waste in 0:42 or less.',
         skillReqs: [],
@@ -7009,7 +7009,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3407873828,
+        id: 862,
         label: 'Complete the Corrupted Gauntlet in 5:00',
         description: 'Complete the Corrupted Gauntlet in Prifddinas in 5:00 or less.',
         skillReqs: [],
@@ -7018,7 +7018,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2909094588,
+        id: 913,
         label: 'Defeat Vorkath in 0:45',
         description: 'Defeat Vorkath on Ungael in 0:45 or less.',
         skillReqs: [],
@@ -7027,7 +7027,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1844035516,
+        id: 979,
         label: 'Complete the Fight Caves in 25:00',
         description: 'Complete the Tzhaar Fight Cave in Mor Ul Rek in 25:00 or less.',
         skillReqs: [],
@@ -7036,7 +7036,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 496,
+        id: 984,
         label: 'Complete the Inferno in 75:00',
         description: 'Complete the Inferno in Mor Ul Rek in 75:00 or less.',
         skillReqs: [],
@@ -7045,7 +7045,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1183335370,
+        id: 1271,
         label: 'Complete the Theatre of Blood in 16:00',
         description: 'Complete the Theatre of Blood in 16:00 or less challenge time with 3 players or less.',
         skillReqs: [],
@@ -7054,7 +7054,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1284,
+        id: 1516,
         label: 'Defeat Nex 500 Times',
         description: 'Defeat Nex in the God Wars Dungeon 500 times.',
         skillReqs: [
@@ -7068,7 +7068,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1147138529,
+        id: 666,
         label: 'Turn a Log Into a Plank',
         description: 'Use a Sawmill to turn a Log into a Plank.',
         skillReqs: [],
@@ -7077,7 +7077,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1359,
+        id: 664,
         label: 'Purchase a Player Owned House',
         description: 'Purchase a player-owned house.',
         skillReqs: [],
@@ -7086,7 +7086,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 595,
+        id: 665,
         label: 'Build a Room in Your Player Owned House',
         description: 'Build a room in your player-owned house.',
         skillReqs: [],
@@ -7095,7 +7095,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1257,
+        id: 969,
         label: 'Enter your Player Owned House',
         description: 'Enter your player-owned house.',
         skillReqs: [],
@@ -7104,7 +7104,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 988,
+        id: 1103,
         label: 'Move Your House to Taverley',
         description: 'Move your player-owned house to Taverley.',
         skillReqs: [{ skill: 'Construction', level: 10 }],
@@ -7113,7 +7113,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 539,
+        id: 667,
         label: 'Build a Mahogany Portal',
         description: 'Build a mahogany portal in a Portal Chamber in your Player Owned House.',
         skillReqs: [{ skill: 'Construction', level: 65 }],
@@ -7122,7 +7122,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3683153468,
+        id: 668,
         label: 'Build an Oak Larder',
         description: 'Build an oak larder in a Kitchen in your Player Owned House.',
         skillReqs: [{ skill: 'Construction', level: 33 }],
@@ -7131,7 +7131,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4096662418,
+        id: 669,
         label: 'Fill a Medium S.T.A.S.H. Unit',
         description: 'Build a Medium S.T.A.S.H. unit and fill it with the relevant items.',
         skillReqs: [{ skill: 'Construction', level: 42 }],
@@ -7140,7 +7140,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 904,
+        id: 836,
         label: 'Move Your House to Prifddinas',
         description: 'Move your player-owned house to Prifddinas.',
         skillReqs: [{ skill: 'Construction', level: 70 }],
@@ -7149,7 +7149,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 828,
+        id: 886,
         label: 'Move Your House to Rellekka',
         description: 'Move your player-owned house to Rellekka.',
         skillReqs: [{ skill: 'Construction', level: 30 }],
@@ -7158,7 +7158,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 838,
+        id: 1024,
         label: 'Move Your House to Yanille',
         description: 'Move your player-owned house to Yanille.',
         skillReqs: [{ skill: 'Construction', level: 50 }],
@@ -7167,7 +7167,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1410,
+        id: 1373,
         label: 'Move Your House to Pollnivneach',
         description: 'Move your player-owned house to Pollnivneach.',
         skillReqs: [{ skill: 'Construction', level: 20 }],
@@ -7176,7 +7176,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 622,
+        id: 670,
         label: 'Fill a Hard S.T.A.S.H. Unit',
         description: 'Build a Hard S.T.A.S.H. unit and fill it with the relevant items.',
         skillReqs: [{ skill: 'Construction', level: 55 }],
@@ -7185,7 +7185,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 617,
+        id: 671,
         label: 'Build an Achievement Gallery',
         description: 'Build an Achievement Gallery in your player-owned house.',
         skillReqs: [{ skill: 'Construction', level: 80 }],
@@ -7194,7 +7194,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 702186020,
+        id: 887,
         label: 'Build a Gilded Altar',
         description: 'Build a gilded altar in a Chapel in your player-owned house.',
         skillReqs: [{ skill: 'Construction', level: 75 }],
@@ -7203,7 +7203,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4197060136,
+        id: 546,
         label: 'Reach Level 99 Construction',
         description: 'Reach level 99 in your Construction skill.',
         skillReqs: [{ skill: 'Construction', level: 99 }],
@@ -7212,7 +7212,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3245234193,
+        id: 547,
         label: 'Obtain 25 Million Construction XP',
         description: 'Obtain 25 million experience in your Construction skill.',
         skillReqs: [{ skill: 'Construction', level: 99 }],
@@ -7221,7 +7221,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 616,
+        id: 888,
         label: 'Build a Gilded Portal Nexus',
         description: 'Build a gilded portal nexus in a Portal Nexus in your player-owned house.',
         skillReqs: [{ skill: 'Construction', level: 82 }],
@@ -7230,7 +7230,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 623,
+        id: 1349,
         label: 'Build an Obelisk',
         description: 'Build an obelisk in your Player Owned House.',
         skillReqs: [{ skill: 'Construction', level: 80 }],
@@ -7239,7 +7239,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 922,
+        id: 889,
         label: 'Build a Demonic Throne',
         description: 'Build a demonic throne in a Throne Room in your player-owned house.',
         skillReqs: [{ skill: 'Construction', level: 99 }],
@@ -7248,7 +7248,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 608,
+        id: 602,
         label: 'Cook a Shrimp',
         description: 'Cook a Raw Shrimp.',
         skillReqs: [],
@@ -7257,7 +7257,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 701,
+        id: 603,
         label: 'Burn Some Food',
         description: 'Burn any kind of food while trying to cook it.',
         skillReqs: [],
@@ -7266,7 +7266,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 935,
+        id: 759,
         label: 'Use the Range in Lumbridge Castle',
         description: 'Use the Range in Lumbridge Castle to cook some food.',
         skillReqs: [],
@@ -7275,7 +7275,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 566,
+        id: 604,
         label: 'Successfully Cook 5 Pieces of Food',
         description: 'Cook 5 pieces of food in a row without burning them.',
         skillReqs: [],
@@ -7284,7 +7284,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 992,
+        id: 278,
         label: 'Serve 20 Stews in the Mess Hall',
         description:
             "Make and serve 20 stews in the Mess Hall in Hosidius.<br/>''Note: This requires at least 30% appreciation.''",
@@ -7294,7 +7294,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 727,
+        id: 605,
         label: 'Ferment 100 Jugs of Wine',
         description: 'Successfully ferment 100 jugs of wine.',
         skillReqs: [{ skill: 'Cooking', level: 35 }],
@@ -7303,7 +7303,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 683,
+        id: 606,
         label: 'Cook 100 Lobsters',
         description: 'Cook 100 Raw Lobsters.',
         skillReqs: [{ skill: 'Cooking', level: 40 }],
@@ -7312,7 +7312,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 704,
+        id: 607,
         label: 'Make a Pineapple Pizza',
         description: 'Make a Pineapple Pizza.',
         skillReqs: [{ skill: 'Cooking', level: 65 }],
@@ -7321,7 +7321,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 839,
+        id: 760,
         label: "Enter the Cooks' Guild",
         description: "Enter the Cooks' Guild west of Varrock.",
         skillReqs: [{ skill: 'Cooking', level: 32 }],
@@ -7330,7 +7330,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 516,
+        id: 823,
         label: 'Cook a Rabbit in Tirannwn',
         description: 'Cook a raw rabbit anywhere within Tirannwn.',
         skillReqs: [],
@@ -7339,7 +7339,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2549401371,
+        id: 279,
         label: 'Serve 20 Pizzas in the Mess Hall',
         description:
             "Make and serve 20 pineapple pizzas in the Mess Hall in Hosidius.<br/>''Note: This requires at least 30% appreciation.''",
@@ -7349,7 +7349,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3953813013,
+        id: 608,
         label: 'Cook 100 Sharks',
         description: 'Cook 100 Raw Sharks.',
         skillReqs: [{ skill: 'Cooking', level: 80 }],
@@ -7358,7 +7358,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 597,
+        id: 957,
         label: 'Cook 100 Karambwans',
         description: 'Cook 100 Karambwans.',
         skillReqs: [{ skill: 'Cooking', level: 30 }],
@@ -7367,7 +7367,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3371043811,
+        id: 570,
         label: 'Reach Level 99 Cooking',
         description: 'Reach level 99 in your Cooking skill.',
         skillReqs: [{ skill: 'Cooking', level: 99 }],
@@ -7376,7 +7376,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3073344404,
+        id: 571,
         label: 'Obtain 25 Million Cooking XP',
         description: 'Obtain 25 million experience in your Cooking skill.',
         skillReqs: [{ skill: 'Cooking', level: 99 }],
@@ -7385,7 +7385,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1399,
+        id: 1302,
         label: 'Cook a Dark Crab',
         description: 'Cook a Dark Crab.',
         skillReqs: [{ skill: 'Cooking', level: 90 }],
@@ -7394,7 +7394,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4018418522,
+        id: 639,
         label: 'Spin a Ball of Wool',
         description: 'Use a Spinning Wheel to spin a Ball of Wool.',
         skillReqs: [],
@@ -7403,7 +7403,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 690,
+        id: 640,
         label: 'Cut a Sapphire',
         description: 'Cut a Sapphire.',
         skillReqs: [{ skill: 'Crafting', level: 20 }],
@@ -7412,7 +7412,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1420,
+        id: 641,
         label: 'Craft a Leather Body',
         description: 'Craft a Leather Body.',
         skillReqs: [{ skill: 'Crafting', level: 14 }],
@@ -7421,7 +7421,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 185974188,
+        id: 1237,
         label: 'Craft a Snelm',
         description: 'Craft any Snelm.',
         skillReqs: [{ skill: 'Crafting', level: 15 }],
@@ -7430,7 +7430,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 619,
+        id: 642,
         label: 'Craft 100 Unpowered Orbs',
         description: 'Craft 100 Unpowered Orbs.',
         skillReqs: [{ skill: 'Crafting', level: 46 }],
@@ -7439,7 +7439,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1432,
+        id: 643,
         label: 'Craft an Emerald Ring',
         description: 'Craft an Emerald Ring.',
         skillReqs: [{ skill: 'Crafting', level: 27 }],
@@ -7448,7 +7448,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1344,
+        id: 644,
         label: 'Craft a Ruby Amulet',
         description: 'Craft a Ruby Amulet.',
         skillReqs: [{ skill: 'Crafting', level: 50 }],
@@ -7457,7 +7457,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1079,
+        id: 1096,
         label: 'Enter the Crafting Guild',
         description: 'Enter the Crafting Guild.',
         skillReqs: [{ skill: 'Crafting', level: 40 }],
@@ -7466,7 +7466,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1175,
+        id: 645,
         label: 'Craft a Dragonstone Amulet',
         description: 'Craft a dragonstone amulet.',
         skillReqs: [{ skill: 'Crafting', level: 80 }],
@@ -7475,7 +7475,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 620,
+        id: 646,
         label: 'Craft 30 Blue Dragonhide Bodies',
         description: 'Craft 30 Blue Dragonhide Bodies.',
         skillReqs: [{ skill: 'Crafting', level: 71 }],
@@ -7484,7 +7484,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 827,
+        id: 1310,
         label: 'Craft an Air Battlestaff in the Wilderness',
         description: 'Craft an air battlestaff in the Wilderness.',
         skillReqs: [{ skill: 'Crafting', level: 66 }],
@@ -7493,7 +7493,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3680551577,
+        id: 556,
         label: 'Reach Level 99 Crafting',
         description: 'Reach level 99 in your Crafting skill.',
         skillReqs: [{ skill: 'Crafting', level: 99 }],
@@ -7502,7 +7502,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 643283584,
+        id: 557,
         label: 'Obtain 25 Million Crafting XP',
         description: 'Obtain 25 million experience in your Crafting skill.',
         skillReqs: [{ skill: 'Crafting', level: 99 }],
@@ -7511,7 +7511,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 621,
+        id: 647,
         label: 'Craft an Onyx Amulet',
         description: 'Craft an Onyx Amulet.',
         skillReqs: [{ skill: 'Crafting', level: 90 }],
@@ -7520,7 +7520,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1729953971,
+        id: 1487,
         label: 'Craft a Celestial Signet',
         description: 'Craft a Celestial signet via singing bowl.',
         skillReqs: [
@@ -7532,7 +7532,25 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1142,
+        id: 1404,
+        label: 'Equip either a Steel Platebody, some Steel Platelegs or a Steel Full Helm',
+        description: 'Equip either a steel platebody, some steel platelegs or a steel full helm.',
+        skillReqs: [{ skill: 'Defence', level: 5 }],
+        difficulty: DIFFICULTY.EASY,
+        category: undefined,
+        subcategory: undefined,
+    },
+    {
+        id: 1405,
+        label: 'Equip either a Black Platebody, some Black Platelegs or a Black Full Helm',
+        description: 'Equip either a black platebody, some black platelegs or a black full helm.',
+        skillReqs: [{ skill: 'Defence', level: 10 }],
+        difficulty: DIFFICULTY.EASY,
+        category: undefined,
+        subcategory: undefined,
+    },
+    {
+        id: 725,
         label: 'Equip a Full Mithril Set',
         description:
             'Equip a mithril platebody, a mithril full helm and either some mithril platelegs or a mithril plateskirt.',
@@ -7542,25 +7560,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4170711863,
-        label: 'Equip either a Steel Platebody, some Steel Platelegs or a Steel Full Helm',
-        description: 'Equip either a steel platebody, some steel platelegs or a steel full helm.',
-        skillReqs: [{ skill: 'Defence', level: 10 }],
-        difficulty: DIFFICULTY.EASY,
-        category: undefined,
-        subcategory: undefined,
-    },
-    {
-        id: 846185987,
-        label: 'Equip either a Black Platebody, some Black Platelegs or a Black Full Helm',
-        description: 'Equip either a black platebody, some black platelegs or a black full helm.',
-        skillReqs: [{ skill: 'Defence', level: 10 }],
-        difficulty: DIFFICULTY.EASY,
-        category: undefined,
-        subcategory: undefined,
-    },
-    {
-        id: 3439419026,
+        id: 480,
         label: 'Equip Tier 5 Shayzien Armour',
         description: 'Equip a full set of tier 5 Shayzien armour.',
         skillReqs: [{ skill: 'Defence', level: 20 }],
@@ -7569,7 +7569,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1011,
+        id: 726,
         label: 'Equip a Full Adamant Set',
         description:
             'Equip an adamant platebody, an adamant full helm and either some adamant platelegs or an adamant plateskirt.',
@@ -7579,7 +7579,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1602127678,
+        id: 727,
         label: 'Equip a Full Rune Set',
         description: 'Equip a rune platebody, a rune full helm and either some rune platelegs or a rune plateskirt.',
         skillReqs: [{ skill: 'Defence', level: 40 }],
@@ -7588,7 +7588,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 563,
+        id: 1406,
         label: 'Equip a Willow Shield',
         description: 'Equip a willow shield.',
         skillReqs: [{ skill: 'Defence', level: 30 }],
@@ -7597,7 +7597,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 737,
+        id: 16,
         label: 'Equip a Full Gilded Set',
         description: 'Equip either a full set of gilded Rune armour or a full set of gilded Dragonhide armour.',
         skillReqs: [],
@@ -7606,7 +7606,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 853,
+        id: 17,
         label: 'Equip a Full God Rune Set',
         description:
             'Equip a full set of God Rune armour (helmet, body and legs) with all pieces aligned to the same God.',
@@ -7616,7 +7616,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 736,
+        id: 20,
         label: 'Equip a Full God Dragonhide Set',
         description:
             'Equip a full set of God Dragonhide armour (does not require boots or shield) with all pieces aligned to the same God.',
@@ -7629,7 +7629,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 855,
+        id: 972,
         label: 'Equip a Full Obsidian Armour Set',
         description: 'Equip a full set of  Obsidian armour.',
         skillReqs: [{ skill: 'Defence', level: 60 }],
@@ -7638,7 +7638,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1148,
+        id: 976,
         label: 'Equip a Toktz-Ket-Xil',
         description: 'Equip a Toktz-Ket-Xil.',
         skillReqs: [{ skill: 'Defence', level: 60 }],
@@ -7647,7 +7647,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1270,
+        id: 982,
         label: 'Equip Some Dragon Platelegs or a Dragon Plateskirt',
         description: 'Equip either some Dragon Platelegs or a Dragon Plateskirt.',
         skillReqs: [{ skill: 'Defence', level: 60 }],
@@ -7656,7 +7656,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3138247270,
+        id: 1131,
         label: 'Equip a Pair of Dragon Boots',
         description: 'Equip a pair of dragon boots.',
         skillReqs: [{ skill: 'Slayer', level: 83 }],
@@ -7665,7 +7665,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3963770009,
+        id: 536,
         label: 'Reach Level 99 Defence',
         description: 'Reach level 99 in your Defence skill.',
         skillReqs: [{ skill: 'Defence', level: 99 }],
@@ -7674,7 +7674,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 73987870,
+        id: 537,
         label: 'Obtain 25 Million Defence XP',
         description: 'Obtain 25 million experience in your Defence skill.',
         skillReqs: [{ skill: 'Defence', level: 99 }],
@@ -7683,7 +7683,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 733,
+        id: 728,
         label: 'Equip a Full Dragon Set',
         description:
             'Equip a Dragon platebody, a Dragon full helm and either some Dragon platelegs or a Dragon plateskirt.',
@@ -7693,7 +7693,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2095696735,
+        id: 1267,
         label: 'Equip a Piece of the Justiciar Set',
         description: 'Equip any piece of the Justiciar armour set.',
         skillReqs: [{ skill: 'Defence', level: 75 }],
@@ -7702,7 +7702,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 558,
+        id: 1268,
         label: 'Equip a Full Justiciar Set',
         description: 'Equip a full set of Justiciar armour.',
         skillReqs: [{ skill: 'Defence', level: 75 }],
@@ -7711,7 +7711,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 651,
+        id: 586,
         label: 'Rake a Farming Patch',
         description: 'Rake any farming patch',
         skillReqs: [],
@@ -7720,7 +7720,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1206,
+        id: 587,
         label: 'Plant Seeds in an Allotment Patch',
         description: 'Plant some seeds in an allotment patch.',
         skillReqs: [],
@@ -7729,7 +7729,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3957131580,
+        id: 245,
         label: 'Complete 1 Farming Contract',
         description: 'Complete a farming contract for Guildmaster Jane in the farming guild.',
         skillReqs: [{ skill: 'Farming', level: 45 }],
@@ -7738,7 +7738,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 703,
+        id: 246,
         label: 'Complete 25 Farming Contracts',
         description: 'Complete 25 farming contracts for Guildmaster Jane in the farming guild.',
         skillReqs: [{ skill: 'Farming', level: 45 }],
@@ -7747,7 +7747,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 629,
+        id: 247,
         label: 'Complete 50 Farming Contracts',
         description: 'Complete 50 farming contracts for Guildmaster Jane in the farming guild.',
         skillReqs: [{ skill: 'Farming', level: 45 }],
@@ -7756,7 +7756,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 570,
+        id: 248,
         label: 'Complete 75 Farming Contracts',
         description: 'Complete 75 farming contracts for Guildmaster Jane in the farming guild.',
         skillReqs: [{ skill: 'Farming', level: 45 }],
@@ -7765,7 +7765,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 689,
+        id: 249,
         label: 'Complete 100 Farming Contracts',
         description: 'Complete 100 farming contracts for Guildmaster Jane in the farming guild.',
         skillReqs: [{ skill: 'Farming', level: 45 }],
@@ -7774,7 +7774,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3410840519,
+        id: 588,
         label: 'Protect Your Crops',
         description: 'Pay a farmer to protect any of your crops.',
         skillReqs: [],
@@ -7783,7 +7783,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2557351864,
+        id: 250,
         label: 'Complete 200 Farming Contracts',
         description: 'Complete 200 farming contracts for Guildmaster Jane in the farming guild.',
         skillReqs: [{ skill: 'Farming', level: 45 }],
@@ -7792,7 +7792,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2768702777,
+        id: 251,
         label: 'Complete 300 Farming Contracts',
         description: 'Complete 300 farming contracts for Guildmaster Jane in the farming guild.',
         skillReqs: [{ skill: 'Farming', level: 45 }],
@@ -7801,7 +7801,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2980053690,
+        id: 252,
         label: 'Complete 400 Farming Contracts',
         description: 'Complete 400 farming contracts for Guildmaster Jane in the farming guild.',
         skillReqs: [{ skill: 'Farming', level: 45 }],
@@ -7810,7 +7810,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3191404603,
+        id: 253,
         label: 'Complete 500 Farming Contracts',
         description: 'Complete 500 farming contracts for Guildmaster Jane in the farming guild.',
         skillReqs: [{ skill: 'Farming', level: 45 }],
@@ -7819,7 +7819,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2928388360,
+        id: 272,
         label: 'Plant 100 Golovanova Seeds',
         description: 'Plant 100 Golovanova seeds in the Tithe Farm minigame.',
         skillReqs: [{ skill: 'Farming', level: 34 }],
@@ -7828,7 +7828,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1443705256,
+        id: 275,
         label: 'Enter the Farming Guild',
         description: 'Enter the Farming Guild in the Kebos Lowlands.',
         skillReqs: [{ skill: 'Farming', level: 45 }],
@@ -7837,7 +7837,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 841,
+        id: 589,
         label: 'Harvest an Irit Leaf',
         description: 'Harvest an Irit Leaf from any Herb Patch.',
         skillReqs: [{ skill: 'Farming', level: 44 }],
@@ -7846,7 +7846,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1127,
+        id: 590,
         label: 'Fill a Bucket With Supercompost',
         description: 'Fill a Bucket with Supercompost from a Compost Bin.',
         skillReqs: [],
@@ -7855,7 +7855,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1299,
+        id: 591,
         label: 'Check a grown Fruit Tree',
         description: "Check the health of any fruit tree you've grown.",
         skillReqs: [{ skill: 'Farming', level: 27 }],
@@ -7864,7 +7864,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 989,
+        id: 826,
         label: 'Check a grown Papaya Tree in Lletya',
         description: "Check the health of a papaya tree you've grown in Lletya.",
         skillReqs: [{ skill: 'Farming', level: 57 }],
@@ -7873,7 +7873,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1217,
+        id: 1025,
         label: 'Check a grown Papaya Tree in the Gnome Stronghold',
         description: "Check the health of a papaya tree you've grown in the Tree Gnome Stronghold.",
         skillReqs: [{ skill: 'Farming', level: 57 }],
@@ -7882,7 +7882,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1400,
+        id: 1102,
         label: 'Harvest Any Herb at the Troll Stronghold',
         description: "Harvest any herb you've grown at the Troll Stronghold.",
         skillReqs: [{ skill: 'Farming', level: 9 }],
@@ -7891,7 +7891,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 444688497,
+        id: 273,
         label: 'Plant 100 Bologano Seeds',
         description: 'Plant 100 Bologano seeds in the Tithe Farm minigame.',
         skillReqs: [{ skill: 'Farming', level: 54 }],
@@ -7900,7 +7900,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 987,
+        id: 276,
         label: "Enter the Farming Guild's Mid Tier",
         description: 'Enter the mid tier of the Farming Guild in the Kebos Lowlands.',
         skillReqs: [{ skill: 'Farming', level: 65 }],
@@ -7909,7 +7909,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 299701685,
+        id: 487,
         label: "Equip the Farmer's Outfit",
         description: "Equip a full set of the farmer's outfit, purchased from the Tithe Farm minigame.",
         skillReqs: [{ skill: 'Farming', level: 34 }],
@@ -7918,7 +7918,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1408,
+        id: 592,
         label: 'Check a grown Palm Tree',
         description: "Check the health of a Palm tree you've grown.",
         skillReqs: [{ skill: 'Farming', level: 68 }],
@@ -7927,7 +7927,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1271,
+        id: 593,
         label: 'Dig Up Some Magic Roots',
         description: "Dig up some Magic Roots from a Magic Tree you've grown.",
         skillReqs: [
@@ -7939,7 +7939,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1300,
+        id: 761,
         label: 'Check a grown Magic Tree in Lumbridge',
         description: "Check the health of a Magic Tree you've grown in Lumbridge.",
         skillReqs: [{ skill: 'Farming', level: 75 }],
@@ -7948,7 +7948,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 680,
+        id: 762,
         label: 'Check a grown Mahogany Tree',
         description: "Check the health of a Mahogany Tree you've grown on Fossil Island.",
         skillReqs: [{ skill: 'Farming', level: 55 }],
@@ -7957,7 +7957,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1228,
+        id: 825,
         label: 'Harvest Some Sweetcorn in Prifddinas',
         description: 'Harvest some sweetcorn from the Prifddinas Allotment Patch.',
         skillReqs: [{ skill: 'Farming', level: 20 }],
@@ -7966,7 +7966,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1098181156,
+        id: 827,
         label: 'Check a grown Crystal Tree',
         description: "Check the health of a Crystal tree you've grown in Prifddinas.",
         skillReqs: [
@@ -7980,7 +7980,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 590,
+        id: 893,
         label: 'Harvest a Snapdragon in Weiss',
         description: "Harvest a snapdragon you've grown in Weiss.",
         skillReqs: [{ skill: 'Farming', level: 62 }],
@@ -7989,7 +7989,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1415,
+        id: 967,
         label: 'Check a grown Calquat Tree',
         description: "Check the health of a Calquat Tree you've grown on Karamja.",
         skillReqs: [{ skill: 'Farming', level: 72 }],
@@ -7998,7 +7998,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1141,
+        id: 1180,
         label: 'Check a grown Cactus',
         description: "Check the health of a Cactus you've grown in Al Kharid.",
         skillReqs: [{ skill: 'Farming', level: 55 }],
@@ -8007,7 +8007,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 326787626,
+        id: 1181,
         label: 'Check a grown Potato Cactus',
         description: "Check the health of a Potato Cactus you've grown in Al Kharid.",
         skillReqs: [{ skill: 'Farming', level: 64 }],
@@ -8016,7 +8016,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 511,
+        id: 274,
         label: 'Plant 100 Logavano Seeds',
         description: 'Plant 100 Logavano seeds in the Tithe Farm minigame.',
         skillReqs: [{ skill: 'Farming', level: 74 }],
@@ -8025,7 +8025,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 660718932,
+        id: 277,
         label: "Enter the Farming Guild's High Tier",
         description: 'Enter the high tier of the Farming Guild in the Kebos Lowlands.',
         skillReqs: [{ skill: 'Farming', level: 85 }],
@@ -8034,7 +8034,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 528,
+        id: 288,
         label: 'Check a grown Redwood Tree',
         description: 'Check the health of a Redwood Tree after growing one in the Farming Guild.',
         skillReqs: [{ skill: 'Farming', level: 90 }],
@@ -8043,7 +8043,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1340609589,
+        id: 576,
         label: 'Reach Level 99 Farming',
         description: 'Reach level 99 in your Farming skill.',
         skillReqs: [{ skill: 'Farming', level: 99 }],
@@ -8052,7 +8052,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 431866370,
+        id: 577,
         label: 'Obtain 25 Million Farming XP',
         description: 'Obtain 25 million experience in your Farming skill.',
         skillReqs: [{ skill: 'Farming', level: 99 }],
@@ -8061,7 +8061,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1258,
+        id: 594,
         label: 'Travel Between Your Spirit Trees',
         description: "Travel between any two Spirit Trees that you've grown.",
         skillReqs: [
@@ -8074,7 +8074,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 592,
+        id: 1026,
         label: 'Check a grown Dragonfruit Tree in Catherby',
         description: "Check the health of a dragonfruit tree you've grown in Catherby.",
         skillReqs: [{ skill: 'Farming', level: 81 }],
@@ -8083,7 +8083,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 545,
+        id: 679,
         label: 'Burn Some Normal Logs',
         description: 'Burn some Normal Logs.',
         skillReqs: [],
@@ -8092,52 +8092,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4218377983,
-        label: '1 Wintertodt Kill',
-        description: 'Help the pyromancers subdue the Wintertodt.',
-        skillReqs: [{ skill: 'Firemaking', level: 50 }],
-        difficulty: DIFFICULTY.EASY,
-        category: undefined,
-        subcategory: undefined,
-    },
-    {
-        id: 2953456002,
-        label: '25 Wintertodt Kills',
-        description: 'Help the pyromancers subdue the Wintertodt 25 times.',
-        skillReqs: [{ skill: 'Firemaking', level: 50 }],
-        difficulty: DIFFICULTY.EASY,
-        category: undefined,
-        subcategory: undefined,
-    },
-    {
-        id: 1110434858,
-        label: '50 Wintertodt Kills',
-        description: 'Help the pyromancers subdue the Wintertodt 50 times.',
-        skillReqs: [{ skill: 'Firemaking', level: 50 }],
-        difficulty: DIFFICULTY.EASY,
-        category: undefined,
-        subcategory: undefined,
-    },
-    {
-        id: 3026063943,
-        label: '75 Wintertodt Kills',
-        description: 'Help the pyromancers subdue the Wintertodt 75 times.',
-        skillReqs: [{ skill: 'Firemaking', level: 50 }],
-        difficulty: DIFFICULTY.EASY,
-        category: undefined,
-        subcategory: undefined,
-    },
-    {
-        id: 2480276372,
-        label: '100 Wintertodt Kills',
-        description: 'Help the pyromancers subdue the Wintertodt 100 times.',
-        skillReqs: [{ skill: 'Firemaking', level: 50 }],
-        difficulty: DIFFICULTY.EASY,
-        category: undefined,
-        subcategory: undefined,
-    },
-    {
-        id: 564,
+        id: 680,
         label: 'Burn Some Oak Logs',
         description: 'Burn some Oak Logs.',
         skillReqs: [{ skill: 'Firemaking', level: 15 }],
@@ -8146,7 +8101,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 543,
+        id: 681,
         label: 'Light a Torch',
         description: 'Light a Torch.',
         skillReqs: [],
@@ -8155,52 +8110,43 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2552884313,
-        label: '150 Wintertodt Kills',
-        description: 'Help the pyromancers subdue the Wintertodt 150 times.',
-        skillReqs: [{ skill: 'Firemaking', level: 50 }],
-        difficulty: DIFFICULTY.EASY,
-        category: undefined,
-        subcategory: undefined,
-    },
-    {
-        id: 2071452147,
-        label: '200 Wintertodt Kills',
-        description: 'Help the pyromancers subdue the Wintertodt 200 times.',
+        id: 233,
+        label: '1 Wintertodt Kill',
+        description: 'Help the pyromancers subdue the Wintertodt.',
         skillReqs: [{ skill: 'Firemaking', level: 50 }],
         difficulty: DIFFICULTY.MEDIUM,
         category: undefined,
         subcategory: undefined,
     },
     {
-        id: 1662627922,
-        label: '300 Wintertodt Kills',
-        description: 'Help the pyromancers subdue the Wintertodt 300 times.',
+        id: 234,
+        label: '25 Wintertodt Kills',
+        description: 'Help the pyromancers subdue the Wintertodt 25 times.',
         skillReqs: [{ skill: 'Firemaking', level: 50 }],
         difficulty: DIFFICULTY.MEDIUM,
         category: undefined,
         subcategory: undefined,
     },
     {
-        id: 1253803697,
-        label: '400 Wintertodt Kills',
-        description: 'Help the pyromancers subdue the Wintertodt 400 times.',
+        id: 235,
+        label: '50 Wintertodt Kills',
+        description: 'Help the pyromancers subdue the Wintertodt 50 times.',
         skillReqs: [{ skill: 'Firemaking', level: 50 }],
         difficulty: DIFFICULTY.MEDIUM,
         category: undefined,
         subcategory: undefined,
     },
     {
-        id: 844979472,
-        label: '500 Wintertodt Kills',
-        description: 'Help the pyromancers subdue the Wintertodt 500 times.',
+        id: 236,
+        label: '75 Wintertodt Kills',
+        description: 'Help the pyromancers subdue the Wintertodt 75 times.',
         skillReqs: [{ skill: 'Firemaking', level: 50 }],
         difficulty: DIFFICULTY.MEDIUM,
         category: undefined,
         subcategory: undefined,
     },
     {
-        id: 700,
+        id: 682,
         label: 'Burn 100 Willow Logs',
         description: 'Burn 100 Willow Logs.',
         skillReqs: [{ skill: 'Firemaking', level: 30 }],
@@ -8209,7 +8155,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3082902428,
+        id: 683,
         label: 'Equip a Harpie Bug Lantern',
         description: 'Equip a Bug lantern.',
         skillReqs: [
@@ -8221,7 +8167,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 546,
+        id: 684,
         label: 'Light a Bullseye Lantern',
         description: 'Light a Bullseye Lantern.',
         skillReqs: [{ skill: 'Firemaking', level: 49 }],
@@ -8230,34 +8176,43 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2144060088,
-        label: '250 Wintertodt Kills',
-        description: 'Help the pyromancers subdue the Wintertodt 250 times.',
-        skillReqs: [{ skill: 'Firemaking', level: 50 }],
-        difficulty: DIFFICULTY.MEDIUM,
-        category: undefined,
-        subcategory: undefined,
-    },
-    {
-        id: 1354,
-        label: '750 Wintertodt Kills',
-        description: 'Help the pyromancers subdue the Wintertodt 750 times.',
-        skillReqs: [{ skill: 'Firemaking', level: 50 }],
-        difficulty: DIFFICULTY.MEDIUM,
-        category: undefined,
-        subcategory: undefined,
-    },
-    {
-        id: 360393446,
-        label: '1000 Wintertodt Kills',
-        description: 'Help the pyromancers subdue the Wintertodt 1000 times.',
+        id: 237,
+        label: '100 Wintertodt Kills',
+        description: 'Help the pyromancers subdue the Wintertodt 100 times.',
         skillReqs: [{ skill: 'Firemaking', level: 50 }],
         difficulty: DIFFICULTY.HARD,
         category: undefined,
         subcategory: undefined,
     },
     {
-        id: 496127811,
+        id: 1492,
+        label: '150 Wintertodt Kills',
+        description: 'Help the pyromancers subdue the Wintertodt 150 times.',
+        skillReqs: [{ skill: 'Firemaking', level: 50 }],
+        difficulty: DIFFICULTY.HARD,
+        category: undefined,
+        subcategory: undefined,
+    },
+    {
+        id: 238,
+        label: '200 Wintertodt Kills',
+        description: 'Help the pyromancers subdue the Wintertodt 200 times.',
+        skillReqs: [{ skill: 'Firemaking', level: 50 }],
+        difficulty: DIFFICULTY.HARD,
+        category: undefined,
+        subcategory: undefined,
+    },
+    {
+        id: 1493,
+        label: '250 Wintertodt Kills',
+        description: 'Help the pyromancers subdue the Wintertodt 250 times.',
+        skillReqs: [{ skill: 'Firemaking', level: 50 }],
+        difficulty: DIFFICULTY.HARD,
+        category: undefined,
+        subcategory: undefined,
+    },
+    {
+        id: 489,
         label: "Equip the Pyromancer's Garb",
         description: "Equip a full set of pyromancer's garb, rewarded from the Wintertodt.",
         skillReqs: [{ skill: 'Firemaking', level: 50 }],
@@ -8266,7 +8221,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 574,
+        id: 685,
         label: 'Burn 100 Yew Logs',
         description: 'Burn 100 Yew Logs.',
         skillReqs: [{ skill: 'Firemaking', level: 60 }],
@@ -8275,7 +8230,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 544,
+        id: 686,
         label: 'Burn Some Magic Logs',
         description: 'Burn some Magic Logs.',
         skillReqs: [{ skill: 'Firemaking', level: 75 }],
@@ -8284,7 +8239,34 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3512253432,
+        id: 241,
+        label: '500 Wintertodt Kills',
+        description: 'Help the pyromancers subdue the Wintertodt 500 times.',
+        skillReqs: [{ skill: 'Firemaking', level: 50 }],
+        difficulty: DIFFICULTY.ELITE,
+        category: undefined,
+        subcategory: undefined,
+    },
+    {
+        id: 1494,
+        label: '750 Wintertodt Kills',
+        description: 'Help the pyromancers subdue the Wintertodt 750 times.',
+        skillReqs: [{ skill: 'Firemaking', level: 50 }],
+        difficulty: DIFFICULTY.ELITE,
+        category: undefined,
+        subcategory: undefined,
+    },
+    {
+        id: 242,
+        label: '1000 Wintertodt Kills',
+        description: 'Help the pyromancers subdue the Wintertodt 1000 times.',
+        skillReqs: [{ skill: 'Firemaking', level: 50 }],
+        difficulty: DIFFICULTY.ELITE,
+        category: undefined,
+        subcategory: undefined,
+    },
+    {
+        id: 572,
         label: 'Reach Level 99 Firemaking',
         description: 'Reach level 99 in your Firemaking skill.',
         skillReqs: [{ skill: 'Firemaking', level: 99 }],
@@ -8293,7 +8275,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2158210177,
+        id: 573,
         label: 'Obtain 25 Million Firemaking XP',
         description: 'Obtain 25 million experience in your Firemaking skill.',
         skillReqs: [{ skill: 'Firemaking', level: 99 }],
@@ -8302,7 +8284,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 604,
+        id: 616,
         label: 'Fletch Some Arrow Shafts',
         description: 'Fletch some arrow shafts.',
         skillReqs: [],
@@ -8311,7 +8293,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 522,
+        id: 617,
         label: 'Fletch an Oak Shortbow',
         description: 'Fletch an Oak Shortbow.',
         skillReqs: [{ skill: 'Fletching', level: 20 }],
@@ -8320,7 +8302,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 981,
+        id: 618,
         label: 'Fletch 150 Iron Arrows',
         description: 'Fletch 150 iron arrows.',
         skillReqs: [{ skill: 'Fletching', level: 15 }],
@@ -8329,7 +8311,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 523,
+        id: 619,
         label: 'Fletch a Willow Shortbow',
         description: 'Fletch a willow shortbow.',
         skillReqs: [{ skill: 'Fletching', level: 35 }],
@@ -8338,7 +8320,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2701377073,
+        id: 620,
         label: 'Create a Mithril Grapple',
         description: 'Create a mithril grapple.',
         skillReqs: [{ skill: 'Fletching', level: 59 }],
@@ -8347,7 +8329,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4033900115,
+        id: 621,
         label: 'Fletch some Broad Arrows or Bolts',
         description: 'Fletch either some Broad Arrows or some Broad Bolts.',
         skillReqs: [{ skill: 'Fletching', level: 52 }],
@@ -8356,7 +8338,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 685,
+        id: 1023,
         label: 'Fletch 50 Maple Longbow (u) in Kandarin',
         description: 'Fletch 50 maple longbow (u) in Kandarin.',
         skillReqs: [{ skill: 'Fletching', level: 55 }],
@@ -8365,7 +8347,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 686,
+        id: 622,
         label: 'Fletch a Magic Shortbow',
         description: 'Fletch a Magic Shortbow.',
         skillReqs: [{ skill: 'Fletching', level: 80 }],
@@ -8374,7 +8356,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 602,
+        id: 623,
         label: 'Fletch a Rune Crossbow',
         description: 'Fletch a Rune Crossbow.',
         skillReqs: [{ skill: 'Fletching', level: 69 }],
@@ -8383,7 +8365,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3368714385,
+        id: 558,
         label: 'Reach Level 99 Fletching',
         description: 'Reach level 99 in your Fletching skill.',
         skillReqs: [{ skill: 'Fletching', level: 99 }],
@@ -8392,7 +8374,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 140235878,
+        id: 559,
         label: 'Obtain 25 Million Fletching XP',
         description: 'Obtain 25 million experience in your Fletching skill.',
         skillReqs: [{ skill: 'Fletching', level: 99 }],
@@ -8401,7 +8383,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2712986342,
+        id: 699,
         label: 'Clean a Grimy Guam',
         description: 'Clean a Grimy Guam.',
         skillReqs: [{ skill: 'Herblore', level: 3 }],
@@ -8410,7 +8392,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2013630346,
+        id: 700,
         label: 'Make an Attack Potion',
         description: 'Make an Attack Potion.',
         skillReqs: [{ skill: 'Herblore', level: 3 }],
@@ -8419,7 +8401,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1263,
+        id: 701,
         label: 'Drink a Strength Potion',
         description: 'Drink a Strength Potion.',
         skillReqs: [],
@@ -8428,7 +8410,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 632,
+        id: 702,
         label: 'Make 30 Prayer Potions',
         description: 'Make 30 Prayer Potions.',
         skillReqs: [{ skill: 'Herblore', level: 38 }],
@@ -8437,7 +8419,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 551,
+        id: 703,
         label: 'Clean a Grimy Avantoe',
         description: 'Clean a Grimy Avantoe.',
         skillReqs: [{ skill: 'Herblore', level: 48 }],
@@ -8446,7 +8428,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1193,
+        id: 704,
         label: 'Make a 4 dose potion',
         description: 'Make any 4 dose potion using an amulet of chemistry',
         skillReqs: [
@@ -8458,7 +8440,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 598,
+        id: 1376,
         label: 'Make a Combat Potion',
         description: 'Make a Combat Potion.',
         skillReqs: [{ skill: 'Herblore', level: 36 }],
@@ -8467,7 +8449,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2929388041,
+        id: 705,
         label: 'Make a Saradomin Brew',
         description: 'Make a Saradomin Brew.',
         skillReqs: [{ skill: 'Herblore', level: 81 }],
@@ -8476,7 +8458,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 631,
+        id: 706,
         label: 'Clean 100 Grimy Dwarf Weed',
         description: 'Clean 100 Grimy Dwarf Weed.',
         skillReqs: [{ skill: 'Herblore', level: 70 }],
@@ -8485,7 +8467,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 858,
+        id: 1100,
         label: 'Make 20 Ranging Potions',
         description: 'Make 20 ranging potions.',
         skillReqs: [{ skill: 'Herblore', level: 72 }],
@@ -8494,7 +8476,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 630,
+        id: 1101,
         label: 'Make 20 Stamina Potions',
         description: 'Make 20 stamina potions.',
         skillReqs: [{ skill: 'Herblore', level: 77 }],
@@ -8503,7 +8485,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 857,
+        id: 1179,
         label: 'Make 20 Magic Potions',
         description: 'Make 20 Magic Potions.',
         skillReqs: [{ skill: 'Herblore', level: 76 }],
@@ -8512,7 +8494,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1339824442,
+        id: 552,
         label: 'Reach Level 99 Herblore',
         description: 'Reach level 99 in your Herblore skill.',
         skillReqs: [{ skill: 'Herblore', level: 99 }],
@@ -8521,7 +8503,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1130222655,
+        id: 553,
         label: 'Obtain 25 Million Herblore XP',
         description: 'Obtain 25 million experience in your Herblore skill.',
         skillReqs: [{ skill: 'Herblore', level: 99 }],
@@ -8530,7 +8512,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 552,
+        id: 707,
         label: 'Make a Super Combat Potion',
         description: 'Make a Super Combat Potion.',
         skillReqs: [{ skill: 'Herblore', level: 90 }],
@@ -8539,7 +8521,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 670044885,
+        id: 1303,
         label: 'Make an Extended Antifire Potion',
         description: 'Make an extended antifire potion.',
         skillReqs: [{ skill: 'Herblore', level: 84 }],
@@ -8548,7 +8530,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3439562815,
+        id: 548,
         label: 'Reach Level 99 Hitpoints',
         description: 'Reach level 99 in your Hitpoints skill.',
         skillReqs: [{ skill: 'Hitpoints', level: 99 }],
@@ -8557,7 +8539,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1956871672,
+        id: 549,
         label: 'Obtain 25 Million Hitpoints XP',
         description: 'Obtain 25 million experience in your Hitpoints skill.',
         skillReqs: [{ skill: 'Hitpoints', level: 99 }],
@@ -8566,7 +8548,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1082,
+        id: 687,
         label: 'Catch a Baby Impling',
         description: 'Catch a Baby Impling.',
         skillReqs: [{ skill: 'Hunter', level: 17 }],
@@ -8575,7 +8557,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1328640319,
+        id: 688,
         label: 'Snare a Bird',
         description: 'Catch any bird with a Bird Snare.',
         skillReqs: [],
@@ -8584,7 +8566,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1416,
+        id: 1013,
         label: 'Catch a Crimson Swift in the Feldip Hills',
         description: 'Catch a crimson swift in the Feldip Hills.',
         skillReqs: [],
@@ -8593,7 +8575,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1144,
+        id: 689,
         label: 'Equip full Graahk, Larupia or Kyatt',
         description: 'Equip a full set of Graahk, Larupia or Kyatt attire.',
         skillReqs: [{ skill: 'Hunter', level: 31 }],
@@ -8602,7 +8584,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 534,
+        id: 690,
         label: 'Catch a Swamp Lizard or Salamander',
         description: 'Catch either a Swamp Lizard or any kind of Salamander.',
         skillReqs: [{ skill: 'Hunter', level: 29 }],
@@ -8611,7 +8593,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 967,
+        id: 691,
         label: 'Catch a Butterfly',
         description: 'Catch any butterfly.',
         skillReqs: [{ skill: 'Hunter', level: 15 }],
@@ -8620,31 +8602,33 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3372660351,
+        id: 747,
         label: 'Dismantle 20 Filled Bird Houses',
         description: 'Dismantle 20 filled bird houses on Fossil Island.',
         skillReqs: [
             { skill: 'Hunter', level: 5 },
             { skill: 'Crafting', level: 5 },
+            { skill: 'Construction', level: 25 },
         ],
         difficulty: DIFFICULTY.MEDIUM,
         category: undefined,
         subcategory: undefined,
     },
     {
-        id: 606,
+        id: 749,
         label: 'Setup a Yew Bird House',
         description: 'Setup a yew bird house on Fossil Island.',
         skillReqs: [
             { skill: 'Hunter', level: 59 },
             { skill: 'Crafting', level: 60 },
+            { skill: 'Construction', level: 25 },
         ],
         difficulty: DIFFICULTY.MEDIUM,
         category: undefined,
         subcategory: undefined,
     },
     {
-        id: 1009,
+        id: 754,
         label: 'Catch 50 Implings in Puro-Puro',
         description: 'Catch 50 Implings in Puro-Puro.',
         skillReqs: [{ skill: 'Hunter', level: 17 }],
@@ -8653,7 +8637,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1342,
+        id: 894,
         label: 'Catch a Snowy Knight',
         description: 'Catch a snowy knight.',
         skillReqs: [{ skill: 'Hunter', level: 35 }],
@@ -8662,7 +8646,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3104247869,
+        id: 1014,
         label: 'Trap a Spined Larupia in the Feldip Hills',
         description: 'Trap a spined larupia in the Feldip Hills.',
         skillReqs: [{ skill: 'Hunter', level: 31 }],
@@ -8671,7 +8655,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1728720384,
+        id: 1016,
         label: 'Equip a Spottier Cape',
         description: 'Equip a spottier cape.',
         skillReqs: [{ skill: 'Hunter', level: 66 }],
@@ -8680,7 +8664,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1131,
+        id: 1017,
         label: 'Catch a Red Salamander',
         description: 'Catch a red salamander outside the Ourania Altar.',
         skillReqs: [{ skill: 'Hunter', level: 59 }],
@@ -8689,7 +8673,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1273,
+        id: 1182,
         label: 'Catch 30 Orange Salamanders',
         description: 'Catch 30 Orange Salamanders at Uzer.',
         skillReqs: [{ skill: 'Hunter', level: 47 }],
@@ -8698,7 +8682,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 627,
+        id: 1236,
         label: 'Catch a Swamp Lizard in Morytania',
         description: 'Catch a Swamp Lizard in Morytania.',
         skillReqs: [{ skill: 'Hunter', level: 29 }],
@@ -8707,7 +8691,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 628,
+        id: 1305,
         label: 'Catch a Black Salamander',
         description: 'Catch a Black Salamander in the Wilderness.',
         skillReqs: [{ skill: 'Hunter', level: 67 }],
@@ -8716,7 +8700,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2556379449,
+        id: 692,
         label: 'Catch a Dragon Impling',
         description: 'Catch a Dragon Impling.',
         skillReqs: [{ skill: 'Hunter', level: 83 }],
@@ -8725,19 +8709,20 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1272,
+        id: 748,
         label: 'Setup a Magic Bird House',
         description: 'Setup a Magic Bird House on Fossil Island.',
         skillReqs: [
             { skill: 'Hunter', level: 74 },
             { skill: 'Crafting', level: 75 },
+            { skill: 'Construction', level: 25 },
         ],
         difficulty: DIFFICULTY.HARD,
         category: undefined,
         subcategory: undefined,
     },
     {
-        id: 1197,
+        id: 750,
         label: 'Catch 200 Implings in Puro-Puro',
         description: 'Catch 200 Implings in Puro-Puro.',
         skillReqs: [{ skill: 'Hunter', level: 17 }],
@@ -8746,7 +8731,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 702,
+        id: 828,
         label: 'Catch a Crystal Impling',
         description: 'Catch a Crystal impling in Prifddinas.',
         skillReqs: [{ skill: 'Hunter', level: 80 }],
@@ -8755,7 +8740,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 984,
+        id: 895,
         label: 'Trap a Sabre-Toothed Kyatt',
         description: 'Trap a sabre-toothed kyatt.',
         skillReqs: [{ skill: 'Hunter', level: 55 }],
@@ -8764,7 +8749,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 613,
+        id: 1015,
         label: 'Catch 50 Red Chinchompas in Kandarin',
         description: 'Catch 50 red chinchompas in Kandarin',
         skillReqs: [{ skill: 'Hunter', level: 63 }],
@@ -8773,7 +8758,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1065,
+        id: 1306,
         label: 'Catch a Black Chinchompa',
         description: 'Catch a Black Chinchompa in the Wilderness.',
         skillReqs: [{ skill: 'Hunter', level: 73 }],
@@ -8782,7 +8767,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3028355607,
+        id: 562,
         label: 'Reach Level 99 Hunter',
         description: 'Reach level 99 in your Hunter skill.',
         skillReqs: [{ skill: 'Hunter', level: 99 }],
@@ -8791,7 +8776,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1439436418,
+        id: 563,
         label: 'Obtain 25 Million Hunter XP',
         description: 'Obtain 25 million experience in your Hunter skill.',
         skillReqs: [{ skill: 'Hunter', level: 99 }],
@@ -8800,7 +8785,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1010,
+        id: 693,
         label: 'Catch a Lucky Impling Bare-Handed',
         description: 'Catch a Lucky Impling bare-handed.',
         skillReqs: [{ skill: 'Hunter', level: 99 }],
@@ -8809,7 +8794,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3892566733,
+        id: 751,
         label: 'Catch a Herbiboar 100 Times',
         description: 'Catch a Herbiboar on Fossil Island 100 times.',
         skillReqs: [{ skill: 'Hunter', level: 80 }],
@@ -8818,7 +8803,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2209229353,
+        id: 752,
         label: 'Catch a Herbiboar 250 Times',
         description: 'Catch a Herbiboar on Fossil Island 250 times.',
         skillReqs: [{ skill: 'Hunter', level: 80 }],
@@ -8827,7 +8812,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 533,
+        id: 753,
         label: 'Catch a Herbiboar 500 Times',
         description: 'Catch a Herbiboar on Fossil Island 500 times.',
         skillReqs: [{ skill: 'Hunter', level: 80 }],
@@ -8836,7 +8821,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1897119308,
+        id: 755,
         label: 'Receive a Torstol From a Herbiboar',
         description: 'Receive a Torstol From a Herbiboar on Fossil Island.',
         skillReqs: [
@@ -8848,7 +8833,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2014691319,
+        id: 829,
         label: 'Equip an Elven Signet',
         description: 'Equip an Elven signet.',
         skillReqs: [{ skill: 'Hunter', level: 80 }],
@@ -8857,7 +8842,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3020007217,
+        id: 1307,
         label: 'Equip 250 Black Chinchompas',
         description: 'Equip a stack of at least 250 Black Chinchompas.',
         skillReqs: [
@@ -8869,7 +8854,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 931,
+        id: 1308,
         label: 'Equip 500 Black Chinchompas',
         description: 'Equip a stack of at least 500 Black Chinchompas.',
         skillReqs: [
@@ -8881,7 +8866,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1333428963,
+        id: 1309,
         label: 'Equip 1000 Black Chinchompas',
         description: 'Equip a stack of at least 1000 Black Chinchompas.',
         skillReqs: [
@@ -8893,7 +8878,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3066483275,
+        id: 739,
         label: 'Cast Home Teleport',
         description: 'Cast the Home Teleport spell.',
         skillReqs: [],
@@ -8902,7 +8887,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 643,
+        id: 257,
         label: 'Equip a Wizard Robe and Hat',
         description: 'Equip any wizard robe along with any wizard hat.',
         skillReqs: [],
@@ -8911,7 +8896,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1685058948,
+        id: 738,
         label: 'Equip an Elemental Staff',
         description: 'Equip a basic elemental staff.',
         skillReqs: [],
@@ -8920,7 +8905,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1349,
+        id: 258,
         label: 'Equip a Piece of a Mystic Set',
         description: 'Equip any piece of any Mystic robe set.',
         skillReqs: [
@@ -8932,7 +8917,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2372909226,
+        id: 740,
         label: 'Teleport Using Law Runes',
         description: 'Cast any teleport spell that uses Law Runes.',
         skillReqs: [{ skill: 'Magic', level: 25 }],
@@ -8941,7 +8926,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 561,
+        id: 741,
         label: 'Equip an Elemental Battlestaff or Mystic Staff',
         description: 'Equip either an elemental battlestaff or an elemental mystic staff.',
         skillReqs: [
@@ -8953,7 +8938,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 714,
+        id: 742,
         label: 'Cast a Blast Spell',
         description: 'Cast any blast spell.',
         skillReqs: [{ skill: 'Magic', level: 41 }],
@@ -8962,7 +8947,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 562,
+        id: 743,
         label: 'Cast High Level Alchemy',
         description: 'Cast the High Level Alchemy spell.',
         skillReqs: [{ skill: 'Magic', level: 55 }],
@@ -8971,7 +8956,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 900592686,
+        id: 1191,
         label: 'Cast Ice Rush',
         description: 'Cast the Ice Rush spell.',
         skillReqs: [{ skill: 'Magic', level: 58 }],
@@ -8980,7 +8965,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 46437158,
+        id: 1351,
         label: 'Equip a God Cape',
         description: 'Equip either a Saradomin cape, a Guthix cape or Zamorak cape.',
         skillReqs: [{ skill: 'Magic', level: 60 }],
@@ -8989,7 +8974,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1222,
+        id: 1353,
         label: 'Cast Saradomin Strike',
         description: 'Cast the Saradomin Strike spell outside of the Mage Arena.',
         skillReqs: [{ skill: 'Magic', level: 60 }],
@@ -8998,7 +8983,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2428714253,
+        id: 1354,
         label: 'Cast Claws of Guthix',
         description: 'Cast the Claws of Guthix spell outside of the Mage Arena.',
         skillReqs: [{ skill: 'Magic', level: 60 }],
@@ -9007,7 +8992,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2796114153,
+        id: 1355,
         label: 'Cast Flames of Zamorak',
         description: 'Cast the Flames of Zamorak spell outside of the Mage Arena.',
         skillReqs: [{ skill: 'Magic', level: 60 }],
@@ -9016,7 +9001,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1074,
+        id: 1474,
         label: 'Cast Resurrect Superior Ghost',
         description: 'Resurrect a ghost by using the Resurrect Superior Ghost spell.',
         skillReqs: [{ skill: 'Magic', level: 57 }],
@@ -9025,7 +9010,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 869,
+        id: 1475,
         label: 'Inferior Demonbane Demon Kill',
         description: 'Kill a demon using the Inferior Demonbane spell.',
         skillReqs: [{ skill: 'Magic', level: 44 }],
@@ -9034,7 +9019,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 468702883,
+        id: 286,
         label: 'Cast Resurrect Crops',
         description: 'Cast the spell Resurrect Crops from the Arceuus spellbook.',
         skillReqs: [{ skill: 'Magic', level: 78 }],
@@ -9043,7 +9028,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1070,
+        id: 385,
         label: 'Equip a Dust Battlestaff',
         description: 'Obtain and equip a Dust battlestaff.',
         skillReqs: [
@@ -9055,7 +9040,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 557,
+        id: 386,
         label: 'Equip a Mist Battlestaff',
         description: 'Obtain and equip a Mist battlestaff.',
         skillReqs: [
@@ -9067,7 +9052,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 903,
+        id: 483,
         label: 'Cast Kourend Castle Teleport',
         description:
             'Cast the spell Kourend Castle Teleport after unlocking it by reading transportation incantations.',
@@ -9077,7 +9062,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 810100140,
+        id: 744,
         label: 'Equip a Combination Battlestaff or Mystic Staff',
         description: 'Equip either a combination battlestaff or a combination mystic staff.',
         skillReqs: [
@@ -9089,7 +9074,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3505768833,
+        id: 745,
         label: 'Cast a Wave Spell',
         description: 'Cast any wave spell.',
         skillReqs: [{ skill: 'Magic', level: 62 }],
@@ -9098,7 +9083,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 713,
+        id: 746,
         label: 'Cast a Surge Spell',
         description: 'Cast any surge spell.',
         skillReqs: [{ skill: 'Magic', level: 81 }],
@@ -9107,7 +9092,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3791566500,
+        id: 786,
         label: "Equip Bryophyta's Staff",
         description: "Equip Bryophyta's staff.",
         skillReqs: [
@@ -9119,7 +9104,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1182,
+        id: 882,
         label: 'Switch to the Lunar Spellbook',
         description: 'Switch to the Lunar Spellbook.',
         skillReqs: [],
@@ -9128,7 +9113,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1227,
+        id: 883,
         label: 'Cast Moonclan Teleport',
         description: 'Cast the Moonclan Teleport spell.',
         skillReqs: [{ skill: 'Magic', level: 69 }],
@@ -9137,7 +9122,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1076,
+        id: 884,
         label: 'Cast Fertile Soil',
         description: 'Cast the Fertile Soil spell.',
         skillReqs: [{ skill: 'Magic', level: 83 }],
@@ -9146,7 +9131,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 229101749,
+        id: 937,
         label: 'Equip a Mud Battlestaff',
         description: 'Equip a mud battlestaff.',
         skillReqs: [
@@ -9158,7 +9143,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1202,
+        id: 1189,
         label: 'Cast Ice Burst',
         description: 'Cast the Ice Burst spell.',
         skillReqs: [{ skill: 'Magic', level: 70 }],
@@ -9167,7 +9152,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1219,
+        id: 1192,
         label: 'Cast Ice Blitz',
         description: 'Cast the Ice Blitz spell.',
         skillReqs: [{ skill: 'Magic', level: 82 }],
@@ -9176,7 +9161,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1504978158,
+        id: 1194,
         label: 'Cast Smoke Barrage',
         description: 'Cast the Smoke Barrage spell.',
         skillReqs: [{ skill: 'Magic', level: 86 }],
@@ -9185,7 +9170,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1221,
+        id: 1196,
         label: 'Cast Shadow Barrage',
         description: 'Cast the Shadow Barrage spell.',
         skillReqs: [{ skill: 'Magic', level: 88 }],
@@ -9194,7 +9179,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 79619491,
+        id: 1207,
         label: 'Equip a Piece of the Infinity Robe Set',
         description: 'Equip any piece of the Infinity robe set.',
         skillReqs: [
@@ -9206,7 +9191,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2089356989,
+        id: 1211,
         label: 'Cast Paddewwa Teleport',
         description: 'Cast the Paddewwa Teleport spell.',
         skillReqs: [{ skill: 'Magic', level: 54 }],
@@ -9215,7 +9200,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 933928392,
+        id: 1352,
         label: 'Imbue a God Cape',
         description: 'Imbue either a Saradomin cape, a Guthix cape or Zamorak cape.',
         skillReqs: [],
@@ -9224,7 +9209,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1177702941,
+        id: 1370,
         label: "Equip a Piece of the Dagon'Hai Set",
         description: "Equip any piece of the Dagon'hai robes set.",
         skillReqs: [
@@ -9236,7 +9221,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 921,
+        id: 1472,
         label: 'Cast Degrime Spell Full Clean',
         description: 'Clean 26 herbs using the Degrime spell.',
         skillReqs: [{ skill: 'Magic', level: 70 }],
@@ -9245,7 +9230,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 240250934,
+        id: 542,
         label: 'Reach Level 99 Magic',
         description: 'Reach level 99 in your Magic skill.',
         skillReqs: [{ skill: 'Magic', level: 99 }],
@@ -9254,7 +9239,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3407519265,
+        id: 543,
         label: 'Obtain 25 Million Magic XP',
         description: 'Obtain 25 million experience in your Magic skill.',
         skillReqs: [{ skill: 'Magic', level: 99 }],
@@ -9263,7 +9248,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1081,
+        id: 885,
         label: 'Cast Spellbook Swap',
         description: 'Cast the Spellbook Swap spell.',
         skillReqs: [{ skill: 'Magic', level: 96 }],
@@ -9272,7 +9257,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 603,
+        id: 899,
         label: 'Create a Catherby Teleport Tablet',
         description: 'Create a Catherby Teleport Tablet.',
         skillReqs: [{ skill: 'Magic', level: 87 }],
@@ -9281,7 +9266,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1204,
+        id: 1193,
         label: 'Cast Blood Barrage',
         description: 'Cast the Blood Barrage spell.',
         skillReqs: [{ skill: 'Magic', level: 92 }],
@@ -9290,7 +9275,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1220,
+        id: 1195,
         label: 'Cast Ice Barrage',
         description: 'Cast the Ice Barrage spell.',
         skillReqs: [{ skill: 'Magic', level: 94 }],
@@ -9299,7 +9284,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 163219416,
+        id: 1208,
         label: 'Equip a Full Infinity Robe Set',
         description: 'Equip a full set of Infinity robes.',
         skillReqs: [
@@ -9311,7 +9296,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1136,
+        id: 1212,
         label: 'Equip a Master Wand',
         description: 'Equip a Master Wand.',
         skillReqs: [{ skill: 'Magic', level: 60 }],
@@ -9320,7 +9305,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 710,
+        id: 1216,
         label: "Equip a Mage's Book",
         description: "Equip a Mage's Book.",
         skillReqs: [{ skill: 'Magic', level: 60 }],
@@ -9329,7 +9314,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 630939783,
+        id: 1265,
         label: 'Equip a Sanguinesti Staff',
         description: 'Equip a Sanguinesti staff.',
         skillReqs: [{ skill: 'Magic', level: 75 }],
@@ -9338,7 +9323,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1952011986,
+        id: 1371,
         label: "Equip a Full Dagon'Hai Set",
         description: "Equip a full set of Dagon'hai robes.",
         skillReqs: [
@@ -9350,7 +9335,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1196,
+        id: 1372,
         label: 'Craft a Ghorrock Teleport Tablet',
         description: 'Craft a Ghorrock Teleport Tablet.',
         skillReqs: [{ skill: 'Magic', level: 96 }],
@@ -9359,7 +9344,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 647,
+        id: 1473,
         label: 'Cast Full Sinister Offering',
         description: 'Offer 3 bones in your inventory using the Sinister Offering spell.',
         skillReqs: [{ skill: 'Magic', level: 92 }],
@@ -9368,7 +9353,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 600,
+        id: 609,
         label: 'Mine some Copper Ore',
         description: 'Mine some Copper Ore.',
         skillReqs: [],
@@ -9377,7 +9362,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 243535452,
+        id: 610,
         label: 'Mine some Ore With a Steel Pickaxe',
         description: 'Mine any ore using a Steel Pickaxe.',
         skillReqs: [{ skill: 'Mining', level: 6 }],
@@ -9386,7 +9371,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 549,
+        id: 611,
         label: 'Obtain a Gem While Mining',
         description: 'Obtain any kind of gem whilst mining a rock.',
         skillReqs: [],
@@ -9395,7 +9380,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3959504706,
+        id: 612,
         label: 'Mine 50 Iron Ore',
         description: 'Mine 50 Iron Ore.',
         skillReqs: [{ skill: 'Mining', level: 15 }],
@@ -9404,7 +9389,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 520,
+        id: 613,
         label: 'Mine some Ore With a Rune Pickaxe',
         description: 'Mine any ore using a Rune Pickaxe.',
         skillReqs: [{ skill: 'Mining', level: 41 }],
@@ -9413,7 +9398,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1657216666,
+        id: 614,
         label: 'Obtain a Clue Geode While Mining',
         description: 'Obtain any kind of clue geode whilst mining a rock.',
         skillReqs: [],
@@ -9422,7 +9407,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 571,
+        id: 756,
         label: 'Complete a Volcanic Mine Game',
         description: 'Complete a Volcanic Mine game on Fossil Island.',
         skillReqs: [{ skill: 'Mining', level: 50 }],
@@ -9431,7 +9416,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2526472909,
+        id: 1094,
         label: 'Obtain 20 Golden Nuggets',
         description: 'Obtain 20 golden nuggets from the Motherlode Mine beneath Falador.',
         skillReqs: [{ skill: 'Mining', level: 30 }],
@@ -9440,7 +9425,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 684,
+        id: 1183,
         label: 'Mine 30 Chunks of Granite',
         description: 'Mine 30 chunks of Granite at the Kharidian Desert Quarry.',
         skillReqs: [{ skill: 'Mining', level: 45 }],
@@ -9449,7 +9434,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1071,
+        id: 283,
         label: 'Obtain Adamantite Ore at the Blast Mine',
         description: 'Obtain a piece of Adamantite ore while taking part in the Blast Mine.',
         skillReqs: [{ skill: 'Mining', level: 60 }],
@@ -9458,7 +9443,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 599,
+        id: 615,
         label: 'Mine 50 Adamantite Ore',
         description: 'Mine 50 Adamantite Ore.',
         skillReqs: [{ skill: 'Mining', level: 70 }],
@@ -9467,7 +9452,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2905203008,
+        id: 757,
         label: 'Buy an Ash Covered Tome',
         description: "Buy an ash covered tome from Petrified Pete's Ore Shop on Fossil Island.",
         skillReqs: [{ skill: 'Mining', level: 50 }],
@@ -9476,7 +9461,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1048,
+        id: 897,
         label: 'Use Some Icy Basalt to Teleport to Weiss',
         description: 'Use some icy basalt to teleport to Weiss.',
         skillReqs: [],
@@ -9485,7 +9470,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 556,
+        id: 898,
         label: 'Use Your Portal Nexus to Teleport to Weiss',
         description: 'Use a portal nexus in your player-owned house to teleport to Weiss.',
         skillReqs: [{ skill: 'Construction', level: 72 }],
@@ -9494,7 +9479,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 642,
+        id: 1095,
         label: 'Equip a Full Prospector Outfit',
         description: 'Equip a full set of prospector gear.',
         skillReqs: [{ skill: 'Mining', level: 30 }],
@@ -9503,7 +9488,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1138,
+        id: 1238,
         label: 'Convert 2,000 Daeyalt Shards Into Essence',
         description: 'Convert 2,000 Daeyalt Shards into Daeyalt Essence in Darkmeyer in one go.',
         skillReqs: [{ skill: 'Mining', level: 60 }],
@@ -9512,7 +9497,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2119684323,
+        id: 284,
         label: 'Obtain Runite Ore at the Blast Mine',
         description: 'Obtain a piece of Runite ore while taking part in the Blast Mine.',
         skillReqs: [{ skill: 'Mining', level: 75 }],
@@ -9521,7 +9506,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3160408807,
+        id: 564,
         label: 'Reach Level 99 Mining',
         description: 'Reach level 99 in your Mining skill.',
         skillReqs: [{ skill: 'Mining', level: 99 }],
@@ -9530,7 +9515,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1246274482,
+        id: 565,
         label: 'Obtain 25 Million Mining XP',
         description: 'Obtain 25 million experience in your Mining skill.',
         skillReqs: [{ skill: 'Mining', level: 99 }],
@@ -9539,7 +9524,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 519,
+        id: 758,
         label: 'Mine a Runite Ore Fragment',
         description: 'Mine a runite ore fragment in the Volcanic Mine on Fossil Island.',
         skillReqs: [{ skill: 'Mining', level: 85 }],
@@ -9548,7 +9533,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1201,
+        id: 1314,
         label: 'Mine Some Runite Ore in the Wilderness',
         description: 'Mine some Runite Ore in the Wilderness.',
         skillReqs: [{ skill: 'Mining', level: 85 }],
@@ -9557,7 +9542,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1063,
+        id: 316,
         label: 'Bury Some Bones',
         description: 'Bury any kind of Bones.',
         skillReqs: [],
@@ -9566,7 +9551,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 715,
+        id: 313,
         label: 'Restore 5 Prayer Points at an Altar',
         description: 'Restore 5 or more Prayer Points at any altar.',
         skillReqs: [{ skill: 'Prayer', level: 5 }],
@@ -9575,7 +9560,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1143,
+        id: 314,
         label: 'Superhuman Strength and Improved Reflexes',
         description: 'Use both the Superhuman Strength prayer and the Improved Reflexes prayer at the same time.',
         skillReqs: [{ skill: 'Prayer', level: 16 }],
@@ -9584,7 +9569,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1062,
+        id: 1298,
         label: 'Sacrifice Some Bones at the Chaos Temple',
         description: 'Sacrifice some Bones at the Western Chaos Temple altar.',
         skillReqs: [],
@@ -9593,7 +9578,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 716,
+        id: 408,
         label: 'Reach a Prayer Bonus of 15',
         description: 'Equip enough items to reach a Prayer bonus of 15 or more.',
         skillReqs: [],
@@ -9602,7 +9587,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1130,
+        id: 494,
         label: 'Bury Some Wyvern or Dragon Bones',
         description: 'Bury either some Wyvern Bones or some Dragon Bones.',
         skillReqs: [],
@@ -9611,7 +9596,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1247,
+        id: 695,
         label: 'Use the Protect from Melee Prayer',
         description: 'Use the Protect from Melee prayer.',
         skillReqs: [{ skill: 'Prayer', level: 43 }],
@@ -9620,7 +9605,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 909,
+        id: 773,
         label: 'Use Enriched Bones on the Strange Machine',
         description: 'Use Enriched bones on the Strange Machine on Fossil Island.',
         skillReqs: [],
@@ -9629,7 +9614,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2900221256,
+        id: 1299,
         label: 'Sacrifice Some Dragon Bones at the Chaos Temple',
         description: 'Sacrifice some Dragon bones at the Western Chaos Temple altar.',
         skillReqs: [],
@@ -9638,7 +9623,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 650,
+        id: 1300,
         label: 'Bury Some Lava Dragon Bones',
         description: 'Bury some Lava dragon bones.',
         skillReqs: [],
@@ -9647,7 +9632,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3940472288,
+        id: 228,
         label: 'Restore 75 Prayer Points at an Altar',
         description: 'Restore 75 or more Prayer Points at any altar.',
         skillReqs: [{ skill: 'Prayer', level: 75 }],
@@ -9656,7 +9641,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 505,
+        id: 229,
         label: 'Reach a Prayer Bonus of 30',
         description: 'Equip enough items to reach a Prayer bonus of 30 or more.',
         skillReqs: [],
@@ -9665,7 +9650,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 12455040,
+        id: 1392,
         label: 'Activate an Arcane or Dexterous Prayer Scroll',
         description: 'Activate an Arcane or Dexterous prayer scroll.',
         skillReqs: [
@@ -9677,7 +9662,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3254235774,
+        id: 540,
         label: 'Reach Level 99 Prayer',
         description: 'Reach level 99 in your Prayer skill.',
         skillReqs: [{ skill: 'Prayer', level: 99 }],
@@ -9686,7 +9671,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 421738683,
+        id: 541,
         label: 'Obtain 25 Million Prayer XP',
         description: 'Obtain 25 million experience in your Prayer skill.',
         skillReqs: [{ skill: 'Prayer', level: 99 }],
@@ -9695,7 +9680,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 975,
+        id: 801,
         label: 'Complete Rune Mysteries',
         description: 'Complete the Rune Mysteries quest.',
         skillReqs: [],
@@ -9704,7 +9689,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1370,
+        id: 809,
         label: 'Complete Sheep Shearer',
         description: 'Complete the Sheep Shearer quest.',
         skillReqs: [],
@@ -9713,7 +9698,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1170,
+        id: 813,
         label: 'Complete Romeo & Juliet',
         description: 'Complete the Romeo & Juliet quest',
         skillReqs: [],
@@ -9722,7 +9707,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1352,
+        id: 815,
         label: "Complete Gertrude's Cat",
         description: "Complete the Gertrude's Cat quest.",
         skillReqs: [],
@@ -9731,7 +9716,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1001,
+        id: 821,
         label: 'Complete the Natural History Quiz',
         description: 'Complete the Natural History Quiz in the Varrock Museum.',
         skillReqs: [],
@@ -9740,7 +9725,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 920,
+        id: 1064,
         label: "Complete Monk's Friend",
         description: "Complete the Monk's Friend quest.",
         skillReqs: [],
@@ -9749,7 +9734,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 296037414,
+        id: 0,
         label: 'Client of Kourend',
         description: 'Complete the quest "Client of Kourend".',
         skillReqs: [],
@@ -9758,7 +9743,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 510,
+        id: 1,
         label: 'Queen of Thieves',
         description: 'Complete the quest "Queen of Thieves".',
         skillReqs: [],
@@ -9767,7 +9752,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4159593286,
+        id: 2,
         label: 'Forsaken Tower',
         description: 'Complete the quest "Forsaken Tower".',
         skillReqs: [],
@@ -9776,7 +9761,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1345,
+        id: 3,
         label: 'Ascent of Arceuus',
         description: 'Complete the quest "Ascent of Arceuus".',
         skillReqs: [],
@@ -9785,7 +9770,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1343,
+        id: 812,
         label: 'Complete Vampyre Slayer',
         description: 'Complete the Vampyre Slayer quest.',
         skillReqs: [],
@@ -9794,7 +9779,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1264,
+        id: 1066,
         label: 'Complete Tower of Life',
         description: 'Complete the Tower of Life quest.',
         skillReqs: [],
@@ -9803,7 +9788,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1208,
+        id: 1068,
         label: 'Complete Sea Slug',
         description: 'Complete the Sea Slug quest.',
         skillReqs: [],
@@ -9812,7 +9797,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3784660342,
+        id: 1221,
         label: 'Complete The Golem',
         description: 'Complete The Golem quest.',
         skillReqs: [
@@ -9824,7 +9809,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1338,
+        id: 1509,
         label: 'Complete Fishing Contest',
         description: 'Complete the Fishing Contest Quest',
         skillReqs: [{ skill: 'Fishing', level: 10 }],
@@ -9833,7 +9818,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 681,
+        id: 4,
         label: 'Depths of Despair',
         description: 'Complete the quest "Depths of Despair".',
         skillReqs: [],
@@ -9842,7 +9827,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1407,
+        id: 5,
         label: 'Tale Of The Righteous',
         description: 'Complete the quest "Tale of the Righteous".',
         skillReqs: [],
@@ -9851,7 +9836,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1534857586,
+        id: 6,
         label: 'In Search Of Knowledge',
         description: 'Complete the mini-quest "In Search Of Knowledge".',
         skillReqs: [],
@@ -9860,7 +9845,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 156288058,
+        id: 7,
         label: 'Architectural Alliance',
         description: 'Complete the mini-quest "Architectural Alliance".',
         skillReqs: [],
@@ -9869,7 +9854,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1000,
+        id: 808,
         label: 'Complete Demon Slayer',
         description: 'Complete the Demon Slayer quest.',
         skillReqs: [],
@@ -9878,7 +9863,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1003,
+        id: 804,
         label: 'Complete The Lost Tribe',
         description: 'Complete The Lost Tribe quest.',
         skillReqs: [],
@@ -9887,7 +9872,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1292,
+        id: 806,
         label: 'Complete Death to the Dorgeshuun',
         description: 'Complete the Death to the Dorgeshuun quest.',
         skillReqs: [
@@ -9899,7 +9884,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1353,
+        id: 820,
         label: "Complete a Soul's Bane",
         description: "Complete the A Soul's Bane quest.",
         skillReqs: [],
@@ -9908,7 +9893,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 974,
+        id: 948,
         label: 'Complete Throne of Miscellania',
         description: 'Complete the Throne of Miscellania quest.',
         skillReqs: [],
@@ -9917,7 +9902,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1256,
+        id: 953,
         label: 'Complete Royal Trouble',
         description: 'Complete the Royal Trouble quest.',
         skillReqs: [],
@@ -9926,7 +9911,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1262,
+        id: 955,
         label: "Complete Olaf's Quest",
         description: "Complete Olaf's Quest.",
         skillReqs: [],
@@ -9935,7 +9920,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1226,
+        id: 1067,
         label: 'Complete Elemental Workshop II',
         description: 'Complete the Elemental Workshop II quest.',
         skillReqs: [],
@@ -9944,7 +9929,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 906,
+        id: 1069,
         label: 'Complete the Observatory Quest',
         description: 'Complete the Observatory Quest.',
         skillReqs: [],
@@ -9953,7 +9938,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 550,
+        id: 1142,
         label: 'Complete A Porcine of Interest',
         description: 'Complete the A Porcine of Interest quest.',
         skillReqs: [],
@@ -9962,7 +9947,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1174,
+        id: 1210,
         label: 'Complete Spirits of the Elid',
         description: 'Complete the Spirits of the Elid quest.',
         skillReqs: [
@@ -9976,7 +9961,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1260,
+        id: 1220,
         label: 'Complete Shadow of the Storm',
         description: 'Complete the Shadow of the Storm quest.',
         skillReqs: [{ skill: 'Crafting', level: 30 }],
@@ -9985,7 +9970,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 973,
+        id: 1288,
         label: 'Complete Haunted Mine',
         description: 'Complete the Haunted Mine quest.',
         skillReqs: [],
@@ -9994,7 +9979,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1274,
+        id: 1292,
         label: 'Complete A Taste of Hope',
         description: 'Complete the A Taste of Hope quest.',
         skillReqs: [],
@@ -10003,7 +9988,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1205,
+        id: 1289,
         label: 'Complete Sins of the Father',
         description: 'Complete the Sins of the Father quest.',
         skillReqs: [],
@@ -10012,7 +9997,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3877791050,
+        id: 1387,
         label: "Complete Enakhra's Lament",
         description: "Complete the Enakhra's Lament quest.",
         skillReqs: [
@@ -10026,7 +10011,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 883278815,
+        id: 1522,
         label: 'The Frozen Door',
         description: 'Complete the miniquest "The Frozen Door".',
         skillReqs: [
@@ -10040,7 +10025,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3571116628,
+        id: 729,
         label: 'Equip a Studded Body and Chaps',
         description: 'Equip a Studded Body along with some Studded Chaps.',
         skillReqs: [
@@ -10052,7 +10037,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 977,
+        id: 734,
         label: 'Equip a Maple Shortbow',
         description: 'Equip a Maple Shortbow.',
         skillReqs: [{ skill: 'Ranged', level: 30 }],
@@ -10061,7 +10046,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2339455030,
+        id: 730,
         label: 'Equip a Full Green Dragonhide Set',
         description: "Equip a green d'hide body, some green d'hide chaps and some green d'hide vambs.",
         skillReqs: [
@@ -10073,7 +10058,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 264523259,
+        id: 731,
         label: 'Equip a Full Blue Dragonhide Set',
         description: "Equip a blue d'hide body, some blue d'hide chaps and some blue d'hide vambs.",
         skillReqs: [
@@ -10085,7 +10070,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 941,
+        id: 732,
         label: 'Equip a Full Red Dragonhide Set',
         description: "Equip a red d'hide body, some red d'hide chaps and some red d'hide vambs.",
         skillReqs: [
@@ -10097,7 +10082,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3841169682,
+        id: 735,
         label: 'Equip a Yew Shortbow',
         description: 'Equip a Yew Shortbow.',
         skillReqs: [{ skill: 'Ranged', level: 40 }],
@@ -10106,7 +10091,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 445249074,
+        id: 24,
         label: 'Equip Some Ranger Boots',
         description: 'Equip a pair of Ranger Boots.',
         skillReqs: [{ skill: 'Ranged', level: 40 }],
@@ -10115,7 +10100,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 641,
+        id: 733,
         label: 'Equip a Full Black Dragonhide Set',
         description: "Equip a black d'hide body, some black d'hide chaps and some black d'hide vambs.",
         skillReqs: [
@@ -10127,7 +10112,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1009816784,
+        id: 736,
         label: 'Equip a Magic Shortbow',
         description: 'Equip a Magic Shortbow.',
         skillReqs: [{ skill: 'Ranged', level: 50 }],
@@ -10136,7 +10121,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 637,
+        id: 737,
         label: 'Equip a Rune Crossbow',
         description: 'Equip a Rune Crossbow.',
         skillReqs: [{ skill: 'Ranged', level: 61 }],
@@ -10145,7 +10130,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 41823503,
+        id: 853,
         label: 'Equip a Dark Bow',
         description: 'Equip a dark bow.',
         skillReqs: [
@@ -10157,7 +10142,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1590793109,
+        id: 907,
         label: "Equip an Ava's Assembler",
         description: "Equip an ava's assembler.",
         skillReqs: [{ skill: 'Ranged', level: 70 }],
@@ -10166,7 +10151,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3296164190,
+        id: 538,
         label: 'Reach Level 99 Ranged',
         description: 'Reach level 99 in your Ranged skill.',
         skillReqs: [{ skill: 'Ranged', level: 99 }],
@@ -10175,7 +10160,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3970663899,
+        id: 539,
         label: 'Obtain 25 Million Ranged XP',
         description: 'Obtain 25 million experience in your Ranged skill.',
         skillReqs: [{ skill: 'Ranged', level: 99 }],
@@ -10184,7 +10169,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1428,
+        id: 1347,
         label: "Equip a Craw's Bow",
         description: "Equip a Craw's Bow.",
         skillReqs: [{ skill: 'Ranged', level: 60 }],
@@ -10193,7 +10178,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 972,
+        id: 672,
         label: 'Visit the Rune Essence Mine',
         description: 'Visit the Rune Essence Mine.',
         skillReqs: [],
@@ -10202,7 +10187,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 609,
+        id: 1097,
         label: 'Craft an Air Rune',
         description: 'Craft an air rune at the Air Altar.',
         skillReqs: [{ skill: 'Runecraft', level: 1 }],
@@ -10211,7 +10196,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3056002894,
+        id: 673,
         label: 'Craft Any Rune',
         description: 'Use a Runecrafting Altar to craft any type of rune.',
         skillReqs: [],
@@ -10220,7 +10205,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1346,
+        id: 674,
         label: 'Locate a Runecrafting Altar With a Talisman',
         description: 'Use any talisman to check the location of a Runecrafting Altar.',
         skillReqs: [],
@@ -10229,7 +10214,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 840,
+        id: 771,
         label: 'Craft 50 Water Runes',
         description: 'Craft 50 Water Runes at the Water Altar.',
         skillReqs: [{ skill: 'Runecraft', level: 5 }],
@@ -10238,7 +10223,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4197487557,
+        id: 1177,
         label: 'Craft a Fire Rune',
         description: 'Craft a Fire Rune at the Fire Altar.',
         skillReqs: [{ skill: 'Runecraft', level: 14 }],
@@ -10247,7 +10232,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1060,
+        id: 1311,
         label: 'Use the Abyss',
         description: 'Use the Abyss to access a Runecrafting Altar.',
         skillReqs: [],
@@ -10256,7 +10241,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 698,
+        id: 675,
         label: 'Craft 200 Essence Into Runes',
         description: 'Use Runecrafting Altars to craft 200 essence into runes of any type.',
         skillReqs: [],
@@ -10265,7 +10250,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 905,
+        id: 676,
         label: 'Craft 4 Runes With 1 Essence',
         description: 'Use a Runecrafting Altar to craft 4 of any type of rune using a single essence.',
         skillReqs: [{ skill: 'Runecraft', level: 33 }],
@@ -10274,7 +10259,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 542,
+        id: 677,
         label: 'Craft Any Combination Rune',
         description: 'Use a Runecrafting Altar to craft any type of combination rune.',
         skillReqs: [{ skill: 'Runecraft', level: 6 }],
@@ -10283,7 +10268,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1409,
+        id: 772,
         label: 'Craft 50 Cosmic Runes',
         description: 'Craft 50 Cosmic Runes at the Cosmic Altar.',
         skillReqs: [{ skill: 'Runecraft', level: 27 }],
@@ -10292,7 +10277,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 856,
+        id: 90001,
         label: 'Craft 50 Death Runes',
         description: 'Craft 50 death runes at the Death Altar.',
         skillReqs: [{ skill: 'Runecraft', level: 65 }],
@@ -10301,7 +10286,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1251,
+        id: 968,
         label: 'Craft 50 Nature Runes',
         description: 'Craft 50 Nature Runes at the Nature Altar.',
         skillReqs: [{ skill: 'Runecraft', level: 44 }],
@@ -10310,7 +10295,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1441764313,
+        id: 1098,
         label: 'Craft a Body Rune',
         description: 'Craft a body rune at the Body Altar.',
         skillReqs: [{ skill: 'Runecraft', level: 20 }],
@@ -10319,7 +10304,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 531,
+        id: 1178,
         label: 'Craft a Lava Rune at the Fire Altar',
         description: 'Craft a Lava Rune at the Fire Altar.',
         skillReqs: [{ skill: 'Runecraft', level: 23 }],
@@ -10328,7 +10313,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 618,
+        id: 1312,
         label: 'Fill a Large Pouch',
         description: 'Fill a Large Pouch with Essence.',
         skillReqs: [{ skill: 'Runecraft', level: 50 }],
@@ -10337,7 +10322,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 692,
+        id: 1409,
         label: 'Craft a Chaos Rune using a Chaos Core',
         description: 'Craft a Chaos Rune using a Chaos Core.',
         skillReqs: [{ skill: 'Runecraft', level: 35 }],
@@ -10346,7 +10331,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 693,
+        id: 678,
         label: 'Craft 2500 Essence Into Runes',
         description: 'Use Runecrafting Altars to craft 2500 essence into runes of any type.',
         skillReqs: [],
@@ -10355,7 +10340,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1279,
+        id: 890,
         label: 'Craft 50 Astral Runes',
         description: 'Craft 50 astral runes at the Astral Altar.',
         skillReqs: [{ skill: 'Runecraft', level: 40 }],
@@ -10364,7 +10349,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1132,
+        id: 1099,
         label: 'Craft 50 Law Runes',
         description: 'Craft 50 law runes at the Law Altar.',
         skillReqs: [{ skill: 'Runecraft', level: 54 }],
@@ -10373,7 +10358,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1326,
+        id: 1239,
         label: 'Craft a Rune Using Daeyalt Essence',
         description: 'Craft any rune using Daeyalt Essence.',
         skillReqs: [{ skill: 'Mining', level: 60 }],
@@ -10382,7 +10367,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 696,
+        id: 1313,
         label: 'Fill a Giant Pouch',
         description: 'Fill a giant pouch with Essence.',
         skillReqs: [{ skill: 'Runecraft', level: 75 }],
@@ -10391,7 +10376,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 627972399,
+        id: 544,
         label: 'Reach Level 99 Runecraft',
         description: 'Reach level 99 in your Runecraft skill.',
         skillReqs: [{ skill: 'Runecraft', level: 99 }],
@@ -10400,7 +10385,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2318995208,
+        id: 545,
         label: 'Obtain 25 Million Runecraft XP',
         description: 'Obtain 25 million experience in your Runecraft skill.',
         skillReqs: [{ skill: 'Runecraft', level: 99 }],
@@ -10409,7 +10394,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1124,
+        id: 624,
         label: 'Receive a Slayer Task',
         description: 'Receive a slayer task from any Slayer Master.',
         skillReqs: [],
@@ -10418,7 +10403,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 525,
+        id: 476,
         label: 'Receive a Konar Slayer Task',
         description: 'Have a slayer task assigned by Konar.',
         skillReqs: [{ skill: 'Combat', level: 5 }],
@@ -10427,7 +10412,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 575,
+        id: 625,
         label: 'Earn Some Slayer Points',
         description: 'Earn some slayer points by completing a Slayer Task.',
         skillReqs: [{ skill: 'Combat', level: 20 }],
@@ -10436,7 +10421,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 593,
+        id: 626,
         label: 'Check Your Slayer Task',
         description: 'Use an Enchanted Gem to check your Slayer Task.',
         skillReqs: [],
@@ -10445,7 +10430,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 985,
+        id: 629,
         label: 'Equip a Spiny Helmet',
         description: 'Equip a Spiny Helmet.',
         skillReqs: [{ skill: 'Defence', level: 5 }],
@@ -10454,16 +10439,16 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3189287851,
+        id: 784,
         label: 'Receive a Slayer Task From Vannaka',
         description: 'Receive a Slayer task from Vannaka in Edgeville Dungeon.',
-        skillReqs: [],
+        skillReqs: [{ skill: 'Combat', level: 40 }],
         difficulty: DIFFICULTY.EASY,
         category: undefined,
         subcategory: undefined,
     },
     {
-        id: 1194,
+        id: 905,
         label: 'Defeat a Cockatrice in the Fremennik Province',
         description: 'Defeat a cockatrice in the Fremennik Province.',
         skillReqs: [{ skill: 'Slayer', level: 25 }],
@@ -10472,7 +10457,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 894,
+        id: 909,
         label: 'Defeat a Pyrefiend in the Fremennik Province',
         description: 'Defeat a pyrefiend in the Fremennik Province.',
         skillReqs: [{ skill: 'Slayer', level: 30 }],
@@ -10481,7 +10466,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1254,
+        id: 1104,
         label: 'Receive a Slayer Task From Turael or Spria',
         description: 'Receive a Slayer task From Turael in Burthorpe or Spria in Draynor Village.',
         skillReqs: [{ skill: 'Slayer', level: 1 }],
@@ -10490,7 +10475,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3802450685,
+        id: 1240,
         label: 'Receive a Slayer Task From Mazchna',
         description: 'Receive a Slayer task from Mazchna in Canifis.',
         skillReqs: [],
@@ -10499,7 +10484,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 908,
+        id: 627,
         label: 'Unlock Bigger and Badder',
         description: 'Purchase the Bigger and Badder unlock from the Slayer Rewards Shop.',
         skillReqs: [],
@@ -10508,7 +10493,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 742108274,
+        id: 628,
         label: 'Slay 250 Creatures',
         description: 'Slay 250 creatures whilst on a Slayer Task.',
         skillReqs: [],
@@ -10517,7 +10502,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 970,
+        id: 630,
         label: 'Defeat a Superior Slayer Creature',
         description: 'Defeat any Superior Slayer Creature.',
         skillReqs: [{ skill: 'Slayer', level: 5 }],
@@ -10526,7 +10511,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1362,
+        id: 776,
         label: 'Defeat a Fossil Island Wyvern',
         description: 'Defeat any type of Wyvern on Fossil Island.',
         skillReqs: [{ skill: 'Slayer', level: 66 }],
@@ -10535,7 +10520,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1402,
+        id: 780,
         label: 'Defeat a Wall Beast',
         description: 'Defeat a Wall Beast in the Lumbridge Swamp Caves.',
         skillReqs: [{ skill: 'Slayer', level: 35 }],
@@ -10544,7 +10529,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1413,
+        id: 906,
         label: 'Defeat a Kurask in the Fremennik Province',
         description: 'Defeat a kurask in the Fremennik Province.',
         skillReqs: [{ skill: 'Slayer', level: 70 }],
@@ -10553,7 +10538,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1123,
+        id: 926,
         label: 'Defeat a Turoth in the Fremennik Province',
         description: 'Defeat a turoth in the Fremennik Province.',
         skillReqs: [{ skill: 'Slayer', level: 55 }],
@@ -10562,7 +10547,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1200,
+        id: 931,
         label: 'Defeat a Jelly in the Fremennik Province',
         description: 'Defeat a jelly in the Fremennik Province.',
         skillReqs: [{ skill: 'Slayer', level: 52 }],
@@ -10571,7 +10556,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 829,
+        id: 1027,
         label: 'Receive a Slayer Task From Nieve or Steve',
         description: 'Receive a Slayer Task from Nieve or Steve in the Tree Gnome Stronghold.',
         skillReqs: [{ skill: 'Combat', level: 85 }],
@@ -10580,7 +10565,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1412,
+        id: 1044,
         label: 'Defeat a Bloodveld in Kandarin',
         description: 'Defeat a bloodveld in Kandarin.',
         skillReqs: [{ skill: 'Slayer', level: 50 }],
@@ -10589,7 +10574,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1050,
+        id: 1047,
         label: 'Defeat a Fire Giant in Kandarin',
         description: 'Defeat a fire giant in Kandarin.',
         skillReqs: [],
@@ -10598,7 +10583,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 687,
+        id: 1110,
         label: 'Defeat a Skeletal Wyvern',
         description: 'Defeat a Skeletal Wyvern in the Asgarnian Ice Dungeon.',
         skillReqs: [{ skill: 'Slayer', level: 72 }],
@@ -10607,7 +10592,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 69838451,
+        id: 1241,
         label: 'Assemble a Slayer Helm',
         description: 'Assemble a Slayer Helm.',
         skillReqs: [{ skill: 'Crafting', level: 55 }],
@@ -10616,7 +10601,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3512543299,
+        id: 631,
         label: 'Defeat a Slayer Boss',
         description: 'Defeat any Slayer Boss.',
         skillReqs: [{ skill: 'Slayer', level: 75 }],
@@ -10625,7 +10610,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1527328330,
+        id: 632,
         label: 'Complete 50 Slayer Tasks',
         description: 'Complete 50 Slayer Tasks.',
         skillReqs: [],
@@ -10634,7 +10619,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3210509154,
+        id: 633,
         label: 'Complete 100 Slayer Tasks',
         description: 'Complete 100 Slayer Tasks.',
         skillReqs: [],
@@ -10643,7 +10628,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2506152333,
+        id: 634,
         label: 'Defeat 10 Superior Slayer Creatures',
         description: 'Defeat 10 Superior Slayer Creatures.',
         skillReqs: [{ skill: 'Slayer', level: 5 }],
@@ -10652,7 +10637,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 846,
+        id: 635,
         label: 'Defeat 20 Superior Slayer Creatures',
         description: 'Defeat 20 Superior Slayer Creatures.',
         skillReqs: [{ skill: 'Slayer', level: 5 }],
@@ -10661,7 +10646,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1411,
+        id: 791,
         label: 'Defeat an Ancient Wyvern',
         description: 'Defeat an Ancient Wyvern on Fossil Island.',
         skillReqs: [{ skill: 'Slayer', level: 82 }],
@@ -10670,7 +10655,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 831,
+        id: 90002,
         label: 'Defeat a Bloodveld in Tirannwn',
         description: 'Defeat a Bloodveld in Tirannwn.',
         skillReqs: [{ skill: 'Slayer', level: 50 }],
@@ -10679,7 +10664,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1049,
+        id: 846,
         label: 'Defeat a Kurask in Tirannwn',
         description: 'Defeat a Kurask in Tirannwn.',
         skillReqs: [{ skill: 'Slayer', level: 70 }],
@@ -10688,7 +10673,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1012,
+        id: 851,
         label: 'Defeat a Dark Beast in Tirannwn',
         description: 'Defeat a Dark Beast in Tirannwn.',
         skillReqs: [{ skill: 'Slayer', level: 90 }],
@@ -10697,7 +10682,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 896,
+        id: 872,
         label: 'Defeat a Nechryael in Tirannwn',
         description: 'Defeat a Nechryael in Tirannwn.',
         skillReqs: [{ skill: 'Slayer', level: 80 }],
@@ -10706,7 +10691,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 832,
+        id: 901,
         label: 'Defeat a Basilisk Knight',
         description: "Defeat a basilisk knight in the Jormungand's Prison.",
         skillReqs: [{ skill: 'Slayer', level: 60 }],
@@ -10715,7 +10700,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1327,
+        id: 975,
         label: 'Receive a Slayer Task From Duradel',
         description: 'Receive a Slayer Task From Duradel in Shilo Village.',
         skillReqs: [
@@ -10727,7 +10712,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1051,
+        id: 1041,
         label: 'Defeat a Cave Kraken',
         description: 'Defeat a cave kraken in Kraken Cove.',
         skillReqs: [
@@ -10739,7 +10724,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 996,
+        id: 1186,
         label: 'Defeat a Dust Devil in the Kharidian Desert',
         description: 'Defeat a Dust Devil in the Kharidian Desert.',
         skillReqs: [{ skill: 'Slayer', level: 65 }],
@@ -10748,7 +10733,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1330,
+        id: 1242,
         label: 'Defeat a Gargoyle in Morytania',
         description: 'Defeat a Gargoyle in Morytania.',
         skillReqs: [{ skill: 'Slayer', level: 75 }],
@@ -10757,7 +10742,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 653,
+        id: 1250,
         label: 'Defeat an Abyssal Demon in Morytania',
         description: 'Defeat an Abyssal Demon in Morytania.',
         skillReqs: [{ skill: 'Slayer', level: 85 }],
@@ -10766,7 +10751,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1364,
+        id: 1277,
         label: 'Defeat the Grotesque Guardians',
         description: 'Defeat the Grotesque Guardians at the Slayer Tower.',
         skillReqs: [{ skill: 'Slayer', level: 75 }],
@@ -10775,7 +10760,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2521953536,
+        id: 1278,
         label: 'Defeat the Grotesque Guardians 100 Times',
         description: 'Defeat the Grotesque Guardians at the Slayer Tower 100 times.',
         skillReqs: [{ skill: 'Slayer', level: 75 }],
@@ -10784,7 +10769,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3898892225,
+        id: 1388,
         label: 'Defeat a Drake',
         description: 'Defeat a Drake in the Karuulm Slayer Dungeon.',
         skillReqs: [{ skill: 'Slayer', level: 84 }],
@@ -10793,7 +10778,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 863251984,
+        id: 348,
         label: '1 Alchemical Hydra Kill',
         description: 'Kill the Alchemical Hydra in Mount Karuulm.',
         skillReqs: [{ skill: 'Slayer', level: 95 }],
@@ -10802,7 +10787,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4236696081,
+        id: 349,
         label: '25 Alchemical Hydra Kills',
         description: 'Kill the Alchemical Hydra in Mount Karuulm 25 times.',
         skillReqs: [{ skill: 'Slayer', level: 95 }],
@@ -10811,7 +10796,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2635069113,
+        id: 350,
         label: '50 Alchemical Hydra Kills',
         description: 'Kill the Alchemical Hydra in Mount Karuulm 50 times.',
         skillReqs: [{ skill: 'Slayer', level: 95 }],
@@ -10820,7 +10805,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2440583958,
+        id: 351,
         label: '75 Alchemical Hydra Kills',
         description: 'Kill the Alchemical Hydra in Mount Karuulm 75 times.',
         skillReqs: [{ skill: 'Slayer', level: 95 }],
@@ -10829,7 +10814,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1656184483,
+        id: 352,
         label: '100 Alchemical Hydra Kills',
         description: 'Kill the Alchemical Hydra in Mount Karuulm 100 times.',
         skillReqs: [{ skill: 'Slayer', level: 95 }],
@@ -10838,7 +10823,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 4186059463,
+        id: 353,
         label: '250 Alchemical Hydra Kills',
         description: 'Kill the Alchemical Hydra in Mount Karuulm 250 times.',
         skillReqs: [{ skill: 'Slayer', level: 95 }],
@@ -10847,7 +10832,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1780263711,
+        id: 354,
         label: '500 Alchemical Hydra Kills',
         description: 'Kill the Alchemical Hydra in Mount Karuulm 500 times.',
         skillReqs: [{ skill: 'Slayer', level: 95 }],
@@ -10856,7 +10841,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 912,
+        id: 391,
         label: 'Equip a Brimstone Ring',
         description: 'Obtain and equip a Brimstone ring.',
         skillReqs: [{ skill: 'Slayer', level: 95 }],
@@ -10865,7 +10850,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3334582101,
+        id: 560,
         label: 'Reach Level 99 Slayer',
         description: 'Reach level 99 in your Slayer skill.',
         skillReqs: [{ skill: 'Slayer', level: 99 }],
@@ -10874,7 +10859,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1722382468,
+        id: 561,
         label: 'Obtain 25 Million Slayer XP',
         description: 'Obtain 25 million experience in your Slayer skill.',
         skillReqs: [{ skill: 'Slayer', level: 99 }],
@@ -10883,7 +10868,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 535,
+        id: 636,
         label: 'Slay an Abyssal Demon',
         description: 'Kill an Abyssal Demon whilst on an Abyssal Demon Slayer Task.',
         skillReqs: [{ skill: 'Slayer', level: 85 }],
@@ -10892,7 +10877,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2699974977,
+        id: 637,
         label: 'Complete 200 Slayer Tasks',
         description: 'Complete 200 Slayer Tasks.',
         skillReqs: [],
@@ -10901,7 +10886,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1487206153,
+        id: 638,
         label: 'Defeat 50 Superior Slayer Creatures',
         description: 'Defeat 50 Superior Slayer Creatures.',
         skillReqs: [{ skill: 'Slayer', level: 5 }],
@@ -10910,7 +10895,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2216748828,
+        id: 793,
         label: 'Offer an Unsired to the Font of Consumption',
         description: 'Offer an Unsired to the Font of Consumption in the Abyssal Nexus.',
         skillReqs: [{ skill: 'Slayer', level: 85 }],
@@ -10919,7 +10904,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3485046361,
+        id: 794,
         label: 'Defeat the Abyssal Sire 100 Times',
         description: 'Defeat the Abyssal Sire in the Abyssal Nexus 100 times.',
         skillReqs: [{ skill: 'Slayer', level: 85 }],
@@ -10928,7 +10913,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1801708981,
+        id: 795,
         label: 'Defeat the Abyssal Sire 250 Times',
         description: 'Defeat the Abyssal Sire in the Abyssal Nexus 250 times.',
         skillReqs: [{ skill: 'Slayer', level: 85 }],
@@ -10937,7 +10922,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1069,
+        id: 796,
         label: 'Defeat the Abyssal Sire 500 Times',
         description: 'Defeat the Abyssal Sire in the Abyssal Nexus 500 times.',
         skillReqs: [{ skill: 'Slayer', level: 85 }],
@@ -10946,7 +10931,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1133,
+        id: 1030,
         label: 'Defeat a Smoke Devil',
         description: 'Defeat a smoke devil in the Smoke Devil Dungeon.',
         skillReqs: [{ skill: 'Slayer', level: 93 }],
@@ -10955,7 +10940,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1084,
+        id: 1042,
         label: 'Defeat the Thermonuclear Smoke Devil',
         description: 'Defeat the thermonuclear smoke devil in the Smoke Devil Dungeon.',
         skillReqs: [{ skill: 'Slayer', level: 93 }],
@@ -10964,7 +10949,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2272375146,
+        id: 1130,
         label: 'Defeat Cerberus',
         description: 'Defeat Cerberus in the Taverley Dungeon.',
         skillReqs: [{ skill: 'Slayer', level: 91 }],
@@ -10973,7 +10958,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 864,
+        id: 1246,
         label: 'Defeat Cerberus Before She Summons Souls',
         description: 'Defeat Cerberus before she summons souls.',
         skillReqs: [{ skill: 'Slayer', level: 91 }],
@@ -10982,7 +10967,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 838616156,
+        id: 1279,
         label: 'Defeat the Grotesque Guardians 250 Times',
         description: 'Defeat the Grotesque Guardians at the Slayer Tower 250 times.',
         skillReqs: [{ skill: 'Slayer', level: 75 }],
@@ -10991,7 +10976,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 916,
+        id: 1389,
         label: 'Defeat a Hydra',
         description: 'Defeat a Hydra in the Karuulm Slayer Dungeon.',
         skillReqs: [{ skill: 'Slayer', level: 95 }],
@@ -11000,7 +10985,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 46191202,
+        id: 1401,
         label: '750 Alchemical Hydra Kills',
         description: 'Kill the Alchemical Hydra in Mount Karuulm 750 times.',
         skillReqs: [{ skill: 'Slayer', level: 95 }],
@@ -11009,7 +10994,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 695,
+        id: 655,
         label: 'Smelt a Bronze Bar',
         description: 'Use a Furnace to smelt a Bronze Bar.',
         skillReqs: [],
@@ -11018,7 +11003,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1215,
+        id: 656,
         label: 'Smelt an Iron Bar',
         description: 'Use a Furnace to smelt an Iron Bar.',
         skillReqs: [{ skill: 'Smithing', level: 15 }],
@@ -11027,7 +11012,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2300350682,
+        id: 657,
         label: 'Smith 150 Iron Arrowtips',
         description: 'Use an Anvil to smith 150 Iron Arrowtips.',
         skillReqs: [{ skill: 'Smithing', level: 20 }],
@@ -11036,7 +11021,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2233866778,
+        id: 658,
         label: 'Smith 1000 Mithril Dart Tips',
         description: 'Use an Anvil to smith 1000 Mithril Dart Tips.',
         skillReqs: [{ skill: 'Smithing', level: 54 }],
@@ -11045,7 +11030,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 548,
+        id: 659,
         label: 'Smith a Steel Platebody',
         description: 'Use an Anvil to smith a Steel Platebody.',
         skillReqs: [{ skill: 'Smithing', level: 48 }],
@@ -11054,7 +11039,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 536,
+        id: 660,
         label: 'Smelt a Steel Bar',
         description: 'Use a Furnace to smelt a Steel Bar.',
         skillReqs: [{ skill: 'Smithing', level: 30 }],
@@ -11063,7 +11048,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1293,
+        id: 896,
         label: 'Unlock Free Use of the Blast Furnace',
         description: 'Unlock free use of the Keldagrim Blast Furnace by speaking with the Foreman.',
         skillReqs: [{ skill: 'Smithing', level: 60 }],
@@ -11072,7 +11057,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1192,
+        id: 661,
         label: 'Smith 1000 Adamant Dart Tips',
         description: 'Use an Anvil to smith 1000 Adamant Dart Tips.',
         skillReqs: [{ skill: 'Smithing', level: 74 }],
@@ -11081,7 +11066,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 615,
+        id: 90003,
         label: 'Smelt a Runite Bar',
         description: 'Use a Furnace to smelt a runite bar.',
         skillReqs: [{ skill: 'Smithing', level: 85 }],
@@ -11090,7 +11075,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 610,
+        id: 839,
         label: 'Craft a Piece of Crystal Armour',
         description: 'Use a singing bowl to craft any piece of crystal armour.',
         skillReqs: [
@@ -11102,7 +11087,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2955336087,
+        id: 875,
         label: 'Craft an Eternal Teleport Crystal',
         description: 'Use a Singing Bowl to craft an eternal teleport crystal.',
         skillReqs: [
@@ -11114,7 +11099,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1599799766,
+        id: 566,
         label: 'Reach Level 99 Smithing',
         description: 'Reach level 99 in your Smithing skill.',
         skillReqs: [{ skill: 'Smithing', level: 99 }],
@@ -11123,7 +11108,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2229065251,
+        id: 567,
         label: 'Obtain 25 Million Smithing XP',
         description: 'Obtain 25 million experience in your Smithing skill.',
         skillReqs: [{ skill: 'Smithing', level: 99 }],
@@ -11132,7 +11117,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 614,
+        id: 663,
         label: 'Smith a Dragonfire Shield',
         description: 'Use an Anvil to smith a Dragonfire Shield.',
         skillReqs: [{ skill: 'Smithing', level: 90 }],
@@ -11141,7 +11126,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 537,
+        id: 1381,
         label: 'Smith 1000 Rune Dart Tips',
         description: 'Use an Anvil to smith 1000 Rune Dart Tips.',
         skillReqs: [{ skill: 'Smithing', level: 89 }],
@@ -11150,7 +11135,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 708,
+        id: 382,
         label: 'Equip a Dragon Warhammer',
         description: 'Obtain and equip a Dragon warhammer.',
         skillReqs: [{ skill: 'Strength', level: 60 }],
@@ -11159,7 +11144,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1134007999,
+        id: 981,
         label: 'Equip a Tzhaar-Ket-Om',
         description: 'Equip a Tzhaar-Ket-Om.',
         skillReqs: [{ skill: 'Strength', level: 60 }],
@@ -11168,7 +11153,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3761344792,
+        id: 534,
         label: 'Reach Level 99 Strength',
         description: 'Reach level 99 in your Strength skill.',
         skillReqs: [{ skill: 'Strength', level: 99 }],
@@ -11177,7 +11162,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2372265889,
+        id: 535,
         label: 'Obtain 25 Million Strength XP',
         description: 'Obtain 25 million experience in your Strength skill.',
         skillReqs: [{ skill: 'Strength', level: 99 }],
@@ -11186,7 +11171,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3998729920,
+        id: 579,
         label: 'Pickpocket a Citizen',
         description: 'Pickpocket a Man or a Woman.',
         skillReqs: [],
@@ -11195,7 +11180,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3681100460,
+        id: 580,
         label: 'Open 28 Coin Pouches At Once',
         description: 'Open 28 Coin Pouches at once.',
         skillReqs: [],
@@ -11204,7 +11189,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 859,
+        id: 581,
         label: 'Steal a Chocolate Slice',
         description: 'Steal a chocolate slice from a bakery stall.',
         skillReqs: [{ skill: 'Thieving', level: 5 }],
@@ -11213,7 +11198,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 466322152,
+        id: 766,
         label: 'Steal From the Varrock Tea Stall',
         description: 'Steal from the Tea Stall in Varrock.',
         skillReqs: [{ skill: 'Thieving', level: 5 }],
@@ -11222,7 +11207,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 679,
+        id: 271,
         label: 'Steal a Golovanova Fruit Top',
         description: 'Steal a Golovanova fruit top from a fruit stall in Hosidius.',
         skillReqs: [{ skill: 'Thieving', level: 25 }],
@@ -11231,7 +11216,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 912639630,
+        id: 421,
         label: 'Steal 1 Artefact',
         description: 'Steal an artefact for Captain Khaled, in Piscarilius.',
         skillReqs: [{ skill: 'Thieving', level: 49 }],
@@ -11240,7 +11225,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3960755413,
+        id: 422,
         label: 'Steal 10 Artefacts',
         description: 'Steal 10 artefacts for Captain Khaled, in Piscarilius.',
         skillReqs: [{ skill: 'Thieving', level: 49 }],
@@ -11249,7 +11234,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1007,
+        id: 763,
         label: 'Pickpocket a H.A.M. Member',
         description: 'Pickpocket any H.A.M. member at their hideout.',
         skillReqs: [{ skill: 'Thieving', level: 15 }],
@@ -11258,7 +11243,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1171,
+        id: 1154,
         label: 'Complete Room 1 of Pyramid Plunder',
         description: 'Search the Golden Chest in Room 1 of Pyramid Plunder in Sophanem.',
         skillReqs: [{ skill: 'Thieving', level: 21 }],
@@ -11267,7 +11252,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1185,
+        id: 1155,
         label: 'Complete Room 2 of Pyramid Plunder',
         description: 'Search the Golden Chest in Room 2 of Pyramid Plunder in Sophanem.',
         skillReqs: [{ skill: 'Thieving', level: 31 }],
@@ -11276,7 +11261,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3336748182,
+        id: 1165,
         label: "Pick a Winter Sq'irk",
         description: "Pick a Winter Sq'irk in the Sorceress's Garden.",
         skillReqs: [],
@@ -11285,7 +11270,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 834,
+        id: 1169,
         label: "Turn in a Winter Sq'irkjuice to Osman",
         description: "Turn in a Winter Sq'irkjuice to Osman in Al Kharid.",
         skillReqs: [],
@@ -11294,7 +11279,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 518,
+        id: 1403,
         label: 'Steal Some Silk',
         description: 'Steal some silk from a silk stall.',
         skillReqs: [{ skill: 'Thieving', level: 20 }],
@@ -11303,7 +11288,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1213,
+        id: 281,
         label: 'Pickpocket a Master Farmer',
         description: 'Successfully pickpocket from a master farmer.',
         skillReqs: [{ skill: 'Thieving', level: 38 }],
@@ -11312,7 +11297,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3695015929,
+        id: 423,
         label: 'Steal 25 Artefacts',
         description: 'Steal 25 artefacts for Captain Khaled, in Piscarilius.',
         skillReqs: [{ skill: 'Thieving', level: 49 }],
@@ -11321,7 +11306,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 182118993,
+        id: 424,
         label: 'Steal 50 Artefacts',
         description: 'Steal 50 artefacts for Captain Khaled, in Piscarilius.',
         skillReqs: [{ skill: 'Thieving', level: 49 }],
@@ -11330,7 +11315,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1316762021,
+        id: 425,
         label: 'Steal 100 Artefacts',
         description: 'Steal 100 artefacts for Captain Khaled, in Piscarilius.',
         skillReqs: [{ skill: 'Thieving', level: 49 }],
@@ -11339,7 +11324,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1248,
+        id: 582,
         label: 'Pickpocket a Guard',
         description: 'Pickpocket a Guard.',
         skillReqs: [{ skill: 'Thieving', level: 40 }],
@@ -11348,7 +11333,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 515,
+        id: 583,
         label: 'Obtain 800 Coins From Coin Pouches At Once',
         description: 'Open a stack of coin pouches and obtain at least 800 Coins.',
         skillReqs: [{ skill: 'Thieving', level: 40 }],
@@ -11357,7 +11342,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1276,
+        id: 584,
         label: 'Pickpocket a Ranarr Seed',
         description: 'Pickpocket a Ranarr Seed from a Master Farmer.',
         skillReqs: [{ skill: 'Thieving', level: 38 }],
@@ -11366,7 +11351,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1361,
+        id: 764,
         label: 'Pickpocket a Varrock Guard',
         description: 'Pickpocket any Varrock Guard.',
         skillReqs: [{ skill: 'Thieving', level: 40 }],
@@ -11375,7 +11360,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 507,
+        id: 767,
         label: 'Pickpocket a Bullseye Lantern From a Cave Goblin',
         description: 'Pickpocket a Bullseye Lantern from a Cave Goblin.',
         skillReqs: [{ skill: 'Thieving', level: 36 }],
@@ -11384,7 +11369,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2944311742,
+        id: 1007,
         label: 'Pickpocket a Knight of Ardougne 50 Times',
         description: 'Pickpocket a Knight of Ardougne 50 times.',
         skillReqs: [{ skill: 'Thieving', level: 55 }],
@@ -11393,7 +11378,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1186,
+        id: 1156,
         label: 'Complete Room 3 of Pyramid Plunder',
         description: 'Search the Golden Chest in Room 3 of Pyramid Plunder in Sophanem.',
         skillReqs: [{ skill: 'Thieving', level: 41 }],
@@ -11402,7 +11387,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1187,
+        id: 1157,
         label: 'Complete Room 4 of Pyramid Plunder',
         description: 'Search the Golden Chest in Room 4 of Pyramid Plunder in Sophanem.',
         skillReqs: [{ skill: 'Thieving', level: 51 }],
@@ -11411,7 +11396,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1209,
+        id: 1158,
         label: 'Complete Room 5 of Pyramid Plunder',
         description: 'Search the Golden Chest in Room 5 of Pyramid Plunder in Sophanem.',
         skillReqs: [{ skill: 'Thieving', level: 61 }],
@@ -11420,7 +11405,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1211,
+        id: 1166,
         label: "Pick a Spring Sq'irk",
         description: "Pick a Spring Sq'irk in the Sorceress's Garden.",
         skillReqs: [],
@@ -11429,7 +11414,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1128,
+        id: 1167,
         label: "Pick a Autumn Sq'irk",
         description: "Pick a Autumn Sq'irk in the Sorceress's Garden.",
         skillReqs: [{ skill: 'Thieving', level: 45 }],
@@ -11438,7 +11423,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2462828027,
+        id: 1170,
         label: "Turn in 10 Spring Sq'irkjuices to Osman",
         description: "Turn in 10 Spring sq'irkjuices to Osman in Al Kharid in one go.",
         skillReqs: [],
@@ -11447,7 +11432,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1277,
+        id: 1173,
         label: 'Pickpocket a Bandit in the Bandit Camp',
         description: "Pickpocket a Bandit in the Kharidian Desert's Bandit Camp.",
         skillReqs: [{ skill: 'Thieving', level: 53 }],
@@ -11456,7 +11441,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1668772609,
+        id: 426,
         label: 'Steal 250 Artefacts',
         description: 'Steal 250 artefacts for Captain Khaled, in Piscarilius.',
         skillReqs: [{ skill: 'Thieving', level: 49 }],
@@ -11465,7 +11450,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1249,
+        id: 585,
         label: 'Steal From a Gem Stall',
         description: 'Steal from a Gem Stall.',
         skillReqs: [{ skill: 'Thieving', level: 75 }],
@@ -11474,7 +11459,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2012295797,
+        id: 765,
         label: 'Steal a Diamond in Dorgesh-Kaan',
         description: 'Steal a Diamond from a chest in Dorgesh-Kaan.',
         skillReqs: [{ skill: 'Thieving', level: 78 }],
@@ -11483,7 +11468,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3181803500,
+        id: 835,
         label: 'Pickpocket an Elf 50 Times',
         description: 'Pickpocket an elf 50 times.',
         skillReqs: [{ skill: 'Thieving', level: 85 }],
@@ -11492,7 +11477,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 982,
+        id: 1008,
         label: 'Pickpocket a Hero',
         description: 'Pickpocket any Hero.',
         skillReqs: [{ skill: 'Thieving', level: 80 }],
@@ -11501,7 +11486,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 639,
+        id: 1093,
         label: 'Equip a Full Rogue Outfit',
         description: 'Equip a full set of rogue gear.',
         skillReqs: [
@@ -11513,7 +11498,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1210,
+        id: 1159,
         label: 'Complete Room 6 of Pyramid Plunder',
         description: 'Search the Golden Chest in Room 6 of Pyramid Plunder in Sophanem.',
         skillReqs: [{ skill: 'Thieving', level: 71 }],
@@ -11522,7 +11507,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2797336458,
+        id: 1160,
         label: 'Complete Room 7 of Pyramid Plunder',
         description: 'Search the Golden Chest in Room 7 of Pyramid Plunder in Sophanem.',
         skillReqs: [{ skill: 'Thieving', level: 81 }],
@@ -11531,7 +11516,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1172,
+        id: 1168,
         label: "Pick a Summer Sq'irk",
         description: "Pick a Summer Sq'irk in the Sorceress's Garden.",
         skillReqs: [],
@@ -11540,7 +11525,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 474389408,
+        id: 1171,
         label: "Turn in 25 Autumn Sq'irkjuices to Osman",
         description: "Turn in 25 Autumn sq'irkjuices to Osman in Al Kharid in one go.",
         skillReqs: [],
@@ -11549,7 +11534,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 589,
+        id: 1174,
         label: 'Pickpocket a Menaphite Thug 50 Times',
         description: 'Knock out and then pickpocket a Menaphite Thug 50 times.',
         skillReqs: [{ skill: 'Thieving', level: 65 }],
@@ -11558,7 +11543,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1419,
+        id: 1235,
         label: 'Pickpocket a Vyre 50 Times',
         description: 'Pickpocket a Vyre 50 times.',
         skillReqs: [{ skill: 'Thieving', level: 82 }],
@@ -11567,7 +11552,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 509,
+        id: 427,
         label: 'Steal 500 Artefacts',
         description: 'Steal 500 artefacts for Captain Khaled, in Piscarilius.',
         skillReqs: [{ skill: 'Thieving', level: 49 }],
@@ -11576,7 +11561,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3186623251,
+        id: 554,
         label: 'Reach Level 99 Thieving',
         description: 'Reach level 99 in your Thieving skill.',
         skillReqs: [{ skill: 'Thieving', level: 99 }],
@@ -11585,7 +11570,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 582479814,
+        id: 555,
         label: 'Obtain 25 Million Thieving XP',
         description: 'Obtain 25 million experience in your Thieving skill.',
         skillReqs: [{ skill: 'Thieving', level: 99 }],
@@ -11594,7 +11579,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 587,
+        id: 963,
         label: 'Pickpocket a Diamond From a TzHaar',
         description: 'Pickpocket a Diamond from a TzHaar-Hur.',
         skillReqs: [{ skill: 'Thieving', level: 90 }],
@@ -11603,7 +11588,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 2388512233,
+        id: 1161,
         label: 'Complete Room 8 of Pyramid Plunder',
         description: 'Search the Golden Chest in Room 8 of Pyramid Plunder in Sophanem.',
         skillReqs: [{ skill: 'Thieving', level: 91 }],
@@ -11612,7 +11597,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 919,
+        id: 1162,
         label: 'Complete Room 8 of Pyramid Plunder 50 Times',
         description: 'Search the Golden Chest in Room 8 of Pyramid Plunder in Sophanem 50 times.',
         skillReqs: [{ skill: 'Thieving', level: 91 }],
@@ -11621,7 +11606,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 813650624,
+        id: 1163,
         label: 'Complete Room 8 of Pyramid Plunder 100 Times',
         description: 'Search the Golden Chest in Room 8 of Pyramid Plunder in Sophanem 100 times.',
         skillReqs: [{ skill: 'Thieving', level: 91 }],
@@ -11630,7 +11615,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3425280540,
+        id: 1164,
         label: 'Complete Room 8 of Pyramid Plunder 250 Times',
         description: 'Search the Golden Chest in Room 8 of Pyramid Plunder in Sophanem 250 times.',
         skillReqs: [{ skill: 'Thieving', level: 91 }],
@@ -11639,7 +11624,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1212,
+        id: 1172,
         label: "Turn in 100 Summer Sq'irkjuices to Osman",
         description: "Turn in 100 Summer sq'irkjuices to Osman in Al Kharid.",
         skillReqs: [],
@@ -11648,7 +11633,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 594,
+        id: 595,
         label: 'Chop Some Logs',
         description: 'Chop any kind of logs.',
         skillReqs: [],
@@ -11657,7 +11642,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 705,
+        id: 596,
         label: 'Chop Some Logs With a Steel Axe',
         description: 'Chop any kind of logs using a steel axe.',
         skillReqs: [{ skill: 'Woodcutting', level: 6 }],
@@ -11666,7 +11651,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3869871493,
+        id: 597,
         label: 'Obtain a Bird Nest',
         description: 'Obtain a Bird Nest whilst cutting down trees.',
         skillReqs: [],
@@ -11675,7 +11660,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 576,
+        id: 282,
         label: 'Enter the Woodcutting Guild',
         description: 'Enter the Woodcutting Guild in Hosidius.',
         skillReqs: [{ skill: 'Woodcutting', level: 60 }],
@@ -11684,7 +11669,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 682,
+        id: 598,
         label: 'Chop 100 Willow Logs',
         description: 'Chop 100 Willow Logs from willow trees.',
         skillReqs: [{ skill: 'Woodcutting', level: 30 }],
@@ -11693,7 +11678,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 514,
+        id: 599,
         label: 'Chop Some Logs With a Rune Axe',
         description: 'Chop any kind of logs using a Rune Axe.',
         skillReqs: [{ skill: 'Woodcutting', level: 41 }],
@@ -11702,7 +11687,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 697,
+        id: 600,
         label: 'Build a Waka Canoe',
         description: 'Build a Waka Canoe.',
         skillReqs: [{ skill: 'Woodcutting', level: 57 }],
@@ -11711,7 +11696,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 513,
+        id: 774,
         label: 'Chop a Sulliuscep Cap',
         description: 'Chop a Sulliuscep Cap on Fossil Island.',
         skillReqs: [{ skill: 'Woodcutting', level: 65 }],
@@ -11720,7 +11705,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 1281,
+        id: 285,
         label: 'Chop a Magic Log at the Forsaken Tower',
         description: 'Chop a log from the Magic trees around the Forsaken Tower.',
         skillReqs: [{ skill: 'Woodcutting', level: 75 }],
@@ -11729,7 +11714,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 3566116234,
+        id: 601,
         label: 'Chop 75 Magic Logs',
         description: 'Chop 75 Magic Logs from Magic Trees.',
         skillReqs: [{ skill: 'Woodcutting', level: 75 }],
@@ -11738,7 +11723,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 501,
+        id: 574,
         label: 'Reach Level 99 Woodcutting',
         description: 'Reach level 99 in your Woodcutting skill.',
         skillReqs: [{ skill: 'Woodcutting', level: 99 }],
@@ -11747,7 +11732,7 @@ export default [
         subcategory: undefined,
     },
     {
-        id: 588,
+        id: 575,
         label: 'Obtain 25 Million Woodcutting XP',
         description: 'Obtain 25 million experience in your Woodcutting skill.',
         skillReqs: [{ skill: 'Woodcutting', level: 99 }],

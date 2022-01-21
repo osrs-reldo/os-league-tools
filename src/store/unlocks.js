@@ -2,7 +2,7 @@
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 import _ from 'lodash';
-import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorage-client';
+import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
 
 const DEFAULT_UNLOCKED_SKILLS = ['Defence', 'Thieving', 'Fishing'];
 const DEFAULT_UNLOCKED_BOSSES = [

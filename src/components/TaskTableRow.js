@@ -1,6 +1,6 @@
 import React from 'react';
 import TableRow from './common/TableRow';
-import { INITIAL_TASK_STATE } from '../store/tasks/tasks';
+import { INITIAL_TASK_STATE } from '../store/tasks/constants';
 
 export default function TaskTableRow({
     row,

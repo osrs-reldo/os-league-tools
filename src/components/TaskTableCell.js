@@ -3,7 +3,7 @@ import { toggleTodo, toggleIgnored, toggleCompleted, updateNotes } from '../stor
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import LabeledIcon from './common/LabeledIcon';
 import { DEFAULT_NOTES_TEXT } from '../data/constants';
-import { clearTempField, setTempField } from '../store/tasks/temp';
+import { clearTempField, setTempField } from '../store/temp';
 
 function Task({ row, value, taskState, dispatchFn }) {
     const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);

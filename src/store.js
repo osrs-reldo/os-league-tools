@@ -1,12 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import throttle from 'lodash/throttle';
-import { updateLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
-import filterReducer, { loadState as loadFilterState } from './tasks/filters';
-import userReducer, { loadState as loadUserState } from './user/userData';
-import settingsReducer, { loadState as loadSettingsState } from './user/settings';
-import tasksReducer, { loadState as loadTasksState } from './tasks/tasks';
-import tempReducer, { loadState as loadTempState } from './tasks/temp';
-import unlocksReducer, { loadState as loadUnlocksState } from './user/unlocks';
+import { updateLocalStorage, LOCALSTORAGE_KEYS } from './client/localstorage-client';
+import filterReducer, { loadState as loadFilterState } from './store/filters';
+import userReducer, { loadState as loadUserState } from './store/userData';
+import settingsReducer, { loadState as loadSettingsState } from './store/settings';
+import tasksReducer, { loadState as loadTasksState } from './store/tasks/tasks';
+import tempReducer, { loadState as loadTempState } from './store/temp';
+import unlocksReducer, { loadState as loadUnlocksState } from './store/unlocks';
 
 const reducer = {
     filters: filterReducer,
