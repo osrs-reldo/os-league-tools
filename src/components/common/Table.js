@@ -42,6 +42,7 @@ export default function Table({
             defaultColumn,
             globalFilter,
             autoResetGlobalFilter: false,
+            autoResetSortBy: false,
             getRowId: useCallback(row => row.id, []),
         },
         useFlexLayout,
