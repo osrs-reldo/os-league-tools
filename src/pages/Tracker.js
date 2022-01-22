@@ -3,8 +3,8 @@ import CharacterPanel from './CharacterPanel';
 import TabbedCard from '../components/common/TabbedCard';
 import PageWrapper from '../components/PageWrapper';
 import TasksPanel from './TasksPanel';
-import QuestTable from '../components/QuestTable';
 import useQueryString from '../hooks/useQueryString';
+import QuestsPanel from './QuestsPanel';
 
 export default function Tracker() {
     const [selectedTab, onSetSelectedTab] = useQueryString('tab');
@@ -24,9 +24,7 @@ export default function Tracker() {
                     <TasksPanel />
                 </TabbedCard.Tab>
                 <TabbedCard.Tab id='quests' label='Quests' icon='/img/tab-quests.png'>
-                    <div className='h-full'>
-                        <QuestTable />
-                    </div>
+                    <QuestsPanel />
                 </TabbedCard.Tab>
             </TabbedCard>
         </PageWrapper>

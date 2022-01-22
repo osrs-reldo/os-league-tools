@@ -1,9 +1,11 @@
 import React, { useMemo } from 'react';
 import { matchSorter } from 'match-sorter';
+import { useDispatch, useSelector } from 'react-redux';
 import quests from '../data/quests';
-import Cell from './TaskTableCell';
 import Table from './common/Table';
 import LabeledIcon from './common/LabeledIcon';
+import { QUEST_STATUS } from '../data/constants';
+import { updateQuest } from '../store/unlocks/unlocks';
 
 export default function QuestTable() {
     const data = useMemo(() => quests, []);
@@ -68,16 +70,21 @@ export default function QuestTable() {
         []
     );
     const initialState = { hiddenColumns: ['id'] };
+    const questState = useSelector(state => state.unlocks.quests);
+    const filterState = useSelector(state => state.filters.quests);
+    const dispatch = useDispatch();
 
     return (
         <Table
             columns={columns}
             data={data}
-            filters={[]}
+            filters={[completedFilter, difficultyFilter, lengthFilter]}
+            filterState={filterState}
             globalFilter={fuzzyTextFilter}
             defaultColumn={defaultColumn}
             initialState={initialState}
-            ExpandedRow={Cell.ExpandedTask}
+            customFilterProps={{ questState }}
+            customRowProps={{ questState, dispatch }}
             enableResizeColumns
         />
     );
@@ -91,11 +98,26 @@ function fuzzyTextFilter(rows, __, filterValue) {
 }
 fuzzyTextFilter.autoRemove = val => !val;
 
-function QuestCell({ value }) {
+function QuestCell({ row, value, questState, dispatch }) {
+    const questStatus = questState[row.id] || QUEST_STATUS.NOT_STARTED;
     return (
         <div className='flex flex-row items-center h-full gap-2'>
-            {/* TODO make quest tracker functional */}
-            {/* <span className='icon-2xl text-accent'>check_box_outline_blank</span> */}
+            <span
+                className='icon-2xl text-accent cursor-pointer'
+                onClick={() => {
+                    dispatch(
+                        updateQuest({
+                            id: row.values.id,
+                            status:
+                                questStatus === QUEST_STATUS.FINISHED
+                                    ? QUEST_STATUS.NOT_STARTED
+                                    : QUEST_STATUS.FINISHED,
+                        })
+                    );
+                }}
+            >
+                {questStatus === QUEST_STATUS.FINISHED ? 'check_box' : 'check_box_outline_blank'}
+            </span>
             <span className='inline align-middle'>{value}</span>
         </div>
     );
@@ -122,4 +144,26 @@ function IconCell({ value }) {
         );
     }
     return null;
+}
+
+function completedFilter(record, filterState, { questState }) {
+    if (filterState.status === 'all') {
+        return true;
+    }
+    const status = questState[record.id] === QUEST_STATUS.FINISHED;
+    return (filterState.status === 'cmpl') === !!status;
+}
+
+function difficultyFilter(record, filterState) {
+    if (filterState.difficulty === null) {
+        return true;
+    }
+    return filterState.difficulty.includes(record.difficulty.label);
+}
+
+function lengthFilter(record, filterState) {
+    if (filterState.length === null) {
+        return true;
+    }
+    return filterState.length.includes(record.length.label);
 }

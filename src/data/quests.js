@@ -2,7 +2,7 @@ import { QUEST_DIFFICULTY, QUEST_LENGTH, QUEST_SERIES } from './constants';
 
 export default [
     {
-        id: 1,
+        id: '300',
         label: "Cook's Assistant",
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -13,7 +13,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Cook's_Assistant",
     },
     {
-        id: 2,
+        id: '302',
         label: 'Demon Slayer',
         points: 3,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -24,7 +24,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Demon_Slayer',
     },
     {
-        id: 3,
+        id: '312',
         label: 'The Restless Ghost',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -35,7 +35,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Restless_Ghost',
     },
     {
-        id: 4,
+        id: '313',
         label: 'Romeo & Juliet',
         points: 5,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -46,7 +46,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Romeo_&_Juliet',
     },
     {
-        id: 5,
+        id: '315',
         label: 'Sheep Shearer',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -57,7 +57,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Sheep_Shearer',
     },
     {
-        id: 6,
+        id: '316',
         label: 'Shield of Arrav',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -69,7 +69,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Shield_of_Arrav',
     },
     {
-        id: 7,
+        id: '305',
         label: 'Ernest the Chicken',
         points: 4,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -80,7 +80,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Ernest_the_Chicken',
     },
     {
-        id: 8,
+        id: '1278',
         label: 'Vampyre Slayer',
         points: 3,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -91,7 +91,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Vampyre_Slayer',
     },
     {
-        id: 9,
+        id: '307',
         label: 'Imp Catcher',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -102,7 +102,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Imp_Catcher',
     },
     {
-        id: 10,
+        id: '311',
         label: 'Prince Ali Rescue',
         points: 3,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -113,7 +113,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Prince_Ali_Rescue',
     },
     {
-        id: 11,
+        id: '3138',
         label: "Doric's Quest",
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -124,7 +124,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Doric's_Quest",
     },
     {
-        id: 12,
+        id: '299',
         label: "Black Knights' Fortress",
         points: 3,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -135,7 +135,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Black_Knights'_Fortress",
     },
     {
-        id: 13,
+        id: '318',
         label: "Witch's Potion",
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -146,7 +146,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Witch's_Potion",
     },
     {
-        id: 14,
+        id: '308',
         label: "The Knight's Sword",
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -157,7 +157,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/The_Knight's_Sword",
     },
     {
-        id: 15,
+        id: '306',
         label: 'Goblin Diplomacy',
         points: 5,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -168,7 +168,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Goblin_Diplomacy',
     },
     {
-        id: 16,
+        id: '310',
         label: "Pirate's Treasure",
         points: 2,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -180,7 +180,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Pirate's_Treasure",
     },
     {
-        id: 17,
+        id: '3139',
         label: 'Dragon Slayer I',
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -192,7 +192,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Dragon_Slayer_I',
     },
     {
-        id: 18,
+        id: '350',
         label: 'Druidic Ritual',
         points: 4,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -203,7 +203,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Druidic_Ritual',
     },
     {
-        id: 19,
+        id: '389',
         label: 'Lost City',
         points: 3,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -215,7 +215,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Lost_City',
     },
     {
-        id: 20,
+        id: '448',
         label: "Witch's House",
         points: 4,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -226,7 +226,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Witch's_House",
     },
     {
-        id: 21,
+        id: '394',
         label: "Merlin's Crystal",
         points: 6,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -238,7 +238,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Merlin's_Crystal",
     },
     {
-        id: 22,
+        id: '3142',
         label: "Heroes' Quest",
         points: 1,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -250,7 +250,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Heroes'_Quest",
     },
     {
-        id: 23,
+        id: '419',
         label: 'Scorpion Catcher',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -261,7 +261,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Scorpion_Catcher',
     },
     {
-        id: 24,
+        id: '361',
         label: 'Family Crest',
         points: 1,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -272,7 +272,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Family_Crest',
     },
     {
-        id: 25,
+        id: '439',
         label: 'Tribal Totem',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -283,7 +283,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Tribal_Totem',
     },
     {
-        id: 26,
+        id: '364',
         label: 'Fishing Contest',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -294,7 +294,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Fishing_Contest',
     },
     {
-        id: 27,
+        id: '397',
         label: "Monk's Friend",
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -305,7 +305,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Monk's_Friend",
     },
     {
-        id: 28,
+        id: '434',
         label: 'Temple of Ikov',
         points: 1,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -317,7 +317,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Temple_of_Ikov',
     },
     {
-        id: 29,
+        id: '337',
         label: 'Clock Tower',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -328,7 +328,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Clock_Tower',
     },
     {
-        id: 30,
+        id: '381',
         label: 'Holy Grail',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -340,7 +340,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Holy_Grail',
     },
     {
-        id: 31,
+        id: '438',
         label: 'Tree Gnome Village',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -352,7 +352,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Tree_Gnome_Village',
     },
     {
-        id: 32,
+        id: '363',
         label: 'Fight Arena',
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -364,7 +364,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Fight_Arena',
     },
     {
-        id: 33,
+        id: '379',
         label: 'Hazeel Cult',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -376,7 +376,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Hazeel_Cult',
     },
     {
-        id: 34,
+        id: '423',
         label: 'Sheep Herder',
         points: 4,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -388,7 +388,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Sheep_Herder',
     },
     {
-        id: 35,
+        id: '407',
         label: 'Plague City',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -400,7 +400,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Plague_City',
     },
     {
-        id: 36,
+        id: '420',
         label: 'Sea Slug',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -412,7 +412,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Sea_Slug',
     },
     {
-        id: 37,
+        id: '3154',
         label: 'Waterfall Quest',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -424,7 +424,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Waterfall_Quest',
     },
     {
-        id: 38,
+        id: '335',
         label: 'Biohazard',
         points: 3,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -436,7 +436,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Biohazard',
     },
     {
-        id: 39,
+        id: '386',
         label: 'Jungle Potion',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -448,7 +448,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Jungle_Potion',
     },
     {
-        id: 40,
+        id: '374',
         label: 'The Grand Tree',
         points: 5,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -460,7 +460,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Grand_Tree',
     },
     {
-        id: 41,
+        id: '424',
         label: 'Shilo Village',
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -472,7 +472,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Shilo_Village',
     },
     {
-        id: 42,
+        id: '442',
         label: 'Underground Pass',
         points: 5,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -484,7 +484,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Underground_Pass',
     },
     {
-        id: 43,
+        id: '3149',
         label: 'Observatory Quest',
         points: 2,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -495,7 +495,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Observatory_Quest',
     },
     {
-        id: 44,
+        id: '436',
         label: 'The Tourist Trap',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -506,7 +506,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Tourist_Trap',
     },
     {
-        id: 45,
+        id: '445',
         label: 'Watchtower',
         points: 4,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -518,7 +518,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Watchtower',
     },
     {
-        id: 46,
+        id: '351',
         label: 'Dwarf Cannon',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -529,7 +529,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Dwarf_Cannon',
     },
     {
-        id: 47,
+        id: '401',
         label: 'Murder Mystery',
         points: 3,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -541,7 +541,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Murder_Mystery',
     },
     {
-        id: 48,
+        id: '347',
         label: 'The Dig Site',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -553,7 +553,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Dig_Site',
     },
     {
-        id: 49,
+        id: '370',
         label: "Gertrude's Cat",
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -564,7 +564,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Gertrude's_Cat",
     },
     {
-        id: 50,
+        id: '3145',
         label: "Legends' Quest",
         points: 4,
         difficulty: QUEST_DIFFICULTY.MASTER,
@@ -576,7 +576,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Legends'_Quest",
     },
     {
-        id: 51,
+        id: '314',
         label: 'Rune Mysteries',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -587,7 +587,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Rune_Mysteries',
     },
     {
-        id: 52,
+        id: '334',
         label: 'Big Chompy Bird Hunting',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -599,7 +599,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Big_Chompy_Bird_Hunting',
     },
     {
-        id: 53,
+        id: '354',
         label: 'Elemental Workshop I',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -611,7 +611,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Elemental_Workshop_I',
     },
     {
-        id: 54,
+        id: '408',
         label: 'Priest in Peril',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -623,7 +623,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Priest_in_Peril',
     },
     {
-        id: 55,
+        id: '403',
         label: 'Nature Spirit',
         points: 2,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -635,7 +635,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Nature_Spirit',
     },
     {
-        id: 56,
+        id: '342',
         label: 'Death Plateau',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -647,7 +647,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Death_Plateau',
     },
     {
-        id: 57,
+        id: '441',
         label: 'Troll Stronghold',
         points: 1,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -659,7 +659,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Troll_Stronghold',
     },
     {
-        id: 58,
+        id: '429',
         label: 'Tai Bwo Wannai Trio',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -671,7 +671,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Tai_Bwo_Wannai_Trio',
     },
     {
-        id: 59,
+        id: '415',
         label: 'Regicide',
         points: 3,
         difficulty: QUEST_DIFFICULTY.MASTER,
@@ -683,7 +683,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Regicide',
     },
     {
-        id: 60,
+        id: '352',
         label: "Eadgar's Ruse",
         points: 1,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -695,7 +695,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Eadgar's_Ruse",
     },
     {
-        id: 61,
+        id: '421',
         label: "Shades of Mort'ton",
         points: 3,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -706,7 +706,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Shades_of_Mort'ton",
     },
     {
-        id: 62,
+        id: '368',
         label: 'The Fremennik Trials',
         points: 3,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -718,7 +718,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Fremennik_Trials',
     },
     {
-        id: 63,
+        id: '382',
         label: 'Horror from the Deep',
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -730,7 +730,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Horror_from_the_Deep',
     },
     {
-        id: 64,
+        id: '435',
         label: 'Throne of Miscellania',
         points: 1,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -742,7 +742,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Throne_of_Miscellania',
     },
     {
-        id: 65,
+        id: '395',
         label: 'Monkey Madness I',
         points: 3,
         difficulty: QUEST_DIFFICULTY.MASTER,
@@ -754,7 +754,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Monkey_Madness_I',
     },
     {
-        id: 66,
+        id: '378',
         label: 'Haunted Mine',
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -765,7 +765,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Haunted_Mine',
     },
     {
-        id: 67,
+        id: '440',
         label: 'Troll Romance',
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -777,7 +777,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Troll_Romance',
     },
     {
-        id: 68,
+        id: '385',
         label: 'In Search of the Myreque',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -789,7 +789,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/In_Search_of_the_Myreque',
     },
     {
-        id: 69,
+        id: '340',
         label: 'Creature of Fenkenstrain',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -800,7 +800,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Creature_of_Fenkenstrain',
     },
     {
-        id: 70,
+        id: '416',
         label: 'Roving Elves',
         points: 1,
         difficulty: QUEST_DIFFICULTY.MASTER,
@@ -812,7 +812,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Roving_Elves',
     },
     {
-        id: 71,
+        id: '371',
         label: 'Ghosts Ahoy',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -823,7 +823,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Ghosts_Ahoy',
     },
     {
-        id: 72,
+        id: '406',
         label: 'One Small Favour',
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -835,7 +835,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/One_Small_Favour',
     },
     {
-        id: 73,
+        id: '398',
         label: 'Mountain Daughter',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -847,7 +847,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Mountain_Daughter',
     },
     {
-        id: 74,
+        id: '333',
         label: 'Between a Rock...',
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -859,7 +859,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Between_a_Rock...',
     },
     {
-        id: 75,
+        id: '362',
         label: 'The Feud',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -870,7 +870,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Feud',
     },
     {
-        id: 76,
+        id: '373',
         label: 'The Golem',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -881,7 +881,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Golem',
     },
     {
-        id: 77,
+        id: '345',
         label: 'Desert Treasure',
         points: 3,
         difficulty: QUEST_DIFFICULTY.MASTER,
@@ -893,7 +893,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Desert_Treasure',
     },
     {
-        id: 78,
+        id: '383',
         label: "Icthlarin's Little Helper",
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -905,7 +905,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Icthlarin's_Little_Helper",
     },
     {
-        id: 79,
+        id: '433',
         label: 'Tears of Guthix',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -916,7 +916,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Tears_of_Guthix',
     },
     {
-        id: 80,
+        id: '449',
         label: 'Zogre Flesh Eaters',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -928,7 +928,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Zogre_Flesh_Eaters',
     },
     {
-        id: 81,
+        id: '390',
         label: 'The Lost Tribe',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -940,7 +940,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Lost_Tribe',
     },
     {
-        id: 82,
+        id: '372',
         label: 'The Giant Dwarf',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -952,7 +952,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Giant_Dwarf',
     },
     {
-        id: 83,
+        id: '414',
         label: 'Recruitment Drive',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -964,7 +964,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Recruitment_Drive',
     },
     {
-        id: 84,
+        id: '3147',
         label: "Mourning's End Part I",
         points: 2,
         difficulty: QUEST_DIFFICULTY.MASTER,
@@ -976,7 +976,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Mourning's_End_Part_I",
     },
     {
-        id: 85,
+        id: '365',
         label: 'Forgettable Tale...',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -988,7 +988,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Forgettable_Tale...',
     },
     {
-        id: 86,
+        id: '369',
         label: 'Garden of Tranquillity',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -999,7 +999,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Garden_of_Tranquillity',
     },
     {
-        id: 87,
+        id: '430',
         label: 'A Tail of Two Cats',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1011,7 +1011,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/A_Tail_of_Two_Cats',
     },
     {
-        id: 88,
+        id: '444',
         label: 'Wanted!',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1023,7 +1023,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Wanted!',
     },
     {
-        id: 89,
+        id: '3148',
         label: "Mourning's End Part II",
         points: 2,
         difficulty: QUEST_DIFFICULTY.MASTER,
@@ -1035,7 +1035,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Mourning's_End_Part_II",
     },
     {
-        id: 90,
+        id: '418',
         label: 'Rum Deal',
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -1047,7 +1047,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Rum_Deal',
     },
     {
-        id: 91,
+        id: '422',
         label: 'Shadow of the Storm',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1058,7 +1058,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Shadow_of_the_Storm',
     },
     {
-        id: 92,
+        id: '393',
         label: 'Making History',
         points: 3,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1069,7 +1069,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Making_History',
     },
     {
-        id: 93,
+        id: '412',
         label: 'Ratcatchers',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1080,7 +1080,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Ratcatchers',
     },
     {
-        id: 94,
+        id: '427',
         label: 'Spirits of the Elid',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1092,7 +1092,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Spirits_of_the_Elid',
     },
     {
-        id: 95,
+        id: '346',
         label: 'Devious Minds',
         points: 1,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -1104,7 +1104,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Devious_Minds',
     },
     {
-        id: 96,
+        id: '377',
         label: 'The Hand in the Sand',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1115,7 +1115,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Hand_in_the_Sand',
     },
     {
-        id: 97,
+        id: '356',
         label: "Enakhra's Lament",
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -1127,7 +1127,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Enakhra's_Lament",
     },
     {
-        id: 98,
+        id: '336',
         label: 'Cabin Fever',
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -1139,7 +1139,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Cabin_Fever',
     },
     {
-        id: 99,
+        id: '359',
         label: 'Fairytale I - Growing Pains',
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -1151,7 +1151,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Fairytale_I_-_Growing_Pains',
     },
     {
-        id: 100,
+        id: '413',
         label: 'Recipe for Disaster',
         points: 10,
         difficulty: QUEST_DIFFICULTY.GRANDMASTER,
@@ -1162,7 +1162,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster',
     },
     {
-        id: 100.1,
+        id: '413.0',
         label: "Recipe for Disaster/Another Cook's Quest",
         points: 1,
         difficulty: QUEST_DIFFICULTY.GRANDMASTER,
@@ -1173,7 +1173,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Another_Cook's_Quest",
     },
     {
-        id: 100.1,
+        id: '413.1',
         label: 'Recipe for Disaster/Defeating the Culinaromancer',
         points: 1,
         difficulty: QUEST_DIFFICULTY.GRANDMASTER,
@@ -1184,7 +1184,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Defeating_the_Culinaromancer',
     },
     {
-        id: 100.2,
+        id: '413.2',
         label: 'Recipe for Disaster/Freeing the Mountain Dwarf',
         points: 1,
         difficulty: QUEST_DIFFICULTY.GRANDMASTER,
@@ -1195,7 +1195,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Freeing_the_Mountain_Dwarf',
     },
     {
-        id: 100.3,
+        id: '413.3',
         label: 'Recipe for Disaster/Freeing the Goblin generals',
         points: 1,
         difficulty: QUEST_DIFFICULTY.GRANDMASTER,
@@ -1206,7 +1206,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Freeing_the_Goblin_generals',
     },
     {
-        id: 100.4,
+        id: '413.4',
         label: 'Recipe for Disaster/Freeing Pirate Pete',
         points: 1,
         difficulty: QUEST_DIFFICULTY.GRANDMASTER,
@@ -1217,7 +1217,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Freeing_Pirate_Pete',
     },
     {
-        id: 100.5,
+        id: '413.5',
         label: 'Recipe for Disaster/Freeing the Lumbridge Guide',
         points: 1,
         difficulty: QUEST_DIFFICULTY.GRANDMASTER,
@@ -1228,7 +1228,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Freeing_the_Lumbridge_Guide',
     },
     {
-        id: 100.6,
+        id: '413.6',
         label: 'Recipe for Disaster/Freeing Evil Dave',
         points: 1,
         difficulty: QUEST_DIFFICULTY.GRANDMASTER,
@@ -1239,7 +1239,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Freeing_Evil_Dave',
     },
     {
-        id: 100.7,
+        id: '413.7',
         label: 'Recipe for Disaster/Freeing King Awowogei',
         points: 1,
         difficulty: QUEST_DIFFICULTY.GRANDMASTER,
@@ -1250,7 +1250,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Freeing_King_Awowogei',
     },
     {
-        id: 100.8,
+        id: '413.8',
         label: 'Recipe for Disaster/Freeing Sir Amik Varze',
         points: 1,
         difficulty: QUEST_DIFFICULTY.GRANDMASTER,
@@ -1261,7 +1261,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Freeing_Sir_Amik_Varze',
     },
     {
-        id: 100.9,
+        id: '413.9',
         label: 'Recipe for Disaster/Freeing Skrach Uglogwee',
         points: 1,
         difficulty: QUEST_DIFFICULTY.GRANDMASTER,
@@ -1272,7 +1272,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Freeing_Skrach_Uglogwee',
     },
     {
-        id: 101,
+        id: '384',
         label: 'In Aid of the Myreque',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1284,7 +1284,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/In_Aid_of_the_Myreque',
     },
     {
-        id: 102,
+        id: '426',
         label: "A Soul's Bane",
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -1295,7 +1295,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/A_Soul's_Bane",
     },
     {
-        id: 103,
+        id: '3152',
         label: 'Rag and Bone Man I',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -1306,7 +1306,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Rag_and_Bone_Man_I',
     },
     {
-        id: 104,
+        id: '411',
         label: 'Rag and Bone Man II',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1317,7 +1317,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Rag_and_Bone_Man_II',
     },
     {
-        id: 105,
+        id: '428',
         label: 'Swan Song',
         points: 2,
         difficulty: QUEST_DIFFICULTY.MASTER,
@@ -1328,7 +1328,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Swan_Song',
     },
     {
-        id: 106,
+        id: '417',
         label: 'Royal Trouble',
         points: 1,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -1340,7 +1340,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Royal_Trouble',
     },
     {
-        id: 107,
+        id: '343',
         label: 'Death to the Dorgeshuun',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1352,7 +1352,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Death_to_the_Dorgeshuun',
     },
     {
-        id: 108,
+        id: '360',
         label: 'Fairytale II - Cure a Queen',
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -1364,7 +1364,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Fairytale_II_-_Cure_a_Queen',
     },
     {
-        id: 109,
+        id: '391',
         label: 'Lunar Diplomacy',
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -1376,7 +1376,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Lunar_Diplomacy',
     },
     {
-        id: 110,
+        id: '358',
         label: 'The Eyes of Glouphrie',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1388,7 +1388,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Eyes_of_Glouphrie',
     },
     {
-        id: 111,
+        id: '341',
         label: 'Darkness of Hallowvale',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1400,7 +1400,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Darkness_of_Hallowvale',
     },
     {
-        id: 112,
+        id: '425',
         label: 'The Slug Menace',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1412,7 +1412,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Slug_Menace',
     },
     {
-        id: 113,
+        id: '355',
         label: 'Elemental Workshop II',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1424,7 +1424,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Elemental_Workshop_II',
     },
     {
-        id: 114,
+        id: '402',
         label: "My Arm's Big Adventure",
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1436,7 +1436,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/My_Arm's_Big_Adventure",
     },
     {
-        id: 115,
+        id: '357',
         label: 'Enlightened Journey',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1447,7 +1447,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Enlightened_Journey',
     },
     {
-        id: 116,
+        id: '353',
         label: "Eagles' Peak",
         points: 2,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -1458,7 +1458,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Eagles'_Peak",
     },
     {
-        id: 117,
+        id: '331',
         label: 'Animal Magnetism',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1469,7 +1469,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Animal_Magnetism',
     },
     {
-        id: 118,
+        id: '339',
         label: 'Contact!',
         points: 1,
         difficulty: QUEST_DIFFICULTY.MASTER,
@@ -1481,7 +1481,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Contact!',
     },
     {
-        id: 119,
+        id: '338',
         label: 'Cold War',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1492,7 +1492,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Cold_War',
     },
     {
-        id: 120,
+        id: '367',
         label: 'The Fremennik Isles',
         points: 1,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -1504,7 +1504,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Fremennik_Isles',
     },
     {
-        id: 121,
+        id: '437',
         label: 'Tower of Life',
         points: 2,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -1515,7 +1515,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Tower_of_Life',
     },
     {
-        id: 122,
+        id: '375',
         label: 'The Great Brain Robbery',
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -1527,7 +1527,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Great_Brain_Robbery',
     },
     {
-        id: 123,
+        id: '447',
         label: 'What Lies Below',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1538,7 +1538,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/What_Lies_Below',
     },
     {
-        id: 124,
+        id: '3150',
         label: "Olaf's Quest",
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1550,7 +1550,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Olaf's_Quest",
     },
     {
-        id: 125,
+        id: '332',
         label: 'Another Slice of H.A.M.',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1562,7 +1562,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Another_Slice_of_H.A.M.',
     },
     {
-        id: 126,
+        id: '349',
         label: 'Dream Mentor',
         points: 2,
         difficulty: QUEST_DIFFICULTY.MASTER,
@@ -1574,7 +1574,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Dream_Mentor',
     },
     {
-        id: 127,
+        id: '376',
         label: 'Grim Tales',
         points: 1,
         difficulty: QUEST_DIFFICULTY.MASTER,
@@ -1585,7 +1585,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Grim_Tales',
     },
     {
-        id: 128,
+        id: '387',
         label: "King's Ransom",
         points: 1,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -1597,7 +1597,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/King's_Ransom",
     },
     {
-        id: 129,
+        id: '396',
         label: 'Monkey Madness II',
         points: 4,
         difficulty: QUEST_DIFFICULTY.GRANDMASTER,
@@ -1609,7 +1609,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Monkey_Madness_II',
     },
     {
-        id: 130,
+        id: '309',
         label: 'Misthalin Mystery',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -1620,7 +1620,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Misthalin_Mystery',
     },
     {
-        id: 131,
+        id: '3136',
         label: 'Client of Kourend',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -1632,7 +1632,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Client_of_Kourend',
     },
     {
-        id: 132,
+        id: '3135',
         label: 'Bone Voyage',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1643,7 +1643,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Bone_Voyage',
     },
     {
-        id: 133,
+        id: '409',
         label: 'The Queen of Thieves',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1655,7 +1655,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Queen_of_Thieves',
     },
     {
-        id: 134,
+        id: '344',
         label: 'The Depths of Despair',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1667,7 +1667,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Depths_of_Despair',
     },
     {
-        id: 135,
+        id: '301',
         label: 'The Corsair Curse',
         points: 2,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1678,7 +1678,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Corsair_Curse',
     },
     {
-        id: 136,
+        id: '348',
         label: 'Dragon Slayer II',
         points: 5,
         difficulty: QUEST_DIFFICULTY.GRANDMASTER,
@@ -1690,7 +1690,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Dragon_Slayer_II',
     },
     {
-        id: 137,
+        id: '431',
         label: 'Tale of the Righteous',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1702,7 +1702,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Tale_of_the_Righteous',
     },
     {
-        id: 138,
+        id: '432',
         label: 'A Taste of Hope',
         points: 1,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -1714,7 +1714,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/A_Taste_of_Hope',
     },
     {
-        id: 139,
+        id: '392',
         label: 'Making Friends with My Arm',
         points: 2,
         difficulty: QUEST_DIFFICULTY.MASTER,
@@ -1726,7 +1726,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Making_Friends_with_My_Arm',
     },
     {
-        id: 140,
+        id: '543',
         label: 'The Forsaken Tower',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1738,7 +1738,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Forsaken_Tower',
     },
     {
-        id: 141,
+        id: '542',
         label: 'The Ascent of Arceuus',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1750,7 +1750,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Ascent_of_Arceuus',
     },
     {
-        id: 142,
+        id: '3155',
         label: 'X Marks the Spot',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -1762,7 +1762,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/X_Marks_the_Spot',
     },
     {
-        id: 143,
+        id: '603',
         label: 'Song of the Elves',
         points: 4,
         difficulty: QUEST_DIFFICULTY.GRANDMASTER,
@@ -1774,7 +1774,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Song_of_the_Elves',
     },
     {
-        id: 144,
+        id: '3141',
         label: 'The Fremennik Exiles',
         points: 2,
         difficulty: QUEST_DIFFICULTY.MASTER,
@@ -1786,7 +1786,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Fremennik_Exiles',
     },
     {
-        id: 145,
+        id: '1276',
         label: 'Sins of the Father',
         points: 2,
         difficulty: QUEST_DIFFICULTY.MASTER,
@@ -1798,7 +1798,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Sins_of_the_Father',
     },
     {
-        id: 146,
+        id: '3151',
         label: 'A Porcine of Interest',
         points: 1,
         difficulty: QUEST_DIFFICULTY.NOVICE,
@@ -1809,7 +1809,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/A_Porcine_of_Interest',
     },
     {
-        id: 147,
+        id: '752',
         label: 'Getting Ahead',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1821,7 +1821,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Getting_Ahead',
     },
     {
-        id: 148,
+        id: '2874',
         label: 'Below Ice Mountain',
         points: 1,
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
@@ -1832,7 +1832,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Below_Ice_Mountain',
     },
     {
-        id: 149,
+        id: '949',
         label: 'A Night at the Theatre',
         points: 2,
         difficulty: QUEST_DIFFICULTY.MASTER,
@@ -1844,7 +1844,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/A_Night_at_the_Theatre',
     },
     {
-        id: 150,
+        id: '2971',
         label: 'A Kingdom Divided',
         points: 2,
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
@@ -1856,7 +1856,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/A_Kingdom_Divided',
     },
     {
-        id: 1001,
+        id: '322',
         label: "Alfred Grimhand's Barcrawl",
         difficulty: QUEST_DIFFICULTY.NOVICE,
         length: QUEST_LENGTH.MEDIUM,
@@ -1866,7 +1866,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Alfred_Grimhand's_Barcrawl",
     },
     {
-        id: 1002,
+        id: '3146',
         label: 'The Mage Arena',
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
         length: QUEST_LENGTH.MEDIUM,
@@ -1876,7 +1876,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Mage_Arena',
     },
     {
-        id: 1003,
+        id: '3140',
         label: 'Enter the Abyss',
         difficulty: QUEST_DIFFICULTY.NOVICE,
         length: QUEST_LENGTH.SHORT,
@@ -1886,7 +1886,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Enter_the_Abyss',
     },
     {
-        id: 1004,
+        id: '3137',
         label: 'Curse of the Empty Lord',
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
         length: QUEST_LENGTH.MEDIUM,
@@ -1897,7 +1897,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Curse_of_the_Empty_Lord',
     },
     {
-        id: 1005,
+        id: '3153',
         label: 'Skippy and the Mogres',
         difficulty: QUEST_DIFFICULTY.NOVICE,
         length: QUEST_LENGTH.VERY_SHORT,
@@ -1907,7 +1907,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Skippy_and_the_Mogres',
     },
     {
-        id: 1006,
+        id: '324',
         label: 'The Enchanted Key',
         difficulty: QUEST_DIFFICULTY.NOVICE,
         length: QUEST_LENGTH.LONG,
@@ -1917,7 +1917,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Enchanted_Key',
     },
     {
-        id: 1007,
+        id: '3144',
         label: 'Lair of Tarn Razorlor',
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
         length: QUEST_LENGTH.SHORT,
@@ -1927,7 +1927,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Lair_of_Tarn_Razorlor',
     },
     {
-        id: 1008,
+        id: '325',
         label: "The General's Shadow",
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
         length: QUEST_LENGTH.MEDIUM,
@@ -1938,7 +1938,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/The_General's_Shadow",
     },
     {
-        id: 1009,
+        id: '320',
         label: 'Architectural Alliance',
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
         length: QUEST_LENGTH.VERY_LONG,
@@ -1949,7 +1949,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Architectural_Alliance',
     },
     {
-        id: 1010,
+        id: '1275',
         label: 'Bear Your Soul',
         difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
         length: QUEST_LENGTH.LONG,
@@ -1960,7 +1960,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Bear_Your_Soul',
     },
     {
-        id: 1011,
+        id: '329',
         label: 'Family Pest',
         difficulty: QUEST_DIFFICULTY.NOVICE,
         length: QUEST_LENGTH.VERY_SHORT,
@@ -1970,7 +1970,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/Family_Pest',
     },
     {
-        id: 1012,
+        id: '330',
         label: 'The Mage Arena II',
         difficulty: QUEST_DIFFICULTY.MASTER,
         length: QUEST_LENGTH.LONG,
@@ -1980,7 +1980,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/The_Mage_Arena_II',
     },
     {
-        id: 1013,
+        id: '3143',
         label: 'In Search of Knowledge',
         difficulty: QUEST_DIFFICULTY.EXPERIENCED,
         length: QUEST_LENGTH.MEDIUM,
@@ -1990,7 +1990,7 @@ export default [
         wiki: 'https://oldschool.runescape.wiki/w/In_Search_of_Knowledge',
     },
     {
-        id: 1014,
+        id: '1688',
         label: "Daddy's Home",
         difficulty: QUEST_DIFFICULTY.NOVICE,
         length: QUEST_LENGTH.SHORT,
@@ -2000,7 +2000,7 @@ export default [
         wiki: "https://oldschool.runescape.wiki/w/Daddy's_Home",
     },
     {
-        id: 1015,
+        id: '90000', // TODO this doesn't have an official ID yet
         label: 'The Frozen Door',
         difficulty: QUEST_DIFFICULTY.NOVICE,
         length: QUEST_LENGTH.LONG,

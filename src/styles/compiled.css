@@ -2236,9 +2236,6 @@ select[multiple]:focus option:checked {
 .align-middle {
   vertical-align: middle;
 }
-.align-bottom {
-  vertical-align: bottom;
-}
 .align-sub {
   vertical-align: sub;
 }

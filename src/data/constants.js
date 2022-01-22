@@ -462,4 +462,10 @@ export const QUEST_SERIES = {
     },
 };
 
+export const QUEST_STATUS = {
+    NOT_STARTED: 'NOT_STARTED',
+    IN_PROGRESS: 'IN_PROGRESS',
+    FINISHED: 'FINISHED',
+};
+
 export const DEFAULT_NOTES_TEXT = '(none)';

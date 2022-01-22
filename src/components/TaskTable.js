@@ -71,6 +71,7 @@ export default function TaskTable() {
     const initialState = isXsViewport ? { hiddenColumns: ['id', 'difficulty', 'category'] } : { hiddenColumns: ['id'] };
     initialState.pageSize = 50;
 
+    const filterState = useSelector(state => state.filters.tasks);
     const tasksState = useSelector(state => state.tasks.tasks);
     const tempState = useSelector(state => state.temp);
     const dispatch = useDispatch();
@@ -80,6 +81,7 @@ export default function TaskTable() {
             columns={columns}
             data={data}
             filters={filters}
+            filterState={filterState}
             globalFilter={fuzzyTextFilter}
             customFilterProps={{ tasksState }}
             defaultColumn={defaultColumn}

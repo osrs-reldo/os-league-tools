@@ -3,25 +3,31 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
 
-const CURRENT_VERSION = 2;
+const CURRENT_VERSION = 3;
 const INITIAL_STATE = {
     version: CURRENT_VERSION,
-    status: 'all',
-    todo: 'all',
-    ignored: 'hide',
-    difficulty: null,
-    categories: null,
-    subcategories: null,
-    skills: null,
-    reorderEnabled: false,
+    tasks: {
+        status: 'all',
+        todo: 'all',
+        ignored: 'hide',
+        difficulty: null,
+        categories: null,
+        subcategories: null,
+        skills: null,
+        reorderEnabled: false,
+    },
+    quests: { status: 'all', difficulty: null, length: null, skills: null },
 };
 
 export const filterSlice = createSlice({
     name: 'filters',
     initialState: INITIAL_STATE,
     reducers: {
-        update: (state, action) => {
-            state[action.payload.field] = action.payload.value;
+        updateTaskFilter: (state, action) => {
+            state.tasks[action.payload.field] = action.payload.value;
+        },
+        updateQuestFilter: (state, action) => {
+            state.quests[action.payload.field] = action.payload.value;
         },
         reset: () => INITIAL_STATE,
     },
@@ -36,6 +42,6 @@ export const loadState = () => {
     return prevState;
 };
 
-export const { update, reset } = filterSlice.actions;
+export const { updateTaskFilter, updateQuestFilter, reset } = filterSlice.actions;
 
 export default filterSlice.reducer;

@@ -2,7 +2,7 @@
 import React from 'react';
 import { useSelector, useDispatch, batch } from 'react-redux';
 import _ from 'lodash';
-import { update as updateFilter, reset } from '../store/filters';
+import { updateTaskFilter, reset } from '../store/filters';
 import { update as updateUserData } from '../store/userData';
 import ButtonGroup from './common/ButtonGroup';
 import InputSelect from './common/InputSelect';
@@ -10,7 +10,7 @@ import { CATEGORY, SUBCATEGORY, DIFFICULTY, SKILLS } from '../data/constants';
 import LabeledCheckbox from './common/LabeledCheckbox';
 
 export default function TaskFilters() {
-    const filterState = useSelector(state => state.filters);
+    const filterState = useSelector(state => state.filters.tasks);
     const dispatch = useDispatch();
 
     return (
@@ -25,7 +25,7 @@ export default function TaskFilters() {
                             { value: 'cmpl', label: 'Complete' },
                         ]}
                         selection={filterState.status}
-                        setSelection={val => dispatch(updateFilter({ field: 'status', value: val }))}
+                        setSelection={val => dispatch(updateTaskFilter({ field: 'status', value: val }))}
                     />
                 </div>
             </div>
@@ -39,7 +39,7 @@ export default function TaskFilters() {
                             { value: 'only', label: 'To-do only' },
                         ]}
                         selection={filterState.todo}
-                        setSelection={val => dispatch(updateFilter({ field: 'todo', value: val }))}
+                        setSelection={val => dispatch(updateTaskFilter({ field: 'todo', value: val }))}
                     />
                 </div>
             </div>
@@ -53,7 +53,7 @@ export default function TaskFilters() {
                             { value: 'only', label: 'Ignored only' },
                         ]}
                         selection={filterState.ignored}
-                        setSelection={val => dispatch(updateFilter({ field: 'ignored', value: val }))}
+                        setSelection={val => dispatch(updateTaskFilter({ field: 'ignored', value: val }))}
                     />
                 </div>
             </div>
@@ -65,7 +65,7 @@ export default function TaskFilters() {
                         defaultChecked={!filterState.difficulty}
                         onClick={e =>
                             dispatch(
-                                updateFilter({
+                                updateTaskFilter({
                                     field: 'difficulty',
                                     value: e.target.checked ? null : Object.values(DIFFICULTY).map(x => x.label),
                                 })
@@ -80,7 +80,7 @@ export default function TaskFilters() {
                         }))}
                         enabled={!!filterState.difficulty}
                         selection={filterState.difficulty || Object.values(DIFFICULTY).map(x => x.label)}
-                        setSelection={val => dispatch(updateFilter({ field: 'difficulty', value: val }))}
+                        setSelection={val => dispatch(updateTaskFilter({ field: 'difficulty', value: val }))}
                         multi
                     />
                 </div>
@@ -95,7 +95,7 @@ export default function TaskFilters() {
                             defaultChecked
                             // defaultChecked={!filterState.categories}
                             // onClick={e =>
-                            //     dispatch(updateFilter({ field: 'categories', value: e.target.checked ? null : 'all' }))
+                            //     dispatch(updateTaskFilter({ field: 'categories', value: e.target.checked ? null : 'all' }))
                             // }
                             className='mb-1'
                         />
@@ -110,7 +110,7 @@ export default function TaskFilters() {
                             enabled={false}
                             // enabled={!!filterState.categories}
                             selection={filterState.categories}
-                            setSelection={val => dispatch(updateFilter({ field: 'categories', value: val }))}
+                            setSelection={val => dispatch(updateTaskFilter({ field: 'categories', value: val }))}
                         />
                     </div>
                     <div>
@@ -120,7 +120,7 @@ export default function TaskFilters() {
                             // defaultChecked={!filterState.subcategories}
                             // onClick={e =>
                             //     dispatch(
-                            //         updateFilter({ field: 'subcategories', value: e.target.checked ? null : 'all' })
+                            //         updateTaskFilter({ field: 'subcategories', value: e.target.checked ? null : 'all' })
                             //     )
                             // }
                             className='mb-1'
@@ -139,7 +139,7 @@ export default function TaskFilters() {
                             enabled={false}
                             // enabled={!!filterState.subcategories}
                             selection={filterState.subcategories}
-                            setSelection={val => dispatch(updateFilter({ field: 'subcategories', value: val }))}
+                            setSelection={val => dispatch(updateTaskFilter({ field: 'subcategories', value: val }))}
                         />
                     </div>
                 </div>
@@ -151,7 +151,7 @@ export default function TaskFilters() {
                         label='All skills'
                         defaultChecked={!filterState.skills}
                         onClick={e =>
-                            dispatch(updateFilter({ field: 'skills', value: e.target.checked ? null : 'all' }))
+                            dispatch(updateTaskFilter({ field: 'skills', value: e.target.checked ? null : 'all' }))
                         }
                     />
                     <InputSelect
@@ -161,7 +161,7 @@ export default function TaskFilters() {
                         className='md:w-full w-fit text-sm'
                         enabled={!!filterState.skills}
                         selection={filterState.skills}
-                        setSelection={val => dispatch(updateFilter({ field: 'skills', value: val }))}
+                        setSelection={val => dispatch(updateTaskFilter({ field: 'skills', value: val }))}
                     />
                     {/* TODO add skill req filtering */}
                     {/* <LabeledCheckbox label='Hide tasks with unmet requirements' className='mb-1' /> */}
@@ -178,7 +178,7 @@ export default function TaskFilters() {
                         className='button-outline w-full mb-1 h-fit'
                         onClick={() =>
                             batch(() => {
-                                dispatch(updateFilter({ field: 'reorderEnabled', value: false }));
+                                dispatch(updateTaskFilter({ field: 'reorderEnabled', value: false }));
                                 dispatch(updateUserData({ field: 'taskOrder', value: null })); // TODO
                             })
                         }
@@ -189,7 +189,7 @@ export default function TaskFilters() {
                     <button
                         type='button'
                         className='button-outline w-full mb-1 h-fit'
-                        onClick={() => dispatch(updateFilter({ field: 'reorderEnabled', value: true }))}
+                        onClick={() => dispatch(updateTaskFilter({ field: 'reorderEnabled', value: true }))}
                     >
                         Enable drag-and-drop reordering
                     </button>

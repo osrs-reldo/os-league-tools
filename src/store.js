@@ -6,7 +6,7 @@ import userReducer, { loadState as loadUserState } from './store/userData';
 import settingsReducer, { loadState as loadSettingsState } from './store/settings';
 import tasksReducer, { loadState as loadTasksState } from './store/tasks/tasks';
 import tempReducer, { loadState as loadTempState } from './store/temp';
-import unlocksReducer, { loadState as loadUnlocksState } from './store/unlocks';
+import unlocksReducer, { loadState as loadUnlocksState } from './store/unlocks/unlocks';
 
 const reducer = {
     filters: filterReducer,
