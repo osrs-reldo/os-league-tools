@@ -29,8 +29,21 @@ function Task({ row, value, taskState, dispatchFn }) {
                     <span className='inline align-middle text-xs'>{value.description}</span>
                 </div>
 
+                <button
+                    className={`text-xs whitespace-nowrap mr-3 p-1 bg-hover-subdued ${
+                        taskState.todo ? 'text-secondary-alt' : ''
+                    }`}
+                    type='button'
+                    onClick={e => {
+                        dispatchFn(toggleTodo({ taskId: row.id }));
+                        e.stopPropagation();
+                    }}
+                >
+                    {taskState.todo ? '- to-do' : '+ to-do'}
+                </button>
+
                 {isXsViewport && (
-                    <div className='flex items-center h-full '>
+                    <div className='flex items-center h-full mr-1'>
                         <Difficulty value={row.values.difficulty} />
                         <Category value={row.values.category} />
                     </div>

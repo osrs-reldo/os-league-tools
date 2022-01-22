@@ -30,6 +30,9 @@
     .bg-hover {
         @apply hover:bg-gray-200 dark:hover:bg-zinc-800;
     }
+    .bg-hover-subdued {
+        @apply hover:bg-gray-300 dark:hover:bg-zinc-600;
+    }
     .bg-inverted {
         @apply bg-gray-200 dark:bg-zinc-100;
     }
