@@ -85,7 +85,7 @@ function ExpandedTask({ original, notesState, taskState, dispatchFn }) {
     );
 }
 
-function Difficulty({ value }) {
+export function Difficulty({ value }) {
     const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
     const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
 
@@ -97,10 +97,10 @@ function Difficulty({ value }) {
     );
 }
 
-function Category({ value }) {
+export function Category({ value }) {
     const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
 
-    if (!value.category) {
+    if (!value || !value.category) {
         return null;
     }
 
@@ -112,7 +112,7 @@ function Category({ value }) {
     );
 }
 
-function Requirements({ value, maxLength = 100, className = '' }) {
+export function Requirements({ value, maxLength = 100, className = '' }) {
     if (value.length === 0) {
         return <span className={`italic text-xs ${className}`}>none</span>;
     }

@@ -1953,6 +1953,9 @@ select[multiple]:focus option:checked {
 .max-w-\[60rem\] {
   max-width: 60rem;
 }
+.max-w-\[420px\] {
+  max-width: 420px;
+}
 .max-w-\[90\%\] {
   max-width: 90%;
 }
