@@ -88,11 +88,7 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                             navItem.renderFn ? (
                                 navItem.renderFn()
                             ) : (
-                                <PrimaryLink
-                                    key={navItem.id}
-                                    label={navItem.label}
-                                    to={navItem.to}
-                                />
+                                <PrimaryLink key={navItem.id} label={navItem.label} to={navItem.to} />
                             )
                         )}
                 </div>
@@ -202,7 +198,7 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
 
 function PrimaryLink({ label, to }) {
     return (
-        <NavLink className='text-primary navbar-link hover:underline mr-4' exact to={to}>
+        <NavLink className='text-primary navbar-link hover:underline mr-4' to={to}>
             {label}
         </NavLink>
     );
@@ -262,7 +258,7 @@ function CollapsedMenuLink({ iconFont, iconSrc, label, href, target, to }) {
 
     if (to) {
         return (
-        <NavLink className='text-primary bg-hover py-1' exact to={to}>
+            <NavLink className='text-primary bg-hover py-1' to={to}>
                 {linkContent}
             </NavLink>
         );

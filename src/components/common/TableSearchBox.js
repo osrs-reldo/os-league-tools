@@ -1,21 +1,14 @@
-import React, { useState } from 'react';
-import { useAsyncDebounce } from 'react-table';
+import React from 'react';
 
 export default function SearchBox({ globalFilter, setGlobalFilter }) {
-    const [value, setValue] = useState(globalFilter);
-    const onChange = useAsyncDebounce(newVal => {
-        setGlobalFilter(newVal || undefined);
-    }, 200);
-
     return (
         <input
             type='text'
             className='input-primary form-input text-xs'
             placeholder='Search...'
-            value={value || ''}
+            value={globalFilter || ''}
             onChange={e => {
-                setValue(e.target.value);
-                onChange(e.target.value);
+                setGlobalFilter(e.target.value);
             }}
         />
     );

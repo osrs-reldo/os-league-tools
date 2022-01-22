@@ -32,7 +32,7 @@ export default function Table({
 
     useEffect(() => {
         setRecords(data.filter(record => filters.every(filter => filter(record, filterState, customFilterProps))));
-    }, [filterState]);
+    }, [filterState, data, customFilterProps]);
 
     const table = useTable(
         {
@@ -41,6 +41,7 @@ export default function Table({
             data: records,
             defaultColumn,
             globalFilter,
+            autoResetGlobalFilter: false,
             getRowId: useCallback(row => row.id, []),
         },
         useFlexLayout,

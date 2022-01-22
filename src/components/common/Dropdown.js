@@ -40,7 +40,7 @@ function LinkItem({ children, href, target = '_self', icon = null, to }) {
     }
     if (to) {
         return (
-            <NavLink className={linkClassName} exact to={to}>
+            <NavLink className={linkClassName} to={to}>
                 {linkContent}
             </NavLink>
         );

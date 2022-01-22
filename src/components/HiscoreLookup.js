@@ -10,21 +10,28 @@ export default function HiscoreLookup({ handleResultCallback = () => {} }) {
     const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
+        let isMounted = true;
         const cachedHiscores = getCachedHiscores();
         if (cachedHiscores) {
             handleResultCallback(cachedHiscores);
         } else if (username) {
             setIsLoading(true);
             getHiscores(username).then(res => {
-                if (res.success) {
-                    handleResultCallback(res.hiscores);
-                    setIsLoading(false);
-                } else {
-                    setErrorText(res.message);
-                    setIsLoading(false);
+                if (isMounted) {
+                    if (res.success) {
+                        handleResultCallback(res.hiscores);
+                        setIsLoading(false);
+                    } else {
+                        setErrorText(res.message);
+                        setIsLoading(false);
+                    }
                 }
             });
         }
+        return () => {
+            isMounted = false;
+            return false;
+        };
         // only want this to run once on first load
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);

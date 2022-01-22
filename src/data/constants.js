@@ -56,31 +56,37 @@ export const DIFFICULTY = {
         label: 'Beginner',
         value: 5,
         icon: '/img/task-beginner.png',
+        sortOrder: 0,
     },
     EASY: {
         label: 'Easy',
         value: 5,
         icon: '/img/task-easy.png',
+        sortOrder: 1,
     },
     MEDIUM: {
         label: 'Medium',
         value: 25,
         icon: '/img/task-medium.png',
+        sortOrder: 2,
     },
     HARD: {
         label: 'Hard',
         value: 50,
         icon: '/img/task-hard.png',
+        sortOrder: 3,
     },
     ELITE: {
         label: 'Elite',
         value: 125,
         icon: '/img/task-elite.png',
+        sortOrder: 4,
     },
     MASTER: {
         label: 'Master',
         value: 250,
         icon: '/img/task-master.png',
+        sortOrder: 5,
     },
 };
 

@@ -152,10 +152,14 @@ function sortTask(a, b) {
 }
 
 function sortDifficulty(a, b) {
-    return a.values.difficulty.value - b.values.difficulty.value;
+    return a.values.difficulty.sortOrder - b.values.difficulty.sortOrder;
 }
 
 function sortCategory(a, b) {
+    if (!a?.values?.category?.category) {
+        return -1;
+    }
+
     const compareVal = a.values.category.category.label.localeCompare(b.values.category.category.label);
     if (compareVal === 0) {
         const subA = a.values.category.subcategory;
