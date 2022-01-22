@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import importFromPlugin from '../client/plugin-importer';
@@ -20,7 +21,9 @@ export default function PluginModal({ isOpen, setIsOpen }) {
                 Tasks Tracker RuneLite Plugin
             </Modal.Header>
             <Modal.Body className='text-primary text-sm'>
-                <span className='heading-accent-md ml-1'>About</span>
+                <span className='heading-accent-md ml-1'>Coming soon</span>
+                <p className='m-2 mt-1'>The plugin is pending approval from the Runelite team. Check back soon!</p>
+                {/* <span className='heading-accent-md ml-1'>About</span>
                 <p className='m-2 mt-1'>
                     OS League Tools has RuneLite integration! Enable the plugin to sync your tasks (and soon, your
                     quests, relics, and unlocks too).
@@ -65,7 +68,7 @@ export default function PluginModal({ isOpen, setIsOpen }) {
                     >
                         Sync
                     </button>
-                </p>
+                </p> */}
             </Modal.Body>
         </Modal>
     );
