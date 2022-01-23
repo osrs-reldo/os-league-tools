@@ -35,7 +35,7 @@ function importTasks(pluginTasks, localTasks, dispatch) {
     });
     return {
         ...localTasks,
-        syncedTasks,
+        ...syncedTasks,
     };
 }
 
