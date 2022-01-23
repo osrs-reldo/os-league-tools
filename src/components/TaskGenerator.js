@@ -22,16 +22,13 @@ export default function TaskGenerator() {
     }, []);
 
     const generateTask = () => {
-        const completedTaskIDsFromStore = Object.entries(reduxTasks)
-            .filter(([, taskObj]) => taskObj.completed)
+        const notPossibleTaskIDsFromStore = Object.entries(reduxTasks)
+            .filter(([, { completed, ignored }]) => completed || ignored)
             .map(([taskId]) => +taskId);
 
-        let randomTask;
+        const possibleTasks = tasks.filter(task => notPossibleTaskIDsFromStore.includes(task.id));
+        const randomTask = possibleTasks[Math.floor(Math.random() * possibleTasks.length)];
 
-        while (!randomTask) {
-            const generatedTask = tasks[Math.floor(Math.random() * tasks.length)];
-            if (!completedTaskIDsFromStore.includes(generatedTask.id)) randomTask = generatedTask;
-        }
         setActiveTask(randomTask);
         dispatch(updateRandomTask(randomTask.id));
     };
