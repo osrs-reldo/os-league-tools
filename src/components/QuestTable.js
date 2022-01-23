@@ -6,6 +6,7 @@ import Table from './common/Table';
 import LabeledIcon from './common/LabeledIcon';
 import { QUEST_STATUS } from '../data/constants';
 import { updateQuest } from '../store/unlocks/unlocks';
+import SkillRequirementList from './SkillRequirementList';
 
 export default function QuestTable() {
     const data = useMemo(() => quests, []);
@@ -84,6 +85,7 @@ export default function QuestTable() {
             defaultColumn={defaultColumn}
             initialState={initialState}
             customFilterProps={{ questState }}
+            ExpandedRow={ExpandedRow}
             customRowProps={{ questState, dispatch }}
             enableResizeColumns
         />
@@ -101,24 +103,28 @@ fuzzyTextFilter.autoRemove = val => !val;
 function QuestCell({ row, value, questState, dispatch }) {
     const questStatus = questState[row.id] || QUEST_STATUS.NOT_STARTED;
     return (
-        <div className='flex flex-row items-center h-full gap-2'>
-            <span
-                className='icon-2xl text-accent cursor-pointer'
-                onClick={() => {
-                    dispatch(
-                        updateQuest({
-                            id: row.values.id,
-                            status:
-                                questStatus === QUEST_STATUS.FINISHED
-                                    ? QUEST_STATUS.NOT_STARTED
-                                    : QUEST_STATUS.FINISHED,
-                        })
-                    );
-                }}
-            >
-                {questStatus === QUEST_STATUS.FINISHED ? 'check_box' : 'check_box_outline_blank'}
-            </span>
-            <span className='inline align-middle'>{value}</span>
+        <div {...row.getToggleRowExpandedProps()}>
+            <div className='flex flex-row items-center h-full gap-2'>
+                <span className='icon-2xl text-accent'>{row.isExpanded ? 'arrow_drop_down' : 'arrow_right'}</span>
+                <span
+                    className='icon-2xl text-accent cursor-pointer'
+                    onClick={e => {
+                        dispatch(
+                            updateQuest({
+                                id: row.values.id,
+                                status:
+                                    questStatus === QUEST_STATUS.FINISHED
+                                        ? QUEST_STATUS.NOT_STARTED
+                                        : QUEST_STATUS.FINISHED,
+                            })
+                        );
+                        e.stopPropagation();
+                    }}
+                >
+                    {questStatus === QUEST_STATUS.FINISHED ? 'check_box' : 'check_box_outline_blank'}
+                </span>
+                <span className='inline align-middle'>{value}</span>
+            </div>
         </div>
     );
 }
@@ -166,4 +172,20 @@ function lengthFilter(record, filterState) {
         return true;
     }
     return filterState.length.includes(record.length.label);
+}
+
+function ExpandedRow({ original }) {
+    return (
+        <div className='flex flex-row items-center h-full gap-2 max-w-[90%] md:max-w-[75%] lg:max-w-[60%]'>
+            {/* hack: invisible dummy icons to align the expanded text with the previous row */}
+            <div className='flex flex-row invisible'>
+                <span className='icon-2xl text-accent'>x</span>
+                <span className='icon-2xl text-accent'>x</span>
+            </div>
+            <div className='w-full flex flex-col gap-0.5'>
+                <span className='text-xs mr-1'>Requires:</span>
+                <SkillRequirementList value={original.skillReqs} className='ml-3' />
+            </div>
+        </div>
+    );
 }

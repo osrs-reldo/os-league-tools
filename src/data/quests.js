@@ -131,7 +131,7 @@ export default [
         length: QUEST_LENGTH.SHORT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'QP', level: 12 }],
         wiki: "https://oldschool.runescape.wiki/w/Black_Knights'_Fortress",
     },
     {
@@ -153,7 +153,7 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Mining', level: 10 }],
         wiki: "https://oldschool.runescape.wiki/w/The_Knight's_Sword",
     },
     {
@@ -188,7 +188,7 @@ export default [
         series: QUEST_SERIES.GUILDS,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'QP', level: 32 }],
         wiki: 'https://oldschool.runescape.wiki/w/Dragon_Slayer_I',
     },
     {
@@ -211,7 +211,10 @@ export default [
         series: QUEST_SERIES.FAIRY,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Woodcutting', level: 36 },
+            { skill: 'Crafting', level: 31 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Lost_City',
     },
     {
@@ -246,7 +249,13 @@ export default [
         series: QUEST_SERIES.GUILDS,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Cooking', level: 53 },
+            { skill: 'Fishing', level: 53 },
+            { skill: 'Mining', level: 50 },
+            { skill: 'Herblore', level: 25 },
+            { skill: 'QP', level: 55 },
+        ],
         wiki: "https://oldschool.runescape.wiki/w/Heroes'_Quest",
     },
     {
@@ -257,7 +266,7 @@ export default [
         length: QUEST_LENGTH.SHORT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Prayer', level: 31 }],
         wiki: 'https://oldschool.runescape.wiki/w/Scorpion_Catcher',
     },
     {
@@ -268,7 +277,12 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Magic', level: 59 },
+            { skill: 'Crafting', level: 40 },
+            { skill: 'Smithing', level: 40 },
+            { skill: 'Mining', level: 40 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Family_Crest',
     },
     {
@@ -279,7 +293,7 @@ export default [
         length: QUEST_LENGTH.SHORT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Thieving', level: 21 }],
         wiki: 'https://oldschool.runescape.wiki/w/Tribal_Totem',
     },
     {
@@ -290,7 +304,7 @@ export default [
         length: QUEST_LENGTH.SHORT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Fishing', level: 10 }],
         wiki: 'https://oldschool.runescape.wiki/w/Fishing_Contest',
     },
     {
@@ -313,7 +327,10 @@ export default [
         series: QUEST_SERIES.MAHJARRAT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Ranged', level: 40 },
+            { skill: 'Thieving', level: 42 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Temple_of_Ikov',
     },
     {
@@ -336,7 +353,7 @@ export default [
         series: QUEST_SERIES.CAMELOT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Attack', level: 20 }],
         wiki: 'https://oldschool.runescape.wiki/w/Holy_Grail',
     },
     {
@@ -408,7 +425,7 @@ export default [
         series: QUEST_SERIES.TEMPLE_KNIGHT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Firemaking', level: 30 }],
         wiki: 'https://oldschool.runescape.wiki/w/Sea_Slug',
     },
     {
@@ -444,7 +461,7 @@ export default [
         series: QUEST_SERIES.KARAMJA,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Herblore', level: 3 }],
         wiki: 'https://oldschool.runescape.wiki/w/Jungle_Potion',
     },
     {
@@ -456,7 +473,7 @@ export default [
         series: QUEST_SERIES.GNOME,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Agility', level: 25 }],
         wiki: 'https://oldschool.runescape.wiki/w/The_Grand_Tree',
     },
     {
@@ -468,7 +485,10 @@ export default [
         series: QUEST_SERIES.KARAMJA,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Crafting', level: 20 },
+            { skill: 'Agility', level: 32 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Shilo_Village',
     },
     {
@@ -480,7 +500,7 @@ export default [
         series: QUEST_SERIES.ELF,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Ranged', level: 25 }],
         wiki: 'https://oldschool.runescape.wiki/w/Underground_Pass',
     },
     {
@@ -491,7 +511,7 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Crafting', level: 10 }],
         wiki: 'https://oldschool.runescape.wiki/w/Observatory_Quest',
     },
     {
@@ -502,7 +522,10 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Fletching', level: 10 },
+            { skill: 'Smithing', level: 20 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/The_Tourist_Trap',
     },
     {
@@ -514,7 +537,13 @@ export default [
         series: QUEST_SERIES.OGRE,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Magic', level: 15 },
+            { skill: 'Mining', level: 40 },
+            { skill: 'Herblore', level: 14 },
+            { skill: 'Agility', level: 25 },
+            { skill: 'Thieving', level: 15 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Watchtower',
     },
     {
@@ -549,7 +578,11 @@ export default [
         series: QUEST_SERIES.MAHJARRAT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Herblore', level: 10 },
+            { skill: 'Agility', level: 10 },
+            { skill: 'Thieving', level: 25 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/The_Dig_Site',
     },
     {
@@ -572,7 +605,19 @@ export default [
         series: QUEST_SERIES.GUILDS,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Strength', level: 50 },
+            { skill: 'Prayer', level: 42 },
+            { skill: 'Magic', level: 56 },
+            { skill: 'Woodcutting', level: 50 },
+            { skill: 'Crafting', level: 50 },
+            { skill: 'Smithing', level: 50 },
+            { skill: 'Mining', level: 52 },
+            { skill: 'Herblore', level: 45 },
+            { skill: 'Agility', level: 50 },
+            { skill: 'Thieving', level: 50 },
+            { skill: 'QP', level: 107 },
+        ],
         wiki: "https://oldschool.runescape.wiki/w/Legends'_Quest",
     },
     {
@@ -595,7 +640,11 @@ export default [
         series: QUEST_SERIES.OGRE,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Ranged', level: 30 },
+            { skill: 'Cooking', level: 30 },
+            { skill: 'Fletching', level: 5 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Big_Chompy_Bird_Hunting',
     },
     {
@@ -607,7 +656,11 @@ export default [
         series: QUEST_SERIES.ELEMENTAL,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Crafting', level: 20 },
+            { skill: 'Smithing', level: 20 },
+            { skill: 'Mining', level: 20 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Elemental_Workshop_I',
     },
     {
@@ -631,7 +684,7 @@ export default [
         series: QUEST_SERIES.MYREQUE,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Crafting', level: 18 }],
         wiki: 'https://oldschool.runescape.wiki/w/Nature_Spirit',
     },
     {
@@ -655,7 +708,7 @@ export default [
         series: QUEST_SERIES.TROLL,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Agility', level: 15 }],
         wiki: 'https://oldschool.runescape.wiki/w/Troll_Stronghold',
     },
     {
@@ -667,7 +720,11 @@ export default [
         series: QUEST_SERIES.KARAMJA,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Cooking', level: 30 },
+            { skill: 'Fishing', level: 5 },
+            { skill: 'Agility', level: 15 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Tai_Bwo_Wannai_Trio',
     },
     {
@@ -679,7 +736,10 @@ export default [
         series: QUEST_SERIES.ELF,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Crafting', level: 10 },
+            { skill: 'Agility', level: 56 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Regicide',
     },
     {
@@ -691,7 +751,7 @@ export default [
         series: QUEST_SERIES.TROLL,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Herblore', level: 31 }],
         wiki: "https://oldschool.runescape.wiki/w/Eadgar's_Ruse",
     },
     {
@@ -702,7 +762,11 @@ export default [
         length: QUEST_LENGTH.SHORT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Firemaking', level: 5 },
+            { skill: 'Crafting', level: 20 },
+            { skill: 'Herblore', level: 15 },
+        ],
         wiki: "https://oldschool.runescape.wiki/w/Shades_of_Mort'ton",
     },
     {
@@ -714,7 +778,11 @@ export default [
         series: QUEST_SERIES.FREMENNIK,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Woodcutting', level: 40 },
+            { skill: 'Fletching', level: 25 },
+            { skill: 'Crafting', level: 40 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/The_Fremennik_Trials',
     },
     {
@@ -726,7 +794,7 @@ export default [
         series: QUEST_SERIES.FREMENNIK,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Agility', level: 35 }],
         wiki: 'https://oldschool.runescape.wiki/w/Horror_from_the_Deep',
     },
     {
@@ -738,7 +806,12 @@ export default [
         series: QUEST_SERIES.FREMENNIK,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Woodcutting', level: 45 },
+            { skill: 'Fishing', level: 35 },
+            { skill: 'Mining', level: 30 },
+            { skill: 'Farming', level: 10 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Throne_of_Miscellania',
     },
     {
@@ -761,7 +834,10 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Agility', level: 15 },
+            { skill: 'Runecraft', level: 35 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Haunted_Mine',
     },
     {
@@ -785,7 +861,7 @@ export default [
         series: QUEST_SERIES.MYREQUE,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Agility', level: 25 }],
         wiki: 'https://oldschool.runescape.wiki/w/In_Search_of_the_Myreque',
     },
     {
@@ -796,7 +872,10 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Crafting', level: 20 },
+            { skill: 'Thieving', level: 25 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Creature_of_Fenkenstrain',
     },
     {
@@ -808,7 +887,7 @@ export default [
         series: QUEST_SERIES.ELF,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Agility', level: 56 }],
         wiki: 'https://oldschool.runescape.wiki/w/Roving_Elves',
     },
     {
@@ -819,7 +898,10 @@ export default [
         length: QUEST_LENGTH.LONG,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Cooking', level: 20 },
+            { skill: 'Agility', level: 25 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Ghosts_Ahoy',
     },
     {
@@ -831,7 +913,12 @@ export default [
         series: QUEST_SERIES.KARAMJA,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Crafting', level: 25 },
+            { skill: 'Smithing', level: 30 },
+            { skill: 'Herblore', level: 18 },
+            { skill: 'Agility', level: 36 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/One_Small_Favour',
     },
     {
@@ -843,7 +930,7 @@ export default [
         series: QUEST_SERIES.FREMENNIK,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Agility', level: 20 }],
         wiki: 'https://oldschool.runescape.wiki/w/Mountain_Daughter',
     },
     {
@@ -855,7 +942,11 @@ export default [
         series: QUEST_SERIES.RED_AXE,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Defence', level: 30 },
+            { skill: 'Smithing', level: 50 },
+            { skill: 'Mining', level: 40 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Between_a_Rock...',
     },
     {
@@ -866,7 +957,7 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Thieving', level: 30 }],
         wiki: 'https://oldschool.runescape.wiki/w/The_Feud',
     },
     {
@@ -877,7 +968,10 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Crafting', level: 20 },
+            { skill: 'Thieving', level: 25 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/The_Golem',
     },
     {
@@ -889,7 +983,12 @@ export default [
         series: QUEST_SERIES.MAHJARRAT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Magic', level: 50 },
+            { skill: 'Firemaking', level: 50 },
+            { skill: 'Thieving', level: 53 },
+            { skill: 'Slayer', level: 10 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Desert_Treasure',
     },
     {
@@ -912,7 +1011,12 @@ export default [
         length: QUEST_LENGTH.SHORT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Firemaking', level: 49 },
+            { skill: 'Crafting', level: 20 },
+            { skill: 'Mining', level: 20 },
+            { skill: 'QP', level: 43 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Tears_of_Guthix',
     },
     {
@@ -924,7 +1028,13 @@ export default [
         series: QUEST_SERIES.OGRE,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Strength', level: 10 },
+            { skill: 'Ranged', level: 30 },
+            { skill: 'Fletching', level: 30 },
+            { skill: 'Smithing', level: 4 },
+            { skill: 'Herblore', level: 8 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Zogre_Flesh_Eaters',
     },
     {
@@ -936,7 +1046,11 @@ export default [
         series: QUEST_SERIES.DORGESHUUN,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Mining', level: 17 },
+            { skill: 'Agility', level: 13 },
+            { skill: 'Thieving', level: 13 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/The_Lost_Tribe',
     },
     {
@@ -948,7 +1062,12 @@ export default [
         series: QUEST_SERIES.RED_AXE,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Magic', level: 33 },
+            { skill: 'Firemaking', level: 16 },
+            { skill: 'Crafting', level: 12 },
+            { skill: 'Thieving', level: 14 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/The_Giant_Dwarf',
     },
     {
@@ -960,7 +1079,7 @@ export default [
         series: QUEST_SERIES.TEMPLE_KNIGHT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'QP', level: 12 }],
         wiki: 'https://oldschool.runescape.wiki/w/Recruitment_Drive',
     },
     {
@@ -972,7 +1091,10 @@ export default [
         series: QUEST_SERIES.ELF,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Ranged', level: 60 },
+            { skill: 'Thieving', level: 50 },
+        ],
         wiki: "https://oldschool.runescape.wiki/w/Mourning's_End_Part_I",
     },
     {
@@ -984,7 +1106,10 @@ export default [
         series: QUEST_SERIES.RED_AXE,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Cooking', level: 22 },
+            { skill: 'Farming', level: 17 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Forgettable_Tale...',
     },
     {
@@ -995,7 +1120,7 @@ export default [
         length: QUEST_LENGTH.VERY_LONG,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Farming', level: 25 }],
         wiki: 'https://oldschool.runescape.wiki/w/Garden_of_Tranquillity',
     },
     {
@@ -1019,7 +1144,7 @@ export default [
         series: QUEST_SERIES.TEMPLE_KNIGHT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'QP', level: 32 }],
         wiki: 'https://oldschool.runescape.wiki/w/Wanted!',
     },
     {
@@ -1043,7 +1168,13 @@ export default [
         series: QUEST_SERIES.PIRATE,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Prayer', level: 47 },
+            { skill: 'Fishing', level: 50 },
+            { skill: 'Crafting', level: 42 },
+            { skill: 'Slayer', level: 42 },
+            { skill: 'Farming', level: 40 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Rum_Deal',
     },
     {
@@ -1054,7 +1185,7 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Crafting', level: 30 }],
         wiki: 'https://oldschool.runescape.wiki/w/Shadow_of_the_Storm',
     },
     {
@@ -1088,7 +1219,12 @@ export default [
         series: QUEST_SERIES.DESERT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Ranged', level: 37 },
+            { skill: 'Magic', level: 33 },
+            { skill: 'Mining', level: 37 },
+            { skill: 'Thieving', level: 37 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Spirits_of_the_Elid',
     },
     {
@@ -1100,7 +1236,11 @@ export default [
         series: QUEST_SERIES.MAHJARRAT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Fletching', level: 50 },
+            { skill: 'Smithing', level: 65 },
+            { skill: 'Runecraft', level: 50 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Devious_Minds',
     },
     {
@@ -1111,7 +1251,10 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Crafting', level: 49 },
+            { skill: 'Thieving', level: 17 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/The_Hand_in_the_Sand',
     },
     {
@@ -1123,7 +1266,12 @@ export default [
         series: QUEST_SERIES.MAHJARRAT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Prayer', level: 43 },
+            { skill: 'Magic', level: 39 },
+            { skill: 'Firemaking', level: 45 },
+            { skill: 'Crafting', level: 50 },
+        ],
         wiki: "https://oldschool.runescape.wiki/w/Enakhra's_Lament",
     },
     {
@@ -1135,7 +1283,12 @@ export default [
         series: QUEST_SERIES.PIRATE,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Ranged', level: 40 },
+            { skill: 'Crafting', level: 45 },
+            { skill: 'Smithing', level: 50 },
+            { skill: 'Agility', level: 42 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Cabin_Fever',
     },
     {
@@ -1158,7 +1311,23 @@ export default [
         length: QUEST_LENGTH.VERY_LONG,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Ranged', level: 40 },
+            { skill: 'Magic', level: 59 },
+            { skill: 'Cooking', level: 70 },
+            { skill: 'Woodcutting', level: 36 },
+            { skill: 'Fletching', level: 10 },
+            { skill: 'Fishing', level: 53 },
+            { skill: 'Firemaking', level: 50 },
+            { skill: 'Crafting', level: 40 },
+            { skill: 'Smithing', level: 40 },
+            { skill: 'Mining', level: 50 },
+            { skill: 'Herblore', level: 25 },
+            { skill: 'Agility', level: 48 },
+            { skill: 'Thieving', level: 53 },
+            { skill: 'Slayer', level: 10 },
+            { skill: 'QP', level: 175 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster',
     },
     {
@@ -1169,7 +1338,7 @@ export default [
         length: QUEST_LENGTH.SHORT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Cooking', level: 10 }],
         wiki: "https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Another_Cook's_Quest",
     },
     {
@@ -1180,7 +1349,7 @@ export default [
         length: QUEST_LENGTH.SHORT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'QP', level: 175 }],
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Defeating_the_Culinaromancer',
     },
     {
@@ -1213,7 +1382,7 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Cooking', level: 31 }],
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Freeing_Pirate_Pete',
     },
     {
@@ -1224,7 +1393,7 @@ export default [
         length: QUEST_LENGTH.SHORT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Cooking', level: 40 }],
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Freeing_the_Lumbridge_Guide',
     },
     {
@@ -1235,7 +1404,7 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Cooking', level: 25 }],
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Freeing_Evil_Dave',
     },
     {
@@ -1246,7 +1415,10 @@ export default [
         length: QUEST_LENGTH.LONG,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Cooking', level: 70 },
+            { skill: 'Agility', level: 48 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Freeing_King_Awowogei',
     },
     {
@@ -1257,7 +1429,7 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'QP', level: 107 }],
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Freeing_Sir_Amik_Varze',
     },
     {
@@ -1268,7 +1440,10 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Cooking', level: 41 },
+            { skill: 'Firemaking', level: 20 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Recipe_for_Disaster/Freeing_Skrach_Uglogwee',
     },
     {
@@ -1280,7 +1455,11 @@ export default [
         series: QUEST_SERIES.MYREQUE,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Magic', level: 7 },
+            { skill: 'Crafting', level: 25 },
+            { skill: 'Mining', level: 15 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/In_Aid_of_the_Myreque',
     },
     {
@@ -1313,7 +1492,7 @@ export default [
         length: QUEST_LENGTH.LONG,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Slayer', level: 40 }],
         wiki: 'https://oldschool.runescape.wiki/w/Rag_and_Bone_Man_II',
     },
     {
@@ -1324,7 +1503,15 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Magic', level: 66 },
+            { skill: 'Cooking', level: 62 },
+            { skill: 'Fishing', level: 62 },
+            { skill: 'Firemaking', level: 42 },
+            { skill: 'Crafting', level: 40 },
+            { skill: 'Smithing', level: 45 },
+            { skill: 'QP', level: 100 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Swan_Song',
     },
     {
@@ -1336,7 +1523,10 @@ export default [
         series: QUEST_SERIES.FREMENNIK,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Agility', level: 40 },
+            { skill: 'Slayer', level: 40 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Royal_Trouble',
     },
     {
@@ -1348,7 +1538,10 @@ export default [
         series: QUEST_SERIES.DORGESHUUN,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Agility', level: 23 },
+            { skill: 'Thieving', level: 23 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Death_to_the_Dorgeshuun',
     },
     {
@@ -1360,7 +1553,11 @@ export default [
         series: QUEST_SERIES.FAIRY,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Herblore', level: 57 },
+            { skill: 'Thieving', level: 40 },
+            { skill: 'Farming', level: 49 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Fairytale_II_-_Cure_a_Queen',
     },
     {
@@ -1372,7 +1569,14 @@ export default [
         series: QUEST_SERIES.FREMENNIK,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Defence', level: 40 },
+            { skill: 'Magic', level: 65 },
+            { skill: 'Woodcutting', level: 55 },
+            { skill: 'Firemaking', level: 49 },
+            { skill: 'Crafting', level: 61 },
+            { skill: 'Mining', level: 60 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Lunar_Diplomacy',
     },
     {
@@ -1384,7 +1588,10 @@ export default [
         series: QUEST_SERIES.GNOME,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Magic', level: 46 },
+            { skill: 'Construction', level: 5 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/The_Eyes_of_Glouphrie',
     },
     {
@@ -1396,7 +1603,15 @@ export default [
         series: QUEST_SERIES.MYREQUE,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Strength', level: 40 },
+            { skill: 'Magic', level: 33 },
+            { skill: 'Crafting', level: 32 },
+            { skill: 'Mining', level: 20 },
+            { skill: 'Agility', level: 26 },
+            { skill: 'Thieving', level: 22 },
+            { skill: 'Construction', level: 5 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Darkness_of_Hallowvale',
     },
     {
@@ -1408,7 +1623,12 @@ export default [
         series: QUEST_SERIES.TEMPLE_KNIGHT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Crafting', level: 30 },
+            { skill: 'Thieving', level: 30 },
+            { skill: 'Slayer', level: 30 },
+            { skill: 'Runecraft', level: 30 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/The_Slug_Menace',
     },
     {
@@ -1420,7 +1640,10 @@ export default [
         series: QUEST_SERIES.ELEMENTAL,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Magic', level: 20 },
+            { skill: 'Smithing', level: 30 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Elemental_Workshop_II',
     },
     {
@@ -1432,7 +1655,10 @@ export default [
         series: QUEST_SERIES.TROLL,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Woodcutting', level: 10 },
+            { skill: 'Farming', level: 29 },
+        ],
         wiki: "https://oldschool.runescape.wiki/w/My_Arm's_Big_Adventure",
     },
     {
@@ -1443,7 +1669,12 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Firemaking', level: 20 },
+            { skill: 'Crafting', level: 36 },
+            { skill: 'Farming', level: 30 },
+            { skill: 'QP', level: 20 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Enlightened_Journey',
     },
     {
@@ -1454,7 +1685,7 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Hunter', level: 27 }],
         wiki: "https://oldschool.runescape.wiki/w/Eagles'_Peak",
     },
     {
@@ -1465,7 +1696,12 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Ranged', level: 30 },
+            { skill: 'Woodcutting', level: 35 },
+            { skill: 'Crafting', level: 19 },
+            { skill: 'Slayer', level: 18 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Animal_Magnetism',
     },
     {
@@ -1488,7 +1724,13 @@ export default [
         length: QUEST_LENGTH.LONG,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Crafting', level: 30 },
+            { skill: 'Agility', level: 30 },
+            { skill: 'Thieving', level: 15 },
+            { skill: 'Hunter', level: 10 },
+            { skill: 'Construction', level: 34 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Cold_War',
     },
     {
@@ -1500,7 +1742,10 @@ export default [
         series: QUEST_SERIES.FREMENNIK,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Agility', level: 40 },
+            { skill: 'Construction', level: 20 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/The_Fremennik_Isles',
     },
     {
@@ -1511,7 +1756,7 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Construction', level: 10 }],
         wiki: 'https://oldschool.runescape.wiki/w/Tower_of_Life',
     },
     {
@@ -1523,7 +1768,11 @@ export default [
         series: QUEST_SERIES.PIRATE,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Prayer', level: 50 },
+            { skill: 'Crafting', level: 16 },
+            { skill: 'Construction', level: 30 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/The_Great_Brain_Robbery',
     },
     {
@@ -1534,7 +1783,7 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Runecraft', level: 35 }],
         wiki: 'https://oldschool.runescape.wiki/w/What_Lies_Below',
     },
     {
@@ -1546,7 +1795,10 @@ export default [
         series: QUEST_SERIES.FREMENNIK,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Woodcutting', level: 50 },
+            { skill: 'Firemaking', level: 40 },
+        ],
         wiki: "https://oldschool.runescape.wiki/w/Olaf's_Quest",
     },
     {
@@ -1558,7 +1810,10 @@ export default [
         series: QUEST_SERIES.DORGESHUUN,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Attack', level: 15 },
+            { skill: 'Prayer', level: 25 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Another_Slice_of_H.A.M.',
     },
     {
@@ -1570,7 +1825,7 @@ export default [
         series: QUEST_SERIES.FREMENNIK,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Combat', level: 85 }],
         wiki: 'https://oldschool.runescape.wiki/w/Dream_Mentor',
     },
     {
@@ -1581,7 +1836,13 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Woodcutting', level: 71 },
+            { skill: 'Herblore', level: 52 },
+            { skill: 'Agility', level: 59 },
+            { skill: 'Thieving', level: 58 },
+            { skill: 'Farming', level: 45 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Grim_Tales',
     },
     {
@@ -1593,7 +1854,10 @@ export default [
         series: QUEST_SERIES.CAMELOT,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Defence', level: 65 },
+            { skill: 'Magic', level: 45 },
+        ],
         wiki: "https://oldschool.runescape.wiki/w/King's_Ransom",
     },
     {
@@ -1605,7 +1869,14 @@ export default [
         series: QUEST_SERIES.GNOME,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Firemaking', level: 60 },
+            { skill: 'Agility', level: 55 },
+            { skill: 'Thieving', level: 55 },
+            { skill: 'Slayer', level: 69 },
+            { skill: 'Runecraft', level: 70 },
+            { skill: 'Hunter', level: 60 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Monkey_Madness_II',
     },
     {
@@ -1651,7 +1922,7 @@ export default [
         series: QUEST_SERIES.KOUREND,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Thieving', level: 20 }],
         wiki: 'https://oldschool.runescape.wiki/w/The_Queen_of_Thieves',
     },
     {
@@ -1663,7 +1934,7 @@ export default [
         series: QUEST_SERIES.KOUREND,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Agility', level: 18 }],
         wiki: 'https://oldschool.runescape.wiki/w/The_Depths_of_Despair',
     },
     {
@@ -1686,7 +1957,17 @@ export default [
         series: QUEST_SERIES.GUILDS,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Hitpoints', level: 50 },
+            { skill: 'Magic', level: 75 },
+            { skill: 'Crafting', level: 62 },
+            { skill: 'Smithing', level: 70 },
+            { skill: 'Mining', level: 68 },
+            { skill: 'Agility', level: 60 },
+            { skill: 'Thieving', level: 60 },
+            { skill: 'Construction', level: 50 },
+            { skill: 'QP', level: 200 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Dragon_Slayer_II',
     },
     {
@@ -1698,7 +1979,10 @@ export default [
         series: QUEST_SERIES.KOUREND,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Strength', level: 16 },
+            { skill: 'Mining', level: 10 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Tale_of_the_Righteous',
     },
     {
@@ -1710,7 +1994,13 @@ export default [
         series: QUEST_SERIES.MYREQUE,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Attack', level: 40 },
+            { skill: 'Crafting', level: 48 },
+            { skill: 'Herblore', level: 40 },
+            { skill: 'Agility', level: 45 },
+            { skill: 'Slayer', level: 38 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/A_Taste_of_Hope',
     },
     {
@@ -1722,7 +2012,12 @@ export default [
         series: QUEST_SERIES.TROLL,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Firemaking', level: 66 },
+            { skill: 'Mining', level: 72 },
+            { skill: 'Agility', level: 68 },
+            { skill: 'Construction', level: 35 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Making_Friends_with_My_Arm',
     },
     {
@@ -1746,7 +2041,7 @@ export default [
         series: QUEST_SERIES.KOUREND,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Hunter', level: 12 }],
         wiki: 'https://oldschool.runescape.wiki/w/The_Ascent_of_Arceuus',
     },
     {
@@ -1770,7 +2065,16 @@ export default [
         series: QUEST_SERIES.ELF,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Woodcutting', level: 70 },
+            { skill: 'Smithing', level: 70 },
+            { skill: 'Mining', level: 70 },
+            { skill: 'Herblore', level: 70 },
+            { skill: 'Agility', level: 70 },
+            { skill: 'Farming', level: 70 },
+            { skill: 'Hunter', level: 70 },
+            { skill: 'Construction', level: 70 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Song_of_the_Elves',
     },
     {
@@ -1782,7 +2086,13 @@ export default [
         series: QUEST_SERIES.FREMENNIK,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Fishing', level: 60 },
+            { skill: 'Crafting', level: 65 },
+            { skill: 'Smithing', level: 60 },
+            { skill: 'Slayer', level: 60 },
+            { skill: 'Runecraft', level: 55 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/The_Fremennik_Exiles',
     },
     {
@@ -1794,7 +2104,15 @@ export default [
         series: QUEST_SERIES.MYREQUE,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Attack', level: 50 },
+            { skill: 'Magic', level: 49 },
+            { skill: 'Woodcutting', level: 62 },
+            { skill: 'Fletching', level: 60 },
+            { skill: 'Crafting', level: 56 },
+            { skill: 'Agility', level: 52 },
+            { skill: 'Slayer', level: 50 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Sins_of_the_Father',
     },
     {
@@ -1817,7 +2135,10 @@ export default [
         series: QUEST_SERIES.KOUREND,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Crafting', level: 30 },
+            { skill: 'Construction', level: 26 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Getting_Ahead',
     },
     {
@@ -1828,7 +2149,7 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'QP', level: 16 }],
         wiki: 'https://oldschool.runescape.wiki/w/Below_Ice_Mountain',
     },
     {
@@ -1852,7 +2173,15 @@ export default [
         series: QUEST_SERIES.KOUREND,
         type: 'quest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Magic', level: 35 },
+            { skill: 'Woodcutting', level: 52 },
+            { skill: 'Crafting', level: 38 },
+            { skill: 'Mining', level: 42 },
+            { skill: 'Herblore', level: 50 },
+            { skill: 'Agility', level: 54 },
+            { skill: 'Thieving', level: 52 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/A_Kingdom_Divided',
     },
     {
@@ -1872,7 +2201,7 @@ export default [
         length: QUEST_LENGTH.MEDIUM,
         type: 'miniquest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Magic', level: 60 }],
         wiki: 'https://oldschool.runescape.wiki/w/The_Mage_Arena',
     },
     {
@@ -1903,7 +2232,7 @@ export default [
         length: QUEST_LENGTH.VERY_SHORT,
         type: 'miniquest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Cooking', level: 20 }],
         wiki: 'https://oldschool.runescape.wiki/w/Skippy_and_the_Mogres',
     },
     {
@@ -1923,7 +2252,7 @@ export default [
         length: QUEST_LENGTH.SHORT,
         type: 'miniquest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Slayer', level: 40 }],
         wiki: 'https://oldschool.runescape.wiki/w/Lair_of_Tarn_Razorlor',
     },
     {
@@ -1945,7 +2274,11 @@ export default [
         series: QUEST_SERIES.KOUREND,
         type: 'miniquest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Crafting', level: 30 },
+            { skill: 'Mining', level: 42 },
+            { skill: 'Slayer', level: 10 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/Architectural_Alliance',
     },
     {
@@ -1976,7 +2309,7 @@ export default [
         length: QUEST_LENGTH.LONG,
         type: 'miniquest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [{ skill: 'Magic', level: 75 }],
         wiki: 'https://oldschool.runescape.wiki/w/The_Mage_Arena_II',
     },
     {
@@ -2006,7 +2339,12 @@ export default [
         length: QUEST_LENGTH.LONG,
         type: 'miniquest',
         prereqs: [],
-        skillReqs: [],
+        skillReqs: [
+            { skill: 'Strength', level: 70 },
+            { skill: 'Hitpoints', level: 70 },
+            { skill: 'Ranged', level: 70 },
+            { skill: 'Agility', level: 70 },
+        ],
         wiki: 'https://oldschool.runescape.wiki/w/The_Frozen_Door',
     },
 ];

@@ -192,7 +192,7 @@ export const STATS = {
         unlockCost: null,
     },
     QP: {
-        label: 'QP',
+        label: 'Quest points',
         panelOrder: null,
         icon: 'tab-quests.png',
         iconMini: 'task-quest.png',
