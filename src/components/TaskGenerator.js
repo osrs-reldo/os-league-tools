@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
-import { Category, Difficulty, Requirements } from './TaskTableCell';
 import { toggleCompleted } from '../store/tasks/tasks';
 import tasks from '../data/tasks';
+import SkillRequirementList from './SkillRequirementList';
+import Category from './Category';
+import Difficulty from './Difficulty';
 
 export default function TaskGenerator() {
     const [activeTask, setActiveTask] = useState(undefined);
@@ -42,7 +44,7 @@ export default function TaskGenerator() {
             </div>
             <div className='flex items-center'>
                 <span className='text-xs mr-1'>Requires: </span>
-                <Requirements value={activeTask.skillReqs} />
+                <SkillRequirementList value={activeTask.skillReqs} />
             </div>
         </>
     ) : (
@@ -54,7 +56,7 @@ export default function TaskGenerator() {
             <span className='heading-accent-md'>Random Task Generator</span>
             <div className='w-full px-3 mb-4'>{renderTask}</div>
             <div className='flex flex-col gap-1 px-3'>
-                <div className={`flex gap-1 mt ${isLgViewport ? "w-full" : "max-w-[420px]"}`}>
+                <div className={`flex gap-1 mt ${isLgViewport ? 'w-full' : 'max-w-[420px]'}`}>
                     <button type='button' className='button-outline w-full' onClick={generateTask}>
                         {activeTask ? 'Skip task' : 'Generate task'}
                     </button>
