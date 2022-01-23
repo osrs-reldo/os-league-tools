@@ -43,6 +43,7 @@ export default function Table({
             globalFilter,
             autoResetGlobalFilter: false,
             autoResetSortBy: false,
+            autoResetPage: false,
             getRowId: useCallback(row => row.id, []),
         },
         useFlexLayout,
@@ -52,6 +53,11 @@ export default function Table({
         useExpanded,
         usePagination
     );
+
+    useEffect(() => {
+        // Reset to first page when filters are changed
+        table.gotoPage(0);
+    }, [filterState]);
 
     const moveRow = (dragIndex, hoverIndex) => {
         const dragRecord = records[dragIndex];
