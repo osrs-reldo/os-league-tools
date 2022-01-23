@@ -2015,6 +2015,13 @@ select[multiple]:focus option:checked {
 .cursor-pointer {
   cursor: pointer;
 }
+.cursor-text {
+  cursor: text;
+}
+.select-all {
+  -webkit-user-select: all;
+          user-select: all;
+}
 .list-disc {
   list-style-type: disc;
 }

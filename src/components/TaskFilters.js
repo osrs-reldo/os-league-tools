@@ -6,7 +6,7 @@ import { updateTaskFilter, reset } from '../store/filters';
 import { update as updateUserData } from '../store/userData';
 import ButtonGroup from './common/ButtonGroup';
 import InputSelect from './common/InputSelect';
-import { CATEGORY, SUBCATEGORY, DIFFICULTY, SKILLS } from '../data/constants';
+import { CATEGORY, SUBCATEGORY, DIFFICULTY, STATS } from '../data/constants';
 import LabeledCheckbox from './common/LabeledCheckbox';
 
 export default function TaskFilters() {
@@ -156,7 +156,7 @@ export default function TaskFilters() {
                     />
                     <InputSelect
                         label='skills'
-                        options={SKILLS.ALPHABETICAL.map(skill => ({ value: skill, label: skill }))}
+                        options={Object.keys(STATS).map(skill => ({ value: skill, label: skill }))}
                         multiple
                         className='md:w-full w-fit text-sm'
                         enabled={!!filterState.skills}

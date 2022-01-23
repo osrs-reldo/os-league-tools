@@ -4,6 +4,7 @@ import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import LabeledIcon from './common/LabeledIcon';
 import { DEFAULT_NOTES_TEXT } from '../data/constants';
 import { clearTempField, setTempField } from '../store/temp';
+import SkillRequirementList from './SkillRequirementList';
 
 function Task({ row, value, taskState, dispatchFn }) {
     const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
@@ -63,7 +64,7 @@ function ExpandedTask({ original, notesState, taskState, dispatchFn }) {
             </div>
             <div className='w-full flex flex-col gap-0.5'>
                 <span className='text-xs mr-1'>Requires:</span>
-                <Requirements value={original.skillReqs} className='ml-3' />
+                <SkillRequirementList value={original.skillReqs} className='ml-3' />
                 <span className='text-xs mr-1'>Notes:</span>
                 <Notes
                     className='ml-3 my-1'
@@ -108,20 +109,6 @@ export function Category({ value }) {
         <div className='flex lg:flex-col flex-row flex-wrap items-center justify-center h-full'>
             <LabeledIcon label={isMdOrSmallerViewport ? '' : value.category.label} icon={value.category.icon} />
             <LabeledIcon label={isMdOrSmallerViewport ? '' : value.subcategory.label} icon={value.subcategory.icon} />
-        </div>
-    );
-}
-
-export function Requirements({ value, maxLength = 100, className = '' }) {
-    if (value.length === 0) {
-        return <span className={`italic text-xs ${className}`}>none</span>;
-    }
-    return (
-        <div className={`flex flex-wrap items-center content-center gap-x-1 ${className}`}>
-            {value.slice(0, maxLength).map(({ skill, level }) => (
-                <LabeledIcon key={`${skill}${level}`} label={level} icon={`/img/task-${skill.toLowerCase()}.png`} />
-            ))}
-            {value.length > maxLength && <LabeledIcon label='...' />}
         </div>
     );
 }
