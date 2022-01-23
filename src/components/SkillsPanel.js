@@ -76,7 +76,7 @@ function SkillTile({ skillData, selectedSkill, setSelectedSkill, unlockedSkills,
         return (
             <td className='p-1 border-r border-subdued last:border-none'>
                 <div className='flex items-center'>
-                    <img src={`/img/${skillData.icon}`} alt={skillName} className='inline mx-1' />
+                    <img src={skillData.icon} alt={skillName} className='inline mx-1' />
                     <span className='text-center grow mr-1'>{level}</span>
                 </div>
             </td>
@@ -87,7 +87,7 @@ function SkillTile({ skillData, selectedSkill, setSelectedSkill, unlockedSkills,
         return (
             <td className='p-1 border-r border-subdued last:border-none'>
                 <div className='flex items-center'>
-                    <img src={`/img/${skillData.icon}`} alt={skillName} className='inline mx-1' />
+                    <img src={skillData.icon} alt={skillName} className='inline mx-1' />
                     <span className='text-center grow mr-1'>
                         {level} / {level}
                     </span>
@@ -104,7 +104,7 @@ function SkillTile({ skillData, selectedSkill, setSelectedSkill, unlockedSkills,
             onClick={() => setSelectedSkill(skillName)}
         >
             <div className='flex items-center'>
-                <img src={`/img/${skillData.icon}`} alt={skillName} className='inline mx-1' />
+                <img src={skillData.icon} alt={skillName} className='inline mx-1' />
                 {isSkillUnlocked ? (
                     <span className='text-center grow mr-1'>
                         {level} / {level}

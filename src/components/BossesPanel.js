@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { lockBoss, unlockBoss } from '../store/unlocks/unlocks';
+import images from '../assets/images';
 
 const BOSSES = [
     'Alchemical Hydra',
@@ -151,6 +152,7 @@ function BossTile({ boss, selectedBoss, setSelectedBoss, unlockedBosses, charact
     const killCount =
         characterStats?.bosses[`${boss.substring(0, 1).toLowerCase()}${cleanBossString(boss).substring(1)}`]?.score ||
         0;
+
     return (
         <td
             className={`p-1 border-r border-subdued last:border-none bg-hover cursor-pointer ${
@@ -159,7 +161,11 @@ function BossTile({ boss, selectedBoss, setSelectedBoss, unlockedBosses, charact
             onClick={() => setSelectedBoss(boss)}
         >
             <div className='flex items-center'>
-                <img src={`/img/${cleanBossString(boss, '-').toLowerCase()}.png`} alt={boss} className='inline mx-1' />
+                <img
+                    src={images[`${cleanBossString(boss, '-').toLowerCase()}.png`]}
+                    alt={boss}
+                    className='inline mx-1'
+                />
                 {unlockedBosses.includes(boss) ? (
                     <span className='text-center grow mr-1'>{killCount < 0 ? 0 : killCount}</span>
                 ) : (

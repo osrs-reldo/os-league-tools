@@ -6,6 +6,7 @@ import IconLinkCard from '../components/IconLinkCard';
 import LeagueCountdown from '../components/LeagueCountdown';
 import FeedbackModal from '../components/FeedbackModal';
 import PluginModal from '../components/PluginModal';
+import images from '../assets/images';
 
 export default function Homepage() {
     const [isFeedbackModalOpen, setFeedbackModalOpen] = useState(false);
@@ -17,7 +18,7 @@ export default function Homepage() {
                 <IconLinkCard title='Discord' href='https://discord.gg/GQ5kVyU' target='_blank' />
                 <IconLinkCard
                     title='Plugin'
-                    iconSrc='/img/runelite-icon.svg'
+                    iconSrc={images['runelite-icon.svg']}
                     onClick={() => setPluginModalOpen(true)}
                 />
                 <LeagueCountdown />

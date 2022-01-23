@@ -1,16 +1,19 @@
+/* eslint-disable  */
+import images from '../assets/images';
+
 export const STATS = {
     Agility: {
         label: 'Agility',
         panelOrder: 9,
-        icon: 'agility.gif',
-        iconMini: 'task-agility.png',
+        icon: images['agility.gif'],
+        iconMini: images['task-agility.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 10,
     },
     Attack: {
         label: 'Attack',
         panelOrder: 0,
-        icon: 'attack.gif',
+        icon: images['attack.gif'],
         iconMini: 'task-attack.png',
         isPossibleTutorialUnlock: true,
         unlockCost: 20,
@@ -18,7 +21,7 @@ export const STATS = {
     Construction: {
         label: 'Construction',
         panelOrder: 7,
-        icon: 'construction.gif',
+        icon: images['construction.gif'],
         iconMini: 'task-construction.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 30,
@@ -26,7 +29,7 @@ export const STATS = {
     Cooking: {
         label: 'Cooking',
         panelOrder: 19,
-        icon: 'cooking.gif',
+        icon: images['cooking.gif'],
         iconMini: 'task-cooking.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 20,
@@ -34,7 +37,7 @@ export const STATS = {
     Crafting: {
         label: 'Crafting',
         panelOrder: 12,
-        icon: 'crafting.gif',
+        icon: images['crafting.gif'],
         iconMini: 'task-crafting.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 30,
@@ -42,7 +45,7 @@ export const STATS = {
     Defence: {
         label: 'Defence',
         panelOrder: 2,
-        icon: 'defence.gif',
+        icon: images['defence.gif'],
         iconMini: 'task-defence.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 0,
@@ -50,7 +53,7 @@ export const STATS = {
     Farming: {
         label: 'Farming',
         panelOrder: 22,
-        icon: 'farming.gif',
+        icon: images['farming.gif'],
         iconMini: 'task-farming.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 20,
@@ -58,7 +61,7 @@ export const STATS = {
     Firemaking: {
         label: 'Firemaking',
         panelOrder: 20,
-        icon: 'firemaking.gif',
+        icon: images['firemaking.gif'],
         iconMini: 'task-firemaking.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 10,
@@ -66,7 +69,7 @@ export const STATS = {
     Fishing: {
         label: 'Fishing',
         panelOrder: 18,
-        icon: 'fishing.gif',
+        icon: images['fishing.gif'],
         iconMini: 'task-fishing.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 0,
@@ -74,7 +77,7 @@ export const STATS = {
     Fletching: {
         label: 'Fletching',
         panelOrder: 13,
-        icon: 'fletching.gif',
+        icon: images['fletching.gif'],
         iconMini: 'task-fletching.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 20,
@@ -82,7 +85,7 @@ export const STATS = {
     Herblore: {
         label: 'Herblore',
         panelOrder: 10,
-        icon: 'herblore.gif',
+        icon: images['herblore.gif'],
         iconMini: 'task-herblore.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 30,
@@ -90,7 +93,7 @@ export const STATS = {
     Hitpoints: {
         label: 'Hitpoints',
         panelOrder: 8,
-        icon: 'hitpoints.gif',
+        icon: images['hitpoints.gif'],
         iconMini: 'task-hitpoints.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 10,
@@ -98,7 +101,7 @@ export const STATS = {
     Hunter: {
         label: 'Hunter',
         panelOrder: 15,
-        icon: 'hunter.gif',
+        icon: images['hunter.gif'],
         iconMini: 'task-hunter.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 10,
@@ -106,7 +109,7 @@ export const STATS = {
     Magic: {
         label: 'Magic',
         panelOrder: 5,
-        icon: 'magic.gif',
+        icon: images['magic.gif'],
         iconMini: 'task-magic.png',
         isPossibleTutorialUnlock: true,
         unlockCost: 20,
@@ -114,7 +117,7 @@ export const STATS = {
     Mining: {
         label: 'Mining',
         panelOrder: 16,
-        icon: 'mining.gif',
+        icon: images['mining.gif'],
         iconMini: 'task-mining.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 10,
@@ -122,7 +125,7 @@ export const STATS = {
     Prayer: {
         label: 'Prayer',
         panelOrder: 4,
-        icon: 'prayer.gif',
+        icon: images['prayer.gif'],
         iconMini: 'task-prayer.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 30,
@@ -130,7 +133,7 @@ export const STATS = {
     Ranged: {
         label: 'Ranged',
         panelOrder: 3,
-        icon: 'ranged.gif',
+        icon: images['ranged.gif'],
         iconMini: 'task-ranged.png',
         isPossibleTutorialUnlock: true,
         unlockCost: 20,
@@ -138,7 +141,7 @@ export const STATS = {
     Runecraft: {
         label: 'Runecraft',
         panelOrder: 6,
-        icon: 'runecraft.gif',
+        icon: images['runecraft.gif'],
         iconMini: 'task-runecraft.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 10,
@@ -146,7 +149,7 @@ export const STATS = {
     Slayer: {
         label: 'Slayer',
         panelOrder: 14,
-        icon: 'slayer.gif',
+        icon: images['slayer.gif'],
         iconMini: 'task-slayer.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 30,
@@ -154,7 +157,7 @@ export const STATS = {
     Smithing: {
         label: 'Smithing',
         panelOrder: 17,
-        icon: 'smithing.gif',
+        icon: images['smithing.gif'],
         iconMini: 'task-smithing.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 20,
@@ -162,7 +165,7 @@ export const STATS = {
     Strength: {
         label: 'Strength',
         panelOrder: 1,
-        icon: 'strength.gif',
+        icon: images['strength.gif'],
         iconMini: 'task-strength.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 20,
@@ -170,7 +173,7 @@ export const STATS = {
     Thieving: {
         label: 'Thieving',
         panelOrder: 11,
-        icon: 'thieving.gif',
+        icon: images['thieving.gif'],
         iconMini: 'task-thieving.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 0,
@@ -178,7 +181,7 @@ export const STATS = {
     Woodcutting: {
         label: 'Woodcutting',
         panelOrder: 21,
-        icon: 'woodcutting.gif',
+        icon: images['woodcutting.gif'],
         iconMini: 'task-woodcutting.png',
         isPossibleTutorialUnlock: false,
         unlockCost: 10,
@@ -186,7 +189,7 @@ export const STATS = {
     Overall: {
         label: 'Overall',
         panelOrder: 23,
-        icon: 'task-total.png',
+        icon: images['task-total.png'],
         iconMini: 'task-total.png',
         isPossibleTutorialUnlock: null,
         unlockCost: null,
@@ -194,7 +197,7 @@ export const STATS = {
     QP: {
         label: 'Quest points',
         panelOrder: null,
-        icon: 'tab-quests.png',
+        icon: images['tab-quests.png'],
         iconMini: 'task-quest.png',
         isPossibleTutorialUnlock: null,
         unlockCost: null,
@@ -205,37 +208,37 @@ export const DIFFICULTY = {
     BEGINNER: {
         label: 'Beginner',
         value: 5,
-        icon: '/img/task-beginner.png',
+        icon: images['task-beginner.png'],
         sortOrder: 0,
     },
     EASY: {
         label: 'Easy',
         value: 5,
-        icon: '/img/task-easy.png',
+        icon: images['task-easy.png'],
         sortOrder: 1,
     },
     MEDIUM: {
         label: 'Medium',
         value: 25,
-        icon: '/img/task-medium.png',
+        icon: images['task-medium.png'],
         sortOrder: 2,
     },
     HARD: {
         label: 'Hard',
         value: 50,
-        icon: '/img/task-hard.png',
+        icon: images['task-hard.png'],
         sortOrder: 3,
     },
     ELITE: {
         label: 'Elite',
         value: 125,
-        icon: '/img/task-elite.png',
+        icon: images['task-elite.png'],
         sortOrder: 4,
     },
     MASTER: {
         label: 'Master',
         value: 250,
-        icon: '/img/task-master.png',
+        icon: images['task-master.png'],
         sortOrder: 5,
     },
 };
@@ -473,27 +476,27 @@ export const QUEST_DIFFICULTY = {
     NOVICE: {
         id: 0,
         label: 'Novice',
-        icon: '/img/task-bronze-star.png',
+        icon: images['task-bronze-star.png'],
     },
     INTERMEDIATE: {
         id: 1,
         label: 'Intermediate',
-        icon: '/img/task-silver-star.png',
+        icon: images['task-silver-star.png'],
     },
     EXPERIENCED: {
         id: 2,
         label: 'Experienced',
-        icon: '/img/task-gold-star.png',
+        icon: images['task-gold-star.png'],
     },
     MASTER: {
         id: 3,
         label: 'Master',
-        icon: '/img/task-two-stars.png',
+        icon: images['task-two-stars.png'],
     },
     GRANDMASTER: {
         id: 4,
         label: 'Grandmaster',
-        icon: '/img/task-three-stars.png',
+        icon: images['task-three-stars.png'],
     },
 };
 
@@ -501,27 +504,27 @@ export const QUEST_LENGTH = {
     VERY_SHORT: {
         id: 0,
         label: 'Very Short',
-        icon: '/img/task-bronze-sword.png',
+        icon: images['task-bronze-sword.png'],
     },
     SHORT: {
         id: 1,
         label: 'Short',
-        icon: '/img/task-iron-sword.png',
+        icon: images['task-iron-sword.png'],
     },
     MEDIUM: {
         id: 2,
         label: 'Medium',
-        icon: '/img/task-mith-sword.png',
+        icon: images['task-mith-sword.png'],
     },
     LONG: {
         id: 3,
         label: 'Long',
-        icon: '/img/task-rune-sword.png',
+        icon: images['task-rune-sword.png'],
     },
     VERY_LONG: {
         id: 4,
         label: 'Very Long',
-        icon: '/img/task-dragon-sword.png',
+        icon: images['task-dragon-sword.png'],
     },
 };
 
@@ -529,92 +532,92 @@ export const QUEST_SERIES = {
     CAMELOT: {
         id: 0,
         label: 'Camelot',
-        icon: '/img/task-kandarin.png',
+        icon: images['task-kandarin.png'],
     },
     DESERT: {
         id: 1,
         label: 'Desert',
-        icon: '/img/task-kharidian.png',
+        icon: images['task-kharidian.png'],
     },
     DORGESHUUN: {
         id: 2,
         label: 'Dorgeshuun',
-        icon: '/img/task-bandos.png',
+        icon: images['task-bandos.png'],
     },
     GUILDS: {
         id: 3,
         label: 'Guilds / Dragonkin',
-        icon: '/img/task-legend.png',
+        icon: images['task-legend.png'],
     },
     ELEMENTAL: {
         id: 4,
         label: 'Elemental Workshop',
-        icon: '/img/task-elemental.png',
+        icon: images['task-elemental.png'],
     },
     ELF: {
         id: 5,
         label: 'Elven',
-        icon: '/img/task-tiranwnn.png',
+        icon: images['task-tiranwnn.png'],
     },
     GNOME: {
         id: 6,
         label: 'Gnome',
-        icon: '/img/task-gnome.png',
+        icon: images['task-gnome.png'],
     },
     FAIRY: {
         id: 7,
         label: 'Fairy Tale',
-        icon: '/img/task-cosmic.png',
+        icon: images['task-cosmic.png'],
     },
     FREMENNIK: {
         id: 8,
         label: 'Fremennik',
-        icon: '/img/task-fremennik.png',
+        icon: images['task-fremennik.png'],
     },
     KOUREND: {
         id: 9,
         label: 'Great Kourend',
-        icon: '/img/task-xeric.png',
+        icon: images['task-xeric.png'],
     },
     KARAMJA: {
         id: 10,
         label: 'Karamja',
-        icon: '/img/task-karamja.png',
+        icon: images['task-karamja.png'],
     },
     MAHJARRAT: {
         id: 11,
         label: 'Mahjarrat / Return of Zaros',
-        icon: '/img/task-zaros.png',
+        icon: images['task-zaros.png'],
     },
     MYREQUE: {
         id: 12,
         label: 'Myreque',
-        icon: '/img/task-morytania.png',
+        icon: images['task-morytania.png'],
     },
     OGRE: {
         id: 13,
         label: 'Ogre',
-        icon: '/img/task-goblin.png',
+        icon: images['task-goblin.png'],
     },
     PIRATE: {
         id: 14,
         label: 'Pirate',
-        icon: '/img/task-steel-scim.png',
+        icon: images['task-steel-scim.png'],
     },
     RED_AXE: {
         id: 15,
         label: 'Rise of the Red Axe',
-        icon: '/img/task-dragon-baxe.png',
+        icon: images['task-dragon-baxe.png'],
     },
     TEMPLE_KNIGHT: {
         id: 16,
         label: 'Temple Knight / Sea Slug',
-        icon: '/img/task-steel-kite.png',
+        icon: images['task-steel-kite.png'],
     },
     TROLL: {
         id: 17,
         label: 'Troll',
-        icon: '/img/task-bossing.png',
+        icon: images['task-bossing.png'],
     },
 };
 

@@ -1,13 +1,14 @@
 import React from 'react';
 import 'react-step-progress-bar/styles.css';
 import { ProgressBar as WrappedProgressBar, Step } from 'react-step-progress-bar';
+import images from '../../assets/images';
 
 export default function ProgressBar({
     curValue,
     maxValue,
     steps,
     backgroundColor,
-    iconSrc = '/img/notch.png',
+    iconSrc = images['notch.png'],
     showEndIcons = false,
 }) {
     let stepsToShow = steps;

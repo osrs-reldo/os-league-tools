@@ -7,6 +7,7 @@ import LabeledIcon from './common/LabeledIcon';
 import { QUEST_STATUS } from '../data/constants';
 import { updateQuest } from '../store/unlocks/unlocks';
 import SkillRequirementList from './SkillRequirementList';
+import images from '../assets/images';
 
 export default function QuestTable() {
     const data = useMemo(() => quests, []);
@@ -133,7 +134,7 @@ function PointsCell({ value }) {
     return (
         <div className='flex items-center h-full justify-center'>
             {value ? (
-                <LabeledIcon label={value} icon='/img/task-quest.png' />
+                <LabeledIcon label={value} icon={images['task-quest.png']} />
             ) : (
                 <span className='text-xs italic'>n/a</span>
             )}

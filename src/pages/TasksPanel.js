@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 // import { ThemedProgressBar } from '../components/ThemeProvider';
-// import Separator from '../components/common/Separator';
+import Separator from '../components/common/Separator';
 import TaskFilters from '../components/TaskFilters';
-// import TaskGenerator from '../components/TaskGenerator';
+import TaskGenerator from '../components/TaskGenerator';
 import TaskTable from '../components/TaskTable';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 
@@ -40,9 +40,8 @@ export default function TasksPanel() {
                 {showSidebar && (
                     <div className='basis-[23%] flex flex-col gap-3 pl-2'>
                         <TaskFilters />
-                        {/* TODO implement task generator
                         <Separator />
-                        <TaskGenerator /> */}
+                        <TaskGenerator />
                     </div>
                 )}
                 <div className='mt-3 mb-3 bg-hover cursor-pointer' onClick={() => setShowSidebar(!showSidebar)}>

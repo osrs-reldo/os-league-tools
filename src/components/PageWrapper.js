@@ -7,6 +7,7 @@ import FeedbackModal from './FeedbackModal';
 import Dropdown from './common/Dropdown';
 import Banner from './common/Banner';
 import PluginModal from './PluginModal';
+import images from '../assets/images';
 
 export default function PageWrapper({ children }) {
     const theme = useSelector(state => state.settings.theme);
@@ -30,7 +31,7 @@ export default function PageWrapper({ children }) {
                     type='button'
                     onClick={() => setPluginModalOpen(true)}
                 >
-                    <img className='h-4 img-primary' src='/img/runelite-icon.svg' alt='Runelite Plugin' />
+                    <img className='h-4 img-primary' src={images['runelite-icon.svg']} alt='Runelite Plugin' />
                 </button>
             ),
             () => (
@@ -40,7 +41,11 @@ export default function PageWrapper({ children }) {
                     onClick={() => setPluginModalOpen(true)}
                     type='button'
                 >
-                    <img className='h-4 img-primary inline align-middle mr-1' src='/img/runelite-icon.svg' alt='' />
+                    <img
+                        className='h-4 img-primary inline align-middle mr-1'
+                        src={images['runelite-icon.svg']}
+                        alt=''
+                    />
                     <p className='h-4 inline pl-1 font-sans-alt'>RuneLite Plugin</p>
                 </button>
             )
@@ -101,7 +106,7 @@ export default function PageWrapper({ children }) {
                 </Banner>
             </Page.Banner>
             <Page.Nav>
-                <NavBar navItems={navItems} brandName='OS League Tools' brandLogo={`/img/icon-${theme}.png`} />
+                <NavBar navItems={navItems} brandName='OS League Tools' brandLogo={images[`icon-${theme}.png`]} />
             </Page.Nav>
             <Page.Body>
                 {children}

@@ -1840,14 +1840,14 @@ select[multiple]:focus option:checked {
 .h-4 {
   height: 1rem;
 }
+.h-full {
+  height: 100%;
+}
 .h-24 {
   height: 6rem;
 }
 .h-9 {
   height: 2.25rem;
-}
-.h-full {
-  height: 100%;
 }
 .h-fit {
   height: -moz-fit-content;
@@ -1955,6 +1955,9 @@ select[multiple]:focus option:checked {
 }
 .max-w-\[90\%\] {
   max-width: 90%;
+}
+.max-w-\[420px\] {
+  max-width: 420px;
 }
 .max-w-\[350px\] {
   max-width: 350px;
