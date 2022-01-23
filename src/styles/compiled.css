@@ -1886,6 +1886,9 @@ select[multiple]:focus option:checked {
 .h-48 {
   height: 12rem;
 }
+.max-h-\[20px\] {
+  max-height: 20px;
+}
 .min-h-\[16rem\] {
   min-height: 16rem;
 }
@@ -2011,6 +2014,13 @@ select[multiple]:focus option:checked {
 }
 .cursor-pointer {
   cursor: pointer;
+}
+.cursor-text {
+  cursor: text;
+}
+.select-all {
+  -webkit-user-select: all;
+          user-select: all;
 }
 .list-disc {
   list-style-type: disc;

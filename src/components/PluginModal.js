@@ -8,13 +8,21 @@ import Modal from './Modal';
 export default function PluginModal({ isOpen, setIsOpen }) {
     const [pluginImport, setPluginImport] = useState('');
     const [errorText, setErrorText] = useState('');
+    const [isCopySuccess, setIsCopySuccess] = useState(false);
     const userState = useSelector(state => state);
     const dispatch = useDispatch();
+
+    const onClose = () => {
+        setPluginImport('');
+        setErrorText('');
+        setIsCopySuccess('');
+    };
 
     return (
         <Modal
             isOpen={isOpen}
             setIsOpen={setIsOpen}
+            onClose={onClose}
             className='w-[26rem] shadow shadow-primary rounded-md bg-primary-alt'
         >
             <Modal.Header className='text-center small-caps tracking-wide text-xl text-accent font-semibold'>
@@ -68,6 +76,23 @@ export default function PluginModal({ isOpen, setIsOpen }) {
                     >
                         Sync
                     </button>
+                </p>
+                <Separator className='mb-2' />
+                <span className='heading-accent-md ml-1'>Export to-do list</span>
+                <p className='m-2 mt-1'>
+                    Click on the text box below to copy your task data, then paste it into the plugin's import menu.
+                </p>
+                <p className='m-2 mt-1'>
+                    <textarea
+                        className='input-primary form-textarea w-full mt-1 text-sm select-all cursor-text'
+                        onClick={() => {
+                            navigator.clipboard.writeText(JSON.stringify(userState.tasks.tasks));
+                            setIsCopySuccess(true);
+                        }}
+                        value={JSON.stringify(userState.tasks.tasks)}
+                        readOnly
+                    />
+                    {isCopySuccess && <span className='text-accent text-sm'>Copied!</span>}
                 </p> */}
             </Modal.Body>
         </Modal>

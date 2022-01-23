@@ -6,7 +6,7 @@ import Separator from './common/Separator';
 
 const DEFAULT_STYLE = 'w-96 min-h-[16rem] shadow shadow-primary rounded-md bg-primary-alt';
 
-function Modal({ isOpen, setIsOpen, children, className }) {
+function Modal({ isOpen, setIsOpen, children, className, onClose }) {
     // Modal is an overlay located outside of the root element, so it doesn't inherit the theming classes. Need to add them explicitly
     const theme = useSelector(state => state.settings.theme);
     const mode = useSelector(state => state.settings.mode);
@@ -17,7 +17,10 @@ function Modal({ isOpen, setIsOpen, children, className }) {
     return (
         <ReactModal
             isOpen={isOpen}
-            onRequestClose={() => setIsOpen(false)}
+            onRequestClose={() => {
+                setIsOpen(false);
+                onClose();
+            }}
             className={`${mode} theme-${theme}`}
             style={{
                 overlay: {
