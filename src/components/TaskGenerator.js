@@ -9,6 +9,7 @@ import Difficulty from './Difficulty';
 
 export default function TaskGenerator() {
     const [activeTask, setActiveTask] = useState(undefined);
+    const [allTasksCompleted, setAllTasksCompleted] = useState(false);
 
     const { randomTaskId, tasks: reduxTasks } = useSelector(state => state.tasks);
     const dispatch = useDispatch();
@@ -26,10 +27,12 @@ export default function TaskGenerator() {
             .filter(([, { completed, ignored }]) => completed || ignored)
             .map(([taskId]) => +taskId);
 
-        const possibleTasks = tasks.filter(task => notPossibleTaskIDsFromStore.includes(task.id));
+        const possibleTasks = tasks.filter(task => !notPossibleTaskIDsFromStore.includes(task.id));
         const randomTask = possibleTasks[Math.floor(Math.random() * possibleTasks.length)];
 
-        setActiveTask(randomTask);
+        if (randomTask) setActiveTask(randomTask);
+        else setAllTasksCompleted(true);
+
         dispatch(updateRandomTask(randomTask.id));
     };
 
@@ -38,6 +41,8 @@ export default function TaskGenerator() {
         dispatch(updateRandomTask(null));
         setActiveTask(undefined);
     };
+
+    const renderCompleted = <p className='italic '>You have completed all the tasks! 🎉</p>;
 
     const renderTask = activeTask ? (
         <>
@@ -60,35 +65,37 @@ export default function TaskGenerator() {
     return (
         <div className='flex flex-col gap-2'>
             <span className='heading-accent-md'>Random Task Generator</span>
-            <div className='w-full px-3 mb-4'>{renderTask}</div>
-            <div className='flex flex-col gap-1 px-3'>
-                <div className={`flex gap-1 mt ${isLgViewport ? 'w-full' : 'max-w-[420px]'}`}>
-                    <button type='button' className='button-outline w-full' onClick={generateTask}>
-                        {activeTask ? 'Skip task' : 'Generate task'}
-                    </button>
-                    {activeTask && (
-                        <button
-                            type='button'
-                            className='button-outline w-full'
-                            onClick={() => completeTask(activeTask.id)}
-                        >
-                            Complete task
+            <div className='w-full px-3 mb-4'>{allTasksCompleted ? renderCompleted : renderTask}</div>
+            {!allTasksCompleted && (
+                <div className='flex flex-col gap-1 px-3'>
+                    <div className={`flex gap-1 mt ${isLgViewport ? 'w-full' : 'max-w-[420px]'}`}>
+                        <button type='button' className='button-outline w-full' onClick={generateTask}>
+                            {activeTask ? 'Skip task' : 'Generate task'}
                         </button>
-                    )}
-                    {/* TODO: ADD configs */}
-                    {/* {isLgViewport && (
+                        {activeTask && (
+                            <button
+                                type='button'
+                                className='button-outline w-full'
+                                onClick={() => completeTask(activeTask.id)}
+                            >
+                                Complete task
+                            </button>
+                        )}
+                        {/* TODO: ADD configs */}
+                        {/* {isLgViewport && (
                         <button type='button' className='button-outline w-full'>
                             Configure task generator
                         </button>
                     )} */}
-                </div>
-                {/* TODO: Add configs */}
-                {/* {isLgViewport && (
+                    </div>
+                    {/* TODO: Add configs */}
+                    {/* {isLgViewport && (
                     <button type='button' className='button-outline w-full'>
                         Configure task generator
                     </button>
                 )} */}
-            </div>
+                </div>
+            )}
         </div>
     );
 }
