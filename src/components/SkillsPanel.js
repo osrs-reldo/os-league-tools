@@ -3,26 +3,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { STATS } from '../data/constants';
 import { DEFAULT_UNLOCKED_SKILLS } from '../store/unlocks/constants';
 import { lockSkill, unlockSkill } from '../store/unlocks/unlocks';
+import getSkillsPanelData from '../util/getSkillsPanelData';
 
-export default function SkillsPanel({ characterStats }) {
+export default function SkillsPanel() {
+    const hiscores = useSelector(state => state.character.hiscoresCache.data);
     const [selectedSkill, setSelectedSkill] = useState(null);
     const unlockedSkills = useSelector(state => state.unlocks.skills);
     const dispatch = useDispatch();
-
-    const SKILLS_PANEL = {
-        0: {},
-        1: {},
-        2: {},
-    };
-    Object.keys(STATS).forEach(skillName => {
-        if (skillName === 'QP') {
-            return;
-        }
-        const skillData = STATS[skillName];
-        const column = Math.floor(skillData.panelOrder / 8);
-        const row = skillData.panelOrder - column * 8;
-        SKILLS_PANEL[column][row] = skillData;
-    });
+    const skillsPanel = getSkillsPanelData({});
 
     return (
         <div>
@@ -32,12 +20,12 @@ export default function SkillsPanel({ characterStats }) {
                         <tr key={i} className='border-b border-subdued last:border-none'>
                             {Array.from({ length: 3 }, (__, j) => (
                                 <SkillTile
-                                    key={SKILLS_PANEL[j][i].label}
-                                    skillData={SKILLS_PANEL[j][i]}
+                                    key={skillsPanel[j][i].label}
+                                    skillData={skillsPanel[j][i]}
                                     selectedSkill={selectedSkill}
                                     setSelectedSkill={setSelectedSkill}
                                     unlockedSkills={unlockedSkills}
-                                    level={characterStats?.skills[SKILLS_PANEL[j][i].label.toLowerCase()]?.level}
+                                    level={hiscores?.skills[skillsPanel[j][i].label.toLowerCase()]?.level}
                                 />
                             ))}
                         </tr>

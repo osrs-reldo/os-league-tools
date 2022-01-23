@@ -1,45 +1,44 @@
-import {
-    deleteFromLocalStorage,
-    getFromLocalStorage,
-    SESSIONSTORAGE_KEYS,
-    updateLocalStorage,
-} from './localstorage-client';
-
 const BASE_URL = process.env.REACT_APP_RELDO_URL || 'http://localhost:8080';
 
-export async function getHiscores(rsn) {
+export default async function getHiscores(rsn, handleResultCallback) {
+    if (!rsn) {
+        handleResultCallback({
+            success: false,
+            message: 'No username provided',
+        });
+    }
+
     const url = `${BASE_URL}/hiscores/${rsn}`;
-    let hiscores;
     await fetch(url)
         .then(res => res.json())
         .then(
             result => {
-                if (result.status && result.status === 404) {
+                let hiscores;
+                if (result?.status === 404) {
                     hiscores = {
                         success: false,
                         message: `Username "${rsn}" not found.`,
                     };
-                    deleteFromLocalStorage(SESSIONSTORAGE_KEYS.HISCORES_CACHE, true);
+                } else if (!result || result.error) {
+                    console.warn(result.error);
+                    hiscores = {
+                        success: false,
+                        message: 'Unable to retrieve hiscores, please try again later.',
+                    };
                 } else {
                     hiscores = {
                         success: true,
                         hiscores: result,
                     };
-                    updateLocalStorage(SESSIONSTORAGE_KEYS.HISCORES_CACHE, result, () => {}, true);
                 }
+                handleResultCallback(hiscores);
             },
             error => {
                 console.warn(error);
-                hiscores = {
+                handleResultCallback({
                     success: false,
-                    message: `Unable to retrieve hiscores, please try again later.`,
-                };
-                deleteFromLocalStorage(SESSIONSTORAGE_KEYS.HISCORES_CACHE, true);
+                    message: 'Unable to retrieve hiscores, please try again later.',
+                });
             }
         );
-    return hiscores;
-}
-
-export function getCachedHiscores() {
-    return getFromLocalStorage(SESSIONSTORAGE_KEYS.HISCORES_CACHE, null, true);
 }

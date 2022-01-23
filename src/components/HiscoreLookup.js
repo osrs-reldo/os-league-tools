@@ -1,59 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchHiscores, updateUsername } from '../store/character/character';
 import Spinner from './common/Spinner';
-import { getCachedHiscores, getHiscores } from '../client/hiscores-client';
-import useLocalStorage from '../hooks/useLocalStorage';
-import { LOCALSTORAGE_KEYS } from '../client/localstorage-client';
 
-export default function HiscoreLookup({ handleResultCallback = () => {} }) {
-    const [username, setUsername] = useLocalStorage(LOCALSTORAGE_KEYS.USERNAME, '');
-    const [errorText, setErrorText] = useState('');
-    const [isLoading, setIsLoading] = useState(false);
+export default function HiscoreLookup() {
+    const characterState = useSelector(state => state.character);
+    const dispatch = useDispatch();
 
     useEffect(() => {
-        let isMounted = true;
-        const cachedHiscores = getCachedHiscores();
-        if (cachedHiscores) {
-            handleResultCallback(cachedHiscores);
-        } else if (username) {
-            setIsLoading(true);
-            getHiscores(username).then(res => {
-                if (isMounted) {
-                    if (res.success) {
-                        handleResultCallback(res.hiscores);
-                        setIsLoading(false);
-                    } else {
-                        setErrorText(res.message);
-                        setIsLoading(false);
-                    }
-                }
-            });
-        }
-        return () => {
-            isMounted = false;
-            return false;
-        };
+        dispatch(fetchHiscores(characterState));
         // only want this to run once on first load
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-
-    const doHiscoresLookup = () => {
-        setIsLoading(true);
-        setErrorText('');
-        if (username) {
-            getHiscores(username).then(res => {
-                if (res.success) {
-                    handleResultCallback(res.hiscores);
-                    setIsLoading(false);
-                } else {
-                    setErrorText(res.message);
-                    setIsLoading(false);
-                }
-            });
-        } else {
-            setErrorText('Please enter a username.');
-            setIsLoading(false);
-        }
-    };
 
     return (
         <div className='flex flex-col'>
@@ -62,11 +20,15 @@ export default function HiscoreLookup({ handleResultCallback = () => {} }) {
                     type='text'
                     className='input-primary form-input grow'
                     placeholder='Username'
-                    value={username}
-                    onChange={event => setUsername(event.target.value)}
+                    value={characterState.username}
+                    onChange={event => dispatch(updateUsername(event.target.value))}
                 />
-                <button className='ml-2 button-md button-filled w-20' type='button' onClick={() => doHiscoresLookup()}>
-                    {isLoading ? (
+                <button
+                    className='ml-2 button-md button-filled w-20'
+                    type='button'
+                    onClick={() => dispatch(fetchHiscores(characterState, true))}
+                >
+                    {characterState.hiscoresCache.loading ? (
                         <span>
                             <Spinner />
                         </span>
@@ -75,7 +37,9 @@ export default function HiscoreLookup({ handleResultCallback = () => {} }) {
                     )}
                 </button>
             </div>
-            {errorText && <div className='text-error text-sm'>{errorText}</div>}
+            {characterState.hiscoresCache.error && (
+                <div className='text-error text-sm'>{characterState.hiscoresCache.error}</div>
+            )}
         </div>
     );
 }

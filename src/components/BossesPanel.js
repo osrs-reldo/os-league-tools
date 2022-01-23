@@ -52,9 +52,10 @@ const BOSSES = [
     'Zulrah',
 ];
 
-export default function BossesPanel({ characterStats }) {
+export default function BossesPanel() {
     const [selectedBoss, setSelectedBoss] = useState(null);
     const unlockedBosses = useSelector(state => state.unlocks.bosses);
+    const hiscores = useSelector(state => state.character.hiscoresCache.data);
     const dispatch = useDispatch();
 
     return (
@@ -68,7 +69,7 @@ export default function BossesPanel({ characterStats }) {
                                 selectedBoss={selectedBoss}
                                 setSelectedBoss={setSelectedBoss}
                                 unlockedBosses={unlockedBosses}
-                                characterStats={characterStats}
+                                characterStats={hiscores}
                             />
                             {i * 5 + 1 < BOSSES.length ? (
                                 <BossTile
@@ -76,7 +77,7 @@ export default function BossesPanel({ characterStats }) {
                                     selectedBoss={selectedBoss}
                                     setSelectedBoss={setSelectedBoss}
                                     unlockedBosses={unlockedBosses}
-                                    characterStats={characterStats}
+                                    characterStats={hiscores}
                                 />
                             ) : (
                                 <td />
@@ -87,7 +88,7 @@ export default function BossesPanel({ characterStats }) {
                                     selectedBoss={selectedBoss}
                                     setSelectedBoss={setSelectedBoss}
                                     unlockedBosses={unlockedBosses}
-                                    characterStats={characterStats}
+                                    characterStats={hiscores}
                                 />
                             ) : (
                                 <td />
@@ -98,7 +99,7 @@ export default function BossesPanel({ characterStats }) {
                                     selectedBoss={selectedBoss}
                                     setSelectedBoss={setSelectedBoss}
                                     unlockedBosses={unlockedBosses}
-                                    characterStats={characterStats}
+                                    characterStats={hiscores}
                                 />
                             ) : (
                                 <td />
@@ -109,7 +110,7 @@ export default function BossesPanel({ characterStats }) {
                                     selectedBoss={selectedBoss}
                                     setSelectedBoss={setSelectedBoss}
                                     unlockedBosses={unlockedBosses}
-                                    characterStats={characterStats}
+                                    characterStats={hiscores}
                                 />
                             ) : (
                                 <td />

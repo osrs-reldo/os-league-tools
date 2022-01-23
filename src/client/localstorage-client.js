@@ -5,11 +5,10 @@ export const LOCALSTORAGE_KEYS = {
     SETTINGS: 'settings',
     TASKS: 'tasks',
     UNLOCKS: 'unlocks',
+    CHARACTER: 'character',
 };
 
-export const SESSIONSTORAGE_KEYS = {
-    HISCORES_CACHE: 'hiscoresCache',
-};
+export const SESSIONSTORAGE_KEYS = {};
 
 export function getFromLocalStorage(key, initialValue, useSessionStorage = false) {
     try {

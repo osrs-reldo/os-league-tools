@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import HiscoreLookup from '../components/HiscoreLookup';
 import SkillsPanel from '../components/SkillsPanel';
 import BossesPanel from '../components/BossesPanel';
@@ -6,13 +6,11 @@ import Separator from '../components/common/Separator';
 // import { ThemedProgressBar } from '../components/ThemeProvider';
 
 export default function CharacterPanel() {
-    const [characterStats, setCharacterStats] = useState(null);
-
     return (
         <div className='flex md:flex-row flex-col lg:flex-nowrap flex-wrap justify-around w-full items-stretch md:gap-1 gap-3'>
             <div className='lg:basis-1/4 basis-2/5 flex flex-col justify-evenly items-center gap-3 order-3 lg:order-1'>
-                <HiscoreLookup handleResultCallback={stats => setCharacterStats(stats)} />
-                <SkillsPanel characterStats={characterStats} />
+                <HiscoreLookup />
+                <SkillsPanel />
             </div>
             <Separator variant='vertical' breakpoint='lg' className='order-2' />
             <div className='lg:basis-1/2 basis-full flex flex-col items-center gap-3 order-1 lg:order-3 shrink'>
@@ -87,7 +85,7 @@ export default function CharacterPanel() {
             <Separator variant='vertical' breakpoint='md' className='order-4' />
             <div className='lg:basis-1/4 basis-2/5 flex flex-col items-center order-5'>
                 <div className='mt-3'>
-                    <BossesPanel characterStats={characterStats} />
+                    <BossesPanel />
                 </div>
             </div>
         </div>
