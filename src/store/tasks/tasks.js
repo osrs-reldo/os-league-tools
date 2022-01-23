@@ -61,10 +61,15 @@ export const taskSlice = createSlice({
                 state.tasks[action.payload.taskId] = newTaskState;
             }
         },
+        updateRandomTask: (state, action) => {
+            const taskId = action.payload || null;
+            state.randomTaskId = taskId;
+        },
         load: (state, action) => ({
-            version: action.payload.version || state.version,
+            randomTaskId: action.payload.randomTaskId || state.randomTaskId,
             rsn: action.payload.rsn || state.rsn,
             tasks: action.payload.tasks || state.tasks,
+            version: action.payload.version || state.version,
         }),
         reset: () => INITIAL_STATE,
     },
@@ -75,7 +80,8 @@ export const loadState = () => {
     return updateTasksVersion(prevState);
 };
 
-export const { toggleTodo, toggleIgnored, toggleCompleted, updateNotes, updateOrder, reset, load } = taskSlice.actions;
+export const { toggleTodo, toggleIgnored, toggleCompleted, updateNotes, updateOrder, updateRandomTask, reset, load } =
+    taskSlice.actions;
 
 export function selectTask(state, taskId) {
     return state.tasks.tasks[taskId] || { ...INITIAL_TASK_STATE };

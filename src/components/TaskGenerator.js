@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
-import { toggleCompleted } from '../store/tasks/tasks';
+import { toggleCompleted, updateRandomTask } from '../store/tasks/tasks';
 import tasks from '../data/tasks';
 import SkillRequirementList from './SkillRequirementList';
 import Category from './Category';
@@ -10,9 +10,16 @@ import Difficulty from './Difficulty';
 export default function TaskGenerator() {
     const [activeTask, setActiveTask] = useState(undefined);
 
-    const { tasks: reduxTasks } = useSelector(state => state.tasks);
+    const { randomTaskId, tasks: reduxTasks } = useSelector(state => state.tasks);
     const dispatch = useDispatch();
     const isLgViewport = useBreakpoint(MEDIA_QUERIES.LG, MODE.GREATER);
+
+    useEffect(() => {
+        if (randomTaskId) {
+            const storedTask = tasks.find(task => task.id === randomTaskId);
+            setActiveTask(storedTask);
+        }
+    }, []);
 
     const generateTask = () => {
         const completedTaskIDsFromStore = Object.entries(reduxTasks)
@@ -26,10 +33,12 @@ export default function TaskGenerator() {
             if (!completedTaskIDsFromStore.includes(generatedTask.id)) randomTask = generatedTask;
         }
         setActiveTask(randomTask);
+        dispatch(updateRandomTask(randomTask.id));
     };
 
     const completeTask = taskId => {
         dispatch(toggleCompleted({ taskId }));
+        dispatch(updateRandomTask(null));
         setActiveTask(undefined);
     };
 
