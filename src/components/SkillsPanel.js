@@ -66,9 +66,9 @@ function SkillTile({ skillData, selectedSkill, setSelectedSkill, unlockedSkills,
 
     useEffect(() => {
         if (skillName !== 'Hitpoints' && level > 1 && !isSkillUnlocked) {
-            dispatch(unlockSkill({ skillName }));
+            dispatch(unlockSkill({ skill: skillName }));
         } else if (skillName === 'Hitpoints' && level > 10 && !isSkillUnlocked) {
-            dispatch(unlockSkill({ skillName }));
+            dispatch(unlockSkill({ skill: skillName }));
         }
     }, [level]);
 
