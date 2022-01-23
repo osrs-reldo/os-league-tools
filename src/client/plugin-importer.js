@@ -26,14 +26,17 @@ function importTasks(pluginTasks, localTasks, dispatch) {
         const pluginTask = pluginTasks[taskId];
         const localTask = localTasks[taskId] || INITIAL_TASK_STATE;
         syncedTasks[taskId] = {
-            ...INITIAL_TASK_STATE,
+            ...localTask,
             completed: selectCurrentValue(pluginTask.completedOn, localTask.completed),
             todo: selectCurrentValue(pluginTask.trackedOn, localTask.todo),
             ignored: selectCurrentValue(pluginTask.ignoredOn, localTask.ignored),
             lastUpdated: Date.now(),
         };
     });
-    return syncedTasks;
+    return {
+        ...localTasks,
+        syncedTasks,
+    };
 }
 
 function selectCurrentValue(pluginValue, localValue) {

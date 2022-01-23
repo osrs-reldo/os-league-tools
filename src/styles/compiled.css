@@ -2025,6 +2025,12 @@ select[multiple]:focus option:checked {
   -webkit-user-select: all;
           user-select: all;
 }
+.list-inside {
+  list-style-position: inside;
+}
+.list-decimal {
+  list-style-type: decimal;
+}
 .list-disc {
   list-style-type: disc;
 }

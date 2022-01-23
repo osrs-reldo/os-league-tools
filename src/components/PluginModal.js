@@ -5,12 +5,15 @@ import importFromPlugin from '../client/plugin-importer';
 import Separator from './common/Separator';
 import Modal from './Modal';
 
+const PLUGIN_EXPORT_VERSION = 1;
+
 export default function PluginModal({ isOpen, setIsOpen }) {
     const [pluginImport, setPluginImport] = useState('');
     const [errorText, setErrorText] = useState('');
     const [isCopySuccess, setIsCopySuccess] = useState(false);
     const userState = useSelector(state => state);
     const dispatch = useDispatch();
+    const taskExport = convertTasksToPluginExport(userState.tasks.tasks, userState.character.username);
 
     const onClose = () => {
         setPluginImport('');
@@ -34,21 +37,31 @@ export default function PluginModal({ isOpen, setIsOpen }) {
                     OS League Tools has RuneLite integration! Enable the plugin to sync your tasks (and soon, your
                     quests, relics, and unlocks too).
                 </p>
-                <p className='m-2 mt-1'>
-                    {' '}
-                    To get it, search for{' '}
-                    <a
-                        className='text-accent font-semibold hover:underline'
-                        href='https://github.com/osrs-reldo/tasks-tracker-plugin/tree/main#tasks-tracker'
-                        target='_blank'
-                        rel='noreferrer'
-                    >
-                        Tasks Tracker
-                    </a>{' '}
-                    in the Plugin Hub in your runelite settings.
-                </p>
                 <Separator className='mb-2' />
                 <span className='heading-accent-md ml-1'>Sync data</span>
+                <p className='m-2 mt-1'>
+                    How to sync:
+                    <ol className='list-decimal list-inside ml-2'>
+                        <li>
+                            Install the{' '}
+                            <a
+                                className='text-accent font-semibold hover:underline'
+                                href='https://github.com/osrs-reldo/tasks-tracker-plugin/tree/main#tasks-tracker'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                Tasks Tracker
+                            </a>{' '}
+                            from the Plugin Hub in your runelite settings.
+                        </li>
+                        <li>Open your tasks menu ingame and make sure filters are set to "All"</li>
+                        <li>
+                            Click the book icon on the sidebar to open the task tracker panel, and click the Export
+                            button
+                        </li>
+                        <li>Paste it below!</li>
+                    </ol>
+                </p>
                 <p className='m-2 mt-1'>
                     <textarea
                         className='input-primary form-textarea w-full my-1 text-sm'
@@ -84,10 +97,10 @@ export default function PluginModal({ isOpen, setIsOpen }) {
                     <textarea
                         className='input-primary form-textarea w-full mt-1 text-sm select-all cursor-text'
                         onClick={() => {
-                            navigator.clipboard.writeText(JSON.stringify(userState.tasks.tasks));
+                            navigator.clipboard.writeText(taskExport);
                             setIsCopySuccess(true);
                         }}
-                        value={JSON.stringify(userState.tasks.tasks)}
+                        value={taskExport}
                         readOnly
                     />
                     {isCopySuccess && <span className='text-accent text-sm'>Copied!</span>}
@@ -95,4 +108,23 @@ export default function PluginModal({ isOpen, setIsOpen }) {
             </Modal.Body>
         </Modal>
     );
+}
+
+function convertTasksToPluginExport(taskState, rsn) {
+    const reformattedTasks = {
+        version: PLUGIN_EXPORT_VERSION,
+        rsn,
+        tasks: {},
+    };
+    Object.keys(taskState).forEach(taskId => {
+        reformattedTasks.tasks[taskId] = {
+            completed: taskState[taskId].completed || 0,
+            todo: taskState[taskId].todo || 0,
+            ignored: taskState[taskId].ignored || 0,
+            order: taskState[taskId].order || 0,
+            notes: taskState[taskId].notes,
+            lastUpdated: taskState[taskId].lastUpdated,
+        };
+    });
+    return JSON.stringify(reformattedTasks);
 }
