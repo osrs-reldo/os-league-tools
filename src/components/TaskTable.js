@@ -4,6 +4,8 @@ import { matchSorter } from 'match-sorter';
 import { useDispatch, useSelector } from 'react-redux';
 import tasks from '../data/tasks';
 import Cell from './TaskTableCell';
+import Difficulty from './Difficulty';
+import Category from './Category';
 import Table from './common/Table';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import TaskTableRow from './TaskTableRow';
@@ -37,7 +39,7 @@ export default function TaskTable() {
                 width: isMdOrSmallerViewport ? 100 : 150,
                 accessor: row => row.difficulty,
                 sortType: sortDifficulty,
-                Cell: Cell.Difficulty,
+                Cell: Difficulty,
             },
             {
                 Header: 'Category',
@@ -46,7 +48,7 @@ export default function TaskTable() {
                 width: isMdOrSmallerViewport ? 100 : 150,
                 accessor: row => ({ category: row.category, subcategory: row.subcategory }),
                 sortType: sortCategory,
-                Cell: Cell.Category,
+                Cell: Category,
             },
         ],
         [isXsViewport, isSmViewport, isMdOrSmallerViewport]

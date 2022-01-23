@@ -1,10 +1,11 @@
 import React from 'react';
 import { toggleTodo, toggleIgnored, toggleCompleted, updateNotes } from '../store/tasks/tasks';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
-import LabeledIcon from './common/LabeledIcon';
 import { DEFAULT_NOTES_TEXT } from '../data/constants';
 import { clearTempField, setTempField } from '../store/temp';
 import SkillRequirementList from './SkillRequirementList';
+import Difficulty from './Difficulty';
+import Category from './Category';
 
 function Task({ row, value, taskState, dispatchFn }) {
     const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
@@ -82,33 +83,6 @@ function ExpandedTask({ original, notesState, taskState, dispatchFn }) {
                     taskState={taskState}
                 />
             </div>
-        </div>
-    );
-}
-
-function Difficulty({ value }) {
-    const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
-    const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
-
-    let label = `${value.label} (${value.value})`;
-    label = isMdOrSmallerViewport ? value.value : label;
-    label = isXsViewport ? '' : label;
-    return (
-        <LabeledIcon label={label} icon={value.icon} size='lg' className='flex justify-center h-full items-center' />
-    );
-}
-
-function Category({ value }) {
-    const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
-
-    if (!value.category) {
-        return null;
-    }
-
-    return (
-        <div className='flex lg:flex-col flex-row flex-wrap items-center justify-center h-full'>
-            <LabeledIcon label={isMdOrSmallerViewport ? '' : value.category.label} icon={value.category.icon} />
-            <LabeledIcon label={isMdOrSmallerViewport ? '' : value.subcategory.label} icon={value.subcategory.icon} />
         </div>
     );
 }
@@ -223,4 +197,4 @@ function TaskAction({
 //     );
 // }
 
-export default { Task, ExpandedTask, Difficulty, Category };
+export default { Task, ExpandedTask };
