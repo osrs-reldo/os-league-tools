@@ -4,6 +4,7 @@ import { update } from '../store/settings';
 import LabeledCheckbox from '../components/common/LabeledCheckbox';
 import TabbedCard from '../components/common/TabbedCard';
 import PageWrapper from '../components/PageWrapper';
+import images from '../assets/images';
 
 export default function Settings() {
     const settingsState = useSelector(state => state.settings);
@@ -73,7 +74,7 @@ function ThemeSelectCard({ label, theme }) {
                 })
             }
         >
-            <img className='h-9 w-9 mx-auto' src={`/img/icon-${theme}.png`} alt='' />
+            <img className='h-9 w-9 mx-auto' src={images[`icon-${theme}.png`]} alt='' />
             <span className={`text-center heading-block-sm small-caps force-wrap ${selected && 'text-accent'}`}>
                 {label}
             </span>
