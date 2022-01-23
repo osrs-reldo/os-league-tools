@@ -5,6 +5,7 @@ import PageWrapper from '../components/PageWrapper';
 import TasksPanel from './TasksPanel';
 import useQueryString from '../hooks/useQueryString';
 import QuestsPanel from './QuestsPanel';
+import images from '../assets/images';
 
 export default function Tracker() {
     const [selectedTab, onSetSelectedTab] = useQueryString('tab');
@@ -12,18 +13,18 @@ export default function Tracker() {
     return (
         <PageWrapper>
             <TabbedCard defaultActiveTab={selectedTab} setTabCallback={onSetSelectedTab}>
-                <TabbedCard.Tab id='character' label='Character' icon='/img/tab-character.png'>
+                <TabbedCard.Tab id='character' label='Character' icon={images['tab-character.png']}>
                     <CharacterPanel />
                 </TabbedCard.Tab>
-                <TabbedCard.Tab id='relics' label='Relics' icon='/img/tab-relics.png'>
+                <TabbedCard.Tab id='relics' label='Relics' icon={images['tab-relics.png']}>
                     <p className='text-accent font-bold text-center small-caps text-2xl tracking-widest'>
                         Relics tracker coming soon!
                     </p>
                 </TabbedCard.Tab>
-                <TabbedCard.Tab id='tasks' label='Tasks' icon='/img/tab-tasks.png'>
+                <TabbedCard.Tab id='tasks' label='Tasks' icon={images['tab-tasks.png']}>
                     <TasksPanel />
                 </TabbedCard.Tab>
-                <TabbedCard.Tab id='quests' label='Quests' icon='/img/tab-quests.png'>
+                <TabbedCard.Tab id='quests' label='Quests' icon={images['tab-quests.png']}>
                     <QuestsPanel />
                 </TabbedCard.Tab>
             </TabbedCard>

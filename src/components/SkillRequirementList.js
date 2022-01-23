@@ -9,7 +9,7 @@ export default function SkillRequirementList({ value, maxLength = 100, className
     return (
         <div className={`flex flex-wrap items-center content-center gap-x-1 ${className}`}>
             {value.slice(0, maxLength).map(({ skill, level }) => (
-                <LabeledIcon key={`${skill}${level}`} label={level} icon={`/img/${STATS[skill].iconMini}`} />
+                <LabeledIcon key={`${skill}${level}`} label={level} icon={STATS[skill].iconMini} />
             ))}
             {value.length > maxLength && <LabeledIcon label='...' />}
         </div>
