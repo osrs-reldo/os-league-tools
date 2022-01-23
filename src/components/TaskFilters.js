@@ -278,7 +278,7 @@ function SkillTile({ skillData, filterState }) {
             }}
         >
             <div className='flex items-center text-xs'>
-                <img src={`/img/${skillData.icon}`} alt={skillName} className='inline mx-1' />
+                <img src={skillData.icon} alt={skillName} className='inline mx-1' />
                 {skillName}
             </div>
         </td>
