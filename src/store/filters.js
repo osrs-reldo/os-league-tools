@@ -2,8 +2,9 @@
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
+import { STATS } from '../data/constants';
 
-const CURRENT_VERSION = 3;
+const CURRENT_VERSION = 4;
 const INITIAL_STATE = {
     version: CURRENT_VERSION,
     tasks: {
@@ -13,8 +14,10 @@ const INITIAL_STATE = {
         difficulty: null,
         categories: null,
         subcategories: null,
-        skills: null,
+        skills: Object.keys(STATS),
         reorderEnabled: false,
+        showNoRequirements: true,
+        showUnmetRequirements: true,
     },
     quests: { status: 'all', difficulty: null, length: null, skills: null },
 };

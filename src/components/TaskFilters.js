@@ -4,13 +4,18 @@ import { useSelector, useDispatch, batch } from 'react-redux';
 import _ from 'lodash';
 import { updateTaskFilter, reset } from '../store/filters';
 import { update as updateUserData } from '../store/userData';
+import { updateHiscores, updateUsername } from '../store/character/character';
 import ButtonGroup from './common/ButtonGroup';
 import InputSelect from './common/InputSelect';
 import { CATEGORY, SUBCATEGORY, DIFFICULTY, STATS } from '../data/constants';
 import LabeledCheckbox from './common/LabeledCheckbox';
+import getSkillsPanelData from '../util/getSkillsPanelData';
+import HiscoreLookup from './HiscoreLookup';
 
 export default function TaskFilters() {
     const filterState = useSelector(state => state.filters.tasks);
+    const unlockedSkills = useSelector(state => state.unlocks.skills);
+    const username = useSelector(state => state.character.username);
     const dispatch = useDispatch();
 
     return (
@@ -145,26 +150,53 @@ export default function TaskFilters() {
                 </div>
             </div>
             <div className='xl:order-6 lg:order-3 sm:order-5 order-6 row-span-2'>
-                <span className='heading-accent-md mt-1'>Skills</span>
-                <div className='lg:w-full px-3 text-sm flex flex-col gap-2'>
+                <span className='heading-accent-md mt-1'>Requirements</span>
+                <div className='ml-2 mb-2'>
                     <LabeledCheckbox
-                        label='All skills'
-                        defaultChecked={!filterState.skills}
+                        className='text-sm'
+                        label='Show tasks with no requirements'
+                        defaultChecked={filterState.showNoRequirements}
                         onClick={e =>
-                            dispatch(updateTaskFilter({ field: 'skills', value: e.target.checked ? null : 'all' }))
+                            dispatch(updateTaskFilter({ field: 'showNoRequirements', value: e.target.checked }))
                         }
                     />
-                    <InputSelect
-                        label='skills'
-                        options={Object.keys(STATS).map(skill => ({ value: skill, label: skill }))}
-                        multiple
-                        className='md:w-full w-fit text-sm'
-                        enabled={!!filterState.skills}
-                        selection={filterState.skills}
-                        setSelection={val => dispatch(updateTaskFilter({ field: 'skills', value: val }))}
+                    <LabeledCheckbox
+                        className='text-sm'
+                        label='Show tasks with unmet requirements'
+                        defaultChecked={filterState.showUnmetRequirements}
+                        onClick={e =>
+                            dispatch(updateTaskFilter({ field: 'showUnmetRequirements', value: e.target.checked }))
+                        }
                     />
-                    {/* TODO add skill req filtering */}
-                    {/* <LabeledCheckbox label='Hide tasks with unmet requirements' className='mb-1' /> */}
+                </div>
+                <div className='lg:w-full px-3 text-sm flex flex-col mb-2'>
+                    <SkillsFilter filterState={filterState} />
+                    <span className='inline italic text-center'>
+                        <span className='mr-1'>Quick select skills:</span>
+                        <button
+                            className='inline italic hover:underline mx-1'
+                            type='button'
+                            onClick={() => dispatch(updateTaskFilter({ field: 'skills', value: Object.keys(STATS) }))}
+                        >
+                            all
+                        </button>
+                        |
+                        <button
+                            className='inline italic hover:underline mx-1'
+                            type='button'
+                            onClick={() => dispatch(updateTaskFilter({ field: 'skills', value: [] }))}
+                        >
+                            none
+                        </button>
+                        |
+                        <button
+                            className='inline italic hover:underline ml-1'
+                            type='button'
+                            onClick={() => dispatch(updateTaskFilter({ field: 'skills', value: unlockedSkills }))}
+                        >
+                            unlocked
+                        </button>
+                    </span>
                 </div>
             </div>
             <div className='w-full px-3 gap-1 grid lg:grid-cols-1 sm:grid-cols-2 grid-cols-1 order-7 sm:col-span-2 lg:col-span-1'>
@@ -196,5 +228,59 @@ export default function TaskFilters() {
                 )} */}
             </div>
         </div>
+    );
+}
+
+function SkillsFilter({ filterState }) {
+    const skillsData = getSkillsPanelData({ exclusions: ['QP', 'Overall'] });
+    return (
+        <table className='table-fixed w-fit'>
+            <tbody>
+                {Array.from({ length: 8 }, (__, i) => (
+                    <tr key={i} className='border-b border-subdued last:border-none'>
+                        {Array.from({ length: 3 }, (___, j) => {
+                            const skillData = skillsData[j][i];
+                            if (!skillData) {
+                                return null;
+                            }
+                            return (
+                                <SkillTile
+                                    key={skillsData[j][i].label}
+                                    skillData={skillsData[j][i]}
+                                    filterState={filterState}
+                                />
+                            );
+                        })}
+                    </tr>
+                ))}
+            </tbody>
+        </table>
+    );
+}
+
+function SkillTile({ skillData, filterState }) {
+    const skillName = skillData.label;
+    const selectedSkills = filterState.skills;
+    const isSelected = selectedSkills.includes(skillName);
+    const dispatch = useDispatch();
+
+    return (
+        <td
+            className={`p-1 border-r border-subdued last:border-none bg-hover cursor-pointer ${
+                isSelected && 'bg-secondary text-accent'
+            }`}
+            onClick={() => {
+                if (isSelected) {
+                    dispatch(updateTaskFilter({ field: 'skills', value: _.without(selectedSkills, skillName) }));
+                } else {
+                    dispatch(updateTaskFilter({ field: 'skills', value: [...selectedSkills, skillName] }));
+                }
+            }}
+        >
+            <div className='flex items-center text-xs'>
+                <img src={`/img/${skillData.icon}`} alt={skillName} className='inline mx-1' />
+                {skillName}
+            </div>
+        </td>
     );
 }

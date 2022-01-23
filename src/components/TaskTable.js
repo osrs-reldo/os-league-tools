@@ -73,6 +73,7 @@ export default function TaskTable() {
 
     const filterState = useSelector(state => state.filters.tasks);
     const tasksState = useSelector(state => state.tasks.tasks);
+    const hiscoresState = useSelector(state => state.character.hiscoresCache.data);
     const tempState = useSelector(state => state.temp);
     const dispatch = useDispatch();
 
@@ -83,7 +84,7 @@ export default function TaskTable() {
             filters={filters}
             filterState={filterState}
             globalFilter={fuzzyTextFilter}
-            customFilterProps={{ tasksState }}
+            customFilterProps={{ tasksState, hiscoresState }}
             defaultColumn={defaultColumn}
             initialState={initialState}
             ExpandedRow={Cell.ExpandedTask}
@@ -115,12 +116,29 @@ function subcategoryFilter(record, filterState) {
     return filterState.subcategories.includes(record?.subcategory?.label);
 }
 
-function skillFilter(record, filterState) {
+function skillFilter(record, filterState, { hiscoresState }) {
     const taskSkills = record.skillReqs.map(req => req.skill);
-    if (filterState.skills === null || taskSkills.length === 0) {
+
+    // Check if required skills are included in filter
+    const includeNoReq = filterState.showNoRequirements;
+    const hasValidSkills = _.difference(taskSkills, filterState.skills).length === 0;
+    if (!hasValidSkills || (!includeNoReq && taskSkills.length === 0)) {
+        return false;
+    }
+
+    // Check if level requirements should be ignored
+    if (!hiscoresState || hiscoresState.loading || hiscoresState.error || filterState.showUnmetRequirements) {
         return true;
     }
-    return _.intersection(taskSkills, filterState.skills).length > 0;
+
+    // Check if level requirements are met
+    let meetsRequirements = true;
+    record.skillReqs.forEach(skillReq => {
+        const hiscores = hiscoresState.skills[skillReq.skill.toLowerCase()];
+        const level = hiscores?.level || 1;
+        meetsRequirements = meetsRequirements && level >= skillReq.level;
+    });
+    return meetsRequirements;
 }
 
 function completedFilter(record, filterState, { tasksState }) {
