@@ -22,6 +22,7 @@ export default function HiscoreLookup() {
                     placeholder='Username'
                     value={characterState.username}
                     onChange={event => dispatch(updateUsername(event.target.value))}
+                    onKeyPress={e => e.key === 'Enter' && dispatch(fetchHiscores(characterState, true))}
                 />
                 <button
                     className='ml-2 button-md button-filled w-20'
