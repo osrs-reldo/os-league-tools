@@ -39,7 +39,7 @@ export default function PluginModal({ isOpen, setIsOpen }) {
                 </p>
                 <Separator className='mb-2' />
                 <span className='heading-accent-md ml-1'>Sync data</span>
-                <p className='m-2 mt-1'>
+                <div className='m-2 mt-1'>
                     How to sync:
                     <ol className='list-decimal list-inside ml-2'>
                         <li>
@@ -61,7 +61,7 @@ export default function PluginModal({ isOpen, setIsOpen }) {
                         </li>
                         <li>Paste it below!</li>
                     </ol>
-                </p>
+                </div>
                 <p className='m-2 mt-1'>
                     <textarea
                         className='input-primary form-textarea w-full my-1 text-sm'

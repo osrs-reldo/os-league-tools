@@ -15,7 +15,7 @@ export default function TaskTable() {
     const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.STRICT);
     const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
 
-    const data = useMemo(() => tasks, []);
+    const data = useMemo(() => Object.values(tasks), []);
     const columns = useMemo(
         () => [
             {

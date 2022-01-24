@@ -14,10 +14,11 @@ export default function TaskGenerator() {
     const { randomTaskId, tasks: reduxTasks } = useSelector(state => state.tasks);
     const dispatch = useDispatch();
     const isLgViewport = useBreakpoint(MEDIA_QUERIES.LG, MODE.GREATER);
+    const allTasks = Object.values(tasks);
 
     useEffect(() => {
         if (randomTaskId) {
-            const storedTask = tasks.find(task => task.id === randomTaskId);
+            const storedTask = allTasks.find(task => task.id === randomTaskId);
             setActiveTask(storedTask);
         }
     }, []);
@@ -27,7 +28,7 @@ export default function TaskGenerator() {
             .filter(([, { completed, ignored }]) => completed || ignored)
             .map(([taskId]) => +taskId);
 
-        const possibleTasks = tasks.filter(task => !notPossibleTaskIDsFromStore.includes(task.id));
+        const possibleTasks = allTasks.filter(task => !notPossibleTaskIDsFromStore.includes(task.id));
         const randomTask = possibleTasks[Math.floor(Math.random() * possibleTasks.length)];
 
         if (randomTask) setActiveTask(randomTask);

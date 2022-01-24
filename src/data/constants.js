@@ -1,5 +1,66 @@
-/* eslint-disable  */
 import images from '../assets/images';
+
+export const PASSIVE_RELICS = {
+    unlockThresholds: [0, 10, 300, 1500, 3000, 7500, 15000],
+    tiers: {
+        1: {
+            points: 0,
+            expMultiplier: 5,
+            expMultiplierIncrease: true,
+            dropMultiplier: 1,
+            dropMultiplierIncrease: false,
+            extras: ['Free combat fragment'],
+        },
+        2: {
+            points: 10,
+            expMultiplier: 5,
+            expMultiplierIncrease: false,
+            dropMultiplier: 1,
+            dropMultiplierIncrease: false,
+            extras: ['Unlimited run energy', 'Stackable clues', 'Smooth Criminal fragment'],
+        },
+        3: {
+            points: 300,
+            expMultiplier: 8,
+            expMultiplierIncrease: true,
+            dropMultiplier: 1,
+            dropMultiplierIncrease: false,
+            extras: ['Double Kourend favour', 'Stackable clues', 'Random combat fragment'],
+        },
+        4: {
+            points: 1500,
+            expMultiplier: 8,
+            expMultiplierIncrease: false,
+            dropMultiplier: 2,
+            dropMultiplierIncrease: true,
+            extras: ['Random skilling fragment'],
+        },
+        5: {
+            points: 3000,
+            expMultiplier: 12,
+            expMultiplierIncrease: true,
+            dropMultiplier: 2,
+            dropMultiplierIncrease: false,
+            extras: ['Random combat fragment'],
+        },
+        6: {
+            points: 7500,
+            expMultiplier: 12,
+            expMultiplierIncrease: false,
+            dropMultiplier: 3,
+            dropMultiplierIncrease: true,
+            extras: ['Ability to choose slayer tasks'],
+        },
+        7: {
+            points: 15000,
+            expMultiplier: 16,
+            expMultiplierIncrease: true,
+            dropMultiplier: 3,
+            dropMultiplierIncrease: false,
+            extras: ['Random combat fragment'],
+        },
+    },
+};
 
 export const STATS = {
     Agility: {
@@ -208,36 +269,42 @@ export const DIFFICULTY = {
     BEGINNER: {
         label: 'Beginner',
         value: 5,
+        renown: 1,
         icon: images['task-beginner.png'],
         sortOrder: 0,
     },
     EASY: {
         label: 'Easy',
         value: 5,
+        renown: 1,
         icon: images['task-easy.png'],
         sortOrder: 1,
     },
     MEDIUM: {
         label: 'Medium',
         value: 25,
+        renown: 2,
         icon: images['task-medium.png'],
         sortOrder: 2,
     },
     HARD: {
         label: 'Hard',
         value: 50,
+        renown: 3,
         icon: images['task-hard.png'],
         sortOrder: 3,
     },
     ELITE: {
         label: 'Elite',
         value: 125,
+        renown: 4,
         icon: images['task-elite.png'],
         sortOrder: 4,
     },
     MASTER: {
         label: 'Master',
         value: 250,
+        renown: 5,
         icon: images['task-master.png'],
         sortOrder: 5,
     },

@@ -8,12 +8,12 @@ const fetch = require('node-fetch');
 function formatTasks() {
     const writeStream = fs.createWriteStream('./src/data/tasks.js');
     writeStream.write("import { DIFFICULTY } from './constants';\n\n");
-    writeStream.write('export default [\n    ');
+    writeStream.write('export default {\n    ');
     fetchTaskJson().then(tasks => {
         tasks.forEach(task => {
             const { category, subcategory } = taskMapper.toCategories(task);
-            writeStream.write('{\n        ');
-            writeStream.write(`id: ${task.id},\n        `);
+            writeStream.write(`'${task.id}': {\n        `);
+            writeStream.write(`id: '${task.id}',\n        `);
             writeStream.write(`label: ${JSON.stringify(task.name)},\n        `);
             writeStream.write(`description: ${JSON.stringify(task.description)},\n        `);
             writeStream.write(`skillReqs: ${formatSkillReqs(task.skills)},\n        `);
@@ -22,7 +22,7 @@ function formatTasks() {
             writeStream.write(`subcategory: ${subcategory && `SUBCATEGORY.${subcategory}`},\n    `);
             writeStream.write('},\n    ');
         });
-        writeStream.write('];');
+        writeStream.write('};');
         console.log('Successfully exported tasks to /src/data/tasks.js.');
     });
 }
