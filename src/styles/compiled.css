@@ -1986,9 +1986,6 @@ select[multiple]:focus option:checked {
 .table-auto {
   table-layout: auto;
 }
-.table-fixed {
-  table-layout: fixed;
-}
 .origin-center {
   transform-origin: center;
 }
@@ -2093,6 +2090,9 @@ select[multiple]:focus option:checked {
 }
 .gap-0 {
   gap: 0px;
+}
+.gap-px {
+  gap: 1px;
 }
 .gap-3 {
   gap: 0.75rem;

@@ -65,29 +65,33 @@ export default function TaskFilters() {
             <div className='xl:order-4 lg:order-2 sm:order-6 order-4'>
                 <span className='heading-accent-md mt-1'>Difficulty</span>
                 <div className='w-full px-3 text-sm flex flex-col'>
-                    <LabeledCheckbox
-                        label='All difficulties'
-                        defaultChecked={!filterState.difficulty}
-                        onClick={e =>
-                            dispatch(
-                                updateTaskFilter({
-                                    field: 'difficulty',
-                                    value: e.target.checked ? null : Object.values(DIFFICULTY).map(x => x.label),
-                                })
-                            )
-                        }
-                        className='mb-1'
-                    />
-                    <ButtonGroup
-                        buttons={Object.values(DIFFICULTY).map(difficulty => ({
-                            value: difficulty.label,
-                            label: difficulty.label,
-                        }))}
-                        enabled={!!filterState.difficulty}
-                        selection={filterState.difficulty || Object.values(DIFFICULTY).map(x => x.label)}
-                        setSelection={val => dispatch(updateTaskFilter({ field: 'difficulty', value: val }))}
-                        multi
-                    />
+                    <DifficultyFilter filterState={filterState} />
+
+                    <span className='inline italic text-center'>
+                        <span className='mr-1'>Quick select:</span>
+                        <button
+                            className='inline italic hover:underline mx-1'
+                            type='button'
+                            onClick={() =>
+                                dispatch(
+                                    updateTaskFilter({
+                                        field: 'difficulty',
+                                        value: Object.values(DIFFICULTY).map(x => x.label),
+                                    })
+                                )
+                            }
+                        >
+                            all
+                        </button>
+                        |
+                        <button
+                            className='inline italic hover:underline mx-1'
+                            type='button'
+                            onClick={() => dispatch(updateTaskFilter({ field: 'difficulty', value: [] }))}
+                        >
+                            none
+                        </button>
+                    </span>
                 </div>
             </div>
             <div className='lg:order-5 sm:order-2 order-5 row-span-2'>
@@ -169,7 +173,7 @@ export default function TaskFilters() {
                         }
                     />
                 </div>
-                <div className='lg:w-full px-3 text-sm flex flex-col mb-2'>
+                <div className='lg:w-full text-sm flex flex-col mb-2'>
                     <SkillsFilter filterState={filterState} />
                     <span className='inline italic text-center'>
                         <span className='mr-1'>Quick select skills:</span>
@@ -231,30 +235,49 @@ export default function TaskFilters() {
     );
 }
 
-function SkillsFilter({ filterState }) {
-    const skillsData = getSkillsPanelData({ exclusions: ['QP', 'Overall'] });
+function DifficultyFilter({ filterState }) {
+    const selectedDifficulties = filterState.difficulty;
+    const dispatch = useDispatch();
+
+    const toggleDifficulty = difficulty => {
+        const isSelected = selectedDifficulties.includes(difficulty);
+
+        if (isSelected)
+            dispatch(
+                updateTaskFilter({
+                    field: 'difficulty',
+                    value: selectedDifficulties.filter(diffs => diffs !== difficulty),
+                })
+            );
+        else dispatch(updateTaskFilter({ field: 'difficulty', value: [...selectedDifficulties, difficulty] }));
+    };
+
     return (
-        <table className='table-fixed w-fit'>
-            <tbody>
-                {Array.from({ length: 8 }, (__, i) => (
-                    <tr key={i} className='border-b border-subdued last:border-none'>
-                        {Array.from({ length: 3 }, (___, j) => {
-                            const skillData = skillsData[j][i];
-                            if (!skillData) {
-                                return null;
-                            }
-                            return (
-                                <SkillTile
-                                    key={skillsData[j][i].label}
-                                    skillData={skillsData[j][i]}
-                                    filterState={filterState}
-                                />
-                            );
-                        })}
-                    </tr>
-                ))}
-            </tbody>
-        </table>
+        <div className='grid grid-cols-3 gap-px bg-subdued w-full'>
+            {Object.values(DIFFICULTY).map(({ icon, label }) => (
+                <div
+                    className={`p-1 bg-hover cursor-pointer ${
+                        selectedDifficulties?.includes(label) ? 'bg-secondary text-accent' : 'bg-primary'
+                    }`}
+                    key={label}
+                    onClick={() => toggleDifficulty(label)}
+                >
+                    <img src={icon} alt={label} className='inline mx-1' />
+                    {label}
+                </div>
+            ))}
+        </div>
+    );
+}
+
+function SkillsFilter({ filterState }) {
+    const skillsData = [...getSkillsPanelData({ exclusions: ['QP', 'Overall'] }), {}];
+    return (
+        <div className='grid grid-cols-3 gap-px bg-subdued overflow-hidden w-fit'>
+            {Object.values(skillsData).map((data, i) => (
+                <SkillTile key={i} skillData={data} filterState={filterState} />
+            ))}
+        </div>
     );
 }
 
@@ -265,10 +288,8 @@ function SkillTile({ skillData, filterState }) {
     const dispatch = useDispatch();
 
     return (
-        <td
-            className={`p-1 border-r border-subdued last:border-none bg-hover cursor-pointer ${
-                isSelected && 'bg-secondary text-accent'
-            }`}
+        <div
+            className={`p-1 bg-hover cursor-pointer ${isSelected ? 'bg-secondary text-accent' : 'bg-primary'}`}
             onClick={() => {
                 if (isSelected) {
                     dispatch(updateTaskFilter({ field: 'skills', value: _.without(selectedSkills, skillName) }));
@@ -281,6 +302,6 @@ function SkillTile({ skillData, filterState }) {
                 <img src={skillData.icon} alt={skillName} className='inline mx-1' />
                 {skillName}
             </div>
-        </td>
+        </div>
     );
 }

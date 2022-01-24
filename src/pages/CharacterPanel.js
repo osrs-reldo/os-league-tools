@@ -93,7 +93,7 @@ export default function CharacterPanel() {
                         const tierUnlocked = tier >= tierKey;
                         const passiveBonus = PASSIVE_RELICS.tiers[tierKey];
                         return (
-                            <div className='m-1 grow flex flex-col text-center text-sm'>
+                            <div className='m-1 grow flex flex-col text-center text-sm' key={tierKey}>
                                 <div>
                                     <img
                                         className='h-6 inline'
