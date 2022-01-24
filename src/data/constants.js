@@ -263,6 +263,14 @@ export const STATS = {
         isPossibleTutorialUnlock: null,
         unlockCost: null,
     },
+    Combat: {
+        label: 'Combat',
+        panelOrder: null,
+        icon: images['combat.png'],
+        iconMini: images['task-combat.png'],
+        isPossibleTutorialUnlock: null,
+        unlockCost: null,
+    },
 };
 
 export const DIFFICULTY = {

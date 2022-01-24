@@ -1,6 +1,6 @@
 import { STATS } from '../data/constants';
 
-export default function getSkillsPanelData({ exclusions = ['QP'] }) {
+export default function getSkillsPanelData({ exclusions = ['QP', 'Combat'] }) {
     const SKILLS_PANEL = [];
 
     Object.keys(STATS).forEach(skillName => {
