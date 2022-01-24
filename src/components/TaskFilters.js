@@ -232,7 +232,7 @@ export default function TaskFilters() {
 }
 
 function SkillsFilter({ filterState }) {
-    const skillsData = getSkillsPanelData({ exclusions: ['QP', 'Overall'] });
+    const skillsData = getSkillsPanelData({ exclusions: ['QP', 'Overall', 'Combat'] });
     return (
         <table className='table-fixed w-fit'>
             <tbody>
