@@ -77,9 +77,11 @@ export default function CharacterPanel() {
                 <div className='flex w-full flex-wrap justify-around text-center align-middle tracking-wide text-md text-primary gap-3'>
                     <span>{`Relic slots unlocked: ${tier} / 7`}</span>
                     {/* <span>Relic fragments found: 18 / 100</span> */}
-                    <span>{`Next unlock at ${PASSIVE_RELICS.tiers[tier + 1].points} pts (${
-                        PASSIVE_RELICS.tiers[tier + 1].points - taskStats.points.complete.total
-                    } remaining)`}</span>
+                    {tier < PASSIVE_RELICS.unlockThresholds.length && (
+                        <span>{`Next unlock at ${PASSIVE_RELICS.tiers[tier + 1].points} pts (${
+                            PASSIVE_RELICS.tiers[tier + 1].points - taskStats.points.complete.total
+                        } remaining)`}</span>
+                    )}
                 </div>
                 <div className='w-11/12'>
                     <ThemedProgressBar

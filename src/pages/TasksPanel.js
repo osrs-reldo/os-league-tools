@@ -42,9 +42,11 @@ export default function TasksPanel() {
                         To-do: {taskStats.tasks.todo.total} tasks ({taskStats.points.todo.total} points /{' '}
                         {taskStats.renown.todo.total} renown)
                     </span>
-                    <span>{`Next unlock at ${PASSIVE_RELICS.tiers[tier + 1].points} pts (${
-                        PASSIVE_RELICS.tiers[tier + 1].points - taskStats.points.complete.total
-                    } remaining)`}</span>
+                    {tier < PASSIVE_RELICS.unlockThresholds.length && (
+                        <span>{`Next unlock at ${PASSIVE_RELICS.tiers[tier + 1].points} pts (${
+                            PASSIVE_RELICS.tiers[tier + 1].points - taskStats.points.complete.total
+                        } remaining)`}</span>
+                    )}
                 </div>
             </div>
             <Separator />
