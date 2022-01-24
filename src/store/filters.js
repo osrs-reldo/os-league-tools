@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
 import { STATS } from '../data/constants';
 
-const CURRENT_VERSION = 4;
+const CURRENT_VERSION = 5;
 const INITIAL_STATE = {
     version: CURRENT_VERSION,
     tasks: {
