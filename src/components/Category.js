@@ -5,7 +5,7 @@ import LabeledIcon from './common/LabeledIcon';
 function Category({ value }) {
     const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
 
-    if (!value || !value.category) {
+    if (!value || !value.category || !value.subcategory) {
         return null;
     }
 

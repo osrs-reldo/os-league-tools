@@ -7,6 +7,7 @@ const fetch = require('node-fetch');
 
 function formatTasks() {
     const writeStream = fs.createWriteStream('./src/data/tasks.js');
+    writeStream.write("import { CATEGORY } from './categories';\n");
     writeStream.write("import { DIFFICULTY } from './constants';\n\n");
     writeStream.write('export default {\n    ');
     fetchTaskJson().then(tasks => {
@@ -19,7 +20,9 @@ function formatTasks() {
             writeStream.write(`skillReqs: ${formatSkillReqs(task.skills)},\n        `);
             writeStream.write(`difficulty: DIFFICULTY.${task.tier.toUpperCase()},\n        `);
             writeStream.write(`category: ${category && `CATEGORY.${category}`},\n        `);
-            writeStream.write(`subcategory: ${subcategory && `SUBCATEGORY.${subcategory}`},\n    `);
+            writeStream.write(
+                `subcategory: ${subcategory && `CATEGORY.${category}.subcategories.${subcategory}`},\n    `
+            );
             writeStream.write('},\n    ');
         });
         writeStream.write('};');

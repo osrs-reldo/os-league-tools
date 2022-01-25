@@ -7,10 +7,11 @@ import { update as updateUserData } from '../store/userData';
 import { updateHiscores, updateUsername } from '../store/character/character';
 import ButtonGroup from './common/ButtonGroup';
 import InputSelect from './common/InputSelect';
-import { CATEGORY, SUBCATEGORY, DIFFICULTY, STATS } from '../data/constants';
+import { DIFFICULTY, STATS } from '../data/constants';
 import LabeledCheckbox from './common/LabeledCheckbox';
 import getSkillsPanelData from '../util/getSkillsPanelData';
 import HiscoreLookup from './HiscoreLookup';
+import { CATEGORY, getSubcategoriesForCategories } from '../data/categories';
 
 export default function TaskFilters() {
     const filterState = useSelector(state => state.filters.tasks);
@@ -96,16 +97,16 @@ export default function TaskFilters() {
             </div>
             <div className='lg:order-5 sm:order-2 order-5 row-span-2'>
                 <span className='heading-accent-md mt-1'>Category</span>
-                <p className='text-sm italic'>Filter temporarily disabled until new tasks are finished importing!</p>
                 <div className='w-full px-3 text-sm flex gap-1'>
                     <div>
                         <LabeledCheckbox
                             label='All categories'
-                            defaultChecked
-                            // defaultChecked={!filterState.categories}
-                            // onClick={e =>
-                            //     dispatch(updateTaskFilter({ field: 'categories', value: e.target.checked ? null : 'all' }))
-                            // }
+                            defaultChecked={!filterState.categories}
+                            onClick={e =>
+                                dispatch(
+                                    updateTaskFilter({ field: 'categories', value: e.target.checked ? null : 'all' })
+                                )
+                            }
                             className='mb-1'
                         />
                         <InputSelect
@@ -116,8 +117,7 @@ export default function TaskFilters() {
                             }))}
                             multiple
                             className='text-sm'
-                            enabled={false}
-                            // enabled={!!filterState.categories}
+                            enabled={!!filterState.categories}
                             selection={filterState.categories}
                             setSelection={val => dispatch(updateTaskFilter({ field: 'categories', value: val }))}
                         />
@@ -125,28 +125,27 @@ export default function TaskFilters() {
                     <div>
                         <LabeledCheckbox
                             label='All subcategories'
-                            defaultChecked
-                            // defaultChecked={!filterState.subcategories}
-                            // onClick={e =>
-                            //     dispatch(
-                            //         updateTaskFilter({ field: 'subcategories', value: e.target.checked ? null : 'all' })
-                            //     )
-                            // }
+                            defaultChecked={!filterState.subcategories}
+                            onClick={e =>
+                                dispatch(
+                                    updateTaskFilter({ field: 'subcategories', value: e.target.checked ? null : 'all' })
+                                )
+                            }
                             className='mb-1'
                         />
                         <InputSelect
                             label='subcategories'
-                            options={_.sortBy(
-                                Object.values(SUBCATEGORY).map(subcategory => ({
-                                    value: subcategory.label,
-                                    label: subcategory.label,
-                                })),
-                                ['label']
-                            )}
+                            options={getSubcategoriesForCategories(
+                                !filterState.categories || filterState.categories === 'all'
+                                    ? filterState.categories
+                                    : filterState.categories.map(c => c.toUpperCase())
+                            ).map(subcategory => ({
+                                value: subcategory,
+                                label: subcategory,
+                            }))}
                             multiple
                             className='text-sm'
-                            enabled={false}
-                            // enabled={!!filterState.subcategories}
+                            enabled={!!filterState.subcategories}
                             selection={filterState.subcategories}
                             setSelection={val => dispatch(updateTaskFilter({ field: 'subcategories', value: val }))}
                         />
@@ -273,7 +272,7 @@ function DifficultyFilter({ filterState }) {
 function SkillsFilter({ filterState }) {
     const skillsData = [...getSkillsPanelData({ exclusions: ['QP', 'Overall', 'Combat'] }), {}];
     return (
-        <div className='grid grid-cols-3 gap-px bg-subdued overflow-hidden w-fit'>
+        <div className='grid grid-cols-3 gap-px bg-subdued overflow-hidden ml-3 w-fit'>
             {Object.values(skillsData).map((data, i) => (
                 <SkillTile key={i} skillData={data} filterState={filterState} />
             ))}

@@ -2335,7 +2335,7 @@ export default [
     {
         id: '90000', // TODO this doesn't have an official ID yet
         label: 'The Frozen Door',
-        difficulty: QUEST_DIFFICULTY.NOVICE,
+        difficulty: QUEST_DIFFICULTY.MASTER,
         length: QUEST_LENGTH.LONG,
         type: 'miniquest',
         prereqs: [],
