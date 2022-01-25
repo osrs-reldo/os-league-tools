@@ -28,7 +28,7 @@ function importTasks(pluginTasks, localTasks, dispatch) {
         const localTask = localTasks[taskId] || INITIAL_TASK_STATE;
         syncedTasks[taskId] = {
             ...localTask,
-            completed: pluginTask.completedOn, // Always trust plugin as single source of truth for completion
+            completed: pluginTask.completedOn > 0 ? pluginTask.completedOn : null, // Always trust plugin as single source of truth for completion
             todo: selectCurrentValue(pluginTask.trackedOn, localTask.todo),
             ignored: selectCurrentValue(pluginTask.ignoredOn, localTask.ignored),
             lastUpdated: Date.now(),
