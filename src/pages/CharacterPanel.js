@@ -17,7 +17,7 @@ export default function CharacterPanel() {
 
     return (
         <div className='flex md:flex-row flex-col lg:flex-nowrap flex-wrap justify-around w-full items-stretch md:gap-1 gap-3'>
-            <div className='lg:basis-1/4 basis-2/5 flex flex-col justify-evenly items-center gap-3 order-3 lg:order-1'>
+            <div className='lg:basis-1/4 basis-2/5 flex flex-col items-center gap-3 order-3 lg:order-1'>
                 <HiscoreLookup />
                 <SkillsPanel />
             </div>
