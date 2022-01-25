@@ -1687,6 +1687,12 @@ select[multiple]:focus option:checked {
 .right-1 {
   right: 0.25rem;
 }
+.right-0 {
+  right: 0px;
+}
+.top-0 {
+  top: 0px;
+}
 .z-10 {
   z-index: 10;
 }
