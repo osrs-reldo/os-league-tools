@@ -113,6 +113,10 @@ export const CATEGORY = {
                 label: 'Wintertodt',
                 icon: images['wintertodt.png'],
             },
+            ZALCANO: {
+                label: 'Zalcano',
+                icon: images['zalcano.png'],
+            },
             ZULRAH: {
                 label: 'Zulrah',
                 icon: images['zulrah.png'],
