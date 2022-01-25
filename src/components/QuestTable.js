@@ -74,7 +74,6 @@ export default function QuestTable() {
     const initialState = { hiddenColumns: ['id'] };
     const questState = useSelector(state => state.unlocks.quests);
     const filterState = useSelector(state => state.filters.quests);
-    const dispatch = useDispatch();
 
     return (
         <Table
@@ -87,7 +86,6 @@ export default function QuestTable() {
             initialState={initialState}
             customFilterProps={{ questState }}
             ExpandedRow={ExpandedRow}
-            customRowProps={{ questState, dispatch }}
             enableResizeColumns
         />
     );
@@ -101,8 +99,11 @@ function fuzzyTextFilter(rows, __, filterValue) {
 }
 fuzzyTextFilter.autoRemove = val => !val;
 
-function QuestCell({ row, value, questState, dispatch }) {
+function QuestCell({ row, value }) {
+    const questState = useSelector(state => state.unlocks.quests);
     const questStatus = questState[row.id] || QUEST_STATUS.NOT_STARTED;
+    const dispatch = useDispatch();
+
     return (
         <div {...row.getToggleRowExpandedProps()}>
             <div className='flex flex-row items-center h-full gap-2'>

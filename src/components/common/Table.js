@@ -24,9 +24,7 @@ export default function Table({
     initialState,
     ExpandedRow,
     customFilterProps = {},
-    customRowProps = {},
     enableResizeColumns = true,
-    customRowRenderFn = null,
 }) {
     const [records, setRecords] = useState(data);
 
@@ -41,9 +39,11 @@ export default function Table({
             data: records,
             defaultColumn,
             globalFilter,
+            manualFilters: true,
             autoResetGlobalFilter: false,
             autoResetSortBy: false,
             autoResetPage: false,
+            autoResetExpanded: false,
             getRowId: useCallback(row => row.id, []),
         },
         useFlexLayout,
@@ -110,28 +110,16 @@ export default function Table({
                         <div {...table.getTableBodyProps()}>
                             {table.page.map(
                                 (row, index) =>
-                                    table.prepareRow(row) ||
-                                    (customRowRenderFn ? (
-                                        customRowRenderFn({
-                                            index,
-                                            row,
-                                            moveRow,
-                                            isReorderEnabled: filterState.reorderEnabled,
-                                            ExpandedRow,
-                                            ...customRowProps,
-                                            ...row.getRowProps(),
-                                        })
-                                    ) : (
+                                    table.prepareRow(row) || (
                                         <Row
                                             index={index}
                                             row={row}
                                             moveRow={moveRow}
                                             isReorderEnabled={filterState.reorderEnabled}
                                             ExpandedRow={ExpandedRow}
-                                            customCellProps={customRowProps}
                                             {...row.getRowProps()}
                                         />
-                                    ))
+                                    )
                             )}
                         </div>
                         <div className='flex flex-col justify-center text-center'>

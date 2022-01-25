@@ -1,14 +1,17 @@
-import React from 'react';
-import { toggleTodo, toggleIgnored, toggleCompleted, updateNotes } from '../store/tasks/tasks';
+import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleTodo, toggleIgnored, toggleCompleted, updateNotes, selectTask } from '../store/tasks/tasks';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import { DEFAULT_NOTES_TEXT } from '../data/constants';
-import { clearTempField, setTempField } from '../store/temp';
 import SkillRequirementList from './SkillRequirementList';
 import Difficulty from './Difficulty';
 import Category from './Category';
 
-function Task({ row, value, taskState, dispatchFn }) {
+function Task({ row, value }) {
     const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
+    const taskId = row.values.id;
+    const taskState = useSelector(state => selectTask(state, taskId));
+    const dispatch = useDispatch();
 
     return (
         <div {...row.getToggleRowExpandedProps()}>
@@ -18,7 +21,7 @@ function Task({ row, value, taskState, dispatchFn }) {
                     <span
                         className='icon-2xl text-accent'
                         onClick={e => {
-                            dispatchFn(toggleCompleted({ taskId: row.values.id }));
+                            dispatch(toggleCompleted({ taskId }));
                             e.stopPropagation();
                         }}
                     >
@@ -37,7 +40,7 @@ function Task({ row, value, taskState, dispatchFn }) {
                     }`}
                     type='button'
                     onClick={e => {
-                        dispatchFn(toggleTodo({ taskId: row.id }));
+                        dispatch(toggleTodo({ taskId }));
                         e.stopPropagation();
                     }}
                 >
@@ -55,7 +58,7 @@ function Task({ row, value, taskState, dispatchFn }) {
     );
 }
 
-function ExpandedTask({ original, notesState, taskState, dispatchFn }) {
+function ExpandedTask({ original }) {
     return (
         <div className='flex flex-row items-center h-full gap-2 max-w-[90%] md:max-w-[75%] lg:max-w-[60%]'>
             {/* hack: invisible dummy icons to align the expanded text with the previous row */}
@@ -67,43 +70,35 @@ function ExpandedTask({ original, notesState, taskState, dispatchFn }) {
                 <span className='text-xs mr-1'>Requires:</span>
                 <SkillRequirementList value={original.skillReqs} className='ml-3' />
                 <span className='text-xs mr-1'>Notes:</span>
-                <Notes
-                    className='ml-3 my-1'
-                    taskId={original.id}
-                    notesState={notesState}
-                    dispatchFn={dispatchFn}
-                    taskState={taskState}
-                />
+                <Notes className='ml-3 my-1' taskId={original.id} />
                 <span className='text-xs mr-1'>Actions:</span>
-                <Manage
-                    className='m-1 ml-3'
-                    taskId={original.id}
-                    notesState={notesState}
-                    dispatchFn={dispatchFn}
-                    taskState={taskState}
-                />
+                <Manage className='m-1 ml-3' taskId={original.id} />
             </div>
         </div>
     );
 }
 
-function Notes({ taskId, taskState, notesState, dispatchFn, className = '' }) {
-    if (notesState.isEditNotesMode) {
+function Notes({ taskId, className = '' }) {
+    const taskState = useSelector(state => selectTask(state, taskId));
+    const [isEditMode, setEditMode] = useState(false);
+    const [notes, setNotes] = useState(taskState.notes);
+    const dispatch = useDispatch();
+
+    if (isEditMode) {
         return (
             <div className='max-w-[350px]'>
                 <textarea
                     className={`text-xs input-primary form-input ${className}`}
-                    value={notesState.notesTempVal || ''}
+                    value={notes || ''}
                     onChange={e => {
-                        dispatchFn(setTempField({ field: `tempNotes${taskId}`, value: e.target.value }));
+                        setNotes(e.target.value);
                     }}
                 />
                 <button
                     className={`text-xs italic hover:underline ${className}`}
                     onClick={() => {
-                        dispatchFn(updateNotes({ taskId, notes: notesState.notesTempVal }));
-                        dispatchFn(clearTempField({ field: `editNotes${taskId}` }));
-                        dispatchFn(clearTempField({ field: `tempNotes${taskId}` }));
+                        dispatch(updateNotes({ taskId, notes }));
+                        setEditMode(false);
                     }}
                     type='button'
                 >
@@ -118,7 +113,7 @@ function Notes({ taskId, taskState, notesState, dispatchFn, className = '' }) {
             <button
                 className={`text-xs italic hover:underline ${className}`}
                 onClick={() => {
-                    dispatchFn(setTempField({ field: `editNotes${taskId}`, value: true }));
+                    setEditMode(true);
                 }}
                 type='button'
             >
@@ -128,7 +123,10 @@ function Notes({ taskId, taskState, notesState, dispatchFn, className = '' }) {
     );
 }
 
-function Manage({ taskId, taskState, dispatchFn, className = '' }) {
+function Manage({ taskId, className = '' }) {
+    const taskState = useSelector(state => selectTask(state, taskId));
+    const dispatch = useDispatch();
+
     return (
         // TODO set back to grid-cols-3 after enabling wiki button again
         <div className={`grid grid-cols-2 gap-1 max-w-[350px] ${className}`}>
@@ -136,7 +134,7 @@ function Manage({ taskId, taskState, dispatchFn, className = '' }) {
                 labelSelected='Undo completion'
                 labelUnselected='Complete'
                 isSelected={!!taskState.completed}
-                onClick={() => dispatchFn(toggleCompleted({ taskId }))}
+                onClick={() => dispatch(toggleCompleted({ taskId }))}
                 iconSelected='undo'
                 iconUnselected='done'
                 className='col-span-2' // TODO set back to 3 after enabling wiki button again
@@ -145,7 +143,7 @@ function Manage({ taskId, taskState, dispatchFn, className = '' }) {
                 labelSelected='To-do'
                 labelUnselected='To-do'
                 isSelected={!!taskState.todo}
-                onClick={() => dispatchFn(toggleTodo({ taskId }))}
+                onClick={() => dispatch(toggleTodo({ taskId }))}
                 iconSelected='close'
                 iconUnselected='add'
             />
@@ -153,7 +151,7 @@ function Manage({ taskId, taskState, dispatchFn, className = '' }) {
                 labelSelected='Unignore'
                 labelUnselected='Ignore'
                 isSelected={!!taskState.ignored}
-                onClick={() => dispatchFn(toggleIgnored({ taskId }))}
+                onClick={() => dispatch(toggleIgnored({ taskId }))}
                 iconSelected='add'
                 iconUnselected='close'
             />

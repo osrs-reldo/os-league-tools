@@ -1,14 +1,13 @@
 import React, { useMemo } from 'react';
 import _ from 'lodash';
 import { matchSorter } from 'match-sorter';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import tasks from '../data/tasks';
 import Cell from './TaskTableCell';
 import Difficulty from './Difficulty';
 import Category from './Category';
 import Table from './common/Table';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
-import TaskTableRow from './TaskTableRow';
 
 export default function TaskTable() {
     const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
@@ -76,8 +75,6 @@ export default function TaskTable() {
     const filterState = useSelector(state => state.filters.tasks);
     const tasksState = useSelector(state => state.tasks.tasks);
     const hiscoresState = useSelector(state => state.character.hiscoresCache.data);
-    const tempState = useSelector(state => state.temp);
-    const dispatch = useDispatch();
 
     return (
         <Table
@@ -91,8 +88,6 @@ export default function TaskTable() {
             initialState={initialState}
             ExpandedRow={Cell.ExpandedTask}
             enableResizeColumns={!isXsViewport}
-            customRowRenderFn={TaskTableRow}
-            customRowProps={{ tasksState, tempState, dispatch }}
         />
     );
 }
