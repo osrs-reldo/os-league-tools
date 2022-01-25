@@ -2,7 +2,7 @@
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
-import { STATS } from '../data/constants';
+import { STATS, DIFFICULTY } from '../data/constants';
 
 const CURRENT_VERSION = 5;
 const INITIAL_STATE = {
@@ -11,7 +11,7 @@ const INITIAL_STATE = {
         status: 'all',
         todo: 'all',
         ignored: 'hide',
-        difficulty: null,
+        difficulty: Object.values(DIFFICULTY).map(({ label }) => label),
         categories: null,
         subcategories: null,
         skills: Object.keys(STATS),

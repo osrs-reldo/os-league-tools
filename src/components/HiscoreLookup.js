@@ -20,7 +20,7 @@ export default function HiscoreLookup() {
                     type='text'
                     className='input-primary form-input grow'
                     placeholder='Username'
-                    value={characterState.username}
+                    value={characterState.username || ''}
                     onChange={event => dispatch(updateUsername(event.target.value))}
                     onKeyPress={e => e.key === 'Enter' && dispatch(fetchHiscores(characterState, true))}
                 />

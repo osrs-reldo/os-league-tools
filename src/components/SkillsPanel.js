@@ -14,24 +14,17 @@ export default function SkillsPanel() {
 
     return (
         <div>
-            <table className='table-auto'>
-                <tbody>
-                    {Array.from({ length: 8 }, (_, i) => (
-                        <tr key={i} className='border-b border-subdued last:border-none'>
-                            {Array.from({ length: 3 }, (__, j) => (
-                                <SkillTile
-                                    key={skillsPanel[j][i].label}
-                                    skillData={skillsPanel[j][i]}
-                                    selectedSkill={selectedSkill}
-                                    setSelectedSkill={setSelectedSkill}
-                                    unlockedSkills={unlockedSkills}
-                                    level={hiscores?.skills[skillsPanel[j][i].label.toLowerCase()]?.level}
-                                />
-                            ))}
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+            <div className='grid grid-cols-3 gap-px w-fit bg-subdued'>
+                {Object.values(skillsPanel).map(data => (
+                    <SkillTile
+                        key={data.label}
+                        skillData={data}
+                        setSelectedSkill={setSelectedSkill}
+                        unlockedSkills={unlockedSkills}
+                        level={hiscores?.skills[data.label.toLowerCase()]?.level}
+                    />
+                ))}
+            </div>
             <div className='w-full px-1 mt-2 align-top'>
                 {selectedSkill ? (
                     <>
@@ -74,33 +67,28 @@ function SkillTile({ skillData, selectedSkill, setSelectedSkill, unlockedSkills,
 
     if (skillName === 'Overall') {
         return (
-            <td className='p-1 border-r border-subdued last:border-none'>
-                <div className='flex items-center'>
-                    <img src={skillData.icon} alt={skillName} className='inline mx-1' />
-                    <span className='text-center grow mr-1'>{level}</span>
-                </div>
-            </td>
+            <div className='flex items-center justify-around bg-primary' key={skillData.label}>
+                <img src={skillData.icon} alt={skillName} />
+                <span className='text-center mr-1'>{level}</span>
+            </div>
         );
     }
 
     if (DEFAULT_UNLOCKED_SKILLS.includes(skillName)) {
         return (
-            <td className='p-1 border-r border-subdued last:border-none'>
-                <div className='flex items-center'>
-                    <img src={skillData.icon} alt={skillName} className='inline mx-1' />
-                    <span className='text-center grow mr-1'>
-                        {level} / {level}
-                    </span>
-                </div>
-            </td>
+            <div className='flex items-center bg-primary' key={skillData.label}>
+                <img src={skillData.icon} alt={skillName} className='inline mx-1' />
+                <span className='text-center grow'>
+                    {level} / {level}
+                </span>
+            </div>
         );
     }
 
     return (
-        <td
-            className={`p-1 border-r border-subdued last:border-none bg-hover cursor-pointer ${
-                selectedSkill === skillName && 'bg-secondary'
-            }`}
+        <div
+            className={`p-1 bg-hover cursor-pointer bg-primary ${selectedSkill === skillName && 'bg-secondary'}`}
+            key={skillData.label}
             onClick={() => setSelectedSkill(skillName)}
         >
             <div className='flex items-center'>
@@ -116,6 +104,6 @@ function SkillTile({ skillData, selectedSkill, setSelectedSkill, unlockedSkills,
                     </span>
                 )}
             </div>
-        </td>
+        </div>
     );
 }

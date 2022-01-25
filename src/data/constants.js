@@ -65,7 +65,7 @@ export const PASSIVE_RELICS = {
 export const STATS = {
     Agility: {
         label: 'Agility',
-        panelOrder: 9,
+        panelOrder: 4,
         icon: images['agility.gif'],
         iconMini: images['task-agility.png'],
         isPossibleTutorialUnlock: false,
@@ -81,7 +81,7 @@ export const STATS = {
     },
     Construction: {
         label: 'Construction',
-        panelOrder: 7,
+        panelOrder: 21,
         icon: images['construction.gif'],
         iconMini: images['task-construction.png'],
         isPossibleTutorialUnlock: false,
@@ -89,7 +89,7 @@ export const STATS = {
     },
     Cooking: {
         label: 'Cooking',
-        panelOrder: 19,
+        panelOrder: 11,
         icon: images['cooking.gif'],
         iconMini: images['task-cooking.png'],
         isPossibleTutorialUnlock: false,
@@ -97,7 +97,7 @@ export const STATS = {
     },
     Crafting: {
         label: 'Crafting',
-        panelOrder: 12,
+        panelOrder: 13,
         icon: images['crafting.gif'],
         iconMini: images['task-crafting.png'],
         isPossibleTutorialUnlock: false,
@@ -105,7 +105,7 @@ export const STATS = {
     },
     Defence: {
         label: 'Defence',
-        panelOrder: 2,
+        panelOrder: 6,
         icon: images['defence.gif'],
         iconMini: images['task-defence.png'],
         isPossibleTutorialUnlock: false,
@@ -113,7 +113,7 @@ export const STATS = {
     },
     Farming: {
         label: 'Farming',
-        panelOrder: 22,
+        panelOrder: 20,
         icon: images['farming.gif'],
         iconMini: images['task-farming.png'],
         isPossibleTutorialUnlock: false,
@@ -121,7 +121,7 @@ export const STATS = {
     },
     Firemaking: {
         label: 'Firemaking',
-        panelOrder: 20,
+        panelOrder: 14,
         icon: images['firemaking.gif'],
         iconMini: images['task-firemaking.png'],
         isPossibleTutorialUnlock: false,
@@ -129,7 +129,7 @@ export const STATS = {
     },
     Fishing: {
         label: 'Fishing',
-        panelOrder: 18,
+        panelOrder: 8,
         icon: images['fishing.gif'],
         iconMini: images['task-fishing.png'],
         isPossibleTutorialUnlock: false,
@@ -137,7 +137,7 @@ export const STATS = {
     },
     Fletching: {
         label: 'Fletching',
-        panelOrder: 13,
+        panelOrder: 16,
         icon: images['fletching.gif'],
         iconMini: images['task-fletching.png'],
         isPossibleTutorialUnlock: false,
@@ -145,7 +145,7 @@ export const STATS = {
     },
     Herblore: {
         label: 'Herblore',
-        panelOrder: 10,
+        panelOrder: 7,
         icon: images['herblore.gif'],
         iconMini: images['task-herblore.png'],
         isPossibleTutorialUnlock: false,
@@ -153,7 +153,7 @@ export const STATS = {
     },
     Hitpoints: {
         label: 'Hitpoints',
-        panelOrder: 8,
+        panelOrder: 1,
         icon: images['hitpoints.gif'],
         iconMini: images['task-hitpoints.png'],
         isPossibleTutorialUnlock: false,
@@ -161,7 +161,7 @@ export const STATS = {
     },
     Hunter: {
         label: 'Hunter',
-        panelOrder: 15,
+        panelOrder: 22,
         icon: images['hunter.gif'],
         iconMini: images['task-hunter.png'],
         isPossibleTutorialUnlock: false,
@@ -169,7 +169,7 @@ export const STATS = {
     },
     Magic: {
         label: 'Magic',
-        panelOrder: 5,
+        panelOrder: 15,
         icon: images['magic.gif'],
         iconMini: images['task-magic.png'],
         isPossibleTutorialUnlock: true,
@@ -177,7 +177,7 @@ export const STATS = {
     },
     Mining: {
         label: 'Mining',
-        panelOrder: 16,
+        panelOrder: 2,
         icon: images['mining.gif'],
         iconMini: images['task-mining.png'],
         isPossibleTutorialUnlock: false,
@@ -185,7 +185,7 @@ export const STATS = {
     },
     Prayer: {
         label: 'Prayer',
-        panelOrder: 4,
+        panelOrder: 12,
         icon: images['prayer.gif'],
         iconMini: images['task-prayer.png'],
         isPossibleTutorialUnlock: false,
@@ -193,7 +193,7 @@ export const STATS = {
     },
     Ranged: {
         label: 'Ranged',
-        panelOrder: 3,
+        panelOrder: 9,
         icon: images['ranged.gif'],
         iconMini: images['task-ranged.png'],
         isPossibleTutorialUnlock: true,
@@ -201,7 +201,7 @@ export const STATS = {
     },
     Runecraft: {
         label: 'Runecraft',
-        panelOrder: 6,
+        panelOrder: 18,
         icon: images['runecraft.gif'],
         iconMini: images['task-runecraft.png'],
         isPossibleTutorialUnlock: false,
@@ -209,7 +209,7 @@ export const STATS = {
     },
     Slayer: {
         label: 'Slayer',
-        panelOrder: 14,
+        panelOrder: 19,
         icon: images['slayer.gif'],
         iconMini: images['task-slayer.png'],
         isPossibleTutorialUnlock: false,
@@ -217,7 +217,7 @@ export const STATS = {
     },
     Smithing: {
         label: 'Smithing',
-        panelOrder: 17,
+        panelOrder: 5,
         icon: images['smithing.gif'],
         iconMini: images['task-smithing.png'],
         isPossibleTutorialUnlock: false,
@@ -225,7 +225,7 @@ export const STATS = {
     },
     Strength: {
         label: 'Strength',
-        panelOrder: 1,
+        panelOrder: 3,
         icon: images['strength.gif'],
         iconMini: images['task-strength.png'],
         isPossibleTutorialUnlock: false,
@@ -233,7 +233,7 @@ export const STATS = {
     },
     Thieving: {
         label: 'Thieving',
-        panelOrder: 11,
+        panelOrder: 10,
         icon: images['thieving.gif'],
         iconMini: images['task-thieving.png'],
         isPossibleTutorialUnlock: false,
@@ -241,7 +241,7 @@ export const STATS = {
     },
     Woodcutting: {
         label: 'Woodcutting',
-        panelOrder: 21,
+        panelOrder: 17,
         icon: images['woodcutting.gif'],
         iconMini: images['task-woodcutting.png'],
         isPossibleTutorialUnlock: false,
