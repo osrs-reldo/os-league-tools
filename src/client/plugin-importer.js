@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 
+import _ from 'lodash';
 import { INITIAL_TASK_STATE } from '../store/tasks/constants';
 import { load as loadTaskState } from '../store/tasks/tasks';
 import { load as loadUnlocksState } from '../store/unlocks/unlocks';
@@ -27,16 +28,28 @@ function importTasks(pluginTasks, localTasks, dispatch) {
         const localTask = localTasks[taskId] || INITIAL_TASK_STATE;
         syncedTasks[taskId] = {
             ...localTask,
-            completed: selectCurrentValue(pluginTask.completedOn, localTask.completed),
+            completed: pluginTask.completedOn, // Always trust plugin as single source of truth for completion
             todo: selectCurrentValue(pluginTask.trackedOn, localTask.todo),
             ignored: selectCurrentValue(pluginTask.ignoredOn, localTask.ignored),
             lastUpdated: Date.now(),
         };
     });
-    return {
-        ...localTasks,
-        ...syncedTasks,
-    };
+
+    const extraLocalKeys = _.difference(Object.keys(localTasks), Object.keys(pluginTasks));
+    extraLocalKeys.forEach(taskId => {
+        if (localTasks[taskId].todo || localTasks[taskId].ignored || localTasks[taskId].notes) {
+            const { todo, ignored, notes } = localTasks[taskId];
+            syncedTasks[taskId] = {
+                ...INITIAL_TASK_STATE,
+                todo,
+                ignored,
+                notes,
+                lastUpdated: Date.now(),
+            };
+        }
+    });
+
+    return syncedTasks;
 }
 
 function selectCurrentValue(pluginValue, localValue) {
