@@ -1687,6 +1687,12 @@ select[multiple]:focus option:checked {
 .right-1 {
   right: 0.25rem;
 }
+.right-0 {
+  right: 0px;
+}
+.top-0 {
+  top: 0px;
+}
 .z-10 {
   z-index: 10;
 }
@@ -1785,6 +1791,9 @@ select[multiple]:focus option:checked {
 }
 .ml-3 {
   margin-left: 0.75rem;
+}
+.mt-4 {
+  margin-top: 1rem;
 }
 .mr-3 {
   margin-right: 0.75rem;

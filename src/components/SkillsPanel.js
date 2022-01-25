@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { STATS } from '../data/constants';
 import { DEFAULT_UNLOCKED_SKILLS } from '../store/unlocks/constants';
 import { lockSkill, unlockSkill } from '../store/unlocks/unlocks';
 import getSkillsPanelData from '../util/getSkillsPanelData';
+import numberWithCommas from '../util/helpers';
 
 export default function SkillsPanel() {
     const hiscores = useSelector(state => state.character.hiscoresCache.data);
@@ -28,21 +28,36 @@ export default function SkillsPanel() {
             <div className='w-full px-1 mt-2 align-top'>
                 {selectedSkill ? (
                     <>
-                        <span className='heading-accent-md'>{selectedSkill}</span>
-                        <p className='italic text-sm'>Cost: {STATS[selectedSkill].unlockCost}</p>
-                        <button
-                            className='button-outline px-1 my-1 w-full'
-                            type='button'
-                            onClick={() =>
-                                unlockedSkills.includes(selectedSkill)
-                                    ? dispatch(lockSkill({ skill: selectedSkill }))
-                                    : dispatch(unlockSkill({ skill: selectedSkill }))
-                            }
-                        >
-                            {unlockedSkills.includes(selectedSkill)
-                                ? `Re-lock ${selectedSkill}`
-                                : `Unlock ${selectedSkill}`}
-                        </button>
+                        <span className='heading-accent-md'>{selectedSkill.label}</span>
+                        {unlockedSkills.includes(selectedSkill.label) && (
+                            <>
+                                <p className='italic text-sm'>
+                                    Experience:{' '}
+                                    {numberWithCommas(hiscores?.skills[selectedSkill.label.toLowerCase()].xp)}
+                                </p>
+                                <p className='italic text-sm'>
+                                    Rank: {numberWithCommas(hiscores?.skills[selectedSkill.label.toLowerCase()].rank)}
+                                </p>
+                            </>
+                        )}
+                        {!DEFAULT_UNLOCKED_SKILLS.includes(selectedSkill.label) && (
+                            <div className='mt-4'>
+                                <p className='italic text-sm'>Cost: {selectedSkill.unlockCost}</p>
+                                <button
+                                    className='button-outline px-1 my-1 w-full'
+                                    type='button'
+                                    onClick={() =>
+                                        unlockedSkills.includes(selectedSkill.label)
+                                            ? dispatch(lockSkill({ skill: selectedSkill.label }))
+                                            : dispatch(unlockSkill({ skill: selectedSkill.label }))
+                                    }
+                                >
+                                    {unlockedSkills.includes(selectedSkill.label)
+                                        ? `Re-lock ${selectedSkill.label}`
+                                        : `Unlock ${selectedSkill.label}`}
+                                </button>
+                            </div>
+                        )}
                     </>
                 ) : (
                     <span className='italic text-sm'>Click on a skill to lock/unlock it.</span>
@@ -74,22 +89,11 @@ function SkillTile({ skillData, selectedSkill, setSelectedSkill, unlockedSkills,
         );
     }
 
-    if (DEFAULT_UNLOCKED_SKILLS.includes(skillName)) {
-        return (
-            <div className='flex items-center bg-primary' key={skillData.label}>
-                <img src={skillData.icon} alt={skillName} className='inline mx-1' />
-                <span className='text-center grow'>
-                    {level} / {level}
-                </span>
-            </div>
-        );
-    }
-
     return (
         <div
             className={`p-1 bg-hover cursor-pointer bg-primary ${selectedSkill === skillName && 'bg-secondary'}`}
             key={skillData.label}
-            onClick={() => setSelectedSkill(skillName)}
+            onClick={() => setSelectedSkill(skillData)}
         >
             <div className='flex items-center'>
                 <img src={skillData.icon} alt={skillName} className='inline mx-1' />
