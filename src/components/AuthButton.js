@@ -16,7 +16,7 @@ export default function AuthButton({ useDropdownVariant = false }) {
 
     const label = isAuthenticated ? 'Logout' : 'Login';
     const icon = isAuthenticated ? 'logout' : 'login';
-    const action = isAuthenticated ? () => logout() : () => loginWithRedirect();
+    const action = isAuthenticated ? () => logout({ returnTo: window.location.origin }) : () => loginWithRedirect();
 
     if (useDropdownVariant) {
         return (
