@@ -26,7 +26,7 @@ export default function TaskGenerator() {
     const generateTask = () => {
         const notPossibleTaskIDsFromStore = Object.entries(reduxTasks)
             .filter(([, { completed, ignored }]) => completed || ignored)
-            .map(([taskId]) => +taskId);
+            .map(([taskId]) => taskId);
 
         const possibleTasks = allTasks.filter(task => !notPossibleTaskIDsFromStore.includes(task.id));
         const randomTask = possibleTasks[Math.floor(Math.random() * possibleTasks.length)];
