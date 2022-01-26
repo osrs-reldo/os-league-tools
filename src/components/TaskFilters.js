@@ -271,7 +271,7 @@ function DifficultyFilter({ filterState }) {
 }
 
 function SkillsFilter({ filterState }) {
-    const skillsData = [...getSkillsPanelData({ exclusions: ['QP', 'Overall', 'Combat'] }), {}];
+    const skillsData = [...getSkillsPanelData({ customExclusions: ['Overall'] }), {}];
     return (
         <div className='grid grid-cols-3 gap-px bg-subdued overflow-hidden w-fit'>
             {Object.values(skillsData).map((data, i) => (
