@@ -1923,6 +1923,9 @@ select[multiple]:focus option:checked {
 .w-\[26rem\] {
   width: 26rem;
 }
+.w-4 {
+  width: 1rem;
+}
 .w-11\/12 {
   width: 91.666667%;
 }
