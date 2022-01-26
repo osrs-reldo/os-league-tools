@@ -255,19 +255,19 @@ export const STATS = {
         isPossibleTutorialUnlock: null,
         unlockCost: null,
     },
-    QP: {
-        label: 'Quest points',
-        panelOrder: null,
-        icon: images['tab-quests.png'],
-        iconMini: images['task-quest.png'],
-        isPossibleTutorialUnlock: null,
-        unlockCost: null,
-    },
     Combat: {
         label: 'Combat',
         panelOrder: null,
         icon: images['combat.png'],
         iconMini: images['task-combat.png'],
+        isPossibleTutorialUnlock: null,
+        unlockCost: null,
+    },
+    QP: {
+        label: 'Quest points',
+        panelOrder: null,
+        icon: images['tab-quests.png'],
+        iconMini: images['task-quest.png'],
         isPossibleTutorialUnlock: null,
         unlockCost: null,
     },
@@ -472,5 +472,7 @@ export const QUEST_STATUS = {
     IN_PROGRESS: 'IN_PROGRESS',
     FINISHED: 'FINISHED',
 };
+
+export const CLUE_TIERS = ['Beginner', 'Easy', 'Medium', 'Hard', 'Elite', 'Master'];
 
 export const DEFAULT_NOTES_TEXT = '(none)';
