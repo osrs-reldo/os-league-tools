@@ -41,9 +41,11 @@ function CardLink({ title, icon, href }) {
 
 function CardButton({ title, icon, onClick }) {
     return (
-        <button className='flex flex-col justify-center w-full' onClick={onClick} type='button'>
-            {icon}
-            <p className='font-sans-alt text-center'>{title}</p>
+        <button className='w-full' onClick={onClick} type='button'>
+            <p className='flex flex-col justify-center w-full'>
+                {icon}
+                <p className='font-sans-alt text-center'>{title}</p>
+            </p>
         </button>
     );
 }
