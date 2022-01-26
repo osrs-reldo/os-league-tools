@@ -1,17 +1,16 @@
 import { STATS } from '../data/constants';
 
-export default function getSkillsPanelData({ exclusions = ['QP', 'Combat'] }) {
-    const SKILLS_PANEL = [];
+export default function getSkillsPanelData({ customExclusions = [] } = {}) {
+    const skillsArr = [];
+    const excludedItems = ['QP', 'Combat', ...customExclusions];
 
     Object.keys(STATS).forEach(skillName => {
-        if (exclusions.includes(skillName)) {
+        if (excludedItems.includes(skillName)) {
             return;
         }
         const skillData = STATS[skillName];
-        const column = Math.floor(skillData.panelOrder / 8);
-        const row = skillData.panelOrder - column * 8;
-        SKILLS_PANEL[column * 8 + row] = skillData;
+        skillsArr[skillData.panelOrder] = skillData;
     });
 
-    return SKILLS_PANEL;
+    return skillsArr;
 }
