@@ -69,7 +69,7 @@ export const STATS = {
         icon: images['agility.gif'],
         iconMini: images['task-agility.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 10,
+        unlockCost: 5,
     },
     Attack: {
         label: 'Attack',
@@ -77,7 +77,7 @@ export const STATS = {
         icon: images['attack.gif'],
         iconMini: images['task-attack.png'],
         isPossibleTutorialUnlock: true,
-        unlockCost: 20,
+        unlockCost: 10,
     },
     Construction: {
         label: 'Construction',
@@ -85,7 +85,7 @@ export const STATS = {
         icon: images['construction.gif'],
         iconMini: images['task-construction.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 30,
+        unlockCost: 15,
     },
     Cooking: {
         label: 'Cooking',
@@ -93,7 +93,7 @@ export const STATS = {
         icon: images['cooking.gif'],
         iconMini: images['task-cooking.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 20,
+        unlockCost: 10,
     },
     Crafting: {
         label: 'Crafting',
@@ -101,7 +101,7 @@ export const STATS = {
         icon: images['crafting.gif'],
         iconMini: images['task-crafting.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 30,
+        unlockCost: 15,
     },
     Defence: {
         label: 'Defence',
@@ -117,7 +117,7 @@ export const STATS = {
         icon: images['farming.gif'],
         iconMini: images['task-farming.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 20,
+        unlockCost: 10,
     },
     Firemaking: {
         label: 'Firemaking',
@@ -125,7 +125,7 @@ export const STATS = {
         icon: images['firemaking.gif'],
         iconMini: images['task-firemaking.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 10,
+        unlockCost: 5,
     },
     Fishing: {
         label: 'Fishing',
@@ -141,7 +141,7 @@ export const STATS = {
         icon: images['fletching.gif'],
         iconMini: images['task-fletching.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 20,
+        unlockCost: 10,
     },
     Herblore: {
         label: 'Herblore',
@@ -149,7 +149,7 @@ export const STATS = {
         icon: images['herblore.gif'],
         iconMini: images['task-herblore.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 30,
+        unlockCost: 15,
     },
     Hitpoints: {
         label: 'Hitpoints',
@@ -157,7 +157,7 @@ export const STATS = {
         icon: images['hitpoints.gif'],
         iconMini: images['task-hitpoints.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 10,
+        unlockCost: 5,
     },
     Hunter: {
         label: 'Hunter',
@@ -165,7 +165,7 @@ export const STATS = {
         icon: images['hunter.gif'],
         iconMini: images['task-hunter.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 10,
+        unlockCost: 5,
     },
     Magic: {
         label: 'Magic',
@@ -173,7 +173,7 @@ export const STATS = {
         icon: images['magic.gif'],
         iconMini: images['task-magic.png'],
         isPossibleTutorialUnlock: true,
-        unlockCost: 20,
+        unlockCost: 10,
     },
     Mining: {
         label: 'Mining',
@@ -181,7 +181,7 @@ export const STATS = {
         icon: images['mining.gif'],
         iconMini: images['task-mining.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 10,
+        unlockCost: 5,
     },
     Prayer: {
         label: 'Prayer',
@@ -189,7 +189,7 @@ export const STATS = {
         icon: images['prayer.gif'],
         iconMini: images['task-prayer.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 30,
+        unlockCost: 15,
     },
     Ranged: {
         label: 'Ranged',
@@ -197,7 +197,7 @@ export const STATS = {
         icon: images['ranged.gif'],
         iconMini: images['task-ranged.png'],
         isPossibleTutorialUnlock: true,
-        unlockCost: 20,
+        unlockCost: 10,
     },
     Runecraft: {
         label: 'Runecraft',
@@ -205,7 +205,7 @@ export const STATS = {
         icon: images['runecraft.gif'],
         iconMini: images['task-runecraft.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 10,
+        unlockCost: 5,
     },
     Slayer: {
         label: 'Slayer',
@@ -213,7 +213,7 @@ export const STATS = {
         icon: images['slayer.gif'],
         iconMini: images['task-slayer.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 30,
+        unlockCost: 15,
     },
     Smithing: {
         label: 'Smithing',
@@ -221,7 +221,7 @@ export const STATS = {
         icon: images['smithing.gif'],
         iconMini: images['task-smithing.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 20,
+        unlockCost: 10,
     },
     Strength: {
         label: 'Strength',
@@ -229,7 +229,7 @@ export const STATS = {
         icon: images['strength.gif'],
         iconMini: images['task-strength.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 20,
+        unlockCost: 10,
     },
     Thieving: {
         label: 'Thieving',
@@ -245,7 +245,7 @@ export const STATS = {
         icon: images['woodcutting.gif'],
         iconMini: images['task-woodcutting.png'],
         isPossibleTutorialUnlock: false,
-        unlockCost: 10,
+        unlockCost: 5,
     },
     Overall: {
         label: 'Overall',
