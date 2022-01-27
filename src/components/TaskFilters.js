@@ -235,14 +235,16 @@ function DifficultyFilter({ filterState }) {
     const toggleDifficulty = difficulty => {
         const isSelected = selectedDifficulties.includes(difficulty);
 
-        if (isSelected)
+        if (isSelected) {
             dispatch(
                 updateTaskFilter({
                     field: 'difficulty',
                     value: selectedDifficulties.filter(diffs => diffs !== difficulty),
                 })
             );
-        else dispatch(updateTaskFilter({ field: 'difficulty', value: [...selectedDifficulties, difficulty] }));
+        } else {
+            dispatch(updateTaskFilter({ field: 'difficulty', value: [...selectedDifficulties, difficulty] }));
+        }
     };
 
     return (
