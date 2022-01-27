@@ -58,13 +58,6 @@
     .text-code {
         @apply font-mono bg-secondary rounded text-sm p-0.5;
     }
-    .dark-mode-img-compat {
-        /* Compatibility class for applying primary text color to svg images */
-        filter: invert(100%) sepia(15%) saturate(2475%) hue-rotate(180deg) brightness(102%) contrast(81%);
-    }
-    .img-primary {
-        @apply text-black dark:dark-mode-img-compat;
-    }
     .border-primary {
         @apply border-black dark:border-zinc-500;
     }
@@ -97,6 +90,41 @@
     .form-accent {
         @apply tl-light:accent-tl-sage tb-light:accent-tb-brown sl-light:accent-sl-teal mono-light:accent-mono-white;
         @apply tl-dark:accent-tl-lime tb-dark:accent-tb-sand sl-dark:accent-sl-ecto mono-dark:accent-mono-dark;
+    }
+    /* Compatibility classes for applying text colors to svg images */
+    .dark-mode-img-compat {
+        filter: invert(100%) sepia(15%) saturate(2475%) hue-rotate(180deg) brightness(102%) contrast(81%);
+    }
+    .tl-lime-img-compat {
+        filter: invert(85%) sepia(78%) saturate(487%) hue-rotate(15deg) brightness(81%) contrast(98%);
+    }
+    .tl-sage-img-compat {
+        filter: invert(56%) sepia(9%) saturate(2195%) hue-rotate(52deg) brightness(88%) contrast(85%);
+    }
+    .tb-sand-img-compat {
+        filter: invert(94%) sepia(70%) saturate(430%) hue-rotate(334deg) brightness(92%) contrast(95%);
+    }
+    .tb-brown-img-compat {
+        filter: invert(23%) sepia(44%) saturate(613%) hue-rotate(344deg) brightness(99%) contrast(87%);
+    }
+    .sl-ecto-img-compat {
+        filter: invert(68%) sepia(60%) saturate(3091%) hue-rotate(112deg) brightness(102%) contrast(85%);
+    }
+    .sl-teal-img-compat {
+        filter: invert(24%) sepia(88%) saturate(6568%) hue-rotate(170deg) brightness(100%) contrast(103%);
+    }
+    .mono-dark-img-compat {
+        filter: invert(88%) sepia(2%) saturate(93%) hue-rotate(171deg) brightness(108%) contrast(105%);
+    }
+    .mono-white-img-compat {
+        filter: invert(20%) sepia(20%) saturate(705%) hue-rotate(178deg) brightness(101%) contrast(86%);
+    }
+    .img-primary {
+        @apply dark:dark-mode-img-compat;
+    }
+    .img-accent {
+        @apply tl-light:tl-sage-img-compat tb-light:tb-brown-img-compat sl-light:sl-teal-img-compat mono-light:mono-white-img-compat;
+        @apply tl-dark:tl-lime-img-compat tb-dark:tb-sand-img-compat sl-dark:sl-ecto-img-compat mono-dark:mono-dark-img-compat;
     }
     /* TYPOGRAPHY */
     .small-caps {
@@ -151,42 +179,6 @@
     }
     .sidebar-wrapper {
         @apply w-full lg:max-w-sm md:max-w-xs;
-    }
-    .w-90p {
-        width: 90%;
-    }
-    .w-95p {
-        width: 95%;
-    }
-    .w-99p {
-        width: 99%;
-    }
-    .flex-basis-10 {
-        flex-basis: 10%;
-    }
-    .flex-basis-20 {
-        flex-basis: 20%;
-    }
-    .flex-basis-30 {
-        flex-basis: 30%;
-    }
-    .flex-basis-40 {
-        flex-basis: 40%;
-    }
-    .flex-basis-50 {
-        flex-basis: 50%;
-    }
-    .flex-basis-60 {
-        flex-basis: 60%;
-    }
-    .flex-basis-70 {
-        flex-basis: 70%;
-    }
-    .flex-basis-80 {
-        flex-basis: 80%;
-    }
-    .flex-basis-90 {
-        flex-basis: 90%;
     }
     /* NAVBAR */
     .navbar {

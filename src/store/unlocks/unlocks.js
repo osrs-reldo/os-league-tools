@@ -28,11 +28,13 @@ export const unlocksSlice = createSlice({
                 [action.payload.id]: action.payload.status,
             };
         },
-        load: (state, action) => ({
-            skills: action.payload.skills || state.skills,
-            bosses: action.payload.bosses || state.bosses,
-            quests: action.payload.quests || state.quests,
-        }),
+        load: (state, action) => {
+            const fallbackState = action.payload.forceOverwrite ? INITIAL_STATE : state;
+            return updateUnlocksVersion({
+                ...fallbackState,
+                ...action.payload.newState,
+            });
+        },
         reset: () => INITIAL_STATE,
     },
 });

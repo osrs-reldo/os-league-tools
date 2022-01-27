@@ -1,22 +1,17 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
-import { useSelector, useDispatch, batch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import _ from 'lodash';
 import { updateTaskFilter, reset } from '../store/filters';
-import { update as updateUserData } from '../store/userData';
-import { updateHiscores, updateUsername } from '../store/character/character';
 import ButtonGroup from './common/ButtonGroup';
 import InputSelect from './common/InputSelect';
 import { DIFFICULTY, STATS } from '../data/constants';
 import LabeledCheckbox from './common/LabeledCheckbox';
 import getSkillsPanelData from '../util/getSkillsPanelData';
-import HiscoreLookup from './HiscoreLookup';
 import { CATEGORY, getSubcategoriesForCategories } from '../data/categories';
 
 export default function TaskFilters() {
     const filterState = useSelector(state => state.filters.tasks);
     const unlockedSkills = useSelector(state => state.unlocks.skills);
-    const username = useSelector(state => state.character.username);
     const dispatch = useDispatch();
 
     return (
@@ -214,7 +209,6 @@ export default function TaskFilters() {
                         onClick={() =>
                             batch(() => {
                                 dispatch(updateTaskFilter({ field: 'reorderEnabled', value: false }));
-                                dispatch(updateUserData({ field: 'taskOrder', value: null })); // TODO
                             })
                         }
                     >

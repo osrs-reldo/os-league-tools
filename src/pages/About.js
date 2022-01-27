@@ -43,14 +43,14 @@ export default function About() {
                         </Paragraph>
                         <Paragraph>
                             New code contributors are always welcome, too. Check out the source code on{' '}
-                            <Link text='github' href='https://github.com/chaiinchomp/os-league-tools' />, and come by
-                            the <span className='text-code'>#development</span> channel in{' '}
+                            <Link text='github' href='https://github.com/osrs-reldo/os-league-tools' />, and come by the{' '}
+                            <span className='text-code'>#development</span> channel in{' '}
                             <Link text='discord' href='https://discord.gg/GQ5kVyU' />
                             to chat, ask questions, and see which features and bugs need help.
                         </Paragraph>
                         <Paragraph>
                             Finally, if you would like to support the site financially, you can drop a few bucks in the{' '}
-                            <Link text='tip jar' href='https://ko-fi.com/chaiinchomp' />. All funds go directly into
+                            <Link text='tip jar' href='https://ko-fi.com/osleaguetools' />. All funds go directly into
                             paying the site's hosting costs.
                         </Paragraph>
                         <Separator />

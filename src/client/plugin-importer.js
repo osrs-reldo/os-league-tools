@@ -1,17 +1,20 @@
 /* eslint-disable no-unused-vars */
 
 import _ from 'lodash';
+import { updateUsername } from '../store/character/character';
 import { INITIAL_TASK_STATE } from '../store/tasks/constants';
 import { load as loadTaskState } from '../store/tasks/tasks';
 import { load as loadUnlocksState } from '../store/unlocks/unlocks';
 
 export default function importFromPlugin(pluginData, userState, dispatch) {
+    dispatch(updateUsername(pluginData.displayName));
+
     const syncedTasks = importTasks(pluginData.tasks, userState.tasks.tasks, dispatch);
-    dispatch(loadTaskState({ rsn: pluginData.displayName, tasks: syncedTasks }));
+    dispatch(loadTaskState({ newState: { rsn: pluginData.displayName, tasks: syncedTasks } }));
 
     // Assume the plugin is the source of truth, overwrite local data
     const importedQuests = pluginData.quests;
-    dispatch(loadUnlocksState({ quests: importedQuests }));
+    dispatch(loadUnlocksState({ newState: { quests: importedQuests } }));
 
     // importBossKc(pluginData.bosses);
     // importUnlocks(pluginData.varbits);

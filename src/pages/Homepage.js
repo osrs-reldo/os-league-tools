@@ -5,7 +5,7 @@ import PageWrapper from '../components/PageWrapper';
 import IconLinkCard from '../components/IconLinkCard';
 import LeagueCountdown from '../components/LeagueCountdown';
 import FeedbackModal from '../components/FeedbackModal';
-import PluginModal from '../components/PluginModal';
+import ManageDataModal from '../components/ManageDataModal';
 import images from '../assets/images';
 
 export default function Homepage() {
@@ -26,7 +26,7 @@ export default function Homepage() {
                 <IconLinkCard title='About' iconText='help_outline' href='/about' />
             </div>
             <FeedbackModal isOpen={isFeedbackModalOpen} setIsOpen={val => setFeedbackModalOpen(val)} />
-            <PluginModal isOpen={isPluginModalOpen} setIsOpen={val => setPluginModalOpen(val)} />
+            <ManageDataModal variant='plugin' isOpen={isPluginModalOpen} setIsOpen={val => setPluginModalOpen(val)} />
             <p className='text-3xl small-caps ml-1 mt-2'>Updates</p>
             {newsPosts.map(newsPost => (
                 <NewsCard

@@ -45,6 +45,13 @@ export const characterSlice = createSlice({
                     break;
             }
         },
+        load: (state, action) => {
+            const fallbackState = action.payload.forceOverwrite ? INITIAL_STATE : state;
+            return {
+                ...fallbackState,
+                ...action.payload.newState,
+            };
+        },
         reset: () => INITIAL_STATE,
     },
 });
@@ -74,6 +81,6 @@ export function fetchHiscores(state, forceReload = false) {
     };
 }
 
-export const { updateUsername, updateHiscores, reset } = characterSlice.actions;
+export const { updateUsername, updateHiscores, load, reset } = characterSlice.actions;
 
 export default characterSlice.reducer;

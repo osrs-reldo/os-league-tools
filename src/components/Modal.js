@@ -32,8 +32,23 @@ function Modal({ isOpen, setIsOpen, children, className, onClose }) {
                 },
             }}
         >
-            <div className={`${className || DEFAULT_STYLE} flex flex-col`}>{children}</div>
+            <div className='relative'>
+                <CloseButton setIsOpen={setIsOpen} />
+                <div className={`${className || DEFAULT_STYLE} flex flex-col`}>{children}</div>
+            </div>
         </ReactModal>
+    );
+}
+
+function CloseButton({ setIsOpen }) {
+    return (
+        <button
+            type='button'
+            className='absolute right-0 top-0 cursor-pointer text-secondary-alt px-2 icon-xl'
+            onClick={() => setIsOpen(false)}
+        >
+            close
+        </button>
     );
 }
 

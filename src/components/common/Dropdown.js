@@ -48,10 +48,14 @@ function LinkItem({ children, href, target = '_self', icon = null, to }) {
     return null;
 }
 
-function ButtonItem({ children, onClick, icon = null }) {
+function ButtonItem({ children, onClick, className = '', icon = null }) {
     return (
         <li>
-            <button onClick={onClick} type='button' className='text-primary-alt px-3 py-2 block bg-hover'>
+            <button
+                onClick={onClick}
+                type='button'
+                className={`text-primary-alt px-3 py-2 block bg-hover w-full ${className}`}
+            >
                 {icon && <span className='icon-lg align-middle mr-1'>{icon}</span>}
                 {children}
             </button>

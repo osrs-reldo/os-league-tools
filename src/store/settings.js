@@ -17,12 +17,19 @@ export const userSlice = createSlice({
         update: (state, action) => {
             state[action.payload.field] = action.payload.value;
         },
+        load: (state, action) => {
+            const fallbackState = action.payload.forceOverwrite ? INITIAL_STATE : state;
+            return {
+                ...fallbackState,
+                ...action.payload.newState,
+            };
+        },
         reset: () => INITIAL_STATE,
     },
 });
 
 export const loadState = () => getFromLocalStorage(LOCALSTORAGE_KEYS.SETTINGS, INITIAL_STATE);
 
-export const { update, reset } = userSlice.actions;
+export const { update, load, reset } = userSlice.actions;
 
 export default userSlice.reducer;

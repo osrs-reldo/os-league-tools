@@ -65,12 +65,13 @@ export const taskSlice = createSlice({
             const taskId = action.payload || null;
             state.randomTaskId = taskId;
         },
-        load: (state, action) => ({
-            randomTaskId: action.payload.randomTaskId || state.randomTaskId,
-            rsn: action.payload.rsn || state.rsn,
-            tasks: action.payload.tasks || state.tasks,
-            version: action.payload.version || state.version,
-        }),
+        load: (state, action) => {
+            const fallbackState = action.payload.forceOverwrite ? INITIAL_STATE : state;
+            return updateTasksVersion({
+                ...fallbackState,
+                ...action.payload.newState,
+            });
+        },
         reset: () => INITIAL_STATE,
     },
 });

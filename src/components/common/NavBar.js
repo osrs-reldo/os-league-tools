@@ -97,32 +97,38 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                 {/* Secondary nav links */}
                 <div className='sm:flex hidden justify-between items-center'>
                     {secondaryNavItems &&
-                        secondaryNavItems.map(navItem =>
-                            navItem.renderFn ? (
-                                navItem.renderFn()
-                            ) : (
-                                <SecondaryLink
-                                    key={navItem.id}
-                                    label={navItem.label}
-                                    href={navItem.href}
-                                    target={navItem.target}
-                                />
-                            )
-                        )}
+                        secondaryNavItems.map(navItem => (
+                            <>
+                                {navItem.renderFn ? (
+                                    navItem.renderFn()
+                                ) : (
+                                    <SecondaryLink
+                                        key={navItem.id}
+                                        label={navItem.label}
+                                        href={navItem.href}
+                                        target={navItem.target}
+                                    />
+                                )}
+                                <span className='text-primary mx-1 mb-1'>|</span>
+                            </>
+                        ))}
                     {iconNavItems &&
-                        iconNavItems.map(navItem =>
-                            navItem.renderFn ? (
-                                navItem.renderFn()
-                            ) : (
-                                <IconLink
-                                    href={navItem.href}
-                                    iconFont={navItem.iconFont}
-                                    iconSrc={navItem.iconSrc}
-                                    key={navItem.id}
-                                    target={navItem.target}
-                                />
-                            )
-                        )}
+                        iconNavItems.map(navItem => (
+                            <>
+                                {navItem.renderFn ? (
+                                    navItem.renderFn()
+                                ) : (
+                                    <IconLink
+                                        href={navItem.href}
+                                        iconFont={navItem.iconFont}
+                                        iconSrc={navItem.iconSrc}
+                                        key={navItem.id}
+                                        target={navItem.target}
+                                    />
+                                )}
+                                <span className='text-primary mx-1 mb-1'>|</span>
+                            </>
+                        ))}
                 </div>
                 {/* Overflow dropdown menu */}
                 <div className='sm:flex hidden justify-between items-center'>
