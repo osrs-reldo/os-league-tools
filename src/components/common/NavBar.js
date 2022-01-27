@@ -98,7 +98,7 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                 <div className='sm:flex hidden justify-between items-center'>
                     {secondaryNavItems &&
                         secondaryNavItems.map(navItem => (
-                            <>
+                            <React.Fragment key={navItem.id}>
                                 {navItem.renderFn ? (
                                     navItem.renderFn()
                                 ) : (
@@ -110,11 +110,11 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                                     />
                                 )}
                                 <span className='text-primary mx-1 mb-1'>|</span>
-                            </>
+                            </React.Fragment>
                         ))}
                     {iconNavItems &&
                         iconNavItems.map(navItem => (
-                            <>
+                            <React.Fragment key={navItem.id}>
                                 {navItem.renderFn ? (
                                     navItem.renderFn()
                                 ) : (
@@ -127,7 +127,7 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                                     />
                                 )}
                                 <span className='text-primary mx-1 mb-1'>|</span>
-                            </>
+                            </React.Fragment>
                         ))}
                 </div>
                 {/* Overflow dropdown menu */}
@@ -143,21 +143,23 @@ export default function NavBar({ navItems, brandName, brandLogo }) {
                                 {getCollapseGroups(overflowNavItems).map((group, i) => (
                                     <React.Fragment key={i}>
                                         <Dropdown.Separator />
-                                        {group.map(item =>
-                                            item.renderFn ? (
-                                                item.renderFn()
-                                            ) : (
-                                                <Dropdown.Link
-                                                    key={item.id}
-                                                    href={item.href}
-                                                    icon={item.iconFont}
-                                                    target={item.target}
-                                                    to={item.to}
-                                                >
-                                                    {item.label}
-                                                </Dropdown.Link>
-                                            )
-                                        )}
+                                        {group.map(item => (
+                                            <React.Fragment key={item.id}>
+                                                {item.renderFn ? (
+                                                    item.renderFn()
+                                                ) : (
+                                                    <Dropdown.Link
+                                                        key={item.id}
+                                                        href={item.href}
+                                                        icon={item.iconFont}
+                                                        target={item.target}
+                                                        to={item.to}
+                                                    >
+                                                        {item.label}
+                                                    </Dropdown.Link>
+                                                )}
+                                            </React.Fragment>
+                                        ))}
                                     </React.Fragment>
                                 ))}
                             </Dropdown>
