@@ -772,38 +772,6 @@ Ensure the default browser behavior of the `hidden` attribute.
         filter: invert(100%) sepia(15%) saturate(2475%) hue-rotate(180deg) brightness(102%) contrast(81%);
     }
 
-.theme-tl-light .img-accent {
-        filter: invert(56%) sepia(9%) saturate(2195%) hue-rotate(52deg) brightness(88%) contrast(85%);
-    }
-
-.theme-tb-light .img-accent {
-        filter: invert(23%) sepia(44%) saturate(613%) hue-rotate(344deg) brightness(99%) contrast(87%);
-    }
-
-.theme-sl-light .img-accent {
-        filter: invert(24%) sepia(88%) saturate(6568%) hue-rotate(170deg) brightness(100%) contrast(103%);
-    }
-
-.theme-mono-light .img-accent {
-        filter: invert(20%) sepia(20%) saturate(705%) hue-rotate(178deg) brightness(101%) contrast(86%);
-    }
-
-.theme-tl-dark .img-accent {
-        filter: invert(85%) sepia(78%) saturate(487%) hue-rotate(15deg) brightness(81%) contrast(98%);
-    }
-
-.theme-tb-dark .img-accent {
-        filter: invert(94%) sepia(70%) saturate(430%) hue-rotate(334deg) brightness(92%) contrast(95%);
-    }
-
-.theme-sl-dark .img-accent {
-        filter: invert(68%) sepia(60%) saturate(3091%) hue-rotate(112deg) brightness(102%) contrast(85%);
-    }
-
-.theme-mono-dark .img-accent {
-        filter: invert(88%) sepia(2%) saturate(93%) hue-rotate(171deg) brightness(108%) contrast(105%);
-    }
-
 /* TYPOGRAPHY */
 
 .small-caps {
@@ -1712,14 +1680,14 @@ select[multiple]:focus option:checked {
 .relative {
   position: relative;
 }
-.right-1 {
-  right: 0.25rem;
-}
 .right-0 {
   right: 0px;
 }
 .top-0 {
   top: 0px;
+}
+.right-1 {
+  right: 0.25rem;
 }
 .z-10 {
   z-index: 10;
@@ -1802,6 +1770,9 @@ select[multiple]:focus option:checked {
 .mb-1 {
   margin-bottom: 0.25rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -1810,9 +1781,6 @@ select[multiple]:focus option:checked {
 }
 .mr-2 {
   margin-right: 0.5rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 .mt-3 {
   margin-top: 0.75rem;
@@ -1886,12 +1854,6 @@ select[multiple]:focus option:checked {
 .h-9 {
   height: 2.25rem;
 }
-.h-3\.5 {
-  height: 0.875rem;
-}
-.h-3 {
-  height: 0.75rem;
-}
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -1913,6 +1875,9 @@ select[multiple]:focus option:checked {
 }
 .h-5 {
   height: 1.25rem;
+}
+.h-3 {
+  height: 0.75rem;
 }
 .h-8 {
   height: 2rem;
@@ -2301,9 +2266,6 @@ select[multiple]:focus option:checked {
 }
 .indent-8 {
   text-indent: 2rem;
-}
-.align-baseline {
-  vertical-align: baseline;
 }
 .align-top {
   vertical-align: top;
