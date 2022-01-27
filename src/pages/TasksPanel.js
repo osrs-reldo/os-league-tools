@@ -20,15 +20,15 @@ export default function TasksPanel() {
 
     return (
         <div className='h-full'>
-            <div className='flex flex-col gap-3 mb-3'>
-                <div className='shadow-subdued'>
+            <div className='mb-3'>
+                <div className='shadow-subdued mb-3'>
                     <ThemedProgressBar
                         curValue={taskStats.points.complete.total}
                         maxValue={PASSIVE_RELICS.unlockThresholds[PASSIVE_RELICS.unlockThresholds.length - 1]}
                         steps={PASSIVE_RELICS.unlockThresholds}
                     />
                 </div>
-                <div className='flex flex-row flex-wrap text-accent font-semibold justify-evenly gap-2'>
+                <div className='flex flex-wrap text-accent font-semibold justify-evenly gap-2'>
                     <span>
                         Tasks: {taskStats.tasks.complete.total} / {taskStats.tasks.available.total}
                     </span>

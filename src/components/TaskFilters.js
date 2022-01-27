@@ -1,13 +1,14 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import _ from 'lodash';
-import { updateTaskFilter, reset } from '../store/filters';
+import { without } from 'lodash';
+import { updateTaskFilter, resetTasks } from '../store/filters';
 import ButtonGroup from './common/ButtonGroup';
 import InputSelect from './common/InputSelect';
-import { DIFFICULTY, STATS } from '../data/constants';
+import FilterButtons, { FilterSelectAll } from './common/FilterButtons';
 import LabeledCheckbox from './common/LabeledCheckbox';
-import getSkillsPanelData from '../util/getSkillsPanelData';
+import { DIFFICULTY, STATS } from '../data/constants';
 import { CATEGORY, getSubcategoriesForCategories } from '../data/categories';
+import getSkillsPanelData from '../util/getSkillsPanelData';
 
 export default function TaskFilters() {
     const filterState = useSelector(state => state.filters.tasks);
@@ -61,33 +62,19 @@ export default function TaskFilters() {
             <div className='xl:order-4 lg:order-2 sm:order-6 order-4'>
                 <span className='heading-accent-md mt-1'>Difficulty</span>
                 <div className='w-full px-3 text-sm flex flex-col'>
-                    <DifficultyFilter filterState={filterState} />
+                    <FilterButtons
+                        cols={3}
+                        filterName="difficulty"
+                        selectedValues={filterState.difficulty}
+                        updateFunc={updateTaskFilter}
+                        values={Object.values(DIFFICULTY)}
+                    />
 
-                    <span className='inline italic text-center'>
-                        <span className='mr-1'>Quick select:</span>
-                        <button
-                            className='inline italic hover:underline mx-1'
-                            type='button'
-                            onClick={() =>
-                                dispatch(
-                                    updateTaskFilter({
-                                        field: 'difficulty',
-                                        value: Object.values(DIFFICULTY).map(x => x.label),
-                                    })
-                                )
-                            }
-                        >
-                            all
-                        </button>
-                        |
-                        <button
-                            className='inline italic hover:underline mx-1'
-                            type='button'
-                            onClick={() => dispatch(updateTaskFilter({ field: 'difficulty', value: [] }))}
-                        >
-                            none
-                        </button>
-                    </span>
+                    <FilterSelectAll
+                        filterName="difficulty"
+                        updateFunc={updateTaskFilter}
+                        values={Object.values(DIFFICULTY)}
+                    />
                 </div>
             </div>
             <div className='lg:order-5 sm:order-2 order-5 row-span-2'>
@@ -198,7 +185,7 @@ export default function TaskFilters() {
                 </div>
             </div>
             <div className='w-full px-3 gap-1 grid lg:grid-cols-1 sm:grid-cols-2 grid-cols-1 order-7 sm:col-span-2 lg:col-span-1'>
-                <button type='button' className='button-outline w-full mb-1 h-fit' onClick={() => dispatch(reset())}>
+                <button type='button' className='button-outline w-full mb-1 h-fit' onClick={() => dispatch(resetTasks())}>
                     Clear filters
                 </button>
                 {/* TODO save reordered task state */}
@@ -228,41 +215,6 @@ export default function TaskFilters() {
     );
 }
 
-function DifficultyFilter({ filterState }) {
-    const selectedDifficulties = filterState.difficulty;
-    const dispatch = useDispatch();
-
-    const toggleDifficulty = difficulty => {
-        const isSelected = selectedDifficulties.includes(difficulty);
-
-        if (isSelected)
-            dispatch(
-                updateTaskFilter({
-                    field: 'difficulty',
-                    value: selectedDifficulties.filter(diffs => diffs !== difficulty),
-                })
-            );
-        else dispatch(updateTaskFilter({ field: 'difficulty', value: [...selectedDifficulties, difficulty] }));
-    };
-
-    return (
-        <div className='grid grid-cols-3 gap-px bg-subdued w-full'>
-            {Object.values(DIFFICULTY).map(({ icon, label }) => (
-                <div
-                    className={`p-1 bg-hover cursor-pointer ${
-                        selectedDifficulties?.includes(label) ? 'bg-secondary text-accent' : 'bg-primary'
-                    }`}
-                    key={label}
-                    onClick={() => toggleDifficulty(label)}
-                >
-                    <img src={icon} alt={label} className='inline mx-1' />
-                    {label}
-                </div>
-            ))}
-        </div>
-    );
-}
-
 function SkillsFilter({ filterState }) {
     const skillsData = [...getSkillsPanelData({ customExclusions: ['Overall'] }), {}];
     return (
@@ -285,7 +237,9 @@ function SkillTile({ skillData, filterState }) {
             className={`p-1 bg-hover cursor-pointer ${isSelected ? 'bg-secondary text-accent' : 'bg-primary'}`}
             onClick={() => {
                 if (isSelected) {
-                    dispatch(updateTaskFilter({ field: 'skills', value: _.without(selectedSkills, skillName) }));
+                    dispatch(
+                        updateTaskFilter({ field: 'skills', value: without(selectedSkills, skillName) })
+                    );
                 } else {
                     dispatch(updateTaskFilter({ field: 'skills', value: [...selectedSkills, skillName] }));
                 }

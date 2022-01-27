@@ -1,15 +1,18 @@
 import React, { useMemo } from 'react';
 import { matchSorter } from 'match-sorter';
 import { useDispatch, useSelector } from 'react-redux';
-import quests from '../data/quests';
+import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import Table from './common/Table';
 import LabeledIcon from './common/LabeledIcon';
-import { QUEST_STATUS } from '../data/constants';
-import { updateQuest } from '../store/unlocks/unlocks';
 import SkillRequirementList from './SkillRequirementList';
+import { updateQuest } from '../store/unlocks/unlocks';
+import quests from '../data/quests';
+import { QUEST_STATUS } from '../data/constants';
 import images from '../assets/images';
 
 export default function QuestTable() {
+    const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
+    
     const data = useMemo(() => quests, []);
     const columns = useMemo(
         () => [
@@ -22,7 +25,7 @@ export default function QuestTable() {
                 Header: 'Quest',
                 id: 'label',
                 accessor: 'label',
-                width: 500,
+                width: 300,
                 Cell: QuestCell,
             },
             {
@@ -33,18 +36,18 @@ export default function QuestTable() {
                 Cell: PointsCell,
             },
             {
-                Header: 'Difficulty',
+                Header: isMdOrSmallerViewport ? "Diff" : 'Difficulty',
                 id: 'difficulty',
                 accessor: 'difficulty',
-                width: 175,
+                width: isMdOrSmallerViewport ? 75 : 175,
                 sortType: (a, b) => a.values.difficulty.id - b.values.difficulty.id,
                 Cell: IconCell,
             },
             {
-                Header: 'Length',
+                Header: isMdOrSmallerViewport ? "Len" : 'Length',
                 id: 'length',
                 accessor: 'length',
-                width: 175,
+                width: isMdOrSmallerViewport ? 75 : 175,
                 sortType: (a, b) => a.values.length.id - b.values.length.id,
                 Cell: IconCell,
             },
@@ -52,7 +55,7 @@ export default function QuestTable() {
                 Header: 'Series',
                 id: 'series',
                 accessor: 'series',
-                width: 250,
+                width: isMdOrSmallerViewport ? 75 : 250,
                 sortType: (a, b) => {
                     const labelA = a.values.series ? a.values.series.label : 'zzz';
                     const labelB = b.values.series ? b.values.series.label : 'zzz';
@@ -144,10 +147,12 @@ function PointsCell({ value }) {
 }
 
 function IconCell({ value }) {
+    const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
+
     if (value) {
         return (
             <div className='flex items-center h-full justify-center'>
-                <LabeledIcon label={value.label} icon={value.icon} />
+                <LabeledIcon label={isMdOrSmallerViewport ? "" : value.label} icon={value.icon} />
             </div>
         );
     }

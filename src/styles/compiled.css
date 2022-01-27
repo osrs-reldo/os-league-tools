@@ -1695,14 +1695,14 @@ select[multiple]:focus option:checked {
 .order-1 {
   order: 1;
 }
-.order-4 {
-  order: 4;
-}
 .order-2 {
   order: 2;
 }
 .order-3 {
   order: 3;
+}
+.order-4 {
+  order: 4;
 }
 .order-5 {
   order: 5;
@@ -1782,8 +1782,8 @@ select[multiple]:focus option:checked {
 .mr-2 {
   margin-right: 0.5rem;
 }
-.mt-3 {
-  margin-top: 0.75rem;
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 .ml-3 {
   margin-left: 0.75rem;
@@ -1791,11 +1791,11 @@ select[multiple]:focus option:checked {
 .mt-4 {
   margin-top: 1rem;
 }
+.mt-3 {
+  margin-top: 0.75rem;
+}
 .mr-3 {
   margin-right: 0.75rem;
-}
-.mb-3 {
-  margin-bottom: 0.75rem;
 }
 .ml-6 {
   margin-left: 1.5rem;
@@ -1958,6 +1958,9 @@ select[multiple]:focus option:checked {
 .min-w-\[100px\] {
   min-width: 100px;
 }
+.min-w-min {
+  min-width: min-content;
+}
 .max-w-\[60rem\] {
   max-width: 60rem;
 }
@@ -2039,11 +2042,11 @@ select[multiple]:focus option:checked {
 .list-disc {
   list-style-type: disc;
 }
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2118,6 +2121,9 @@ select[multiple]:focus option:checked {
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 .whitespace-nowrap {
   white-space: nowrap;
@@ -2379,14 +2385,14 @@ select[multiple]:focus option:checked {
   text-decoration-line: underline;
 }
 @media (min-width: 640px) {
-  .sm\:order-6 {
-    order: 6;
-  }
   .sm\:order-3 {
     order: 3;
   }
   .sm\:order-4 {
     order: 4;
+  }
+  .sm\:order-6 {
+    order: 6;
   }
   .sm\:order-2 {
     order: 2;
@@ -2465,14 +2471,14 @@ select[multiple]:focus option:checked {
   }
 }
 @media (min-width: 1024px) {
-  .lg\:order-2 {
-    order: 2;
-  }
   .lg\:order-4 {
     order: 4;
   }
   .lg\:order-6 {
     order: 6;
+  }
+  .lg\:order-2 {
+    order: 2;
   }
   .lg\:order-5 {
     order: 5;
@@ -2532,14 +2538,14 @@ select[multiple]:focus option:checked {
     --tw-bg-opacity: 1;
     background-color: rgb(63 63 70 / var(--tw-bg-opacity));
   }
-    .xl\:order-4 {
-    order: 4;
-  }
     .xl\:order-2 {
     order: 2;
   }
     .xl\:order-3 {
     order: 3;
+  }
+    .xl\:order-4 {
+    order: 4;
   }
     .xl\:order-6 {
     order: 6;
