@@ -103,6 +103,15 @@ export default function About() {
                                     <Link text='OSRS Leagues Discord' href='http://discord.osrs-leagues.com/' />
                                 </li>
                                 <li>
+                                    Thanks to /u/NoGoodOnesRemain and /u/lollipop283 for their work on the{' '}
+                                    <Link
+                                        text='Shattered Relics Spreadsheet'
+                                        href='https://docs.google.com/spreadsheets/d/1vovOVvgeFszbwEP86zajz1ubT8C5NelXqNGTUAhC_Ck/edit#gid=728016874'
+                                    />{' '}
+                                    and for kindly allowing me to copy their homework and use their nicely formatted
+                                    data!
+                                </li>
+                                <li>
                                     Icons from <Link text='google fonts' href='https://fonts.google.com/icons' />
                                     (+ RuneLite icon from <Link text='runelite.net' href='https://runelite.net/' />)
                                 </li>
