@@ -30,3 +30,6 @@ yarn-error.log*
 
 # production configs
 .env
+
+# VSCode Settings
+/.vscode
