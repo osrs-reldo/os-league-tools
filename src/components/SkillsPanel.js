@@ -79,7 +79,7 @@ export default function SkillsPanel() {
                 )}
                 <div className='flex items-center justify-center' data-tip data-for='clueTile'>
                     <img className='mr-2' src={images['clue.png']} alt='Total clues' />
-                    <span className='text-center mr-1'>{hiscores?.clues.all.score || '-'}</span>
+                    <span className='text-center mr-1'>{hiscores?.clues.all.score > 0 ? hiscores.clues.all.score : '0'}</span>
                 </div>
                 {hiscores && (
                     <ReactTooltip id='clueTile'>
