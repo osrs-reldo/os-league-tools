@@ -23,7 +23,7 @@ export default function PageWrapper({ children }) {
         new NavItem('Import', 'secondary', 1, 0).withCustomRenderFn(
             () => <ManageDataDropdown setManageDataModalType={setManageDataModalType} />,
             () => (
-                <>
+                <React.Fragment key="dataManagement">
                     <button
                         key='import'
                         className='text-primary bg-hover py-1 text-left'
@@ -51,7 +51,7 @@ export default function PageWrapper({ children }) {
                         <span className='text-primary-alt icon-lg inline align-middle mr-1'>dangerous</span>
                         <p className='h-4 inline pl-1 font-sans-alt'>Reset all data</p>
                     </button>
-                </>
+                </React.Fragment>
             )
         ),
         new NavItem('Login', 'secondary', 2, 0).withCustomRenderFn(
