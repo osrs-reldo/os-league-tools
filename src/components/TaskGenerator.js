@@ -11,7 +11,7 @@ import TASKS from '../data/tasks';
 export default function TaskGenerator() {
     const [activeTask, setActiveTask] = useState(undefined);
     const [noPossibleTasks, setNoPossibleTasks] = useState(false);
-    const isLgViewport = useBreakpoint(MEDIA_QUERIES.LG, MODE.GREATER);
+    const isXlViewport = useBreakpoint(MEDIA_QUERIES.XL, MODE.GREATER_OR_EQ);
 
     const {
         tasks: { tasks: tasksState, randomTaskId },
@@ -45,9 +45,7 @@ export default function TaskGenerator() {
         const randomTask = incompleteTasks[Math.floor(Math.random() * filteredTasks.length)];
 
         setActiveTask(randomTask);
-        if (randomTask) setNoPossibleTasks(false);
-        else setNoPossibleTasks(true);
-
+        setNoPossibleTasks(!randomTask);
         dispatch(updateRandomTask(randomTask?.id || null));
     };
 
@@ -94,7 +92,7 @@ export default function TaskGenerator() {
             {!allTasksCompleted && (
                 <>
                     <div className='flex flex-col gap-1 px-3'>
-                        <div className={`flex gap-1 mt ${isLgViewport ? 'w-full' : 'max-w-[420px]'}`}>
+                        <div className={`flex gap-1 mt ${isXlViewport ? 'w-full' : 'max-w-[420px]'}`}>
                             <button type='button' className='button-outline w-full' onClick={generateTask}>
                                 {activeTask ? 'Skip task' : 'Generate task'}
                             </button>
