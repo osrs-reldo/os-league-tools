@@ -13,6 +13,7 @@ module.exports = {
     },
     plugins: ['react', 'react-hooks'],
     rules: {
+        curly: ['error', 'all'],
         indent: 'off',
         'no-console': ['error', { allow: ['warn', 'error'] }],
         'no-else-return': ['error', { allowElseIf: true }],

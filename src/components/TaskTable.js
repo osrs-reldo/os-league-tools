@@ -60,9 +60,7 @@ export default function TaskTable() {
         }),
         []
     );
-    const filters = [
-        ...Object.values(ALL_FILTERS)
-    ];
+    const filters = [...Object.values(ALL_FILTERS)];
     const initialState = isXsViewport ? { hiddenColumns: ['id', 'difficulty', 'category'] } : { hiddenColumns: ['id'] };
     initialState.pageSize = 50;
 

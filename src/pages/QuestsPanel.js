@@ -9,7 +9,7 @@ export default function QuestsPanel() {
     const [showSidebar, setShowSidebar] = useState(isXlViewport);
 
     return (
-        <div className='flex flex-col xl:flex-row w-full overflow-x-scroll bg-secondary-alt xl:bg-primary'>
+        <div className='flex flex-col xl:flex-row w-full bg-secondary-alt xl:bg-primary'>
             {isSmViewport && showSidebar && (
                 <div className='mt-3 bg-hover cursor-pointer' onClick={() => setShowSidebar(!showSidebar)}>
                     <span className='icon-xl align-middle'>keyboard_double_arrow_up</span>
@@ -36,7 +36,7 @@ export default function QuestsPanel() {
                 )}
             </div>
             <div className='basis-3/4 grow flex flex-col xl:ml-1 bg-primary'>
-                    <QuestTable />
+                <QuestTable />
             </div>
         </div>
     );

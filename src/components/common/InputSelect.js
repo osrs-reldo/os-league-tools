@@ -34,8 +34,8 @@ export default function InputSelect({
                 multiple={multiple}
                 disabled
             >
-                {options.map(option => (
-                    <option key={option.value} value={option.value}>
+                {options.map((option, i) => (
+                    <option key={i} value={option.value}>
                         {option.label}
                     </option>
                 ))}
@@ -50,8 +50,8 @@ export default function InputSelect({
             onChange={onChange}
             multiple={multiple}
         >
-            {options.map(option => (
-                <option key={option.value} value={option.value}>
+            {options.map((option, i) => (
+                <option key={i} value={option.value}>
                     {option.label}
                 </option>
             ))}

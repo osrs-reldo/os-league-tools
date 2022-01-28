@@ -77,9 +77,9 @@ export default function Table({
                 <span className='italic text-sm'>Showing: {table.page.length} rows</span>
                 <SearchBox globalFilter={table.state.globalFilter} setGlobalFilter={table.setGlobalFilter} />
             </div>
-            <div className='block overflow-auto ml-3 pr-2'>
+            <div className='overflow-auto px-3'>
                 <DndProvider backend={HTML5Backend}>
-                    <div {...table.getTableProps()} style={{ minWidth: "min-content" }}>
+                    <div {...table.getTableProps()} style={{ minWidth: 'min-content' }}>
                         <div>
                             {table.headerGroups.map(headerGroup => (
                                 <div

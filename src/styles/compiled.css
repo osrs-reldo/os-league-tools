@@ -1958,9 +1958,6 @@ select[multiple]:focus option:checked {
 .min-w-\[100px\] {
   min-width: 100px;
 }
-.min-w-min {
-  min-width: min-content;
-}
 .max-w-\[60rem\] {
   max-width: 60rem;
 }
@@ -2121,9 +2118,6 @@ select[multiple]:focus option:checked {
 }
 .overflow-hidden {
   overflow: hidden;
-}
-.overflow-x-scroll {
-  overflow-x: scroll;
 }
 .whitespace-nowrap {
   white-space: nowrap;
