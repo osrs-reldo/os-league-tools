@@ -23,7 +23,7 @@ export default function PageWrapper({ children }) {
         new NavItem('Import', 'secondary', 1, 0).withCustomRenderFn(
             () => <ManageDataDropdown setManageDataModalType={setManageDataModalType} />,
             () => (
-                <React.Fragment key="dataManagement">
+                <React.Fragment key='dataManagement'>
                     <button
                         key='import'
                         className='text-primary bg-hover py-1 text-left'
