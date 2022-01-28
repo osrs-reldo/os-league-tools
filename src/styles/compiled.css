@@ -2255,9 +2255,6 @@ select[multiple]:focus option:checked {
 .pb-3 {
   padding-bottom: 0.75rem;
 }
-.pr-2 {
-  padding-right: 0.5rem;
-}
 .text-left {
   text-align: left;
 }

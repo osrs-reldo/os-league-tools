@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { without } from 'lodash';
 
 export default function FilterButtons({
     cols = 2,
@@ -13,14 +14,16 @@ export default function FilterButtons({
     const toggleValue = value => {
         const isSelected = selectedValues.includes(value);
 
-        if (isSelected)
+        if (isSelected) {
             dispatch(
                 updateFunc({
                     field: filterName,
-                    value: selectedValues.filter(val => val !== value),
+                    value: without(selectedValues, value),
                 })
             );
-        else dispatch(updateFunc({ field: filterName, value: [...selectedValues, value] }));
+        } else {
+            dispatch(updateFunc({ field: filterName, value: [...selectedValues, value] }));
+        }
     };
 
     const gridValues = values.length % cols ? [...values, null] : values;
