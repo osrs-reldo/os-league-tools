@@ -1,13 +1,13 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import _ from 'lodash';
+import { without } from 'lodash';
 import { updateTaskFilter, reset } from '../store/filters';
 import ButtonGroup from './common/ButtonGroup';
-import InputSelect from './common/InputSelect';
 import { DIFFICULTY, STATS } from '../data/constants';
 import LabeledCheckbox from './common/LabeledCheckbox';
 import getSkillsPanelData from '../util/getSkillsPanelData';
 import { CATEGORY, getSubcategoriesForCategories } from '../data/categories';
+import MultiSelect from './common/MultiSelect';
 
 export default function TaskFilters() {
     const filterState = useSelector(state => state.filters.tasks);
@@ -92,57 +92,32 @@ export default function TaskFilters() {
             </div>
             <div className='lg:order-5 sm:order-2 order-5 row-span-2'>
                 <span className='heading-accent-md mt-1'>Category</span>
-                <div className='w-full px-3 text-sm flex gap-1'>
+                <div className='w-full px-3 text-sm'>
                     <div>
-                        <LabeledCheckbox
-                            label='All categories'
-                            defaultChecked={!filterState.categories}
-                            onClick={e =>
-                                dispatch(
-                                    updateTaskFilter({ field: 'categories', value: e.target.checked ? null : 'all' })
-                                )
-                            }
-                            className='mb-1'
-                        />
-                        <InputSelect
-                            label='categories'
-                            options={Object.values(CATEGORY).map(category => ({
-                                value: category.label,
-                                label: category.label,
+                        <p>Category</p>
+                        <MultiSelect
+                            className='text-black mb-2'
+                            options={Object.values(CATEGORY).map(({ label, icon }) => ({
+                                value: label,
+                                label,
+                                icon,
                             }))}
-                            multiple
-                            className='text-sm'
-                            enabled={!!filterState.categories}
-                            selection={filterState.categories}
-                            setSelection={val => dispatch(updateTaskFilter({ field: 'categories', value: val }))}
+                            name='categories'
+                            defaultSelected={filterState.categories}
+                            updateFunc={updateTaskFilter}
                         />
                     </div>
                     <div>
-                        <LabeledCheckbox
-                            label='All subcategories'
-                            defaultChecked={!filterState.subcategories}
-                            onClick={e =>
-                                dispatch(
-                                    updateTaskFilter({ field: 'subcategories', value: e.target.checked ? null : 'all' })
-                                )
-                            }
-                            className='mb-1'
-                        />
-                        <InputSelect
-                            label='subcategories'
-                            options={getSubcategoriesForCategories(
-                                !filterState.categories || filterState.categories === 'all'
-                                    ? filterState.categories
-                                    : filterState.categories.map(c => c.toUpperCase())
-                            ).map(subcategory => ({
-                                value: subcategory,
-                                label: subcategory,
+                        <p>Subcategory</p>
+                        <MultiSelect
+                            className='text-black'
+                            options={getSubcategoriesForCategories().map(subcategory => ({
+                                ...subcategory,
+                                value: subcategory.label,
                             }))}
-                            multiple
-                            className='text-sm'
-                            enabled={!!filterState.subcategories}
-                            selection={filterState.subcategories}
-                            setSelection={val => dispatch(updateTaskFilter({ field: 'subcategories', value: val }))}
+                            name='subcategories'
+                            defaultSelected={filterState.subcategories}
+                            updateFunc={updateTaskFilter}
                         />
                     </div>
                 </div>
@@ -285,7 +260,7 @@ function SkillTile({ skillData, filterState }) {
             className={`p-1 bg-hover cursor-pointer ${isSelected ? 'bg-secondary text-accent' : 'bg-primary'}`}
             onClick={() => {
                 if (isSelected) {
-                    dispatch(updateTaskFilter({ field: 'skills', value: _.without(selectedSkills, skillName) }));
+                    dispatch(updateTaskFilter({ field: 'skills', value: without(selectedSkills, skillName) }));
                 } else {
                     dispatch(updateTaskFilter({ field: 'skills', value: [...selectedSkills, skillName] }));
                 }

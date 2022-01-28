@@ -1,3 +1,4 @@
+import { uniqBy } from 'lodash';
 import images from '../assets/images';
 
 export const CATEGORY = {
@@ -365,13 +366,14 @@ export const CATEGORY = {
     },
 };
 
-export function getSubcategoriesForCategories(categories) {
-    const categoryKeys = !categories || categories === 'all' ? Object.keys(CATEGORY) : categories;
+export function getSubcategoriesForCategories() {
     const subcategories = [];
-    categoryKeys.forEach(categoryKey => {
-        Object.keys(CATEGORY[categoryKey].subcategories).forEach(subcategoryKey => {
-            subcategories.push(CATEGORY[categoryKey].subcategories[subcategoryKey].label);
+
+    Object.values(CATEGORY).forEach(category => {
+        Object.values(category.subcategories).forEach(subCategory => {
+            subcategories.push({ icon: subCategory.icon, label: subCategory.label });
         });
     });
-    return subcategories;
+
+    return uniqBy(subcategories, 'label');
 }

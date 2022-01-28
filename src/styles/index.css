@@ -33,6 +33,10 @@
     .bg-hover-subdued {
         @apply hover:bg-gray-300 dark:hover:bg-zinc-600;
     }
+    .bg-hover-accent {
+        @apply hover:tl-light:bg-tl-sage hover:tb-light:bg-tb-brown hover:sl-light:bg-sl-teal hover:mono-light:bg-mono-white;
+        @apply hover:tl-dark:bg-tl-lime hover:tb-dark:bg-tb-sand hover:sl-dark:bg-sl-ecto hover:mono-dark:bg-mono-dark;
+    }
     .bg-inverted {
         @apply bg-gray-200 dark:bg-zinc-100;
     }

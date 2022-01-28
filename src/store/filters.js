@@ -3,6 +3,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
 import { STATS, DIFFICULTY } from '../data/constants';
+import { CATEGORY, getSubcategoriesForCategories } from '../data/categories';
 
 const CURRENT_VERSION = 6;
 const INITIAL_STATE = {
@@ -12,8 +13,8 @@ const INITIAL_STATE = {
         todo: 'all',
         ignored: 'hide',
         difficulty: Object.values(DIFFICULTY).map(({ label }) => label),
-        categories: null,
-        subcategories: null,
+        categories: Object.values(CATEGORY).map(({ label }) => label),
+        subcategories: getSubcategoriesForCategories().map(({ label }) => label),
         skills: Object.keys(STATS),
         reorderEnabled: false,
         showNoRequirements: true,
