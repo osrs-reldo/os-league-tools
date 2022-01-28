@@ -35,8 +35,6 @@ function MultiValueRemove({ data, innerProps }) {
 export default function MultiSelect({ defaultSelected, name, updateFunc, options = [], ...rest }) {
     const dispatch = useDispatch();
 
-    console.log(options, defaultSelected);
-
     const selectAllOption = { isFixed: true, label: 'All' };
     const selectOptions = [selectAllOption, ...options];
     const defaultSelectedOptions = defaultSelected.map(label => options.find(option => option.label === label));
