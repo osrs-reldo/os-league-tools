@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
 import { STATS, DIFFICULTY, QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/constants';
 
-const CURRENT_VERSION = 7;
+const CURRENT_VERSION = 8;
 
 const mapDataValues = values => Object.values(values).map(({ label }) => label);
 
@@ -19,6 +19,7 @@ const INITIAL_TASK_STATE = {
     reorderEnabled: false,
     showNoRequirements: true,
     showUnmetRequirements: true,
+    isUnchainedTalent: false,
 };
 
 const INITIAL_QUEST_STATE = {

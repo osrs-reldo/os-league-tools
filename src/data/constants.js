@@ -70,6 +70,7 @@ export const STATS = {
         iconMini: images['task-agility.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 5,
+        unchainedTalentEligible: true,
     },
     Attack: {
         label: 'Attack',
@@ -78,6 +79,7 @@ export const STATS = {
         iconMini: images['task-attack.png'],
         isPossibleTutorialUnlock: true,
         unlockCost: 10,
+        unchainedTalentEligible: false,
     },
     Construction: {
         label: 'Construction',
@@ -86,6 +88,7 @@ export const STATS = {
         iconMini: images['task-construction.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 15,
+        unchainedTalentEligible: true,
     },
     Cooking: {
         label: 'Cooking',
@@ -94,6 +97,7 @@ export const STATS = {
         iconMini: images['task-cooking.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 10,
+        unchainedTalentEligible: true,
     },
     Crafting: {
         label: 'Crafting',
@@ -102,6 +106,7 @@ export const STATS = {
         iconMini: images['task-crafting.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 15,
+        unchainedTalentEligible: true,
     },
     Defence: {
         label: 'Defence',
@@ -110,6 +115,7 @@ export const STATS = {
         iconMini: images['task-defence.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 0,
+        unchainedTalentEligible: false,
     },
     Farming: {
         label: 'Farming',
@@ -118,6 +124,7 @@ export const STATS = {
         iconMini: images['task-farming.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 10,
+        unchainedTalentEligible: true,
     },
     Firemaking: {
         label: 'Firemaking',
@@ -126,6 +133,7 @@ export const STATS = {
         iconMini: images['task-firemaking.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 5,
+        unchainedTalentEligible: true,
     },
     Fishing: {
         label: 'Fishing',
@@ -134,6 +142,7 @@ export const STATS = {
         iconMini: images['task-fishing.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 0,
+        unchainedTalentEligible: true,
     },
     Fletching: {
         label: 'Fletching',
@@ -142,6 +151,7 @@ export const STATS = {
         iconMini: images['task-fletching.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 10,
+        unchainedTalentEligible: true,
     },
     Herblore: {
         label: 'Herblore',
@@ -150,6 +160,7 @@ export const STATS = {
         iconMini: images['task-herblore.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 15,
+        unchainedTalentEligible: true,
     },
     Hitpoints: {
         label: 'Hitpoints',
@@ -158,6 +169,7 @@ export const STATS = {
         iconMini: images['task-hitpoints.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 5,
+        unchainedTalentEligible: false,
     },
     Hunter: {
         label: 'Hunter',
@@ -166,6 +178,7 @@ export const STATS = {
         iconMini: images['task-hunter.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 5,
+        unchainedTalentEligible: true,
     },
     Magic: {
         label: 'Magic',
@@ -174,6 +187,7 @@ export const STATS = {
         iconMini: images['task-magic.png'],
         isPossibleTutorialUnlock: true,
         unlockCost: 10,
+        unchainedTalentEligible: false,
     },
     Mining: {
         label: 'Mining',
@@ -182,6 +196,7 @@ export const STATS = {
         iconMini: images['task-mining.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 5,
+        unchainedTalentEligible: true,
     },
     Prayer: {
         label: 'Prayer',
@@ -190,6 +205,7 @@ export const STATS = {
         iconMini: images['task-prayer.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 15,
+        unchainedTalentEligible: false,
     },
     Ranged: {
         label: 'Ranged',
@@ -198,6 +214,7 @@ export const STATS = {
         iconMini: images['task-ranged.png'],
         isPossibleTutorialUnlock: true,
         unlockCost: 10,
+        unchainedTalentEligible: false,
     },
     Runecraft: {
         label: 'Runecraft',
@@ -206,6 +223,7 @@ export const STATS = {
         iconMini: images['task-runecraft.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 5,
+        unchainedTalentEligible: true,
     },
     Slayer: {
         label: 'Slayer',
@@ -214,6 +232,7 @@ export const STATS = {
         iconMini: images['task-slayer.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 15,
+        unchainedTalentEligible: true,
     },
     Smithing: {
         label: 'Smithing',
@@ -222,6 +241,7 @@ export const STATS = {
         iconMini: images['task-smithing.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 10,
+        unchainedTalentEligible: true,
     },
     Strength: {
         label: 'Strength',
@@ -230,6 +250,7 @@ export const STATS = {
         iconMini: images['task-strength.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 10,
+        unchainedTalentEligible: false,
     },
     Thieving: {
         label: 'Thieving',
@@ -238,6 +259,7 @@ export const STATS = {
         iconMini: images['task-thieving.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 0,
+        unchainedTalentEligible: true,
     },
     Woodcutting: {
         label: 'Woodcutting',
@@ -246,6 +268,7 @@ export const STATS = {
         iconMini: images['task-woodcutting.png'],
         isPossibleTutorialUnlock: false,
         unlockCost: 5,
+        unchainedTalentEligible: true,
     },
     Overall: {
         label: 'Overall',
@@ -254,6 +277,7 @@ export const STATS = {
         iconMini: images['task-total.png'],
         isPossibleTutorialUnlock: null,
         unlockCost: null,
+        unchainedTalentEligible: false,
     },
     Combat: {
         label: 'Combat',
@@ -262,6 +286,7 @@ export const STATS = {
         iconMini: images['task-combat.png'],
         isPossibleTutorialUnlock: null,
         unlockCost: null,
+        unchainedTalentEligible: false,
     },
     QP: {
         label: 'Quest points',
@@ -270,6 +295,7 @@ export const STATS = {
         iconMini: images['task-quest.png'],
         isPossibleTutorialUnlock: null,
         unlockCost: null,
+        unchainedTalentEligible: false,
     },
 };
 

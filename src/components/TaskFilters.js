@@ -64,14 +64,14 @@ export default function TaskFilters() {
                 <div className='w-full px-3 text-sm flex flex-col'>
                     <FilterButtons
                         cols={3}
-                        filterName="difficulty"
+                        filterName='difficulty'
                         selectedValues={filterState.difficulty}
                         updateFunc={updateTaskFilter}
                         values={Object.values(DIFFICULTY)}
                     />
 
                     <FilterSelectAll
-                        filterName="difficulty"
+                        filterName='difficulty'
                         updateFunc={updateTaskFilter}
                         values={Object.values(DIFFICULTY)}
                     />
@@ -153,6 +153,14 @@ export default function TaskFilters() {
                             dispatch(updateTaskFilter({ field: 'showUnmetRequirements', value: e.target.checked }))
                         }
                     />
+                    <LabeledCheckbox
+                        className='text-sm'
+                        label='Use unchained talent skill boost'
+                        defaultChecked={filterState.isUnchainedTalent}
+                        onClick={e =>
+                            dispatch(updateTaskFilter({ field: 'isUnchainedTalent', value: e.target.checked }))
+                        }
+                    />
                 </div>
                 <div className='lg:w-full text-sm flex flex-col mb-2'>
                     <SkillsFilter filterState={filterState} />
@@ -185,7 +193,11 @@ export default function TaskFilters() {
                 </div>
             </div>
             <div className='w-full px-3 gap-1 grid lg:grid-cols-1 sm:grid-cols-2 grid-cols-1 order-7 sm:col-span-2 lg:col-span-1'>
-                <button type='button' className='button-outline w-full mb-1 h-fit' onClick={() => dispatch(resetTasks())}>
+                <button
+                    type='button'
+                    className='button-outline w-full mb-1 h-fit'
+                    onClick={() => dispatch(resetTasks())}
+                >
                     Clear filters
                 </button>
                 {/* TODO save reordered task state */}
@@ -237,9 +249,7 @@ function SkillTile({ skillData, filterState }) {
             className={`p-1 bg-hover cursor-pointer ${isSelected ? 'bg-secondary text-accent' : 'bg-primary'}`}
             onClick={() => {
                 if (isSelected) {
-                    dispatch(
-                        updateTaskFilter({ field: 'skills', value: without(selectedSkills, skillName) })
-                    );
+                    dispatch(updateTaskFilter({ field: 'skills', value: without(selectedSkills, skillName) }));
                 } else {
                     dispatch(updateTaskFilter({ field: 'skills', value: [...selectedSkills, skillName] }));
                 }
