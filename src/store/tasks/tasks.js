@@ -31,6 +31,7 @@ export const taskSlice = createSlice({
             }
             const newVal = state.tasks[action.payload.taskId].completed === null ? Date.now() : null;
             state.tasks[action.payload.taskId].completed = newVal;
+            state.tasks[action.payload.taskId].todo = null;
             state.tasks[action.payload.taskId].lastUpdated = Date.now();
         },
         updateNotes: (state, action) => {
