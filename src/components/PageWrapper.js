@@ -5,7 +5,6 @@ import NavBar, { NavItem } from './common/NavBar';
 import AuthButton from './AuthButton';
 import FeedbackModal from './FeedbackModal';
 import Dropdown from './common/Dropdown';
-import Banner from './common/Banner';
 import ManageDataModal from './ManageDataModal';
 import images from '../assets/images';
 import useClickListener from '../hooks/useClickListener';
@@ -97,28 +96,6 @@ export default function PageWrapper({ children }) {
 
     return (
         <Page limitContentWidth={limitContentWidth}>
-            <Page.Banner>
-                <Banner className='mx-auto mb-4 max-w-[60rem]'>
-                    <span className='material-icons-sharp text-5xl text-accent float-left mr-2'>warning_amber</span>
-                    <div className='flex flex-col'>
-                        <span className='text-xl text-bold small-caps text-accent'>Under construction!</span>
-                        <p className='text-primary text-sm'>
-                            Stay with us, we're working on it! We're doing our best to get you all the task and league
-                            info we can - but sometimes IRL gets in the way. All the latest updates and announcements
-                            can be found on our{' '}
-                            <a
-                                href='https://discord.gg/GQ5kVyU'
-                                target='_blank'
-                                rel='noreferrer'
-                                className='hover:underline text-accent font-semibold'
-                            >
-                                discord server
-                            </a>
-                            .
-                        </p>
-                    </div>
-                </Banner>
-            </Page.Banner>
             <Page.Nav>
                 <NavBar navItems={navItems} brandName='OS League Tools' brandLogo={images[`icon-${theme}.png`]} />
             </Page.Nav>
