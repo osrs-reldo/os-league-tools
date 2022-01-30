@@ -6,7 +6,7 @@ import { getCategoriesForStore } from '../data/categories';
 import { STATS, DIFFICULTY, QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/constants';
 import { ACTIVITIES, SETS, TAGS } from '../data/relics';
 
-const CURRENT_VERSION = 9;
+const CURRENT_VERSION = 10;
 
 const mapDataValues = values => Object.values(values).map(({ label }) => label);
 
