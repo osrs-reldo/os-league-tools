@@ -77,17 +77,6 @@ export default function TaskFilters() {
                     />
                 </div>
             </div>
-            <div className='lg:order-5 sm:order-2 order-5 row-span-2'>
-                <p className='heading-accent-md mt-1'>Category</p>
-                <div className='w-full px-3 text-sm'>
-                    <CheckboxTree
-                        checkboxName='categories'
-                        filterState={filterState.categories}
-                        nodes={formatCategoriesForCheckboxTree()}
-                        onCheckFunc={updateTaskFilter}
-                    />
-                </div>
-            </div>
             <div className='xl:order-6 lg:order-3 sm:order-5 order-6 row-span-2'>
                 <span className='heading-accent-md mt-1'>Requirements</span>
                 <div className='ml-2 mb-2'>
@@ -144,6 +133,17 @@ export default function TaskFilters() {
                             unlocked
                         </button>
                     </span>
+                </div>
+            </div>
+            <div className='lg:order-5 sm:order-2 order-5 row-span-2'>
+                <p className='heading-accent-md mt-1'>Category</p>
+                <div className='w-full px-3 text-sm'>
+                    <CheckboxTree
+                        checkboxName='categories'
+                        filterState={filterState.categories}
+                        nodes={formatCategoriesForCheckboxTree()}
+                        onCheckFunc={updateTaskFilter}
+                    />
                 </div>
             </div>
             <div className='w-full px-3 gap-1 grid lg:grid-cols-1 sm:grid-cols-2 grid-cols-1 order-7 sm:col-span-2 lg:col-span-1'>
