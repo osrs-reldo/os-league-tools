@@ -55,7 +55,7 @@ export function FilterSelectAll({ filterName = '', updateFunc = () => null, valu
     const dispatch = useDispatch();
 
     return (
-        <p className='inline italic text-center'>
+        <p className='italic text-center w-full'>
             <span className='mr-1'>Quick select:</span>
             <button
                 className='inline italic hover:underline mx-1'
@@ -64,7 +64,7 @@ export function FilterSelectAll({ filterName = '', updateFunc = () => null, valu
                     dispatch(
                         updateFunc({
                             field: filterName,
-                            value: Object.values(values).map(x => x.label),
+                            value: values,
                         })
                     )
                 }

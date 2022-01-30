@@ -1,3 +1,4 @@
+import React from 'react';
 import images from '../assets/images';
 
 export const CATEGORY = {
@@ -365,13 +366,37 @@ export const CATEGORY = {
     },
 };
 
-export function getSubcategoriesForCategories(categories) {
-    const categoryKeys = !categories || categories === 'all' ? Object.keys(CATEGORY) : categories;
-    const subcategories = [];
-    categoryKeys.forEach(categoryKey => {
-        Object.keys(CATEGORY[categoryKey].subcategories).forEach(subcategoryKey => {
-            subcategories.push(CATEGORY[categoryKey].subcategories[subcategoryKey].label);
+export const getCategoriesForStore = () => {
+    const allCategories = [];
+
+    Object.values(CATEGORY).forEach(({ label: catLabel, subcategories }) => {
+        Object.values(subcategories).forEach(({ label: subcatLabel }) => {
+            allCategories.push(`${catLabel}-${subcatLabel}`);
         });
     });
-    return subcategories;
+
+    return allCategories;
+};
+
+export function formatCategoriesForCheckboxTree() {
+    const nodes = [];
+
+    const checkboxLabel = ({ icon, label }) => (
+        <span className='inline-flex items-center'>
+            <img className='mr-2' src={icon} alt={label} /> {label}
+        </span>
+    );
+
+    for (const category of Object.values(CATEGORY)) {
+        nodes.push({
+            label: checkboxLabel(category),
+            value: category.label,
+            children: Object.values(category.subcategories).map(subcategory => ({
+                label: checkboxLabel(subcategory),
+                value: `${category.label}-${subcategory.label}`,
+            })),
+        });
+    }
+
+    return nodes;
 }

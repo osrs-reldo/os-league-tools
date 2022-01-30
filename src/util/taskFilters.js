@@ -12,14 +12,9 @@ function categoryFilter(record, filterState) {
     if (filterState.categories === null) {
         return true;
     }
-    return filterState.categories.includes(record?.category?.label);
-}
+    const recordCategory = `${record.category.label}-${record.subcategory.label}`;
 
-function subcategoryFilter(record, filterState) {
-    if (filterState.subcategories === null) {
-        return true;
-    }
-    return filterState.subcategories.includes(record?.subcategory?.label);
+    return filterState.categories.includes(recordCategory);
 }
 
 function skillFilter(record, filterState, { hiscoresState }) {
@@ -75,7 +70,6 @@ function ignoredFilter(record, filterState, { tasksState }) {
 export default {
     difficultyFilter,
     categoryFilter,
-    subcategoryFilter,
     skillFilter,
     completedFilter,
     todoFilter,

@@ -279,7 +279,10 @@ function ResetDataModalContent({ setIsOpen }) {
                     type='button'
                     onClick={() => {
                         resetLocalStorageData();
-                        setSuccessText('Data has been deleted.');
+                        setSuccessText('Data has been deleted. Reloading page...');
+                        setTimeout(() => {
+                            window.location.reload();
+                        }, 1000);
                     }}
                 >
                     Yes, Permanently Delete Data

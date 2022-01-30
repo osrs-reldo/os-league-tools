@@ -3,11 +3,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import { without } from 'lodash';
 import { updateTaskFilter, resetTasks } from '../store/filters';
 import ButtonGroup from './common/ButtonGroup';
-import InputSelect from './common/InputSelect';
 import FilterButtons, { FilterSelectAll } from './common/FilterButtons';
 import LabeledCheckbox from './common/LabeledCheckbox';
+import CheckboxTree from './common/CheckboxTree';
 import { DIFFICULTY, STATS } from '../data/constants';
-import { CATEGORY, getSubcategoriesForCategories } from '../data/categories';
+import { formatCategoriesForCheckboxTree } from '../data/categories';
 import getSkillsPanelData from '../util/getSkillsPanelData';
 
 export default function TaskFilters() {
@@ -61,7 +61,7 @@ export default function TaskFilters() {
             </div>
             <div className='xl:order-4 lg:order-2 sm:order-6 order-4'>
                 <span className='heading-accent-md mt-1'>Difficulty</span>
-                <div className='w-full px-3 text-sm flex flex-col'>
+                <div className='w-full px-3 text-sm'>
                     <FilterButtons
                         cols={3}
                         filterName='difficulty'
@@ -73,65 +73,19 @@ export default function TaskFilters() {
                     <FilterSelectAll
                         filterName='difficulty'
                         updateFunc={updateTaskFilter}
-                        values={Object.values(DIFFICULTY)}
+                        values={Object.values(DIFFICULTY).map(diff => diff.label)}
                     />
                 </div>
             </div>
             <div className='lg:order-5 sm:order-2 order-5 row-span-2'>
-                <span className='heading-accent-md mt-1'>Category</span>
-                <div className='w-full px-3 text-sm flex gap-1'>
-                    <div>
-                        <LabeledCheckbox
-                            label='All categories'
-                            defaultChecked={!filterState.categories}
-                            onClick={e =>
-                                dispatch(
-                                    updateTaskFilter({ field: 'categories', value: e.target.checked ? null : 'all' })
-                                )
-                            }
-                            className='mb-1'
-                        />
-                        <InputSelect
-                            label='categories'
-                            options={Object.values(CATEGORY).map(category => ({
-                                value: category.label,
-                                label: category.label,
-                            }))}
-                            multiple
-                            className='text-sm'
-                            enabled={!!filterState.categories}
-                            selection={filterState.categories}
-                            setSelection={val => dispatch(updateTaskFilter({ field: 'categories', value: val }))}
-                        />
-                    </div>
-                    <div>
-                        <LabeledCheckbox
-                            label='All subcategories'
-                            defaultChecked={!filterState.subcategories}
-                            onClick={e =>
-                                dispatch(
-                                    updateTaskFilter({ field: 'subcategories', value: e.target.checked ? null : 'all' })
-                                )
-                            }
-                            className='mb-1'
-                        />
-                        <InputSelect
-                            label='subcategories'
-                            options={getSubcategoriesForCategories(
-                                !filterState.categories || filterState.categories === 'all'
-                                    ? filterState.categories
-                                    : filterState.categories.map(c => c.toUpperCase())
-                            ).map(subcategory => ({
-                                value: subcategory,
-                                label: subcategory,
-                            }))}
-                            multiple
-                            className='text-sm'
-                            enabled={!!filterState.subcategories}
-                            selection={filterState.subcategories}
-                            setSelection={val => dispatch(updateTaskFilter({ field: 'subcategories', value: val }))}
-                        />
-                    </div>
+                <p className='heading-accent-md mt-1'>Category</p>
+                <div className='w-full px-3 text-sm'>
+                    <CheckboxTree
+                        checkboxName='categories'
+                        filterState={filterState.categories}
+                        nodes={formatCategoriesForCheckboxTree()}
+                        onCheckFunc={updateTaskFilter}
+                    />
                 </div>
             </div>
             <div className='xl:order-6 lg:order-3 sm:order-5 order-6 row-span-2'>
