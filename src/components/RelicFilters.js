@@ -51,7 +51,11 @@ export default function RelicFilters() {
                         values={Object.values(SETS)}
                         orientation='col'
                     />
-                    <FilterSelectAll filterName='sets' updateFunc={updateFragmentFilter} values={Object.values(SETS)} />
+                    <FilterSelectAll
+                        filterName='sets'
+                        updateFunc={updateFragmentFilter}
+                        values={Object.values(SETS).map(({ label }) => label)}
+                    />
                 </div>
             </div>
             <div className='mb-3'>
@@ -67,7 +71,7 @@ export default function RelicFilters() {
                     <FilterSelectAll
                         filterName='activities'
                         updateFunc={updateFragmentFilter}
-                        values={Object.values(ACTIVITIES)}
+                        values={Object.values(ACTIVITIES).map(({ label }) => label)}
                     />
                 </div>
             </div>
@@ -81,7 +85,11 @@ export default function RelicFilters() {
                         updateFunc={updateFragmentFilter}
                         values={Object.values(TAGS)}
                     />
-                    <FilterSelectAll filterName='tags' updateFunc={updateFragmentFilter} values={Object.values(TAGS)} />
+                    <FilterSelectAll
+                        filterName='tags'
+                        updateFunc={updateFragmentFilter}
+                        values={Object.values(TAGS).map(({ label }) => label)}
+                    />
                 </div>
             </div>
             <button

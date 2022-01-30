@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { updateQuestFilter, resetQuests } from '../store/filters';
 import ButtonGroup from './common/ButtonGroup';
-import FilterButtons, { FilterSelectAll } from "./common/FilterButtons";
+import FilterButtons, { FilterSelectAll } from './common/FilterButtons';
 import { QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/constants';
 
 export default function QuestFilters() {
@@ -38,7 +38,7 @@ export default function QuestFilters() {
                     <FilterSelectAll
                         filterName='difficulty'
                         updateFunc={updateQuestFilter}
-                        values={Object.values(QUEST_DIFFICULTY)}
+                        values={Object.values(QUEST_DIFFICULTY).map(({ label }) => label)}
                     />
                 </div>
             </div>
@@ -55,7 +55,7 @@ export default function QuestFilters() {
                     <FilterSelectAll
                         filterName='length'
                         updateFunc={updateQuestFilter}
-                        values={Object.values(QUEST_LENGTH)}
+                        values={Object.values(QUEST_LENGTH).map(({ label }) => label)}
                     />
                 </div>
             </div>
