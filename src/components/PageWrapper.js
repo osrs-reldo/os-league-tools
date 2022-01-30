@@ -9,12 +9,13 @@ import Banner from './common/Banner';
 import ManageDataModal from './ManageDataModal';
 import images from '../assets/images';
 import useClickListener from '../hooks/useClickListener';
+import useQueryString from '../hooks/useQueryString';
 
 export default function PageWrapper({ children }) {
     const theme = useSelector(state => state.settings.theme);
     const limitContentWidth = useSelector(state => state.settings.limitContentWidth);
     const [isFeedbackModalOpen, setFeedbackModalOpen] = useState(false);
-    const [manageDataModalType, setManageDataModalType] = useState(null);
+    const [manageDataModalType, setManageDataModalType] = useQueryString('open');
 
     const navItems = [
         new NavItem('Stats', 'primary', 0, 0).withRouterLink('/stats').withIconFont('query_stats'),
