@@ -77,7 +77,7 @@ export default function TaskFilters() {
                     />
                 </div>
             </div>
-            <div className='xl:order-6 lg:order-3 sm:order-5 order-6 row-span-2'>
+            <div className='lg:order-5 sm:order-2 order-5 row-span-2'>
                 <span className='heading-accent-md mt-1'>Requirements</span>
                 <div className='ml-2 mb-2'>
                     <LabeledCheckbox
@@ -135,7 +135,7 @@ export default function TaskFilters() {
                     </span>
                 </div>
             </div>
-            <div className='lg:order-5 sm:order-2 order-5 row-span-2'>
+            <div className='xl:order-6 lg:order-3 sm:order-5 order-6 row-span-2'>
                 <p className='heading-accent-md mt-1'>Category</p>
                 <div className='w-full px-3 text-sm'>
                     <CheckboxTree
