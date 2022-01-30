@@ -16,7 +16,7 @@ export default function CheckboxTree({
         check: <span className='icon-xs bg-accent w-3 h-3 rounded-sm leading-3'>check</span>,
         uncheck: <span className='bg-inverted w-3 h-3 rounded-sm' />,
         halfCheck: <span className='icon-xs bg-secondary w-3 h-3 rounded-sm leading-3'>check</span>,
-        expandClose: <span className='icon-xl'>keyboard_arrow_up</span>,
+        expandClose: <span className='icon-xl'>keyboard_arrow_right</span>,
         expandOpen: <span className='icon-xl'>keyboard_arrow_down</span>,
         expandAll: <span className='icon-xl w-4 h-4'>plus</span>,
         collapseAll: <span className='icon-xl w-4 h-4'>minus</span>,
