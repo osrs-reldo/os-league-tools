@@ -22,7 +22,14 @@ function setQueryStringWithoutPageReload(qsValue) {
 
 function setQueryStringValue(key, value, queryString = window.location.search) {
     const values = parse(queryString);
-    const newQsValue = stringify({ ...values, [key]: value });
+    let newQsValue;
+    if (!value) {
+        const updatedValues = { ...values };
+        delete updatedValues[key];
+        newQsValue = stringify(updatedValues);
+    } else {
+        newQsValue = stringify({ ...values, [key]: value });
+    }
     setQueryStringWithoutPageReload(`?${newQsValue}`);
 }
 
