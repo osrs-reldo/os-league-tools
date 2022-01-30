@@ -12,7 +12,7 @@ import images from '../assets/images';
 
 export default function QuestTable() {
     const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
-    
+
     const data = useMemo(() => quests, []);
     const columns = useMemo(
         () => [
@@ -36,7 +36,7 @@ export default function QuestTable() {
                 Cell: PointsCell,
             },
             {
-                Header: isMdOrSmallerViewport ? "Diff" : 'Difficulty',
+                Header: isMdOrSmallerViewport ? 'Diff' : 'Difficulty',
                 id: 'difficulty',
                 accessor: 'difficulty',
                 width: isMdOrSmallerViewport ? 75 : 175,
@@ -44,7 +44,7 @@ export default function QuestTable() {
                 Cell: IconCell,
             },
             {
-                Header: isMdOrSmallerViewport ? "Len" : 'Length',
+                Header: isMdOrSmallerViewport ? 'Len' : 'Length',
                 id: 'length',
                 accessor: 'length',
                 width: isMdOrSmallerViewport ? 75 : 175,
@@ -112,7 +112,7 @@ function QuestCell({ row, value }) {
             <div className='flex flex-row items-center h-full gap-2'>
                 <span className='icon-2xl text-accent'>{row.isExpanded ? 'arrow_drop_down' : 'arrow_right'}</span>
                 <span
-                    className='icon-2xl text-accent cursor-pointer'
+                    className='icon-2xl text-accent cursor-pointer select-none'
                     onClick={e => {
                         dispatch(
                             updateQuest({
@@ -152,7 +152,7 @@ function IconCell({ value }) {
     if (value) {
         return (
             <div className='flex items-center h-full justify-center'>
-                <LabeledIcon label={isMdOrSmallerViewport ? "" : value.label} icon={value.icon} />
+                <LabeledIcon label={isMdOrSmallerViewport ? '' : value.label} icon={value.icon} />
             </div>
         );
     }

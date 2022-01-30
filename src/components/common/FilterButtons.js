@@ -40,7 +40,7 @@ export default function FilterButtons({
                         onClick={() => toggleValue(value.label)}
                         type='button'
                     >
-                        <img src={value.icon} alt={value.label} className='inline mx-1' />
+                        {value.icon && <img src={value.icon} alt={value.label} className='inline mx-1' />}
                         {value.label}
                     </button>
                 ) : (

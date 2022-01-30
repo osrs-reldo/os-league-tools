@@ -29,7 +29,9 @@ export default function Table({
     const [records, setRecords] = useState(data);
 
     useEffect(() => {
-        setRecords(data.filter(record => filters.every(filter => filter(record, filterState, customFilterProps))));
+        if (filters.length > 0) {
+            setRecords(data.filter(record => filters.every(filter => filter(record, filterState, customFilterProps))));
+        }
     }, [filterState, data, customFilterProps]);
 
     const table = useTable(

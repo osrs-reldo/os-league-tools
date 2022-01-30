@@ -1858,6 +1858,9 @@ select[multiple]:focus option:checked {
   height: -moz-fit-content;
   height: fit-content;
 }
+.h-10 {
+  height: 2.5rem;
+}
 .h-6 {
   height: 1.5rem;
 }
@@ -1964,8 +1967,8 @@ select[multiple]:focus option:checked {
 .max-w-\[90\%\] {
   max-width: 90%;
 }
-.max-w-\[20px\] {
-  max-width: 20px;
+.max-w-\[300px\] {
+  max-width: 300px;
 }
 .max-w-\[420px\] {
   max-width: 420px;
@@ -2028,6 +2031,10 @@ select[multiple]:focus option:checked {
 }
 .cursor-text {
   cursor: text;
+}
+.select-none {
+  -webkit-user-select: none;
+          user-select: none;
 }
 .select-all {
   -webkit-user-select: all;
@@ -2371,6 +2378,9 @@ select[multiple]:focus option:checked {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+.last\:hidden:last-child {
+  display: none;
 }
 .last\:border-none:last-child {
   border-style: none;

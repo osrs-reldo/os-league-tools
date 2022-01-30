@@ -1,11 +1,11 @@
 export const LOCALSTORAGE_KEYS = {
     USERNAME: 'hiscoresUsername',
     FILTER_STATE: 'filterState',
-    USER_DATA: 'user',
     SETTINGS: 'settings',
     TASKS: 'tasks',
     UNLOCKS: 'unlocks',
     CHARACTER: 'character',
+    FRAGMENTS: 'fragments',
 };
 
 export const SESSIONSTORAGE_KEYS = {};

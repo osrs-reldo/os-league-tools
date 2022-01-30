@@ -19,7 +19,7 @@ function Task({ row, value }) {
                 <div className='flex flex-row'>
                     <span className='icon-2xl text-accent'>{row.isExpanded ? 'arrow_drop_down' : 'arrow_right'}</span>
                     <span
-                        className='icon-2xl text-accent'
+                        className='icon-2xl text-accent select-none'
                         onClick={e => {
                             dispatch(toggleCompleted({ taskId }));
                             e.stopPropagation();

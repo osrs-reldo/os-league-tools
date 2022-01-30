@@ -7,6 +7,7 @@ import settingsReducer, { loadState as loadSettingsState } from './store/setting
 import tasksReducer, { loadState as loadTasksState } from './store/tasks/tasks';
 import unlocksReducer, { loadState as loadUnlocksState } from './store/unlocks/unlocks';
 import characterReducer, { loadState as loadCharacterState } from './store/character/character';
+import fragmentReducer, { loadState as loadFragmentState } from './store/fragments';
 
 const reducer = {
     filters: filterReducer,
@@ -14,6 +15,7 @@ const reducer = {
     tasks: tasksReducer,
     unlocks: unlocksReducer,
     character: characterReducer,
+    fragments: fragmentReducer,
 };
 
 const preloadedState = {
@@ -22,6 +24,7 @@ const preloadedState = {
     tasks: loadTasksState(),
     unlocks: loadUnlocksState(),
     character: loadCharacterState(),
+    fragments: loadFragmentState(),
 };
 
 const store = configureStore({
@@ -37,6 +40,7 @@ store.subscribe(
         updateLocalStorage(LOCALSTORAGE_KEYS.TASKS, store.getState().tasks);
         updateLocalStorage(LOCALSTORAGE_KEYS.UNLOCKS, store.getState().unlocks);
         updateLocalStorage(LOCALSTORAGE_KEYS.CHARACTER, store.getState().character);
+        updateLocalStorage(LOCALSTORAGE_KEYS.FRAGMENTS, store.getState().fragments);
     }, 200)
 );
 
