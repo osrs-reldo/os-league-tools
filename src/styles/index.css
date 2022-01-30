@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Sharp');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import 'react-checkbox-tree/lib/react-checkbox-tree.css';
 
 @tailwind base;
 @tailwind components;

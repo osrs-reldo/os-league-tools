@@ -2,6 +2,7 @@
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
+import { getCategoriesForStore } from '../data/categories';
 import { STATS, DIFFICULTY, QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/constants';
 import { ACTIVITIES, SETS, TAGS } from '../data/relics';
 
@@ -14,8 +15,7 @@ const INITIAL_TASK_STATE = {
     todo: 'all',
     ignored: 'hide',
     difficulty: mapDataValues(DIFFICULTY),
-    categories: null,
-    subcategories: null,
+    categories: getCategoriesForStore(),
     skills: Object.keys(STATS),
     reorderEnabled: false,
     showNoRequirements: true,
