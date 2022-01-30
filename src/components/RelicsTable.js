@@ -1,14 +1,12 @@
-/* eslint-disable no-unused-vars */
 import _ from 'lodash';
 import { matchSorter } from 'match-sorter';
 import React, { useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactTooltip from 'react-tooltip';
 import images from '../assets/images';
-import { FRAGMENTS, SETS } from '../data/relics';
+import { FRAGMENTS } from '../data/relics';
 import { selectFragment, toggleFragment } from '../store/fragments';
 import LabeledIcon from './common/LabeledIcon';
-import Separator from './common/Separator';
 import Table from './common/Table';
 
 export default function RelicsTable() {
@@ -25,6 +23,7 @@ export default function RelicsTable() {
                 id: 'label',
                 accessor: 'label',
                 width: 150,
+                minWidth: 530,
                 Cell: FragmentCell,
             },
             {
@@ -32,14 +31,18 @@ export default function RelicsTable() {
                 id: 'set',
                 accessor: row => row.sets,
                 width: 30,
+                minWidth: 110,
                 Cell: SetCell,
+                disableSortBy: true,
             },
             {
                 Header: 'Tags',
                 id: 'tags',
                 accessor: 'tags',
                 width: 50,
+                minWidth: 175,
                 Cell: TagsCell,
+                disableSortBy: true,
             },
         ],
         []
@@ -52,16 +55,17 @@ export default function RelicsTable() {
         }),
         []
     );
-    const initialState = useMemo(() => ({ hiddenColumns: ['id'], pageSize: 50 }), []);
-    const filters = useMemo(() => [], []);
-    const filterState = useMemo(() => ({}), []);
+    const initialState = useMemo(() => ({ hiddenColumns: ['id'], pageSize: 100 }), []);
+    const fragmentState = useSelector(state => state.fragments.fragments);
+    const filterState = useSelector(state => state.filters.fragments);
 
     return (
         <Table
             columns={columns}
             data={data}
-            filters={filters}
+            filters={[statusFilter, levelFilter, setFilter, activityFilter, effectFilter]}
             filterState={filterState}
+            customFilterProps={{ fragmentState }}
             globalFilter={fuzzyTextFilter}
             defaultColumn={defaultColumn}
             initialState={initialState}
@@ -73,10 +77,57 @@ export default function RelicsTable() {
 function fuzzyTextFilter(rows, __, filterValue) {
     return matchSorter(rows, filterValue, {
         threshold: matchSorter.rankings.CONTAINS,
-        keys: ['values.label', 'values.series.label'],
+        keys: [
+            'original.label',
+            'original.effect',
+            'original.affects.*.label',
+            'original.tags.*.label',
+            'original.sets.*.label',
+            'original.sets.*.tags.*.label',
+            'original.sets.*.affects.*.label',
+        ],
     });
 }
 fuzzyTextFilter.autoRemove = val => !val;
+
+function statusFilter(record, filterState, { fragmentState }) {
+    if (filterState.status === 'all') {
+        return true;
+    }
+    const status = fragmentState[record.id] && fragmentState[record.id].unlocked;
+    return (filterState.status === 'unlocked') === !!status;
+}
+
+function levelFilter(record, filterState, { fragmentState }) {
+    if (filterState.levels === 'all') {
+        return true;
+    }
+    const level = fragmentState[record.id] && fragmentState[record.id].level;
+    return level && level === parseInt(filterState.levels, 10);
+}
+
+function setFilter(record, filterState) {
+    if (filterState.sets === null) {
+        return true;
+    }
+    return filterState.sets.includes(record.sets[0].label) || filterState.sets.includes(record.sets[1].label);
+}
+
+function activityFilter(record, filterState) {
+    if (filterState.activities === null) {
+        return true;
+    }
+    const relicActivities = record.affects.map(activity => activity.label);
+    return _.intersection(relicActivities, filterState.activities).length > 0;
+}
+
+function effectFilter(record, filterState) {
+    if (filterState.tags === null) {
+        return true;
+    }
+    const relicTags = record.tags.map(tag => tag.label);
+    return _.intersection(relicTags, filterState.tags).length > 0;
+}
 
 function FragmentCell({ row, value }) {
     const fragmentState = useSelector(state => selectFragment(state, row.values.id));
@@ -169,8 +220,8 @@ function FragmentDescription({ descriptionParts, level }) {
 }
 
 function SetCell({ value }) {
-    const set1 = SETS[value[0]];
-    const set2 = SETS[value[1]];
+    const set1 = value[0];
+    const set2 = value[1];
     return (
         <div className='flex justify-center gap-2 items-center h-full py-1'>
             <SetIcon label={set1.label} description={set1.effect} levels={set1.levels} />

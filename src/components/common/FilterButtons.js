@@ -8,6 +8,7 @@ export default function FilterButtons({
     selectedValues = [],
     updateFunc = () => null,
     values = [],
+    orientation = 'row',
 } = {}) {
     const dispatch = useDispatch();
 
@@ -40,8 +41,8 @@ export default function FilterButtons({
                         onClick={() => toggleValue(value.label)}
                         type='button'
                     >
-                        {value.icon && <img src={value.icon} alt={value.label} className='inline mx-1' />}
-                        {value.label}
+                        {value.icon && <img src={value.icon} alt={value.label} className='inline mx-1 max-h-6' />}
+                        {orientation === 'row' ? value.label : <p>{value.label}</p>}
                     </button>
                 ) : (
                     <div className='bg-primary' key={i} />

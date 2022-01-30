@@ -6,7 +6,7 @@ import TasksPanel from './TasksPanel';
 import useQueryString from '../hooks/useQueryString';
 import QuestsPanel from './QuestsPanel';
 import images from '../assets/images';
-import RelicsTable from '../components/RelicsTable';
+import RelicsPanel from './RelicsPanel';
 
 export default function Tracker() {
     const [selectedTab, onSetSelectedTab] = useQueryString('tab');
@@ -18,7 +18,7 @@ export default function Tracker() {
                     <CharacterPanel />
                 </TabbedCard.Tab>
                 <TabbedCard.Tab id='relics' label='Relics' icon={images['tab-relics.png']}>
-                    <RelicsTable />
+                    <RelicsPanel />
                 </TabbedCard.Tab>
                 <TabbedCard.Tab id='tasks' label='Tasks' icon={images['tab-tasks.png']}>
                     <TasksPanel />
