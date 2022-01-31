@@ -6069,8 +6069,8 @@ export default {
         description: 'Defeat an Ancient Wyvern on Fossil Island.',
         skillReqs: [{ skill: 'Slayer', level: 82 }],
         difficulty: DIFFICULTY.HARD,
-        category: CATEGORY.BOSSING,
-        subcategory: CATEGORY.BOSSING.subcategories.SIRE,
+        category: CATEGORY.COMBAT,
+        subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
     },
     799: {
         id: '799',
