@@ -18,10 +18,20 @@ export default function BossesPanel() {
                 {hiscores && unlockedBosses.includes(selectedBoss.label) && (
                     <>
                         <p className='italic text-sm'>
-                            Kills: {numberWithCommas(hiscores[selectedBoss.hiscoresName].score)}
+                            Kills:{' '}
+                            {numberWithCommas(
+                                hiscores[selectedBoss.hiscoresName].score > 0
+                                    ? hiscores[selectedBoss.hiscoresName].score
+                                    : '-'
+                            )}
                         </p>
                         <p className='italic text-sm'>
-                            Rank: {numberWithCommas(hiscores[selectedBoss.hiscoresName].rank)}
+                            Rank:{' '}
+                            {numberWithCommas(
+                                hiscores[selectedBoss.hiscoresName].rank > 0
+                                    ? hiscores[selectedBoss.hiscoresName].rank
+                                    : '-'
+                            )}
                         </p>
                     </>
                 )}
