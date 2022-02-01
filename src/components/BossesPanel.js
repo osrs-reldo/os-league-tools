@@ -1,181 +1,119 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import ReactTooltip from 'react-tooltip';
 import { lockBoss, unlockBoss } from '../store/unlocks/unlocks';
-import images from '../assets/images';
-
-const BOSSES = [
-    'Alchemical Hydra',
-    'Barrows',
-    'Bryophyta',
-    'Callisto',
-    'Cerberus',
-    'Chambers of Xeric',
-    'Chambers of Xeric: Challenge Mode',
-    'Chaos Elemental',
-    'Chaos Fanatic',
-    'Commander Zilyana',
-    'Corporeal Beast',
-    'Crazy Archaeologist',
-    'Dagannoth Prime',
-    'Dagannoth Rex',
-    'Dagannoth Supreme',
-    'Deranged Archaeologist',
-    'General Graardor',
-    'Giant Mole',
-    'Grotesque Guardians',
-    'Hespori',
-    'Kalphite Queen',
-    'King Black Dragon',
-    'Kraken',
-    "Kree'Arra",
-    "K'ril Tsutsaroth",
-    'Mimic',
-    'Nex',
-    'Nightmare',
-    "Phosani's Nightmare",
-    'Obor',
-    'Sarachnis',
-    'Scorpia',
-    'Skotizo',
-    'Tempoross',
-    'The Gauntlet',
-    'The Corrupted Gauntlet',
-    'Theatre of Blood',
-    'Theatre of Blood: Hard Mode',
-    'Thermonuclear Smoke Devil',
-    'TzKal-Zuk',
-    'TzTok-Jad',
-    'Venenatis',
-    "Vet'ion",
-    'Vorkath',
-    'Wintertodt',
-    'Zalcano',
-    'Zulrah',
-];
+import { BOSSES } from '../data/constants';
+import numberWithCommas from '../util/helpers';
 
 export default function BossesPanel() {
     const [selectedBoss, setSelectedBoss] = useState(null);
     const unlockedBosses = useSelector(state => state.unlocks.bosses);
-    const hiscores = useSelector(state => state.character.hiscoresCache.data);
+    const hiscores = useSelector(state => state.character.hiscoresCache.data?.bosses);
     const dispatch = useDispatch();
 
-    return (
-        <div>
-            <table className='table-auto'>
-                <tbody>
-                    {Array.from({ length: 10 }, (_, i) => (
-                        <tr key={i} className='border-b border-subdued last:border-none'>
-                            <BossTile
-                                boss={BOSSES[i * 5]}
-                                selectedBoss={selectedBoss}
-                                setSelectedBoss={setSelectedBoss}
-                                unlockedBosses={unlockedBosses}
-                                characterStats={hiscores}
-                            />
-                            {i * 5 + 1 < BOSSES.length ? (
-                                <BossTile
-                                    boss={BOSSES[i * 5 + 1]}
-                                    selectedBoss={selectedBoss}
-                                    setSelectedBoss={setSelectedBoss}
-                                    unlockedBosses={unlockedBosses}
-                                    characterStats={hiscores}
-                                />
-                            ) : (
-                                <td />
-                            )}
-                            {i * 5 + 2 < BOSSES.length ? (
-                                <BossTile
-                                    boss={BOSSES[i * 5 + 2]}
-                                    selectedBoss={selectedBoss}
-                                    setSelectedBoss={setSelectedBoss}
-                                    unlockedBosses={unlockedBosses}
-                                    characterStats={hiscores}
-                                />
-                            ) : (
-                                <td />
-                            )}
-                            {i * 5 + 3 < BOSSES.length ? (
-                                <BossTile
-                                    boss={BOSSES[i * 5 + 3]}
-                                    selectedBoss={selectedBoss}
-                                    setSelectedBoss={setSelectedBoss}
-                                    unlockedBosses={unlockedBosses}
-                                    characterStats={hiscores}
-                                />
-                            ) : (
-                                <td />
-                            )}
-                            {i * 5 + 3 < BOSSES.length ? (
-                                <BossTile
-                                    boss={BOSSES[i * 5 + 4]}
-                                    selectedBoss={selectedBoss}
-                                    setSelectedBoss={setSelectedBoss}
-                                    unlockedBosses={unlockedBosses}
-                                    characterStats={hiscores}
-                                />
-                            ) : (
-                                <td />
-                            )}
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
-            <div className='w-full px-1 mt-2 align-top'>
-                {selectedBoss ? (
+    const renderBossDetails = () =>
+        selectedBoss ? (
+            <>
+                <p className='heading-accent-md'>{selectedBoss.label}</p>
+                {hiscores && unlockedBosses.includes(selectedBoss.label) && (
                     <>
-                        {/* TODO add sage's renown values for unlocks */}
-                        {/* <span className='heading-accent-md'>{selectedBoss}</span>
-                        <p className='italic text-sm'>Cost: 500 league points</p> */}
+                        <p className='italic text-sm'>
+                            Kills:{' '}
+                            {numberWithCommas(
+                                hiscores[selectedBoss.hiscoresName].score > 0
+                                    ? hiscores[selectedBoss.hiscoresName].score
+                                    : '-'
+                            )}
+                        </p>
+                        <p className='italic text-sm'>
+                            Rank:{' '}
+                            {numberWithCommas(
+                                hiscores[selectedBoss.hiscoresName].rank > 0
+                                    ? hiscores[selectedBoss.hiscoresName].rank
+                                    : '-'
+                            )}
+                        </p>
+                    </>
+                )}
+
+                {!selectedBoss.isDefaultUnlock && (
+                    <div className='mt-4'>
+                        {!unlockedBosses.includes(selectedBoss.label) && (
+                            <p className='italic text-sm'>Cost: {selectedBoss.unlockCost}</p>
+                        )}
                         <button
                             className='button-outline px-1 my-1 w-full'
                             type='button'
                             onClick={() =>
-                                unlockedBosses.includes(selectedBoss)
+                                unlockedBosses.includes(selectedBoss.label)
                                     ? dispatch(lockBoss({ boss: selectedBoss }))
                                     : dispatch(unlockBoss({ boss: selectedBoss }))
                             }
                         >
-                            {unlockedBosses.includes(selectedBoss)
-                                ? `Re-lock ${selectedBoss}`
-                                : `Unlock ${selectedBoss}`}
+                            {unlockedBosses.includes(selectedBoss.label)
+                                ? `Re-lock ${selectedBoss.label}`
+                                : `Unlock ${selectedBoss.label}`}
                         </button>
-                    </>
-                ) : (
-                    <span className='italic text-sm'>Click on a boss to lock/unlock it.</span>
+                    </div>
                 )}
-            </div>
-        </div>
-    );
-}
-
-function BossTile({ boss, selectedBoss, setSelectedBoss, unlockedBosses, characterStats }) {
-    const killCount =
-        characterStats?.bosses[`${boss.substring(0, 1).toLowerCase()}${cleanBossString(boss).substring(1)}`]?.score ||
-        0;
+            </>
+        ) : (
+            <p className='italic text-sm'>Click on a boss to lock/unlock it.</p>
+        );
 
     return (
-        <td
-            className={`p-1 border-r border-subdued last:border-none bg-hover cursor-pointer ${
-                selectedBoss === boss && 'bg-secondary'
-            }`}
-            onClick={() => setSelectedBoss(boss)}
-        >
-            <div className='flex items-center'>
-                <img
-                    src={images[`${cleanBossString(boss, '-').toLowerCase()}.png`]}
-                    alt={boss}
-                    className='inline mx-1'
-                />
-                {unlockedBosses.includes(boss) ? (
-                    <span className='text-center grow mr-1'>{killCount < 0 ? 0 : killCount}</span>
-                ) : (
-                    <span className='text-error icon-outline text-lg text-center grow'>lock</span>
-                )}
+        <>
+            <div className='grid grid-cols-4 gap-px w-fit bg-subdued'>
+                {Object.values(BOSSES).map(boss => (
+                    <BossTile
+                        key={boss.label}
+                        boss={boss}
+                        bossHiscores={hiscores ? hiscores[boss.hiscoresName] : {}}
+                        selectedBoss={selectedBoss}
+                        setSelectedBoss={setSelectedBoss}
+                        unlockedBosses={unlockedBosses}
+                    />
+                ))}
             </div>
-        </td>
+
+            {renderBossDetails()}
+        </>
     );
 }
 
-function cleanBossString(boss, whitespaceReplacement = '') {
-    return boss.replaceAll(':', '').replaceAll("'", '').replaceAll(' ', whitespaceReplacement);
+function BossTile({ boss, bossHiscores, selectedBoss, setSelectedBoss, unlockedBosses }) {
+    const dispatch = useDispatch();
+    const isUnlocked = unlockedBosses.includes(boss.label);
+    const killCount = bossHiscores?.score > 0 ? bossHiscores?.score : '-';
+
+    useEffect(() => {
+        if (!isUnlocked && killCount > 0) {
+            dispatch(unlockBoss({ boss }));
+        }
+    }, [bossHiscores]);
+
+    return boss ? (
+        <>
+            <div
+                className={`p-1 bg-primary bg-hover cursor-pointer ${selectedBoss === boss && 'bg-secondary'}`}
+                onClick={() => setSelectedBoss(boss)}
+                data-tip
+                data-for={boss.label}
+            >
+                <div className='flex items-center'>
+                    <img src={boss.icon} alt={boss.label} className='inline mx-1' />
+                    {boss.isDefaultUnlock || unlockedBosses.includes(boss.label) ? (
+                        <p className='text-center grow mr-1'>{killCount < 0 ? 0 : killCount}</p>
+                    ) : (
+                        <p className='text-sm flex justify-center items-center text-error'>
+                            <span className='icon-outline text-sm mr-1'>lock</span> {boss.unlockCost}
+                        </p>
+                    )}
+                </div>
+            </div>
+            <ReactTooltip id={boss.label}>{boss.label}</ReactTooltip>
+        </>
+    ) : (
+        <div className='bg-primary' />
+    );
 }

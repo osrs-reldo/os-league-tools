@@ -1,8 +1,10 @@
-import { CURRENT_VERSION } from './constants';
+import { without } from 'lodash';
+import { CURRENT_VERSION, DEFAULT_UNLOCKED_BOSSES } from './constants';
 
 const versionUpdaters = {
     2: updateToV2,
     3: updateToV3,
+    4: updateToV4,
 };
 
 export default function updateUnlocksVersion(state) {
@@ -34,5 +36,14 @@ function updateToV3(prevState) {
         ...prevState,
         version: 3,
         skills: prevState.skills.filter(val => !!val),
+    };
+}
+
+function updateToV4(prevState) {
+    // Boss unlock removing default values
+    return {
+        ...prevState,
+        version: 4,
+        bosses: without(prevState.bosses, ...DEFAULT_UNLOCKED_BOSSES),
     };
 }

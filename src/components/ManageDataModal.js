@@ -280,8 +280,10 @@ function ResetDataModalContent({ setIsOpen }) {
                     onClick={() => {
                         resetLocalStorageData();
                         setSuccessText('Data has been deleted. Reloading page...');
+                        const currentParams = new URLSearchParams(window.location.search);
+                        currentParams.delete('open');
                         setTimeout(() => {
-                            window.location.reload();
+                            window.location.search = currentParams.toString();
                         }, 1000);
                     }}
                 >
