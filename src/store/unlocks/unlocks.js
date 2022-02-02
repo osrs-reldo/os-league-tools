@@ -17,10 +17,12 @@ export const unlocksSlice = createSlice({
             state.skills = [...state.skills, action.payload.skill];
         },
         lockBoss: (state, action) => {
-            state.bosses = _.without(state.bosses, action.payload.boss);
+            const { label, isGroupedWith } = action.payload.boss;
+            state.bosses = _.without(state.bosses, label, ...isGroupedWith);
         },
         unlockBoss: (state, action) => {
-            state.bosses = [...state.bosses, action.payload.boss];
+            const { label, isGroupedWith } = action.payload.boss;
+            state.bosses = [...state.bosses, label, ...isGroupedWith];
         },
         updateQuest: (state, action) => {
             state.quests = {

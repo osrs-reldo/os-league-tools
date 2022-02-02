@@ -1809,8 +1809,8 @@ select[multiple]:focus option:checked {
 .mr-1 {
   margin-right: 0.25rem;
 }
-.mt-2 {
-  margin-top: 0.5rem;
+.mt-4 {
+  margin-top: 1rem;
 }
 .ml-2 {
   margin-left: 0.5rem;
@@ -1830,9 +1830,6 @@ select[multiple]:focus option:checked {
 .ml-3 {
   margin-left: 0.75rem;
 }
-.mt-4 {
-  margin-top: 1rem;
-}
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -1847,6 +1844,9 @@ select[multiple]:focus option:checked {
 }
 .ml-6 {
   margin-left: 1.5rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
 }
 .ml-5 {
   margin-left: 1.25rem;
@@ -2048,9 +2048,6 @@ select[multiple]:focus option:checked {
 .basis-3\/4 {
   flex-basis: 75%;
 }
-.table-auto {
-  table-layout: auto;
-}
 .origin-center {
   transform-origin: center;
 }
@@ -2100,6 +2097,9 @@ select[multiple]:focus option:checked {
 .list-disc {
   list-style-type: disc;
 }
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -2108,9 +2108,6 @@ select[multiple]:focus option:checked {
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -2148,6 +2145,9 @@ select[multiple]:focus option:checked {
 .justify-evenly {
   justify-content: space-evenly;
 }
+.gap-px {
+  gap: 1px;
+}
 .gap-1 {
   gap: 0.25rem;
 }
@@ -2159,9 +2159,6 @@ select[multiple]:focus option:checked {
 }
 .gap-0 {
   gap: 0px;
-}
-.gap-px {
-  gap: 1px;
 }
 .gap-3 {
   gap: 0.75rem;
@@ -2222,14 +2219,11 @@ select[multiple]:focus option:checked {
   border-left-width: 1px;
   border-right-width: 1px;
 }
-.border-b {
-  border-bottom-width: 1px;
-}
-.border-r {
-  border-right-width: 1px;
-}
 .border-t {
   border-top-width: 1px;
+}
+.border-b {
+  border-bottom-width: 1px;
 }
 .border-l-\[1rem\] {
   border-left-width: 1rem;
@@ -2337,9 +2331,6 @@ select[multiple]:focus option:checked {
 .indent-8 {
   text-indent: 2rem;
 }
-.align-top {
-  vertical-align: top;
-}
 .align-middle {
   vertical-align: middle;
 }
@@ -2359,10 +2350,6 @@ select[multiple]:focus option:checked {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -2378,6 +2365,10 @@ select[multiple]:focus option:checked {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 .text-3xl {
   font-size: 1.875rem;
@@ -2443,9 +2434,6 @@ select[multiple]:focus option:checked {
 }
 .last\:hidden:last-child {
   display: none;
-}
-.last\:border-none:last-child {
-  border-style: none;
 }
 .hover\:underline:hover {
   text-decoration-line: underline;
