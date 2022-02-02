@@ -23,11 +23,11 @@ function updateToV2(state) {
     const newFragMapping = {};
     Object.keys(state.fragments).forEach(fragKey => {
         const newKey = LEGACY_TO_INTERNAL_IDS[fragKey];
-        newFragMapping[newKey] = state.tasks[fragKey];
+        newFragMapping[newKey] = state.fragments[fragKey];
     });
     return {
         ...state,
-        tasks: newFragMapping,
+        fragments: newFragMapping,
         version: 2,
     };
 }
