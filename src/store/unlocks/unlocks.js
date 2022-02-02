@@ -7,7 +7,7 @@ import { INITIAL_STATE } from './constants';
 import updateUnlocksVersion from './updateUnlocksVersion';
 
 export const unlocksSlice = createSlice({
-    name: 'filters',
+    name: 'unlocks',
     initialState: INITIAL_STATE,
     reducers: {
         lockSkill: (state, action) => {

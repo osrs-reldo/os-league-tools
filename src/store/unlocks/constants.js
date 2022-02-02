@@ -1,4 +1,4 @@
-export const CURRENT_VERSION = 4;
+export const CURRENT_VERSION = 5;
 
 export const DEFAULT_UNLOCKED_SKILLS = ['Defence', 'Thieving', 'Fishing'];
 

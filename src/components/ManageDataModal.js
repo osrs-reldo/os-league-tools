@@ -184,6 +184,7 @@ function ImportFromFileContent() {
         try {
             loadedText = await fileObject.text();
         } catch (err) {
+            console.error(err);
             setSuccessText('');
             setErrorText('Unable to load file. Please try again.');
         }
@@ -192,6 +193,7 @@ function ImportFromFileContent() {
         try {
             storageJson = JSON.parse(loadedText);
         } catch (err) {
+            console.error(err);
             setSuccessText('');
             setErrorText('Unable to parse file, please check the file and try again.');
         }

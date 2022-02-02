@@ -5,6 +5,7 @@ const versionUpdaters = {
     2: updateToV2,
     3: updateToV3,
     4: updateToV4,
+    5: updateToV5,
 };
 
 export default function updateUnlocksVersion(state) {
@@ -45,5 +46,14 @@ function updateToV4(prevState) {
         ...prevState,
         version: 4,
         bosses: without(prevState.bosses, ...DEFAULT_UNLOCKED_BOSSES),
+    };
+}
+
+function updateToV5(prevState) {
+    // Root cause unclear, but some users are missing quests object and need to have it recreated
+    return {
+        ...prevState,
+        version: 5,
+        quests: prevState.quests || {},
     };
 }
