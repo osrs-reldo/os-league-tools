@@ -23,7 +23,7 @@ function Card({
             className={`bg-primary ${getCardStyle('corners', corners)} ${getCardStyle(
                 'borders',
                 borders
-            )} ${getCardStyle('shadow', shadow)} shadow-primary overflow-hidden ${className}`}
+            )} ${getCardStyle('shadow', shadow)} shadow-primary ${className}`}
             onClick={onClick}
         >
             <div className='flex md:flex-row flex-col h-full'>
