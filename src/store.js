@@ -7,7 +7,7 @@ import settingsReducer, { loadState as loadSettingsState } from './store/setting
 import tasksReducer, { loadState as loadTasksState } from './store/tasks/tasks';
 import unlocksReducer, { loadState as loadUnlocksState } from './store/unlocks/unlocks';
 import characterReducer, { loadState as loadCharacterState } from './store/character/character';
-import fragmentReducer, { loadState as loadFragmentState } from './store/fragments';
+import fragmentReducer, { loadState as loadFragmentState } from './store/fragments/fragments';
 
 const reducer = {
     filters: filterReducer,

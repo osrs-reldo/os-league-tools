@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import ReactTooltip from 'react-tooltip';
 import images from '../assets/images';
 import { FRAGMENTS } from '../data/relics';
-import { selectFragment, toggleFragment } from '../store/fragments';
+import { selectFragment, toggleFragment } from '../store/fragments/fragments';
 import LabeledIcon from './common/LabeledIcon';
 import Table from './common/Table';
 

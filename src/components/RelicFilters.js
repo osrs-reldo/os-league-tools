@@ -4,13 +4,25 @@ import { updateFragmentFilter, resetFragments } from '../store/filters';
 import ButtonGroup from './common/ButtonGroup';
 import FilterButtons, { FilterSelectAll } from './common/FilterButtons';
 import { ACTIVITIES, SETS, TAGS } from '../data/relics';
+import getFragmentCalcLink from '../client/fragment-calc';
 
 export default function RelicFilters() {
-    const filterState = useSelector(state => state.filters.fragments);
+    const userState = useSelector(state => state);
+    const filterState = userState.filters.fragments;
     const dispatch = useDispatch();
 
     return (
         <>
+            <div className='mb-3 text-center'>
+                <a
+                    className='button-outline w-full h-fit px-2 py-1'
+                    href={getFragmentCalcLink(userState)}
+                    target='_blank'
+                    rel='noreferrer'
+                >
+                    Fragment Set Builder <span className='icon-sm'>launch</span>
+                </a>
+            </div>
             <div className='mb-3'>
                 <p className='heading-accent-md mb-1'>Status</p>
                 <div className='w-full px-3 text-sm'>

@@ -370,8 +370,8 @@ export const SETS = {
 };
 
 export const FRAGMENTS = {
-    F50: {
-        id: 'F50',
+    1: {
+        id: '1',
         label: 'Unholy Warrior',
         type: TYPE.COMBAT,
         effect: ['Melee attacks have ', ['12%', '20%', '30%'], ' more accuracy with 0 Prayer points left.'],
@@ -379,8 +379,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.MAGIC],
         tags: [TAGS.ACCURACY],
     },
-    F46: {
-        id: 'F46',
+    2: {
+        id: '2',
         label: 'Tactical Duelist',
         type: TYPE.COMBAT,
         effect: ['Melee weapon charges have a ', ['20%', '40%', '80%'], ' chance to be saved.'],
@@ -388,8 +388,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.MELEE],
         tags: [TAGS.RESOURCES],
     },
-    F48: {
-        id: 'F48',
+    3: {
+        id: '3',
         label: 'Unholy Ranger',
         type: TYPE.COMBAT,
         effect: [
@@ -401,8 +401,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.RANGED],
         tags: [TAGS.ACCURACY],
     },
-    F5: {
-        id: 'F5',
+    4: {
+        id: '4',
         label: 'Bottomless Quiver',
         type: TYPE.COMBAT,
         effect: [
@@ -414,8 +414,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.RANGED],
         tags: [TAGS.RESOURCES],
     },
-    F49: {
-        id: 'F49',
+    5: {
+        id: '5',
         label: 'Unholy Wizard',
         type: TYPE.COMBAT,
         effect: ['Magic attacks have ', ['40%', '70%', '125%'], ' better accuracy with 0 prayer left.'],
@@ -423,8 +423,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.MELEE],
         tags: [TAGS.ACCURACY],
     },
-    F1: {
-        id: 'F1',
+    6: {
+        id: '6',
         label: 'Arcane Conduit',
         type: TYPE.COMBAT,
         effect: ['Magic runes & magic weapon charges have a ', ['40%', '60%', '90%'], ' chance to be saved.'],
@@ -432,8 +432,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.MAGIC],
         tags: [TAGS.RESOURCES],
     },
-    F47: {
-        id: 'F47',
+    7: {
+        id: '7',
         label: 'Thrall Damage',
         type: TYPE.COMBAT,
         effect: ['Summoned creatures deal ', ['100%', '200%', '300%'], ' more damage. The damage is rounded up.'],
@@ -441,8 +441,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.COMBAT],
         tags: [TAGS.DPS],
     },
-    F23: {
-        id: 'F23',
+    8: {
+        id: '8',
         label: "Livin' On A Prayer",
         type: TYPE.COMBAT,
         effect: ['Prayer drains ', ['15%', '30%', '60%'], ' slower.'],
@@ -450,8 +450,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.PRAYER, ACTIVITIES.COMBAT],
         tags: [TAGS.OTHER],
     },
-    F13: {
-        id: 'F13',
+    9: {
+        id: '9',
         label: 'Divine Restoration',
         type: TYPE.COMBAT,
         effect: ['1 prayer points will restore every ', ['15', '9', '3.6'], ' seconds.'],
@@ -459,8 +459,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.PRAYER, ACTIVITIES.COMBAT],
         tags: [TAGS.SURVIVABILITY],
     },
-    F29: {
-        id: 'F29',
+    10: {
+        id: '10',
         label: 'Praying Respects',
         type: TYPE.SKILLING,
         effect: ['Bones and ashes are auto buried and scattered with ', ['50%', '100%', '200%'], ' experience.'],
@@ -468,8 +468,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.PRAYER],
         tags: [TAGS.EXP, TAGS.AUTO],
     },
-    F22: {
-        id: 'F22',
+    11: {
+        id: '11',
         label: 'Larger Recharger',
         type: TYPE.COMBAT,
         effect: ['Special attack points are restored by 10% every ', ['25s', '20s', '10s'], '.'],
@@ -477,8 +477,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.COMBAT],
         tags: [TAGS.OTHER],
     },
-    F44: {
-        id: 'F44',
+    12: {
+        id: '12',
         label: 'Special Discount',
         type: TYPE.COMBAT,
         effect: [
@@ -492,8 +492,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.COMBAT],
         tags: [TAGS.OTHER],
     },
-    F51: {
-        id: 'F51',
+    13: {
+        id: '13',
         label: 'Venomaster',
         type: TYPE.COMBAT,
         effect: [
@@ -510,8 +510,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.COMBAT],
         tags: [TAGS.DPS, TAGS.SURVIVABILITY],
     },
-    F41: {
-        id: 'F41',
+    14: {
+        id: '14',
         label: 'Slay All Day',
         type: TYPE.COMBAT,
         effect: ['Killing a slayer monster on task will heal you for ', ['1', '2', '3'], ' hitpoints.'],
@@ -519,8 +519,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.COMBAT, ACTIVITIES.SLAYER],
         tags: [TAGS.SURVIVABILITY],
     },
-    F45: {
-        id: 'F45',
+    15: {
+        id: '15',
         label: 'Superior Tracking',
         type: TYPE.COMBAT,
         effect: ['Superior slayer monsters will have a 1 in ', ['150', '100', '30'], ' chance of appearing.'],
@@ -528,8 +528,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.COMBAT, ACTIVITIES.SLAYER],
         tags: [TAGS.DROPS],
     },
-    F40: {
-        id: 'F40',
+    16: {
+        id: '16',
         label: "Slay 'n' Pay",
         type: TYPE.COMBAT,
         effect: ['Completing Slayer tasks will award ', ['10%', '20%', '50%'], ' more points.'],
@@ -537,8 +537,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.COMBAT, ACTIVITIES.SLAYER],
         tags: [TAGS.GOLD],
     },
-    F3: {
-        id: 'F3',
+    17: {
+        id: '17',
         label: 'Bandosian Might',
         type: TYPE.COMBAT,
         effect: [
@@ -550,8 +550,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.COMBAT],
         tags: [TAGS.DPS],
     },
-    F2: {
-        id: 'F2',
+    18: {
+        id: '18',
         label: 'Armadylean Decree',
         type: TYPE.COMBAT,
         effect: [
@@ -563,8 +563,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.RANGED],
         tags: [TAGS.SUCCESS],
     },
-    F52: {
-        id: 'F52',
+    19: {
+        id: '19',
         label: 'Zamorakian Sight',
         type: TYPE.COMBAT,
         effect: ['When wielding four Zamorak items, you have ', ['50%', '125%', '250%'], ' increased magic accuracy.'],
@@ -572,8 +572,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.MAGIC],
         tags: [TAGS.ACCURACY],
     },
-    F37: {
-        id: 'F37',
+    20: {
+        id: '20',
         label: 'Saradominist Defence',
         type: TYPE.COMBAT,
         effect: [
@@ -585,8 +585,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.COMBAT],
         tags: [TAGS.DPS],
     },
-    F8: {
-        id: 'F8',
+    21: {
+        id: '21',
         label: "Chef's Catch",
         type: TYPE.HARVEST,
         effect: [['20%', '35%', '50%'], ' chance that any fish caught is cooked, granting Cooking experience.'],
@@ -594,8 +594,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.FISHING, ACTIVITIES.COOKING],
         tags: [TAGS.AUTO],
     },
-    F6: {
-        id: 'F6',
+    22: {
+        id: '22',
         label: 'Catch Of The Day',
         type: TYPE.HARVEST,
         effect: ['All types of Fishing have a 1 in ', ['300', '200', '80'], ' chance to roll the rare drop table.'],
@@ -603,8 +603,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.FISHING],
         tags: [TAGS.OTHER],
     },
-    F43: {
-        id: 'F43',
+    23: {
+        id: '23',
         label: 'Smooth Criminal',
         type: TYPE.SKILLING,
         effect: [
@@ -620,8 +620,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.THIEVING],
         tags: [TAGS.SUCCESS],
     },
-    F11: {
-        id: 'F11',
+    24: {
+        id: '24',
         label: 'Deeper Pockets',
         type: TYPE.SKILLING,
         effect: [
@@ -632,8 +632,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.THIEVING],
         tags: [TAGS.OUTPUT],
     },
-    F39: {
-        id: 'F39',
+    25: {
+        id: '25',
         label: 'Slash & Burn',
         type: TYPE.HARVEST,
         effect: [['20%', '35%', '50%'], ' chance that chopped logs are burned, granting Firemaking experience.'],
@@ -641,8 +641,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.FIREMAKING, ACTIVITIES.WOODCUTTING],
         tags: [TAGS.AUTO],
     },
-    F18: {
-        id: 'F18',
+    26: {
+        id: '26',
         label: 'Homewrecker',
         type: TYPE.HARVEST,
         effect: [
@@ -654,8 +654,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.WOODCUTTING],
         tags: [TAGS.DROPS, TAGS.BANK],
     },
-    F19: {
-        id: 'F19',
+    27: {
+        id: '27',
         label: 'Hot On The Trail',
         type: TYPE.SKILLING,
         effect: ['Lighting fires gives a ', ['2%', '5%', '10%'], ' chance at receiving a clue scroll.'],
@@ -663,8 +663,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.FIREMAKING, ACTIVITIES.CLUES],
         tags: [TAGS.OTHER],
     },
-    F28: {
-        id: 'F28',
+    28: {
+        id: '28',
         label: 'Plank Stretcher',
         type: TYPE.PRODUCTION,
         effect: [['10%', '20%', '50%'], ' chance for all types of planks to not be consumed in Construction.'],
@@ -672,8 +672,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.CONSTRUCTION],
         tags: [TAGS.RESOURCES],
     },
-    F32: {
-        id: 'F32',
+    29: {
+        id: '29',
         label: 'Rock Solid',
         type: TYPE.HARVEST,
         effect: [['25%', '50%', '75%'], " chance that iron ore, sandstone and granite doesn't deplete."],
@@ -681,8 +681,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.MINING],
         tags: [TAGS.OTHER],
     },
-    F26: {
-        id: 'F26',
+    30: {
+        id: '30',
         label: 'Molten Miner',
         type: TYPE.HARVEST,
         effect: [
@@ -693,8 +693,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.MINING, ACTIVITIES.SMITHING],
         tags: [TAGS.AUTO],
     },
-    F42: {
-        id: 'F42',
+    31: {
+        id: '31',
         label: 'Smithing Double',
         type: TYPE.PRODUCTION,
         effect: [
@@ -706,8 +706,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.SMITHING],
         tags: [TAGS.OUTPUT, TAGS.EXP],
     },
-    F35: {
-        id: 'F35',
+    32: {
+        id: '32',
         label: 'Rumple-Bow-String',
         type: TYPE.PRODUCTION,
         effect: ['Spin Flax spell yields ', ['10', '15', '28'], ' bowstrings instead of 5.'],
@@ -715,8 +715,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.MAGIC, ACTIVITIES.CRAFTING],
         tags: [TAGS.OUTPUT],
     },
-    F14: {
-        id: 'F14',
+    33: {
+        id: '33',
         label: 'Dragon On A Bit',
         type: TYPE.PRODUCTION,
         effect: [
@@ -728,8 +728,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.CRAFTING],
         tags: [TAGS.RESOURCES],
     },
-    F20: {
-        id: 'F20',
+    34: {
+        id: '34',
         label: "Imcando's Apprentice",
         type: TYPE.PRODUCTION,
         effect: [
@@ -741,8 +741,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.CRAFTING],
         tags: [TAGS.OUTPUT, TAGS.EXP],
     },
-    F15: {
-        id: 'F15',
+    35: {
+        id: '35',
         label: 'Enchanted Jeweler',
         type: TYPE.SKILLING,
         effect: [
@@ -754,8 +754,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.MAGIC],
         tags: [TAGS.MULTI],
     },
-    F0: {
-        id: 'F0',
+    36: {
+        id: '36',
         label: 'Alchemaniac',
         type: TYPE.SKILLING,
         effect: ['High alchemy gives ', ['15%', '30%', '50%'], ' bonus gold.'],
@@ -763,8 +763,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.MAGIC],
         tags: [TAGS.GOLD],
     },
-    F31: {
-        id: 'F31',
+    37: {
+        id: '37',
         label: 'Profletchional',
         type: TYPE.PRODUCTION,
         effect: ['Experience from fletching and stringing bows are increased by ', ['30%', '50%', '100%'], '.'],
@@ -772,8 +772,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.FLETCHING],
         tags: [TAGS.EXP],
     },
-    F30: {
-        id: 'F30',
+    38: {
+        id: '38',
         label: 'Pro Tips',
         type: TYPE.PRODUCTION,
         effect: ["When fletching gems into tips, you'll receive ", ['30%', '50%', '100%'], ' more tips per gem.'],
@@ -781,8 +781,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.FLETCHING],
         tags: [TAGS.OUTPUT],
     },
-    F10: {
-        id: 'F10',
+    39: {
+        id: '39',
         label: 'Chinchonkers',
         type: TYPE.HARVEST,
         effect: [
@@ -795,8 +795,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.HUNTER],
         tags: [TAGS.OUTPUT, TAGS.EXP],
     },
-    F12: {
-        id: 'F12',
+    40: {
+        id: '40',
         label: 'Dine & Dash',
         type: TYPE.PRODUCTION,
         effect: [['10%', '20%', '50%'], ' chance you will get an extra cooked food.'],
@@ -804,8 +804,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.COOKING],
         tags: [TAGS.OUTPUT],
     },
-    F7: {
-        id: 'F7',
+    41: {
+        id: '41',
         label: 'Certified Farmer',
         type: TYPE.HARVEST,
         effect: [
@@ -817,8 +817,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.FARMING],
         tags: [TAGS.OUTPUT],
     },
-    F38: {
-        id: 'F38',
+    42: {
+        id: '42',
         label: 'Seedy Business',
         type: TYPE.HARVEST,
         effect: [['10%', '25%', '50%'], ' chance to save the seed after planting.'],
@@ -826,8 +826,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.FARMING],
         tags: [TAGS.RESOURCES],
     },
-    F25: {
-        id: 'F25',
+    43: {
+        id: '43',
         label: 'Mixologist',
         type: TYPE.PRODUCTION,
         effect: [
@@ -841,8 +841,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.HERBLORE],
         tags: [TAGS.RESOURCES],
     },
-    F21: {
-        id: 'F21',
+    44: {
+        id: '44',
         label: 'Just Druid!',
         type: TYPE.PRODUCTION,
         effect: ['Herblore experience from cleaning herbs is increased by ', ['10%', '20%', '40%'], '.'],
@@ -850,8 +850,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.HERBLORE],
         tags: [TAGS.EXP],
     },
-    F16: {
-        id: 'F16',
+    45: {
+        id: '45',
         label: 'Golden Brick Road',
         type: TYPE.SKILLING,
         effect: ['When a Mark of Grace is spawned, ', ['4,000', '7,000', '15,000'], ' coins will be spawned together.'],
@@ -859,8 +859,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.AGILITY],
         tags: [TAGS.GOLD],
     },
-    F17: {
-        id: 'F17',
+    46: {
+        id: '46',
         label: 'Grave Robber',
         type: TYPE.SKILLING,
         effect: ['The amount of hallowed marks received is increased by ', ['50%', '150%', '300%'], '.'],
@@ -868,8 +868,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.AGILITY],
         tags: [TAGS.DROPS],
     },
-    F34: {
-        id: 'F34',
+    47: {
+        id: '47',
         label: 'Rooty Tooty 2x Runeys',
         type: TYPE.PRODUCTION,
         effect: [
@@ -881,8 +881,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.RUNECRAFT],
         tags: [TAGS.OUTPUT],
     },
-    F36: {
-        id: 'F36',
+    48: {
+        id: '48',
         label: 'Rune Escape',
         type: TYPE.PRODUCTION,
         effect: [
@@ -894,8 +894,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.RUNECRAFT],
         tags: [TAGS.OTHER],
     },
-    F9: {
-        id: 'F9',
+    49: {
+        id: '49',
         label: 'Clued In',
         type: TYPE.OTHER,
         effect: ['NPCs that drop clue scrolls will have a 1 in ', ['30', '25', '15'], ' chance of dropping them.'],
@@ -903,8 +903,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.CLUES, ACTIVITIES.COMBAT],
         tags: [TAGS.DROPS],
     },
-    F24: {
-        id: 'F24',
+    50: {
+        id: '50',
         label: 'Message In A Bottle',
         type: TYPE.OTHER,
         effect: ['Clue geodes, nests and bottles are found ', ['3', '5', '10'], ' times more often.'],
@@ -912,8 +912,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.MINING, ACTIVITIES.WOODCUTTING, ACTIVITIES.FISHING, ACTIVITIES.CLUES],
         tags: [TAGS.DROPS],
     },
-    F4: {
-        id: 'F4',
+    51: {
+        id: '51',
         label: 'Barbarian Pest Wars',
         type: TYPE.OTHER,
         effect: [
@@ -925,8 +925,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.MINIGAMES],
         tags: [TAGS.GOLD],
     },
-    F33: {
-        id: 'F33',
+    52: {
+        id: '52',
         label: "Rogues' Chompy Farm",
         type: TYPE.OTHER,
         effect: [
@@ -942,8 +942,8 @@ export const FRAGMENTS = {
         affects: [ACTIVITIES.MINIGAMES, ACTIVITIES.THIEVING, ACTIVITIES.FARMING],
         tags: [TAGS.GOLD, TAGS.SUCCESS],
     },
-    F27: {
-        id: 'F27',
+    53: {
+        id: '53',
         label: "Mother's Magic Fossils",
         type: TYPE.OTHER,
         effect: [

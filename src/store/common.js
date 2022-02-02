@@ -3,7 +3,7 @@ import { load as loadSettingsState } from './settings';
 import { load as loadTasksState } from './tasks/tasks';
 import { load as loadUnlocksState } from './unlocks/unlocks';
 import { load as loadCharacterState } from './character/character';
-import { load as loadFragmentState } from './fragments';
+import { load as loadFragmentState } from './fragments/fragments';
 
 export default function loadNewState(dispatch, newState) {
     batch(() => {

@@ -1,10 +1,12 @@
 /* Redux toolkit middleware handles updates immutably, but eslint doesn't know that */
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
-import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
+import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorage-client';
+import { CURRENT_VERSION } from './constants';
+import updateFragmentsVersion from './updateFragmentsVersion';
 
 const INITIAL_STATE = {
-    version: 1,
+    version: CURRENT_VERSION,
     fragments: {},
 };
 
@@ -47,10 +49,10 @@ export const fragmentSlice = createSlice({
         },
         load: (state, action) => {
             const fallbackState = action.payload.forceOverwrite ? INITIAL_STATE : state;
-            return {
+            return updateFragmentsVersion({
                 ...fallbackState,
                 ...action.payload.newState,
-            };
+            });
         },
         reset: () => INITIAL_STATE,
     },
@@ -60,7 +62,7 @@ export function selectFragment(state, id) {
     return state.fragments.fragments[id] || { ...INITIAL_FRAGMENT_STATE };
 }
 
-export const loadState = () => getFromLocalStorage(LOCALSTORAGE_KEYS.FRAGMENTS, INITIAL_STATE);
+export const loadState = () => updateFragmentsVersion(getFromLocalStorage(LOCALSTORAGE_KEYS.FRAGMENTS, INITIAL_STATE));
 
 export const { setFragmentUnlocked, setFragmentLevel, toggleFragment, load, reset } = fragmentSlice.actions;
 
