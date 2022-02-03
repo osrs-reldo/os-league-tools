@@ -17,7 +17,7 @@ import SearchBox from './TableSearchBox';
 export default function Table({
     columns,
     data,
-    filters,
+    filters = [],
     filterState,
     globalFilter,
     defaultColumn,
@@ -29,8 +29,10 @@ export default function Table({
     const [records, setRecords] = useState(data);
 
     useEffect(() => {
-        if (filters.length > 0) {
+        if (filters.length) {
             setRecords(data.filter(record => filters.every(filter => filter(record, filterState, customFilterProps))));
+        } else {
+            setRecords(data);
         }
     }, [filterState, data, customFilterProps]);
 
@@ -117,7 +119,7 @@ export default function Table({
                                             index={index}
                                             row={row}
                                             moveRow={moveRow}
-                                            isReorderEnabled={filterState.reorderEnabled}
+                                            isReorderEnabled={filterState?.reorderEnabled}
                                             ExpandedRow={ExpandedRow}
                                             {...row.getRowProps()}
                                         />

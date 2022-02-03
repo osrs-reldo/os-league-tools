@@ -1825,6 +1825,10 @@ select[multiple]:focus option:checked {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1832,10 +1836,6 @@ select[multiple]:focus option:checked {
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 .my-auto {
   margin-top: auto;
@@ -2071,6 +2071,9 @@ select[multiple]:focus option:checked {
 .grow {
   flex-grow: 1;
 }
+.basis-3\/4 {
+  flex-basis: 75%;
+}
 .basis-\[23\%\] {
   flex-basis: 23%;
 }
@@ -2079,9 +2082,6 @@ select[multiple]:focus option:checked {
 }
 .basis-full {
   flex-basis: 100%;
-}
-.basis-3\/4 {
-  flex-basis: 75%;
 }
 .origin-center {
   transform-origin: center;

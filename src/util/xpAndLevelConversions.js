@@ -10,15 +10,10 @@ export function levelToExperience(level) {
 
 export function experienceToLevel(experience) {
     let level = 0;
-
-    if (experience > LEVEL_99_XP) {
-        level = 99;
-    } else {
-        for (let i = 1; i <= 99; i++) {
-            if (levelToExperience(i + 1) > experience) {
-                level = i;
-                break;
-            }
+    for (let i = 1; i <= 126; i++) {
+        if (levelToExperience(i + 1) > experience) {
+            level = i;
+            break;
         }
     }
 

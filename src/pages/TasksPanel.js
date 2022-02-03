@@ -8,7 +8,7 @@ import TaskTable from '../components/TaskTable';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import { PASSIVE_RELICS } from '../data/constants';
 import calculateTaskStats from '../util/calculateTaskStats';
-import getTier from '../util/getTier';
+import { getTier } from '../util/getTier';
 
 export default function TasksPanel() {
     const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.LESS_OR_EQ);

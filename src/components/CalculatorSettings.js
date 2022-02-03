@@ -6,6 +6,7 @@ import {
     updateCalculatorsSkill,
     updateSingleCalculatorsExpValue,
     updateCalculatorsMode,
+    reset,
 } from '../store/calculators/calculators';
 import numberWithCommas from '../util/helpers';
 import { experienceToLevel, levelToExperience } from '../util/xpAndLevelConversions';
@@ -29,13 +30,15 @@ export default function CalculatorSettings() {
 
     useEffect(() => {
         if (hiscoresForSelectedSkill) {
-            const { xp, level } = hiscoresForSelectedSkill;
+            const { xp } = hiscoresForSelectedSkill;
+            const nextLevel = experienceToLevel(xp) + 1;
+            const nextLevelExp = levelToExperience(nextLevel);
             dispatch(
                 updateCalculatorsExpValues({
-                    start: { xp, level, mode: expValues.start.mode },
+                    start: { xp, level: experienceToLevel(xp), mode: expValues.start.mode },
                     target: {
-                        xp: levelToExperience(level + 1),
-                        level: level + 1,
+                        xp: nextLevelExp,
+                        level: nextLevel,
                         mode: expValues.target.mode,
                     },
                 })
@@ -122,6 +125,11 @@ export default function CalculatorSettings() {
                     ? `XP required: ${numberWithCommas(xpRequired)}`
                     : 'Start experience must be lower than end'}
             </p>
+
+            {/* TODO: Add override xp modifiers and relic effects */}
+            <button className='button-outline w-full mt-4' type='button' onClick={() => dispatch(reset())}>
+                Reset calculator
+            </button>
         </>
     );
 }
