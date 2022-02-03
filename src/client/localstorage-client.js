@@ -6,6 +6,7 @@ export const LOCALSTORAGE_KEYS = {
     UNLOCKS: 'unlocks',
     CHARACTER: 'character',
     FRAGMENTS: 'fragments',
+    CALCULATORS: 'calculators',
 };
 
 export const SESSIONSTORAGE_KEYS = {};

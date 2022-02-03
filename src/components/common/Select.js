@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function Select({ className, defaultSelected, onSelect, options = [], ...rest }) {
-    const [selected, setSelected] = useState(defaultSelected || options[0]);
+    const [selected, setSelected] = useState(options.find(option => option.value === defaultSelected) || options[0]);
     const [selectOpen, setSelectOpen] = useState(false);
 
     const toggleDropdown = () => setSelectOpen(!selectOpen);
