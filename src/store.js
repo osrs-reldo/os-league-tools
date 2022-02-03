@@ -8,6 +8,7 @@ import tasksReducer, { loadState as loadTasksState } from './store/tasks/tasks';
 import unlocksReducer, { loadState as loadUnlocksState } from './store/unlocks/unlocks';
 import characterReducer, { loadState as loadCharacterState } from './store/character/character';
 import fragmentReducer, { loadState as loadFragmentState } from './store/fragments';
+import calculatorsReducer, { loadState as loadCalculatorsState } from './store/calculators/calculators';
 
 const reducer = {
     filters: filterReducer,
@@ -16,6 +17,7 @@ const reducer = {
     unlocks: unlocksReducer,
     character: characterReducer,
     fragments: fragmentReducer,
+    calculators: calculatorsReducer,
 };
 
 const preloadedState = {
@@ -25,6 +27,7 @@ const preloadedState = {
     unlocks: loadUnlocksState(),
     character: loadCharacterState(),
     fragments: loadFragmentState(),
+    calculators: loadCalculatorsState(),
 };
 
 const store = configureStore({
@@ -41,6 +44,7 @@ store.subscribe(
         updateLocalStorage(LOCALSTORAGE_KEYS.UNLOCKS, store.getState().unlocks);
         updateLocalStorage(LOCALSTORAGE_KEYS.CHARACTER, store.getState().character);
         updateLocalStorage(LOCALSTORAGE_KEYS.FRAGMENTS, store.getState().fragments);
+        updateLocalStorage(LOCALSTORAGE_KEYS.CALCULATORS, store.getState().calculators);
     }, 200)
 );
 
