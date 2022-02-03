@@ -7,7 +7,7 @@ import Separator from '../components/common/Separator';
 import { ThemedProgressBar } from '../components/ThemeProvider';
 import calculateTaskStats from '../util/calculateTaskStats';
 import { DIFFICULTY, PASSIVE_RELICS } from '../data/constants';
-import getTier from '../util/getTier';
+import { getTier } from '../util/getTier';
 import images from '../assets/images';
 
 export default function CharacterPanel() {
