@@ -32,6 +32,7 @@ export const characterSlice = createSlice({
                     break;
                 case 'SUCCESS':
                     state.hiscoresCache.data = action.payload.value;
+                    state.hiscoresCache.error = null;
                     state.hiscoresCache.lastUpdated = Date.now();
                     state.hiscoresCache.loading = false;
                     break;
