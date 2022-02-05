@@ -6,8 +6,9 @@ import filterReducer, { loadState as loadFilterState } from './store/filters';
 import settingsReducer, { loadState as loadSettingsState } from './store/settings';
 import tasksReducer, { loadState as loadTasksState } from './store/tasks/tasks';
 import unlocksReducer, { loadState as loadUnlocksState } from './store/unlocks/unlocks';
-import characterReducer, { loadState as loadCharacterState } from './store/character/character';
+import characterReducer, { loadState as loadCharacterState } from './store/user/character';
 import fragmentReducer, { loadState as loadFragmentState } from './store/fragments/fragments';
+import accountReducer, { loadState as loadAccountState } from './store/user/account';
 
 const reducer = {
     filters: filterReducer,
@@ -16,6 +17,7 @@ const reducer = {
     unlocks: unlocksReducer,
     character: characterReducer,
     fragments: fragmentReducer,
+    account: accountReducer,
 };
 
 const preloadedState = {
@@ -25,6 +27,7 @@ const preloadedState = {
     unlocks: loadUnlocksState(),
     character: loadCharacterState(),
     fragments: loadFragmentState(),
+    account: loadAccountState(),
 };
 
 const store = configureStore({

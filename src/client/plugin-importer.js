@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 
 import _ from 'lodash';
-import { updateUsername } from '../store/character/character';
+import { updateUsername } from '../store/user/character';
 import { INITIAL_TASK_STATE } from '../store/tasks/constants';
 import { load as loadTaskState } from '../store/tasks/tasks';
 import { load as loadUnlocksState } from '../store/unlocks/unlocks';

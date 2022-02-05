@@ -1,11 +1,11 @@
 import React from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
 import Spinner from './common/Spinner';
+import useAccount from '../hooks/useAccount';
 
 export default function AuthButton({ useDropdownVariant = false }) {
-    const { isLoading, isAuthenticated, loginWithRedirect, logout } = useAuth0();
+    const { isLoggedIn, isAuthenticating, login, logout } = useAccount({ redirectReturnToUrl: window.location.origin });
 
-    if (isLoading) {
+    if (isAuthenticating) {
         return (
             <>
                 <Spinner color='black' size={Spinner.SIZE.sm} />
@@ -14,9 +14,9 @@ export default function AuthButton({ useDropdownVariant = false }) {
         );
     }
 
-    const label = isAuthenticated ? 'Logout' : 'Login';
-    const icon = isAuthenticated ? 'logout' : 'login';
-    const action = isAuthenticated ? () => logout({ returnTo: window.location.origin }) : () => loginWithRedirect();
+    const label = isLoggedIn ? 'Logout' : 'Login';
+    const icon = isLoggedIn ? 'logout' : 'login';
+    const action = isLoggedIn ? () => logout() : () => login();
 
     if (useDropdownVariant) {
         return (

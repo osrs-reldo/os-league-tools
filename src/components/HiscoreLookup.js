@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchHiscores, updateUsername } from '../store/character/character';
+import { fetchHiscores, updateUsername } from '../store/user/character';
 import Spinner from './common/Spinner';
 
 export default function HiscoreLookup() {
