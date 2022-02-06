@@ -1803,14 +1803,14 @@ select[multiple]:focus option:checked {
   margin-top: auto;
   margin-bottom: auto;
 }
-.ml-1 {
-  margin-left: 0.25rem;
+.mt-4 {
+  margin-top: 1rem;
 }
 .mr-1 {
   margin-right: 0.25rem;
 }
-.mt-4 {
-  margin-top: 1rem;
+.ml-1 {
+  margin-left: 0.25rem;
 }
 .ml-2 {
   margin-left: 0.5rem;
@@ -1893,9 +1893,6 @@ select[multiple]:focus option:checked {
 .hidden {
   display: none;
 }
-.h-4 {
-  height: 1rem;
-}
 .h-full {
   height: 100%;
 }
@@ -1911,6 +1908,9 @@ select[multiple]:focus option:checked {
 }
 .h-10 {
   height: 2.5rem;
+}
+.h-4 {
+  height: 1rem;
 }
 .h-6 {
   height: 1.5rem;
@@ -2268,14 +2268,6 @@ select[multiple]:focus option:checked {
 .p-8 {
   padding: 2rem;
 }
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2284,6 +2276,14 @@ select[multiple]:focus option:checked {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2291,9 +2291,6 @@ select[multiple]:focus option:checked {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-.pl-1 {
-  padding-left: 0.25rem;
 }
 .pl-2 {
   padding-left: 0.5rem;
@@ -2306,6 +2303,9 @@ select[multiple]:focus option:checked {
 }
 .pl-4 {
   padding-left: 1rem;
+}
+.pl-1 {
+  padding-left: 0.25rem;
 }
 .pb-3 {
   padding-bottom: 0.75rem;
@@ -2346,10 +2346,6 @@ select[multiple]:focus option:checked {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2357,6 +2353,10 @@ select[multiple]:focus option:checked {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .text-3xl {
   font-size: 1.875rem;
@@ -2371,11 +2371,11 @@ select[multiple]:focus option:checked {
 .italic {
   font-style: italic;
 }
-.leading-tight {
-  line-height: 1.25;
-}
 .leading-3 {
   line-height: .75rem;
+}
+.leading-tight {
+  line-height: 1.25;
 }
 .leading-loose {
   line-height: 2;
