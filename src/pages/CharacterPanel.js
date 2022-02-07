@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import HiscoreLookup from '../components/HiscoreLookup';
 import SkillsPanel from '../components/SkillsPanel';
 import BossesPanel from '../components/BossesPanel';
 import Separator from '../components/common/Separator';
@@ -9,16 +8,39 @@ import calculateTaskStats from '../util/calculateTaskStats';
 import { DIFFICULTY, PASSIVE_RELICS } from '../data/constants';
 import getTier from '../util/getTier';
 import images from '../assets/images';
+import ManageCharactersModal from '../components/ManageCharactersModal';
 
 export default function CharacterPanel() {
+    const [isCharacterModalOpen, setCharacterModalOpen] = useState(false);
+    const username = useSelector(state => state.character.username);
     const tasksState = useSelector(state => state.tasks.tasks);
     const taskStats = calculateTaskStats(tasksState);
     const tier = getTier(taskStats.points.complete.total);
 
+    if (!username) {
+        return (
+            <div>
+                <ManageCharactersModal isOpen={isCharacterModalOpen} setIsOpen={val => setCharacterModalOpen(val)} />
+                <p className='text-accent text-center small-caps text-2xl'>No character found</p>
+                <p className='font-semibold text-center'>
+                    To use the character tracker,{' '}
+                    <button
+                        className='text-accent hover:underline'
+                        type='button'
+                        onClick={() => setCharacterModalOpen(true)}
+                    >
+                        set your username
+                    </button>
+                    !
+                </p>
+            </div>
+        );
+    }
+
     return (
         <div className='flex md:flex-row flex-col lg:flex-nowrap flex-wrap justify-around w-full items-stretch md:gap-1 gap-3'>
-            <div className='lg:basis-1/4 basis-2/5 flex flex-col items-center gap-3 order-3 lg:order-1'>
-                <HiscoreLookup />
+            <div className='lg:basis-1/4 basis-2/5 flex flex-col h-full items-center gap-3 order-3 lg:order-1'>
+                <p className='text-accent text-lg font-mono uppercase tracking-widest'>{username}</p>
                 <SkillsPanel />
             </div>
             <Separator variant='vertical' breakpoint='lg' className='order-2' />

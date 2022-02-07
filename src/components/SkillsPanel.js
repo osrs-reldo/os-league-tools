@@ -7,7 +7,7 @@ import calculateCombatLevel from '../util/calculateCombatLevel';
 import calculateQuestStats from '../util/calculateQuestStats';
 import { DEFAULT_UNLOCKED_SKILLS } from '../store/unlocks/constants';
 import { CLUE_TIERS } from '../data/constants';
-import numberWithCommas from '../util/helpers';
+import { numberWithCommas } from '../util/numberFormatters';
 import images from '../assets/images';
 import Separator from './common/Separator';
 

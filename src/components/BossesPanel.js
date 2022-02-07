@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import ReactTooltip from 'react-tooltip';
 import { lockBoss, unlockBoss } from '../store/unlocks/unlocks';
 import { BOSSES } from '../data/constants';
-import numberWithCommas from '../util/helpers';
+import { numberWithCommas } from '../util/numberFormatters';
 
 export default function BossesPanel() {
     const [selectedBoss, setSelectedBoss] = useState(null);

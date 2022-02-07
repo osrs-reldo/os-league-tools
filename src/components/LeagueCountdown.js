@@ -1,34 +1,18 @@
 import React, { useState, useEffect } from 'react';
+import { durationAsCountdown } from '../util/numberFormatters';
 import Card from './common/Card';
 
 const LAUNCH_DATE = new Date('2022-01-19T12:00:00+00:00');
 const END_DATE = new Date('2022-03-16T12:00:00+00:00');
 
-const SECOND = 1000;
-const MINUTE = SECOND * 60;
-const HOUR = MINUTE * 60;
-const DAY = HOUR * 24;
-
-function getTimeRemaining(endDate, startDate = new Date()) {
-    const remainingTime = endDate - startDate;
-    if (remainingTime < 0) {
-        return null;
-    }
-    const days = Math.floor(remainingTime / DAY);
-    const hours = Math.floor((remainingTime % DAY) / HOUR);
-    const minutes = Math.floor((remainingTime % HOUR) / MINUTE);
-    const seconds = Math.floor((remainingTime % MINUTE) / SECOND);
-    return `${days}d:${hours}h:${minutes}m:${seconds}s`;
-}
-
 export default function LeagueCountdown() {
-    const [launchCountdown, setLaunchCountdown] = useState(getTimeRemaining(LAUNCH_DATE));
-    const [endCountdown, setEndCountdown] = useState(getTimeRemaining(END_DATE));
+    const [launchCountdown, setLaunchCountdown] = useState(durationAsCountdown(LAUNCH_DATE));
+    const [endCountdown, setEndCountdown] = useState(durationAsCountdown(END_DATE));
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setLaunchCountdown(getTimeRemaining(LAUNCH_DATE));
-            setEndCountdown(getTimeRemaining(END_DATE));
+            setLaunchCountdown(durationAsCountdown(LAUNCH_DATE));
+            setEndCountdown(durationAsCountdown(END_DATE));
         }, 1000);
         return () => clearTimeout(timer);
     });
