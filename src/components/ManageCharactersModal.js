@@ -19,12 +19,19 @@ export default function ManageCharactersModal({ isOpen, setIsOpen }) {
     const characterState = useSelector(state => state.character);
     const [characterText, setCharacterText] = useState(characterState.username || '');
     const dispatch = useDispatch();
+
     const updateAndFetchHiscores = () => {
         batch(() => {
             dispatch(updateUsername(characterText));
-            dispatch(fetchHiscores(characterState));
+            dispatch(
+                fetchHiscores({
+                    ...characterState,
+                    username: characterText,
+                })
+            );
         });
     };
+
     const prompt = characterState.username
         ? 'If your display name has changed, update it below.'
         : "Enter your character's display name to automatically load your stats from hiscores:";
@@ -43,20 +50,16 @@ export default function ManageCharactersModal({ isOpen, setIsOpen }) {
                 <div className='m-2 mt-1'>{prompt}</div>
                 <div className='m-2 mt-1 flex justify-around'>
                     <input
-                        type='text'
                         className='input-primary text-sm form-input w-40 ml-2'
-                        placeholder={PLACEHOLDER_USERNAMES[Math.floor(Math.random() * PLACEHOLDER_USERNAMES.length)]}
-                        value={characterText || ''}
                         onChange={e => {
                             setCharacterText(e.target.value);
                         }}
-                    />
-                    <button
-                        className='w-40 button-filled'
-                        type='button'
-                        onClick={updateAndFetchHiscores}
+                        placeholder={PLACEHOLDER_USERNAMES[Math.floor(Math.random() * PLACEHOLDER_USERNAMES.length)]}
+                        value={characterText}
                         onKeyPress={e => e.key === 'Enter' && updateAndFetchHiscores()}
-                    >
+                        type='text'
+                    />
+                    <button className='w-40 button-filled' type='button' onClick={updateAndFetchHiscores}>
                         {characterState.hiscoresCache.loading ? (
                             <span>
                                 <Spinner />
