@@ -28,21 +28,24 @@ export default function CalculatorSettings() {
     const { skills } = character.hiscoresCache?.data || {};
     const hiscoresForSelectedSkill = skills && skills[selectedSkill.toLowerCase()];
 
+    const getValuesFromHiscores = hiscores => {
+        const { xp } = hiscores;
+        const nextLevel = experienceToLevel(xp) + 1;
+        const nextLevelExp = levelToExperience(nextLevel);
+        return {
+            start: { xp, level: experienceToLevel(xp), mode: expValues.start.mode },
+            target: {
+                xp: nextLevelExp,
+                level: nextLevel,
+                mode: expValues.target.mode,
+            },
+        };
+    };
+
     useEffect(() => {
         if (hiscoresForSelectedSkill) {
-            const { xp } = hiscoresForSelectedSkill;
-            const nextLevel = experienceToLevel(xp) + 1;
-            const nextLevelExp = levelToExperience(nextLevel);
-            dispatch(
-                updateCalculatorsExpValues({
-                    start: { xp, level: experienceToLevel(xp), mode: expValues.start.mode },
-                    target: {
-                        xp: nextLevelExp,
-                        level: nextLevel,
-                        mode: expValues.target.mode,
-                    },
-                })
-            );
+            const calculatorValues = getValuesFromHiscores(hiscoresForSelectedSkill);
+            dispatch(updateCalculatorsExpValues(calculatorValues));
         }
     }, [hiscoresForSelectedSkill]);
 
@@ -65,6 +68,15 @@ export default function CalculatorSettings() {
                 level: expValues[type].mode === 'xp' ? experienceToLevel(value) : value,
             })
         );
+    };
+
+    const resetCalculator = () => {
+        if (hiscoresForSelectedSkill) {
+            const hiscoreValues = getValuesFromHiscores(hiscoresForSelectedSkill);
+            dispatch(updateCalculatorsExpValues(hiscoreValues));
+        } else {
+            dispatch(reset());
+        }
     };
 
     const xpRequired = expValues.target.xp - expValues.start.xp;
@@ -127,7 +139,7 @@ export default function CalculatorSettings() {
             </p>
 
             {/* TODO: Add override xp modifiers and relic effects */}
-            <button className='button-outline w-full mt-4' type='button' onClick={() => dispatch(reset())}>
+            <button className='button-outline w-full mt-4' type='button' onClick={resetCalculator}>
                 Reset calculator
             </button>
         </>
