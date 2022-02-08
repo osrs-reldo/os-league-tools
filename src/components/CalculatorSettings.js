@@ -14,6 +14,8 @@ import { experienceToLevel, levelToExperience } from '../util/xpAndLevelConversi
 import { STATS } from '../data/constants';
 import calculatorData from '../data/calculatorData.json';
 import ButtonGroup from './common/ButtonGroup';
+import { fetchHiscores } from '../store/user/character';
+import Spinner from './common/Spinner';
 
 const calculatorSkills = calculatorData.skills.map(skillName => ({
     ...STATS[skillName],
@@ -160,9 +162,26 @@ export default function CalculatorSettings() {
                     ? `XP required: ${numberWithCommas(xpRequired)}`
                     : 'Start experience must be lower than end'}
             </p>
-            {/* TODO: Add override xp modifiers and relic effects */}
+
+            {/* TODO
+                - Fragment/Set effect overrides
+            */}
+
             <button className='button-outline w-full mt-4' type='button' onClick={resetCalculator}>
-                Reset calculator
+                <span className='icon-base align-bottom'>refresh</span> Reset
+            </button>
+            <button
+                className='button-outline w-full mt-2'
+                type='button'
+                onClick={() => dispatch(fetchHiscores(character, true))}
+            >
+                {character.hiscoresCache.loading ? (
+                    <Spinner size={Spinner.SIZE.sm} invertColorForDarkMode={false} />
+                ) : (
+                    <p>
+                        <span className='icon-base align-bottom'>cached</span> Update hiscores
+                    </p>
+                )}
             </button>
         </>
     );
