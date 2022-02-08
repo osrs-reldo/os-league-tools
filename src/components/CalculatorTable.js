@@ -7,22 +7,21 @@ import Table from './common/Table';
 
 export default function CalculatorTable() {
     const {
-        calculators,
-        tasks: { tier },
+        calculators: { skill, expValues, calculatorTier },
     } = useSelector(state => ({ calculators: state.calculators, tasks: state.tasks }));
 
     // TODO: Add override in CalculatorSettings + hoist users tier info into Redux for global use
-    const expMultiplier = getExpMultiplier(tier);
+    const expMultiplier = getExpMultiplier(calculatorTier);
 
-    const RAW_DATA = CALCULATOR_DATA.calculators[calculators?.skill.toLowerCase()].actions;
-    const expRequired = calculators.expValues.target.xp - calculators.expValues.start.xp;
+    const RAW_DATA = CALCULATOR_DATA.calculators[skill.toLowerCase()].actions;
+    const expRequired = expValues.target.xp - expValues.start.xp;
     const calculatedData = RAW_DATA.map(activity => ({
         ...activity,
         exp: activity.exp * expMultiplier,
         expActions: Math.ceil(expRequired / (activity.exp * expMultiplier)),
     }));
 
-    const data = useMemo(() => calculatedData, [calculators]);
+    const data = useMemo(() => calculatedData, [skill, expValues, calculatorTier]);
 
     const columns = useMemo(
         () => [

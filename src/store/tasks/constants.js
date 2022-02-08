@@ -1,3 +1,5 @@
+import calculateTaskStats from '../../util/calculateTaskStats';
+
 export const CURRENT_VERSION = 7;
 
 export const INITIAL_STATE = {
@@ -5,7 +7,7 @@ export const INITIAL_STATE = {
     randomTaskId: null,
     rsn: null,
     tasks: {},
-    taskStats: {},
+    taskStats: calculateTaskStats({}),
     tier: 1,
 };
 

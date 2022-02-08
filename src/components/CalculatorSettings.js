@@ -6,12 +6,14 @@ import {
     updateCalculatorsSkill,
     updateSingleCalculatorsExpValue,
     updateCalculatorsMode,
+    updateCalculatorsTier,
     DEFAULT_CALCULATOR_EXP_VALUES,
 } from '../store/calculators/calculators';
 import { numberWithCommas } from '../util/numberFormatters';
 import { experienceToLevel, levelToExperience } from '../util/xpAndLevelConversions';
 import { STATS } from '../data/constants';
 import calculatorData from '../data/calculatorData.json';
+import ButtonGroup from './common/ButtonGroup';
 
 const calculatorSkills = calculatorData.skills.map(skillName => ({
     ...STATS[skillName],
@@ -19,12 +21,17 @@ const calculatorSkills = calculatorData.skills.map(skillName => ({
 }));
 
 export default function CalculatorSettings() {
-    const { calculators, character } = useSelector(state => ({
+    const {
+        calculators,
+        character,
+        tasks: { tier },
+    } = useSelector(state => ({
         calculators: state.calculators,
         character: state.character,
+        tasks: state.tasks,
     }));
     const dispatch = useDispatch();
-    const { skill: selectedSkill, expValues } = calculators;
+    const { skill: selectedSkill, expValues, calculatorTier } = calculators;
     const { skills } = character.hiscoresCache?.data || {};
     const hiscoresForSelectedSkill = skills && skills[selectedSkill.toLowerCase()];
 
@@ -41,6 +48,8 @@ export default function CalculatorSettings() {
             },
         };
     };
+
+    useEffect(() => dispatch(updateCalculatorsTier(tier)), []);
 
     useEffect(() => {
         if (hiscoresForSelectedSkill) {
@@ -85,14 +94,27 @@ export default function CalculatorSettings() {
 
     return (
         <>
-            <h3 className='heading-accent-md'>Skill</h3>
+            <h3 className='heading-accent-md'>Tier</h3>
+            <ButtonGroup
+                buttons={[
+                    { value: 1, label: '1' },
+                    { value: 2, label: '2' },
+                    { value: 3, label: '3' },
+                    { value: 4, label: '4' },
+                    { value: 5, label: '5' },
+                    { value: 6, label: '6' },
+                    { value: 7, label: '7' },
+                ]}
+                selection={calculatorTier}
+                setSelection={val => dispatch(updateCalculatorsTier(val))}
+            />
+            <h3 className='heading-accent-md mt-4'>Skill</h3>
             <Select
                 className='w-full'
                 onSelect={e => dispatch(updateCalculatorsSkill({ skill: e.value }))}
                 options={calculatorSkills}
                 value={selectedSkill}
             />
-
             <h3 className='heading-accent-md mt-4'>Experience</h3>
             <div className='grid grid-cols-2 gap-4'>
                 <div>
@@ -138,7 +160,6 @@ export default function CalculatorSettings() {
                     ? `XP required: ${numberWithCommas(xpRequired)}`
                     : 'Start experience must be lower than end'}
             </p>
-
             {/* TODO: Add override xp modifiers and relic effects */}
             <button className='button-outline w-full mt-4' type='button' onClick={resetCalculator}>
                 Reset calculator

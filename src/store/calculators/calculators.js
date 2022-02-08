@@ -23,6 +23,7 @@ export const DEFAULT_CALCULATOR_EXP_VALUES = Object.freeze({
 const INITIAL_STATE = {
     skill: calculatorData.skills[0],
     expValues: DEFAULT_CALCULATOR_EXP_VALUES,
+    calculatorTier: 1,
 };
 
 const calculatorsSlice = createSlice({
@@ -53,6 +54,9 @@ const calculatorsSlice = createSlice({
             const { mode, type } = action.payload;
             state.expValues[type].mode = mode;
         },
+        updateCalculatorsTier: (state, action) => {
+            state.calculatorTier = action.payload;
+        },
         reset: () => INITIAL_STATE,
     },
 });
@@ -71,6 +75,7 @@ export const {
     updateCalculatorsExpValues,
     updateSingleCalculatorsExpValue,
     updateCalculatorsMode,
+    updateCalculatorsTier,
     reset,
 } = calculatorsSlice.actions;
 
