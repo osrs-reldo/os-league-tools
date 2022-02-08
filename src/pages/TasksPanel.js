@@ -7,16 +7,12 @@ import TaskGenerator from '../components/TaskGenerator';
 import TaskTable from '../components/TaskTable';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import { PASSIVE_RELICS } from '../data/constants';
-import calculateTaskStats from '../util/calculateTaskStats';
-import { getTier } from '../util/getTier';
 
 export default function TasksPanel() {
     const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.LESS_OR_EQ);
     const isXlViewport = useBreakpoint(MEDIA_QUERIES.XL);
     const [showSidebar, setShowSidebar] = useState(isXlViewport);
-    const tasksState = useSelector(state => state.tasks.tasks);
-    const taskStats = calculateTaskStats(tasksState);
-    const tier = getTier(taskStats.points.complete.total);
+    const { taskStats, tier } = useSelector(state => state.tasks);
 
     return (
         <div className='h-full'>

@@ -1,4 +1,6 @@
 import { deleteFromLocalStorage } from '../../client/localstorage-client';
+import calculateTaskStats from '../../util/calculateTaskStats';
+import { getTier } from '../../util/getTier';
 import { CURRENT_VERSION, INITIAL_STATE, LEGACY_TO_INTERNAL_IDS } from './constants';
 
 const SHATTERED_RELICS_MIN_VERSION = 4;
@@ -7,6 +9,7 @@ const versionUpdaters = {
     4: updateToV4,
     5: updateToV5,
     6: updateToV6,
+    7: updateToV7,
 };
 
 export default function updateTasksVersion(taskState) {
@@ -76,5 +79,14 @@ function updateToV6(state) {
         ...state,
         tasks: newTaskMapping,
         version: 6,
+    };
+}
+
+function updateToV7(state) {
+    const taskStats = calculateTaskStats(state.tasks);
+    return {
+        ...state,
+        taskStats,
+        tier: getTier(taskStats.points.complete.total),
     };
 }

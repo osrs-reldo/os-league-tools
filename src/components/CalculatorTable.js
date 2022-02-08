@@ -1,20 +1,18 @@
 import React, { useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import CALCULATOR_DATA from '../data/calculatorData.json';
-import { getTier, getExpMultiplier } from '../util/getTier';
-import calculateTaskStats from '../util/calculateTaskStats';
+import { getExpMultiplier } from '../util/getTier';
 import { numberWithCommas } from '../util/numberFormatters';
 import Table from './common/Table';
 
 export default function CalculatorTable() {
     const {
         calculators,
-        tasks: { tasks: tasksState },
+        tasks: { tier },
     } = useSelector(state => ({ calculators: state.calculators, tasks: state.tasks }));
 
     // TODO: Add override in CalculatorSettings + hoist users tier info into Redux for global use
-    const taskStats = calculateTaskStats(tasksState);
-    const expMultiplier = getExpMultiplier(getTier(taskStats.points.complete.total));
+    const expMultiplier = getExpMultiplier(tier);
 
     const RAW_DATA = CALCULATOR_DATA.calculators[calculators?.skill.toLowerCase()].actions;
     const expRequired = calculators.expValues.target.xp - calculators.expValues.start.xp;

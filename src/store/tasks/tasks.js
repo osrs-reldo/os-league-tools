@@ -2,6 +2,8 @@
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorage-client';
+import calculateTaskStats from '../../util/calculateTaskStats';
+import { getTier } from '../../util/getTier';
 import { INITIAL_STATE, INITIAL_TASK_STATE } from './constants';
 import updateTasksVersion from './updateTasksVersion';
 
@@ -33,6 +35,8 @@ export const taskSlice = createSlice({
             state.tasks[action.payload.taskId].completed = newVal;
             state.tasks[action.payload.taskId].todo = null;
             state.tasks[action.payload.taskId].lastUpdated = Date.now();
+            state.taskStats = calculateTaskStats(state.tasks);
+            state.tier = getTier(state.taskStats.points.complete.total);
         },
         updateNotes: (state, action) => {
             const newNotesValue = action.payload.notes || null;

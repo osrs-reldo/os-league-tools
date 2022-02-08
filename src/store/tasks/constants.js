@@ -1,9 +1,12 @@
-export const CURRENT_VERSION = 6;
+export const CURRENT_VERSION = 7;
+
 export const INITIAL_STATE = {
     version: CURRENT_VERSION,
     randomTaskId: null,
     rsn: null,
     tasks: {},
+    taskStats: {},
+    tier: 1,
 };
 
 export const INITIAL_TASK_STATE = {

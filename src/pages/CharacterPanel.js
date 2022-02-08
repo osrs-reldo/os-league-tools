@@ -4,18 +4,14 @@ import SkillsPanel from '../components/SkillsPanel';
 import BossesPanel from '../components/BossesPanel';
 import Separator from '../components/common/Separator';
 import { ThemedProgressBar } from '../components/ThemeProvider';
-import calculateTaskStats from '../util/calculateTaskStats';
 import { DIFFICULTY, PASSIVE_RELICS } from '../data/constants';
-import { getTier } from '../util/getTier';
 import images from '../assets/images';
 import ManageCharactersModal from '../components/ManageCharactersModal';
 
 export default function CharacterPanel() {
     const [isCharacterModalOpen, setCharacterModalOpen] = useState(false);
     const username = useSelector(state => state.character.username);
-    const tasksState = useSelector(state => state.tasks.tasks);
-    const taskStats = calculateTaskStats(tasksState);
-    const tier = getTier(taskStats.points.complete.total);
+    const { taskStats, tier } = useSelector(state => state.tasks);
 
     if (!username) {
         return (
