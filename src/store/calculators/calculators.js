@@ -7,20 +7,22 @@ import { levelToExperience } from '../../util/xpAndLevelConversions';
 
 const CURRENT_VERSION = 1;
 
+export const DEFAULT_CALCULATOR_EXP_VALUES = Object.freeze({
+    start: {
+        level: 1,
+        xp: levelToExperience(1),
+        mode: 'xp',
+    },
+    target: {
+        level: 2,
+        xp: levelToExperience(2),
+        mode: 'level',
+    },
+});
+
 const INITIAL_STATE = {
     skill: calculatorData.skills[0],
-    expValues: {
-        start: {
-            level: 1,
-            xp: levelToExperience(1),
-            mode: 'xp',
-        },
-        target: {
-            level: 2,
-            xp: levelToExperience(2),
-            mode: 'level',
-        },
-    },
+    expValues: DEFAULT_CALCULATOR_EXP_VALUES,
 };
 
 const calculatorsSlice = createSlice({

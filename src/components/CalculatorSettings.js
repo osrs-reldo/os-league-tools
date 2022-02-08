@@ -6,7 +6,7 @@ import {
     updateCalculatorsSkill,
     updateSingleCalculatorsExpValue,
     updateCalculatorsMode,
-    reset,
+    DEFAULT_CALCULATOR_EXP_VALUES,
 } from '../store/calculators/calculators';
 import { numberWithCommas } from '../util/numberFormatters';
 import { experienceToLevel, levelToExperience } from '../util/xpAndLevelConversions';
@@ -71,12 +71,13 @@ export default function CalculatorSettings() {
     };
 
     const resetCalculator = () => {
-        if (hiscoresForSelectedSkill) {
-            const hiscoreValues = getValuesFromHiscores(hiscoresForSelectedSkill);
-            dispatch(updateCalculatorsExpValues(hiscoreValues));
-        } else {
-            dispatch(reset());
-        }
+        dispatch(
+            updateCalculatorsExpValues(
+                hiscoresForSelectedSkill
+                    ? getValuesFromHiscores(hiscoresForSelectedSkill)
+                    : DEFAULT_CALCULATOR_EXP_VALUES
+            )
+        );
     };
 
     const xpRequired = expValues.target.xp - expValues.start.xp;
@@ -86,10 +87,10 @@ export default function CalculatorSettings() {
         <>
             <h3 className='heading-accent-md'>Skill</h3>
             <Select
-                defaultSelected={selectedSkill}
-                options={calculatorSkills}
-                onSelect={e => dispatch(updateCalculatorsSkill({ skill: e.value }))}
                 className='w-full'
+                onSelect={e => dispatch(updateCalculatorsSkill({ skill: e.value }))}
+                options={calculatorSkills}
+                value={selectedSkill}
             />
 
             <h3 className='heading-accent-md mt-4'>Experience</h3>
@@ -97,12 +98,12 @@ export default function CalculatorSettings() {
                 <div>
                     <h4>Start</h4>
                     <Select
-                        defaultSelected={expValues.start.mode}
                         onSelect={selection => updateMode(selection, 'start')}
                         options={[
                             { label: 'Experience', value: 'xp' },
                             { label: 'Level', value: 'level' },
                         ]}
+                        value={expValues.start.mode}
                     />
                     <input
                         className='input-primary form-input mt-2 w-full'
@@ -116,12 +117,12 @@ export default function CalculatorSettings() {
                 <div>
                     <h3>End</h3>
                     <Select
-                        defaultSelected={expValues.target.mode}
                         onSelect={selection => updateMode(selection, 'target')}
                         options={[
                             { label: 'Level', value: 'level' },
                             { label: 'Experience', value: 'xp' },
                         ]}
+                        value={expValues.target.mode}
                     />
                     <input
                         className='input-primary form-input mt-2 w-full'
