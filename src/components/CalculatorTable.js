@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import CALCULATOR_DATA from '../data/calculatorData.json';
@@ -128,7 +127,7 @@ function MaterialsCells({ value }) {
     return (
         <div className='flex flex-col justify-center py-2 h-full'>
             {value.map(({ name, amount, actions }) => (
-                <p key={name}>{`${numberWithCommas(Math.ceil(amount * actions))} ${name}`}</p>
+                <p key={name}>{`${amount ? numberWithCommas(Math.ceil(amount * actions)) : ''} ${name}`}</p>
             ))}
         </div>
     );
