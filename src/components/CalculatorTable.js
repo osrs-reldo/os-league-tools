@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import CALCULATOR_DATA from '../data/calculatorData.json';
 import { getTier, getExpMultiplier } from '../util/getTier';
 import calculateTaskStats from '../util/calculateTaskStats';
-import numberWithCommas from '../util/helpers';
+import { numberWithCommas } from '../util/numberFormatters';
 import Table from './common/Table';
 
 export default function CalculatorTable() {

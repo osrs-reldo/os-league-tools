@@ -1,6 +1,6 @@
 import { FRAGMENTS } from '../data/relics';
 import calculateTaskStats from '../util/calculateTaskStats';
-import getTier from '../util/getTier';
+import { getTier } from '../util/getTier';
 
 const BASE_URL = 'https://tpetrychyn.github.io/osrs-fragment-calc/';
 const LIST_DELIM_ENCODED = '%2C';

@@ -8,7 +8,7 @@ import {
     updateCalculatorsMode,
     reset,
 } from '../store/calculators/calculators';
-import numberWithCommas from '../util/helpers';
+import { numberWithCommas } from '../util/numberFormatters';
 import { experienceToLevel, levelToExperience } from '../util/xpAndLevelConversions';
 import { STATS } from '../data/constants';
 import calculatorData from '../data/calculatorData.json';
