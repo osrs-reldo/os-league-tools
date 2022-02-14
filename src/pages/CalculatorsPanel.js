@@ -13,7 +13,7 @@ export default function CalculatorsPanel() {
             {isSmViewport && showSidebar && (
                 <div className='mt-3 bg-hover cursor-pointer' onClick={() => setShowSidebar(!showSidebar)}>
                     <span className='icon-xl align-middle'>keyboard_double_arrow_up</span>
-                    <span className='text-sm italic ml-1'>Hide filters</span>
+                    <span className='text-sm italic ml-1'>Hide settings</span>
                 </div>
             )}
             {showSidebar && (
@@ -31,7 +31,7 @@ export default function CalculatorsPanel() {
                         <span className='icon-xl align-middle'>
                             {showSidebar ? 'keyboard_double_arrow_up' : 'keyboard_double_arrow_down'}
                         </span>
-                        {showSidebar ? 'Hide filters' : 'Show filters'}
+                        {showSidebar ? 'Hide settings' : 'Show settings'}
                     </p>
                 )}
             </div>

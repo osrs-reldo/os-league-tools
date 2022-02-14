@@ -10,7 +10,6 @@ export default function CalculatorTable() {
         calculators: { skill, expValues, calculatorTier },
     } = useSelector(state => ({ calculators: state.calculators, tasks: state.tasks }));
 
-    // TODO: Add override in CalculatorSettings + hoist users tier info into Redux for global use
     const expMultiplier = getExpMultiplier(calculatorTier);
 
     const RAW_DATA = CALCULATOR_DATA.calculators[skill.toLowerCase()].actions;

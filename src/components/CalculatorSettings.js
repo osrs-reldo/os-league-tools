@@ -163,10 +163,6 @@ export default function CalculatorSettings() {
                     : 'Start experience must be lower than end'}
             </p>
 
-            {/* TODO
-                - Fragment/Set effect overrides
-            */}
-
             <button className='button-outline w-full mt-4' type='button' onClick={resetCalculator}>
                 <span className='icon-base align-bottom'>refresh</span> Reset
             </button>
@@ -183,6 +179,11 @@ export default function CalculatorSettings() {
                     </p>
                 )}
             </button>
+
+            <p className='text-sm italic text-accent mt-4'>Coming soon</p>
+            <ul className='italic text-sm'>
+                <li>Fragment + set overrides</li>
+            </ul>
         </>
     );
 }

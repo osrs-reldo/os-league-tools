@@ -33,10 +33,10 @@ export default function Select({ className, onSelect, options = [], value, ...re
                 <span className='icon-base'>{selectOpen ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}</span>
             </div>
             {selectOpen && (
-                <div className='absolute bg-primary content-outline rounded-b w-full z-50'>
+                <div className='absolute content-outline rounded-b w-full z-50'>
                     {options.map(option => (
                         <div
-                            className='flex items-center cursor-pointer px-4 py-2 last:rounded-b odd:bg-secondary bg-hover-subdued'
+                            className='flex items-center cursor-pointer px-4 py-2 last:rounded-b bg-primary-alt odd:bg-primary bg-hover-subdued odd:bg-hover-subdued'
                             onClick={() => selectFromDropdown(option)}
                             key={option.label}
                         >
