@@ -580,8 +580,8 @@ export const BOSSES = {
         icon: images['theatre-of-blood-hard-mode.png'],
         isGroupedWith: ['Theatre of Blood'],
     },
-    THERMO_NUCLEAR_SMOKE_DEVIL: {
-        hiscoresName: 'thermoNuclearSmokeDevil',
+    THERMONUCLEAR_SMOKE_DEVIL: {
+        hiscoresName: 'thermonuclearSmokeDevil',
         label: 'Thermonuclear Smoke Devil',
         unlockCost: 20,
         icon: images['thermonuclear-smoke-devil.png'],
