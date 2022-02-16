@@ -1,5 +1,12 @@
 [
     {
+        "title": "Skill Calculators",
+        "date": "Feb 02 2022",
+        "thumbnail": "https://oldschool.runescape.wiki/images/Main_page_calculator.png",
+        "leadText": "Skill calculators are now available",
+        "htmlContent": "<p>Skill calculators are now available to help you plan out your remaining skilling grinds to max! Head over to the <a href='/calculators'>Calculators</a> page to get started. Currently, only base league exp multipliers are supported. Additional options and multipliers for relic effects will be coming soon. Massive thanks to <b>Bae btw (Bae#3308)</b> for developing this feature.</p>"
+    },
+    {
         "title": "New Website Launch",
         "date": "Jan 17 2022",
         "thumbnail": "https://oldschool.runescape.wiki/images/Twisted_dragon_trophy_detail.png",

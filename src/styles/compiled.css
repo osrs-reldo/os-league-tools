@@ -3,7 +3,7 @@
   font-family: 'Material Icons Sharp';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconssharp/v95/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvR.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/materialiconssharp/v100/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvR.woff2) format('woff2');
 }
 
 .material-icons-sharp {
@@ -26,7 +26,7 @@
   font-family: 'Material Icons Outlined';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v95/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v100/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2) format('woff2');
 }
 .material-icons-outlined {
   font-family: 'Material Icons Outlined';
@@ -2247,6 +2247,12 @@ select[multiple]:focus option:checked {
 .rounded-t-md {
   border-top-left-radius: 0.375rem;
   border-top-right-radius: 0.375rem;
+}
+.rounded-tr-none {
+  border-top-right-radius: 0px;
+}
+.rounded-br-none {
+  border-bottom-right-radius: 0px;
 }
 .border {
   border-width: 1px;

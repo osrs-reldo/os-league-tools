@@ -27,7 +27,15 @@ function Card({
             onClick={onClick}
         >
             <div className='flex md:flex-row flex-col h-full'>
-                {image && <Image src={image} style={getCardStyle('imageSize', imageSize)} />}
+                {image && (
+                    <Image
+                        src={image}
+                        style={`${getCardStyle('imageSize', imageSize)} ${getCardStyle(
+                            'corners',
+                            corners
+                        )} rounded-tr-none rounded-br-none`}
+                    />
+                )}
                 <div
                     className={`${width} ${getCardStyle('padding', padding)} ${getCardStyle(
                         'halign',
