@@ -1,9 +1,14 @@
-export const CURRENT_VERSION = 6;
+import calculateTaskStats from '../../util/calculateTaskStats';
+
+export const CURRENT_VERSION = 7;
+
 export const INITIAL_STATE = {
     version: CURRENT_VERSION,
     randomTaskId: null,
     rsn: null,
     tasks: {},
+    taskStats: calculateTaskStats({}),
+    tier: 1,
 };
 
 export const INITIAL_TASK_STATE = {

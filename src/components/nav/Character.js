@@ -43,14 +43,20 @@ function NavBarItem({ setCharacterModalOpen }) {
                         onClick={() => dispatch(fetchHiscores(characterState, true))}
                     >
                         {characterState.hiscoresCache.loading ? (
-                            <Spinner size={Spinner.SIZE.sm} invertColorForDarkMode={false} />
+                            <div className='text-center'>
+                                <Spinner size={Spinner.SIZE.sm} invertColorForDarkMode={false} />
+                            </div>
                         ) : (
-                            <span className='icon-base mr-1 align-bottom'>cached</span>
+                            <>
+                                <p>
+                                    <span className='icon-base mr-1 align-bottom'>cached</span> Update hiscores
+                                </p>
+
+                                <p className='text-xs italic'>
+                                    Last updated: {durationAsRelativeTime(characterState.hiscoresCache.lastUpdated)}
+                                </p>
+                            </>
                         )}
-                        Update hiscores
-                        <p className='text-xs italic'>
-                            Last updated: {durationAsRelativeTime(characterState.hiscoresCache.lastUpdated)}
-                        </p>
                     </Dropdown.Button>
                     <Dropdown.Separator />
                     <Dropdown.Button className='text-left' onClick={() => setCharacterModalOpen(true)}>

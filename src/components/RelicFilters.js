@@ -7,8 +7,12 @@ import { ACTIVITIES, SETS, TAGS } from '../data/relics';
 import getFragmentCalcLink from '../client/fragment-calc';
 
 export default function RelicFilters() {
-    const userState = useSelector(state => state);
-    const filterState = userState.filters.fragments;
+    const {
+        fragments,
+        filters,
+        tasks: { tier },
+    } = useSelector(state => state);
+    const filterState = filters.fragments;
     const dispatch = useDispatch();
 
     return (
@@ -16,7 +20,7 @@ export default function RelicFilters() {
             <div className='mb-3 text-center'>
                 <a
                     className='button-outline w-full h-fit px-2 py-1'
-                    href={getFragmentCalcLink(userState)}
+                    href={getFragmentCalcLink(fragments, tier)}
                     target='_blank'
                     rel='noreferrer'
                 >
