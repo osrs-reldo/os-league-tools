@@ -88,5 +88,6 @@ function updateToV7(state) {
         ...state,
         taskStats,
         tier: getTier(taskStats.points.complete.total),
+        version: 7,
     };
 }
