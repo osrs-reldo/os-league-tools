@@ -29,10 +29,11 @@ function importTasks(pluginTasks, localTasks, dispatch) {
     Object.keys(pluginTasks).forEach(taskId => {
         const pluginTask = pluginTasks[taskId];
         const localTask = localTasks[taskId] || INITIAL_TASK_STATE;
+        const completed = pluginTask.completedOn > 0 ? pluginTask.completedOn : null; // Always trust plugin as single source of truth for completion
         syncedTasks[taskId] = {
             ...localTask,
-            completed: pluginTask.completedOn > 0 ? pluginTask.completedOn : null, // Always trust plugin as single source of truth for completion
-            todo: selectCurrentValue(pluginTask.trackedOn, localTask.todo),
+            completed,
+            todo: completed ? null : selectCurrentValue(pluginTask.trackedOn, localTask.todo),
             ignored: selectCurrentValue(pluginTask.ignoredOn, localTask.ignored),
             lastUpdated: Date.now(),
         };
