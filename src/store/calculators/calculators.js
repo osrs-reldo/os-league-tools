@@ -21,6 +21,7 @@ export const DEFAULT_CALCULATOR_EXP_VALUES = Object.freeze({
 });
 
 const INITIAL_STATE = {
+    version: CURRENT_VERSION,
     skill: calculatorData.skills[0],
     expValues: DEFAULT_CALCULATOR_EXP_VALUES,
     calculatorTier: 1,
@@ -63,7 +64,7 @@ const calculatorsSlice = createSlice({
 
 export const loadState = () => {
     const prevState = getFromLocalStorage(LOCALSTORAGE_KEYS.CALCULATORS, INITIAL_STATE);
-    if (prevState && prevState.version < CURRENT_VERSION) {
+    if (prevState && (!prevState.version || prevState.version < CURRENT_VERSION)) {
         // Clear data from old version
         return INITIAL_STATE;
     }
