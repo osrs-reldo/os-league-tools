@@ -18,6 +18,8 @@ export const taskSlice = createSlice({
             const newVal = state.tasks[action.payload.taskId].todo === null ? Date.now() : null;
             state.tasks[action.payload.taskId].todo = newVal;
             state.tasks[action.payload.taskId].lastUpdated = Date.now();
+            state.taskStats = calculateTaskStats(state.tasks);
+            state.tier = getTier(state.taskStats.points.complete.total);
         },
         toggleIgnored: (state, action) => {
             if (!state.tasks[action.payload.taskId]) {
@@ -26,6 +28,8 @@ export const taskSlice = createSlice({
             const newVal = state.tasks[action.payload.taskId].ignored === null ? Date.now() : null;
             state.tasks[action.payload.taskId].ignored = newVal;
             state.tasks[action.payload.taskId].lastUpdated = Date.now();
+            state.taskStats = calculateTaskStats(state.tasks);
+            state.tier = getTier(state.taskStats.points.complete.total);
         },
         toggleCompleted: (state, action) => {
             if (!state.tasks[action.payload.taskId]) {
@@ -72,10 +76,13 @@ export const taskSlice = createSlice({
         },
         load: (state, action) => {
             const fallbackState = action.payload.forceOverwrite ? INITIAL_STATE : state;
-            return updateTasksVersion({
+            const loadedState = updateTasksVersion({
                 ...fallbackState,
                 ...action.payload.newState,
             });
+            loadedState.taskStats = calculateTaskStats(loadedState.tasks);
+            loadedState.tier = getTier(loadedState.taskStats.points.complete.total);
+            return loadedState;
         },
         reset: () => INITIAL_STATE,
     },
