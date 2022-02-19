@@ -5,6 +5,8 @@ import { updateUsername } from '../store/user/character';
 import { INITIAL_TASK_STATE } from '../store/tasks/constants';
 import { load as loadTaskState } from '../store/tasks/tasks';
 import { load as loadUnlocksState } from '../store/unlocks/unlocks';
+import { SKILL_UNLOCK } from '../data/constants';
+import { INITIAL_STATE } from '../store/unlocks/constants';
 
 export default function importFromPlugin(pluginData, userState, dispatch) {
     dispatch(updateUsername(pluginData.displayName));
@@ -12,16 +14,27 @@ export default function importFromPlugin(pluginData, userState, dispatch) {
     const syncedTasks = importTasks(pluginData.tasks, userState.tasks.tasks, dispatch);
     dispatch(loadTaskState({ newState: { rsn: pluginData.displayName, tasks: syncedTasks } }));
 
-    // Assume the plugin is the source of truth, overwrite local data
     const importedQuests = pluginData.quests;
-    dispatch(loadUnlocksState({ newState: { quests: importedQuests } }));
+    const importedSkills = importSkillUnlocks(pluginData.varbits);
+
+    // Assume the plugin is the source of truth, overwrite local data
+    dispatch(loadUnlocksState({ newState: { quests: importedQuests, skills: importedSkills } }));
 
     // importBossKc(pluginData.bosses);
-    // importUnlocks(pluginData.varbits);
 }
 
 function importBossKc(bossData) {
     // TODO
+}
+
+function importSkillUnlocks(varbits) {
+    const unlockedSkills = [...INITIAL_STATE.skills];
+    Object.keys(SKILL_UNLOCK).forEach(varbit => {
+        if (varbits[varbit] === 1) {
+            unlockedSkills.push(SKILL_UNLOCK[varbit].label);
+        }
+    });
+    return unlockedSkills;
 }
 
 function importTasks(pluginTasks, localTasks, dispatch) {
@@ -61,8 +74,4 @@ function selectCurrentValue(pluginValue, localValue) {
         return pluginValue > 0 ? pluginValue : null;
     }
     return Math.max(localValue, pluginValue);
-}
-
-function importUnlocks(varbits) {
-    // TODO
 }
