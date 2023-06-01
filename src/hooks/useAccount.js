@@ -5,23 +5,23 @@ import { updateAccountCache } from '../store/user/account';
 
 // Basic wrapper around useAuth0 with login state caching for now, more will be added with backend user auth changes
 export default function useAccount({ redirectReturnToUrl }) {
-    const { isLoading, isAuthenticated, loginWithRedirect, logout: logoutWithRedirect } = useAuth0();
-    const isLoginCache = useSelector(state => state.account.accountCache.isLoggedIn);
-    const dispatch = useDispatch();
+  const { isLoading, isAuthenticated, loginWithRedirect, logout: logoutWithRedirect } = useAuth0();
+  const isLoginCache = useSelector(state => state.account.accountCache.isLoggedIn);
+  const dispatch = useDispatch();
 
-    useEffect(() => {
-        dispatch(updateAccountCache({ isAuthenticated }));
-    }, [isAuthenticated]);
+  useEffect(() => {
+    dispatch(updateAccountCache({ isAuthenticated }));
+  }, [isAuthenticated]);
 
-    const isLoggedIn = isLoginCache || isAuthenticated;
-    const isAuthenticating = isLoading;
+  const isLoggedIn = isLoginCache || isAuthenticated;
+  const isAuthenticating = isLoading;
 
-    const login = () => {
-        loginWithRedirect({ redirect_uri: redirectReturnToUrl });
-    };
-    const logout = () => {
-        logoutWithRedirect({ returnTo: redirectReturnToUrl });
-    };
+  const login = () => {
+    loginWithRedirect({ redirect_uri: redirectReturnToUrl });
+  };
+  const logout = () => {
+    logoutWithRedirect({ returnTo: redirectReturnToUrl });
+  };
 
-    return { isLoggedIn, isAuthenticating, login, logout };
+  return { isLoggedIn, isAuthenticating, login, logout };
 }

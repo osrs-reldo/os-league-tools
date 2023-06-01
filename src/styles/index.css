@@ -8,296 +8,296 @@
 @tailwind utilities;
 
 @layer base {
-    /* THEMING */
-    .bg-primary {
-        @apply bg-gray-100 dark:bg-zinc-700;
-    }
-    .bg-primary-alt {
-        @apply bg-gray-200 dark:bg-zinc-550;
-    }
-    .bg-secondary {
-        @apply bg-gray-300 dark:bg-zinc-800;
-    }
-    .bg-secondary-alt {
-        @apply bg-gray-200 dark:bg-zinc-750;
-    }
-    .bg-accent {
-        @apply tl-light:bg-tl-sage tb-light:bg-tb-brown sl-light:bg-sl-teal mono-light:bg-mono-white;
-        @apply tl-dark:bg-tl-lime tb-dark:bg-tb-sand sl-dark:bg-sl-ecto mono-dark:bg-mono-dark;
-    }
-    .bg-subdued {
-        @apply bg-gray-300 dark:bg-zinc-500;
-    }
-    .bg-hover {
-        @apply hover:bg-gray-200 dark:hover:bg-zinc-800;
-    }
-    .bg-hover-subdued {
-        @apply hover:bg-gray-300 dark:hover:bg-zinc-600;
-    }
-    .bg-inverted {
-        @apply bg-gray-200 dark:bg-zinc-100;
-    }
-    .text-primary {
-        @apply text-black dark:text-zinc-100;
-    }
-    .text-primary-alt {
-        @apply text-gray-900 dark:text-zinc-200;
-    }
-    .text-secondary {
-        @apply text-gray-500 dark:text-zinc-200;
-    }
-    .text-secondary-alt {
-        @apply text-gray-700 dark:text-zinc-400;
-    }
-    .text-accent {
-        @apply tl-light:text-tl-sage tb-light:text-tb-brown sl-light:text-sl-teal mono-light:text-mono-white;
-        @apply tl-dark:text-tl-lime tb-dark:text-tb-sand sl-dark:text-sl-ecto mono-dark:text-mono-dark;
-    }
-    .text-error {
-        @apply text-red-600 dark:text-red-500;
-    }
-    .text-code {
-        @apply font-mono bg-secondary rounded text-sm p-0.5;
-    }
-    .border-primary {
-        @apply border-black dark:border-zinc-500;
-    }
-    .border-secondary {
-        @apply border-gray-100 dark:border-zinc-700;
-    }
-    .border-accent {
-        @apply tl-light:border-tl-sage tb-light:border-tb-brown sl-light:border-sl-teal mono-light:border-mono-white;
-        @apply tl-dark:border-tl-lime tb-dark:border-tb-sand sl-dark:border-sl-ecto mono-dark:border-mono-dark;
-    }
-    .border-subdued {
-        @apply border-gray-300 dark:border-zinc-500;
-    }
-    .border-error {
-        @apply border-red-600 dark:border-red-500;
-    }
-    .shadow-primary {
-        @apply shadow-black/10 dark:shadow-black/70;
-    }
-    .shadow-subdued {
-        @apply shadow-black/10 dark:shadow-black/50;
-    }
-    .ring-accent {
-        @apply tl-light:ring-tl-sage tb-light:ring-tb-brown sl-light:ring-sl-teal mono-light:ring-mono-white;
-        @apply tl-dark:ring-tl-lime tb-dark:ring-tb-sand sl-dark:ring-sl-ecto mono-dark:ring-mono-dark;
-    }
-    .ring-error {
-        @apply ring-red-600 dark:ring-red-500;
-    }
-    .form-accent {
-        @apply tl-light:accent-tl-sage tb-light:accent-tb-brown sl-light:accent-sl-teal mono-light:accent-mono-white;
-        @apply tl-dark:accent-tl-lime tb-dark:accent-tb-sand sl-dark:accent-sl-ecto mono-dark:accent-mono-dark;
-    }
-    /* Compatibility classes for applying text colors to svg images */
-    .dark-mode-img-compat {
-        filter: invert(100%) sepia(15%) saturate(2475%) hue-rotate(180deg) brightness(102%) contrast(81%);
-    }
-    .tl-lime-img-compat {
-        filter: invert(85%) sepia(78%) saturate(487%) hue-rotate(15deg) brightness(81%) contrast(98%);
-    }
-    .tl-sage-img-compat {
-        filter: invert(56%) sepia(9%) saturate(2195%) hue-rotate(52deg) brightness(88%) contrast(85%);
-    }
-    .tb-sand-img-compat {
-        filter: invert(94%) sepia(70%) saturate(430%) hue-rotate(334deg) brightness(92%) contrast(95%);
-    }
-    .tb-brown-img-compat {
-        filter: invert(23%) sepia(44%) saturate(613%) hue-rotate(344deg) brightness(99%) contrast(87%);
-    }
-    .sl-ecto-img-compat {
-        filter: invert(68%) sepia(60%) saturate(3091%) hue-rotate(112deg) brightness(102%) contrast(85%);
-    }
-    .sl-teal-img-compat {
-        filter: invert(24%) sepia(88%) saturate(6568%) hue-rotate(170deg) brightness(100%) contrast(103%);
-    }
-    .mono-dark-img-compat {
-        filter: invert(88%) sepia(2%) saturate(93%) hue-rotate(171deg) brightness(108%) contrast(105%);
-    }
-    .mono-white-img-compat {
-        filter: invert(20%) sepia(20%) saturate(705%) hue-rotate(178deg) brightness(101%) contrast(86%);
-    }
-    .img-primary {
-        @apply dark:dark-mode-img-compat;
-    }
-    .img-accent {
-        @apply tl-light:tl-sage-img-compat tb-light:tb-brown-img-compat sl-light:sl-teal-img-compat mono-light:mono-white-img-compat;
-        @apply tl-dark:tl-lime-img-compat tb-dark:tb-sand-img-compat sl-dark:sl-ecto-img-compat mono-dark:mono-dark-img-compat;
-    }
-    /* TYPOGRAPHY */
-    .small-caps {
-        font-feature-settings: 'smcp';
-    }
-    .force-wrap {
-        word-spacing: 100vw;
-    }
-    /* ICON FONT */
-    .icon-xs {
-        @apply material-icons-sharp;
-        @apply text-xs;
-    }
-    .icon-sm {
-        @apply material-icons-sharp;
-        @apply text-sm;
-    }
-    .icon-base {
-        @apply material-icons-sharp;
-        @apply text-base;
-    }
-    .icon-lg {
-        @apply material-icons-sharp;
-        @apply text-lg;
-    }
-    .icon-xl {
-        @apply material-icons-sharp;
-        @apply text-xl;
-    }
-    .icon-2xl {
-        @apply material-icons-sharp;
-        @apply text-2xl;
-    }
-    .icon-3xl {
-        @apply material-icons-sharp;
-        @apply text-3xl;
-    }
-    .icon-4xl {
-        @apply material-icons-sharp;
-        @apply text-4xl;
-    }
-    .icon-outline {
-        @apply material-icons-outlined;
-    }
+  /* THEMING */
+  .bg-primary {
+    @apply bg-gray-100 dark:bg-zinc-700;
+  }
+  .bg-primary-alt {
+    @apply bg-gray-200 dark:bg-zinc-550;
+  }
+  .bg-secondary {
+    @apply bg-gray-300 dark:bg-zinc-800;
+  }
+  .bg-secondary-alt {
+    @apply bg-gray-200 dark:bg-zinc-750;
+  }
+  .bg-accent {
+    @apply tl-light:bg-tl-sage tb-light:bg-tb-brown sl-light:bg-sl-teal mono-light:bg-mono-white;
+    @apply tl-dark:bg-tl-lime tb-dark:bg-tb-sand sl-dark:bg-sl-ecto mono-dark:bg-mono-dark;
+  }
+  .bg-subdued {
+    @apply bg-gray-300 dark:bg-zinc-500;
+  }
+  .bg-hover {
+    @apply hover:bg-gray-200 dark:hover:bg-zinc-800;
+  }
+  .bg-hover-subdued {
+    @apply hover:bg-gray-300 dark:hover:bg-zinc-600;
+  }
+  .bg-inverted {
+    @apply bg-gray-200 dark:bg-zinc-100;
+  }
+  .text-primary {
+    @apply text-black dark:text-zinc-100;
+  }
+  .text-primary-alt {
+    @apply text-gray-900 dark:text-zinc-200;
+  }
+  .text-secondary {
+    @apply text-gray-500 dark:text-zinc-200;
+  }
+  .text-secondary-alt {
+    @apply text-gray-700 dark:text-zinc-400;
+  }
+  .text-accent {
+    @apply tl-light:text-tl-sage tb-light:text-tb-brown sl-light:text-sl-teal mono-light:text-mono-white;
+    @apply tl-dark:text-tl-lime tb-dark:text-tb-sand sl-dark:text-sl-ecto mono-dark:text-mono-dark;
+  }
+  .text-error {
+    @apply text-red-600 dark:text-red-500;
+  }
+  .text-code {
+    @apply font-mono bg-secondary rounded text-sm p-0.5;
+  }
+  .border-primary {
+    @apply border-black dark:border-zinc-500;
+  }
+  .border-secondary {
+    @apply border-gray-100 dark:border-zinc-700;
+  }
+  .border-accent {
+    @apply tl-light:border-tl-sage tb-light:border-tb-brown sl-light:border-sl-teal mono-light:border-mono-white;
+    @apply tl-dark:border-tl-lime tb-dark:border-tb-sand sl-dark:border-sl-ecto mono-dark:border-mono-dark;
+  }
+  .border-subdued {
+    @apply border-gray-300 dark:border-zinc-500;
+  }
+  .border-error {
+    @apply border-red-600 dark:border-red-500;
+  }
+  .shadow-primary {
+    @apply shadow-black/10 dark:shadow-black/70;
+  }
+  .shadow-subdued {
+    @apply shadow-black/10 dark:shadow-black/50;
+  }
+  .ring-accent {
+    @apply tl-light:ring-tl-sage tb-light:ring-tb-brown sl-light:ring-sl-teal mono-light:ring-mono-white;
+    @apply tl-dark:ring-tl-lime tb-dark:ring-tb-sand sl-dark:ring-sl-ecto mono-dark:ring-mono-dark;
+  }
+  .ring-error {
+    @apply ring-red-600 dark:ring-red-500;
+  }
+  .form-accent {
+    @apply tl-light:accent-tl-sage tb-light:accent-tb-brown sl-light:accent-sl-teal mono-light:accent-mono-white;
+    @apply tl-dark:accent-tl-lime tb-dark:accent-tb-sand sl-dark:accent-sl-ecto mono-dark:accent-mono-dark;
+  }
+  /* Compatibility classes for applying text colors to svg images */
+  .dark-mode-img-compat {
+    filter: invert(100%) sepia(15%) saturate(2475%) hue-rotate(180deg) brightness(102%) contrast(81%);
+  }
+  .tl-lime-img-compat {
+    filter: invert(85%) sepia(78%) saturate(487%) hue-rotate(15deg) brightness(81%) contrast(98%);
+  }
+  .tl-sage-img-compat {
+    filter: invert(56%) sepia(9%) saturate(2195%) hue-rotate(52deg) brightness(88%) contrast(85%);
+  }
+  .tb-sand-img-compat {
+    filter: invert(94%) sepia(70%) saturate(430%) hue-rotate(334deg) brightness(92%) contrast(95%);
+  }
+  .tb-brown-img-compat {
+    filter: invert(23%) sepia(44%) saturate(613%) hue-rotate(344deg) brightness(99%) contrast(87%);
+  }
+  .sl-ecto-img-compat {
+    filter: invert(68%) sepia(60%) saturate(3091%) hue-rotate(112deg) brightness(102%) contrast(85%);
+  }
+  .sl-teal-img-compat {
+    filter: invert(24%) sepia(88%) saturate(6568%) hue-rotate(170deg) brightness(100%) contrast(103%);
+  }
+  .mono-dark-img-compat {
+    filter: invert(88%) sepia(2%) saturate(93%) hue-rotate(171deg) brightness(108%) contrast(105%);
+  }
+  .mono-white-img-compat {
+    filter: invert(20%) sepia(20%) saturate(705%) hue-rotate(178deg) brightness(101%) contrast(86%);
+  }
+  .img-primary {
+    @apply dark:dark-mode-img-compat;
+  }
+  .img-accent {
+    @apply tl-light:tl-sage-img-compat tb-light:tb-brown-img-compat sl-light:sl-teal-img-compat mono-light:mono-white-img-compat;
+    @apply tl-dark:tl-lime-img-compat tb-dark:tb-sand-img-compat sl-dark:sl-ecto-img-compat mono-dark:mono-dark-img-compat;
+  }
+  /* TYPOGRAPHY */
+  .small-caps {
+    font-feature-settings: 'smcp';
+  }
+  .force-wrap {
+    word-spacing: 100vw;
+  }
+  /* ICON FONT */
+  .icon-xs {
+    @apply material-icons-sharp;
+    @apply text-xs;
+  }
+  .icon-sm {
+    @apply material-icons-sharp;
+    @apply text-sm;
+  }
+  .icon-base {
+    @apply material-icons-sharp;
+    @apply text-base;
+  }
+  .icon-lg {
+    @apply material-icons-sharp;
+    @apply text-lg;
+  }
+  .icon-xl {
+    @apply material-icons-sharp;
+    @apply text-xl;
+  }
+  .icon-2xl {
+    @apply material-icons-sharp;
+    @apply text-2xl;
+  }
+  .icon-3xl {
+    @apply material-icons-sharp;
+    @apply text-3xl;
+  }
+  .icon-4xl {
+    @apply material-icons-sharp;
+    @apply text-4xl;
+  }
+  .icon-outline {
+    @apply material-icons-outlined;
+  }
 }
 
 @layer components {
-    /* LAYOUT */
-    .page-wrapper {
-        @apply mx-auto;
-        @apply text-primary;
-    }
-    .sidebar-wrapper {
-        @apply w-full lg:max-w-sm md:max-w-xs;
-    }
-    /* NAVBAR */
-    .navbar {
-        @apply sticky top-0 left-0 w-full z-10 sm:p-4 p-2;
-        @apply filter drop-shadow-overlay;
-    }
-    .navbar-content {
-        @apply flex items-center justify-between flex-nowrap;
-        @apply md:px-9 px-5;
-    }
-    .navbar-brand-logo {
-        @apply md:h-8 h-6;
-        @apply md:w-8 w-6;
-    }
-    .navbar-brand {
-        @apply md:text-2xl text-lg;
-        @apply uppercase font-semibold;
-    }
-    .navbar-link {
-        @apply md:text-base text-sm;
-        @apply font-mono font-medium uppercase;
-    }
-    a.active {
-        @apply text-accent;
-    }
-    .navbar-link-alt {
-        @apply md:text-base text-sm;
-        @apply font-sans-alt font-medium;
-        @apply flex flex-nowrap items-center;
-    }
-    .navbar-icon-link {
-        @apply h-full bg-hover px-2 py-2;
-    }
-    /* TEXT STYLES */
-    .heading-block-md {
-        @apply block text-lg leading-tight font-medium;
-    }
-    .heading-block-sm {
-        @apply block text-sm leading-tight font-medium;
-    }
-    .heading-primary-md {
-        @apply uppercase tracking-wide text-sm text-primary font-semibold;
-    }
-    .heading-accent-md {
-        @apply uppercase tracking-wide text-sm text-accent font-semibold;
-    }
-    /* FORMS */
-    .input-primary {
-        @apply rounded-md shadow-subdued bg-inverted border-transparent text-black focus:ring-2 focus:ring-tl-lime;
-    }
-    .input-disabled {
-        @apply rounded-md shadow-subdued bg-subdued border-transparent text-secondary-alt;
-    }
-    .button-md {
-        @apply p-2;
-    }
-    .button-filled {
-        @apply rounded active:ring-2 active:ring-accent;
-        @apply bg-accent text-gray-50 dark:text-black;
-    }
-    .content-outline {
-        @apply border border-accent;
-    }
-    .button-outline {
-        @apply rounded active:ring-2 active:ring-accent;
-        @apply border border-accent text-accent;
-    }
-    .button-group-base {
-        @apply p-2 first:rounded-l last:rounded-r;
-    }
-    .button-group-active {
-        @apply active:ring-2 active:ring-accent;
-    }
-    .button-group-selected {
-        @apply bg-accent mono-dark:bg-zinc-400 text-gray-50 dark:text-black font-semibold;
-    }
-    .button-group-unselected {
-        @apply bg-inverted text-black;
-    }
-    .button-group-disabled {
-        @apply bg-subdued text-secondary-alt;
-    }
-    .checkbox-primary {
-        @apply rounded form-accent bg-hover;
-    }
-    select[multiple]:focus option:checked {
-        /*
+  /* LAYOUT */
+  .page-wrapper {
+    @apply mx-auto;
+    @apply text-primary;
+  }
+  .sidebar-wrapper {
+    @apply w-full lg:max-w-sm md:max-w-xs;
+  }
+  /* NAVBAR */
+  .navbar {
+    @apply sticky top-0 left-0 w-full z-10 sm:p-4 p-2;
+    @apply filter drop-shadow-overlay;
+  }
+  .navbar-content {
+    @apply flex items-center justify-between flex-nowrap;
+    @apply md:px-9 px-5;
+  }
+  .navbar-brand-logo {
+    @apply md:h-8 h-6;
+    @apply md:w-8 w-6;
+  }
+  .navbar-brand {
+    @apply md:text-2xl text-lg;
+    @apply uppercase font-semibold;
+  }
+  .navbar-link {
+    @apply md:text-base text-sm;
+    @apply font-mono font-medium uppercase;
+  }
+  a.active {
+    @apply text-accent;
+  }
+  .navbar-link-alt {
+    @apply md:text-base text-sm;
+    @apply font-sans-alt font-medium;
+    @apply flex flex-nowrap items-center;
+  }
+  .navbar-icon-link {
+    @apply h-full bg-hover px-2 py-2;
+  }
+  /* TEXT STYLES */
+  .heading-block-md {
+    @apply block text-lg leading-tight font-medium;
+  }
+  .heading-block-sm {
+    @apply block text-sm leading-tight font-medium;
+  }
+  .heading-primary-md {
+    @apply uppercase tracking-wide text-sm text-primary font-semibold;
+  }
+  .heading-accent-md {
+    @apply uppercase tracking-wide text-sm text-accent font-semibold;
+  }
+  /* FORMS */
+  .input-primary {
+    @apply rounded-md shadow-subdued bg-inverted border-transparent text-black focus:ring-2 focus:ring-tl-lime;
+  }
+  .input-disabled {
+    @apply rounded-md shadow-subdued bg-subdued border-transparent text-secondary-alt;
+  }
+  .button-md {
+    @apply p-2;
+  }
+  .button-filled {
+    @apply rounded active:ring-2 active:ring-accent;
+    @apply bg-accent text-gray-50 dark:text-black;
+  }
+  .content-outline {
+    @apply border border-accent;
+  }
+  .button-outline {
+    @apply rounded active:ring-2 active:ring-accent;
+    @apply border border-accent text-accent;
+  }
+  .button-group-base {
+    @apply p-2 first:rounded-l last:rounded-r;
+  }
+  .button-group-active {
+    @apply active:ring-2 active:ring-accent;
+  }
+  .button-group-selected {
+    @apply bg-accent mono-dark:bg-zinc-400 text-gray-50 dark:text-black font-semibold;
+  }
+  .button-group-unselected {
+    @apply bg-inverted text-black;
+  }
+  .button-group-disabled {
+    @apply bg-subdued text-secondary-alt;
+  }
+  .checkbox-primary {
+    @apply rounded form-accent bg-hover;
+  }
+  select[multiple]:focus option:checked {
+    /*
             css hack to override browser default color for selected/focused multi-select
             options. background color is set with !important so it can't be directly overriden
             with another color, but setting it to an image background (in this case a solid
             color gradient) will do the trick. doesn't seem to work on safari though.
          */
-        background: #71717a linear-gradient(0deg, #71717a 0%, #71717a 100%);
-    }
-    /* TABLES */
-    .resizer {
-        display: inline-block;
-        width: 18px;
-        height: 100%;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 1;
-        touch-action: none;
+    background: #71717a linear-gradient(0deg, #71717a 0%, #71717a 100%);
+  }
+  /* TABLES */
+  .resizer {
+    display: inline-block;
+    width: 18px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    touch-action: none;
 
-        @apply rotate-90 translate-x-1/4 select-none;
-    }
-    .task-table-row {
-        @apply odd:bg-primary even:bg-primary-alt;
-    }
-    /* MISC */
-    .shadow-top {
-        box-shadow: 3px -3px 3px -3px var(--tw-shadow-color), -3px -3px 3px -3px var(--tw-shadow-color);
-    }
-    .shadow-top-under {
-        box-shadow: inset 0px -7px 5px -5px var(--tw-shadow-color), 3px -3px 3px -3px var(--tw-shadow-color),
-            -3px -3px 3px -3px var(--tw-shadow-color);
-    }
+    @apply rotate-90 translate-x-1/4 select-none;
+  }
+  .task-table-row {
+    @apply odd:bg-primary even:bg-primary-alt;
+  }
+  /* MISC */
+  .shadow-top {
+    box-shadow: 3px -3px 3px -3px var(--tw-shadow-color), -3px -3px 3px -3px var(--tw-shadow-color);
+  }
+  .shadow-top-under {
+    box-shadow: inset 0px -7px 5px -5px var(--tw-shadow-color), 3px -3px 3px -3px var(--tw-shadow-color),
+      -3px -3px 3px -3px var(--tw-shadow-color);
+  }
 }
 
 @layer utilities {

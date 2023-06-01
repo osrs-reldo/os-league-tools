@@ -4,13 +4,13 @@ import PageWrapper from '../components/PageWrapper';
 import CalculatorsPanel from './CalculatorsPanel';
 
 export default function Calculators() {
-    return (
-        <PageWrapper>
-            <Card>
-                <Card.Body>
-                    <CalculatorsPanel />
-                </Card.Body>
-            </Card>
-        </PageWrapper>
-    );
+  return (
+    <PageWrapper>
+      <Card>
+        <Card.Body>
+          <CalculatorsPanel />
+        </Card.Body>
+      </Card>
+    </PageWrapper>
+  );
 }

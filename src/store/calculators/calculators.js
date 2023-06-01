@@ -8,76 +8,76 @@ import { levelToExperience } from '../../util/xpAndLevelConversions';
 const CURRENT_VERSION = 1;
 
 export const DEFAULT_CALCULATOR_EXP_VALUES = Object.freeze({
-    start: {
-        level: 1,
-        xp: levelToExperience(1),
-        mode: 'xp',
-    },
-    target: {
-        level: 2,
-        xp: levelToExperience(2),
-        mode: 'level',
-    },
+  start: {
+    level: 1,
+    xp: levelToExperience(1),
+    mode: 'xp',
+  },
+  target: {
+    level: 2,
+    xp: levelToExperience(2),
+    mode: 'level',
+  },
 });
 
 const INITIAL_STATE = {
-    version: CURRENT_VERSION,
-    skill: calculatorData.skills[0],
-    expValues: DEFAULT_CALCULATOR_EXP_VALUES,
-    calculatorTier: 1,
+  version: CURRENT_VERSION,
+  skill: calculatorData.skills[0],
+  expValues: DEFAULT_CALCULATOR_EXP_VALUES,
+  calculatorTier: 1,
 };
 
 const calculatorsSlice = createSlice({
-    name: 'calculators',
-    initialState: INITIAL_STATE,
-    reducers: {
-        updateCalculatorsSkill: (state, action) => {
-            state.skill = action.payload.skill;
-        },
-        updateSingleCalculatorsExpValue: (state, action) => {
-            const { xp, level, type } = action.payload;
-            state.expValues[type] = {
-                ...state.expValues[type],
-                xp,
-                level,
-            };
-        },
-        updateCalculatorsExpValues: (state, action) => {
-            const { start, target } = action.payload;
-            if (!start || !target) {
-                throw new Error('You need to provide both start and target XP value objects 😠');
-            }
-            state.expValues = {
-                ...action.payload,
-            };
-        },
-        updateCalculatorsMode: (state, action) => {
-            const { mode, type } = action.payload;
-            state.expValues[type].mode = mode;
-        },
-        updateCalculatorsTier: (state, action) => {
-            state.calculatorTier = action.payload;
-        },
-        reset: () => INITIAL_STATE,
+  name: 'calculators',
+  initialState: INITIAL_STATE,
+  reducers: {
+    updateCalculatorsSkill: (state, action) => {
+      state.skill = action.payload.skill;
     },
+    updateSingleCalculatorsExpValue: (state, action) => {
+      const { xp, level, type } = action.payload;
+      state.expValues[type] = {
+        ...state.expValues[type],
+        xp,
+        level,
+      };
+    },
+    updateCalculatorsExpValues: (state, action) => {
+      const { start, target } = action.payload;
+      if (!start || !target) {
+        throw new Error('You need to provide both start and target XP value objects 😠');
+      }
+      state.expValues = {
+        ...action.payload,
+      };
+    },
+    updateCalculatorsMode: (state, action) => {
+      const { mode, type } = action.payload;
+      state.expValues[type].mode = mode;
+    },
+    updateCalculatorsTier: (state, action) => {
+      state.calculatorTier = action.payload;
+    },
+    reset: () => INITIAL_STATE,
+  },
 });
 
 export const loadState = () => {
-    const prevState = getFromLocalStorage(LOCALSTORAGE_KEYS.CALCULATORS, INITIAL_STATE);
-    if (prevState && (!prevState.version || prevState.version < CURRENT_VERSION)) {
-        // Clear data from old version
-        return INITIAL_STATE;
-    }
-    return prevState;
+  const prevState = getFromLocalStorage(LOCALSTORAGE_KEYS.CALCULATORS, INITIAL_STATE);
+  if (prevState && (!prevState.version || prevState.version < CURRENT_VERSION)) {
+    // Clear data from old version
+    return INITIAL_STATE;
+  }
+  return prevState;
 };
 
 export const {
-    updateCalculatorsSkill,
-    updateCalculatorsExpValues,
-    updateSingleCalculatorsExpValue,
-    updateCalculatorsMode,
-    updateCalculatorsTier,
-    reset,
+  updateCalculatorsSkill,
+  updateCalculatorsExpValues,
+  updateSingleCalculatorsExpValue,
+  updateCalculatorsMode,
+  updateCalculatorsTier,
+  reset,
 } = calculatorsSlice.actions;
 
 export default calculatorsSlice.reducer;

@@ -3,64 +3,64 @@ import { getLayoutSlots, withSlot, LayoutSlot } from './util/layout';
 import { getCardStyle } from './util/theme';
 
 function Card({
-    children,
-    image = null,
-    imageSize = 'md',
-    corners = 'default',
-    borders = 'none',
-    padding = 'md',
-    halign = 'none',
-    valign = 'none',
-    shadow = 'default',
-    width = 'w-full',
-    onClick = () => {},
-    className = '',
+  children,
+  image = null,
+  imageSize = 'md',
+  corners = 'default',
+  borders = 'none',
+  padding = 'md',
+  halign = 'none',
+  valign = 'none',
+  shadow = 'default',
+  width = 'w-full',
+  onClick = () => {},
+  className = '',
 }) {
-    const { header, body, footer } = getLayoutSlots(children);
+  const { header, body, footer } = getLayoutSlots(children);
 
-    return (
+  return (
+    <div
+      className={`bg-primary ${getCardStyle('corners', corners)} ${getCardStyle('borders', borders)} ${getCardStyle(
+        'shadow',
+        shadow
+      )} shadow-primary ${className}`}
+      onClick={onClick}
+    >
+      <div className='flex md:flex-row flex-col h-full'>
+        {image && (
+          <Image
+            src={image}
+            style={`${getCardStyle('imageSize', imageSize)} ${getCardStyle(
+              'corners',
+              corners
+            )} rounded-tr-none rounded-br-none`}
+          />
+        )}
         <div
-            className={`bg-primary ${getCardStyle('corners', corners)} ${getCardStyle(
-                'borders',
-                borders
-            )} ${getCardStyle('shadow', shadow)} shadow-primary ${className}`}
-            onClick={onClick}
+          className={`${width} ${getCardStyle('padding', padding)} ${getCardStyle('halign', halign)} ${getCardStyle(
+            'valign',
+            valign
+          )}`}
         >
-            <div className='flex md:flex-row flex-col h-full'>
-                {image && (
-                    <Image
-                        src={image}
-                        style={`${getCardStyle('imageSize', imageSize)} ${getCardStyle(
-                            'corners',
-                            corners
-                        )} rounded-tr-none rounded-br-none`}
-                    />
-                )}
-                <div
-                    className={`${width} ${getCardStyle('padding', padding)} ${getCardStyle(
-                        'halign',
-                        halign
-                    )} ${getCardStyle('valign', valign)}`}
-                >
-                    {header}
-                    {body && (header ? <div className='mt-2'>{body}</div> : body)}
-                    {footer && <div className='mt-auto'>{footer}</div>}
-                </div>
-            </div>
+          {header}
+          {body && (header ? <div className='mt-2'>{body}</div> : body)}
+          {footer && <div className='mt-auto'>{footer}</div>}
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 function Image({ src, style }) {
-    return <img className={style} src={src} alt='' />;
+  return <img className={style} src={src} alt='' />;
 }
 
 function Header({ children, className = 'heading-block-md' }) {
-    return <div className={className}>{children}</div>;
+  return <div className={className}>{children}</div>;
 }
 
 function Footer({ children }) {
-    return <div className='mt-auto'>{children}</div>;
+  return <div className='mt-auto'>{children}</div>;
 }
 
 Card.Image = Image;

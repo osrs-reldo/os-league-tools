@@ -1,9 +1,9 @@
 module.exports = {
-    plugins: {
-        'postcss-import-url': {
-            modernBrowser: true,
-        },
-        tailwindcss: {},
-        autoprefixer: {},
+  plugins: {
+    'postcss-import-url': {
+      modernBrowser: true,
     },
+    tailwindcss: {},
+    autoprefixer: {},
+  },
 };

@@ -3,37 +3,37 @@ import { parse, stringify } from 'query-string';
 
 /** shamelessly copy/pasted https://medium.com/swlh/81ccdfcb174f */
 export default function useQueryString(key, initialValue) {
-    const [value, setValue] = useState(getQueryStringValue(key) || initialValue);
-    const onSetValue = useCallback(
-        newValue => {
-            setValue(newValue);
-            setQueryStringValue(key, newValue);
-        },
-        [key]
-    );
+  const [value, setValue] = useState(getQueryStringValue(key) || initialValue);
+  const onSetValue = useCallback(
+    newValue => {
+      setValue(newValue);
+      setQueryStringValue(key, newValue);
+    },
+    [key]
+  );
 
-    return [value, onSetValue];
+  return [value, onSetValue];
 }
 
 function setQueryStringWithoutPageReload(qsValue) {
-    const newurl = `${window.location.protocol}//${window.location.host}${window.location.pathname}${qsValue}${window.location.hash}`;
-    window.history.pushState({ path: newurl }, '', newurl);
+  const newurl = `${window.location.protocol}//${window.location.host}${window.location.pathname}${qsValue}${window.location.hash}`;
+  window.history.pushState({ path: newurl }, '', newurl);
 }
 
 function setQueryStringValue(key, value, queryString = window.location.search) {
-    const values = parse(queryString);
-    let newQsValue;
-    if (!value) {
-        const updatedValues = { ...values };
-        delete updatedValues[key];
-        newQsValue = stringify(updatedValues);
-    } else {
-        newQsValue = stringify({ ...values, [key]: value });
-    }
-    setQueryStringWithoutPageReload(`?${newQsValue}`);
+  const values = parse(queryString);
+  let newQsValue;
+  if (!value) {
+    const updatedValues = { ...values };
+    delete updatedValues[key];
+    newQsValue = stringify(updatedValues);
+  } else {
+    newQsValue = stringify({ ...values, [key]: value });
+  }
+  setQueryStringWithoutPageReload(`?${newQsValue}`);
 }
 
 function getQueryStringValue(key, queryString = window.location.search) {
-    const values = parse(queryString);
-    return values[key];
+  const values = parse(queryString);
+  return values[key];
 }

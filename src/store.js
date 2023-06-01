@@ -12,43 +12,43 @@ import accountReducer, { loadState as loadAccountState } from './store/user/acco
 import calculatorsReducer, { loadState as loadCalculatorsState } from './store/calculators/calculators';
 
 const reducer = {
-    filters: filterReducer,
-    settings: settingsReducer,
-    tasks: tasksReducer,
-    unlocks: unlocksReducer,
-    character: characterReducer,
-    fragments: fragmentReducer,
-    account: accountReducer,
-    calculators: calculatorsReducer,
+  filters: filterReducer,
+  settings: settingsReducer,
+  tasks: tasksReducer,
+  unlocks: unlocksReducer,
+  character: characterReducer,
+  fragments: fragmentReducer,
+  account: accountReducer,
+  calculators: calculatorsReducer,
 };
 
 const preloadedState = {
-    filters: loadFilterState(),
-    settings: loadSettingsState(),
-    tasks: loadTasksState(),
-    unlocks: loadUnlocksState(),
-    character: loadCharacterState(),
-    fragments: loadFragmentState(),
-    account: loadAccountState(),
-    calculators: loadCalculatorsState(),
+  filters: loadFilterState(),
+  settings: loadSettingsState(),
+  tasks: loadTasksState(),
+  unlocks: loadUnlocksState(),
+  character: loadCharacterState(),
+  fragments: loadFragmentState(),
+  account: loadAccountState(),
+  calculators: loadCalculatorsState(),
 };
 
 const store = configureStore({
-    reducer,
-    preloadedState,
-    middleware: [thunk],
+  reducer,
+  preloadedState,
+  middleware: [thunk],
 });
 
 store.subscribe(
-    throttle(() => {
-        updateLocalStorage(LOCALSTORAGE_KEYS.FILTER_STATE, store.getState().filters);
-        updateLocalStorage(LOCALSTORAGE_KEYS.SETTINGS, store.getState().settings);
-        updateLocalStorage(LOCALSTORAGE_KEYS.TASKS, store.getState().tasks);
-        updateLocalStorage(LOCALSTORAGE_KEYS.UNLOCKS, store.getState().unlocks);
-        updateLocalStorage(LOCALSTORAGE_KEYS.CHARACTER, store.getState().character);
-        updateLocalStorage(LOCALSTORAGE_KEYS.FRAGMENTS, store.getState().fragments);
-        updateLocalStorage(LOCALSTORAGE_KEYS.CALCULATORS, store.getState().calculators);
-    }, 200)
+  throttle(() => {
+    updateLocalStorage(LOCALSTORAGE_KEYS.FILTER_STATE, store.getState().filters);
+    updateLocalStorage(LOCALSTORAGE_KEYS.SETTINGS, store.getState().settings);
+    updateLocalStorage(LOCALSTORAGE_KEYS.TASKS, store.getState().tasks);
+    updateLocalStorage(LOCALSTORAGE_KEYS.UNLOCKS, store.getState().unlocks);
+    updateLocalStorage(LOCALSTORAGE_KEYS.CHARACTER, store.getState().character);
+    updateLocalStorage(LOCALSTORAGE_KEYS.FRAGMENTS, store.getState().fragments);
+    updateLocalStorage(LOCALSTORAGE_KEYS.CALCULATORS, store.getState().calculators);
+  }, 200)
 );
 
 export default store;

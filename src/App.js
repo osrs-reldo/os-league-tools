@@ -17,47 +17,47 @@ import Calculators from './pages/Calculators';
 const history = createBrowserHistory();
 const trackingId = process.env.REACT_APP_GA_TRACKING || '';
 ReactGA.initialize(trackingId, {
-    gaOptions: {
-        siteSpeedSampleRate: 100,
-    },
+  gaOptions: {
+    siteSpeedSampleRate: 100,
+  },
 });
 history.listen(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+  ReactGA.pageview(window.location.pathname + window.location.search);
 });
 
 export default function App() {
-    useEffect(() => {
-        ReactGA.pageview(window.location.pathname + window.location.search);
-    }, []);
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
-    return (
-        <Provider store={store}>
-            <ThemeProvider>
-                <div className='App'>
-                    <BrowserRouter basename='/'>
-                        <Auth0Provider
-                            domain='login.osleague.tools'
-                            clientId='yfqwKEhQO8FL7MlxWmWo7ekuGgzSrfmh'
-                            redirectUri={window.location.origin}
-                        >
-                            <Routes>
-                                <Route path='/' element={<Homepage />} />
-                                <Route path='stats' element={<Statistics />} />
-                                <Route path='news' element={<Homepage />} />
-                                <Route path='tracker' element={<Tracker />} />
-                                <Route path='calculators' element={<Calculators />}>
-                                    <Route path=':skill' element={<Calculators />} />
-                                </Route>
-                                <Route path='planners' element={<Calculators />}>
-                                    <Route path=':skill' element={<Calculators />} />
-                                </Route>
-                                <Route path='about' element={<About />} />
-                                <Route path='settings' element={<Settings />} />
-                            </Routes>
-                        </Auth0Provider>
-                    </BrowserRouter>
-                </div>
-            </ThemeProvider>
-        </Provider>
-    );
+  return (
+    <Provider store={store}>
+      <ThemeProvider>
+        <div className='App'>
+          <BrowserRouter basename='/'>
+            <Auth0Provider
+              domain='login.osleague.tools'
+              clientId='yfqwKEhQO8FL7MlxWmWo7ekuGgzSrfmh'
+              redirectUri={window.location.origin}
+            >
+              <Routes>
+                <Route path='/' element={<Homepage />} />
+                <Route path='stats' element={<Statistics />} />
+                <Route path='news' element={<Homepage />} />
+                <Route path='tracker' element={<Tracker />} />
+                <Route path='calculators' element={<Calculators />}>
+                  <Route path=':skill' element={<Calculators />} />
+                </Route>
+                <Route path='planners' element={<Calculators />}>
+                  <Route path=':skill' element={<Calculators />} />
+                </Route>
+                <Route path='about' element={<About />} />
+                <Route path='settings' element={<Settings />} />
+              </Routes>
+            </Auth0Provider>
+          </BrowserRouter>
+        </div>
+      </ThemeProvider>
+    </Provider>
+  );
 }
