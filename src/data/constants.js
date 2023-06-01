@@ -843,6 +843,29 @@ export const QUEST_SERIES = {
   },
 };
 
+export const SKILL_UNLOCK = {
+  13344: STATS.Attack,
+  13345: STATS.Strength,
+  13348: STATS.Hitpoints,
+  13346: STATS.Ranged,
+  13349: STATS.Prayer,
+  13347: STATS.Magic,
+  13356: STATS.Cooking,
+  13358: STATS.Woodcutting,
+  13359: STATS.Fletching,
+  13357: STATS.Firemaking,
+  13352: STATS.Crafting,
+  13355: STATS.Smithing,
+  13354: STATS.Mining,
+  13351: STATS.Herblore,
+  13350: STATS.Agility,
+  13360: STATS.Slayer,
+  13361: STATS.Farming,
+  13353: STATS.Runecraft,
+  13363: STATS.Hunter,
+  13362: STATS.Construction,
+};
+
 export const QUEST_STATUS = {
   NOT_STARTED: 'NOT_STARTED',
   IN_PROGRESS: 'IN_PROGRESS',
