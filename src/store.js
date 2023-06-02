@@ -46,6 +46,7 @@ store.subscribe(
     updateLocalStorage(LOCALSTORAGE_KEYS.TASKS, store.getState().tasks);
     updateLocalStorage(LOCALSTORAGE_KEYS.UNLOCKS, store.getState().unlocks);
     updateLocalStorage(LOCALSTORAGE_KEYS.CHARACTER, store.getState().character);
+    updateLocalStorage(LOCALSTORAGE_KEYS.ACCOUNT, store.getState().account);
     updateLocalStorage(LOCALSTORAGE_KEYS.FRAGMENTS, store.getState().fragments);
     updateLocalStorage(LOCALSTORAGE_KEYS.CALCULATORS, store.getState().calculators);
   }, 200)

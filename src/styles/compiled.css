@@ -820,18 +820,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 /* Compatibility classes for applying text colors to svg images */
 
 .dark .img-primary {
-        filter: invert(100%) sepia(15%) saturate(2475%) hue-rotate(180deg) brightness(102%) contrast(81%);
-    }
+    filter: invert(100%) sepia(15%) saturate(2475%) hue-rotate(180deg) brightness(102%) contrast(81%);
+  }
 
 /* TYPOGRAPHY */
 
 .small-caps {
-        font-feature-settings: 'smcp';
-    }
+    font-feature-settings: 'smcp';
+  }
 
 .force-wrap {
-        word-spacing: 100vw;
-    }
+    word-spacing: 100vw;
+  }
 
 /* ICON FONT */
 
@@ -1706,30 +1706,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.25rem;
 }
 select[multiple]:focus option:checked {
-        /*
+    /*
             css hack to override browser default color for selected/focused multi-select
             options. background color is set with !important so it can't be directly overriden
             with another color, but setting it to an image background (in this case a solid
             color gradient) will do the trick. doesn't seem to work on safari though.
          */
-        background: #71717a linear-gradient(0deg, #71717a 0%, #71717a 100%);
-    }
+    background: #71717a linear-gradient(0deg, #71717a 0%, #71717a 100%);
+  }
 /* TABLES */
 .resizer {
-        display: inline-block;
-        width: 18px;
-        height: 100%;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 1;
-        touch-action: none;
-        --tw-translate-x: 25%;
-        --tw-rotate: 90deg;
-        transform: var(--tw-transform);
-        -webkit-user-select: none;
-                user-select: none;
-    }
+    display: inline-block;
+    width: 18px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    touch-action: none;
+    --tw-translate-x: 25%;
+    --tw-rotate: 90deg;
+    transform: var(--tw-transform);
+    -webkit-user-select: none;
+            user-select: none;
+  }
 .task-table-row:nth-child(odd) {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1748,12 +1748,12 @@ select[multiple]:focus option:checked {
 }
 /* MISC */
 .shadow-top {
-        box-shadow: 3px -3px 3px -3px var(--tw-shadow-color), -3px -3px 3px -3px var(--tw-shadow-color);
-    }
+    box-shadow: 3px -3px 3px -3px var(--tw-shadow-color), -3px -3px 3px -3px var(--tw-shadow-color);
+  }
 .shadow-top-under {
-        box-shadow: inset 0px -7px 5px -5px var(--tw-shadow-color), 3px -3px 3px -3px var(--tw-shadow-color),
-            -3px -3px 3px -3px var(--tw-shadow-color);
-    }
+    box-shadow: inset 0px -7px 5px -5px var(--tw-shadow-color), 3px -3px 3px -3px var(--tw-shadow-color),
+      -3px -3px 3px -3px var(--tw-shadow-color);
+  }
 .invisible {
   visibility: hidden;
 }
@@ -2427,9 +2427,6 @@ select[multiple]:focus option:checked {
 .italic {
   font-style: italic;
 }
-.leading-none {
-  line-height: 1;
-}
 .leading-3 {
   line-height: .75rem;
 }
@@ -2651,48 +2648,48 @@ select[multiple]:focus option:checked {
   }
 }
 @media (min-width: 1280px) {
-    .xl\:bg-primary {
+  .xl\:bg-primary {
     --tw-bg-opacity: 1;
     background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   }
-    .dark .xl\:bg-primary {
+  .dark .xl\:bg-primary {
     --tw-bg-opacity: 1;
     background-color: rgb(63 63 70 / var(--tw-bg-opacity));
   }
-    .xl\:order-2 {
+  .xl\:order-2 {
     order: 2;
   }
-    .xl\:order-3 {
+  .xl\:order-3 {
     order: 3;
   }
-    .xl\:order-4 {
+  .xl\:order-4 {
     order: 4;
   }
-    .xl\:order-6 {
+  .xl\:order-6 {
     order: 6;
   }
-    .xl\:ml-1 {
+  .xl\:ml-1 {
     margin-left: 0.25rem;
   }
-    .xl\:mt-3 {
+  .xl\:mt-3 {
     margin-top: 0.75rem;
   }
-    .xl\:grid-cols-1 {
+  .xl\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-    .xl\:grid-cols-2 {
+  .xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-    .xl\:flex-row {
+  .xl\:flex-row {
     flex-direction: row;
   }
-    .xl\:border-l {
+  .xl\:border-l {
     border-left-width: 1px;
   }
-    .xl\:border-t-0 {
+  .xl\:border-t-0 {
     border-top-width: 0px;
   }
-    .xl\:pt-\[0\] {
+  .xl\:pt-\[0\] {
     padding-top: 0;
   }
 }
