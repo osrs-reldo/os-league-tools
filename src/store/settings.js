@@ -2,6 +2,7 @@
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
+import updateWithUserDataStorage from './updateWithUserDataStorage';
 
 const INITIAL_STATE = {
   version: 1,
@@ -28,8 +29,18 @@ export const userSlice = createSlice({
   },
 });
 
+const { update: innerUpdate, load: innerLoad } = userSlice.actions;
+
+export function update(props) {
+  return updateWithUserDataStorage(innerUpdate, props, LOCALSTORAGE_KEYS.SETTINGS, 'settings');
+}
+
+export function load(props) {
+  return updateWithUserDataStorage(innerLoad, props, LOCALSTORAGE_KEYS.SETTINGS, 'settings');
+}
+
 export const loadState = () => getFromLocalStorage(LOCALSTORAGE_KEYS.SETTINGS, INITIAL_STATE);
 
-export const { update, load, reset } = userSlice.actions;
+export const { reset } = userSlice.actions;
 
 export default userSlice.reducer;

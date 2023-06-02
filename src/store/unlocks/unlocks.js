@@ -3,6 +3,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import _ from 'lodash';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorage-client';
+import updateWithUserDataStorage from '../updateWithUserDataStorage';
 import { INITIAL_STATE } from './constants';
 import updateUnlocksVersion from './updateUnlocksVersion';
 
@@ -41,11 +42,44 @@ export const unlocksSlice = createSlice({
   },
 });
 
+const {
+  lockSkill: innerLockSkill,
+  unlockSkill: innerUnlockSkill,
+  lockBoss: innerLockBoss,
+  unlockBoss: innerUnlockBoss,
+  updateQuest: innerUpdateQuest,
+  load: innerLoad,
+} = unlocksSlice.actions;
+
+export function lockSkill(props) {
+  return updateWithUserDataStorage(innerLockSkill, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
+}
+
+export function unlockSkill(props) {
+  return updateWithUserDataStorage(innerUnlockSkill, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
+}
+
+export function lockBoss(props) {
+  return updateWithUserDataStorage(innerLockBoss, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
+}
+
+export function unlockBoss(props) {
+  return updateWithUserDataStorage(innerUnlockBoss, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
+}
+
+export function updateQuest(props) {
+  return updateWithUserDataStorage(innerUpdateQuest, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
+}
+
+export function load(props) {
+  return updateWithUserDataStorage(innerLoad, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
+}
+
 export const loadState = () => {
   const prevState = getFromLocalStorage(LOCALSTORAGE_KEYS.UNLOCKS, INITIAL_STATE);
   return updateUnlocksVersion(prevState);
 };
 
-export const { lockSkill, unlockSkill, lockBoss, unlockBoss, updateQuest, load, reset } = unlocksSlice.actions;
+export const { reset } = unlocksSlice.actions;
 
 export default unlocksSlice.reducer;

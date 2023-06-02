@@ -3,6 +3,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import getHiscores from '../../client/hiscores-client';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorage-client';
+import updateWithUserDataStorage from '../updateWithUserDataStorage';
 
 const HISCORES_TTL = 1800000; // 30 min in ms
 
@@ -82,6 +83,16 @@ export function fetchHiscores(state, forceReload = false) {
   };
 }
 
-export const { updateUsername, updateHiscores, load, reset } = characterSlice.actions;
+const { updateUsername: innerUpdateUsername, load: innerLoad } = characterSlice.actions;
+
+export function updateUsername(props) {
+  return updateWithUserDataStorage(innerUpdateUsername, props, LOCALSTORAGE_KEYS.CHARACTER, 'character');
+}
+
+export function load(props) {
+  return updateWithUserDataStorage(innerLoad, props, LOCALSTORAGE_KEYS.CHARACTER, 'character');
+}
+
+export const { updateHiscores, reset } = characterSlice.actions;
 
 export default characterSlice.reducer;

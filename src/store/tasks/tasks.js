@@ -4,6 +4,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorage-client';
 import calculateTaskStats from '../../util/calculateTaskStats';
 import { getTier } from '../../util/getTier';
+import updateWithUserDataStorage from '../updateWithUserDataStorage';
 import { INITIAL_STATE, INITIAL_TASK_STATE } from './constants';
 import updateTasksVersion from './updateTasksVersion';
 
@@ -88,13 +89,50 @@ export const taskSlice = createSlice({
   },
 });
 
+const {
+  toggleTodo: innerToggleTodo,
+  toggleIgnored: innerToggleIgnored,
+  toggleCompleted: innerToggleCompleted,
+  updateNotes: innerUpdateNotes,
+  updateOrder: innerUpdateOrder,
+  updateRandomTask: innerUpdateRandomTask,
+  load: innerLoad,
+} = taskSlice.actions;
+
+export function toggleTodo(props) {
+  return updateWithUserDataStorage(innerToggleTodo, props, LOCALSTORAGE_KEYS.TASKS, 'tasks');
+}
+
+export function toggleIgnored(props) {
+  return updateWithUserDataStorage(innerToggleIgnored, props, LOCALSTORAGE_KEYS.TASKS, 'tasks');
+}
+
+export function toggleCompleted(props) {
+  return updateWithUserDataStorage(innerToggleCompleted, props, LOCALSTORAGE_KEYS.TASKS, 'tasks');
+}
+
+export function updateNotes(props) {
+  return updateWithUserDataStorage(innerUpdateNotes, props, LOCALSTORAGE_KEYS.TASKS, 'tasks');
+}
+
+export function updateOrder(props) {
+  return updateWithUserDataStorage(innerUpdateOrder, props, LOCALSTORAGE_KEYS.TASKS, 'tasks');
+}
+
+export function updateRandomTask(props) {
+  return updateWithUserDataStorage(innerUpdateRandomTask, props, LOCALSTORAGE_KEYS.TASKS, 'tasks');
+}
+
+export function load(props) {
+  return updateWithUserDataStorage(innerLoad, props, LOCALSTORAGE_KEYS.TASKS, 'tasks');
+}
+
 export const loadState = () => {
   const prevState = getFromLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_STATE);
   return updateTasksVersion(prevState);
 };
 
-export const { toggleTodo, toggleIgnored, toggleCompleted, updateNotes, updateOrder, updateRandomTask, reset, load } =
-  taskSlice.actions;
+export const { reset } = taskSlice.actions;
 
 export function selectTask(state, taskId) {
   return state.tasks.tasks[taskId] || { ...INITIAL_TASK_STATE };

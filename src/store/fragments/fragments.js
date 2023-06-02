@@ -2,6 +2,7 @@
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorage-client';
+import updateWithUserDataStorage from '../updateWithUserDataStorage';
 import { CURRENT_VERSION } from './constants';
 import updateFragmentsVersion from './updateFragmentsVersion';
 
@@ -58,12 +59,35 @@ export const fragmentSlice = createSlice({
   },
 });
 
+const {
+  setFragmentUnlocked: innerSetFragmentUnlocked,
+  setFragmentLevel: innerSetFragmentLevel,
+  toggleFragment: innerToggleFragment,
+  load: innerLoad,
+} = fragmentSlice.actions;
+
+export function setFragmentUnlocked(props) {
+  return updateWithUserDataStorage(innerSetFragmentUnlocked, props, LOCALSTORAGE_KEYS.FRAGMENTS, 'fragments');
+}
+
+export function setFragmentLevel(props) {
+  return updateWithUserDataStorage(innerSetFragmentLevel, props, LOCALSTORAGE_KEYS.FRAGMENTS, 'fragments');
+}
+
+export function toggleFragment(props) {
+  return updateWithUserDataStorage(innerToggleFragment, props, LOCALSTORAGE_KEYS.FRAGMENTS, 'fragments');
+}
+
+export function load(props) {
+  return updateWithUserDataStorage(innerLoad, props, LOCALSTORAGE_KEYS.FRAGMENTS, 'fragments');
+}
+
 export function selectFragment(state, id) {
   return state.fragments.fragments[id] || { ...INITIAL_FRAGMENT_STATE };
 }
 
 export const loadState = () => updateFragmentsVersion(getFromLocalStorage(LOCALSTORAGE_KEYS.FRAGMENTS, INITIAL_STATE));
 
-export const { setFragmentUnlocked, setFragmentLevel, toggleFragment, load, reset } = fragmentSlice.actions;
+export const { reset } = fragmentSlice.actions;
 
 export default fragmentSlice.reducer;
