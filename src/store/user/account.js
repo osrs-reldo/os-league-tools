@@ -20,12 +20,13 @@ export const accountSlice = createSlice({
       state.accountCache.isLoggedIn = action.payload.isAuthenticated;
       state.accountCache.userEmail = action.payload.isAuthenticated ? action.payload.user.email : undefined;
     },
+    reset: () => INITIAL_STATE,
   },
 });
 
 // Don't cache anything across sessions, let auth0 handle it
 export const loadState = () => INITIAL_STATE;
 
-export const { updateAccountCache } = accountSlice.actions;
+export const { updateAccountCache, reset } = accountSlice.actions;
 
 export default accountSlice.reducer;

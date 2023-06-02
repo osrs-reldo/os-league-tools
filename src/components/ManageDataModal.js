@@ -6,7 +6,7 @@ import { resetLocalStorageData } from '../client/localstorage-client';
 import importFromPlugin from '../client/plugin-importer';
 import Separator from './common/Separator';
 import Modal from './Modal';
-import loadNewState from '../store/common';
+import { loadNewState } from '../store/common';
 
 const PLUGIN_EXPORT_VERSION = 1;
 
