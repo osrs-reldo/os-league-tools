@@ -97,6 +97,7 @@ const {
   updateOrder: innerUpdateOrder,
   updateRandomTask: innerUpdateRandomTask,
   load: innerLoad,
+  reset: innerReset,
 } = taskSlice.actions;
 
 export function toggleTodo(props) {
@@ -127,12 +128,14 @@ export function load(props) {
   return updateWithUserDataStorage(innerLoad, props, LOCALSTORAGE_KEYS.TASKS, 'tasks');
 }
 
+export function reset(props) {
+  return updateWithUserDataStorage(innerReset, props, LOCALSTORAGE_KEYS.TASKS, 'tasks');
+}
+
 export const loadState = () => {
   const prevState = getFromLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_STATE);
   return updateTasksVersion(prevState);
 };
-
-export const { reset } = taskSlice.actions;
 
 export function selectTask(state, taskId) {
   return state.tasks.tasks[taskId] || { ...INITIAL_TASK_STATE };

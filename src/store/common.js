@@ -5,7 +5,6 @@ import { load as loadUnlocksState, reset as resetUnlocksState } from './unlocks/
 import { load as loadCharacterState, reset as resetCharacterState } from './user/character';
 import { load as loadFragmentState, reset as resetFragmentState } from './fragments/fragments';
 import { reset as resetFilterState } from './filters';
-import { reset as resetAccountState } from './user/account';
 import { reset as resetCalculatorsState } from './calculators/calculators';
 
 export function loadNewState(dispatch, newState) {
@@ -18,15 +17,14 @@ export function loadNewState(dispatch, newState) {
   });
 }
 
-export function resetState(dispatch) {
+export function resetState(dispatch, skipDbUpdate) {
   batch(() => {
-    dispatch(resetSettingsState());
-    dispatch(resetTasksState());
-    dispatch(resetUnlocksState());
-    dispatch(resetCharacterState());
-    dispatch(resetFragmentState());
-    dispatch(resetFilterState());
-    dispatch(resetAccountState());
-    dispatch(resetCalculatorsState());
+    dispatch(resetSettingsState({ skipDbUpdate }));
+    dispatch(resetTasksState({ skipDbUpdate }));
+    dispatch(resetUnlocksState({ skipDbUpdate }));
+    dispatch(resetCharacterState({ skipDbUpdate }));
+    dispatch(resetFragmentState({ skipDbUpdate }));
+    dispatch(resetFilterState({ skipDbUpdate }));
+    dispatch(resetCalculatorsState({ skipDbUpdate }));
   });
 }

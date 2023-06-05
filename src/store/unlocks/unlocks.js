@@ -49,6 +49,7 @@ const {
   unlockBoss: innerUnlockBoss,
   updateQuest: innerUpdateQuest,
   load: innerLoad,
+  reset: innerReset,
 } = unlocksSlice.actions;
 
 export function lockSkill(props) {
@@ -75,11 +76,13 @@ export function load(props) {
   return updateWithUserDataStorage(innerLoad, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
 }
 
+export function reset(props) {
+  return updateWithUserDataStorage(innerReset, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
+}
+
 export const loadState = () => {
   const prevState = getFromLocalStorage(LOCALSTORAGE_KEYS.UNLOCKS, INITIAL_STATE);
   return updateUnlocksVersion(prevState);
 };
-
-export const { reset } = unlocksSlice.actions;
 
 export default unlocksSlice.reducer;

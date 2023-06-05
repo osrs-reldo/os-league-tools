@@ -4,7 +4,10 @@ const DEFAULT_HEADERS = {
 };
 
 function defaultResponseHandler(result) {
-  return { success: result.status && result.status === 201 };
+  return {
+    success: true,
+    value: result,
+  };
 }
 
 function defaultErrorHandler(error) {
@@ -48,7 +51,7 @@ export function putUserData(userEmail, storageKey, payload) {
   return fetch(`${BASE_URL}/user?email=${userEmail}&key=${storageKey}`, {
     method: 'PUT',
     headers: DEFAULT_HEADERS,
-    body: JSON.stringify(payload),
+    body: typeof payload === 'object' ? JSON.stringify(payload) : payload,
   })
     .then(res => res.json())
     .then(defaultResponseHandler, defaultErrorHandler);

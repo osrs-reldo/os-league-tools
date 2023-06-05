@@ -6,7 +6,7 @@ import updateWithUserDataStorage from '../updateWithUserDataStorage';
 import { CURRENT_VERSION } from './constants';
 import updateFragmentsVersion from './updateFragmentsVersion';
 
-const INITIAL_STATE = {
+export const INITIAL_STATE = {
   version: CURRENT_VERSION,
   fragments: {},
 };
@@ -64,6 +64,7 @@ const {
   setFragmentLevel: innerSetFragmentLevel,
   toggleFragment: innerToggleFragment,
   load: innerLoad,
+  reset: innerReset,
 } = fragmentSlice.actions;
 
 export function setFragmentUnlocked(props) {
@@ -82,12 +83,14 @@ export function load(props) {
   return updateWithUserDataStorage(innerLoad, props, LOCALSTORAGE_KEYS.FRAGMENTS, 'fragments');
 }
 
+export function reset(props) {
+  return updateWithUserDataStorage(innerReset, props, LOCALSTORAGE_KEYS.FRAGMENTS, 'fragments');
+}
+
 export function selectFragment(state, id) {
   return state.fragments.fragments[id] || { ...INITIAL_FRAGMENT_STATE };
 }
 
 export const loadState = () => updateFragmentsVersion(getFromLocalStorage(LOCALSTORAGE_KEYS.FRAGMENTS, INITIAL_STATE));
-
-export const { reset } = fragmentSlice.actions;
 
 export default fragmentSlice.reducer;

@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { FilePicker } from 'react-file-picker';
 import { saveAs } from 'file-saver';
-import { resetLocalStorageData } from '../client/localstorage-client';
 import importFromPlugin from '../client/plugin-importer';
 import Separator from './common/Separator';
 import Modal from './Modal';
-import { loadNewState } from '../store/common';
+import { loadNewState, resetState } from '../store/common';
 
 const PLUGIN_EXPORT_VERSION = 1;
 
@@ -260,6 +259,7 @@ function ExportToFileContent() {
 
 function ResetDataModalContent({ setIsOpen }) {
   const [successText, setSuccessText] = useState('');
+  const dispatch = useDispatch();
 
   return (
     <>
@@ -278,7 +278,7 @@ function ResetDataModalContent({ setIsOpen }) {
           className='w-full my-1 button-filled ml-1'
           type='button'
           onClick={() => {
-            resetLocalStorageData();
+            resetState(dispatch);
             setSuccessText('Data has been deleted. Reloading page...');
             const currentParams = new URLSearchParams(window.location.search);
             currentParams.delete('open');

@@ -4,7 +4,7 @@ export default function updateWithUserDataStorage(wrappedDispatchFn, wrappedFnPr
   return async (dispatch, getState) => {
     await dispatch(wrappedDispatchFn(wrappedFnProps));
     const { isLoggedIn, userEmail } = getState().account.accountCache;
-    if (isLoggedIn) {
+    if (isLoggedIn && !wrappedFnProps.skipDbUpdate) {
       putUserData(userEmail, localstorageKey, getState()[stateKey]);
     }
   };

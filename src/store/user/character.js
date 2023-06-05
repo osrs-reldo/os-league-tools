@@ -13,7 +13,7 @@ const INITIAL_HISCORES_STATE = {
   data: null,
   error: null,
 };
-const INITIAL_STATE = {
+export const INITIAL_STATE = {
   version: 1,
   username: null,
   hiscoresCache: INITIAL_HISCORES_STATE,
@@ -83,7 +83,7 @@ export function fetchHiscores(state, forceReload = false) {
   };
 }
 
-const { updateUsername: innerUpdateUsername, load: innerLoad } = characterSlice.actions;
+const { updateUsername: innerUpdateUsername, load: innerLoad, reset: innerReset } = characterSlice.actions;
 
 export function updateUsername(props) {
   return updateWithUserDataStorage(innerUpdateUsername, props, LOCALSTORAGE_KEYS.CHARACTER, 'character');
@@ -93,6 +93,10 @@ export function load(props) {
   return updateWithUserDataStorage(innerLoad, props, LOCALSTORAGE_KEYS.CHARACTER, 'character');
 }
 
-export const { updateHiscores, reset } = characterSlice.actions;
+export function reset(props) {
+  return updateWithUserDataStorage(innerReset, props, LOCALSTORAGE_KEYS.CHARACTER, 'character');
+}
+
+export const { updateHiscores } = characterSlice.actions;
 
 export default characterSlice.reducer;

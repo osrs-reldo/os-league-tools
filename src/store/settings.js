@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
 import updateWithUserDataStorage from './updateWithUserDataStorage';
 
-const INITIAL_STATE = {
+export const INITIAL_STATE = {
   version: 1,
   limitContentWidth: true,
   mode: 'dark',
@@ -29,7 +29,7 @@ export const userSlice = createSlice({
   },
 });
 
-const { update: innerUpdate, load: innerLoad } = userSlice.actions;
+const { update: innerUpdate, load: innerLoad, reset: innerReset } = userSlice.actions;
 
 export function update(props) {
   return updateWithUserDataStorage(innerUpdate, props, LOCALSTORAGE_KEYS.SETTINGS, 'settings');
@@ -39,8 +39,10 @@ export function load(props) {
   return updateWithUserDataStorage(innerLoad, props, LOCALSTORAGE_KEYS.SETTINGS, 'settings');
 }
 
-export const loadState = () => getFromLocalStorage(LOCALSTORAGE_KEYS.SETTINGS, INITIAL_STATE);
+export function reset(props) {
+  return updateWithUserDataStorage(innerReset, props, LOCALSTORAGE_KEYS.SETTINGS, 'settings');
+}
 
-export const { reset } = userSlice.actions;
+export const loadState = () => getFromLocalStorage(LOCALSTORAGE_KEYS.SETTINGS, INITIAL_STATE);
 
 export default userSlice.reducer;
