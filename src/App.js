@@ -39,6 +39,7 @@ export default function App() {
               domain='login.osleague.tools'
               clientId='yfqwKEhQO8FL7MlxWmWo7ekuGgzSrfmh'
               redirectUri={window.location.origin}
+              audience='https://dev-u4mby-kt.us.auth0.com/api/v2/'
             >
               <Routes>
                 <Route path='/' element={<Homepage />} />

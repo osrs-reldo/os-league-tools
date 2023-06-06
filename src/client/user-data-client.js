@@ -15,7 +15,7 @@ function defaultErrorHandler(error) {
   return { success: false };
 }
 
-export function createUserIfNeeded(userEmail) {
+export function createUserIfNeeded(userEmail, accessToken) {
   const getUserResult = getUser(userEmail);
   if (getUserResult.success) {
     return { success: true };
@@ -23,34 +23,46 @@ export function createUserIfNeeded(userEmail) {
 
   return fetch(`${BASE_URL}/user?email=${userEmail}`, {
     method: 'POST',
-    headers: DEFAULT_HEADERS,
+    headers: {
+      ...DEFAULT_HEADERS,
+      Authorization: `Bearer ${accessToken}`,
+    },
   })
     .then(res => res.json())
     .then(defaultResponseHandler, defaultErrorHandler);
 }
 
-export function getUser(userEmail) {
+export function getUser(userEmail, accessToken) {
   return fetch(`${BASE_URL}/user?email=${userEmail}`, {
     method: 'GET',
-    headers: DEFAULT_HEADERS,
+    headers: {
+      ...DEFAULT_HEADERS,
+      Authorization: `Bearer ${accessToken}`,
+    },
   })
     .then(res => res.json())
     .then(defaultResponseHandler, defaultErrorHandler);
 }
 
-export function getUserData(userEmail, storageKey) {
+export function getUserData(userEmail, storageKey, accessToken) {
   return fetch(`${BASE_URL}/user?email=${userEmail}&key=${storageKey}`, {
     method: 'GET',
-    headers: DEFAULT_HEADERS,
+    headers: {
+      ...DEFAULT_HEADERS,
+      Authorization: `Bearer ${accessToken}`,
+    },
   })
     .then(res => res.json())
     .then(defaultResponseHandler, defaultErrorHandler);
 }
 
-export function putUserData(userEmail, storageKey, payload) {
+export function putUserData(userEmail, storageKey, payload, accessToken) {
   return fetch(`${BASE_URL}/user?email=${userEmail}&key=${storageKey}`, {
     method: 'PUT',
-    headers: DEFAULT_HEADERS,
+    headers: {
+      ...DEFAULT_HEADERS,
+      Authorization: `Bearer ${accessToken}`,
+    },
     body: typeof payload === 'object' ? JSON.stringify(payload) : payload,
   })
     .then(res => res.json())

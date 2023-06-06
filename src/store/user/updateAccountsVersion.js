@@ -2,6 +2,7 @@ import { CURRENT_VERSION } from './account';
 
 const versionUpdaters = {
   2: updateToV2,
+  3: updateToV3,
 };
 
 export default function updateUnlocksVersion(state) {
@@ -24,5 +25,14 @@ function updateToV2(prevState) {
     ...prevState,
     version: 2,
     userEmail: undefined,
+  };
+}
+
+function updateToV3(prevState) {
+  // V3 adds auth token
+  return {
+    ...prevState,
+    version: 3,
+    accessToken: undefined,
   };
 }

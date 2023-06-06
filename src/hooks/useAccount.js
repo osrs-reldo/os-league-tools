@@ -26,18 +26,32 @@ import { INITIAL_STATE as INITIAL_UNLOCKS_STATE } from '../store/unlocks/constan
 
 // Basic wrapper around useAuth0 with login state caching for now, more will be added with backend user auth changes
 export default function useAccount({ redirectReturnToUrl }) {
-  const { isLoading, isAuthenticated, user, loginWithRedirect, logout: logoutWithRedirect } = useAuth0();
+  const {
+    isLoading,
+    isAuthenticated,
+    user,
+    loginWithRedirect,
+    logout: logoutWithRedirect,
+    getAccessTokenSilently,
+  } = useAuth0();
   const isLoginCache = useSelector(state => state.account.accountCache.isLoggedIn);
+  const accessToken = useSelector(state => state.account.accountCache.accessToken);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(updateAccountCache({ isAuthenticated, user }));
+    if (isAuthenticated) {
+      getAccessTokenSilently().then(token => {
+        dispatch(updateAccountCache({ isAuthenticated, user, accessToken: token }));
+      });
+    } else {
+      updateAccountCache({ isAuthenticated, user, accessToken: undefined });
+    }
   }, [isAuthenticated]);
 
   const isLoggedIn = isLoginCache || isAuthenticated;
   useEffect(() => {
-    if (isLoginCache) {
-      getUser(user.email).then(res => {
+    if (isLoginCache && accessToken) {
+      getUser(user.email, accessToken).then(res => {
         if (res.success) {
           // user exists already, load their data and overwrite existing
           batch(() => {
@@ -56,7 +70,7 @@ export default function useAccount({ redirectReturnToUrl }) {
           });
         } else {
           // user does not exist, create them and reload the current local state to save it to the DB
-          createUserIfNeeded(user.email).then(result => {
+          createUserIfNeeded(user.email, accessToken).then(result => {
             if (result.success) {
               batch(() => {
                 dispatch(loadTasksState({ forceOverwrite: true, newState: loadTasksLocalState() }));
@@ -70,7 +84,7 @@ export default function useAccount({ redirectReturnToUrl }) {
         }
       });
     }
-  }, [isLoginCache]);
+  }, [isLoginCache, accessToken]);
 
   const isAuthenticating = isLoading;
 

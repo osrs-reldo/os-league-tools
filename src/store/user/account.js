@@ -2,13 +2,14 @@
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 
-export const CURRENT_VERSION = 2;
+export const CURRENT_VERSION = 3;
 
 const INITIAL_STATE = {
   version: CURRENT_VERSION,
   accountCache: {
     isLoggedIn: false,
     userEmail: undefined,
+    accessToken: undefined,
   },
 };
 
@@ -19,6 +20,7 @@ export const accountSlice = createSlice({
     updateAccountCache: (state, action) => {
       state.accountCache.isLoggedIn = action.payload.isAuthenticated;
       state.accountCache.userEmail = action.payload.isAuthenticated ? action.payload.user.email : undefined;
+      state.accountCache.accessToken = action.payload.isAuthenticated ? action.payload.accessToken : undefined;
     },
     reset: () => INITIAL_STATE,
   },
