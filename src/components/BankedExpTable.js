@@ -7,7 +7,7 @@ import NumberCell from './common/calculator/NumberCell';
 import ActivityCell from './common/calculator/ActivityCell';
 import MaterialsCell from './common/calculator/MaterialsCell';
 
-export default function CalculatorTable() {
+export default function BankedExpTable() {
   const {
     calculators: { skill, expValues, calculatorTier },
   } = useSelector(state => ({ calculators: state.calculators, tasks: state.tasks }));

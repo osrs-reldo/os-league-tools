@@ -49,7 +49,7 @@ export default function App() {
                 <Route path='calculators' element={<Calculators />}>
                   <Route path=':skill' element={<Calculators />} />
                 </Route>
-                <Route path='planners' element={<Calculators />}>
+                <Route path='bankedExp' element={<Calculators />}>
                   <Route path=':skill' element={<Calculators />} />
                 </Route>
                 <Route path='about' element={<About />} />
