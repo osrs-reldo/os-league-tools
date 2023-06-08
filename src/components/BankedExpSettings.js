@@ -9,20 +9,20 @@ import {
   updateCalculatorsTier,
   DEFAULT_CALCULATOR_EXP_VALUES,
 } from '../store/calculators/calculators';
-import { numberWithCommas } from '../util/numberFormatters';
 import { experienceToLevel, levelToExperience } from '../util/xpAndLevelConversions';
 import { STATS } from '../data/constants';
 import calculatorData from '../data/calculatorData.json';
 import ButtonGroup from './common/ButtonGroup';
 import { fetchHiscores } from '../store/user/character';
 import Spinner from './common/Spinner';
+import { numberWithCommas } from '../util/numberFormatters';
 
 const calculatorSkills = calculatorData.skills.map(skillName => ({
   ...STATS[skillName],
   value: STATS[skillName].label,
 }));
 
-export default function BankedExpSettings() {
+export default function BankedExpSettings({ expGained }) {
   const {
     calculators,
     character,
@@ -89,11 +89,23 @@ export default function BankedExpSettings() {
     );
   };
 
-  const xpRequired = expValues.target.xp - expValues.start.xp;
-  const isValidValues = expValues.start.xp < expValues.target.xp;
+  const newExp = expValues.start[expValues.start.mode] + expGained;
+  const newLevel = experienceToLevel(newExp);
 
   return (
     <>
+      <h3 className='heading-accent-md'>Results</h3>
+      <div className='flex flex-col gap-2 ml-2 mb-2'>
+        <span>
+          Exp gained: <strong>{numberWithCommas(expGained)}</strong>
+        </span>
+        <span>
+          New level: <strong>{newLevel}</strong>
+        </span>
+        <span>
+          Exp to next level: <strong>{numberWithCommas(levelToExperience(newLevel + 1) - newExp)}</strong>
+        </span>
+      </div>
       <h3 className='heading-accent-md'>Tier</h3>
       <ButtonGroup
         buttons={[
@@ -115,49 +127,24 @@ export default function BankedExpSettings() {
         options={calculatorSkills}
         value={selectedSkill}
       />
-      <h3 className='heading-accent-md mt-4'>Experience</h3>
-      <div className='grid grid-cols-2 gap-4'>
-        <div>
-          <h4>Start</h4>
-          <Select
-            onSelect={selection => updateMode(selection, 'start')}
-            options={[
-              { label: 'Experience', value: 'xp' },
-              { label: 'Level', value: 'level' },
-            ]}
-            value={expValues.start.mode}
-          />
-          <input
-            className='input-primary form-input mt-2 w-full'
-            onChange={e => updateXpValue(e, 'start')}
-            maxLength={expValues.start.mode === 'level' ? 2 : 9}
-            type='text'
-            value={expValues.start[expValues.start.mode]}
-          />
-        </div>
-
-        <div>
-          <h3>End</h3>
-          <Select
-            onSelect={selection => updateMode(selection, 'target')}
-            options={[
-              { label: 'Level', value: 'level' },
-              { label: 'Experience', value: 'xp' },
-            ]}
-            value={expValues.target.mode}
-          />
-          <input
-            className='input-primary form-input mt-2 w-full'
-            onChange={e => updateXpValue(e, 'target')}
-            maxLength={expValues.target.mode === 'level' ? 2 : 9}
-            type='text'
-            value={expValues.target[expValues.target.mode]}
-          />
-        </div>
+      <h3 className='heading-accent-md mt-4'>Start exp/level</h3>
+      <div className='flex items-center justify-center gap-4'>
+        <Select
+          onSelect={selection => updateMode(selection, 'start')}
+          options={[
+            { label: 'Experience', value: 'xp' },
+            { label: 'Level', value: 'level' },
+          ]}
+          value={expValues.start.mode}
+        />
+        <input
+          className='input-primary form-input w-full'
+          onChange={e => updateXpValue(e, 'start')}
+          maxLength={expValues.start.mode === 'level' ? 2 : 9}
+          type='text'
+          value={expValues.start[expValues.start.mode]}
+        />
       </div>
-      <p className={isValidValues ? 'text-accent' : 'text-error'}>
-        {isValidValues ? `XP required: ${numberWithCommas(xpRequired)}` : 'Start experience must be lower than end'}
-      </p>
 
       <button className='button-outline w-full mt-4' type='button' onClick={resetCalculator}>
         <span className='icon-base align-bottom'>refresh</span> Reset
@@ -175,11 +162,6 @@ export default function BankedExpSettings() {
           </p>
         )}
       </button>
-
-      <p className='text-sm italic text-accent mt-4'>Coming soon</p>
-      <ul className='italic text-sm'>
-        <li>Fragment + set overrides</li>
-      </ul>
     </>
   );
 }

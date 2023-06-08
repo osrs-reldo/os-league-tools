@@ -226,6 +226,9 @@
   .heading-accent-md {
     @apply uppercase tracking-wide text-sm text-accent font-semibold;
   }
+  .heading-accent-lg {
+    @apply uppercase tracking-wide text-md text-accent font-semibold;
+  }
   /* FORMS */
   .input-primary {
     @apply rounded-md shadow-subdued bg-inverted border-transparent text-black focus:ring-2 focus:ring-tl-lime;

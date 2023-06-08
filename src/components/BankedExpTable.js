@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import CALCULATOR_DATA from '../data/calculatorData.json';
 import { getExpMultiplier } from '../util/getTier';
@@ -6,8 +6,28 @@ import Table from './common/Table';
 import NumberCell from './common/calculator/NumberCell';
 import ActivityCell from './common/calculator/ActivityCell';
 import MaterialsCell from './common/calculator/MaterialsCell';
+import InputCell from './common/calculator/InputCell';
 
-export default function BankedExpTable() {
+export default function BankedExpTable({ setExpGained }) {
+  const [plannedActions, setPlannedActions] = useState({});
+
+  const updatePlannedActions = (value, actionId) => {
+    setPlannedActions(prevState => ({ ...prevState, [actionId]: value }));
+  };
+
+  const renderInputCell = ({ row }) => {
+    const [innerValue, setInnerValue] = useState(plannedActions[row.values.id] ?? 0);
+    const onChangeValue = e => {
+      setInnerValue(e.target.value);
+      const newValue = parseInt(e.target.value, 10);
+      if (!Number.isNaN(newValue) && newValue >= 0) {
+        updatePlannedActions(e.target.value, row.id);
+      }
+    };
+
+    return <InputCell value={innerValue} onChange={onChangeValue} />;
+  };
+
   const {
     calculators: { skill, expValues, calculatorTier },
   } = useSelector(state => ({ calculators: state.calculators, tasks: state.tasks }));
@@ -15,14 +35,20 @@ export default function BankedExpTable() {
   const expMultiplier = getExpMultiplier(calculatorTier);
 
   const RAW_DATA = CALCULATOR_DATA.calculators[skill.toLowerCase()].actions;
-  const expRequired = expValues.target.xp - expValues.start.xp;
-  const calculatedData = RAW_DATA.map(activity => ({
-    ...activity,
-    exp: activity.exp * expMultiplier,
-    expActions: Math.ceil(expRequired / (activity.exp * expMultiplier)),
-  }));
+  let expGained = 0;
+  const calculatedData = RAW_DATA.map(activity => {
+    if (plannedActions[activity.id]) {
+      expGained += activity.exp * expMultiplier * plannedActions[activity.id];
+    }
+    return {
+      ...activity,
+      exp: activity.exp * expMultiplier,
+      actions: plannedActions[activity.id] ?? 0,
+    };
+  });
+  setExpGained(expGained);
 
-  const data = useMemo(() => calculatedData, [skill, expValues, calculatorTier]);
+  const data = useMemo(() => calculatedData, [skill, expValues, calculatorTier, plannedActions]);
 
   const columns = useMemo(
     () => [
@@ -56,10 +82,10 @@ export default function BankedExpTable() {
         Cell: NumberCell,
       },
       {
-        Header: 'Actions required',
+        Header: 'Actions planned',
         id: 'actions',
-        accessor: 'expActions',
-        Cell: NumberCell,
+        accessor: row => plannedActions[row.id] ?? 0,
+        Cell: renderInputCell,
       },
       {
         Header: 'Inputs',
@@ -67,7 +93,7 @@ export default function BankedExpTable() {
         accessor: row =>
           row.inputs.map(input => ({
             ...input,
-            actions: row.expActions,
+            actions: row.actions,
           })),
         Cell: MaterialsCell,
         disableSortBy: true,
@@ -78,7 +104,7 @@ export default function BankedExpTable() {
         accessor: row =>
           row.outputs.map(output => ({
             ...output,
-            actions: row.expActions,
+            actions: row.actions,
           })),
         Cell: MaterialsCell,
         disableSortBy: true,

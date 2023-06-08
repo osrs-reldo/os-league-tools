@@ -13,6 +13,7 @@ import store from './store';
 import ThemeProvider from './components/ThemeProvider';
 import Statistics from './pages/Statistics';
 import Calculators from './pages/Calculators';
+import BankedExp from './pages/BankedExp';
 
 const history = createBrowserHistory();
 const trackingId = process.env.REACT_APP_GA_TRACKING || '';
@@ -49,8 +50,8 @@ export default function App() {
                 <Route path='calculators' element={<Calculators />}>
                   <Route path=':skill' element={<Calculators />} />
                 </Route>
-                <Route path='bankedExp' element={<Calculators />}>
-                  <Route path=':skill' element={<Calculators />} />
+                <Route path='bankedExp' element={<BankedExp />}>
+                  <Route path=':skill' element={<BankedExp />} />
                 </Route>
                 <Route path='about' element={<About />} />
                 <Route path='settings' element={<Settings />} />
