@@ -44,6 +44,7 @@ export default function BankedExpTable({ setExpGained }) {
       ...activity,
       exp: activity.exp * expMultiplier,
       actions: plannedActions[activity.id] ?? 0,
+      expGained: activity.exp * expMultiplier * (plannedActions[activity.id] ?? 0),
     };
   });
   setExpGained(expGained);
@@ -108,6 +109,12 @@ export default function BankedExpTable({ setExpGained }) {
           })),
         Cell: MaterialsCell,
         disableSortBy: true,
+      },
+      {
+        Header: 'Exp gained',
+        id: 'expGained',
+        accessor: 'expGained',
+        Cell: NumberCell,
       },
     ],
     []
