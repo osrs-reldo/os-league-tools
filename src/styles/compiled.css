@@ -1549,6 +1549,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .button-outline {
   border-width: 1px;
 }
+.button-outline-disabled {
+  border-radius: 0.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.dark .button-outline-disabled {
+  --tw-text-opacity: 1;
+  color: rgb(228 228 231 / var(--tw-text-opacity));
+}
+.button-outline-disabled {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+.dark .button-outline-disabled {
+  --tw-border-opacity: 1;
+  border-color: rgb(113 113 122 / var(--tw-border-opacity));
+}
+.button-outline-disabled {
+  border-width: 1px;
+}
 .button-group-base {
   padding: 0.5rem;
 }
@@ -1838,6 +1858,18 @@ select[multiple]:focus option:checked {
   margin-top: auto;
   margin-bottom: auto;
 }
+.mt-1 {
+  margin-top: 0.25rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.ml-2 {
+  margin-left: 0.5rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .mt-4 {
   margin-top: 1rem;
 }
@@ -1850,17 +1882,8 @@ select[multiple]:focus option:checked {
 .ml-1 {
   margin-left: 0.25rem;
 }
-.ml-2 {
-  margin-left: 0.5rem;
-}
 .mb-1 {
   margin-bottom: 0.25rem;
-}
-.mt-1 {
-  margin-top: 0.25rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 .mb-3 {
   margin-bottom: 0.75rem;
@@ -1873,9 +1896,6 @@ select[multiple]:focus option:checked {
 }
 .mt-3 {
   margin-top: 0.75rem;
-}
-.mb-4 {
-  margin-bottom: 1rem;
 }
 .mr-3 {
   margin-right: 0.75rem;
@@ -1989,6 +2009,12 @@ select[multiple]:focus option:checked {
 .min-h-screen {
   min-height: 100vh;
 }
+.w-\[26rem\] {
+  width: 26rem;
+}
+.w-40 {
+  width: 10rem;
+}
 .w-full {
   width: 100%;
 }
@@ -1999,14 +2025,8 @@ select[multiple]:focus option:checked {
 .w-96 {
   width: 24rem;
 }
-.w-40 {
-  width: 10rem;
-}
 .w-24 {
   width: 6rem;
-}
-.w-\[26rem\] {
-  width: 26rem;
 }
 .w-4 {
   width: 1rem;
@@ -2177,17 +2197,17 @@ select[multiple]:focus option:checked {
 .justify-evenly {
   justify-content: space-evenly;
 }
-.gap-px {
-  gap: 1px;
+.gap-2 {
+  gap: 0.5rem;
 }
 .gap-4 {
   gap: 1rem;
 }
+.gap-px {
+  gap: 1px;
+}
 .gap-1 {
   gap: 0.25rem;
-}
-.gap-2 {
-  gap: 0.5rem;
 }
 .gap-0\.5 {
   gap: 0.125rem;
@@ -2387,13 +2407,13 @@ select[multiple]:focus option:checked {
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .text-xs {
   font-size: 0.75rem;

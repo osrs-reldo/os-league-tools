@@ -9,11 +9,7 @@ import {
 } from '../store/settings';
 import { load as loadTasksState, loadState as loadTasksLocalState } from '../store/tasks/tasks';
 import { load as loadUnlocksState, loadState as loadUnlocksLocalState } from '../store/unlocks/unlocks';
-import {
-  INITIAL_STATE as INITIAL_CHARACTER_STATE,
-  load as loadCharacterState,
-  loadState as loadCharacterLocalState,
-} from '../store/user/character';
+import { load as loadCharacterState, loadState as loadCharacterLocalState } from '../store/user/character';
 import {
   INITIAL_STATE as INITIAL_FRAGMENTS_STATE,
   load as loadFragmentState,
@@ -23,8 +19,8 @@ import { updateAccountCache } from '../store/user/account';
 import { createUserIfNeeded, getUser } from '../client/user-data-client';
 import { INITIAL_STATE as INITIAL_TASKS_STATE } from '../store/tasks/constants';
 import { INITIAL_STATE as INITIAL_UNLOCKS_STATE } from '../store/unlocks/constants';
+import { INITIAL_STATE as INITIAL_CHARACTER_STATE } from '../store/user/constants';
 
-// Basic wrapper around useAuth0 with login state caching for now, more will be added with backend user auth changes
 export default function useAccount({ redirectReturnToUrl }) {
   const {
     isLoading,

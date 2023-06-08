@@ -6,6 +6,7 @@ import importFromPlugin from '../client/plugin-importer';
 import Separator from './common/Separator';
 import Modal from './Modal';
 import { loadNewState, resetState } from '../store/common';
+import { selectActiveCharacter } from '../store/user/character';
 
 const PLUGIN_EXPORT_VERSION = 1;
 
@@ -148,7 +149,7 @@ function ImportFromPluginContent() {
 function ExportToPluginContent() {
   const [isCopySuccess, setIsCopySuccess] = useState(false);
   const userState = useSelector(state => state);
-  const taskExport = convertTasksToPluginExport(userState.tasks.tasks, userState.character.username);
+  const taskExport = convertTasksToPluginExport(userState.tasks.tasks, selectActiveCharacter(userState.character));
   return (
     <>
       <p className='m-2 mt-1'>

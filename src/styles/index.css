@@ -250,6 +250,10 @@
     @apply rounded active:ring-2 active:ring-accent;
     @apply border border-accent text-accent;
   }
+  .button-outline-disabled {
+    @apply rounded;
+    @apply border border-subdued text-secondary-alt;
+  }
   .button-group-base {
     @apply p-2 first:rounded-l last:rounded-r;
   }

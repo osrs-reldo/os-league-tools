@@ -7,10 +7,12 @@ import { ThemedProgressBar } from '../components/ThemeProvider';
 import { DIFFICULTY, PASSIVE_RELICS } from '../data/constants';
 import images from '../assets/images';
 import ManageCharactersModal from '../components/ManageCharactersModal';
+import { selectActiveCharacter } from '../store/user/character';
 
 export default function CharacterPanel() {
   const [isCharacterModalOpen, setCharacterModalOpen] = useState(false);
-  const username = useSelector(state => state.character.username);
+  const characterState = useSelector(state => state.character);
+  const username = selectActiveCharacter(characterState);
   const { taskStats, tier } = useSelector(state => state.tasks);
 
   if (!username) {

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import useClickListener from '../../hooks/useClickListener';
-import { fetchHiscores } from '../../store/user/character';
+import { fetchHiscores, selectActiveCharacter } from '../../store/user/character';
 import { durationAsRelativeTime } from '../../util/numberFormatters';
 import Dropdown from '../common/Dropdown';
 import Spinner from '../common/Spinner';
@@ -11,9 +11,10 @@ function NavBarItem({ setCharacterModalOpen }) {
   const dispatch = useDispatch();
   const menuRef = useRef(null);
   const characterState = useSelector(state => state.character);
+  const activeCharacter = selectActiveCharacter(characterState);
   useClickListener(menuRef, () => setExpanded(false), true);
 
-  if (!characterState.username) {
+  if (!activeCharacter) {
     return (
       <button
         className='text-primary md:inline hidden navbar-link-alt bg-hover py-1 px-2'
@@ -33,12 +34,12 @@ function NavBarItem({ setCharacterModalOpen }) {
         onClick={() => setExpanded(true)}
       >
         <span className='icon-base mr-1 align-bottom'>account_circle</span>
-        {characterState.username}
+        {activeCharacter}
       </button>
       <div className='mt-1 absolute text-center'>
         <Dropdown show={isExpanded} innerRef={menuRef}>
           <Dropdown.Separator />
-          <Dropdown.Button className='text-left' onClick={() => dispatch(fetchHiscores(characterState, true))}>
+          <Dropdown.Button className='text-left' onClick={() => dispatch(fetchHiscores(characterState, null, true))}>
             {characterState.hiscoresCache.loading ? (
               <div className='text-center'>
                 <Spinner size={Spinner.SIZE.sm} invertColorForDarkMode={false} />
@@ -67,9 +68,10 @@ function NavBarItem({ setCharacterModalOpen }) {
 
 function CollapsedMenu({ setCharacterModalOpen }) {
   const characterState = useSelector(state => state.character);
+  const activeCharacter = selectActiveCharacter(characterState);
   const dispatch = useDispatch();
 
-  if (!characterState.username) {
+  if (!activeCharacter) {
     return (
       <button
         className='text-primary bg-hover py-1 text-left'
@@ -86,7 +88,7 @@ function CollapsedMenu({ setCharacterModalOpen }) {
     <>
       <button
         className='text-primary bg-hover py-1 text-left'
-        onClick={() => dispatch(fetchHiscores(characterState, true))}
+        onClick={() => dispatch(fetchHiscores(characterState, null, true))}
         type='button'
       >
         {characterState.hiscoresCache.loading ? (
@@ -105,7 +107,7 @@ function CollapsedMenu({ setCharacterModalOpen }) {
         type='button'
       >
         <span className='text-primary-alt icon-lg inline align-middle mr-1'>manage_accounts</span>
-        <p className='h-4 inline pl-1 font-sans-alt'>Manage character</p>
+        <p className='h-4 inline pl-1 font-sans-alt'>Manage characters</p>
       </button>
     </>
   );

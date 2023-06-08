@@ -152,7 +152,7 @@ export default function BankedExpSettings({ expGained }) {
       <button
         className='button-outline w-full mt-2'
         type='button'
-        onClick={() => dispatch(fetchHiscores(character, true))}
+        onClick={() => dispatch(fetchHiscores(character, null, true))}
       >
         {character.hiscoresCache.loading ? (
           <Spinner size={Spinner.SIZE.sm} invertColorForDarkMode={false} />

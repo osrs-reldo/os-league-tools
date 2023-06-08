@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
 
 import _ from 'lodash';
-import { updateUsername } from '../store/user/character';
+import { useSelector } from 'react-redux';
+import { addCharacter } from '../store/user/character';
 import { INITIAL_TASK_STATE } from '../store/tasks/constants';
 import { load as loadTaskState } from '../store/tasks/tasks';
 import { load as loadUnlocksState } from '../store/unlocks/unlocks';
@@ -9,7 +10,11 @@ import { SKILL_UNLOCK } from '../data/constants';
 import { INITIAL_STATE } from '../store/unlocks/constants';
 
 export default function importFromPlugin(pluginData, userState, dispatch) {
-  dispatch(updateUsername(pluginData.displayName));
+  const characterState = useSelector(state => state.character);
+  const characterIndex = _.find(characterState.characters, pluginData.displayName);
+  if (!characterIndex) {
+    dispatch(addCharacter({ rsn: pluginData.displayName, setActive: true }));
+  }
 
   const syncedTasks = importTasks(pluginData.tasks, userState.tasks.tasks, dispatch);
   dispatch(loadTaskState({ newState: { rsn: pluginData.displayName, tasks: syncedTasks } }));

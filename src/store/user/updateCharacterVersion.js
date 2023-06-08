@@ -1,8 +1,7 @@
-import { CURRENT_VERSION } from './account';
+import { CURRENT_VERSION } from './constants';
 
 const versionUpdaters = {
   2: updateToV2,
-  3: updateToV3,
 };
 
 export default function updateUnlocksVersion(state) {
@@ -20,19 +19,11 @@ export default function updateUnlocksVersion(state) {
 }
 
 function updateToV2(prevState) {
-  // V2 adds user email
+  // V2 adds multiple character support
   return {
-    ...prevState,
     version: 2,
-    userEmail: undefined,
-  };
-}
-
-function updateToV3(prevState) {
-  // V3 adds auth token
-  return {
-    ...prevState,
-    version: 3,
-    accessToken: undefined,
+    hiscoresCache: prevState.hiscoresCache,
+    activeCharacter: 0,
+    characters: [prevState.username],
   };
 }
