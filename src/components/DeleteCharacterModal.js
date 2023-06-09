@@ -1,10 +1,19 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { deleteFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
 import { deleteCharacter } from '../store/user/character';
 import Modal from './Modal';
 
 export default function DeleteCharacterModal({ characterName, characterIndex, isOpen, setIsOpen }) {
   const dispatch = useDispatch();
+
+  const onDelete = () => {
+    dispatch(deleteCharacter(characterIndex));
+    deleteFromLocalStorage(`${LOCALSTORAGE_KEYS.TASKS}_${characterName}`);
+    deleteFromLocalStorage(`${LOCALSTORAGE_KEYS.UNLOCKS}_${characterName}`);
+    deleteFromLocalStorage(`${LOCALSTORAGE_KEYS.FRAGMENTS}_${characterName}`);
+    setIsOpen(false);
+  };
 
   return (
     <Modal
@@ -22,14 +31,7 @@ export default function DeleteCharacterModal({ characterName, characterIndex, is
           <button className='w-40 button-outline' type='button' onClick={() => setIsOpen(false)}>
             Cancel
           </button>
-          <button
-            className='w-40 button-filled'
-            type='button'
-            onClick={() => {
-              dispatch(deleteCharacter(characterIndex));
-              setIsOpen(false);
-            }}
-          >
+          <button className='w-40 button-filled' type='button' onClick={onDelete}>
             Confirm
           </button>
         </div>

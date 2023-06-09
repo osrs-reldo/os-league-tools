@@ -69,7 +69,7 @@ export const loadState = () => {
 };
 
 export function selectActiveCharacter(state) {
-  return state.characters[state.activeCharacter];
+  return state.character.characters[state.character.activeCharacter] ?? 'DEFAULT';
 }
 
 export function fetchHiscores(state, usernameOverride = null, forceReload = false) {

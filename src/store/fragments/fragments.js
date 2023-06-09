@@ -5,6 +5,7 @@ import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorag
 import updateWithUserDataStorage from '../updateWithUserDataStorage';
 import { CURRENT_VERSION } from './constants';
 import updateFragmentsVersion from './updateFragmentsVersion';
+import { loadState as loadCharacterState } from '../user/character';
 
 export const INITIAL_STATE = {
   version: CURRENT_VERSION,
@@ -91,6 +92,13 @@ export function selectFragment(state, id) {
   return state.fragments.fragments[id] || { ...INITIAL_FRAGMENT_STATE };
 }
 
-export const loadState = () => updateFragmentsVersion(getFromLocalStorage(LOCALSTORAGE_KEYS.FRAGMENTS, INITIAL_STATE));
+export const loadState = () => {
+  const prevCharacterState = loadCharacterState();
+  const prevState = getFromLocalStorage(
+    `${LOCALSTORAGE_KEYS.FRAGMENTS}_${prevCharacterState.characters[prevCharacterState.activeCharacter] ?? 'DEFAULT'}`,
+    INITIAL_STATE
+  );
+  return updateFragmentsVersion(prevState);
+};
 
 export default fragmentSlice.reducer;

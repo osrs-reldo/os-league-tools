@@ -7,6 +7,7 @@ import { getTier } from '../../util/getTier';
 import updateWithUserDataStorage from '../updateWithUserDataStorage';
 import { INITIAL_STATE, INITIAL_TASK_STATE } from './constants';
 import updateTasksVersion from './updateTasksVersion';
+import { loadState as loadCharacterState } from '../user/character';
 
 export const taskSlice = createSlice({
   name: 'tasks',
@@ -133,7 +134,11 @@ export function reset(props) {
 }
 
 export const loadState = () => {
-  const prevState = getFromLocalStorage(LOCALSTORAGE_KEYS.TASKS, INITIAL_STATE);
+  const prevCharacterState = loadCharacterState();
+  const prevState = getFromLocalStorage(
+    `${LOCALSTORAGE_KEYS.TASKS}_${prevCharacterState.characters[prevCharacterState.activeCharacter] ?? 'DEFAULT'}`,
+    INITIAL_STATE
+  );
   return updateTasksVersion(prevState);
 };
 

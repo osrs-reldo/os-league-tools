@@ -6,6 +6,7 @@ import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorag
 import updateWithUserDataStorage from '../updateWithUserDataStorage';
 import { INITIAL_STATE } from './constants';
 import updateUnlocksVersion from './updateUnlocksVersion';
+import { loadState as loadCharacterState } from '../user/character';
 
 export const unlocksSlice = createSlice({
   name: 'unlocks',
@@ -81,7 +82,11 @@ export function reset(props) {
 }
 
 export const loadState = () => {
-  const prevState = getFromLocalStorage(LOCALSTORAGE_KEYS.UNLOCKS, INITIAL_STATE);
+  const prevCharacterState = loadCharacterState();
+  const prevState = getFromLocalStorage(
+    `${LOCALSTORAGE_KEYS.UNLOCKS}_${prevCharacterState.characters[prevCharacterState.activeCharacter] ?? 'DEFAULT'}`,
+    INITIAL_STATE
+  );
   return updateUnlocksVersion(prevState);
 };
 

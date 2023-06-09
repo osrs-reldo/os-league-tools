@@ -1,11 +1,16 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { batch, useDispatch, useSelector } from 'react-redux';
+import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
+import { loadNewState } from '../store/common';
 import { fetchHiscores, updateActiveCharacter } from '../store/user/character';
 import AddCharacterModal from './AddCharacterModal';
 import DeleteCharacterModal from './DeleteCharacterModal';
 import Modal from './Modal';
 import RenameCharacterModal from './RenameCharacterModal';
+import { INITIAL_STATE as INITIAL_TASKS_STATE } from '../store/tasks/constants';
+import { INITIAL_STATE as INITIAL_UNLOCKS_STATE } from '../store/unlocks/constants';
+import { INITIAL_STATE as INITIAL_FRAGMENTS_STATE } from '../store/fragments/fragments';
 
 export default function ManageCharactersModal({ isOpen, setIsOpen }) {
   const characterState = useSelector(state => state.character);
@@ -15,9 +20,18 @@ export default function ManageCharactersModal({ isOpen, setIsOpen }) {
   const dispatch = useDispatch();
 
   const setActiveCharacter = index => {
+    const rsn = characterState.characters[index];
+    const newTaskState = getFromLocalStorage(`${LOCALSTORAGE_KEYS.TASKS}_${rsn}`, INITIAL_TASKS_STATE);
+    const newUnlocksState = getFromLocalStorage(`${LOCALSTORAGE_KEYS.UNLOCKS}_${rsn}`, INITIAL_UNLOCKS_STATE);
+    const newFragmentsState = getFromLocalStorage(`${LOCALSTORAGE_KEYS.FRAGMENTS}_${rsn}`, INITIAL_FRAGMENTS_STATE);
     batch(() => {
       dispatch(updateActiveCharacter(index));
       dispatch(fetchHiscores(characterState, characterState.characters[index], true));
+    });
+    loadNewState(dispatch, {
+      tasks: newTaskState,
+      unlocks: newUnlocksState,
+      fragments: newFragmentsState,
     });
   };
 
@@ -30,6 +44,7 @@ export default function ManageCharactersModal({ isOpen, setIsOpen }) {
       <RenameCharacterModal
         characterName={characterState.characters[renamingCharacterIndex]}
         characterIndex={renamingCharacterIndex}
+        isActiveCharacter={renamingCharacterIndex === characterState.activeCharacter}
         isOpen={renamingCharacterIndex !== null}
         setIsOpen={() => setRenamingCharacterIndex(null)}
       />
@@ -59,9 +74,10 @@ export default function ManageCharactersModal({ isOpen, setIsOpen }) {
       </Modal.Header>
       <Modal.Body className='text-primary text-sm'>
         <div className='m-2 mt-1 flex flex-col justify-around'>
-          {characterState.characters.length &&
+          {!!characterState.characters.length &&
             characterState.characters.map((character, i) => (
               <CharacterRow
+                key={character}
                 character={character}
                 isActiveCharacter={characterState.activeCharacter === i}
                 openRenameModal={() => setRenamingCharacterIndex(i)}
@@ -83,7 +99,9 @@ function CharacterRow({ character, isActiveCharacter, openRenameModal, openDelet
     <div className='grid grid-cols-4 items-center justify-center gap-2 mt-2' key={character}>
       {character}
       {isActiveCharacter ? (
-        <div className='px-1 button-filled text-center'>Active</div>
+        <div key='active' className='px-1 button-filled text-center'>
+          Active
+        </div>
       ) : (
         <button key='active' type='button' className='px-1 button-outline' onClick={setActiveCharacter}>
           Set Active

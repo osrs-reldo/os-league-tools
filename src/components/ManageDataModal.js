@@ -149,7 +149,7 @@ function ImportFromPluginContent() {
 function ExportToPluginContent() {
   const [isCopySuccess, setIsCopySuccess] = useState(false);
   const userState = useSelector(state => state);
-  const taskExport = convertTasksToPluginExport(userState.tasks.tasks, selectActiveCharacter(userState.character));
+  const taskExport = convertTasksToPluginExport(userState.tasks.tasks, selectActiveCharacter(userState));
   return (
     <>
       <p className='m-2 mt-1'>

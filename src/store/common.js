@@ -1,19 +1,40 @@
 import { batch } from 'react-redux';
-import { load as loadSettingsState, reset as resetSettingsState } from './settings';
+import {
+  INITIAL_STATE as INITIAL_SETTINGS_STATE,
+  load as loadSettingsState,
+  reset as resetSettingsState,
+} from './settings';
 import { load as loadTasksState, reset as resetTasksState } from './tasks/tasks';
 import { load as loadUnlocksState, reset as resetUnlocksState } from './unlocks/unlocks';
 import { load as loadCharacterState, reset as resetCharacterState } from './user/character';
-import { load as loadFragmentState, reset as resetFragmentState } from './fragments/fragments';
+import {
+  INITIAL_STATE as INITIAL_FRAGMENT_STATE,
+  load as loadFragmentState,
+  reset as resetFragmentState,
+} from './fragments/fragments';
 import { reset as resetFilterState } from './filters';
 import { reset as resetCalculatorsState } from './calculators/calculators';
+import { INITIAL_STATE as INITIAL_TASKS_STATE } from './tasks/constants';
+import { INITIAL_STATE as INITIAL_UNLOCKS_STATE } from './unlocks/constants';
+import { INITIAL_STATE as INITIAL_CHARACTER_STATE } from './user/constants';
 
 export function loadNewState(dispatch, newState) {
   batch(() => {
-    dispatch(loadTasksState({ forceOverwrite: true, newState: newState.tasks || {} }));
-    dispatch(loadSettingsState({ forceOverwrite: true, newState: newState.settings || {} }));
-    dispatch(loadUnlocksState({ forceOverwrite: true, newState: newState.unlocks || {} }));
-    dispatch(loadCharacterState({ forceOverwrite: true, newState: newState.character || {} }));
-    dispatch(loadFragmentState({ forceOverwrite: true, newState: newState.fragments || {} }));
+    if (newState.tasks) {
+      dispatch(loadTasksState({ forceOverwrite: true, newState: newState.tasks || INITIAL_TASKS_STATE }));
+    }
+    if (newState.settings) {
+      dispatch(loadSettingsState({ forceOverwrite: true, newState: newState.settings || INITIAL_SETTINGS_STATE }));
+    }
+    if (newState.unlocks) {
+      dispatch(loadUnlocksState({ forceOverwrite: true, newState: newState.unlocks || INITIAL_UNLOCKS_STATE }));
+    }
+    if (newState.character) {
+      dispatch(loadCharacterState({ forceOverwrite: true, newState: newState.character || INITIAL_CHARACTER_STATE }));
+    }
+    if (newState.fragments) {
+      dispatch(loadFragmentState({ forceOverwrite: true, newState: newState.fragments || INITIAL_FRAGMENT_STATE }));
+    }
   });
 }
 

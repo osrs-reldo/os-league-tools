@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import useClickListener from '../../hooks/useClickListener';
-import { fetchHiscores, selectActiveCharacter } from '../../store/user/character';
+import { fetchHiscores } from '../../store/user/character';
 import { durationAsRelativeTime } from '../../util/numberFormatters';
 import Dropdown from '../common/Dropdown';
 import Spinner from '../common/Spinner';
@@ -11,7 +11,7 @@ function NavBarItem({ setCharacterModalOpen }) {
   const dispatch = useDispatch();
   const menuRef = useRef(null);
   const characterState = useSelector(state => state.character);
-  const activeCharacter = selectActiveCharacter(characterState);
+  const activeCharacter = characterState.characters[characterState.activeCharacter];
   useClickListener(menuRef, () => setExpanded(false), true);
 
   if (!activeCharacter) {
@@ -58,7 +58,7 @@ function NavBarItem({ setCharacterModalOpen }) {
           </Dropdown.Button>
           <Dropdown.Separator />
           <Dropdown.Button className='text-left' onClick={() => setCharacterModalOpen(true)}>
-            <span className='icon-base mr-1 align-bottom'>manage_accounts</span> Manage character
+            <span className='icon-base mr-1 align-bottom'>manage_accounts</span> Manage characters
           </Dropdown.Button>
         </Dropdown>
       </div>
@@ -68,7 +68,7 @@ function NavBarItem({ setCharacterModalOpen }) {
 
 function CollapsedMenu({ setCharacterModalOpen }) {
   const characterState = useSelector(state => state.character);
-  const activeCharacter = selectActiveCharacter(characterState);
+  const activeCharacter = characterState.characters[characterState.activeCharacter];
   const dispatch = useDispatch();
 
   if (!activeCharacter) {
