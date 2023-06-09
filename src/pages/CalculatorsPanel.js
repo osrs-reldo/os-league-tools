@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import CalculatorSettings from '../components/CalculatorSettings';
 import CalculatorTable from '../components/CalculatorTable';
+import useMultipliers from '../hooks/useMultipliers';
 
 export default function CalculatorsPanel() {
   const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.LESS_OR_EQ);
   const isXlViewport = useBreakpoint(MEDIA_QUERIES.XL);
   const [showSidebar, setShowSidebar] = useState(isXlViewport);
+  const expMultipliersState = useMultipliers();
+  const inputMultipliersState = useMultipliers();
+  const outputMultipliersState = useMultipliers();
 
   return (
     <section className='flex flex-col xl:flex-row w-full bg-secondary-alt xl:bg-primary'>
@@ -18,7 +22,11 @@ export default function CalculatorsPanel() {
       )}
       {showSidebar && (
         <div className='basis-[23%] p-2'>
-          <CalculatorSettings />
+          <CalculatorSettings
+            expMultipliersState={expMultipliersState}
+            inputMultipliersState={inputMultipliersState}
+            outputMultipliersState={outputMultipliersState}
+          />
         </div>
       )}
       <div className='mt-3 mb-3 bg-hover cursor-pointer' onClick={() => setShowSidebar(!showSidebar)}>
@@ -35,7 +43,11 @@ export default function CalculatorsPanel() {
           </p>
         )}
       </div>
-      <CalculatorTable />
+      <CalculatorTable
+        applyExpMultipliers={expMultipliersState.applyMultipliers}
+        applyInputMultipliers={inputMultipliersState.applyMultipliers}
+        applyOutputMultipliers={outputMultipliersState.applyMultipliers}
+      />
     </section>
   );
 }

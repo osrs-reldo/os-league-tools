@@ -7,7 +7,7 @@ import NumberCell from './common/calculator/NumberCell';
 import ActivityCell from './common/calculator/ActivityCell';
 import MaterialsCell from './common/calculator/MaterialsCell';
 
-export default function CalculatorTable() {
+export default function CalculatorTable({ applyExpMultipliers, applyInputMultipliers, applyOutputMultipliers }) {
   const {
     calculators: { skill, expValues, calculatorTier },
   } = useSelector(state => ({ calculators: state.calculators, tasks: state.tasks }));
@@ -16,13 +16,27 @@ export default function CalculatorTable() {
 
   const RAW_DATA = CALCULATOR_DATA.calculators[skill.toLowerCase()].actions;
   const expRequired = expValues.target.xp - expValues.start.xp;
-  const calculatedData = RAW_DATA.map(activity => ({
-    ...activity,
-    exp: activity.exp * expMultiplier,
-    expActions: Math.ceil(expRequired / (activity.exp * expMultiplier)),
-  }));
+  const calculatedData = RAW_DATA.map(activity => {
+    const totalExp = applyExpMultipliers(activity.exp * expMultiplier, activity.expMultipliers);
+    return {
+      ...activity,
+      exp: totalExp,
+      expActions: Math.ceil(expRequired / totalExp),
+      inputs: activity.inputs.map(input => ({
+        ...input,
+        amount: applyInputMultipliers(input.amount, activity.inputMultipliers),
+      })),
+      outputs: activity.outputs.map(output => ({
+        ...output,
+        amount: applyOutputMultipliers(output.amount, activity.outputMultipliers),
+      })),
+    };
+  });
 
-  const data = useMemo(() => calculatedData, [skill, expValues, calculatorTier]);
+  // eslint-disable-next-line no-console
+  console.log(calculatedData);
+
+  const data = useMemo(() => calculatedData, [skill, expValues, calculatorTier, calculatedData]);
 
   const columns = useMemo(
     () => [

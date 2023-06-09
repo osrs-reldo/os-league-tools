@@ -1552,11 +1552,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .button-outline-disabled {
   border-radius: 0.25rem;
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 .dark .button-outline-disabled {
   --tw-text-opacity: 1;
-  color: rgb(228 228 231 / var(--tw-text-opacity));
+  color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 .button-outline-disabled {
   --tw-border-opacity: 1;

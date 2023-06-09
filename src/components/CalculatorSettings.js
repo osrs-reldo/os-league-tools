@@ -16,13 +16,14 @@ import calculatorData from '../data/calculatorData.json';
 import ButtonGroup from './common/ButtonGroup';
 import { fetchHiscores } from '../store/user/character';
 import Spinner from './common/Spinner';
+import LabeledCheckbox from './common/LabeledCheckbox';
 
 const calculatorSkills = calculatorData.skills.map(skillName => ({
   ...STATS[skillName],
   value: STATS[skillName].label,
 }));
 
-export default function CalculatorSettings() {
+export default function CalculatorSettings({ expMultipliersState, inputMultipliersState, outputMultipliersState }) {
   const {
     calculators,
     character,
@@ -87,10 +88,23 @@ export default function CalculatorSettings() {
         hiscoresForSelectedSkill ? getValuesFromHiscores(hiscoresForSelectedSkill) : DEFAULT_CALCULATOR_EXP_VALUES
       )
     );
+    expMultipliersState.resetMultipliers();
   };
 
   const xpRequired = expValues.target.xp - expValues.start.xp;
   const isValidValues = expValues.start.xp < expValues.target.xp;
+  const expMultipliers = [
+    ...calculatorData.globalMultipliers.expMultipliers,
+    ...calculatorData.calculators[selectedSkill.toLowerCase()].expMultipliers,
+  ];
+  const inputMultipliers = [
+    ...calculatorData.globalMultipliers.inputMultipliers,
+    ...calculatorData.calculators[selectedSkill.toLowerCase()].inputMultipliers,
+  ];
+  const outputMultipliers = [
+    ...calculatorData.globalMultipliers.outputMultipliers,
+    ...calculatorData.calculators[selectedSkill.toLowerCase()].outputMultipliers,
+  ];
 
   return (
     <>
@@ -111,7 +125,10 @@ export default function CalculatorSettings() {
       <h3 className='heading-accent-md mt-4'>Skill</h3>
       <Select
         className='w-full'
-        onSelect={e => dispatch(updateCalculatorsSkill({ skill: e.value }))}
+        onSelect={e => {
+          dispatch(updateCalculatorsSkill({ skill: e.value }));
+          expMultipliersState.resetMultipliers();
+        }}
         options={calculatorSkills}
         value={selectedSkill}
       />
@@ -159,6 +176,75 @@ export default function CalculatorSettings() {
         {isValidValues ? `XP required: ${numberWithCommas(xpRequired)}` : 'Start experience must be lower than end'}
       </p>
 
+      {!!expMultipliers.length && (
+        <>
+          <h3 className='heading-accent-md mt-4'>Exp multipliers</h3>
+          <div className='ml-2 mb-2'>
+            {expMultipliers.map(multiplier => (
+              <LabeledCheckbox
+                key={multiplier.id}
+                className='text-sm'
+                label={multiplier.name}
+                checked={!!expMultipliersState.multipliers[multiplier.id]}
+                onClick={e => {
+                  if (e.target.checked) {
+                    expMultipliersState.addMultiplier(multiplier.id, multiplier);
+                  } else {
+                    expMultipliersState.removeMultiplier(multiplier.id);
+                  }
+                }}
+              />
+            ))}
+          </div>
+        </>
+      )}
+
+      {!!inputMultipliers.length && (
+        <>
+          <h3 className='heading-accent-md mt-4'>Input multipliers</h3>
+          <div className='ml-2 mb-2'>
+            {inputMultipliers.map(multiplier => (
+              <LabeledCheckbox
+                key={multiplier.id}
+                className='text-sm'
+                label={multiplier.name}
+                checked={!!inputMultipliersState.multipliers[multiplier.id]}
+                onClick={e => {
+                  if (e.target.checked) {
+                    inputMultipliersState.addMultiplier(multiplier.id, multiplier);
+                  } else {
+                    inputMultipliersState.removeMultiplier(multiplier.id);
+                  }
+                }}
+              />
+            ))}
+          </div>
+        </>
+      )}
+
+      {!!outputMultipliers.length && (
+        <>
+          <h3 className='heading-accent-md mt-4'>Output multipliers</h3>
+          <div className='ml-2 mb-2'>
+            {outputMultipliers.map(multiplier => (
+              <LabeledCheckbox
+                key={multiplier.id}
+                className='text-sm'
+                label={multiplier.name}
+                checked={!!outputMultipliersState.multipliers[multiplier.id]}
+                onClick={e => {
+                  if (e.target.checked) {
+                    outputMultipliersState.addMultiplier(multiplier.id, multiplier);
+                  } else {
+                    outputMultipliersState.removeMultiplier(multiplier.id);
+                  }
+                }}
+              />
+            ))}
+          </div>
+        </>
+      )}
+
       <button className='button-outline w-full mt-4' type='button' onClick={resetCalculator}>
         <span className='icon-base align-bottom'>refresh</span> Reset
       </button>
@@ -175,11 +261,6 @@ export default function CalculatorSettings() {
           </p>
         )}
       </button>
-
-      <p className='text-sm italic text-accent mt-4'>Coming soon</p>
-      <ul className='italic text-sm'>
-        <li>Fragment + set overrides</li>
-      </ul>
     </>
   );
 }
