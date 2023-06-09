@@ -28,16 +28,19 @@ export default function AddCharacterModal({ isOpen, setIsOpen }) {
   const characterState = useSelector(state => state.character);
   const [characterText, setCharacterText] = useState('');
   const dispatch = useDispatch();
+  const isFirstCharacter = characterState.characters.length === 0;
 
   const updateAndFetchHiscores = () => {
     batch(() => {
       dispatch(addCharacter({ rsn: characterText, setActive: true }));
       dispatch(fetchHiscores(characterState, characterText, true));
-      loadNewState(dispatch, {
-        tasks: INITIAL_TASKS_STATE,
-        unlocks: INITIAL_UNLOCKS_STATE,
-        fragments: INITIAL_FRAGMENTS_STATE,
-      });
+      if (!isFirstCharacter) {
+        loadNewState(dispatch, {
+          tasks: INITIAL_TASKS_STATE,
+          unlocks: INITIAL_UNLOCKS_STATE,
+          fragments: INITIAL_FRAGMENTS_STATE,
+        });
+      }
     });
     setIsOpen(false);
   };
