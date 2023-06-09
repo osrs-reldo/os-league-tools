@@ -195,4 +195,13 @@ function TaskAction({
 //     );
 // }
 
-export default { Task, ExpandedTask };
+function TaskCompletedAt({ row }) {
+  if (row.values.completedAt > 0) {
+    const completedDate = new Date(0);
+    completedDate.setUTCSeconds(row.values.completedAt / 1000);
+    return <div className='flex items-center justify-center py-2 h-full'>{completedDate.toLocaleDateString()}</div>;
+  }
+  return null;
+}
+
+export default { Task, ExpandedTask, TaskCompletedAt };

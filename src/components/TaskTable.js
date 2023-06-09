@@ -13,8 +13,16 @@ export default function TaskTable() {
   const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
   const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.STRICT);
   const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
+  const taskState = useSelector(state => state.tasks.tasks);
 
-  const data = useMemo(() => Object.values(tasks), []);
+  const data = useMemo(
+    () =>
+      Object.values(tasks).map(task => ({
+        ...task,
+        completedAt: taskState[task.id]?.completed ?? -1,
+      })),
+    []
+  );
   const columns = useMemo(
     () => [
       {
@@ -48,6 +56,13 @@ export default function TaskTable() {
         accessor: row => ({ category: row.category, subcategory: row.subcategory }),
         sortType: sortCategory,
         Cell: Category,
+      },
+      {
+        Header: 'Completed at',
+        id: 'completedAt',
+        Cell: Cell.TaskCompletedAt,
+        sortType: sortCompletedAt,
+        accessor: 'completedAt',
       },
     ],
     [isXsViewport, isSmViewport, isMdOrSmallerViewport]
@@ -106,6 +121,10 @@ function sortCategory(a, b) {
       : subA.label.localeCompare(subB.label);
   }
   return compareVal;
+}
+
+function sortCompletedAt(a, b) {
+  return a.values.completedAt - b.values.completedAt;
 }
 
 function fuzzyTextFilter(rows, __, filterValue) {
