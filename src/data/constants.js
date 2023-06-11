@@ -1,5 +1,8 @@
 import images from '../assets/images';
 
+export const LEAGUE_START_DATE = new Date('2023-06-01T12:00:00+00:00');
+export const LEAGUE_END_DATE = new Date('2023-07-15T12:00:00+00:00');
+
 export const PASSIVE_RELICS = {
   unlockThresholds: [0, 10, 300, 1500, 3000, 7500, 15000],
   tiers: {

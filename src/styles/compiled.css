@@ -1970,6 +1970,12 @@ select[multiple]:focus option:checked {
 .h-6 {
   height: 1.5rem;
 }
+.h-\[800px\] {
+  height: 800px;
+}
+.h-\[90\%\] {
+  height: 90%;
+}
 .h-3 {
   height: 0.75rem;
 }
@@ -2365,6 +2371,9 @@ select[multiple]:focus option:checked {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -2379,9 +2388,6 @@ select[multiple]:focus option:checked {
 }
 .pl-1 {
   padding-left: 0.25rem;
-}
-.pb-3 {
-  padding-bottom: 0.75rem;
 }
 .text-left {
   text-align: left;

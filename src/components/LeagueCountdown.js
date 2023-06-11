@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import { LEAGUE_END_DATE, LEAGUE_START_DATE } from '../data/constants';
 import { durationAsCountdown } from '../util/numberFormatters';
 import Card from './common/Card';
 
-const LAUNCH_DATE = new Date('2022-01-19T12:00:00+00:00');
-const END_DATE = new Date('2022-03-16T12:00:00+00:00');
-
 export default function LeagueCountdown() {
-  const [launchCountdown, setLaunchCountdown] = useState(durationAsCountdown(LAUNCH_DATE));
-  const [endCountdown, setEndCountdown] = useState(durationAsCountdown(END_DATE));
+  const [launchCountdown, setLaunchCountdown] = useState(durationAsCountdown(LEAGUE_START_DATE));
+  const [endCountdown, setEndCountdown] = useState(durationAsCountdown(LEAGUE_END_DATE));
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLaunchCountdown(durationAsCountdown(LAUNCH_DATE));
-      setEndCountdown(durationAsCountdown(END_DATE));
+      setLaunchCountdown(durationAsCountdown(LEAGUE_START_DATE));
+      setEndCountdown(durationAsCountdown(LEAGUE_END_DATE));
     }, 1000);
     return () => clearTimeout(timer);
   });
