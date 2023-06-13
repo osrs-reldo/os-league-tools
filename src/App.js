@@ -14,6 +14,7 @@ import ThemeProvider from './components/ThemeProvider';
 import Statistics from './pages/Statistics';
 import Calculators from './pages/Calculators';
 import BankedExp from './pages/BankedExp';
+import Faq from './pages/Faq';
 
 const history = createBrowserHistory();
 const trackingId = process.env.REACT_APP_GA_TRACKING || '';
@@ -55,6 +56,7 @@ export default function App() {
                 </Route>
                 <Route path='about' element={<About />} />
                 <Route path='settings' element={<Settings />} />
+                <Route path='faq' element={<Faq />} />
               </Routes>
             </Auth0Provider>
           </BrowserRouter>

@@ -48,7 +48,8 @@ export default function PageWrapper({ children }) {
     new NavItem('Tip Jar', 'overflow', 4, 3)
       .withHref('https://ko-fi.com/osleaguetools', '_blank')
       .withIconFont('savings'),
-    new NavItem('About', 'overflow', 4, 4).withRouterLink('/about').withIconFont('help_outline'),
+    new NavItem('FAQ', 'overflow', 4, 4).withRouterLink('/faq').withIconFont('help_outline'),
+    new NavItem('About', 'overflow', 4, 5).withRouterLink('/about').withIconFont('info'),
   ];
 
   return (
