@@ -145,8 +145,6 @@ function SkillReqCell({ value }) {
 }
 
 function TextReqCell({ value }) {
-  // eslint-disable-next-line no-console
-  console.log({ value });
   if (value.length === 0) {
     return <span className='w-full h-full items-center flex italic text-xs'>none</span>;
   }

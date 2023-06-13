@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { batch, useDispatch, useSelector } from 'react-redux';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
