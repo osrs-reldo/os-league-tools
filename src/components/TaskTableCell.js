@@ -7,7 +7,7 @@ import SkillRequirementList from './SkillRequirementList';
 import Difficulty from './Difficulty';
 import Category from './Category';
 
-function Task({ row, value }) {
+function Task({ row, value, addToHistory }) {
   const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
   const taskId = row.values.id;
   const taskState = useSelector(state => selectTask(state, taskId));
@@ -22,6 +22,7 @@ function Task({ row, value }) {
             className='icon-2xl text-accent select-none'
             onClick={e => {
               dispatch(toggleCompleted({ taskId }));
+              addToHistory(taskId, 'completed');
               e.stopPropagation();
             }}
           >
@@ -41,6 +42,7 @@ function Task({ row, value }) {
           type='button'
           onClick={e => {
             dispatch(toggleTodo({ taskId }));
+            addToHistory(taskId, 'todo');
             e.stopPropagation();
           }}
         >

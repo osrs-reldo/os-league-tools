@@ -10,7 +10,7 @@ import { DIFFICULTY, STATS } from '../data/constants';
 import { formatCategoriesForCheckboxTree } from '../data/categories';
 import getSkillsPanelData from '../util/getSkillsPanelData';
 
-export default function TaskFilters() {
+export default function TaskFilters({ history }) {
   const filterState = useSelector(state => state.filters.tasks);
   const unlockedSkills = useSelector(state => state.unlocks.skills);
   const dispatch = useDispatch();
@@ -144,6 +144,24 @@ export default function TaskFilters() {
         <button type='button' className='button-outline w-full mb-1 h-fit' onClick={() => dispatch(resetTasks())}>
           Clear filters
         </button>
+        <div className='flex gap-1'>
+          <button
+            type='button'
+            className={`${history.canUndo ? 'button-outline' : 'button-outline-disabled'} w-full`}
+            disabled={!history.canUndo}
+            onClick={history.undo}
+          >
+            Undo
+          </button>
+          <button
+            type='button'
+            className={`${history.canRedo ? 'button-outline' : 'button-outline-disabled'} w-full`}
+            disabled={!history.canRedo}
+            onClick={history.redo}
+          >
+            Redo
+          </button>
+        </div>
         {/* TODO save reordered task state */}
         {/* {filterState.reorderEnabled ? (
                     <button
