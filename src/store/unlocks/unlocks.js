@@ -32,6 +32,12 @@ export const unlocksSlice = createSlice({
         [action.payload.id]: action.payload.status,
       };
     },
+    updateDiary: (state, action) => {
+      state.diaries = {
+        ...state.diaries,
+        [action.payload.id]: action.payload.status,
+      };
+    },
     load: (state, action) => {
       const fallbackState = action.payload.forceOverwrite ? INITIAL_STATE : state;
       return updateUnlocksVersion({
@@ -49,6 +55,7 @@ const {
   lockBoss: innerLockBoss,
   unlockBoss: innerUnlockBoss,
   updateQuest: innerUpdateQuest,
+  updateQuest: innerUpdateDiary,
   load: innerLoad,
   reset: innerReset,
 } = unlocksSlice.actions;
@@ -71,6 +78,10 @@ export function unlockBoss(props) {
 
 export function updateQuest(props) {
   return updateWithUserDataStorage(innerUpdateQuest, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
+}
+
+export function updateDiary(props) {
+  return updateWithUserDataStorage(innerUpdateDiary, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
 }
 
 export function load(props) {

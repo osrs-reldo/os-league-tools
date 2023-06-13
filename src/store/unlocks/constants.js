@@ -1,4 +1,4 @@
-export const CURRENT_VERSION = 5;
+export const CURRENT_VERSION = 6;
 
 export const DEFAULT_UNLOCKED_SKILLS = ['Defence', 'Thieving', 'Fishing'];
 
@@ -17,4 +17,5 @@ export const INITIAL_STATE = {
   skills: DEFAULT_UNLOCKED_SKILLS,
   bosses: [],
   quests: {},
+  diaries: {},
 };

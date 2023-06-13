@@ -7,6 +7,7 @@ import useQueryString from '../hooks/useQueryString';
 import QuestsPanel from './QuestsPanel';
 import images from '../assets/images';
 import RelicsPanel from './RelicsPanel';
+import DiariesPanel from './DiariesPanel';
 
 export default function Tracker() {
   const [selectedTab, onSetSelectedTab] = useQueryString('tab');
@@ -25,6 +26,9 @@ export default function Tracker() {
         </TabbedCard.Tab>
         <TabbedCard.Tab id='quests' label='Quests' icon={images['tab-quests.png']}>
           <QuestsPanel />
+        </TabbedCard.Tab>
+        <TabbedCard.Tab id='diaries' label='Diaries' icon={images['tab-diaries.png']}>
+          <DiariesPanel />
         </TabbedCard.Tab>
       </TabbedCard>
     </PageWrapper>

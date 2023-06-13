@@ -3,10 +3,17 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
 import { getCategoriesForStore } from '../data/categories';
-import { STATS, DIFFICULTY, QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/constants';
+import {
+  STATS,
+  DIFFICULTY,
+  QUEST_DIFFICULTY,
+  QUEST_LENGTH,
+  DIARY_LOCATIONS,
+  DIARY_DIFFICULTY,
+} from '../data/constants';
 import { ACTIVITIES, SETS, TAGS } from '../data/relics';
 
-const CURRENT_VERSION = 10;
+const CURRENT_VERSION = 11;
 
 const mapDataValues = values => Object.values(values).map(({ label }) => label);
 
@@ -30,6 +37,13 @@ const INITIAL_QUEST_STATE = {
   skills: null,
 };
 
+const INITIAL_DIARIES_STATE = {
+  status: 'all',
+  difficulty: mapDataValues(DIARY_DIFFICULTY),
+  location: mapDataValues(DIARY_LOCATIONS),
+  skills: null,
+};
+
 const INITIAL_FRAGMENT_STATE = {
   status: 'all',
   levels: 'all',
@@ -43,6 +57,7 @@ const INITIAL_STATE = {
   tasks: INITIAL_TASK_STATE,
   quests: INITIAL_QUEST_STATE,
   fragments: INITIAL_FRAGMENT_STATE,
+  diaries: INITIAL_DIARIES_STATE,
 };
 
 export const filterSlice = createSlice({
@@ -58,6 +73,9 @@ export const filterSlice = createSlice({
     updateFragmentFilter: (state, action) => {
       state.fragments[action.payload.field] = action.payload.value;
     },
+    updateDiariesFilter: (state, action) => {
+      state.diaries[action.payload.field] = action.payload.value;
+    },
     resetTasks: state => ({
       ...state,
       tasks: INITIAL_TASK_STATE,
@@ -69,6 +87,10 @@ export const filterSlice = createSlice({
     resetFragments: state => ({
       ...state,
       quests: INITIAL_QUEST_STATE,
+    }),
+    resetDiaries: state => ({
+      ...state,
+      diaries: INITIAL_DIARIES_STATE,
     }),
     reset: () => INITIAL_STATE,
   },
@@ -87,9 +109,11 @@ export const {
   updateTaskFilter,
   updateQuestFilter,
   updateFragmentFilter,
+  updateDiariesFilter,
   resetTasks,
   resetQuests,
   resetFragments,
+  resetDiaries,
   reset,
 } = filterSlice.actions;
 

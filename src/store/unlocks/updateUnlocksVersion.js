@@ -6,6 +6,7 @@ const versionUpdaters = {
   3: updateToV3,
   4: updateToV4,
   5: updateToV5,
+  6: updateToV6,
 };
 
 export default function updateUnlocksVersion(state) {
@@ -55,5 +56,14 @@ function updateToV5(prevState) {
     ...prevState,
     version: 5,
     quests: prevState.quests || {},
+  };
+}
+
+function updateToV6(prevState) {
+  // V6 adds diaries
+  return {
+    ...prevState,
+    version: 6,
+    diaries: {},
   };
 }

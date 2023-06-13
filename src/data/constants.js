@@ -697,6 +697,29 @@ export const DIFFICULTY = {
   },
 };
 
+export const DIARY_DIFFICULTY = {
+  EASY: {
+    label: 'Easy',
+    icon: images['task-easy.png'],
+    sortOrder: 1,
+  },
+  MEDIUM: {
+    label: 'Medium',
+    icon: images['task-medium.png'],
+    sortOrder: 2,
+  },
+  HARD: {
+    label: 'Hard',
+    icon: images['task-hard.png'],
+    sortOrder: 3,
+  },
+  ELITE: {
+    label: 'Elite',
+    icon: images['task-elite.png'],
+    sortOrder: 4,
+  },
+};
+
 export const QUEST_DIFFICULTY = {
   NOVICE: {
     id: 0,
@@ -878,3 +901,66 @@ export const QUEST_STATUS = {
 export const CLUE_TIERS = ['Beginner', 'Easy', 'Medium', 'Hard', 'Elite', 'Master'];
 
 export const DEFAULT_NOTES_TEXT = '(none)';
+
+export const DIARY_LOCATIONS = {
+  ARDOUGNE: {
+    id: 0,
+    label: 'Ardougne',
+    icon: images['task-kandarin.png'],
+  },
+  DESERT: {
+    id: 1,
+    label: 'Desert',
+    icon: images['task-kharidian.png'],
+  },
+  FALADOR: {
+    id: 2,
+    label: 'Falador',
+    icon: images['task-asgarnia.png'],
+  },
+  FREMENNIK: {
+    id: 3,
+    label: 'Fremennik',
+    icon: images['task-fremennik.png'],
+  },
+  KANDARIN: {
+    id: 4,
+    label: 'Kandarin',
+    icon: images['task-kandarin.png'],
+  },
+  KARAMJA: {
+    id: 5,
+    label: 'Karamja',
+    icon: images['task-karamja.png'],
+  },
+  KOUREND: {
+    id: 6,
+    label: 'Kourend',
+    icon: images['task-xeric.png'],
+  },
+  LUMBRIDGE: {
+    id: 7,
+    label: 'Lumbridge',
+    icon: images['task-misthalin.png'],
+  },
+  MORYTANIA: {
+    id: 8,
+    label: 'Morytania',
+    icon: images['task-morytania.png'],
+  },
+  VARROCK: {
+    id: 9,
+    label: 'Varrock',
+    icon: images['task-misthalin.png'],
+  },
+  WESTERN: {
+    id: 10,
+    label: 'W. Provinces',
+    icon: images['task-tiranwnn.png'],
+  },
+  WILDERNESS: {
+    id: 11,
+    label: 'Wilderness',
+    icon: images['task-wilderness.png'],
+  },
+};
