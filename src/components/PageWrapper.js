@@ -23,7 +23,6 @@ export default function PageWrapper({ children }) {
     new NavItem('Stats', 'primary', 0, 0).withRouterLink('/stats').withIconFont('query_stats'),
     new NavItem('Trackers', 'primary', 0, 1).withRouterLink('/tracker').withIconFont('checklist_rtl'),
     new NavItem('Calculators', 'primary', 0, 2).withRouterLink('/calculators').withIconFont('calculate'),
-    new NavItem('Banked exp', 'primary', 0, 2).withRouterLink('/bankedExp').withIconFont('dataset'),
     new NavItem('Character', 'secondary', 1, 0).withCustomRenderFn(
       () => <Character.NavBarItem key='character' setCharacterModalOpen={setCharacterModalOpen} />,
       () => <Character.CollapsedMenu key='character' setCharacterModalOpen={setCharacterModalOpen} />

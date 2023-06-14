@@ -33,9 +33,6 @@ export default function CalculatorTable({ applyExpMultipliers, applyInputMultipl
     };
   });
 
-  // eslint-disable-next-line no-console
-  console.log(calculatedData);
-
   const data = useMemo(() => calculatedData, [skill, expValues, calculatorTier, calculatedData]);
 
   const columns = useMemo(
