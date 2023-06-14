@@ -11,7 +11,7 @@ export default function updateWithUserDataStorage(wrappedDispatchFn, wrappedFnPr
         case LOCALSTORAGE_KEYS.TASKS:
         case LOCALSTORAGE_KEYS.FRAGMENTS: {
           const state = getState();
-          return `${localstorageKey}_${state.character[state.character.activeCharacter] ?? 'DEFAULT'}`;
+          return `${localstorageKey}_${state.character.characters[state.character.activeCharacter] ?? 'DEFAULT'}`;
         }
         default: {
           return localstorageKey;

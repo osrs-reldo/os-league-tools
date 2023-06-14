@@ -55,18 +55,25 @@ export default function useAccount({ redirectReturnToUrl }) {
         if (res.success) {
           // user exists already, load their data and overwrite existing
           batch(() => {
-            const taskState = updateTasksVersion(
-              res.value.tasks?.S ? JSON.parse(res.value.tasks?.S) : INITIAL_TASKS_STATE
-            );
             const settingsState = res.value.settings?.S ? JSON.parse(res.value.settings?.S) : INITIAL_SETTINGS_STATE;
             const characterState = updateCharacterVersion(
               res.value.character?.S ? JSON.parse(res.value.character?.S) : INITIAL_CHARACTER_STATE
             );
+            const activeCharacter = characterState.characters[characterState.activeCharacter] ?? 'DEFAULT';
+            const taskState = updateTasksVersion(
+              res.value[`tasks_${activeCharacter}`]?.S
+                ? JSON.parse(res.value[`tasks_${activeCharacter}`].S)
+                : INITIAL_TASKS_STATE
+            );
             const unlocksState = updateUnlocksVersion(
-              res.value.unlocks?.S ? JSON.parse(res.value.unlocks?.S) : INITIAL_UNLOCKS_STATE
+              res.value[`unlocks_${activeCharacter}`]?.S
+                ? JSON.parse(res.value[`unlocks_${activeCharacter}`].S)
+                : INITIAL_UNLOCKS_STATE
             );
             const fragmentState = updateFragmentsVersion(
-              res.value.fragments?.S ? JSON.parse(res.value.fragments?.S) : INITIAL_FRAGMENTS_STATE
+              res.value[`fragments_${activeCharacter}`]?.S
+                ? JSON.parse(res.value[`fragments_${activeCharacter}`].S)
+                : INITIAL_FRAGMENTS_STATE
             );
             dispatch(loadTasksState({ forceOverwrite: true, newState: taskState, skipDbUpdate: true }));
             dispatch(loadSettingsState({ forceOverwrite: true, newState: settingsState, skipDbUpdate: true }));
