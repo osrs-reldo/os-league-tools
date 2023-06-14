@@ -20,6 +20,10 @@ import { createUserIfNeeded, getUser } from '../client/user-data-client';
 import { INITIAL_STATE as INITIAL_TASKS_STATE } from '../store/tasks/constants';
 import { INITIAL_STATE as INITIAL_UNLOCKS_STATE } from '../store/unlocks/constants';
 import { INITIAL_STATE as INITIAL_CHARACTER_STATE } from '../store/user/constants';
+import updateTasksVersion from '../store/tasks/updateTasksVersion';
+import updateCharacterVersion from '../store/user/updateCharacterVersion';
+import updateUnlocksVersion from '../store/unlocks/updateUnlocksVersion';
+import updateFragmentsVersion from '../store/fragments/updateFragmentsVersion';
 
 export default function useAccount({ redirectReturnToUrl }) {
   const {
@@ -51,13 +55,19 @@ export default function useAccount({ redirectReturnToUrl }) {
         if (res.success) {
           // user exists already, load their data and overwrite existing
           batch(() => {
-            const taskState = res.value.tasks?.S ? JSON.parse(res.value.tasks?.S) : INITIAL_TASKS_STATE;
+            const taskState = updateTasksVersion(
+              res.value.tasks?.S ? JSON.parse(res.value.tasks?.S) : INITIAL_TASKS_STATE
+            );
             const settingsState = res.value.settings?.S ? JSON.parse(res.value.settings?.S) : INITIAL_SETTINGS_STATE;
-            const characterState = res.value.character?.S
-              ? JSON.parse(res.value.character?.S)
-              : INITIAL_CHARACTER_STATE;
-            const unlocksState = res.value.unlocks?.S ? JSON.parse(res.value.unlocks?.S) : INITIAL_UNLOCKS_STATE;
-            const fragmentState = res.value.fragments?.S ? JSON.parse(res.value.fragments?.S) : INITIAL_FRAGMENTS_STATE;
+            const characterState = updateCharacterVersion(
+              res.value.character?.S ? JSON.parse(res.value.character?.S) : INITIAL_CHARACTER_STATE
+            );
+            const unlocksState = updateUnlocksVersion(
+              res.value.unlocks?.S ? JSON.parse(res.value.unlocks?.S) : INITIAL_UNLOCKS_STATE
+            );
+            const fragmentState = updateFragmentsVersion(
+              res.value.fragments?.S ? JSON.parse(res.value.fragments?.S) : INITIAL_FRAGMENTS_STATE
+            );
             dispatch(loadTasksState({ forceOverwrite: true, newState: taskState, skipDbUpdate: true }));
             dispatch(loadSettingsState({ forceOverwrite: true, newState: settingsState, skipDbUpdate: true }));
             dispatch(loadUnlocksState({ forceOverwrite: true, newState: unlocksState, skipDbUpdate: true }));

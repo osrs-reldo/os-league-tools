@@ -4,7 +4,7 @@ const versionUpdaters = {
   2: updateToV2,
 };
 
-export default function updateUnlocksVersion(state) {
+export default function updateCharacterVersion(state) {
   if (state.version && state.version >= CURRENT_VERSION) {
     return state;
   }
