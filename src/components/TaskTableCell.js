@@ -201,9 +201,12 @@ function TaskAction({
 // }
 
 function TaskCompletedAt({ row }) {
-  if (row.values.completedAt > 0) {
+  const taskId = row.values.id;
+  const taskState = useSelector(state => selectTask(state, taskId));
+
+  if (taskState.completed > 0) {
     const completedDate = new Date(0);
-    completedDate.setUTCSeconds(row.values.completedAt / 1000);
+    completedDate.setUTCSeconds(taskState.completed / 1000);
     return <div className='flex items-center justify-center py-2 h-full'>{completedDate.toLocaleDateString()}</div>;
   }
   return null;

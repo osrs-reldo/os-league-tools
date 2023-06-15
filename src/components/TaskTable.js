@@ -13,21 +13,13 @@ export default function TaskTable({ history }) {
   const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
   const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.STRICT);
   const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
-  const taskState = useSelector(state => state.tasks.tasks);
 
   const renderCell = useCallback(
     ({ row, value }) => <Cell.Task row={row} value={value} addToHistory={history.addHistory} />,
     [history.history]
   );
 
-  const data = useMemo(
-    () =>
-      Object.values(tasks).map(task => ({
-        ...task,
-        completedAt: taskState[task.id]?.completed ?? -1,
-      })),
-    []
-  );
+  const data = useMemo(() => Object.values(tasks), []);
   const columns = useMemo(
     () => [
       {
