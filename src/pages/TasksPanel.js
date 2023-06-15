@@ -9,7 +9,7 @@ import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import { PASSIVE_RELICS } from '../data/constants';
 import useTrackerHistory from '../hooks/useTrackerHistory';
 
-export default function TasksPanel() {
+export default function TasksPanel({ readonly, taskState }) {
   const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.LESS_OR_EQ);
   const isXlViewport = useBreakpoint(MEDIA_QUERIES.XL);
   const [showSidebar, setShowSidebar] = useState(isXlViewport);
@@ -59,7 +59,7 @@ export default function TasksPanel() {
           <div className='basis-[23%] flex flex-col gap-3 pl-2'>
             <TaskFilters history={history} />
             <Separator />
-            <TaskGenerator />
+            {!readonly && <TaskGenerator />}
           </div>
         )}
         <div className='mt-3 mb-3 bg-hover cursor-pointer' onClick={() => setShowSidebar(!showSidebar)}>
@@ -78,7 +78,7 @@ export default function TasksPanel() {
         </div>
         <div className='basis-3/4 grow flex flex-col xl:ml-1 bg-primary'>
           <div className='border-t xl:border-l xl:border-t-0 pt-2 xl:pt-[0] border-subdued grow xl:mt-3'>
-            <TaskTable history={history} />
+            <TaskTable history={history} readonly={readonly} taskState={taskState} />
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { matchSorter } from 'match-sorter';
 import { useSelector } from 'react-redux';
 import tasks from '../data/tasks';
@@ -9,15 +9,18 @@ import Category from './Category';
 import Table from './common/Table';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 
-export default function TaskTable({ history }) {
+function renderTaskCell({ history }) {
+  return ({ row, value }) => <Cell.Task row={row} value={value} addToHistory={history.addHistory} />;
+}
+
+function renderReadonlyTaskCell({ taskState }) {
+  return ({ row, value }) => <Cell.ReadonlyTask row={row} value={value} taskState={taskState} />;
+}
+
+export default function TaskTable({ history, readonly, taskState }) {
   const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
   const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.STRICT);
   const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
-
-  const renderCell = useCallback(
-    ({ row, value }) => <Cell.Task row={row} value={value} addToHistory={history.addHistory} />,
-    [history.history]
-  );
 
   const data = useMemo(() => Object.values(tasks), []);
   const columns = useMemo(
@@ -34,7 +37,7 @@ export default function TaskTable({ history }) {
         width: isXsViewport ? 0 : isSmViewport ? 375 : 470,
         accessor: row => ({ label: row.label, description: row.description }),
         sortType: sortTask,
-        Cell: renderCell,
+        Cell: readonly ? renderReadonlyTaskCell({ taskState }) : renderTaskCell({ history }),
       },
       {
         Header: 'Difficulty',
@@ -90,7 +93,7 @@ export default function TaskTable({ history }) {
       customFilterProps={{ tasksState, hiscoresState }}
       defaultColumn={defaultColumn}
       initialState={initialState}
-      ExpandedRow={Cell.ExpandedTask}
+      ExpandedRow={readonly ? Cell.ReadonlyExpandedTask : Cell.ExpandedTask}
       enableResizeColumns={!isXsViewport}
     />
   );

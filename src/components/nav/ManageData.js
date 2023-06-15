@@ -25,6 +25,9 @@ function NavBarItem({ setManageDataModalType }) {
           <Dropdown.Button className='text-left' onClick={() => setManageDataModalType('export')}>
             <span className='icon-base mr-1 align-bottom'>file_upload</span> Export
           </Dropdown.Button>
+          <Dropdown.Button className='text-left' onClick={() => setManageDataModalType('share')}>
+            <span className='icon-base mr-1 align-bottom'>share</span> Share
+          </Dropdown.Button>
           <Dropdown.Separator />
           <Dropdown.Button className='text-left' onClick={() => setManageDataModalType('reset')}>
             <span className='icon-outline text-base mr-1 align-bottom'>dangerous</span> Reset
@@ -55,6 +58,15 @@ function CollapsedMenu({ setManageDataModalType }) {
       >
         <span className='text-primary-alt icon-lg inline align-middle mr-1'>file_upload</span>
         <p className='h-4 inline pl-1 font-sans-alt'>Export data</p>
+      </button>
+      <button
+        key='share'
+        className='text-primary bg-hover py-1 text-left'
+        onClick={() => setManageDataModalType('share')}
+        type='button'
+      >
+        <span className='text-primary-alt icon-lg inline align-middle mr-1'>share</span>
+        <p className='h-4 inline pl-1 font-sans-alt'>Share tasks</p>
       </button>
       <button
         key='reset'

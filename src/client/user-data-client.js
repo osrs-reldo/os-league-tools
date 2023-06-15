@@ -44,6 +44,15 @@ export function getUser(userEmail, accessToken) {
     .then(defaultResponseHandler, defaultErrorHandler);
 }
 
+export function getUserByRsn(rsn) {
+  return fetch(`${BASE_URL}/user?rsn=${rsn}`, {
+    method: 'GET',
+    headers: DEFAULT_HEADERS,
+  })
+    .then(res => res.json())
+    .then(defaultResponseHandler, defaultErrorHandler);
+}
+
 export function getUserData(userEmail, storageKey, accessToken) {
   return fetch(`${BASE_URL}/user?email=${userEmail}&key=${storageKey}`, {
     method: 'GET',

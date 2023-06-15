@@ -65,6 +65,14 @@ export default function ManageDataModal({ variant, isOpen, setIsOpen }) {
           </Modal.Body>
         </ModalWrapper>
       );
+    case 'share':
+      return (
+        <ModalWrapper isOpen={isOpen} setIsOpen={setIsOpen} headerText='Share Tasks'>
+          <Modal.Body className='text-primary text-sm'>
+            <ShareLinkContent />
+          </Modal.Body>
+        </ModalWrapper>
+      );
     default:
       return null;
   }
@@ -292,6 +300,40 @@ function ResetDataModalContent({ setIsOpen }) {
         </button>
       </div>
       {successText && <p className='text-accent text-sm'>{successText}</p>}
+    </>
+  );
+}
+
+function ShareLinkContent() {
+  const accountState = useSelector(state => state.account);
+  const characterState = useSelector(state => state.character);
+  const [isCopySuccess, setIsCopySuccess] = useState(false);
+
+  if (!accountState.accountCache.isLoggedIn || !characterState.characters[characterState.activeCharacter]) {
+    return (
+      <p className='m-2 mt-1 text-error'>
+        You must be logged in and have set up at least one character in order to share your progress link.
+      </p>
+    );
+  }
+
+  const shareLink = `https://www.osleague.tools/tracker/${characterState.characters[characterState.activeCharacter]}`;
+
+  return (
+    <>
+      <p className='m-2 mt-1'>Click to copy the link below to share your task progress!</p>
+      <p className='m-2 mt-1'>
+        <textarea
+          className='input-primary form-textarea w-full mt-1 text-sm select-all cursor-text'
+          onClick={() => {
+            navigator.clipboard.writeText(shareLink);
+            setIsCopySuccess(true);
+          }}
+          value={shareLink}
+          readOnly
+        />
+        {isCopySuccess && <p className='text-accent text-sm'>Copied!</p>}
+      </p>
     </>
   );
 }

@@ -14,6 +14,7 @@ import ThemeProvider from './components/ThemeProvider';
 import Statistics from './pages/Statistics';
 import Calculators from './pages/Calculators';
 import Faq from './pages/Faq';
+import ViewCharacter from './pages/ViewCharacter';
 
 const history = createBrowserHistory();
 const trackingId = process.env.REACT_APP_GA_TRACKING || '';
@@ -47,6 +48,7 @@ export default function App() {
                 <Route path='stats' element={<Statistics />} />
                 <Route path='news' element={<Homepage />} />
                 <Route path='tracker' element={<Tracker />} />
+                <Route path='tracker/:character' element={<ViewCharacter />} />
                 <Route path='calculators' element={<Calculators />}>
                   <Route path=':skill' element={<Calculators />} />
                 </Route>

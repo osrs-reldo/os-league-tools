@@ -63,6 +63,39 @@ function Task({ row, value, addToHistory }) {
   );
 }
 
+function ReadonlyTask({ row, value, taskState }) {
+  const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
+  const taskId = row.values.id;
+
+  let textClassname = taskState.tasks[taskId]?.completed ? 'text-accent' : '';
+  textClassname = taskState.tasks[taskId]?.ignored ? 'text-secondary-alt' : textClassname;
+
+  return (
+    <div {...row.getToggleRowExpandedProps()}>
+      <div className='flex flex-row items-center h-full gap-2'>
+        <div className='flex flex-row'>
+          <span className='icon-2xl text-accent'>{row.isExpanded ? 'arrow_drop_down' : 'arrow_right'}</span>
+          <span className='icon-2xl text-accent select-none'>
+            {taskState.tasks[taskId]?.completed ? 'check_box' : 'check_box_outline_blank'}
+          </span>
+        </div>
+
+        <div className={`flex flex-col w-full ${textClassname}`}>
+          <span className='inline align-middle'>{value.label}</span>
+          <span className='inline align-middle text-xs'>{value.description}</span>
+        </div>
+
+        {isXsViewport && (
+          <div className='flex items-center h-full mr-1'>
+            <Difficulty value={row.values.difficulty} />
+            <Category value={row.values.category} />
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function ExpandedTask({ original }) {
   return (
     <div className='flex flex-row items-center h-full gap-2 max-w-[90%] md:max-w-[75%] lg:max-w-[60%]'>
@@ -78,6 +111,22 @@ function ExpandedTask({ original }) {
         <Notes className='ml-3 my-1' taskId={original.id} />
         <span className='text-xs mr-1'>Actions:</span>
         <Manage className='m-1 ml-3' taskId={original.id} />
+      </div>
+    </div>
+  );
+}
+
+function ReadonlyExpandedTask({ original }) {
+  return (
+    <div className='flex flex-row items-center h-full gap-2 max-w-[90%] md:max-w-[75%] lg:max-w-[60%]'>
+      {/* hack: invisible dummy icons to align the expanded text with the previous row */}
+      <div className='flex flex-row invisible'>
+        <span className='icon-2xl text-accent'>x</span>
+        <span className='icon-2xl text-accent'>x</span>
+      </div>
+      <div className='w-full flex flex-col gap-0.5 mb-2'>
+        <span className='text-xs mr-1'>Requires:</span>
+        <SkillRequirementList value={original.skillReqs} className='ml-3' />
       </div>
     </div>
   );
@@ -212,4 +261,4 @@ function TaskCompletedAt({ row }) {
   return null;
 }
 
-export default { Task, ExpandedTask, TaskCompletedAt };
+export default { Task, ExpandedTask, ReadonlyExpandedTask, TaskCompletedAt, ReadonlyTask };
