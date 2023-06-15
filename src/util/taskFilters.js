@@ -1,5 +1,6 @@
 import { difference } from 'lodash';
 import { STATS } from '../data/constants';
+import tasks from '../data/tasks';
 
 function difficultyFilter(record, filterState) {
   if (filterState.difficulty === null) {
@@ -43,6 +44,15 @@ function skillFilter(record, filterState, { hiscoresState }) {
   return meetsRequirements;
 }
 
+function prereqFilter(record, filterState, { tasksState }) {
+  if (filterState.showIncompletePrereqs || !record.prerequisite) {
+    return true;
+  }
+
+  const prereq = tasks[record.prerequisite];
+  return !!tasksState[prereq.id]?.completed;
+}
+
 function completedFilter(record, filterState, { tasksState }) {
   if (filterState.status === 'all') {
     return true;
@@ -74,4 +84,5 @@ export default {
   completedFilter,
   todoFilter,
   ignoredFilter,
+  prereqFilter,
 };

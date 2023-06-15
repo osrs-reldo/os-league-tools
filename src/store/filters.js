@@ -13,7 +13,7 @@ import {
 } from '../data/constants';
 import { ACTIVITIES, SETS, TAGS } from '../data/relics';
 
-const CURRENT_VERSION = 11;
+const CURRENT_VERSION = 12;
 
 const mapDataValues = values => Object.values(values).map(({ label }) => label);
 
@@ -27,6 +27,7 @@ const INITIAL_TASK_STATE = {
   reorderEnabled: false,
   showNoRequirements: true,
   showUnmetRequirements: true,
+  showIncompletePrereqs: true,
   isUnchainedTalent: false,
 };
 

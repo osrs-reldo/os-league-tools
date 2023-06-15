@@ -94,6 +94,12 @@ export default function TaskFilters({ history }) {
           />
           <LabeledCheckbox
             className='text-sm'
+            label='Show tasks with incomplete prerequisites'
+            checked={filterState.showIncompletePrereqs}
+            onClick={e => dispatch(updateTaskFilter({ field: 'showIncompletePrereqs', value: e.target.checked }))}
+          />
+          <LabeledCheckbox
+            className='text-sm'
             label='Use unchained talent skill boost'
             checked={filterState.isUnchainedTalent}
             onClick={e => dispatch(updateTaskFilter({ field: 'isUnchainedTalent', value: e.target.checked }))}

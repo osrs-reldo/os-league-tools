@@ -10,6 +10,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   496: {
     id: '496',
@@ -19,6 +20,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   497: {
     id: '497',
@@ -28,6 +30,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.MILESTONE,
+    prerequisite: '',
   },
   498: {
     id: '498',
@@ -37,6 +40,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.MILESTONE,
+    prerequisite: '497',
   },
   499: {
     id: '499',
@@ -46,6 +50,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.MILESTONE,
+    prerequisite: '498',
   },
   500: {
     id: '500',
@@ -55,6 +60,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.MILESTONE,
+    prerequisite: '499',
   },
   709: {
     id: '709',
@@ -64,6 +70,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.LEVEL,
+    prerequisite: '',
   },
   202: {
     id: '202',
@@ -73,6 +80,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.BEGINNER,
+    prerequisite: '',
   },
   219: {
     id: '219',
@@ -82,6 +90,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   316: {
     id: '316',
@@ -91,6 +100,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   383: {
     id: '383',
@@ -100,6 +110,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   428: {
     id: '428',
@@ -109,6 +120,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.GENERAL,
+    prerequisite: '',
   },
   429: {
     id: '429',
@@ -118,6 +130,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.GENERAL,
+    prerequisite: '428',
   },
   477: {
     id: '477',
@@ -127,6 +140,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   478: {
     id: '478',
@@ -136,6 +150,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   479: {
     id: '479',
@@ -145,6 +160,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   579: {
     id: '579',
@@ -154,6 +170,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   580: {
     id: '580',
@@ -163,6 +180,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   581: {
     id: '581',
@@ -172,6 +190,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   586: {
     id: '586',
@@ -181,6 +200,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   587: {
     id: '587',
@@ -190,6 +210,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   595: {
     id: '595',
@@ -199,6 +220,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.WOODCUTTING,
+    prerequisite: '',
   },
   602: {
     id: '602',
@@ -208,6 +230,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.COOKING,
+    prerequisite: '',
   },
   603: {
     id: '603',
@@ -217,6 +240,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.COOKING,
+    prerequisite: '',
   },
   609: {
     id: '609',
@@ -226,6 +250,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   616: {
     id: '616',
@@ -235,6 +260,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FLETCHING,
+    prerequisite: '',
   },
   624: {
     id: '624',
@@ -244,6 +270,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   639: {
     id: '639',
@@ -253,6 +280,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CRAFTING,
+    prerequisite: '',
   },
   648: {
     id: '648',
@@ -262,6 +290,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   649: {
     id: '649',
@@ -271,6 +300,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   655: {
     id: '655',
@@ -280,6 +310,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.SMITHING,
+    prerequisite: '',
   },
   666: {
     id: '666',
@@ -289,6 +320,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   672: {
     id: '672',
@@ -298,6 +330,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   679: {
     id: '679',
@@ -307,6 +340,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FIREMAKING,
+    prerequisite: '',
   },
   739: {
     id: '739',
@@ -316,6 +350,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   759: {
     id: '759',
@@ -325,6 +360,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   766: {
     id: '766',
@@ -334,6 +370,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   801: {
     id: '801',
@@ -343,6 +380,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.NOVICE,
+    prerequisite: '',
   },
   807: {
     id: '807',
@@ -352,6 +390,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   809: {
     id: '809',
@@ -361,6 +400,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.NOVICE,
+    prerequisite: '',
   },
   813: {
     id: '813',
@@ -370,6 +410,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.NOVICE,
+    prerequisite: '',
   },
   815: {
     id: '815',
@@ -379,6 +420,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.NOVICE,
+    prerequisite: '',
   },
   821: {
     id: '821',
@@ -388,6 +430,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   822: {
     id: '822',
@@ -397,6 +440,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   998: {
     id: '998',
@@ -406,6 +450,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1009: {
     id: '1009',
@@ -415,6 +460,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1057: {
     id: '1057',
@@ -424,6 +470,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1060: {
     id: '1060',
@@ -433,6 +480,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1064: {
     id: '1064',
@@ -442,6 +490,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.NOVICE,
+    prerequisite: '',
   },
   1097: {
     id: '1097',
@@ -451,6 +500,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   1146: {
     id: '1146',
@@ -460,6 +510,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1205: {
     id: '1205',
@@ -469,6 +520,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1213: {
     id: '1213',
@@ -478,6 +530,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1217: {
     id: '1217',
@@ -487,6 +540,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1219: {
     id: '1219',
@@ -496,6 +550,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1346: {
     id: '1346',
@@ -505,6 +560,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1504: {
     id: '1504',
@@ -514,6 +570,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1505: {
     id: '1505',
@@ -523,6 +580,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1506: {
     id: '1506',
@@ -532,6 +590,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1507: {
     id: '1507',
@@ -541,6 +600,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1508: {
     id: '1508',
@@ -550,6 +610,7 @@ export default {
     difficulty: DIFFICULTY.BEGINNER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   509: {
     id: '509',
@@ -559,6 +620,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.TOTAL,
+    prerequisite: '',
   },
   510: {
     id: '510',
@@ -568,6 +630,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.TOTAL,
+    prerequisite: '',
   },
   511: {
     id: '511',
@@ -577,6 +640,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.TOTAL,
+    prerequisite: '',
   },
   710: {
     id: '710',
@@ -586,6 +650,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.LEVEL,
+    prerequisite: '709',
   },
   0: {
     id: '0',
@@ -595,6 +660,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.NOVICE,
+    prerequisite: '',
   },
   1: {
     id: '1',
@@ -604,6 +670,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   2: {
     id: '2',
@@ -613,6 +680,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   3: {
     id: '3',
@@ -622,6 +690,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   11: {
     id: '11',
@@ -631,6 +700,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.SHARED,
+    prerequisite: '',
   },
   15: {
     id: '15',
@@ -640,6 +710,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.SHARED,
+    prerequisite: '',
   },
   165: {
     id: '165',
@@ -649,6 +720,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.EASY,
+    prerequisite: '',
   },
   175: {
     id: '175',
@@ -658,6 +730,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.BEGINNER,
+    prerequisite: '',
   },
   192: {
     id: '192',
@@ -667,6 +740,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.EASY,
+    prerequisite: '',
   },
   210: {
     id: '210',
@@ -676,6 +750,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   220: {
     id: '220',
@@ -685,6 +760,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   257: {
     id: '257',
@@ -694,6 +770,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   266: {
     id: '266',
@@ -703,6 +780,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.FAVOUR,
+    prerequisite: '',
   },
   267: {
     id: '267',
@@ -712,6 +790,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.FAVOUR,
+    prerequisite: '',
   },
   268: {
     id: '268',
@@ -721,6 +800,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.FAVOUR,
+    prerequisite: '',
   },
   269: {
     id: '269',
@@ -730,6 +810,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.FAVOUR,
+    prerequisite: '',
   },
   270: {
     id: '270',
@@ -739,6 +820,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.FAVOUR,
+    prerequisite: '',
   },
   271: {
     id: '271',
@@ -748,6 +830,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   314: {
     id: '314',
@@ -757,6 +840,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   313: {
     id: '313',
@@ -766,6 +850,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   410: {
     id: '410',
@@ -775,6 +860,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   414: {
     id: '414',
@@ -784,6 +870,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   421: {
     id: '421',
@@ -793,6 +880,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   422: {
     id: '422',
@@ -802,6 +890,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '421',
   },
   430: {
     id: '430',
@@ -811,6 +900,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.GENERAL,
+    prerequisite: '',
   },
   431: {
     id: '431',
@@ -820,6 +910,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.GENERAL,
+    prerequisite: '',
   },
   432: {
     id: '432',
@@ -829,6 +920,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.GENERAL,
+    prerequisite: '',
   },
   475: {
     id: '475',
@@ -838,6 +930,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   476: {
     id: '476',
@@ -847,6 +940,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   481: {
     id: '481',
@@ -856,6 +950,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   588: {
     id: '588',
@@ -865,6 +960,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   596: {
     id: '596',
@@ -874,6 +970,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.WOODCUTTING,
+    prerequisite: '',
   },
   597: {
     id: '597',
@@ -883,6 +980,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.WOODCUTTING,
+    prerequisite: '',
   },
   604: {
     id: '604',
@@ -892,6 +990,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.COOKING,
+    prerequisite: '',
   },
   610: {
     id: '610',
@@ -901,6 +1000,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   611: {
     id: '611',
@@ -910,6 +1010,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   617: {
     id: '617',
@@ -919,6 +1020,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FLETCHING,
+    prerequisite: '',
   },
   618: {
     id: '618',
@@ -928,6 +1030,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FLETCHING,
+    prerequisite: '',
   },
   625: {
     id: '625',
@@ -937,6 +1040,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   626: {
     id: '626',
@@ -946,6 +1050,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   629: {
     id: '629',
@@ -955,6 +1060,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   640: {
     id: '640',
@@ -964,6 +1070,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CRAFTING,
+    prerequisite: '',
   },
   641: {
     id: '641',
@@ -973,6 +1080,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CRAFTING,
+    prerequisite: '',
   },
   650: {
     id: '650',
@@ -982,6 +1090,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   656: {
     id: '656',
@@ -991,6 +1100,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.SMITHING,
+    prerequisite: '',
   },
   657: {
     id: '657',
@@ -1000,6 +1110,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.SMITHING,
+    prerequisite: '',
   },
   664: {
     id: '664',
@@ -1009,6 +1120,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   665: {
     id: '665',
@@ -1018,6 +1130,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   673: {
     id: '673',
@@ -1027,6 +1140,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   674: {
     id: '674',
@@ -1036,6 +1150,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   680: {
     id: '680',
@@ -1045,6 +1160,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FIREMAKING,
+    prerequisite: '',
   },
   681: {
     id: '681',
@@ -1054,6 +1170,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FIREMAKING,
+    prerequisite: '',
   },
   687: {
     id: '687',
@@ -1063,6 +1180,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   688: {
     id: '688',
@@ -1072,6 +1190,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   696: {
     id: '696',
@@ -1081,6 +1200,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   694: {
     id: '694',
@@ -1090,6 +1210,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   699: {
     id: '699',
@@ -1099,6 +1220,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   700: {
     id: '700',
@@ -1108,6 +1230,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   701: {
     id: '701',
@@ -1117,6 +1240,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   717: {
     id: '717',
@@ -1126,6 +1250,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   720: {
     id: '720',
@@ -1135,6 +1260,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MELEE,
+    prerequisite: '',
   },
   725: {
     id: '725',
@@ -1145,6 +1271,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MELEE,
+    prerequisite: '',
   },
   729: {
     id: '729',
@@ -1157,6 +1284,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   734: {
     id: '734',
@@ -1166,6 +1294,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   738: {
     id: '738',
@@ -1175,6 +1304,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   763: {
     id: '763',
@@ -1184,6 +1314,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   768: {
     id: '768',
@@ -1193,6 +1324,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   771: {
     id: '771',
@@ -1202,6 +1334,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   775: {
     id: '775',
@@ -1211,6 +1344,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   784: {
     id: '784',
@@ -1220,6 +1354,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   797: {
     id: '797',
@@ -1229,6 +1364,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   803: {
     id: '803',
@@ -1238,6 +1374,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   810: {
     id: '810',
@@ -1247,6 +1384,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   811: {
     id: '811',
@@ -1256,6 +1394,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   812: {
     id: '812',
@@ -1265,6 +1404,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   814: {
     id: '814',
@@ -1274,6 +1414,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   816: {
     id: '816',
@@ -1283,6 +1424,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   900: {
     id: '900',
@@ -1292,6 +1434,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   905: {
     id: '905',
@@ -1301,6 +1444,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   909: {
     id: '909',
@@ -1310,6 +1454,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   914: {
     id: '914',
@@ -1319,6 +1464,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   943: {
     id: '943',
@@ -1328,6 +1474,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   958: {
     id: '958',
@@ -1337,6 +1484,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   964: {
     id: '964',
@@ -1346,6 +1494,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   969: {
     id: '969',
@@ -1355,6 +1504,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   970: {
     id: '970',
@@ -1364,6 +1514,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   980: {
     id: '980',
@@ -1373,6 +1524,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   994: {
     id: '994',
@@ -1382,6 +1534,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   1002: {
     id: '1002',
@@ -1391,6 +1544,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1006: {
     id: '1006',
@@ -1400,6 +1554,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1013: {
     id: '1013',
@@ -1409,6 +1564,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   1021: {
     id: '1021',
@@ -1418,6 +1574,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   1031: {
     id: '1031',
@@ -1427,6 +1584,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1066: {
     id: '1066',
@@ -1436,6 +1594,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.NOVICE,
+    prerequisite: '',
   },
   1068: {
     id: '1068',
@@ -1445,6 +1604,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   1070: {
     id: '1070',
@@ -1454,6 +1614,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1072: {
     id: '1072',
@@ -1463,6 +1624,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1082: {
     id: '1082',
@@ -1472,6 +1634,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   1086: {
     id: '1086',
@@ -1481,6 +1644,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   1103: {
     id: '1103',
@@ -1490,6 +1654,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   1104: {
     id: '1104',
@@ -1499,6 +1664,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1109: {
     id: '1109',
@@ -1508,6 +1674,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1126: {
     id: '1126',
@@ -1517,6 +1684,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1128: {
     id: '1128',
@@ -1526,6 +1694,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1138: {
     id: '1138',
@@ -1535,6 +1704,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   1144: {
     id: '1144',
@@ -1544,6 +1714,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1150: {
     id: '1150',
@@ -1553,6 +1724,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.PC,
+    prerequisite: '',
   },
   1154: {
     id: '1154',
@@ -1562,6 +1734,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1155: {
     id: '1155',
@@ -1571,6 +1744,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1165: {
     id: '1165',
@@ -1580,6 +1754,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1169: {
     id: '1169',
@@ -1589,6 +1764,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1175: {
     id: '1175',
@@ -1598,6 +1774,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1177: {
     id: '1177',
@@ -1607,6 +1784,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   1184: {
     id: '1184',
@@ -1616,6 +1794,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1201: {
     id: '1201',
@@ -1625,6 +1804,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   1209: {
     id: '1209',
@@ -1634,6 +1814,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1221: {
     id: '1221',
@@ -1646,6 +1827,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   1237: {
     id: '1237',
@@ -1655,6 +1837,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CRAFTING,
+    prerequisite: '',
   },
   1240: {
     id: '1240',
@@ -1664,6 +1847,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1244: {
     id: '1244',
@@ -1673,6 +1857,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1248: {
     id: '1248',
@@ -1682,6 +1867,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1252: {
     id: '1252',
@@ -1691,6 +1877,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1280: {
     id: '1280',
@@ -1700,6 +1887,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   1284: {
     id: '1284',
@@ -1709,6 +1897,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.OTHER,
+    prerequisite: '',
   },
   1287: {
     id: '1287',
@@ -1718,6 +1907,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1293: {
     id: '1293',
@@ -1727,6 +1917,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   1298: {
     id: '1298',
@@ -1736,6 +1927,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   1311: {
     id: '1311',
@@ -1745,6 +1937,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   1315: {
     id: '1315',
@@ -1754,6 +1947,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1319: {
     id: '1319',
@@ -1763,6 +1957,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1323: {
     id: '1323',
@@ -1772,6 +1967,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1327: {
     id: '1327',
@@ -1781,6 +1977,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1356: {
     id: '1356',
@@ -1790,6 +1987,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   1361: {
     id: '1361',
@@ -1799,6 +1997,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1363: {
     id: '1363',
@@ -1808,6 +2007,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1364: {
     id: '1364',
@@ -1817,6 +2017,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1365: {
     id: '1365',
@@ -1826,6 +2027,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1367: {
     id: '1367',
@@ -1835,6 +2037,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1368: {
     id: '1368',
@@ -1844,6 +2047,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1375: {
     id: '1375',
@@ -1853,6 +2057,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1377: {
     id: '1377',
@@ -1862,6 +2067,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   1383: {
     id: '1383',
@@ -1871,6 +2077,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   1402: {
     id: '1402',
@@ -1880,6 +2087,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   1403: {
     id: '1403',
@@ -1889,6 +2097,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1404: {
     id: '1404',
@@ -1898,6 +2107,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MELEE,
+    prerequisite: '',
   },
   1405: {
     id: '1405',
@@ -1907,6 +2117,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MELEE,
+    prerequisite: '',
   },
   1406: {
     id: '1406',
@@ -1916,6 +2127,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   1407: {
     id: '1407',
@@ -1928,6 +2140,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1408: {
     id: '1408',
@@ -1937,6 +2150,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.SHADES,
+    prerequisite: '',
   },
   1435: {
     id: '1435',
@@ -1946,6 +2160,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   1436: {
     id: '1436',
@@ -1955,6 +2170,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   1478: {
     id: '1478',
@@ -1964,6 +2180,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.SHADES,
+    prerequisite: '',
   },
   1495: {
     id: '1495',
@@ -1973,6 +2190,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1509: {
     id: '1509',
@@ -1982,6 +2200,7 @@ export default {
     difficulty: DIFFICULTY.EASY,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.NOVICE,
+    prerequisite: '',
   },
   501: {
     id: '501',
@@ -1991,6 +2210,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.MILESTONE,
+    prerequisite: '500',
   },
   502: {
     id: '502',
@@ -2000,6 +2220,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.MILESTONE,
+    prerequisite: '501',
   },
   503: {
     id: '503',
@@ -2009,6 +2230,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.MILESTONE,
+    prerequisite: '502',
   },
   512: {
     id: '512',
@@ -2018,6 +2240,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.TOTAL,
+    prerequisite: '',
   },
   513: {
     id: '513',
@@ -2027,6 +2250,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.TOTAL,
+    prerequisite: '',
   },
   514: {
     id: '514',
@@ -2036,6 +2260,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.TOTAL,
+    prerequisite: '',
   },
   521: {
     id: '521',
@@ -2045,6 +2270,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.BASE,
+    prerequisite: '',
   },
   522: {
     id: '522',
@@ -2054,6 +2280,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.BASE,
+    prerequisite: '',
   },
   523: {
     id: '523',
@@ -2063,6 +2290,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.BASE,
+    prerequisite: '',
   },
   524: {
     id: '524',
@@ -2072,6 +2300,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.BASE,
+    prerequisite: '',
   },
   525: {
     id: '525',
@@ -2081,6 +2310,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.BASE,
+    prerequisite: '',
   },
   526: {
     id: '526',
@@ -2090,6 +2320,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.BASE,
+    prerequisite: '',
   },
   711: {
     id: '711',
@@ -2099,6 +2330,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.LEVEL,
+    prerequisite: '710',
   },
   712: {
     id: '712',
@@ -2108,6 +2340,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.LEVEL,
+    prerequisite: '711',
   },
   1498: {
     id: '1498',
@@ -2117,6 +2350,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1501: {
     id: '1501',
@@ -2126,6 +2360,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   4: {
     id: '4',
@@ -2135,6 +2370,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   5: {
     id: '5',
@@ -2144,6 +2380,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   6: {
     id: '6',
@@ -2153,6 +2390,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.EXPERIENCED,
+    prerequisite: '',
   },
   7: {
     id: '7',
@@ -2162,6 +2400,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.EXPERIENCED,
+    prerequisite: '',
   },
   19: {
     id: '19',
@@ -2171,6 +2410,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.SHARED,
+    prerequisite: '',
   },
   30: {
     id: '30',
@@ -2180,6 +2420,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.ELITE,
+    prerequisite: '',
   },
   49: {
     id: '49',
@@ -2189,6 +2430,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.HARD,
+    prerequisite: '',
   },
   57: {
     id: '57',
@@ -2198,6 +2440,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   76: {
     id: '76',
@@ -2207,6 +2450,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.EASY,
+    prerequisite: '',
   },
   84: {
     id: '84',
@@ -2216,6 +2460,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.BEGINNER,
+    prerequisite: '',
   },
   121: {
     id: '121',
@@ -2225,6 +2470,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.HARD,
+    prerequisite: '156',
   },
   130: {
     id: '130',
@@ -2234,6 +2480,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MEDIUM,
+    prerequisite: '166',
   },
   139: {
     id: '139',
@@ -2243,6 +2490,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.EASY,
+    prerequisite: '165',
   },
   148: {
     id: '148',
@@ -2252,6 +2500,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.BEGINNER,
+    prerequisite: '175',
   },
   156: {
     id: '156',
@@ -2261,6 +2510,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.HARD,
+    prerequisite: '',
   },
   166: {
     id: '166',
@@ -2270,6 +2520,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   183: {
     id: '183',
@@ -2279,6 +2530,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.HARD,
+    prerequisite: '',
   },
   193: {
     id: '193',
@@ -2288,6 +2540,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   201: {
     id: '201',
@@ -2297,6 +2550,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   211: {
     id: '211',
@@ -2306,6 +2560,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   233: {
     id: '233',
@@ -2315,6 +2570,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WINTERTODT,
+    prerequisite: '',
   },
   234: {
     id: '234',
@@ -2324,6 +2580,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WINTERTODT,
+    prerequisite: '233',
   },
   235: {
     id: '235',
@@ -2333,6 +2590,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WINTERTODT,
+    prerequisite: '234',
   },
   236: {
     id: '236',
@@ -2342,6 +2600,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WINTERTODT,
+    prerequisite: '235',
   },
   245: {
     id: '245',
@@ -2351,6 +2610,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   246: {
     id: '246',
@@ -2360,6 +2620,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '245',
   },
   247: {
     id: '247',
@@ -2369,6 +2630,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '246',
   },
   248: {
     id: '248',
@@ -2378,6 +2640,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '247',
   },
   249: {
     id: '249',
@@ -2387,6 +2650,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '248',
   },
   258: {
     id: '258',
@@ -2399,6 +2663,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   272: {
     id: '272',
@@ -2408,6 +2673,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   275: {
     id: '275',
@@ -2417,6 +2683,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   278: {
     id: '278',
@@ -2426,6 +2693,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.COOKING,
+    prerequisite: '',
   },
   281: {
     id: '281',
@@ -2435,6 +2703,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   282: {
     id: '282',
@@ -2444,6 +2713,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.WOODCUTTING,
+    prerequisite: '',
   },
   322: {
     id: '322',
@@ -2453,6 +2723,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   323: {
     id: '323',
@@ -2462,6 +2733,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '322',
   },
   324: {
     id: '324',
@@ -2471,6 +2743,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '323',
   },
   408: {
     id: '408',
@@ -2480,6 +2753,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   411: {
     id: '411',
@@ -2489,6 +2763,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   415: {
     id: '415',
@@ -2498,6 +2773,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '414',
   },
   416: {
     id: '416',
@@ -2507,6 +2783,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '415',
   },
   417: {
     id: '417',
@@ -2516,6 +2793,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '416',
   },
   423: {
     id: '423',
@@ -2525,6 +2803,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '422',
   },
   424: {
     id: '424',
@@ -2534,6 +2813,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '423',
   },
   425: {
     id: '425',
@@ -2543,6 +2823,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '424',
   },
   433: {
     id: '433',
@@ -2552,6 +2833,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.GENERAL,
+    prerequisite: '',
   },
   480: {
     id: '480',
@@ -2561,6 +2843,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   482: {
     id: '482',
@@ -2570,6 +2853,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   484: {
     id: '484',
@@ -2579,6 +2863,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   485: {
     id: '485',
@@ -2588,6 +2873,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   486: {
     id: '486',
@@ -2597,6 +2883,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   490: {
     id: '490',
@@ -2606,6 +2893,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   491: {
     id: '491',
@@ -2615,6 +2903,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   494: {
     id: '494',
@@ -2624,6 +2913,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   582: {
     id: '582',
@@ -2633,6 +2923,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   583: {
     id: '583',
@@ -2642,6 +2933,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   584: {
     id: '584',
@@ -2651,6 +2943,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   589: {
     id: '589',
@@ -2660,6 +2953,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   590: {
     id: '590',
@@ -2669,6 +2963,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   591: {
     id: '591',
@@ -2678,6 +2973,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   598: {
     id: '598',
@@ -2687,6 +2983,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.WOODCUTTING,
+    prerequisite: '',
   },
   599: {
     id: '599',
@@ -2696,6 +2993,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.WOODCUTTING,
+    prerequisite: '',
   },
   600: {
     id: '600',
@@ -2705,6 +3003,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.WOODCUTTING,
+    prerequisite: '',
   },
   605: {
     id: '605',
@@ -2714,6 +3013,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.COOKING,
+    prerequisite: '',
   },
   606: {
     id: '606',
@@ -2723,6 +3023,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.COOKING,
+    prerequisite: '',
   },
   607: {
     id: '607',
@@ -2732,6 +3033,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.COOKING,
+    prerequisite: '',
   },
   612: {
     id: '612',
@@ -2741,6 +3043,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   613: {
     id: '613',
@@ -2750,6 +3053,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   614: {
     id: '614',
@@ -2759,6 +3063,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   619: {
     id: '619',
@@ -2768,6 +3073,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FLETCHING,
+    prerequisite: '',
   },
   620: {
     id: '620',
@@ -2777,6 +3083,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FLETCHING,
+    prerequisite: '',
   },
   621: {
     id: '621',
@@ -2786,6 +3093,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FLETCHING,
+    prerequisite: '',
   },
   627: {
     id: '627',
@@ -2795,6 +3103,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   628: {
     id: '628',
@@ -2804,6 +3113,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   630: {
     id: '630',
@@ -2813,6 +3123,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   642: {
     id: '642',
@@ -2822,6 +3133,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CRAFTING,
+    prerequisite: '',
   },
   643: {
     id: '643',
@@ -2831,6 +3143,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CRAFTING,
+    prerequisite: '',
   },
   644: {
     id: '644',
@@ -2840,6 +3153,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CRAFTING,
+    prerequisite: '',
   },
   651: {
     id: '651',
@@ -2849,6 +3163,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   652: {
     id: '652',
@@ -2858,6 +3173,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   653: {
     id: '653',
@@ -2867,6 +3183,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   658: {
     id: '658',
@@ -2876,6 +3193,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.SMITHING,
+    prerequisite: '',
   },
   659: {
     id: '659',
@@ -2885,6 +3203,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.SMITHING,
+    prerequisite: '',
   },
   660: {
     id: '660',
@@ -2894,6 +3213,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.SMITHING,
+    prerequisite: '',
   },
   667: {
     id: '667',
@@ -2903,6 +3223,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   668: {
     id: '668',
@@ -2912,6 +3233,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   669: {
     id: '669',
@@ -2921,6 +3243,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   675: {
     id: '675',
@@ -2930,6 +3253,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   676: {
     id: '676',
@@ -2939,6 +3263,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   677: {
     id: '677',
@@ -2948,6 +3273,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   682: {
     id: '682',
@@ -2957,6 +3283,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FIREMAKING,
+    prerequisite: '',
   },
   683: {
     id: '683',
@@ -2969,6 +3296,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FIREMAKING,
+    prerequisite: '',
   },
   684: {
     id: '684',
@@ -2978,6 +3306,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FIREMAKING,
+    prerequisite: '',
   },
   689: {
     id: '689',
@@ -2987,6 +3316,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   690: {
     id: '690',
@@ -2996,6 +3326,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   691: {
     id: '691',
@@ -3005,6 +3336,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   695: {
     id: '695',
@@ -3014,6 +3346,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   697: {
     id: '697',
@@ -3023,6 +3356,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '696',
   },
   702: {
     id: '702',
@@ -3032,6 +3366,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   703: {
     id: '703',
@@ -3041,6 +3376,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   704: {
     id: '704',
@@ -3053,6 +3389,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   718: {
     id: '718',
@@ -3062,6 +3399,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   721: {
     id: '721',
@@ -3071,6 +3409,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MELEE,
+    prerequisite: '',
   },
   722: {
     id: '722',
@@ -3080,6 +3419,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MELEE,
+    prerequisite: '',
   },
   726: {
     id: '726',
@@ -3090,6 +3430,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MELEE,
+    prerequisite: '',
   },
   727: {
     id: '727',
@@ -3099,6 +3440,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MELEE,
+    prerequisite: '',
   },
   730: {
     id: '730',
@@ -3111,6 +3453,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   731: {
     id: '731',
@@ -3123,6 +3466,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   732: {
     id: '732',
@@ -3135,6 +3479,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   735: {
     id: '735',
@@ -3144,6 +3489,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   740: {
     id: '740',
@@ -3153,6 +3499,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   741: {
     id: '741',
@@ -3165,6 +3512,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   742: {
     id: '742',
@@ -3174,6 +3522,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   743: {
     id: '743',
@@ -3183,6 +3532,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   747: {
     id: '747',
@@ -3196,6 +3546,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   749: {
     id: '749',
@@ -3209,6 +3560,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   754: {
     id: '754',
@@ -3218,6 +3570,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   756: {
     id: '756',
@@ -3227,6 +3580,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   760: {
     id: '760',
@@ -3236,6 +3590,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.COOKING,
+    prerequisite: '',
   },
   764: {
     id: '764',
@@ -3245,6 +3600,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   767: {
     id: '767',
@@ -3254,6 +3610,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   769: {
     id: '769',
@@ -3263,6 +3620,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   772: {
     id: '772',
@@ -3272,6 +3630,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   773: {
     id: '773',
@@ -3281,6 +3640,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   774: {
     id: '774',
@@ -3290,6 +3650,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.WOODCUTTING,
+    prerequisite: '',
   },
   776: {
     id: '776',
@@ -3299,6 +3660,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   780: {
     id: '780',
@@ -3308,6 +3670,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   781: {
     id: '781',
@@ -3317,6 +3680,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.OBOR,
+    prerequisite: '',
   },
   785: {
     id: '785',
@@ -3326,6 +3690,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.BRYOPHYTA,
+    prerequisite: '',
   },
   788: {
     id: '788',
@@ -3335,6 +3700,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   798: {
     id: '798',
@@ -3344,6 +3710,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   802: {
     id: '802',
@@ -3353,6 +3720,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.GRANDMASTER,
+    prerequisite: '',
   },
   804: {
     id: '804',
@@ -3362,6 +3730,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   805: {
     id: '805',
@@ -3371,6 +3740,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   806: {
     id: '806',
@@ -3383,6 +3753,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   808: {
     id: '808',
@@ -3392,6 +3763,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   817: {
     id: '817',
@@ -3401,6 +3773,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.EXPERIENCED,
+    prerequisite: '',
   },
   818: {
     id: '818',
@@ -3413,6 +3786,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   820: {
     id: '820',
@@ -3422,6 +3796,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.NOVICE,
+    prerequisite: '',
   },
   823: {
     id: '823',
@@ -3431,6 +3806,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.COOKING,
+    prerequisite: '',
   },
   826: {
     id: '826',
@@ -3440,6 +3816,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   830: {
     id: '830',
@@ -3449,6 +3826,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   834: {
     id: '834',
@@ -3458,6 +3836,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   836: {
     id: '836',
@@ -3467,6 +3846,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   838: {
     id: '838',
@@ -3476,6 +3856,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   873: {
     id: '873',
@@ -3485,6 +3866,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   874: {
     id: '874',
@@ -3494,6 +3876,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   881: {
     id: '881',
@@ -3503,6 +3886,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   886: {
     id: '886',
@@ -3512,6 +3896,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   947: {
     id: '947',
@@ -3521,6 +3906,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   952: {
     id: '952',
@@ -3530,6 +3916,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   954: {
     id: '954',
@@ -3539,6 +3926,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   891: {
     id: '891',
@@ -3548,6 +3936,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   894: {
     id: '894',
@@ -3557,6 +3946,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   896: {
     id: '896',
@@ -3566,6 +3956,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.SMITHING,
+    prerequisite: '',
   },
   906: {
     id: '906',
@@ -3575,6 +3966,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   910: {
     id: '910',
@@ -3587,6 +3979,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   915: {
     id: '915',
@@ -3596,6 +3989,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   918: {
     id: '918',
@@ -3605,6 +3999,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   923: {
     id: '923',
@@ -3614,6 +4009,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.EXPERIENCED,
+    prerequisite: '',
   },
   926: {
     id: '926',
@@ -3623,6 +4019,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   931: {
     id: '931',
@@ -3632,6 +4029,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   936: {
     id: '936',
@@ -3644,6 +4042,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   944: {
     id: '944',
@@ -3653,6 +4052,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   948: {
     id: '948',
@@ -3662,6 +4062,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.EXPERIENCED,
+    prerequisite: '',
   },
   953: {
     id: '953',
@@ -3671,6 +4072,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.EXPERIENCED,
+    prerequisite: '',
   },
   955: {
     id: '955',
@@ -3680,6 +4082,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   956: {
     id: '956',
@@ -3689,6 +4092,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   959: {
     id: '959',
@@ -3698,6 +4102,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   965: {
     id: '965',
@@ -3707,6 +4112,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   968: {
     id: '968',
@@ -3716,6 +4122,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   993: {
     id: '993',
@@ -3725,6 +4132,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   995: {
     id: '995',
@@ -3734,6 +4142,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   999: {
     id: '999',
@@ -3743,6 +4152,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1003: {
     id: '1003',
@@ -3752,6 +4162,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1005: {
     id: '1005',
@@ -3761,6 +4172,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1007: {
     id: '1007',
@@ -3770,6 +4182,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1010: {
     id: '1010',
@@ -3779,6 +4192,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1014: {
     id: '1014',
@@ -3788,6 +4202,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   1016: {
     id: '1016',
@@ -3797,6 +4212,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   1017: {
     id: '1017',
@@ -3806,6 +4222,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   1018: {
     id: '1018',
@@ -3815,6 +4232,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   1023: {
     id: '1023',
@@ -3824,6 +4242,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FLETCHING,
+    prerequisite: '',
   },
   1024: {
     id: '1024',
@@ -3833,6 +4252,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   1025: {
     id: '1025',
@@ -3842,6 +4262,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   1027: {
     id: '1027',
@@ -3851,6 +4272,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1028: {
     id: '1028',
@@ -3860,6 +4282,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1032: {
     id: '1032',
@@ -3869,6 +4292,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MELEE,
+    prerequisite: '',
   },
   1034: {
     id: '1034',
@@ -3878,6 +4302,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   1037: {
     id: '1037',
@@ -3887,6 +4312,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   1040: {
     id: '1040',
@@ -3896,6 +4322,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1044: {
     id: '1044',
@@ -3905,6 +4332,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1047: {
     id: '1047',
@@ -3914,6 +4342,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1049: {
     id: '1049',
@@ -3926,6 +4355,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   1058: {
     id: '1058',
@@ -3938,6 +4368,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1061: {
     id: '1061',
@@ -3947,6 +4378,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.OTHER,
+    prerequisite: '',
   },
   1067: {
     id: '1067',
@@ -3956,6 +4388,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   1069: {
     id: '1069',
@@ -3965,6 +4398,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.NOVICE,
+    prerequisite: '',
   },
   1071: {
     id: '1071',
@@ -3974,6 +4408,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.BA,
+    prerequisite: '',
   },
   1073: {
     id: '1073',
@@ -3986,6 +4421,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1083: {
     id: '1083',
@@ -3995,6 +4431,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   1087: {
     id: '1087',
@@ -4004,6 +4441,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   1091: {
     id: '1091',
@@ -4013,6 +4451,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1094: {
     id: '1094',
@@ -4022,6 +4461,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   1096: {
     id: '1096',
@@ -4031,6 +4471,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CRAFTING,
+    prerequisite: '',
   },
   1098: {
     id: '1098',
@@ -4040,6 +4481,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   1102: {
     id: '1102',
@@ -4049,6 +4491,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   1105: {
     id: '1105',
@@ -4058,6 +4501,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.MOLE,
+    prerequisite: '',
   },
   1110: {
     id: '1110',
@@ -4067,6 +4511,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1115: {
     id: '1115',
@@ -4080,6 +4525,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1127: {
     id: '1127',
@@ -4089,6 +4535,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.EXPERIENCED,
+    prerequisite: '',
   },
   1129: {
     id: '1129',
@@ -4098,6 +4545,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1139: {
     id: '1139',
@@ -4107,6 +4555,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   1142: {
     id: '1142',
@@ -4116,6 +4565,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.NOVICE,
+    prerequisite: '',
   },
   1147: {
     id: '1147',
@@ -4125,6 +4575,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1148: {
     id: '1148',
@@ -4134,6 +4585,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1151: {
     id: '1151',
@@ -4143,6 +4595,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.PC,
+    prerequisite: '',
   },
   1153: {
     id: '1153',
@@ -4152,6 +4605,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1156: {
     id: '1156',
@@ -4161,6 +4615,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1157: {
     id: '1157',
@@ -4170,6 +4625,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1158: {
     id: '1158',
@@ -4179,6 +4635,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1166: {
     id: '1166',
@@ -4188,6 +4645,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1167: {
     id: '1167',
@@ -4197,6 +4655,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1170: {
     id: '1170',
@@ -4206,6 +4665,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1173: {
     id: '1173',
@@ -4215,6 +4675,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1176: {
     id: '1176',
@@ -4224,6 +4685,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1178: {
     id: '1178',
@@ -4233,6 +4695,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   1182: {
     id: '1182',
@@ -4242,6 +4705,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   1183: {
     id: '1183',
@@ -4251,6 +4715,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   1185: {
     id: '1185',
@@ -4260,6 +4725,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1188: {
     id: '1188',
@@ -4269,6 +4735,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1191: {
     id: '1191',
@@ -4278,6 +4745,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1202: {
     id: '1202',
@@ -4287,6 +4755,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   1206: {
     id: '1206',
@@ -4296,6 +4765,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1210: {
     id: '1210',
@@ -4310,6 +4780,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   1214: {
     id: '1214',
@@ -4319,6 +4790,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1218: {
     id: '1218',
@@ -4328,6 +4800,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1220: {
     id: '1220',
@@ -4337,6 +4810,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.INTERMEDIATE,
+    prerequisite: '',
   },
   1232: {
     id: '1232',
@@ -4346,6 +4820,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1233: {
     id: '1233',
@@ -4355,6 +4830,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1295: {
     id: '1295',
@@ -4364,6 +4840,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1297: {
     id: '1297',
@@ -4373,6 +4850,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1236: {
     id: '1236',
@@ -4382,6 +4860,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   1241: {
     id: '1241',
@@ -4391,6 +4870,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1245: {
     id: '1245',
@@ -4400,6 +4880,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1249: {
     id: '1249',
@@ -4409,6 +4890,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1253: {
     id: '1253',
@@ -4418,6 +4900,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.BARROWS,
+    prerequisite: '',
   },
   1256: {
     id: '1256',
@@ -4427,6 +4910,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.BARROWS,
+    prerequisite: '',
   },
   1281: {
     id: '1281',
@@ -4436,6 +4920,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   1285: {
     id: '1285',
@@ -4445,6 +4930,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.OTHER,
+    prerequisite: '',
   },
   1288: {
     id: '1288',
@@ -4454,6 +4940,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.EXPERIENCED,
+    prerequisite: '',
   },
   1292: {
     id: '1292',
@@ -4463,6 +4950,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.EXPERIENCED,
+    prerequisite: '',
   },
   1294: {
     id: '1294',
@@ -4472,6 +4960,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.SHADES,
+    prerequisite: '',
   },
   1296: {
     id: '1296',
@@ -4481,6 +4970,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.EXPERIENCED,
+    prerequisite: '',
   },
   1299: {
     id: '1299',
@@ -4490,6 +4980,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   1300: {
     id: '1300',
@@ -4499,6 +4990,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   1304: {
     id: '1304',
@@ -4508,6 +5000,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1305: {
     id: '1305',
@@ -4517,6 +5010,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   1312: {
     id: '1312',
@@ -4526,6 +5020,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   1316: {
     id: '1316',
@@ -4535,6 +5030,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1320: {
     id: '1320',
@@ -4544,6 +5040,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1324: {
     id: '1324',
@@ -4553,6 +5050,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1328: {
     id: '1328',
@@ -4562,6 +5060,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1330: {
     id: '1330',
@@ -4571,6 +5070,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1340: {
     id: '1340',
@@ -4583,6 +5083,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1341: {
     id: '1341',
@@ -4595,6 +5096,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1343: {
     id: '1343',
@@ -4604,6 +5106,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1351: {
     id: '1351',
@@ -4613,6 +5116,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1353: {
     id: '1353',
@@ -4622,6 +5126,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1354: {
     id: '1354',
@@ -4631,6 +5136,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1355: {
     id: '1355',
@@ -4640,6 +5146,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1357: {
     id: '1357',
@@ -4649,6 +5156,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   1362: {
     id: '1362',
@@ -4658,6 +5166,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1366: {
     id: '1366',
@@ -4667,6 +5176,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1369: {
     id: '1369',
@@ -4676,6 +5186,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1373: {
     id: '1373',
@@ -4685,6 +5196,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   1374: {
     id: '1374',
@@ -4694,6 +5206,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1376: {
     id: '1376',
@@ -4703,6 +5216,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   1378: {
     id: '1378',
@@ -4712,6 +5226,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   1384: {
     id: '1384',
@@ -4721,6 +5236,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   1409: {
     id: '1409',
@@ -4730,6 +5246,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   1424: {
     id: '1424',
@@ -4739,6 +5256,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.TEMPOROSS,
+    prerequisite: '',
   },
   1425: {
     id: '1425',
@@ -4748,6 +5266,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.TEMPOROSS,
+    prerequisite: '1424',
   },
   1426: {
     id: '1426',
@@ -4757,6 +5276,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.TEMPOROSS,
+    prerequisite: '1425',
   },
   1427: {
     id: '1427',
@@ -4766,6 +5286,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.TEMPOROSS,
+    prerequisite: '1426',
   },
   1437: {
     id: '1437',
@@ -4775,6 +5296,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   1438: {
     id: '1438',
@@ -4784,6 +5306,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   1440: {
     id: '1440',
@@ -4793,6 +5316,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   1441: {
     id: '1441',
@@ -4802,6 +5326,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   1442: {
     id: '1442',
@@ -4811,6 +5336,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   1474: {
     id: '1474',
@@ -4820,6 +5346,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1475: {
     id: '1475',
@@ -4829,6 +5356,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1479: {
     id: '1479',
@@ -4838,6 +5366,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.SHADES,
+    prerequisite: '',
   },
   1481: {
     id: '1481',
@@ -4847,6 +5376,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.OTHER,
+    prerequisite: '',
   },
   1482: {
     id: '1482',
@@ -4856,6 +5386,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.OTHER,
+    prerequisite: '',
   },
   1486: {
     id: '1486',
@@ -4865,6 +5396,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   1488: {
     id: '1488',
@@ -4875,6 +5407,7 @@ export default {
     difficulty: DIFFICULTY.MEDIUM,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   504: {
     id: '504',
@@ -4884,6 +5417,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.MILESTONE,
+    prerequisite: '503',
   },
   505: {
     id: '505',
@@ -4893,6 +5427,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.MILESTONE,
+    prerequisite: '504',
   },
   506: {
     id: '506',
@@ -4902,6 +5437,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.MILESTONE,
+    prerequisite: '505',
   },
   515: {
     id: '515',
@@ -4911,6 +5447,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.TOTAL,
+    prerequisite: '',
   },
   516: {
     id: '516',
@@ -4920,6 +5457,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.TOTAL,
+    prerequisite: '',
   },
   527: {
     id: '527',
@@ -4929,6 +5467,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.BASE,
+    prerequisite: '',
   },
   528: {
     id: '528',
@@ -4938,6 +5477,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.BASE,
+    prerequisite: '',
   },
   713: {
     id: '713',
@@ -4947,6 +5487,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.LEVEL,
+    prerequisite: '712',
   },
   714: {
     id: '714',
@@ -4956,6 +5497,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.LEVEL,
+    prerequisite: '713',
   },
   1499: {
     id: '1499',
@@ -4965,6 +5507,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1502: {
     id: '1502',
@@ -4974,6 +5517,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   9: {
     id: '9',
@@ -4983,6 +5527,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MASTER,
+    prerequisite: '',
   },
   12: {
     id: '12',
@@ -4992,6 +5537,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.EASY,
+    prerequisite: '',
   },
   13: {
     id: '13',
@@ -5004,6 +5550,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.SHARED,
+    prerequisite: '',
   },
   16: {
     id: '16',
@@ -5013,6 +5560,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.SHARED,
+    prerequisite: '',
   },
   17: {
     id: '17',
@@ -5022,6 +5570,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.HARD,
+    prerequisite: '',
   },
   20: {
     id: '20',
@@ -5034,6 +5583,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.HARD,
+    prerequisite: '',
   },
   22: {
     id: '22',
@@ -5043,6 +5593,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.SHARED,
+    prerequisite: '',
   },
   24: {
     id: '24',
@@ -5052,6 +5603,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   31: {
     id: '31',
@@ -5061,6 +5613,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.ELITE,
+    prerequisite: '30',
   },
   39: {
     id: '39',
@@ -5070,6 +5623,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.HARD,
+    prerequisite: '49',
   },
   58: {
     id: '58',
@@ -5079,6 +5633,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MEDIUM,
+    prerequisite: '57',
   },
   66: {
     id: '66',
@@ -5088,6 +5643,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.EASY,
+    prerequisite: '76',
   },
   85: {
     id: '85',
@@ -5097,6 +5653,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.BEGINNER,
+    prerequisite: '84',
   },
   93: {
     id: '93',
@@ -5106,6 +5663,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MASTER,
+    prerequisite: '147',
   },
   102: {
     id: '102',
@@ -5115,6 +5673,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.ELITE,
+    prerequisite: '157',
   },
   111: {
     id: '111',
@@ -5124,6 +5683,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.HARD,
+    prerequisite: '121',
   },
   120: {
     id: '120',
@@ -5133,6 +5693,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MEDIUM,
+    prerequisite: '130',
   },
   129: {
     id: '129',
@@ -5142,6 +5703,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.EASY,
+    prerequisite: '139',
   },
   138: {
     id: '138',
@@ -5151,6 +5713,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.BEGINNER,
+    prerequisite: '148',
   },
   147: {
     id: '147',
@@ -5160,6 +5723,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MASTER,
+    prerequisite: '',
   },
   157: {
     id: '157',
@@ -5169,6 +5733,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.ELITE,
+    prerequisite: '',
   },
   174: {
     id: '174',
@@ -5178,6 +5743,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MASTER,
+    prerequisite: '',
   },
   184: {
     id: '184',
@@ -5187,6 +5753,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.ELITE,
+    prerequisite: '',
   },
   228: {
     id: '228',
@@ -5196,6 +5763,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   229: {
     id: '229',
@@ -5205,6 +5773,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   237: {
     id: '237',
@@ -5214,6 +5783,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WINTERTODT,
+    prerequisite: '236',
   },
   1492: {
     id: '1492',
@@ -5223,6 +5793,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WINTERTODT,
+    prerequisite: '237',
   },
   238: {
     id: '238',
@@ -5232,6 +5803,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WINTERTODT,
+    prerequisite: '1492',
   },
   1493: {
     id: '1493',
@@ -5241,6 +5813,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WINTERTODT,
+    prerequisite: '238',
   },
   250: {
     id: '250',
@@ -5250,6 +5823,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '249',
   },
   251: {
     id: '251',
@@ -5259,6 +5833,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '250',
   },
   252: {
     id: '252',
@@ -5268,6 +5843,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '251',
   },
   253: {
     id: '253',
@@ -5277,6 +5853,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '252',
   },
   273: {
     id: '273',
@@ -5286,6 +5863,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   276: {
     id: '276',
@@ -5295,6 +5873,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   279: {
     id: '279',
@@ -5305,6 +5884,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.COOKING,
+    prerequisite: '',
   },
   283: {
     id: '283',
@@ -5314,6 +5894,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   285: {
     id: '285',
@@ -5323,6 +5904,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.WOODCUTTING,
+    prerequisite: '',
   },
   286: {
     id: '286',
@@ -5332,6 +5914,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   325: {
     id: '325',
@@ -5341,6 +5924,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '324',
   },
   326: {
     id: '326',
@@ -5350,6 +5934,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '325',
   },
   328: {
     id: '328',
@@ -5359,6 +5944,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SARACHNIS,
+    prerequisite: '',
   },
   329: {
     id: '329',
@@ -5368,6 +5954,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SARACHNIS,
+    prerequisite: '328',
   },
   330: {
     id: '330',
@@ -5377,6 +5964,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SARACHNIS,
+    prerequisite: '329',
   },
   331: {
     id: '331',
@@ -5386,6 +5974,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SARACHNIS,
+    prerequisite: '330',
   },
   332: {
     id: '332',
@@ -5395,6 +5984,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SARACHNIS,
+    prerequisite: '331',
   },
   333: {
     id: '333',
@@ -5404,6 +5994,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SARACHNIS,
+    prerequisite: '332',
   },
   334: {
     id: '334',
@@ -5413,6 +6004,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SARACHNIS,
+    prerequisite: '333',
   },
   339: {
     id: '339',
@@ -5422,6 +6014,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SKOTIZO,
+    prerequisite: '',
   },
   340: {
     id: '340',
@@ -5431,6 +6024,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SKOTIZO,
+    prerequisite: '339',
   },
   359: {
     id: '359',
@@ -5440,6 +6034,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   360: {
     id: '360',
@@ -5449,6 +6044,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   361: {
     id: '361',
@@ -5458,6 +6054,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   362: {
     id: '362',
@@ -5467,6 +6064,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   363: {
     id: '363',
@@ -5476,6 +6074,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   368: {
     id: '368',
@@ -5485,6 +6084,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   369: {
     id: '369',
@@ -5494,6 +6094,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   377: {
     id: '377',
@@ -5503,6 +6104,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   381: {
     id: '381',
@@ -5512,6 +6114,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   382: {
     id: '382',
@@ -5521,6 +6124,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   384: {
     id: '384',
@@ -5535,6 +6139,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   385: {
     id: '385',
@@ -5547,6 +6152,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   386: {
     id: '386',
@@ -5559,6 +6165,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   412: {
     id: '412',
@@ -5568,6 +6175,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   418: {
     id: '418',
@@ -5577,6 +6185,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '417',
   },
   426: {
     id: '426',
@@ -5586,6 +6195,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '425',
   },
   434: {
     id: '434',
@@ -5595,6 +6205,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.GENERAL,
+    prerequisite: '',
   },
   470: {
     id: '470',
@@ -5604,6 +6215,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.MIMIC,
+    prerequisite: '',
   },
   471: {
     id: '471',
@@ -5613,6 +6225,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.MIMIC,
+    prerequisite: '470',
   },
   483: {
     id: '483',
@@ -5622,6 +6235,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   487: {
     id: '487',
@@ -5631,6 +6245,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   489: {
     id: '489',
@@ -5640,6 +6255,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WINTERTODT,
+    prerequisite: '',
   },
   585: {
     id: '585',
@@ -5649,6 +6265,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   592: {
     id: '592',
@@ -5658,6 +6275,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   593: {
     id: '593',
@@ -5670,6 +6288,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   601: {
     id: '601',
@@ -5679,6 +6298,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.WOODCUTTING,
+    prerequisite: '',
   },
   608: {
     id: '608',
@@ -5688,6 +6308,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.COOKING,
+    prerequisite: '',
   },
   615: {
     id: '615',
@@ -5697,6 +6318,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   622: {
     id: '622',
@@ -5706,6 +6328,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FLETCHING,
+    prerequisite: '',
   },
   623: {
     id: '623',
@@ -5715,6 +6338,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FLETCHING,
+    prerequisite: '',
   },
   631: {
     id: '631',
@@ -5724,6 +6348,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   632: {
     id: '632',
@@ -5733,6 +6358,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   633: {
     id: '633',
@@ -5742,6 +6368,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '632',
   },
   634: {
     id: '634',
@@ -5751,6 +6378,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '630',
   },
   635: {
     id: '635',
@@ -5760,6 +6388,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '634',
   },
   645: {
     id: '645',
@@ -5769,6 +6398,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CRAFTING,
+    prerequisite: '',
   },
   646: {
     id: '646',
@@ -5778,6 +6408,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CRAFTING,
+    prerequisite: '',
   },
   654: {
     id: '654',
@@ -5787,6 +6418,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   661: {
     id: '661',
@@ -5796,6 +6428,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.SMITHING,
+    prerequisite: '',
   },
   662: {
     id: '662',
@@ -5805,6 +6438,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.SMITHING,
+    prerequisite: '',
   },
   670: {
     id: '670',
@@ -5814,6 +6448,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   671: {
     id: '671',
@@ -5823,6 +6458,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   678: {
     id: '678',
@@ -5832,6 +6468,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   685: {
     id: '685',
@@ -5841,6 +6478,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FIREMAKING,
+    prerequisite: '',
   },
   686: {
     id: '686',
@@ -5850,6 +6488,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FIREMAKING,
+    prerequisite: '',
   },
   692: {
     id: '692',
@@ -5859,6 +6498,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   698: {
     id: '698',
@@ -5868,6 +6508,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '697',
   },
   705: {
     id: '705',
@@ -5877,6 +6518,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   706: {
     id: '706',
@@ -5886,6 +6528,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   723: {
     id: '723',
@@ -5895,6 +6538,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MELEE,
+    prerequisite: '',
   },
   733: {
     id: '733',
@@ -5907,6 +6551,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   736: {
     id: '736',
@@ -5916,6 +6561,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   737: {
     id: '737',
@@ -5925,6 +6571,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   744: {
     id: '744',
@@ -5937,6 +6584,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   745: {
     id: '745',
@@ -5946,6 +6594,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   746: {
     id: '746',
@@ -5955,6 +6604,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   748: {
     id: '748',
@@ -5968,6 +6618,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   750: {
     id: '750',
@@ -5977,6 +6628,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   757: {
     id: '757',
@@ -5986,6 +6638,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   761: {
     id: '761',
@@ -5995,6 +6648,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   762: {
     id: '762',
@@ -6004,6 +6658,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   765: {
     id: '765',
@@ -6013,6 +6668,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   770: {
     id: '770',
@@ -6022,6 +6678,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   777: {
     id: '777',
@@ -6031,6 +6688,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   782: {
     id: '782',
@@ -6040,6 +6698,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.OBOR,
+    prerequisite: '',
   },
   786: {
     id: '786',
@@ -6052,6 +6711,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.BRYOPHYTA,
+    prerequisite: '',
   },
   789: {
     id: '789',
@@ -6061,6 +6721,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SIRE,
+    prerequisite: '',
   },
   791: {
     id: '791',
@@ -6070,6 +6731,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   799: {
     id: '799',
@@ -6079,6 +6741,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   825: {
     id: '825',
@@ -6088,6 +6751,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   827: {
     id: '827',
@@ -6097,6 +6761,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   828: {
     id: '828',
@@ -6106,6 +6771,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   831: {
     id: '831',
@@ -6115,6 +6781,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   832: {
     id: '832',
@@ -6124,6 +6791,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   835: {
     id: '835',
@@ -6133,6 +6801,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   837: {
     id: '837',
@@ -6142,6 +6811,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   839: {
     id: '839',
@@ -6154,6 +6824,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CRAFTING,
+    prerequisite: '',
   },
   841: {
     id: '841',
@@ -6163,6 +6834,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   842: {
     id: '842',
@@ -6172,6 +6844,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   843: {
     id: '843',
@@ -6181,6 +6854,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GAUNTLET,
+    prerequisite: '',
   },
   846: {
     id: '846',
@@ -6190,6 +6864,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   847: {
     id: '847',
@@ -6199,6 +6874,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.ZALCANO,
+    prerequisite: '',
   },
   849: {
     id: '849',
@@ -6208,6 +6884,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.ZULRAH,
+    prerequisite: '',
   },
   851: {
     id: '851',
@@ -6217,6 +6894,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   853: {
     id: '853',
@@ -6229,6 +6907,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   855: {
     id: '855',
@@ -6238,6 +6917,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.ZULRAH,
+    prerequisite: '',
   },
   858: {
     id: '858',
@@ -6247,6 +6927,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GAUNTLET,
+    prerequisite: '',
   },
   863: {
     id: '863',
@@ -6259,6 +6940,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.MASTER,
+    prerequisite: '',
   },
   866: {
     id: '866',
@@ -6271,6 +6953,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.MASTER,
+    prerequisite: '',
   },
   869: {
     id: '869',
@@ -6284,6 +6967,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.MASTER,
+    prerequisite: '',
   },
   872: {
     id: '872',
@@ -6293,6 +6977,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   875: {
     id: '875',
@@ -6305,6 +6990,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   878: {
     id: '878',
@@ -6314,6 +7000,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   879: {
     id: '879',
@@ -6326,6 +7013,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   880: {
     id: '880',
@@ -6335,6 +7023,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   882: {
     id: '882',
@@ -6344,6 +7033,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   883: {
     id: '883',
@@ -6353,6 +7043,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   884: {
     id: '884',
@@ -6362,6 +7053,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   887: {
     id: '887',
@@ -6371,6 +7063,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   890: {
     id: '890',
@@ -6380,6 +7073,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   892: {
     id: '892',
@@ -6389,6 +7083,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   893: {
     id: '893',
@@ -6398,6 +7093,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   895: {
     id: '895',
@@ -6407,6 +7103,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   897: {
     id: '897',
@@ -6416,6 +7113,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.MASTER,
+    prerequisite: '',
   },
   898: {
     id: '898',
@@ -6428,6 +7126,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   901: {
     id: '901',
@@ -6437,6 +7136,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   902: {
     id: '902',
@@ -6446,6 +7146,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.VORKATH,
+    prerequisite: '',
   },
   907: {
     id: '907',
@@ -6455,6 +7156,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.VORKATH,
+    prerequisite: '',
   },
   911: {
     id: '911',
@@ -6464,6 +7166,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.VORKATH,
+    prerequisite: '',
   },
   916: {
     id: '916',
@@ -6473,6 +7176,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.DKS,
+    prerequisite: '',
   },
   919: {
     id: '919',
@@ -6482,6 +7186,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.DKS,
+    prerequisite: '',
   },
   921: {
     id: '921',
@@ -6491,6 +7196,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.DKS,
+    prerequisite: '',
   },
   924: {
     id: '924',
@@ -6500,6 +7206,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.DKS,
+    prerequisite: '',
   },
   927: {
     id: '927',
@@ -6509,6 +7216,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.DKS,
+    prerequisite: '',
   },
   932: {
     id: '932',
@@ -6518,6 +7226,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.DKS,
+    prerequisite: '',
   },
   937: {
     id: '937',
@@ -6530,6 +7239,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.DKS,
+    prerequisite: '',
   },
   938: {
     id: '938',
@@ -6539,6 +7249,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.DKS,
+    prerequisite: '',
   },
   939: {
     id: '939',
@@ -6551,6 +7262,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   940: {
     id: '940',
@@ -6563,6 +7275,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   941: {
     id: '941',
@@ -6575,6 +7288,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   942: {
     id: '942',
@@ -6584,6 +7298,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   945: {
     id: '945',
@@ -6593,6 +7308,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   949: {
     id: '949',
@@ -6602,6 +7318,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   957: {
     id: '957',
@@ -6611,6 +7328,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.COOKING,
+    prerequisite: '',
   },
   960: {
     id: '960',
@@ -6620,6 +7338,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   966: {
     id: '966',
@@ -6629,6 +7348,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   967: {
     id: '967',
@@ -6638,6 +7358,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   971: {
     id: '971',
@@ -6647,6 +7368,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   972: {
     id: '972',
@@ -6656,6 +7378,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   975: {
     id: '975',
@@ -6668,6 +7391,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   976: {
     id: '976',
@@ -6677,6 +7401,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   977: {
     id: '977',
@@ -6687,6 +7412,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.JAD,
+    prerequisite: '',
   },
   981: {
     id: '981',
@@ -6696,6 +7422,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   982: {
     id: '982',
@@ -6705,6 +7432,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   985: {
     id: '985',
@@ -6714,6 +7442,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   986: {
     id: '986',
@@ -6723,6 +7452,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   996: {
     id: '996',
@@ -6732,6 +7462,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   1000: {
     id: '1000',
@@ -6741,6 +7472,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1004: {
     id: '1004',
@@ -6750,6 +7482,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.OTHER,
+    prerequisite: '',
   },
   1008: {
     id: '1008',
@@ -6759,6 +7492,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1011: {
     id: '1011',
@@ -6768,6 +7502,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1015: {
     id: '1015',
@@ -6777,6 +7512,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   1019: {
     id: '1019',
@@ -6786,6 +7522,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   1022: {
     id: '1022',
@@ -6795,6 +7532,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   1029: {
     id: '1029',
@@ -6804,6 +7542,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1038: {
     id: '1038',
@@ -6813,6 +7552,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.BA,
+    prerequisite: '',
   },
   1041: {
     id: '1041',
@@ -6825,6 +7565,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1045: {
     id: '1045',
@@ -6834,6 +7575,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1050: {
     id: '1050',
@@ -6846,6 +7588,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   1059: {
     id: '1059',
@@ -6855,6 +7598,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1062: {
     id: '1062',
@@ -6864,6 +7608,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.BA,
+    prerequisite: '',
   },
   1074: {
     id: '1074',
@@ -6876,6 +7621,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1077: {
     id: '1077',
@@ -6885,6 +7631,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1078: {
     id: '1078',
@@ -6894,6 +7641,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1079: {
     id: '1079',
@@ -6903,6 +7651,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1084: {
     id: '1084',
@@ -6912,6 +7661,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   1088: {
     id: '1088',
@@ -6921,6 +7671,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   1092: {
     id: '1092',
@@ -6930,6 +7681,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1093: {
     id: '1093',
@@ -6942,6 +7694,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1095: {
     id: '1095',
@@ -6951,6 +7704,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   1099: {
     id: '1099',
@@ -6960,6 +7714,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   1100: {
     id: '1100',
@@ -6969,6 +7724,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   1101: {
     id: '1101',
@@ -6978,6 +7734,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   1106: {
     id: '1106',
@@ -6987,6 +7744,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1111: {
     id: '1111',
@@ -6996,6 +7754,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '',
   },
   1116: {
     id: '1116',
@@ -7005,6 +7764,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '',
   },
   1120: {
     id: '1120',
@@ -7014,6 +7774,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '',
   },
   1124: {
     id: '1124',
@@ -7023,6 +7784,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '',
   },
   1522: {
     id: '1522',
@@ -7037,6 +7799,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.MASTER,
+    prerequisite: '',
   },
   1510: {
     id: '1510',
@@ -7051,6 +7814,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NEX,
+    prerequisite: '',
   },
   1511: {
     id: '1511',
@@ -7065,6 +7829,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NEX,
+    prerequisite: '1510',
   },
   1512: {
     id: '1512',
@@ -7079,6 +7844,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NEX,
+    prerequisite: '1511',
   },
   1513: {
     id: '1513',
@@ -7093,6 +7859,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NEX,
+    prerequisite: '1512',
   },
   1517: {
     id: '1517',
@@ -7102,6 +7869,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NEX,
+    prerequisite: '',
   },
   1520: {
     id: '1520',
@@ -7111,6 +7879,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NEX,
+    prerequisite: '',
   },
   1519: {
     id: '1519',
@@ -7120,6 +7889,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NEX,
+    prerequisite: '',
   },
   1521: {
     id: '1521',
@@ -7132,6 +7902,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NEX,
+    prerequisite: '',
   },
   1131: {
     id: '1131',
@@ -7141,6 +7912,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1140: {
     id: '1140',
@@ -7150,6 +7922,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   1143: {
     id: '1143',
@@ -7167,6 +7940,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.PC,
+    prerequisite: '',
   },
   1145: {
     id: '1145',
@@ -7176,6 +7950,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.MOLE,
+    prerequisite: '',
   },
   1149: {
     id: '1149',
@@ -7185,6 +7960,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.PC,
+    prerequisite: '',
   },
   1152: {
     id: '1152',
@@ -7194,6 +7970,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.PC,
+    prerequisite: '',
   },
   1159: {
     id: '1159',
@@ -7203,6 +7980,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1160: {
     id: '1160',
@@ -7212,6 +7990,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1168: {
     id: '1168',
@@ -7221,6 +8000,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1171: {
     id: '1171',
@@ -7230,6 +8010,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1174: {
     id: '1174',
@@ -7239,6 +8020,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1179: {
     id: '1179',
@@ -7248,6 +8030,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   1180: {
     id: '1180',
@@ -7257,6 +8040,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   1181: {
     id: '1181',
@@ -7266,6 +8050,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   1186: {
     id: '1186',
@@ -7275,6 +8060,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1189: {
     id: '1189',
@@ -7284,6 +8070,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1192: {
     id: '1192',
@@ -7293,6 +8080,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1194: {
     id: '1194',
@@ -7302,6 +8090,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1196: {
     id: '1196',
@@ -7311,6 +8100,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1200: {
     id: '1200',
@@ -7320,6 +8110,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1203: {
     id: '1203',
@@ -7329,6 +8120,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   1207: {
     id: '1207',
@@ -7341,6 +8133,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.MTA,
+    prerequisite: '',
   },
   1211: {
     id: '1211',
@@ -7350,6 +8143,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1215: {
     id: '1215',
@@ -7359,6 +8153,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1222: {
     id: '1222',
@@ -7368,6 +8163,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1223: {
     id: '1223',
@@ -7377,6 +8173,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1224: {
     id: '1224',
@@ -7386,6 +8183,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1225: {
     id: '1225',
@@ -7395,6 +8193,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1227: {
     id: '1227',
@@ -7404,6 +8203,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1230: {
     id: '1230',
@@ -7413,6 +8213,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1231: {
     id: '1231',
@@ -7422,6 +8223,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1235: {
     id: '1235',
@@ -7431,6 +8233,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1238: {
     id: '1238',
@@ -7440,6 +8243,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   1239: {
     id: '1239',
@@ -7449,6 +8253,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   1242: {
     id: '1242',
@@ -7458,6 +8263,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1250: {
     id: '1250',
@@ -7467,6 +8273,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1254: {
     id: '1254',
@@ -7476,6 +8283,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.BARROWS,
+    prerequisite: '',
   },
   1258: {
     id: '1258',
@@ -7485,6 +8293,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GGS,
+    prerequisite: '',
   },
   1277: {
     id: '1277',
@@ -7494,6 +8303,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GGS,
+    prerequisite: '',
   },
   1278: {
     id: '1278',
@@ -7503,6 +8313,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GGS,
+    prerequisite: '1277',
   },
   1282: {
     id: '1282',
@@ -7512,6 +8323,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   1286: {
     id: '1286',
@@ -7521,6 +8333,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.OTHER,
+    prerequisite: '',
   },
   1289: {
     id: '1289',
@@ -7530,6 +8343,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.MASTER,
+    prerequisite: '',
   },
   1291: {
     id: '1291',
@@ -7539,6 +8353,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1301: {
     id: '1301',
@@ -7548,6 +8363,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   1306: {
     id: '1306',
@@ -7557,6 +8373,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   1310: {
     id: '1310',
@@ -7566,6 +8383,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CRAFTING,
+    prerequisite: '',
   },
   1313: {
     id: '1313',
@@ -7575,6 +8393,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   1317: {
     id: '1317',
@@ -7584,6 +8403,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1321: {
     id: '1321',
@@ -7593,6 +8413,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1325: {
     id: '1325',
@@ -7602,6 +8423,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1329: {
     id: '1329',
@@ -7611,6 +8433,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1331: {
     id: '1331',
@@ -7620,6 +8443,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1332: {
     id: '1332',
@@ -7629,6 +8453,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1342: {
     id: '1342',
@@ -7641,6 +8466,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1350: {
     id: '1350',
@@ -7651,6 +8477,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1352: {
     id: '1352',
@@ -7660,6 +8487,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1358: {
     id: '1358',
@@ -7669,6 +8497,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   1370: {
     id: '1370',
@@ -7681,6 +8510,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1379: {
     id: '1379',
@@ -7690,6 +8520,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   1385: {
     id: '1385',
@@ -7699,6 +8530,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   1387: {
     id: '1387',
@@ -7713,6 +8545,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.QUESTS,
     subcategory: CATEGORY.QUESTS.subcategories.EXPERIENCED,
+    prerequisite: '',
   },
   1388: {
     id: '1388',
@@ -7722,6 +8555,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1392: {
     id: '1392',
@@ -7734,6 +8568,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   1398: {
     id: '1398',
@@ -7743,6 +8578,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SARACHNIS,
+    prerequisite: '',
   },
   1410: {
     id: '1410',
@@ -7752,6 +8588,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '',
   },
   1411: {
     id: '1411',
@@ -7761,6 +8598,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '1243',
   },
   1412: {
     id: '1412',
@@ -7770,6 +8608,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '1411',
   },
   1413: {
     id: '1413',
@@ -7779,6 +8618,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '1412',
   },
   1428: {
     id: '1428',
@@ -7788,6 +8628,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.TEMPOROSS,
+    prerequisite: '1427',
   },
   1429: {
     id: '1429',
@@ -7797,6 +8638,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.TEMPOROSS,
+    prerequisite: '1428',
   },
   1430: {
     id: '1430',
@@ -7806,6 +8648,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.TEMPOROSS,
+    prerequisite: '1429',
   },
   1431: {
     id: '1431',
@@ -7815,6 +8658,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.TEMPOROSS,
+    prerequisite: '1430',
   },
   1439: {
     id: '1439',
@@ -7824,6 +8668,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.EASY,
+    prerequisite: '',
   },
   1443: {
     id: '1443',
@@ -7833,6 +8678,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   1444: {
     id: '1444',
@@ -7842,6 +8688,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   1445: {
     id: '1445',
@@ -7851,6 +8698,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   1446: {
     id: '1446',
@@ -7860,6 +8708,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   1447: {
     id: '1447',
@@ -7869,6 +8718,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   1448: {
     id: '1448',
@@ -7878,6 +8728,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   1449: {
     id: '1449',
@@ -7887,6 +8738,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   1451: {
     id: '1451',
@@ -7896,6 +8748,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1452: {
     id: '1452',
@@ -7905,6 +8758,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1453: {
     id: '1453',
@@ -7914,6 +8768,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1454: {
     id: '1454',
@@ -7923,6 +8778,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1458: {
     id: '1458',
@@ -7932,6 +8788,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MASTER,
+    prerequisite: '',
   },
   1459: {
     id: '1459',
@@ -7941,6 +8798,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MASTER,
+    prerequisite: '',
   },
   1472: {
     id: '1472',
@@ -7950,6 +8808,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1476: {
     id: '1476',
@@ -7959,6 +8818,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.SHADES,
+    prerequisite: '',
   },
   1477: {
     id: '1477',
@@ -7968,6 +8828,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.SHADES,
+    prerequisite: '',
   },
   1480: {
     id: '1480',
@@ -7977,6 +8838,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.SHADES,
+    prerequisite: '',
   },
   1490: {
     id: '1490',
@@ -7990,6 +8852,7 @@ export default {
     difficulty: DIFFICULTY.HARD,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.SHADES,
+    prerequisite: '',
   },
   507: {
     id: '507',
@@ -7999,6 +8862,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.MILESTONE,
+    prerequisite: '506',
   },
   508: {
     id: '508',
@@ -8008,6 +8872,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.MILESTONE,
+    prerequisite: '507',
   },
   517: {
     id: '517',
@@ -8017,6 +8882,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.TOTAL,
+    prerequisite: '',
   },
   518: {
     id: '518',
@@ -8026,6 +8892,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.TOTAL,
+    prerequisite: '',
   },
   519: {
     id: '519',
@@ -8035,6 +8902,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.TOTAL,
+    prerequisite: '',
   },
   529: {
     id: '529',
@@ -8044,6 +8912,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.BASE,
+    prerequisite: '',
   },
   530: {
     id: '530',
@@ -8053,6 +8922,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.BASE,
+    prerequisite: '',
   },
   532: {
     id: '532',
@@ -8062,6 +8932,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.ATTACK,
+    prerequisite: '',
   },
   533: {
     id: '533',
@@ -8071,6 +8942,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.ATTACK,
+    prerequisite: '',
   },
   534: {
     id: '534',
@@ -8080,6 +8952,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.STRENGTH,
+    prerequisite: '',
   },
   535: {
     id: '535',
@@ -8089,6 +8962,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.STRENGTH,
+    prerequisite: '',
   },
   536: {
     id: '536',
@@ -8098,6 +8972,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.DEFENCE,
+    prerequisite: '',
   },
   537: {
     id: '537',
@@ -8107,6 +8982,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.DEFENCE,
+    prerequisite: '',
   },
   538: {
     id: '538',
@@ -8116,6 +8992,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   539: {
     id: '539',
@@ -8125,6 +9002,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   540: {
     id: '540',
@@ -8134,6 +9012,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   541: {
     id: '541',
@@ -8143,6 +9022,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.PRAYER,
+    prerequisite: '',
   },
   542: {
     id: '542',
@@ -8152,6 +9032,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   543: {
     id: '543',
@@ -8161,6 +9042,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   544: {
     id: '544',
@@ -8170,6 +9052,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   545: {
     id: '545',
@@ -8179,6 +9062,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.RUNECRAFT,
+    prerequisite: '',
   },
   546: {
     id: '546',
@@ -8188,6 +9072,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   547: {
     id: '547',
@@ -8197,6 +9082,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   548: {
     id: '548',
@@ -8206,6 +9092,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.HITPOINTS,
+    prerequisite: '',
   },
   549: {
     id: '549',
@@ -8215,6 +9102,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.HITPOINTS,
+    prerequisite: '',
   },
   550: {
     id: '550',
@@ -8224,6 +9112,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   551: {
     id: '551',
@@ -8233,6 +9122,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   552: {
     id: '552',
@@ -8242,6 +9132,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   553: {
     id: '553',
@@ -8251,6 +9142,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   554: {
     id: '554',
@@ -8260,6 +9152,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   555: {
     id: '555',
@@ -8269,6 +9162,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   556: {
     id: '556',
@@ -8278,6 +9172,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CRAFTING,
+    prerequisite: '',
   },
   557: {
     id: '557',
@@ -8287,6 +9182,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CRAFTING,
+    prerequisite: '',
   },
   558: {
     id: '558',
@@ -8296,6 +9192,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FLETCHING,
+    prerequisite: '',
   },
   559: {
     id: '559',
@@ -8305,6 +9202,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FLETCHING,
+    prerequisite: '',
   },
   560: {
     id: '560',
@@ -8314,6 +9212,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   561: {
     id: '561',
@@ -8323,6 +9222,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   562: {
     id: '562',
@@ -8332,6 +9232,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   563: {
     id: '563',
@@ -8341,6 +9242,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   564: {
     id: '564',
@@ -8350,6 +9252,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   565: {
     id: '565',
@@ -8359,6 +9262,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   566: {
     id: '566',
@@ -8368,6 +9272,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.SMITHING,
+    prerequisite: '',
   },
   567: {
     id: '567',
@@ -8377,6 +9282,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.SMITHING,
+    prerequisite: '',
   },
   568: {
     id: '568',
@@ -8386,6 +9292,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   569: {
     id: '569',
@@ -8395,6 +9302,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   570: {
     id: '570',
@@ -8404,6 +9312,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.COOKING,
+    prerequisite: '',
   },
   571: {
     id: '571',
@@ -8413,6 +9322,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.COOKING,
+    prerequisite: '',
   },
   572: {
     id: '572',
@@ -8422,6 +9332,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FIREMAKING,
+    prerequisite: '',
   },
   573: {
     id: '573',
@@ -8431,6 +9342,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FIREMAKING,
+    prerequisite: '',
   },
   574: {
     id: '574',
@@ -8440,6 +9352,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.WOODCUTTING,
+    prerequisite: '',
   },
   575: {
     id: '575',
@@ -8449,6 +9362,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.WOODCUTTING,
+    prerequisite: '',
   },
   576: {
     id: '576',
@@ -8458,6 +9372,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   577: {
     id: '577',
@@ -8467,6 +9382,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   715: {
     id: '715',
@@ -8476,6 +9392,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.LEVEL,
+    prerequisite: '714',
   },
   716: {
     id: '716',
@@ -8485,6 +9402,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.LEVEL,
+    prerequisite: '715',
   },
   1503: {
     id: '1503',
@@ -8494,6 +9412,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   8: {
     id: '8',
@@ -8503,6 +9422,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.ELITE,
+    prerequisite: '31',
   },
   10: {
     id: '10',
@@ -8512,6 +9432,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MASTER,
+    prerequisite: '9',
   },
   14: {
     id: '14',
@@ -8521,6 +9442,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.BEGINNER,
+    prerequisite: '',
   },
   18: {
     id: '18',
@@ -8530,6 +9452,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MEDIUM,
+    prerequisite: '',
   },
   21: {
     id: '21',
@@ -8539,6 +9462,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.ELITE,
+    prerequisite: '',
   },
   23: {
     id: '23',
@@ -8548,6 +9472,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MASTER,
+    prerequisite: '',
   },
   25: {
     id: '25',
@@ -8557,6 +9482,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.HARD,
+    prerequisite: '',
   },
   40: {
     id: '40',
@@ -8566,6 +9492,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.HARD,
+    prerequisite: '39',
   },
   48: {
     id: '48',
@@ -8575,6 +9502,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MEDIUM,
+    prerequisite: '58',
   },
   67: {
     id: '67',
@@ -8584,6 +9512,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.EASY,
+    prerequisite: '66',
   },
   75: {
     id: '75',
@@ -8593,6 +9522,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.BEGINNER,
+    prerequisite: '85',
   },
   94: {
     id: '94',
@@ -8602,6 +9532,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.MASTER,
+    prerequisite: '93',
   },
   103: {
     id: '103',
@@ -8611,6 +9542,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.ELITE,
+    prerequisite: '102',
   },
   112: {
     id: '112',
@@ -8620,6 +9552,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.HARD,
+    prerequisite: '111',
   },
   274: {
     id: '274',
@@ -8629,6 +9562,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   277: {
     id: '277',
@@ -8638,6 +9572,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   284: {
     id: '284',
@@ -8647,6 +9582,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   288: {
     id: '288',
@@ -8656,6 +9592,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   241: {
     id: '241',
@@ -8665,6 +9602,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WINTERTODT,
+    prerequisite: '1493',
   },
   1494: {
     id: '1494',
@@ -8674,6 +9612,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WINTERTODT,
+    prerequisite: '241',
   },
   242: {
     id: '242',
@@ -8683,6 +9622,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WINTERTODT,
+    prerequisite: '1494',
   },
   341: {
     id: '341',
@@ -8692,6 +9632,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SKOTIZO,
+    prerequisite: '340',
   },
   342: {
     id: '342',
@@ -8701,6 +9642,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SKOTIZO,
+    prerequisite: '341',
   },
   343: {
     id: '343',
@@ -8710,6 +9652,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SKOTIZO,
+    prerequisite: '342',
   },
   344: {
     id: '344',
@@ -8719,6 +9662,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SKOTIZO,
+    prerequisite: '343',
   },
   345: {
     id: '345',
@@ -8728,6 +9672,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SKOTIZO,
+    prerequisite: '344',
   },
   346: {
     id: '346',
@@ -8737,6 +9682,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SKOTIZO,
+    prerequisite: '345',
   },
   347: {
     id: '347',
@@ -8746,6 +9692,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SKOTIZO,
+    prerequisite: '346',
   },
   348: {
     id: '348',
@@ -8755,6 +9702,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.HYDRA,
+    prerequisite: '',
   },
   349: {
     id: '349',
@@ -8764,6 +9712,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.HYDRA,
+    prerequisite: '348',
   },
   350: {
     id: '350',
@@ -8773,6 +9722,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.HYDRA,
+    prerequisite: '349',
   },
   351: {
     id: '351',
@@ -8782,6 +9732,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.HYDRA,
+    prerequisite: '350',
   },
   352: {
     id: '352',
@@ -8791,6 +9742,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.HYDRA,
+    prerequisite: '351',
   },
   353: {
     id: '353',
@@ -8800,6 +9752,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.HYDRA,
+    prerequisite: '352',
   },
   354: {
     id: '354',
@@ -8809,6 +9762,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.HYDRA,
+    prerequisite: '353',
   },
   1401: {
     id: '1401',
@@ -8818,6 +9772,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.HYDRA,
+    prerequisite: '354',
   },
   364: {
     id: '364',
@@ -8827,6 +9782,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   370: {
     id: '370',
@@ -8836,6 +9792,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   371: {
     id: '371',
@@ -8845,6 +9802,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   372: {
     id: '372',
@@ -8854,6 +9812,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   378: {
     id: '378',
@@ -8863,6 +9822,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   379: {
     id: '379',
@@ -8872,6 +9832,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   388: {
     id: '388',
@@ -8881,6 +9842,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   389: {
     id: '389',
@@ -8894,6 +9856,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.HYDRA,
+    prerequisite: '',
   },
   390: {
     id: '390',
@@ -8906,6 +9869,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.HYDRA,
+    prerequisite: '',
   },
   391: {
     id: '391',
@@ -8915,6 +9879,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.HYDRA,
+    prerequisite: '',
   },
   413: {
     id: '413',
@@ -8924,6 +9889,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   419: {
     id: '419',
@@ -8933,6 +9899,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '418',
   },
   420: {
     id: '420',
@@ -8942,6 +9909,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '419',
   },
   427: {
     id: '427',
@@ -8951,6 +9919,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '426',
   },
   472: {
     id: '472',
@@ -8960,6 +9929,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.MIMIC,
+    prerequisite: '471',
   },
   473: {
     id: '473',
@@ -8969,6 +9939,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.MIMIC,
+    prerequisite: '472',
   },
   492: {
     id: '492',
@@ -8981,6 +9952,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   578: {
     id: '578',
@@ -8990,6 +9962,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.GENERAL,
+    prerequisite: '',
   },
   594: {
     id: '594',
@@ -9003,6 +9976,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   636: {
     id: '636',
@@ -9012,6 +9986,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   637: {
     id: '637',
@@ -9021,6 +9996,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '633',
   },
   638: {
     id: '638',
@@ -9030,6 +10006,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '635',
   },
   647: {
     id: '647',
@@ -9039,6 +10016,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CRAFTING,
+    prerequisite: '',
   },
   663: {
     id: '663',
@@ -9048,6 +10026,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.SMITHING,
+    prerequisite: '',
   },
   693: {
     id: '693',
@@ -9057,6 +10036,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   707: {
     id: '707',
@@ -9066,6 +10046,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   708: {
     id: '708',
@@ -9075,6 +10056,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GENERAL,
+    prerequisite: '',
   },
   719: {
     id: '719',
@@ -9084,6 +10066,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GENERAL,
+    prerequisite: '',
   },
   724: {
     id: '724',
@@ -9096,6 +10079,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   728: {
     id: '728',
@@ -9106,6 +10090,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MELEE,
+    prerequisite: '',
   },
   751: {
     id: '751',
@@ -9115,6 +10100,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   752: {
     id: '752',
@@ -9124,6 +10110,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '751',
   },
   753: {
     id: '753',
@@ -9133,6 +10120,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '752',
   },
   755: {
     id: '755',
@@ -9145,6 +10133,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   758: {
     id: '758',
@@ -9154,6 +10143,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   778: {
     id: '778',
@@ -9163,6 +10153,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.RANGED,
+    prerequisite: '',
   },
   783: {
     id: '783',
@@ -9175,6 +10166,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MELEE,
+    prerequisite: '',
   },
   787: {
     id: '787',
@@ -9188,6 +10180,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   790: {
     id: '790',
@@ -9201,6 +10194,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SIRE,
+    prerequisite: '',
   },
   792: {
     id: '792',
@@ -9213,6 +10207,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SIRE,
+    prerequisite: '',
   },
   793: {
     id: '793',
@@ -9222,6 +10217,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SIRE,
+    prerequisite: '',
   },
   794: {
     id: '794',
@@ -9231,6 +10227,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SIRE,
+    prerequisite: '789',
   },
   795: {
     id: '795',
@@ -9240,6 +10237,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SIRE,
+    prerequisite: '794',
   },
   796: {
     id: '796',
@@ -9249,6 +10247,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SIRE,
+    prerequisite: '795',
   },
   800: {
     id: '800',
@@ -9258,6 +10257,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   824: {
     id: '824',
@@ -9270,6 +10270,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   829: {
     id: '829',
@@ -9279,6 +10280,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   840: {
     id: '840',
@@ -9291,6 +10293,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GAUNTLET,
+    prerequisite: '',
   },
   844: {
     id: '844',
@@ -9300,6 +10303,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GAUNTLET,
+    prerequisite: '',
   },
   848: {
     id: '848',
@@ -9309,6 +10313,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.ZALCANO,
+    prerequisite: '',
   },
   850: {
     id: '850',
@@ -9321,6 +10326,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.ZULRAH,
+    prerequisite: '',
   },
   852: {
     id: '852',
@@ -9330,6 +10336,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.ZULRAH,
+    prerequisite: '',
   },
   854: {
     id: '854',
@@ -9342,6 +10349,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.ZULRAH,
+    prerequisite: '',
   },
   856: {
     id: '856',
@@ -9351,6 +10359,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.ZULRAH,
+    prerequisite: '',
   },
   859: {
     id: '859',
@@ -9360,6 +10369,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GAUNTLET,
+    prerequisite: '',
   },
   860: {
     id: '860',
@@ -9369,6 +10379,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GAUNTLET,
+    prerequisite: '',
   },
   861: {
     id: '861',
@@ -9378,6 +10389,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GAUNTLET,
+    prerequisite: '',
   },
   864: {
     id: '864',
@@ -9387,6 +10399,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GAUNTLET,
+    prerequisite: '844',
   },
   865: {
     id: '865',
@@ -9396,6 +10409,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GAUNTLET,
+    prerequisite: '864',
   },
   867: {
     id: '867',
@@ -9405,6 +10419,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.ZALCANO,
+    prerequisite: '',
   },
   868: {
     id: '868',
@@ -9414,6 +10429,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.ZALCANO,
+    prerequisite: '',
   },
   870: {
     id: '870',
@@ -9423,6 +10439,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.ZULRAH,
+    prerequisite: '849',
   },
   871: {
     id: '871',
@@ -9432,6 +10449,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.ZULRAH,
+    prerequisite: '870',
   },
   876: {
     id: '876',
@@ -9445,6 +10463,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   885: {
     id: '885',
@@ -9454,6 +10473,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   888: {
     id: '888',
@@ -9463,6 +10483,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   899: {
     id: '899',
@@ -9472,6 +10493,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   903: {
     id: '903',
@@ -9484,6 +10506,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.VORKATH,
+    prerequisite: '',
   },
   908: {
     id: '908',
@@ -9493,6 +10516,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.VORKATH,
+    prerequisite: '',
   },
   912: {
     id: '912',
@@ -9502,6 +10526,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.VORKATH,
+    prerequisite: '',
   },
   917: {
     id: '917',
@@ -9511,6 +10536,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.DKS,
+    prerequisite: '',
   },
   920: {
     id: '920',
@@ -9520,6 +10546,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   922: {
     id: '922',
@@ -9530,6 +10557,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.VORKATH,
+    prerequisite: '',
   },
   925: {
     id: '925',
@@ -9539,6 +10567,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.VORKATH,
+    prerequisite: '',
   },
   928: {
     id: '928',
@@ -9548,6 +10577,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.VORKATH,
+    prerequisite: '902',
   },
   929: {
     id: '929',
@@ -9557,6 +10587,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.VORKATH,
+    prerequisite: '928',
   },
   930: {
     id: '930',
@@ -9566,6 +10597,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.VORKATH,
+    prerequisite: '929',
   },
   933: {
     id: '933',
@@ -9575,6 +10607,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.DKS,
+    prerequisite: '',
   },
   934: {
     id: '934',
@@ -9584,6 +10617,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.DKS,
+    prerequisite: '933',
   },
   935: {
     id: '935',
@@ -9593,6 +10627,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.DKS,
+    prerequisite: '934',
   },
   946: {
     id: '946',
@@ -9602,6 +10637,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   950: {
     id: '950',
@@ -9611,6 +10647,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.SHARED,
+    prerequisite: '',
   },
   961: {
     id: '961',
@@ -9620,6 +10657,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   963: {
     id: '963',
@@ -9629,6 +10667,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   973: {
     id: '973',
@@ -9638,6 +10677,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.JAD,
+    prerequisite: '',
   },
   978: {
     id: '978',
@@ -9647,6 +10687,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.JAD,
+    prerequisite: '',
   },
   983: {
     id: '983',
@@ -9656,6 +10697,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.INFERNO,
+    prerequisite: '',
   },
   987: {
     id: '987',
@@ -9665,6 +10707,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.JAD,
+    prerequisite: '',
   },
   988: {
     id: '988',
@@ -9674,6 +10717,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.JAD,
+    prerequisite: '987',
   },
   989: {
     id: '989',
@@ -9683,6 +10727,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.JAD,
+    prerequisite: '988',
   },
   990: {
     id: '990',
@@ -9692,6 +10737,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.INFERNO,
+    prerequisite: '974',
   },
   991: {
     id: '991',
@@ -9701,6 +10747,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.INFERNO,
+    prerequisite: '990',
   },
   992: {
     id: '992',
@@ -9710,6 +10757,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.INFERNO,
+    prerequisite: '991',
   },
   997: {
     id: '997',
@@ -9719,6 +10767,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1001: {
     id: '1001',
@@ -9728,6 +10777,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1012: {
     id: '1012',
@@ -9737,6 +10787,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1020: {
     id: '1020',
@@ -9746,6 +10797,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1026: {
     id: '1026',
@@ -9755,6 +10807,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FARMING,
+    prerequisite: '',
   },
   1489: {
     id: '1489',
@@ -9765,6 +10818,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   1030: {
     id: '1030',
@@ -9774,6 +10828,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1033: {
     id: '1033',
@@ -9783,6 +10838,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1035: {
     id: '1035',
@@ -9792,6 +10848,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1039: {
     id: '1039',
@@ -9801,6 +10858,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1042: {
     id: '1042',
@@ -9810,6 +10868,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.THERMY,
+    prerequisite: '',
   },
   1046: {
     id: '1046',
@@ -9819,6 +10878,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.THERMY,
+    prerequisite: '',
   },
   1048: {
     id: '1048',
@@ -9828,6 +10888,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1051: {
     id: '1051',
@@ -9837,6 +10898,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.KRAKEN,
+    prerequisite: '',
   },
   1052: {
     id: '1052',
@@ -9846,6 +10908,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.KRAKEN,
+    prerequisite: '1051',
   },
   1053: {
     id: '1053',
@@ -9855,6 +10918,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.KRAKEN,
+    prerequisite: '1052',
   },
   1054: {
     id: '1054',
@@ -9864,6 +10928,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '1029',
   },
   1055: {
     id: '1055',
@@ -9873,6 +10938,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '1054',
   },
   1056: {
     id: '1056',
@@ -9882,6 +10948,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '1055',
   },
   1063: {
     id: '1063',
@@ -9891,6 +10958,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.BA,
+    prerequisite: '',
   },
   1075: {
     id: '1075',
@@ -9903,6 +10971,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1080: {
     id: '1080',
@@ -9912,6 +10981,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1085: {
     id: '1085',
@@ -9921,6 +10991,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1089: {
     id: '1089',
@@ -9930,6 +11001,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1090: {
     id: '1090',
@@ -9939,6 +11011,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.CERBERUS,
+    prerequisite: '',
   },
   1107: {
     id: '1107',
@@ -9951,6 +11024,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '',
   },
   1112: {
     id: '1112',
@@ -9960,6 +11034,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '',
   },
   1113: {
     id: '1113',
@@ -9972,6 +11047,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '',
   },
   1117: {
     id: '1117',
@@ -9981,6 +11057,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '',
   },
   1118: {
     id: '1118',
@@ -9990,6 +11067,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '',
   },
   1121: {
     id: '1121',
@@ -9999,6 +11077,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '',
   },
   1122: {
     id: '1122',
@@ -10008,6 +11087,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.CERBERUS,
+    prerequisite: '',
   },
   1125: {
     id: '1125',
@@ -10017,6 +11097,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '',
   },
   1130: {
     id: '1130',
@@ -10026,6 +11107,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.CERBERUS,
+    prerequisite: '',
   },
   1132: {
     id: '1132',
@@ -10035,6 +11117,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '',
   },
   1133: {
     id: '1133',
@@ -10044,6 +11127,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '1132',
   },
   1134: {
     id: '1134',
@@ -10053,6 +11137,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '1133',
   },
   1514: {
     id: '1514',
@@ -10067,6 +11152,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NEX,
+    prerequisite: '1513',
   },
   1515: {
     id: '1515',
@@ -10081,6 +11167,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NEX,
+    prerequisite: '1514',
   },
   1135: {
     id: '1135',
@@ -10090,6 +11177,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.MOLE,
+    prerequisite: '1105',
   },
   1136: {
     id: '1136',
@@ -10099,6 +11187,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.MOLE,
+    prerequisite: '1135',
   },
   1137: {
     id: '1137',
@@ -10108,6 +11197,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.MOLE,
+    prerequisite: '1136',
   },
   1141: {
     id: '1141',
@@ -10117,6 +11207,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1161: {
     id: '1161',
@@ -10126,6 +11217,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1162: {
     id: '1162',
@@ -10135,6 +11227,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '1161',
   },
   1163: {
     id: '1163',
@@ -10144,6 +11237,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '1162',
   },
   1164: {
     id: '1164',
@@ -10153,6 +11247,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '1163',
   },
   1172: {
     id: '1172',
@@ -10162,6 +11257,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.THIEVING,
+    prerequisite: '',
   },
   1187: {
     id: '1187',
@@ -10171,6 +11267,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.KQ,
+    prerequisite: '',
   },
   1190: {
     id: '1190',
@@ -10180,6 +11277,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.KQ,
+    prerequisite: '',
   },
   1193: {
     id: '1193',
@@ -10189,6 +11287,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1195: {
     id: '1195',
@@ -10198,6 +11297,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1197: {
     id: '1197',
@@ -10207,6 +11307,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.KQ,
+    prerequisite: '1187',
   },
   1198: {
     id: '1198',
@@ -10216,6 +11317,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.KQ,
+    prerequisite: '1197',
   },
   1199: {
     id: '1199',
@@ -10225,6 +11327,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.KQ,
+    prerequisite: '1198',
   },
   1204: {
     id: '1204',
@@ -10234,6 +11337,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1208: {
     id: '1208',
@@ -10246,6 +11350,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.MTA,
+    prerequisite: '',
   },
   1212: {
     id: '1212',
@@ -10255,6 +11360,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.MTA,
+    prerequisite: '',
   },
   1216: {
     id: '1216',
@@ -10264,6 +11370,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.MTA,
+    prerequisite: '',
   },
   1226: {
     id: '1226',
@@ -10273,6 +11380,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1228: {
     id: '1228',
@@ -10282,6 +11390,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1229: {
     id: '1229',
@@ -10291,6 +11400,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1234: {
     id: '1234',
@@ -10300,6 +11410,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1243: {
     id: '1243',
@@ -10309,6 +11420,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '',
   },
   1246: {
     id: '1246',
@@ -10318,6 +11430,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.CERBERUS,
+    prerequisite: '',
   },
   1247: {
     id: '1247',
@@ -10327,6 +11440,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1251: {
     id: '1251',
@@ -10336,6 +11450,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GGS,
+    prerequisite: '',
   },
   1255: {
     id: '1255',
@@ -10351,6 +11466,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.BARROWS,
+    prerequisite: '',
   },
   1257: {
     id: '1257',
@@ -10360,6 +11476,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '',
   },
   1259: {
     id: '1259',
@@ -10372,6 +11489,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '',
   },
   1261: {
     id: '1261',
@@ -10384,6 +11502,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '',
   },
   1263: {
     id: '1263',
@@ -10396,6 +11515,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1264: {
     id: '1264',
@@ -10408,6 +11528,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1265: {
     id: '1265',
@@ -10417,6 +11538,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1266: {
     id: '1266',
@@ -10429,6 +11551,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1267: {
     id: '1267',
@@ -10438,6 +11561,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1269: {
     id: '1269',
@@ -10447,6 +11571,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1270: {
     id: '1270',
@@ -10457,6 +11582,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1272: {
     id: '1272',
@@ -10466,6 +11592,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '',
   },
   1496: {
     id: '1496',
@@ -10475,6 +11602,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1273: {
     id: '1273',
@@ -10484,6 +11612,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1274: {
     id: '1274',
@@ -10493,6 +11622,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1497: {
     id: '1497',
@@ -10502,6 +11632,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1275: {
     id: '1275',
@@ -10511,6 +11642,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1276: {
     id: '1276',
@@ -10520,6 +11652,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1279: {
     id: '1279',
@@ -10529,6 +11662,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GGS,
+    prerequisite: '1278',
   },
   1283: {
     id: '1283',
@@ -10538,6 +11672,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1302: {
     id: '1302',
@@ -10547,6 +11682,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.COOKING,
+    prerequisite: '',
   },
   1303: {
     id: '1303',
@@ -10556,6 +11692,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HERBLORE,
+    prerequisite: '',
   },
   1307: {
     id: '1307',
@@ -10568,6 +11705,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '',
   },
   1308: {
     id: '1308',
@@ -10580,6 +11718,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '1307',
   },
   1309: {
     id: '1309',
@@ -10592,6 +11731,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.HUNTER,
+    prerequisite: '1308',
   },
   1314: {
     id: '1314',
@@ -10601,6 +11741,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   1318: {
     id: '1318',
@@ -10610,6 +11751,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1322: {
     id: '1322',
@@ -10619,6 +11761,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1326: {
     id: '1326',
@@ -10628,6 +11771,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1333: {
     id: '1333',
@@ -10637,6 +11781,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.CORP,
+    prerequisite: '',
   },
   1334: {
     id: '1334',
@@ -10646,6 +11791,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.CORP,
+    prerequisite: '1333',
   },
   1335: {
     id: '1335',
@@ -10655,6 +11801,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.CORP,
+    prerequisite: '1334',
   },
   1336: {
     id: '1336',
@@ -10664,6 +11811,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.CORP,
+    prerequisite: '1335',
   },
   1339: {
     id: '1339',
@@ -10676,6 +11824,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.CORP,
+    prerequisite: '',
   },
   1344: {
     id: '1344',
@@ -10685,6 +11834,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1345: {
     id: '1345',
@@ -10694,6 +11844,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.WILDERNESS,
+    prerequisite: '',
   },
   1347: {
     id: '1347',
@@ -10703,6 +11854,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1349: {
     id: '1349',
@@ -10712,6 +11864,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   1359: {
     id: '1359',
@@ -10721,6 +11874,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1371: {
     id: '1371',
@@ -10733,6 +11887,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1372: {
     id: '1372',
@@ -10742,6 +11897,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1380: {
     id: '1380',
@@ -10751,6 +11907,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1381: {
     id: '1381',
@@ -10760,6 +11917,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.SMITHING,
+    prerequisite: '',
   },
   1382: {
     id: '1382',
@@ -10769,6 +11927,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.ZALCANO,
+    prerequisite: '',
   },
   1386: {
     id: '1386',
@@ -10778,6 +11937,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1389: {
     id: '1389',
@@ -10787,6 +11947,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1390: {
     id: '1390',
@@ -10796,6 +11957,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   1391: {
     id: '1391',
@@ -10808,6 +11970,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   1393: {
     id: '1393',
@@ -10820,6 +11983,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   1394: {
     id: '1394',
@@ -10832,6 +11996,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   1396: {
     id: '1396',
@@ -10841,6 +12006,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   1397: {
     id: '1397',
@@ -10850,6 +12016,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   1399: {
     id: '1399',
@@ -10859,6 +12026,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.SARACHNIS,
+    prerequisite: '334',
   },
   1400: {
     id: '1400',
@@ -10868,6 +12036,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.VORKATH,
+    prerequisite: '',
   },
   1414: {
     id: '1414',
@@ -10877,6 +12046,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '1413',
   },
   1415: {
     id: '1415',
@@ -10886,6 +12056,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '1414',
   },
   1416: {
     id: '1416',
@@ -10895,6 +12066,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '1415',
   },
   1417: {
     id: '1417',
@@ -10904,6 +12076,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '1416',
   },
   1418: {
     id: '1418',
@@ -10913,6 +12086,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '1417',
   },
   1419: {
     id: '1419',
@@ -10922,6 +12096,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1420: {
     id: '1420',
@@ -10931,6 +12106,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1421: {
     id: '1421',
@@ -10940,6 +12116,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1422: {
     id: '1422',
@@ -10949,6 +12126,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1423: {
     id: '1423',
@@ -10958,6 +12136,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1432: {
     id: '1432',
@@ -10967,6 +12146,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.TEMPOROSS,
+    prerequisite: '1431',
   },
   1433: {
     id: '1433',
@@ -10976,6 +12156,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.TEMPOROSS,
+    prerequisite: '1432',
   },
   1434: {
     id: '1434',
@@ -10985,6 +12166,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.TEMPOROSS,
+    prerequisite: '1434',
   },
   1450: {
     id: '1450',
@@ -10994,6 +12176,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.HARD,
+    prerequisite: '',
   },
   1455: {
     id: '1455',
@@ -11003,6 +12186,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1456: {
     id: '1456',
@@ -11012,6 +12196,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1460: {
     id: '1460',
@@ -11021,6 +12206,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MASTER,
+    prerequisite: '',
   },
   1461: {
     id: '1461',
@@ -11030,6 +12216,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MASTER,
+    prerequisite: '',
   },
   1462: {
     id: '1462',
@@ -11039,6 +12226,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MASTER,
+    prerequisite: '',
   },
   1465: {
     id: '1465',
@@ -11048,6 +12236,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.GRANDMASTER,
+    prerequisite: '',
   },
   1466: {
     id: '1466',
@@ -11057,6 +12246,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.GRANDMASTER,
+    prerequisite: '',
   },
   1467: {
     id: '1467',
@@ -11066,6 +12256,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.GRANDMASTER,
+    prerequisite: '',
   },
   1468: {
     id: '1468',
@@ -11075,6 +12266,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.GRANDMASTER,
+    prerequisite: '',
   },
   1473: {
     id: '1473',
@@ -11084,6 +12276,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MAGIC,
+    prerequisite: '',
   },
   1483: {
     id: '1483',
@@ -11093,6 +12286,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1484: {
     id: '1484',
@@ -11102,6 +12296,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1485: {
     id: '1485',
@@ -11111,6 +12306,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1487: {
     id: '1487',
@@ -11123,6 +12319,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.MINING,
+    prerequisite: '',
   },
   1491: {
     id: '1491',
@@ -11136,6 +12333,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.MINIGAMES,
     subcategory: CATEGORY.MINIGAMES.subcategories.SHADES,
+    prerequisite: '',
   },
   1518: {
     id: '1518',
@@ -11145,6 +12343,7 @@ export default {
     difficulty: DIFFICULTY.ELITE,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NEX,
+    prerequisite: '',
   },
   520: {
     id: '520',
@@ -11154,6 +12353,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.TOTAL,
+    prerequisite: '',
   },
   531: {
     id: '531',
@@ -11163,6 +12363,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.BASE,
+    prerequisite: '',
   },
   1500: {
     id: '1500',
@@ -11172,6 +12373,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   373: {
     id: '373',
@@ -11181,6 +12383,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   392: {
     id: '392',
@@ -11190,6 +12393,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   393: {
     id: '393',
@@ -11202,6 +12406,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   394: {
     id: '394',
@@ -11211,6 +12416,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   395: {
     id: '395',
@@ -11220,6 +12426,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   396: {
     id: '396',
@@ -11229,6 +12436,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   397: {
     id: '397',
@@ -11238,6 +12446,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   398: {
     id: '398',
@@ -11247,6 +12456,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   399: {
     id: '399',
@@ -11256,6 +12466,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   400: {
     id: '400',
@@ -11265,6 +12476,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   401: {
     id: '401',
@@ -11274,6 +12486,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   402: {
     id: '402',
@@ -11283,6 +12496,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   403: {
     id: '403',
@@ -11292,6 +12506,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   404: {
     id: '404',
@@ -11301,6 +12516,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   405: {
     id: '405',
@@ -11310,6 +12526,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   406: {
     id: '406',
@@ -11319,6 +12536,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   407: {
     id: '407',
@@ -11328,6 +12546,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   409: {
     id: '409',
@@ -11337,6 +12556,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   462: {
     id: '462',
@@ -11346,6 +12566,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.ELITE,
+    prerequisite: '',
   },
   474: {
     id: '474',
@@ -11355,6 +12576,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.MIMIC,
+    prerequisite: '473',
   },
   493: {
     id: '493',
@@ -11367,6 +12589,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.FISHING,
+    prerequisite: '',
   },
   779: {
     id: '779',
@@ -11379,6 +12602,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.MELEE,
+    prerequisite: '',
   },
   845: {
     id: '845',
@@ -11388,6 +12612,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GAUNTLET,
+    prerequisite: '',
   },
   857: {
     id: '857',
@@ -11397,6 +12622,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.ZULRAH,
+    prerequisite: '',
   },
   862: {
     id: '862',
@@ -11406,6 +12632,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GAUNTLET,
+    prerequisite: '',
   },
   877: {
     id: '877',
@@ -11415,6 +12642,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   889: {
     id: '889',
@@ -11424,6 +12652,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.CONSTRUCTION,
+    prerequisite: '',
   },
   904: {
     id: '904',
@@ -11433,6 +12662,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   913: {
     id: '913',
@@ -11442,6 +12672,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.VORKATH,
+    prerequisite: '',
   },
   951: {
     id: '951',
@@ -11451,6 +12682,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.CLUES,
     subcategory: CATEGORY.CLUES.subcategories.SHARED,
+    prerequisite: '',
   },
   962: {
     id: '962',
@@ -11460,6 +12692,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   974: {
     id: '974',
@@ -11469,6 +12702,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.INFERNO,
+    prerequisite: '',
   },
   979: {
     id: '979',
@@ -11478,6 +12712,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.JAD,
+    prerequisite: '',
   },
   984: {
     id: '984',
@@ -11487,6 +12722,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.INFERNO,
+    prerequisite: '',
   },
   1036: {
     id: '1036',
@@ -11496,6 +12732,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1043: {
     id: '1043',
@@ -11505,6 +12742,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.SLAYER,
+    prerequisite: '',
   },
   1076: {
     id: '1076',
@@ -11514,6 +12752,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1081: {
     id: '1081',
@@ -11523,6 +12762,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.SKILLING,
     subcategory: CATEGORY.SKILLING.subcategories.AGILITY,
+    prerequisite: '',
   },
   1108: {
     id: '1108',
@@ -11532,6 +12772,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '',
   },
   1114: {
     id: '1114',
@@ -11544,6 +12785,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '',
   },
   1119: {
     id: '1119',
@@ -11553,6 +12795,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.GWD,
+    prerequisite: '',
   },
   1123: {
     id: '1123',
@@ -11567,6 +12810,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.CERBERUS,
+    prerequisite: '',
   },
   1260: {
     id: '1260',
@@ -11579,6 +12823,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '',
   },
   1262: {
     id: '1262',
@@ -11592,6 +12837,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NIGHTMARE,
+    prerequisite: '',
   },
   1268: {
     id: '1268',
@@ -11601,6 +12847,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1271: {
     id: '1271',
@@ -11611,6 +12858,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.TOB,
+    prerequisite: '',
   },
   1516: {
     id: '1516',
@@ -11625,6 +12873,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.NEX,
+    prerequisite: '1515',
   },
   1337: {
     id: '1337',
@@ -11638,6 +12887,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.CORP,
+    prerequisite: '',
   },
   1338: {
     id: '1338',
@@ -11650,6 +12900,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.BOSSING,
     subcategory: CATEGORY.BOSSING.subcategories.CORP,
+    prerequisite: '',
   },
   1348: {
     id: '1348',
@@ -11659,6 +12910,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.COMBAT,
     subcategory: CATEGORY.COMBAT.subcategories.GENERAL,
+    prerequisite: '',
   },
   1360: {
     id: '1360',
@@ -11668,6 +12920,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.OTHER,
     subcategory: CATEGORY.OTHER.subcategories.GENERAL,
+    prerequisite: '',
   },
   1395: {
     id: '1395',
@@ -11680,6 +12933,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.RAIDS,
     subcategory: CATEGORY.RAIDS.subcategories.COX,
+    prerequisite: '',
   },
   1457: {
     id: '1457',
@@ -11689,6 +12943,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.ELITE,
+    prerequisite: '',
   },
   1463: {
     id: '1463',
@@ -11698,6 +12953,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MASTER,
+    prerequisite: '',
   },
   1464: {
     id: '1464',
@@ -11707,6 +12963,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.MASTER,
+    prerequisite: '',
   },
   1469: {
     id: '1469',
@@ -11716,6 +12973,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.GRANDMASTER,
+    prerequisite: '',
   },
   1470: {
     id: '1470',
@@ -11725,6 +12983,7 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.GRANDMASTER,
+    prerequisite: '',
   },
   1471: {
     id: '1471',
@@ -11734,5 +12993,6 @@ export default {
     difficulty: DIFFICULTY.MASTER,
     category: CATEGORY.DIARIES,
     subcategory: CATEGORY.DIARIES.subcategories.GRANDMASTER,
+    prerequisite: '',
   },
 };
