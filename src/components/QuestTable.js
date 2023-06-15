@@ -9,6 +9,7 @@ import { updateQuest } from '../store/unlocks/unlocks';
 import quests from '../data/quests';
 import { QUEST_STATUS } from '../data/constants';
 import images from '../assets/images';
+import titleSort from '../util/titleSort';
 
 export default function QuestTable() {
   const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
@@ -26,6 +27,7 @@ export default function QuestTable() {
         id: 'label',
         accessor: 'label',
         width: 300,
+        sortType: (a, b) => titleSort(a.values.label, b.values.label),
         Cell: QuestCell,
       },
       {
