@@ -13,6 +13,9 @@ function Task({ row, value, addToHistory }) {
   const taskState = useSelector(state => selectTask(state, taskId));
   const dispatch = useDispatch();
 
+  let textClassname = taskState.completed ? 'text-accent' : '';
+  textClassname = taskState.ignored ? 'text-secondary-alt' : textClassname;
+
   return (
     <div {...row.getToggleRowExpandedProps()}>
       <div className='flex flex-row items-center h-full gap-2'>
@@ -30,7 +33,7 @@ function Task({ row, value, addToHistory }) {
           </span>
         </div>
 
-        <div className={`flex flex-col w-full ${taskState.completed ? 'text-accent' : ''}`}>
+        <div className={`flex flex-col w-full ${textClassname}`}>
           <span className='inline align-middle'>{value.label}</span>
           <span className='inline align-middle text-xs'>{value.description}</span>
         </div>
