@@ -83,19 +83,19 @@ export default function TaskFilters({ history }) {
           <LabeledCheckbox
             className='text-sm'
             label='Show tasks with no requirements'
-            defaultChecked={filterState.showNoRequirements}
+            checked={filterState.showNoRequirements}
             onClick={e => dispatch(updateTaskFilter({ field: 'showNoRequirements', value: e.target.checked }))}
           />
           <LabeledCheckbox
             className='text-sm'
             label='Show tasks with unmet requirements'
-            defaultChecked={filterState.showUnmetRequirements}
+            checked={filterState.showUnmetRequirements}
             onClick={e => dispatch(updateTaskFilter({ field: 'showUnmetRequirements', value: e.target.checked }))}
           />
           <LabeledCheckbox
             className='text-sm'
             label='Use unchained talent skill boost'
-            defaultChecked={filterState.isUnchainedTalent}
+            checked={filterState.isUnchainedTalent}
             onClick={e => dispatch(updateTaskFilter({ field: 'isUnchainedTalent', value: e.target.checked }))}
           />
         </div>

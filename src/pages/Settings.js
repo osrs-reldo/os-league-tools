@@ -21,7 +21,7 @@ export default function Settings() {
                 <div className='ml-2'>
                   <LabeledCheckbox
                     label='Limit maximum content width'
-                    defaultChecked={settingsState.limitContentWidth}
+                    checked={settingsState.limitContentWidth}
                     onClick={e => dispatch(update({ field: 'limitContentWidth', value: e.target.checked }))}
                   />
                   <div className='ml-5'>

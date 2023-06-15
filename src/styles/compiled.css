@@ -2100,9 +2100,6 @@ select[multiple]:focus option:checked {
 .basis-3\/4 {
   flex-basis: 75%;
 }
-.basis-\[33\%\] {
-  flex-basis: 33%;
-}
 .basis-\[23\%\] {
   flex-basis: 23%;
 }

@@ -152,7 +152,7 @@ function TextReqCell({ value }) {
     <div className='w-full h-full justify-center flex flex-col gap-0.5 text-xs'>
       <ul>
         {value.map(req => (
-          <li>{req}</li>
+          <li key={req}>{req}</li>
         ))}
       </ul>
     </div>
