@@ -53,6 +53,9 @@
     @apply tl-light:text-tl-sage tb-light:text-tb-brown sl-light:text-sl-teal mono-light:text-mono-white;
     @apply tl-dark:text-tl-lime tb-dark:text-tb-sand sl-dark:text-sl-ecto mono-dark:text-mono-dark;
   }
+  .text-success {
+    @apply text-green-600 dark:text-green-500;
+  }
   .text-error {
     @apply text-red-600 dark:text-red-500;
   }
