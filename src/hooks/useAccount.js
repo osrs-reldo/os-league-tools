@@ -9,7 +9,11 @@ import {
 } from '../store/settings';
 import { load as loadTasksState, loadState as loadTasksLocalState } from '../store/tasks/tasks';
 import { load as loadUnlocksState, loadState as loadUnlocksLocalState } from '../store/unlocks/unlocks';
-import { load as loadCharacterState, loadState as loadCharacterLocalState } from '../store/user/character';
+import {
+  fetchHiscores,
+  load as loadCharacterState,
+  loadState as loadCharacterLocalState,
+} from '../store/user/character';
 import {
   INITIAL_STATE as INITIAL_FRAGMENTS_STATE,
   load as loadFragmentState,
@@ -80,6 +84,7 @@ export default function useAccount({ redirectReturnToUrl }) {
             dispatch(loadUnlocksState({ forceOverwrite: true, newState: unlocksState, skipDbUpdate: true }));
             dispatch(loadCharacterState({ forceOverwrite: true, newState: characterState, skipDbUpdate: true }));
             dispatch(loadFragmentState({ forceOverwrite: true, newState: fragmentState, skipDbUpdate: true }));
+            dispatch(fetchHiscores(characterState, null, true));
           });
         } else {
           // user does not exist, create them and reload the current local state to save it to the DB
