@@ -6,7 +6,7 @@ import Table from './common/Table';
 import LabeledIcon from './common/LabeledIcon';
 import SkillRequirementList from './SkillRequirementList';
 import { updateQuest } from '../store/unlocks/unlocks';
-import quests from '../data/quests';
+import quests, { questsById } from '../data/quests';
 import { QUEST_STATUS } from '../data/constants';
 import images from '../assets/images';
 import titleSort from '../util/titleSort';
@@ -189,8 +189,18 @@ function ExpandedRow({ original }) {
         <span className='icon-2xl text-accent'>x</span>
       </div>
       <div className='w-full flex flex-col gap-0.5'>
-        <span className='text-xs mr-1'>Requires:</span>
+        <span className='text-xs mr-1'>Skill requirements:</span>
         <SkillRequirementList value={original.skillReqs} className='ml-3' />
+        <span className='text-xs mr-1 mt-1'>Quest requirements:</span>
+        {original.prereqs.length ? (
+          <ul className='list-disc text-xs mb-2 ml-3'>
+            {original.prereqs.map(prereqId => (
+              <li key={prereqId}>{questsById[prereqId].label}</li>
+            ))}
+          </ul>
+        ) : (
+          <span className='italic text-xs ml-3 mb-2'>none</span>
+        )}
       </div>
     </div>
   );
