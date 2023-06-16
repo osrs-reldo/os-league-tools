@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleTodo, toggleIgnored, toggleCompleted, updateNotes, selectTask } from '../store/tasks/tasks';
+import { toggleTodo, toggleIgnored, toggleCompleted, updateNotes, selectTask, updateOrder } from '../store/tasks/tasks';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import { DEFAULT_NOTES_TEXT } from '../data/constants';
 import SkillRequirementList from './SkillRequirementList';
@@ -261,4 +261,33 @@ function TaskCompletedAt({ row }) {
   return null;
 }
 
-export default { Task, ExpandedTask, ReadonlyExpandedTask, TaskCompletedAt, ReadonlyTask };
+function Priority({ row }) {
+  const taskId = row.values.id;
+  const taskState = useSelector(state => selectTask(state, taskId));
+  const dispatch = useDispatch();
+
+  return (
+    <div className='flex items-center justify-center'>
+      <span
+        className={`icon-lg cursor-pointer ${taskState.order === 'high' ? 'text-accent' : ''}`}
+        onClick={() => dispatch(updateOrder({ taskId, order: 'high' }))}
+      >
+        arrow_upward
+      </span>
+      <span
+        className={`icon-lg cursor-pointer ${!taskState.order ? 'text-accent' : ''}`}
+        onClick={() => dispatch(updateOrder({ taskId, order: null }))}
+      >
+        horizontal_rule
+      </span>
+      <span
+        className={`icon-lg cursor-pointer ${taskState.order === 'low' ? 'text-accent' : ''}`}
+        onClick={() => dispatch(updateOrder({ taskId, order: 'low' }))}
+      >
+        arrow_downward
+      </span>
+    </div>
+  );
+}
+
+export default { Task, ExpandedTask, ReadonlyExpandedTask, TaskCompletedAt, ReadonlyTask, Priority };

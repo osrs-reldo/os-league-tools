@@ -20,6 +20,7 @@ module.exports = {
     'no-plusplus': 'off',
     'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
     'no-use-before-define': ['error', { functions: false }],
+    'no-nested-ternary': 'off',
     'react/jsx-curly-newline': 'off',
     'react/jsx-filename-extension': 'off',
     'react/jsx-indent': 'off',

@@ -17,12 +17,21 @@ function renderReadonlyTaskCell({ taskState }) {
   return ({ row, value }) => <Cell.ReadonlyTask row={row} value={value} taskState={taskState} />;
 }
 
-export default function TaskTable({ history, readonly, taskState }) {
+export default function TaskTable({ history, readonly, taskState: propsTaskState }) {
   const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
   const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.STRICT);
   const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
+  const taskState = useSelector(state => propsTaskState || state.tasks.tasks);
 
-  const data = useMemo(() => Object.values(tasks), []);
+  const data = useMemo(
+    () =>
+      Object.values(tasks).map(task => ({
+        ...task,
+        completedAt: taskState[task.id]?.completed ?? -1,
+        priority: taskState[task.id]?.order,
+      })),
+    [taskState]
+  );
   const columns = useMemo(
     () => [
       {
@@ -33,7 +42,6 @@ export default function TaskTable({ history, readonly, taskState }) {
       {
         Header: 'Task',
         id: 'task',
-        // eslint-disable-next-line no-nested-ternary
         width: isXsViewport ? 0 : isSmViewport ? 375 : 470,
         accessor: row => ({ label: row.label, description: row.description }),
         sortType: sortTask,
@@ -64,6 +72,14 @@ export default function TaskTable({ history, readonly, taskState }) {
         sortType: sortCompletedAt,
         accessor: 'completedAt',
       },
+      {
+        Header: 'Priority',
+        id: 'priority',
+        width: 100,
+        Cell: Cell.Priority,
+        sortType: sortPriority,
+        accessor: 'priority',
+      },
     ],
     [isXsViewport, isSmViewport, isMdOrSmallerViewport]
   );
@@ -76,7 +92,9 @@ export default function TaskTable({ history, readonly, taskState }) {
     []
   );
   const filters = [...Object.values(ALL_FILTERS)];
-  const initialState = isXsViewport ? { hiddenColumns: ['id', 'difficulty', 'category'] } : { hiddenColumns: ['id'] };
+  const initialState = isXsViewport
+    ? { hiddenColumns: ['id', 'difficulty', 'category', 'completedAt', 'priority'] }
+    : { hiddenColumns: ['id'] };
   initialState.pageSize = 50;
 
   const filterState = useSelector(state => state.filters.tasks);
@@ -125,6 +143,13 @@ function sortCategory(a, b) {
 
 function sortCompletedAt(a, b) {
   return a.values.completedAt - b.values.completedAt;
+}
+
+function sortPriority(a, b) {
+  const priorityA = a.values.priority === 'high' ? 3 : a.values.priority === 'low' ? 1 : 2;
+  const priorityB = b.values.priority === 'high' ? 3 : b.values.priority === 'low' ? 1 : 2;
+
+  return priorityA - priorityB;
 }
 
 function fuzzyTextFilter(rows, __, filterValue) {

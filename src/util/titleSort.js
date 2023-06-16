@@ -10,6 +10,5 @@ function stripArticles(title) {
 export default function titleSort(a, b) {
   const cleanA = stripArticles(a);
   const cleanB = stripArticles(b);
-  // eslint-disable-next-line no-nested-ternary
   return cleanA === cleanB ? 0 : cleanA < cleanB ? -1 : 1;
 }
