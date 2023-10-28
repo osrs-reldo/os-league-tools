@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import Page from './common/Page';
 import NavBar, { NavItem } from './common/NavBar';
-import AuthButton from './nav/AuthButton';
 import FeedbackModal from './FeedbackModal';
 import ManageDataModal from './ManageDataModal';
 import images from '../assets/images';
@@ -31,10 +30,11 @@ export default function PageWrapper({ children }) {
       () => <ManageData.NavBarItem key='manage' setManageDataModalType={setManageDataModalType} />,
       () => <ManageData.CollapsedMenu key='manage' setManageDataModalType={setManageDataModalType} />
     ),
-    new NavItem('Login', 'secondary', 3, 0).withCustomRenderFn(
-      () => <AuthButton.NavBarItem key='login' />,
-      () => <AuthButton.CollapsedMenu key='login' />
-    ),
+    // TODO re-enable user login
+    // new NavItem('Login', 'secondary', 3, 0).withCustomRenderFn(
+    //   () => <AuthButton.NavBarItem key='login' />,
+    //   () => <AuthButton.CollapsedMenu key='login' />
+    // ),
     new NavItem('Settings', 'overflow', 3, 1).withRouterLink('/settings').withIconFont('settings'),
     new NavItem('Discord', 'overflow', 4, 0).withHref('https://discord.gg/GQ5kVyU', '_blank').withIconFont('discord'),
     new NavItem('Feedback', 'overflow', 4, 1).withCustomRenderFn(

@@ -1844,10 +1844,6 @@ select[multiple]:focus option:checked {
 .m-1 {
   margin: 0.25rem;
 }
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -1863,6 +1859,10 @@ select[multiple]:focus option:checked {
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 .my-auto {
   margin-top: auto;
@@ -1970,9 +1970,6 @@ select[multiple]:focus option:checked {
 }
 .h-9 {
   height: 2.25rem;
-}
-.h-10 {
-  height: 2.5rem;
 }
 .h-4 {
   height: 1rem;
@@ -2088,9 +2085,6 @@ select[multiple]:focus option:checked {
 }
 .max-w-\[90\%\] {
   max-width: 90%;
-}
-.max-w-\[300px\] {
-  max-width: 300px;
 }
 .max-w-\[420px\] {
   max-width: 420px;
@@ -2356,10 +2350,6 @@ select[multiple]:focus option:checked {
 .p-8 {
   padding: 2rem;
 }
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2375,6 +2365,10 @@ select[multiple]:focus option:checked {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 .py-5 {
   padding-top: 1.25rem;
@@ -2514,9 +2508,6 @@ select[multiple]:focus option:checked {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-.last\:hidden:last-child {
-  display: none;
 }
 .last\:rounded-b:last-child {
   border-bottom-right-radius: 0.25rem;
