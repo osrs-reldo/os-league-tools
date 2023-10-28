@@ -14,11 +14,6 @@ import {
   load as loadCharacterState,
   loadState as loadCharacterLocalState,
 } from '../store/user/character';
-import {
-  INITIAL_STATE as INITIAL_FRAGMENTS_STATE,
-  load as loadFragmentState,
-  loadState as loadFragmentsLocalState,
-} from '../store/fragments/fragments';
 import { updateAccountCache } from '../store/user/account';
 import { createUserIfNeeded, getUser } from '../client/user-data-client';
 import { INITIAL_STATE as INITIAL_TASKS_STATE } from '../store/tasks/constants';
@@ -27,7 +22,6 @@ import { INITIAL_STATE as INITIAL_CHARACTER_STATE } from '../store/user/constant
 import updateTasksVersion from '../store/tasks/updateTasksVersion';
 import updateCharacterVersion from '../store/user/updateCharacterVersion';
 import updateUnlocksVersion from '../store/unlocks/updateUnlocksVersion';
-import updateFragmentsVersion from '../store/fragments/updateFragmentsVersion';
 
 export default function useAccount({ redirectReturnToUrl }) {
   const {
@@ -74,16 +68,10 @@ export default function useAccount({ redirectReturnToUrl }) {
                 ? JSON.parse(res.value[`unlocks_${activeCharacter}`].S)
                 : INITIAL_UNLOCKS_STATE
             );
-            const fragmentState = updateFragmentsVersion(
-              res.value[`fragments_${activeCharacter}`]?.S
-                ? JSON.parse(res.value[`fragments_${activeCharacter}`].S)
-                : INITIAL_FRAGMENTS_STATE
-            );
             dispatch(loadTasksState({ forceOverwrite: true, newState: taskState, skipDbUpdate: true }));
             dispatch(loadSettingsState({ forceOverwrite: true, newState: settingsState, skipDbUpdate: true }));
             dispatch(loadUnlocksState({ forceOverwrite: true, newState: unlocksState, skipDbUpdate: true }));
             dispatch(loadCharacterState({ forceOverwrite: true, newState: characterState, skipDbUpdate: true }));
-            dispatch(loadFragmentState({ forceOverwrite: true, newState: fragmentState, skipDbUpdate: true }));
             dispatch(fetchHiscores(characterState, null, true));
           });
         } else {
@@ -95,7 +83,6 @@ export default function useAccount({ redirectReturnToUrl }) {
                 dispatch(loadSettingsState({ forceOverwrite: true, newState: loadSettingsLocalState() }));
                 dispatch(loadUnlocksState({ forceOverwrite: true, newState: loadUnlocksLocalState() }));
                 dispatch(loadCharacterState({ forceOverwrite: true, newState: loadCharacterLocalState() }));
-                dispatch(loadFragmentState({ forceOverwrite: true, newState: loadFragmentsLocalState() }));
               });
             }
           });

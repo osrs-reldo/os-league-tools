@@ -15,7 +15,7 @@ export default function LeagueCountdown() {
     return () => clearTimeout(timer);
   });
 
-  let text = 'SHATTERED RELICS LEAGUE ';
+  let text = 'TRAILBLAZER LEAGUE RELOADED ';
   if (launchCountdown) {
     text += 'BEGINS IN';
   } else if (endCountdown) {

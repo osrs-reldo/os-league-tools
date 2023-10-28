@@ -9,7 +9,6 @@ import Modal from './Modal';
 import RenameCharacterModal from './RenameCharacterModal';
 import { INITIAL_STATE as INITIAL_TASKS_STATE } from '../store/tasks/constants';
 import { INITIAL_STATE as INITIAL_UNLOCKS_STATE } from '../store/unlocks/constants';
-import { INITIAL_STATE as INITIAL_FRAGMENTS_STATE } from '../store/fragments/fragments';
 
 export default function ManageCharactersModal({ isOpen, setIsOpen }) {
   const characterState = useSelector(state => state.character);
@@ -22,7 +21,6 @@ export default function ManageCharactersModal({ isOpen, setIsOpen }) {
     const rsn = characterState.characters[index];
     const newTaskState = getFromLocalStorage(`${LOCALSTORAGE_KEYS.TASKS}_${rsn}`, INITIAL_TASKS_STATE);
     const newUnlocksState = getFromLocalStorage(`${LOCALSTORAGE_KEYS.UNLOCKS}_${rsn}`, INITIAL_UNLOCKS_STATE);
-    const newFragmentsState = getFromLocalStorage(`${LOCALSTORAGE_KEYS.FRAGMENTS}_${rsn}`, INITIAL_FRAGMENTS_STATE);
     batch(() => {
       dispatch(updateActiveCharacter(index));
       dispatch(fetchHiscores(characterState, characterState.characters[index], true));
@@ -30,7 +28,6 @@ export default function ManageCharactersModal({ isOpen, setIsOpen }) {
     loadNewState(dispatch, {
       tasks: newTaskState,
       unlocks: newUnlocksState,
-      fragments: newFragmentsState,
     });
   };
 

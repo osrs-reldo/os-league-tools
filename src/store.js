@@ -7,7 +7,6 @@ import settingsReducer, { loadState as loadSettingsState } from './store/setting
 import tasksReducer, { loadState as loadTasksState } from './store/tasks/tasks';
 import unlocksReducer, { loadState as loadUnlocksState } from './store/unlocks/unlocks';
 import characterReducer, { loadState as loadCharacterState, selectActiveCharacter } from './store/user/character';
-import fragmentReducer, { loadState as loadFragmentState } from './store/fragments/fragments';
 import accountReducer, { loadState as loadAccountState } from './store/user/account';
 import calculatorsReducer, { loadState as loadCalculatorsState } from './store/calculators/calculators';
 
@@ -17,7 +16,6 @@ const reducer = {
   tasks: tasksReducer,
   unlocks: unlocksReducer,
   character: characterReducer,
-  fragments: fragmentReducer,
   account: accountReducer,
   calculators: calculatorsReducer,
 };
@@ -28,7 +26,6 @@ const preloadedState = {
   tasks: loadTasksState(),
   unlocks: loadUnlocksState(),
   character: loadCharacterState(),
-  fragments: loadFragmentState(),
   account: loadAccountState(),
   calculators: loadCalculatorsState(),
 };
@@ -50,10 +47,6 @@ store.subscribe(
     );
     updateLocalStorage(LOCALSTORAGE_KEYS.CHARACTER, store.getState().character);
     updateLocalStorage(LOCALSTORAGE_KEYS.ACCOUNT, store.getState().account);
-    updateLocalStorage(
-      `${LOCALSTORAGE_KEYS.FRAGMENTS}_${selectActiveCharacter(store.getState())}`,
-      store.getState().fragments
-    );
     updateLocalStorage(LOCALSTORAGE_KEYS.CALCULATORS, store.getState().calculators);
   }, 200)
 );

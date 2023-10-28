@@ -34,11 +34,7 @@ export default function TasksPanel({ readonly, taskState }) {
             Points: {taskStats.points.complete.total} / {taskStats.points.available.total}
           </span>
           <span>
-            Renown: {taskStats.renown.complete.total} / {taskStats.renown.available.total}
-          </span>
-          <span>
-            To-do: {taskStats.tasks.todo.total} tasks ({taskStats.points.todo.total} points /{' '}
-            {taskStats.renown.todo.total} renown)
+            To-do: {taskStats.tasks.todo.total} tasks ({taskStats.points.todo.total} points)
           </span>
           {tier < PASSIVE_RELICS.unlockThresholds.length && (
             <span>{`Next unlock at ${PASSIVE_RELICS.tiers[tier + 1].points} pts (${

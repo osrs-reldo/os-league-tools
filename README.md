@@ -10,7 +10,7 @@ Looking for more info, or have a bug report or suggestion? Check out the [Discor
 
 ## Contributing
 
-New contributors are always welcome. If you're interested in helping develop the site, take a look at the [issue tracker](https://os-league-tools.height.app/shattered-relics) to see what kind of things we are working on, and come by the [Discord](https://discord.gg/GQ5kVyU) to chat about what you'd like to help with.
+New contributors are always welcome. If you're interested in helping develop the site, take a look at the [issue tracker](https://os-league-tools.height.app/trailblazer-reloaded) to see what kind of things we are working on, and come by the [Discord](https://discord.gg/GQ5kVyU) to chat about what you'd like to help with.
 
 ### Code style
 
@@ -48,6 +48,6 @@ Some functionality (hiscores, submitting feedback, anything to do with user data
 
 Data/Images sourced from:
 
--   The official OSRS wiki
--   OSRS Leagues discord
--   Tweeting questions at Mod Ash
+- The official OSRS wiki
+- OSRS Leagues discord
+- Tweeting questions at Mod Ash

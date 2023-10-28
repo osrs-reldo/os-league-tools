@@ -20,15 +20,6 @@ const ALL_TASKS = {
     Master: 15250,
     total: 82400,
   },
-  renown: {
-    Beginner: 61,
-    Easy: 164,
-    Medium: 624,
-    Hard: 981,
-    Elite: 1340,
-    Master: 305,
-    total: 3475,
-  },
 };
 
 export default function calculateTaskStats(taskState) {
@@ -83,20 +74,12 @@ export default function calculateTaskStats(taskState) {
       todo: {},
       available: {},
     },
-    renown: {
-      complete: {},
-      todo: {},
-      available: {},
-    },
   };
   Object.keys(DIFFICULTY).forEach(difficultyKey => {
-    const { label: difficulty, value, renown } = DIFFICULTY[difficultyKey];
+    const { label: difficulty, value } = DIFFICULTY[difficultyKey];
     pointsCount.points.complete[difficulty] = tasksCount.complete[difficulty] * value;
     pointsCount.points.todo[difficulty] = tasksCount.todo[difficulty] * value;
     pointsCount.points.available[difficulty] = tasksCount.available[difficulty] * value;
-    pointsCount.renown.complete[difficulty] = tasksCount.complete[difficulty] * renown;
-    pointsCount.renown.todo[difficulty] = tasksCount.todo[difficulty] * renown;
-    pointsCount.renown.available[difficulty] = tasksCount.available[difficulty] * renown;
   });
 
   return {
@@ -126,20 +109,6 @@ export default function calculateTaskStats(taskState) {
       available: {
         ...pointsCount.points.available,
         total: Object.values(pointsCount.points.available).reduce((a, b) => a + b),
-      },
-    },
-    renown: {
-      complete: {
-        ...pointsCount.renown.complete,
-        total: Object.values(pointsCount.renown.complete).reduce((a, b) => a + b),
-      },
-      todo: {
-        ...pointsCount.renown.todo,
-        total: Object.values(pointsCount.renown.todo).reduce((a, b) => a + b),
-      },
-      available: {
-        ...pointsCount.renown.available,
-        total: Object.values(pointsCount.renown.available).reduce((a, b) => a + b),
       },
     },
   };

@@ -1,7 +1,6 @@
 /* Redux toolkit middleware handles updates immutably, but eslint doesn't know that */
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
-import _ from 'lodash';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorage-client';
 import updateWithUserDataStorage from '../updateWithUserDataStorage';
 import { INITIAL_STATE } from './constants';
@@ -12,20 +11,6 @@ export const unlocksSlice = createSlice({
   name: 'unlocks',
   initialState: INITIAL_STATE,
   reducers: {
-    lockSkill: (state, action) => {
-      state.skills = _.without(state.skills, action.payload.skill);
-    },
-    unlockSkill: (state, action) => {
-      state.skills = [...state.skills, action.payload.skill];
-    },
-    lockBoss: (state, action) => {
-      const { label, isGroupedWith } = action.payload.boss;
-      state.bosses = _.without(state.bosses, label, ...isGroupedWith);
-    },
-    unlockBoss: (state, action) => {
-      const { label, isGroupedWith } = action.payload.boss;
-      state.bosses = [...state.bosses, label, ...isGroupedWith];
-    },
     updateQuest: (state, action) => {
       state.quests = {
         ...state.quests,
@@ -50,31 +35,11 @@ export const unlocksSlice = createSlice({
 });
 
 const {
-  lockSkill: innerLockSkill,
-  unlockSkill: innerUnlockSkill,
-  lockBoss: innerLockBoss,
-  unlockBoss: innerUnlockBoss,
   updateQuest: innerUpdateQuest,
   updateQuest: innerUpdateDiary,
   load: innerLoad,
   reset: innerReset,
 } = unlocksSlice.actions;
-
-export function lockSkill(props) {
-  return updateWithUserDataStorage(innerLockSkill, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
-}
-
-export function unlockSkill(props) {
-  return updateWithUserDataStorage(innerUnlockSkill, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
-}
-
-export function lockBoss(props) {
-  return updateWithUserDataStorage(innerLockBoss, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
-}
-
-export function unlockBoss(props) {
-  return updateWithUserDataStorage(innerUnlockBoss, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
-}
 
 export function updateQuest(props) {
   return updateWithUserDataStorage(innerUpdateQuest, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');

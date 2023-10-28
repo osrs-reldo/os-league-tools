@@ -11,7 +11,6 @@ export default function DeleteCharacterModal({ characterName, characterIndex, is
     dispatch(deleteCharacter(characterIndex));
     deleteFromLocalStorage(`${LOCALSTORAGE_KEYS.TASKS}_${characterName}`);
     deleteFromLocalStorage(`${LOCALSTORAGE_KEYS.UNLOCKS}_${characterName}`);
-    deleteFromLocalStorage(`${LOCALSTORAGE_KEYS.FRAGMENTS}_${characterName}`);
     setIsOpen(false);
   };
 

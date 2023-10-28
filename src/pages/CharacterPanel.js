@@ -67,25 +67,10 @@ export default function CharacterPanel() {
               );
             })}
           </div>
-          <div className='flex flex-col items-center text-sm'>
-            <span className='text-lg text-accent font-semibold'>Renown</span>
-            <span className='text-base text-accent'>{`${taskStats.renown.complete.total} / ${
-              taskStats.renown.available.total
-            } (${((taskStats.renown.complete.total / taskStats.renown.available.total) * 100).toFixed(1)}%)`}</span>
-            {Object.keys(DIFFICULTY).map(difficultyKey => {
-              const { label: difficulty } = DIFFICULTY[difficultyKey];
-              return (
-                <span
-                  key={`${difficulty}-renown`}
-                >{`${difficulty}: ${taskStats.renown.complete[difficulty]} / ${taskStats.renown.available[difficulty]}`}</span>
-              );
-            })}
-          </div>
         </div>
         <Separator />
         <div className='flex w-full flex-wrap justify-around text-center align-middle tracking-wide text-md text-primary gap-3'>
-          <span>{`Relic slots unlocked: ${tier} / 7`}</span>
-          {/* <span>Relic fragments found: 18 / 100</span> */}
+          <span>{`Relics unlocked: ${tier} / 7`}</span>
           {tier < PASSIVE_RELICS.unlockThresholds.length && (
             <span>{`Next unlock at ${PASSIVE_RELICS.tiers[tier + 1].points} pts (${
               PASSIVE_RELICS.tiers[tier + 1].points - taskStats.points.complete.total

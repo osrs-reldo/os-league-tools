@@ -11,7 +11,6 @@ import { PLACEHOLDER_USERNAMES } from './AddCharacterModal';
 import Modal from './Modal';
 import { INITIAL_STATE as INITIAL_TASKS_STATE } from '../store/tasks/constants';
 import { INITIAL_STATE as INITIAL_UNLOCKS_STATE } from '../store/unlocks/constants';
-import { INITIAL_STATE as INITIAL_FRAGMENTS_STATE } from '../store/fragments/fragments';
 import { loadNewState } from '../store/common';
 
 export default function RenameCharacterModal({ characterName, characterIndex, isActiveCharacter, isOpen, setIsOpen }) {
@@ -22,16 +21,10 @@ export default function RenameCharacterModal({ characterName, characterIndex, is
   const updateAndFetchHiscores = () => {
     const taskState = getFromLocalStorage(`${LOCALSTORAGE_KEYS.TASKS}_${characterName}`, INITIAL_TASKS_STATE);
     const unlocksState = getFromLocalStorage(`${LOCALSTORAGE_KEYS.UNLOCKS}_${characterName}`, INITIAL_UNLOCKS_STATE);
-    const fragmentsState = getFromLocalStorage(
-      `${LOCALSTORAGE_KEYS.FRAGMENTS}_${characterName}`,
-      INITIAL_FRAGMENTS_STATE
-    );
     updateLocalStorage(`${LOCALSTORAGE_KEYS.TASKS}_${characterText}`, taskState);
     updateLocalStorage(`${LOCALSTORAGE_KEYS.UNLOCKS}_${characterText}`, unlocksState);
-    updateLocalStorage(`${LOCALSTORAGE_KEYS.FRAGMENTS}_${characterText}`, fragmentsState);
     deleteFromLocalStorage(`${LOCALSTORAGE_KEYS.TASKS}_${characterName}`);
     deleteFromLocalStorage(`${LOCALSTORAGE_KEYS.UNLOCKS}_${characterName}`);
-    deleteFromLocalStorage(`${LOCALSTORAGE_KEYS.FRAGMENTS}_${characterName}`);
 
     batch(() => {
       dispatch(renameCharacter({ index: characterIndex, rsn: characterText }));
@@ -42,7 +35,6 @@ export default function RenameCharacterModal({ characterName, characterIndex, is
       loadNewState(dispatch, {
         tasks: taskState,
         unlocks: unlocksState,
-        fragments: fragmentsState,
       });
     }
     setIsOpen(false);

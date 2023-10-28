@@ -5,7 +5,6 @@ export const LOCALSTORAGE_KEYS = {
   TASKS: 'tasks',
   UNLOCKS: 'unlocks',
   CHARACTER: 'character',
-  FRAGMENTS: 'fragments',
   CALCULATORS: 'calculators',
   ACCOUNT: 'account',
 };

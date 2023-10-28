@@ -7,11 +7,6 @@ import {
 import { load as loadTasksState, reset as resetTasksState } from './tasks/tasks';
 import { load as loadUnlocksState, reset as resetUnlocksState } from './unlocks/unlocks';
 import { load as loadCharacterState, reset as resetCharacterState } from './user/character';
-import {
-  INITIAL_STATE as INITIAL_FRAGMENT_STATE,
-  load as loadFragmentState,
-  reset as resetFragmentState,
-} from './fragments/fragments';
 import { reset as resetFilterState } from './filters';
 import { reset as resetCalculatorsState } from './calculators/calculators';
 import { INITIAL_STATE as INITIAL_TASKS_STATE } from './tasks/constants';
@@ -32,9 +27,6 @@ export function loadNewState(dispatch, newState) {
     if (newState.character) {
       dispatch(loadCharacterState({ forceOverwrite: true, newState: newState.character || INITIAL_CHARACTER_STATE }));
     }
-    if (newState.fragments) {
-      dispatch(loadFragmentState({ forceOverwrite: true, newState: newState.fragments || INITIAL_FRAGMENT_STATE }));
-    }
   });
 }
 
@@ -44,7 +36,6 @@ export function resetState(dispatch, skipDbUpdate) {
     dispatch(resetTasksState({ skipDbUpdate }));
     dispatch(resetUnlocksState({ skipDbUpdate }));
     dispatch(resetCharacterState({ skipDbUpdate }));
-    dispatch(resetFragmentState({ skipDbUpdate }));
     dispatch(resetFilterState({ skipDbUpdate }));
     dispatch(resetCalculatorsState({ skipDbUpdate }));
   });

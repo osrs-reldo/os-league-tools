@@ -11,7 +11,6 @@ import {
   DIARY_LOCATIONS,
   DIARY_DIFFICULTY,
 } from '../data/constants';
-import { ACTIVITIES, SETS, TAGS } from '../data/relics';
 
 const CURRENT_VERSION = 12;
 
@@ -45,19 +44,10 @@ const INITIAL_DIARIES_STATE = {
   skills: null,
 };
 
-const INITIAL_FRAGMENT_STATE = {
-  status: 'all',
-  levels: 'all',
-  activities: mapDataValues(ACTIVITIES),
-  tags: mapDataValues(TAGS),
-  sets: mapDataValues(SETS),
-};
-
 const INITIAL_STATE = {
   version: CURRENT_VERSION,
   tasks: INITIAL_TASK_STATE,
   quests: INITIAL_QUEST_STATE,
-  fragments: INITIAL_FRAGMENT_STATE,
   diaries: INITIAL_DIARIES_STATE,
 };
 
@@ -71,9 +61,6 @@ export const filterSlice = createSlice({
     updateQuestFilter: (state, action) => {
       state.quests[action.payload.field] = action.payload.value;
     },
-    updateFragmentFilter: (state, action) => {
-      state.fragments[action.payload.field] = action.payload.value;
-    },
     updateDiariesFilter: (state, action) => {
       state.diaries[action.payload.field] = action.payload.value;
     },
@@ -82,10 +69,6 @@ export const filterSlice = createSlice({
       tasks: INITIAL_TASK_STATE,
     }),
     resetQuests: state => ({
-      ...state,
-      quests: INITIAL_QUEST_STATE,
-    }),
-    resetFragments: state => ({
       ...state,
       quests: INITIAL_QUEST_STATE,
     }),
@@ -109,11 +92,9 @@ export const loadState = () => {
 export const {
   updateTaskFilter,
   updateQuestFilter,
-  updateFragmentFilter,
   updateDiariesFilter,
   resetTasks,
   resetQuests,
-  resetFragments,
   resetDiaries,
   reset,
 } = filterSlice.actions;

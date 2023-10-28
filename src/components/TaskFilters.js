@@ -12,7 +12,6 @@ import getSkillsPanelData from '../util/getSkillsPanelData';
 
 export default function TaskFilters({ history }) {
   const filterState = useSelector(state => state.filters.tasks);
-  const unlockedSkills = useSelector(state => state.unlocks.skills);
   const dispatch = useDispatch();
 
   return (
@@ -98,12 +97,13 @@ export default function TaskFilters({ history }) {
             checked={filterState.showIncompletePrereqs}
             onClick={e => dispatch(updateTaskFilter({ field: 'showIncompletePrereqs', value: e.target.checked }))}
           />
+          {/* Uncomment if unchained talent is a relic again
           <LabeledCheckbox
             className='text-sm'
             label='Use unchained talent skill boost'
             checked={filterState.isUnchainedTalent}
             onClick={e => dispatch(updateTaskFilter({ field: 'isUnchainedTalent', value: e.target.checked }))}
-          />
+          /> */}
         </div>
         <div className='lg:w-full text-sm flex flex-col mb-2'>
           <SkillsFilter filterState={filterState} />
@@ -123,14 +123,6 @@ export default function TaskFilters({ history }) {
               onClick={() => dispatch(updateTaskFilter({ field: 'skills', value: [] }))}
             >
               none
-            </button>
-            |
-            <button
-              className='inline italic hover:underline ml-1'
-              type='button'
-              onClick={() => dispatch(updateTaskFilter({ field: 'skills', value: unlockedSkills }))}
-            >
-              unlocked
             </button>
           </span>
         </div>

@@ -4,7 +4,6 @@ import { addCharacter, fetchHiscores } from '../store/user/character';
 import Modal from './Modal';
 import { INITIAL_STATE as INITIAL_TASKS_STATE } from '../store/tasks/constants';
 import { INITIAL_STATE as INITIAL_UNLOCKS_STATE } from '../store/unlocks/constants';
-import { INITIAL_STATE as INITIAL_FRAGMENTS_STATE } from '../store/fragments/fragments';
 import { loadNewState } from '../store/common';
 
 export const PLACEHOLDER_USERNAMES = [
@@ -38,7 +37,6 @@ export default function AddCharacterModal({ isOpen, setIsOpen }) {
         loadNewState(dispatch, {
           tasks: INITIAL_TASKS_STATE,
           unlocks: INITIAL_UNLOCKS_STATE,
-          fragments: INITIAL_FRAGMENTS_STATE,
         });
       }
     });

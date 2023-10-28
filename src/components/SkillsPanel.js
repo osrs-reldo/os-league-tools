@@ -1,64 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import ReactTooltip from 'react-tooltip';
-import { lockSkill, unlockSkill } from '../store/unlocks/unlocks';
 import getSkillsPanelData from '../util/getSkillsPanelData';
 import calculateCombatLevel from '../util/calculateCombatLevel';
 import calculateQuestStats from '../util/calculateQuestStats';
-import { DEFAULT_UNLOCKED_SKILLS } from '../store/unlocks/constants';
 import { CLUE_TIERS } from '../data/constants';
 import { numberWithCommas } from '../util/numberFormatters';
 import images from '../assets/images';
 import Separator from './common/Separator';
 
 export default function SkillsPanel() {
-  const [selectedSkill, setSelectedSkill] = useState(null);
-
   const hiscores = useSelector(state => state.character.hiscoresCache.data);
-  const { skills: unlockedSkills, quests } = useSelector(state => state.unlocks);
-  const dispatch = useDispatch();
+  const { quests } = useSelector(state => state.unlocks);
 
   const combatLevelData = hiscores ? calculateCombatLevel(hiscores?.skills) : { rounded: '3' };
   const questPointData = calculateQuestStats(quests);
-
-  const renderStatDetailsPanel = () =>
-    selectedSkill ? (
-      <>
-        <p className='heading-accent-md'>{selectedSkill.label}</p>
-        {hiscores && unlockedSkills.includes(selectedSkill.label) && (
-          <>
-            <p className='italic text-sm'>
-              Experience: {numberWithCommas(hiscores?.skills[selectedSkill.label.toLowerCase()].xp)}
-            </p>
-            <p className='italic text-sm'>
-              Rank: {numberWithCommas(hiscores?.skills[selectedSkill.label.toLowerCase()].rank)}
-            </p>
-          </>
-        )}
-        {!DEFAULT_UNLOCKED_SKILLS.includes(selectedSkill.label) && (
-          <div className='mt-4'>
-            {!unlockedSkills.includes(selectedSkill.label) && (
-              <p className='italic text-sm'>Cost: {selectedSkill.unlockCost}</p>
-            )}
-            <button
-              className='button-outline px-1 my-1 w-full'
-              type='button'
-              onClick={() =>
-                unlockedSkills.includes(selectedSkill.label)
-                  ? dispatch(lockSkill({ skill: selectedSkill.label }))
-                  : dispatch(unlockSkill({ skill: selectedSkill.label }))
-              }
-            >
-              {unlockedSkills.includes(selectedSkill.label)
-                ? `Re-lock ${selectedSkill.label}`
-                : `Unlock ${selectedSkill.label}`}
-            </button>
-          </div>
-        )}
-      </>
-    ) : (
-      <span className='italic text-sm'>Click on a skill to lock/unlock it.</span>
-    );
 
   return (
     <div>
@@ -96,32 +52,15 @@ export default function SkillsPanel() {
 
       <div className='grid grid-cols-3 gap-px w-fit bg-subdued'>
         {Object.values(getSkillsPanelData()).map(data => (
-          <SkillTile
-            key={data.label}
-            skillData={data}
-            setSelectedSkill={setSelectedSkill}
-            unlockedSkills={unlockedSkills}
-            level={hiscores?.skills[data.label.toLowerCase()]?.level}
-          />
+          <SkillTile key={data.label} skillData={data} level={hiscores?.skills[data.label.toLowerCase()]?.level} />
         ))}
       </div>
-      <div className='w-full px-1'>{renderStatDetailsPanel()}</div>
     </div>
   );
 }
 
-function SkillTile({ skillData, selectedSkill, setSelectedSkill, unlockedSkills, level = 1 }) {
+function SkillTile({ skillData, level = 1 }) {
   const skillName = skillData.label;
-  const isSkillUnlocked = unlockedSkills.includes(skillData.label);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    if (skillName !== 'Hitpoints' && level > 1 && !isSkillUnlocked) {
-      dispatch(unlockSkill({ skill: skillName }));
-    } else if (skillName === 'Hitpoints' && level > 10 && !isSkillUnlocked) {
-      dispatch(unlockSkill({ skill: skillName }));
-    }
-  }, [level]);
 
   if (skillName === 'Overall') {
     return (
@@ -134,25 +73,12 @@ function SkillTile({ skillData, selectedSkill, setSelectedSkill, unlockedSkills,
 
   return (
     <>
-      <div
-        className={`p-1 bg-hover cursor-pointer bg-primary ${selectedSkill === skillName && 'bg-secondary'}`}
-        key={skillData.label}
-        onClick={() => setSelectedSkill(skillData)}
-        data-tip
-        data-for={skillName}
-      >
+      <div className='p-1 bg-primary' key={skillData.label} data-tip data-for={skillName}>
         <div className='flex items-center'>
           <img src={skillData.icon} alt={skillName} className='inline mx-1 w-4' />
-          {isSkillUnlocked ? (
-            <span className='text-center grow mr-1'>
-              {level} / {level}
-            </span>
-          ) : (
-            <span className='text-center grow text-sm text-error'>
-              <span className='icon-outline text-sm mr-1'>lock</span>
-              {skillData.unlockCost}
-            </span>
-          )}
+          <span className='text-center grow mr-1'>
+            {level} / {level}
+          </span>
         </div>
       </div>
       <ReactTooltip id={skillName}>{skillName}</ReactTooltip>
