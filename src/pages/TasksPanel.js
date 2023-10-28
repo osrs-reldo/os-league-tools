@@ -8,6 +8,7 @@ import TaskTable from '../components/TaskTable';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import { PASSIVE_RELICS } from '../data/constants';
 import useTrackerHistory from '../hooks/useTrackerHistory';
+import Banner from '../components/common/Banner';
 
 export default function TasksPanel({ readonly, taskState }) {
   const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.LESS_OR_EQ);
@@ -19,6 +20,11 @@ export default function TasksPanel({ readonly, taskState }) {
   return (
     <div className='h-full'>
       <div className='mb-3'>
+        <Banner className='mb-4 text-center'>
+          <p className='heading-accent-md'>⚠️ UNDER CONSTRUCTION! ⚠️</p>
+          This task list is not accurate for the new league. It will be updated when jagex releases the official list.
+          Thanks for your patience!
+        </Banner>
         <div className='shadow-subdued mb-3'>
           <ThemedProgressBar
             curValue={taskStats.points.complete.total}
