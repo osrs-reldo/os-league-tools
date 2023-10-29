@@ -1,9 +1,10 @@
 /* eslint-disable global-require */
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: 'class',
   theme: {
-    themeVariants: ['tl-dark', 'tb-dark', 'sl-dark', 'mono-dark', 'tl-light', 'tb-light', 'sl-light', 'mono-light'],
     extend: {
       colors: {
         'tl-lime': '#a4ce27',
@@ -34,6 +35,11 @@ module.exports = {
     require('@tailwindcss/forms')({
       strategy: 'class',
     }),
-    require('tailwindcss-multi-theme'),
+    plugin(({ addVariant }) => {
+      const themes = ['tl-dark', 'tb-dark', 'sl-dark', 'mono-dark', 'tl-light', 'tb-light', 'sl-light', 'mono-light'];
+      themes.forEach(theme => {
+        addVariant(theme, `.theme-${theme} &`);
+      });
+    }),
   ],
 };
