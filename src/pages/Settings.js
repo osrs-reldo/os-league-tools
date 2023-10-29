@@ -35,12 +35,12 @@ export default function Settings() {
               </div>
               <div>
                 <span className='heading-block-md small-caps my-2'>Mode</span>
-                <div className='ml-2 mb-4 flex flex-row gap-4'>
+                <div className='ml-2 mb-4 flex flex-row flex-wrap gap-4'>
                   <ModeSelectCard label='Dark' mode='dark' />
                   <ModeSelectCard label='Light' mode='light' />
                 </div>
                 <span className='heading-block-md small-caps my-2'>Theme</span>
-                <div className='ml-2 flex flex-row gap-4'>
+                <div className='ml-2 flex flex-row flex-wrap gap-4'>
                   <ThemeSelectCard label='Twisted' theme='tl' />
                   <ThemeSelectCard label='Trailblazer' theme='tb' />
                   <ThemeSelectCard label='Shattered' theme='sl' />
