@@ -17,27 +17,34 @@ import Faq from './pages/Faq';
 import ViewCharacter from './pages/ViewCharacter';
 
 const history = createBrowserHistory();
-const trackingId = process.env.REACT_APP_GA_MID || '';
-ReactGA.initialize(trackingId, {
-  gaOptions: {
-    siteSpeedSampleRate: 100,
-  },
-});
-history.listen(() => {
-  ReactGA.send({
-    hitType: 'pageview',
-    page: window.location.pathname + window.location.search,
-    title: window.location.pathname + window.location.search,
-  });
-});
+const trackingId = process.env.REACT_APP_GA_MID;
 
-export default function App() {
-  useEffect(() => {
+if (trackingId) {
+  ReactGA.initialize(trackingId, {
+    gaOptions: {
+      siteSpeedSampleRate: 100,
+    },
+  });
+}
+history.listen(() => {
+  if (trackingId) {
     ReactGA.send({
       hitType: 'pageview',
       page: window.location.pathname + window.location.search,
       title: window.location.pathname + window.location.search,
     });
+  }
+});
+
+export default function App() {
+  useEffect(() => {
+    if (trackingId) {
+      ReactGA.send({
+        hitType: 'pageview',
+        page: window.location.pathname + window.location.search,
+        title: window.location.pathname + window.location.search,
+      });
+    }
   }, []);
 
   return (

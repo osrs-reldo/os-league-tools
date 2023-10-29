@@ -22,8 +22,11 @@
     @apply bg-gray-200 dark:bg-zinc-750;
   }
   .bg-accent {
-    @apply tl-light:bg-tl-sage tb-light:bg-tb-brown sl-light:bg-sl-teal mono-light:bg-mono-white;
-    @apply tl-dark:bg-tl-lime tb-dark:bg-tb-sand sl-dark:bg-sl-ecto mono-dark:bg-mono-dark;
+    @apply tl-light:bg-tl-sage tl-dark:bg-tl-lime;
+    @apply tb-light:bg-tb-brown tb-dark:bg-tb-sand;
+    @apply sl-light:bg-sl-teal sl-dark:bg-sl-ecto;
+    @apply tr-light:bg-tr-umber tr-dark:bg-tr-orange;
+    @apply mono-light:bg-mono-white mono-dark:bg-mono-dark;
   }
   .bg-subdued {
     @apply bg-gray-300 dark:bg-zinc-500;
@@ -50,8 +53,11 @@
     @apply text-gray-700 dark:text-zinc-400;
   }
   .text-accent {
-    @apply tl-light:text-tl-sage tb-light:text-tb-brown sl-light:text-sl-teal mono-light:text-mono-white;
-    @apply tl-dark:text-tl-lime tb-dark:text-tb-sand sl-dark:text-sl-ecto mono-dark:text-mono-dark;
+    @apply tl-light:text-tl-sage tl-dark:text-tl-lime;
+    @apply tb-light:text-tb-brown tb-dark:text-tb-sand;
+    @apply sl-light:text-sl-teal sl-dark:text-sl-ecto;
+    @apply tr-light:text-tr-umber tr-dark:text-tr-orange;
+    @apply mono-light:text-mono-white mono-dark:text-mono-dark;
   }
   .text-success {
     @apply text-green-600 dark:text-green-500;
@@ -69,8 +75,11 @@
     @apply border-gray-100 dark:border-zinc-700;
   }
   .border-accent {
-    @apply tl-light:border-tl-sage tb-light:border-tb-brown sl-light:border-sl-teal mono-light:border-mono-white;
-    @apply tl-dark:border-tl-lime tb-dark:border-tb-sand sl-dark:border-sl-ecto mono-dark:border-mono-dark;
+    @apply tl-light:border-tl-sage tl-dark:border-tl-lime;
+    @apply tb-light:border-tb-brown tb-dark:border-tb-sand;
+    @apply sl-light:border-sl-teal sl-dark:border-sl-ecto;
+    @apply tr-light:border-tr-umber tr-dark:border-tr-orange;
+    @apply mono-light:border-mono-white mono-dark:border-mono-dark;
   }
   .border-subdued {
     @apply border-gray-300 dark:border-zinc-500;
@@ -85,17 +94,24 @@
     @apply shadow-black/10 dark:shadow-black/50;
   }
   .ring-accent {
-    @apply tl-light:ring-tl-sage tb-light:ring-tb-brown sl-light:ring-sl-teal mono-light:ring-mono-white;
-    @apply tl-dark:ring-tl-lime tb-dark:ring-tb-sand sl-dark:ring-sl-ecto mono-dark:ring-mono-dark;
+    @apply tl-light:ring-tl-sage tl-dark:ring-tl-lime;
+    @apply tb-light:ring-tb-brown tb-dark:ring-tb-sand;
+    @apply sl-light:ring-sl-teal sl-dark:ring-sl-ecto;
+    @apply tr-light:ring-tr-umber tr-dark:ring-tr-orange;
+    @apply mono-light:ring-mono-white mono-dark:ring-mono-dark;
   }
   .ring-error {
     @apply ring-red-600 dark:ring-red-500;
   }
   .form-accent {
-    @apply tl-light:accent-tl-sage tb-light:accent-tb-brown sl-light:accent-sl-teal mono-light:accent-mono-white;
-    @apply tl-dark:accent-tl-lime tb-dark:accent-tb-sand sl-dark:accent-sl-ecto mono-dark:accent-mono-dark;
+    @apply tl-light:accent-tl-sage tl-dark:accent-tl-lime;
+    @apply tb-light:accent-tb-brown tb-dark:accent-tb-sand;
+    @apply sl-light:accent-sl-teal sl-dark:accent-sl-ecto;
+    @apply tr-light:accent-tr-umber tr-dark:accent-tr-orange;
+    @apply mono-light:accent-mono-white mono-dark:accent-mono-dark;
   }
   /* Compatibility classes for applying text colors to svg images */
+  /* Generate with https://isotropic.co/tool/hex-color-to-css-filter */
   .dark-mode-img-compat {
     filter: invert(100%) sepia(15%) saturate(2475%) hue-rotate(180deg) brightness(102%) contrast(81%);
   }
@@ -117,6 +133,12 @@
   .sl-teal-img-compat {
     filter: invert(24%) sepia(88%) saturate(6568%) hue-rotate(170deg) brightness(100%) contrast(103%);
   }
+  .tr-orange-img-compat {
+    filter: invert(53%) sepia(19%) saturate(2730%) hue-rotate(346deg) brightness(90%) contrast(85%);
+  }
+  .tr-umber-img-compat {
+    filter: invert(30%) sepia(53%) saturate(1885%) hue-rotate(351deg) brightness(93%) contrast(86%);
+  }
   .mono-dark-img-compat {
     filter: invert(88%) sepia(2%) saturate(93%) hue-rotate(171deg) brightness(108%) contrast(105%);
   }
@@ -127,8 +149,11 @@
     @apply dark:dark-mode-img-compat;
   }
   .img-accent {
-    @apply tl-light:tl-sage-img-compat tb-light:tb-brown-img-compat sl-light:sl-teal-img-compat mono-light:mono-white-img-compat;
-    @apply tl-dark:tl-lime-img-compat tb-dark:tb-sand-img-compat sl-dark:sl-ecto-img-compat mono-dark:mono-dark-img-compat;
+    @apply tl-light:tl-sage-img-compat tl-dark:tl-lime-img-compat;
+    @apply tb-light:tb-brown-img-compat tb-dark:tb-sand-img-compat;
+    @apply sl-light:sl-teal-img-compat sl-dark:sl-ecto-img-compat;
+    @apply tr-light:tr-umber-img-compat tr-dark:tr-orange-img-compat;
+    @apply mono-light:mono-white-img-compat mono-dark:mono-dark-img-compat;
   }
   /* TYPOGRAPHY */
   .small-caps {
@@ -277,11 +302,11 @@
   }
   select[multiple]:focus option:checked {
     /*
-            css hack to override browser default color for selected/focused multi-select
-            options. background color is set with !important so it can't be directly overriden
-            with another color, but setting it to an image background (in this case a solid
-            color gradient) will do the trick. doesn't seem to work on safari though.
-         */
+      css hack to override browser default color for selected/focused multi-select
+      options. background color is set with !important so it can't be directly overriden
+      with another color, but setting it to an image background (in this case a solid
+      color gradient) will do the trick. doesn't seem to work on safari though.
+    */
     background: #71717a linear-gradient(0deg, #71717a 0%, #71717a 100%);
   }
   /* TABLES */

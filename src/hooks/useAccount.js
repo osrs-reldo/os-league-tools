@@ -2,11 +2,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector, batch } from 'react-redux';
 import { resetState } from '../store/common';
-import {
-  INITIAL_STATE as INITIAL_SETTINGS_STATE,
-  load as loadSettingsState,
-  loadState as loadSettingsLocalState,
-} from '../store/settings';
+import { load as loadSettingsState, loadState as loadSettingsLocalState } from '../store/settings/settings';
 import { load as loadTasksState, loadState as loadTasksLocalState } from '../store/tasks/tasks';
 import { load as loadUnlocksState, loadState as loadUnlocksLocalState } from '../store/unlocks/unlocks';
 import {
@@ -18,7 +14,7 @@ import { updateAccountCache } from '../store/user/account';
 import { createUserIfNeeded, getUser } from '../client/user-data-client';
 import { INITIAL_STATE as INITIAL_TASKS_STATE } from '../store/tasks/constants';
 import { INITIAL_STATE as INITIAL_UNLOCKS_STATE } from '../store/unlocks/constants';
-import { INITIAL_STATE as INITIAL_CHARACTER_STATE } from '../store/user/constants';
+import { INITIAL_STATE as INITIAL_CHARACTER_STATE , INITIAL_STATE as INITIAL_SETTINGS_STATE } from '../store/user/constants';
 import updateTasksVersion from '../store/tasks/updateTasksVersion';
 import updateCharacterVersion from '../store/user/updateCharacterVersion';
 import updateUnlocksVersion from '../store/unlocks/updateUnlocksVersion';

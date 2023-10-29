@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch, batch } from 'react-redux';
-import { update } from '../store/settings';
+import { update } from '../store/settings/settings';
 import LabeledCheckbox from '../components/common/LabeledCheckbox';
 import TabbedCard from '../components/common/TabbedCard';
 import PageWrapper from '../components/PageWrapper';
@@ -34,16 +34,18 @@ export default function Settings() {
                 </div>
               </div>
               <div>
+                <span className='heading-block-md small-caps my-2'>Mode</span>
+                <div className='ml-2 mb-4 flex flex-row gap-4'>
+                  <ModeSelectCard label='Dark' mode='dark' />
+                  <ModeSelectCard label='Light' mode='light' />
+                </div>
                 <span className='heading-block-md small-caps my-2'>Theme</span>
-                <div className='ml-2 grid grid-cols-4 gap-1'>
-                  <ThemeSelectCard label='Twisted Dusk' theme='tl-dark' />
-                  <ThemeSelectCard label='Malevolent Trailblazer' theme='tb-dark' />
-                  <ThemeSelectCard label='Shattered Shadows' theme='sl-dark' />
-                  <ThemeSelectCard label='Mono Dark' theme='mono-dark' />
-                  <ThemeSelectCard label='Twisted Dawn' theme='tl-light' />
-                  <ThemeSelectCard label='Benevolent Trailblazer' theme='tb-light' />
-                  <ThemeSelectCard label='Shattered Lights' theme='sl-light' />
-                  <ThemeSelectCard label='Mono Bright' theme='mono-light' />
+                <div className='ml-2 flex flex-row gap-4'>
+                  <ThemeSelectCard label='Twisted' theme='tl' />
+                  <ThemeSelectCard label='Trailblazer' theme='tb' />
+                  <ThemeSelectCard label='Shattered' theme='sl' />
+                  <ThemeSelectCard label='Reloaded' theme='tr' />
+                  <ThemeSelectCard label='Mono' theme='mono' />
                 </div>
               </div>
             </div>
@@ -54,24 +56,53 @@ export default function Settings() {
   );
 }
 
-function ThemeSelectCard({ label, theme }) {
+function ModeSelectCard({ label, mode }) {
   const activeTheme = useSelector(state => state.settings.theme);
+  const activeMode = useSelector(state => state.settings.mode);
   const dispatch = useDispatch();
 
-  const selected = activeTheme === theme;
+  const themeMode = `${activeTheme.split('-')[0]}-${mode}`;
+  const selected = activeMode === mode;
   const selectedStyle = selected ? 'border-x-2 border-accent bg-secondary-alt' : 'cursor-pointer bg-hover';
   return (
     <div
       className={`rounded p-2 w-[100px] min-w-[100px] ${selectedStyle}`}
       onClick={() =>
         batch(() => {
-          dispatch(update({ field: 'theme', value: theme }));
-          dispatch(update({ field: 'mode', value: theme.split('-')[1] }));
+          dispatch(update({ field: 'theme', value: themeMode }));
+          dispatch(update({ field: 'mode', value: mode }));
         })
       }
     >
-      <img className='h-9 w-9 mx-auto' src={images[`icon-${theme}.png`]} alt='' />
-      <span className={`text-center heading-block-sm small-caps force-wrap ${selected && 'text-accent'}`}>{label}</span>
+      <img className='h-9 w-9 mx-auto' src={images[`icon-blank-${mode}.png`]} alt='' />
+      <span className={`text-center heading-block-sm pt-2 small-caps force-wrap ${selected && 'text-accent'}`}>
+        {label}
+      </span>
+    </div>
+  );
+}
+
+function ThemeSelectCard({ label, theme }) {
+  const activeTheme = useSelector(state => state.settings.theme);
+  const activeMode = useSelector(state => state.settings.mode);
+  const dispatch = useDispatch();
+
+  const themeMode = `${theme}-${activeMode}`;
+  const selected = activeTheme === themeMode;
+  const selectedStyle = selected ? 'border-x-2 border-accent bg-secondary-alt' : 'cursor-pointer bg-hover';
+  return (
+    <div
+      className={`rounded p-2 my-auto w-[100px] min-w-[100px] ${selectedStyle}`}
+      onClick={() =>
+        batch(() => {
+          dispatch(update({ field: 'theme', value: themeMode }));
+        })
+      }
+    >
+      <img className='h-9 w-9 mx-auto' src={images[`icon-${theme}-split.png`]} alt='' />
+      <span className={`text-center heading-block-sm pt-2 small-caps force-wrap ${selected && 'text-accent'}`}>
+        {label}
+      </span>
     </div>
   );
 }

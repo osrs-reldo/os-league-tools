@@ -1,9 +1,5 @@
 import { batch } from 'react-redux';
-import {
-  INITIAL_STATE as INITIAL_SETTINGS_STATE,
-  load as loadSettingsState,
-  reset as resetSettingsState,
-} from './settings';
+import { load as loadSettingsState, reset as resetSettingsState } from './settings/settings';
 import { load as loadTasksState, reset as resetTasksState } from './tasks/tasks';
 import { load as loadUnlocksState, reset as resetUnlocksState } from './unlocks/unlocks';
 import { load as loadCharacterState, reset as resetCharacterState } from './user/character';
@@ -12,6 +8,7 @@ import { reset as resetCalculatorsState } from './calculators/calculators';
 import { INITIAL_STATE as INITIAL_TASKS_STATE } from './tasks/constants';
 import { INITIAL_STATE as INITIAL_UNLOCKS_STATE } from './unlocks/constants';
 import { INITIAL_STATE as INITIAL_CHARACTER_STATE } from './user/constants';
+import { INITIAL_STATE as INITIAL_SETTINGS_STATE } from './settings/constants';
 
 export function loadNewState(dispatch, newState) {
   batch(() => {

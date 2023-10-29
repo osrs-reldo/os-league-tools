@@ -3,7 +3,7 @@ import throttle from 'lodash/throttle';
 import thunk from 'redux-thunk';
 import { updateLocalStorage, LOCALSTORAGE_KEYS } from './client/localstorage-client';
 import filterReducer, { loadState as loadFilterState } from './store/filters';
-import settingsReducer, { loadState as loadSettingsState } from './store/settings';
+import settingsReducer, { loadState as loadSettingsState } from './store/settings/settings';
 import tasksReducer, { loadState as loadTasksState } from './store/tasks/tasks';
 import unlocksReducer, { loadState as loadUnlocksState } from './store/unlocks/unlocks';
 import characterReducer, { loadState as loadCharacterState, selectActiveCharacter } from './store/user/character';

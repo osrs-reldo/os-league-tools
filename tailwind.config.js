@@ -13,6 +13,8 @@ module.exports = {
         'tb-brown': '#634228',
         'sl-ecto': '#13d591',
         'sl-teal': '#008076',
+        'tr-orange': '#dc8B36',
+        'tr-umber': '#b44a1e',
         'mono-dark': '#f9fafb',
         'mono-white': '#374151',
         gray: {
@@ -36,7 +38,18 @@ module.exports = {
       strategy: 'class',
     }),
     plugin(({ addVariant }) => {
-      const themes = ['tl-dark', 'tb-dark', 'sl-dark', 'mono-dark', 'tl-light', 'tb-light', 'sl-light', 'mono-light'];
+      const themes = [
+        'tl-dark',
+        'tb-dark',
+        'sl-dark',
+        'tr-dark',
+        'mono-dark',
+        'tl-light',
+        'tb-light',
+        'tr-light',
+        'sl-light',
+        'mono-light',
+      ];
       themes.forEach(theme => {
         addVariant(theme, `.theme-${theme} &`);
       });
