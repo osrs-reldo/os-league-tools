@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import { Auth0Provider } from '@auth0/auth0-react';
 import './styles/compiled.css';
 import { Provider } from 'react-redux';
@@ -17,7 +17,7 @@ import Faq from './pages/Faq';
 import ViewCharacter from './pages/ViewCharacter';
 
 const history = createBrowserHistory();
-const trackingId = process.env.REACT_APP_GA_TRACKING || '';
+const trackingId = process.env.REACT_APP_GA_MID || '';
 ReactGA.initialize(trackingId, {
   gaOptions: {
     siteSpeedSampleRate: 100,

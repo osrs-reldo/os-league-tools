@@ -12,7 +12,7 @@ jobs:
                   npm install
                   npm run build
               env:
-                  REACT_APP_GA_TRACKING: ${{ secrets.REACT_APP_GA_TRACKING }}
+                  REACT_APP_GA_MID: ${{ secrets.REACT_APP_GA_MID }}
 
             - name: Deploy to GitHub Pages
               if: success()
