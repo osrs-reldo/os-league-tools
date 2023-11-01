@@ -2424,9 +2424,6 @@ select[multiple]:focus option:checked {
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
 .flex-row {
   flex-direction: row;
 }
@@ -2633,9 +2630,6 @@ select[multiple]:focus option:checked {
 }
 .pb-1 {
   padding-bottom: 0.25rem;
-}
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
 .pb-3 {
   padding-bottom: 0.75rem;

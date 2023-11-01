@@ -711,6 +711,11 @@ export const QUEST_SERIES = {
     label: 'Troll',
     icon: images['task-bossing.png'],
   },
+  TWISTED_TALES: {
+    id: 18,
+    label: 'Twisted Tales',
+    icon: images['task-xeric.png'],
+  },
 };
 
 export const SKILL_UNLOCK = {
