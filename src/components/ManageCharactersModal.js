@@ -10,9 +10,9 @@ import RenameCharacterModal from './RenameCharacterModal';
 import { INITIAL_STATE as INITIAL_TASKS_STATE } from '../store/tasks/constants';
 import { INITIAL_STATE as INITIAL_UNLOCKS_STATE } from '../store/unlocks/constants';
 
-export default function ManageCharactersModal({ isOpen, setIsOpen }) {
+export default function ManageCharactersModal({ isOpen, setIsOpen, initialAddModalOpen }) {
   const characterState = useSelector(state => state.character);
-  const [addModalOpen, setAddModalOpen] = useState(false);
+  const [addModalOpen, setAddModalOpen] = useState(initialAddModalOpen ?? false);
   const [renamingCharacterIndex, setRenamingCharacterIndex] = useState(null);
   const [deletingCharacterIndex, setDeletingCharacterIndex] = useState(null);
   const dispatch = useDispatch();

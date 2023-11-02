@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export default function Select({ className, onSelect, options = [], value, ...rest }) {
+export default function Select({ className, onSelect, options = [], value, disabled, ...rest }) {
   const [selected, setSelected] = useState(options.find(option => option.value === value) || options[0]);
   const [selectOpen, setSelectOpen] = useState(false);
 
@@ -23,10 +23,10 @@ export default function Select({ className, onSelect, options = [], value, ...re
   return (
     <div className={selectClassnames} {...rest}>
       <div
-        className={`flex cursor-pointer items-center justify-between button-outline px-4 py-2 ${
-          selectOpen && 'rounded-b-none'
-        }`}
-        onClick={toggleDropdown}
+        className={`flex ${disabled ? '' : 'cursor-pointer'} items-center justify-between button-outline${
+          disabled ? '-disabled' : ''
+        } px-4 py-2 ${selectOpen && 'rounded-b-none'}`}
+        onClick={disabled ? undefined : toggleDropdown}
       >
         {selected.icon && <img className='mr-2' src={selected.icon} alt={selected.label} />}
         <p className='grow mr-2'>{selected.label}</p>

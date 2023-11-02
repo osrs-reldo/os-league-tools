@@ -1397,21 +1397,6 @@ video {
   font-weight: 500;
   line-height: 1.25;
 }
-.heading-primary-md {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-:is(.dark .heading-primary-md) {
-  --tw-text-opacity: 1;
-  color: rgb(244 244 245 / var(--tw-text-opacity));
-}
-.heading-primary-md {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-}
 .theme-tl-dark .heading-accent-md {
   --tw-text-opacity: 1;
   color: rgb(164 206 39 / var(--tw-text-opacity));
@@ -2094,6 +2079,9 @@ select[multiple]:focus option:checked {
 .m-2 {
   margin: 0.5rem;
 }
+.m-3 {
+  margin: 0.75rem;
+}
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -2208,6 +2196,9 @@ select[multiple]:focus option:checked {
 .hidden {
   display: none;
 }
+.h-12 {
+  height: 3rem;
+}
 .h-24 {
   height: 6rem;
 }
@@ -2228,9 +2219,6 @@ select[multiple]:focus option:checked {
 }
 .h-5 {
   height: 1.25rem;
-}
-.h-6 {
-  height: 1.5rem;
 }
 .h-8 {
   height: 2rem;
@@ -2277,6 +2265,9 @@ select[multiple]:focus option:checked {
 }
 .w-11\/12 {
   width: 91.666667%;
+}
+.w-12 {
+  width: 3rem;
 }
 .w-24 {
   width: 6rem;
@@ -2423,6 +2414,9 @@ select[multiple]:focus option:checked {
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -2677,6 +2671,10 @@ select[multiple]:focus option:checked {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .text-base {
   font-size: 1rem;

@@ -6,7 +6,6 @@ import TasksPanel from './TasksPanel';
 import useQueryString from '../hooks/useQueryString';
 import QuestsPanel from './QuestsPanel';
 import images from '../assets/images';
-import RelicsPanel from './RelicsPanel';
 import DiariesPanel from './DiariesPanel';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 
@@ -23,13 +22,6 @@ export default function Tracker() {
           icon={images['tab-character.png']}
         >
           <CharacterPanel />
-        </TabbedCard.Tab>
-        <TabbedCard.Tab
-          id='relics'
-          label={isXsOrSmallerViewport ? undefined : 'Relics'}
-          icon={images['tab-relics.png']}
-        >
-          <RelicsPanel />
         </TabbedCard.Tab>
         <TabbedCard.Tab id='tasks' label={isXsOrSmallerViewport ? undefined : 'Tasks'} icon={images['tab-tasks.png']}>
           <TasksPanel />
