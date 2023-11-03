@@ -14,6 +14,7 @@ const PROGRESS_BAR = {
   tl: 'linear-gradient(to right, #649044, #a4ce27)',
   tb: 'linear-gradient(to right, #634228, #e5d993)',
   sl: 'linear-gradient(to right, #008076, #21eca5)',
+  tr: 'linear-gradient(to right, #dc8B36, #edad69)',
   mono: 'linear-gradient(to right, #f9fafb, #374151)',
 };
 

@@ -6,14 +6,14 @@ import { ThemedProgressBar } from '../components/ThemeProvider';
 import { DIFFICULTY, PASSIVE_RELICS } from '../data/constants';
 import images from '../assets/images';
 import ManageCharactersModal from '../components/ManageCharactersModal';
-import RegionMap from '../components/RegionMap';
-import Select from '../components/common/Select';
+import CharacterRegionsSection from '../components/CharacterRegionsSection';
 
 export default function CharacterPanel() {
   const [isCharacterModalOpen, setCharacterModalOpen] = useState(false);
   const characterState = useSelector(state => state.character);
   const username = characterState.characters[characterState.activeCharacter];
   const { taskStats, tier } = useSelector(state => state.tasks);
+  const unlockState = useSelector(state => state.unlocks);
 
   if (!username) {
     return (
@@ -58,7 +58,7 @@ export default function CharacterPanel() {
         </div>
         {/* CENTER COLUMN */}
         <div className='lg:basis-1/2 basis-full flex flex-col items-center gap-3 order-1 lg:order-3 shrink'>
-          <RegionsSection />
+          <CharacterRegionsSection taskStats={taskStats} unlockedRegions={unlockState.regions} />
           <RelicsSection tier={tier} taskStats={taskStats} />
         </div>
         {/* RIGHT COLUMN */}
@@ -100,30 +100,6 @@ function TrophySummary() {
       <span className='text-sm italic'>3250 points until dragon trophy</span>
       <img src={images['trophy-rune.png']} alt='' style={{ maxHeight: '200px' }} />
     </div>
-  );
-}
-
-// TODO hardcoded placeholder
-function RegionsSection() {
-  return (
-    <>
-      <span className='text-lg text-accent font-semibold border-b border-accent w-full'>Regions</span>
-      <div className='flex w-full flex-wrap justify-around text-center align-middle tracking-wide text-md text-primary gap-3'>
-        <span>Regions unlocked: 0 / 3</span>
-        <span>Next unlock at 50 tasks (50 remaining)</span>
-      </div>
-      <div className='w-11/12'>
-        <ThemedProgressBar curValue={0} maxValue={300} steps={[0, 50, 150, 300]} />
-      </div>
-      <div className='flex flex-row justify-around w-full'>
-        <Select options={[{ label: 'Kandarin', value: 'none' }]} value='none' />
-        <Select options={[{ label: 'Unlock...', value: 'none' }]} value='none' disabled />
-        <Select options={[{ label: 'Unlock...', value: 'none' }]} value='none' disabled />
-      </div>
-      <div className='flex flex-row flex-wrap w-11/12 gap-2'>
-        <RegionMap />
-      </div>
-    </>
   );
 }
 
