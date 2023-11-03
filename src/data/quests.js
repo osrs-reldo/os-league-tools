@@ -2443,6 +2443,73 @@ const quests = [
     skillReqs: [{ skill: 'Runecraft', level: 10 }],
     wiki: 'https://oldschool.runescape.wiki/w/Temple_of_the_Eye',
   },
+  {
+    id: '90007', // TODO need official ID
+    label: 'Sleeping Giants',
+    difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
+    length: QUEST_LENGTH.SHORT,
+    type: 'quest',
+    prereqs: [],
+    skillReqs: [{ skill: 'Smithing', level: 15 }],
+    wiki: 'https://oldschool.runescape.wiki/w/Sleeping_Giants',
+  },
+  {
+    id: '90008', // TODO need official ID
+    label: 'The Garden of Death',
+    difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
+    length: QUEST_LENGTH.SHORT,
+    series: QUEST_SERIES.TWISTED_TALES,
+    type: 'quest',
+    prereqs: [],
+    skillReqs: [{ skill: 'Farming', level: 20 }],
+    wiki: 'https://oldschool.runescape.wiki/w/The_Garden_of_Death',
+  },
+  {
+    id: '90009', // TODO need official ID
+    label: 'Desert Treasure II - The Fallen Empire',
+    difficulty: QUEST_DIFFICULTY.GRANDMASTER,
+    length: QUEST_LENGTH.VERY_LONG,
+    series: QUEST_SERIES.MAHJARRAT,
+    type: 'quest',
+    prereqs: ['345', '90002', '356', '90006', '90008', '2874', '90011'],
+    skillReqs: [
+      { skill: 'Firemaking', level: 75 },
+      { skill: 'Magic', level: 75 },
+      { skill: 'Thieving', level: 70 },
+      { skill: 'Herblore', level: 62 },
+      { skill: 'Runecraft', level: 60 },
+      { skill: 'Construction', level: 60 },
+    ],
+    wiki: 'https://oldschool.runescape.wiki/w/Desert_Treasure_II_-_The_Fallen_Empire',
+  },
+  {
+    id: '90010', // TODO need official ID
+    label: 'The Path of Glouphrie',
+    difficulty: QUEST_DIFFICULTY.EXPERIENCED,
+    length: QUEST_LENGTH.MEDIUM,
+    series: QUEST_SERIES.GNOME,
+    type: 'quest',
+    prereqs: ['358', '3154', '438'],
+    skillReqs: [
+      { skill: 'Strength', level: 60 },
+      { skill: 'Slayer', level: 56 },
+      { skill: 'Thieving', level: 56 },
+      { skill: 'Ranged', level: 47 },
+      { skill: 'Agility', level: 45 },
+    ],
+    wiki: 'https://oldschool.runescape.wiki/w/The_Path_of_Glouphrie',
+  },
+  {
+    id: '90011', // TODO need official ID
+    label: 'His Faithful Servants',
+    difficulty: QUEST_DIFFICULTY.EXPERIENCED,
+    length: QUEST_LENGTH.SHORT,
+    series: QUEST_SERIES.MAHJARRAT,
+    type: 'miniquest',
+    prereqs: ['408'],
+    skillReqs: [],
+    wiki: 'https://oldschool.runescape.wiki/w/His_Faithful_Servants',
+  },
 ];
 
 function getQuestsById() {
