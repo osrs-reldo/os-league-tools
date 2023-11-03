@@ -2144,7 +2144,7 @@ export default [
   },
   {
     id: 229,
-    task: "1. Become the champion of the Fight Pit.\nIt's possible to do this with only two people total in the pit, yourself included.",
+    task: 'Become the champion of the Fight Pit.',
     questReqs: [],
     skillReqs: [],
     otherReqs: [],
@@ -2964,7 +2964,7 @@ export default [
   {
     id: 316,
     task: 'Take the train from Dorgesh-Kaan to Keldagrim.',
-    questReqs: 'Another Slice of H.A.M.',
+    questReqs: ['Another Slice of H.A.M.'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.LUMBRIDGE,

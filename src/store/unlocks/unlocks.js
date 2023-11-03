@@ -1,6 +1,7 @@
 /* Redux toolkit middleware handles updates immutably, but eslint doesn't know that */
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
+import { without } from 'lodash';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorage-client';
 import updateWithUserDataStorage from '../updateWithUserDataStorage';
 import { INITIAL_STATE } from './constants';
@@ -22,6 +23,18 @@ export const unlocksSlice = createSlice({
         ...state.diaries,
         [action.payload.id]: action.payload.status,
       };
+    },
+    unlockRegion: (state, action) => {
+      state.regions = [...state.regions, action.payload];
+    },
+    lockRegion: (state, action) => {
+      state.regions = without(state.regions, action.payload);
+    },
+    unlockRelic: (state, action) => {
+      state.relics[action.tier] = action.payload;
+    },
+    lockRelic: (state, action) => {
+      state.relics[action.tier] = -1;
     },
     load: (state, action) => {
       const fallbackState = action.payload.forceOverwrite ? INITIAL_STATE : state;
@@ -56,6 +69,8 @@ export function load(props) {
 export function reset(props) {
   return updateWithUserDataStorage(innerReset, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
 }
+
+export const { unlockRegion, lockRegion, unlockRelic, lockRelic } = unlocksSlice.actions;
 
 export const loadState = () => {
   const prevCharacterState = loadCharacterState();
