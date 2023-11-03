@@ -17,6 +17,7 @@ import ButtonGroup from './common/ButtonGroup';
 import { fetchHiscores } from '../store/user/character';
 import Spinner from './common/Spinner';
 import LabeledCheckbox from './common/LabeledCheckbox';
+import CalculatorFilters from './CalculatorFilters';
 
 const calculatorSkills = calculatorData.skills.map(skillName => ({
   ...STATS[skillName],
@@ -244,6 +245,8 @@ export default function CalculatorSettings({ expMultipliersState, inputMultiplie
           </div>
         </>
       )}
+
+      <CalculatorFilters />
 
       <button className='button-outline w-full mt-4' type='button' onClick={resetCalculator}>
         <span className='icon-base align-bottom'>refresh</span> Reset

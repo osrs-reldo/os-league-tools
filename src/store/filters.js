@@ -5,8 +5,9 @@ import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-c
 import { getCategoriesForStore } from '../data/categories';
 import { STATS, DIFFICULTY, DIARY_LOCATIONS, DIARY_DIFFICULTY } from '../data/constants';
 import { QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/quests';
+import { TRAILBLAZER_REGIONS } from '../data/regions';
 
-const CURRENT_VERSION = 12;
+const CURRENT_VERSION = 13;
 
 const mapDataValues = values => Object.values(values).map(({ label }) => label);
 
@@ -38,11 +39,17 @@ const INITIAL_DIARIES_STATE = {
   skills: null,
 };
 
+const INITIAL_CALCULATORS_STATE = {
+  status: 'all',
+  regions: mapDataValues(TRAILBLAZER_REGIONS),
+};
+
 const INITIAL_STATE = {
   version: CURRENT_VERSION,
   tasks: INITIAL_TASK_STATE,
   quests: INITIAL_QUEST_STATE,
   diaries: INITIAL_DIARIES_STATE,
+  calculators: INITIAL_CALCULATORS_STATE,
 };
 
 export const filterSlice = createSlice({
@@ -58,6 +65,9 @@ export const filterSlice = createSlice({
     updateDiariesFilter: (state, action) => {
       state.diaries[action.payload.field] = action.payload.value;
     },
+    updateCalculatorsFilter: (state, action) => {
+      state.calculators[action.payload.field] = action.payload.value;
+    },
     resetTasks: state => ({
       ...state,
       tasks: INITIAL_TASK_STATE,
@@ -69,6 +79,10 @@ export const filterSlice = createSlice({
     resetDiaries: state => ({
       ...state,
       diaries: INITIAL_DIARIES_STATE,
+    }),
+    resetCalculators: state => ({
+      ...state,
+      calculators: INITIAL_CALCULATORS_STATE,
     }),
     reset: () => INITIAL_STATE,
   },
@@ -87,9 +101,11 @@ export const {
   updateTaskFilter,
   updateQuestFilter,
   updateDiariesFilter,
+  updateCalculatorsFilter,
   resetTasks,
   resetQuests,
   resetDiaries,
+  resetCalculators,
   reset,
 } = filterSlice.actions;
 
