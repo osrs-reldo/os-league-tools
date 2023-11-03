@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { updateQuestFilter, resetQuests } from '../store/filters';
 import ButtonGroup from './common/ButtonGroup';
 import FilterButtons, { FilterSelectAll } from './common/FilterButtons';
-import { QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/constants';
+import { QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/quests';
 
 export default function QuestFilters() {
   const filterState = useSelector(state => state.filters.quests);

@@ -6,8 +6,7 @@ import Table from './common/Table';
 import LabeledIcon from './common/LabeledIcon';
 import SkillRequirementList from './SkillRequirementList';
 import { updateQuest } from '../store/unlocks/unlocks';
-import quests, { questsById } from '../data/quests';
-import { QUEST_STATUS } from '../data/constants';
+import quests, { questsById, QUEST_STATUS } from '../data/quests';
 import images from '../assets/images';
 import titleSort from '../util/titleSort';
 

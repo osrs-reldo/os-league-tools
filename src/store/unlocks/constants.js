@@ -1,5 +1,5 @@
 import { merge } from 'lodash';
-import { QUEST_STATUS } from '../../data/constants';
+import { QUEST_STATUS } from '../../data/quests';
 import { DEFAULT_REGIONS, NONE_REGION_ID, regionsById } from '../../data/regions';
 
 export const CURRENT_VERSION = 8;

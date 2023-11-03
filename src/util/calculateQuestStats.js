@@ -1,5 +1,4 @@
-import QUESTS from '../data/quests';
-import { QUEST_STATUS } from '../data/constants';
+import QUESTS, { QUEST_STATUS } from '../data/quests';
 
 export default function calculateQuestStats(questState) {
   const completedQuests = Object.entries(questState).filter(([, status]) => status === QUEST_STATUS.FINISHED);

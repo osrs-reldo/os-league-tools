@@ -3,14 +3,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-client';
 import { getCategoriesForStore } from '../data/categories';
-import {
-  STATS,
-  DIFFICULTY,
-  QUEST_DIFFICULTY,
-  QUEST_LENGTH,
-  DIARY_LOCATIONS,
-  DIARY_DIFFICULTY,
-} from '../data/constants';
+import { STATS, DIFFICULTY, DIARY_LOCATIONS, DIARY_DIFFICULTY } from '../data/constants';
+import { QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/quests';
 
 const CURRENT_VERSION = 12;
 
