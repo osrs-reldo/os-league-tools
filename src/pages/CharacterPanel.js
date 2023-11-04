@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import SkillsPanel from '../components/SkillsPanel';
 import BossesPanel from '../components/BossesPanel';
-import { ThemedProgressBar } from '../components/ThemeProvider';
-import { DIFFICULTY, PASSIVE_RELICS } from '../data/constants';
+import { DIFFICULTY } from '../data/constants';
 import images from '../assets/images';
 import ManageCharactersModal from '../components/ManageCharactersModal';
 import CharacterRegionsSection from '../components/CharacterRegionsSection';
+import CharacterRelicsSection from '../components/CharacterRelicsSection';
 
 export default function CharacterPanel() {
   const [isCharacterModalOpen, setCharacterModalOpen] = useState(false);
@@ -59,7 +59,7 @@ export default function CharacterPanel() {
         {/* CENTER COLUMN */}
         <div className='lg:basis-1/2 basis-full flex flex-col items-center gap-3 order-1 lg:order-3 shrink'>
           <CharacterRegionsSection taskStats={taskStats} unlockedRegions={unlockState.regions} />
-          <RelicsSection tier={tier} taskStats={taskStats} />
+          <CharacterRelicsSection tier={tier} taskStats={taskStats} unlockedRelics={unlockState.relics} />
         </div>
         {/* RIGHT COLUMN */}
         <div className='lg:basis-1/4 basis-2/5 flex flex-col items-center order-5 gap-3'>
@@ -100,43 +100,5 @@ function TrophySummary() {
       <span className='text-sm italic'>3250 points until dragon trophy</span>
       <img src={images['trophy-rune.png']} alt='' style={{ maxHeight: '200px' }} />
     </div>
-  );
-}
-
-function RelicsSection({ tier, taskStats }) {
-  return (
-    <>
-      <span className='text-lg text-accent font-semibold border-b border-accent w-full'>Relics</span>
-      <div className='flex w-full flex-wrap justify-around text-center align-middle tracking-wide text-md text-primary gap-3'>
-        <span>{`Relics unlocked: ${tier} / 7`}</span>
-        {tier < PASSIVE_RELICS.unlockThresholds.length && (
-          <span>{`Next unlock at ${PASSIVE_RELICS.tiers[tier + 1].points} pts (${
-            PASSIVE_RELICS.tiers[tier + 1].points - taskStats.points.complete.total
-          } remaining)`}</span>
-        )}
-      </div>
-      <div className='w-11/12'>
-        <ThemedProgressBar
-          curValue={taskStats.points.complete.total}
-          maxValue={PASSIVE_RELICS.unlockThresholds[PASSIVE_RELICS.unlockThresholds.length - 1]}
-          steps={PASSIVE_RELICS.unlockThresholds}
-        />
-      </div>
-      <div className='grid grid-cols-7 w-11/12 gap-2'>
-        {Object.keys(PASSIVE_RELICS.tiers).map(tierKey => {
-          const tierUnlocked = tier >= tierKey;
-          return (
-            <div className='m-1 grow flex flex-col text-center text-sm items-center' key={tierKey}>
-              <img
-                className='h-12 w-12 bg-hover cursor-pointer'
-                src={images[tierUnlocked ? 'relic-check.png' : 'relic-outline.png']}
-                alt=''
-              />
-            </div>
-          );
-        })}
-      </div>
-      <span className='text-sm italic'>Click a relic to view more</span>
-    </>
   );
 }

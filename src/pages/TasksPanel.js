@@ -6,7 +6,7 @@ import TaskFilters from '../components/TaskFilters';
 import TaskGenerator from '../components/TaskGenerator';
 import TaskTable from '../components/TaskTable';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
-import { PASSIVE_RELICS } from '../data/constants';
+import { RELIC_UNLOCK_THRESHOLDS } from '../data/relics';
 import useTrackerHistory from '../hooks/useTrackerHistory';
 import Banner from '../components/common/Banner';
 
@@ -28,8 +28,8 @@ export default function TasksPanel({ readonly, taskState }) {
         <div className='shadow-subdued mb-3'>
           <ThemedProgressBar
             curValue={taskStats.points.complete.total}
-            maxValue={PASSIVE_RELICS.unlockThresholds[PASSIVE_RELICS.unlockThresholds.length - 1]}
-            steps={PASSIVE_RELICS.unlockThresholds}
+            maxValue={RELIC_UNLOCK_THRESHOLDS[RELIC_UNLOCK_THRESHOLDS - 1]}
+            steps={RELIC_UNLOCK_THRESHOLDS}
           />
         </div>
         <div className='flex flex-wrap text-accent font-semibold justify-evenly gap-2'>
@@ -42,9 +42,9 @@ export default function TasksPanel({ readonly, taskState }) {
           <span>
             To-do: {taskStats.tasks.todo.total} tasks ({taskStats.points.todo.total} points)
           </span>
-          {tier < PASSIVE_RELICS.unlockThresholds.length && (
-            <span>{`Next unlock at ${PASSIVE_RELICS.tiers[tier + 1].points} pts (${
-              PASSIVE_RELICS.tiers[tier + 1].points - taskStats.points.complete.total
+          {tier < RELIC_UNLOCK_THRESHOLDS.length && (
+            <span>{`Next unlock at ${RELIC_UNLOCK_THRESHOLDS[tier]} pts (${
+              RELIC_UNLOCK_THRESHOLDS[tier] - taskStats.points.complete.total
             } remaining)`}</span>
           )}
         </div>

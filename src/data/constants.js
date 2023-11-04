@@ -3,68 +3,6 @@ import images from '../assets/images';
 export const LEAGUE_START_DATE = new Date('2023-11-15T12:00:00+00:00');
 export const LEAGUE_END_DATE = new Date('2024-01-10T12:00:00+00:00');
 
-export const PASSIVE_RELICS = {
-  unlockThresholds: [0, 10, 300, 1500, 3000, 7500, 15000],
-  tiers: {
-    1: {
-      points: 0,
-      expMultiplier: 5,
-      expMultiplierIncrease: true,
-      dropMultiplier: 1,
-      dropMultiplierIncrease: false,
-      extras: [],
-    },
-    2: {
-      points: 10,
-      expMultiplier: 5,
-      expMultiplierIncrease: false,
-      dropMultiplier: 1,
-      dropMultiplierIncrease: false,
-      extras: [],
-    },
-    3: {
-      points: 300,
-      expMultiplier: 8,
-      expMultiplierIncrease: true,
-      dropMultiplier: 1,
-      dropMultiplierIncrease: false,
-      extras: [],
-    },
-    4: {
-      points: 1500,
-      expMultiplier: 8,
-      expMultiplierIncrease: false,
-      dropMultiplier: 2,
-      dropMultiplierIncrease: true,
-      extras: [],
-    },
-    5: {
-      points: 3000,
-      expMultiplier: 12,
-      expMultiplierIncrease: true,
-      dropMultiplier: 2,
-      dropMultiplierIncrease: false,
-      extras: [],
-    },
-    6: {
-      points: 7500,
-      expMultiplier: 12,
-      expMultiplierIncrease: false,
-      dropMultiplier: 3,
-      dropMultiplierIncrease: true,
-      extras: [],
-    },
-    7: {
-      points: 15000,
-      expMultiplier: 16,
-      expMultiplierIncrease: true,
-      dropMultiplier: 3,
-      dropMultiplierIncrease: false,
-      extras: [],
-    },
-  },
-};
-
 export const STATS = {
   Agility: {
     label: 'Agility',

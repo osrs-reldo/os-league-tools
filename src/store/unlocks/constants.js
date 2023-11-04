@@ -1,11 +1,20 @@
 import { merge } from 'lodash';
 import { QUEST_STATUS } from '../../data/quests';
 import { DEFAULT_REGIONS, NONE_REGION_ID, regionsById } from '../../data/regions';
+import { NONE_RELIC_ID } from '../../data/relics';
 
 export const CURRENT_VERSION = 8;
 
 const INITIAL_REGIONS_STATE = [...DEFAULT_REGIONS, NONE_REGION_ID, NONE_REGION_ID, NONE_REGION_ID];
-const INITIAL_RELICS_STATE = [-1, -1, -1, -1, -1, -1, -1];
+const INITIAL_RELICS_STATE = [
+  NONE_RELIC_ID,
+  NONE_RELIC_ID,
+  NONE_RELIC_ID,
+  NONE_RELIC_ID,
+  NONE_RELIC_ID,
+  NONE_RELIC_ID,
+  NONE_RELIC_ID,
+];
 const DEFAULT_QUESTS = merge(
   {},
   ...[...regionsById[0].questUnlocks, ...regionsById[1].questUnlocks].map(quest => ({ [quest]: QUEST_STATUS.FINISHED }))

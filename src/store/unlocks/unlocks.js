@@ -40,11 +40,8 @@ export const unlocksSlice = createSlice({
     updateRegion: (state, action) => {
       state.regions[action.payload.tier] = action.payload.id;
     },
-    unlockRelic: (state, action) => {
+    updateRelic: (state, action) => {
       state.relics[action.payload.tier] = action.payload.id;
-    },
-    lockRelic: (state, action) => {
-      state.relics[action.payload.tier] = -1;
     },
     load: (state, action) => {
       const fallbackState = action.payload.forceOverwrite ? INITIAL_STATE : state;
@@ -80,7 +77,7 @@ export function reset(props) {
   return updateWithUserDataStorage(innerReset, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
 }
 
-export const { updateRegion, unlockRelic, lockRelic, autoUnlockQuestsForRegion, autoUnlockDiariesForRegion } =
+export const { updateRegion, updateRelic, autoUnlockQuestsForRegion, autoUnlockDiariesForRegion } =
   unlocksSlice.actions;
 
 export const loadState = () => {
