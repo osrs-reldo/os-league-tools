@@ -30,9 +30,9 @@ export default function RegionMap({ unlockedRegions }) {
       }}
       ref={wrapperRef}
     >
-      <img src={images['map-all.png']} alt='' style={mapImgStyle} />
+      <img src={images['map-all.png']} alt='' style={mapImgStyle} key='all' />
       {regionsToShow.map(region => (
-        <img src={region.map} alt='' style={mapImgStyle} />
+        <img src={region.map} alt='' style={mapImgStyle} key={region.id} />
       ))}
     </div>
   );

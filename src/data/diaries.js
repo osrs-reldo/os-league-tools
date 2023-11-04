@@ -1,6 +1,6 @@
 import { DIARY_LOCATIONS, DIARY_DIFFICULTY } from './constants';
 
-export default [
+const DIARY_TASKS = [
   {
     id: 0,
     task: 'Check what pets you have insured with Probita in East Ardougne.',
@@ -4605,3 +4605,15 @@ export default [
     difficulty: DIARY_DIFFICULTY.ELITE,
   },
 ];
+
+function getDiaryTasksById() {
+  const tasksById = {};
+  DIARY_TASKS.forEach(task => {
+    tasksById[task.id] = task;
+  });
+  return tasksById;
+}
+
+export const diaryTasksById = getDiaryTasksById();
+
+export default DIARY_TASKS;

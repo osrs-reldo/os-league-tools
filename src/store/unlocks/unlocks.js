@@ -6,6 +6,8 @@ import updateWithUserDataStorage from '../updateWithUserDataStorage';
 import { INITIAL_STATE } from './constants';
 import updateUnlocksVersion from './updateUnlocksVersion';
 import { loadState as loadCharacterState } from '../user/character';
+import { regionsById } from '../../data/regions';
+import { QUEST_STATUS } from '../../data/quests';
 
 export const unlocksSlice = createSlice({
   name: 'unlocks',
@@ -16,6 +18,18 @@ export const unlocksSlice = createSlice({
         ...state.quests,
         [action.payload.id]: action.payload.status,
       };
+    },
+    autoUnlockQuestsForRegion: (state, action) => {
+      const region = regionsById[action.payload.id];
+      for (const autoUnlockQuest of region.questUnlocks) {
+        state.quests[autoUnlockQuest] = QUEST_STATUS.FINISHED;
+      }
+    },
+    autoUnlockDiariesForRegion: (state, action) => {
+      const region = regionsById[action.payload.id];
+      for (const autoUnlockTask of region.diaryUnlocks) {
+        state.diaries[autoUnlockTask] = true;
+      }
     },
     updateDiary: (state, action) => {
       state.diaries = {
@@ -66,7 +80,8 @@ export function reset(props) {
   return updateWithUserDataStorage(innerReset, props, LOCALSTORAGE_KEYS.UNLOCKS, 'unlocks');
 }
 
-export const { updateRegion, unlockRelic, lockRelic } = unlocksSlice.actions;
+export const { updateRegion, unlockRelic, lockRelic, autoUnlockQuestsForRegion, autoUnlockDiariesForRegion } =
+  unlocksSlice.actions;
 
 export const loadState = () => {
   const prevCharacterState = loadCharacterState();

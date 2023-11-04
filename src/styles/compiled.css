@@ -2254,6 +2254,9 @@ select[multiple]:focus option:checked {
 .max-h-6 {
   max-height: 1.5rem;
 }
+.max-h-\[200px\] {
+  max-height: 200px;
+}
 .min-h-\[16rem\] {
   min-height: 16rem;
 }
@@ -2633,6 +2636,9 @@ select[multiple]:focus option:checked {
 }
 .pl-4 {
   padding-left: 1rem;
+}
+.pr-2 {
+  padding-right: 0.5rem;
 }
 .pt-2 {
   padding-top: 0.5rem;
