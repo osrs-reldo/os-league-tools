@@ -52,34 +52,43 @@ export default function FilterButtons({
   );
 }
 
-export function FilterSelectAll({ filterName = '', updateFunc = () => null, values = [] }) {
+export function FilterSelectAll({ filterName = '', updateFunc = () => null, values = [], additionalButtons = [] }) {
   const dispatch = useDispatch();
 
+  const buttons = [
+    {
+      label: 'all',
+      value: values,
+    },
+    {
+      label: 'none',
+      value: [],
+    },
+    ...additionalButtons,
+  ];
+
   return (
-    <p className='italic text-center w-full'>
-      <span className='mr-1'>Quick select:</span>
-      <button
-        className='inline italic hover:underline mx-1'
-        type='button'
-        onClick={() =>
-          dispatch(
-            updateFunc({
-              field: filterName,
-              value: values,
-            })
-          )
-        }
-      >
-        all
-      </button>
-      |
-      <button
-        className='inline italic hover:underline mx-1'
-        type='button'
-        onClick={() => dispatch(updateFunc({ field: filterName, value: [] }))}
-      >
-        none
-      </button>
-    </p>
+    <div className='italic text-center w-full flex flex-row gap-1 justify-center'>
+      <span>Quick select:</span>
+      {buttons.map(({ label, value }, index) => (
+        <div key={label}>
+          <button
+            className='inline italic hover:underline mr-1'
+            type='button'
+            onClick={() =>
+              dispatch(
+                updateFunc({
+                  field: filterName,
+                  value,
+                })
+              )
+            }
+          >
+            {label}
+          </button>
+          {index < buttons.length - 1 ? '|' : ''}
+        </div>
+      ))}
+    </div>
   );
 }

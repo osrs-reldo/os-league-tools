@@ -7,7 +7,8 @@ import NumberCell from './common/calculator/NumberCell';
 import ActivityCell from './common/calculator/ActivityCell';
 import MaterialsCell from './common/calculator/MaterialsCell';
 import RegionsCell from './common/calculator/RegionsCell';
-import { TRAILBLAZER_REGIONS } from '../data/regions';
+import { regionsById } from '../data/regions';
+import { UNLOCKED_REGION_FILTER_VALUE } from './CalculatorFilters';
 
 export default function CalculatorTable({ applyExpMultipliers, applyInputMultipliers, applyOutputMultipliers }) {
   const {
@@ -134,12 +135,13 @@ export default function CalculatorTable({ applyExpMultipliers, applyInputMultipl
   );
 }
 
-function regionsFilter(record, filterState) {
-  if (
-    (filterState.regions.length === TRAILBLAZER_REGIONS.length && record.areas[0] === 'All') ||
-    filterState.regions === null
-  ) {
+function regionsFilter(record, filterState, { regionsState }) {
+  const unlockedRegionNames = regionsState.filter(id => id >= 0).map(id => regionsById[id].label);
+  if (record.areas[0] === 'All' && filterState.regions.length) {
     return true;
+  }
+  if (filterState.regions[0] === UNLOCKED_REGION_FILTER_VALUE) {
+    return record.areas.some(area => unlockedRegionNames.includes(area));
   }
   return record.areas.some(area => filterState.regions.includes(area));
 }
