@@ -1,23 +1,10 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
 import ReactTooltip from 'react-tooltip';
-import { NONE_REGION_ID, regionsById, REGION_UNLOCK_THRESHOLDS, TRAILBLAZER_REGIONS } from '../data/regions';
-import { autoUnlockQuestsForRegion, updateRegion } from '../store/unlocks/unlocks';
+import { NONE_REGION_ID, regionsById, REGION_UNLOCK_THRESHOLDS } from '../data/regions';
 import { getRegionTier } from '../util/getTier';
-import Select from './common/Select';
 import RegionMap from './RegionMap';
 import RegionUnlockModal from './RegionUnlockModal';
 import { ThemedProgressBar } from './ThemeProvider';
-
-const UNLOCKABLE_REGION_OPTIONS = [
-  { label: 'Unlock...', value: NONE_REGION_ID },
-  ...TRAILBLAZER_REGIONS.filter(({ isDefaultUnlock }) => !isDefaultUnlock).map(region => ({
-    label: region.label,
-    value: region.id,
-    icon: region.icon,
-  })),
-];
 
 export default function CharacterRegionsSection({ unlockedRegions, taskStats }) {
   const [regionUnlockModalState, setRegionUnlockModalState] = useState({ open: false, tier: -1 });
