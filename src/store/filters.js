@@ -40,7 +40,6 @@ const INITIAL_DIARIES_STATE = {
 };
 
 const INITIAL_CALCULATORS_STATE = {
-  status: 'all',
   regions: mapDataValues(TRAILBLAZER_REGIONS),
 };
 

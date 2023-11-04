@@ -1,15 +1,20 @@
 import React from 'react';
-import { TRAILBLAZER_REGIONS } from '../../../data/regions';
+import ReactTooltip from 'react-tooltip';
+import { regionNames, regionsByName } from '../../../data/regions';
 
 export default function RegionsCell({ value }) {
+  const regionsToDisplay = value[0] === 'All' ? regionNames : value;
   return (
-    <div className='flex flex-row flex-wrap py-2 h-full'>
-      {value.map(area => {
-        const { icon } = TRAILBLAZER_REGIONS.find(region => region.label === area) || {};
+    <div className='flex flex-row flex-wrap py-2 w-full h-full gap-1 justify-center'>
+      {regionsToDisplay.map(region => {
+        const { icon } = regionsByName[region] || {};
         return (
-          <div className='flex items-center'>
-            <img className='mr-1' width={18} src={icon} alt={area} title={area} />
-          </div>
+          <>
+            <div className='flex items-center' data-tip data-for={region}>
+              <img width={16} src={icon} alt={region} />
+            </div>
+            <ReactTooltip id={region}>{region}</ReactTooltip>
+          </>
         );
       })}
     </div>

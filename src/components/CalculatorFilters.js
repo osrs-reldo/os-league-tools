@@ -15,12 +15,12 @@ export default function CalculatorFilters() {
           filterName='regions'
           selectedValues={filterState.regions}
           updateFunc={updateCalculatorsFilter}
-          values={Object.values(TRAILBLAZER_REGIONS)}
+          values={TRAILBLAZER_REGIONS}
         />
         <FilterSelectAll
           filterName='regions'
           updateFunc={updateCalculatorsFilter}
-          values={Object.values(TRAILBLAZER_REGIONS).map(({ label }) => label)}
+          values={TRAILBLAZER_REGIONS.map(({ label }) => label)}
         />
       </div>
     </div>

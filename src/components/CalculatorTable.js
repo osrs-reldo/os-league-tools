@@ -7,6 +7,7 @@ import NumberCell from './common/calculator/NumberCell';
 import ActivityCell from './common/calculator/ActivityCell';
 import MaterialsCell from './common/calculator/MaterialsCell';
 import RegionsCell from './common/calculator/RegionsCell';
+import { TRAILBLAZER_REGIONS } from '../data/regions';
 
 export default function CalculatorTable({ applyExpMultipliers, applyInputMultipliers, applyOutputMultipliers }) {
   const {
@@ -99,7 +100,7 @@ export default function CalculatorTable({ applyExpMultipliers, applyInputMultipl
         Header: 'Regions',
         id: 'regions',
         accessor: 'areas',
-        maxWidth: 176,
+        maxWidth: 110,
         Cell: RegionsCell,
         disableSortBy: true,
       },
@@ -134,7 +135,10 @@ export default function CalculatorTable({ applyExpMultipliers, applyInputMultipl
 }
 
 function regionsFilter(record, filterState) {
-  if (filterState.regions === null) {
+  if (
+    (filterState.regions.length === TRAILBLAZER_REGIONS.length && record.areas[0] === 'All') ||
+    filterState.regions === null
+  ) {
     return true;
   }
   return record.areas.some(area => filterState.regions.includes(area));
