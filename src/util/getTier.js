@@ -30,7 +30,7 @@ export function getRegionTier(tasksCompleted) {
 }
 
 export function getTrophyTier(points) {
-  let tier = 0;
+  let tier = -1;
   for (let i = 0; i < TROPHY_THRESHOLDS.length; i++) {
     if (points < TROPHY_THRESHOLDS[i]) {
       break;

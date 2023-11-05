@@ -56,7 +56,7 @@ export const unlocksSlice = createSlice({
 
 const {
   updateQuest: innerUpdateQuest,
-  updateQuest: innerUpdateDiary,
+  updateDiary: innerUpdateDiary,
   load: innerLoad,
   reset: innerReset,
 } = unlocksSlice.actions;

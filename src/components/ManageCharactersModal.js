@@ -32,7 +32,7 @@ export default function ManageCharactersModal({ isOpen, setIsOpen, initialAddMod
   };
 
   if (addModalOpen) {
-    return <AddCharacterModal isOpen={addModalOpen} setIsOpen={setAddModalOpen} />;
+    return <AddCharacterModal isOpen={isOpen && addModalOpen} setIsOpen={setAddModalOpen} />;
   }
 
   if (renamingCharacterIndex !== null) {
