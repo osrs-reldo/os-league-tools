@@ -14,6 +14,10 @@ export default function getAccentColorForTheme(theme) {
       return 'rgb(99 66 40)';
     case 'sl-light':
       return 'rgb(0 128 118)';
+    case 'tr-light':
+      return 'rgb(180 74 30)';
+    case 'tr-dark':
+      return 'rgb(220 139 54)';
     case 'mono-light':
       return 'rgb(55 65 81)';
     default:

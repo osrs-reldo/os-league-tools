@@ -8,6 +8,9 @@ import { LEAGUE_END_DATE, LEAGUE_START_DATE } from '../data/constants';
 import tasks from '../data/tasks';
 import getAccentColorForTheme from '../util/colors';
 
+const DATE_FORMAT = 'en-US';
+const DATE_OPTIONS = { month: 'short', day: 'numeric' };
+
 function createLeagueStats(dataByCompletionDate) {
   const nextDate = new Date(LEAGUE_START_DATE.getTime());
   nextDate.setHours(0);
@@ -15,12 +18,12 @@ function createLeagueStats(dataByCompletionDate) {
   const pointCounts = [];
   while (nextDate <= LEAGUE_END_DATE) {
     taskCounts.push({
-      date: new Date(nextDate.getTime()).toDateString(),
+      date: new Date(nextDate.getTime()).toLocaleDateString(DATE_FORMAT, DATE_OPTIONS),
       count: dataByCompletionDate[nextDate]?.tasksComplete ?? 0,
       secondaryAxisId: 'daily',
     });
     pointCounts.push({
-      date: new Date(nextDate.getTime()).toDateString(),
+      date: new Date(nextDate.getTime()).toLocaleDateString(DATE_FORMAT, DATE_OPTIONS),
       count: dataByCompletionDate[nextDate]?.pointsEarned ?? 0,
       secondaryAxisId: 'daily',
     });
@@ -129,7 +132,7 @@ export default function Statistics() {
       <div className='container h-[800px] mx-auto'>
         <Card className='h-full'>
           <Card.Body>
-            <div className='grid grid-cols-2 h-full'>
+            <div className='grid grid-cols-2 gap-4 h-full'>
               <div className='h-[90%] pb-3'>
                 <h1 className='heading-accent-md'>Tasks completed per day</h1>
                 <Chart
@@ -140,6 +143,7 @@ export default function Statistics() {
                     getSeriesStyle: () => ({
                       color: getAccentColorForTheme(theme),
                     }),
+                    dark: theme.split('-')[1] === 'dark',
                   }}
                 />
               </div>
@@ -153,6 +157,7 @@ export default function Statistics() {
                     getSeriesStyle: () => ({
                       color: getAccentColorForTheme(theme),
                     }),
+                    dark: theme.split('-')[1] === 'dark',
                   }}
                 />
               </div>
@@ -166,6 +171,7 @@ export default function Statistics() {
                     getSeriesStyle: () => ({
                       color: getAccentColorForTheme(theme),
                     }),
+                    dark: theme.split('-')[1] === 'dark',
                   }}
                 />
               </div>
@@ -179,6 +185,7 @@ export default function Statistics() {
                     getSeriesStyle: () => ({
                       color: getAccentColorForTheme(theme),
                     }),
+                    dark: theme.split('-')[1] === 'dark',
                   }}
                 />
               </div>
