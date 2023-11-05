@@ -4,9 +4,13 @@ import { updateQuestFilter, resetQuests } from '../store/filters';
 import ButtonGroup from './common/ButtonGroup';
 import FilterButtons, { FilterSelectAll } from './common/FilterButtons';
 import { QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/quests';
+import { UNLOCKED_REGION_FILTER_VALUE } from './CalculatorFilters';
+import { regionsById, TRAILBLAZER_REGIONS } from '../data/regions';
 
 export default function QuestFilters() {
   const filterState = useSelector(state => state.filters.quests);
+  const regionsState = useSelector(state => state.unlocks.regions);
+  const unlockedRegionNames = regionsState.filter(id => id >= 0).map(id => regionsById[id].label);
   const dispatch = useDispatch();
 
   return (
@@ -22,6 +26,25 @@ export default function QuestFilters() {
             ]}
             selection={filterState.status}
             setSelection={val => dispatch(updateQuestFilter({ field: 'status', value: val }))}
+          />
+        </div>
+      </div>
+      <div className='mb-3'>
+        <h3 className='heading-accent-md'>Regions</h3>
+        <div className='flex flex-col px-3 text-sm w-full'>
+          <FilterButtons
+            filterName='regions'
+            selectedValues={
+              filterState.regions[0] === UNLOCKED_REGION_FILTER_VALUE ? unlockedRegionNames : filterState.regions
+            }
+            updateFunc={updateQuestFilter}
+            values={TRAILBLAZER_REGIONS}
+          />
+          <FilterSelectAll
+            filterName='regions'
+            updateFunc={updateQuestFilter}
+            values={TRAILBLAZER_REGIONS.map(({ label }) => label)}
+            additionalButtons={[{ label: 'unlocked', value: [UNLOCKED_REGION_FILTER_VALUE] }]}
           />
         </div>
       </div>
