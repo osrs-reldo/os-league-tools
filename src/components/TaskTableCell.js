@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import ReactTooltip from 'react-tooltip';
 import { toggleTodo, toggleIgnored, toggleCompleted, updateNotes, selectTask, updateOrder } from '../store/tasks/tasks';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import { DEFAULT_NOTES_TEXT } from '../data/constants';
 import SkillRequirementList from './SkillRequirementList';
 import Difficulty from './Difficulty';
 import Category from './Category';
+import { regionNames, regionsByName } from '../data/regions';
+import { REGION_ANY } from '../data/tasks';
 
 function Task({ row, value, addToHistory }) {
   const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
@@ -290,4 +293,21 @@ function Priority({ row }) {
   );
 }
 
-export default { Task, ExpandedTask, ReadonlyExpandedTask, TaskCompletedAt, ReadonlyTask, Priority };
+function Regions({ value }) {
+  const regionsToDisplay = value[0] === REGION_ANY ? regionNames : value;
+  return (
+    <div className='flex flex-row flex-wrap py-2 w-full h-full gap-1 justify-center items-center'>
+      {regionsToDisplay.map(region => {
+        const { icon } = regionsByName[region] || {};
+        return (
+          <div key={region}>
+            <img width={16} src={icon} alt={region} data-tip data-for={region} />
+            <ReactTooltip id={region}>{region}</ReactTooltip>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+export default { Task, ExpandedTask, ReadonlyExpandedTask, TaskCompletedAt, ReadonlyTask, Priority, Regions };

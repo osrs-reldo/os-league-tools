@@ -1,8 +1,7 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable import/order */
 import React, { useMemo } from 'react';
 import { matchSorter } from 'match-sorter';
 import { useDispatch, useSelector } from 'react-redux';
+import ReactTooltip from 'react-tooltip';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import Table from './common/Table';
 import LabeledIcon from './common/LabeledIcon';
@@ -12,8 +11,7 @@ import quests, { questsById, QUEST_STATUS, REGION_IMPOSSIBLE_TO_COMPLETE } from 
 import images from '../assets/images';
 import titleSort from '../util/titleSort';
 import { UNLOCKED_REGION_FILTER_VALUE } from './CalculatorFilters';
-import { regionNames, regionsById, regionsByName } from '../data/regions';
-import ReactTooltip from 'react-tooltip';
+import { regionsById, regionsByName } from '../data/regions';
 
 export default function QuestTable() {
   const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);

@@ -9,14 +9,18 @@ import CheckboxTree from './common/CheckboxTree';
 import { DIFFICULTY, STATS } from '../data/constants';
 import { formatCategoriesForCheckboxTree } from '../data/categories';
 import getSkillsPanelData from '../util/getSkillsPanelData';
+import { UNLOCKED_REGION_FILTER_VALUE } from './CalculatorFilters';
+import { regionsById, TRAILBLAZER_REGIONS } from '../data/regions';
 
 export default function TaskFilters({ history }) {
   const filterState = useSelector(state => state.filters.tasks);
+  const regionsState = useSelector(state => state.unlocks.regions);
+  const unlockedRegionNames = regionsState.filter(id => id >= 0).map(id => regionsById[id].label);
   const dispatch = useDispatch();
 
-  return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-1 gap-2 mt-3'>
-      <div className='order-1'>
+  const StatusFilters = (
+    <>
+      <div>
         <span className='heading-accent-md mt-1'>Status</span>
         <div className='w-full px-3 text-sm'>
           <ButtonGroup
@@ -30,7 +34,7 @@ export default function TaskFilters({ history }) {
           />
         </div>
       </div>
-      <div className='xl:order-2 lg:order-4 sm:order-3 order-2'>
+      <div>
         <span className='heading-accent-md mt-1'>To-do tasks</span>
         <div className='w-full px-3 text-sm'>
           <ButtonGroup
@@ -44,7 +48,7 @@ export default function TaskFilters({ history }) {
           />
         </div>
       </div>
-      <div className='xl:order-3 lg:order-6 sm:order-4 order-3'>
+      <div>
         <span className='heading-accent-md mt-1'>Ignored tasks</span>
         <div className='w-full px-3 text-sm'>
           <ButtonGroup
@@ -58,131 +62,148 @@ export default function TaskFilters({ history }) {
           />
         </div>
       </div>
-      <div className='xl:order-4 lg:order-2 sm:order-6 order-4'>
-        <span className='heading-accent-md mt-1'>Difficulty</span>
-        <div className='w-full px-3 text-sm'>
-          <FilterButtons
-            cols={3}
-            filterName='difficulty'
-            selectedValues={filterState.difficulty}
-            updateFunc={updateTaskFilter}
-            values={Object.values(DIFFICULTY)}
-          />
-
-          <FilterSelectAll
-            filterName='difficulty'
-            updateFunc={updateTaskFilter}
-            values={Object.values(DIFFICULTY).map(diff => diff.label)}
-          />
-        </div>
+    </>
+  );
+  const RegionFilter = (
+    <>
+      <h3 className='heading-accent-md'>Regions</h3>
+      <div className='flex flex-col px-3 text-sm max-w-[320px]'>
+        <FilterButtons
+          filterName='regions'
+          selectedValues={
+            filterState.regions[0] === UNLOCKED_REGION_FILTER_VALUE ? unlockedRegionNames : filterState.regions
+          }
+          updateFunc={updateTaskFilter}
+          values={TRAILBLAZER_REGIONS}
+        />
+        <FilterSelectAll
+          filterName='regions'
+          updateFunc={updateTaskFilter}
+          values={TRAILBLAZER_REGIONS.map(({ label }) => label)}
+          additionalButtons={[{ label: 'unlocked', value: [UNLOCKED_REGION_FILTER_VALUE] }]}
+        />
       </div>
-      <div className='lg:order-5 sm:order-2 order-5 row-span-2'>
-        <span className='heading-accent-md mt-1'>Requirements</span>
-        <div className='ml-2 mb-2'>
-          <LabeledCheckbox
-            className='text-sm'
-            label='Show tasks with no requirements'
-            checked={filterState.showNoRequirements}
-            onClick={e => dispatch(updateTaskFilter({ field: 'showNoRequirements', value: e.target.checked }))}
-          />
-          <LabeledCheckbox
-            className='text-sm'
-            label='Show tasks with unmet requirements'
-            checked={filterState.showUnmetRequirements}
-            onClick={e => dispatch(updateTaskFilter({ field: 'showUnmetRequirements', value: e.target.checked }))}
-          />
-          <LabeledCheckbox
-            className='text-sm'
-            label='Show tasks with incomplete prerequisites'
-            checked={filterState.showIncompletePrereqs}
-            onClick={e => dispatch(updateTaskFilter({ field: 'showIncompletePrereqs', value: e.target.checked }))}
-          />
-          {/* Uncomment if unchained talent is a relic again
-          <LabeledCheckbox
-            className='text-sm'
-            label='Use unchained talent skill boost'
-            checked={filterState.isUnchainedTalent}
-            onClick={e => dispatch(updateTaskFilter({ field: 'isUnchainedTalent', value: e.target.checked }))}
-          /> */}
-        </div>
-        <div className='lg:w-full text-sm flex flex-col mb-2'>
-          <SkillsFilter filterState={filterState} />
-          <span className='inline italic text-center'>
-            <span className='mr-1'>Quick select skills:</span>
-            <button
-              className='inline italic hover:underline mx-1'
-              type='button'
-              onClick={() => dispatch(updateTaskFilter({ field: 'skills', value: Object.keys(STATS) }))}
-            >
-              all
-            </button>
-            |
-            <button
-              className='inline italic hover:underline mx-1'
-              type='button'
-              onClick={() => dispatch(updateTaskFilter({ field: 'skills', value: [] }))}
-            >
-              none
-            </button>
-          </span>
-        </div>
+    </>
+  );
+  const DifficultyFilter = (
+    <>
+      <span className='heading-accent-md mt-1'>Difficulty</span>
+      <div className='px-3 text-sm max-w-[320px]'>
+        <FilterButtons
+          cols={3}
+          filterName='difficulty'
+          selectedValues={filterState.difficulty}
+          updateFunc={updateTaskFilter}
+          values={Object.values(DIFFICULTY)}
+        />
+        <FilterSelectAll
+          filterName='difficulty'
+          updateFunc={updateTaskFilter}
+          values={Object.values(DIFFICULTY).map(diff => diff.label)}
+        />
       </div>
-      <div className='xl:order-6 lg:order-3 sm:order-5 order-6 row-span-2'>
-        <p className='heading-accent-md mt-1'>Category</p>
-        <div className='w-full px-3 text-sm'>
-          <CheckboxTree
-            checkboxName='categories'
-            filterState={filterState.categories}
-            nodes={formatCategoriesForCheckboxTree()}
-            onCheckFunc={updateTaskFilter}
-          />
-        </div>
+    </>
+  );
+  const RequirementsFilter = (
+    <>
+      <span className='heading-accent-md mt-1'>Requirements</span>
+      <div className='ml-2 mb-2'>
+        <LabeledCheckbox
+          className='text-sm'
+          label='Show tasks with no requirements'
+          checked={filterState.showNoRequirements}
+          onClick={e => dispatch(updateTaskFilter({ field: 'showNoRequirements', value: e.target.checked }))}
+        />
+        <LabeledCheckbox
+          className='text-sm'
+          label='Show tasks with unmet requirements'
+          checked={filterState.showUnmetRequirements}
+          onClick={e => dispatch(updateTaskFilter({ field: 'showUnmetRequirements', value: e.target.checked }))}
+        />
+        <LabeledCheckbox
+          className='text-sm'
+          label='Show tasks with incomplete prerequisites'
+          checked={filterState.showIncompletePrereqs}
+          onClick={e => dispatch(updateTaskFilter({ field: 'showIncompletePrereqs', value: e.target.checked }))}
+        />
+        {/* Uncomment if unchained talent is a relic again
+      <LabeledCheckbox
+        className='text-sm'
+        label='Use unchained talent skill boost'
+        checked={filterState.isUnchainedTalent}
+        onClick={e => dispatch(updateTaskFilter({ field: 'isUnchainedTalent', value: e.target.checked }))}
+      /> */}
       </div>
-      <div className='w-full px-3 gap-1 grid lg:grid-cols-1 sm:grid-cols-2 grid-cols-1 order-7 sm:col-span-2 lg:col-span-1'>
-        <button type='button' className='button-outline w-full mb-1 h-fit' onClick={() => dispatch(resetTasks())}>
-          Clear filters
+      <div className='lg:w-full text-sm flex flex-col mb-2 max-w-[320px]'>
+        <SkillsFilter filterState={filterState} />
+        <span className='inline italic text-center'>
+          <span className='mr-1'>Quick select skills:</span>
+          <button
+            className='inline italic hover:underline mx-1'
+            type='button'
+            onClick={() => dispatch(updateTaskFilter({ field: 'skills', value: Object.keys(STATS) }))}
+          >
+            all
+          </button>
+          |
+          <button
+            className='inline italic hover:underline mx-1'
+            type='button'
+            onClick={() => dispatch(updateTaskFilter({ field: 'skills', value: [] }))}
+          >
+            none
+          </button>
+        </span>
+      </div>
+    </>
+  );
+  const CategoryFilter = (
+    <>
+      <p className='heading-accent-md mt-1'>Category</p>
+      <div className='w-full px-3 text-sm'>
+        <CheckboxTree
+          checkboxName='categories'
+          filterState={filterState.categories}
+          nodes={formatCategoriesForCheckboxTree()}
+          onCheckFunc={updateTaskFilter}
+        />
+      </div>
+    </>
+  );
+  const ActionButtons = (
+    <>
+      <button type='button' className='button-outline w-full mb-1 h-fit' onClick={() => dispatch(resetTasks())}>
+        Clear filters
+      </button>
+      <div className='flex gap-1'>
+        <button
+          type='button'
+          className={`${history.canUndo ? 'button-outline' : 'button-outline-disabled'} w-full h-fit`}
+          disabled={!history.canUndo}
+          onClick={history.undo}
+        >
+          Undo
         </button>
-        <div className='flex gap-1'>
-          <button
-            type='button'
-            className={`${history.canUndo ? 'button-outline' : 'button-outline-disabled'} w-full`}
-            disabled={!history.canUndo}
-            onClick={history.undo}
-          >
-            Undo
-          </button>
-          <button
-            type='button'
-            className={`${history.canRedo ? 'button-outline' : 'button-outline-disabled'} w-full`}
-            disabled={!history.canRedo}
-            onClick={history.redo}
-          >
-            Redo
-          </button>
-        </div>
-        {/* TODO save reordered task state */}
-        {/* {filterState.reorderEnabled ? (
-                    <button
-                        type='button'
-                        className='button-outline w-full mb-1 h-fit'
-                        onClick={() =>
-                            batch(() => {
-                                dispatch(updateTaskFilter({ field: 'reorderEnabled', value: false }));
-                            })
-                        }
-                    >
-                        Save custom task order
-                    </button>
-                ) : (
-                    <button
-                        type='button'
-                        className='button-outline w-full mb-1 h-fit'
-                        onClick={() => dispatch(updateTaskFilter({ field: 'reorderEnabled', value: true }))}
-                    >
-                        Enable drag-and-drop reordering
-                    </button>
-                )} */}
+        <button
+          type='button'
+          className={`${history.canRedo ? 'button-outline' : 'button-outline-disabled'} w-full h-fit`}
+          disabled={!history.canRedo}
+          onClick={history.redo}
+        >
+          Redo
+        </button>
       </div>
+    </>
+  );
+
+  return (
+    <div className='grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-1 gap-2 mt-3'>
+      <div className='flex flex-col gap-2'>{StatusFilters}</div>
+      <div className='w-full'>{RegionFilter}</div>
+      <div className='w-full'>{DifficultyFilter}</div>
+      <div className='w-full'>{RequirementsFilter}</div>
+      <div className='w-full'>{CategoryFilter}</div>
+      <div className='w-full px-3 gap-1 grid grid-cols-1 max-w-[320px]'>{ActionButtons}</div>
     </div>
   );
 }

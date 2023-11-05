@@ -17,6 +17,8 @@ export default function TaskGenerator() {
     tasks: { tasks: tasksState, randomTaskId },
     filters: { tasks: filterState },
   } = useSelector(({ tasks, filters }) => ({ tasks, filters }));
+  const regionsState = useSelector(state => state.unlocks.regions);
+  const hiscoresState = useSelector(state => state.character.hiscoresCache.data);
   const dispatch = useDispatch();
 
   const filteredTasks = useFilterTasks({
@@ -24,6 +26,8 @@ export default function TaskGenerator() {
       ...filterState,
     },
     tasksState,
+    hiscoresState,
+    regionsState,
   });
 
   const allTasksCompleted =
@@ -84,7 +88,7 @@ export default function TaskGenerator() {
   );
 
   return (
-    <div className='flex flex-col gap-2'>
+    <div className='flex flex-col gap-2 max-w-[320px]'>
       <span className='heading-accent-md'>Random Task Generator</span>
       <div className='w-full px-3 mb-4'>{noPossibleTasks ? renderNoPossibleTask : renderTask}</div>
       {!allTasksCompleted && (

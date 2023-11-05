@@ -65,13 +65,15 @@ export default function TaskTable({ history, readonly, taskState: propsTaskState
         sortType: sortCategory,
         Cell: Category,
       },
-      {
-        Header: 'Completed at',
-        id: 'completedAt',
-        Cell: Cell.TaskCompletedAt,
-        sortType: sortCompletedAt,
-        accessor: 'completedAt',
-      },
+      // TODO add setting to enable this column
+      // {
+      //   Header: 'Completed at',
+      //   id: 'completedAt',
+      //   Cell: Cell.TaskCompletedAt,
+      //   sortType: sortCompletedAt,
+      //   accessor: 'completedAt',
+      // },
+      // TODO add setting to hide this column
       {
         Header: 'Priority',
         id: 'priority',
@@ -79,6 +81,14 @@ export default function TaskTable({ history, readonly, taskState: propsTaskState
         Cell: Cell.Priority,
         sortType: sortPriority,
         accessor: 'priority',
+      },
+      {
+        Header: 'Regions',
+        id: 'regions',
+        accessor: 'regions',
+        maxWidth: 110,
+        Cell: Cell.Regions,
+        disableSortBy: true,
       },
     ],
     [isXsViewport, isSmViewport, isMdOrSmallerViewport]
@@ -99,6 +109,7 @@ export default function TaskTable({ history, readonly, taskState: propsTaskState
 
   const filterState = useSelector(state => state.filters.tasks);
   const tasksState = useSelector(state => state.tasks.tasks);
+  const regionsState = useSelector(state => state.unlocks.regions);
   const hiscoresState = useSelector(state => state.character.hiscoresCache.data);
 
   return (
@@ -108,7 +119,7 @@ export default function TaskTable({ history, readonly, taskState: propsTaskState
       filters={filters}
       filterState={filterState}
       globalFilter={fuzzyTextFilter}
-      customFilterProps={{ tasksState, hiscoresState }}
+      customFilterProps={{ tasksState, hiscoresState, regionsState }}
       defaultColumn={defaultColumn}
       initialState={initialState}
       ExpandedRow={readonly ? Cell.ReadonlyExpandedTask : Cell.ExpandedTask}
@@ -141,9 +152,9 @@ function sortCategory(a, b) {
   return compareVal;
 }
 
-function sortCompletedAt(a, b) {
-  return a.values.completedAt - b.values.completedAt;
-}
+// function sortCompletedAt(a, b) {
+//   return a.values.completedAt - b.values.completedAt;
+// }
 
 function sortPriority(a, b) {
   const priorityA = a.values.priority === 'high' ? 3 : a.values.priority === 'low' ? 1 : 2;

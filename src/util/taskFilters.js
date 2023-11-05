@@ -1,6 +1,8 @@
 import { difference } from 'lodash';
+import { UNLOCKED_REGION_FILTER_VALUE } from '../components/CalculatorFilters';
 import { STATS } from '../data/constants';
-import tasks from '../data/tasks';
+import { regionsById } from '../data/regions';
+import tasks, { REGION_ANY } from '../data/tasks';
 
 function difficultyFilter(record, filterState) {
   if (filterState.difficulty === null) {
@@ -77,6 +79,17 @@ function ignoredFilter(record, filterState, { tasksState }) {
   return (filterState.ignored === 'only') === !!ignored;
 }
 
+function regionsFilter(record, filterState, { regionsState }) {
+  const unlockedRegionNames = regionsState.filter(id => id >= 0).map(id => regionsById[id].label);
+  if (record.regions[0] === REGION_ANY && filterState.regions.length) {
+    return true;
+  }
+  if (filterState.regions[0] === UNLOCKED_REGION_FILTER_VALUE) {
+    return record.regions.some(area => unlockedRegionNames.includes(area));
+  }
+  return record.regions.some(area => filterState.regions.includes(area));
+}
+
 export default {
   difficultyFilter,
   categoryFilter,
@@ -85,4 +98,5 @@ export default {
   todoFilter,
   ignoredFilter,
   prereqFilter,
+  regionsFilter,
 };
