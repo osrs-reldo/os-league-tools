@@ -201,6 +201,11 @@ export const BOSSES = {
     label: 'Alchemical Hydra',
     icon: images['alchemical-hydra.png'],
   },
+  ARTIO: {
+    hiscoresName: 'artio',
+    label: 'Artio',
+    icon: images['artio.png'],
+  },
   BARROWS: {
     hiscoresName: 'barrows',
     label: 'Barrows',
@@ -215,6 +220,11 @@ export const BOSSES = {
     hiscoresName: 'callisto',
     label: 'Callisto',
     icon: images['callisto.png'],
+  },
+  CALVARION: {
+    hiscoresName: 'calvarion',
+    label: "Calvar'ion",
+    icon: images['calvarion.png'],
   },
   CERBERUS: {
     hiscoresName: 'cerberus',
@@ -276,6 +286,11 @@ export const BOSSES = {
     label: 'Deranged Archaeologist',
     icon: images['deranged-archaeologist.png'],
     isDefaultUnlock: true,
+  },
+  DUKE_SUCELLUS: {
+    hiscoresName: 'dukeSucellus',
+    label: 'Duke Sucellus',
+    icon: images['duke.png'],
   },
   GENERAL_GRAARDOR: {
     hiscoresName: 'generalGraardor',
@@ -348,6 +363,11 @@ export const BOSSES = {
     label: 'Obor',
     icon: images['obor.png'],
   },
+  PHANTOM_MUSPAH: {
+    hiscoresName: 'phantomMuspah',
+    label: 'Phantom Muspah',
+    icon: images['muspah.png'],
+  },
   SARACHNIS: {
     hiscoresName: 'sarachnis',
     label: 'Sarachnis',
@@ -364,6 +384,11 @@ export const BOSSES = {
     label: 'Skotizo',
     icon: images['skotizo.png'],
   },
+  SPINDEL: {
+    hiscoresName: 'spindel',
+    label: 'Spindel',
+    icon: images['spindel.png'],
+  },
   TEMPOROSS: {
     hiscoresName: 'tempoross',
     label: 'Tempoross',
@@ -378,6 +403,16 @@ export const BOSSES = {
     hiscoresName: 'corruptedGauntlet',
     label: 'The Corrupted Gauntlet',
     icon: images['the-corrupted-gauntlet.png'],
+  },
+  THE_LEVIATHAN: {
+    hiscoresName: 'leviathan',
+    label: 'The Leviathan',
+    icon: images['leviathan.png'],
+  },
+  THE_WHISPERER: {
+    hiscoresName: 'whisperer',
+    label: 'The Whisperer',
+    icon: images['whisperer.png'],
   },
   THEATRE_OF_BLOOD: {
     hiscoresName: 'theatreOfBlood',
@@ -394,6 +429,16 @@ export const BOSSES = {
     label: 'Thermonuclear Smoke Devil',
     icon: images['thermonuclear-smoke-devil.png'],
   },
+  TOMBS_OF_AMASCUT: {
+    hiscoresName: 'tombsOfAmascut',
+    label: 'Tombs of Amascut',
+    icon: images['toa.png'],
+  },
+  TOMBS_OF_AMASCUT_EXPERT: {
+    hiscoresName: 'tombsOfAmascutExpertMode',
+    label: 'Tombs of Amascut: Expert Mode',
+    icon: images['toaExpert.png'],
+  },
   TZKAL_ZUK: {
     hiscoresName: 'tzKalZuk',
     label: 'TzKal-Zuk',
@@ -405,6 +450,11 @@ export const BOSSES = {
     label: 'TzTok-Jad',
     icon: images['tztok-jad.png'],
     isDefaultUnlock: true,
+  },
+  VARDORVIS: {
+    hiscoresName: 'vardorvis',
+    label: 'Vardorvis',
+    icon: images['vardorvis.png'],
   },
   VENENATIS: {
     hiscoresName: 'venenatis',

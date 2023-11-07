@@ -5,11 +5,19 @@ import { BOSSES } from '../data/constants';
 
 export default function BossesPanel() {
   const hiscores = useSelector(state => state.character.hiscoresCache.data?.bosses);
+  const emptyTilesToRender = Object.values(BOSSES).length % 4;
+  const emptyTiles = [];
+  for (let i = 0; i < emptyTilesToRender; i++) {
+    emptyTiles.push(i);
+  }
 
   return (
     <div className='grid grid-cols-4 gap-px w-fit bg-subdued'>
       {Object.values(BOSSES).map(boss => (
         <BossTile key={boss.label} boss={boss} bossHiscores={hiscores ? hiscores[boss.hiscoresName] : {}} />
+      ))}
+      {emptyTiles.map(i => (
+        <BossTile key={i} />
       ))}
     </div>
   );
