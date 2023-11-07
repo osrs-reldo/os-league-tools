@@ -9,12 +9,15 @@ import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import { RELIC_UNLOCK_THRESHOLDS } from '../data/relics';
 import useTrackerHistory from '../hooks/useTrackerHistory';
 import Banner from '../components/common/Banner';
+import { getRegionTier } from '../util/getTier';
+import { REGION_UNLOCK_THRESHOLDS } from '../data/regions';
 
 export default function TasksPanel({ readonly, taskState }) {
   const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.LESS_OR_EQ);
   const isXlViewport = useBreakpoint(MEDIA_QUERIES.XL);
   const [showSidebar, setShowSidebar] = useState(isXlViewport);
   const { taskStats, tier } = useSelector(state => state.tasks);
+  const regionTier = getRegionTier(taskStats.tasks.complete.total);
   const history = useTrackerHistory();
 
   return (
@@ -25,13 +28,6 @@ export default function TasksPanel({ readonly, taskState }) {
           This task list is not accurate for the new league. It will be updated when jagex releases the official list.
           Thanks for your patience!
         </Banner>
-        <div className='shadow-subdued mb-3'>
-          <ThemedProgressBar
-            curValue={taskStats.points.complete.total}
-            maxValue={RELIC_UNLOCK_THRESHOLDS[RELIC_UNLOCK_THRESHOLDS - 1]}
-            steps={RELIC_UNLOCK_THRESHOLDS}
-          />
-        </div>
         <div className='flex flex-wrap text-accent font-semibold justify-evenly gap-2'>
           <span>
             Tasks: {taskStats.tasks.complete.total} / {taskStats.tasks.available.total}
@@ -42,11 +38,44 @@ export default function TasksPanel({ readonly, taskState }) {
           <span>
             To-do: {taskStats.tasks.todo.total} tasks ({taskStats.points.todo.total} points)
           </span>
-          {tier < RELIC_UNLOCK_THRESHOLDS.length && (
-            <span>{`Next unlock at ${RELIC_UNLOCK_THRESHOLDS[tier]} pts (${
-              RELIC_UNLOCK_THRESHOLDS[tier] - taskStats.points.complete.total
-            } remaining)`}</span>
-          )}
+        </div>
+        <div className='flex flex-row w-full gap-5 mt-3'>
+          <div className='basis-1/2'>
+            <div className='mb-1'>
+              <ThemedProgressBar
+                curValue={taskStats.points.complete.total}
+                maxValue={RELIC_UNLOCK_THRESHOLDS[RELIC_UNLOCK_THRESHOLDS.length - 1]}
+                steps={RELIC_UNLOCK_THRESHOLDS}
+              />
+            </div>
+            <div className='text-accent text-sm text-center'>
+              {tier < RELIC_UNLOCK_THRESHOLDS.length ? (
+                <span>{`Next relic unlocked at ${RELIC_UNLOCK_THRESHOLDS[tier]} pts (${
+                  RELIC_UNLOCK_THRESHOLDS[tier] - taskStats.points.complete.total
+                } remaining)`}</span>
+              ) : (
+                'All relics unlocked'
+              )}
+            </div>
+          </div>
+          <div className='basis-1/2'>
+            <div className='shadow-subdued mb-1'>
+              <ThemedProgressBar
+                curValue={taskStats.tasks.complete.total}
+                maxValue={REGION_UNLOCK_THRESHOLDS[REGION_UNLOCK_THRESHOLDS.length - 1]}
+                steps={REGION_UNLOCK_THRESHOLDS}
+              />
+            </div>
+            <div className='text-accent text-sm text-center'>
+              {tier <= REGION_UNLOCK_THRESHOLDS.length ? (
+                <span>{`Next region unlocked at ${REGION_UNLOCK_THRESHOLDS[regionTier + 1]} tasks (${
+                  REGION_UNLOCK_THRESHOLDS[regionTier + 1] - taskStats.tasks.complete.total
+                } remaining)`}</span>
+              ) : (
+                'All regions unlocked'
+              )}
+            </div>
+          </div>
         </div>
       </div>
       <Separator />

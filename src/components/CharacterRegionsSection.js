@@ -36,19 +36,24 @@ export default function CharacterRegionsSection({ unlockedRegions, taskStats }) 
           <RegionSelect canUnlock={regionTier >= 3} unlockTier={3} onClick={() => openUnlockModal(4)} />
         )}
       </div>
-      <div className='w-11/12'>
-        <ThemedProgressBar
-          curValue={taskStats.tasks.complete.total}
-          maxValue={REGION_UNLOCK_THRESHOLDS[REGION_UNLOCK_THRESHOLDS.length - 1]}
-          steps={REGION_UNLOCK_THRESHOLDS}
-        />
-      </div>
-      <div className='flex w-full flex-wrap justify-around text-center align-middle tracking-wide text-md text-primary gap-3'>
-        <span>{`Regions unlocked: ${unlockedRegions.filter(id => id !== NONE_REGION_ID).length} / 5`}</span>
-        <span>
-          Next unlock at {nextUnlockThreshold} tasks ({nextUnlockThreshold - taskStats.tasks.complete.total} remaining)
-        </span>
-      </div>
+      {regionTier <= REGION_UNLOCK_THRESHOLDS.length && (
+        <>
+          <div className='w-11/12'>
+            <ThemedProgressBar
+              curValue={taskStats.tasks.complete.total}
+              maxValue={REGION_UNLOCK_THRESHOLDS[REGION_UNLOCK_THRESHOLDS.length - 1]}
+              steps={REGION_UNLOCK_THRESHOLDS}
+            />
+          </div>
+          <div className='flex w-full flex-wrap justify-around text-center align-middle tracking-wide text-md text-primary gap-3'>
+            <span>{`Regions unlocked: ${unlockedRegions.filter(id => id !== NONE_REGION_ID).length} / 5`}</span>
+            <span>
+              Next unlock at {nextUnlockThreshold} tasks ({nextUnlockThreshold - taskStats.tasks.complete.total}{' '}
+              remaining)
+            </span>
+          </div>
+        </>
+      )}
       <div className='flex flex-row flex-wrap w-11/12 gap-2'>
         <RegionMap unlockedRegions={unlockedRegions} />
       </div>

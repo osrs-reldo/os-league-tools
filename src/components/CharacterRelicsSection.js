@@ -27,21 +27,23 @@ export default function CharacterRelicsSection({ tier, taskStats, unlockedRelics
           )
         )}
       </div>
-      <div className='w-11/12'>
-        <ThemedProgressBar
-          curValue={taskStats.points.complete.total}
-          maxValue={RELIC_UNLOCK_THRESHOLDS[RELIC_UNLOCK_THRESHOLDS.length - 1]}
-          steps={RELIC_UNLOCK_THRESHOLDS}
-        />
-      </div>
-      <div className='flex w-full flex-wrap justify-around text-center align-middle tracking-wide text-md text-primary gap-3'>
-        <span>{`Relics unlocked: ${relicsUnlocked} / 7`}</span>
-        {tier < RELIC_UNLOCK_THRESHOLDS.length && (
-          <span>{`Next unlock at ${RELIC_UNLOCK_THRESHOLDS[tier]} pts (${
-            RELIC_UNLOCK_THRESHOLDS[tier] - taskStats.points.complete.total
-          } remaining)`}</span>
-        )}
-      </div>
+      {tier < RELIC_UNLOCK_THRESHOLDS.length && (
+        <>
+          <div className='w-11/12'>
+            <ThemedProgressBar
+              curValue={taskStats.points.complete.total}
+              maxValue={RELIC_UNLOCK_THRESHOLDS[RELIC_UNLOCK_THRESHOLDS.length - 1]}
+              steps={RELIC_UNLOCK_THRESHOLDS}
+            />
+          </div>
+          <div className='flex w-full flex-wrap justify-around text-center align-middle tracking-wide text-md text-primary gap-3'>
+            <span>{`Relics unlocked: ${relicsUnlocked} / 7`}</span>
+            <span>{`Next unlock at ${RELIC_UNLOCK_THRESHOLDS[tier]} pts (${
+              RELIC_UNLOCK_THRESHOLDS[tier] - taskStats.points.complete.total
+            } remaining)`}</span>
+          </div>
+        </>
+      )}
       <RelicUnlockModal
         isOpen={relicUnlockModalState.open}
         setIsOpen={() => setRelicUnlockModalState({ open: false, tier: -1 })}

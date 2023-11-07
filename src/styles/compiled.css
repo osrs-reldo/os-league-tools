@@ -2312,9 +2312,6 @@ select[multiple]:focus option:checked {
 .min-w-\[26rem\] {
   min-width: 26rem;
 }
-.max-w-\[310px\] {
-  max-width: 310px;
-}
 .max-w-\[320px\] {
   max-width: 320px;
 }
@@ -2335,6 +2332,9 @@ select[multiple]:focus option:checked {
 }
 .grow {
   flex-grow: 1;
+}
+.basis-1\/2 {
+  flex-basis: 50%;
 }
 .basis-2\/5 {
   flex-basis: 40%;
@@ -2462,6 +2462,9 @@ select[multiple]:focus option:checked {
 }
 .gap-4 {
   gap: 1rem;
+}
+.gap-5 {
+  gap: 1.25rem;
 }
 .gap-px {
   gap: 1px;
