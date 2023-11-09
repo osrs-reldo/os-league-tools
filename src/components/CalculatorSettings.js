@@ -246,7 +246,7 @@ export default function CalculatorSettings({ expMultipliersState, inputMultiplie
         </>
       )}
 
-      <CalculatorFilters />
+      <CalculatorFilters skill={selectedSkill} />
 
       <button className='button-outline w-full mt-4' type='button' onClick={resetCalculator}>
         <span className='icon-base align-bottom'>refresh</span> Reset

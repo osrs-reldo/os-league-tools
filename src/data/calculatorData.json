@@ -39,6 +39,10 @@
           "label": "Rooftop courses"
         },
         {
+          "value": "Shortcuts",
+          "label": "Shortcuts"
+        },
+        {
           "value": "Other",
           "label": "Other"
         }

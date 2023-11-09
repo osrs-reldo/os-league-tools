@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import CalculatorSettings from '../components/CalculatorSettings';
 import CalculatorTable from '../components/CalculatorTable';
 import useMultipliers from '../hooks/useMultipliers';
 
 export default function CalculatorsPanel() {
+  const {
+    calculators: { skill, expValues, calculatorTier },
+  } = useSelector(state => ({ calculators: state.calculators, tasks: state.tasks }));
   const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.LESS_OR_EQ);
   const isXlViewport = useBreakpoint(MEDIA_QUERIES.XL);
   const [showSidebar, setShowSidebar] = useState(isXlViewport);
@@ -23,6 +27,7 @@ export default function CalculatorsPanel() {
       {showSidebar && (
         <div className='basis-[23%] p-2'>
           <CalculatorSettings
+            skill={skill}
             expMultipliersState={expMultipliersState}
             inputMultipliersState={inputMultipliersState}
             outputMultipliersState={outputMultipliersState}
@@ -44,6 +49,9 @@ export default function CalculatorsPanel() {
         )}
       </div>
       <CalculatorTable
+        skill={skill}
+        expValues={expValues}
+        calculatorTier={calculatorTier}
         applyExpMultipliers={expMultipliersState.applyMultipliers}
         applyInputMultipliers={inputMultipliersState.applyMultipliers}
         applyOutputMultipliers={outputMultipliersState.applyMultipliers}

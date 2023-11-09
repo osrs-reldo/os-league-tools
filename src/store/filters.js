@@ -7,7 +7,7 @@ import { STATS, DIFFICULTY, DIARY_LOCATIONS, DIARY_DIFFICULTY } from '../data/co
 import { QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/quests';
 import { TRAILBLAZER_REGIONS } from '../data/regions';
 
-const CURRENT_VERSION = 15;
+const CURRENT_VERSION = 16;
 
 const mapDataValues = values => Object.values(values).map(({ label }) => label);
 
@@ -43,6 +43,7 @@ const INITIAL_DIARIES_STATE = {
 
 const INITIAL_CALCULATORS_STATE = {
   regions: mapDataValues(TRAILBLAZER_REGIONS),
+  categories: {},
 };
 
 const INITIAL_STATE = {
@@ -67,7 +68,11 @@ export const filterSlice = createSlice({
       state.diaries[action.payload.field] = action.payload.value;
     },
     updateCalculatorsFilter: (state, action) => {
-      state.calculators[action.payload.field] = action.payload.value;
+      if (action.payload.subfield) {
+        state.calculators[action.payload.field][action.payload.subfield] = action.payload.value;
+      } else {
+        state.calculators[action.payload.field] = action.payload.value;
+      }
     },
     resetTasks: state => ({
       ...state,

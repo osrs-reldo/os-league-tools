@@ -10,11 +10,14 @@ import RegionsCell from './common/calculator/RegionsCell';
 import { regionsById } from '../data/regions';
 import { UNLOCKED_REGION_FILTER_VALUE } from './CalculatorFilters';
 
-export default function CalculatorTable({ applyExpMultipliers, applyInputMultipliers, applyOutputMultipliers }) {
-  const {
-    calculators: { skill, expValues, calculatorTier },
-  } = useSelector(state => ({ calculators: state.calculators, tasks: state.tasks }));
-
+export default function CalculatorTable({
+  skill,
+  expValues,
+  calculatorTier,
+  applyExpMultipliers,
+  applyInputMultipliers,
+  applyOutputMultipliers,
+}) {
   const expMultiplier = getExpMultiplier(calculatorTier);
 
   const RAW_DATA = CALCULATOR_DATA.calculators[skill.toLowerCase()].actions;
@@ -24,7 +27,7 @@ export default function CalculatorTable({ applyExpMultipliers, applyInputMultipl
     return {
       ...activity,
       exp: totalExp,
-      expActions: Math.ceil(expRequired / totalExp),
+      actionsRequired: Math.ceil(expRequired / totalExp),
       inputs: activity.inputs.map(input => ({
         ...input,
         amount: applyInputMultipliers(input.amount, activity.inputMultipliers),
@@ -70,9 +73,11 @@ export default function CalculatorTable({ applyExpMultipliers, applyInputMultipl
         Cell: NumberCell,
       },
       {
-        Header: 'Actions required',
+        Header: 'Actions',
         id: 'actions',
-        accessor: 'expActions',
+        maxWidth: 80,
+        minWidth: 80,
+        accessor: 'actionsRequired',
         Cell: NumberCell,
       },
       {
@@ -81,7 +86,7 @@ export default function CalculatorTable({ applyExpMultipliers, applyInputMultipl
         accessor: row =>
           row.inputs.map(input => ({
             ...input,
-            actions: row.expActions,
+            actions: row.actionsRequired,
           })),
         Cell: MaterialsCell,
         disableSortBy: true,
@@ -92,7 +97,7 @@ export default function CalculatorTable({ applyExpMultipliers, applyInputMultipl
         accessor: row =>
           row.outputs.map(output => ({
             ...output,
-            actions: row.expActions,
+            actions: row.actionsRequired,
           })),
         Cell: MaterialsCell,
         disableSortBy: true,
@@ -124,10 +129,10 @@ export default function CalculatorTable({ applyExpMultipliers, applyInputMultipl
         columns={columns}
         data={data}
         defaultColumn={defaultColumn}
-        filters={[regionsFilter]}
+        filters={[regionsFilter, categoryFilter]}
         filterState={filterState}
         initialState={initialState}
-        customFilterProps={{ regionsState }}
+        customFilterProps={{ regionsState, skill }}
         enableResizeColumns
         reorderEnabled={false}
       />
@@ -144,4 +149,11 @@ function regionsFilter(record, filterState, { regionsState }) {
     return record.areas.some(area => unlockedRegionNames.includes(area));
   }
   return record.areas.some(area => filterState.regions.includes(area));
+}
+
+function categoryFilter(record, filterState, { skill }) {
+  if (!filterState.categories[skill.toLowerCase()]) {
+    return true;
+  }
+  return filterState.categories[skill.toLowerCase()].includes(record.category);
 }
