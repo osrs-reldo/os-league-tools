@@ -25,6 +25,7 @@ export default function Table({
   ExpandedRow,
   customFilterProps = {},
   enableResizeColumns = true,
+  forceResetPage = false,
 }) {
   const [records, setRecords] = useState(data);
 
@@ -61,7 +62,7 @@ export default function Table({
   useEffect(() => {
     // Reset to first page when filters are changed
     table.gotoPage(0);
-  }, [filterState]);
+  }, [filterState, forceResetPage]);
 
   const moveRow = (dragIndex, hoverIndex) => {
     const dragRecord = records[dragIndex];

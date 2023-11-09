@@ -1,7 +1,5 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import CALCULATOR_DATA from '../data/calculatorData.json';
-import { getExpMultiplier } from '../util/getTier';
 import Table from './common/Table';
 import NumberCell from './common/calculator/NumberCell';
 import ActivityCell from './common/calculator/ActivityCell';
@@ -9,6 +7,7 @@ import MaterialsCell from './common/calculator/MaterialsCell';
 import RegionsCell from './common/calculator/RegionsCell';
 import { regionsById } from '../data/regions';
 import { UNLOCKED_REGION_FILTER_VALUE } from './CalculatorFilters';
+import useCalculatorData from '../hooks/useCalculatorData';
 
 export default function CalculatorTable({
   skill,
@@ -18,28 +17,18 @@ export default function CalculatorTable({
   applyInputMultipliers,
   applyOutputMultipliers,
 }) {
-  const expMultiplier = getExpMultiplier(calculatorTier);
+  const { data } = useCalculatorData(
+    skill,
+    expValues,
+    calculatorTier,
+    applyExpMultipliers,
+    applyInputMultipliers,
+    applyOutputMultipliers
+  );
 
-  const RAW_DATA = CALCULATOR_DATA.calculators[skill.toLowerCase()].actions;
-  const expRequired = expValues.target.xp - expValues.start.xp;
-  const calculatedData = RAW_DATA.map(activity => {
-    const totalExp = applyExpMultipliers(activity.exp * expMultiplier, activity.expMultipliers);
-    return {
-      ...activity,
-      exp: totalExp,
-      actionsRequired: Math.ceil(expRequired / totalExp),
-      inputs: activity.inputs.map(input => ({
-        ...input,
-        amount: applyInputMultipliers(input.amount, activity.inputMultipliers),
-      })),
-      outputs: activity.outputs.map(output => ({
-        ...output,
-        amount: applyOutputMultipliers(output.amount, activity.outputMultipliers),
-      })),
-    };
-  });
-
-  const data = useMemo(() => calculatedData, [skill, expValues, calculatorTier, calculatedData]);
+  // Force reset page to 1 when skill is changed
+  const [forceResetPage, setForceResetPage] = useState(false);
+  useEffect(() => setForceResetPage(prev => !prev), [skill]);
 
   const columns = useMemo(
     () => [
@@ -135,6 +124,7 @@ export default function CalculatorTable({
         customFilterProps={{ regionsState, skill }}
         enableResizeColumns
         reorderEnabled={false}
+        forceResetPage={forceResetPage}
       />
     </div>
   );
