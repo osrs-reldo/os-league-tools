@@ -24,7 +24,7 @@ const INITIAL_STATE = {
   version: CURRENT_VERSION,
   skill: calculatorData.skills[0],
   expValues: DEFAULT_CALCULATOR_EXP_VALUES,
-  calculatorTier: 1,
+  baseMultiplier: 1,
 };
 
 const calculatorsSlice = createSlice({
@@ -55,8 +55,8 @@ const calculatorsSlice = createSlice({
       const { mode, type } = action.payload;
       state.expValues[type].mode = mode;
     },
-    updateCalculatorsTier: (state, action) => {
-      state.calculatorTier = action.payload;
+    updateCalculatorsBaseMultiplier: (state, action) => {
+      state.baseMultiplier = action.payload;
     },
     reset: () => INITIAL_STATE,
   },
@@ -76,7 +76,7 @@ export const {
   updateCalculatorsExpValues,
   updateSingleCalculatorsExpValue,
   updateCalculatorsMode,
-  updateCalculatorsTier,
+  updateCalculatorsBaseMultiplier,
   reset,
 } = calculatorsSlice.actions;
 

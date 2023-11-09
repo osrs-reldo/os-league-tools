@@ -12,7 +12,7 @@ import useCalculatorData from '../hooks/useCalculatorData';
 export default function CalculatorTable({
   skill,
   expValues,
-  calculatorTier,
+  baseMultiplier,
   expMultipliersState,
   inputMultipliersState,
   outputMultipliersState,
@@ -20,7 +20,7 @@ export default function CalculatorTable({
   const { data } = useCalculatorData(
     skill,
     expValues,
-    calculatorTier,
+    baseMultiplier,
     expMultipliersState,
     inputMultipliersState,
     outputMultipliersState

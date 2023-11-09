@@ -1,14 +1,18 @@
 import React, { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import CALCULATOR_DATA from '../data/calculatorData.json';
-import { getExpMultiplier } from '../util/getTier';
 import Table from './common/Table';
 import NumberCell from './common/calculator/NumberCell';
 import ActivityCell from './common/calculator/ActivityCell';
 import MaterialsCell from './common/calculator/MaterialsCell';
 import InputCell from './common/calculator/InputCell';
 
-export default function BankedExpTable({ setExpGained }) {
+export default function BankedExpTable({
+  setExpGained,
+  expMultipliersState,
+  inputMultipliersState,
+  outputMultipliersState,
+}) {
   const [plannedActions, setPlannedActions] = useState({});
 
   const updatePlannedActions = (value, actionId) => {
@@ -29,27 +33,34 @@ export default function BankedExpTable({ setExpGained }) {
   };
 
   const {
-    calculators: { skill, expValues, calculatorTier },
+    calculators: { skill, expValues, baseMultiplier },
   } = useSelector(state => ({ calculators: state.calculators, tasks: state.tasks }));
-
-  const expMultiplier = getExpMultiplier(calculatorTier);
 
   const RAW_DATA = CALCULATOR_DATA.calculators[skill.toLowerCase()].actions;
   let expGained = 0;
   const calculatedData = RAW_DATA.map(activity => {
+    const expPerAction = expMultipliersState.applyMultipliers(activity.exp * baseMultiplier, activity);
     if (plannedActions[activity.id]) {
-      expGained += activity.exp * expMultiplier * plannedActions[activity.id];
+      expGained += expPerAction * plannedActions[activity.id];
     }
     return {
       ...activity,
-      exp: activity.exp * expMultiplier,
+      exp: expPerAction,
       actions: plannedActions[activity.id] ?? 0,
-      expGained: activity.exp * expMultiplier * (plannedActions[activity.id] ?? 0),
+      expGained: expPerAction * (plannedActions[activity.id] ?? 0),
+      inputs: activity.inputs.map(input => ({
+        ...input,
+        amount: inputMultipliersState.applyMultipliers(input.amount, activity, input),
+      })),
+      outputs: activity.outputs.map(output => ({
+        ...output,
+        amount: outputMultipliersState.applyMultipliers(output.amount, activity, output),
+      })),
     };
   });
   setExpGained(expGained);
 
-  const data = useMemo(() => calculatedData, [skill, expValues, calculatorTier, plannedActions]);
+  const data = useMemo(() => calculatedData, [calculatedData, skill, expValues, baseMultiplier, plannedActions]);
 
   const columns = useMemo(
     () => [
@@ -62,7 +73,7 @@ export default function BankedExpTable({ setExpGained }) {
         Header: 'Activity',
         id: 'activity',
         accessor: 'name',
-        minWidth: 300,
+        width: 250,
         Cell: ActivityCell,
       },
       {
@@ -114,6 +125,7 @@ export default function BankedExpTable({ setExpGained }) {
         Header: 'Exp gained',
         id: 'expGained',
         accessor: 'expGained',
+        width: 100,
         Cell: NumberCell,
       },
     ],

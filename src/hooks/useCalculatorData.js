@@ -1,23 +1,21 @@
 import { useMemo } from 'react';
 import CALCULATOR_DATA from '../data/calculatorData.json';
-import { getExpMultiplier } from '../util/getTier';
 
 export default function useCalculatorData(
   skill,
   expValues,
-  calculatorTier,
+  baseMultiplier,
   expMultipliersState,
   inputMultipliersState,
   outputMultipliersState
 ) {
-  const expMultiplier = useMemo(() => getExpMultiplier(calculatorTier), [calculatorTier]);
   const rawData = useMemo(() => CALCULATOR_DATA.calculators[skill.toLowerCase()], [skill]);
   const expRequired = useMemo(() => expValues.target.xp - expValues.start.xp, [expValues]);
 
   const calculatedData = useMemo(
     () =>
       rawData.actions.map(activity => {
-        const totalExp = expMultipliersState.applyMultipliers(activity.exp * expMultiplier, activity);
+        const totalExp = expMultipliersState.applyMultipliers(activity.exp * baseMultiplier, activity);
         return {
           ...activity,
           exp: totalExp,
@@ -32,7 +30,7 @@ export default function useCalculatorData(
           })),
         };
       }),
-    [rawData, expRequired, expMultiplier, expMultipliersState, inputMultipliersState, outputMultipliersState]
+    [rawData, expRequired, baseMultiplier, expMultipliersState, inputMultipliersState, outputMultipliersState]
   );
 
   return { data: calculatedData };

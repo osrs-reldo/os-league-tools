@@ -7,7 +7,7 @@ import useMultipliers from '../hooks/useMultipliers';
 
 export default function CalculatorsPanel() {
   const {
-    calculators: { skill, expValues, calculatorTier },
+    calculators: { skill, expValues, baseMultiplier },
   } = useSelector(state => ({ calculators: state.calculators, tasks: state.tasks }));
   const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.LESS_OR_EQ);
   const isXlViewport = useBreakpoint(MEDIA_QUERIES.XL);
@@ -51,7 +51,7 @@ export default function CalculatorsPanel() {
       <CalculatorTable
         skill={skill}
         expValues={expValues}
-        calculatorTier={calculatorTier}
+        baseMultiplier={baseMultiplier}
         expMultipliersState={expMultipliersState}
         inputMultipliersState={inputMultipliersState}
         outputMultipliersState={outputMultipliersState}

@@ -6,18 +6,14 @@ import {
   updateCalculatorsSkill,
   updateSingleCalculatorsExpValue,
   updateCalculatorsMode,
-  updateCalculatorsTier,
-  DEFAULT_CALCULATOR_EXP_VALUES,
+  updateCalculatorsBaseMultiplier,
 } from '../store/calculators/calculators';
 import { numberWithCommas } from '../util/numberFormatters';
 import { experienceToLevel, levelToExperience } from '../util/xpAndLevelConversions';
 import { STATS } from '../data/constants';
 import calculatorData from '../data/calculatorData.json';
-import ButtonGroup from './common/ButtonGroup';
-import { fetchHiscores } from '../store/user/character';
-import Spinner from './common/Spinner';
-import LabeledCheckbox from './common/LabeledCheckbox';
-import CalculatorFilters from './CalculatorFilters';
+import { getExpMultiplier } from '../util/getTier';
+import SharedCalculatorSettings from './SharedCalculatorSettings';
 
 const calculatorSkills = calculatorData.skills.map(skillName => ({
   ...STATS[skillName],
@@ -35,7 +31,7 @@ export default function CalculatorSettings({ expMultipliersState, inputMultiplie
     tasks: state.tasks,
   }));
   const dispatch = useDispatch();
-  const { skill: selectedSkill, expValues, calculatorTier } = calculators;
+  const { skill: selectedSkill, expValues, baseMultiplier } = calculators;
   const { skills } = character.hiscoresCache?.data || {};
   const hiscoresForSelectedSkill = skills && skills[selectedSkill.toLowerCase()];
 
@@ -53,7 +49,7 @@ export default function CalculatorSettings({ expMultipliersState, inputMultiplie
     };
   };
 
-  useEffect(() => dispatch(updateCalculatorsTier(tier)), []);
+  useEffect(() => dispatch(updateCalculatorsBaseMultiplier(getExpMultiplier(tier))), []);
 
   useEffect(() => {
     if (hiscoresForSelectedSkill) {
@@ -83,52 +79,19 @@ export default function CalculatorSettings({ expMultipliersState, inputMultiplie
     );
   };
 
-  const resetCalculator = () => {
-    dispatch(
-      updateCalculatorsExpValues(
-        hiscoresForSelectedSkill ? getValuesFromHiscores(hiscoresForSelectedSkill) : DEFAULT_CALCULATOR_EXP_VALUES
-      )
-    );
-    expMultipliersState.resetMultipliers();
-  };
-
   const xpRequired = expValues.target.xp - expValues.start.xp;
   const isValidValues = expValues.start.xp < expValues.target.xp;
-  const expMultipliers = [
-    ...calculatorData.globalMultipliers.expMultipliers,
-    ...calculatorData.calculators[selectedSkill.toLowerCase()].expMultipliers,
-  ];
-  const inputMultipliers = [
-    ...calculatorData.globalMultipliers.inputMultipliers,
-    ...calculatorData.calculators[selectedSkill.toLowerCase()].inputMultipliers,
-  ];
-  const outputMultipliers = [
-    ...calculatorData.globalMultipliers.outputMultipliers,
-    ...calculatorData.calculators[selectedSkill.toLowerCase()].outputMultipliers,
-  ];
 
   return (
     <>
-      <h3 className='heading-accent-md'>Tier</h3>
-      <ButtonGroup
-        buttons={[
-          { value: 1, label: '1' },
-          { value: 2, label: '2' },
-          { value: 3, label: '3' },
-          { value: 4, label: '4' },
-          { value: 5, label: '5' },
-          { value: 6, label: '6' },
-          { value: 7, label: '7' },
-        ]}
-        selection={calculatorTier}
-        setSelection={val => dispatch(updateCalculatorsTier(val))}
-      />
       <h3 className='heading-accent-md mt-4'>Skill</h3>
       <Select
         className='w-full'
         onSelect={e => {
           dispatch(updateCalculatorsSkill({ skill: e.value }));
           expMultipliersState.resetMultipliers();
+          inputMultipliersState.resetMultipliers();
+          outputMultipliersState.resetMultipliers();
         }}
         options={calculatorSkills}
         value={selectedSkill}
@@ -177,93 +140,13 @@ export default function CalculatorSettings({ expMultipliersState, inputMultiplie
         {isValidValues ? `XP required: ${numberWithCommas(xpRequired)}` : 'Start experience must be lower than end'}
       </p>
 
-      {!!expMultipliers.length && (
-        <>
-          <h3 className='heading-accent-md mt-4'>Exp multipliers</h3>
-          <div className='ml-2 mb-2'>
-            {expMultipliers.map(multiplier => (
-              <LabeledCheckbox
-                key={multiplier.id}
-                className='text-sm'
-                label={multiplier.name}
-                checked={!!expMultipliersState.multipliers[multiplier.id]}
-                onClick={e => {
-                  if (e.target.checked) {
-                    expMultipliersState.addMultiplier(multiplier.id, multiplier);
-                  } else {
-                    expMultipliersState.removeMultiplier(multiplier.id);
-                  }
-                }}
-              />
-            ))}
-          </div>
-        </>
-      )}
-
-      {!!inputMultipliers.length && (
-        <>
-          <h3 className='heading-accent-md mt-4'>Input multipliers</h3>
-          <div className='ml-2 mb-2'>
-            {inputMultipliers.map(multiplier => (
-              <LabeledCheckbox
-                key={multiplier.id}
-                className='text-sm'
-                label={multiplier.name}
-                checked={!!inputMultipliersState.multipliers[multiplier.id]}
-                onClick={e => {
-                  if (e.target.checked) {
-                    inputMultipliersState.addMultiplier(multiplier.id, multiplier);
-                  } else {
-                    inputMultipliersState.removeMultiplier(multiplier.id);
-                  }
-                }}
-              />
-            ))}
-          </div>
-        </>
-      )}
-
-      {!!outputMultipliers.length && (
-        <>
-          <h3 className='heading-accent-md mt-4'>Output multipliers</h3>
-          <div className='ml-2 mb-2'>
-            {outputMultipliers.map(multiplier => (
-              <LabeledCheckbox
-                key={multiplier.id}
-                className='text-sm'
-                label={multiplier.name}
-                checked={!!outputMultipliersState.multipliers[multiplier.id]}
-                onClick={e => {
-                  if (e.target.checked) {
-                    outputMultipliersState.addMultiplier(multiplier.id, multiplier);
-                  } else {
-                    outputMultipliersState.removeMultiplier(multiplier.id);
-                  }
-                }}
-              />
-            ))}
-          </div>
-        </>
-      )}
-
-      <CalculatorFilters skill={selectedSkill} />
-
-      <button className='button-outline w-full mt-4' type='button' onClick={resetCalculator}>
-        <span className='icon-base align-bottom'>refresh</span> Reset
-      </button>
-      <button
-        className='button-outline w-full mt-2'
-        type='button'
-        onClick={() => dispatch(fetchHiscores(character, null, true))}
-      >
-        {character.hiscoresCache.loading ? (
-          <Spinner size={Spinner.SIZE.sm} invertColorForDarkMode={false} />
-        ) : (
-          <p>
-            <span className='icon-base align-bottom'>cached</span> Update hiscores
-          </p>
-        )}
-      </button>
+      <SharedCalculatorSettings
+        baseMultiplier={baseMultiplier}
+        selectedSkill={selectedSkill}
+        expMultipliersState={expMultipliersState}
+        inputMultipliersState={inputMultipliersState}
+        outputMultipliersState={outputMultipliersState}
+      />
     </>
   );
 }
