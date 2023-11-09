@@ -52,9 +52,9 @@ export default function CalculatorsPanel() {
         skill={skill}
         expValues={expValues}
         calculatorTier={calculatorTier}
-        applyExpMultipliers={expMultipliersState.applyMultipliers}
-        applyInputMultipliers={inputMultipliersState.applyMultipliers}
-        applyOutputMultipliers={outputMultipliersState.applyMultipliers}
+        expMultipliersState={expMultipliersState}
+        inputMultipliersState={inputMultipliersState}
+        outputMultipliersState={outputMultipliersState}
       />
     </section>
   );

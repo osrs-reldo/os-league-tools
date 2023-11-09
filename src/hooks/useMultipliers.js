@@ -12,10 +12,16 @@ export default function useMultipliers() {
     });
   const resetMultipliers = () => setMultipliers({});
 
-  const applyMultipliers = (value, validMultipliers) => {
+  const applyMultipliers = (value, activityData, itemData) => {
     let newValue = value;
     for (const multiplier of Object.values(multipliers)) {
-      if (multiplier.applyToAll || validMultipliers.includes(multiplier.id)) {
+      const matchesCategory =
+        multiplier.categories[0] === 'All' || multiplier.categories.includes(activityData.category);
+      const matchesActionId = multiplier.actions.includes(activityData.id);
+      const matchesRegex =
+        !multiplier.matchers.length || !itemData || multiplier.matchers.some(matcher => itemData.name.match(matcher));
+      const matchesExceptions = multiplier.exceptions.includes(activityData.id);
+      if ((matchesCategory || matchesActionId) && matchesRegex && !matchesExceptions) {
         newValue *= multiplier.multiplier;
       }
     }

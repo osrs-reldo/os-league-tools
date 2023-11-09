@@ -13,17 +13,17 @@ export default function CalculatorTable({
   skill,
   expValues,
   calculatorTier,
-  applyExpMultipliers,
-  applyInputMultipliers,
-  applyOutputMultipliers,
+  expMultipliersState,
+  inputMultipliersState,
+  outputMultipliersState,
 }) {
   const { data } = useCalculatorData(
     skill,
     expValues,
     calculatorTier,
-    applyExpMultipliers,
-    applyInputMultipliers,
-    applyOutputMultipliers
+    expMultipliersState,
+    inputMultipliersState,
+    outputMultipliersState
   );
 
   // Force reset page to 1 when skill is changed
