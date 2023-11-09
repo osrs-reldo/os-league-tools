@@ -39,7 +39,7 @@ function skillFilter(record, filterState, { hiscoresState }) {
   let meetsRequirements = true;
   record.skillReqs.forEach(skillReq => {
     const hiscores = hiscoresState.skills[skillReq.skill.toLowerCase()];
-    const levelBoost = filterState.isUnchainedTalent && STATS[skillReq.skill]?.unchainedTalentEligible ? 8 : 0;
+    const levelBoost = filterState.isProductionProdigy && STATS[skillReq.skill]?.productionProdigyEligible ? 12 : 0;
     const level = (hiscores?.level || 1) + levelBoost;
     meetsRequirements = meetsRequirements && level >= skillReq.level;
   });

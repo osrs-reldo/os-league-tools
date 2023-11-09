@@ -126,13 +126,12 @@ export default function TaskFilters({ history }) {
           checked={filterState.showIncompletePrereqs}
           onClick={e => dispatch(updateTaskFilter({ field: 'showIncompletePrereqs', value: e.target.checked }))}
         />
-        {/* Uncomment if unchained talent is a relic again
-      <LabeledCheckbox
-        className='text-sm'
-        label='Use unchained talent skill boost'
-        checked={filterState.isUnchainedTalent}
-        onClick={e => dispatch(updateTaskFilter({ field: 'isUnchainedTalent', value: e.target.checked }))}
-      /> */}
+        <LabeledCheckbox
+          className='text-sm'
+          label='Use production prodigy skill boost'
+          checked={filterState.isProductionProdigy}
+          onClick={e => dispatch(updateTaskFilter({ field: 'isProductionProdigy', value: e.target.checked }))}
+        />
       </div>
       <div className='lg:w-full text-sm flex flex-col mb-2 max-w-[320px]'>
         <SkillsFilter filterState={filterState} />

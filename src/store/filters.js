@@ -7,7 +7,7 @@ import { STATS, DIFFICULTY, DIARY_LOCATIONS, DIARY_DIFFICULTY } from '../data/co
 import { QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/quests';
 import { TRAILBLAZER_REGIONS } from '../data/regions';
 
-const CURRENT_VERSION = 16;
+const CURRENT_VERSION = 17;
 
 const mapDataValues = values => Object.values(values).map(({ label }) => label);
 
@@ -23,7 +23,7 @@ const INITIAL_TASK_STATE = {
   showNoRequirements: true,
   showUnmetRequirements: true,
   showIncompletePrereqs: true,
-  isUnchainedTalent: false,
+  isProductionProdigy: false,
 };
 
 const INITIAL_QUEST_STATE = {
@@ -44,6 +44,7 @@ const INITIAL_DIARIES_STATE = {
 const INITIAL_CALCULATORS_STATE = {
   regions: mapDataValues(TRAILBLAZER_REGIONS),
   categories: {},
+  isProductionProdigy: false,
 };
 
 const INITIAL_STATE = {
