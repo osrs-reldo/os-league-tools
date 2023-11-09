@@ -24,14 +24,14 @@ export default function RelicUnlockModal({ isOpen, setIsOpen, tier }) {
       isOpen={isOpen}
       setIsOpen={setIsOpen}
       onClose={() => {}}
-      className='w-[26rem] shadow shadow-primary rounded-md bg-primary-alt'
+      className='w-[50rem] shadow shadow-primary rounded-md bg-primary-alt'
     >
       <Modal.Header className='text-center small-caps tracking-wide text-xl text-accent font-semibold'>
         Choose a relic to unlock
       </Modal.Header>
       <Modal.Body className='text-primary'>
         {passiveRelicData && (
-          <div className='flex flex-col gap-1 m-4'>
+          <div className='flex flex-col gap-1 m-4 text-center'>
             <span className='text-accent small-caps'>Passive unlocks</span>
             {passiveRelicData.exp.increased && (
               <span key='exp'>
@@ -60,16 +60,28 @@ export default function RelicUnlockModal({ isOpen, setIsOpen, tier }) {
         )}
         <div className='flex flex-col gap-2 m-4'>
           {availableRelics.map((relicData, index) => (
-            <div className='flex flex-row gap-4' key={index}>
-              <input
-                type='checkbox'
-                className='checkbox-primary'
-                checked={selectedRelic === index}
-                onChange={onSelectRelic(index)}
-              />
+            <div
+              className={`flex flex-row gap-4 p-2 ${
+                selectedRelic === index ? 'bg-secondary border-accent rounded' : ''
+              }`}
+              key={index}
+            >
+              <div className='flex flex-col gap-2 justify-center'>
+                <img className='max-w-[3rem]' src={relicData.icon} alt={relicData.label} />
+                <input
+                  type='checkbox'
+                  className='checkbox-primary'
+                  checked={selectedRelic === index}
+                  onChange={onSelectRelic(index)}
+                />
+              </div>
               <div>
                 <p className='text-accent small-caps'>{relicData.label}</p>
-                <p className='max-h-[200px] overflow-auto'>{relicData.description}</p>
+                <div className='max-h-[200px] overflow-auto text-sm'>
+                  {typeof relicData.description === 'string'
+                    ? relicData.description
+                    : relicData.description.map(line => <div key={line}>{line}</div>)}
+                </div>
               </div>
             </div>
           ))}

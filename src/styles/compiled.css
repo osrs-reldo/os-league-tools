@@ -2293,6 +2293,9 @@ select[multiple]:focus option:checked {
 .w-\[26rem\] {
   width: 26rem;
 }
+.w-\[50rem\] {
+  width: 50rem;
+}
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -2317,6 +2320,9 @@ select[multiple]:focus option:checked {
 }
 .max-w-\[350px\] {
   max-width: 350px;
+}
+.max-w-\[3rem\] {
+  max-width: 3rem;
 }
 .max-w-\[420px\] {
   max-width: 420px;

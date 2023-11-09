@@ -57,11 +57,15 @@ function UnlockedRelic({ tier, relicId }) {
   const relicData = RELICS[tier][relicId];
   return (
     <>
-      <div className='m-1 grow flex flex-col text-center items-center' data-tip data-for={`relic-${tier}`}>
+      <div className='m-1 grow flex flex-col text-center items-center w-12' data-tip data-for={`relic-${tier}`}>
         <img className='h-12 w-12' src={relicData.icon} alt='' />
         <span className='text-accent small-caps'>{relicData.label}</span>
       </div>
-      <ReactTooltip id={`relic-${tier}`}>{relicData.description}</ReactTooltip>
+      <ReactTooltip id={`relic-${tier}`}>
+        {typeof relicData.description === 'string'
+          ? relicData.description
+          : relicData.description.map(line => <div key={line}>{line}</div>)}
+      </ReactTooltip>
     </>
   );
 }
@@ -69,7 +73,7 @@ function UnlockedRelic({ tier, relicId }) {
 function LockedRelic({ canUnlock, tier, onClick }) {
   return (
     <>
-      <div className='m-1 grow flex flex-col text-center text-sm items-center' data-tip data-for={`relic-${tier}`}>
+      <div className='m-1 grow flex flex-col text-center text-sm items-center w-12' data-tip data-for={`relic-${tier}`}>
         <button
           type='button'
           className={`button-outline${canUnlock ? '' : '-disabled'} h-12 flex flex-col px-1 pb-1 small-caps`}

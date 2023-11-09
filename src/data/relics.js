@@ -115,26 +115,54 @@ export const PASSIVE_RELICS = [
 export const RELICS = [
   [
     {
-      label: 'Relic 1.1',
-      description: 'Unknown effects',
-      icon: images['relic-check.png'],
+      label: 'Superior Sorcerer',
+      description: [
+        '· Magic weapons with attack speed 4 or above have this stat halved, rounded down.',
+        '· Magic weapons with attack speed 3 or below have this stat halved, rounded up.',
+        "· You save 90% of your Runes when casting spells. This includes charges when using powerd staves such as the Trident of the Seas, Trident of the Swamp, Sanguinesti Staff, Tumeken's Shadow, and the Enchanted Slayer Staff.",
+        '· Bind spells will always hit on an unfrozen target.',
+        '· Acquire the Arcane Grimoire, which allows you to change between Spellbooks you have unlocked. Must be at a bank to obtain the item.',
+        '· Acquire a Rune Pouch.',
+        '· All Rune Pouches store 2 more types of Runes.',
+        '· Magic attacks will deal an additional 25% as splash damage to surrounding targets up to 5 additional targets (only works in multicombat areas).',
+        '· Magic accuracy is increased by 175%.',
+        '· Magic damage is increased by 20%.',
+      ],
+      icon: images['relic-superior-sorcerer.png'],
     },
     {
-      label: 'Relic 1.2',
-      description: 'Unknown effects',
-      icon: images['relic-check.png'],
+      label: "Brawler's Resolve",
+      description: [
+        '· Melee weapons with attack speed 4 or above have this stat halved, rounded down.',
+        '· Melee weapons with attack speed 3 or below have this stat halved, rounded up.',
+        '· Immune to all status effects, including but not limited to Poison, Venom, and Firebreath, with the exception of stuns and roots. This applies in both PvE and PvP.',
+        '· 10% chance to deal a critical strike on a successful melee hit, dealing double damage.',
+        '· Melee accuracy is increased by 50%.',
+        '· Melee, Ranged, and Magic defence is increased by 50%.',
+      ],
+      icon: images['relic-brawlers-resolve.png'],
     },
     {
-      label: 'Relic 1.3',
-      description: 'Unknown effects',
-      icon: images['relic-check.png'],
+      label: "Archer's Embrace",
+      description: [
+        '· Ranged weapons with attack speed 4 or above have this stat halved, rounded down.',
+        '· Ranged weapons with attack speed 3 or below have this stat halved, rounded up.',
+        "· 90% of ammunition is saved when using Ranged weapons. This effect stacks with Ava's devices resulting in a 98% ammo saving bonus. Crystal bow, Chinchompas, and Toxic Blowpipe charged are included in this effect.",
+        '· Enchanged Bolts have a 2x boosted chance to proc.',
+        '· 10% change that your weapon will fire and extra projectile (Bows, Crossbows, Ballista and most thrown weapons)',
+        '· Ranged accuracy is increased by 100%.',
+      ],
+      icon: images['relic-archers-embrace.png'],
     },
   ],
   [
     {
-      label: 'Relic 2.1',
-      description: 'Unknown effects',
-      icon: images['relic-check.png'],
+      label: 'Globetrotter',
+      description: [
+        '· Receive a unique teleport amulet that allows teleporting to a large number of teleport locations from teleport jewellery and spellbooks.',
+        '· Can only teleport to locations within regions the player has unlocked.',
+      ],
+      icon: images['relic-globetrotter.png'],
     },
     {
       label: 'Relic 2.2',
