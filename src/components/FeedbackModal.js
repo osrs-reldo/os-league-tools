@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useDeviceData } from 'react-device-detect';
 import { submitBug, submitFeedback, submitSuggestion } from '../client/feedback-client';
 import ButtonGroup from './common/ButtonGroup';
 import InputSelect from './common/InputSelect';
@@ -55,13 +56,12 @@ function BugReportFields({ onSubmit }) {
   const [bugDescription, setBugDescription] = useState(null);
   const [bugDescriptionError, setBugDescriptionError] = useState(false);
   const [reproSteps, setReproSteps] = useState(null);
-  const [device, setDevice] = useState('unselected');
-  const [deviceFreeText, setDeviceFreeText] = useState(null);
-  const [browser, setBrowser] = useState('unselected');
-  const [browserFreeText, setBrowserFreeText] = useState(null);
   const [client, setClient] = useState('unselected');
   const [clientFreeText, setClientFreeText] = useState(null);
   const [submitError, setSubmitError] = useState(false);
+
+  const deviceInfo = useDeviceData();
+  const storage = window.localStorage;
 
   return (
     <>
@@ -85,112 +85,7 @@ function BugReportFields({ onSubmit }) {
           setReproSteps(e.target.value);
         }}
       />
-      <span className='heading-accent-md'>System info</span>
-      <span className='text-primary text-sm ml-1'>What type of computer/device are you using?</span>
-      <div>
-        <InputSelect
-          label='device'
-          className='text-sm ml-2 w-fit'
-          options={[
-            {
-              value: 'unselected',
-              label: '(select device)',
-            },
-            {
-              value: 'pc',
-              label: 'Computer - Windows PC',
-            },
-            {
-              value: 'macos',
-              label: 'Computer - Mac',
-            },
-            {
-              value: 'linux',
-              label: 'Computer - Linux',
-            },
-            {
-              value: 'android',
-              label: 'Phone - Android',
-            },
-            {
-              value: 'ios',
-              label: 'Phone - iOS',
-            },
-            {
-              value: 'androidTablet',
-              label: 'Tablet - Android',
-            },
-            {
-              value: 'iosTablet',
-              label: 'Tablet - iPad',
-            },
-            {
-              value: 'other',
-              label: 'Other (specify)',
-            },
-          ]}
-          selection={device}
-          setSelection={val => setDevice(val)}
-        />
-        {device === 'other' && (
-          <input
-            type='text'
-            className='input-primary text-sm form-input w-40 ml-2'
-            placeholder='your internet browser'
-            value={deviceFreeText || ''}
-            onChange={e => {
-              setDeviceFreeText(e.target.value);
-            }}
-          />
-        )}
-      </div>
-      <span className='text-primary text-sm ml-1'>What browser are you using?</span>
-      <div>
-        <InputSelect
-          label='browser'
-          className='text-sm ml-2 w-fit'
-          options={[
-            {
-              value: 'unselected',
-              label: '(select browser)',
-            },
-            {
-              value: 'chrome',
-              label: 'Google chrome',
-            },
-            {
-              value: 'safari',
-              label: 'Safari',
-            },
-            {
-              value: 'firefox',
-              label: 'Firefox',
-            },
-            {
-              value: 'opera',
-              label: 'Opera',
-            },
-            {
-              value: 'other',
-              label: 'Other (specify)',
-            },
-          ]}
-          selection={browser}
-          setSelection={val => setBrowser(val)}
-        />
-        {browser === 'other' && (
-          <input
-            type='text'
-            className='input-primary text-sm form-input w-40 ml-2'
-            placeholder='your internet browser'
-            value={browserFreeText || ''}
-            onChange={e => {
-              setBrowserFreeText(e.target.value);
-            }}
-          />
-        )}
-      </div>
-      <span className='text-primary text-sm'>What client are you playing on?</span>
+      <span className='text-primary text-sm'>If the bug is about the plugin, which client are you playing on?</span>
       <div>
         <InputSelect
           label='client'
@@ -205,16 +100,12 @@ function BugReportFields({ onSubmit }) {
               label: 'Runelite',
             },
             {
-              value: 'oprs',
-              label: 'OpenOSRS',
-            },
-            {
               value: 'official',
               label: 'Official client',
             },
             {
-              value: 'steam',
-              label: 'Steam client',
+              value: 'hdos',
+              label: 'HDOS',
             },
             {
               value: 'mobile',
@@ -254,8 +145,8 @@ function BugReportFields({ onSubmit }) {
               submitBug({
                 description: bugDescription,
                 reproSteps,
-                device: device === 'other' ? deviceFreeText : device,
-                browser: browser === 'other' ? browserFreeText : browser,
+                device: JSON.stringify(deviceInfo, undefined, 2),
+                debugInfo: JSON.stringify(storage, undefined, 2),
                 client: client === 'other' ? clientFreeText : client,
               }).then(res => {
                 if (res.success) {
