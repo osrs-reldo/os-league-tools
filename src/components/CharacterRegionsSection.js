@@ -7,9 +7,17 @@ import RegionUnlockModal from './RegionUnlockModal';
 import { ThemedProgressBar } from './ThemeProvider';
 
 export default function CharacterRegionsSection({ unlockedRegions, taskStats }) {
-  const [regionUnlockModalState, setRegionUnlockModalState] = useState({ open: false, tier: -1 });
+  const [regionUnlockModalState, setRegionUnlockModalState] = useState({
+    open: false,
+    tier: -1,
+    initialSelectedRegion: null,
+  });
   const openUnlockModal = tier => {
-    setRegionUnlockModalState({ open: true, tier });
+    setRegionUnlockModalState({
+      open: true,
+      tier,
+      initialSelectedRegion: unlockedRegions[tier] >= 0 ? unlockedRegions[tier] : null,
+    });
   };
 
   const regionTier = getRegionTier(taskStats.tasks.complete.total);
@@ -21,17 +29,17 @@ export default function CharacterRegionsSection({ unlockedRegions, taskStats }) 
         <RegionFakeSelect region={regionsById[0]} />
         <RegionFakeSelect region={regionsById[1]} />
         {unlockedRegions[2] > 0 ? (
-          <RegionFakeSelect region={regionsById[2]} />
+          <RegionFakeSelect region={regionsById[2]} onEdit={() => openUnlockModal(2)} />
         ) : (
           <RegionSelect canUnlock={regionTier >= 1} unlockTier={1} onClick={() => openUnlockModal(2)} />
         )}
         {unlockedRegions[3] > 0 ? (
-          <RegionFakeSelect region={regionsById[3]} />
+          <RegionFakeSelect region={regionsById[3]} onEdit={() => openUnlockModal(3)} />
         ) : (
           <RegionSelect canUnlock={regionTier >= 2} unlockTier={2} onClick={() => openUnlockModal(3)} />
         )}
         {unlockedRegions[4] > 0 ? (
-          <RegionFakeSelect region={regionsById[4]} />
+          <RegionFakeSelect region={regionsById[4]} onEdit={() => openUnlockModal(4)} />
         ) : (
           <RegionSelect canUnlock={regionTier >= 3} unlockTier={3} onClick={() => openUnlockModal(4)} />
         )}
@@ -59,18 +67,24 @@ export default function CharacterRegionsSection({ unlockedRegions, taskStats }) 
       </div>
       <RegionUnlockModal
         isOpen={regionUnlockModalState.open}
-        setIsOpen={() => setRegionUnlockModalState({ open: false, tier: -1 })}
+        setIsOpen={() => setRegionUnlockModalState({ open: false, tier: -1, initialSelectedRegion: null })}
         tier={regionUnlockModalState.tier}
+        initialSelectedRegion={regionUnlockModalState.initialSelectedRegion}
       />
     </>
   );
 }
 
-function RegionFakeSelect({ region }) {
+function RegionFakeSelect({ region, onEdit }) {
   return (
     <div key={region.id} className='text-center text-accent text-lg small-caps flex items-center gap-1'>
       <img src={region.icon} alt='' />
       {region.label}
+      {!!onEdit && (
+        <span className='icon-xs cursor-pointer' onClick={onEdit}>
+          edit
+        </span>
+      )}
     </div>
   );
 }

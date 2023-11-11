@@ -21,7 +21,7 @@ export default function CharacterRelicsSection({ tier, taskStats, unlockedRelics
       <div className='flex flex-row flex-wrap w-11/12 gap-2'>
         {unlockedRelics.map((relic, index) =>
           relic !== NONE_RELIC_ID ? (
-            <UnlockedRelic tier={index} relicId={relic} key={index} />
+            <UnlockedRelic tier={index} relicId={relic} key={index} onEdit={() => openUnlockModal(index)} />
           ) : (
             <LockedRelic tier={index} key={index} canUnlock={tier > index} onClick={() => openUnlockModal(index)} />
           )
@@ -53,13 +53,20 @@ export default function CharacterRelicsSection({ tier, taskStats, unlockedRelics
   );
 }
 
-function UnlockedRelic({ tier, relicId }) {
+function UnlockedRelic({ tier, relicId, onEdit }) {
   const relicData = RELICS[tier][relicId];
   return (
     <>
       <div className='m-1 grow flex flex-col text-center items-center w-12' data-tip data-for={`relic-${tier}`}>
         <img className='h-12 w-12' src={relicData.icon} alt='' />
-        <span className='text-accent small-caps'>{relicData.label}</span>
+        <span className='text-accent small-caps'>
+          {relicData.label}{' '}
+          {!!onEdit && (
+            <span className='icon-xs cursor-pointer' onClick={onEdit}>
+              edit
+            </span>
+          )}
+        </span>
       </div>
       <ReactTooltip id={`relic-${tier}`}>
         {typeof relicData.description === 'string'

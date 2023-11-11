@@ -13,9 +13,11 @@ const UNLOCKABLE_REGION_OPTIONS = TRAILBLAZER_REGIONS.map(region => ({
   icon: region.icon,
 }));
 
-export default function RegionUnlockModal({ isOpen, setIsOpen, tier }) {
+export default function RegionUnlockModal({ isOpen, setIsOpen, tier, initialSelectedRegion }) {
   const regions = useSelector(state => state.unlocks.regions);
-  const availableRegionOptions = UNLOCKABLE_REGION_OPTIONS.filter(({ value }) => !regions.includes(value));
+  const availableRegionOptions = UNLOCKABLE_REGION_OPTIONS.filter(
+    ({ value }) => value === initialSelectedRegion || !regions.includes(value)
+  );
   const [selectedRegion, setSelectedRegion] = useState();
   const selectedRegionData = regionsById[selectedRegion ?? availableRegionOptions[0].value];
   const dispatch = useDispatch();
