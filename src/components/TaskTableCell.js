@@ -100,6 +100,7 @@ function ReadonlyTask({ row, value, taskState }) {
 }
 
 function ExpandedTask({ original }) {
+  const isProductionProdigy = useSelector(state => state.filters.tasks.isProductionProdigy);
   return (
     <div className='flex flex-row items-center h-full gap-2 max-w-[90%] md:max-w-[75%] lg:max-w-[60%]'>
       {/* hack: invisible dummy icons to align the expanded text with the previous row */}
@@ -109,7 +110,7 @@ function ExpandedTask({ original }) {
       </div>
       <div className='w-full flex flex-col gap-0.5'>
         <span className='text-xs mr-1'>Requires:</span>
-        <SkillRequirementList value={original.skillReqs} className='ml-3' />
+        <SkillRequirementList value={original.skillReqs} className='ml-3' isProductionProdigy={isProductionProdigy} />
         <span className='text-xs mr-1'>Notes:</span>
         <Notes className='ml-3 my-1' taskId={original.id} />
         <span className='text-xs mr-1'>Actions:</span>
@@ -120,6 +121,7 @@ function ExpandedTask({ original }) {
 }
 
 function ReadonlyExpandedTask({ original }) {
+  const isProductionProdigy = useSelector(state => state.filters.tasks.isProductionProdigy);
   return (
     <div className='flex flex-row items-center h-full gap-2 max-w-[90%] md:max-w-[75%] lg:max-w-[60%]'>
       {/* hack: invisible dummy icons to align the expanded text with the previous row */}
@@ -129,7 +131,7 @@ function ReadonlyExpandedTask({ original }) {
       </div>
       <div className='w-full flex flex-col gap-0.5 mb-2'>
         <span className='text-xs mr-1'>Requires:</span>
-        <SkillRequirementList value={original.skillReqs} className='ml-3' />
+        <SkillRequirementList value={original.skillReqs} className='ml-3' isProductionProdigy={isProductionProdigy} />
       </div>
     </div>
   );
