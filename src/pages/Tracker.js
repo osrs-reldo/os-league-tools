@@ -8,10 +8,12 @@ import QuestsPanel from './QuestsPanel';
 import images from '../assets/images';
 import DiariesPanel from './DiariesPanel';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
+import useFetchHiscoresOnLoad from '../hooks/useFetchHiscoresOnLoad';
 
 export default function Tracker() {
   const [selectedTab, onSetSelectedTab] = useQueryString('tab');
   const isXsOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.LESS_OR_EQ);
+  useFetchHiscoresOnLoad();
 
   return (
     <PageWrapper>

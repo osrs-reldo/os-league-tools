@@ -8,9 +8,11 @@ import { CLUE_TIERS } from '../data/constants';
 import { numberWithCommas } from '../util/numberFormatters';
 import images from '../assets/images';
 import Separator from './common/Separator';
+import Banner from './common/Banner';
 
 export default function SkillsPanel() {
-  const hiscores = useSelector(state => state.character.hiscoresCache.data);
+  const characterState = useSelector(state => state.character.hiscoresCache);
+  const { data: hiscores, error: hiscoresError } = characterState;
   const { quests } = useSelector(state => state.unlocks);
 
   const combatLevelData = hiscores ? calculateCombatLevel(hiscores?.skills) : { rounded: '3' };
@@ -18,6 +20,12 @@ export default function SkillsPanel() {
 
   return (
     <div>
+      {!!hiscoresError && (
+        <Banner className='text-error text-sm text-italic text-center mb-2'>
+          <span className='inline align-middle icon-base mr-1'>sync_problem</span>
+          <span className='inline align-middle'>Error: Unable to load hiscores</span>
+        </Banner>
+      )}
       <div className='grid grid-cols-3 gap-px w-full mb-2'>
         <div className='flex items-center justify-center' data-tip data-for='combatTile'>
           <img className='mr-2' src={images['combat.png']} alt='Combat level' />

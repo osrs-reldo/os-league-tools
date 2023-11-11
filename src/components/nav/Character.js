@@ -12,6 +12,8 @@ function NavBarItem({ setCharacterModalOpen }) {
   const menuRef = useRef(null);
   const characterState = useSelector(state => state.character);
   const activeCharacter = characterState.characters[characterState.activeCharacter];
+  const isHiscoreError = !!characterState.hiscoresCache.error;
+
   useClickListener(menuRef, () => setExpanded(false), true);
 
   if (!activeCharacter) {
@@ -33,7 +35,9 @@ function NavBarItem({ setCharacterModalOpen }) {
         type='button'
         onClick={() => setExpanded(true)}
       >
-        <span className='icon-base mr-1 align-bottom'>account_circle</span>
+        <span className={`${isHiscoreError ? 'text-error' : 'text-primary-alt'} icon-lg inline align-middle mr-1`}>
+          {isHiscoreError ? 'error' : 'account_circle'}
+        </span>
         {activeCharacter}
       </button>
       <div className='mt-1 absolute text-center'>
@@ -47,12 +51,15 @@ function NavBarItem({ setCharacterModalOpen }) {
             ) : (
               <>
                 <p>
-                  <span className='icon-base mr-1 align-bottom'>cached</span> Update hiscores
+                  <HiscoresIcon isHiscoreError={isHiscoreError} /> Update hiscores
                 </p>
-
-                <p className='text-xs italic'>
-                  Last updated: {durationAsRelativeTime(characterState.hiscoresCache.lastUpdated)}
-                </p>
+                {isHiscoreError ? (
+                  <p className='text-xs italic text-error'>Failed to retrieve hiscores. Click to try again.</p>
+                ) : (
+                  <p className='text-xs italic'>
+                    Last updated: {durationAsRelativeTime(characterState.hiscoresCache.lastUpdated)}
+                  </p>
+                )}
               </>
             )}
           </Dropdown.Button>
@@ -69,6 +76,7 @@ function NavBarItem({ setCharacterModalOpen }) {
 function CollapsedMenu({ setCharacterModalOpen }) {
   const characterState = useSelector(state => state.character);
   const activeCharacter = characterState.characters[characterState.activeCharacter];
+  const isHiscoreError = !!characterState.hiscoresCache.error;
   const dispatch = useDispatch();
 
   if (!activeCharacter) {
@@ -94,12 +102,16 @@ function CollapsedMenu({ setCharacterModalOpen }) {
         {characterState.hiscoresCache.loading ? (
           <Spinner size={Spinner.SIZE.sm} invertColorForDarkMode={false} />
         ) : (
-          <span className='text-primary-alt icon-lg inline align-middle mr-1'>cached</span>
+          <HiscoresIcon isHiscoreError={isHiscoreError} />
         )}
         <p className='h-4 inline pl-1 font-sans-alt'>Update hiscores</p>
-        <p className='text-xs italic'>
-          Last updated: {durationAsRelativeTime(characterState.hiscoresCache.lastUpdated)}
-        </p>
+        {isHiscoreError ? (
+          <p className='text-xs italic text-error'>Failed to retrieve hiscores. Click to try again.</p>
+        ) : (
+          <p className='text-xs italic'>
+            Last updated: {durationAsRelativeTime(characterState.hiscoresCache.lastUpdated)}
+          </p>
+        )}
       </button>
       <button
         className='text-primary bg-hover py-1 text-left'
@@ -110,6 +122,14 @@ function CollapsedMenu({ setCharacterModalOpen }) {
         <p className='h-4 inline pl-1 font-sans-alt'>Manage characters</p>
       </button>
     </>
+  );
+}
+
+function HiscoresIcon({ isHiscoreError }) {
+  return (
+    <span className={`${isHiscoreError ? 'text-error' : 'text-primary-alt'} icon-lg inline align-middle mr-1`}>
+      {isHiscoreError ? 'sync_problem' : 'cached'}
+    </span>
   );
 }
 

@@ -10,8 +10,10 @@ export const PLACEHOLDER_USERNAMES = [
   'zezima',
   'woox',
   'swampletics',
+  'settled',
   'torvesta',
   'goodpker69',
+  'hanannie',
   'limpwurt',
   '9rain',
   'slayermusiq1',
@@ -21,6 +23,9 @@ export const PLACEHOLDER_USERNAMES = [
   'b0aty',
   'only trails',
   'vannaka',
+  'tedious',
+  'verf',
+  'idyl',
 ];
 
 export default function AddCharacterModal({ isOpen, setIsOpen }) {

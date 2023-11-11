@@ -14,6 +14,7 @@ import calculatorData from '../data/calculatorData.json';
 import { numberWithCommas } from '../util/numberFormatters';
 import { getExpMultiplier } from '../util/getTier';
 import SharedCalculatorSettings from './SharedCalculatorSettings';
+import Banner from './common/Banner';
 
 const calculatorSkills = calculatorData.skills.map(skillName => ({
   ...STATS[skillName],
@@ -32,7 +33,7 @@ export default function BankedExpSettings({ expGained, multipliersState }) {
   }));
   const dispatch = useDispatch();
   const { skill: selectedSkill, expValues, baseMultiplier } = calculators;
-  const { skills } = character.hiscoresCache?.data || {};
+  const { data: skills, error: hiscoresError } = character.hiscoresCache;
   const hiscoresForSelectedSkill = skills && skills[selectedSkill.toLowerCase()];
 
   const getValuesFromHiscores = hiscores => {
@@ -84,6 +85,12 @@ export default function BankedExpSettings({ expGained, multipliersState }) {
 
   return (
     <>
+      {!!hiscoresError && (
+        <Banner className='text-error text-sm text-italic text-center mb-2'>
+          <span className='inline align-middle icon-base mr-1'>sync_problem</span>
+          <span className='inline align-middle'>Error: Unable to load hiscores</span>
+        </Banner>
+      )}
       <h3 className='heading-accent-md'>Results</h3>
       <div className='flex flex-col gap-2 ml-2 mb-2'>
         <span>
