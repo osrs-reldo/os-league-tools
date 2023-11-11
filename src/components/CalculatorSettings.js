@@ -33,8 +33,8 @@ export default function CalculatorSettings({ multipliersState }) {
   }));
   const dispatch = useDispatch();
   const { skill: selectedSkill, expValues, baseMultiplier } = calculators;
-  const { data: skills, error: hiscoresError } = character.hiscoresCache;
-  const hiscoresForSelectedSkill = skills && skills[selectedSkill.toLowerCase()];
+  const { data: hiscoresData, error: hiscoresError } = character.hiscoresCache;
+  const hiscoresForSelectedSkill = hiscoresData.skills && hiscoresData.skills[selectedSkill.toLowerCase()];
 
   const getValuesFromHiscores = hiscores => {
     const { xp } = hiscores;

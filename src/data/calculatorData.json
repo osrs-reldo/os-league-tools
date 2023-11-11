@@ -40371,7 +40371,7 @@
           "outputs": [
             {
               "name": "Winter sq'irkjuice",
-              "amount": 0.5,
+              "amount": 1,
               "chance": 1
             }
           ],
@@ -40712,7 +40712,7 @@
           "outputs": [
             {
               "name": "Spring sq'irkjuice",
-              "amount": 0.5,
+              "amount": 1,
               "chance": 1
             }
           ],
@@ -40993,7 +40993,7 @@
           "outputs": [
             {
               "name": "Autumn sq'irkjuice",
-              "amount": 0.5,
+              "amount": 1,
               "chance": 1
             }
           ],
@@ -41354,7 +41354,7 @@
           "outputs": [
             {
               "name": "Summer sq'irkjuice",
-              "amount": 0.5,
+              "amount": 1,
               "chance": 1
             }
           ],
