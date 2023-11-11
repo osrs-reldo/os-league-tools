@@ -41445,6 +41445,51 @@
           "tooltip": ""
         },
         {
+          "id": 13,
+          "name": "Fruit stall",
+          "subtitle": "",
+          "category": "Stalls",
+          "exp": 28.5,
+          "level": 25,
+          "icon": "https://oldschool.runescape.wiki/images/Golovanova_fruit_top.png?3d117",
+          "inputs": [],
+          "outputs": [
+            {
+              "name": "Cooking apple",
+              "amount": 1.0,
+              "chance": 0.4
+            },
+            {
+              "name": "Banana",
+              "amount": 1.0,
+              "chance": 0.2
+            },
+            {
+              "name": "Strawberry",
+              "amount": 1.0,
+              "chance": 0.07
+            },
+            {
+              "name": "Jangerberry, lemon, redberry, pineapple, lime or strange fruit",
+              "amount": 1.0,
+              "chance": 0.05
+            },
+            {
+              "name": "Golovanova fruit top",
+              "amount": 1.0,
+              "chance": 0.02
+            },
+            {
+              "name": "Papaya",
+              "amount": 1.0,
+              "chance": 0.01
+            }
+          ],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": "Requires 15% Hosidius favour"
+        },
+        {
           "id": 16,
           "name": "Warrior woman",
           "subtitle": "",
