@@ -2729,7 +2729,7 @@ const quests = [
     type: 'miniquest',
     autoUnlockRegions: ['Desert', 'Fremennik'],
     regions: [],
-    prereqs: ['312', '345'],
+    prereqs: ['312'],
     skillReqs: [],
     wiki: 'https://oldschool.runescape.wiki/w/Curse_of_the_Empty_Lord',
   },
