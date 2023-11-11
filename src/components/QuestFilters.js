@@ -30,6 +30,20 @@ export default function QuestFilters() {
         </div>
       </div>
       <div className='mb-3'>
+        <p className='heading-accent-md'>Requirements</p>
+        <div className='w-full px-3 text-sm'>
+          <ButtonGroup
+            buttons={[
+              { value: 'all', label: 'All quests' },
+              { value: 'yes', label: 'Reqs met' },
+              { value: 'no', label: 'Reqs missing' },
+            ]}
+            selection={filterState.requirements}
+            setSelection={val => dispatch(updateQuestFilter({ field: 'requirements', value: val }))}
+          />
+        </div>
+      </div>
+      <div className='mb-3'>
         <h3 className='heading-accent-md'>Regions</h3>
         <div className='flex flex-col px-3 text-sm w-full'>
           <FilterButtons

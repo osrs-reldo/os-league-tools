@@ -20,7 +20,9 @@ export default function SkillRequirementList({ value, isProductionProdigy = fals
             key={`${skill}${level}`}
             label={level}
             icon={STATS[skill].iconMini}
-            className={hiscores.skills[skill.toLowerCase()].level + levelBoost >= level ? 'text-success' : 'text-error'}
+            className={
+              hiscores.skills[skill.toLowerCase()]?.level ?? 0 + levelBoost >= level ? 'text-success' : 'text-error'
+            }
           />
         );
       })}

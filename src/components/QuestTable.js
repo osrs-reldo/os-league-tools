@@ -12,6 +12,7 @@ import images from '../assets/images';
 import titleSort from '../util/titleSort';
 import { UNLOCKED_REGION_FILTER_VALUE } from './CalculatorFilters';
 import { regionsById, regionsByName } from '../data/regions';
+import { STATS } from '../data/constants';
 
 export default function QuestTable() {
   const isMdOrSmallerViewport = useBreakpoint(MEDIA_QUERIES.MD, MODE.LESS_OR_EQ);
@@ -90,17 +91,18 @@ export default function QuestTable() {
   const questState = useSelector(state => state.unlocks.quests);
   const filterState = useSelector(state => state.filters.quests);
   const regionsState = useSelector(state => state.unlocks.regions);
+  const hiscoresState = useSelector(state => state.character.hiscoresCache.data);
 
   return (
     <Table
       columns={columns}
       data={data}
-      filters={[completedFilter, difficultyFilter, lengthFilter, regionsFilter]}
+      filters={[completedFilter, difficultyFilter, lengthFilter, regionsFilter, requirementsFilter]}
       filterState={filterState}
       globalFilter={fuzzyTextFilter}
       defaultColumn={defaultColumn}
       initialState={initialState}
-      customFilterProps={{ questState, regionsState }}
+      customFilterProps={{ questState, regionsState, hiscoresState }}
       ExpandedRow={ExpandedRow}
       enableResizeColumns
     />
@@ -191,6 +193,46 @@ function lengthFilter(record, filterState) {
   return filterState.length.includes(record.length.label);
 }
 
+function requirementsFilter(record, filterState, { hiscoresState, questState }) {
+  if (filterState.requirements === 'all') {
+    return true;
+  }
+
+  const meetsSkillReqs = (() => {
+    if (record.skillReqs.length === 0) {
+      return true;
+    }
+    // Ignore level requirements if hiscores didn't load
+    if (!hiscoresState || hiscoresState.loading || hiscoresState.error) {
+      return true;
+    }
+    let meetsRequirements = true;
+    record.skillReqs.forEach(skillReq => {
+      const hiscores = hiscoresState.skills[skillReq.skill.toLowerCase()];
+      const levelBoost = filterState.isProductionProdigy && STATS[skillReq.skill]?.productionProdigyEligible ? 12 : 0;
+      const level = (hiscores?.level || 1) + levelBoost;
+      meetsRequirements = meetsRequirements && level >= skillReq.level;
+    });
+    return meetsRequirements;
+  })();
+
+  const meetsQuestReqs = (() => {
+    if (record.prereqs.length === 0) {
+      return true;
+    }
+    let meetsRequirements = true;
+    record.prereqs.forEach(questPrereq => {
+      meetsRequirements = meetsRequirements && questState[questPrereq] === QUEST_STATUS.FINISHED;
+    });
+    return meetsRequirements;
+  })();
+
+  return (
+    (filterState.requirements === 'yes' && meetsSkillReqs && meetsQuestReqs) ||
+    (filterState.requirements === 'no' && (!meetsSkillReqs || !meetsQuestReqs))
+  );
+}
+
 function regionsFilter(record, filterState, { regionsState }) {
   const unlockedRegionNames = regionsState.filter(id => id >= 0).map(id => regionsById[id].label);
   const filteredRegions =
@@ -275,6 +317,7 @@ function RegionsCell({ row }) {
 }
 
 function ExpandedRow({ original }) {
+  const questState = useSelector(state => state.unlocks.quests);
   return (
     <div className='flex flex-row items-center h-full gap-2 max-w-[90%] md:max-w-[75%] lg:max-w-[60%]'>
       {/* hack: invisible dummy icons to align the expanded text with the previous row */}
@@ -289,7 +332,12 @@ function ExpandedRow({ original }) {
         {original.prereqs.length ? (
           <ul className='list-disc text-xs mb-2 ml-3'>
             {original.prereqs.map(prereqId => (
-              <li key={prereqId}>{questsById[prereqId].label}</li>
+              <li
+                key={prereqId}
+                className={questState[prereqId] === QUEST_STATUS.FINISHED ? 'text-success' : 'text-error'}
+              >
+                {questsById[prereqId].label}
+              </li>
             ))}
           </ul>
         ) : (

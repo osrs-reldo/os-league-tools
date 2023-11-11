@@ -7,7 +7,7 @@ import { STATS, DIFFICULTY, DIARY_LOCATIONS, DIARY_DIFFICULTY } from '../data/co
 import { QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/quests';
 import { TRAILBLAZER_REGIONS } from '../data/regions';
 
-const CURRENT_VERSION = 17;
+const CURRENT_VERSION = 18;
 
 const mapDataValues = values => Object.values(values).map(({ label }) => label);
 
@@ -28,6 +28,7 @@ const INITIAL_TASK_STATE = {
 
 const INITIAL_QUEST_STATE = {
   status: 'all',
+  requirements: 'all',
   difficulty: mapDataValues(QUEST_DIFFICULTY),
   length: mapDataValues(QUEST_LENGTH),
   regions: mapDataValues(TRAILBLAZER_REGIONS),
