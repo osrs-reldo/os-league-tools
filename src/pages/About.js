@@ -25,8 +25,7 @@ export default function About() {
               the obvious next step.
             </Paragraph>
             <Paragraph>
-              Thanks to huge community support and positive feedback, we're back for Leagues 3 with an all new site! A
-              special massive shoutout goes to <Link text='perterter' href='https://github.com/tylerthardy' />, who
+              A special massive shoutout goes to <Link text='perterter' href='https://github.com/tylerthardy' />, who
               developed the accompanying RuneLite plugin, without which I'm sure the site would never have taken off as
               much as it did.
             </Paragraph>
@@ -50,29 +49,12 @@ export default function About() {
               site's hosting costs.
             </Paragraph>
             <Separator />
-            <Header>what's next</Header>
-            <Paragraph>
-              New features will continue to be added throughout the duration of the league. I plan to continue
-              developing and supporting the site for future leagues as well. Updates, announcements, and previews of new
-              features can all be found in the <Link text='discord' href='https://discord.gg/GQ5kVyU' />.
-            </Paragraph>
-            <Paragraph>
-              Eventually, the aim is to launch a companion site for the main game, with all the features from the
-              leagues version, plus even more trackers, calculators, and tools. My goal is to create the #1 hub for OSRS
-              completionists, efficiencyscape nerds, staunch anti-efficiency activists, noobs, main accounts, snowflake
-              ironmen, and everyone in between. It's hard to put a launch date on it since the development speed depends
-              entirely on how much free time I have IRL, but it is coming (...someday)!
-            </Paragraph>
-            <Separator />
             <Header>credits</Header>
             <div className='m-2 grid md:grid-cols-4 grid-cols-2'>
               <span className={`${emphasisedText} whitespace-nowrapp md:text-right`}>developed using:</span>
               <ul className='col-span-3 list-disc text-sm mb-3 ml-6'>
                 <li>React/JS with Tailwind CSS</li>
-                <li>
-                  Additional libraries: react-redux, react-table, lodash, match-sorter, immutability-helper, react-dnd,
-                  react-step-progress-bar, tailwindcss-multi-theme
-                </li>
+                <li>Additional libraries: osrs-json-hiscores</li>
               </ul>
               <span className={`${emphasisedText} whitespace-nowrap md:text-right`}>with help from:</span>
               <ul className='col-span-3 list-disc text-sm ml-6'>
