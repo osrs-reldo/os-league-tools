@@ -24,7 +24,6 @@ To build and start up locally, run:
 
 ```
 npm install
-npm run build
 npm start
 ```
 
@@ -42,12 +41,7 @@ npm run build:styles
 
 ### Backend
 
-Some functionality (hiscores, submitting feedback, anything to do with user data) relies on the Reldo backend API. If you need to test any of these features during local development, you will either need to clone [osrs-reldo-api](https://github.com/osrs-reldo/osrs-reldo-api) and start it up locally (app will look for it on port 8080 by default), or set an env variable `REACT_APP_RELDO_URL` to the endpoint that should receive the calls.
+Some functionality (hiscores, submitting feedback, anything to do with user data) relies on the Reldo backend API. If you need to test any of these features during local development, you will can either:
 
-## Credits
-
-Data/Images sourced from:
-
-- The official OSRS wiki
-- OSRS Leagues discord
-- Tweeting questions at Mod Ash
+- To develop against a local version of the API, clone [osrs-reldo-api](https://github.com/osrs-reldo/osrs-reldo-api) and start it up. The app will look for it on port 8080 by default.
+- Or if you just want to hit the prod endpoint, create a `.env` file in this project's root folder and add the env variable: `REACT_APP_RELDO_URL=https://osrs-reldo-api.herokuapp.com`
