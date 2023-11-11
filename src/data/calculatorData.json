@@ -18,11 +18,6 @@
     "Thieving",
     "Woodcutting"
   ],
-  "globalMultipliers": {
-    "expMultipliers": [],
-    "inputMultipliers": [],
-    "outputMultipliers": []
-  },
   "calculators": {
     "agility": {
       "name": "Agility",
@@ -47,9 +42,7 @@
           "label": "Other"
         }
       ],
-      "expMultipliers": [],
-      "inputMultipliers": [],
-      "outputMultipliers": [],
+      "multipliers": [],
       "actions": [
         {
           "id": 0,
@@ -906,18 +899,23 @@
           "label": "STASH unit"
         }
       ],
-      "expMultipliers": [
+      "multipliers": [
         {
           "id": "0",
-          "name": "Carpenter's outfit (+2.5%)",
+          "name": "Carpenter's outfit",
+          "subtitle": "+2.5% exp",
           "multiplier": 1.025,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
           "categories": ["All"],
           "exceptions": [15, 16],
-          "actions": []
+          "actions": [],
+          "autoCheckWithRelic": null
         }
       ],
-      "inputMultipliers": [],
-      "outputMultipliers": [],
       "actions": [
         {
           "id": 1,
@@ -1539,27 +1537,25 @@
           "label": "Other"
         }
       ],
-      "expMultipliers": [
+      "multipliers": [
         {
           "id": "0",
-          "name": "Production prodigy (25% chance to double)",
+          "name": "Production prodigy",
+          "subtitle": "25% chance to double exp and output",
           "multiplier": 1.25,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": true
+          },
           "categories": ["Meat/Fish", "Baking"],
           "exceptions": [],
           "actions": [103, 99, 67, 44],
-          "matchers": []
-        }
-      ],
-      "inputMultipliers": [],
-      "outputMultipliers": [
-        {
-          "id": "0",
-          "name": "Production prodigy (25% chance to double)",
-          "multiplier": 1.25,
-          "categories": ["Meat/Fish", "Baking"],
-          "exceptions": [],
-          "actions": [103, 99, 67, 44],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": {
+            "tier": 0,
+            "index": 1
+          }
         }
       ],
       "actions": [
@@ -5256,27 +5252,25 @@
           "label": "Other"
         }
       ],
-      "expMultipliers": [
+      "multipliers": [
         {
           "id": "0",
-          "name": "Production prodigy (25% chance to double)",
+          "name": "Production prodigy",
+          "subtitle": "25% chance to double exp and output",
           "multiplier": 1.25,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": true
+          },
           "categories": ["Spinning/Weaving", "Armour", "Pottery", "Jewelry", "Glassblowing", "Weapons"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
-        }
-      ],
-      "inputMultipliers": [],
-      "outputMultipliers": [
-        {
-          "id": "0",
-          "name": "Production prodigy (25% chance to double)",
-          "multiplier": 1.25,
-          "categories": ["Spinning/Weaving", "Armour", "Pottery", "Jewelry", "Glassblowing", "Weapons"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": {
+            "tier": 0,
+            "index": 1
+          }
         }
       ],
       "actions": [
@@ -10671,9 +10665,7 @@
           "label": "Special"
         }
       ],
-      "expMultipliers": [],
-      "inputMultipliers": [],
-      "outputMultipliers": [],
+      "multipliers": [],
       "actions": [
         {
           "id": 0,
@@ -12456,19 +12448,24 @@
           "label": "Pyre logs"
         }
       ],
-      "expMultipliers": [
+      "multipliers": [
         {
           "id": "0",
-          "name": "Morytania legs 4 (150% for shade burning)",
+          "name": "Morytania legs 4",
+          "subtitle": "+50% exp for shade burning",
           "multiplier": 1.5,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
           "categories": ["Pyre logs"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
         }
       ],
-      "inputMultipliers": [],
-      "outputMultipliers": [],
       "actions": [
         {
           "id": 0,
@@ -12977,36 +12974,41 @@
           "label": "Barbarian fishing"
         }
       ],
-      "expMultipliers": [
+      "multipliers": [
         {
           "id": "0",
-          "name": "Angler Outfit (+2.5%)",
+          "name": "Angler Outfit",
+          "subtitle": "+2.5% exp",
           "multiplier": 1.025,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
           "categories": ["All"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
         },
         {
           "id": "1",
-          "name": "Endless harvest (x2)",
+          "name": "Endless harvest",
+          "subtitle": "Double exp and output",
           "multiplier": 2,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": true
+          },
           "categories": ["All"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
-        }
-      ],
-      "inputMultipliers": [],
-      "outputMultipliers": [
-        {
-          "id": "0",
-          "name": "Endless harvest (x2)",
-          "multiplier": 2,
-          "categories": ["All"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": {
+            "tier": 0,
+            "index": 2
+          }
         }
       ],
       "actions": [
@@ -13771,27 +13773,25 @@
           "label": "Javelins"
         }
       ],
-      "expMultipliers": [
+      "multipliers": [
         {
           "id": "0",
-          "name": "Production prodigy (25% chance to double)",
+          "name": "Production prodigy",
+          "subtitle": "25% chance to double exp and output",
           "multiplier": 1.25,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": true
+          },
           "categories": ["Bows", "Bolt tips"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
-        }
-      ],
-      "inputMultipliers": [],
-      "outputMultipliers": [
-        {
-          "id": "0",
-          "name": "Production prodigy (25% chance to double)",
-          "multiplier": 1.25,
-          "categories": ["Bows", "Bolt tips"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": {
+            "tier": 0,
+            "index": 1
+          }
         }
       ],
       "actions": [
@@ -19063,27 +19063,25 @@
           "label": "Barbarian mixes"
         }
       ],
-      "expMultipliers": [
+      "multipliers": [
         {
           "id": "0",
-          "name": "Production prodigy (25% chance to double)",
+          "name": "Production prodigy",
+          "subtitle": "25% chance to double exp and output",
           "multiplier": 1.25,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": true
+          },
           "categories": ["Potions", "Cleaning", "Barbarian mixes"],
           "exceptions": [16, 75, 85, 90, 97],
           "actions": [],
-          "matchers": []
-        }
-      ],
-      "inputMultipliers": [],
-      "outputMultipliers": [
-        {
-          "id": "0",
-          "name": "Production prodigy (25% chance to double)",
-          "multiplier": 1.25,
-          "categories": ["Potions", "Cleaning", "Barbarian mixes"],
-          "exceptions": [16, 75, 85, 90, 97],
-          "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": {
+            "tier": 0,
+            "index": 1
+          }
         }
       ],
       "actions": [
@@ -22366,17 +22364,25 @@
           "label": "Tracking"
         }
       ],
-      "expMultipliers": [],
-      "inputMultipliers": [],
-      "outputMultipliers": [
+      "multipliers": [
         {
           "id": "0",
-          "name": "Trickster (x2 for box trapping)",
+          "name": "Trickster",
+          "subtitle": "Double output for box trapping",
           "multiplier": 2,
+          "appliesTo": {
+            "exp": false,
+            "inputs": false,
+            "outputs": true
+          },
           "categories": ["Box Traps"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": {
+            "tier": 0,
+            "index": 0
+          }
         }
       ],
       "actions": [
@@ -24111,19 +24117,27 @@
           "label": "Tablets"
         }
       ],
-      "expMultipliers": [],
-      "inputMultipliers": [
+      "multipliers": [
         {
           "id": "0",
-          "name": "Superior Sorcerer (save 90% of runes)",
+          "name": "Superior Sorcerer",
+          "subtitle": "Save 90% of rune costs",
           "multiplier": 0.1,
+          "appliesTo": {
+            "exp": false,
+            "inputs": true,
+            "outputs": false
+          },
           "categories": ["All"],
           "exceptions": [],
           "actions": [],
-          "matchers": [" rune"]
+          "matchers": [" rune"],
+          "autoCheckWithRelic": {
+            "tier": 2,
+            "index": 0
+          }
         }
       ],
-      "outputMultipliers": [],
       "actions": [
         {
           "id": 0,
@@ -34265,36 +34279,41 @@
           "label": "Other"
         }
       ],
-      "expMultipliers": [
+      "multipliers": [
         {
           "id": "0",
-          "name": "Prospector Kit (+2.5%)",
+          "name": "Prospector Kit",
+          "subtitle": "+2.5% exp",
           "multiplier": 1.025,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
           "categories": ["All"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
         },
         {
           "id": "1",
-          "name": "Endless harvest (x2)",
+          "name": "Endless harvest",
+          "subtitle": "Double exp and output",
           "multiplier": 2,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": true
+          },
           "categories": ["All"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
-        }
-      ],
-      "inputMultipliers": [],
-      "outputMultipliers": [
-        {
-          "id": "0",
-          "name": "Endless harvest (x2)",
-          "multiplier": 2,
-          "categories": ["All"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": {
+            "tier": 0,
+            "index": 2
+          }
         }
       ],
       "actions": [
@@ -34783,110 +34802,88 @@
           "label": "Enriched bones"
         }
       ],
-      "expMultipliers": [
+      "multipliers": [
         {
           "id": "0",
-          "name": "Gilded altar (350%)",
+          "name": "Gilded altar",
+          "subtitle": "350% exp for bone offerings",
           "multiplier": 3.5,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
           "categories": ["Bones"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
         },
         {
           "id": "1",
-          "name": "Ectofuntus (400%)",
+          "name": "Ectofuntus",
+          "subtitle": "400% exp for bone offerings",
           "multiplier": 4.0,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
           "categories": ["Bones"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
         },
         {
           "id": "2",
-          "name": "Chaos altar (700%)",
+          "name": "Chaos altar",
+          "subtitle": "350% exp and 50% chance to save bone offerings",
           "multiplier": 7.0,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
           "categories": ["Bones"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
         },
         {
           "id": "10",
-          "name": "Demonic/Sinister offering (300%)",
+          "name": "Demonic/Sinister offering",
+          "subtitle": "300% exp for offered bones and ashes",
           "multiplier": 3.0,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
           "categories": ["Bones", "Ashes"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
         },
         {
           "id": "3",
-          "name": "Morytania Hard/Elite (150% - Shade burning)",
+          "name": "Morytania Hard/Elite",
+          "subtitle": "+50% exp for shade burning",
           "multiplier": 1.5,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
           "categories": ["Shades of Mort'ton"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
-        },
-        {
-          "id": "5",
-          "name": "Limestone altar (275%)",
-          "multiplier": 2.75,
-          "categories": ["Bones"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": []
-        },
-        {
-          "id": "6",
-          "name": "Mahogany altar (250%)",
-          "multiplier": 2.5,
-          "categories": ["Bones"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": []
-        },
-        {
-          "id": "7",
-          "name": "Cloth altar (225%)",
-          "multiplier": 2.25,
-          "categories": ["Bones"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": []
-        },
-        {
-          "id": "8",
-          "name": "Teak altar (210%)",
-          "multiplier": 2.1,
-          "categories": ["Bones"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": []
-        },
-        {
-          "id": "9",
-          "name": "Oak altar (200%)",
-          "multiplier": 2.0,
-          "categories": ["Bones"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
         }
       ],
-      "inputMultipliers": [
-        {
-          "id": "0",
-          "name": "Zealot's robes (5% chance to save)",
-          "multiplier": 1.05,
-          "categories": ["Bones"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": []
-        }
-      ],
-      "outputMultipliers": [],
       "actions": [
         {
           "id": 0,
@@ -36525,54 +36522,86 @@
           "label": "Zeah altars"
         }
       ],
-      "expMultipliers": [
+      "multipliers": [
         {
           "id": "0",
-          "name": "Daeyalt essence (150%)",
+          "name": "Daeyalt essence",
+          "subtitle": "150% exp for crafted runes",
           "multiplier": 1.5,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
           "categories": ["Runes", "Combination runes", "ZMI altar"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
-        }
-      ],
-      "inputMultipliers": [],
-      "outputMultipliers": [
-        {
-          "id": "0",
-          "name": "Raiments of the eye - Full set (+60%)",
-          "multiplier": 1.6,
-          "categories": ["Runes", "Combination runes", "ZMI altar", "Zeah altars"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
         },
         {
           "id": "1",
-          "name": "Raiments of the eye - 3 pieces (+30%)",
-          "multiplier": 1.3,
+          "name": "Raiments of the eye - Full set",
+          "subtitle": "+60% crafted runes",
+          "multiplier": 1.6,
+          "appliesTo": {
+            "exp": false,
+            "inputs": false,
+            "outputs": true
+          },
           "categories": ["Runes", "Combination runes", "ZMI altar", "Zeah altars"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
         },
         {
           "id": "2",
-          "name": "Raiments of the eye - 2 pieces (+20%)",
-          "multiplier": 1.2,
+          "name": "Raiments of the eye - 3 pieces",
+          "subtitle": "+30% crafted runes",
+          "multiplier": 1.3,
+          "appliesTo": {
+            "exp": false,
+            "inputs": false,
+            "outputs": true
+          },
           "categories": ["Runes", "Combination runes", "ZMI altar", "Zeah altars"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
         },
         {
           "id": "3",
-          "name": "Raiments of the eye - 1 piece (+10%)",
-          "multiplier": 1.1,
+          "name": "Raiments of the eye - 2 pieces",
+          "subtitle": "+20% crafted runes",
+          "multiplier": 1.2,
+          "appliesTo": {
+            "exp": false,
+            "inputs": false,
+            "outputs": true
+          },
           "categories": ["Runes", "Combination runes", "ZMI altar", "Zeah altars"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
+        },
+        {
+          "id": "4",
+          "name": "Raiments of the eye - 1 piece",
+          "subtitle": "+10% crafted runes",
+          "multiplier": 1.1,
+          "appliesTo": {
+            "exp": false,
+            "inputs": false,
+            "outputs": true
+          },
+          "categories": ["Runes", "Combination runes", "ZMI altar", "Zeah altars"],
+          "exceptions": [],
+          "actions": [],
+          "matchers": [],
+          "autoCheckWithRelic": null
         }
       ],
       "actions": [
@@ -38059,36 +38088,41 @@
           "label": "Other"
         }
       ],
-      "expMultipliers": [
+      "multipliers": [
         {
           "id": "0",
-          "name": "Goldsmith gauntlets (250% on smelting gold)",
+          "name": "Goldsmith gauntlets",
+          "subtitle": "250% exp when smelting gold bars",
           "multiplier": 2.5,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
           "categories": [],
           "exceptions": [],
           "actions": [27, 73],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
         },
         {
           "id": "1",
-          "name": "Production prodigy (25% chance to double)",
+          "name": "Production prodigy",
+          "subtitle": "25% chance to double exp and output",
           "multiplier": 1.5,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": true
+          },
           "categories": ["Bronze", "Iron", "Steel", "Mithril", "Adamant", "Rune"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
-        }
-      ],
-      "inputMultipliers": [],
-      "outputMultipliers": [
-        {
-          "id": "0",
-          "name": "Production prodigy (25% chance to double)",
-          "multiplier": 1.5,
-          "categories": ["Bronze", "Iron", "Steel", "Mithril", "Adamant", "Rune"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": {
+            "tier": 0,
+            "index": 1
+          }
         }
       ],
       "actions": [
@@ -40261,26 +40295,41 @@
           "label": "Other"
         }
       ],
-      "expMultipliers": [],
-      "inputMultipliers": [],
-      "outputMultipliers": [
+      "multipliers": [
         {
           "id": "0",
-          "name": "Rogue outfit (x2)",
+          "name": "Rogue outfit",
+          "subtitle": "Double pickpocketing output",
           "multiplier": 2.0,
+          "appliesTo": {
+            "exp": false,
+            "inputs": false,
+            "outputs": true
+          },
           "categories": ["Pickpocketing"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
         },
         {
           "id": "1",
-          "name": "Trickster relic (x2)",
+          "name": "Trickster",
+          "subtitle": "Double pickpocketing output",
           "multiplier": 2.0,
+          "appliesTo": {
+            "exp": false,
+            "inputs": false,
+            "outputs": true
+          },
           "categories": ["Pickpocketing"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": {
+            "tier": 0,
+            "index": 0
+          }
         }
       ],
       "actions": [
@@ -41720,54 +41769,73 @@
           "label": "Tai Bwo Wannai"
         }
       ],
-      "expMultipliers": [
-        {
-          "id": "3",
-          "name": "Endless harvest (x2)",
-          "multiplier": 2,
-          "categories": ["Trees"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": []
-        },
+      "multipliers": [
         {
           "id": "0",
-          "name": "Lumberjack Outfit (+2.5%) ",
-          "multiplier": 1.025,
+          "name": "Endless harvest",
+          "subtitle": "Double exp and output",
+          "multiplier": 2,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": true
+          },
           "categories": ["Trees"],
           "exceptions": [],
           "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": {
+            "tier": 0,
+            "index": 2
+          }
         },
         {
           "id": "1",
-          "name": "Kandarin headgear 2+ (+10% for Seer's maples)",
+          "name": "Lumberjack Outfit",
+          "subtitle": "+2.5% exp",
+          "multiplier": 1.025,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
+          "categories": ["All"],
+          "exceptions": [],
+          "actions": [],
+          "matchers": [],
+          "autoCheckWithRelic": null
+        },
+        {
+          "id": "2",
+          "name": "Kandarin headgear 2+",
+          "subtitle": "+10% exp when chopping Seer's maples",
           "multiplier": 1.1,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
           "categories": [],
           "exceptions": [],
           "actions": [17],
-          "matchers": []
-        }
-      ],
-      "inputMultipliers": [],
-      "outputMultipliers": [
-        {
-          "id": "2",
-          "name": "Endless harvest (x2)",
-          "multiplier": 2,
-          "categories": ["Trees"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
         },
         {
-          "id": "0",
-          "name": "Kandarin headgear (x2 regular logs)",
+          "id": "3",
+          "name": "Kandarin headgear (any)",
+          "subtitle": "Double output for regular trees",
           "multiplier": 2.0,
+          "appliesTo": {
+            "exp": false,
+            "inputs": false,
+            "outputs": true
+          },
           "categories": [],
           "exceptions": [],
           "actions": [0],
-          "matchers": []
+          "matchers": [],
+          "autoCheckWithRelic": null
         }
       ],
       "actions": [
@@ -41928,26 +41996,6 @@
             }
           ],
           "areas": ["Asgarnia", "Fremennik", "Kandarin", "Misthalin", "Tirannwn", "Kourend"],
-          "expActions": 1.0,
-          "tooltip": ""
-        },
-        {
-          "id": 17,
-          "name": "Maple tree",
-          "subtitle": "Seer\u2019s village maples",
-          "category": "Trees",
-          "exp": 100.0,
-          "level": 45,
-          "icon": "https://oldschool.runescape.wiki/images/3/32/Maple_logs.png",
-          "inputs": [],
-          "outputs": [
-            {
-              "name": "Maple logs",
-              "amount": 1.0,
-              "chance": 1
-            }
-          ],
-          "areas": ["Kandarin"],
           "expActions": 1.0,
           "tooltip": ""
         },

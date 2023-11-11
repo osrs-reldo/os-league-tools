@@ -20,12 +20,7 @@ const calculatorSkills = calculatorData.skills.map(skillName => ({
   value: STATS[skillName].label,
 }));
 
-export default function BankedExpSettings({
-  expGained,
-  expMultipliersState,
-  inputMultipliersState,
-  outputMultipliersState,
-}) {
+export default function BankedExpSettings({ expGained, multipliersState }) {
   const {
     calculators,
     character,
@@ -104,7 +99,10 @@ export default function BankedExpSettings({
       <h3 className='heading-accent-md mt-4'>Skill</h3>
       <Select
         className='w-full'
-        onSelect={e => dispatch(updateCalculatorsSkill({ skill: e.value }))}
+        onSelect={e => {
+          dispatch(updateCalculatorsSkill({ skill: e.value }));
+          multipliersState.resetMultipliers();
+        }}
         options={calculatorSkills}
         value={selectedSkill}
       />
@@ -130,9 +128,7 @@ export default function BankedExpSettings({
       <SharedCalculatorSettings
         baseMultiplier={baseMultiplier}
         selectedSkill={selectedSkill}
-        expMultipliersState={expMultipliersState}
-        inputMultipliersState={inputMultipliersState}
-        outputMultipliersState={outputMultipliersState}
+        multipliersState={multipliersState}
       />
     </>
   );

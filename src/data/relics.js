@@ -115,6 +115,67 @@ export const PASSIVE_RELICS = [
 export const RELICS = [
   [
     {
+      label: 'Trickster',
+      description: [
+        '· You will automatically re-pickpocket your target',
+        '· Loot from pickpoketing is doubled and noted',
+        '· Coin pouch limit is multiplied by 3',
+        "· You will be given the Sage's Greaves, that will grant Agility XP that scales with your agility level while running",
+        '· Box traps lure creatures faster',
+        '· Loot from box traps is doubled',
+        '· Impling jars cannot break',
+        '· You can burn up to 9 logs simultaneously',
+        '· You cannnot fail actions for Thieving, Agility, Hunter and Firemaking',
+      ],
+      icon: images['relic-trickster.png'],
+    },
+    {
+      label: 'Production Prodigy',
+      description: [
+        '· When doing the following activities all items are processed at once granting full XP',
+        ' · Smelting ores, smithing bars and making Cannonballs',
+        ' · Fletching logs, stringing bows and cutting bolt tips',
+        ' · Cleaning herbs and making potions which do not have a stackable secondary ingredient',
+        ' · Cooking food and making jugs of wine',
+        ' · Crafting leather, uncut gems, glassblowing, jewellery, pottery, battlestaves and spinning flax or wool',
+        '· There is a 25% chance that you will make an additional product, which will be sent to your Bank if you have space. Additional products will also grants XP',
+        '· Additionally Crafting, Smithing, Herblore, Fletching and Cooking are boosted by +12',
+      ],
+      icon: images['relic-production-prodigy.png'],
+    },
+    {
+      label: 'Endless Harvest',
+      description: [
+        '· Resources gathered from Fishing, Woodcutting and Mining are multiplied by 2x',
+        '· All resources gathered by this Relic are sent directly to your Bank if you have space, otherwise they are placed in your inventory',
+        '· Items which cannot be banked will be plaved in your Inventory instead, even if you have Bank space',
+        '· Fill your bank with bank fillers to have resources sent to your Inventory',
+      ],
+      icon: images['relic-endless-harvest.png'],
+    },
+  ],
+  [
+    {
+      label: 'Globetrotter',
+      description: [
+        '· Receive a unique teleport amulet that allows teleporting to a large number of teleport locations from teleport jewellery and spellbooks.',
+        '· Can only teleport to locations within regions the player has unlocked.',
+      ],
+      icon: images['relic-globetrotter.png'],
+    },
+    {
+      label: 'Relic 2.2',
+      description: 'Unknown effects',
+      icon: images['relic-check.png'],
+    },
+    {
+      label: 'Relic 2.3',
+      description: 'Unknown effects',
+      icon: images['relic-check.png'],
+    },
+  ],
+  [
+    {
       label: 'Superior Sorcerer',
       description: [
         '· Magic weapons with attack speed 4 or above have this stat halved, rounded down.',
@@ -153,43 +214,6 @@ export const RELICS = [
         '· Ranged accuracy is increased by 100%.',
       ],
       icon: images['relic-archers-embrace.png'],
-    },
-  ],
-  [
-    {
-      label: 'Globetrotter',
-      description: [
-        '· Receive a unique teleport amulet that allows teleporting to a large number of teleport locations from teleport jewellery and spellbooks.',
-        '· Can only teleport to locations within regions the player has unlocked.',
-      ],
-      icon: images['relic-globetrotter.png'],
-    },
-    {
-      label: 'Relic 2.2',
-      description: 'Unknown effects',
-      icon: images['relic-check.png'],
-    },
-    {
-      label: 'Relic 2.3',
-      description: 'Unknown effects',
-      icon: images['relic-check.png'],
-    },
-  ],
-  [
-    {
-      label: 'Relic 3.1',
-      description: 'Unknown effects',
-      icon: images['relic-check.png'],
-    },
-    {
-      label: 'Relic 3.2',
-      description: 'Unknown effects',
-      icon: images['relic-check.png'],
-    },
-    {
-      label: 'Relic 3.3',
-      description: 'Unknown effects',
-      icon: images['relic-check.png'],
     },
   ],
   [

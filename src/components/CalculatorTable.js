@@ -9,22 +9,8 @@ import { regionsById } from '../data/regions';
 import { UNLOCKED_REGION_FILTER_VALUE } from './CalculatorFilters';
 import useCalculatorData from '../hooks/useCalculatorData';
 
-export default function CalculatorTable({
-  skill,
-  expValues,
-  baseMultiplier,
-  expMultipliersState,
-  inputMultipliersState,
-  outputMultipliersState,
-}) {
-  const { data } = useCalculatorData(
-    skill,
-    expValues,
-    baseMultiplier,
-    expMultipliersState,
-    inputMultipliersState,
-    outputMultipliersState
-  );
+export default function CalculatorTable({ skill, expValues, baseMultiplier, multipliersState }) {
+  const { data } = useCalculatorData(skill, expValues, baseMultiplier, multipliersState);
 
   // Force reset page to 1 when skill is changed
   const [forceResetPage, setForceResetPage] = useState(false);

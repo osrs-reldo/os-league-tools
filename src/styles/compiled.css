@@ -2121,6 +2121,9 @@ select[multiple]:focus option:checked {
 .ml-6 {
   margin-left: 1.5rem;
 }
+.ml-\[18px\] {
+  margin-left: 18px;
+}
 .ml-auto {
   margin-left: auto;
 }
@@ -2350,9 +2353,6 @@ select[multiple]:focus option:checked {
 }
 .basis-\[23\%\] {
   flex-basis: 23%;
-}
-.basis-\[30\%\] {
-  flex-basis: 30%;
 }
 .basis-full {
   flex-basis: 100%;

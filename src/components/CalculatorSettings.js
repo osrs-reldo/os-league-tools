@@ -20,7 +20,7 @@ const calculatorSkills = calculatorData.skills.map(skillName => ({
   value: STATS[skillName].label,
 }));
 
-export default function CalculatorSettings({ expMultipliersState, inputMultipliersState, outputMultipliersState }) {
+export default function CalculatorSettings({ multipliersState }) {
   const {
     calculators,
     character,
@@ -89,9 +89,7 @@ export default function CalculatorSettings({ expMultipliersState, inputMultiplie
         className='w-full'
         onSelect={e => {
           dispatch(updateCalculatorsSkill({ skill: e.value }));
-          expMultipliersState.resetMultipliers();
-          inputMultipliersState.resetMultipliers();
-          outputMultipliersState.resetMultipliers();
+          multipliersState.resetMultipliers();
         }}
         options={calculatorSkills}
         value={selectedSkill}
@@ -143,9 +141,7 @@ export default function CalculatorSettings({ expMultipliersState, inputMultiplie
       <SharedCalculatorSettings
         baseMultiplier={baseMultiplier}
         selectedSkill={selectedSkill}
-        expMultipliersState={expMultipliersState}
-        inputMultipliersState={inputMultipliersState}
-        outputMultipliersState={outputMultipliersState}
+        multipliersState={multipliersState}
       />
     </>
   );

@@ -7,12 +7,7 @@ import ActivityCell from './common/calculator/ActivityCell';
 import MaterialsCell from './common/calculator/MaterialsCell';
 import InputCell from './common/calculator/InputCell';
 
-export default function BankedExpTable({
-  setExpGained,
-  expMultipliersState,
-  inputMultipliersState,
-  outputMultipliersState,
-}) {
+export default function BankedExpTable({ setExpGained, multipliersState }) {
   const [plannedActions, setPlannedActions] = useState({});
 
   const updatePlannedActions = (value, actionId) => {
@@ -39,7 +34,9 @@ export default function BankedExpTable({
   const RAW_DATA = CALCULATOR_DATA.calculators[skill.toLowerCase()].actions;
   let expGained = 0;
   const calculatedData = RAW_DATA.map(activity => {
-    const expPerAction = expMultipliersState.applyMultipliers(activity.exp * baseMultiplier, activity);
+    const expPerAction = multipliersState.applyMultipliers(activity.exp * baseMultiplier, activity, undefined, {
+      exp: true,
+    });
     if (plannedActions[activity.id]) {
       expGained += expPerAction * plannedActions[activity.id];
     }
@@ -50,11 +47,11 @@ export default function BankedExpTable({
       expGained: expPerAction * (plannedActions[activity.id] ?? 0),
       inputs: activity.inputs.map(input => ({
         ...input,
-        amount: inputMultipliersState.applyMultipliers(input.amount, activity, input),
+        amount: multipliersState.applyMultipliers(input.amount, activity, input, { inputs: true }),
       })),
       outputs: activity.outputs.map(output => ({
         ...output,
-        amount: outputMultipliersState.applyMultipliers(output.amount, activity, output),
+        amount: multipliersState.applyMultipliers(output.amount, activity, output, { outputs: true }),
       })),
     };
   });

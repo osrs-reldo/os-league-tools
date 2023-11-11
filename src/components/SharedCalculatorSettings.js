@@ -1,25 +1,31 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { updateCalculatorsBaseMultiplier } from '../store/calculators/calculators';
 import CalculatorFilters from './CalculatorFilters';
 import ButtonGroup from './common/ButtonGroup';
 import LabeledCheckbox from './common/LabeledCheckbox';
 import calculatorData from '../data/calculatorData.json';
 
-export default function SharedCalculatorSettings({
-  selectedSkill,
-  baseMultiplier,
-  expMultipliersState,
-  inputMultipliersState,
-  outputMultipliersState,
-}) {
+export default function SharedCalculatorSettings({ selectedSkill, baseMultiplier, multipliersState }) {
+  const relicsState = useSelector(state => state.unlocks.relics);
   const dispatch = useDispatch();
+  const { multipliers } = calculatorData.calculators[selectedSkill.toLowerCase()];
 
-  const { expMultipliers, inputMultipliers, outputMultipliers } =
-    calculatorData.calculators[selectedSkill.toLowerCase()];
+  // Auto-check multipliers for unlocked relics
+  useEffect(() => {
+    for (const multiplier of multipliers) {
+      if (
+        !!multiplier.autoCheckWithRelic &&
+        relicsState[multiplier.autoCheckWithRelic.tier] === multiplier.autoCheckWithRelic.index
+      ) {
+        multipliersState.addMultiplier(multiplier.id, multiplier);
+      }
+    }
+  }, [relicsState, selectedSkill]);
+
   return (
     <>
-      <h3 className='heading-accent-md mt-4'>Base exp multiplier: </h3>
+      <h3 className='heading-accent-md mt-4'>Base exp multiplier</h3>
       <div className='ml-2 mb-2'>
         <ButtonGroup
           buttons={[
@@ -33,70 +39,26 @@ export default function SharedCalculatorSettings({
         />
       </div>
 
-      {!!expMultipliers.length && (
+      {!!multipliers.length && (
         <>
-          <h3 className='heading-accent-md mt-4'>Exp multipliers</h3>
+          <h3 className='heading-accent-md mt-4'>Additional multipliers</h3>
           <div className='ml-2 mb-2'>
-            {expMultipliers.map(multiplier => (
-              <LabeledCheckbox
-                key={multiplier.id}
-                className='text-sm'
-                label={multiplier.name}
-                checked={!!expMultipliersState.multipliers[multiplier.id]}
-                onClick={e => {
-                  if (e.target.checked) {
-                    expMultipliersState.addMultiplier(multiplier.id, multiplier);
-                  } else {
-                    expMultipliersState.removeMultiplier(multiplier.id);
-                  }
-                }}
-              />
-            ))}
-          </div>
-        </>
-      )}
-
-      {!!inputMultipliers.length && (
-        <>
-          <h3 className='heading-accent-md mt-4'>Input multipliers</h3>
-          <div className='ml-2 mb-2'>
-            {inputMultipliers.map(multiplier => (
-              <LabeledCheckbox
-                key={multiplier.id}
-                className='text-sm'
-                label={multiplier.name}
-                checked={!!inputMultipliersState.multipliers[multiplier.id]}
-                onClick={e => {
-                  if (e.target.checked) {
-                    inputMultipliersState.addMultiplier(multiplier.id, multiplier);
-                  } else {
-                    inputMultipliersState.removeMultiplier(multiplier.id);
-                  }
-                }}
-              />
-            ))}
-          </div>
-        </>
-      )}
-
-      {!!outputMultipliers.length && (
-        <>
-          <h3 className='heading-accent-md mt-4'>Output multipliers</h3>
-          <div className='ml-2 mb-2'>
-            {outputMultipliers.map(multiplier => (
-              <LabeledCheckbox
-                key={multiplier.id}
-                className='text-sm'
-                label={multiplier.name}
-                checked={!!outputMultipliersState.multipliers[multiplier.id]}
-                onClick={e => {
-                  if (e.target.checked) {
-                    outputMultipliersState.addMultiplier(multiplier.id, multiplier);
-                  } else {
-                    outputMultipliersState.removeMultiplier(multiplier.id);
-                  }
-                }}
-              />
+            {multipliers.map(multiplier => (
+              <div key={multiplier.id} className='mb-1'>
+                <LabeledCheckbox
+                  className='text-sm'
+                  label={multiplier.name}
+                  checked={!!multipliersState.multipliers[multiplier.id]}
+                  onClick={e => {
+                    if (e.target.checked) {
+                      multipliersState.addMultiplier(multiplier.id, multiplier);
+                    } else {
+                      multipliersState.removeMultiplier(multiplier.id);
+                    }
+                  }}
+                />
+                <p className='text-xs italic ml-[18px] text-secondary-alt'>{multiplier.subtitle}</p>
+              </div>
             ))}
           </div>
         </>

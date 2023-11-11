@@ -1,36 +1,31 @@
 import { useMemo } from 'react';
 import CALCULATOR_DATA from '../data/calculatorData.json';
 
-export default function useCalculatorData(
-  skill,
-  expValues,
-  baseMultiplier,
-  expMultipliersState,
-  inputMultipliersState,
-  outputMultipliersState
-) {
+export default function useCalculatorData(skill, expValues, baseMultiplier, multipliersState) {
   const rawData = useMemo(() => CALCULATOR_DATA.calculators[skill.toLowerCase()], [skill]);
   const expRequired = useMemo(() => expValues.target.xp - expValues.start.xp, [expValues]);
 
   const calculatedData = useMemo(
     () =>
       rawData.actions.map(activity => {
-        const totalExp = expMultipliersState.applyMultipliers(activity.exp * baseMultiplier, activity);
+        const totalExp = multipliersState.applyMultipliers(activity.exp * baseMultiplier, activity, undefined, {
+          exp: true,
+        });
         return {
           ...activity,
           exp: totalExp,
           actionsRequired: Math.ceil(expRequired / totalExp),
           inputs: activity.inputs.map(input => ({
             ...input,
-            amount: inputMultipliersState.applyMultipliers(input.amount, activity, input),
+            amount: multipliersState.applyMultipliers(input.amount, activity, input, { inputs: true }),
           })),
           outputs: activity.outputs.map(output => ({
             ...output,
-            amount: outputMultipliersState.applyMultipliers(output.amount, activity, output),
+            amount: multipliersState.applyMultipliers(output.amount, activity, output, { outputs: true }),
           })),
         };
       }),
-    [rawData, expRequired, baseMultiplier, expMultipliersState, inputMultipliersState, outputMultipliersState]
+    [rawData, expRequired, baseMultiplier, multipliersState]
   );
 
   return { data: calculatedData };
