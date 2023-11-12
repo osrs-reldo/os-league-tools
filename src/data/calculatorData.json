@@ -10663,9 +10663,30 @@
         {
           "value": "Special",
           "label": "Special"
+        },
+        {
+          "value": "Tithe farm",
+          "label": "Tithe farm"
         }
       ],
-      "multipliers": [],
+      "multipliers": [
+        {
+          "id": 0,
+          "name": "Farmer's outfit",
+          "subtitle": "+2.5% exp",
+          "multiplier": 1.025,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
+          "categories": ["All"],
+          "exceptions": [],
+          "actions": [],
+          "matchers": [],
+          "autoCheckWithRelic": null
+        }
+      ],
       "actions": [
         {
           "id": 0,
@@ -11512,6 +11533,32 @@
           "tooltip": ""
         },
         {
+          "id": 75,
+          "name": "Golovanova - Full sack (100 fruits)",
+          "subtitle": "",
+          "category": "Tithe farm",
+          "exp": 9660.0,
+          "level": 34,
+          "icon": "https://oldschool.runescape.wiki/images/Golovanova_fruit.png?fc2ef",
+          "inputs": [
+            {
+              "name": "Golovanova seed",
+              "amount": 100.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Reward points",
+              "amount": 35.0,
+              "chance": 1.0
+            }
+          ],
+          "areas": ["Kourend"],
+          "expActions": 8.0,
+          "tooltip": "Also awards 35 points"
+        },
+        {
           "id": 32,
           "name": "Teak tree",
           "subtitle": "",
@@ -11810,6 +11857,32 @@
           "areas": ["Morytania"],
           "expActions": 7.0,
           "tooltip": "Assumes harvest of 6 crops"
+        },
+        {
+          "id": 76,
+          "name": "Bologano - Full sack (100 fruits)",
+          "subtitle": "",
+          "category": "Tithe farm",
+          "exp": 22540.0,
+          "level": 54,
+          "icon": "https://oldschool.runescape.wiki/images/Bologano_fruit.png?fc2ef",
+          "inputs": [
+            {
+              "name": "Bologano seed",
+              "amount": 100.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Reward points",
+              "amount": 35.0,
+              "chance": 1.0
+            }
+          ],
+          "areas": ["Kourend"],
+          "expActions": 8.0,
+          "tooltip": ""
         },
         {
           "id": 45,
@@ -12265,6 +12338,32 @@
           ],
           "areas": ["Tirannwn"],
           "expActions": 2.0,
+          "tooltip": ""
+        },
+        {
+          "id": 77,
+          "name": "Logavano - Full sack (100 fruits)",
+          "subtitle": "",
+          "category": "Tithe farm",
+          "exp": 37030.0,
+          "level": 74,
+          "icon": "https://oldschool.runescape.wiki/images/Logavano_fruit.png?fc2ef",
+          "inputs": [
+            {
+              "name": "Logavano seed",
+              "amount": 100.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Reward points",
+              "amount": 35.0,
+              "chance": 1.0
+            }
+          ],
+          "areas": ["Kourend"],
+          "expActions": 8.0,
           "tooltip": ""
         },
         {
