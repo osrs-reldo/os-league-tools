@@ -2,6 +2,7 @@ import { CURRENT_VERSION } from './constants';
 
 const versionUpdaters = {
   2: updateToV2,
+  3: updateToV3,
 };
 
 export default function updateSettingsVersion(settingsState) {
@@ -24,5 +25,18 @@ function updateToV2(prevState) {
     ...prevState,
     theme: prevState.mode === 'light' ? 'tr-light' : 'tr-dark',
     version: 2,
+  };
+}
+
+function updateToV3(prevState) {
+  // Add setting to hide/show task tracker columns
+  return {
+    ...prevState,
+    taskColumns: {
+      completedAt: false,
+      priority: true,
+      regions: true,
+    },
+    version: 3,
   };
 }

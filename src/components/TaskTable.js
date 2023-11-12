@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { matchSorter } from 'match-sorter';
 import { useSelector } from 'react-redux';
+import { forEach } from 'lodash';
 import tasks from '../data/tasks';
 import ALL_FILTERS from '../util/taskFilters';
 import Cell from './TaskTableCell';
@@ -22,6 +23,7 @@ export default function TaskTable({ history, readonly, taskState: propsTaskState
   const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.STRICT);
   const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
   const taskState = useSelector(state => propsTaskState || state.tasks.tasks);
+  const settingsState = useSelector(state => state.settings);
 
   const data = useMemo(
     () =>
@@ -65,15 +67,13 @@ export default function TaskTable({ history, readonly, taskState: propsTaskState
         sortType: sortCategory,
         Cell: Category,
       },
-      // TODO add setting to enable this column
-      // {
-      //   Header: 'Completed at',
-      //   id: 'completedAt',
-      //   Cell: Cell.TaskCompletedAt,
-      //   sortType: sortCompletedAt,
-      //   accessor: 'completedAt',
-      // },
-      // TODO add setting to hide this column
+      {
+        Header: 'Completed at',
+        id: 'completedAt',
+        Cell: Cell.TaskCompletedAt,
+        sortType: sortCompletedAt,
+        accessor: 'completedAt',
+      },
       {
         Header: 'Priority',
         id: 'priority',
@@ -102,10 +102,10 @@ export default function TaskTable({ history, readonly, taskState: propsTaskState
     []
   );
   const filters = [...Object.values(ALL_FILTERS)];
-  const initialState = isXsViewport
-    ? { hiddenColumns: ['id', 'difficulty', 'category', 'completedAt', 'priority'] }
-    : { hiddenColumns: ['id'] };
-  initialState.pageSize = 50;
+  const initialState = {
+    hiddenColumns: getHiddenColumns(isXsViewport, settingsState.taskColumns),
+    pageSize: 50,
+  };
 
   const filterState = useSelector(state => state.filters.tasks);
   const tasksState = useSelector(state => state.tasks.tasks);
@@ -126,6 +126,19 @@ export default function TaskTable({ history, readonly, taskState: propsTaskState
       enableResizeColumns={!isXsViewport}
     />
   );
+}
+
+function getHiddenColumns(isXsViewport, settingsTaskColumns) {
+  if (isXsViewport) {
+    return ['id', 'difficulty', 'category', 'completedAt', 'priority'];
+  }
+  const hiddenColumns = ['id'];
+  forEach(Object.keys(settingsTaskColumns), columnId => {
+    if (!settingsTaskColumns[columnId]) {
+      hiddenColumns.push(columnId);
+    }
+  });
+  return hiddenColumns;
 }
 
 function sortTask(a, b) {
@@ -152,9 +165,9 @@ function sortCategory(a, b) {
   return compareVal;
 }
 
-// function sortCompletedAt(a, b) {
-//   return a.values.completedAt - b.values.completedAt;
-// }
+function sortCompletedAt(a, b) {
+  return a.values.completedAt - b.values.completedAt;
+}
 
 function sortPriority(a, b) {
   const priorityA = a.values.priority === 'high' ? 3 : a.values.priority === 'low' ? 1 : 2;

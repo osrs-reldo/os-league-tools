@@ -11,7 +11,11 @@ export const settingsSlice = createSlice({
   initialState: INITIAL_STATE,
   reducers: {
     update: (state, action) => {
-      state[action.payload.field] = action.payload.value;
+      if (action.payload.subfield) {
+        state[action.payload.field][action.payload.subfield] = action.payload.value;
+      } else {
+        state[action.payload.field] = action.payload.value;
+      }
     },
     load: (state, action) => {
       const fallbackState = action.payload.forceOverwrite ? INITIAL_STATE : state;

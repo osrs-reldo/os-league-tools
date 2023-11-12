@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch, batch } from 'react-redux';
+import ReactTooltip from 'react-tooltip';
 import { update } from '../store/settings/settings';
 import LabeledCheckbox from '../components/common/LabeledCheckbox';
 import TabbedCard from '../components/common/TabbedCard';
@@ -17,29 +18,75 @@ export default function Settings() {
           <TabbedCard.Tab id='interface' label='Interface'>
             <div className='grid xl:grid-cols-2'>
               <div>
-                <span className='heading-block-md small-caps mb-2'>General</span>
+                <span className='heading-block-md small-caps mb-2 text-accent'>
+                  General{' '}
+                  <span className='icon-outline text-xs inline mr-1' data-tip data-for='general'>
+                    info
+                  </span>
+                </span>
+                <ReactTooltip id='general'>
+                  <p className='text-sm italic'>
+                    On large screens, site content will be limited to a maximum of 1500px.
+                  </p>
+                  <p className='text-sm italic'>Uncheck if you wish to use the full width of your browser window.</p>
+                </ReactTooltip>
                 <div className='ml-2'>
                   <LabeledCheckbox
                     label='Limit maximum content width'
                     checked={settingsState.limitContentWidth}
                     onClick={e => dispatch(update({ field: 'limitContentWidth', value: e.target.checked }))}
                   />
-                  <div className='ml-5'>
-                    <p className='text-sm italic'>
-                      <span className='icon-outline text-xs inline mr-1'>info</span>On large screens, site content will
-                      be limited to a maximum of 1536px wide.
-                    </p>
-                    <p className='text-sm italic'>Uncheck if you wish to use the full width of your browser window.</p>
-                  </div>
+                </div>
+                <span className='heading-block-md small-caps mb-2 mt-2 text-accent'>
+                  Task tracker{' '}
+                  <span className='icon-outline text-xs inline mr-1' data-tip data-for='taskTracker'>
+                    info
+                  </span>
+                </span>
+                <ReactTooltip id='taskTracker'>
+                  <p className='text-sm italic'>Choose which columns to show on the task tracker.</p>
+                  <p className='text-sm italic'>
+                    Note that on small screens, some columns may be hidden regardless of this setting.
+                  </p>
+                </ReactTooltip>
+                <div className='ml-2'>
+                  <LabeledCheckbox
+                    label='Show "Priority" column'
+                    checked={settingsState.taskColumns.priority}
+                    onClick={e =>
+                      dispatch(update({ field: 'taskColumns', subfield: 'priority', value: e.target.checked }))
+                    }
+                  />
+                  <LabeledCheckbox
+                    label='Show "Category" column'
+                    checked={settingsState.taskColumns.category}
+                    onClick={e =>
+                      dispatch(update({ field: 'taskColumns', subfield: 'category', value: e.target.checked }))
+                    }
+                  />
+                  <LabeledCheckbox
+                    label='Show "Completed At" column'
+                    checked={settingsState.taskColumns.completedAt}
+                    onClick={e =>
+                      dispatch(update({ field: 'taskColumns', subfield: 'completedAt', value: e.target.checked }))
+                    }
+                  />
+                  <LabeledCheckbox
+                    label='Show "Regions" column'
+                    checked={settingsState.taskColumns.regions}
+                    onClick={e =>
+                      dispatch(update({ field: 'taskColumns', subfield: 'regions', value: e.target.checked }))
+                    }
+                  />
                 </div>
               </div>
               <div>
-                <span className='heading-block-md small-caps my-2'>Mode</span>
+                <span className='heading-block-md small-caps my-2 text-accent'>Mode</span>
                 <div className='ml-2 mb-4 flex flex-row flex-wrap gap-4'>
                   <ModeSelectCard label='Dark' mode='dark' />
                   <ModeSelectCard label='Light' mode='light' />
                 </div>
-                <span className='heading-block-md small-caps my-2'>Theme</span>
+                <span className='heading-block-md small-caps my-2 text-accent'>Theme</span>
                 <div className='ml-2 flex flex-row flex-wrap gap-4'>
                   <ThemeSelectCard label='Twisted' theme='tl' />
                   <ThemeSelectCard label='Trailblazer' theme='tb' />
