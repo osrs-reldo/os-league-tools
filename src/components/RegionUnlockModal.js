@@ -52,10 +52,16 @@ export default function RegionUnlockModal({ isOpen, setIsOpen, tier, initialSele
           />
         </div>
         <div className='m-2 mt-1 text-accent text-base'>
+          Click image to view region details:
+          <a href={selectedRegionData.infographic} target='_blank' rel='noreferrer'>
+            <img src={selectedRegionData.infographic} alt='' />
+          </a>
+        </div>
+        <div className='m-2 mt-1 text-accent text-base'>
           Unlocking {selectedRegionData.label} will automatically complete the following:
         </div>
         <div className='m-2 mt-1 flex flex-col gap-1 text-sm italic max-h-[200px] overflow-auto'>
-          <span className='text-accent'>Quests</span>
+          {selectedRegionData.questUnlocks.length > 0 && <span className='text-accent'>Quests</span>}
           {selectedRegionData.questUnlocks.map(questId => {
             const questData = questsById[questId];
             return (
@@ -64,7 +70,7 @@ export default function RegionUnlockModal({ isOpen, setIsOpen, tier, initialSele
               </span>
             );
           })}
-          <span className='text-accent'>Diary tasks</span>
+          {selectedRegionData.diaryUnlocks.length > 0 && <span className='text-accent'>Diary tasks</span>}
           {selectedRegionData.diaryUnlocks.map(diaryId => {
             const diaryData = diaryTasksById[diaryId];
             return (
