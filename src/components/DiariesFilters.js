@@ -26,6 +26,20 @@ export default function DiariesFilters() {
         </div>
       </div>
       <div className='mb-3'>
+        <p className='heading-accent-md'>Requirements</p>
+        <div className='w-full px-3 text-sm'>
+          <ButtonGroup
+            buttons={[
+              { value: 'all', label: 'All tasks' },
+              { value: 'yes', label: 'Reqs met' },
+              { value: 'no', label: 'Reqs missing' },
+            ]}
+            selection={filterState.requirements}
+            setSelection={val => dispatch(updateDiariesFilter({ field: 'requirements', value: val }))}
+          />
+        </div>
+      </div>
+      <div className='mb-3'>
         <p className='heading-accent-md'>Difficulty</p>
         <div className='w-full px-3 text-sm flex flex-col'>
           <FilterButtons

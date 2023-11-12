@@ -7,6 +7,8 @@ import LabeledIcon from './common/LabeledIcon';
 import SkillRequirementList from './SkillRequirementList';
 import { updateDiary } from '../store/unlocks/unlocks';
 import diaries from '../data/diaries';
+import { questsById, QUEST_STATUS } from '../data/quests';
+import { STATS } from '../data/constants';
 
 export default function DiariesTable() {
   const data = useMemo(() => diaries, []);
@@ -50,7 +52,7 @@ export default function DiariesTable() {
         id: 'questReqs',
         accessor: 'questReqs',
         width: 80,
-        Cell: TextReqCell,
+        Cell: QuestReqCell,
       },
       {
         Header: 'Other reqs',
@@ -73,17 +75,19 @@ export default function DiariesTable() {
   const initialState = { hiddenColumns: ['id'] };
   const diariesState = useSelector(state => state.unlocks.diaries);
   const filterState = useSelector(state => state.filters.diaries);
+  const questState = useSelector(state => state.unlocks.quests);
+  const hiscoresState = useSelector(state => state.character.hiscoresCache.data);
 
   return (
     <Table
       columns={columns}
       data={data}
-      filters={[completedFilter, difficultyFilter, locationFilter]}
+      filters={[completedFilter, difficultyFilter, locationFilter, requirementsFilter]}
       filterState={filterState}
       globalFilter={fuzzyTextFilter}
       defaultColumn={defaultColumn}
       initialState={initialState}
-      customFilterProps={{ diariesState }}
+      customFilterProps={{ diariesState, hiscoresState, questState }}
       enableResizeColumns
     />
   );
@@ -139,14 +143,35 @@ function IconCell({ value }) {
 function SkillReqCell({ value }) {
   return (
     <div className='w-full items-center h-full justify-center flex flex-col gap-0.5'>
-      <SkillRequirementList value={value} className='ml-3' />
+      <SkillRequirementList value={value} className='ml-3' hidePlaceholder />
+    </div>
+  );
+}
+
+function QuestReqCell({ value }) {
+  const questState = useSelector(state => state.unlocks.quests);
+  if (value.length === 0) {
+    return null;
+  }
+  return (
+    <div className='w-full h-full justify-center flex flex-col gap-0.5 text-xs'>
+      <ul>
+        {value.map(req => {
+          const questData = questsById[req];
+          return (
+            <li key={req} className={questState[req] === QUEST_STATUS.FINISHED ? 'text-success' : 'text-error'}>
+              {questData.label}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
 
 function TextReqCell({ value }) {
   if (value.length === 0) {
-    return <span className='w-full h-full items-center flex italic text-xs'>none</span>;
+    return null;
   }
   return (
     <div className='w-full h-full justify-center flex flex-col gap-0.5 text-xs'>
@@ -178,4 +203,44 @@ function locationFilter(record, filterState) {
     return true;
   }
   return filterState.location.includes(record.location.label);
+}
+
+function requirementsFilter(record, filterState, { hiscoresState, questState }) {
+  if (filterState.requirements === 'all') {
+    return true;
+  }
+
+  const meetsSkillReqs = (() => {
+    if (record.skillReqs.length === 0) {
+      return true;
+    }
+    // Ignore level requirements if hiscores didn't load
+    if (!hiscoresState || hiscoresState.loading || hiscoresState.error) {
+      return true;
+    }
+    let meetsRequirements = true;
+    record.skillReqs.forEach(skillReq => {
+      const hiscores = hiscoresState.skills[skillReq.skill.toLowerCase()];
+      const levelBoost = filterState.isProductionProdigy && STATS[skillReq.skill]?.productionProdigyEligible ? 12 : 0;
+      const level = (hiscores?.level || 1) + levelBoost;
+      meetsRequirements = meetsRequirements && level >= skillReq.level;
+    });
+    return meetsRequirements;
+  })();
+
+  const meetsQuestReqs = (() => {
+    if (record.questReqs.length === 0) {
+      return true;
+    }
+    let meetsRequirements = true;
+    record.questReqs.forEach(questPrereq => {
+      meetsRequirements = meetsRequirements && questState[questPrereq] === QUEST_STATUS.FINISHED;
+    });
+    return meetsRequirements;
+  })();
+
+  return (
+    (filterState.requirements === 'yes' && meetsSkillReqs && meetsQuestReqs) ||
+    (filterState.requirements === 'no' && (!meetsSkillReqs || !meetsQuestReqs))
+  );
 }
