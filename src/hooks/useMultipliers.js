@@ -18,6 +18,9 @@ export default function useMultipliers() {
         (applyTo.exp && appliesTo.exp) || (applyTo.inputs && appliesTo.inputs) || (applyTo.outputs && appliesTo.outputs)
     );
     let newValue = value;
+    if (itemData?.chance) {
+      newValue = value * itemData.chance;
+    }
     for (const multiplier of validMultipliers) {
       const matchesCategory =
         multiplier.categories[0] === 'All' || multiplier.categories.includes(activityData.category);

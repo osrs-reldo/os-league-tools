@@ -1533,6 +1533,10 @@
           "label": "Brewing"
         },
         {
+          "value": "Mess hall",
+          "label": "Mess hall"
+        },
+        {
           "value": "Other",
           "label": "Other"
         }
@@ -2697,6 +2701,20 @@
           "tooltip": ""
         },
         {
+          "id": 115,
+          "name": "Servery meat pie",
+          "subtitle": "",
+          "category": "Mess hall",
+          "exp": 160.0,
+          "level": 20,
+          "icon": "https://oldschool.runescape.wiki/images/Servery_meat_pie.png?3f71e",
+          "inputs": [],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": "Requires 45% Hosidius favour."
+        },
+        {
           "id": 37,
           "name": "Short green guy",
           "subtitle": "",
@@ -2953,6 +2971,20 @@
           "areas": ["All"],
           "expActions": 1.0,
           "tooltip": ""
+        },
+        {
+          "id": 116,
+          "name": "Servery stew",
+          "subtitle": "",
+          "category": "Mess hall",
+          "exp": 168.0,
+          "level": 25,
+          "icon": "https://oldschool.runescape.wiki/images/Servery_stew.png?3f71e",
+          "inputs": [],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": "Requires 45% Hosidius favour."
         },
         {
           "id": 45,
@@ -4912,6 +4944,20 @@
           "tooltip": ""
         },
         {
+          "id": 117,
+          "name": "Servery pineapple pizza",
+          "subtitle": "",
+          "category": "Mess hall",
+          "exp": 369.0,
+          "level": 65,
+          "icon": "https://oldschool.runescape.wiki/images/Servery_pineapple_pizza.png?3f71e",
+          "inputs": [],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": "Requires 45% Hosidius favour."
+        },
+        {
           "id": 103,
           "name": "Wine of zamorak",
           "subtitle": "",
@@ -5100,6 +5146,32 @@
             }
           ],
           "areas": ["Misthalin", "Kandarin", "Wilderness", "Fremennik"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 118,
+          "name": "Anglerfish",
+          "subtitle": "",
+          "category": "Meat/Fish",
+          "exp": 230.0,
+          "level": 84,
+          "icon": "https://oldschool.runescape.wiki/images/Anglerfish.png?f0f17",
+          "inputs": [
+            {
+              "name": "Raw anglerfish",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Anglerfish",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Kourend"],
           "expActions": 1.0,
           "tooltip": ""
         },
@@ -10663,9 +10735,30 @@
         {
           "value": "Special",
           "label": "Special"
+        },
+        {
+          "value": "Tithe farm",
+          "label": "Tithe farm"
         }
       ],
-      "multipliers": [],
+      "multipliers": [
+        {
+          "id": 0,
+          "name": "Farmer's outfit",
+          "subtitle": "+2.5% exp",
+          "multiplier": 1.025,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
+          "categories": ["All"],
+          "exceptions": [],
+          "actions": [],
+          "matchers": [],
+          "autoCheckWithRelic": null
+        }
+      ],
       "actions": [
         {
           "id": 0,
@@ -11512,6 +11605,32 @@
           "tooltip": ""
         },
         {
+          "id": 75,
+          "name": "Golovanova - Full sack (100 fruits)",
+          "subtitle": "",
+          "category": "Tithe farm",
+          "exp": 9660.0,
+          "level": 34,
+          "icon": "https://oldschool.runescape.wiki/images/Golovanova_fruit.png?fc2ef",
+          "inputs": [
+            {
+              "name": "Golovanova seed",
+              "amount": 100.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Reward points",
+              "amount": 35.0,
+              "chance": 1.0
+            }
+          ],
+          "areas": ["Kourend"],
+          "expActions": 8.0,
+          "tooltip": "Also awards 35 points"
+        },
+        {
           "id": 32,
           "name": "Teak tree",
           "subtitle": "",
@@ -11810,6 +11929,32 @@
           "areas": ["Morytania"],
           "expActions": 7.0,
           "tooltip": "Assumes harvest of 6 crops"
+        },
+        {
+          "id": 76,
+          "name": "Bologano - Full sack (100 fruits)",
+          "subtitle": "",
+          "category": "Tithe farm",
+          "exp": 22540.0,
+          "level": 54,
+          "icon": "https://oldschool.runescape.wiki/images/Bologano_fruit.png?fc2ef",
+          "inputs": [
+            {
+              "name": "Bologano seed",
+              "amount": 100.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Reward points",
+              "amount": 35.0,
+              "chance": 1.0
+            }
+          ],
+          "areas": ["Kourend"],
+          "expActions": 8.0,
+          "tooltip": ""
         },
         {
           "id": 45,
@@ -12265,6 +12410,32 @@
           ],
           "areas": ["Tirannwn"],
           "expActions": 2.0,
+          "tooltip": ""
+        },
+        {
+          "id": 77,
+          "name": "Logavano - Full sack (100 fruits)",
+          "subtitle": "",
+          "category": "Tithe farm",
+          "exp": 37030.0,
+          "level": 74,
+          "icon": "https://oldschool.runescape.wiki/images/Logavano_fruit.png?fc2ef",
+          "inputs": [
+            {
+              "name": "Logavano seed",
+              "amount": 100.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Reward points",
+              "amount": 35.0,
+              "chance": 1.0
+            }
+          ],
+          "areas": ["Kourend"],
+          "expActions": 8.0,
           "tooltip": ""
         },
         {
@@ -13673,6 +13844,32 @@
             }
           ],
           "areas": ["Kandarin"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 35,
+          "name": "Raw anglerfish",
+          "subtitle": "",
+          "category": "Fish",
+          "exp": 120.0,
+          "level": 82,
+          "icon": "https://oldschool.runescape.wiki/images/Raw_anglerfish.png?3a750",
+          "inputs": [
+            {
+              "name": "Sandworm",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Raw anglerfish",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Kourend"],
           "expActions": 1.0,
           "tooltip": ""
         },
@@ -34800,6 +34997,10 @@
         {
           "value": "Enriched bones",
           "label": "Enriched bones"
+        },
+        {
+          "value": "Ensouled heads",
+          "label": "Ensouled heads"
         }
       ],
       "multipliers": [
@@ -34878,6 +35079,22 @@
             "outputs": false
           },
           "categories": ["Shades of Mort'ton"],
+          "exceptions": [],
+          "actions": [],
+          "matchers": [],
+          "autoCheckWithRelic": null
+        },
+        {
+          "id": "4",
+          "name": "Zealot's robes",
+          "subtitle": "5% chance to save bones, ashes or ensouled heads",
+          "multiplier": 1.0526,
+          "appliesTo": {
+            "exp": true,
+            "inputs": false,
+            "outputs": false
+          },
+          "categories": ["Bones", "Ashes", "Ensouled heads"],
           "exceptions": [],
           "actions": [],
           "matchers": [],
@@ -36490,6 +36707,776 @@
           ],
           "outputs": [],
           "areas": ["Asgarnia", "Kourend", "Tirannwn"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 85,
+          "name": "Ensouled goblin head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 130,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_goblin_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled goblin head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Body rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 86,
+          "name": "Ensouled monkey head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 182,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_monkey_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled monkey head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Body rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 87,
+          "name": "Ensouled imp head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 286,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_imp_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled imp head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Body rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 88,
+          "name": "Ensouled minotaur head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 364,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_minotaur_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled minotaur head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Body rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 89,
+          "name": "Ensouled scorpion head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 454,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_scorpion_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled scorpion head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Body rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 90,
+          "name": "Ensouled bear head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 480,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_bear_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled bear head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Body rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 91,
+          "name": "Ensouled unicorn head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 494,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_unicorn_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled unicorn head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Body rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 92,
+          "name": "Ensouled dog head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 520,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_dog_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled dog head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Body rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 3.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 93,
+          "name": "Ensouled chaos druid head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 584,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_chaos_druid_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled chaos druid head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Body rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 3.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 94,
+          "name": "Ensouled giant head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 650,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_giant_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled giant head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Body rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 3.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 95,
+          "name": "Ensouled ogre head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 716,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_ogre_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled ogre head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Body rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 3.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 96,
+          "name": "Ensouled elf head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 754,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_elf_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled elf head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Body rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 3.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 97,
+          "name": "Ensouled troll head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 780,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_troll_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled troll head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Body rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 3.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 98,
+          "name": "Ensouled horror head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 832,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_horror_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled horror head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Body rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 3.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 99,
+          "name": "Ensouled kalphite head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 884,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_kalphite_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled kalphite head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Blood rune",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 3.0,
+              "chance": 1
+            },
+            {
+              "name": "Soul rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 100,
+          "name": "Ensouled dagannoth head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 936,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_dagannoth_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled dagannoth head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Blood rune",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 3.0,
+              "chance": 1
+            },
+            {
+              "name": "Soul rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 101,
+          "name": "Ensouled bloodveld head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 1040,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_bloodveld_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled bloodveld head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Blood rune",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 3.0,
+              "chance": 1
+            },
+            {
+              "name": "Soul rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 102,
+          "name": "Ensouled tzhaar head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 1104,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_tzhaar_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled tzhaar head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Blood rune",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 3.0,
+              "chance": 1
+            },
+            {
+              "name": "Soul rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 103,
+          "name": "Ensouled demon head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 1170,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_demon_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled demon head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Blood rune",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 3.0,
+              "chance": 1
+            },
+            {
+              "name": "Soul rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 104,
+          "name": "Ensouled hellhound head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 1200,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_hellhound_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled hellhound head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Blood rune",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 3.0,
+              "chance": 1
+            },
+            {
+              "name": "Soul rune",
+              "amount": 2.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 105,
+          "name": "Ensouled aviansie head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 1234,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_aviansie_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled aviansie head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Blood rune",
+              "amount": 2.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Soul rune",
+              "amount": 4.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 106,
+          "name": "Ensouled abyssal head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 1300,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_abyssal_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled abyssal head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Blood rune",
+              "amount": 2.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Soul rune",
+              "amount": 4.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 107,
+          "name": "Ensouled dragon head",
+          "subtitle": "",
+          "category": "Ensouled heads",
+          "exp": 1560,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Ensouled_dragon_head.png?8fa13",
+          "inputs": [
+            {
+              "name": "Ensouled dragon head",
+              "amount": 1.0,
+              "chance": 1
+            },
+            {
+              "name": "Blood rune",
+              "amount": 2.0,
+              "chance": 1
+            },
+            {
+              "name": "Nature rune",
+              "amount": 4.0,
+              "chance": 1
+            },
+            {
+              "name": "Soul rune",
+              "amount": 4.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [],
+          "areas": ["Kourend"],
           "expActions": 1.0,
           "tooltip": ""
         }
@@ -40653,6 +41640,51 @@
           "areas": ["Misthalin"],
           "expActions": 1.0,
           "tooltip": ""
+        },
+        {
+          "id": 13,
+          "name": "Fruit stall",
+          "subtitle": "",
+          "category": "Stalls",
+          "exp": 28.5,
+          "level": 25,
+          "icon": "https://oldschool.runescape.wiki/images/Golovanova_fruit_top.png?3d117",
+          "inputs": [],
+          "outputs": [
+            {
+              "name": "Cooking apple",
+              "amount": 1.0,
+              "chance": 0.4
+            },
+            {
+              "name": "Banana",
+              "amount": 1.0,
+              "chance": 0.2
+            },
+            {
+              "name": "Strawberry",
+              "amount": 1.0,
+              "chance": 0.069979
+            },
+            {
+              "name": "Jangerberry, lemon, redberry, pineapple, lime or strange fruit",
+              "amount": 1.0,
+              "chance": 0.05
+            },
+            {
+              "name": "Golovanova fruit top",
+              "amount": 1.0,
+              "chance": 0.02
+            },
+            {
+              "name": "Papaya",
+              "amount": 1.0,
+              "chance": 0.01
+            }
+          ],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": "Requires 15% Hosidius favour"
         },
         {
           "id": 16,
