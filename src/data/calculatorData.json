@@ -1533,6 +1533,10 @@
           "label": "Brewing"
         },
         {
+          "value": "Mess hall",
+          "label": "Mess hall"
+        },
+        {
           "value": "Other",
           "label": "Other"
         }
@@ -2697,6 +2701,20 @@
           "tooltip": ""
         },
         {
+          "id": 115,
+          "name": "Servery meat pie",
+          "subtitle": "",
+          "category": "Mess hall",
+          "exp": 160.0,
+          "level": 20,
+          "icon": "https://oldschool.runescape.wiki/images/Servery_meat_pie.png?3f71e",
+          "inputs": [],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": "Requires 45% Hosidius favour."
+        },
+        {
           "id": 37,
           "name": "Short green guy",
           "subtitle": "",
@@ -2953,6 +2971,20 @@
           "areas": ["All"],
           "expActions": 1.0,
           "tooltip": ""
+        },
+        {
+          "id": 116,
+          "name": "Servery stew",
+          "subtitle": "",
+          "category": "Mess hall",
+          "exp": 168.0,
+          "level": 25,
+          "icon": "https://oldschool.runescape.wiki/images/Servery_stew.png?3f71e",
+          "inputs": [],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": "Requires 45% Hosidius favour."
         },
         {
           "id": 45,
@@ -4910,6 +4942,20 @@
           "areas": ["All"],
           "expActions": 1.0,
           "tooltip": ""
+        },
+        {
+          "id": 117,
+          "name": "Servery pineapple pizza",
+          "subtitle": "",
+          "category": "Mess hall",
+          "exp": 369.0,
+          "level": 65,
+          "icon": "https://oldschool.runescape.wiki/images/Servery_pineapple_pizza.png?3f71e",
+          "inputs": [],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": "Requires 45% Hosidius favour."
         },
         {
           "id": 103,
