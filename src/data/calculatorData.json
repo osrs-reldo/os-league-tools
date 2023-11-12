@@ -5150,6 +5150,32 @@
           "tooltip": ""
         },
         {
+          "id": 118,
+          "name": "Anglerfish",
+          "subtitle": "",
+          "category": "Meat/Fish",
+          "exp": 230.0,
+          "level": 84,
+          "icon": "https://oldschool.runescape.wiki/images/Anglerfish.png?f0f17",
+          "inputs": [
+            {
+              "name": "Raw anglerfish",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Anglerfish",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
           "id": 111,
           "name": "Wild pie",
           "subtitle": "",
@@ -13818,6 +13844,32 @@
             }
           ],
           "areas": ["Kandarin"],
+          "expActions": 1.0,
+          "tooltip": ""
+        },
+        {
+          "id": 35,
+          "name": "Raw anglerfish",
+          "subtitle": "",
+          "category": "Fish",
+          "exp": 120.0,
+          "level": 82,
+          "icon": "https://oldschool.runescape.wiki/images/Raw_anglerfish.png?3a750",
+          "inputs": [
+            {
+              "name": "Sandworm",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Raw anglerfish",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Kourend"],
           "expActions": 1.0,
           "tooltip": ""
         },
