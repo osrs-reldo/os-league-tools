@@ -2115,9 +2115,6 @@ select[multiple]:focus option:checked {
 .ml-3 {
   margin-left: 0.75rem;
 }
-.ml-5 {
-  margin-left: 1.25rem;
-}
 .ml-6 {
   margin-left: 1.5rem;
 }
@@ -2317,6 +2314,9 @@ select[multiple]:focus option:checked {
 }
 .min-w-\[26rem\] {
   min-width: 26rem;
+}
+.max-w-\[3\.5rem\] {
+  max-width: 3.5rem;
 }
 .max-w-\[320px\] {
   max-width: 320px;
@@ -2581,6 +2581,9 @@ select[multiple]:focus option:checked {
 }
 .p-0 {
   padding: 0px;
+}
+.p-0\.5 {
+  padding: 0.125rem;
 }
 .p-1 {
   padding: 0.25rem;

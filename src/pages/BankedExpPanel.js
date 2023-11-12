@@ -3,6 +3,7 @@ import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import BankedExpSettings from '../components/BankedExpSettings';
 import BankedExpTable from '../components/BankedExpTable';
 import useMultipliers from '../hooks/useMultipliers';
+import useEquilibrium from '../hooks/useEquilibrium';
 
 export default function BankedExpPanel() {
   const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.LESS_OR_EQ);
@@ -10,6 +11,7 @@ export default function BankedExpPanel() {
   const [showSidebar, setShowSidebar] = useState(isXlViewport);
   const [expGained, setExpGained] = useState(0);
   const multipliersState = useMultipliers();
+  const equilibriumState = useEquilibrium();
 
   return (
     <section className='flex flex-col xl:flex-row w-full bg-secondary-alt xl:bg-primary'>
@@ -21,7 +23,11 @@ export default function BankedExpPanel() {
       )}
       {showSidebar && (
         <div className='basis-[23%] p-2'>
-          <BankedExpSettings expGained={expGained} multipliersState={multipliersState} />
+          <BankedExpSettings
+            expGained={expGained}
+            multipliersState={multipliersState}
+            equilibriumState={equilibriumState}
+          />
         </div>
       )}
       <div className='mt-3 mb-3 bg-hover cursor-pointer' onClick={() => setShowSidebar(!showSidebar)}>
@@ -38,7 +44,11 @@ export default function BankedExpPanel() {
           </p>
         )}
       </div>
-      <BankedExpTable setExpGained={setExpGained} multipliersState={multipliersState} />
+      <BankedExpTable
+        setExpGained={setExpGained}
+        multipliersState={multipliersState}
+        equilibriumState={equilibriumState}
+      />
     </section>
   );
 }

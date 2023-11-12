@@ -21,7 +21,7 @@ const calculatorSkills = calculatorData.skills.map(skillName => ({
   value: STATS[skillName].label,
 }));
 
-export default function BankedExpSettings({ expGained, multipliersState }) {
+export default function BankedExpSettings({ expGained, multipliersState, equilibriumState }) {
   const {
     calculators,
     character,
@@ -136,6 +136,7 @@ export default function BankedExpSettings({ expGained, multipliersState }) {
         baseMultiplier={baseMultiplier}
         selectedSkill={selectedSkill}
         multipliersState={multipliersState}
+        equilibriumState={equilibriumState}
       />
     </>
   );

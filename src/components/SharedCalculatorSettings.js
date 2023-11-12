@@ -6,7 +6,12 @@ import ButtonGroup from './common/ButtonGroup';
 import LabeledCheckbox from './common/LabeledCheckbox';
 import calculatorData from '../data/calculatorData.json';
 
-export default function SharedCalculatorSettings({ selectedSkill, baseMultiplier, multipliersState }) {
+export default function SharedCalculatorSettings({
+  selectedSkill,
+  baseMultiplier,
+  multipliersState,
+  equilibriumState,
+}) {
   const relicsState = useSelector(state => state.unlocks.relics);
   const dispatch = useDispatch();
   const { multipliers } = calculatorData.calculators[selectedSkill.toLowerCase()];
@@ -60,6 +65,29 @@ export default function SharedCalculatorSettings({ selectedSkill, baseMultiplier
                 <p className='text-xs italic ml-[18px] text-secondary-alt'>{multiplier.subtitle}</p>
               </div>
             ))}
+            <div key='equilibrium' className='mb-1'>
+              <LabeledCheckbox
+                className='text-sm'
+                label='Equilibrium'
+                checked={equilibriumState.enabled}
+                onClick={e => equilibriumState.setEnabled(e.target.checked)}
+              />
+              <p className='text-xs italic ml-[18px] text-secondary-alt'>
+                Total level:{' '}
+                <input
+                  className='input-primary p-0.5 max-w-[3.5rem]'
+                  onChange={e => {
+                    if (Number.isNaN(e.target.value)) {
+                      return;
+                    }
+                    equilibriumState.setTotalLevel(parseInt(e.target.value, 10));
+                  }}
+                  type='number'
+                  maxLength={4}
+                  value={equilibriumState.totalLevel}
+                />
+              </p>
+            </div>
           </div>
         </>
       )}

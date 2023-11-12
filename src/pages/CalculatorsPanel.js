@@ -4,6 +4,7 @@ import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import CalculatorSettings from '../components/CalculatorSettings';
 import CalculatorTable from '../components/CalculatorTable';
 import useMultipliers from '../hooks/useMultipliers';
+import useEquilibrium from '../hooks/useEquilibrium';
 
 export default function CalculatorsPanel() {
   const {
@@ -13,6 +14,7 @@ export default function CalculatorsPanel() {
   const isXlViewport = useBreakpoint(MEDIA_QUERIES.XL);
   const [showSidebar, setShowSidebar] = useState(isXlViewport);
   const multipliersState = useMultipliers();
+  const equilibriumState = useEquilibrium();
 
   return (
     <section className='flex flex-col xl:flex-row w-full bg-secondary-alt xl:bg-primary'>
@@ -24,7 +26,7 @@ export default function CalculatorsPanel() {
       )}
       {showSidebar && (
         <div className='basis-[23%] p-2'>
-          <CalculatorSettings skill={skill} multipliersState={multipliersState} />
+          <CalculatorSettings skill={skill} multipliersState={multipliersState} equilibriumState={equilibriumState} />
         </div>
       )}
       <div className='mt-3 mb-3 bg-hover cursor-pointer' onClick={() => setShowSidebar(!showSidebar)}>
@@ -46,6 +48,7 @@ export default function CalculatorsPanel() {
         expValues={expValues}
         baseMultiplier={baseMultiplier}
         multipliersState={multipliersState}
+        equilibriumState={equilibriumState}
       />
     </section>
   );

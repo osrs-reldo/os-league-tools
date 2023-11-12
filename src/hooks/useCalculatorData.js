@@ -1,16 +1,18 @@
 import { useMemo } from 'react';
 import CALCULATOR_DATA from '../data/calculatorData.json';
 
-export default function useCalculatorData(skill, expValues, baseMultiplier, multipliersState) {
+export default function useCalculatorData(skill, expValues, baseMultiplier, multipliersState, equilibriumState) {
   const rawData = useMemo(() => CALCULATOR_DATA.calculators[skill.toLowerCase()], [skill]);
   const expRequired = useMemo(() => expValues.target.xp - expValues.start.xp, [expValues]);
 
   const calculatedData = useMemo(
     () =>
       rawData.actions.map(activity => {
-        const totalExp = multipliersState.applyMultipliers(activity.exp * baseMultiplier, activity, undefined, {
-          exp: true,
-        });
+        const equilibriumExpPerAction = equilibriumState.getBonusExp(activity.expActions);
+        const totalExp =
+          multipliersState.applyMultipliers(activity.exp * baseMultiplier, activity, undefined, {
+            exp: true,
+          }) + equilibriumExpPerAction;
         return {
           ...activity,
           exp: totalExp,

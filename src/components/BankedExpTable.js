@@ -7,7 +7,7 @@ import ActivityCell from './common/calculator/ActivityCell';
 import MaterialsCell from './common/calculator/MaterialsCell';
 import InputCell from './common/calculator/InputCell';
 
-export default function BankedExpTable({ setExpGained, multipliersState }) {
+export default function BankedExpTable({ setExpGained, multipliersState, equilibriumState }) {
   const [plannedActions, setPlannedActions] = useState({});
 
   const updatePlannedActions = (value, actionId) => {
@@ -34,9 +34,11 @@ export default function BankedExpTable({ setExpGained, multipliersState }) {
   const RAW_DATA = CALCULATOR_DATA.calculators[skill.toLowerCase()].actions;
   let expGained = 0;
   const calculatedData = RAW_DATA.map(activity => {
-    const expPerAction = multipliersState.applyMultipliers(activity.exp * baseMultiplier, activity, undefined, {
-      exp: true,
-    });
+    const equilibriumExpPerAction = equilibriumState.getBonusExp(activity.expActions);
+    const expPerAction =
+      multipliersState.applyMultipliers(activity.exp * baseMultiplier, activity, undefined, {
+        exp: true,
+      }) + equilibriumExpPerAction;
     if (plannedActions[activity.id]) {
       expGained += expPerAction * plannedActions[activity.id];
     }

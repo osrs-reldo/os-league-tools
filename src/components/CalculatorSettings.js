@@ -21,7 +21,7 @@ const calculatorSkills = calculatorData.skills.map(skillName => ({
   value: STATS[skillName].label,
 }));
 
-export default function CalculatorSettings({ multipliersState }) {
+export default function CalculatorSettings({ multipliersState, equilibriumState }) {
   const {
     calculators,
     character,
@@ -149,6 +149,7 @@ export default function CalculatorSettings({ multipliersState }) {
         baseMultiplier={baseMultiplier}
         selectedSkill={selectedSkill}
         multipliersState={multipliersState}
+        equilibriumState={equilibriumState}
       />
     </>
   );
