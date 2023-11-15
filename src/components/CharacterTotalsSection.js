@@ -36,7 +36,7 @@ function TrophyCase({ currentPoints }) {
           {TROPHY_THRESHOLDS[tier + 1] - currentPoints} points until {nextTrophyData.label} trophy
         </span>
       )}
-      <img src={trophyData.image} alt={trophyData.label} style={{ maxHeight: '200px' }} />
+      {!!trophyData.image && <img src={trophyData.image} alt={trophyData.label} style={{ maxHeight: '200px' }} />}
     </div>
   );
 }
