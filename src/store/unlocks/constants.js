@@ -3,7 +3,7 @@ import { QUEST_STATUS } from '../../data/quests';
 import { DEFAULT_REGIONS, NONE_REGION_ID, regionsById } from '../../data/regions';
 import { NONE_RELIC_ID } from '../../data/relics';
 
-export const CURRENT_VERSION = 8;
+export const CURRENT_VERSION = 9;
 
 const INITIAL_REGIONS_STATE = [...DEFAULT_REGIONS, NONE_REGION_ID, NONE_REGION_ID, NONE_REGION_ID];
 const INITIAL_RELICS_STATE = [
