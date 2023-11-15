@@ -71,10 +71,7 @@ function BugReportFields({ onSubmit }) {
           - The Runelite plugin is currently unavailable due to a major bug. We've submitted a fix and are waiting on
           the Runelite devs to get the plugin restored to the plugin hub.
         </p>
-        <p>
-          - The initial task list is expected to be available within 2-3 hours of the official League launch. Some task
-          info may be missing or incorrect for the first day or two.
-        </p>
+        <p>- Some task info may be missing or incorrect for the first day or two.</p>
         <p>
           - If you notice any other incorrect data, please submit a bug report below and we'll get to it as soon as we
           can!

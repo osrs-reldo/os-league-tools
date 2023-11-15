@@ -65,10 +65,7 @@ export default function PageWrapper({ children }) {
             - The Runelite plugin is currently unavailable due to a major bug. We've submitted a fix and are waiting on
             the Runelite devs to get the plugin restored to the plugin hub.
           </p>
-          <p className='text-sm'>
-            - The initial task list is expected to be available within 2-3 hours of the official League launch. Some
-            task info may be missing or incorrect for the first day or two.
-          </p>
+          <p className='text-sm'>- Some task info may be missing or incorrect for the first day or two.</p>
           <p className='text-sm'>
             - If you notice any other incorrect data, please{' '}
             <span className='text-accent underline cursor-pointer' onClick={() => setFeedbackModalOpen(true)}>
