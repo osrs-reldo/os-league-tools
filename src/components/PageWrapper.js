@@ -10,6 +10,7 @@ import ManageData from './nav/ManageData';
 import Feedback from './nav/Feedback';
 import Character from './nav/Character';
 import ManageCharactersModal from './ManageCharactersModal';
+import Banner from './common/Banner';
 
 export default function PageWrapper({ children }) {
   const theme = useSelector(state => state.settings.theme);
@@ -56,6 +57,27 @@ export default function PageWrapper({ children }) {
       <Page.Nav>
         <NavBar navItems={navItems} brandName='OS League Tools' brandLogo={images[`icon-${theme}.png`]} />
       </Page.Nav>
+      <Page.Banner>
+        <Banner className='mx-[20%] mb-4'>
+          <p className='text-accent text-center'>✨ LEAGUES 4 IS OFFICIALLY HERE! ✨</p>
+          <p className='text-sm'>Please be patient with us as we get everything up & running. Known issues:</p>
+          <p className='text-sm'>
+            - The Runelite plugin is currently unavailable due to a major bug. We've submitted a fix and are waiting on
+            the Runelite devs to get the plugin restored to the plugin hub.
+          </p>
+          <p className='text-sm'>
+            - The initial task list is expected to be available within 2-3 hours of the official League launch. Some
+            task info may be missing or incorrect for the first day or two.
+          </p>
+          <p className='text-sm'>
+            - If you notice any other incorrect data, please{' '}
+            <span className='text-accent underline cursor-pointer' onClick={() => setFeedbackModalOpen(true)}>
+              submit a bug report
+            </span>{' '}
+            and we'll get to it as soon as we can!
+          </p>
+        </Banner>
+      </Page.Banner>
       <Page.Body>
         {children}
         <FeedbackModal isOpen={isFeedbackModalOpen} setIsOpen={val => setFeedbackModalOpen(val)} />

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { FilePicker } from 'react-file-picker';
 import { saveAs } from 'file-saver';
 import importFromPlugin from '../client/plugin-importer';
-import Separator from './common/Separator';
+// import Separator from './common/Separator';
 import Modal from './Modal';
 import { loadNewState, resetState } from '../store/common';
 import { selectActiveCharacter } from '../store/user/character';
@@ -16,9 +16,9 @@ export default function ManageDataModal({ variant, isOpen, setIsOpen }) {
       return (
         <ModalWrapper isOpen={isOpen} setIsOpen={setIsOpen} headerText='Import and Sync Data'>
           <Modal.Body className='text-primary text-sm'>
-            <p className='heading-accent-md ml-1'>Sync data to plugin</p>
+            {/* <p className='heading-accent-md ml-1'>Sync data to plugin</p>
             <ImportFromPluginContent />
-            <Separator className='mb-2' />
+            <Separator className='mb-2' /> */}
             <p className='heading-accent-md ml-1'>Import from backup</p>
             <ImportFromFileContent />
           </Modal.Body>
@@ -28,9 +28,9 @@ export default function ManageDataModal({ variant, isOpen, setIsOpen }) {
       return (
         <ModalWrapper isOpen={isOpen} setIsOpen={setIsOpen} headerText='Export data'>
           <Modal.Body className='text-primary text-sm'>
-            <p className='heading-accent-md ml-1'>Export to-do list to plugin</p>
+            {/* <p className='heading-accent-md ml-1'>Export to-do list to plugin</p>
             <ExportToPluginContent />
-            <Separator className='mb-2' />
+            <Separator className='mb-2' /> */}
             <p className='heading-accent-md ml-1'>Export data backup</p>
             <ExportToFileContent />
           </Modal.Body>
@@ -48,12 +48,25 @@ export default function ManageDataModal({ variant, isOpen, setIsOpen }) {
       return (
         <ModalWrapper isOpen={isOpen} setIsOpen={setIsOpen} headerText='Tasks Tracker RuneLite Plugin'>
           <Modal.Body className='text-primary text-sm'>
-            <p className='heading-accent-md ml-1'>About</p>
+            <p className='heading-accent-md ml-1 text-center'>Currently unavailable :(</p>
+            <p className='m-2 mt-1'>The Runelite plugin is currently unavailable due to a major bug.</p>
             <p className='m-2 mt-1'>
-              OS League Tools has RuneLite integration! Enable the plugin to sync your tasks and quest (and soon, relics
-              and unlocks too).
+              We've submitted a fix and are waiting on the Runelite devs to get the plugin restored to the plugin hub.
             </p>
-            <Separator className='mb-2' />
+            <p className='m-2 mt-1'>
+              If you'd like to be notified when the plugin is available again, join our{' '}
+              <a className='text-accent underline' href='https://discord.gg/GQ5kVyU' target='_blank' rel='noreferrer'>
+                Discord
+              </a>{' '}
+              and keep an eye on the #announcements channel.
+            </p>
+            <p className='m-2 mt-1'>Thank you for your patience!</p>
+            {/* <p className='heading-accent-md ml-1'>About</p>
+            <p className='m-2 mt-1'>
+              OS League Tools has RuneLite integration! Enable the plugin to sync your tasks and quests (and soon, relics
+              and unlocks too).
+            </p> */}
+            {/* <Separator className='mb-2' />
             <p className='heading-accent-md ml-1'>Sync data</p>
             <ImportFromPluginContent />
             <Separator className='mb-2' />
@@ -61,7 +74,7 @@ export default function ManageDataModal({ variant, isOpen, setIsOpen }) {
             <ExportToPluginContent />
             <Separator className='mb-2' />
             <p className='heading-accent-md ml-1'>Reset data</p>
-            <ResetDataModalContent setIsOpen={setIsOpen} />
+            <ResetDataModalContent setIsOpen={setIsOpen} /> */}
           </Modal.Body>
         </ModalWrapper>
       );
@@ -94,6 +107,7 @@ function ModalWrapper({ isOpen, setIsOpen, headerText, children }) {
   );
 }
 
+// eslint-disable-next-line no-unused-vars
 function ImportFromPluginContent() {
   const [pluginImport, setPluginImport] = useState('');
   const [successText, setSuccessText] = useState('');
@@ -154,6 +168,7 @@ function ImportFromPluginContent() {
   );
 }
 
+// eslint-disable-next-line no-unused-vars
 function ExportToPluginContent() {
   const [isCopySuccess, setIsCopySuccess] = useState(false);
   const userState = useSelector(state => state);
