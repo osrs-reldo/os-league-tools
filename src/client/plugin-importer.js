@@ -1,15 +1,13 @@
 /* eslint-disable no-unused-vars */
 
 import _ from 'lodash';
-import { useSelector } from 'react-redux';
 import { addCharacter } from '../store/user/character';
 import { INITIAL_TASK_STATE } from '../store/tasks/constants';
 import { load as loadTaskState } from '../store/tasks/tasks';
 import { load as loadUnlocksState } from '../store/unlocks/unlocks';
 import { INITIAL_STATE } from '../store/unlocks/constants';
 
-export default function importFromPlugin(pluginData, userState, dispatch) {
-  const characterState = useSelector(state => state.character);
+export default function importFromPlugin(pluginData, userState, dispatch, characterState) {
   const characterIndex = _.find(characterState.characters, pluginData.displayName);
   if (!characterIndex) {
     dispatch(addCharacter({ rsn: pluginData.displayName, setActive: true }));

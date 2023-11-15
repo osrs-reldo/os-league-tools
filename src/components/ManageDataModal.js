@@ -99,6 +99,7 @@ function ImportFromPluginContent() {
   const [pluginImport, setPluginImport] = useState('');
   const [successText, setSuccessText] = useState('');
   const [errorText, setErrorText] = useState('');
+  const characterState = useSelector(state => state.character);
   const userState = useSelector(state => state);
   const dispatch = useDispatch();
 
@@ -138,7 +139,7 @@ function ImportFromPluginContent() {
           type='button'
           onClick={() => {
             try {
-              importFromPlugin(JSON.parse(pluginImport), userState, dispatch);
+              importFromPlugin(JSON.parse(pluginImport), userState, dispatch, characterState);
               setPluginImport('');
               setErrorText('');
               setSuccessText('Successfully synced data!');
