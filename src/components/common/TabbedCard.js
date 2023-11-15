@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from './Card';
 import { getLayoutSlots } from './util/layout';
 
@@ -14,11 +14,13 @@ function TabbedCard({ children, defaultActiveTab = null, setTabCallback = () => 
     );
   }
 
-  if (!activeTabId) {
-    const tabId = Object.keys(tabs)[0];
-    setActiveTabId(tabId);
-    setTabCallback(tabId);
-  }
+  useEffect(() => {
+    if (!activeTabId) {
+      const tabId = Object.keys(tabs)[0];
+      setActiveTabId(tabId);
+      setTabCallback(tabId);
+    }
+  }, []);
 
   return (
     <>
