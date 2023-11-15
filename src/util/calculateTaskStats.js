@@ -3,20 +3,20 @@ import tasks from '../data/tasks';
 
 const ALL_TASKS = {
   count: {
-    Easy: 0,
-    Medium: 0,
-    Hard: 0,
-    Elite: 0,
-    Master: 0,
-    total: 0,
+    Easy: 269,
+    Medium: 391,
+    Hard: 386,
+    Elite: 390,
+    Master: 46,
+    total: 1482,
   },
   points: {
-    Easy: 0,
-    Medium: 0,
-    Hard: 0,
-    Elite: 0,
-    Master: 0,
-    total: 0,
+    Easy: 2690,
+    Medium: 15640,
+    Hard: 30880,
+    Elite: 78000,
+    Master: 18400,
+    total: 145610,
   },
 };
 

@@ -3,7 +3,6 @@ const fs = require('fs');
 const fetch = require('node-fetch');
 
 // TODO:
-// - ids are currently unstable and are regenerated each time the data is scraped
 // - categories temporarily disabled, mapper values need to be manually updated
 // - prereqs should have a mapper similar to categories
 
@@ -14,13 +13,13 @@ function formatTasks() {
   const writeStream = fs.createWriteStream('./src/data/tasks.js');
   writeStream.write("import { CATEGORY } from './categories';\n");
   writeStream.write("import { DIFFICULTY } from './constants';\n\n");
-  writeStream.write("export const REGION_ANY = 'Any';\n\n");
+  writeStream.write("export const REGION_ANY = 'General';\n\n");
   writeStream.write('export default {\n  ');
   fetchTaskJson().then(tasks => {
     tasks.forEach((task, index) => {
       // const { category, subcategory } = taskMapper.toCategories(task);
-      writeStream.write(`'${index}': {\n    `);
-      writeStream.write(`id: '${index}',\n    `);
+      writeStream.write(`'${task.id}': {\n    `);
+      writeStream.write(`id: '${task.id}',\n    `);
       writeStream.write(`label: ${JSON.stringify(task.name)},\n    `);
       writeStream.write(`description: ${JSON.stringify(task.description)},\n    `);
       writeStream.write(`skillReqs: ${formatSkillReqs(task.skills)},\n    `);
