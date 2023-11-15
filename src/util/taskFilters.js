@@ -15,6 +15,13 @@ function categoryFilter(record, filterState) {
   if (filterState.categories === null) {
     return true;
   }
+  // eslint-disable-next-line no-console
+  console.log({
+    debug: 'taskFilters',
+    record,
+    category: record.category,
+    subcategory: record.subcategory,
+  });
   const recordCategory = `${record.category.label}-${record.subcategory.label}`;
 
   return filterState.categories.includes(recordCategory);

@@ -7,7 +7,7 @@ import { STATS, DIFFICULTY, DIARY_LOCATIONS, DIARY_DIFFICULTY } from '../data/co
 import { QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/quests';
 import { TRAILBLAZER_REGIONS } from '../data/regions';
 
-const CURRENT_VERSION = 19;
+const CURRENT_VERSION = 20;
 
 const mapDataValues = values => Object.values(values).map(({ label }) => label);
 

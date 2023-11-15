@@ -26,6 +26,10 @@ export const CATEGORY = {
         label: 'Dagannoth Kings',
         icon: images['dagannoth-supreme.png'],
       },
+      DT2: {
+        label: 'Desert Treasure II',
+        icon: images['duke.png'],
+      },
       GAUNTLET: {
         label: 'Gauntlet',
         icon: images['the-gauntlet.png'],
@@ -69,6 +73,10 @@ export const CATEGORY = {
       MOLE: {
         label: 'Giant Mole',
         icon: images['giant-mole.png'],
+      },
+      MUSPAH: {
+        label: 'Phantom Muspah',
+        icon: images['muspah.png'],
       },
       NEX: {
         label: 'Nex',
@@ -163,6 +171,11 @@ export const CATEGORY = {
         label: 'Shared',
         icon: images['task-book-blue.png'],
       },
+      GENERAL: {
+        customSort: 7,
+        label: 'General',
+        icon: images['task-green.png'],
+      },
     },
   },
   COMBAT: {
@@ -249,6 +262,11 @@ export const CATEGORY = {
         label: 'Grandmaster',
         icon: images['task-crest.png'],
       },
+      GENERAL: {
+        customSort: 6,
+        label: 'General',
+        icon: images['task-green.png'],
+      },
     },
   },
   MINIGAMES: {
@@ -274,6 +292,14 @@ export const CATEGORY = {
       SHADES: {
         label: "Shades of Mort'ton",
         icon: images['task-firemaking.png'],
+      },
+      CHOMPIES: {
+        label: 'Chompy Bird Hunting',
+        icon: images['task-ranged.png'],
+      },
+      CWARS: {
+        label: 'Castle Wars',
+        icon: images['task-combat.png'],
       },
     },
   },
@@ -320,6 +346,10 @@ export const CATEGORY = {
         label: 'Chambers of Xeric',
         icon: images['chambers-of-xeric.png'],
       },
+      TOA: {
+        label: 'Tombs of Amascut',
+        icon: images['toa.png'],
+      },
     },
   },
   SKILLING: {
@@ -361,6 +391,10 @@ export const CATEGORY = {
       TOTAL: {
         label: 'Total Level',
         icon: images['task-level.png'],
+      },
+      COLLECTION_LOG: {
+        label: 'Collection Log',
+        icon: images['task-diary.png'],
       },
     },
   },
