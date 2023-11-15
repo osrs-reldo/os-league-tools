@@ -2334,6 +2334,9 @@ select[multiple]:focus option:checked {
 .max-w-\[420px\] {
   max-width: 420px;
 }
+.max-w-\[600px\] {
+  max-width: 600px;
+}
 .max-w-\[90\%\] {
   max-width: 90%;
 }
@@ -2652,6 +2655,9 @@ select[multiple]:focus option:checked {
 }
 .pt-2 {
   padding-top: 0.5rem;
+}
+.pt-4 {
+  padding-top: 1rem;
 }
 .text-left {
   text-align: left;

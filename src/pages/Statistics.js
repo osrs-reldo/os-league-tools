@@ -87,7 +87,7 @@ function createDataByCompletionDate(taskState) {
         dataByCompletionDate[completedDate].tasksComplete = 1;
       }
 
-      const pointValue = tasks[taskKey].difficulty.value;
+      const pointValue = tasks[taskKey]?.difficulty.value;
       if (dataByCompletionDate[completedDate]?.pointsEarned) {
         dataByCompletionDate[completedDate].pointsEarned += pointValue;
       } else if (dataByCompletionDate[completedDate]) {
