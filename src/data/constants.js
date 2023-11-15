@@ -491,39 +491,33 @@ export const BOSSES = {
 };
 
 export const DIFFICULTY = {
-  BEGINNER: {
-    label: 'Beginner',
-    value: 5,
-    icon: images['task-beginner.png'],
-    sortOrder: 0,
-  },
   EASY: {
     label: 'Easy',
-    value: 5,
+    value: 10,
     icon: images['task-easy.png'],
     sortOrder: 1,
   },
   MEDIUM: {
     label: 'Medium',
-    value: 25,
+    value: 40,
     icon: images['task-medium.png'],
     sortOrder: 2,
   },
   HARD: {
     label: 'Hard',
-    value: 50,
+    value: 80,
     icon: images['task-hard.png'],
     sortOrder: 3,
   },
   ELITE: {
     label: 'Elite',
-    value: 125,
+    value: 200,
     icon: images['task-elite.png'],
     sortOrder: 4,
   },
   MASTER: {
     label: 'Master',
-    value: 250,
+    value: 400,
     icon: images['task-master.png'],
     sortOrder: 5,
   },

@@ -3,29 +3,26 @@ import tasks from '../data/tasks';
 
 const ALL_TASKS = {
   count: {
-    Beginner: 61,
-    Easy: 164,
-    Medium: 312,
-    Hard: 327,
-    Elite: 335,
-    Master: 61,
-    total: 1260,
+    Easy: 0,
+    Medium: 0,
+    Hard: 0,
+    Elite: 0,
+    Master: 0,
+    total: 0,
   },
   points: {
-    Beginner: 305,
-    Easy: 820,
-    Medium: 7800,
-    Hard: 16350,
-    Elite: 41875,
-    Master: 15250,
-    total: 82400,
+    Easy: 0,
+    Medium: 0,
+    Hard: 0,
+    Elite: 0,
+    Master: 0,
+    total: 0,
   },
 };
 
 export default function calculateTaskStats(taskState) {
   const tasksCount = {
     complete: {
-      Beginner: 0,
       Easy: 0,
       Medium: 0,
       Hard: 0,
@@ -33,7 +30,6 @@ export default function calculateTaskStats(taskState) {
       Master: 0,
     },
     todo: {
-      Beginner: 0,
       Easy: 0,
       Medium: 0,
       Hard: 0,
@@ -41,7 +37,6 @@ export default function calculateTaskStats(taskState) {
       Master: 0,
     },
     ignored: {
-      Beginner: 0,
       Easy: 0,
       Medium: 0,
       Hard: 0,
@@ -60,7 +55,6 @@ export default function calculateTaskStats(taskState) {
     tasksCount.ignored[difficulty.label] += ignored ? 1 : 0;
   });
   tasksCount.available = {
-    Beginner: ALL_TASKS.count.Beginner - tasksCount.ignored.Beginner,
     Easy: ALL_TASKS.count.Easy - tasksCount.ignored.Easy,
     Medium: ALL_TASKS.count.Medium - tasksCount.ignored.Medium,
     Hard: ALL_TASKS.count.Hard - tasksCount.ignored.Hard,
