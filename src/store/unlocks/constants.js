@@ -14,6 +14,7 @@ const INITIAL_RELICS_STATE = [
   NONE_RELIC_ID,
   NONE_RELIC_ID,
   NONE_RELIC_ID,
+  NONE_RELIC_ID,
 ];
 const DEFAULT_QUESTS = merge(
   {},

@@ -2,7 +2,7 @@ import images from '../assets/images';
 
 export const NONE_RELIC_ID = -1;
 
-export const RELIC_UNLOCK_THRESHOLDS = [0, 10, 300, 1500, 3000, 7500, 15000];
+export const RELIC_UNLOCK_THRESHOLDS = [0, 500, 1200, 2000, 4000, 7500, 15000, 24000];
 
 export const PASSIVE_RELICS = [
   {
@@ -12,28 +12,17 @@ export const PASSIVE_RELICS = [
     },
     drops: {
       multiplier: 2,
-      increased: false,
+      increased: true,
     },
     minigames: {
       multiplier: 1,
       increased: false,
     },
-    extras: ['Unlimited run energy', 'Stackable clue scrolls'],
-  },
-  {
-    exp: {
-      multiplier: 5,
-      increased: false,
-    },
-    drops: {
-      multiplier: 2,
-      increased: false,
-    },
-    minigames: {
-      multiplier: 1,
-      increased: false,
-    },
-    extras: [],
+    extras: [
+      'Run energy is never drained whilst running.',
+      'All clue scrolls will drop as stackable scroll boxes.',
+      'Players will only receive steps they can complete within an unlocked region.',
+    ],
   },
   {
     exp: {
@@ -45,10 +34,29 @@ export const PASSIVE_RELICS = [
       increased: false,
     },
     minigames: {
-      multiplier: 1,
-      increased: false,
+      multiplier: 3,
+      increased: true,
     },
     extras: [],
+  },
+  {
+    exp: {
+      multiplier: 8,
+      increased: false,
+    },
+    drops: {
+      multiplier: 2,
+      increased: false,
+    },
+    minigames: {
+      multiplier: 3,
+      increased: false,
+    },
+    extras: [
+      'Players will be given a crystal of memories, which can teleport players back from where they most recently teleported from.',
+      'Has a cooldown of six minutes, which can be reduced by one for every 300 total levels the player has (no cooldown at 1800 total level)',
+      'The crystal will not save teleports casted from an instance, with some exceptions.',
+    ],
   },
   {
     exp: {
@@ -60,10 +68,14 @@ export const PASSIVE_RELICS = [
       increased: true,
     },
     minigames: {
-      multiplier: 1,
+      multiplier: 3,
       increased: false,
     },
-    extras: [],
+    extras: [
+      'The Bigger and Badder slayer unlock is unlocked (If already purchased, 150 slayer reward points are refunded).',
+      'Superior slayer monsters have a 1/50 chance to spawn.',
+      'Slayer point rewards are increased by 5x and are no longer limited to a minimum of a 10-task streak.',
+    ],
   },
   {
     exp: {
@@ -75,8 +87,8 @@ export const PASSIVE_RELICS = [
       increased: false,
     },
     minigames: {
-      multiplier: 1,
-      increased: false,
+      multiplier: 5,
+      increased: true,
     },
     extras: [],
   },
@@ -90,7 +102,7 @@ export const PASSIVE_RELICS = [
       increased: true,
     },
     minigames: {
-      multiplier: 1,
+      multiplier: 5,
       increased: false,
     },
     extras: [],
@@ -105,7 +117,22 @@ export const PASSIVE_RELICS = [
       increased: false,
     },
     minigames: {
-      multiplier: 1,
+      multiplier: 8,
+      increased: true,
+    },
+    extras: [],
+  },
+  {
+    exp: {
+      multiplier: 16,
+      increased: false,
+    },
+    drops: {
+      multiplier: 5,
+      increased: true,
+    },
+    minigames: {
+      multiplier: 8,
       increased: false,
     },
     extras: [],
@@ -141,15 +168,15 @@ export const RELICS = [
     {
       label: 'Trickster',
       description: [
-        '· You will automatically re-pickpocket your target',
-        '· Loot from pickpoketing is doubled and noted',
-        '· Coin pouch limit is multiplied by 3',
-        "· You will be given the Sage's Greaves, that will grant Agility XP that scales with your agility level while running",
-        '· Box traps lure creatures faster',
-        '· Loot from box traps is doubled',
-        '· Impling jars cannot break',
-        '· You can burn up to 9 logs simultaneously',
-        '· You cannnot fail actions for Thieving, Agility, Hunter and Firemaking',
+        '· Must be unlocked in a bank as the player is given an item upon unlocking this relic.',
+        "· Players are given the Sage's greaves, which are boots that grant 2/3rds of the player's Agility level as experience whilst running, roughly every 10 ticks.",
+        '· Players will always succeed in performing actions for Thieving, Agility, Hunter, and Firemaking.',
+        '· The maximum amount of coin pouches players can hold is tripled.',
+        '· The player will automatically re-pickpocket an NPC until they can no longer do so (ex. obtaining the maximum amount of coin pouches allowed)',
+        '· Pickpocketed loot is doubled and converted to bank notes. Stacks with rogues outfit for quadruple loot.',
+        '· Box traps will lure creatures faster, and give double loot and Hunter experience.',
+        '· Impling jars will never break upon opening one.',
+        '· Players can burn multiple logs per action (up to nine), providing there is space to do so.',
       ],
       icon: images['relic-trickster.png'],
     },
@@ -157,14 +184,18 @@ export const RELICS = [
   [
     {
       label: "Fairy's Flight",
-      description:
-        'Receive a unique teleport item that allows teleporting to any fairy ring, spirit tree, or tool leprechaun, provided the player has access to the select destinations.',
+      description: [
+        '· Must be unlocked in a bank as the player is given an item upon unlocking this relic.',
+        '· Players are given a fairy mushroom which allows teleporting to any fairy ring, spirit tree, or tool leprechaun.',
+        '· Can only teleport to locations within regions the player has unlocked.',
+      ],
       icon: images['relic-fairys-flight.png'],
     },
     {
       label: 'Globetrotter',
       description: [
-        '· Receive a unique teleport amulet that allows teleporting to a large number of teleport locations from teleport jewellery and spellbooks.',
+        '· Must be unlocked in a bank as the player is given an item upon unlocking this relic.',
+        '· Players are given a globetrotter pendant which allows teleporting to all locations from an ornate jewellery box and nearly all spellbook teleport spells.',
         '· Can only teleport to locations within regions the player has unlocked.',
       ],
       icon: images['relic-globetrotter.png'],
@@ -174,8 +205,9 @@ export const RELICS = [
     {
       label: "Banker's Note",
       description: [
-        '· Receive a unique banknote item that allows you to note and un-note items from the comfort of your inventory.',
-        '· Noting will note the maximum quantity of the identical item in your inventory. Un-noting will fill all empty inventory spaces with the actual item.',
+        '· Must be unlocked in a bank as the player is given an item upon unlocking this relic.',
+        "· Players are given a banker's note which allows players to use note-able items on it to turn them into banknotes or unnote them. Items must be used on the banker's note.",
+        `· The "Activate" option allows players to note and un-note items in one action with a quantity of the player's choosing. An item must first be used on the banker's note in order for this to work.`,
       ],
       icon: images['relic-bankers-note.png'],
     },
@@ -183,7 +215,7 @@ export const RELICS = [
       label: 'Fire Sale',
       description: [
         '· All item shops with coins as currency are free. This only applies to shops with a standard shop interface (e.g. general stores).',
-        '· These items can be automatically noted.',
+        '· These items can be automatically noted if the player chooses so.',
         '· Shops will no longer buy items for gold.',
       ],
       icon: images['relic-fire-sale.png'],
@@ -233,86 +265,134 @@ export const RELICS = [
   ],
   [
     {
-      label: 'Treasure Seeker',
-      description: 'Unknown effects',
-      icon: images['relic-treasure-seeker.png'],
-    },
-    {
       label: 'Bloodthirsty',
-      description: 'Unknown effects',
+      description: [
+        '· Players can receive and cancel slayer tasks remotely via slayer helmets/gem/rings.',
+        '· Superior slayer creatures will have the following buffs:',
+        ' · Spawn chance is increased to 1/25.',
+        ' · Slayer points are given upon killing one based on Slayer level requirement and difficulty.',
+        " · Two rolls on their normal counterpart's drop table (excluding unique superior table)",
+        " · 25% chance for a superior slayer monster to spawn as a bloodthirsty variant, which gives three rolls on their normal counterpart's drop table.",
+        '· Expeditious bracelets and bracelets of slaughter have a 35% chance to proc their effects, and no longer consumes charges.',
+      ],
       icon: images['relic-bloodthirsty.png'],
     },
     {
       label: 'Infernal Gathering',
-      description: 'Unknown effects',
+      description: [
+        '· Must be unlocked in a bank as the player is given items upon unlocking this relic.',
+        '· The player is given a set of Trailblazer tools that act as undegradable variants of crystal tools with no requirements, plus some additional effects:',
+        ' · Trailblazer axe - Any logs chopped are burned, granting Firemaking experience regardless of level requirements. Performs 1 tick quicker than normal tools.',
+        ' · Trailblazer pickaxe - Any ore mined will be smelted into a metal bar (if applicable), granting Smithing experience regardless of level requirements. Performs 1 tick quicker than normal tools.',
+        " · Trailblazer harpoon - Any fish caught are cooked, granting Cooking experience regardless of level requirements. If equipped, it will also work for fish that don't require a harpoon to be caught, e.g. trout. Performs 2 ticks quicker than normal tools.",
+      ],
       icon: images['relic-infernal-gathering.png'],
+    },
+    {
+      label: 'Treasure Seeker',
+      description: [
+        '· NPCs that drop clue scrolls have a 1/15 chance of dropping one, including impling jars.',
+        '· The rate of obtaining clue vessels are increased by 10x.',
+        '· Clue scrolls have the lowest possible amount of steps.',
+        '· Reward caskets will give the maximum amount of reward rolls.',
+        '· Upon opening a reward casket, there is a chance that players will receive another reward casket of the same tier; this is more common the lower the tier.',
+        ' · Additionally, there is a chance for the bonus casket to be upgraded to a tier above the one players initially opened.',
+      ],
+      icon: images['relic-treasure-seeker.png'],
     },
   ],
   [
     {
       label: 'Equilibrium',
-      description: 'Unknown effects',
+      description: [
+        "· Each time the player gains experience, they will gain additional experience equal to 10% of the player's total level (20% for the player's lowest level skill).",
+        '· Additional experience given by this relic is not multiplied by the Leagues XP multiplier.',
+        '· If chosen with Production Prodigy, each item processed will trigger this effect.',
+      ],
       icon: images['relic-equilibrium.png'],
     },
     {
       label: "Farmer's Fortune",
-      description: 'Unknown effects',
+      description: [
+        '· Players will have a 20% chance to save the seed or sapling that was planted.',
+        '· Farming patches will grow instantly and never catch diseases.',
+        '· Players will harvest farming patches x25 faster, giving triple the usual yield and turning them into bank notes.',
+      ],
       icon: images['relic-farmers-fortune.png'],
     },
     {
       label: 'Ruinous Powers',
-      description: '· Unlocks the Ruinous Powers prayers.',
+      description: [
+        '· Must be unlocked in a bank as the player is given an item upon unlocking this relic.',
+        '· Players are given the Ruinous Powers book, an item that allows players to alternate between the standard prayer book and the Ruinous Powers prayer book.',
+      ],
       icon: images['relic-ruinous-powers.png'],
     },
   ],
   [
     {
+      label: 'Berserker',
+      description: [
+        '· Damage dealt is increased by 0.4% for each hitpoint missing.',
+        '· The player is guaranteed to hit their max hit on an NPC if the NPC is at full health.',
+      ],
+      icon: images['relic-berserker.png'],
+    },
+    {
       label: 'Soul Stealer',
-      description: 'Unknown effects',
+      description: [
+        "· The player's minimum hit is increased by 10%. For example, a damage roll of 0-50 would be increased to 5-50.",
+        "· Upon a successful hit, there is a 50% chance that the player's Hitpoints and prayer points are restored by 10% of the damage dealt, rounded up.",
+        '· The restoration effect excludes multi-target attacks and special attacks.',
+        " · The Scythe of Vitur's multi-hit effect will apply if all three hits are hitting the same target.",
+        ' · The venator bow will only apply for the first hit.',
+      ],
       icon: images['relic-soul-stealer.png'],
     },
     {
       label: 'Weapon Master',
-      description: ['· Special attack with 100% accuracy.', '· Sacrifice Hitpoints for additional special attacks.'],
+      description: [
+        "· Special attacks always result in a successful hit against NPCs, and the minimum damage dealt is increased from 0 to 20% of the player's max hit.",
+        "· The player's special attack energy is restored by 30% every 30 seconds. The lightbearer will increase this to 30% every 15 seconds.",
+        '· If players do not have enough special attack energy to perform a special attack, they can instead choose to perform additional special attacks by sacrificing 25 Hitpoints.',
+      ],
       icon: images['relic-weapon-master.png'],
-    },
-    {
-      label: 'Berserker',
-      description: 'Unknown effects',
-      icon: images['relic-berserker.png'],
     },
   ],
   [
     {
+      label: 'Guardian',
+      description: [
+        '· Must be unlocked in a bank as the player is given an item upon unlocking this relic.',
+        '· Players are given the Guardian horn, which allows players to summon a guardian thrall that attacks for 30 minutes, with a damage roll of 6-15, an attack speed of 5, and an accuracy roll of 45,000.',
+        '· The guardian thrall will attack with a style that the NPC has the lowest defence bonus for.',
+        '· In multicombat areas, the guardian thrall will attempt to cast an area-of-effect attack if the primary target is weak to ranged or magic. This can be toggled via the guardian horn.',
+        '· Arceuus thralls can be used alongside the guardian thrall.',
+        '· Players cannot bring the guardian horn into locations where items are restricted. The Gauntlet is the only exception to this rule.',
+        "· The guardian's outfit can be switched via the horn.",
+      ],
+      icon: images['relic-guardian.png'],
+    },
+    {
       label: 'Executioner',
-      description: 'Gives the player an axe that will deal killing blows to an enemy with less than 20% hitpoints.',
+      description: [
+        '· Must be unlocked in a bank as the player is given an item upon unlocking this relic.',
+        "· Players are given the Sage's axe, which allows players to instantly kill targets who have less than 20% of their health remaining.",
+        "· The axe's attack range is 6 tiles (7 tiles on longrange).",
+        "· NPCs with ranged damage reduction are still applied when using the Sage's axe (ex. the 1/7th ranged damage reduction from the Kraken).",
+      ],
       icon: images['relic-executioner.png'],
     },
     {
       label: 'Undying Retribution',
       description: [
-        '· Upon death, instead be instantly revived with full hitpoints.',
-        '· On death, deal damage to nearby opponent(s) in a 5x5 area centred around the player.',
-        '· Deaths from Undying Retribution procs do not count towards death penalties in raids.',
+        "· Upon death, the player's hitpoints and prayer points are fully restored, dealing damage up to 200% of the player's Prayer level (50% for other players).",
+        ' · The effect will only work in the same places that Retribution does.',
+        '· There is a three-minute cooldown between uses, or when the player actually dies.',
+        '· The damage effect will not work on NPCs that are immune to recoil damage, except for Nex, the Hespori, Vorkath, and all Wilderness bosses.',
+        '· Dying with the effect active will not count towards death penalties in raids. For example, raid points are not deducted in the Chambers of Xeric if the effect activates.',
       ],
       icon: images['relic-undying-retribution.png'],
-    },
-    {
-      label: 'Guardian',
-      description: [
-        '· Receive a horn that summons an exceptionally powerful ally for the player:',
-        ' · Has a max hit of 15.',
-        ' · Can be used alongside thralls.',
-        ' · Despite not having guaranteed hits, the Guardian still has very high accuracy, with a flat accuracy roll of 45,000.',
-        ' · Can use all three combat styles.',
-        ' · Will change attack style to whichever is best to use for its current target.',
-        ' · Can potentially deal area of effect damage, up to 9 targets.',
-        ' · Lasts for 30 minutes at a time.',
-        ' · Has no cooldown and can be instantly re-summoned.',
-        ' · Can be summoned wherever, whenever, except for locations where items are restricted. The Gauntlet is the only exception to this rule and can therefore have the Guardian summoned within.',
-        ' · Gender can be toggled.',
-      ],
-      icon: images['relic-guardian.png'],
     },
   ],
 ];
