@@ -13152,7 +13152,7 @@
           "matchers": [],
           "autoCheckWithRelic": {
             "tier": 0,
-            "index": 2
+            "index": 0
           }
         }
       ],
@@ -22552,7 +22552,7 @@
           "matchers": [],
           "autoCheckWithRelic": {
             "tier": 0,
-            "index": 0
+            "index": 2
           }
         }
       ],
@@ -24305,7 +24305,7 @@
           "matchers": [" rune"],
           "autoCheckWithRelic": {
             "tier": 2,
-            "index": 0
+            "index": 2
           }
         }
       ],
@@ -34483,7 +34483,7 @@
           "matchers": [],
           "autoCheckWithRelic": {
             "tier": 0,
-            "index": 2
+            "index": 0
           }
         }
       ],
@@ -41289,7 +41289,7 @@
           "matchers": [],
           "autoCheckWithRelic": {
             "tier": 0,
-            "index": 0
+            "index": 2
           }
         }
       ],
@@ -42792,7 +42792,7 @@
           "matchers": [],
           "autoCheckWithRelic": {
             "tier": 0,
-            "index": 2
+            "index": 0
           }
         },
         {
