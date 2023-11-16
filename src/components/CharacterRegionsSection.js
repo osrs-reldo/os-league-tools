@@ -29,17 +29,17 @@ export default function CharacterRegionsSection({ unlockedRegions, taskStats }) 
         <RegionFakeSelect region={regionsById[0]} />
         <RegionFakeSelect region={regionsById[1]} />
         {unlockedRegions[2] > 0 ? (
-          <RegionFakeSelect region={regionsById[2]} onEdit={() => openUnlockModal(2)} />
+          <RegionFakeSelect region={regionsById[unlockedRegions[2]]} onEdit={() => openUnlockModal(2)} />
         ) : (
           <RegionSelect canUnlock={regionTier >= 1} unlockTier={1} onClick={() => openUnlockModal(2)} />
         )}
         {unlockedRegions[3] > 0 ? (
-          <RegionFakeSelect region={regionsById[3]} onEdit={() => openUnlockModal(3)} />
+          <RegionFakeSelect region={regionsById[unlockedRegions[3]]} onEdit={() => openUnlockModal(3)} />
         ) : (
           <RegionSelect canUnlock={regionTier >= 2} unlockTier={2} onClick={() => openUnlockModal(3)} />
         )}
         {unlockedRegions[4] > 0 ? (
-          <RegionFakeSelect region={regionsById[4]} onEdit={() => openUnlockModal(4)} />
+          <RegionFakeSelect region={regionsById[unlockedRegions[4]]} onEdit={() => openUnlockModal(4)} />
         ) : (
           <RegionSelect canUnlock={regionTier >= 3} unlockTier={3} onClick={() => openUnlockModal(4)} />
         )}
