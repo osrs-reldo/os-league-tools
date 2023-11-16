@@ -27,7 +27,7 @@ export default function SkillRequirementList({
             label={level}
             icon={STATS[skill].iconMini}
             className={
-              hiscores.skills[skill.toLowerCase()]?.level ?? 0 + levelBoost >= level ? 'text-success' : 'text-error'
+              (hiscores.skills[skill.toLowerCase()]?.level ?? 0) + levelBoost >= level ? 'text-success' : 'text-error'
             }
           />
         );
