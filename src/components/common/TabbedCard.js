@@ -8,7 +8,7 @@ function TabbedCard({ children, defaultActiveTab = null, setTabCallback = () => 
   const tabs = useMemo(() => getLayoutSlots(children, 'id'), [children]);
 
   useEffect(() => {
-    if (!activeTabId && tabs.length > 0) {
+    if (!activeTabId && tabs) {
       const tabId = Object.keys(tabs)[0];
       setActiveTabId(tabId);
       setTabCallback(tabId);
