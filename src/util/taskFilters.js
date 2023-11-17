@@ -90,7 +90,7 @@ function regionsFilter(record, filterState, { regionsState }) {
   return record.regions.some(area => filterState.regions.includes(area));
 }
 
-export default {
+export default [
   difficultyFilter,
   categoryFilter,
   skillFilter,
@@ -99,4 +99,4 @@ export default {
   ignoredFilter,
   prereqFilter,
   regionsFilter,
-};
+];

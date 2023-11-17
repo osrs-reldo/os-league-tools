@@ -10,12 +10,21 @@ import Category from './Category';
 import Table from './common/Table';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 
+const DEFAULT_COLUMN = {
+  minWidth: 30,
+  width: 150,
+  maxWidth: 1000,
+};
+const INITIAL_TABLE_STATE = {
+  pageSize: 50,
+};
+
 function renderTaskCell({ history }) {
-  return ({ row, value }) => <Cell.Task row={row} value={value} addToHistory={history.addHistory} />;
+  return React.memo(({ row, value }) => <Cell.Task row={row} value={value} addToHistory={history.addHistory} />);
 }
 
 function renderReadonlyTaskCell({ taskState }) {
-  return ({ row, value }) => <Cell.ReadonlyTask row={row} value={value} taskState={taskState} />;
+  return React.memo(({ row, value }) => <Cell.ReadonlyTask row={row} value={value} taskState={taskState} />);
 }
 
 export default function TaskTable({ history, readonly, taskState: propsTaskState }) {
@@ -23,7 +32,14 @@ export default function TaskTable({ history, readonly, taskState: propsTaskState
   const isSmViewport = useBreakpoint(MEDIA_QUERIES.SM, MODE.STRICT);
   const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
   const taskState = useSelector(state => propsTaskState || state.tasks.tasks);
+  const filterState = useSelector(state => state.filters.tasks);
+  const regionsState = useSelector(state => state.unlocks.regions);
+  const hiscoresState = useSelector(state => state.character.hiscoresCache.data);
   const settingsState = useSelector(state => state.settings);
+  const initialTableState = useMemo(
+    () => ({ ...INITIAL_TABLE_STATE, hiddenColumns: getHiddenColumns(isXsViewport, settingsState.taskColumns) }),
+    [isXsViewport, settingsState.taskColumns]
+  );
 
   const data = useMemo(
     () =>
@@ -93,34 +109,17 @@ export default function TaskTable({ history, readonly, taskState: propsTaskState
     ],
     [isXsViewport, isSmViewport, isMdOrSmallerViewport]
   );
-  const defaultColumn = useMemo(
-    () => ({
-      minWidth: 30,
-      width: 150,
-      maxWidth: 1000,
-    }),
-    []
-  );
-  const filters = [...Object.values(ALL_FILTERS)];
-  const initialState = {
-    hiddenColumns: getHiddenColumns(isXsViewport, settingsState.taskColumns),
-    pageSize: 50,
-  };
-
-  const filterState = useSelector(state => state.filters.tasks);
-  const regionsState = useSelector(state => state.unlocks.regions);
-  const hiscoresState = useSelector(state => state.character.hiscoresCache.data);
 
   return (
     <Table
       columns={columns}
       data={data}
-      filters={filters}
+      filters={ALL_FILTERS}
       filterState={filterState}
       globalFilter={fuzzyTextFilter}
       customFilterProps={{ taskState, hiscoresState, regionsState }}
-      defaultColumn={defaultColumn}
-      initialState={initialState}
+      defaultColumn={DEFAULT_COLUMN}
+      initialState={initialTableState}
       ExpandedRow={readonly ? Cell.ReadonlyExpandedTask : Cell.ExpandedTask}
       enableResizeColumns={!isXsViewport}
     />
