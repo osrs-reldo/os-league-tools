@@ -84,7 +84,6 @@ function LockedRelic({ canUnlock, tier, onClick }) {
         <button
           type='button'
           className={`button-outline${canUnlock ? '' : '-disabled'} h-12 flex flex-col px-1 pb-1 small-caps`}
-          disabled={!canUnlock}
           onClick={onClick}
         >
           <span className='icon-base'>lock_open</span>

@@ -99,7 +99,6 @@ function RegionSelect({ canUnlock, unlockTier, onClick }) {
           } flex items-center gap-1 text-base small-caps p-1 pr-2`}
           type='button'
           onClick={onClick}
-          disabled={!canUnlock}
         >
           <span className='icon-base'>lock_open</span> Unlock...
         </button>
