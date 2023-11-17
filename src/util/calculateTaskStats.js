@@ -137,11 +137,6 @@ export default function calculateTaskStats(taskState, unlockedRegions) {
     tasksCount.ignored[difficulty.label] += ignored ? 1 : 0;
   });
 
-  // eslint-disable-next-line no-console
-  console.log({
-    debug: 'calculateTaskStats',
-  });
-
   const allTasks = { ...ALL_TASKS.General };
   forEach(unlockedRegions, regionId => {
     if (regionId === NONE_REGION_ID) {
