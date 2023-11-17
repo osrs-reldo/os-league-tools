@@ -1,11 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import Card from './Card';
 import { getLayoutSlots } from './util/layout';
 
 function TabbedCard({ children, defaultActiveTab = null, setTabCallback = () => {} }) {
   const [activeTabId, setActiveTabId] = useState(defaultActiveTab);
 
-  const tabs = getLayoutSlots(children, 'id');
+  const tabs = useMemo(() => getLayoutSlots(children, 'id'), [children]);
+
+  useEffect(() => {
+    if (!activeTabId && tabs.length > 0) {
+      const tabId = Object.keys(tabs)[0];
+      setActiveTabId(tabId);
+      setTabCallback(tabId);
+    }
+  }, []);
+
   if (!tabs) {
     return (
       <Card>
@@ -13,14 +22,6 @@ function TabbedCard({ children, defaultActiveTab = null, setTabCallback = () => 
       </Card>
     );
   }
-
-  useEffect(() => {
-    if (!activeTabId) {
-      const tabId = Object.keys(tabs)[0];
-      setActiveTabId(tabId);
-      setTabCallback(tabId);
-    }
-  }, []);
 
   return (
     <>
@@ -72,7 +73,7 @@ function Content({ children, active = false }) {
   if (active) {
     return children;
   }
-  return <div className='hidden'>{children}</div>;
+  return null;
 }
 
 function TabWrapper({ id, label, children }) {
