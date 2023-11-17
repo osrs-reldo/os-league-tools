@@ -1,4 +1,5 @@
 import calculateTaskStats from '../../util/calculateTaskStats';
+import { INITIAL_REGIONS_STATE } from '../unlocks/constants';
 
 export const CURRENT_VERSION = 8;
 
@@ -7,7 +8,7 @@ export const INITIAL_STATE = {
   randomTaskId: null,
   rsn: null,
   tasks: {},
-  taskStats: calculateTaskStats({}),
+  taskStats: calculateTaskStats({}, INITIAL_REGIONS_STATE),
   tier: 1,
 };
 

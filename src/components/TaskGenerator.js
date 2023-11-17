@@ -54,7 +54,7 @@ export default function TaskGenerator() {
   };
 
   const completeTask = taskId => {
-    dispatch(toggleCompleted({ taskId }));
+    dispatch(toggleCompleted({ taskId, regions: regionsState }));
     dispatch(updateRandomTask(null));
     setActiveTask(undefined);
   };

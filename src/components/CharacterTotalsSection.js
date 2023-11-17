@@ -57,6 +57,7 @@ function TaskPointsSummary({ headerText, statsComplete, statsAvailable }) {
           >{`${difficulty}: ${statsComplete[difficulty]} / ${statsAvailable[difficulty]}`}</span>
         );
       })}
+      <span className='text-xs italic mt-2'>*Unlocked regions only</span>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { toggleCompleted, toggleTodo } from '../store/tasks/tasks';
 
 const MAX_HISTORY_SIZE = 10;
@@ -10,6 +10,8 @@ export default function useTrackerHistory() {
   const [historyStackIdx, setHistoryStackIdx] = useState(0);
   const canUndo = history.length > 0 && historyStackIdx < history.length;
   const canRedo = historyStackIdx > 0;
+
+  const regionState = useSelector(state => state.unlocks.regions);
 
   const addHistory = (taskId, fieldName) => {
     setHistory(prevHistory => {
@@ -26,11 +28,11 @@ export default function useTrackerHistory() {
     const itemToUndo = history[historyStackIdx];
     switch (itemToUndo.fieldName) {
       case 'completed': {
-        dispatch(toggleCompleted({ taskId: itemToUndo.taskId }));
+        dispatch(toggleCompleted({ taskId: itemToUndo.taskId, regions: regionState }));
         break;
       }
       case 'todo': {
-        dispatch(toggleTodo({ taskId: itemToUndo.taskId }));
+        dispatch(toggleTodo({ taskId: itemToUndo.taskId, regions: regionState }));
         break;
       }
       default: {
@@ -47,11 +49,11 @@ export default function useTrackerHistory() {
     const itemToRedo = history[historyStackIdx - 1];
     switch (itemToRedo.fieldName) {
       case 'completed': {
-        dispatch(toggleCompleted({ taskId: itemToRedo.taskId }));
+        dispatch(toggleCompleted({ taskId: itemToRedo.taskId, regions: regionState }));
         break;
       }
       case 'todo': {
-        dispatch(toggleTodo({ taskId: itemToRedo.taskId }));
+        dispatch(toggleTodo({ taskId: itemToRedo.taskId, regions: regionState }));
         break;
       }
       default: {

@@ -14,6 +14,7 @@ function Task({ row, value, addToHistory }) {
   const isXsViewport = useBreakpoint(MEDIA_QUERIES.XS, MODE.STRICT);
   const taskId = row.values.id;
   const taskState = useSelector(state => selectTask(state, taskId));
+  const regionsState = useSelector(state => state.unlocks.regions);
   const dispatch = useDispatch();
 
   let textClassname = taskState.completed ? 'text-accent' : '';
@@ -27,7 +28,7 @@ function Task({ row, value, addToHistory }) {
           <span
             className='icon-2xl text-accent select-none'
             onClick={e => {
-              dispatch(toggleCompleted({ taskId }));
+              dispatch(toggleCompleted({ taskId, regions: regionsState }));
               addToHistory(taskId, 'completed');
               e.stopPropagation();
             }}
@@ -184,6 +185,7 @@ function Notes({ taskId, className = '' }) {
 
 function Manage({ taskId, className = '' }) {
   const taskState = useSelector(state => selectTask(state, taskId));
+  const regionState = useSelector(state => state.unlocks.regions);
   const dispatch = useDispatch();
 
   return (
@@ -193,7 +195,7 @@ function Manage({ taskId, className = '' }) {
         labelSelected='Undo completion'
         labelUnselected='Complete'
         isSelected={!!taskState.completed}
-        onClick={() => dispatch(toggleCompleted({ taskId }))}
+        onClick={() => dispatch(toggleCompleted({ taskId, regions: regionState }))}
         iconSelected='undo'
         iconUnselected='done'
         className='col-span-2' // TODO set back to 3 after enabling wiki button again
@@ -202,7 +204,7 @@ function Manage({ taskId, className = '' }) {
         labelSelected='To-do'
         labelUnselected='To-do'
         isSelected={!!taskState.todo}
-        onClick={() => dispatch(toggleTodo({ taskId }))}
+        onClick={() => dispatch(toggleTodo({ taskId, regions: regionState }))}
         iconSelected='close'
         iconUnselected='add'
       />
@@ -210,7 +212,7 @@ function Manage({ taskId, className = '' }) {
         labelSelected='Unignore'
         labelUnselected='Ignore'
         isSelected={!!taskState.ignored}
-        onClick={() => dispatch(toggleIgnored({ taskId }))}
+        onClick={() => dispatch(toggleIgnored({ taskId, regions: regionState }))}
         iconSelected='add'
         iconUnselected='close'
       />
