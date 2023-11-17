@@ -46,36 +46,36 @@ function skillFilter(record, filterState, { hiscoresState }) {
   return meetsRequirements;
 }
 
-function prereqFilter(record, filterState, { tasksState }) {
+function prereqFilter(record, filterState, { taskState }) {
   if (filterState.showIncompletePrereqs || !record.prerequisite) {
     return true;
   }
 
   const prereq = tasks[record.prerequisite];
-  return !!tasksState[prereq.id]?.completed;
+  return !!taskState[prereq.id]?.completed;
 }
 
-function completedFilter(record, filterState, { tasksState }) {
+function completedFilter(record, filterState, { taskState }) {
   if (filterState.status === 'all') {
     return true;
   }
-  const status = !!tasksState[record.id]?.completed;
+  const status = !!taskState[record.id]?.completed;
   return (filterState.status === 'cmpl') === !!status;
 }
 
-function todoFilter(record, filterState, { tasksState }) {
+function todoFilter(record, filterState, { taskState }) {
   if (filterState.todo === 'all') {
     return true;
   }
-  const todo = !!tasksState[record.id]?.todo;
+  const todo = !!taskState[record.id]?.todo;
   return (filterState.todo === 'only') === !!todo;
 }
 
-function ignoredFilter(record, filterState, { tasksState }) {
+function ignoredFilter(record, filterState, { taskState }) {
   if (filterState.ignored === 'all') {
     return true;
   }
-  const ignored = !!tasksState[record.id]?.ignored;
+  const ignored = !!taskState[record.id]?.ignored;
   return (filterState.ignored === 'only') === !!ignored;
 }
 

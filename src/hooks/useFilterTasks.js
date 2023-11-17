@@ -5,12 +5,12 @@ export default function useFilterTasks({
   filters = ALL_FILTERS,
   filterState,
   tasks = TASKS,
-  tasksState,
+  taskState,
   hiscoresState,
   regionsState,
 }) {
   const filteredTasks = Object.values(tasks).filter(task =>
-    Object.values(filters).every(filter => filter(task, filterState, { tasksState, hiscoresState, regionsState }))
+    Object.values(filters).every(filter => filter(task, filterState, { taskState, hiscoresState, regionsState }))
   );
 
   return Object.values(filteredTasks);

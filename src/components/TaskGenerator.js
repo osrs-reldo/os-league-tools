@@ -14,7 +14,7 @@ export default function TaskGenerator() {
   const isXlViewport = useBreakpoint(MEDIA_QUERIES.XL, MODE.GREATER_OR_EQ);
 
   const {
-    tasks: { tasks: tasksState, randomTaskId },
+    tasks: { tasks: taskState, randomTaskId },
     filters: { tasks: filterState },
   } = useSelector(({ tasks, filters }) => ({ tasks, filters }));
   const regionsState = useSelector(state => state.unlocks.regions);
@@ -25,13 +25,13 @@ export default function TaskGenerator() {
     filterState: {
       ...filterState,
     },
-    tasksState,
+    taskState,
     hiscoresState,
     regionsState,
   });
 
   const allTasksCompleted =
-    Object.values(tasksState).filter(task => task.completed).length === Object.values(TASKS).length;
+    Object.values(taskState).filter(task => task.completed).length === Object.values(TASKS).length;
 
   useEffect(() => {
     if (randomTaskId) {
@@ -41,7 +41,7 @@ export default function TaskGenerator() {
   }, []);
 
   const generateTask = () => {
-    const completeTasksInState = Object.entries(tasksState)
+    const completeTasksInState = Object.entries(taskState)
       .filter(([, taskInfo]) => taskInfo.completed)
       .map(([id]) => id);
 

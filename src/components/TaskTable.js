@@ -108,7 +108,6 @@ export default function TaskTable({ history, readonly, taskState: propsTaskState
   };
 
   const filterState = useSelector(state => state.filters.tasks);
-  const tasksState = useSelector(state => state.tasks.tasks);
   const regionsState = useSelector(state => state.unlocks.regions);
   const hiscoresState = useSelector(state => state.character.hiscoresCache.data);
 
@@ -119,7 +118,7 @@ export default function TaskTable({ history, readonly, taskState: propsTaskState
       filters={filters}
       filterState={filterState}
       globalFilter={fuzzyTextFilter}
-      customFilterProps={{ tasksState, hiscoresState, regionsState }}
+      customFilterProps={{ taskState, hiscoresState, regionsState }}
       defaultColumn={defaultColumn}
       initialState={initialState}
       ExpandedRow={readonly ? Cell.ReadonlyExpandedTask : Cell.ExpandedTask}
