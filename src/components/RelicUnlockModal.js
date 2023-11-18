@@ -8,7 +8,7 @@ export default function RelicUnlockModal({ isOpen, setIsOpen, tier }) {
   const availableRelics = RELICS[tier] ?? [];
   const [selectedRelic, setSelectedRelic] = useState(0);
   const prevTierPassiveRelicData = tier !== NONE_RELIC_ID ? PASSIVE_RELICS[tier - 1] : null;
-  const passiveRelicData = tier !== NONE_RELIC_ID ? PASSIVE_RELICS[tier] : null;
+  const passiveRelicData = tier !== NONE_RELIC_ID ? PASSIVE_RELICS[tier] : PASSIVE_RELICS[0];
   const dispatch = useDispatch();
 
   const onSelectRelic = unlockTier => () => setSelectedRelic(unlockTier);

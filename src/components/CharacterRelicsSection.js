@@ -10,7 +10,7 @@ export default function CharacterRelicsSection({ tier, taskStats, unlockedRelics
     setRelicUnlockModalState({ open: true, tier: unlockTier });
   };
   const relicsUnlocked = unlockedRelics.filter(id => id !== NONE_RELIC_ID).length;
-  const passiveRelicData = PASSIVE_RELICS[relicsUnlocked];
+  const passiveRelicData = PASSIVE_RELICS[relicsUnlocked] ?? PASSIVE_RELICS[0];
   return (
     <>
       <span className='text-lg text-accent font-semibold border-b border-accent w-full'>Relics</span>
