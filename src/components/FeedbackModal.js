@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useDeviceData } from 'react-device-detect';
 import { submitBug, submitFeedback, submitSuggestion } from '../client/feedback-client';
 import ButtonGroup from './common/ButtonGroup';
-import InputSelect from './common/InputSelect';
 import Modal from './Modal';
 
 export default function FeedbackModal({ isOpen, setIsOpen }) {
@@ -56,8 +55,6 @@ function BugReportFields({ onSubmit }) {
   const [bugDescription, setBugDescription] = useState(null);
   const [bugDescriptionError, setBugDescriptionError] = useState(false);
   const [reproSteps, setReproSteps] = useState(null);
-  const [client, setClient] = useState('unselected');
-  const [clientFreeText, setClientFreeText] = useState(null);
   const [submitError, setSubmitError] = useState(false);
 
   const deviceInfo = useDeviceData();
@@ -97,52 +94,6 @@ function BugReportFields({ onSubmit }) {
           setReproSteps(e.target.value);
         }}
       />
-      <span className='text-primary text-sm'>If the bug is about the plugin, which client are you playing on?</span>
-      <div>
-        <InputSelect
-          label='client'
-          className='text-sm ml-2 w-fit'
-          options={[
-            {
-              value: 'unselected',
-              label: '(select client)',
-            },
-            {
-              value: 'runelite',
-              label: 'Runelite',
-            },
-            {
-              value: 'official',
-              label: 'Official client',
-            },
-            {
-              value: 'hdos',
-              label: 'HDOS',
-            },
-            {
-              value: 'mobile',
-              label: 'Mobile app',
-            },
-            {
-              value: 'other',
-              label: 'Other (specify)',
-            },
-          ]}
-          selection={client}
-          setSelection={val => setClient(val)}
-        />
-        {client === 'other' && (
-          <input
-            type='text'
-            className='input-primary text-sm form-input w-40 ml-2'
-            placeholder='your game client'
-            value={clientFreeText || ''}
-            onChange={e => {
-              setClientFreeText(e.target.value);
-            }}
-          />
-        )}
-      </div>
       {submitError && (
         <span className='ml-2 text-xs text-error'>Unable to submit feedback at this time. Please try again later.</span>
       )}
@@ -159,7 +110,6 @@ function BugReportFields({ onSubmit }) {
                 reproSteps,
                 device: JSON.stringify(deviceInfo, undefined, 2),
                 debugInfo: JSON.stringify(storage, undefined, 2),
-                client: client === 'other' ? clientFreeText : client,
               }).then(res => {
                 if (res.success) {
                   onSubmit();
