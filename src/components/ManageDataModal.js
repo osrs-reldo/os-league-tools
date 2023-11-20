@@ -49,10 +49,7 @@ export default function ManageDataModal({ variant, isOpen, setIsOpen }) {
         <ModalWrapper isOpen={isOpen} setIsOpen={setIsOpen} headerText='Tasks Tracker RuneLite Plugin'>
           <Modal.Body className='text-primary text-sm'>
             <p className='heading-accent-md ml-1'>About</p>
-            <p className='m-2 mt-1'>
-              OS League Tools has RuneLite integration! Enable the plugin to sync your tasks and quests (and soon,
-              relics and unlocks too).
-            </p>
+            <p className='m-2 mt-1'>OS League Tools has RuneLite integration! Enable the plugin to sync your tasks.</p>
             <Separator className='mb-2' />
             <p className='heading-accent-md ml-1'>Sync data</p>
             <ImportFromPluginContent />

@@ -34,7 +34,7 @@ export default function Faq() {
             <Paragraph>
               <ol>
                 <li>1. Install "Tasks Tracker" plugin from the plugin hub and open the sidebar panel</li>
-                <li>2. Select "League III: Shattered Relics" from the dropdown</li>
+                <li>2. Select "League IV: Trailblazer Reloaded" from the dropdown</li>
                 <li>3. Open your ingame task menu, check that all filters are set to All</li>
                 <li>4. Click the 'Export' button (bottom of plugin panel) to copy your data</li>
                 <li>
