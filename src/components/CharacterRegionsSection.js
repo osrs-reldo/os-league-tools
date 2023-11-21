@@ -56,8 +56,11 @@ export default function CharacterRegionsSection({ unlockedRegions, taskStats }) 
           <div className='flex w-full flex-wrap justify-around text-center align-middle tracking-wide text-md text-primary gap-3'>
             <span>{`Regions unlocked: ${unlockedRegions.filter(id => id !== NONE_REGION_ID).length} / 5`}</span>
             <span>
-              Next unlock at {nextUnlockThreshold} tasks ({nextUnlockThreshold - taskStats.tasks.complete.total}{' '}
-              remaining)
+              {unlockedRegions.filter(region => region >= 0).length === 5
+                ? 'All regions unlocked!'
+                : `Next unlock at ${nextUnlockThreshold} tasks (${
+                    nextUnlockThreshold - taskStats.tasks.complete.total
+                  } remaining)`}
             </span>
           </div>
         </>
