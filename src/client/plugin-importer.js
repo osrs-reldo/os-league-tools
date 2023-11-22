@@ -3,7 +3,6 @@
 import _ from 'lodash';
 import { INITIAL_TASK_STATE } from '../store/tasks/constants';
 import { load as loadTaskState } from '../store/tasks/tasks';
-import { load as loadUnlocksState } from '../store/unlocks/unlocks';
 import { addCharacter } from '../store/user/character';
 
 export default function importFromPlugin(pluginData, userState, dispatch, characterState) {
@@ -15,11 +14,12 @@ export default function importFromPlugin(pluginData, userState, dispatch, charac
   const syncedTasks = importTasks(pluginData.tasks, userState.tasks.tasks, dispatch);
   dispatch(loadTaskState({ newState: { rsn: pluginData.displayName, tasks: syncedTasks } }));
 
-  const importedQuests = pluginData.quests;
-  if (importedQuests) {
-    // Assume the plugin is the source of truth, overwrite local data
-    dispatch(loadUnlocksState({ newState: { quests: importedQuests } }));
-  }
+  // Disable quest import from plugin for now, until quest ids are properly updated
+  // const importedQuests = pluginData.quests;
+  // if (importedQuests) {
+  //   // Assume the plugin is the source of truth, overwrite local data
+  //   dispatch(loadUnlocksState({ newState: { quests: importedQuests } }));
+  // }
 
   // importBossKc(pluginData.bosses);
 }
