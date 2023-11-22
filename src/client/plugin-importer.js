@@ -1,11 +1,10 @@
 /* eslint-disable no-unused-vars */
 
 import _ from 'lodash';
-import { addCharacter } from '../store/user/character';
 import { INITIAL_TASK_STATE } from '../store/tasks/constants';
 import { load as loadTaskState } from '../store/tasks/tasks';
 import { load as loadUnlocksState } from '../store/unlocks/unlocks';
-import { INITIAL_STATE } from '../store/unlocks/constants';
+import { addCharacter } from '../store/user/character';
 
 export default function importFromPlugin(pluginData, userState, dispatch, characterState) {
   const characterIndex = _.find(characterState.characters, pluginData.displayName);
@@ -17,9 +16,10 @@ export default function importFromPlugin(pluginData, userState, dispatch, charac
   dispatch(loadTaskState({ newState: { rsn: pluginData.displayName, tasks: syncedTasks } }));
 
   const importedQuests = pluginData.quests;
-
-  // Assume the plugin is the source of truth, overwrite local data
-  dispatch(loadUnlocksState({ newState: { quests: importedQuests } }));
+  if (importedQuests) {
+    // Assume the plugin is the source of truth, overwrite local data
+    dispatch(loadUnlocksState({ newState: { quests: importedQuests } }));
+  }
 
   // importBossKc(pluginData.bosses);
 }
