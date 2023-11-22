@@ -1712,7 +1712,7 @@ const quests = [
   },
   {
     id: '413.0',
-    label: "Recipe for Disaster/Another Cook's Quest",
+    label: "Recipe for Disaster - Another Cook's Quest",
     points: 1,
     difficulty: QUEST_DIFFICULTY.GRANDMASTER,
     length: QUEST_LENGTH.SHORT,
@@ -1725,7 +1725,7 @@ const quests = [
   },
   {
     id: '413.1',
-    label: 'Recipe for Disaster/Defeating the Culinaromancer',
+    label: 'Recipe for Disaster - Defeating the Culinaromancer',
     points: 1,
     difficulty: QUEST_DIFFICULTY.GRANDMASTER,
     length: QUEST_LENGTH.SHORT,
@@ -1738,7 +1738,7 @@ const quests = [
   },
   {
     id: '413.2',
-    label: 'Recipe for Disaster/Freeing the Mountain Dwarf',
+    label: 'Recipe for Disaster - Freeing the Mountain Dwarf',
     points: 1,
     difficulty: QUEST_DIFFICULTY.GRANDMASTER,
     length: QUEST_LENGTH.SHORT,
@@ -1751,7 +1751,7 @@ const quests = [
   },
   {
     id: '413.3',
-    label: 'Recipe for Disaster/Freeing the Goblin generals',
+    label: 'Recipe for Disaster - Freeing the Goblin generals',
     points: 1,
     difficulty: QUEST_DIFFICULTY.GRANDMASTER,
     length: QUEST_LENGTH.SHORT,
@@ -1764,7 +1764,7 @@ const quests = [
   },
   {
     id: '413.4',
-    label: 'Recipe for Disaster/Freeing Pirate Pete',
+    label: 'Recipe for Disaster - Pirate Pete',
     points: 1,
     difficulty: QUEST_DIFFICULTY.GRANDMASTER,
     length: QUEST_LENGTH.MEDIUM,
@@ -1777,7 +1777,7 @@ const quests = [
   },
   {
     id: '413.5',
-    label: 'Recipe for Disaster/Freeing the Lumbridge Guide',
+    label: 'Recipe for Disaster - Freeing the Lumbridge Guide',
     points: 1,
     difficulty: QUEST_DIFFICULTY.GRANDMASTER,
     length: QUEST_LENGTH.SHORT,
@@ -1790,7 +1790,7 @@ const quests = [
   },
   {
     id: '413.6',
-    label: 'Recipe for Disaster/Freeing Evil Dave',
+    label: 'Recipe for Disaster - Freeing Evil Dave',
     points: 1,
     difficulty: QUEST_DIFFICULTY.GRANDMASTER,
     length: QUEST_LENGTH.MEDIUM,
@@ -1803,7 +1803,7 @@ const quests = [
   },
   {
     id: '413.7',
-    label: 'Recipe for Disaster/Freeing King Awowogei',
+    label: 'Recipe for Disaster - Freeing King Awowogei',
     points: 1,
     difficulty: QUEST_DIFFICULTY.GRANDMASTER,
     length: QUEST_LENGTH.LONG,
@@ -1819,7 +1819,7 @@ const quests = [
   },
   {
     id: '413.8',
-    label: 'Recipe for Disaster/Freeing Sir Amik Varze',
+    label: 'Recipe for Disaster - Freeing Sir Amik Varze',
     points: 1,
     difficulty: QUEST_DIFFICULTY.GRANDMASTER,
     length: QUEST_LENGTH.MEDIUM,
@@ -1832,7 +1832,7 @@ const quests = [
   },
   {
     id: '413.9',
-    label: 'Recipe for Disaster/Freeing Skrach Uglogwee',
+    label: 'Recipe for Disaster - Freeing Skrach Uglogwee',
     points: 1,
     difficulty: QUEST_DIFFICULTY.GRANDMASTER,
     length: QUEST_LENGTH.MEDIUM,
