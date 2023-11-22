@@ -1,4 +1,3 @@
-import questPatch from '../data/questPatch';
 import QUESTS, { QUEST_STATUS } from '../data/quests';
 
 export default function calculateQuestStats(questState) {
@@ -12,7 +11,7 @@ export default function calculateQuestStats(questState) {
   const notStarted = totalQuests - finished - inProgress;
 
   for (const [id] of completedQuests) {
-    const questDetails = questPatch.getById(id);
+    const questDetails = QUESTS.find(quest => quest.id === id);
     questPoints += questDetails.points || 0;
   }
 
