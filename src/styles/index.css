@@ -9,6 +9,9 @@
 
 @layer base {
   /* THEMING */
+  body {
+    @apply bg-gray-100 dark:bg-zinc-700;
+  }
   .bg-primary {
     @apply bg-gray-100 dark:bg-zinc-700;
   }

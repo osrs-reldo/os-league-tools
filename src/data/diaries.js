@@ -1457,7 +1457,7 @@ const DIARY_TASKS = [
     id: 156,
     task: 'Slay a Spiritual mage within the God Wars Dungeon.',
     questReqs: ['441'],
-    skillReqs: [{ skill: 'slayer', level: 83 }],
+    skillReqs: [{ skill: 'Slayer', level: 83 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
     difficulty: DIARY_DIFFICULTY.ELITE,
