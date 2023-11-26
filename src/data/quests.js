@@ -2880,6 +2880,7 @@ const quests = [
   {
     id: '90001', // TODO need official ID
     label: 'Land of the Goblins',
+    points: 2,
     difficulty: QUEST_DIFFICULTY.EXPERIENCED,
     length: QUEST_LENGTH.MEDIUM,
     series: QUEST_SERIES.DORGESHUUN,
@@ -2898,6 +2899,7 @@ const quests = [
   {
     id: '90002', // TODO need official ID
     label: 'Secrets of the North',
+    points: 2,
     difficulty: QUEST_DIFFICULTY.MASTER,
     length: QUEST_LENGTH.MEDIUM,
     series: QUEST_SERIES.MAHJARRAT,
@@ -2928,6 +2930,7 @@ const quests = [
   {
     id: '90004', // TODO need official ID
     label: 'Beneath Cursed Sands',
+    points: 2,
     difficulty: QUEST_DIFFICULTY.MASTER,
     length: QUEST_LENGTH.MEDIUM,
     series: QUEST_SERIES.DESERT,
@@ -2958,6 +2961,7 @@ const quests = [
   {
     id: '90006', // TODO need official ID
     label: 'Temple of the Eye',
+    points: 1,
     difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
     length: QUEST_LENGTH.SHORT,
     type: 'quest',
@@ -2970,6 +2974,7 @@ const quests = [
   {
     id: '90007', // TODO need official ID
     label: 'Sleeping Giants',
+    points: 1,
     difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
     length: QUEST_LENGTH.SHORT,
     type: 'quest',
@@ -2982,6 +2987,7 @@ const quests = [
   {
     id: '90008', // TODO need official ID
     label: 'The Garden of Death',
+    points: 1,
     difficulty: QUEST_DIFFICULTY.INTERMEDIATE,
     length: QUEST_LENGTH.SHORT,
     series: QUEST_SERIES.TWISTED_TALES,
@@ -2995,6 +3001,7 @@ const quests = [
   {
     id: '90009', // TODO need official ID
     label: 'Desert Treasure II - The Fallen Empire',
+    points: 5,
     difficulty: QUEST_DIFFICULTY.GRANDMASTER,
     length: QUEST_LENGTH.VERY_LONG,
     series: QUEST_SERIES.MAHJARRAT,
@@ -3015,6 +3022,7 @@ const quests = [
   {
     id: '90010', // TODO need official ID
     label: 'The Path of Glouphrie',
+    points: 2,
     difficulty: QUEST_DIFFICULTY.EXPERIENCED,
     length: QUEST_LENGTH.MEDIUM,
     series: QUEST_SERIES.GNOME,

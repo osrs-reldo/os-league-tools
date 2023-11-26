@@ -3578,7 +3578,7 @@ const DIARY_TASKS = [
   {
     id: 383,
     task: 'Use the Spirit tree in the north-eastern corner of Grand Exchange.',
-    questReqs: [],
+    questReqs: ['438'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.VARROCK,
@@ -3587,7 +3587,7 @@ const DIARY_TASKS = [
   {
     id: 384,
     task: 'Perform the 4 emotes from the Stronghold of Security.',
-    questReqs: ['438'],
+    questReqs: [],
     skillReqs: [],
     otherReqs: ['Enabled the RuneScape Authenticator'],
     location: DIARY_LOCATIONS.VARROCK,
