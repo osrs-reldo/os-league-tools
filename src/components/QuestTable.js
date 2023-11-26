@@ -239,11 +239,11 @@ function regionsFilter(record, filterState, { regionsState }) {
     filterState.regions[0] === UNLOCKED_REGION_FILTER_VALUE ? unlockedRegionNames : filterState.regions;
   const { regions, autoUnlockRegions } = record;
 
-  if (regions[0] === REGION_IMPOSSIBLE_TO_COMPLETE && !autoUnlockRegions.length) {
-    return false;
-  }
   if (autoUnlockRegions.length && autoUnlockRegions.some(area => filteredRegions.includes(area))) {
     return true;
+  }
+  if (!regions.length || regions[0] === REGION_IMPOSSIBLE_TO_COMPLETE) {
+    return false;
   }
   const requiresAllOf = regions.filter(item => typeof item === 'string') ?? [];
   const requiresOneOf = regions.filter(item => typeof item !== 'string')[0] ?? [];
