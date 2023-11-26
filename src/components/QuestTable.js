@@ -242,8 +242,8 @@ function regionsFilter(record, filterState, { regionsState }) {
   if (regions[0] === REGION_IMPOSSIBLE_TO_COMPLETE && !autoUnlockRegions.length) {
     return false;
   }
-  if (autoUnlockRegions.length) {
-    return autoUnlockRegions.some(area => filteredRegions.includes(area));
+  if (autoUnlockRegions.length && autoUnlockRegions.some(area => filteredRegions.includes(area))) {
+    return true;
   }
   const requiresAllOf = regions.filter(item => typeof item === 'string') ?? [];
   const requiresOneOf = regions.filter(item => typeof item !== 'string')[0] ?? [];
