@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
-import { toggleCompleted, updateRandomTask } from '../store/tasks/tasks';
+import { toggleCompleted, toggleTodo, updateRandomTask } from '../store/tasks/tasks';
 import useFilterTasks from '../hooks/useFilterTasks';
 import SkillRequirementList from './SkillRequirementList';
 import Category from './Category';
@@ -59,6 +59,10 @@ export default function TaskGenerator() {
     setActiveTask(undefined);
   };
 
+  const todoTask = taskId => {
+    dispatch(toggleTodo({ taskId, regions: regionsState }));
+  };
+
   const renderNoPossibleTask = (
     <p className='italic '>
       {allTasksCompleted
@@ -87,6 +91,24 @@ export default function TaskGenerator() {
     </p>
   );
 
+  const renderButtons = activeTask ? (
+    <>
+      <button type='button' className='button-outline w-full' onClick={generateTask}>
+        Skip
+      </button>
+      <button type='button' className='button-outline w-full' onClick={() => todoTask(activeTask.id)}>
+        + To-do
+      </button>
+      <button type='button' className='button-outline w-full' onClick={() => completeTask(activeTask.id)}>
+        Complete
+      </button>
+    </>
+  ) : (
+    <button type='button' className='button-outline w-full' onClick={generateTask}>
+      Generate task
+    </button>
+  );
+
   return (
     <div className='flex flex-col gap-2 max-w-[320px]'>
       <span className='heading-accent-md'>Random Task Generator</span>
@@ -94,16 +116,7 @@ export default function TaskGenerator() {
       {!allTasksCompleted && (
         <>
           <div className='flex flex-col gap-1 px-3'>
-            <div className={`flex gap-1 mt ${isXlViewport ? 'w-full' : 'max-w-[420px]'}`}>
-              <button type='button' className='button-outline w-full' onClick={generateTask}>
-                {activeTask ? 'Skip task' : 'Generate task'}
-              </button>
-              {activeTask && (
-                <button type='button' className='button-outline w-full' onClick={() => completeTask(activeTask.id)}>
-                  Complete task
-                </button>
-              )}
-            </div>
+            <div className={`flex gap-1 mt ${isXlViewport ? 'w-full' : 'max-w-[420px]'}`}>{renderButtons}</div>
           </div>
           <p className='italic text-xs px-3'>
             <span className='material-icons-outlined text-xs'>info</span>Tasks are picked from your table, according to
