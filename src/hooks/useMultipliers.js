@@ -26,7 +26,7 @@ export default function useMultipliers() {
         multiplier.categories[0] === 'All' || multiplier.categories.includes(activityData.category);
       const matchesActionId = multiplier.actions.includes(activityData.id);
       const matchesRegex =
-        !multiplier.matchers.length || !itemData || multiplier.matchers.some(matcher => itemData.name.match(matcher));
+        !multiplier.matchers?.length || !itemData || multiplier.matchers.some(matcher => itemData.name.match(matcher));
       const matchesExceptions = multiplier.exceptions.includes(activityData.id);
       if ((matchesCategory || matchesActionId) && matchesRegex && !matchesExceptions) {
         newValue *= multiplier.multiplier;
