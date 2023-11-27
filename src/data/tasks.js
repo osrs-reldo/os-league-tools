@@ -9088,7 +9088,7 @@ export default {
   },
   1197: {
     id: '1197',
-    label: 'Defeat the Kalphite Queen 100 Times',
+    label: 'Defeat the Kalphite Queen 50 Times',
     description: 'Defeat the Kalphite Queen in the Kalphite Lair 50 times.',
     skillReqs: [],
     regions: ['Desert'],
@@ -9099,7 +9099,7 @@ export default {
   },
   1198: {
     id: '1198',
-    label: 'Defeat the Kalphite Queen 250 Times',
+    label: 'Defeat the Kalphite Queen 150 Times',
     description: 'Defeat the Kalphite Queen in the Kalphite Lair 150 times.',
     skillReqs: [],
     regions: ['Desert'],
