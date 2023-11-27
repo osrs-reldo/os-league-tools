@@ -1,5 +1,12 @@
 [
   {
+    "title": "The Runelite Plugin is back!",
+    "date": "Nov 27 2023",
+    "thumbnail": "https://i.imgur.com/swFNR96.png",
+    "leadText": "The Tasks Tracker plugin has just been added to the Runelite Plugin hub!",
+    "htmlContent": "<p>The Tasks Tracker plugin has just been added to the Runelite Plugin hub and is ready for all your task-tracking needs.</p><p>The plugin can be used on its own, or synced with the site to use together. Just install the \"Tasks Tracker\" plugin from the plugin hub to get started (and make sure you have reloaded the site to get the latest version).</p><p>How to sync your tasks to the site:<ol><li>1. Click the sidebar icon to open the Tasks Tracker plugin panel. Make sure \"Leagues IV: Trailblazer Reloaded\" is selected on the dropdown menu.</li><li>2. Click the \"Export\" button at the bottom of the panel. Your task data will be automatically copied to your clipboard.</li><li>3. Open https://www.osleague.tools and go to Manage Data -> Import. Paste your data into the text box and click \"Sync\". </li></ol></p><p>You can also sync in reverse to load your to-do list from the site into the plugin, so it's available on the sidebar while you play!</p><p>How to sync your to-do list to the plugin:<ol><li>1. Open https://www.osleague.tools and go to Manage Data -> Export. Click on the text box to copy your data to the clipboard. </li><li>2. On Runelite, click the sidebar icon to open the Tasks Tracker plugin panel. Make sure \"Leagues IV: Trailblazer Reloaded\" is selected on the dropdown menu.</li><li>3. Click the \"Import\" button at the bottom of the panel and paste into the text box.</li></ol></p><p>Please note that the plugin currently only works for syncing tasks, but we are working to get other data (Relics, regions, quests, etc) added soon too.</p>"
+  },
+  {
     "title": "We're back for Trailblazer Reloaded!",
     "date": "Oct 28 2023",
     "thumbnail": "https://oldschool.runescape.wiki/images/Trailblazer_Reloaded_League_logo.png",

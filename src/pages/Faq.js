@@ -33,13 +33,17 @@ export default function Faq() {
             <Header>How do I import tasks from the plugin to the site?</Header>
             <Paragraph>
               <ol>
-                <li>1. Install "Tasks Tracker" plugin from the plugin hub and open the sidebar panel</li>
-                <li>2. Select "League III: Shattered Relics" from the dropdown</li>
-                <li>3. Open your ingame task menu, check that all filters are set to All</li>
-                <li>4. Click the 'Export' button (bottom of plugin panel) to copy your data</li>
                 <li>
-                  5. On the website, click the RL icon on the top right. Paste the exported data in the box and click
-                  Sync
+                  1. Click the sidebar icon to open the Tasks Tracker plugin panel. Make sure "Leagues IV: Trailblazer
+                  Reloaded" is selected on the dropdown menu.
+                </li>
+                <li>
+                  2. Click the "Export" button at the bottom of the panel. Your task data will be automatically copied
+                  to your clipboard.
+                </li>
+                <li>
+                  3. Open https://www.osleague.tools and go to Manage Data -{'>'} Import. Paste your data into the text
+                  box and click "Sync".
                 </li>
               </ol>
             </Paragraph>
@@ -47,11 +51,15 @@ export default function Faq() {
             <Header>How do I export my to-do list to the plugin?</Header>
             <Paragraph>
               <ol>
-                <li>1. On the website, click the RL icon on the top right</li>
-                <li>2. Click on the text box under "Export To-do List" to copy your data</li>
                 <li>
-                  3. On the plugin, click the Import button (bottom of the plugin sidebar panel) and paste your data
+                  1. Open https://www.osleague.tools and go to Manage Data -{'>'} Export. Click on the text box to copy
+                  your data to the clipboard.
                 </li>
+                <li>
+                  2. On Runelite, click the sidebar icon to open the Tasks Tracker plugin panel. Make sure "Leagues IV:
+                  Trailblazer Reloaded" is selected on the dropdown menu.
+                </li>
+                <li>3. Click the "Import" button at the bottom of the panel and paste into the text box.</li>
               </ol>
             </Paragraph>
             <Separator />
@@ -60,11 +68,6 @@ export default function Faq() {
               First, double check that you have the latest plugin version. You can see this by searching for{' '}
               <span className={emphasisedText}>Task Tracker</span> in the plugin hub. If it has an option to update,
               click it and retry your export.
-            </Paragraph>
-            <Paragraph>
-              If you still have issues, make sure you have followed all of the instructions above for how to import. The
-              most important step is to make sure all task filters are set to All when you open your ingame task menu.
-              Otherwise, you will only export the tasks that you have filtered.
             </Paragraph>
             <Paragraph>
               As a last resort, you can also try:
