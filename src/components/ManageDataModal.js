@@ -349,7 +349,6 @@ function convertTasksToPluginExport(taskState, rsn) {
       completed: taskState[taskId].completed || 0,
       todo: taskState[taskId].todo || 0,
       ignored: taskState[taskId].ignored || 0,
-      order: taskState[taskId].order || 0,
       notes: taskState[taskId].notes,
       lastUpdated: taskState[taskId].lastUpdated,
     };
