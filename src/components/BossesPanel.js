@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import ReactTooltip from 'react-tooltip';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 import { BOSSES } from '../data/constants';
 import { NONE_REGION_ID, regionsById } from '../data/regions';
 

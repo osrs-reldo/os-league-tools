@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { matchSorter } from 'match-sorter';
 import { useDispatch, useSelector } from 'react-redux';
-import ReactTooltip from 'react-tooltip';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import Table from './common/Table';
 import LabeledIcon from './common/LabeledIcon';

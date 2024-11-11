@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import ReactTooltip from 'react-tooltip';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 import { toggleTodo, toggleIgnored, toggleCompleted, updateNotes, selectTask, updateOrder } from '../store/tasks/tasks';
 import useBreakpoint, { MEDIA_QUERIES, MODE } from '../hooks/useBreakpoint';
 import { DEFAULT_NOTES_TEXT } from '../data/constants';

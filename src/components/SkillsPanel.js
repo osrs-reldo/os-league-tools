@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import ReactTooltip from 'react-tooltip';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 import getSkillsPanelData from '../util/getSkillsPanelData';
 import calculateCombatLevel from '../util/calculateCombatLevel';
 import calculateQuestStats from '../util/calculateQuestStats';
