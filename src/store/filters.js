@@ -5,7 +5,7 @@ import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../client/localstorage-c
 import { getCategoriesForStore } from '../data/categories';
 import { STATS, DIFFICULTY, DIARY_LOCATIONS, DIARY_DIFFICULTY } from '../data/constants';
 import { QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/quests';
-import { LEAGUES_REGIONS } from '../data/regions';
+import { TRAILBLAZER_REGIONS } from '../data/regions';
 
 const CURRENT_VERSION = 20;
 
@@ -17,7 +17,7 @@ const INITIAL_TASK_STATE = {
   ignored: 'hide',
   difficulty: mapDataValues(DIFFICULTY),
   categories: getCategoriesForStore(),
-  regions: mapDataValues(LEAGUES_REGIONS),
+  regions: mapDataValues(TRAILBLAZER_REGIONS),
   skills: Object.keys(STATS),
   reorderEnabled: false,
   showNoRequirements: true,
@@ -31,7 +31,7 @@ const INITIAL_QUEST_STATE = {
   requirements: 'all',
   difficulty: mapDataValues(QUEST_DIFFICULTY),
   length: mapDataValues(QUEST_LENGTH),
-  regions: mapDataValues(LEAGUES_REGIONS),
+  regions: mapDataValues(TRAILBLAZER_REGIONS),
   skills: null,
 };
 
@@ -44,7 +44,7 @@ const INITIAL_DIARIES_STATE = {
 };
 
 const INITIAL_CALCULATORS_STATE = {
-  regions: mapDataValues(LEAGUES_REGIONS),
+  regions: mapDataValues(TRAILBLAZER_REGIONS),
   categories: {},
   isProductionProdigy: false,
 };

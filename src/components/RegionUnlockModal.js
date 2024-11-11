@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { batch, useDispatch, useSelector } from 'react-redux';
 import { diaryTasksById } from '../data/diaries';
 import { questsById } from '../data/quests';
-import { regionsById, LEAGUES_REGIONS } from '../data/regions';
+import { regionsById, TRAILBLAZER_REGIONS } from '../data/regions';
 import { autoUnlockDiariesForRegion, autoUnlockQuestsForRegion, updateRegion } from '../store/unlocks/unlocks';
 import Select from './common/Select';
 import Modal from './Modal';
 
-const UNLOCKABLE_REGION_OPTIONS = LEAGUES_REGIONS.map(region => ({
+const UNLOCKABLE_REGION_OPTIONS = TRAILBLAZER_REGIONS.map(region => ({
   label: region.label,
   value: region.id,
   icon: region.icon,
@@ -52,7 +52,7 @@ export default function RegionUnlockModal({ isOpen, setIsOpen, tier, initialSele
           />
         </div>
         <div className='m-2 mt-1 text-accent text-base'>
-          Click image to view region unlocks:
+          Click image to view region details:
           <a href={selectedRegionData.infographic} target='_blank' rel='noreferrer'>
             <img src={selectedRegionData.infographic} alt='' />
           </a>

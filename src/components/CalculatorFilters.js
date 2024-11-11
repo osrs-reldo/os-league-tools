@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import { useSelector } from 'react-redux';
 import FilterButtons, { FilterSelectAll } from './common/FilterButtons';
-import { regionsById, LEAGUES_REGIONS } from '../data/regions';
+import { regionsById, TRAILBLAZER_REGIONS } from '../data/regions';
 import { updateCalculatorsFilter } from '../store/filters';
 import calculatorData from '../data/calculatorData.json';
 
@@ -44,12 +44,12 @@ export default function CalculatorFilters({ skill }) {
               filterState.regions[0] === UNLOCKED_REGION_FILTER_VALUE ? unlockedRegionNames : filterState.regions
             }
             updateFunc={updateCalculatorsFilter}
-            values={LEAGUES_REGIONS}
+            values={TRAILBLAZER_REGIONS}
           />
           <FilterSelectAll
             filterName='regions'
             updateFunc={updateCalculatorsFilter}
-            values={LEAGUES_REGIONS.map(({ label }) => label)}
+            values={TRAILBLAZER_REGIONS.map(({ label }) => label)}
             additionalButtons={[{ label: 'unlocked', value: [UNLOCKED_REGION_FILTER_VALUE] }]}
           />
         </div>

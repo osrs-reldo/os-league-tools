@@ -1,7 +1,7 @@
 import images from '../assets/images';
 
-export const LEAGUE_START_DATE = new Date('2024-11-27T12:00:00+00:00');
-export const LEAGUE_END_DATE = new Date('2025-01-22T12:00:00+00:00');
+export const LEAGUE_START_DATE = new Date('2023-11-15T12:00:00+00:00');
+export const LEAGUE_END_DATE = new Date('2024-01-10T12:00:00+00:00');
 
 export const STATS = {
   Agility: {

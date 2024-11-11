@@ -5,7 +5,7 @@ import ButtonGroup from './common/ButtonGroup';
 import FilterButtons, { FilterSelectAll } from './common/FilterButtons';
 import { QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/quests';
 import { UNLOCKED_REGION_FILTER_VALUE } from './CalculatorFilters';
-import { regionsById, LEAGUES_REGIONS } from '../data/regions';
+import { regionsById, TRAILBLAZER_REGIONS } from '../data/regions';
 
 export default function QuestFilters() {
   const filterState = useSelector(state => state.filters.quests);
@@ -52,12 +52,12 @@ export default function QuestFilters() {
               filterState.regions[0] === UNLOCKED_REGION_FILTER_VALUE ? unlockedRegionNames : filterState.regions
             }
             updateFunc={updateQuestFilter}
-            values={LEAGUES_REGIONS}
+            values={TRAILBLAZER_REGIONS}
           />
           <FilterSelectAll
             filterName='regions'
             updateFunc={updateQuestFilter}
-            values={LEAGUES_REGIONS.map(({ label }) => label)}
+            values={TRAILBLAZER_REGIONS.map(({ label }) => label)}
             additionalButtons={[{ label: 'unlocked', value: [UNLOCKED_REGION_FILTER_VALUE] }]}
           />
         </div>

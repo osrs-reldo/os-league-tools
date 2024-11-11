@@ -270,7 +270,7 @@ function RegionsCell({ row }) {
               const { icon } = regionsByName[region] || {};
               return (
                 <div key={region}>
-                  <img width={16} src={icon} alt={region} data-tip data-for={region} />
+                  <img src={icon} alt={region} data-tip data-for={region} />
                   <ReactTooltip id={region}>{region}</ReactTooltip>
                 </div>
               );
@@ -287,7 +287,7 @@ function RegionsCell({ row }) {
                 const { icon } = regionsByName[region] || {};
                 return (
                   <div key={region}>
-                    <img width={16} src={icon} alt={region} data-tip data-for={region} />
+                    <img src={icon} alt={region} data-tip data-for={region} />
                     <ReactTooltip id={region}>{region}</ReactTooltip>
                   </div>
                 );
