@@ -1,6 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
 import throttle from 'lodash/throttle';
-import thunk from 'redux-thunk';
 import { updateLocalStorage, LOCALSTORAGE_KEYS } from './client/localstorage-client';
 import filterReducer, { loadState as loadFilterState } from './store/filters';
 import settingsReducer, { loadState as loadSettingsState } from './store/settings/settings';
@@ -33,7 +32,6 @@ const preloadedState = {
 const store = configureStore({
   reducer,
   preloadedState,
-  middleware: [thunk],
 });
 
 store.subscribe(
