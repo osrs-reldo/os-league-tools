@@ -15,7 +15,7 @@ export default function LeagueCountdown() {
     return () => clearTimeout(timer);
   });
 
-  let text = 'TRAILBLAZER LEAGUE RELOADED ';
+  let text = 'RAGING ECHOES LEAGUE ';
   if (launchCountdown) {
     text += 'BEGINS IN';
   } else if (endCountdown) {

@@ -5,7 +5,7 @@ export const NONE_REGION_ID = -1;
 export const DEFAULT_REGIONS = [0, 1];
 export const REGION_UNLOCK_THRESHOLDS = [0, 60, 140, 300];
 
-export const TRAILBLAZER_REGIONS = [
+export const LEAGUES_REGIONS = [
   {
     id: 0,
     label: 'Misthalin',
@@ -24,7 +24,7 @@ export const TRAILBLAZER_REGIONS = [
     label: 'Karamja',
     icon: images['task-karamja.png'],
     map: images['map-karamja.png'],
-    infographic: images['info-karamja.jpeg'],
+    infographic: images['info-karamja.png'],
     isDefaultUnlock: true,
     questUnlocks: getAllQuestPrereqs(['424']),
     diaryUnlocks: [203, 204, 216, 221, 227, 231, 234, 236, 242],
@@ -34,7 +34,7 @@ export const TRAILBLAZER_REGIONS = [
     label: 'Asgarnia',
     icon: images['task-asgarnia.png'],
     map: images['map-asgarnia.png'],
-    infographic: images['info-asgarnia.jpeg'],
+    infographic: images['info-asgarnia.png'],
     isDefaultUnlock: false,
     questUnlocks: getAllQuestPrereqs(['394', '402']),
     diaryUnlocks: [97, 114, 118],
@@ -42,9 +42,9 @@ export const TRAILBLAZER_REGIONS = [
   {
     id: 3,
     label: 'Desert',
-    icon: images['task-kharidian.png'],
+    icon: images['task-desert.png'],
     map: images['map-desert.png'],
-    infographic: images['info-desert.jpeg'],
+    infographic: images['info-desert.png'],
     isDefaultUnlock: false,
     questUnlocks: getAllQuestPrereqs(['90009']),
     diaryUnlocks: [58, 67, 70, 75],
@@ -54,7 +54,7 @@ export const TRAILBLAZER_REGIONS = [
     label: 'Fremennik',
     icon: images['task-fremennik.png'],
     map: images['map-fremennik.png'],
-    infographic: images['info-fremennik.jpeg'],
+    infographic: images['info-fremennik.png'],
     isDefaultUnlock: false,
     questUnlocks: getAllQuestPrereqs(['90002', '382', '348', '398']),
     diaryUnlocks: [131, 134, 141, 142, 155, 156],
@@ -64,7 +64,7 @@ export const TRAILBLAZER_REGIONS = [
     label: 'Morytania',
     icon: images['task-morytania.png'],
     map: images['map-morytania.png'],
-    infographic: images['info-morytania.jpeg'],
+    infographic: images['info-morytania.png'],
     isDefaultUnlock: false,
     questUnlocks: getAllQuestPrereqs(['341', '375']),
     diaryUnlocks: [346, 350, 357, 360, 362],
@@ -74,7 +74,7 @@ export const TRAILBLAZER_REGIONS = [
     label: 'Kandarin',
     icon: images['task-kandarin.png'],
     map: images['map-kandarin.png'],
-    infographic: images['info-kandarin.jpeg'],
+    infographic: images['info-kandarin.png'],
     isDefaultUnlock: false,
     questUnlocks: getAllQuestPrereqs(['396', '428', '387']),
     diaryUnlocks: [171, 186, 188, 195, 196, 199, 409, 414, 424, 434, 441, 449, 1, 8, 14, 15, 20, 22, 32, 33, 35, 41],
@@ -82,9 +82,9 @@ export const TRAILBLAZER_REGIONS = [
   {
     id: 7,
     label: 'Kourend',
-    icon: images['task-xeric.png'],
+    icon: images['task-kourend.png'],
     map: images['map-kourend.png'],
-    infographic: images['info-kourend.jpeg'],
+    infographic: images['info-kourend.png'],
     isDefaultUnlock: false,
     questUnlocks: getAllQuestPrereqs(['3155']),
     diaryUnlocks: [],
@@ -94,7 +94,7 @@ export const TRAILBLAZER_REGIONS = [
     label: 'Tirannwn',
     icon: images['task-tiranwnn.png'],
     map: images['map-tirannwn.png'],
-    infographic: images['info-tirannwn.jpeg'],
+    infographic: images['info-tirannwn.png'],
     isDefaultUnlock: false,
     questUnlocks: getAllQuestPrereqs(['603']),
     diaryUnlocks: [278],
@@ -104,16 +104,26 @@ export const TRAILBLAZER_REGIONS = [
     label: 'Wilderness',
     icon: images['task-wilderness.png'],
     map: images['map-wilderness.png'],
-    infographic: images['info-wilderness.jpeg'],
+    infographic: images['info-wilderness.png'],
     isDefaultUnlock: false,
     questUnlocks: getAllQuestPrereqs(['3140']),
     diaryUnlocks: [473, 482, 484, 486],
+  },
+  {
+    id: 10,
+    label: 'Varlamore',
+    icon: images['task-varlamore.png'],
+    map: null,
+    infographic: images['info-varlamore.png'],
+    isDefaultUnlock: false,
+    questUnlocks: [],
+    diaryUnlocks: [],
   },
 ];
 
 function getRegionsById() {
   const regionsById = {};
-  TRAILBLAZER_REGIONS.forEach(region => {
+  LEAGUES_REGIONS.forEach(region => {
     regionsById[region.id] = region;
   });
   return regionsById;
@@ -122,11 +132,11 @@ export const regionsById = getRegionsById();
 
 function getRegionsByName() {
   const regionsByName = {};
-  TRAILBLAZER_REGIONS.forEach(region => {
+  LEAGUES_REGIONS.forEach(region => {
     regionsByName[region.label] = region;
   });
   return regionsByName;
 }
 export const regionsByName = getRegionsByName();
 
-export const regionNames = TRAILBLAZER_REGIONS.map(({ label }) => label);
+export const regionNames = LEAGUES_REGIONS.map(({ label }) => label);
