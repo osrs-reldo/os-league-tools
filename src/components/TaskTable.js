@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { matchSorter } from 'match-sorter';
 import { useSelector } from 'react-redux';
 import { forEach } from 'lodash';
+// TODO: enable this when task list known
 import tasks from '../data/tasks';
 import ALL_FILTERS from '../util/taskFilters';
 import Cell from './TaskTableCell';

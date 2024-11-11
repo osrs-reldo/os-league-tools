@@ -10,7 +10,7 @@ import { DIFFICULTY, STATS } from '../data/constants';
 import { formatCategoriesForCheckboxTree } from '../data/categories';
 import getSkillsPanelData from '../util/getSkillsPanelData';
 import { UNLOCKED_REGION_FILTER_VALUE } from './CalculatorFilters';
-import { regionsById, TRAILBLAZER_REGIONS } from '../data/regions';
+import { regionsById, LEAGUES_REGIONS } from '../data/regions';
 
 export default function TaskFilters({ history }) {
   const filterState = useSelector(state => state.filters.tasks);
@@ -74,12 +74,12 @@ export default function TaskFilters({ history }) {
             filterState.regions[0] === UNLOCKED_REGION_FILTER_VALUE ? unlockedRegionNames : filterState.regions
           }
           updateFunc={updateTaskFilter}
-          values={TRAILBLAZER_REGIONS}
+          values={LEAGUES_REGIONS}
         />
         <FilterSelectAll
           filterName='regions'
           updateFunc={updateTaskFilter}
-          values={TRAILBLAZER_REGIONS.map(({ label }) => label)}
+          values={LEAGUES_REGIONS.map(({ label }) => label)}
           additionalButtons={[{ label: 'unlocked', value: [UNLOCKED_REGION_FILTER_VALUE] }]}
         />
       </div>
