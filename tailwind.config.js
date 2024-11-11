@@ -15,6 +15,8 @@ module.exports = {
         'sl-teal': '#008076',
         'tr-orange': '#dc8B36',
         'tr-umber': '#b44a1e',
+        're-blue': '#c5ecd7',
+        're-purple': '#372f71',
         'mono-dark': '#f9fafb',
         'mono-white': '#374151',
         gray: {
@@ -43,11 +45,13 @@ module.exports = {
         'tb-dark',
         'sl-dark',
         'tr-dark',
+        're-dark',
         'mono-dark',
         'tl-light',
         'tb-light',
         'tr-light',
         'sl-light',
+        're-light',
         'mono-light',
       ];
       themes.forEach(theme => {
