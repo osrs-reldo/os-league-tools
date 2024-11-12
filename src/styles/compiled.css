@@ -666,6 +666,16 @@ body:is(.dark *) {
   background-color: rgb(180 74 30 / var(--tw-bg-opacity));
 }
 
+.theme-re-dark .bg-accent {
+  --tw-bg-opacity: 1;
+  background-color: rgb(197 236 215 / var(--tw-bg-opacity));
+}
+
+.theme-re-light .bg-accent {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 47 113 / var(--tw-bg-opacity));
+}
+
 .theme-mono-dark .bg-accent {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -796,6 +806,16 @@ body:is(.dark *) {
   color: rgb(180 74 30 / var(--tw-text-opacity));
 }
 
+.theme-re-dark .text-accent {
+  --tw-text-opacity: 1;
+  color: rgb(197 236 215 / var(--tw-text-opacity));
+}
+
+.theme-re-light .text-accent {
+  --tw-text-opacity: 1;
+  color: rgb(55 47 113 / var(--tw-text-opacity));
+}
+
 .theme-mono-dark .text-accent {
   --tw-text-opacity: 1;
   color: rgb(249 250 251 / var(--tw-text-opacity));
@@ -892,6 +912,16 @@ body:is(.dark *) {
 .theme-tr-light .border-accent {
   --tw-border-opacity: 1;
   border-color: rgb(180 74 30 / var(--tw-border-opacity));
+}
+
+.theme-re-dark .border-accent {
+  --tw-border-opacity: 1;
+  border-color: rgb(197 236 215 / var(--tw-border-opacity));
+}
+
+.theme-re-light .border-accent {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 47 113 / var(--tw-border-opacity));
 }
 
 .theme-mono-dark .border-accent {
@@ -1326,6 +1356,14 @@ body:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(180 74 30 / var(--tw-text-opacity));
 }
+.theme-re-dark a.active {
+  --tw-text-opacity: 1;
+  color: rgb(197 236 215 / var(--tw-text-opacity));
+}
+.theme-re-light a.active {
+  --tw-text-opacity: 1;
+  color: rgb(55 47 113 / var(--tw-text-opacity));
+}
 .theme-mono-dark a.active {
   --tw-text-opacity: 1;
   color: rgb(249 250 251 / var(--tw-text-opacity));
@@ -1412,6 +1450,14 @@ body:is(.dark *) {
 .theme-tr-light .heading-accent-md {
   --tw-text-opacity: 1;
   color: rgb(180 74 30 / var(--tw-text-opacity));
+}
+.theme-re-dark .heading-accent-md {
+  --tw-text-opacity: 1;
+  color: rgb(197 236 215 / var(--tw-text-opacity));
+}
+.theme-re-light .heading-accent-md {
+  --tw-text-opacity: 1;
+  color: rgb(55 47 113 / var(--tw-text-opacity));
 }
 .theme-mono-dark .heading-accent-md {
   --tw-text-opacity: 1;
@@ -1521,6 +1567,14 @@ body:is(.dark *) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(180 74 30 / var(--tw-ring-opacity));
 }
+.theme-re-dark .button-filled:active {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(197 236 215 / var(--tw-ring-opacity));
+}
+.theme-re-light .button-filled:active {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(55 47 113 / var(--tw-ring-opacity));
+}
 .theme-mono-dark .button-filled:active {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(249 250 251 / var(--tw-ring-opacity));
@@ -1565,6 +1619,14 @@ body:is(.dark *) {
 .theme-tr-light .button-filled {
   --tw-bg-opacity: 1;
   background-color: rgb(180 74 30 / var(--tw-bg-opacity));
+}
+.theme-re-dark .button-filled {
+  --tw-bg-opacity: 1;
+  background-color: rgb(197 236 215 / var(--tw-bg-opacity));
+}
+.theme-re-light .button-filled {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 47 113 / var(--tw-bg-opacity));
 }
 .theme-mono-dark .button-filled {
   --tw-bg-opacity: 1;
@@ -1614,6 +1676,14 @@ body:is(.dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(180 74 30 / var(--tw-border-opacity));
 }
+.theme-re-dark .content-outline {
+  --tw-border-opacity: 1;
+  border-color: rgb(197 236 215 / var(--tw-border-opacity));
+}
+.theme-re-light .content-outline {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 47 113 / var(--tw-border-opacity));
+}
 .theme-mono-dark .content-outline {
   --tw-border-opacity: 1;
   border-color: rgb(249 250 251 / var(--tw-border-opacity));
@@ -1660,6 +1730,14 @@ body:is(.dark *) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(180 74 30 / var(--tw-ring-opacity));
 }
+.theme-re-dark .button-outline:active {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(197 236 215 / var(--tw-ring-opacity));
+}
+.theme-re-light .button-outline:active {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(55 47 113 / var(--tw-ring-opacity));
+}
 .theme-mono-dark .button-outline:active {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(249 250 251 / var(--tw-ring-opacity));
@@ -1705,6 +1783,14 @@ body:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(180 74 30 / var(--tw-text-opacity));
 }
+.theme-re-dark .button-outline {
+  --tw-text-opacity: 1;
+  color: rgb(197 236 215 / var(--tw-text-opacity));
+}
+.theme-re-light .button-outline {
+  --tw-text-opacity: 1;
+  color: rgb(55 47 113 / var(--tw-text-opacity));
+}
 .theme-mono-dark .button-outline {
   --tw-text-opacity: 1;
   color: rgb(249 250 251 / var(--tw-text-opacity));
@@ -1744,6 +1830,14 @@ body:is(.dark *) {
 .theme-tr-light .button-outline {
   --tw-border-opacity: 1;
   border-color: rgb(180 74 30 / var(--tw-border-opacity));
+}
+.theme-re-dark .button-outline {
+  --tw-border-opacity: 1;
+  border-color: rgb(197 236 215 / var(--tw-border-opacity));
+}
+.theme-re-light .button-outline {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 47 113 / var(--tw-border-opacity));
 }
 .theme-mono-dark .button-outline {
   --tw-border-opacity: 1;
@@ -1819,6 +1913,14 @@ body:is(.dark *) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(180 74 30 / var(--tw-ring-opacity));
 }
+.theme-re-dark .button-group-active:active {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(197 236 215 / var(--tw-ring-opacity));
+}
+.theme-re-light .button-group-active:active {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(55 47 113 / var(--tw-ring-opacity));
+}
 .theme-mono-dark .button-group-active:active {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(249 250 251 / var(--tw-ring-opacity));
@@ -1863,6 +1965,14 @@ body:is(.dark *) {
 .theme-tr-light .button-group-selected {
   --tw-bg-opacity: 1;
   background-color: rgb(180 74 30 / var(--tw-bg-opacity));
+}
+.theme-re-dark .button-group-selected {
+  --tw-bg-opacity: 1;
+  background-color: rgb(197 236 215 / var(--tw-bg-opacity));
+}
+.theme-re-light .button-group-selected {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 47 113 / var(--tw-bg-opacity));
 }
 .theme-mono-dark .button-group-selected {
   --tw-bg-opacity: 1;
@@ -1944,6 +2054,12 @@ body:is(.dark *) {
 }
 .theme-tr-light .checkbox-primary {
   accent-color: #b44a1e;
+}
+.theme-re-dark .checkbox-primary {
+  accent-color: #c5ecd7;
+}
+.theme-re-light .checkbox-primary {
+  accent-color: #372f71;
 }
 .theme-mono-dark .checkbox-primary {
   accent-color: #f9fafb;
