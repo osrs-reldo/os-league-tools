@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ReactTooltip from 'react-tooltip';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 import { NONE_RELIC_ID, PASSIVE_RELICS, RELICS, RELIC_UNLOCK_THRESHOLDS } from '../data/relics';
 import RelicUnlockModal from './RelicUnlockModal';
 import { ThemedProgressBar } from './ThemeProvider';

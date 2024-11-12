@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ReactTooltip from 'react-tooltip';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 import { NONE_REGION_ID, regionsById, REGION_UNLOCK_THRESHOLDS } from '../data/regions';
 import { getRegionTier } from '../util/getTier';
 import RegionMap from './RegionMap';

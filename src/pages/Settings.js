@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch, batch } from 'react-redux';
-import ReactTooltip from 'react-tooltip';
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 import { update } from '../store/settings/settings';
 import LabeledCheckbox from '../components/common/LabeledCheckbox';
 import TabbedCard from '../components/common/TabbedCard';
