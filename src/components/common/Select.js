@@ -28,7 +28,7 @@ export default function Select({ className, onSelect, options = [], value, disab
         } px-4 py-2 ${selectOpen && 'rounded-b-none'}`}
         onClick={disabled ? undefined : toggleDropdown}
       >
-        {selected.icon && <img className='mr-2' src={selected.icon} alt={selected.label} />}
+        {selected.icon && <img className='mr-2 w-4' src={selected.icon} alt={selected.label} />}
         <p className='grow mr-2'>{selected.label}</p>
         <span className='icon-base'>{selectOpen ? 'keyboard_arrow_up' : 'keyboard_arrow_down'}</span>
       </div>
@@ -40,7 +40,7 @@ export default function Select({ className, onSelect, options = [], value, disab
               onClick={() => selectFromDropdown(option)}
               key={option.label}
             >
-              {option.icon && <img className='mr-2' src={option.icon} alt={option.label} />}
+              {option.icon && <img className='mr-2 w-4' src={option.icon} alt={option.label} />}
               <p key={option.label}>{option.label}</p>
             </div>
           ))}

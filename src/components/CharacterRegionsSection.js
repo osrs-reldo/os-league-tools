@@ -81,7 +81,7 @@ export default function CharacterRegionsSection({ unlockedRegions, taskStats }) 
 function RegionFakeSelect({ region, onEdit }) {
   return (
     <div key={region.id} className='text-center text-accent text-lg small-caps flex items-center gap-1'>
-      <img src={region.icon} alt='' />
+      <img width={16} src={region.icon} alt='' />
       {region.label}
       {!!onEdit && (
         <span className='icon-xs cursor-pointer' onClick={onEdit}>
