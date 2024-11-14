@@ -2,6 +2,9 @@
   "name": "os-league-tools",
   "homepage": "http://www.osleague.tools",
   "version": "1.0.0",
+  "engines": {
+    "node": "20.x"
+  },
   "private": true,
   "scripts": {
     "start": "node scripts/start.js",
