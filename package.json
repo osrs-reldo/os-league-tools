@@ -7,7 +7,7 @@
   },
   "private": true,
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "NODE_ENV=production node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "build:styles": "postcss src/styles/index.css -o src/styles/compiled.css",
