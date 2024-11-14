@@ -24,7 +24,7 @@ To build and start up locally, run:
 
 ```
 npm install
-npm start
+npm run dev
 ```
 
 and open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -33,7 +33,7 @@ and open [http://localhost:3000](http://localhost:3000) to view it in the browse
 
 All styling is done using [TailwindCSS](https://tailwindcss.com/docs) utility classes. Unused CSS classes are pruned by tailwind's preprocessor, so if you add any classes that don't already exist somewhere in the project, you'll need to regenerate the compiled CSS to see it reflected in the site.
 
-Styles are always regenerated during the build step, or you can manually regenerate them with:
+Styles are always regenerated during the dev build step, or you can manually regenerate them with:
 
 ```
 npm run build:styles
