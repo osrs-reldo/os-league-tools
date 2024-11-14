@@ -52,34 +52,62 @@ function RedirectWithToast({ message, to }) {
 }
 
 function AppRoutes({ isAuthenticated, setIsAuthenticated }) {
-  if (!isAuthenticated) {
-    return (
-      <Routes>
-        <Route path='/login' element={<Login setIsAuthenticated={setIsAuthenticated} />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='*' element={<Login setIsAuthenticated={setIsAuthenticated} />} />
-      </Routes>
-    );
-  }
-
   return (
     <Routes>
-      {/* Redirect authenticated users away from /login and /register with a toast */}
-      <Route path='/login' element={<RedirectWithToast message="You're already logged in" to='/' />} />
-      <Route path='/register' element={<RedirectWithToast message="You don't need to do that!" to='/' />} />
-
-      {/* Authenticated Routes */}
+      {/* Public Routes (accessible to everyone) */}
       <Route path='/' element={<Homepage />} />
-      <Route path='stats' element={<Statistics />} />
-      <Route path='news' element={<Homepage />} />
-      <Route path='tracker' element={<Tracker />} />
-      <Route path='tracker/:character' element={<ViewCharacter />} />
-      <Route path='calculators' element={<Calculators />}>
-        <Route path=':skill' element={<Calculators />} />
-      </Route>
-      <Route path='about' element={<About />} />
-      <Route path='settings' element={<Settings />} />
-      <Route path='faq' element={<Faq />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/faq' element={<Faq />} />
+      <Route path='/register' element={<Register />} />
+      <Route path='/stats' element={<Statistics />} />
+      <Route path='/news' element={<Homepage />} />
+      <Route
+        path='/login'
+        element={
+          !isAuthenticated ? (
+            <Login setIsAuthenticated={setIsAuthenticated} />
+          ) : (
+            <RedirectWithToast message="You're already logged in" to='/' />
+          )
+        }
+      />
+
+      {/* Private Routes (require authentication) */}
+      <Route
+        path='/tracker'
+        element={
+          isAuthenticated ? <Tracker /> : <RedirectWithToast message='Please log in to access this page' to='/login' />
+        }
+      />
+      <Route
+        path='/tracker/:character'
+        element={
+          isAuthenticated ? (
+            <ViewCharacter />
+          ) : (
+            <RedirectWithToast message='Please log in to access this page' to='/login' />
+          )
+        }
+      />
+      <Route
+        path='/calculators'
+        element={
+          isAuthenticated ? (
+            <Calculators />
+          ) : (
+            <RedirectWithToast message='Please log in to access this page' to='/login' />
+          )
+        }
+      />
+      <Route
+        path='/settings'
+        element={
+          isAuthenticated ? <Settings /> : <RedirectWithToast message='Please log in to access this page' to='/login' />
+        }
+      />
+
+      {/* Catch-all Route */}
+      <Route path='*' element={<RedirectWithToast message='Page not found' to='/' />} />
     </Routes>
   );
 }
@@ -88,8 +116,21 @@ export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(Boolean(localStorage.getItem('authToken')));
 
   useEffect(() => {
-    const token = localStorage.getItem('authToken');
-    setIsAuthenticated(!!token);
+    const handleStorageChange = () => {
+      const token = localStorage.getItem('authToken');
+      setIsAuthenticated(!!token);
+    };
+
+    // Listen for changes in `authToken` across tabs/windows
+    window.addEventListener('storage', handleStorageChange);
+
+    // Initial load check
+    handleStorageChange();
+
+    // Cleanup listener on unmount
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
   }, []);
 
   return (

@@ -11,6 +11,7 @@ import ManageData from './nav/ManageData';
 import Feedback from './nav/Feedback';
 import Character from './nav/Character';
 import ManageCharactersModal from './ManageCharactersModal';
+import ModalAccountsManagement from './Modal_AccountManagement';
 import { useAuth } from '../AuthContext';
 
 export default function PageWrapper({ children }) {
@@ -19,7 +20,8 @@ export default function PageWrapper({ children }) {
   const [isFeedbackModalOpen, setFeedbackModalOpen] = useState(false);
   const [isCharacterModalOpen, setCharacterModalOpen] = useState(false);
   const [manageDataModalType, setManageDataModalType] = useQueryString('open');
-
+  const [accountsModalOpen, setAccountsModalOpen] = useState(false);
+  const username = localStorage.getItem('username') || 'Guest';
   const { logout } = useAuth();
 
   const navItems = [
@@ -30,15 +32,32 @@ export default function PageWrapper({ children }) {
       () => <Character.NavBarItem key='character' setCharacterModalOpen={setCharacterModalOpen} />,
       () => <Character.CollapsedMenu key='character' setCharacterModalOpen={setCharacterModalOpen} />
     ),
+    new NavItem('Account Management', 'secondary', 1, 1).withCustomRenderFn(
+      () => (
+        <button
+          key='account-management'
+          type='button' // Specify type to prevent errors
+          onClick={() => setAccountsModalOpen(true)}
+          className='nav-item-button text-primary-alt px-3 py-2 block bg-hover align-middle' // Adjust styling as needed
+        >
+          Logged in as: {username}
+        </button>
+      ),
+      () => (
+        <button
+          key='account-management'
+          type='button'
+          onClick={() => setAccountsModalOpen(true)}
+          className='nav-item-button text-primary-alt px-3 py-2 block bg-hover align-middle'
+        >
+          Logged in as: {username}
+        </button>
+      )
+    ),
     new NavItem('Import', 'secondary', 2, 0).withCustomRenderFn(
       () => <ManageData.NavBarItem key='manage' setManageDataModalType={setManageDataModalType} />,
       () => <ManageData.CollapsedMenu key='manage' setManageDataModalType={setManageDataModalType} />
     ),
-    // TODO re-enable user login
-    // new NavItem('Login', 'secondary', 3, 0).withCustomRenderFn(
-    //   () => <AuthButton.NavBarItem key='login' />,
-    //   () => <AuthButton.CollapsedMenu key='login' />
-    // ),
     new NavItem('Login', 'overflow', 3, 1).withRouterLink('/login').withIconFont('account_circle'),
     new NavItem('Register', 'overflow', 3, 1).withRouterLink('/register').withIconFont('person_add'),
     new NavItem('Settings', 'overflow', 3, 1).withRouterLink('/settings').withIconFont('settings'),
@@ -58,7 +77,7 @@ export default function PageWrapper({ children }) {
     new NavItem('Logout', 'overflow', 4, 6).withCustomRenderFn(() => (
       <button type='button' onClick={logout} className='text-primary-alt px-3 py-2 block bg-hover align-middle'>
         <LogoutIcon />
-        <span className='ml-1'>Logout</span> {/* Logout text */}
+        <span className='ml-1'>Logout</span>
       </button>
     )),
   ];
@@ -72,6 +91,7 @@ export default function PageWrapper({ children }) {
         {children}
         <FeedbackModal isOpen={isFeedbackModalOpen} setIsOpen={val => setFeedbackModalOpen(val)} />
         <ManageCharactersModal isOpen={isCharacterModalOpen} setIsOpen={val => setCharacterModalOpen(val)} />
+        <ModalAccountsManagement isOpen={accountsModalOpen} setIsOpen={setAccountsModalOpen} />
         <ManageDataModal
           variant={manageDataModalType}
           isOpen={!!manageDataModalType}

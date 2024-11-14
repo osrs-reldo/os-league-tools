@@ -13,6 +13,7 @@ export default function Login({ setIsAuthenticated }) {
       const data = await login(username, password);
       if (data.success) {
         localStorage.setItem('authToken', data.token);
+        localStorage.setItem('username', data.username); // Store the username
         setIsAuthenticated(true);
       } else {
         setError('Invalid credentials');
