@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga4';
-import { Auth0Provider } from '@auth0/auth0-react';
+import { Auth0Provider, useAuth0 } from '@auth0/auth0-react';
 import './styles/compiled.css';
 import { Provider } from 'react-redux';
 import { ErrorBoundary } from 'react-error-boundary';
@@ -16,6 +16,7 @@ import Statistics from './pages/Statistics';
 import Calculators from './pages/Calculators';
 import Faq from './pages/Faq';
 import ViewCharacter from './pages/ViewCharacter';
+import Login from './pages/Login';
 import { submitRenderError } from './client/feedback-client';
 import { ErrorPage } from './components/common/util/ErrorBoundary';
 
@@ -38,6 +39,36 @@ history.listen(() => {
     });
   }
 });
+
+function AppRoutes() {
+  const { isAuthenticated, isLoading } = useAuth0();
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <Routes>
+      {!isAuthenticated ? (
+        <Route path='*' element={<Login />} />
+      ) : (
+        <>
+          <Route path='/' element={<Homepage />} />
+          <Route path='stats' element={<Statistics />} />
+          <Route path='news' element={<Homepage />} />
+          <Route path='tracker' element={<Tracker />} />
+          <Route path='tracker/:character' element={<ViewCharacter />} />
+          <Route path='calculators' element={<Calculators />}>
+            <Route path=':skill' element={<Calculators />} />
+          </Route>
+          <Route path='about' element={<About />} />
+          <Route path='settings' element={<Settings />} />
+          <Route path='faq' element={<Faq />} />
+        </>
+      )}
+    </Routes>
+  );
+}
 
 export default function App() {
   useEffect(() => {
@@ -62,19 +93,7 @@ export default function App() {
               audience='https://dev-u4mby-kt.us.auth0.com/api/v2/'
             >
               <ErrorBoundary FallbackComponent={ErrorPage} onError={submitRenderError}>
-                <Routes>
-                  <Route path='/' element={<Homepage />} />
-                  <Route path='stats' element={<Statistics />} />
-                  <Route path='news' element={<Homepage />} />
-                  <Route path='tracker' element={<Tracker />} />
-                  <Route path='tracker/:character' element={<ViewCharacter />} />
-                  <Route path='calculators' element={<Calculators />}>
-                    <Route path=':skill' element={<Calculators />} />
-                  </Route>
-                  <Route path='about' element={<About />} />
-                  <Route path='settings' element={<Settings />} />
-                  <Route path='faq' element={<Faq />} />
-                </Routes>
+                <AppRoutes />
               </ErrorBoundary>
             </Auth0Provider>
           </BrowserRouter>

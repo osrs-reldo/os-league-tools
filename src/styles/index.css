@@ -64,6 +64,13 @@
     @apply re-light:text-re-purple re-dark:text-re-blue;
     @apply mono-light:text-mono-white mono-dark:text-mono-dark;
   }
+
+  /* Wasted time trying to understand UX elements, temporarily bypass with inheritance break */
+  .reset-inheritance {
+    all: revert;
+    color: #000000;
+  }
+
   .text-success {
     @apply text-green-600 dark:text-green-500;
   }
