@@ -25,7 +25,7 @@ export default function Login({ setIsAuthenticated }) {
   return (
     <PageWrapper>
       <div className='flex justify-center items-center min-h-screen bg-primary '>
-        <div className='reset-inheritance p-6 rounded shadow-md w-full max-w-md bg-accent'>
+        <div className='p-6 rounded shadow-md w-full max-w-md bg-accent'>
           <h2 className='text-2xl font-bold mb-4 text-center'>Login</h2>
           <form onSubmit={handleLogin}>
             <div className='mb-4'>
@@ -38,7 +38,7 @@ export default function Login({ setIsAuthenticated }) {
                   onChange={e => setUsername(e.target.value)}
                   required
                   style={{ color: '#000000' }} // Couldn't quickly discern css inheritance/layouts, hard set to black
-                  className='reset-inheritance mt-1 p-2 w-full border rounded'
+                  className='text-area mt-1 p-2 w-full border rounded'
                 />
               </label>
             </div>
@@ -52,12 +52,12 @@ export default function Login({ setIsAuthenticated }) {
                   onChange={e => setPassword(e.target.value)}
                   required
                   style={{ color: '#000000' }} // Couldn't quickly discern css inheritance/layouts, hard set to black
-                  className='mt-1 p-2 w-full border rounded'
+                  className=' mt-1 p-2 w-full border rounded'
                 />
               </label>
             </div>
             {error && <p className='text-red-500 text-sm'>{error}</p>}
-            <button type='submit' className='w-full p-2 bg-blue-600 text-white rounded hover:bg-blue-700'>
+            <button type='submit' className='w-full p-2 bg-secondary'>
               Login
             </button>
           </form>

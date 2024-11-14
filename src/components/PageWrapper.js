@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
+import LogoutIcon from '@mui/icons-material/Logout';
 import Page from './common/Page';
 import NavBar, { NavItem } from './common/NavBar';
 import FeedbackModal from './FeedbackModal';
@@ -10,6 +11,7 @@ import ManageData from './nav/ManageData';
 import Feedback from './nav/Feedback';
 import Character from './nav/Character';
 import ManageCharactersModal from './ManageCharactersModal';
+import { useAuth } from '../AuthContext';
 
 export default function PageWrapper({ children }) {
   const theme = useSelector(state => state.settings.theme);
@@ -17,6 +19,8 @@ export default function PageWrapper({ children }) {
   const [isFeedbackModalOpen, setFeedbackModalOpen] = useState(false);
   const [isCharacterModalOpen, setCharacterModalOpen] = useState(false);
   const [manageDataModalType, setManageDataModalType] = useQueryString('open');
+
+  const { logout } = useAuth();
 
   const navItems = [
     new NavItem('Stats', 'primary', 0, 0).withRouterLink('/stats').withIconFont('query_stats'),
@@ -35,6 +39,8 @@ export default function PageWrapper({ children }) {
     //   () => <AuthButton.NavBarItem key='login' />,
     //   () => <AuthButton.CollapsedMenu key='login' />
     // ),
+    new NavItem('Login', 'overflow', 3, 1).withRouterLink('/login').withIconFont('account_circle'),
+    new NavItem('Register', 'overflow', 3, 1).withRouterLink('/register').withIconFont('person_add'),
     new NavItem('Settings', 'overflow', 3, 1).withRouterLink('/settings').withIconFont('settings'),
     new NavItem('Discord', 'overflow', 4, 0).withHref('https://discord.gg/GQ5kVyU', '_blank').withIconFont('discord'),
     new NavItem('Feedback', 'overflow', 4, 1).withCustomRenderFn(
@@ -49,6 +55,12 @@ export default function PageWrapper({ children }) {
       .withIconFont('savings'),
     new NavItem('FAQ', 'overflow', 4, 4).withRouterLink('/faq').withIconFont('help_outline'),
     new NavItem('About', 'overflow', 4, 5).withRouterLink('/about').withIconFont('info'),
+    new NavItem('Logout', 'overflow', 4, 6).withCustomRenderFn(() => (
+      <button type='button' onClick={logout} className='text-primary-alt px-3 py-2 block bg-hover align-middle'>
+        <LogoutIcon />
+        <span className='ml-1'>Logout</span> {/* Logout text */}
+      </button>
+    )),
   ];
 
   return (

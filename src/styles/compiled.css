@@ -828,10 +828,16 @@ body:is(.dark *) {
 
 /* Wasted time trying to understand UX elements, temporarily bypass with inheritance break */
 
-.reset-inheritance {
-    all: revert;
-    color: #000000; 
-  }
+/* coudln't get this icon to play nice with onclick stuffin logout */
+
+/* fallback */
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v142/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
 
 .text-success {
   --tw-text-opacity: 1;
@@ -2129,11 +2135,17 @@ select[multiple]:focus option:checked {
 .invisible {
   visibility: hidden;
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
 .relative {
   position: relative;
+}
+.left-0 {
+  left: 0px;
 }
 .right-0 {
   right: 0px;
@@ -2446,6 +2458,9 @@ select[multiple]:focus option:checked {
 .max-w-md {
   max-width: 28rem;
 }
+.max-w-sm {
+  max-width: 24rem;
+}
 .shrink {
   flex-shrink: 1;
 }
@@ -2591,6 +2606,11 @@ select[multiple]:focus option:checked {
 .gap-x-1 {
   column-gap: 0.25rem;
 }
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -2686,9 +2706,16 @@ select[multiple]:focus option:checked {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
-.bg-blue-600 {
+.bg-gray-900 {
   --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-opacity-75 {
+  --tw-bg-opacity: 0.75;
 }
 .object-cover {
   object-fit: cover;
@@ -2916,6 +2943,14 @@ select[multiple]:focus option:checked {
   --tw-bg-opacity: 1;
   background-color: rgb(82 82 91 / var(--tw-bg-opacity));
 }
+.hover\:text-secondary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.hover\:text-secondary:hover:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(228 228 231 / var(--tw-text-opacity));
+}
 @media (min-width: 1280px) {
   .xl\:bg-primary {
     --tw-bg-opacity: 1;
@@ -2959,10 +2994,6 @@ select[multiple]:focus option:checked {
 .last\:rounded-b:last-child {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
-}
-.hover\:bg-blue-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 .hover\:underline:hover {
   text-decoration-line: underline;
