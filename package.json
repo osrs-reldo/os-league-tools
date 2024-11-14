@@ -3,11 +3,11 @@
   "homepage": "http://www.osleague.tools",
   "version": "1.0.0",
   "engines": {
-    "node": ">=20.x <=23.x"
+    "node": ">=20.x <=22.x"
   },
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=production node scripts/start.js",
+    "start": "serve -s build",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "build:styles": "postcss src/styles/index.css -o src/styles/compiled.css",
@@ -22,6 +22,7 @@
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
     "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.26.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@reduxjs/toolkit": "^2.3.0",
     "@svgr/webpack": "^5.5.0",
@@ -95,6 +96,7 @@
     "resolve-url-loader": "^5.0.0",
     "sass-loader": "^12.3.0",
     "semver": "^7.3.5",
+    "serve": "^14.2.4",
     "source-map-loader": "^3.0.0",
     "style-loader": "^3.3.1",
     "tailwindcss": "^3.0.2",
