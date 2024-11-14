@@ -252,7 +252,8 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 
 abbr:where([title]) {
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /*
@@ -1213,7 +1214,8 @@ body:is(.dark *) {
   background-repeat: no-repeat;
   background-size: 1.5em 1.5em;
   padding-right: 2.5rem;
-  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
 }
 .form-select:where([size]:not([size="1"])) {
   background-image: initial;
@@ -1221,7 +1223,8 @@ body:is(.dark *) {
   background-repeat: unset;
   background-size: initial;
   padding-right: 0.75rem;
-  print-color-adjust: unset;
+  -webkit-print-color-adjust: unset;
+          print-color-adjust: unset;
 }
 /* LAYOUT */
 .page-wrapper {
@@ -2330,7 +2333,6 @@ select[multiple]:focus option:checked {
   height: auto;
 }
 .h-fit {
-  height: -moz-fit-content;
   height: fit-content;
 }
 .h-full {
@@ -2397,7 +2399,6 @@ select[multiple]:focus option:checked {
   width: 50rem;
 }
 .w-fit {
-  width: -moz-fit-content;
   width: fit-content;
 }
 .w-full {

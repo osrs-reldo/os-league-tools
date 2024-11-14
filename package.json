@@ -3,7 +3,7 @@
   "homepage": "http://www.osleague.tools",
   "version": "1.0.0",
   "engines": {
-    "node": ">=20.x"
+    "node": ">=20.x <=23.x"
   },
   "private": true,
   "scripts": {
