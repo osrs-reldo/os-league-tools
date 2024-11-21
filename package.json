@@ -32,6 +32,7 @@
     "lodash": "^4.17.21",
     "match-sorter": "^6.3.1",
     "memoizee": "^0.4.17",
+    "pg": "^8.13.1",
     "query-string": "^7.0.1",
     "react": "^18.3.1",
     "react-charts": "^3.0.0-beta.54",

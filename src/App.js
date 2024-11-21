@@ -22,6 +22,7 @@ import ViewCharacter from './pages/ViewCharacter';
 import { submitRenderError } from './client/feedback-client';
 import { ErrorPage } from './components/common/util/ErrorBoundary';
 import { AuthProvider } from './AuthContext';
+import DebugPage from './pages/DebugPage';
 
 const history = createBrowserHistory();
 const trackingId = process.env.REACT_APP_GA_MID;
@@ -61,6 +62,7 @@ function AppRoutes({ isAuthenticated, setIsAuthenticated }) {
       <Route path='/register' element={<Register />} />
       <Route path='/stats' element={<Statistics />} />
       <Route path='/news' element={<Homepage />} />
+      <Route path='/debug' element={<DebugPage />} />
       <Route
         path='/login'
         element={

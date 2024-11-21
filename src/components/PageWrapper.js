@@ -9,7 +9,6 @@ import images from '../assets/images';
 import useQueryString from '../hooks/useQueryString';
 import ManageData from './nav/ManageData';
 import Feedback from './nav/Feedback';
-import Character from './nav/Character';
 import ManageCharactersModal from './ManageCharactersModal';
 import ModalAccountsManagement from './Modal_AccountManagement';
 import { useAuth } from '../AuthContext';
@@ -23,24 +22,22 @@ export default function PageWrapper({ children }) {
   const [accountsModalOpen, setAccountsModalOpen] = useState(false);
   const username = localStorage.getItem('username') || 'Guest';
   const { logout } = useAuth();
+  const characterState = useSelector(state => state.character);
+  const activeCharacterName = characterState.characters[characterState.activeCharacter];
 
   const navItems = [
     new NavItem('Stats', 'primary', 0, 0).withRouterLink('/stats').withIconFont('query_stats'),
     new NavItem('Trackers', 'primary', 0, 1).withRouterLink('/tracker').withIconFont('checklist_rtl'),
     new NavItem('Calculators', 'primary', 0, 2).withRouterLink('/calculators').withIconFont('calculate'),
-    new NavItem('Character', 'secondary', 1, 0).withCustomRenderFn(
-      () => <Character.NavBarItem key='character' setCharacterModalOpen={setCharacterModalOpen} />,
-      () => <Character.CollapsedMenu key='character' setCharacterModalOpen={setCharacterModalOpen} />
-    ),
     new NavItem('Account Management', 'secondary', 1, 1).withCustomRenderFn(
       () => (
         <button
           key='account-management'
-          type='button' // Specify type to prevent errors
+          type='button'
           onClick={() => setAccountsModalOpen(true)}
           className='nav-item-button text-primary-alt px-3 py-2 block bg-hover align-middle' // Adjust styling as needed
         >
-          Logged in as: {username}
+          Logged in: {activeCharacterName || <span className='text-red-500 font-bold'>No character set!</span>}
         </button>
       ),
       () => (
@@ -50,7 +47,7 @@ export default function PageWrapper({ children }) {
           onClick={() => setAccountsModalOpen(true)}
           className='nav-item-button text-primary-alt px-3 py-2 block bg-hover align-middle'
         >
-          Logged in as: {username}
+          Logged in: {username} managing {activeCharacterName || 'Guest'}
         </button>
       )
     ),

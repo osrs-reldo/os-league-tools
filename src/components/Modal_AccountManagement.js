@@ -18,7 +18,7 @@ export default function ModalAccountsManagement({ isOpen, setIsOpen, initialAddM
   const dispatch = useDispatch();
 
   // Assume `username` is stored in localStorage or Redux
-  const username = localStorage.getItem('username') || 'User'; // Replace with Redux selector if needed
+  const username = localStorage.getItem('username') || 'N/A'; // Replace with Redux selector if needed
 
   const setActiveCharacter = index => {
     const rsn = characterState.characters[index];

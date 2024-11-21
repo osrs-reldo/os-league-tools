@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 import login from '../api/login';
 import PageWrapper from '../components/PageWrapper';
 
@@ -6,6 +9,7 @@ export default function Login({ setIsAuthenticated }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleLogin = async e => {
     e.preventDefault();
@@ -15,6 +19,8 @@ export default function Login({ setIsAuthenticated }) {
         localStorage.setItem('authToken', data.token);
         localStorage.setItem('username', data.username); // Store the username
         setIsAuthenticated(true);
+        navigate('/');
+        toast.info('Successfully logged in!', { autoClose: 3000 });
       } else {
         setError('Invalid credentials');
       }

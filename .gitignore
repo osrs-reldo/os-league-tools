@@ -33,3 +33,6 @@ yarn-error.log*
 
 # VSCode Settings
 /.vscode
+
+# Scratch folder
+/scratch
