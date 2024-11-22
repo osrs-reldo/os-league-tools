@@ -10,6 +10,7 @@ const INITIAL_STATE = {
     isLoggedIn: false,
     userEmail: undefined,
     accessToken: undefined,
+    displayNames: [], // Initialize displayNames
   },
 };
 
@@ -21,6 +22,7 @@ export const accountSlice = createSlice({
       state.accountCache.isLoggedIn = action.payload.isAuthenticated;
       state.accountCache.userEmail = action.payload.isAuthenticated ? action.payload.user.email : undefined;
       state.accountCache.accessToken = action.payload.isAuthenticated ? action.payload.accessToken : undefined;
+      state.accountCache.displayNames = action.payload.displayNames || []; // Update display names
     },
     reset: () => INITIAL_STATE,
   },

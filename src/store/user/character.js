@@ -14,9 +14,11 @@ export const characterSlice = createSlice({
       state.activeCharacter = action.payload;
     },
     addCharacter: (state, action) => {
-      state.characters.push(action.payload.rsn);
-      if (action.payload.setActive) {
-        state.activeCharacter = state.characters.length - 1;
+      if (!state.characters.includes(action.payload.rsn)) {
+        state.characters.push(action.payload.rsn); // Add character if not already in the list
+        if (action.payload.setActive) {
+          state.activeCharacter = state.characters.length - 1; // Set as active
+        }
       }
     },
     deleteCharacter: (state, action) => {
