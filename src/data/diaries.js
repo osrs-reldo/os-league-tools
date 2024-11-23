@@ -13,7 +13,7 @@ const DIARY_TASKS = [
   {
     id: 1,
     task: 'Enter the Combat Training Camp north of West Ardougne.',
-    questReqs: ['335'],
+    questReqs: ['9'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -40,7 +40,7 @@ const DIARY_TASKS = [
   {
     id: 4,
     task: 'Have Wizard Cromperty teleport you to the Rune essence mine.',
-    questReqs: ['314'],
+    questReqs: ['125'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -94,7 +94,7 @@ const DIARY_TASKS = [
   {
     id: 10,
     task: 'Enter the unicorn pen in Ardougne Zoo using Fairy rings.',
-    questReqs: ['360'],
+    questReqs: ['47'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -125,7 +125,7 @@ const DIARY_TASKS = [
   {
     id: 13,
     task: 'Cast the Ardougne Teleport spell.',
-    questReqs: ['407'],
+    questReqs: ['109'],
     skillReqs: [{ skill: 'Magic', level: 51 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -134,7 +134,7 @@ const DIARY_TASKS = [
   {
     id: 14,
     task: 'Travel to Castle Wars by Hot Air Balloon.',
-    questReqs: ['357'],
+    questReqs: ['42'],
     skillReqs: [{ skill: 'Firemaking', level: 50 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -143,7 +143,7 @@ const DIARY_TASKS = [
   {
     id: 15,
     task: 'Claim buckets of sand from Bert in Yanille.',
-    questReqs: ['377'],
+    questReqs: ['69'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -152,7 +152,7 @@ const DIARY_TASKS = [
   {
     id: 16,
     task: 'Catch any fish on the Fishing Platform.',
-    questReqs: ['420'],
+    questReqs: ['127'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -170,7 +170,7 @@ const DIARY_TASKS = [
   {
     id: 18,
     task: 'Collect some cave nightshade from the Skavid caves.',
-    questReqs: ['445'],
+    questReqs: ['157'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -179,7 +179,7 @@ const DIARY_TASKS = [
   {
     id: 19,
     task: 'Kill a swordchick in the Tower of Life.',
-    questReqs: ['437'],
+    questReqs: ['149'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -188,7 +188,7 @@ const DIARY_TASKS = [
   {
     id: 20,
     task: "Equip an Iban's upgraded staff or upgrade an Iban's staff.",
-    questReqs: ['442'],
+    questReqs: ['154'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -197,7 +197,7 @@ const DIARY_TASKS = [
   {
     id: 21,
     task: 'Visit the island east of the Necromancer Tower.',
-    questReqs: ['360'],
+    questReqs: ['47'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -206,7 +206,7 @@ const DIARY_TASKS = [
   {
     id: 22,
     task: "Recharge some jewellery at the Totem pole in the Legends' Guild.",
-    questReqs: ['3145'],
+    questReqs: ['85'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -233,7 +233,7 @@ const DIARY_TASKS = [
   {
     id: 25,
     task: "Have a zookeeper put you in Ardougne Zoo's monkey cage.",
-    questReqs: ['395'],
+    questReqs: ['95'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -242,7 +242,7 @@ const DIARY_TASKS = [
   {
     id: 26,
     task: 'Teleport to the Watchtower .',
-    questReqs: ['445'],
+    questReqs: ['157'],
     skillReqs: [{ skill: 'Magic', level: 58 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -305,7 +305,7 @@ const DIARY_TASKS = [
   {
     id: 33,
     task: 'Craft some death runes from essence.',
-    questReqs: ['3147'],
+    questReqs: ['99'],
     skillReqs: [{ skill: 'Runecraft', level: 65 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -323,7 +323,7 @@ const DIARY_TASKS = [
   {
     id: 35,
     task: 'Cast Ice Barrage on another player within Castle Wars.',
-    questReqs: ['345'],
+    questReqs: ['27'],
     skillReqs: [{ skill: 'Magic', level: 94 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -384,7 +384,7 @@ const DIARY_TASKS = [
   {
     id: 41,
     task: 'Imbue a salve amulet at Nightmare Zone, or equip a salve amulet(i) that was imbued there.',
-    questReqs: ['378'],
+    questReqs: ['84'],
     skillReqs: [],
     otherReqs: ['800,000 Nightmare Zone points'],
     location: DIARY_LOCATIONS.ARDOUGNE,
@@ -465,7 +465,7 @@ const DIARY_TASKS = [
   {
     id: 50,
     task: 'Open the sarcophagus in the first room of Pyramid Plunder.',
-    questReqs: ['383'],
+    questReqs: ['75'],
     skillReqs: [{ skill: 'Thieving', level: 21 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.DESERT,
@@ -528,7 +528,7 @@ const DIARY_TASKS = [
   {
     id: 57,
     task: 'Travel to Uzer via magic carpet.',
-    questReqs: ['373'],
+    questReqs: ['65'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.DESERT,
@@ -537,7 +537,7 @@ const DIARY_TASKS = [
   {
     id: 58,
     task: 'Travel to the desert via the Eagle transport system.',
-    questReqs: ['353'],
+    questReqs: ['37'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.DESERT,
@@ -546,7 +546,7 @@ const DIARY_TASKS = [
   {
     id: 59,
     task: 'Pray at the Elidinis Statuette in Nardah.',
-    questReqs: ['427'],
+    questReqs: ['139'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.DESERT,
@@ -564,7 +564,7 @@ const DIARY_TASKS = [
   {
     id: 61,
     task: "Teleport to Enakhra's Temple with the Camulet.",
-    questReqs: ['356'],
+    questReqs: ['40'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.DESERT,
@@ -573,7 +573,7 @@ const DIARY_TASKS = [
   {
     id: 62,
     task: 'Visit the genie.',
-    questReqs: ['427'],
+    questReqs: ['139'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.DESERT,
@@ -618,7 +618,7 @@ const DIARY_TASKS = [
   {
     id: 67,
     task: 'Refill your waterskins in the Desert using Lunar spells.',
-    questReqs: ['349'],
+    questReqs: ['33'],
     skillReqs: [{ skill: 'Magic', level: 68 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.DESERT,
@@ -645,7 +645,7 @@ const DIARY_TASKS = [
   {
     id: 70,
     task: 'Slay a Dust devil in the desert cave with a Slayer helmet equipped.',
-    questReqs: ['345'],
+    questReqs: ['27'],
     skillReqs: [
       { skill: 'Slayer', level: 65 },
       { skill: 'Defence', level: 10 },
@@ -657,7 +657,7 @@ const DIARY_TASKS = [
   {
     id: 71,
     task: 'Activate Ancient Magicks at the altar in the Ancient Pyramid.',
-    questReqs: ['345'],
+    questReqs: ['27'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.DESERT,
@@ -666,7 +666,7 @@ const DIARY_TASKS = [
   {
     id: 72,
     task: 'Defeat a locust rider with Keris.',
-    questReqs: ['339'],
+    questReqs: ['16'],
     skillReqs: [{ skill: 'Attack', level: 50 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.DESERT,
@@ -702,7 +702,7 @@ const DIARY_TASKS = [
   {
     id: 76,
     task: 'Cast Ice Barrage against a foe in the Desert.',
-    questReqs: ['345'],
+    questReqs: ['27'],
     skillReqs: [{ skill: 'Magic', level: 94 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.DESERT,
@@ -720,7 +720,7 @@ const DIARY_TASKS = [
   {
     id: 78,
     task: 'Speak to the Kq head in your POH.',
-    questReqs: ['408'],
+    questReqs: ['111'],
     skillReqs: [{ skill: 'Construction', level: 78 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.DESERT,
@@ -729,7 +729,7 @@ const DIARY_TASKS = [
   {
     id: 79,
     task: 'Steal from the Grand Gold Chest in the final room of Pyramid Plunder.',
-    questReqs: ['383'],
+    questReqs: ['75'],
     skillReqs: [{ skill: 'Thieving', level: 91 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.DESERT,
@@ -738,7 +738,7 @@ const DIARY_TASKS = [
   {
     id: 80,
     task: 'Restore at least 85 Prayer points when praying at the altar in Sophanem.',
-    questReqs: ['383'],
+    questReqs: ['75'],
     skillReqs: [{ skill: 'Prayer', level: 85 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.DESERT,
@@ -837,7 +837,7 @@ const DIARY_TASKS = [
   {
     id: 91,
     task: "Smith some Blurite limbs on Doric's anvil.",
-    questReqs: ['3138', '308'],
+    questReqs: ['30', '83'],
     skillReqs: [
       { skill: 'Mining', level: 10 },
       { skill: 'Smithing', level: 13 },
@@ -885,7 +885,7 @@ const DIARY_TASKS = [
   {
     id: 96,
     task: 'Kill a Mogre at Mudskipper Point.',
-    questReqs: ['3153'],
+    questReqs: ['135'],
     skillReqs: [{ skill: 'Slayer', level: 32 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FALADOR,
@@ -894,7 +894,7 @@ const DIARY_TASKS = [
   {
     id: 97,
     task: 'Visit the Port Sarim Rat Pits.',
-    questReqs: ['412'],
+    questReqs: ['116'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.FALADOR,
@@ -925,7 +925,7 @@ const DIARY_TASKS = [
   {
     id: 100,
     task: 'Pray at the Altar of Guthix in Taverley whilst wearing full Initiate armour.',
-    questReqs: ['414'],
+    questReqs: ['118'],
     skillReqs: [
       { skill: 'Prayer', level: 10 },
       { skill: 'Defence', level: 20 },
@@ -1045,7 +1045,7 @@ const DIARY_TASKS = [
   {
     id: 112,
     task: "Kill the blue dragon under the Heroes' Guild.",
-    questReqs: ['3142'],
+    questReqs: ['72'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.FALADOR,
@@ -1063,7 +1063,7 @@ const DIARY_TASKS = [
   {
     id: 114,
     task: 'Recharge your Prayer in the Port Sarim church while wearing full Proselyte.',
-    questReqs: ['425'],
+    questReqs: ['136'],
     skillReqs: [{ skill: 'Defence', level: 30 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FALADOR,
@@ -1081,7 +1081,7 @@ const DIARY_TASKS = [
   {
     id: 116,
     task: 'Equip a Dwarven helmet within the Dwarven Mines.',
-    questReqs: ['376'],
+    questReqs: ['68'],
     skillReqs: [{ skill: 'Defence', level: 50 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FALADOR,
@@ -1099,7 +1099,7 @@ const DIARY_TASKS = [
   {
     id: 118,
     task: 'Purchase a white 2h sword from Sir Vyvin.',
-    questReqs: ['444'],
+    questReqs: ['156'],
     skillReqs: [],
     otherReqs: ['Rank of White Knight Master (1300 black knight kills)'],
     location: DIARY_LOCATIONS.FALADOR,
@@ -1156,7 +1156,7 @@ const DIARY_TASKS = [
   {
     id: 124,
     task: "Change your boots at Yrsa's Shoe Store.",
-    questReqs: ['368'],
+    questReqs: ['57'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1174,7 +1174,7 @@ const DIARY_TASKS = [
   {
     id: 126,
     task: 'Craft a tiara from scratch in Rellekka.',
-    questReqs: ['368'],
+    questReqs: ['57'],
     skillReqs: [
       { skill: 'Crafting', level: 23 },
       { skill: 'Mining', level: 20 },
@@ -1187,7 +1187,7 @@ const DIARY_TASKS = [
   {
     id: 127,
     task: "Browse the Stonemason's shop.",
-    questReqs: ['372'],
+    questReqs: ['63'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1196,7 +1196,7 @@ const DIARY_TASKS = [
   {
     id: 128,
     task: 'Collect 5 snape grass on Waterbirth Island.',
-    questReqs: ['368'],
+    questReqs: ['57'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1205,7 +1205,7 @@ const DIARY_TASKS = [
   {
     id: 129,
     task: "Steal from the Keldagrim crafting or baker's stall.",
-    questReqs: ['372'],
+    questReqs: ['63'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1223,7 +1223,7 @@ const DIARY_TASKS = [
   {
     id: 131,
     task: 'Enter the Troll Stronghold .',
-    questReqs: ['441', '342'],
+    questReqs: ['153', '23'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1244,7 +1244,7 @@ const DIARY_TASKS = [
   {
     id: 133,
     task: 'Slay a brine rat.',
-    questReqs: ['3150'],
+    questReqs: ['37'],
     skillReqs: [{ skill: 'Slayer', level: 47 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1253,7 +1253,7 @@ const DIARY_TASKS = [
   {
     id: 134,
     task: 'Travel to the Snowy Hunter Area via Eagle.',
-    questReqs: ['353'],
+    questReqs: ['37'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1262,7 +1262,7 @@ const DIARY_TASKS = [
   {
     id: 135,
     task: 'Mine some coal in Rellekka.',
-    questReqs: ['368'],
+    questReqs: ['57'],
     skillReqs: [{ skill: 'Mining', level: 30 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1271,7 +1271,7 @@ const DIARY_TASKS = [
   {
     id: 136,
     task: 'Steal from the Rellekka fish stalls.',
-    questReqs: ['368'],
+    questReqs: ['57'],
     skillReqs: [{ skill: 'Thieving', level: 42 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1280,7 +1280,7 @@ const DIARY_TASKS = [
   {
     id: 137,
     task: 'Travel to Miscellania by fairy ring.',
-    questReqs: ['368', '360'],
+    questReqs: ['57', '47'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1298,7 +1298,7 @@ const DIARY_TASKS = [
   {
     id: 139,
     task: 'Pick up your pet rock from your POH menagerie.',
-    questReqs: ['368'],
+    questReqs: ['57'],
     skillReqs: [{ skill: 'Construction', level: 37 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1307,7 +1307,7 @@ const DIARY_TASKS = [
   {
     id: 140,
     task: 'Visit the Lighthouse from Waterbirth Island.',
-    questReqs: ['382', '368'],
+    questReqs: ['74', '57'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1316,7 +1316,7 @@ const DIARY_TASKS = [
   {
     id: 141,
     task: 'Mine some gold at the Arzinian Mine.',
-    questReqs: ['333'],
+    questReqs: ['7'],
     skillReqs: [{ skill: 'Mining', level: 40 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1325,7 +1325,7 @@ const DIARY_TASKS = [
   {
     id: 142,
     task: 'Teleport to Trollheim.',
-    questReqs: ['352'],
+    questReqs: ['36'],
     skillReqs: [{ skill: 'Magic', level: 61 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1352,7 +1352,7 @@ const DIARY_TASKS = [
   {
     id: 145,
     task: 'Steal from the Keldagrim Gem Stall.',
-    questReqs: ['372'],
+    questReqs: ['63'],
     skillReqs: [{ skill: 'Thieving', level: 75 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1361,7 +1361,7 @@ const DIARY_TASKS = [
   {
     id: 146,
     task: 'Craft a Fremennik shield on Neitiznot.',
-    questReqs: ['367'],
+    questReqs: ['56'],
     skillReqs: [{ skill: 'Woodcutting', level: 56 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1370,7 +1370,7 @@ const DIARY_TASKS = [
   {
     id: 147,
     task: 'Mine 5 adamantite ores on Jatizso.',
-    questReqs: ['367'],
+    questReqs: ['56'],
     skillReqs: [{ skill: 'Mining', level: 70 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1379,7 +1379,7 @@ const DIARY_TASKS = [
   {
     id: 148,
     task: 'Obtain 100% support from your kingdom subjects.',
-    questReqs: ['435'],
+    questReqs: ['147'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1388,7 +1388,7 @@ const DIARY_TASKS = [
   {
     id: 149,
     task: 'Teleport to Waterbirth Island.',
-    questReqs: ['391'],
+    questReqs: ['88'],
     skillReqs: [{ skill: 'Magic', level: 72 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1397,7 +1397,7 @@ const DIARY_TASKS = [
   {
     id: 150,
     task: "Obtain the Blast Furnace Foreman's permission to use the Blast Furnace for free.",
-    questReqs: ['372'],
+    questReqs: ['63'],
     skillReqs: [{ skill: 'Smithing', level: 60 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1415,7 +1415,7 @@ const DIARY_TASKS = [
   {
     id: 152,
     task: 'Craft 56 astral runes at once from essence.',
-    questReqs: ['391'],
+    questReqs: ['88'],
     skillReqs: [{ skill: 'Runecraft', level: 82 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1424,7 +1424,7 @@ const DIARY_TASKS = [
   {
     id: 153,
     task: 'Create a dragonstone amulet in the Neitiznot furnace.',
-    questReqs: ['367'],
+    questReqs: ['56'],
     skillReqs: [{ skill: 'Crafting', level: 80 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
@@ -1519,7 +1519,7 @@ const DIARY_TASKS = [
   {
     id: 163,
     task: 'Defeat one of each elemental in the Elemental Workshop.',
-    questReqs: ['354'],
+    questReqs: ['38'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.KANDARIN,
@@ -1564,7 +1564,7 @@ const DIARY_TASKS = [
   {
     id: 168,
     task: 'Complete a lap of the Barbarian agility course.',
-    questReqs: ['322'],
+    questReqs: ['4'],
     skillReqs: [{ skill: 'Agility', level: 35 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.KANDARIN,
@@ -1643,7 +1643,7 @@ const DIARY_TASKS = [
   {
     id: 176,
     task: 'Create a mind helmet.',
-    questReqs: ['355'],
+    questReqs: ['39'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.KANDARIN,
@@ -1652,7 +1652,7 @@ const DIARY_TASKS = [
   {
     id: 177,
     task: 'Kill a fire giant in the Waterfall Dungeon.',
-    questReqs: ['3154'],
+    questReqs: ['158'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.KANDARIN,
@@ -1679,7 +1679,7 @@ const DIARY_TASKS = [
   {
     id: 180,
     task: "Travel to McGrubor's Wood by Fairy ring.",
-    questReqs: ['360'],
+    questReqs: ['47'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.KANDARIN,
@@ -1731,7 +1731,7 @@ const DIARY_TASKS = [
   {
     id: 185,
     task: "Enter the Seers' Village courthouse with Piety turned on.",
-    questReqs: ['387'],
+    questReqs: ['82'],
     skillReqs: [
       { skill: 'Prayer', level: 70 },
       { skill: 'Defence', level: 70 },
@@ -1761,7 +1761,7 @@ const DIARY_TASKS = [
   {
     id: 188,
     task: 'Kill a shadow hound in the Shadow Dungeon.',
-    questReqs: ['345'],
+    questReqs: ['27'],
     skillReqs: [{ skill: 'Thieving', level: 53 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.KANDARIN,
@@ -1827,7 +1827,7 @@ const DIARY_TASKS = [
   {
     id: 195,
     task: 'Fish and cook 5 sharks in Catherby using the Cooking gauntlets.',
-    questReqs: ['361'],
+    questReqs: ['48'],
     skillReqs: [
       { skill: 'Fishing', level: 76 },
       { skill: 'Cooking', level: 80 },
@@ -1872,7 +1872,7 @@ const DIARY_TASKS = [
   {
     id: 199,
     task: 'Teleport to Catherby',
-    questReqs: ['391'],
+    questReqs: ['88'],
     skillReqs: [{ skill: 'Magic', level: 87 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.KANDARIN,
@@ -1980,7 +1980,7 @@ const DIARY_TASKS = [
   {
     id: 211,
     task: 'Discover hidden wall in the dungeon below the volcano.',
-    questReqs: ['3139'],
+    questReqs: ['31'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.KARAMJA,
@@ -1989,7 +1989,7 @@ const DIARY_TASKS = [
   {
     id: 212,
     task: 'Visit the Isle of Crandor via the dungeon below the volcano.',
-    questReqs: ['3139'],
+    questReqs: ['31'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.KARAMJA,
@@ -1998,7 +1998,7 @@ const DIARY_TASKS = [
   {
     id: 213,
     task: "Use Vigroy and Hajedy's cart service.",
-    questReqs: ['424'],
+    questReqs: ['133'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.KARAMJA,
@@ -2007,7 +2007,7 @@ const DIARY_TASKS = [
   {
     id: 214,
     task: 'Earn 100% favour in the Tai Bwo Wannai Cleanup minigame.',
-    questReqs: ['386'],
+    questReqs: ['80'],
     skillReqs: [{ skill: 'Woodcutting', level: 10 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.KARAMJA,
@@ -2025,7 +2025,7 @@ const DIARY_TASKS = [
   {
     id: 216,
     task: 'Charter the Lady of the Waves from south of Cairn Isle to Port Khazard.',
-    questReqs: ['424'],
+    questReqs: ['133'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.KARAMJA,
@@ -2034,7 +2034,7 @@ const DIARY_TASKS = [
   {
     id: 217,
     task: 'Cut a log from a teak tree.',
-    questReqs: ['386'],
+    questReqs: ['80'],
     skillReqs: [{ skill: 'Woodcutting', level: 35 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.KARAMJA,
@@ -2043,7 +2043,7 @@ const DIARY_TASKS = [
   {
     id: 218,
     task: 'Cut a log from a mahogany tree.',
-    questReqs: ['386'],
+    questReqs: ['80'],
     skillReqs: [{ skill: 'Woodcutting', level: 50 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.KARAMJA,
@@ -2052,7 +2052,7 @@ const DIARY_TASKS = [
   {
     id: 219,
     task: 'Catch a karambwan.',
-    questReqs: ['429'],
+    questReqs: ['141'],
     skillReqs: [{ skill: 'Fishing', level: 65 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.KARAMJA,
@@ -2061,7 +2061,7 @@ const DIARY_TASKS = [
   {
     id: 220,
     task: 'Exchange gems for a machete.',
-    questReqs: ['386'],
+    questReqs: ['80'],
     skillReqs: [],
     otherReqs: ['Gout tuber'],
     location: DIARY_LOCATIONS.KARAMJA,
@@ -2070,7 +2070,7 @@ const DIARY_TASKS = [
   {
     id: 221,
     task: 'Use the gnome glider to travel to Karamja.',
-    questReqs: ['374'],
+    questReqs: ['66'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.KARAMJA,
@@ -2127,7 +2127,7 @@ const DIARY_TASKS = [
   {
     id: 227,
     task: 'Charter a ship from the shipyard in the far east of Karamja.',
-    questReqs: ['374'],
+    questReqs: ['66'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.KARAMJA,
@@ -2136,7 +2136,7 @@ const DIARY_TASKS = [
   {
     id: 228,
     task: 'Mine a red topaz from a gem rock.',
-    questReqs: ['386'],
+    questReqs: ['80'],
     skillReqs: [{ skill: 'Mining', level: 40 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.KARAMJA,
@@ -2181,7 +2181,7 @@ const DIARY_TASKS = [
   {
     id: 233,
     task: 'Cook a raw karambwan thoroughly.',
-    questReqs: ['429'],
+    questReqs: ['141'],
     skillReqs: [{ skill: 'Cooking', level: 30 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.KARAMJA,
@@ -2190,7 +2190,7 @@ const DIARY_TASKS = [
   {
     id: 234,
     task: 'Kill a deathwing in the dungeon under the Kharazi Jungle.',
-    questReqs: ['3145'],
+    questReqs: ['85'],
     skillReqs: [
       { skill: 'Woodcutting', level: 15 },
       { skill: 'Strength', level: 50 },
@@ -2218,7 +2218,7 @@ const DIARY_TASKS = [
   {
     id: 236,
     task: 'Collect 5 palm leaves.',
-    questReqs: ['3145'],
+    questReqs: ['85'],
     skillReqs: [{ skill: 'Woodcutting', level: 15 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.KARAMJA,
@@ -2227,7 +2227,7 @@ const DIARY_TASKS = [
   {
     id: 237,
     task: 'Be assigned a Slayer task by Duradel in Shilo Village .',
-    questReqs: ['424'],
+    questReqs: ['133'],
     skillReqs: [],
     otherReqs: ['100 Combat level and 50 Slayer, or 99 Slayer'],
     location: DIARY_LOCATIONS.KARAMJA,
@@ -2380,7 +2380,7 @@ const DIARY_TASKS = [
   {
     id: 254,
     task: 'Create a strength potion in the Lovakengj pub.',
-    questReqs: ['350'],
+    questReqs: ['34'],
     skillReqs: [{ skill: 'Herblore', level: 12 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.KOUREND,
@@ -2398,7 +2398,7 @@ const DIARY_TASKS = [
   {
     id: 256,
     task: 'Travel to the fairy ring south of Mount Karuulm.',
-    questReqs: ['360'],
+    questReqs: ['47'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.KOUREND,
@@ -2416,7 +2416,7 @@ const DIARY_TASKS = [
   {
     id: 258,
     task: "Use Kharedst's memoirs to teleport to all five cities in Great Kourend.",
-    questReqs: ['344', '409', '431', '543', '542'],
+    questReqs: ['26', '113', '143', '54', '3'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.KOUREND,
@@ -2500,7 +2500,7 @@ const DIARY_TASKS = [
   {
     id: 267,
     task: 'Catch a chinchompa in the Kourend Woodland.',
-    questReqs: ['353'],
+    questReqs: ['37'],
     skillReqs: [{ skill: 'Hunter', level: 53 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.KOUREND,
@@ -2527,7 +2527,7 @@ const DIARY_TASKS = [
   {
     id: 270,
     task: 'Smelt an adamantite bar in The Forsaken Tower .',
-    questReqs: ['543'],
+    questReqs: ['54'],
     skillReqs: [{ skill: 'Smithing', level: 70 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.KOUREND,
@@ -2572,7 +2572,7 @@ const DIARY_TASKS = [
   {
     id: 275,
     task: "Teleport to Xeric's Heart using Xeric's talisman.",
-    questReqs: ['320'],
+    questReqs: [],
     skillReqs: [],
     otherReqs: ["Xeric's talisman"],
     location: DIARY_LOCATIONS.KOUREND,
@@ -2599,7 +2599,7 @@ const DIARY_TASKS = [
   {
     id: 278,
     task: 'Cast Monster Examine on a mountain troll south of Mount Quidamortem.',
-    questReqs: ['349'],
+    questReqs: ['33'],
     skillReqs: [{ skill: 'Magic', level: 66 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.KOUREND,
@@ -2708,7 +2708,7 @@ const DIARY_TASKS = [
   {
     id: 289,
     task: 'Have Archmage Sedridor teleport you to the Rune essence mine.',
-    questReqs: ['314'],
+    questReqs: ['125'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.LUMBRIDGE,
@@ -2717,7 +2717,7 @@ const DIARY_TASKS = [
   {
     id: 290,
     task: 'Craft some water runes.',
-    questReqs: ['314'],
+    questReqs: ['125'],
     skillReqs: [{ skill: 'Runecraft', level: 5 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.LUMBRIDGE,
@@ -2774,7 +2774,7 @@ const DIARY_TASKS = [
   {
     id: 296,
     task: 'Bake some bread on the Lumbridge castle kitchen range.',
-    questReqs: ['300'],
+    questReqs: ['17'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.LUMBRIDGE,
@@ -2823,7 +2823,7 @@ const DIARY_TASKS = [
   {
     id: 301,
     task: 'Purchase an upgraded device from Ava.',
-    questReqs: ['331'],
+    questReqs: ['0'],
     skillReqs: [{ skill: 'Ranged', level: 50 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.LUMBRIDGE,
@@ -2832,7 +2832,7 @@ const DIARY_TASKS = [
   {
     id: 302,
     task: "Travel to the Wizards' Tower by Fairy ring.",
-    questReqs: ['360'],
+    questReqs: ['47'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.LUMBRIDGE,
@@ -2886,7 +2886,7 @@ const DIARY_TASKS = [
   {
     id: 308,
     task: 'Get a Slayer task from Chaeldar.',
-    questReqs: ['389'],
+    questReqs: ['86'],
     skillReqs: [{ skill: 'Combat', level: 70 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.LUMBRIDGE,
@@ -2895,7 +2895,7 @@ const DIARY_TASKS = [
   {
     id: 309,
     task: 'Catch an essence or eclectic impling in Puro-Puro.',
-    questReqs: ['389'],
+    questReqs: ['86'],
     skillReqs: [{ skill: 'Hunter', level: 42 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.LUMBRIDGE,
@@ -2922,7 +2922,7 @@ const DIARY_TASKS = [
   {
     id: 312,
     task: 'Squeeze past the jutting wall on your way to the Cosmic Altar.',
-    questReqs: ['389'],
+    questReqs: ['86'],
     skillReqs: [{ skill: 'Agility', level: 46 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.LUMBRIDGE,
@@ -2931,7 +2931,7 @@ const DIARY_TASKS = [
   {
     id: 313,
     task: 'Craft 56 cosmic runes simultaneously from essence.',
-    questReqs: ['389'],
+    questReqs: ['86'],
     skillReqs: [{ skill: 'Runecraft', level: 59 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.LUMBRIDGE,
@@ -2949,7 +2949,7 @@ const DIARY_TASKS = [
   {
     id: 315,
     task: 'Collect at least 100 Tears of Guthix  in one visit.',
-    questReqs: ['433'],
+    questReqs: ['145'],
     skillReqs: [],
     otherReqs: ['Recommended: at least 150 Quest Points'],
     location: DIARY_LOCATIONS.LUMBRIDGE,
@@ -2958,7 +2958,7 @@ const DIARY_TASKS = [
   {
     id: 316,
     task: 'Take the train from Dorgesh-Kaan to Keldagrim.',
-    questReqs: ['332'],
+    questReqs: ['1'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.LUMBRIDGE,
@@ -2967,7 +2967,7 @@ const DIARY_TASKS = [
   {
     id: 317,
     task: "Purchase some Barrows gloves from the Culinaromancer's Chest.",
-    questReqs: ['413'],
+    questReqs: ['117'],
     skillReqs: [],
     otherReqs: ['130,000 coins'],
     location: DIARY_LOCATIONS.LUMBRIDGE,
@@ -3015,7 +3015,7 @@ const DIARY_TASKS = [
   {
     id: 322,
     task: 'Steal from a Dorgesh-Kaan rich chest.',
-    questReqs: ['343'],
+    questReqs: ['24'],
     skillReqs: [{ skill: 'Thieving', level: 78 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.LUMBRIDGE,
@@ -3024,7 +3024,7 @@ const DIARY_TASKS = [
   {
     id: 323,
     task: 'Pickpocket Movario on the Dorgesh-Kaan Agility Course.',
-    questReqs: ['343', '434'],
+    questReqs: ['24', '146'],
     skillReqs: [
       { skill: 'Thieving', level: 42 },
       { skill: 'Agility', level: 70 },
@@ -3119,7 +3119,7 @@ const DIARY_TASKS = [
   {
     id: 333,
     task: 'Enter Mort Myre Swamp.',
-    questReqs: ['403'],
+    questReqs: ['103'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3164,7 +3164,7 @@ const DIARY_TASKS = [
   {
     id: 338,
     task: 'Restore your prayer points at the nature altar.',
-    questReqs: ['403'],
+    questReqs: ['103'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3209,7 +3209,7 @@ const DIARY_TASKS = [
   {
     id: 343,
     task: 'Kill a Terror Dog.',
-    questReqs: ['378', '3144'],
+    questReqs: ['70', '84'],
     skillReqs: [{ skill: 'Slayer', level: 40 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3218,7 +3218,7 @@ const DIARY_TASKS = [
   {
     id: 344,
     task: 'Complete a game of trouble brewing.',
-    questReqs: ['336'],
+    questReqs: ['12'],
     skillReqs: [{ skill: 'Cooking', level: 40 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3227,7 +3227,7 @@ const DIARY_TASKS = [
   {
     id: 345,
     task: 'Board the Swamp boaty at the Hollows.',
-    questReqs: ['403'],
+    questReqs: ['103'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3236,7 +3236,7 @@ const DIARY_TASKS = [
   {
     id: 346,
     task: 'Make a batch of cannonballs at the Port Phasmatys furnace.',
-    questReqs: ['351'],
+    questReqs: ['35'],
     skillReqs: [{ skill: 'Smithing', level: 35 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3245,7 +3245,7 @@ const DIARY_TASKS = [
   {
     id: 347,
     task: 'Kill a fever spider on Braindeath Island.',
-    questReqs: ['418'],
+    questReqs: ['124'],
     skillReqs: [{ skill: 'Slayer', level: 42 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3254,7 +3254,7 @@ const DIARY_TASKS = [
   {
     id: 348,
     task: 'Use an ectophial to return to Port Phasmatys.',
-    questReqs: ['371'],
+    questReqs: ['62'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3263,7 +3263,7 @@ const DIARY_TASKS = [
   {
     id: 349,
     task: 'Mix a Guthix balance potion while in Morytania.',
-    questReqs: ['384'],
+    questReqs: ['77'],
     skillReqs: [{ skill: 'Herblore', level: 22 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3272,7 +3272,7 @@ const DIARY_TASKS = [
   {
     id: 350,
     task: 'Enter the Kharyrll portal in your POH.',
-    questReqs: ['345'],
+    questReqs: ['27'],
     skillReqs: [{ skill: 'Magic', level: 66 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3290,7 +3290,7 @@ const DIARY_TASKS = [
   {
     id: 352,
     task: 'Harvest some Watermelon from the allotment patch on Harmony Island.',
-    questReqs: ['375'],
+    questReqs: ['67'],
     skillReqs: [{ skill: 'Farming', level: 47 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3299,7 +3299,7 @@ const DIARY_TASKS = [
   {
     id: 353,
     task: "Chop and burn some mahogany logs on Mos Le'Harmless.",
-    questReqs: ['336'],
+    questReqs: ['12'],
     skillReqs: [
       { skill: 'Woodcutting', level: 50 },
       { skill: 'Firemaking', level: 50 },
@@ -3311,7 +3311,7 @@ const DIARY_TASKS = [
   {
     id: 354,
     task: 'Complete a temple trek with a hard companion.',
-    questReqs: ['384'],
+    questReqs: ['77'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3320,7 +3320,7 @@ const DIARY_TASKS = [
   {
     id: 355,
     task: 'Kill a Cave Horror.',
-    questReqs: ['336'],
+    questReqs: ['12'],
     skillReqs: [{ skill: 'Slayer', level: 58 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3338,7 +3338,7 @@ const DIARY_TASKS = [
   {
     id: 357,
     task: 'Pray at the Altar of Nature with Piety activated.',
-    questReqs: ['403'],
+    questReqs: ['103'],
     skillReqs: [
       { skill: 'Prayer', level: 70 },
       { skill: 'Defence', level: 70 },
@@ -3359,7 +3359,7 @@ const DIARY_TASKS = [
   {
     id: 359,
     task: 'Mine some mithril ore in the Abandoned Mine.',
-    questReqs: ['378'],
+    questReqs: ['70'],
     skillReqs: [{ skill: 'Mining', level: 55 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3368,7 +3368,7 @@ const DIARY_TASKS = [
   {
     id: 360,
     task: 'Catch a shark in Burgh de Rott with your bare hands.',
-    questReqs: ['384'],
+    questReqs: ['77'],
     skillReqs: [
       { skill: 'Fishing', level: 96 },
       { skill: 'Strength', level: 76 },
@@ -3380,7 +3380,7 @@ const DIARY_TASKS = [
   {
     id: 361,
     task: 'Cremate any Shade remains on a Magic or Redwood pyre.',
-    questReqs: ['421'],
+    questReqs: ['128'],
     skillReqs: [{ skill: 'Firemaking', level: 80 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3389,7 +3389,7 @@ const DIARY_TASKS = [
   {
     id: 362,
     task: 'Fertilize the Morytania herb patch using Lunar Magic.',
-    questReqs: ['391'],
+    questReqs: ['88'],
     skillReqs: [{ skill: 'Magic', level: 83 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.MORYTANIA,
@@ -3434,7 +3434,7 @@ const DIARY_TASKS = [
   {
     id: 367,
     task: 'Have Aubury teleport you to the essence mine.',
-    questReqs: ['314'],
+    questReqs: ['125'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.VARROCK,
@@ -3524,7 +3524,7 @@ const DIARY_TASKS = [
   {
     id: 377,
     task: 'Craft some earth runes from Essence.',
-    questReqs: ['314'],
+    questReqs: ['125'],
     skillReqs: [{ skill: 'Runecraft', level: 9 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.VARROCK,
@@ -3569,7 +3569,7 @@ const DIARY_TASKS = [
   {
     id: 382,
     task: 'Select a colour for your kitten.',
-    questReqs: ['370', '369'],
+    questReqs: ['60', '58'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.VARROCK,
@@ -3578,7 +3578,7 @@ const DIARY_TASKS = [
   {
     id: 383,
     task: 'Use the Spirit tree in the north-eastern corner of Grand Exchange.',
-    questReqs: ['438'],
+    questReqs: ['150'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.VARROCK,
@@ -3596,7 +3596,7 @@ const DIARY_TASKS = [
   {
     id: 385,
     task: "Enter the Tolna dungeon after completing A Soul's Bane .",
-    questReqs: ['426'],
+    questReqs: ['138'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.VARROCK,
@@ -3605,7 +3605,7 @@ const DIARY_TASKS = [
   {
     id: 386,
     task: 'Teleport to the digsite using a Digsite pendant.',
-    questReqs: ['347'],
+    questReqs: ['29'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.VARROCK,
@@ -3641,7 +3641,7 @@ const DIARY_TASKS = [
   {
     id: 390,
     task: 'Pick a white tree fruit.',
-    questReqs: ['369'],
+    questReqs: ['58'],
     skillReqs: [{ skill: 'Farming', level: 25 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.VARROCK,
@@ -3650,7 +3650,7 @@ const DIARY_TASKS = [
   {
     id: 391,
     task: 'Use the balloon to travel from Varrock.',
-    questReqs: ['357'],
+    questReqs: ['42'],
     skillReqs: [
       { skill: 'Farming', level: 30 },
       { skill: 'Firemaking', level: 40 },
@@ -3698,7 +3698,7 @@ const DIARY_TASKS = [
   {
     id: 396,
     task: 'Teleport to Paddewwa.',
-    questReqs: ['345'],
+    questReqs: ['27'],
     skillReqs: [{ skill: 'Magic', level: 54 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.VARROCK,
@@ -3776,7 +3776,7 @@ const DIARY_TASKS = [
   {
     id: 404,
     task: 'Use Lunar magic to make 20 mahogany planks in the Varrock Lumber Yard (inside the fences).',
-    questReqs: ['349'],
+    questReqs: ['33'],
     skillReqs: [{ skill: 'Magic', level: 86 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.VARROCK,
@@ -3785,7 +3785,7 @@ const DIARY_TASKS = [
   {
     id: 405,
     task: 'Bake a summer pie in the Cooking Guild.',
-    questReqs: ['436'],
+    questReqs: [],
     skillReqs: [{ skill: 'Cooking', level: 95 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.VARROCK,
@@ -3794,7 +3794,7 @@ const DIARY_TASKS = [
   {
     id: 406,
     task: 'Smith and fletch ten rune darts within Varrock.',
-    questReqs: [],
+    questReqs: ['148'],
     skillReqs: [
       { skill: 'Smithing', level: 89 },
       { skill: 'Fletching', level: 81 },
@@ -3860,7 +3860,7 @@ const DIARY_TASKS = [
   {
     id: 413,
     task: 'Claim any Chompy bird hat from Rantz.',
-    questReqs: ['334'],
+    questReqs: ['8'],
     skillReqs: [],
     otherReqs: ['30 chompy bird kills'],
     location: DIARY_LOCATIONS.WESTERN,
@@ -3887,7 +3887,7 @@ const DIARY_TASKS = [
   {
     id: 416,
     task: 'Have Brimstail teleport you to the Essence mine.',
-    questReqs: ['314'],
+    questReqs: ['125'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -3914,7 +3914,7 @@ const DIARY_TASKS = [
   {
     id: 419,
     task: "Take the agility shortcut from the Grand Tree to Otto's Grotto.",
-    questReqs: ['438', '374'],
+    questReqs: ['150', '66'],
     skillReqs: [{ skill: 'Agility', level: 37 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -3923,7 +3923,7 @@ const DIARY_TASKS = [
   {
     id: 420,
     task: 'Travel to the Gnome Stronghold by Spirit tree.',
-    questReqs: ['438'],
+    questReqs: ['150'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -3941,7 +3941,7 @@ const DIARY_TASKS = [
   {
     id: 422,
     task: 'Fish some bass on Ape Atoll.',
-    questReqs: ['395'],
+    questReqs: ['95'],
     skillReqs: [{ skill: 'Fishing', level: 46 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -3950,7 +3950,7 @@ const DIARY_TASKS = [
   {
     id: 423,
     task: 'Chop and burn some teak logs on Ape Atoll.',
-    questReqs: ['395'],
+    questReqs: ['95'],
     skillReqs: [
       { skill: 'Woodcutting', level: 35 },
       { skill: 'Firemaking', level: 35 },
@@ -3971,7 +3971,7 @@ const DIARY_TASKS = [
   {
     id: 425,
     task: 'Travel to the Feldip Hills by Gnome glider.',
-    questReqs: ['374', '406'],
+    questReqs: ['66', '107'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -3980,7 +3980,7 @@ const DIARY_TASKS = [
   {
     id: 426,
     task: 'Claim a Chompy bird hat from Rantz after registering at least 125 kills.',
-    questReqs: ['334'],
+    questReqs: ['8'],
     skillReqs: [],
     otherReqs: ['125 chompy bird kills'],
     location: DIARY_LOCATIONS.WESTERN,
@@ -3989,7 +3989,7 @@ const DIARY_TASKS = [
   {
     id: 427,
     task: "Travel from Eagles' Peak  to the Feldip Hills by Eagle.",
-    questReqs: ['353'],
+    questReqs: ['37'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -4016,7 +4016,7 @@ const DIARY_TASKS = [
   {
     id: 430,
     task: 'Turn your crystal saw seed into a crystal saw.',
-    questReqs: ['358'],
+    questReqs: ['45'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -4025,7 +4025,7 @@ const DIARY_TASKS = [
   {
     id: 431,
     task: 'Mine some gold ore underneath the Grand Tree.',
-    questReqs: ['374'],
+    questReqs: ['66'],
     skillReqs: [{ skill: 'Mining', level: 40 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -4034,7 +4034,7 @@ const DIARY_TASKS = [
   {
     id: 432,
     task: 'Kill an elf with a crystal bow.',
-    questReqs: ['416'],
+    questReqs: ['122'],
     skillReqs: [{ skill: 'Ranged', level: 70 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -4043,7 +4043,7 @@ const DIARY_TASKS = [
   {
     id: 433,
     task: 'Catch and cook a monkfish in the Piscatoris Fishing Colony.',
-    questReqs: ['428'],
+    questReqs: ['140'],
     skillReqs: [
       { skill: 'Fishing', level: 62 },
       { skill: 'Cooking', level: 62 },
@@ -4073,7 +4073,7 @@ const DIARY_TASKS = [
   {
     id: 436,
     task: 'Complete a lap of the Ape Atoll Agility Course.',
-    questReqs: ['395'],
+    questReqs: ['95'],
     skillReqs: [{ skill: 'Agility', level: 48 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -4082,7 +4082,7 @@ const DIARY_TASKS = [
   {
     id: 437,
     task: 'Chop and burn some mahogany logs on Ape Atoll.',
-    questReqs: ['395'],
+    questReqs: ['95'],
     skillReqs: [
       { skill: 'Woodcutting', level: 50 },
       { skill: 'Firemaking', level: 50 },
@@ -4094,7 +4094,7 @@ const DIARY_TASKS = [
   {
     id: 438,
     task: 'Mine some adamantite ore in Tirannwn.',
-    questReqs: ['415'],
+    questReqs: ['119'],
     skillReqs: [{ skill: 'Mining', level: 70 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -4103,7 +4103,7 @@ const DIARY_TASKS = [
   {
     id: 439,
     task: 'Check the health of your palm tree in Lletya.',
-    questReqs: ['3147'],
+    questReqs: ['99'],
     skillReqs: [{ skill: 'Farming', level: 68 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -4112,7 +4112,7 @@ const DIARY_TASKS = [
   {
     id: 440,
     task: 'Claim a Chompy bird hat from Rantz after registering at least 300 kills.',
-    questReqs: ['334'],
+    questReqs: ['8'],
     skillReqs: [],
     otherReqs: ['300 chompy bird kills'],
     location: DIARY_LOCATIONS.WESTERN,
@@ -4121,7 +4121,7 @@ const DIARY_TASKS = [
   {
     id: 441,
     task: 'Build an Isafdar painting in your POH Quest Hall.',
-    questReqs: ['416'],
+    questReqs: ['122'],
     skillReqs: [{ skill: 'Construction', level: 65 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -4130,7 +4130,7 @@ const DIARY_TASKS = [
   {
     id: 442,
     task: 'Kill Zulrah.',
-    questReqs: ['415'],
+    questReqs: ['119'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -4139,7 +4139,7 @@ const DIARY_TASKS = [
   {
     id: 443,
     task: 'Teleport to Ape Atoll.',
-    questReqs: ['413.7'],
+    questReqs: ['2315'],
     skillReqs: [{ skill: 'Magic', level: 64 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -4148,7 +4148,7 @@ const DIARY_TASKS = [
   {
     id: 444,
     task: 'Pickpocket a gnome.',
-    questReqs: ['438'],
+    questReqs: ['150'],
     skillReqs: [{ skill: 'Thieving', level: 75 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -4157,7 +4157,7 @@ const DIARY_TASKS = [
   {
     id: 445,
     task: 'Fletch a magic longbow in Tirannwn.',
-    questReqs: ['415'],
+    questReqs: ['119'],
     skillReqs: [{ skill: 'Fletching', level: 85 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -4211,7 +4211,7 @@ const DIARY_TASKS = [
   {
     id: 450,
     task: 'Claim a Chompy bird hat from Rantz after registering at least 1,000 kills.',
-    questReqs: ['334'],
+    questReqs: ['8'],
     skillReqs: [],
     otherReqs: ['1000 chompy bird kills'],
     location: DIARY_LOCATIONS.WESTERN,
@@ -4220,7 +4220,7 @@ const DIARY_TASKS = [
   {
     id: 451,
     task: 'Pickpocket an elf.',
-    questReqs: ['3147'],
+    questReqs: ['99'],
     skillReqs: [{ skill: 'Thieving', level: 85 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.WESTERN,
@@ -4319,7 +4319,7 @@ const DIARY_TASKS = [
   {
     id: 462,
     task: 'Have the Mage of Zamorak teleport you to the Abyss.',
-    questReqs: ['3140'],
+    questReqs: ['43'],
     skillReqs: [],
     otherReqs: [],
     location: DIARY_LOCATIONS.WILDERNESS,
@@ -4418,7 +4418,7 @@ const DIARY_TASKS = [
   {
     id: 473,
     task: 'Smith a Gold helmet in the Resource Area.',
-    questReqs: ['333'],
+    questReqs: ['7'],
     skillReqs: [{ skill: 'Smithing', level: 50 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.WILDERNESS,
@@ -4436,7 +4436,7 @@ const DIARY_TASKS = [
   {
     id: 475,
     task: 'Cast any of the three God spells against another player in the Wilderness.',
-    questReqs: ['3146'],
+    questReqs: ['89'],
     skillReqs: [],
     otherReqs: ['Unlock the ability to cast a god spell outside of the arena'],
     location: DIARY_LOCATIONS.WILDERNESS,
@@ -4538,7 +4538,7 @@ const DIARY_TASKS = [
   {
     id: 486,
     task: 'Teleport to Ghorrock.',
-    questReqs: ['345'],
+    questReqs: ['27'],
     skillReqs: [{ skill: 'Magic', level: 96 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.WILDERNESS,
