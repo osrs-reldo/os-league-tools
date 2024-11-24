@@ -15,10 +15,8 @@ COPY . .
 
 # Build the React app for production
 RUN npm run build
+VOLUME /app/build
+CMD ["echo", "Production build completed"]
 
 # Expose the port your application runs on
 EXPOSE 3000
-
-# Use CMD to specify the startup command for the container
-CMD ["npm", "run", "start"]
-
