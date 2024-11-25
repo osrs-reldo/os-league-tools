@@ -113,7 +113,7 @@ export const LEAGUES_REGIONS = [
     id: 10,
     label: 'Varlamore',
     icon: images['task-varlamore.png'],
-    map: null,
+    map: images['map-varlamore.png'],
     infographic: images['info-varlamore.png'],
     isDefaultUnlock: false,
     questUnlocks: [],
