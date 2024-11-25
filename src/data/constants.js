@@ -191,6 +191,24 @@ export const STATS = {
 };
 
 export const BOSSES = {
+  SOUL_WARS_ZEAL: {
+    highscoresName: 'soulWarsZeal',
+    label: 'Soul Wars Zeal',
+    icon: images['soul-wars-zeal.png'],
+    regions: ['Misthalin'],
+  },
+  RIFTS_CLOSED: {
+    highscoresName: 'riftsClosed',
+    label: 'Rifts Closed',
+    icon: images['rifts-closed.png'],
+    regions: ['Desert'],
+  },
+  COLLESEUM_GLORY: {
+    highscoresName: 'colosseumGlory',
+    label: 'Colosseum Glory',
+    icon: images['colosseum-glory.png'],
+    regions: ['Varlamore'],
+  },
   ABYSSAL_SIRE: {
     hiscoresName: 'abyssalSire',
     label: 'Abyssal Sire',
@@ -203,6 +221,18 @@ export const BOSSES = {
     icon: images['alchemical-hydra.png'],
     regions: ['Kourend'],
   },
+  AMOXLIATL: {
+    highscoresName: 'amoxliatl',
+    label: 'Amoxliatl',
+    icon: images['amoxliatl.png'],
+    regions: ['Varlamore'],
+  },
+  ARAXXOR: {
+    highscoresName: 'araxxor',
+    label: 'Araxxor',
+    icon: images['araxxor.png'],
+    regions: ['Morytania'],
+  },
   ARTIO: {
     hiscoresName: 'artio',
     label: 'Artio',
@@ -211,7 +241,7 @@ export const BOSSES = {
   },
   BARROWS: {
     hiscoresName: 'barrows',
-    label: 'Barrows',
+    label: 'Barrows Chests',
     icon: images['barrows.png'],
     regions: ['Morytania'],
   },
@@ -365,6 +395,12 @@ export const BOSSES = {
     icon: images['kril-tsutsaroth.png'],
     regions: ['Asgarnia'],
   },
+  LUNAR_CHESTS: {
+    highscoresName: 'lunarChests',
+    label: 'Lunar Chests',
+    icon: images['lunar-chests.png'],
+    regions: ['Varlamore'],
+  },
   MIMIC: {
     hiscoresName: 'mimic',
     label: 'Mimic',
@@ -413,11 +449,23 @@ export const BOSSES = {
     icon: images['scorpia.png'],
     regions: ['Wilderness'],
   },
+  SCURRIUS: {
+    highscoresName: 'scurrius',
+    label: 'Scurrius',
+    icon: images['scurrius.png'],
+    regions: ['Misthalin'],
+  },
   SKOTIZO: {
     hiscoresName: 'skotizo',
     label: 'Skotizo',
     icon: images['skotizo.png'],
     regions: ['Kourend'],
+  },
+  SOL_HEREDIT: {
+    highscoresName: 'solHeredit',
+    label: 'Sol Heredit',
+    icon: images['sol-heredit.png'],
+    regions: ['Varlamore'],
   },
   SPINDEL: {
     hiscoresName: 'spindel',
@@ -442,6 +490,12 @@ export const BOSSES = {
     label: 'The Corrupted Gauntlet',
     icon: images['the-corrupted-gauntlet.png'],
     regions: ['Tirannwn'],
+  },
+  HUEYCOATL: {
+    highscoresName: 'hueycoatl',
+    label: 'The Hueycoatl',
+    icon: images['the-huey-coatl.png'],
+    regions: ['Varlamore'],
   },
   THE_LEVIATHAN: {
     hiscoresName: 'leviathan',
