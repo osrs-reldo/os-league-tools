@@ -1,8 +1,8 @@
 import { CURRENT_VERSION } from './constants';
 
 const versionUpdaters = {
-  2: updateToV2,
   3: updateToV3,
+  4: updateToV4,
 };
 
 export default function updateSettingsVersion(settingsState) {
@@ -19,15 +19,6 @@ export default function updateSettingsVersion(settingsState) {
   return updatedState;
 }
 
-function updateToV2(prevState) {
-  // Change theme to trailblazer reloaded for new league launch
-  return {
-    ...prevState,
-    theme: prevState.mode === 'light' ? 'tr-light' : 'tr-dark',
-    version: 2,
-  };
-}
-
 function updateToV3(prevState) {
   // Add setting to hide/show task tracker columns
   return {
@@ -38,5 +29,14 @@ function updateToV3(prevState) {
       regions: true,
     },
     version: 3,
+  };
+}
+
+function updateToV4(prevState) {
+  // Change theme to raging echoes for new league launch
+  return {
+    ...prevState,
+    theme: prevState.mode === 'light' ? 're-light' : 're-dark',
+    version: 4,
   };
 }

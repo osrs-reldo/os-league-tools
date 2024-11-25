@@ -1,10 +1,10 @@
-export const CURRENT_VERSION = 3;
+export const CURRENT_VERSION = 4;
 
 export const INITIAL_STATE = {
   version: CURRENT_VERSION,
   limitContentWidth: true,
   mode: 'dark',
-  theme: 'tr-dark',
+  theme: 're-dark',
   taskColumns: {
     completedAt: false,
     category: true,

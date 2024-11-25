@@ -92,7 +92,7 @@ export default function Settings() {
                   <ThemeSelectCard label='Trailblazer' theme='tb' />
                   <ThemeSelectCard label='Shattered' theme='sl' />
                   <ThemeSelectCard label='Reloaded' theme='tr' />
-                  <ThemeSelectCard label='Echos' theme='re' />
+                  <ThemeSelectCard label='Echoes' theme='re' />
                   <ThemeSelectCard label='Mono' theme='mono' />
                 </div>
               </div>
