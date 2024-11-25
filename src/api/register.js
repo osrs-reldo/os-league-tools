@@ -1,10 +1,10 @@
 // src/api/register.js
 
-import axios from 'axios';
+import apiClient from './apiClient';
 
 const register = async (username, password) => {
   try {
-    const response = await axios.post('http://localhost:8080/api/register', { username, password });
+    const response = await apiClient.post('/register', { username, password });
     return response.data;
   } catch (error) {
     throw new Error(error.response ? error.response.data.message : 'Registration of new user failed!');
