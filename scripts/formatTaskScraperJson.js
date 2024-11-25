@@ -39,7 +39,7 @@ function formatTasks() {
 
 async function fetchTaskJson() {
   let tasks;
-  await fetch('https://raw.githubusercontent.com/osrs-reldo/task-json-store/main/json/league4_tasks.json').then(res => {
+  await fetch('https://raw.githubusercontent.com/sonderau/task-json-store/main/json/league4_tasks.json').then(res => {
     tasks = res.json();
   });
   return tasks;

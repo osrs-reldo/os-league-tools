@@ -64,6 +64,16 @@
     @apply re-light:text-re-wine re-dark:text-re-berry;
     @apply mono-light:text-mono-white mono-dark:text-mono-dark;
   }
+
+  /* Wasted time trying to understand UX elements, temporarily bypass with inheritance break */
+  .reset-inheritance {
+    all: revert;
+    color: #000000;
+  }
+
+  /* coudln't get this icon to play nice with onclick stuffin logout */
+  @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
   .text-success {
     @apply text-green-600 dark:text-green-500;
   }

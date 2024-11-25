@@ -1,11 +1,14 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga4';
-import { Auth0Provider } from '@auth0/auth0-react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './styles/compiled.css';
 import { Provider } from 'react-redux';
 import { ErrorBoundary } from 'react-error-boundary';
+import Login from './pages/Login';
+import Register from './pages/Register';
 import Homepage from './pages/Homepage';
 import Tracker from './pages/Tracker';
 import About from './pages/About';
@@ -18,6 +21,8 @@ import Faq from './pages/Faq';
 import ViewCharacter from './pages/ViewCharacter';
 import { submitRenderError } from './client/feedback-client';
 import { ErrorPage } from './components/common/util/ErrorBoundary';
+import { AuthProvider } from './AuthContext';
+import DebugPage from './pages/DebugPage';
 
 const history = createBrowserHistory();
 const trackingId = process.env.REACT_APP_GA_MID;
@@ -39,47 +44,111 @@ history.listen(() => {
   }
 });
 
-export default function App() {
+function RedirectWithToast({ message, to }) {
   useEffect(() => {
-    if (trackingId) {
-      ReactGA.send({
-        hitType: 'pageview',
-        page: window.location.pathname + window.location.search,
-        title: window.location.pathname + window.location.search,
-      });
-    }
+    toast.info(message, { autoClose: 2000 });
+  }, [message]);
+
+  return <Navigate to={to} replace />;
+}
+
+function AppRoutes({ isAuthenticated, setIsAuthenticated }) {
+  return (
+    <Routes>
+      {/* Public Routes (accessible to everyone) */}
+      <Route path='/' element={<Homepage />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/faq' element={<Faq />} />
+      <Route path='/register' element={<Register />} />
+      <Route path='/stats' element={<Statistics />} />
+      <Route path='/news' element={<Homepage />} />
+      <Route path='/debug' element={<DebugPage />} />
+      <Route
+        path='/login'
+        element={
+          !isAuthenticated ? (
+            <Login setIsAuthenticated={setIsAuthenticated} />
+          ) : (
+            <RedirectWithToast message="You're already logged in" to='/' />
+          )
+        }
+      />
+
+      {/* Private Routes (require authentication) */}
+      <Route
+        path='/tracker'
+        element={
+          isAuthenticated ? <Tracker /> : <RedirectWithToast message='Please log in to access this page' to='/login' />
+        }
+      />
+      <Route
+        path='/tracker/:character'
+        element={
+          isAuthenticated ? (
+            <ViewCharacter />
+          ) : (
+            <RedirectWithToast message='Please log in to access this page' to='/login' />
+          )
+        }
+      />
+      <Route
+        path='/calculators'
+        element={
+          isAuthenticated ? (
+            <Calculators />
+          ) : (
+            <RedirectWithToast message='Please log in to access this page' to='/login' />
+          )
+        }
+      />
+      <Route
+        path='/settings'
+        element={
+          isAuthenticated ? <Settings /> : <RedirectWithToast message='Please log in to access this page' to='/login' />
+        }
+      />
+
+      {/* Catch-all Route */}
+      <Route path='*' element={<RedirectWithToast message='Page not found' to='/' />} />
+    </Routes>
+  );
+}
+
+export default function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(Boolean(localStorage.getItem('authToken')));
+
+  useEffect(() => {
+    const handleStorageChange = () => {
+      const token = localStorage.getItem('authToken');
+      setIsAuthenticated(!!token);
+    };
+
+    // Listen for changes in `authToken` across tabs/windows
+    window.addEventListener('storage', handleStorageChange);
+
+    // Initial load check
+    handleStorageChange();
+
+    // Cleanup listener on unmount
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
   }, []);
 
   return (
-    <Provider store={store}>
-      <ThemeProvider>
-        <div className='App'>
-          <BrowserRouter basename='/'>
-            <Auth0Provider
-              domain='login.osleague.tools'
-              clientId='yfqwKEhQO8FL7MlxWmWo7ekuGgzSrfmh'
-              redirectUri={window.location.origin}
-              audience='https://dev-u4mby-kt.us.auth0.com/api/v2/'
-            >
+    <AuthProvider>
+      <Provider store={store}>
+        <ThemeProvider>
+          <div className='App'>
+            <BrowserRouter basename='/'>
               <ErrorBoundary FallbackComponent={ErrorPage} onError={submitRenderError}>
-                <Routes>
-                  <Route path='/' element={<Homepage />} />
-                  <Route path='stats' element={<Statistics />} />
-                  <Route path='news' element={<Homepage />} />
-                  <Route path='tracker' element={<Tracker />} />
-                  <Route path='tracker/:character' element={<ViewCharacter />} />
-                  <Route path='calculators' element={<Calculators />}>
-                    <Route path=':skill' element={<Calculators />} />
-                  </Route>
-                  <Route path='about' element={<About />} />
-                  <Route path='settings' element={<Settings />} />
-                  <Route path='faq' element={<Faq />} />
-                </Routes>
+                <ToastContainer /> {/* Add ToastContainer here */}
+                <AppRoutes isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
               </ErrorBoundary>
-            </Auth0Provider>
-          </BrowserRouter>
-        </div>
-      </ThemeProvider>
-    </Provider>
+            </BrowserRouter>
+          </div>
+        </ThemeProvider>
+      </Provider>
+    </AuthProvider>
   );
 }

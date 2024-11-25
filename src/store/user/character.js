@@ -1,11 +1,10 @@
 /* Redux toolkit middleware handles updates immutably, but eslint doesn't know that */
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
-import getHiscores from '../../client/hiscores-client';
 import { getFromLocalStorage, LOCALSTORAGE_KEYS } from '../../client/localstorage-client';
 import updateWithUserDataStorage from '../updateWithUserDataStorage';
 import updateCharacterVersion from './updateCharacterVersion';
-import { INITIAL_STATE, HISCORES_TTL } from './constants';
+import { INITIAL_STATE } from './constants';
 
 export const characterSlice = createSlice({
   name: 'character',
@@ -15,9 +14,11 @@ export const characterSlice = createSlice({
       state.activeCharacter = action.payload;
     },
     addCharacter: (state, action) => {
-      state.characters.push(action.payload.rsn);
-      if (action.payload.setActive) {
-        state.activeCharacter = state.characters.length - 1;
+      if (!state.characters.includes(action.payload.rsn)) {
+        state.characters.push(action.payload.rsn); // Add character if not already in the list
+        if (action.payload.setActive) {
+          state.activeCharacter = state.characters.length - 1; // Set as active
+        }
       }
     },
     deleteCharacter: (state, action) => {
@@ -72,26 +73,27 @@ export function selectActiveCharacter(state) {
   return state.character.characters[state.character.activeCharacter] ?? 'DEFAULT';
 }
 
-export function fetchHiscores(state, usernameOverride = null, forceReload = false) {
-  if (!state.characters.length && !usernameOverride) {
-    // Don't try to query if there's no username
-    return () => {};
-  }
+export function fetchHiscores(state, usernameOverride = null) {
+  const characterName = usernameOverride ?? state.characters[state.activeCharacter];
 
-  const isFreshData = Date.now() - state.hiscoresCache.lastUpdated < HISCORES_TTL;
-  if (!forceReload && isFreshData) {
-    // Do nothing, hiscores is already up-to-date
-    return () => {};
-  }
-  return dispatch => {
+  return async dispatch => {
     dispatch(characterSlice.actions.updateHiscores({ type: 'LOADING' }));
-    getHiscores(usernameOverride ?? state.characters[state.activeCharacter], result => {
-      if (result.success) {
-        dispatch(characterSlice.actions.updateHiscores({ type: 'SUCCESS', value: result.hiscores }));
+
+    try {
+      const response = await fetch(`/api/hiscores/${characterName}`);
+      if (response.ok) {
+        const result = await response.json();
+        dispatch(characterSlice.actions.updateHiscores({ type: 'SUCCESS', value: result }));
       } else {
-        dispatch(characterSlice.actions.updateHiscores({ type: 'ERROR', value: result.message }));
+        const error = await response.json();
+        dispatch(
+          characterSlice.actions.updateHiscores({ type: 'ERROR', value: error.message || 'Error fetching hiscores' })
+        );
       }
-    });
+    } catch (error) {
+      dispatch(characterSlice.actions.updateHiscores({ type: 'ERROR', value: 'Error fetching character stats' }));
+      console.error(`Error in fetchHiscores: ${error.message}`);
+    }
   };
 }
 

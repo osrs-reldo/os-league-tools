@@ -827,6 +827,19 @@ body:is(.dark *) {
   color: rgb(55 65 81 / var(--tw-text-opacity, 1));
 }
 
+/* Wasted time trying to understand UX elements, temporarily bypass with inheritance break */
+
+/* coudln't get this icon to play nice with onclick stuffin logout */
+
+/* fallback */
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v142/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
 .text-success {
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity, 1));
@@ -2125,11 +2138,17 @@ select[multiple]:focus option:checked {
 .invisible {
   visibility: hidden;
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
 .relative {
   position: relative;
+}
+.left-0 {
+  left: 0px;
 }
 .right-0 {
   right: 0px;
@@ -2437,6 +2456,12 @@ select[multiple]:focus option:checked {
 .max-w-\[90\%\] {
   max-width: 90%;
 }
+.max-w-md {
+  max-width: 28rem;
+}
+.max-w-sm {
+  max-width: 24rem;
+}
 .shrink {
   flex-shrink: 1;
 }
@@ -2677,6 +2702,17 @@ select[multiple]:focus option:checked {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-opacity-75 {
+  --tw-bg-opacity: 0.75;
+}
 .object-cover {
   object-fit: cover;
 }
@@ -2812,6 +2848,9 @@ select[multiple]:focus option:checked {
 .font-bold {
   font-weight: 700;
 }
+.font-medium {
+  font-weight: 500;
+}
 .font-semibold {
   font-weight: 600;
 }
@@ -2839,6 +2878,14 @@ select[multiple]:focus option:checked {
 .tracking-widest {
   letter-spacing: 0.1em;
 }
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 .underline {
   text-decoration-line: underline;
 }
@@ -2851,6 +2898,11 @@ select[multiple]:focus option:checked {
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .ring {

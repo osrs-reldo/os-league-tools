@@ -1,3 +1,4 @@
+// eslint-enable-next-line no-unused-vars
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { FilePicker } from 'react-file-picker';
@@ -6,7 +7,8 @@ import importFromPlugin from '../client/plugin-importer';
 import Separator from './common/Separator';
 import Modal from './Modal';
 import { loadNewState, resetState } from '../store/common';
-import { selectActiveCharacter } from '../store/user/character';
+import { selectActiveCharacter, addCharacter } from '../store/user/character';
+import { importDataFromBackend } from '../api/fetchDisplayNames';
 
 const PLUGIN_EXPORT_VERSION = 1;
 
@@ -19,7 +21,8 @@ export default function ManageDataModal({ variant, isOpen, setIsOpen }) {
             <p className='heading-accent-md ml-1'>Sync data to plugin</p>
             <ImportFromPluginContent />
             <Separator className='mb-2' />
-            <p className='heading-accent-md ml-1'>Import from backup</p>
+            <p className='heading-accent-md ml-1'>Import saved data</p>
+            <ImportFromDatabaseContent />
             <ImportFromFileContent />
           </Modal.Body>
         </ModalWrapper>
@@ -91,10 +94,73 @@ function ModalWrapper({ isOpen, setIsOpen, headerText, children }) {
   );
 }
 
+function ImportFromDatabaseContent() {
+  const dispatch = useDispatch();
+  const displayNames = useSelector(state => state.account.accountCache.displayNames); // Get displayNames from Redux
+  const isLoggedIn = useSelector(state => state.account.accountCache.isLoggedIn);
+  const loggedInUser = useSelector(state => state.account.accountCache.username) || localStorage.getItem('username');
+
+  if (!isLoggedIn) {
+    return <p>Please log in to manage your data.</p>;
+  }
+
+  const [successMessage, setSuccessMessage] = useState('');
+  const [error, setError] = useState('');
+  // eslint-disable-next-line no-console
+  console.log('Logged-in user:', loggedInUser);
+
+  const handleImport = async name => {
+    try {
+      setSuccessMessage('');
+      setError('');
+
+      // Call the backend to import data
+      await importDataFromBackend(loggedInUser, name);
+
+      // Dispatch addCharacter to add the imported character
+      dispatch(
+        addCharacter({
+          rsn: name, // Use the imported displayName
+          setActive: true, // Automatically set it as the active character
+        })
+      );
+
+      setSuccessMessage(`Successfully imported data for "${name}" and set it as the active character.`);
+    } catch (err) {
+      setError(`Failed to import data for "${name}".`);
+      console.error(err);
+    }
+  };
+
+  if (displayNames.length === 0) {
+    return <p>No saved data found for this account.</p>;
+  }
+
+  return (
+    <div>
+      {successMessage && <p className='text-success'>{successMessage}</p>}
+      {error && <p className='text-error'>{error}</p>}
+
+      {displayNames.length > 0 && <p className='text-primary mt-4 mb-2'>We found these users on the server already!</p>}
+
+      <ul>
+        {displayNames.map(name => (
+          <li key={name} className='flex items-center justify-between mb-2'>
+            <span>{name}</span>
+            <button className='button-filled' type='button' onClick={() => handleImport(name)}>
+              Import from server
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 // eslint-disable-next-line no-unused-vars
 function ImportFromPluginContent() {
   const [pluginImport, setPluginImport] = useState('');
-  const [successText, setSuccessText] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
   const [errorText, setErrorText] = useState('');
   const characterState = useSelector(state => state.character);
   const userState = useSelector(state => state);
@@ -130,7 +196,7 @@ function ImportFromPluginContent() {
           onChange={e => setPluginImport(e.target.value)}
         />
         {errorText && <p className='text-error text-sm'>{errorText}</p>}
-        {successText && <p className='text-accent text-sm'>{successText}</p>}
+        {successMessage && <p className='text-accent text-sm'>{successMessage}</p>}
         <button
           className='w-full my-1 button-filled'
           type='button'
@@ -139,7 +205,7 @@ function ImportFromPluginContent() {
               importFromPlugin(JSON.parse(pluginImport), userState, dispatch, characterState);
               setPluginImport('');
               setErrorText('');
-              setSuccessText('Successfully synced data!');
+              setSuccessMessage('Successfully synced data!');
             } catch (e) {
               console.warn(e);
               setErrorText('Unable to parse input. Check your plugin export and try again.');
@@ -179,7 +245,7 @@ function ExportToPluginContent() {
     </>
   );
 }
-
+// eslint-enable-next-line no-unused-vars
 function ImportFromFileContent() {
   const [successText, setSuccessText] = useState('');
   const [errorText, setErrorText] = useState('');
@@ -267,7 +333,7 @@ function ExportToFileContent() {
 }
 
 function ResetDataModalContent({ setIsOpen }) {
-  const [successText, setSuccessText] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
   const dispatch = useDispatch();
 
   return (
@@ -288,7 +354,7 @@ function ResetDataModalContent({ setIsOpen }) {
           type='button'
           onClick={() => {
             resetState(dispatch);
-            setSuccessText('Data has been deleted. Reloading page...');
+            setSuccessMessage('Data has been deleted. Reloading page...');
             const currentParams = new URLSearchParams(window.location.search);
             currentParams.delete('open');
             setTimeout(() => {
@@ -299,7 +365,7 @@ function ResetDataModalContent({ setIsOpen }) {
           Yes, Permanently Delete Data
         </button>
       </div>
-      {successText && <p className='text-accent text-sm'>{successText}</p>}
+      {successMessage && <p className='text-accent text-sm'>{successMessage}</p>}
     </>
   );
 }
@@ -355,3 +421,4 @@ function convertTasksToPluginExport(taskState, rsn) {
   });
   return JSON.stringify(reformattedTasks);
 }
+// eslint-disable-next-line no-unused-vars
