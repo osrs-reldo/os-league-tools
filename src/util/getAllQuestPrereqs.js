@@ -2,7 +2,6 @@ import { questsById } from '../data/quests';
 
 function traverseQuestsRecursive(questId, callback) {
   const { prereqs } = questsById[questId];
-  callback(questId);
   prereqs.map(id => traverseQuestsRecursive(id, callback));
 }
 

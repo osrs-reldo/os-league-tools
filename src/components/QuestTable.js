@@ -293,7 +293,7 @@ function RegionsCell({ row }) {
                 );
               }
               return (
-                <div className='flex flex-row'>
+                <div className='flex flex-row' key={region.join('-')}>
                   <span className='text-xs'>(</span>
                   {region.map((r, i) => {
                     const { icon } = regionsByName[r] || {};

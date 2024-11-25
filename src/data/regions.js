@@ -13,7 +13,7 @@ export const LEAGUES_REGIONS = [
     map: images['map-misthalin.png'],
     infographic: images['info-misthalin.jpeg'],
     isDefaultUnlock: true,
-    questUnlocks: getAllQuestPrereqs(['3139', '350', '354', '433', '3135', '360']),
+    questUnlocks: getAllQuestPrereqs(['31', '34', '38', '145', '11', '47']),
     diaryUnlocks: [
       295, 297, 299, 300, 301, 310, 311, 315, 316, 317, 319, 320, 322, 323, 324, 327, 382, 383, 390, 391, 393, 396, 404,
       406,
@@ -26,7 +26,7 @@ export const LEAGUES_REGIONS = [
     map: images['map-karamja.png'],
     infographic: images['info-karamja.png'],
     isDefaultUnlock: true,
-    questUnlocks: getAllQuestPrereqs(['424']),
+    questUnlocks: getAllQuestPrereqs(['133']),
     diaryUnlocks: [203, 204, 216, 221, 227, 231, 234, 236, 242],
   },
   {
@@ -36,7 +36,7 @@ export const LEAGUES_REGIONS = [
     map: images['map-asgarnia.png'],
     infographic: images['info-asgarnia.png'],
     isDefaultUnlock: false,
-    questUnlocks: getAllQuestPrereqs(['394', '402']),
+    questUnlocks: getAllQuestPrereqs(['93', '102']),
     diaryUnlocks: [97, 114, 118],
   },
   {
@@ -46,7 +46,7 @@ export const LEAGUES_REGIONS = [
     map: images['map-desert.png'],
     infographic: images['info-desert.png'],
     isDefaultUnlock: false,
-    questUnlocks: getAllQuestPrereqs(['90009']),
+    questUnlocks: getAllQuestPrereqs(['2343']),
     diaryUnlocks: [58, 67, 70, 75],
   },
   {
@@ -56,7 +56,7 @@ export const LEAGUES_REGIONS = [
     map: images['map-fremennik.png'],
     infographic: images['info-fremennik.png'],
     isDefaultUnlock: false,
-    questUnlocks: getAllQuestPrereqs(['90002', '382', '348', '398']),
+    questUnlocks: getAllQuestPrereqs(['2338', '74', '32', '98']),
     diaryUnlocks: [131, 134, 141, 142, 155, 156],
   },
   {
@@ -66,7 +66,7 @@ export const LEAGUES_REGIONS = [
     map: images['map-morytania.png'],
     infographic: images['info-morytania.png'],
     isDefaultUnlock: false,
-    questUnlocks: getAllQuestPrereqs(['341', '375']),
+    questUnlocks: getAllQuestPrereqs(['22', '67']),
     diaryUnlocks: [346, 350, 357, 360, 362],
   },
   {
@@ -76,7 +76,7 @@ export const LEAGUES_REGIONS = [
     map: images['map-kandarin.png'],
     infographic: images['info-kandarin.png'],
     isDefaultUnlock: false,
-    questUnlocks: getAllQuestPrereqs(['396', '428', '387']),
+    questUnlocks: getAllQuestPrereqs(['96', '140', '82']),
     diaryUnlocks: [171, 186, 188, 195, 196, 199, 409, 414, 424, 434, 441, 449, 1, 8, 14, 15, 20, 22, 32, 33, 35, 41],
   },
   {
@@ -86,7 +86,7 @@ export const LEAGUES_REGIONS = [
     map: images['map-kourend.png'],
     infographic: images['info-kourend.png'],
     isDefaultUnlock: false,
-    questUnlocks: getAllQuestPrereqs(['3155']),
+    questUnlocks: getAllQuestPrereqs(['162']),
     diaryUnlocks: [],
   },
   {
@@ -96,7 +96,7 @@ export const LEAGUES_REGIONS = [
     map: images['map-tirannwn.png'],
     infographic: images['info-tirannwn.png'],
     isDefaultUnlock: false,
-    questUnlocks: getAllQuestPrereqs(['603']),
+    questUnlocks: getAllQuestPrereqs(['137']),
     diaryUnlocks: [278],
   },
   {
@@ -106,7 +106,7 @@ export const LEAGUES_REGIONS = [
     map: images['map-wilderness.png'],
     infographic: images['info-wilderness.png'],
     isDefaultUnlock: false,
-    questUnlocks: getAllQuestPrereqs(['3140']),
+    questUnlocks: getAllQuestPrereqs(['43']),
     diaryUnlocks: [473, 482, 484, 486],
   },
   {
