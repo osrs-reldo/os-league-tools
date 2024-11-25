@@ -1409,7 +1409,7 @@ const quests = [
     type: 'quest',
     autoUnlockRegions: [],
     regions: ['Kourend'],
-    prereqs: ['34', '54', '3', '26', '113', '13', '320'],
+    prereqs: ['34', '54', '3', '26', '113', '13', '143'],
     skillReqs: [
       { skill: 'Magic', level: 35 },
       { skill: 'Woodcutting', level: 52 },
@@ -3039,6 +3039,7 @@ const quests = [
     regions: ['Misthalin'],
     skillReqs: [],
     wiki: 'https://oldschool.runescape.wiki/w/Children_of_the_Sun',
+    prereqs: [],
   },
   {
     id: '3451',
@@ -3053,7 +3054,7 @@ const quests = [
       { skill: 'Fishing', level: 55 },
       { skill: 'Firemaking', level: 35 },
       { skill: 'Strength', level: 35 },
-      { skill: 'Agiity', level: 15 },
+      { skill: 'Agility', level: 15 },
       { skill: 'Farming', level: 15 },
       { skill: 'Crafting', level: 11 },
       { skill: 'Smithing', level: 5 },
@@ -3211,7 +3212,7 @@ const quests = [
   {
     id: '3713',
     points: 1,
-    label: '',
+    label: 'Ethically Acquired Antiquities',
     difficulty: QUEST_DIFFICULTY.NOVICE,
     length: QUEST_LENGTH.SHORT,
     type: 'quest',
