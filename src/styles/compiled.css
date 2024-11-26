@@ -2178,6 +2178,10 @@ select[multiple]:focus option:checked {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+.mx-\[20\%\] {
+  margin-left: 20%;
+  margin-right: 20%;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;

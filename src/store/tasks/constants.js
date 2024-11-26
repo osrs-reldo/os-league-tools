@@ -1,7 +1,7 @@
 import calculateTaskStats from '../../util/calculateTaskStats';
 import { INITIAL_REGIONS_STATE } from '../unlocks/constants';
 
-export const CURRENT_VERSION = 8;
+export const CURRENT_VERSION = 9;
 
 export const INITIAL_STATE = {
   version: CURRENT_VERSION,

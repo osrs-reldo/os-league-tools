@@ -1,10 +1,9 @@
-import { deleteFromLocalStorage } from '../../client/localstorage-client';
 import { CURRENT_VERSION, INITIAL_STATE } from './constants';
 
-const TRAILBLAZER_RELOADED_MIN_VERSION = 8;
+const RAGING_ECHOES_MIN_VERSION = 9;
 
 const versionUpdaters = {
-  8: updateToV8,
+  9: updateToV9,
 };
 
 export default function updateTasksVersion(taskState) {
@@ -21,22 +20,9 @@ export default function updateTasksVersion(taskState) {
   return updatedState;
 }
 
-function updateToV8(state) {
-  if (state.version >= TRAILBLAZER_RELOADED_MIN_VERSION) {
+function updateToV9(state) {
+  if (state.version >= RAGING_ECHOES_MIN_VERSION) {
     return state;
   }
-
-  // TODO update this list
-  // Storage contains old data from last league, reset it and clean up other stale fields
-  [
-    // 'contentWidth',
-    // 'filterHideLocked',
-    // 'filterHideTodoTasks',
-    // 'filterShowHiddenTasks',
-    // 'hideAlertBanner',
-    // 'unlockedRegions',
-    // 'unlockedRelics',
-    // 'tasks',
-  ].forEach(staleStorageField => deleteFromLocalStorage(staleStorageField));
   return INITIAL_STATE;
 }
