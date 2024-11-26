@@ -2887,6 +2887,14 @@ select[multiple]:focus option:checked {
   --tw-bg-opacity: 1;
   background-color: rgb(82 82 91 / var(--tw-bg-opacity, 1));
 }
+.hover\:bg-secondary-alt:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}
+.hover\:bg-secondary-alt:hover:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(53 53 59 / var(--tw-bg-opacity, 1));
+}
 @media (min-width: 1280px) {
   .xl\:bg-primary {
     --tw-bg-opacity: 1;
