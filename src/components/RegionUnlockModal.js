@@ -61,22 +61,22 @@ export default function RegionUnlockModal({ isOpen, setIsOpen, tier, initialSele
           Unlocking {selectedRegionData.label} will automatically complete the following:
         </div>
         <div className='m-2 mt-1 flex flex-col gap-1 text-sm italic max-h-[200px] overflow-auto'>
-          {selectedRegionData.questUnlocks.length > 0 && <span className='text-accent'>Quests</span>}
+          {selectedRegionData.questUnlocks.length > 0 && <p className='text-accent'>Quests</p>}
           {selectedRegionData.questUnlocks.map(questId => {
             const questData = questsById[questId];
             return (
-              <span key={questData.id} className='pl-4'>
+              <p key={questData.id} className='pl-4'>
                 {questData.label}
-              </span>
+              </p>
             );
           })}
-          {selectedRegionData.diaryUnlocks.length > 0 && <span className='text-accent'>Diary tasks</span>}
+          {selectedRegionData.diaryUnlocks.length > 0 && <p className='text-accent'>Diary tasks</p>}
           {selectedRegionData.diaryUnlocks.map(diaryId => {
             const diaryData = diaryTasksById[diaryId];
             return (
-              <span key={diaryData.id} className='pl-4'>
+              <p key={diaryData.id} className='pl-4'>
                 {diaryData.task} ({diaryData.location.label} {diaryData.difficulty.label})
-              </span>
+              </p>
             );
           })}
         </div>
