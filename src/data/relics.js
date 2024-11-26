@@ -269,22 +269,31 @@ export const RELICS = [
   ],
   [
     {
-      label: "Banker's Note",
+      label: 'Golden God',
       description: [
-        '· Must be unlocked in a bank as the player is given an item upon unlocking this relic.',
-        "· Players are given a banker's note which allows players to use note-able items on it to turn them into banknotes or unnote them. Items must be used on the banker's note.",
-        `· The "Activate" option allows players to note and un-note items in one action with a quantity of the player's choosing. An item must first be used on the banker's note in order for this to work.`,
+        '· High and Low Alchemy spells have no rune cost or level requirements',
+        '· Items give 15% more gold and have a 65% chance to not be consumed when the spell is cast',
+        '· When Alchemy spells are cast on a stack of items, the spells will automatically be recast over time, until the stack is depleted or moved',
+        '· You gain the following benefits to Prayer:',
+        ' · 20,000 can be offered at Prayer altars in exchange for Prayer XP equivalent to using a dragon bone. This respects altar XP modifiers.',
+        '· All items purchased from some select shops can be noted, provided the items can be noted at all.',
+        ' · This effect can be toggled.',
       ],
-      icon: images['relic-bankers-note.png'],
+      icon: images['relic-golden-god.png'],
     },
     {
-      label: 'Fire Sale',
+      label: 'Reloaded',
+      description: ['· Choose another relic from any previous tier.'],
+      icon: images['relic-reloaded.png'],
+    },
+    {
+      label: 'Equilibrium',
       description: [
-        '· All item shops with coins as currency are free. This only applies to shops with a standard shop interface (e.g. general stores).',
-        '· These items can be automatically noted if the player chooses so.',
-        '· Shops will no longer buy items for gold.',
+        '· Each time the player gains experience, they will gain additional experience in the skill trained. The additional experience is equal to 10% of the players total level. (This is increased to 20% when training the skill the player has the least experience in.)',
+        '· Additional experience given by this relic is not multiplied by the Leagues XP multiplier.',
+        '· Tip: Equilibrium will trigger per instance of individiual XP provided, even if that is multiple times in a single tick. E.g. Production Master will trigger Equilibrium one time per item processed.',
       ],
-      icon: images['relic-fire-sale.png'],
+      icon: images['relic-equilibrium.png'],
     },
   ],
   [
