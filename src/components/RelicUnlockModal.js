@@ -61,19 +61,14 @@ export default function RelicUnlockModal({ isOpen, setIsOpen, tier }) {
         <div className='flex flex-col gap-2 m-4'>
           {availableRelics.map((relicData, index) => (
             <div
-              className={`flex flex-row gap-4 p-2 ${
+              className={`flex flex-row gap-4 p-2 cursor-pointer hover:bg-secondary-alt ${
                 selectedRelic === index ? 'bg-secondary border-accent rounded' : ''
               }`}
+              onClick={onSelectRelic(index)}
               key={index}
             >
               <div className='flex flex-col gap-2 justify-center'>
                 <img className='max-w-[3rem]' src={relicData.icon} alt={relicData.label} />
-                <input
-                  type='checkbox'
-                  className='checkbox-primary'
-                  checked={selectedRelic === index}
-                  onChange={onSelectRelic(index)}
-                />
               </div>
               <div>
                 <p className='text-accent small-caps'>{relicData.label}</p>
