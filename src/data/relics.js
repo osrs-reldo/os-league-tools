@@ -341,30 +341,22 @@ export const RELICS = [
   ],
   [
     {
-      label: 'Equilibrium',
+      label: 'Total Recall',
       description: [
-        "· Each time the player gains experience, they will gain additional experience equal to 10% of the player's total level (20% for the player's lowest level skill).",
-        '· Additional experience given by this relic is not multiplied by the Leagues XP multiplier.',
-        '· If chosen with Production Prodigy, each item processed will trigger this effect.',
+        '· Players are given a crystal of echoes allowing the following: ',
+        ' · Players can store any single coordinate, alongside their hitpoints, prayer, and special attack energy',
+        ' · Players may teleport back to the coordinates at any later time, restoring their stats to the saved ones',
       ],
-      icon: images['relic-equilibrium.png'],
+      icon: images['relic-total-recall.png'],
     },
     {
-      label: "Farmer's Fortune",
+      label: "Banker's Note",
       description: [
-        '· Players will have a 20% chance to save the seed or sapling that was planted.',
-        '· Farming patches will grow instantly and never catch diseases.',
-        '· Players will harvest farming patches x25 faster, giving triple the usual yield and turning them into bank notes.',
+        "· Players are given a banker's note which allows players to use note-able items on it to turn them into banknotes or unnote them. Items must be used on the banker's note.",
+        `· The "Activate" option allows players to note and un-note items in one action with a quantity of the player's choosing. An item must first be used on the banker's note in order for this to work.`,
+        "· Players can customise how many items the banker's note will note and unnote using the quantity options.",
       ],
-      icon: images['relic-farmers-fortune.png'],
-    },
-    {
-      label: 'Ruinous Powers',
-      description: [
-        '· Must be unlocked in a bank as the player is given an item upon unlocking this relic.',
-        '· Players are given the Ruinous Powers book, an item that allows players to alternate between the standard prayer book and the Ruinous Powers prayer book.',
-      ],
-      icon: images['relic-ruinous-powers.png'],
+      icon: images['relic-bankers-note.png'],
     },
   ],
   [
