@@ -2,14 +2,17 @@ import images from '../assets/images';
 
 export const NONE_RELIC_ID = -1;
 
-export const RELIC_UNLOCK_THRESHOLDS = [0, 750, 1200, 2000, 4000, 7500, 15000, 24000];
+export const RELIC_UNLOCK_THRESHOLDS = [0, 750, 1500, 2500, 5000, 8000, 16000, 25000];
 
 export const PASSIVE_RELICS = [
   {
     exp: {
       multiplier: 5,
       increased: true,
-      isCombatDoubled: false,
+    },
+    combatExp: {
+      multiplier: 1,
+      increased: false,
     },
     drops: {
       multiplier: 2,
@@ -30,7 +33,10 @@ export const PASSIVE_RELICS = [
     exp: {
       multiplier: 8,
       increased: true,
-      isCombatDoubled: false,
+    },
+    combatExp: {
+      multiplier: 1,
+      increased: false,
     },
     drops: {
       multiplier: 2,
@@ -46,7 +52,10 @@ export const PASSIVE_RELICS = [
     exp: {
       multiplier: 8,
       increased: false,
-      isCombatDoubled: true,
+    },
+    combatExp: {
+      multiplier: 1,
+      increased: false,
     },
     drops: {
       multiplier: 2,
@@ -57,16 +66,19 @@ export const PASSIVE_RELICS = [
       increased: false,
     },
     extras: [
-      'The "Bigger and badder" slayer unlock is unlocke for free.',
+      'The "Bigger and badder" slayer unlock is unlocked for free.',
       "Slayer Points are 5x from Tasks and you aren't required required to complete 5 Tasks before earning Points.",
-      'Slayer Superior rates are increasedf to a 1/50 chance to appear.',
+      'Slayer Superior rates are increased to a 1/50 chance to appear.',
     ],
   },
   {
     exp: {
       multiplier: 8,
       increased: false,
-      isCombatDoubled: false,
+    },
+    combatExp: {
+      multiplier: 1,
+      increased: false,
     },
     drops: {
       multiplier: 5,
@@ -86,7 +98,10 @@ export const PASSIVE_RELICS = [
     exp: {
       multiplier: 12,
       increased: true,
-      isCombatDoubled: true,
+    },
+    combatExp: {
+      multiplier: 2,
+      increased: true,
     },
     drops: {
       multiplier: 5,
@@ -102,7 +117,10 @@ export const PASSIVE_RELICS = [
     exp: {
       multiplier: 12,
       increased: false,
-      isCombatDoubled: true,
+    },
+    combatExp: {
+      multiplier: 2,
+      increased: false,
     },
     drops: {
       multiplier: 5,
@@ -118,7 +136,10 @@ export const PASSIVE_RELICS = [
     exp: {
       multiplier: 16,
       increased: true,
-      isCombatDoubled: true,
+    },
+    combatExp: {
+      multiplier: 2,
+      increased: false,
     },
     drops: {
       multiplier: 5,
@@ -134,7 +155,10 @@ export const PASSIVE_RELICS = [
     exp: {
       multiplier: 16,
       increased: false,
-      isCombatDoubled: true,
+    },
+    combatExp: {
+      multiplier: 2,
+      increased: false,
     },
     drops: {
       multiplier: 5,
@@ -396,13 +420,10 @@ export const RELICS = [
     {
       label: 'Specialist',
       description: [
-        '· Must be unlocked in a bank as the player is given an item upon unlocking this relic.',
-        '· Players are given the Guardian horn, which allows players to summon a guardian thrall that attacks for 30 minutes, with a damage roll of 6-15, an attack speed of 5, and an accuracy roll of 45,000.',
-        '· The guardian thrall will attack with a style that the NPC has the lowest defence bonus for.',
-        '· In multicombat areas, the guardian thrall will attempt to cast an area-of-effect attack if the primary target is weak to ranged or magic. This can be toggled via the guardian horn.',
-        '· Arceuus thralls can be used alongside the guardian thrall.',
-        '· Players cannot bring the guardian horn into locations where items are restricted. The Gauntlet is the only exception to this rule.',
-        "· The guardian's outfit can be switched via the horn.",
+        '· You gain the following benefits to special attacks:',
+        ' · All special attacks cost 20% and have +100% accuracy.',
+        ' · For each failed accuracy roll with a special attack, gain 10% Special Attack Energy.',
+        ' · Whenever you kill an NPC, restore 15% Special Attack Energy.',
       ],
       icon: images['relic-specialist.png'],
     },

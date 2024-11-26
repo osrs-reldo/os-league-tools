@@ -604,7 +604,7 @@ export const DIFFICULTY = {
   },
   MEDIUM: {
     label: 'Medium',
-    value: 40,
+    value: 30,
     icon: images['task-medium.png'],
     sortOrder: 2,
   },
