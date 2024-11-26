@@ -14,7 +14,9 @@ export default function CalculatorTable({ skill, expValues, baseMultiplier, mult
 
   // Force reset page to 1 when skill is changed
   const [forceResetPage, setForceResetPage] = useState(false);
-  useEffect(() => setForceResetPage(prev => !prev), [skill]);
+  useEffect(() => {
+    setForceResetPage(prev => !prev);
+  }, [skill]);
 
   const columns = useMemo(
     () => [

@@ -50,7 +50,9 @@ export default function BankedExpSettings({ expGained, multipliersState, equilib
     };
   };
 
-  useEffect(() => dispatch(updateCalculatorsBaseMultiplier(getExpMultiplier(tier))), []);
+  useEffect(() => {
+    dispatch(updateCalculatorsBaseMultiplier(getExpMultiplier(tier)));
+  }, []);
 
   useEffect(() => {
     if (hiscoresForSelectedSkill) {
