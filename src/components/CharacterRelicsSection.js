@@ -37,10 +37,10 @@ export default function CharacterRelicsSection({ tier, taskStats, unlockedRelics
             />
           </div>
           <div className='flex w-full flex-wrap justify-around text-center align-middle tracking-wide text-md text-primary gap-3'>
-            <span>{`Relics unlocked: ${relicsUnlocked} / 7`}</span>
-            <span>{`Next unlock at ${RELIC_UNLOCK_THRESHOLDS[tier]} pts (${
+            <p>{`Relics unlocked: ${relicsUnlocked} / 8`}</p>
+            <p>{`Next unlock at ${RELIC_UNLOCK_THRESHOLDS[tier]} pts (${
               RELIC_UNLOCK_THRESHOLDS[tier] - taskStats.points.complete.total
-            } remaining)`}</span>
+            } remaining)`}</p>
           </div>
         </>
       )}
