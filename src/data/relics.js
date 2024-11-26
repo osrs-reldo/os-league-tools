@@ -235,6 +235,40 @@ export const RELICS = [
   ],
   [
     {
+      label: 'Clue Compass',
+      description: [
+        '· Players are given a clue compass allowing teleport to any STASH unit, and to Falo the Bard',
+        '· The compass can also teleport the player to their current clue step if they have one. It does not work on clue steps that require killing a certain NPC.',
+        '· This item ignores wilderness teleport restrictions',
+        '· This item cannot be used to teleport to an area which is not unlocked.',
+        'As the player is given an item upon unlocking this relic, it must be unlocked in a bank. ',
+      ],
+      icon: images['relic-clue-compass.png'],
+    },
+    {
+      label: 'Bank Heist',
+      description: [
+        "· Players are given a banker's briefcase allowing teleport to any deposit box, bank, or bank chest",
+        '· This item ignores wilderness teleport restrictions',
+        '· This item cannot be used to teleport to an area which is not unlocked',
+        'As the player is given an item upon unlocking this relic, it must be unlocked in a bank.',
+      ],
+      icon: images['relic-bank-heist.png'],
+    },
+    {
+      label: "Fairy's Flight",
+      description: [
+        '· Players are given a fairy mushroom which allows teleporting to any fairy ring, spirit tree, or tool leprechaun.',
+        '· Unlocking this relic will autocomplete the Tree Gnome Village quest.',
+        '· Can only teleport to locations within regions the player has unlocked.',
+        '· This item ignores wilderness teleport restrictions.',
+        'As the player is given an item upon unlocking this relic, it must be unlocked in a bank. ',
+      ],
+      icon: images['relic-fairys-flight.png'],
+    },
+  ],
+  [
+    {
       label: "Banker's Note",
       description: [
         '· Must be unlocked in a bank as the player is given an item upon unlocking this relic.',
@@ -251,48 +285,6 @@ export const RELICS = [
         '· Shops will no longer buy items for gold.',
       ],
       icon: images['relic-fire-sale.png'],
-    },
-  ],
-  [
-    {
-      label: "Archer's Embrace",
-      description: [
-        '· Ranged weapons with attack speed 4 or above have this stat halved, rounded down.',
-        '· Ranged weapons with attack speed 3 or below have this stat halved, rounded up.',
-        "· 90% of ammunition is saved when using Ranged weapons. This effect stacks with Ava's devices resulting in a 98% ammo saving bonus. Crystal bow, Chinchompas, and Toxic Blowpipe charged are included in this effect.",
-        '· Enchanged Bolts have a 2x boosted chance to proc.',
-        '· 10% change that your weapon will fire and extra projectile (Bows, Crossbows, Ballista and most thrown weapons)',
-        '· Ranged accuracy is increased by 100%.',
-      ],
-      icon: images['relic-archers-embrace.png'],
-    },
-    {
-      label: "Brawler's Resolve",
-      description: [
-        '· Melee weapons with attack speed 4 or above have this stat halved, rounded down.',
-        '· Melee weapons with attack speed 3 or below have this stat halved, rounded up.',
-        '· Immune to all status effects, including but not limited to Poison, Venom, and Firebreath, with the exception of stuns and roots. This applies in both PvE and PvP.',
-        '· 10% chance to deal a critical strike on a successful melee hit, dealing double damage.',
-        '· Melee accuracy is increased by 50%.',
-        '· Melee, Ranged, and Magic defence is increased by 50%.',
-      ],
-      icon: images['relic-brawlers-resolve.png'],
-    },
-    {
-      label: 'Superior Sorcerer',
-      description: [
-        '· Magic weapons with attack speed 4 or above have this stat halved, rounded down.',
-        '· Magic weapons with attack speed 3 or below have this stat halved, rounded up.',
-        "· You save 90% of your Runes when casting spells. This includes charges when using powerd staves such as the Trident of the Seas, Trident of the Swamp, Sanguinesti Staff, Tumeken's Shadow, and the Enchanted Slayer Staff.",
-        '· Bind spells will always hit on an unfrozen target.',
-        '· Acquire the Arcane Grimoire, which allows you to change between Spellbooks you have unlocked. Must be at a bank to obtain the item.',
-        '· Acquire a Rune Pouch.',
-        '· All Rune Pouches store 2 more types of Runes.',
-        '· Magic attacks will deal an additional 25% as splash damage to surrounding targets up to 5 additional targets (only works in multicombat areas).',
-        '· Magic accuracy is increased by 175%.',
-        '· Magic damage is increased by 20%.',
-      ],
-      icon: images['relic-superior-sorcerer.png'],
     },
   ],
   [
