@@ -116,7 +116,7 @@ export const LEAGUES_REGIONS = [
     map: images['map-varlamore.png'],
     infographic: images['info-varlamore.png'],
     isDefaultUnlock: false,
-    questUnlocks: [],
+    questUnlocks: getAllQuestPrereqs(['3710', '3513']),
     diaryUnlocks: [],
   },
 ];
