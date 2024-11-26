@@ -729,7 +729,7 @@ const quests = [
     difficulty: QUEST_DIFFICULTY.NOVICE,
     length: QUEST_LENGTH.MEDIUM,
     type: 'quest',
-    autoUnlockRegions: [],
+    autoUnlockRegions: ['Varlamore'],
     regions: ['Kandarin'],
     prereqs: [],
     skillReqs: [{ skill: 'Hunter', level: 27 }],
