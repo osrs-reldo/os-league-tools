@@ -2,40 +2,43 @@ import images from '../assets/images';
 
 export const NONE_RELIC_ID = -1;
 
-export const RELIC_UNLOCK_THRESHOLDS = [0, 500, 1200, 2000, 4000, 7500, 15000, 24000];
+export const RELIC_UNLOCK_THRESHOLDS = [0, 750, 1200, 2000, 4000, 7500, 15000, 24000];
 
 export const PASSIVE_RELICS = [
   {
     exp: {
       multiplier: 5,
       increased: true,
+      isCombatDoubled: false,
     },
     drops: {
       multiplier: 2,
       increased: true,
     },
     minigames: {
-      multiplier: 1,
-      increased: false,
+      multiplier: 4,
+      increased: true,
     },
     extras: [
+      'Farming Ticks will occur every minute instead of every five minutes.',
+      'Minigame Points received are boosted by 4x',
       'Run energy is never drained whilst running.',
-      'All clue scrolls will drop as stackable scroll boxes.',
-      'Players will only receive steps they can complete within an unlocked region.',
+      'All Clue Scrolls will drop as Stackable Scroll Boxes, and Clue-step progress is saved between Clues.',
     ],
   },
   {
     exp: {
       multiplier: 8,
       increased: true,
+      isCombatDoubled: false,
     },
     drops: {
       multiplier: 2,
       increased: false,
     },
     minigames: {
-      multiplier: 3,
-      increased: true,
+      multiplier: 4,
+      increased: false,
     },
     extras: [],
   },
@@ -43,33 +46,35 @@ export const PASSIVE_RELICS = [
     exp: {
       multiplier: 8,
       increased: false,
+      isCombatDoubled: true,
     },
     drops: {
       multiplier: 2,
       increased: false,
     },
     minigames: {
-      multiplier: 3,
+      multiplier: 4,
       increased: false,
     },
     extras: [
-      'Players will be given a crystal of memories, which can teleport players back from where they most recently teleported from.',
-      'Has a cooldown of six minutes, which can be reduced by one for every 300 total levels the player has (no cooldown at 1800 total level)',
-      'The crystal will not save teleports casted from an instance, with some exceptions.',
+      'The "Bigger and badder" slayer unlock is unlocke for free.',
+      "Slayer Points are 5x from Tasks and you aren't required required to complete 5 Tasks before earning Points.",
+      'Slayer Superior rates are increasedf to a 1/50 chance to appear.',
     ],
   },
   {
     exp: {
       multiplier: 8,
       increased: false,
+      isCombatDoubled: false,
     },
     drops: {
-      multiplier: 3,
+      multiplier: 5,
       increased: true,
     },
     minigames: {
-      multiplier: 3,
-      increased: false,
+      multiplier: 8,
+      increased: true,
     },
     extras: [
       'The Bigger and Badder slayer unlock is unlocked (If already purchased, 150 slayer reward points are refunded).',
@@ -81,14 +86,15 @@ export const PASSIVE_RELICS = [
     exp: {
       multiplier: 12,
       increased: true,
+      isCombatDoubled: true,
     },
     drops: {
-      multiplier: 3,
+      multiplier: 5,
       increased: false,
     },
     minigames: {
-      multiplier: 5,
-      increased: true,
+      multiplier: 8,
+      increased: false,
     },
     extras: [],
   },
@@ -96,29 +102,31 @@ export const PASSIVE_RELICS = [
     exp: {
       multiplier: 12,
       increased: false,
+      isCombatDoubled: true,
     },
     drops: {
-      multiplier: 4,
-      increased: true,
-    },
-    minigames: {
       multiplier: 5,
-      increased: false,
-    },
-    extras: [],
-  },
-  {
-    exp: {
-      multiplier: 16,
-      increased: true,
-    },
-    drops: {
-      multiplier: 4,
       increased: false,
     },
     minigames: {
       multiplier: 8,
+      increased: false,
+    },
+    extras: [],
+  },
+  {
+    exp: {
+      multiplier: 16,
       increased: true,
+      isCombatDoubled: true,
+    },
+    drops: {
+      multiplier: 5,
+      increased: false,
+    },
+    minigames: {
+      multiplier: 8,
+      increased: false,
     },
     extras: [],
   },
@@ -126,10 +134,11 @@ export const PASSIVE_RELICS = [
     exp: {
       multiplier: 16,
       increased: false,
+      isCombatDoubled: true,
     },
     drops: {
       multiplier: 5,
-      increased: true,
+      increased: false,
     },
     minigames: {
       multiplier: 8,
@@ -142,43 +151,46 @@ export const PASSIVE_RELICS = [
 export const RELICS = [
   [
     {
-      label: 'Endless Harvest',
+      label: 'Power Miner',
       description: [
-        '· Resources gathered from Fishing, Woodcutting and Mining are multiplied by 2x',
-        '· All resources gathered by this Relic are sent directly to your Bank if you have space, otherwise they are placed in your inventory',
-        '· Items which cannot be banked will be plaved in your Inventory instead, even if you have Bank space',
-        '· Fill your bank with bank fillers to have resources sent to your Inventory',
+        '· Grants the Echo pickaxe, a non-degradable variant of the crystal equivalent with no requirements. When in your inventory or equipped, you gain the following benefits:',
+        ' · On failing to mine a rock, you will have a separate 50% chance to succeed.',
+        ' · The rock will not deplete until you have mined 4 ores. This stacks with the effects of Mining gloves.',
+        ' · Fill your bank with bank fillers to have resources sent to your Inventory',
+        '· You will be able to toggle the following effects on or off for the Pickaxe:',
+        ' · Collected ores are automatically smelted and grant Smithing XP (regardless of your Smithing level).',
+        ' · Gems gathered from mining are automatically cut and grant Crafting XP (regardless of your Crafting level).',
       ],
-      icon: images['relic-endless-harvest.png'],
+      icon: images['relic-power-miner.png'],
     },
     {
-      label: 'Production Prodigy',
+      label: 'Lumberjack',
       description: [
-        '· When doing the following activities all items are processed at once granting full XP',
-        ' · Smelting ores, smithing bars and making Cannonballs',
-        ' · Fletching logs, stringing bows and cutting bolt tips',
-        ' · Cleaning herbs and making potions which do not have a stackable secondary ingredient',
-        ' · Cooking food and making jugs of wine',
-        ' · Crafting leather, uncut gems, glassblowing, jewellery, pottery, battlestaves and spinning flax or wool',
-        '· There is a 25% chance that you will make an additional product, which will be sent to your Bank if you have space. Additional products will also grants XP',
-        '· Additionally Crafting, Smithing, Herblore, Fletching and Cooking are boosted by +12',
+        '· Grants the Echo axe, a non-degradable variant of the crystal equivalent with no requirements. When in your inventory or equipped, you gain the following benefits:',
+        ' · On failing to chop a tree, you will have a separate 50% chance to succeed.',
+        ' · Items gathered from Woodcutting are automatically sent to your Bank.',
+        '· You will be able to toggle the following effects on or off for the Axe: ',
+        ' · Automatically burning logs for Firemaking XP (regardless of your Firemaking level).',
+        ' · Automatically Fletching logs into arrowshafts for Fletching XP (regardless of your Fletching level).',
       ],
-      icon: images['relic-production-prodigy.png'],
+      icon: images['relic-lumberjack.png'],
     },
     {
-      label: 'Trickster',
+      label: 'Animal Wrangler',
       description: [
-        '· Must be unlocked in a bank as the player is given an item upon unlocking this relic.',
-        "· Players are given the Sage's greaves, which are boots that grant 2/3rds of the player's Agility level as experience whilst running, roughly every 10 ticks.",
-        '· Players will always succeed in performing actions for Thieving, Agility, Hunter, and Firemaking.',
-        '· The maximum amount of coin pouches players can hold is tripled.',
-        '· The player will automatically re-pickpocket an NPC until they can no longer do so (ex. obtaining the maximum amount of coin pouches allowed)',
-        '· Pickpocketed loot is doubled and converted to bank notes. Stacks with rogues outfit for quadruple loot.',
-        '· Box traps will lure creatures faster, and give double loot and Hunter experience.',
-        '· Impling jars will never break upon opening one.',
-        '· Players can burn multiple logs per action (up to nine), providing there is space to do so.',
+        '· Grants the Echo harpoon, a non-degradable variant of the crystal equivalent with no requirements. When in your inventory or equipped, you gain the following benefits: ',
+        ' · On failing to fish a spot, you will have a separate 50% chance to succeed.',
+        ' · Items gathered from Fishing are automatically sent to your Bank.',
+        ' · Fish caught have a 50% chance to be automatically cooked, granting Cooking experience regardless of level requirements.',
+        ' · Attempt to catch fish 1 tick faster.',
+        ' · Acts as a Net, Big net, Lobster pot or any Rod whilst fishing.',
+        '· Alongside the Echo harpoon effects you will get the following benefits to Hunter: ',
+        ' · Hunter traps will never fail.',
+        ' · Box traps catch chinchompas faster and are doubled when caught, also giving double XP.',
+        ' · Impling jars no longer break upon opening them.',
+        '· You also never burn food while Cooking.',
       ],
-      icon: images['relic-trickster.png'],
+      icon: images['relic-animal-wrangler.png'],
     },
   ],
   [
