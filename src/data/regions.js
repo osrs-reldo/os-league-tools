@@ -86,8 +86,8 @@ export const LEAGUES_REGIONS = [
     map: images['map-kourend.png'],
     infographic: images['info-kourend.png'],
     isDefaultUnlock: false,
-    questUnlocks: getAllQuestPrereqs(['162']),
-    diaryUnlocks: [],
+    questUnlocks: getAllQuestPrereqs(['81']),
+    diaryUnlocks: [278],
   },
   {
     id: 8,
