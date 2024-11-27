@@ -62,7 +62,7 @@ export default {
   371: {
     id: '371',
     label: `Burn Some Normal Logs`,
-    description: `Burn some Logs|Normal Logs`,
+    description: `Burn some Normal Logs`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.EASY,
@@ -84,7 +84,7 @@ export default {
   97: {
     id: '97',
     label: `Bury Some Bones`,
-    description: `Bury any kind of Bones (disambiguation)|Bones`,
+    description: `Bury any kind of Bones`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.EASY,
@@ -150,7 +150,7 @@ export default {
   342: {
     id: '342',
     label: `Catch an Anchovy`,
-    description: `Catch a Raw anchovies|Raw Anchovy whilst Fishing`,
+    description: `Catch a Raw Anchovy whilst Fishing`,
     skillReqs: [{ skill: 'Fishing', level: 15 }],
     regions: ['General'],
     difficulty: DIFFICULTY.EASY,
@@ -161,7 +161,7 @@ export default {
   319: {
     id: '319',
     label: `Check Your Slayer Task`,
-    description: `Use an Enchanted Gem to check your Slayer task|Slayer Task`,
+    description: `Use an Slayer Task`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.EASY,
@@ -205,7 +205,7 @@ export default {
   1784: {
     id: '1784',
     label: `Clean 25 Grimy Guam Leafs`,
-    description: `Clean 25 Grimy guam leaf|Grimy Guam Leafs`,
+    description: `Clean 25 Grimy Guam Leafs`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.EASY,
@@ -337,7 +337,7 @@ export default {
   61: {
     id: '61',
     label: `Defeat a Moss Giant`,
-    description: `Defeat a Moss giant|Moss Giant`,
+    description: `Defeat a Moss Giant`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.EASY,
@@ -359,7 +359,7 @@ export default {
   1269: {
     id: '1269',
     label: `Dye a cape orange`,
-    description: `Dye a cape Orange dye|orange`,
+    description: `Dye a orange`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.EASY,
@@ -428,7 +428,7 @@ export default {
   430: {
     id: '430',
     label: `Equip an Elemental Staff`,
-    description: `Equip a Elemental staves#Standard staves|basic elemental staff`,
+    description: `Equip a basic elemental staff`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.EASY,
@@ -483,7 +483,7 @@ export default {
   366: {
     id: '366',
     label: `Locate a Runecrafting Altar With a Talisman`,
-    description: `Use any talisman to check the location of a Runic altar|Runecrafting Altar`,
+    description: `Use any Runecrafting Altar`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.EASY,
@@ -527,7 +527,7 @@ export default {
   1801: {
     id: '1801',
     label: `Mine some essence`,
-    description: `Mine some Rune essence|essence`,
+    description: `Mine some essence`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.EASY,
@@ -615,7 +615,7 @@ export default {
   282: {
     id: '282',
     label: `Protect Your Crops`,
-    description: `Pay a Group of Advanced Gardeners|farmer to protect any of your crops`,
+    description: `Pay a farmer to protect any of your crops`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.EASY,
@@ -681,7 +681,7 @@ export default {
   1783: {
     id: '1783',
     label: `Scatter some Ashes`,
-    description: `Scatter some Remains#Demonic ashes|Ashes`,
+    description: `Scatter some Ashes`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.EASY,
@@ -846,7 +846,7 @@ export default {
   1549: {
     id: '1549',
     label: `Balance 5 barrels on your head`,
-    description: `Balance Five barrels|5 barrels on your head in the Warriors' Guild|Warriors guild`,
+    description: `Balance 5 barrels on your head in the Warriors guild`,
     skillReqs: [{ skill: 'Attack', level: 99 }],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.EASY,
@@ -857,7 +857,7 @@ export default {
   774: {
     id: '774',
     label: `Craft an Air Rune`,
-    description: `Craft an Air Rune from Essence#Runecrafting resources|Essence at the Air Altar`,
+    description: `Craft an Essence at the Air Altar`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.EASY,
@@ -879,7 +879,7 @@ export default {
   1324: {
     id: '1324',
     label: `Eat a magic cabbage`,
-    description: `Eat a Cabbage (Draynor Manor)|magic cabbage`,
+    description: `Eat a magic cabbage`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.EASY,
@@ -912,7 +912,7 @@ export default {
   1312: {
     id: '1312',
     label: `Kill a port sarim prisoner`,
-    description: `Kill a Port Sarim|port sarim Port Sarim Jail#Personalities|prisoner`,
+    description: `Kill a port sarim prisoner`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.EASY,
@@ -923,7 +923,7 @@ export default {
   1525: {
     id: '1525',
     label: `Use the Falador Party room`,
-    description: `Deposit an item into the Falador Party Room|Falador Party room chest`,
+    description: `Deposit an item into the Falador Party room chest`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.EASY,
@@ -945,7 +945,7 @@ export default {
   1548: {
     id: '1548',
     label: `Catch a Salmon`,
-    description: `Catch a Raw salmon|Salmon in the Desert`,
+    description: `Catch a Salmon in the Desert`,
     skillReqs: [{ skill: 'Fishing', level: 30 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.EASY,
@@ -967,7 +967,7 @@ export default {
   854: {
     id: '854',
     label: `Craft a Fire Rune`,
-    description: `Craft a Fire Rune from Essence#Runecrafting resources|Essence at the Fire Altar`,
+    description: `Craft a Essence at the Fire Altar`,
     skillReqs: [{ skill: 'Runecraft', level: 14 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.EASY,
@@ -1198,7 +1198,7 @@ export default {
   1842: {
     id: '1842',
     label: `Pick up Snapegrass`,
-    description: `Pick up Snape grass|Snapegrass from Lunar Isle`,
+    description: `Pick up Snapegrass from Lunar Isle`,
     skillReqs: [],
     regions: ['Fremennik'],
     difficulty: DIFFICULTY.EASY,
@@ -1385,7 +1385,7 @@ export default {
   734: {
     id: '734',
     label: `Visit the Tree Gnome Village`,
-    description: `Visit the Tree Gnome Village (location)|Tree Gnome Village`,
+    description: `Visit the Tree Gnome Village`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.EASY,
@@ -1396,7 +1396,7 @@ export default {
   644: {
     id: '644',
     label: `Catch a Karambwanji`,
-    description: `Catch a Raw karambwanji|Karambwanji on Karamja`,
+    description: `Catch a Karambwanji on Karamja`,
     skillReqs: [{ skill: 'Fishing', level: 5 }],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.EASY,
@@ -1528,7 +1528,7 @@ export default {
   1606: {
     id: '1606',
     label: `Eat a Field Ration`,
-    description: `Eat a Field ration|Field Ration`,
+    description: `Eat a Field Ration`,
     skillReqs: [],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.EASY,
@@ -1586,7 +1586,7 @@ export default {
   174: {
     id: '174',
     label: `Travel to Molch Island`,
-    description: `Take one of the Boaty|boats around Lake Molch to Molch Island`,
+    description: `Take one of the boats around Lake Molch to Molch Island`,
     skillReqs: [],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.EASY,
@@ -1608,7 +1608,7 @@ export default {
   1600: {
     id: '1600',
     label: `Use the Mine cart transportation System`,
-    description: `Use the Lovakengj Minecart Network|Mine cart transportation System`,
+    description: `Use the Mine cart transportation System`,
     skillReqs: [],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.EASY,
@@ -1619,7 +1619,7 @@ export default {
   1557: {
     id: '1557',
     label: `Ask for a Quest from Bob`,
-    description: `Talk to Bob in Bob's Brilliant Axes.|Lumbridge axe shop and ask for a Quest`,
+    description: `Talk to Lumbridge axe shop and ask for a Quest`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -1630,7 +1630,7 @@ export default {
   1315: {
     id: '1315',
     label: `Chop a log from a potato tree`,
-    description: `Chop a Logs|log from a tree that is curiously in a potato field`,
+    description: `Chop a log from a tree that is curiously in a potato field`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -1674,7 +1674,7 @@ export default {
   466: {
     id: '466',
     label: `Defeat the Lesser Demon in the Wizards' Tower`,
-    description: `Defeat the Lesser demon|Lesser Demon at the top of the Wizards' Tower`,
+    description: `Defeat the Lesser Demon at the top of the Wizards' Tower`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -1685,7 +1685,7 @@ export default {
   1780: {
     id: '1780',
     label: `Drink a beer in the Longhall`,
-    description: `Drink a beer in the The Long Hall|Longhall in Barbarian Village`,
+    description: `Drink a Longhall in Barbarian Village`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -1696,7 +1696,7 @@ export default {
   1562: {
     id: '1562',
     label: `Eat an Onion`,
-    description: `2=Eat an Onion, https://www.youtube.com/watch?v=hmPVCKnkKWA raw`,
+    description: `Eat an Onion, raw`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -1740,7 +1740,7 @@ export default {
   1776: {
     id: '1776',
     label: `Get a haircut`,
-    description: `Go and Emma|get a haircut`,
+    description: `Go and get a haircut`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -1828,7 +1828,7 @@ export default {
   1563: {
     id: '1563',
     label: `Kill a Duck with a fire spell`,
-    description: `Kill a Duck with a Fire spells|fire spell`,
+    description: `Kill a fire spell`,
     skillReqs: [{ skill: 'Magic', level: 13 }],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -1850,7 +1850,7 @@ export default {
   1566: {
     id: '1566',
     label: `Kill a Goblin holding a spear`,
-    description: `Kill a Goblin#Level_5|Goblin holding a spear`,
+    description: `Kill a Goblin holding a spear`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -1905,7 +1905,7 @@ export default {
   1564: {
     id: '1564',
     label: `Kill an Imp with an earth spell`,
-    description: `Kill an Imp with an Earth spells|earth spell`,
+    description: `Kill an earth spell`,
     skillReqs: [{ skill: 'Magic', level: 9 }],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -1916,7 +1916,7 @@ export default {
   1306: {
     id: '1306',
     label: `Milk a cow`,
-    description: `Milk a Dairy cow|cow in Lumbridge`,
+    description: `Milk a cow in Lumbridge`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -1982,7 +1982,7 @@ export default {
   1332: {
     id: '1332',
     label: `Slash a web in varrock sewers`,
-    description: `Slash a web in Varrock Sewers|Varrock sewers`,
+    description: `Slash a web in Varrock sewers`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -2015,7 +2015,7 @@ export default {
   1799: {
     id: '1799',
     label: `Take a Canoe to Champions Guild`,
-    description: `Take a Canoe from Lumbridge to the Champions' Guild|Champions Guild`,
+    description: `Take a Champions Guild`,
     skillReqs: [{ skill: 'Woodcutting', level: 12 }],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -2037,7 +2037,7 @@ export default {
   496: {
     id: '496',
     label: `Travel to Fossil Island`,
-    description: `Take the Canal barge|Museum Barge to Fossil Island`,
+    description: `Take the Museum Barge to Fossil Island`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -2114,7 +2114,7 @@ export default {
   1130: {
     id: '1130',
     label: `Open a Bronze Chest`,
-    description: `Open a Bronze Chest from Shades of Mort'ton (minigame)|Shades of Mort'ton`,
+    description: `Open a Shades of Mort'ton`,
     skillReqs: [{ skill: 'Firemaking', level: 5 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.EASY,
@@ -2191,7 +2191,7 @@ export default {
   532: {
     id: '532',
     label: `Defeat a Moss Giant in Tirannwn`,
-    description: `Defeat a Moss giant|Moss Giant in Tirannwn`,
+    description: `Defeat a Moss Giant in Tirannwn`,
     skillReqs: [],
     regions: ['Tirannwn'],
     difficulty: DIFFICULTY.EASY,
@@ -2224,7 +2224,7 @@ export default {
   1300: {
     id: '1300',
     label: `Use Broken Handz's telescope`,
-    description: `Use Broken Handz|Broken Hand'z telescope to spy on somene`,
+    description: `Use Broken Hand'z telescope to spy on somene`,
     skillReqs: [],
     regions: ['Tirannwn'],
     difficulty: DIFFICULTY.EASY,
@@ -2290,7 +2290,7 @@ export default {
   1715: {
     id: '1715',
     label: `Kill a Guard in Varlamore underground`,
-    description: `Kill a Guard in Kualti Headquarters|Varlamore underground`,
+    description: `Kill a Varlamore underground`,
     skillReqs: [],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.EASY,
@@ -2312,7 +2312,7 @@ export default {
   1717: {
     id: '1717',
     label: `Milk a Buffalo`,
-    description: `Milk a Dairy Buffalo|Buffalo`,
+    description: `Milk a Buffalo`,
     skillReqs: [],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.EASY,
@@ -2345,7 +2345,7 @@ export default {
   1714: {
     id: '1714',
     label: `Pick some Sweetcorn from a Field`,
-    description: `Pick some Sweetcorn from a Sweetcorn (scenery)|Field`,
+    description: `Pick some Field`,
     skillReqs: [],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.EASY,
@@ -2455,7 +2455,7 @@ export default {
   1038: {
     id: '1038',
     label: `Use the Bank at the Mage Arena`,
-    description: `Use the Mage Arena bank|Bank at the Mage Arena`,
+    description: `Use the Bank at the Mage Arena`,
     skillReqs: [],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.EASY,
@@ -2576,7 +2576,7 @@ export default {
   96: {
     id: '96',
     label: `25 Superior Slayer Encounters`,
-    description: `Defeat 25 Superior slayer monster|superior foes while on a Slayer task|Slayer Task`,
+    description: `Defeat 25 superior foes while on a Slayer Task`,
     skillReqs: [{ skill: 'Slayer', level: 5 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -2818,7 +2818,7 @@ export default {
   1827: {
     id: '1827',
     label: `Catch 10 Pike`,
-    description: `Catch 10 Raw pike|Pike`,
+    description: `Catch 10 Pike`,
     skillReqs: [{ skill: 'Fishing', level: 25 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -2840,7 +2840,7 @@ export default {
   1825: {
     id: '1825',
     label: `Catch 25 Sardines`,
-    description: `Catch 25 Raw sardine|Sardines`,
+    description: `Catch 25 Sardines`,
     skillReqs: [{ skill: 'Fishing', level: 5 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -2873,7 +2873,7 @@ export default {
   1614: {
     id: '1614',
     label: `Catch a Grey Chinchompa`,
-    description: `Catch a Chinchompa (Hunter)|Grey Chinchompa`,
+    description: `Catch a Grey Chinchompa`,
     skillReqs: [{ skill: 'Hunter', level: 53 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -2884,7 +2884,7 @@ export default {
   382: {
     id: '382',
     label: `Catch a Swamp Lizard or Salamander`,
-    description: `Catch either a Swamp lizard (Hunter)|Swamp Lizard or any kind of Salamander`,
+    description: `Catch either a Swamp Lizard or any kind of Salamander`,
     skillReqs: [
       { skill: 'Hunter', level: 29 },
       { skill: 'Hunter', level: 47 },
@@ -2934,7 +2934,7 @@ export default {
   1217: {
     id: '1217',
     label: `Chop some Rising Roots`,
-    description: `Chop some Forestry#Rising Roots|Rising Roots spawned via Forestry`,
+    description: `Chop some Rising Roots spawned via Forestry`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -2956,7 +2956,7 @@ export default {
   1786: {
     id: '1786',
     label: `Clean 50 Grimy Ranarr Weed`,
-    description: `Clean 50 Grimy ranarr weed|Grimy Ranarr Weed`,
+    description: `Clean 50 Grimy Ranarr Weed`,
     skillReqs: [{ skill: 'Herblore', level: 25 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -2978,7 +2978,7 @@ export default {
   1524: {
     id: '1524',
     label: `Complete 1 Slayer Task`,
-    description: `Complete 1 Slayer task|Slayer Task`,
+    description: `Complete 1 Slayer Task`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3022,7 +3022,7 @@ export default {
   1205: {
     id: '1205',
     label: `Complete a Mahogany homes adept contract`,
-    description: `Complete a {{SCP|Minigame}} Mahogany Homes adept contract`,
+    description: `Complete a Mahogany Homes adept contract`,
     skillReqs: [{ skill: 'Construction', level: 50 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3033,7 +3033,7 @@ export default {
   1203: {
     id: '1203',
     label: `Complete a Mahogany homes beginner contract`,
-    description: `Complete a {{SCP|Minigame}} Mahogany Homes beginner contract`,
+    description: `Complete a Mahogany Homes beginner contract`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3044,7 +3044,7 @@ export default {
   1204: {
     id: '1204',
     label: `Complete a Mahogany homes novice contract`,
-    description: `Complete a {{SCP|Minigame}} Mahogany Homes novice contract`,
+    description: `Complete a Mahogany Homes novice contract`,
     skillReqs: [{ skill: 'Construction', level: 20 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3055,7 +3055,7 @@ export default {
   763: {
     id: '763',
     label: `Complete the Easy Western Provinces Diary`,
-    description: `Complete all of the easy tasks in the {{SCP|Diary}} Western Provinces Achievement Diary`,
+    description: `Complete all of the easy tasks in the Western Provinces Achievement Diary`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3077,7 +3077,7 @@ export default {
   1219: {
     id: '1219',
     label: `Complete the Flowering Bush event`,
-    description: `Complete the Forestry#Flowering Bush|Flowering Bush event spawned via Forestry`,
+    description: `Complete the Flowering Bush event spawned via Forestry`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3099,7 +3099,7 @@ export default {
   764: {
     id: '764',
     label: `Complete the Medium Western Provinces Diary`,
-    description: `Complete all of the medium tasks in the {{SCP|Diary}} Western Provinces Achievement Diary`,
+    description: `Complete all of the medium tasks in the Western Provinces Achievement Diary`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3110,7 +3110,7 @@ export default {
   1519: {
     id: '1519',
     label: `Complete the Pheasant Forestry Event`,
-    description: `Complete the Forestry#Pheasant Control|Pheasant event spawned via Forestry`,
+    description: `Complete the Pheasant event spawned via Forestry`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3143,7 +3143,7 @@ export default {
   1622: {
     id: '1622',
     label: `Complete the Postie Pete random event`,
-    description: `Complete the Evil twin|Postie Pete random event`,
+    description: `Complete the Postie Pete random event`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3165,7 +3165,7 @@ export default {
   1518: {
     id: '1518',
     label: `Complete the Ritual Forestry Event`,
-    description: `Complete the Enchantment Ritual (Forestry event)|Ritual event spawned via Forestry`,
+    description: `Complete the Ritual event spawned via Forestry`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3176,7 +3176,7 @@ export default {
   1218: {
     id: '1218',
     label: `Complete the Struggling Sapling event`,
-    description: `Complete the Forestry#Struggling Sapling|Struggling Sapling event spawned via Forestry`,
+    description: `Complete the Struggling Sapling event spawned via Forestry`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3231,7 +3231,7 @@ export default {
   367: {
     id: '367',
     label: `Craft 200 Essence Into Runes`,
-    description: `Use Runic altar|Runecrafting Altars to craft 200 essence into runes of any type`,
+    description: `Use Runecrafting Altars to craft 200 essence into runes of any type`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3242,7 +3242,7 @@ export default {
   368: {
     id: '368',
     label: `Craft 4 Runes With 1 Essence`,
-    description: `Use a Runic altar|Runecrafting Altar to craft 4 of any type of Runes|rune using a single essence`,
+    description: `Use a Runecrafting Altar to craft 4 of any type of rune using a single essence`,
     skillReqs: [{ skill: 'Runecraft', level: 57 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3275,7 +3275,7 @@ export default {
   369: {
     id: '369',
     label: `Craft Any Combination Rune`,
-    description: `Use a Runic altar|Runecrafting Altar to craft any type of combination rune`,
+    description: `Use a Runecrafting Altar to craft any type of combination rune`,
     skillReqs: [{ skill: 'Runecraft', level: 6 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3319,7 +3319,7 @@ export default {
   62: {
     id: '62',
     label: `Defeat a Lesser Demon`,
-    description: `Defeat a Lesser demon|Lesser Demon`,
+    description: `Defeat a Lesser Demon`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3330,7 +3330,7 @@ export default {
   322: {
     id: '322',
     label: `Defeat a Superior Slayer Creature`,
-    description: `Defeat any Superior slayer monster|Superior Slayer Creature`,
+    description: `Defeat any Superior Slayer Creature`,
     skillReqs: [{ skill: 'Slayer', level: 5 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3341,7 +3341,7 @@ export default {
   15: {
     id: '15',
     label: `Eat some Purple Sweets`,
-    description: `Eat some Purple sweets|Purple Sweets`,
+    description: `Eat some Purple Sweets`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3374,7 +3374,7 @@ export default {
   423: {
     id: '423',
     label: `Equip a Full Blue Dragonhide Set`,
-    description: `Equip a Blue d'hide body|Blue Dragonhide Body, some Blue d'hide chaps|Blue Dragonhide Chaps and some Blue d'hide vambs|Blue Dragonhide Vambraces`,
+    description: `Equip a Blue Dragonhide Body, some Blue Dragonhide Chaps and some Blue Dragonhide Vambraces`,
     skillReqs: [
       { skill: 'Ranged', level: 50 },
       { skill: 'Defence', level: 40 },
@@ -3388,7 +3388,7 @@ export default {
   422: {
     id: '422',
     label: `Equip a Full Green Dragonhide Set`,
-    description: `Equip a Green d'hide body|Green Dragonhide Body, some Green d'hide chaps|Green Dragonhide Chaps and some Green d'hide vambs|Green Dragonhide Vambraces`,
+    description: `Equip a Green Dragonhide Body, some Green Dragonhide Chaps and some Green Dragonhide Vambraces`,
     skillReqs: [
       { skill: 'Ranged', level: 40 },
       { skill: 'Defence', level: 40 },
@@ -3413,7 +3413,7 @@ export default {
   424: {
     id: '424',
     label: `Equip a Full Red Dragonhide Set`,
-    description: `Equip a Red d'hide body|Red Dragonhide Body, some Red d'hide chaps|Red Dragonhide Chaps and some Red d'hide vambs|Red Dragonhide Vambraces`,
+    description: `Equip a Red Dragonhide Body, some Red Dragonhide Chaps and some Red Dragonhide Vambraces`,
     skillReqs: [
       { skill: 'Ranged', level: 60 },
       { skill: 'Defence', level: 40 },
@@ -3480,7 +3480,7 @@ export default {
   412: {
     id: '412',
     label: `Equip a Mithril Weapon`,
-    description: `Equip any Mithril equipment|Mithril weapon`,
+    description: `Equip any Mithril weapon`,
     skillReqs: [{ skill: 'Attack', level: 20 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3491,7 +3491,7 @@ export default {
   75: {
     id: '75',
     label: `Equip a Piece of a Mystic Set`,
-    description: `Equip any piece of any Mystic robes|Mystic robe set`,
+    description: `Equip any piece of any Mystic robe set`,
     skillReqs: [
       { skill: 'Magic', level: 40 },
       { skill: 'Defence', level: 20 },
@@ -3505,7 +3505,7 @@ export default {
   1618: {
     id: '1618',
     label: `Equip a piece of Beekeeper's Outfit`,
-    description: `Equip a piece of Beekeeper's outfit|Beekeeper's Outfit`,
+    description: `Equip a piece of Beekeeper's Outfit`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3538,7 +3538,7 @@ export default {
   1623: {
     id: '1623',
     label: `Equip a piece of Zombie Outfit`,
-    description: `Equip a piece of Zombie outfit|Zombie Outfit`,
+    description: `Equip a piece of Zombie Outfit`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3549,7 +3549,7 @@ export default {
   414: {
     id: '414',
     label: `Equip a Rune Weapon`,
-    description: `Equip any Rune equipment|Rune weapon`,
+    description: `Equip any Rune weapon`,
     skillReqs: [{ skill: 'Attack', level: 40 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3560,7 +3560,7 @@ export default {
   19: {
     id: '19',
     label: `Equip a Trimmed Amulet`,
-    description: `Equip a Ornamental armour#Other|Trimmed Amulet`,
+    description: `Equip a Trimmed Amulet`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3607,7 +3607,7 @@ export default {
   413: {
     id: '413',
     label: `Equip an Adamant Weapon`,
-    description: `Equip any Adamant equipment|Adamant weapon`,
+    description: `Equip any Adamant weapon`,
     skillReqs: [{ skill: 'Attack', level: 30 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3618,7 +3618,7 @@ export default {
   433: {
     id: '433',
     label: `Equip an Elemental Battlestaff or Mystic Staff`,
-    description: `Equip either an Battlestaves#Standard battlestaves|elemental battlestaff or an Mystic staff#Standard mystic staves|elemental mystic staff`,
+    description: `Equip either an elemental battlestaff or an elemental mystic staff`,
     skillReqs: [
       { skill: 'Magic', level: 30 },
       { skill: 'Attack', level: 30 },
@@ -3632,7 +3632,7 @@ export default {
   381: {
     id: '381',
     label: `Equip full Graahk, Larupia or Kyatt`,
-    description: `Equip a full set of Hunter gear|Graahk, Larupia or Kyatt attire`,
+    description: `Equip a full set of Graahk, Larupia or Kyatt attire`,
     skillReqs: [
       { skill: 'Hunter', level: 38 },
       { skill: 'Hunter', level: 28 },
@@ -3779,7 +3779,7 @@ export default {
   361: {
     id: '361',
     label: `Fill a Medium S.T.A.S.H. Unit`,
-    description: `Build a Medium STASH|S.T.A.S.H. unit and fill it with the relevant items`,
+    description: `Build a Medium S.T.A.S.H. unit and fill it with the relevant items`,
     skillReqs: [{ skill: 'Construction', level: 42 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3790,7 +3790,7 @@ export default {
   1530: {
     id: '1530',
     label: `Find the Needle`,
-    description: `Dig in a Haystack|hay stack for a needle`,
+    description: `Dig in a hay stack for a needle`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3834,7 +3834,7 @@ export default {
   313: {
     id: '313',
     label: `Fletch a Willow Shortbow (u)`,
-    description: `Fletch a Willow shortbow (u)|Willow Shortbow (u)`,
+    description: `Fletch a Willow Shortbow (u)`,
     skillReqs: [{ skill: 'Fletching', level: 35 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3856,7 +3856,7 @@ export default {
   54: {
     id: '54',
     label: `Gain 10 Unique Items From Beginner Clues`,
-    description: `Gain 10 unique items from Reward casket (beginner)|Beginner Clue Scroll Reward Caskets`,
+    description: `Gain 10 unique items from Beginner Clue Scroll Reward Caskets`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3867,7 +3867,7 @@ export default {
   52: {
     id: '52',
     label: `Gain 10 Unique Items From Easy Clues`,
-    description: `Gain 10 unique items from Reward casket (easy)|Easy Clue Scroll Reward Caskets`,
+    description: `Gain 10 unique items from Easy Clue Scroll Reward Caskets`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3878,7 +3878,7 @@ export default {
   50: {
     id: '50',
     label: `Gain 10 Unique Items From Medium Clues`,
-    description: `Gain 10 unique items from Reward casket (medium)|Medium Clue Scroll Reward Caskets`,
+    description: `Gain 10 unique items from Medium Clue Scroll Reward Caskets`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3889,7 +3889,7 @@ export default {
   45: {
     id: '45',
     label: `Gain 20 Unique Items From Hard Clues`,
-    description: `Gain 20 unique items from Reward casket (hard)|Hard Clue Scroll Reward Caskets`,
+    description: `Gain 20 unique items from Hard Clue Scroll Reward Caskets`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3900,7 +3900,7 @@ export default {
   49: {
     id: '49',
     label: `Gain 35 Unique Items From Easy Clues`,
-    description: `Gain 35 unique items from Reward casket (easy)|Easy Clue Scroll Reward Caskets`,
+    description: `Gain 35 unique items from Easy Clue Scroll Reward Caskets`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3911,7 +3911,7 @@ export default {
   48: {
     id: '48',
     label: `Gain 5 Unique Items From Hard Clues`,
-    description: `Gain 5 unique items from Reward casket (hard)|Hard Clue Scroll Reward Caskets`,
+    description: `Gain 5 unique items from Hard Clue Scroll Reward Caskets`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3922,7 +3922,7 @@ export default {
   59: {
     id: '59',
     label: `Gain a Unique Item From a Beginner Clue`,
-    description: `Gain a unique item from a Reward casket (beginner)|Beginner Clue Scroll Reward Casket`,
+    description: `Gain a unique item from a Beginner Clue Scroll Reward Casket`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3933,7 +3933,7 @@ export default {
   55: {
     id: '55',
     label: `Gain a Unique Item From a Hard Clue`,
-    description: `Gain a unique item from a Reward casket (hard)|Hard Clue Scroll Reward Casket`,
+    description: `Gain a unique item from a Hard Clue Scroll Reward Casket`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3944,7 +3944,7 @@ export default {
   53: {
     id: '53',
     label: `Gain a Unique Item From a Master Clue`,
-    description: `Gain a unique item from a Reward casket (master)|Master Clue Scroll Reward Casket`,
+    description: `Gain a unique item from a Master Clue Scroll Reward Casket`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3955,7 +3955,7 @@ export default {
   58: {
     id: '58',
     label: `Gain a Unique Item From a Medium Clue`,
-    description: `Gain a unique item from a Reward casket (medium)|Medium Clue Scroll Reward Casket`,
+    description: `Gain a unique item from a Medium Clue Scroll Reward Casket`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -3966,7 +3966,7 @@ export default {
   57: {
     id: '57',
     label: `Gain a Unique Item From an Easy Clue`,
-    description: `Gain a unique item from an Reward casket (easy)|Easy Clue Scroll Reward Casket`,
+    description: `Gain a unique item from an Easy Clue Scroll Reward Casket`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4010,7 +4010,7 @@ export default {
   1538: {
     id: '1538',
     label: `Land a hoop on a stick`,
-    description: `Successfully land a Hoop and stick|hoop on a stick in the PoH minigame`,
+    description: `Successfully land a hoop on a stick in the PoH minigame`,
     skillReqs: [{ skill: 'Construction', level: 30 }],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4343,7 +4343,7 @@ export default {
   1330: {
     id: '1330',
     label: `Scrape some blue dragonhide`,
-    description: `Scrape some Scaly blue dragonhide|blue dragonhide`,
+    description: `Scrape some blue dragonhide`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4354,7 +4354,7 @@ export default {
   320: {
     id: '320',
     label: `Slay 250 Creatures`,
-    description: `Slay 250 creatures whilst on a Slayer task|Slayer Task`,
+    description: `Slay 250 creatures whilst on a Slayer Task`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4478,7 +4478,7 @@ export default {
   828: {
     id: '828',
     label: `Complete a Game of Intermediate Pest Control`,
-    description: `Complete a game of Intermediate {{SCP|Minigame}} Pest Control or higher`,
+    description: `Complete a game of Intermediate Pest Control or higher`,
     skillReqs: [{ skill: 'Combat', level: 70 }],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4489,7 +4489,7 @@ export default {
   827: {
     id: '827',
     label: `Complete a Game of Novice Pest Control`,
-    description: `Complete a game of Novice {{SCP|Minigame}} Pest Control or higher`,
+    description: `Complete a game of Novice Pest Control or higher`,
     skillReqs: [{ skill: 'Combat', level: 40 }],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4500,7 +4500,7 @@ export default {
   815: {
     id: '815',
     label: `Complete the Easy Falador Diary`,
-    description: `Complete all of the easy tasks in the {{SCP|Diary}} Falador Achievement Diary`,
+    description: `Complete all of the easy tasks in the Falador Achievement Diary`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4522,7 +4522,7 @@ export default {
   816: {
     id: '816',
     label: `Complete the Medium Falador Diary`,
-    description: `Complete all of the medium tasks in the {{SCP|Diary}} Falador Achievement Diary`,
+    description: `Complete all of the medium tasks in the Falador Achievement Diary`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4533,7 +4533,7 @@ export default {
   1813: {
     id: '1813',
     label: `Consume a Saradomin's Light`,
-    description: `Consume a Saradomin's light|Saradomin's Light`,
+    description: `Consume a Saradomin's Light`,
     skillReqs: [{ skill: 'Agility', level: 70 }],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4544,7 +4544,7 @@ export default {
   775: {
     id: '775',
     label: `Craft a Body Rune`,
-    description: `Craft a Body Rune from Essence#Runecrafting resources|Essence at the Body Altar`,
+    description: `Craft a Essence at the Body Altar`,
     skillReqs: [{ skill: 'Runecraft', level: 20 }],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4566,7 +4566,7 @@ export default {
   803: {
     id: '803',
     label: `Defeat a Blue Dragon in Asgarnia`,
-    description: `Defeat a Blue dragon|Blue Dragon in Asgarnia`,
+    description: `Defeat a Blue Dragon in Asgarnia`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4665,7 +4665,7 @@ export default {
   1251: {
     id: '1251',
     label: `Equip Amy's Saw`,
-    description: `Obtain and Equip Amy's Saw from {{SCP|Minigame}} Mahogany Homes`,
+    description: `Obtain and Equip Minigame}} Mahogany Homes`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4687,7 +4687,7 @@ export default {
   1550: {
     id: '1550',
     label: `Hang a Painting of a Watermill`,
-    description: `Hang a Lumbridge painting|Painting of Lumbridge Watermill in your Player-owned house|PoH`,
+    description: `Hang a Painting of Lumbridge Watermill in your PoH`,
     skillReqs: [{ skill: 'Construction', level: 44 }],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4698,7 +4698,7 @@ export default {
   779: {
     id: '779',
     label: `Harvest Any Herb at the Troll Stronghold`,
-    description: `Harvest any herb you've grown at the Troll Stronghold (location)|Troll Stronghold`,
+    description: `Harvest any herb you've grown at the Troll Stronghold`,
     skillReqs: [{ skill: 'Farming', level: 9 }],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4742,7 +4742,7 @@ export default {
   1252: {
     id: '1252',
     label: `Obtain the Plank Sack`,
-    description: `Obtain the Plank Sack from {{SCP|Minigame}} Mahogany Homes`,
+    description: `Obtain the Plank Sack from Mahogany Homes`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4786,7 +4786,7 @@ export default {
   1543: {
     id: '1543',
     label: `Throw a Shot Put 12 yards`,
-    description: `Throw a Warriors' Guild#Shot put room|Shot Put 12 yards in the Warriors Guild`,
+    description: `Throw a Shot Put 12 yards in the Warriors Guild`,
     skillReqs: [{ skill: 'Attack', level: 99 }],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4841,7 +4841,7 @@ export default {
   859: {
     id: '859',
     label: `Catch 30 Orange Salamanders`,
-    description: `Catch 30 Orange salamander (Hunter)|Orange Salamanders at Uzer`,
+    description: `Catch 30 Orange Salamanders at Uzer`,
     skillReqs: [{ skill: 'Hunter', level: 47 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4852,7 +4852,7 @@ export default {
   1319: {
     id: '1319',
     label: `Commune a Pharoah's Sceptre to the Necropolis`,
-    description: `Commune a Pharaoh's sceptre|Pharoah's Sceptre to the Necropolis`,
+    description: `Commune a Pharoah's Sceptre to the Necropolis`,
     skillReqs: [{ skill: 'Thieving', level: 21 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4863,7 +4863,7 @@ export default {
   896: {
     id: '896',
     label: `Complete Shadow of the Storm`,
-    description: `Complete the {{SCP|Quest}} Shadow of the Storm quest`,
+    description: `Complete the Shadow of the Storm quest`,
     skillReqs: [{ skill: 'Crafting', level: 30 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4874,7 +4874,7 @@ export default {
   1407: {
     id: '1407',
     label: `Complete Sleeping Giants`,
-    description: `Complete {{SCP|Quest}} Sleeping Giants quest`,
+    description: `Complete Sleeping Giants quest`,
     skillReqs: [{ skill: 'Smithing', level: 15 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4885,7 +4885,7 @@ export default {
   886: {
     id: '886',
     label: `Complete Spirits of the Elid`,
-    description: `Complete the {{SCP|Quest}} Spirits of the Elid quest`,
+    description: `Complete the Spirits of the Elid quest`,
     skillReqs: [
       { skill: 'Magic', level: 33 },
       { skill: 'Ranged', level: 37 },
@@ -4901,7 +4901,7 @@ export default {
   877: {
     id: '877',
     label: `Complete the Easy Desert Diary`,
-    description: `Complete all of the easy tasks in the {{SCP|Diary}} Desert Achievement Diary`,
+    description: `Complete all of the easy tasks in the Desert Achievement Diary`,
     skillReqs: [],
     regions: ['Desert'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4912,7 +4912,7 @@ export default {
   897: {
     id: '897',
     label: `Complete The Golem`,
-    description: `Complete {{SCP|Quest}} The Golem quest`,
+    description: `Complete The Golem quest`,
     skillReqs: [
       { skill: 'Crafting', level: 20 },
       { skill: 'Thieving', level: 25 },
@@ -4926,7 +4926,7 @@ export default {
   878: {
     id: '878',
     label: `Complete the Medium Desert Diary`,
-    description: `Complete all of the medium tasks in the {{SCP|Diary}} Desert Achievement Diary`,
+    description: `Complete all of the medium tasks in the Desert Achievement Diary`,
     skillReqs: [],
     regions: ['Desert'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4948,7 +4948,7 @@ export default {
   1572: {
     id: '1572',
     label: `Craft some Pottery In Sophanem`,
-    description: `Craft some Crafting#Pottery|Pottery In Sophanem`,
+    description: `Craft some Pottery In Sophanem`,
     skillReqs: [],
     regions: ['Desert'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5053,7 +5053,7 @@ export default {
   1190: {
     id: '1190',
     label: `Guardians of the Rift 1 Rift closed`,
-    description: `Close the Rift in the Temple of the Eye (location)|Temple of the Eye`,
+    description: `Close the Rift in the Temple of the Eye`,
     skillReqs: [{ skill: 'Runecraft', level: 27 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5064,7 +5064,7 @@ export default {
   1191: {
     id: '1191',
     label: `Guardians of the Rift 10 Rifts closed`,
-    description: `Close the Rift in the Temple of the Eye (location)|Temple of the Eye 10 times`,
+    description: `Close the Rift in the Temple of the Eye 10 times`,
     skillReqs: [{ skill: 'Runecraft', level: 27 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5130,7 +5130,7 @@ export default {
   860: {
     id: '860',
     label: `Mine 30 Chunks of Granite`,
-    description: `Mine 30 chunks of Granite at the Kharidian Desert Bandit Camp Quarry|Quarry`,
+    description: `Mine 30 chunks of Quarry`,
     skillReqs: [{ skill: 'Mining', level: 45 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5174,7 +5174,7 @@ export default {
   850: {
     id: '850',
     label: `Pickpocket a Bandit in the Bandit Camp`,
-    description: `Pickpocket a Bandit (Bandit Camp)|Bandit in the Kharidian Desert's Bandit Camp`,
+    description: `Pickpocket a Bandit in the Kharidian Desert's Bandit Camp`,
     skillReqs: [{ skill: 'Thieving', level: 53 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5265,7 +5265,7 @@ export default {
   1833: {
     id: '1833',
     label: `Catch a Sabre-toothed Kebbit`,
-    description: `Catch a Sabre-toothed kebbit|Sabre-toothed Kebbit`,
+    description: `Catch a Sabre-toothed Kebbit`,
     skillReqs: [],
     regions: ['Fremennik'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5276,7 +5276,7 @@ export default {
   1584: {
     id: '1584',
     label: `Catch a Sapphire Glacialis`,
-    description: `Catch a Sapphire glacialis|Sapphire Glacialis`,
+    description: `Catch a Sapphire Glacialis`,
     skillReqs: [],
     regions: ['Fremennik'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5298,7 +5298,7 @@ export default {
   633: {
     id: '633',
     label: `Complete Royal Trouble`,
-    description: `Complete the {{SCP|Quest}} Royal Trouble quest`,
+    description: `Complete the Royal Trouble quest`,
     skillReqs: [
       { skill: 'Agility', level: 40 },
       { skill: 'Slayer', level: 40 },
@@ -5312,7 +5312,7 @@ export default {
   623: {
     id: '623',
     label: `Complete the Easy Fremennik Diary`,
-    description: `Complete all of the easy tasks in the {{SCP|Diary}} Fremennik Achievement Diary`,
+    description: `Complete all of the easy tasks in the Fremennik Achievement Diary`,
     skillReqs: [],
     regions: ['Fremennik'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5323,7 +5323,7 @@ export default {
   624: {
     id: '624',
     label: `Complete the Medium Fremennik Diary`,
-    description: `Complete all of the medium tasks in the {{SCP|Diary}} Fremennik Achievement Diary`,
+    description: `Complete all of the medium tasks in the Fremennik Achievement Diary`,
     skillReqs: [],
     regions: ['Fremennik'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5348,7 +5348,7 @@ export default {
   628: {
     id: '628',
     label: `Complete Throne of Miscellania`,
-    description: `Complete the {{SCP|Quest}} Throne of Miscellania quest`,
+    description: `Complete the Throne of Miscellania quest`,
     skillReqs: [],
     regions: ['Fremennik'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5436,7 +5436,7 @@ export default {
   1836: {
     id: '1836',
     label: `Equip a Damaged God book`,
-    description: `Equip a Damaged book|Damaged God book`,
+    description: `Equip a Damaged God book`,
     skillReqs: [],
     regions: ['Fremennik'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5447,7 +5447,7 @@ export default {
   1291: {
     id: '1291',
     label: `Equip a full set of Yakhide Armour`,
-    description: `Equip a full set of Yak-hide armour|Yakhide Armour`,
+    description: `Equip a full set of Yakhide Armour`,
     skillReqs: [
       { skill: 'Crafting', level: 46 },
       { skill: 'Defence', level: 20 },
@@ -5472,7 +5472,7 @@ export default {
   1583: {
     id: '1583',
     label: `Fill up 20 buckets of sand in Rellekka`,
-    description: `Fill up 20 bucket of sand|buckets of sand in Rellekka`,
+    description: `Fill up 20 buckets of sand in Rellekka`,
     skillReqs: [],
     regions: ['Fremennik'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5560,7 +5560,7 @@ export default {
   1582: {
     id: '1582',
     label: `Steal a Cow bell in Rellekka`,
-    description: `Steal a Cowbells|Cow bell in Rellekka`,
+    description: `Steal a Cow bell in Rellekka`,
     skillReqs: [],
     regions: ['Fremennik'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5593,7 +5593,7 @@ export default {
   579: {
     id: '579',
     label: `Unlock Free Use of the Blast Furnace`,
-    description: `Unlock free use of the Keldagrim Blast Furnace by speaking with the Blast Furnace Foreman|Foreman`,
+    description: `Unlock free use of the Foreman`,
     skillReqs: [{ skill: 'Smithing', level: 60 }],
     regions: ['Fremennik'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5637,7 +5637,7 @@ export default {
   694: {
     id: '694',
     label: `Catch a Red Salamander`,
-    description: `Catch a Red salamander (Hunter)|Red Salamander outside the Ourania Altar`,
+    description: `Catch a Red Salamander outside the Ourania Altar`,
     skillReqs: [{ skill: 'Hunter', level: 59 }],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5648,7 +5648,7 @@ export default {
   698: {
     id: '698',
     label: `Complete a Fishing Trawler Game`,
-    description: `Complete a {{SCP|Minigame}} Fishing Trawler game at Port Khazard`,
+    description: `Complete a Fishing Trawler game at Port Khazard`,
     skillReqs: [{ skill: 'Fishing', level: 15 }],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5659,7 +5659,7 @@ export default {
   1155: {
     id: '1155',
     label: `Complete Fishing Contest`,
-    description: `Complete the {{SCP|Quest}} Fishing Contest Quest`,
+    description: `Complete the Fishing Contest Quest`,
     skillReqs: [{ skill: 'Fishing', level: 10 }],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5670,7 +5670,7 @@ export default {
   741: {
     id: '741',
     label: `Complete Monk's Friend`,
-    description: `Complete the {{SCP|Quest}} Monk's Friend quest`,
+    description: `Complete the Monk's Friend quest`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5681,7 +5681,7 @@ export default {
   745: {
     id: '745',
     label: `Complete Sea Slug`,
-    description: `Complete the {{SCP|Quest}} Sea Slug quest`,
+    description: `Complete the Sea Slug quest`,
     skillReqs: [{ skill: 'Firemaking', level: 30 }],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5703,7 +5703,7 @@ export default {
   1053: {
     id: '1053',
     label: `Complete the Easy Ardougne Diary`,
-    description: `Complete all of the easy tasks in the {{SCP|Diary}} Ardougne Achievement Diary`,
+    description: `Complete all of the easy tasks in the Ardougne Achievement Diary`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5714,7 +5714,7 @@ export default {
   759: {
     id: '759',
     label: `Complete the Easy Kandarin Diary`,
-    description: `Complete all of the easy tasks in the {{SCP|Diary}} Kandarin Achievement Diary`,
+    description: `Complete all of the easy tasks in the Kandarin Achievement Diary`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5725,7 +5725,7 @@ export default {
   1054: {
     id: '1054',
     label: `Complete the Medium Ardougne Diary`,
-    description: `Complete all of the medium tasks in the {{SCP|Diary}} Ardougne Achievement Diary`,
+    description: `Complete all of the medium tasks in the Ardougne Achievement Diary`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5736,7 +5736,7 @@ export default {
   760: {
     id: '760',
     label: `Complete the Medium Kandarin Diary`,
-    description: `Complete all of the medium tasks in the {{SCP|Diary}} Kandarin Achievement Diary`,
+    description: `Complete all of the medium tasks in the Kandarin Achievement Diary`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5747,7 +5747,7 @@ export default {
   746: {
     id: '746',
     label: `Complete the Observatory Quest`,
-    description: `Complete the {{SCP|Quest}} Observatory Quest`,
+    description: `Complete the Observatory Quest`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5758,7 +5758,7 @@ export default {
   743: {
     id: '743',
     label: `Complete Tower of Life`,
-    description: `Complete the {{SCP|Quest}} Tower of Life quest`,
+    description: `Complete the Tower of Life quest`,
     skillReqs: [{ skill: 'Construction', level: 10 }],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5900,7 +5900,7 @@ export default {
   1535: {
     id: '1535',
     label: `Get 250 Target points`,
-    description: `Achieve 250 points in the Target (Ranging Guild)|Target minigame in the Ranging Guild`,
+    description: `Achieve 250 points in the Target minigame in the Ranging Guild`,
     skillReqs: [{ skill: 'Ranged', level: 40 }],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5911,7 +5911,7 @@ export default {
   1442: {
     id: '1442',
     label: `Kill a Newtroost`,
-    description: `Kill a Newtroost underneath the Tower of Life (building)|Tower of Life`,
+    description: `Kill a Tower of Life`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5922,7 +5922,7 @@ export default {
   1441: {
     id: '1441',
     label: `Kill a Swordchick`,
-    description: `Kill a Swordchick underneath the Tower of Life (building)|Tower of Life`,
+    description: `Kill a Tower of Life`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5933,7 +5933,7 @@ export default {
   1815: {
     id: '1815',
     label: `Light a Pyre Ship`,
-    description: `Light a Funeral pyre (Barbarian)|Barbarian Pyre Ship`,
+    description: `Light a Barbarian Pyre Ship`,
     skillReqs: [
       { skill: 'Firemaking', level: 11 },
       { skill: 'Crafting', level: 11 },
@@ -6024,7 +6024,7 @@ export default {
   1527: {
     id: '1527',
     label: `Use a Herring on a mighty tree`,
-    description: `Use a herring on the Grand Tree|mightiest of trees`,
+    description: `Use a mightiest of trees`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6057,7 +6057,7 @@ export default {
   646: {
     id: '646',
     label: `Catch 50 Karambwan`,
-    description: `Catch 50 Raw karambwan|Karambwan on Karamja`,
+    description: `Catch 50 Karambwan on Karamja`,
     skillReqs: [{ skill: 'Fishing', level: 65 }],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6068,7 +6068,7 @@ export default {
   645: {
     id: '645',
     label: `Catch a Salmon on Karamja`,
-    description: `Catch a Raw salmon|Salmon on Karamja`,
+    description: `Catch a Salmon on Karamja`,
     skillReqs: [{ skill: 'Fishing', level: 30 }],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6079,7 +6079,7 @@ export default {
   671: {
     id: '671',
     label: `Complete the Easy Karamja Diary`,
-    description: `Complete all of the easy tasks in the {{SCP|Diary}} Karamja Achievement Diary`,
+    description: `Complete all of the easy tasks in the Karamja Achievement Diary`,
     skillReqs: [],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6090,7 +6090,7 @@ export default {
   672: {
     id: '672',
     label: `Complete the Medium Karamja Diary`,
-    description: `Complete all of the medium tasks in the {{SCP|Diary}} Karamja Achievement Diary`,
+    description: `Complete all of the medium tasks in the Karamja Achievement Diary`,
     skillReqs: [],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6211,7 +6211,7 @@ export default {
   1529: {
     id: '1529',
     label: `Sleep in Paramaya Inn`,
-    description: `Pay the barkeep to sleep in Paramaya Inn, in Shilo Village (location)|Shilo Village`,
+    description: `Pay the barkeep to sleep in Shilo Village`,
     skillReqs: [],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6222,7 +6222,7 @@ export default {
   640: {
     id: '640',
     label: `Take a Shortcut Across the Shilo Village River`,
-    description: `Use the Stepping stone (Shilo Village)|Stepping Stones Agility Shortcut in Shilo Village (location)|Shilo Village`,
+    description: `Use the Stepping Stones Agility Shortcut in Shilo Village`,
     skillReqs: [{ skill: 'Agility', level: 32 }],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6365,7 +6365,7 @@ export default {
   1604: {
     id: '1604',
     label: `Complete the Shayzien Basic Agility Course`,
-    description: `Complete a lap of the Shayzien Agility Course|Shayzien Basic Agility Course`,
+    description: `Complete a lap of the Shayzien Basic Agility Course`,
     skillReqs: [],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6387,7 +6387,7 @@ export default {
   1058: {
     id: '1058',
     label: `Defeat a Drake`,
-    description: `Defeat a Drake in the Karuulm Slayer Dungeon|Mount Karuulm Slayer Dungeon`,
+    description: `Defeat a Mount Karuulm Slayer Dungeon`,
     skillReqs: [{ skill: 'Slayer', level: 84 }],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6409,7 +6409,7 @@ export default {
   81: {
     id: '81',
     label: `Enter the Farming Guild's Mid Tier`,
-    description: `Enter the Farming Guild#Intermediate tier|mid tier of the Farming Guild in the Kebos Lowlands`,
+    description: `Enter the mid tier of the Farming Guild in the Kebos Lowlands`,
     skillReqs: [{ skill: 'Farming', level: 65 }],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6431,7 +6431,7 @@ export default {
   1593: {
     id: '1593',
     label: `Equip the Cursed Amulet of Magic`,
-    description: `Equip the Cursed amulet of magic|Cursed Amulet of Magic`,
+    description: `Equip the Cursed Amulet of Magic`,
     skillReqs: [],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6486,7 +6486,7 @@ export default {
   1611: {
     id: '1611',
     label: `Kill a Moss, Fire & Hill Giant in Kourend`,
-    description: `Kill a Moss giant|Moss, Fire giant|Fire & Hill Giant in Kourend`,
+    description: `Kill a Moss, Fire & Hill Giant in Kourend`,
     skillReqs: [],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6497,7 +6497,7 @@ export default {
   135: {
     id: '135',
     label: `Kourend and Kebos Easy Diary Tasks`,
-    description: `Complete all tasks in the easy tier of the {{SCP|Diary}} Kourend and Kebos achievement diary`,
+    description: `Complete all tasks in the easy tier of the Kourend and Kebos achievement diary`,
     skillReqs: [],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6508,7 +6508,7 @@ export default {
   136: {
     id: '136',
     label: `Kourend and Kebos Medium Diary Tasks`,
-    description: `Complete all tasks in the medium tier of the {{SCP|Diary}} Kourend and Kebos achievement diary`,
+    description: `Complete all tasks in the medium tier of the Kourend and Kebos achievement diary`,
     skillReqs: [],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6519,7 +6519,7 @@ export default {
   1592: {
     id: '1592',
     label: `Make 50 Oak Planks in Kourend`,
-    description: `Make 50 Oak plank|Oak Planks in Kourend`,
+    description: `Make 50 Oak Planks in Kourend`,
     skillReqs: [],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6541,7 +6541,7 @@ export default {
   1591: {
     id: '1591',
     label: `Offer an egg to a shrine`,
-    description: `Offer an Bird's egg|egg to a shrine in the Woodcutting Guild|woodcutting guild`,
+    description: `Offer an egg to a woodcutting guild`,
     skillReqs: [{ skill: 'Woodcutting', level: 60 }],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6585,7 +6585,7 @@ export default {
   1285: {
     id: '1285',
     label: `Smelt a mithril bar in a volcanic fissure`,
-    description: `Smelt a Mithril bar in a Volcanic Furnace|volcanic Fissure`,
+    description: `Smelt a volcanic Fissure`,
     skillReqs: [{ skill: 'Smithing', level: 50 }],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6596,7 +6596,7 @@ export default {
   1636: {
     id: '1636',
     label: `Smith Shayzien (1)`,
-    description: `Smith any piece of Shayzien armour (tier 1)|Shayzien (1)`,
+    description: `Smith any piece of Shayzien (1)`,
     skillReqs: [
       { skill: 'Smithing', level: 45 },
       { skill: 'Mining', level: 65 },
@@ -6764,7 +6764,7 @@ export default {
   499: {
     id: '499',
     label: `Complete Demon Slayer`,
-    description: `Complete the {{SCP|Quest}} Demon Slayer quest`,
+    description: `Complete the Demon Slayer quest`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6775,7 +6775,7 @@ export default {
   500: {
     id: '500',
     label: `Complete Sheep Shearer`,
-    description: `Complete the {{SCP|Quest}} Sheep Shearer quest`,
+    description: `Complete the Sheep Shearer quest`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6786,7 +6786,7 @@ export default {
   488: {
     id: '488',
     label: `Complete the Easy Lumbridge & Draynor Diary`,
-    description: `Complete all of the easy tasks in the {{SCP|Diary}} Lumbridge & Draynor Achievement Diary`,
+    description: `Complete all of the easy tasks in the Lumbridge & Draynor Achievement Diary`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6797,7 +6797,7 @@ export default {
   1047: {
     id: '1047',
     label: `Complete the Easy Varrock Diary`,
-    description: `Complete all of the easy tasks in the {{SCP|Diary}} Varrock Achievement Diary`,
+    description: `Complete all of the easy tasks in the Varrock Achievement Diary`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6808,7 +6808,7 @@ export default {
   489: {
     id: '489',
     label: `Complete the Medium Lumbridge & Draynor Diary`,
-    description: `Complete all of the medium tasks in the {{SCP|Diary}} Lumbridge & Draynor Achievement Diary`,
+    description: `Complete all of the medium tasks in the Lumbridge & Draynor Achievement Diary`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6819,7 +6819,7 @@ export default {
   1048: {
     id: '1048',
     label: `Complete the Medium Varrock Diary`,
-    description: `Complete all of the medium tasks in the {{SCP|Diary}} Varrock Achievement Diary`,
+    description: `Complete all of the medium tasks in the Varrock Achievement Diary`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6830,7 +6830,7 @@ export default {
   503: {
     id: '503',
     label: `Complete Vampyre Slayer`,
-    description: `Complete the {{SCP|Quest}} Vampyre Slayer quest`,
+    description: `Complete the Vampyre Slayer quest`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7009,7 +7009,7 @@ export default {
   1830: {
     id: '1830',
     label: `Equip a Rat Bone Weapon`,
-    description: `Obtain and equip any Rat bone weapons|Rat Bone weaponry`,
+    description: `Obtain and equip any Rat Bone weaponry`,
     skillReqs: [{ skill: 'Attack', level: 50 }],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7075,7 +7075,7 @@ export default {
   1613: {
     id: '1613',
     label: `Mine 25 Pure Essence`,
-    description: `Mine 25 Pure essence|Pure Essence`,
+    description: `Mine 25 Pure Essence`,
     skillReqs: [{ skill: 'Mining', level: 30 }],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7097,7 +7097,7 @@ export default {
   458: {
     id: '458',
     label: `Pickpocket a Bullseye Lantern From a Cave Goblin`,
-    description: `Pickpocket a Bullseye Lantern from a Cave goblin (Dorgesh-Kaan)|Cave Goblin`,
+    description: `Pickpocket a Cave Goblin`,
     skillReqs: [{ skill: 'Thieving', level: 36 }],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7108,7 +7108,7 @@ export default {
   454: {
     id: '454',
     label: `Pickpocket a H.A.M. Member`,
-    description: `Pickpocket any H.A.M. member at their H.A.M. Hideout|hideout`,
+    description: `Pickpocket any hideout`,
     skillReqs: [{ skill: 'Thieving', level: 15 }],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7130,7 +7130,7 @@ export default {
   1532: {
     id: '1532',
     label: `Provide Terry a buckle`,
-    description: `Show Terry Balando in the Digsite a Belt buckle|Belt Buckle`,
+    description: `Show Belt Buckle`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7152,7 +7152,7 @@ export default {
   450: {
     id: '450',
     label: `Use the Range in Lumbridge Castle`,
-    description: `Use the Cooking range (Lumbridge Castle)|Range in Lumbridge Castle to cook some food`,
+    description: `Use the Range in Lumbridge Castle to cook some food`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7177,7 +7177,7 @@ export default {
   965: {
     id: '965',
     label: `Achieve 100% Shades of Mort'Ton Sanctity`,
-    description: `Achieve 100% Sanctity during the Shades of Mort'ton (minigame)|Shades of Mort'ton minigame`,
+    description: `Achieve 100% Sanctity during the Shades of Mort'ton minigame`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7213,7 +7213,7 @@ export default {
   912: {
     id: '912',
     label: `Catch a Swamp Lizard in Morytania`,
-    description: `Catch a Swamp lizard (Hunter)|Swamp Lizard in Morytania`,
+    description: `Catch a Swamp Lizard in Morytania`,
     skillReqs: [{ skill: 'Hunter', level: 29 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7235,7 +7235,7 @@ export default {
   958: {
     id: '958',
     label: `Complete a Hard Temple Trek`,
-    description: `Complete a hard {{SCP|Minigame}} Temple Trek`,
+    description: `Complete a hard Temple Trek`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7246,7 +7246,7 @@ export default {
   957: {
     id: '957',
     label: `Complete a Medium Temple Trek`,
-    description: `Complete a medium {{SCP|Minigame}} Temple Trek`,
+    description: `Complete a medium Temple Trek`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7268,7 +7268,7 @@ export default {
   952: {
     id: '952',
     label: `Complete the Easy Morytania Diary`,
-    description: `Complete all of the easy tasks in the {{SCP|Diary}} Morytania Achievement Diary`,
+    description: `Complete all of the easy tasks in the Morytania Achievement Diary`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7279,7 +7279,7 @@ export default {
   953: {
     id: '953',
     label: `Complete the Medium Morytania Diary`,
-    description: `Complete all of the medium tasks in the {{SCP|Diary}} Morytania Achievement Diary`,
+    description: `Complete all of the medium tasks in the Morytania Achievement Diary`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7312,7 +7312,7 @@ export default {
   1262: {
     id: '1262',
     label: `Create the long rope shortcut in Darkmeyer`,
-    description: `Create the Wall (Darkmeyer)|long rope agility shortcut in Darkmeyer`,
+    description: `Create the long rope agility shortcut in Darkmeyer`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7367,7 +7367,7 @@ export default {
   1588: {
     id: '1588',
     label: `Equip a full set of Vyre Noble`,
-    description: `Equip a full set of Vyre noble clothing|Vyre Noble`,
+    description: `Equip a full set of Vyre Noble`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7430,7 +7430,7 @@ export default {
   1326: {
     id: '1326',
     label: `Feed a ghast some sweets`,
-    description: `Feed a ghast some Purple sweets|sweets`,
+    description: `Feed a sweets`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7485,7 +7485,7 @@ export default {
   932: {
     id: '932',
     label: `Loot a Barrows Chest`,
-    description: `Loot a Chest (Barrows)|Barrows Chest once`,
+    description: `Loot a Barrows Chest once`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7496,7 +7496,7 @@ export default {
   1131: {
     id: '1131',
     label: `Open a Black Chest`,
-    description: `Open a Black Chest from Shades of Mort'ton (minigame)|Shades of Mort'ton`,
+    description: `Open a Shades of Mort'ton`,
     skillReqs: [{ skill: 'Firemaking', level: 35 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7507,7 +7507,7 @@ export default {
   963: {
     id: '963',
     label: `Pet Frank`,
-    description: `Pet Darkmeyer's Frank (Bloodveld)|goodest boy`,
+    description: `Pet goodest boy`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7518,7 +7518,7 @@ export default {
   906: {
     id: '906',
     label: `Purchase a Reward From the Hallowed Sepulchre`,
-    description: `Purchase a Mysterious Hallowed Goods|reward from the Hallowed Sepulchre`,
+    description: `Purchase a reward from the Hallowed Sepulchre`,
     skillReqs: [{ skill: 'Agility', level: 52 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7540,7 +7540,7 @@ export default {
   1546: {
     id: '1546',
     label: `Smuggle some Rum`,
-    description: `Use the Ring of Charos to smuggle some Karamjan rum|Karamja rum through customs`,
+    description: `Use the Karamja rum through customs`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7595,7 +7595,7 @@ export default {
   1579: {
     id: '1579',
     label: `Chop 100 Maples in Tirannwn`,
-    description: `Chop 100 Maple tree|Maples in Tirannwn`,
+    description: `Chop 100 Maples in Tirannwn`,
     skillReqs: [{ skill: 'Woodcutting', level: 45 }],
     regions: ['Tirannwn'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7683,7 +7683,7 @@ export default {
   1766: {
     id: '1766',
     label: `Pick up 10 Whiteberries in Tirannwn`,
-    description: `Pick up 10 White berries|Whiteberries in Tirannwn`,
+    description: `Pick up 10 Whiteberries in Tirannwn`,
     skillReqs: [],
     regions: ['Tirannwn'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7771,7 +7771,7 @@ export default {
   1753: {
     id: '1753',
     label: `Activate the Statue of Ates`,
-    description: `Activate the Statue (Ates)|Statue of Ates in Aldarin`,
+    description: `Activate the Statue of Ates in Aldarin`,
     skillReqs: [],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7826,7 +7826,7 @@ export default {
   1657: {
     id: '1657',
     label: `Complete a Hunter Rumour`,
-    description: `Complete a Hunter Rumours|Hunter Rumour`,
+    description: `Complete a Hunter Rumour`,
     skillReqs: [{ skill: 'Hunter', level: 46 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7870,7 +7870,7 @@ export default {
   1740: {
     id: '1740',
     label: `Equip a piece of Alchemists outfit`,
-    description: `Equip a piece of Alchemist's outfit|Alchemists outfit from the Mixology Rewards|Mixology shop`,
+    description: `Equip a piece of Alchemists outfit from the Mixology shop`,
     skillReqs: [{ skill: 'Herblore', level: 60 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7881,7 +7881,7 @@ export default {
   1677: {
     id: '1677',
     label: `Equip a piece of Blood Moon armour`,
-    description: `Equip a piece of Blood moon armour|Blood Moon armour`,
+    description: `Equip a piece of Blood Moon armour`,
     skillReqs: [
       { skill: 'Strength', level: 75 },
       { skill: 'Defence', level: 50 },
@@ -7895,7 +7895,7 @@ export default {
   1681: {
     id: '1681',
     label: `Equip a piece of Blue Moon armour`,
-    description: `Equip a piece of Blue moon armour|Blue Moon armour`,
+    description: `Equip a piece of Blue Moon armour`,
     skillReqs: [
       { skill: 'Magic', level: 75 },
       { skill: 'Defence', level: 50 },
@@ -7909,7 +7909,7 @@ export default {
   1679: {
     id: '1679',
     label: `Equip a piece of Eclipse Moon armour`,
-    description: `Equip a piece of Eclipse moon armour|Eclipse Moon armour`,
+    description: `Equip a piece of Eclipse Moon armour`,
     skillReqs: [
       { skill: 'Ranged', level: 75 },
       { skill: 'Defence', level: 50 },
@@ -7923,7 +7923,7 @@ export default {
   1733: {
     id: '1733',
     label: `Equip a piece of Hueycoatl armour`,
-    description: `Equip a piece of Hueycoatl hide armour|Hueycoatl armour`,
+    description: `Equip a piece of Hueycoatl armour`,
     skillReqs: [
       { skill: 'Crafting', level: 86 },
       { skill: 'Ranged', level: 70 },
@@ -7949,7 +7949,7 @@ export default {
   1779: {
     id: '1779',
     label: `Fill a Grape Barrel for the Foreman`,
-    description: `Fill a Grape barrel|Grape Barrel for the Vineyard foreman|Foreman in Aldarin`,
+    description: `Fill a Grape Barrel for the Foreman in Aldarin`,
     skillReqs: [],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7960,7 +7960,7 @@ export default {
   1701: {
     id: '1701',
     label: `Fish a House Key`,
-    description: `Fish a House keys|House Key`,
+    description: `Fish a House Key`,
     skillReqs: [],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7971,7 +7971,7 @@ export default {
   1751: {
     id: '1751',
     label: `Give a Dwarf Redberry Antelope`,
-    description: `Give a Dwarf Redberry antelope|Redberry Antelope`,
+    description: `Give a Dwarf Redberry Antelope`,
     skillReqs: [{ skill: 'Hunter', level: 72 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8026,7 +8026,7 @@ export default {
   1691: {
     id: '1691',
     label: `Mine 250 Blessed Bone Shards`,
-    description: `Mine 250 Blessed bone shards|Blessed Bone Shards`,
+    description: `Mine 250 Blessed Bone Shards`,
     skillReqs: [{ skill: 'Mining', level: 41 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8048,7 +8048,7 @@ export default {
   1782: {
     id: '1782',
     label: `Obtain a Cake from a Nest`,
-    description: `Obtain a Cake from a Nest (nice)|Nest`,
+    description: `Obtain a Nest`,
     skillReqs: [],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8059,7 +8059,7 @@ export default {
   1709: {
     id: '1709',
     label: `Open an Adept Hunter's Loot Sack`,
-    description: `Open an Hunters' loot sack (adept)|Adept Hunter's Loot Sack`,
+    description: `Open an Adept Hunter's Loot Sack`,
     skillReqs: [{ skill: 'Hunter', level: 57 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8092,7 +8092,7 @@ export default {
   1700: {
     id: '1700',
     label: `Steal 15 House Keys`,
-    description: `Steal 15 House keys|House Keys`,
+    description: `Steal 15 House Keys`,
     skillReqs: [{ skill: 'Thieving', level: 50 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8114,7 +8114,7 @@ export default {
   1699: {
     id: '1699',
     label: `Steal a House Key`,
-    description: `Steal a House keys|House Key`,
+    description: `Steal a House Key`,
     skillReqs: [{ skill: 'Thieving', level: 50 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8169,7 +8169,7 @@ export default {
   1692: {
     id: '1692',
     label: `Teleport to Cam Torum using a Calcified Moth`,
-    description: `Teleport to Cam Torum using a Calcified moth|Calcified Moth`,
+    description: `Teleport to Calcified Moth`,
     skillReqs: [{ skill: 'Mining', level: 41 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8246,7 +8246,7 @@ export default {
   977: {
     id: '977',
     label: `Catch a Black Chinchompa`,
-    description: `Catch a Black chinchompa (Hunter)|Black Chinchompa in the Wilderness`,
+    description: `Catch a Black Chinchompa in the Wilderness`,
     skillReqs: [{ skill: 'Hunter', level: 73 }],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8257,7 +8257,7 @@ export default {
   976: {
     id: '976',
     label: `Catch a Black Salamander`,
-    description: `Catch a Black salamander (Hunter)|Black Salamander in the Wilderness`,
+    description: `Catch a Black Salamander in the Wilderness`,
     skillReqs: [{ skill: 'Hunter', level: 67 }],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8268,7 +8268,7 @@ export default {
   1026: {
     id: '1026',
     label: `Complete the Easy Wilderness Diary`,
-    description: `Complete all of the easy tasks in the {{SCP|Diary}} Wilderness Achievement Diary`,
+    description: `Complete all of the easy tasks in the Wilderness Achievement Diary`,
     skillReqs: [],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8279,7 +8279,7 @@ export default {
   1027: {
     id: '1027',
     label: `Complete the Medium Wilderness Diary`,
-    description: `Complete all of the medium tasks in the {{SCP|Diary}} Wilderness Achievement Diary`,
+    description: `Complete all of the medium tasks in the Wilderness Achievement Diary`,
     skillReqs: [],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8301,7 +8301,7 @@ export default {
   998: {
     id: '998',
     label: `Defeat a Green Dragon in the Wilderness`,
-    description: `Defeat a Green dragon|Green Dragon in the Wilderness`,
+    description: `Defeat a Green Dragon in the Wilderness`,
     skillReqs: [],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8422,7 +8422,7 @@ export default {
   1644: {
     id: '1644',
     label: `Open 1 Zombie Pirate Locker`,
-    description: `Open 1 Zombie Pirate's Locker|Zombie Pirate Locker`,
+    description: `Open 1 Zombie Pirate Locker`,
     skillReqs: [],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8466,7 +8466,7 @@ export default {
   969: {
     id: '969',
     label: `Sacrifice Some Bones at the Chaos Temple`,
-    description: `Sacrifice some Bones at the Chaos Temple (hut)|Western Chaos Temple altar`,
+    description: `Sacrifice some Bones at the Western Chaos Temple altar`,
     skillReqs: [],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8477,7 +8477,7 @@ export default {
   982: {
     id: '982',
     label: `Use the Abyss`,
-    description: `Use the Abyss to access a Runic altar|Runecrafting Altar`,
+    description: `Use the Runecrafting Altar`,
     skillReqs: [],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8510,7 +8510,7 @@ export default {
   99: {
     id: '99',
     label: `100 Superior Slayer Encounters`,
-    description: `Defeat 100 Superior slayer monster|superior foes while on a Slayer Task`,
+    description: `Defeat 100 superior foes while on a Slayer Task`,
     skillReqs: [{ skill: 'Slayer', level: 5 }],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -8587,7 +8587,7 @@ export default {
   1539: {
     id: '1539',
     label: `Beat Jacky Jester`,
-    description: `Successfully copy Jacky Jester|Jacky the Jester to win`,
+    description: `Successfully copy Jacky the Jester to win`,
     skillReqs: [{ skill: 'Construction', level: 39 }],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -8598,7 +8598,7 @@ export default {
   1353: {
     id: '1353',
     label: `Blow 100 Light Orbs`,
-    description: `Blow 100 Empty light orb|Light Orbs`,
+    description: `Blow 100 Light Orbs`,
     skillReqs: [{ skill: 'Crafting', level: 87 }],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -8675,7 +8675,7 @@ export default {
   1615: {
     id: '1615',
     label: `Catch 50 Grey Chinchompas`,
-    description: `Catch 50 Chinchompa (Hunter)|Grey Chinchompas`,
+    description: `Catch 50 Grey Chinchompas`,
     skillReqs: [{ skill: 'Hunter', level: 53 }],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -8796,7 +8796,7 @@ export default {
   765: {
     id: '765',
     label: `Complete the Hard Western Provinces Diary`,
-    description: `Complete all of the hard tasks in the {{SCP|Diary}} Western Provinces Achievement Diary`,
+    description: `Complete all of the hard tasks in the Western Provinces Achievement Diary`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -8829,7 +8829,7 @@ export default {
   1348: {
     id: '1348',
     label: `Cook 20 Redberry Pies`,
-    description: `Cook 20 Redberry pie|Redberry Pies`,
+    description: `Cook 20 Redberry Pies`,
     skillReqs: [{ skill: 'Cooking', level: 10 }],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -8851,7 +8851,7 @@ export default {
   370: {
     id: '370',
     label: `Craft 2500 Essence Into Runes`,
-    description: `Use Runic altar|Runecrafting Altars to craft 2500 essence into runes of any type`,
+    description: `Use Runecrafting Altars to craft 2500 essence into runes of any type`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -8862,7 +8862,7 @@ export default {
   338: {
     id: '338',
     label: `Craft 30 Blue Dragonhide Bodies`,
-    description: `Craft 30 Blue d'hide body|Blue Dragonhide Bodies`,
+    description: `Craft 30 Blue Dragonhide Bodies`,
     skillReqs: [{ skill: 'Crafting', level: 71 }],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -8912,7 +8912,7 @@ export default {
   326: {
     id: '326',
     label: `Defeat 10 Superior Slayer Creatures`,
-    description: `Defeat 10 Superior slayer monster|Superior Slayer Creatures`,
+    description: `Defeat 10 Superior Slayer Creatures`,
     skillReqs: [{ skill: 'Slayer', level: 5 }],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -8923,7 +8923,7 @@ export default {
   327: {
     id: '327',
     label: `Defeat 20 Superior Slayer Creatures`,
-    description: `Defeat 20 Superior slayer monster|Superior Slayer Creatures`,
+    description: `Defeat 20 Superior Slayer Creatures`,
     skillReqs: [{ skill: 'Slayer', level: 5 }],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -8934,7 +8934,7 @@ export default {
   436: {
     id: '436',
     label: `Equip a Combination Battlestaff or Mystic Staff`,
-    description: `Equip either a Battlestaves#Combination battlestaves|Combination Battlestaff or a Mystic staff#Combination mystic staves|Combination Mystic Staff`,
+    description: `Equip either a Combination Battlestaff or a Combination Mystic Staff`,
     skillReqs: [
       { skill: 'Magic', level: 30 },
       { skill: 'Attack', level: 30 },
@@ -8959,7 +8959,7 @@ export default {
   415: {
     id: '415',
     label: `Equip a Dragon Weapon`,
-    description: `Equip any Dragon equipment#Weapons|Dragon weapon`,
+    description: `Equip any Dragon weapon`,
     skillReqs: [{ skill: 'Attack', level: 60 }],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -8970,7 +8970,7 @@ export default {
   425: {
     id: '425',
     label: `Equip a Full Black Dragonhide Set`,
-    description: `Equip a Black d'hide body|Black Dragonhide Body, some Black d'hide chaps|Black Dragonhide Chaps and some Black d'hide vambs|Black Dragonhide Vambraces`,
+    description: `Equip a Black Dragonhide Body, some Black Dragonhide Chaps and some Black Dragonhide Vambraces`,
     skillReqs: [
       { skill: 'Ranged', level: 70 },
       { skill: 'Defence', level: 40 },
@@ -8984,7 +8984,7 @@ export default {
   20: {
     id: '20',
     label: `Equip a Full God Dragonhide Set`,
-    description: `Equip a Blessed coif|Blessed Coif, Blessed body|Body and Blessed chaps|Chaps with all pieces aligned to the same god`,
+    description: `Equip a Blessed Coif, Body and Chaps with all pieces aligned to the same god`,
     skillReqs: [
       { skill: 'Ranged', level: 70 },
       { skill: 'Defence', level: 40 },
@@ -8998,7 +8998,7 @@ export default {
   17: {
     id: '17',
     label: `Equip a Full God Rune Set`,
-    description: `Equip a full set of Rune god armour|God Rune Armour with all pieces aligned to the same god`,
+    description: `Equip a full set of God Rune Armour with all pieces aligned to the same god`,
     skillReqs: [{ skill: 'Defence', level: 40 }],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -9034,7 +9034,7 @@ export default {
   12: {
     id: '12',
     label: `Equip a Gilded or Trimmed Wizard Item`,
-    description: `Equip either a Gilded equipment#Armour|Gilded armour item or Trimmed wizard robes|trimmed wizard item`,
+    description: `Equip either a Gilded armour item or trimmed wizard item`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -9082,7 +9082,7 @@ export default {
   1520: {
     id: '1520',
     label: `Equip a two-handed Axe`,
-    description: `Obtain and Equip a Felling axe|two-handed woodcutting axe from Forestry`,
+    description: `Obtain and Equip a two-handed woodcutting axe from Forestry`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -9093,7 +9093,7 @@ export default {
   23: {
     id: '23',
     label: `Equip an Ornament Kit Item`,
-    description: `Equip any item that has an Ornament kit|Ornament Kit attached to it`,
+    description: `Equip any item that has an Ornament Kit attached to it`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -9115,7 +9115,7 @@ export default {
   25: {
     id: '25',
     label: `Equip Some Ranger Boots`,
-    description: `Equip a pair of Ranger boots|Ranger Boots`,
+    description: `Equip a pair of Ranger Boots`,
     skillReqs: [{ skill: 'Ranged', level: 40 }],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -9247,7 +9247,7 @@ export default {
   362: {
     id: '362',
     label: `Fill a Hard S.T.A.S.H. Unit`,
-    description: `Build a Hard STASH|S.T.A.S.H. unit and fill it with the relevant items`,
+    description: `Build a Hard S.T.A.S.H. unit and fill it with the relevant items`,
     skillReqs: [{ skill: 'Construction', level: 55 }],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -9291,7 +9291,7 @@ export default {
   43: {
     id: '43',
     label: `Gain 10 Unique Items From Elite Clues`,
-    description: `Gain 10 unique items from Reward casket (elite)|Elite Clue Scroll Reward Caskets`,
+    description: `Gain 10 unique items from Elite Clue Scroll Reward Caskets`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -9302,7 +9302,7 @@ export default {
   41: {
     id: '41',
     label: `Gain 10 Unique Items From Master Clues`,
-    description: `Gain 10 unique items from Reward casket (master)|Master Clue Scroll Reward Caskets`,
+    description: `Gain 10 unique items from Master Clue Scroll Reward Caskets`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -9313,7 +9313,7 @@ export default {
   47: {
     id: '47',
     label: `Gain 25 Unique Items From Medium Clues`,
-    description: `Gain 25 unique items from Reward casket (medium)|Medium Clue Scroll Reward Caskets`,
+    description: `Gain 25 unique items from Medium Clue Scroll Reward Caskets`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -9324,7 +9324,7 @@ export default {
   51: {
     id: '51',
     label: `Gain 35 Unique Items From Beginner Clues`,
-    description: `Gain 35 unique items from Reward casket (beginner)|Beginner Clue Scroll Reward Caskets`,
+    description: `Gain 35 unique items from Beginner Clue Scroll Reward Caskets`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -9335,7 +9335,7 @@ export default {
   46: {
     id: '46',
     label: `Gain 50 Unique Items From Hard Clues`,
-    description: `Gain 50 unique items from Reward casket (hard)|Hard Clue Scroll Reward Caskets`,
+    description: `Gain 50 unique items from Hard Clue Scroll Reward Caskets`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -9346,7 +9346,7 @@ export default {
   56: {
     id: '56',
     label: `Gain a Unique Item From an Elite Clue`,
-    description: `Gain a unique item from an Reward casket (elite)|Elite Clue Scroll Reward Casket`,
+    description: `Gain a unique item from an Elite Clue Scroll Reward Casket`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -9445,7 +9445,7 @@ export default {
   1391: {
     id: '1391',
     label: `Obtain a Magic seed from a birds nest`,
-    description: `Obtain a Magic seed from a Bird nest|birds nest`,
+    description: `Obtain a birds nest`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -9599,7 +9599,7 @@ export default {
   1265: {
     id: '1265',
     label: `Smith a Rune Item`,
-    description: `Smith a Runite bar#Smithing table|Runite Item`,
+    description: `Smith a Runite Item`,
     skillReqs: [{ skill: 'Smithing', level: 85 }],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -9621,7 +9621,7 @@ export default {
   829: {
     id: '829',
     label: `Complete a Game of Veteran Pest Control`,
-    description: `Complete a game of Veteran {{SCP|Minigame}} Pest Control`,
+    description: `Complete a game of Veteran Pest Control`,
     skillReqs: [{ skill: 'Combat', level: 100 }],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.HARD,
@@ -9632,7 +9632,7 @@ export default {
   819: {
     id: '819',
     label: `Complete A Porcine of Interest`,
-    description: `Complete the {{SCP|Quest}} A Porcine of Interest quest`,
+    description: `Complete the A Porcine of Interest quest`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.HARD,
@@ -9643,7 +9643,7 @@ export default {
   817: {
     id: '817',
     label: `Complete the Hard Falador Diary`,
-    description: `Complete all of the hard tasks in the {{SCP|Diary}} Falador Achievement Diary`,
+    description: `Complete all of the hard tasks in the Falador Achievement Diary`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.HARD,
@@ -9654,7 +9654,7 @@ export default {
   776: {
     id: '776',
     label: `Craft 50 Law Runes`,
-    description: `Craft 50 Law Runes from Essence#Runecrafting resources|Essence at the Law Altar`,
+    description: `Craft 50 Essence at the Law Altar`,
     skillReqs: [{ skill: 'Runecraft', level: 54 }],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.HARD,
@@ -9962,7 +9962,7 @@ export default {
   826: {
     id: '826',
     label: `Keep the Veteran Void Knight Above 150 Hitpoints`,
-    description: `Complete a game of Veteran {{SCP|Minigame}} Pest Control without letting the Void Knight fall below 150 Hitpoints`,
+    description: `Complete a game of Veteran Pest Control without letting the Void Knight fall below 150 Hitpoints`,
     skillReqs: [{ skill: 'Combat', level: 100 }],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.HARD,
@@ -10028,7 +10028,7 @@ export default {
   1408: {
     id: '1408',
     label: `Complete Beneath Cursed Sands`,
-    description: `Complete {{SCP|Quest}} Beneath Cursed Sands quest`,
+    description: `Complete Beneath Cursed Sands quest`,
     skillReqs: [
       { skill: 'Agility', level: 62 },
       { skill: 'Crafting', level: 55 },
@@ -10043,7 +10043,7 @@ export default {
   879: {
     id: '879',
     label: `Complete the Hard Desert Diary`,
-    description: `Complete all of the hard tasks in the {{SCP|Diary}} Desert Achievement Diary`,
+    description: `Complete all of the hard tasks in the Desert Achievement Diary`,
     skillReqs: [],
     regions: ['Desert'],
     difficulty: DIFFICULTY.HARD,
@@ -10054,7 +10054,7 @@ export default {
   1186: {
     id: '1186',
     label: `Complete Tombs of Amascut`,
-    description: `Complete {{SCP|Raids}} Tombs of Amascut on normal or Expert`,
+    description: `Complete Tombs of Amascut on normal or Expert`,
     skillReqs: [],
     regions: ['Desert'],
     difficulty: DIFFICULTY.HARD,
@@ -10065,7 +10065,7 @@ export default {
   1187: {
     id: '1187',
     label: `Complete Tombs of Amascut 25 times`,
-    description: `Complete {{SCP|Raids}} Tombs of Amascut on normal or Expert 25 times`,
+    description: `Complete Tombs of Amascut on normal or Expert 25 times`,
     skillReqs: [],
     regions: ['Desert'],
     difficulty: DIFFICULTY.HARD,
@@ -10156,7 +10156,7 @@ export default {
   876: {
     id: '876',
     label: `Equip a Dragon 2-Handed Sword`,
-    description: `Equip a Dragon 2h sword|Dragon 2-Handed Sword in the Kharidian Desert`,
+    description: `Equip a Dragon 2-Handed Sword in the Kharidian Desert`,
     skillReqs: [{ skill: 'Attack', level: 60 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.HARD,
@@ -10233,7 +10233,7 @@ export default {
   1192: {
     id: '1192',
     label: `Guardians of the Rift 25 Rifts closed`,
-    description: `Close the Rift in the Temple of the Eye (location)|Temple of the Eye 25 times`,
+    description: `Close the Rift in the Temple of the Eye 25 times`,
     skillReqs: [{ skill: 'Runecraft', level: 27 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.HARD,
@@ -10244,7 +10244,7 @@ export default {
   1573: {
     id: '1573',
     label: `Have Drew create 500 buckets`,
-    description: `Create 500 Bucket of sand|buckets of sand at Drew's sandstorm machine`,
+    description: `Create 500 buckets of sand at Drew's sandstorm machine`,
     skillReqs: [{ skill: 'Mining', level: 35 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.HARD,
@@ -10266,7 +10266,7 @@ export default {
   1340: {
     id: '1340',
     label: `Make 50 Menaphite Remedies`,
-    description: `Make 50 Menaphite remedy|Menaphite Remedies`,
+    description: `Make 50 Menaphite Remedies`,
     skillReqs: [{ skill: 'Herblore', level: 88 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.HARD,
@@ -10420,7 +10420,7 @@ export default {
   625: {
     id: '625',
     label: `Complete the Hard Fremennik Diary`,
-    description: `Complete all of the hard tasks in the {{SCP|Diary}} Fremennik Achievement Diary`,
+    description: `Complete all of the hard tasks in the Fremennik Achievement Diary`,
     skillReqs: [],
     regions: ['Fremennik'],
     difficulty: DIFFICULTY.HARD,
@@ -10849,7 +10849,7 @@ export default {
   744: {
     id: '744',
     label: `Complete Elemental Workshop II`,
-    description: `Complete the {{SCP|Quest}} Elemental Workshop II quest`,
+    description: `Complete the Elemental Workshop II quest`,
     skillReqs: [
       { skill: 'Magic', level: 20 },
       { skill: 'Smithing', level: 30 },
@@ -10863,7 +10863,7 @@ export default {
   1516: {
     id: '1516',
     label: `Complete Path of Glouphrie`,
-    description: `Complete the {{SCP|Quest}} Path of Glouphrie quest`,
+    description: `Complete the Path of Glouphrie quest`,
     skillReqs: [
       { skill: 'Strength', level: 60 },
       { skill: 'Slayer', level: 56 },
@@ -10880,7 +10880,7 @@ export default {
   1055: {
     id: '1055',
     label: `Complete the Hard Ardougne Diary`,
-    description: `Complete all of the hard tasks in the {{SCP|Diary}} Ardougne Achievement Diary`,
+    description: `Complete all of the hard tasks in the Ardougne Achievement Diary`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.HARD,
@@ -10891,7 +10891,7 @@ export default {
   761: {
     id: '761',
     label: `Complete the Hard Kandarin Diary`,
-    description: `Complete all of the hard tasks in the {{SCP|Diary}} Kandarin Achievement Diary`,
+    description: `Complete all of the hard tasks in the Kandarin Achievement Diary`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.HARD,
@@ -10968,7 +10968,7 @@ export default {
   729: {
     id: '729',
     label: `Defeat the Kraken Boss 150 Times`,
-    description: `Defeat the Kraken|Kraken boss in Kraken Cove 150 times`,
+    description: `Defeat the Kraken boss in Kraken Cove 150 times`,
     skillReqs: [{ skill: 'Slayer', level: 87 }],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.HARD,
@@ -10979,7 +10979,7 @@ export default {
   728: {
     id: '728',
     label: `Defeat the Kraken Boss 50 Times`,
-    description: `Defeat the Kraken|Kraken boss in Kraken Cove 50 times`,
+    description: `Defeat the Kraken boss in Kraken Cove 50 times`,
     skillReqs: [{ skill: 'Slayer', level: 87 }],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.HARD,
@@ -11001,7 +11001,7 @@ export default {
   699: {
     id: '699',
     label: `Equip a Full Angler's Outfit`,
-    description: `Equip a full set of Angler's outfit|Angler gear`,
+    description: `Equip a full set of Angler gear`,
     skillReqs: [{ skill: 'Fishing', level: 34 }],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.HARD,
@@ -11089,7 +11089,7 @@ export default {
   1536: {
     id: '1536',
     label: `Get 750 Target points`,
-    description: `Achieve 750 points in the Target (Ranging Guild)|Target minigame in the Ranging Guild`,
+    description: `Achieve 750 points in the Target minigame in the Ranging Guild`,
     skillReqs: [{ skill: 'Ranged', level: 40 }],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.HARD,
@@ -11100,7 +11100,7 @@ export default {
   1439: {
     id: '1439',
     label: `Kill a Frogeel`,
-    description: `Kill a Frogeel underneath the Tower of Life (building)|Tower of Life`,
+    description: `Kill a Tower of Life`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.HARD,
@@ -11111,7 +11111,7 @@ export default {
   1440: {
     id: '1440',
     label: `Kill a Jubster`,
-    description: `Kill a Jubster underneath the Tower of Life (building)|Tower of Life`,
+    description: `Kill a Tower of Life`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.HARD,
@@ -11144,7 +11144,7 @@ export default {
   1446: {
     id: '1446',
     label: `Score a Goal in Gnomeball`,
-    description: `Score a Goal in Gnome Ball|Gnomeball`,
+    description: `Score a Goal in Gnomeball`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.HARD,
@@ -11202,7 +11202,7 @@ export default {
   673: {
     id: '673',
     label: `Complete the Hard Karamja Diary`,
-    description: `Complete all of the hard tasks in the {{SCP|Diary}} Karamja Achievement Diary`,
+    description: `Complete all of the hard tasks in the Karamja Achievement Diary`,
     skillReqs: [],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.HARD,
@@ -11488,7 +11488,7 @@ export default {
   1062: {
     id: '1062',
     label: `Activate an Arcane or Dexterous Prayer Scroll`,
-    description: `Activate an Arcane prayer scroll|Arcane or Dexterous prayer scroll|Dexterous Prayer scroll`,
+    description: `Activate an Arcane or Dexterous Prayer scroll`,
     skillReqs: [],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.HARD,
@@ -11535,7 +11535,7 @@ export default {
   1605: {
     id: '1605',
     label: `Complete the Shayzien Advanced Agility Course`,
-    description: `Complete a lap of the Shayzien Agility Course|Shayzien Advanced Agility Course`,
+    description: `Complete a lap of the Shayzien Advanced Agility Course`,
     skillReqs: [{ skill: 'Attack', level: 45 }],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.HARD,
@@ -11546,7 +11546,7 @@ export default {
   1603: {
     id: '1603',
     label: `Craft 100 Blood runes`,
-    description: `Craft 100 Blood runes at the Blood Altar (Kourend)|Kourend Blood Altar`,
+    description: `Craft 100 Kourend Blood Altar`,
     skillReqs: [
       { skill: 'Runecraft', level: 77 },
       { skill: 'Mining', level: 38 },
@@ -11575,7 +11575,7 @@ export default {
   1639: {
     id: '1639',
     label: `Defeat a Gang Boss`,
-    description: `Defeat a Gang boss|Gang Boss`,
+    description: `Defeat a Gang Boss`,
     skillReqs: [],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.HARD,
@@ -11586,7 +11586,7 @@ export default {
   82: {
     id: '82',
     label: `Enter the Farming Guild's High Tier`,
-    description: `Enter the Farming Guild#Advanced tier|high tier of the Farming Guild in the Kebos Lowlands`,
+    description: `Enter the high tier of the Farming Guild in the Kebos Lowlands`,
     skillReqs: [{ skill: 'Farming', level: 85 }],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.HARD,
@@ -11679,7 +11679,7 @@ export default {
   183: {
     id: '183',
     label: `Equip the Pyromancer's Garb`,
-    description: `Equip a full set of Pyromancer outfit|Pyromancer's garb, rewarded from the Wintertodt`,
+    description: `Equip a full set of Pyromancer's garb, rewarded from the Wintertodt`,
     skillReqs: [{ skill: 'Firemaking', level: 50 }],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.HARD,
@@ -11690,7 +11690,7 @@ export default {
   175: {
     id: '175',
     label: `Equip Tier 5 Shayzien Armour`,
-    description: `Equip a full set of tier 5 Shayzien armour (tier 5)|Shayzien armour`,
+    description: `Equip a full set of tier 5 Shayzien armour`,
     skillReqs: [{ skill: 'Defence', level: 20 }],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.HARD,
@@ -11715,7 +11715,7 @@ export default {
   1633: {
     id: '1633',
     label: `Harvest 25 Zamorak's Grapes`,
-    description: `Harvest 25 Zamorak's grapes|Zamorak's Grapes`,
+    description: `Harvest 25 Zamorak's Grapes`,
     skillReqs: [
       { skill: 'Farming', level: 36 },
       { skill: 'Prayer', level: 50 },
@@ -11730,7 +11730,7 @@ export default {
   137: {
     id: '137',
     label: `Kourend and Kebos Hard Diary Tasks`,
-    description: `Complete all tasks in the hard tier of the {{SCP|Diary}} Kourend and Kebos achievement diary`,
+    description: `Complete all tasks in the hard tier of the Kourend and Kebos achievement diary`,
     skillReqs: [],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.HARD,
@@ -11799,7 +11799,7 @@ export default {
   452: {
     id: '452',
     label: `Check a grown Magic Tree in Lumbridge`,
-    description: `Check the health of a Magic tree (Farming)|Magic Tree you've grown in Lumbridge`,
+    description: `Check the health of a Magic Tree you've grown in Lumbridge`,
     skillReqs: [{ skill: 'Farming', level: 75 }],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.HARD,
@@ -11810,7 +11810,7 @@ export default {
   490: {
     id: '490',
     label: `Complete the Hard Lumbridge & Draynor Diary`,
-    description: `Complete all of the hard tasks in the {{SCP|Diary}} Lumbridge & Draynor Achievement Diary`,
+    description: `Complete all of the hard tasks in the Lumbridge & Draynor Achievement Diary`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.HARD,
@@ -11821,7 +11821,7 @@ export default {
   1049: {
     id: '1049',
     label: `Complete the Hard Varrock Diary`,
-    description: `Complete all of the hard tasks in the {{SCP|Diary}} Varrock Achievement Diary`,
+    description: `Complete all of the hard tasks in the Varrock Achievement Diary`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.HARD,
@@ -11974,7 +11974,7 @@ export default {
   1723: {
     id: '1723',
     label: `1 Araxxor Kill`,
-    description: `Kill the Araxxor in Morytania Spider Cave|Morytania Spider cave`,
+    description: `Kill the Morytania Spider cave`,
     skillReqs: [{ skill: 'Slayer', level: 92 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.HARD,
@@ -11985,7 +11985,7 @@ export default {
   1725: {
     id: '1725',
     label: `150 Araxxor Kills`,
-    description: `Kill the Araxxor in Morytania Spider Cave|Morytania Spider cave 150 times`,
+    description: `Kill the Morytania Spider cave 150 times`,
     skillReqs: [{ skill: 'Slayer', level: 92 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.HARD,
@@ -11996,7 +11996,7 @@ export default {
   1724: {
     id: '1724',
     label: `50 Araxxor Kills`,
-    description: `Kill the Araxxor in Morytania Spider Cave|Morytania Spider cave 50 times`,
+    description: `Kill the Morytania Spider cave 50 times`,
     skillReqs: [{ skill: 'Slayer', level: 92 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.HARD,
@@ -12021,7 +12021,7 @@ export default {
   960: {
     id: '960',
     label: `Complete Haunted Mine`,
-    description: `Complete the {{SCP|Quest}} Haunted Mine quest`,
+    description: `Complete the Haunted Mine quest`,
     skillReqs: [{ skill: 'Crafting', level: 35 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.HARD,
@@ -12032,7 +12032,7 @@ export default {
   961: {
     id: '961',
     label: `Complete Sins of the Father`,
-    description: `Complete the {{SCP|Quest}} Sins of the Father quest`,
+    description: `Complete the Sins of the Father quest`,
     skillReqs: [
       { skill: 'Woodcutting', level: 62 },
       { skill: 'Fletching', level: 60 },
@@ -12051,7 +12051,7 @@ export default {
   954: {
     id: '954',
     label: `Complete the Hard Morytania Diary`,
-    description: `Complete all of the hard tasks in the {{SCP|Diary}} Morytania Achievement Diary`,
+    description: `Complete all of the hard tasks in the Morytania Achievement Diary`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.HARD,
@@ -12153,7 +12153,7 @@ export default {
   1129: {
     id: '1129',
     label: `Equip a Full Set of Zealot's Robes`,
-    description: `Equip a Zealot's helm|Zealot's Helm, a Zealot's robe top|Zealot's Robe Top, a Zealot's robe bottom|Zealot's Robe Bottom and a Zealot's boots|Zealot's Boots`,
+    description: `Equip a Zealot's Helm, a Zealot's Robe Top, a Zealot's Robe Bottom and a Zealot's Boots`,
     skillReqs: [{ skill: 'Firemaking', level: 80 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.HARD,
@@ -12192,7 +12192,7 @@ export default {
   930: {
     id: '930',
     label: `Equip any Full Barrows Armour Set`,
-    description: `Equip a full set of any Barrows equipment|Barrows armour + weapon`,
+    description: `Equip a full set of any Barrows armour + weapon`,
     skillReqs: [
       { skill: 'Defence', level: 70 },
       { skill: 'Attack', level: 70 },
@@ -12206,7 +12206,7 @@ export default {
   1729: {
     id: '1729',
     label: `Equip Aranea Boots`,
-    description: `Equip Aranea boots|Aranea Boots`,
+    description: `Equip Aranea Boots`,
     skillReqs: [{ skill: 'Slayer', level: 92 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.HARD,
@@ -12217,7 +12217,7 @@ export default {
   1506: {
     id: '1506',
     label: `Equip Full Ahrims Armour Set`,
-    description: `Equip a full set of Ahrim the Blighted's equipment|Ahrims items`,
+    description: `Equip a full set of Ahrims items`,
     skillReqs: [
       { skill: 'Magic', level: 70 },
       { skill: 'Defence', level: 70 },
@@ -12232,7 +12232,7 @@ export default {
   1508: {
     id: '1508',
     label: `Equip Full Dharoks Armour Set`,
-    description: `Equip a full set of Dharok the Wretched's equipment|Dharoks items`,
+    description: `Equip a full set of Dharoks items`,
     skillReqs: [
       { skill: 'Strength', level: 70 },
       { skill: 'Defence', level: 70 },
@@ -12247,7 +12247,7 @@ export default {
   1507: {
     id: '1507',
     label: `Equip Full Guthans Armour Set`,
-    description: `Equip a full set of Guthan the Infested's equipment|Guthans items`,
+    description: `Equip a full set of Guthans items`,
     skillReqs: [
       { skill: 'Defence', level: 70 },
       { skill: 'Attack', level: 70 },
@@ -12261,7 +12261,7 @@ export default {
   1511: {
     id: '1511',
     label: `Equip Full Karils Armour Set`,
-    description: `Equip a full set of Karil the Tainted's equipment|Karils items`,
+    description: `Equip a full set of Karils items`,
     skillReqs: [
       { skill: 'Ranged', level: 70 },
       { skill: 'Defence', level: 70 },
@@ -12275,7 +12275,7 @@ export default {
   1510: {
     id: '1510',
     label: `Equip Full Torags Armour Set`,
-    description: `Equip a full set of Torag the Corrupted's equipment|Torags items`,
+    description: `Equip a full set of Torags items`,
     skillReqs: [
       { skill: 'Strength', level: 70 },
       { skill: 'Defence', level: 70 },
@@ -12290,7 +12290,7 @@ export default {
   1509: {
     id: '1509',
     label: `Equip Full Veracs Armour Set`,
-    description: `Equip a full set of Verac the Defiled's equipment|Veracs items`,
+    description: `Equip a full set of Veracs items`,
     skillReqs: [
       { skill: 'Defence', level: 70 },
       { skill: 'Attack', level: 70 },
@@ -12315,7 +12315,7 @@ export default {
   907: {
     id: '907',
     label: `Obtain Every Hallowed Tool`,
-    description: `Obtain all four Mysterious Hallowed Goods|Hallowed Tools from the Hallowed Sepulchre`,
+    description: `Obtain all four Hallowed Tools from the Hallowed Sepulchre`,
     skillReqs: [{ skill: 'Agility', level: 52 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.HARD,
@@ -12326,7 +12326,7 @@ export default {
   1132: {
     id: '1132',
     label: `Open a Gold Chest`,
-    description: `Open a Gold Chest from Shades of Mort'ton (minigame)|Shades of Mort'ton`,
+    description: `Open a Shades of Mort'ton`,
     skillReqs: [{ skill: 'Firemaking', level: 80 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.HARD,
@@ -12414,7 +12414,7 @@ export default {
   534: {
     id: '534',
     label: `Complete the Gauntlet`,
-    description: `Complete The Gauntlet|the Gauntlet in Prifddinas`,
+    description: `Complete the Gauntlet in Prifddinas`,
     skillReqs: [],
     regions: ['Tirannwn'],
     difficulty: DIFFICULTY.HARD,
@@ -12486,7 +12486,7 @@ export default {
   1762: {
     id: '1762',
     label: `Create 25 Divine Super Attack Potions`,
-    description: `Create 25 Divine super attack potion|Divine Super Attack Potions`,
+    description: `Create 25 Divine Super Attack Potions`,
     skillReqs: [{ skill: 'Herblore', level: 70 }],
     regions: ['Tirannwn'],
     difficulty: DIFFICULTY.HARD,
@@ -12497,7 +12497,7 @@ export default {
   1763: {
     id: '1763',
     label: `Create 25 Divine Super Strength Potions`,
-    description: `Create 25 Divine super strength potion|Divine Super Strength Potions`,
+    description: `Create 25 Divine Super Strength Potions`,
     skillReqs: [{ skill: 'Herblore', level: 70 }],
     regions: ['Tirannwn'],
     difficulty: DIFFICULTY.HARD,
@@ -12630,7 +12630,7 @@ export default {
   1512: {
     id: '1512',
     label: `Equip any piece of Crystal Armour`,
-    description: `Equip either the Crystal Helmet, Crystal body|Body or Crystal legs|Legs`,
+    description: `Equip either the Body or Legs`,
     skillReqs: [{ skill: 'Defence', level: 70 }],
     regions: ['Tirannwn'],
     difficulty: DIFFICULTY.HARD,
@@ -12652,7 +12652,7 @@ export default {
   1388: {
     id: '1388',
     label: `Kill 50 Elves in Tirannwn`,
-    description: `Kill 50 Elf (disambiguation)|Elves in Tirannwn`,
+    description: `Kill 50 Elves in Tirannwn`,
     skillReqs: [],
     regions: ['Tirannwn'],
     difficulty: DIFFICULTY.HARD,
@@ -12663,7 +12663,7 @@ export default {
   1808: {
     id: '1808',
     label: `Load a blowpipe with Rune Darts`,
-    description: `Load a Toxic Blowpipe with Rune dart|Rune Darts`,
+    description: `Load a Rune Darts`,
     skillReqs: [{ skill: 'Fletching', level: 53 }],
     regions: ['Tirannwn'],
     difficulty: DIFFICULTY.HARD,
@@ -12795,7 +12795,7 @@ export default {
   1697: {
     id: '1697',
     label: `Catch 25 Sunlight Antelopes`,
-    description: `Catch 25 Sunlight antelope|Sunlight Antelopes`,
+    description: `Catch 25 Sunlight Antelopes`,
     skillReqs: [{ skill: 'Hunter', level: 72 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.HARD,
@@ -12806,7 +12806,7 @@ export default {
   1695: {
     id: '1695',
     label: `Check the health of Mahogany Tree in Marcellus's Patch`,
-    description: `Check the health of Mahogany tree (Farming)|Mahogany Tree in Marcellus's Patch`,
+    description: `Check the health of Mahogany Tree in Marcellus's Patch`,
     skillReqs: [{ skill: 'Farming', level: 55 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.HARD,
@@ -12828,7 +12828,7 @@ export default {
   1660: {
     id: '1660',
     label: `Complete 50 Hunter Rumours`,
-    description: `Complete 50 Hunters' Rumours|Hunter Rumours`,
+    description: `Complete 50 Hunter Rumours`,
     skillReqs: [{ skill: 'Hunter', level: 46 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.HARD,
@@ -12839,7 +12839,7 @@ export default {
   1661: {
     id: '1661',
     label: `Complete a Ribbiting Tale`,
-    description: `Complete The Ribbiting Tale of a Lily Pad Labour Dispute|a Ribbiting Tale of a Lily Pad Labour Dispute`,
+    description: `Complete a Ribbiting Tale of a Lily Pad Labour Dispute`,
     skillReqs: [{ skill: 'Woodcutting', level: 15 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.HARD,
@@ -12892,7 +12892,7 @@ export default {
   1711: {
     id: '1711',
     label: `Cook 100 Moonlight Antelopes`,
-    description: `Cook 100 Moonlight antelope|Moonlight Antelopes`,
+    description: `Cook 100 Moonlight Antelopes`,
     skillReqs: [
       { skill: 'Hunter', level: 91 },
       { skill: 'Cooking', level: 92 },
@@ -12906,7 +12906,7 @@ export default {
   1689: {
     id: '1689',
     label: `Craft 1000 Sunfire Runes`,
-    description: `Craft 1000 Sunfire rune|Sunfire Runes`,
+    description: `Craft 1000 Sunfire Runes`,
     skillReqs: [{ skill: 'Runecraft', level: 33 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.HARD,
@@ -12917,7 +12917,7 @@ export default {
   1693: {
     id: '1693',
     label: `Create 100 Jugs of Blessed Sunfire Wine`,
-    description: `Create 100 Jug of blessed sunfire wine|Jugs of Blessed Sunfire Wine`,
+    description: `Create 100 Jugs of Blessed Sunfire Wine`,
     skillReqs: [],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.HARD,
@@ -12961,7 +12961,7 @@ export default {
   1670: {
     id: '1670',
     label: `Equip a piece of Sunfire Fanatic`,
-    description: `Equip a piece of Sunfire fanatic armour|Sunfire Fanatic armour`,
+    description: `Equip a piece of Sunfire Fanatic armour`,
     skillReqs: [
       { skill: 'Prayer', level: 60 },
       { skill: 'Defence', level: 40 },
@@ -12975,7 +12975,7 @@ export default {
   1674: {
     id: '1674',
     label: `Equip Echo Boots`,
-    description: `Equip Echo boots|Echo Boots`,
+    description: `Equip Echo Boots`,
     skillReqs: [{ skill: 'Defence', level: 75 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.HARD,
@@ -12986,7 +12986,7 @@ export default {
   1737: {
     id: '1737',
     label: `Equip full Alchemists outfit`,
-    description: `Equip full Alchemist's outfit|Alchemists outfit from the Mixology Rewards|Mixology shop`,
+    description: `Equip full Alchemists outfit from the Mixology shop`,
     skillReqs: [{ skill: 'Herblore', level: 60 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.HARD,
@@ -12997,7 +12997,7 @@ export default {
   1678: {
     id: '1678',
     label: `Equip full Blood Moon armour`,
-    description: `Equip full Blood moon armour|Blood Moon armour`,
+    description: `Equip full Blood Moon armour`,
     skillReqs: [
       { skill: 'Strength', level: 75 },
       { skill: 'Defence', level: 50 },
@@ -13011,7 +13011,7 @@ export default {
   1682: {
     id: '1682',
     label: `Equip full Blue Moon armour`,
-    description: `Equip full Blue moon armour|Blue Moon armour`,
+    description: `Equip full Blue Moon armour`,
     skillReqs: [
       { skill: 'Magic', level: 75 },
       { skill: 'Defence', level: 50 },
@@ -13025,7 +13025,7 @@ export default {
   1680: {
     id: '1680',
     label: `Equip full Eclipse Moon armour`,
-    description: `Equip full Eclipse moon armour|Eclipse Moon armour`,
+    description: `Equip full Eclipse Moon armour`,
     skillReqs: [
       { skill: 'Ranged', level: 75 },
       { skill: 'Defence', level: 50 },
@@ -13039,7 +13039,7 @@ export default {
   1706: {
     id: '1706',
     label: `Equip full Guild Hunter Outfit`,
-    description: `Equip full Guild hunter outfit|Guild Hunter Outfit`,
+    description: `Equip full Guild Hunter Outfit`,
     skillReqs: [{ skill: 'Hunter', level: 46 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.HARD,
@@ -13050,7 +13050,7 @@ export default {
   1734: {
     id: '1734',
     label: `Equip full Hueycoatl armour`,
-    description: `Equip full Hueycoatl hide armour|Hueycoatl armour`,
+    description: `Equip full Hueycoatl armour`,
     skillReqs: [
       { skill: 'Crafting', level: 88 },
       { skill: 'Ranged', level: 70 },
@@ -13065,7 +13065,7 @@ export default {
   1671: {
     id: '1671',
     label: `Equip full Sunfire Fanatic`,
-    description: `Equip a full set of Sunfire fanatic armour|Sunfire Fanatic armour`,
+    description: `Equip a full set of Sunfire Fanatic armour`,
     skillReqs: [
       { skill: 'Prayer', level: 60 },
       { skill: 'Defence', level: 40 },
@@ -13104,7 +13104,7 @@ export default {
   1739: {
     id: '1739',
     label: `Make 100 Prayer Regeneration Potions`,
-    description: `Make 100 Prayer regeneration potion|Prayer Regeneration Potions`,
+    description: `Make 100 Prayer Regeneration Potions`,
     skillReqs: [{ skill: 'Herblore', level: 60 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.HARD,
@@ -13115,7 +13115,7 @@ export default {
   1738: {
     id: '1738',
     label: `Make 50 Goading Potions`,
-    description: `Make 50 Goading potion|Goading Potions`,
+    description: `Make 50 Goading Potions`,
     skillReqs: [{ skill: 'Herblore', level: 60 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.HARD,
@@ -13126,7 +13126,7 @@ export default {
   1707: {
     id: '1707',
     label: `Obtain the Huntsman's Kit`,
-    description: `Obtain the Huntsman's kit|Huntsman's Kit`,
+    description: `Obtain the Huntsman's Kit`,
     skillReqs: [{ skill: 'Hunter', level: 46 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.HARD,
@@ -13137,7 +13137,7 @@ export default {
   1708: {
     id: '1708',
     label: `Open a Master Hunter's Loot Sack`,
-    description: `Open a Hunters' loot sack (master)|Master Hunter's Loot Sack`,
+    description: `Open a Master Hunter's Loot Sack`,
     skillReqs: [{ skill: 'Hunter', level: 91 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.HARD,
@@ -13148,7 +13148,7 @@ export default {
   1735: {
     id: '1735',
     label: `Purchase the Reagents Pouch`,
-    description: `Purchase the Reagent pouch|Reagents Pouch from the Mixology Rewards|Mixology shop`,
+    description: `Purchase the Reagents Pouch from the Mixology shop`,
     skillReqs: [{ skill: 'Herblore', level: 60 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.HARD,
@@ -13159,7 +13159,7 @@ export default {
   1703: {
     id: '1703',
     label: `Steal a Blessed Bone Statuette`,
-    description: `Steal a Blessed bone statuette|Blessed Bone Statuette`,
+    description: `Steal a Blessed Bone Statuette`,
     skillReqs: [{ skill: 'Thieving', level: 50 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.HARD,
@@ -13214,7 +13214,7 @@ export default {
   1028: {
     id: '1028',
     label: `Complete the Hard Wilderness Diary`,
-    description: `Complete all of the hard tasks in the {{SCP|Diary}} Wilderness Achievement Diary`,
+    description: `Complete all of the hard tasks in the Wilderness Achievement Diary`,
     skillReqs: [],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.HARD,
@@ -13236,7 +13236,7 @@ export default {
   1590: {
     id: '1590',
     label: `Cross the Chaos Temple Stone Shortcut`,
-    description: `Cross the Stepping stone (Wilderness Chaos Temple)|Chaos Temple Stone Shortcut`,
+    description: `Cross the Chaos Temple Stone Shortcut`,
     skillReqs: [{ skill: 'Agility', level: 72 }],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.HARD,
@@ -13401,7 +13401,7 @@ export default {
   978: {
     id: '978',
     label: `Equip 100 Black Chinchompas`,
-    description: `Equip a stack of at least 100 Black chinchompa|Black Chinchompas`,
+    description: `Equip a stack of at least 100 Black Chinchompas`,
     skillReqs: [
       { skill: 'Hunter', level: 73 },
       { skill: 'Ranged', level: 65 },
@@ -13415,7 +13415,7 @@ export default {
   979: {
     id: '979',
     label: `Equip 250 Black Chinchompas`,
-    description: `Equip a stack of at least 250 Black chinchompa|Black Chinchompas`,
+    description: `Equip a stack of at least 250 Black Chinchompas`,
     skillReqs: [
       { skill: 'Hunter', level: 73 },
       { skill: 'Ranged', level: 65 },
@@ -13429,7 +13429,7 @@ export default {
   1003: {
     id: '1003',
     label: `Equip a Dragon 2-Handed Sword in the Wilderness`,
-    description: `Equip a Dragon 2h sword|Dragon 2-Handed Sword in the Wilderness`,
+    description: `Equip a Dragon 2-Handed Sword in the Wilderness`,
     skillReqs: [{ skill: 'Attack', level: 60 }],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.HARD,
@@ -13440,7 +13440,7 @@ export default {
   1013: {
     id: '1013',
     label: `Equip an Enchanted Slayer Staff`,
-    description: `Equip an Slayer's staff (e)|Enchanted Slayer Staff`,
+    description: `Equip an Enchanted Slayer Staff`,
     skillReqs: [
       { skill: 'Magic', level: 75 },
       { skill: 'Slayer', level: 55 },
@@ -13487,7 +13487,7 @@ export default {
   1645: {
     id: '1645',
     label: `Open 15 Zombie Pirate Lockers`,
-    description: `Open 15 Zombie Pirate's Locker|Zombie Pirate Lockers`,
+    description: `Open 15 Zombie Pirate Lockers`,
     skillReqs: [],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.HARD,
@@ -13509,7 +13509,7 @@ export default {
   1646: {
     id: '1646',
     label: `Open 50 Zombie Pirate Lockers`,
-    description: `Open 50 Zombie Pirate's Locker|Zombie Pirate Lockers`,
+    description: `Open 50 Zombie Pirate Lockers`,
     skillReqs: [],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.HARD,
@@ -13520,7 +13520,7 @@ export default {
   1647: {
     id: '1647',
     label: `Redeem 50 Wilderness Agility Tickets`,
-    description: `Redeem 50 Wilderness agility ticket|Wilderness Agility Tickets`,
+    description: `Redeem 50 Wilderness Agility Tickets`,
     skillReqs: [{ skill: 'Agility', level: 52 }],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.HARD,
@@ -13531,7 +13531,7 @@ export default {
   970: {
     id: '970',
     label: `Sacrifice Some Dragon Bones at the Chaos Temple`,
-    description: `Sacrifice some Dragon Bones at the Chaos Temple (hut)|Western Chaos Temple altar`,
+    description: `Sacrifice some Western Chaos Temple altar`,
     skillReqs: [],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.HARD,
@@ -13674,7 +13674,7 @@ export default {
   411: {
     id: '411',
     label: `Add a Jar to a Display Case`,
-    description: `Add a Jar to a Boss lair display|Display Case in your Player Owned House Achievement Gallery`,
+    description: `Add a Jar to a Display Case in your Player Owned House Achievement Gallery`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.ELITE,
@@ -13776,7 +13776,7 @@ export default {
   766: {
     id: '766',
     label: `Complete the Elite Western Provinces Diary`,
-    description: `Complete all of the elite tasks in the {{SCP|Diary}} Western Provinces Achievement Diary`,
+    description: `Complete all of the elite tasks in the Western Provinces Achievement Diary`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.ELITE,
@@ -13798,7 +13798,7 @@ export default {
   330: {
     id: '330',
     label: `Defeat 50 Superior Slayer Creatures`,
-    description: `Defeat 50 Superior slayer monster|Superior Slayer Creatures`,
+    description: `Defeat 50 Superior Slayer Creatures`,
     skillReqs: [{ skill: 'Slayer', level: 5 }],
     regions: ['General'],
     difficulty: DIFFICULTY.ELITE,
@@ -13809,7 +13809,7 @@ export default {
   1459: {
     id: '1459',
     label: `Equip a piece of Virtus`,
-    description: `Equip either the Virtus Mask, Virtus robe top|Robe top, or Virtus robe bottom|Robe Bottoms`,
+    description: `Equip either the Robe top, or Robe Bottoms`,
     skillReqs: [
       { skill: 'Magic', level: 78 },
       { skill: 'Defence', level: 75 },
@@ -13914,7 +13914,7 @@ export default {
   44: {
     id: '44',
     label: `Gain 25 Unique Items From Elite Clues`,
-    description: `Gain 25 unique items from Reward casket (elite)|Elite Clue Scroll Reward Caskets`,
+    description: `Gain 25 unique items from Elite Clue Scroll Reward Caskets`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.ELITE,
@@ -13925,7 +13925,7 @@ export default {
   42: {
     id: '42',
     label: `Gain 25 Unique Items From Master Clues`,
-    description: `Gain 25 unique items from Reward casket (master)|Master Clue Scroll Reward Caskets`,
+    description: `Gain 25 unique items from Master Clue Scroll Reward Caskets`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.ELITE,
@@ -14948,7 +14948,7 @@ export default {
   328: {
     id: '328',
     label: `Slay an Abyssal Demon`,
-    description: `Kill an Abyssal Demon whilst on an Abyssal Demon Slayer task|Slayer Task`,
+    description: `Kill an Slayer Task`,
     skillReqs: [{ skill: 'Slayer', level: 85 }],
     regions: ['General'],
     difficulty: DIFFICULTY.ELITE,
@@ -14970,7 +14970,7 @@ export default {
   818: {
     id: '818',
     label: `Complete the Elite Falador Diary`,
-    description: `Complete all of the elite tasks in the {{SCP|Diary}} Falador Achievement Diary`,
+    description: `Complete all of the elite tasks in the Falador Achievement Diary`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.ELITE,
@@ -15041,7 +15041,7 @@ export default {
   791: {
     id: '791',
     label: `Equip a Full Armadyl Armour Set`,
-    description: `Equip a full set of Armadyl armour|Armadyl Armour`,
+    description: `Equip a full set of Armadyl Armour`,
     skillReqs: [
       { skill: 'Ranged', level: 70 },
       { skill: 'Defence', level: 70 },
@@ -15091,7 +15091,7 @@ export default {
   1253: {
     id: '1253',
     label: `Equip a full set of the Carpenters Outfit`,
-    description: `Equip a full set of the Carpenter's outfit|Carpenters Outfit`,
+    description: `Equip a full set of the Carpenters Outfit`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.ELITE,
@@ -15252,7 +15252,7 @@ export default {
   1420: {
     id: '1420',
     label: `The Whisperer Combat Achievements`,
-    description: `Complete all of the The Whisperer#Combat Achievements|Combat Achievements for The Whisperer`,
+    description: `Complete all of the Combat Achievements for The Whisperer`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.ELITE,
@@ -15274,7 +15274,7 @@ export default {
   880: {
     id: '880',
     label: `Complete the Elite Desert Diary`,
-    description: `Complete all of the elite tasks in the {{SCP|Diary}} Desert Achievement Diary`,
+    description: `Complete all of the elite tasks in the Desert Achievement Diary`,
     skillReqs: [],
     regions: ['Desert'],
     difficulty: DIFFICULTY.ELITE,
@@ -15307,7 +15307,7 @@ export default {
   1042: {
     id: '1042',
     label: `Craft a Ghorrock Teleport Tablet`,
-    description: `Craft a Ghorrock teleport (tablet)|Ghorrock Teleport Tablet`,
+    description: `Craft a Ghorrock Teleport Tablet`,
     skillReqs: [{ skill: 'Magic', level: 96 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.ELITE,
@@ -15376,7 +15376,7 @@ export default {
   883: {
     id: '883',
     label: `Equip a Piece of the Infinity Robe Set`,
-    description: `Equip any piece of the Infinity robes|Infinity robe set`,
+    description: `Equip any piece of the Infinity robe set`,
     skillReqs: [
       { skill: 'Magic', level: 50 },
       { skill: 'Defence', level: 25 },
@@ -15482,7 +15482,7 @@ export default {
   1805: {
     id: '1805',
     label: `Blast Furnace 100 Runite Bars`,
-    description: `Smelt 100 Runite bar|Runite Bars at the Blast Furnace`,
+    description: `Smelt 100 Runite Bars at the Blast Furnace`,
     skillReqs: [{ skill: 'Smithing', level: 85 }],
     regions: ['Fremennik'],
     difficulty: DIFFICULTY.ELITE,
@@ -15493,7 +15493,7 @@ export default {
   626: {
     id: '626',
     label: `Complete the Elite Fremennik Diary`,
-    description: `Complete all of the elite tasks in the {{SCP|Diary}} Fremennik Achievement Diary`,
+    description: `Complete all of the elite tasks in the Fremennik Achievement Diary`,
     skillReqs: [],
     regions: ['Fremennik'],
     difficulty: DIFFICULTY.ELITE,
@@ -15747,7 +15747,7 @@ export default {
   1816: {
     id: '1816',
     label: `Barehand catch a Shark`,
-    description: `Barbarian Training#Barehanded fishing|Barehand catch a Raw shark|Shark`,
+    description: `Barehand catch a Shark`,
     skillReqs: [
       { skill: 'Fishing', level: 96 },
       { skill: 'Strength', level: 76 },
@@ -15761,7 +15761,7 @@ export default {
   692: {
     id: '692',
     label: `Catch 150 Red Chinchompas in Kandarin`,
-    description: `Catch 150 Red chinchompa (Hunter)|Red Chinchompas in Kandarin`,
+    description: `Catch 150 Red Chinchompas in Kandarin`,
     skillReqs: [{ skill: 'Hunter', level: 63 }],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.ELITE,
@@ -15794,7 +15794,7 @@ export default {
   1056: {
     id: '1056',
     label: `Complete the Elite Ardougne Diary`,
-    description: `Complete all of the elite tasks in the {{SCP|Diary}} Ardougne Achievement Diary`,
+    description: `Complete all of the elite tasks in the Ardougne Achievement Diary`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.ELITE,
@@ -15805,7 +15805,7 @@ export default {
   762: {
     id: '762',
     label: `Complete the Elite Kandarin Diary`,
-    description: `Complete all of the elite tasks in the {{SCP|Diary}} Kandarin Achievement Diary`,
+    description: `Complete all of the elite tasks in the Kandarin Achievement Diary`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.ELITE,
@@ -15936,7 +15936,7 @@ export default {
   1537: {
     id: '1537',
     label: `Get 1000 Target points`,
-    description: `Achieve 1000 points in the Target (Ranging Guild)|Target minigame in the Ranging Guild`,
+    description: `Achieve 1000 points in the Target minigame in the Ranging Guild`,
     skillReqs: [{ skill: 'Ranged', level: 40 }],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.ELITE,
@@ -15958,7 +15958,7 @@ export default {
   288: {
     id: '288',
     label: `Travel Between Your Spirit Trees`,
-    description: `Travel between any two Spirit tree (Farming)|Spirit Trees that you've grown`,
+    description: `Travel between any two Spirit Trees that you've grown`,
     skillReqs: [{ skill: 'Farming', level: 91 }],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.ELITE,
@@ -15983,7 +15983,7 @@ export default {
   674: {
     id: '674',
     label: `Complete the Elite Karamja Diary`,
-    description: `Complete all of the elite tasks in the {{SCP|Diary}} Karamja Achievement Diary`,
+    description: `Complete all of the elite tasks in the Karamja Achievement Diary`,
     skillReqs: [],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.ELITE,
@@ -16082,7 +16082,7 @@ export default {
   1575: {
     id: '1575',
     label: `Pay Saniboch for Permanent Access`,
-    description: `Pay Saniboch for Permanent Access into his Brimhaven Dungeon|dungeon`,
+    description: `Pay dungeon`,
     skillReqs: [],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.ELITE,
@@ -16093,7 +16093,7 @@ export default {
   678: {
     id: '678',
     label: `Purchase an Onyx in Mor Ul Rek`,
-    description: `Purchase an Uncut onyx|Onyx from an TzHaar-Hur-Lek's Ore and Gem Store|Ore and Gem Store in Mor Ul Rek`,
+    description: `Purchase an Onyx from an Ore and Gem Store in Mor Ul Rek`,
     skillReqs: [],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.ELITE,
@@ -16148,7 +16148,7 @@ export default {
   1609: {
     id: '1609',
     label: `Catch 150 Anglerfish`,
-    description: `Catch 150 Raw anglerfish|Anglerfish`,
+    description: `Catch 150 Anglerfish`,
     skillReqs: [{ skill: 'Fishing', level: 78 }],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.ELITE,
@@ -16159,7 +16159,7 @@ export default {
   93: {
     id: '93',
     label: `Check a grown Redwood Tree`,
-    description: `Check the health of a Redwood tree (Farming)|Redwood Tree after growing one in the Farming Guild`,
+    description: `Check the health of a Redwood Tree after growing one in the Farming Guild`,
     skillReqs: [{ skill: 'Farming', level: 90 }],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.ELITE,
@@ -16181,7 +16181,7 @@ export default {
   1349: {
     id: '1349',
     label: `Cook 100 Anglerfish`,
-    description: `Cook 100 Raw anglerfish|Anglerfish`,
+    description: `Cook 100 Anglerfish`,
     skillReqs: [{ skill: 'Cooking', level: 84 }],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.ELITE,
@@ -16221,7 +16221,7 @@ export default {
   1060: {
     id: '1060',
     label: `Equip a Dragon Hunter Crossbow`,
-    description: `Equip a Dragon hunter crossbow|Dragon Hunter Crossbow`,
+    description: `Equip a Dragon Hunter Crossbow`,
     skillReqs: [{ skill: 'Ranged', level: 70 }],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.ELITE,
@@ -16349,7 +16349,7 @@ export default {
   138: {
     id: '138',
     label: `Kourend and Kebos Elite Diary Tasks`,
-    description: `Complete all tasks in the elite tier of the {{SCP|Diary}} Kourend and Kebos achievement diary`,
+    description: `Complete all tasks in the elite tier of the Kourend and Kebos achievement diary`,
     skillReqs: [],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.ELITE,
@@ -16371,7 +16371,7 @@ export default {
   1637: {
     id: '1637',
     label: `Smith Shayzien (5)`,
-    description: `Smith any piece of Shayzien armour (tier 5)|Shayzien (5)`,
+    description: `Smith any piece of Shayzien (5)`,
     skillReqs: [
       { skill: 'Smithing', level: 85 },
       { skill: 'Mining', level: 65 },
@@ -16410,7 +16410,7 @@ export default {
   491: {
     id: '491',
     label: `Complete the Elite Lumbridge & Draynor Diary`,
-    description: `Complete all of the elite tasks in the {{SCP|Diary}} Lumbridge & Draynor Achievement Diary`,
+    description: `Complete all of the elite tasks in the Lumbridge & Draynor Achievement Diary`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.ELITE,
@@ -16421,7 +16421,7 @@ export default {
   1050: {
     id: '1050',
     label: `Complete the Elite Varrock Diary`,
-    description: `Complete all of the elite tasks in the {{SCP|Diary}} Varrock Achievement Diary`,
+    description: `Complete all of the elite tasks in the Varrock Achievement Diary`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.ELITE,
@@ -16531,7 +16531,7 @@ export default {
   1726: {
     id: '1726',
     label: `300 Araxxor Kills`,
-    description: `Kill the Araxxor in Morytania Spider Cave|Morytania Spider cave 300 times`,
+    description: `Kill the Morytania Spider cave 300 times`,
     skillReqs: [{ skill: 'Slayer', level: 92 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.ELITE,
@@ -16575,7 +16575,7 @@ export default {
   955: {
     id: '955',
     label: `Complete the Elite Morytania Diary`,
-    description: `Complete all of the elite tasks in the {{SCP|Diary}} Morytania Achievement Diary`,
+    description: `Complete all of the elite tasks in the Morytania Achievement Diary`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.ELITE,
@@ -16721,7 +16721,7 @@ export default {
   1727: {
     id: '1727',
     label: `Equip the Amulet of Rancour`,
-    description: `Equip the Amulet of rancour|Amulet of Rancour`,
+    description: `Equip the Amulet of Rancour`,
     skillReqs: [
       { skill: 'Slayer', level: 92 },
       { skill: 'Hitpoints', level: 90 },
@@ -16735,7 +16735,7 @@ export default {
   1728: {
     id: '1728',
     label: `Equip the Noxious Halberd`,
-    description: `Equip the Noxious halberd|Noxious Halberd`,
+    description: `Equip the Noxious Halberd`,
     skillReqs: [
       { skill: 'Slayer', level: 92 },
       { skill: 'Attack', level: 80 },
@@ -16795,7 +16795,7 @@ export default {
   1377: {
     id: '1377',
     label: `Catch 300 Red Chinchompas in Tirannwn`,
-    description: `Catch 300 Red chinchompa (Hunter)|Red Chinchompas in Tirannwn`,
+    description: `Catch 300 Red Chinchompas in Tirannwn`,
     skillReqs: [{ skill: 'Hunter', level: 63 }],
     regions: ['Tirannwn'],
     difficulty: DIFFICULTY.ELITE,
@@ -17082,7 +17082,7 @@ export default {
   1696: {
     id: '1696',
     label: `Catch 50 Moonlight Antelopes`,
-    description: `Catch 50 Moonlight antelope|Moonlight Antelopes`,
+    description: `Catch 50 Moonlight Antelopes`,
     skillReqs: [{ skill: 'Hunter', level: 91 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.ELITE,
@@ -17126,7 +17126,7 @@ export default {
   1722: {
     id: '1722',
     label: `Equip a Tecu Salamander`,
-    description: `Equip a Tecu salamander|Tecu Salamander`,
+    description: `Equip a Tecu Salamander`,
     skillReqs: [
       { skill: 'Hunter', level: 79 },
       { skill: 'Attack', level: 80 },
@@ -17142,7 +17142,7 @@ export default {
   1749: {
     id: '1749',
     label: `Equip the Moonlight Fanatic Helmet`,
-    description: `Equip the Helmet of the moon|Moonlight Fanatic Helmet`,
+    description: `Equip the Moonlight Fanatic Helmet`,
     skillReqs: [],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.ELITE,
@@ -17197,7 +17197,7 @@ export default {
   1748: {
     id: '1748',
     label: `Open the Varlamore Moon Chest`,
-    description: `Open the Varlamore Chest (moon key)|Moon Chest`,
+    description: `Open the Varlamore Moon Chest`,
     skillReqs: [],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.ELITE,
@@ -17208,7 +17208,7 @@ export default {
   1676: {
     id: '1676',
     label: `Perilous Moons Combat Achievements`,
-    description: `Complete all of the Combat Achievements for Moons of Peril|Perilous Moons`,
+    description: `Complete all of the Perilous Moons`,
     skillReqs: [],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.ELITE,
@@ -17219,7 +17219,7 @@ export default {
   1736: {
     id: '1736',
     label: `Purchase the Chugging Barrel`,
-    description: `Purchase the Chugging barrel|Chugging Barrel from the Mixology Rewards|Mixology shop`,
+    description: `Purchase the Chugging Barrel from the Mixology shop`,
     skillReqs: [{ skill: 'Herblore', level: 60 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.ELITE,
@@ -17241,7 +17241,7 @@ export default {
   1029: {
     id: '1029',
     label: `Complete the Elite Wilderness Diary`,
-    description: `Complete all of the elite tasks in the {{SCP|Diary}} Wilderness Achievement Diary`,
+    description: `Complete all of the elite tasks in the Wilderness Achievement Diary`,
     skillReqs: [],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.ELITE,
@@ -17321,7 +17321,7 @@ export default {
   980: {
     id: '980',
     label: `Equip 500 Black Chinchompas`,
-    description: `Equip a stack of at least 500 Black chinchompa|Black Chinchompas`,
+    description: `Equip a stack of at least 500 Black Chinchompas`,
     skillReqs: [
       { skill: 'Hunter', level: 73 },
       { skill: 'Ranged', level: 65 },
@@ -17374,7 +17374,7 @@ export default {
   1040: {
     id: '1040',
     label: `Equip a Piece of the Dagon'Hai Set`,
-    description: `Equip any piece of the Dagon'hai robes|Dagon'hai robe set`,
+    description: `Equip any piece of the Dagon'hai robe set`,
     skillReqs: [
       { skill: 'Magic', level: 70 },
       { skill: 'Defence', level: 40 },
@@ -17454,7 +17454,7 @@ export default {
   1297: {
     id: '1297',
     label: `Equip full Elder chaos robe`,
-    description: `Equip the Elder Chaos Hood, Elder chaos robe|Robe, and Elder chaos top|top`,
+    description: `Equip the Robe, and top`,
     skillReqs: [{ skill: 'Magic', level: 40 }],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.ELITE,
@@ -17589,7 +17589,7 @@ export default {
   1226: {
     id: '1226',
     label: `Equip full Virtus`,
-    description: `Equip full Virtus robes|Virtus outfit, obtained from Desert Treasure II bosses`,
+    description: `Equip full Virtus outfit, obtained from Desert Treasure II bosses`,
     skillReqs: [
       { skill: 'Magic', level: 78 },
       { skill: 'Defence', level: 75 },
@@ -17684,7 +17684,7 @@ export default {
   1231: {
     id: '1231',
     label: `Equip a full set of Masori`,
-    description: `Obtain and Equip Masori mask|Masori Mask, Masori body|Body and Masori chaps|chaps`,
+    description: `Obtain and Equip Masori Mask, Body and chaps`,
     skillReqs: [
       { skill: 'Ranged', level: 80 },
       { skill: 'Defence', level: 30 },
@@ -17808,7 +17808,7 @@ export default {
   1576: {
     id: '1576',
     label: `Equip a Pirate Hook`,
-    description: `Equip a Pirate's hook|Pirate Hook from Brimhaven Agility Arena`,
+    description: `Equip a Pirate Hook from Brimhaven Agility Arena`,
     skillReqs: [],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.MASTER,
@@ -17830,7 +17830,7 @@ export default {
   1419: {
     id: '1419',
     label: `The Fight Caves Combat Achievements`,
-    description: `Complete all of the Combat Achievements for {{SCP|Raids}} The Fight Caves`,
+    description: `Complete all of the Raids}} The Fight Caves`,
     skillReqs: [],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.MASTER,
@@ -17841,7 +17841,7 @@ export default {
   1418: {
     id: '1418',
     label: `The Inferno Combat Achievements`,
-    description: `Complete all of the Combat Achievements for {{SCP|Raids}} The Inferno`,
+    description: `Complete all of the Raids}} The Inferno`,
     skillReqs: [],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.MASTER,
@@ -17963,7 +17963,7 @@ export default {
   536: {
     id: '536',
     label: `Equip a Corrupted Weapon`,
-    description: `Equip a Blade of saeldor (c)|Corrupted Blade of Saeldor or Bow of faerdhinen (c)|Bow of Faerdhinen`,
+    description: `Equip a Corrupted Blade of Saeldor or Bow of Faerdhinen`,
     skillReqs: [{ skill: 'Attack', level: 80 }],
     regions: ['Tirannwn'],
     difficulty: DIFFICULTY.MASTER,
@@ -17985,7 +17985,7 @@ export default {
   1809: {
     id: '1809',
     label: `Equip a Crystal Tool`,
-    description: `Equip a Crystal tool|Crystal Tool`,
+    description: `Equip a Crystal Tool`,
     skillReqs: [
       { skill: 'Attack', level: 70 },
       { skill: 'Agility', level: 50 },
@@ -18043,7 +18043,7 @@ export default {
   1672: {
     id: '1672',
     label: `Equip Blessed Dizana's Quiver`,
-    description: `Equip Blessed dizana's quiver|Blessed Dizana's Quiver`,
+    description: `Equip Blessed Dizana's Quiver`,
     skillReqs: [{ skill: 'Ranged', level: 75 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.MASTER,

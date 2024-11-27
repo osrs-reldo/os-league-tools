@@ -21,11 +21,19 @@ function formatTasks() {
         /{{RELTaskRow\|(?<label>.*?)\|(?<description>.*?)\|s=(?<skills>.*?)\|(other=(?<other>(.*?))\|)?tier=(?<tier>.*?)\|region=(?<region>.*?)\|id=(?<id>.*?)}}/;
       const match = task.match(regex);
       const { label, description, skills, other, tier, region, id } = match?.groups || {};
+
+      // Strip links from description
+      // [[Goblin#Level_5|Goblin]] or {{SCP|...}}
+      const wikiLinkRegex = /\[\[.*?\|(.*?)\]\]/g;
+      let descriptionWithoutLinks = description.replace(wikiLinkRegex, '$1');
+      const wikiScpRegex = /\{\{SCP\|.*?\}\} /g;
+      descriptionWithoutLinks = descriptionWithoutLinks.replace(wikiScpRegex, '');
+
       // const { category, subcategory } = taskMapper.toCategories(task);
       writeStream.write(`'${id}': {\n    `);
       writeStream.write(`id: '${id}',\n    `);
       writeStream.write(`label: \`${label.replace(/[\[\]]/g, '')}\`,\n    `);
-      writeStream.write(`description: \`${description.replace(/[\[\]]/g, '')}\`,\n    `);
+      writeStream.write(`description: \`${descriptionWithoutLinks.replace(/[\[\]]/g, '')}\`,\n    `);
       writeStream.write(`skillReqs: ${formatSkillReqs(skills)},\n    `);
       writeStream.write(`regions: ['${region}'],\n    `);
       writeStream.write(`difficulty: DIFFICULTY.${tier.toUpperCase()},\n    `);
@@ -50,15 +58,17 @@ function formatSkillReqs(skillReqs) {
   if (skillReqs) {
     console.log(skillReqs);
     return stringifyArray(
-      skillReqs.split(', ').map(skill => {
-        console.log({ skill });
-        // {{SCP|Firemaking|15|link=yes}}
-        const match = skill.match(/{{SCP\|(?<skillName>(.*?))\|(?<level>(.*?))\|.*/);
-        console.log(match);
-        if (match) {
-          return `{skill: '${match.groups.skillName}',level: ${parseInt(match.groups.level)}}`;
-        } else return '';
-      })
+      skillReqs
+        .split(', ')
+        .map(skill => {
+          // {{SCP|Firemaking|15|link=yes}}
+          const match = skill.match(/{{SCP\|(?<skillName>(.*?))\|(?<level>(.*?))\|.*/);
+          if (match) {
+            return `{skill: '${match.groups.skillName}',level: ${parseInt(match.groups.level)}}`;
+          }
+          return null;
+        })
+        .filter(skill => !!skill)
     );
   } else {
     return '[]';

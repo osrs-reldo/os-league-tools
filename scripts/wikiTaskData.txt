@@ -151,7 +151,7 @@
 {{RELTaskRow|Complete the Varrock Agility Course|Complete a lap of the [[Varrock Rooftop Agility Course]]|s={{SCP|Agility|30|link=yes}}|other=|tier=easy|region=Misthalin|id=1522}}
 {{RELTaskRow|Defeat the Lesser Demon in the Wizards' Tower|Defeat the [[Lesser demon|Lesser Demon]] at the top of the [[Wizards' Tower]]|s=|other=|tier=easy|region=Misthalin|id=466}}
 {{RELTaskRow|Drink a beer in the Longhall|Drink a [[beer]] in the [[The Long Hall|Longhall]] in [[Barbarian Village]]|s=|other=|tier=easy|region=Misthalin|id=1780}}
-{{RELTaskRow|Eat an Onion|2=Eat an [[Onion]], [https://www.youtube.com/watch?v=hmPVCKnkKWA raw]|s=|other=|tier=easy|region=Misthalin|id=1562}}
+{{RELTaskRow|Eat an Onion|Eat an [[Onion]], raw|s=|other=|tier=easy|region=Misthalin|id=1562}}
 {{RELTaskRow|Enter Zanaris|Enter the lost city of [[Zanaris]]|s=|other=|tier=easy|region=Misthalin|id=494}}
 {{RELTaskRow|Equip an Iron dagger|Equip an [[Iron dagger]]|s=|other=|tier=easy|region=Misthalin|id=1560}}
 {{RELTaskRow|Get a chair to follow you|Get a chair to follow you|s=|other=|tier=easy|region=Misthalin|id=1313}}
