@@ -1,6 +1,5 @@
 const taskMapper = require('./taskMapper');
 const fs = require('fs');
-const fetch = require('node-fetch');
 
 // TODO:
 // - categories temporarily disabled, mapper values need to be manually updated
@@ -17,14 +16,19 @@ function formatTasks() {
   writeStream.write('export default {\n  ');
   fetchTaskJson().then(tasks => {
     tasks.forEach((task, index) => {
+      // {{RELTaskRow|Achieve Your First Level 10|Reach level 10 in any skill (not including Agility and Hitpoints)|s=|other=|tier=easy|region=General|id=193}}
+      const regex =
+        /{{RELTaskRow\|(?<label>.*?)\|(?<description>.*?)\|s=(?<skills>.*?)\|(other=(?<other>(.*?))\|)?tier=(?<tier>.*?)\|region=(?<region>.*?)\|id=(?<id>.*?)}}/;
+      const match = task.match(regex);
+      const { label, description, skills, other, tier, region, id } = match?.groups || {};
       // const { category, subcategory } = taskMapper.toCategories(task);
-      writeStream.write(`'${task.id}': {\n    `);
-      writeStream.write(`id: '${task.id}',\n    `);
-      writeStream.write(`label: ${JSON.stringify(task.name)},\n    `);
-      writeStream.write(`description: ${JSON.stringify(task.description)},\n    `);
-      writeStream.write(`skillReqs: ${formatSkillReqs(task.skills)},\n    `);
-      writeStream.write(`regions: [${JSON.stringify(task.area)}],\n    `);
-      writeStream.write(`difficulty: DIFFICULTY.${task.tier.toUpperCase()},\n    `);
+      writeStream.write(`'${id}': {\n    `);
+      writeStream.write(`id: '${id}',\n    `);
+      writeStream.write(`label: \`${label.replace(/[\[\]]/g, '')}\`,\n    `);
+      writeStream.write(`description: \`${description.replace(/[\[\]]/g, '')}\`,\n    `);
+      writeStream.write(`skillReqs: ${formatSkillReqs(skills)},\n    `);
+      writeStream.write(`regions: ['${region}'],\n    `);
+      writeStream.write(`difficulty: DIFFICULTY.${tier.toUpperCase()},\n    `);
       writeStream.write(`category: CATEGORY.OTHER,\n    `);
       writeStream.write(`subcategory: CATEGORY.OTHER.subcategories.GENERAL,\n    `);
       // writeStream.write(`category: ${category && `CATEGORY.${category}`},\n    `);
@@ -38,20 +42,34 @@ function formatTasks() {
 }
 
 async function fetchTaskJson() {
-  let tasks;
-  await fetch('https://raw.githubusercontent.com/osrs-reldo/task-json-store/main/json/league4_tasks.json').then(res => {
-    tasks = res.json();
-  });
-  return tasks;
+  const data = fs.readFileSync('./scripts/wikiTaskData.txt', 'utf8').split('\n');
+  return data;
 }
 
 function formatSkillReqs(skillReqs) {
-  return stringifyArray(skillReqs.map(({ skill, level }) => `{skill: '${skill}',level: ${parseInt(level)}}`));
+  if (skillReqs) {
+    console.log(skillReqs);
+    return stringifyArray(
+      skillReqs.split(', ').map(skill => {
+        console.log({ skill });
+        // {{SCP|Firemaking|15|link=yes}}
+        const match = skill.match(/{{SCP\|(?<skillName>(.*?))\|(?<level>(.*?))\|.*/);
+        console.log(match);
+        if (match) {
+          return `{skill: '${match.groups.skillName}',level: ${parseInt(match.groups.level)}}`;
+        } else return '';
+      })
+    );
+  } else {
+    return '[]';
+  }
 }
 
 function stringifyArray(arr) {
   // because JSON.stringify does annoying things like escaping quotes
-  return `[${arr.join(',\n')}]`;
+  if (arr.length) {
+    return `[${arr.join(',\n')}]`;
+  } else return '[]';
 }
 
 formatTasks();
