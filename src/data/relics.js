@@ -175,6 +175,8 @@ export const PASSIVE_RELICS = [
 export const RELICS = [
   [
     {
+      tier: 1,
+      id: 0,
       label: 'Power Miner',
       description: [
         '· Grants the Echo pickaxe, a non-degradable variant of the crystal equivalent with no requirements. When in your inventory or equipped, you gain the following benefits:',
@@ -188,6 +190,8 @@ export const RELICS = [
       icon: images['relic-power-miner.png'],
     },
     {
+      tier: 1,
+      id: 1,
       label: 'Lumberjack',
       description: [
         '· Grants the Echo axe, a non-degradable variant of the crystal equivalent with no requirements. When in your inventory or equipped, you gain the following benefits:',
@@ -200,6 +204,8 @@ export const RELICS = [
       icon: images['relic-lumberjack.png'],
     },
     {
+      tier: 1,
+      id: 2,
       label: 'Animal Wrangler',
       description: [
         '· Grants the Echo harpoon, a non-degradable variant of the crystal equivalent with no requirements. When in your inventory or equipped, you gain the following benefits: ',
@@ -219,6 +225,8 @@ export const RELICS = [
   ],
   [
     {
+      tier: 2,
+      id: 0,
       label: 'Corner Cutter',
       description: [
         "· Upon choosing this relic you will receive a pair of sage's greaves.",
@@ -231,6 +239,8 @@ export const RELICS = [
       icon: images['relic-corner-cutter.png'],
     },
     {
+      tier: 2,
+      id: 1,
       label: 'Friendly Forager',
       description: [
         "· Upon choosing this relic you will receive the forager's pouch. The forager's pouch will provide the following benefits while in your inventory or equipped:",
@@ -244,6 +254,8 @@ export const RELICS = [
       icon: images['relic-friendly-forager.png'],
     },
     {
+      tier: 2,
+      id: 2,
       label: 'Dodgy Deals',
       description: [
         '· When choosing this relic, you gain the following benefits to Thieving:',
@@ -259,6 +271,8 @@ export const RELICS = [
   ],
   [
     {
+      tier: 3,
+      id: 0,
       label: 'Clue Compass',
       description: [
         '· Players are given a clue compass allowing teleport to any STASH unit, and to Falo the Bard',
@@ -270,6 +284,8 @@ export const RELICS = [
       icon: images['relic-clue-compass.png'],
     },
     {
+      tier: 3,
+      id: 1,
       label: 'Bank Heist',
       description: [
         "· Players are given a banker's briefcase allowing teleport to any deposit box, bank, or bank chest",
@@ -280,6 +296,8 @@ export const RELICS = [
       icon: images['relic-bank-heist.png'],
     },
     {
+      tier: 3,
+      id: 2,
       label: "Fairy's Flight",
       description: [
         '· Players are given a fairy mushroom which allows teleporting to any fairy ring, spirit tree, or tool leprechaun.',
@@ -293,6 +311,8 @@ export const RELICS = [
   ],
   [
     {
+      tier: 4,
+      id: 0,
       label: 'Golden God',
       description: [
         '· High and Low Alchemy spells have no rune cost or level requirements',
@@ -306,11 +326,15 @@ export const RELICS = [
       icon: images['relic-golden-god.png'],
     },
     {
+      tier: 4,
+      id: 1,
       label: 'Reloaded',
       description: ['· Choose another relic from any previous tier.'],
       icon: images['relic-reloaded.png'],
     },
     {
+      tier: 4,
+      id: 2,
       label: 'Equilibrium',
       description: [
         '· Each time the player gains experience, they will gain additional experience in the skill trained. The additional experience is equal to 10% of the players total level. (This is increased to 20% when training the skill the player has the least experience in.)',
@@ -319,9 +343,141 @@ export const RELICS = [
       ],
       icon: images['relic-equilibrium.png'],
     },
+    {
+      tier: 1,
+      id: 0,
+      label: 'Power Miner',
+      description: [
+        '· Grants the Echo pickaxe, a non-degradable variant of the crystal equivalent with no requirements. When in your inventory or equipped, you gain the following benefits:',
+        ' · On failing to mine a rock, you will have a separate 50% chance to succeed.',
+        ' · The rock will not deplete until you have mined 4 ores. This stacks with the effects of Mining gloves.',
+        ' · Fill your bank with bank fillers to have resources sent to your Inventory',
+        '· You will be able to toggle the following effects on or off for the Pickaxe:',
+        ' · Collected ores are automatically smelted and grant Smithing XP (regardless of your Smithing level).',
+        ' · Gems gathered from mining are automatically cut and grant Crafting XP (regardless of your Crafting level).',
+      ],
+      icon: images['relic-power-miner.png'],
+    },
+    {
+      tier: 1,
+      id: 1,
+      label: 'Lumberjack',
+      description: [
+        '· Grants the Echo axe, a non-degradable variant of the crystal equivalent with no requirements. When in your inventory or equipped, you gain the following benefits:',
+        ' · On failing to chop a tree, you will have a separate 50% chance to succeed.',
+        ' · Items gathered from Woodcutting are automatically sent to your Bank.',
+        '· You will be able to toggle the following effects on or off for the Axe: ',
+        ' · Automatically burning logs for Firemaking XP (regardless of your Firemaking level).',
+        ' · Automatically Fletching logs into arrowshafts for Fletching XP (regardless of your Fletching level).',
+      ],
+      icon: images['relic-lumberjack.png'],
+    },
+    {
+      tier: 1,
+      id: 2,
+      label: 'Animal Wrangler',
+      description: [
+        '· Grants the Echo harpoon, a non-degradable variant of the crystal equivalent with no requirements. When in your inventory or equipped, you gain the following benefits: ',
+        ' · On failing to fish a spot, you will have a separate 50% chance to succeed.',
+        ' · Items gathered from Fishing are automatically sent to your Bank.',
+        ' · Fish caught have a 50% chance to be automatically cooked, granting Cooking experience regardless of level requirements.',
+        ' · Attempt to catch fish 1 tick faster.',
+        ' · Acts as a Net, Big net, Lobster pot or any Rod whilst fishing.',
+        '· Alongside the Echo harpoon effects you will get the following benefits to Hunter: ',
+        ' · Hunter traps will never fail.',
+        ' · Box traps catch chinchompas faster and are doubled when caught, also giving double XP.',
+        ' · Impling jars no longer break upon opening them.',
+        '· You also never burn food while Cooking.',
+      ],
+      icon: images['relic-animal-wrangler.png'],
+    },
+    {
+      tier: 2,
+      id: 0,
+      label: 'Corner Cutter',
+      description: [
+        "· Upon choosing this relic you will receive a pair of sage's greaves.",
+        " · Whilst equipped, sage's Greaves will grant Agility experience based on your Agility level while you run.",
+        '· Players will always succeed in performing actions for Agility.',
+        '· Completing an Agility course grants two completion count and 25% bonus experience.',
+        '· Marks of grace will also spawn with 10,000 coins.',
+        '· Double the quantity of pyramid tops, hallowed marks, Brimhaven vouchers, and crystal shards (from the Prifddinas Agility Course).',
+      ],
+      icon: images['relic-corner-cutter.png'],
+    },
+    {
+      tier: 2,
+      id: 1,
+      label: 'Friendly Forager',
+      description: [
+        "· Upon choosing this relic you will receive the forager's pouch. The forager's pouch will provide the following benefits while in your inventory or equipped:",
+        " · When you gather resources from Woodcutting, Fishing, Mining and Hunting, the forager's pouch will find and store a random grimy herb, limited to herbs your Herblore level + 25 can clean, whilst also providing a small amount of token experience when one is found.",
+        " · The forager's Pouch will only find herbs it has room to store, but will always attempt to give you a herb you can receive.",
+        " · The forager's pouch works just like a herb sack, and shares an inventory with it.",
+        ' · Additionally, you gain the following benefits to Herblore when crafting potions:',
+        '  · Secondary ingredients have a 90% chance to not be consumed. (This stacks additively with other sources)',
+        '  · Created potions contain 4 doses instead of 3.',
+      ],
+      icon: images['relic-friendly-forager.png'],
+    },
+    {
+      tier: 2,
+      id: 2,
+      label: 'Dodgy Deals',
+      description: [
+        '· When choosing this relic, you gain the following benefits to Thieving:',
+        ' · Pickpocketing an NPC will also pickpocket all NPCs of the same type in a 11x11 square, granting extra loot for each NPC pickpocketed.',
+        ' · 100% success rate on all Thieving checks.',
+        ' · Automatically re-pickpocket an NPC or stall until you can no longer do so.',
+        ' · Items obtained from pickpocketing are noted.',
+        ' · Maximum coin pouch count increased by 3x.',
+        ' · Stalls never deplete.',
+      ],
+      icon: images['relic-dodgy-deals.png'],
+    },
+    {
+      tier: 3,
+      id: 0,
+      label: 'Clue Compass',
+      description: [
+        '· Players are given a clue compass allowing teleport to any STASH unit, and to Falo the Bard',
+        '· The compass can also teleport the player to their current clue step if they have one. It does not work on clue steps that require killing a certain NPC.',
+        '· This item ignores wilderness teleport restrictions',
+        '· This item cannot be used to teleport to an area which is not unlocked.',
+        'As the player is given an item upon unlocking this relic, it must be unlocked in a bank. ',
+      ],
+      icon: images['relic-clue-compass.png'],
+    },
+    {
+      tier: 3,
+      id: 1,
+      label: 'Bank Heist',
+      description: [
+        "· Players are given a banker's briefcase allowing teleport to any deposit box, bank, or bank chest",
+        '· This item ignores wilderness teleport restrictions',
+        '· This item cannot be used to teleport to an area which is not unlocked',
+        'As the player is given an item upon unlocking this relic, it must be unlocked in a bank.',
+      ],
+      icon: images['relic-bank-heist.png'],
+    },
+    {
+      tier: 3,
+      id: 2,
+      label: "Fairy's Flight",
+      description: [
+        '· Players are given a fairy mushroom which allows teleporting to any fairy ring, spirit tree, or tool leprechaun.',
+        '· Unlocking this relic will autocomplete the Tree Gnome Village quest.',
+        '· Can only teleport to locations within regions the player has unlocked.',
+        '· This item ignores wilderness teleport restrictions.',
+        'As the player is given an item upon unlocking this relic, it must be unlocked in a bank. ',
+      ],
+      icon: images['relic-fairys-flight.png'],
+    },
   ],
   [
     {
+      tier: 5,
+      id: 0,
       label: 'Treasure Arbiter',
       description: [
         '· Impling Jars and Creatures that drop Clue Scrolls have a 1/15 chance of dropping them.',
@@ -339,6 +495,8 @@ export const RELICS = [
       icon: images['relic-treasure-arbiter.png'],
     },
     {
+      tier: 5,
+      id: 1,
       label: 'Production Master',
       description: [
         '· When doing the following Production activities, all items are processed at once: ',
@@ -352,6 +510,8 @@ export const RELICS = [
       icon: images['relic-production-master.png'],
     },
     {
+      tier: 5,
+      id: 2,
       label: 'Slayer Master',
       description: [
         '· Always on task for all eligible slayer monsters.',
@@ -365,6 +525,8 @@ export const RELICS = [
   ],
   [
     {
+      tier: 6,
+      id: 0,
       label: 'Total Recall',
       description: [
         '· Players are given a crystal of echoes allowing the following: ',
@@ -374,6 +536,8 @@ export const RELICS = [
       icon: images['relic-total-recall.png'],
     },
     {
+      tier: 6,
+      id: 1,
       label: "Banker's Note",
       description: [
         "· Players are given a banker's note which allows players to use note-able items on it to turn them into banknotes or unnote them. Items must be used on the banker's note.",
@@ -385,6 +549,8 @@ export const RELICS = [
   ],
   [
     {
+      tier: 7,
+      id: 0,
       label: 'Pocket Kingdom',
       description: [
         'You will receive the Pocket kingdom.',
@@ -394,6 +560,8 @@ export const RELICS = [
       icon: images['relic-pocket-kingdom.png'],
     },
     {
+      tier: 7,
+      id: 1,
       label: 'Grimoire',
       description: [
         'You will receive the Arcane grimoire.',
@@ -404,6 +572,8 @@ export const RELICS = [
       icon: images['relic-grimoire.png'],
     },
     {
+      tier: 7,
+      id: 2,
       label: 'Overgrown',
       description: [
         "· Grants the Leprechaun's vault, which allows access to the Seed vault from anywhere in the world.",
@@ -418,6 +588,8 @@ export const RELICS = [
   ],
   [
     {
+      tier: 8,
+      id: 0,
       label: 'Specialist',
       description: [
         '· You gain the following benefits to special attacks:',
@@ -428,6 +600,8 @@ export const RELICS = [
       icon: images['relic-specialist.png'],
     },
     {
+      tier: 8,
+      id: 1,
       label: 'Guardian',
       description: [
         '· Upon choosing this relic you will receive the Guardian horn.',
@@ -447,6 +621,8 @@ export const RELICS = [
       icon: images['relic-guardian.png'],
     },
     {
+      tier: 8,
+      id: 2,
       label: 'Last Stand',
       description: [
         '· You gain the Last Stand ability, which works as follows:',

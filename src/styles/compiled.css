@@ -2327,6 +2327,9 @@ select[multiple]:focus option:checked {
 .h-\[24px\] {
   height: 24px;
 }
+.h-\[75vh\] {
+  height: 75vh;
+}
 .h-\[800px\] {
   height: 800px;
 }
@@ -2596,6 +2599,9 @@ select[multiple]:focus option:checked {
 }
 .overflow-hidden {
   overflow: hidden;
+}
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 .whitespace-nowrap {
   white-space: nowrap;
