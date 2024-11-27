@@ -105,17 +105,63 @@
           "name": "Gnome Stronghold course",
           "subtitle": "",
           "category": "Courses",
-          "exp": 86.5,
+          "exp": 110.5,
           "level": 1,
           "icon": "https://oldschool.runescape.wiki/images/d/d1/Swamp_toad_%28item%29.png?3577a",
           "inputs": [],
-          "outputs": [],
+          "outputs": [
+            {
+              "name": "Mark of grace",
+              "amount": 0,
+              "chance": 0
+            }
+          ],
           "areas": ["Kandarin"],
-          "expActions": 8.0,
+          "expActions": 7.0,
           "equilibriumInfo": ""
         },
         {
           "id": 5,
+          "name": "Basic Shayzien Agility Course",
+          "subtitle": "",
+          "category": "Courses",
+          "exp": 153.5,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Shayzien_helm_%281%29.png?199d1",
+          "inputs": [],
+          "outputs": [
+            {
+              "name": "Mark of grace",
+              "amount": 0,
+              "chance": 0
+            }
+          ],
+          "areas": ["Kourend"],
+          "expActions": 7.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 6,
+          "name": "Draynor Village rooftops",
+          "subtitle": "",
+          "category": "Rooftop courses",
+          "exp": 120.0,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/9/9b/Mark_of_grace.png?bfd42",
+          "inputs": [],
+          "outputs": [
+            {
+              "name": "Mark of grace",
+              "amount": 1,
+              "chance": 0.14
+            }
+          ],
+          "areas": ["Misthalin"],
+          "expActions": 7.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 7,
           "name": "Crumbling wall",
           "subtitle": "Falador",
           "category": "Shortcuts",
@@ -129,7 +175,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 6,
+          "id": 8,
           "name": "Rocks",
           "subtitle": "Corsair Cove",
           "category": "Shortcuts",
@@ -143,7 +189,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 7,
+          "id": 9,
           "name": "Ropeswing",
           "subtitle": "Moss giant island",
           "category": "Shortcuts",
@@ -157,31 +203,11 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 8,
-          "name": "Draynor Village rooftops",
-          "subtitle": "",
-          "category": "Rooftop courses",
-          "exp": 120.0,
-          "level": 10,
-          "icon": "https://oldschool.runescape.wiki/images/9/9b/Mark_of_grace.png?bfd42",
-          "inputs": [],
-          "outputs": [
-            {
-              "name": "Mark of grace",
-              "amount": 0.14,
-              "chance": 1
-            }
-          ],
-          "areas": ["Misthalin"],
-          "expActions": 7.0,
-          "equilibriumInfo": ""
-        },
-        {
-          "id": 9,
+          "id": 10,
           "name": "Stepping stones",
           "subtitle": "Brimhaven dungeon",
           "category": "Shortcuts",
-          "exp": 3.0,
+          "exp": 7.5,
           "level": 12,
           "icon": "https://oldschool.runescape.wiki/images/9/90/Agility_area_jump.png?5eda0",
           "inputs": [],
@@ -191,7 +217,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 10,
+          "id": 11,
           "name": "Pillar jump",
           "subtitle": "Corsair Cove dungeon",
           "category": "Shortcuts",
@@ -205,7 +231,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 11,
+          "id": 12,
           "name": "Monkey bars",
           "subtitle": "Edgeville dungeon",
           "category": "Shortcuts",
@@ -219,7 +245,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 12,
+          "id": 13,
           "name": "Log balance",
           "subtitle": "Coal trucks",
           "category": "Shortcuts",
@@ -233,19 +259,19 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 13,
+          "id": 14,
           "name": "Al Kharid rooftops",
           "subtitle": "",
           "category": "Rooftop courses",
-          "exp": 180.0,
+          "exp": 216.0,
           "level": 20,
           "icon": "https://oldschool.runescape.wiki/images/9/9b/Mark_of_grace.png?bfd42",
           "inputs": [],
           "outputs": [
             {
               "name": "Mark of grace",
-              "amount": 0.14,
-              "chance": 1
+              "amount": 1,
+              "chance": 0.18
             }
           ],
           "areas": ["Desert"],
@@ -253,7 +279,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 14,
+          "id": 15,
           "name": "Pipe squeeze",
           "subtitle": "Brimhaven dungeon",
           "category": "Shortcuts",
@@ -267,7 +293,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 15,
+          "id": 16,
           "name": "Rock climb",
           "subtitle": "Eagle's Peak",
           "category": "Shortcuts",
@@ -281,7 +307,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 16,
+          "id": 17,
           "name": "Werewolf Skullball course",
           "subtitle": "",
           "category": "Courses",
@@ -310,18 +336,46 @@
         },
         {
           "id": 19,
+          "name": "Log balance",
+          "subtitle": "Brimhaven Dungeon",
+          "category": "Shortcuts",
+          "exp": 10,
+          "level": 30,
+          "icon": "https://oldschool.runescape.wiki/images/9/9c/Agility_shortcut_balance.png?deb2b",
+          "inputs": [],
+          "outputs": [],
+          "areas": ["Karamja"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 20,
+          "name": "Stepping Stones",
+          "subtitle": "Shilo Village",
+          "category": "Shortcuts",
+          "exp": 3,
+          "level": 30,
+          "icon": "https://oldschool.runescape.wiki/images/9/90/Agility_area_jump.png?5eda0",
+          "inputs": [],
+          "outputs": [],
+          "areas": ["Karamja"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 21,
           "name": "Varrock rooftops",
           "subtitle": "",
           "category": "Rooftop courses",
-          "exp": 238.0,
+          "exp": 269.7,
           "level": 30,
           "icon": "https://oldschool.runescape.wiki/images/9/9b/Mark_of_grace.png?bfd42",
           "inputs": [],
           "outputs": [
             {
               "name": "Mark of grace",
-              "amount": 0.24,
-              "chance": 1
+              "amount": 1,
+              "chance": 0.19
             }
           ],
           "areas": ["Misthalin"],
@@ -329,7 +383,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 20,
+          "id": 22,
           "name": "Penguin course",
           "subtitle": "",
           "category": "Courses",
@@ -343,7 +397,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 21,
+          "id": 23,
           "name": "Agility Pyramid",
           "subtitle": "",
           "category": "Courses",
@@ -353,11 +407,11 @@
           "inputs": [],
           "outputs": [],
           "areas": ["Desert"],
-          "expActions": 26.0,
+          "expActions": 29.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 22,
+          "id": 24,
           "name": "Stepping stone",
           "subtitle": "Draynor manor",
           "category": "Shortcuts",
@@ -371,21 +425,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 23,
-          "name": "Rock grapple",
-          "subtitle": "Catherby",
-          "category": "Shortcuts",
-          "exp": 15.0,
-          "level": 32,
-          "icon": "https://oldschool.runescape.wiki/images/8/81/Agility_shortcut_climb.png?deb2b",
-          "inputs": [],
-          "outputs": [],
-          "areas": ["Kandarin"],
-          "expActions": 1.0,
-          "equilibriumInfo": ""
-        },
-        {
-          "id": 24,
+          "id": 25,
           "name": "Log balance",
           "subtitle": "Ardougne",
           "category": "Shortcuts",
@@ -399,7 +439,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 25,
+          "id": 26,
           "name": "Pipe squeeze",
           "subtitle": "Brimhaven dungeon",
           "category": "Shortcuts",
@@ -413,7 +453,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 26,
+          "id": 27,
           "name": "Barbarian Outpost course",
           "subtitle": "",
           "category": "Courses",
@@ -421,27 +461,33 @@
           "level": 35,
           "icon": "https://oldschool.runescape.wiki/images/5/55/Steel_battleaxe.png?959b8",
           "inputs": [],
-          "outputs": [],
+          "outputs": [
+            {
+              "name": "Mark of grace",
+              "amount": 1,
+              "chance": 0.16
+            }
+          ],
           "areas": ["Kandarin"],
           "expActions": 8.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 27,
-          "name": "Tree grapple",
-          "subtitle": "Water obelisk isle",
+          "id": 28,
+          "name": "Rocky Handholds",
+          "subtitle": "Rellekka Hunter Area",
           "category": "Shortcuts",
-          "exp": 15.0,
-          "level": 36,
+          "exp": 1.0,
+          "level": 35,
           "icon": "https://oldschool.runescape.wiki/images/8/81/Agility_shortcut_climb.png?deb2b",
           "inputs": [],
           "outputs": [],
-          "areas": ["Kandarin"],
+          "areas": ["Fremennik"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 28,
+          "id": 29,
           "name": "Balancing ledge",
           "subtitle": "Yanille dungeon",
           "category": "Shortcuts",
@@ -455,7 +501,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 29,
+          "id": 30,
           "name": "Canifis rooftops",
           "subtitle": "",
           "category": "Rooftop courses",
@@ -466,8 +512,8 @@
           "outputs": [
             {
               "name": "Mark of grace",
-              "amount": 0.2,
-              "chance": 1
+              "amount": 1,
+              "chance": 0.21
             }
           ],
           "areas": ["Morytania"],
@@ -475,7 +521,27 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 30,
+          "id": 31,
+          "name": "Advanced Shayzien Agility Course",
+          "subtitle": "",
+          "category": "Courses",
+          "exp": 507.5,
+          "level": 45,
+          "icon": "https://oldschool.runescape.wiki/images/Shayzien_helm_%281%29.png?199d1",
+          "inputs": [],
+          "outputs": [
+            {
+              "name": "Mark of grace",
+              "amount": 0,
+              "chance": 0
+            }
+          ],
+          "areas": ["Kourend"],
+          "expActions": 8.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 32,
           "name": "Narrow walkway",
           "subtitle": "Cosmic altar",
           "category": "Shortcuts",
@@ -489,7 +555,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 31,
+          "id": 33,
           "name": "Rocks",
           "subtitle": "Trollheim",
           "category": "Shortcuts",
@@ -503,7 +569,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 32,
+          "id": 34,
           "name": "Ape Atoll course",
           "subtitle": "",
           "category": "Courses",
@@ -511,25 +577,31 @@
           "level": 48,
           "icon": "https://oldschool.runescape.wiki/images/a/a7/Monkey_greegree.png?36191",
           "inputs": [],
-          "outputs": [],
+          "outputs": [
+            {
+              "name": "Mark of grace",
+              "amount": 1,
+              "chance": 0.17
+            }
+          ],
           "areas": ["Kandarin"],
           "expActions": 7.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 33,
+          "id": 35,
           "name": "Falador rooftops",
           "subtitle": "",
           "category": "Rooftop courses",
-          "exp": 440.0,
+          "exp": 586.0,
           "level": 50,
           "icon": "https://oldschool.runescape.wiki/images/9/9b/Mark_of_grace.png?bfd42",
           "inputs": [],
           "outputs": [
             {
               "name": "Mark of grace",
-              "amount": 0.21,
-              "chance": 1
+              "amount": 1,
+              "chance": 0.19
             }
           ],
           "areas": ["Asgarnia"],
@@ -537,7 +609,32 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 34,
+          "id": 36,
+          "name": "Basic Colossal Wyrm Agility Course",
+          "subtitle": "",
+          "category": "Courses",
+          "exp": 504.1,
+          "level": 50,
+          "icon": "https://oldschool.runescape.wiki/images/Calcified_acorn.png?77ca0",
+          "inputs": [],
+          "outputs": [
+            {
+              "name": "Termites",
+              "amount": 9,
+              "chance": 0.15
+            },
+            {
+              "name": "Bone Shards",
+              "amount": 24,
+              "chance": 0.15
+            }
+          ],
+          "areas": ["Varlamore"],
+          "expActions": 8.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 37,
           "name": "Pipe squeeze",
           "subtitle": "Edgeville dungeon",
           "category": "Shortcuts",
@@ -551,7 +648,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 35,
+          "id": 38,
           "name": "Wilderness course",
           "subtitle": "",
           "category": "Courses",
@@ -565,7 +662,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 36,
+          "id": 39,
           "name": "Monkey bars",
           "subtitle": "Yanille dungeon",
           "category": "Shortcuts",
@@ -579,7 +676,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 38,
+          "id": 40,
           "name": "Seers' Village rooftops",
           "subtitle": "",
           "category": "Rooftop courses",
@@ -590,8 +687,8 @@
           "outputs": [
             {
               "name": "Mark of grace",
-              "amount": 0.2,
-              "chance": 1
+              "amount": 1,
+              "chance": 0.17
             }
           ],
           "areas": ["Kandarin"],
@@ -599,7 +696,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 39,
+          "id": 41,
           "name": "Werewolf course",
           "subtitle": "",
           "category": "Courses",
@@ -607,13 +704,86 @@
           "level": 60,
           "icon": "https://oldschool.runescape.wiki/images/8/84/Stick_%28item%29.png?ddce9",
           "inputs": [],
-          "outputs": [],
+          "outputs": [
+            {
+              "name": "Mark of grace",
+              "amount": 1,
+              "chance": 0.14
+            }
+          ],
           "areas": ["Morytania"],
-          "expActions": 6.0,
+          "expActions": 7.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 40,
+          "id": 42,
+          "name": "Gap",
+          "subtitle": "Wintertodt",
+          "category": "Shortcuts",
+          "exp": 18,
+          "level": 60,
+          "icon": "https://oldschool.runescape.wiki/images/7/70/Agility_shortcut_jump.png?deb2b",
+          "inputs": [],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 43,
+          "name": "Strange floor",
+          "subtitle": "Fremennik Slayer Dungeon",
+          "category": "Shortcuts",
+          "exp": 5,
+          "level": 61,
+          "icon": "https://oldschool.runescape.wiki/images/7/70/Agility_shortcut_jump.png?deb2b",
+          "inputs": [],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 2.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 44,
+          "name": "Advanced Colossal Wyrm Agility Course",
+          "subtitle": "",
+          "category": "Courses",
+          "exp": 749.6,
+          "level": 62,
+          "icon": "https://oldschool.runescape.wiki/images/Calcified_acorn.png?77ca0",
+          "inputs": [],
+          "outputs": [
+            {
+              "name": "Termites",
+              "amount": 9,
+              "chance": 0.25
+            },
+            {
+              "name": "Bone Shards",
+              "amount": 24,
+              "chance": 0.15
+            }
+          ],
+          "areas": ["Varlamore"],
+          "expActions": 8.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 45,
+          "name": "Strange floor",
+          "subtitle": "Forthos Dungeon",
+          "category": "Shortcuts",
+          "exp": 10,
+          "level": 63,
+          "icon": "https://oldschool.runescape.wiki/images/7/70/Agility_shortcut_jump.png?deb2b",
+          "inputs": [],
+          "outputs": [],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 46,
           "name": "Pillar jump",
           "subtitle": "Revenant caves",
           "category": "Shortcuts",
@@ -627,7 +797,21 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 41,
+          "id": 47,
+          "name": "Rocks",
+          "subtitle": "Taverley Tree Patch",
+          "category": "Shortcuts",
+          "exp": 25.0,
+          "level": 66,
+          "icon": "https://oldschool.runescape.wiki/images/8/81/Agility_shortcut_climb.png?deb2b",
+          "inputs": [],
+          "outputs": [],
+          "areas": ["Asgarnia"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 48,
           "name": "Narrow walkway",
           "subtitle": "Cosmic altar",
           "category": "Shortcuts",
@@ -641,7 +825,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 42,
+          "id": 49,
           "name": "Pile of rubble",
           "subtitle": "Yanille dungeon",
           "category": "Shortcuts",
@@ -655,7 +839,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 43,
+          "id": 50,
           "name": "Rock",
           "subtitle": "God wars dungeon",
           "category": "Shortcuts",
@@ -669,7 +853,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 44,
+          "id": 51,
           "name": "Obstacle pipe",
           "subtitle": "Taverley dungeon",
           "category": "Shortcuts",
@@ -683,7 +867,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 45,
+          "id": 52,
           "name": "Pollnivneach rooftops",
           "subtitle": "",
           "category": "Rooftop courses",
@@ -694,8 +878,8 @@
           "outputs": [
             {
               "name": "Mark of grace",
-              "amount": 0.15,
-              "chance": 1
+              "amount": 1,
+              "chance": 0.23
             }
           ],
           "areas": ["Desert"],
@@ -703,7 +887,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 46,
+          "id": 53,
           "name": "Dorgesh-Kaan course",
           "subtitle": "Dorgesh-Kaan course",
           "category": "Courses",
@@ -711,13 +895,47 @@
           "level": 70,
           "icon": "https://oldschool.runescape.wiki/images/0/09/Bullseye_lantern_%28lit%29.png?c1d8f",
           "inputs": [],
-          "outputs": [],
+          "outputs": [
+            {
+              "name": "Mark of grace",
+              "amount": 0,
+              "chance": 0
+            }
+          ],
           "areas": ["Misthalin"],
           "expActions": 9.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 47,
+          "id": 54,
+          "name": "Stepping stone",
+          "subtitle": "Pollnivneach",
+          "category": "Shortcuts",
+          "exp": 25.0,
+          "level": 71,
+          "icon": "https://oldschool.runescape.wiki/images/7/70/Agility_shortcut_jump.png?deb2b",
+          "inputs": [],
+          "outputs": [],
+          "areas": ["Desert"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 55,
+          "name": "Dry Stone Wall",
+          "subtitle": "Barrows",
+          "category": "Shortcuts",
+          "exp": 25.0,
+          "level": 72,
+          "icon": "https://oldschool.runescape.wiki/images/8/81/Agility_shortcut_climb.png?deb2b",
+          "inputs": [],
+          "outputs": [],
+          "areas": ["Morytania"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 56,
           "name": "Pillar jump",
           "subtitle": "Revenant caves",
           "category": "Shortcuts",
@@ -731,7 +949,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 49,
+          "id": 57,
           "name": "Prifddinas course",
           "subtitle": "",
           "category": "Courses",
@@ -742,8 +960,8 @@
           "outputs": [
             {
               "name": "Crystal shard",
-              "amount": 0.3,
-              "chance": 1
+              "amount": 1,
+              "chance": 0.3
             }
           ],
           "areas": ["Tirannwn"],
@@ -751,21 +969,21 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 50,
-          "name": "Stepping stone",
-          "subtitle": "Shilo village",
+          "id": 58,
+          "name": "Tight gap",
+          "subtitle": "Wilderness Slayer Cave",
           "category": "Shortcuts",
-          "exp": 1.25,
+          "exp": 10.0,
           "level": 77,
-          "icon": "https://oldschool.runescape.wiki/images/7/70/Agility_shortcut_jump.png?deb2b",
+          "icon": "https://oldschool.runescape.wiki/images/a/aa/Agility_shortcut_contortion.png?deb2b",
           "inputs": [],
           "outputs": [],
-          "areas": ["Karamja"],
+          "areas": ["Wilderness"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 51,
+          "id": 59,
           "name": "Tight gap",
           "subtitle": "Iowerth dungeon",
           "category": "Shortcuts",
@@ -779,7 +997,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 52,
+          "id": 60,
           "name": "Strange floor",
           "subtitle": "Taverley dungeon",
           "category": "Shortcuts",
@@ -793,7 +1011,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 53,
+          "id": 61,
           "name": "Rellekka rooftops",
           "subtitle": "",
           "category": "Rooftop courses",
@@ -804,8 +1022,8 @@
           "outputs": [
             {
               "name": "Mark of grace",
-              "amount": 0.2,
-              "chance": 1
+              "amount": 1,
+              "chance": 0.2
             }
           ],
           "areas": ["Fremennik"],
@@ -813,13 +1031,13 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 54,
-          "name": "Spiked blades",
-          "subtitle": "Fremennik slayer dungeon",
+          "id": 62,
+          "name": "Tight gap",
+          "subtitle": "Waterbirth Island Dungeon",
           "category": "Shortcuts",
-          "exp": 5.0,
+          "exp": 10.0,
           "level": 81,
-          "icon": "https://oldschool.runescape.wiki/images/7/70/Agility_shortcut_jump.png?deb2b",
+          "icon": "https://oldschool.runescape.wiki/images/a/aa/Agility_shortcut_contortion.png?deb2b",
           "inputs": [],
           "outputs": [],
           "areas": ["Fremennik"],
@@ -827,7 +1045,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 55,
+          "id": 63,
           "name": "Tight gap",
           "subtitle": "Iowerth dungeon",
           "category": "Shortcuts",
@@ -841,7 +1059,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 56,
+          "id": 64,
           "name": "Pillar jump",
           "subtitle": "Revenant caves",
           "category": "Shortcuts",
@@ -855,23 +1073,37 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 57,
+          "id": 65,
           "name": "Ardougne rooftops",
           "subtitle": "",
           "category": "Rooftop courses",
-          "exp": 793.0,
+          "exp": 889,
           "level": 90,
           "icon": "https://oldschool.runescape.wiki/images/9/9b/Mark_of_grace.png?bfd42",
           "inputs": [],
           "outputs": [
             {
               "name": "Mark of grace",
-              "amount": 0.28,
-              "chance": 1
+              "amount": 1,
+              "chance": 0.24
             }
           ],
           "areas": ["Kandarin"],
           "expActions": 7.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 66,
+          "name": "Tight gap",
+          "subtitle": "Shaman Caves",
+          "category": "Shortcuts",
+          "exp": 7.5,
+          "level": 96,
+          "icon": "https://oldschool.runescape.wiki/images/a/aa/Agility_shortcut_contortion.png?deb2b",
+          "inputs": [],
+          "outputs": [],
+          "areas": ["Karamja"],
+          "expActions": 1.0,
           "equilibriumInfo": ""
         }
       ]
