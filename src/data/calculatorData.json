@@ -1733,7 +1733,7 @@
             }
           ],
           "outputs": [],
-          "areas": ["All"],
+          "areas": ["Fremennik","Varlamore"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         }
@@ -1850,6 +1850,32 @@
         },
         {
           "id": 2,
+          "name": "Autumn sq'irkjuice",
+          "subtitle": "",
+          "category": "Other",
+          "exp": 5.0,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Autumn_sq%27irkjuice.png?2baad",
+          "inputs": [
+            {
+              "name": "Autumn sq'irk",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Autumn sq'irkjuice",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Desert"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 3,
           "name": "Cooked chicken",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -1870,12 +1896,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Asgarnia", "Fremennik", "Kandarin", "Karamja", "Misthalin", "Tirannwn", "Morytania", "Kourend"],
+          "areas": ["Asgarnia", "Fremennik", "Kandarin", "Karamja", "Misthalin", "Tirannwn", "Morytania", "Kourend","Varlamore","Wilderness"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 3,
+          "id": 4,
           "name": "Cooked meat",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -1901,7 +1927,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 4,
+          "id": 5,
           "name": "Cooked rabbit",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -1922,12 +1948,38 @@
               "chance": 1
             }
           ],
-          "areas": ["Asgarnia", "Fremennik", "Karamja", "Misthalin", "Tirannwn"],
+          "areas": ["Asgarnia", "Fremennik", "Karamja", "Misthalin", "Tirannwn","Kourend","Varlamore","Kandarin","Morytania"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 5,
+          "id": 6,
+          "name": "Karambwanji",
+          "subtitle": "",
+          "category": "Meat/Fish",
+          "exp": 10.0,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Karambwanji.png?863e0",
+          "inputs": [
+            {
+              "name": "Raw karambwanji",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Karambwanji",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Karamja"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 7,
           "name": "Shrimps",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -1948,12 +2000,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Misthalin", "Asgarnia", "Karamja", "Desert", "Wilderness", "Kandarin", "Fremennik", "Kourend"],
+          "areas": ["Misthalin", "Asgarnia", "Karamja", "Desert", "Wilderness", "Kandarin", "Fremennik", "Kourend","Varlamore","Morytania"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 6,
+          "id": 8,
           "name": "Bread",
           "subtitle": "",
           "category": "Baking",
@@ -1979,7 +2031,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 7,
+          "id": 9,
           "name": "Sardine",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -2000,12 +2052,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Misthalin", "Asgarnia", "Karamja", "Desert", "Wilderness", "Kandarin", "Fremennik"],
+          "areas": ["Misthalin", "Asgarnia", "Karamja", "Desert", "Wilderness", "Kandarin", "Fremennik","Kourend","Varlamore","Morytania"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 8,
+          "id": 10,
           "name": "Ugthanki meat",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -2031,7 +2083,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 9,
+          "id": 11,
           "name": "Poison karambwan",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -2057,7 +2109,85 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 10,
+          "id": 12,
+          "name": "Spring sq'irkjuice",
+          "subtitle": "",
+          "category": "Other",
+          "exp": 5.0,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Spring_sq%27irkjuice.png?e8969",
+          "inputs": [
+            {
+              "name": "Spring sq'irk",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Spring sq'irkjuice",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Desert"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 13,
+          "name": "Summer sq'irkjuice",
+          "subtitle": "",
+          "category": "Other",
+          "exp": 5.0,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Summer_sq%27irkjuice.png?a0c7b",
+          "inputs": [
+            {
+              "name": "Summer sq'irk",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Summer sq'irkjuice",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Desert"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 14,
+          "name": "Winter sq'irkjuice",
+          "subtitle": "",
+          "category": "Other",
+          "exp": 5.0,
+          "level": 1,
+          "icon": "https://oldschool.runescape.wiki/images/Winter_sq%27irkjuice.png?e0cad",
+          "inputs": [
+            {
+              "name": "Winter sq'irk",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Winter sq'irkjuice",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Desert"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 15,
           "name": "Herring",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -2078,12 +2208,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Misthalin", "Asgarnia", "Karamja", "Desert", "Wilderness", "Kandarin", "Fremennik", "Kourend"],
+          "areas": ["Misthalin", "Asgarnia", "Karamja", "Desert", "Wilderness", "Kandarin", "Fremennik", "Kourend","Varlamore","Morytania"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 11,
+          "id": 16,
           "name": "Fruit blast",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -2129,7 +2259,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 12,
+          "id": 17,
           "name": "Baked potato",
           "subtitle": "",
           "category": "Vegetables",
@@ -2150,12 +2280,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Morytania", "Fremennik", "Tirannwn", "Asgarnia", "Kandarin", "Misthalin", "Kourend"],
+          "areas": ["Morytania", "Fremennik", "Tirannwn", "Asgarnia", "Kandarin", "Misthalin", "Kourend","Karamja","Varlamore"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 13,
+          "id": 18,
           "name": "Pineapple punch",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -2211,7 +2341,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 14,
+          "id": 19,
           "name": "Spicy sauce",
           "subtitle": "",
           "category": "Vegetables",
@@ -2242,7 +2372,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 15,
+          "id": 20,
           "name": "Mackerel",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -2263,12 +2393,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Kandarin", "Fremennik", "Morytania", "Tirannwn", "Kourend"],
+          "areas": ["Kandarin", "Fremennik", "Morytania", "Tirannwn", "Kourend","Desert","Misthalin","Varlamore","Asgarnia"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 16,
+          "id": 21,
           "name": "Redberry pie",
           "subtitle": "",
           "category": "Baking",
@@ -2289,12 +2419,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Asgarnia", "Misthalin", "Tirannwn", "Kandarin", "Fremennik", "Kourend"],
+          "areas": ["Asgarnia", "Misthalin", "Tirannwn", "Kandarin", "Fremennik", "Kourend", "Varlamore"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 17,
+          "id": 22,
           "name": "Toad crunchies",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -2330,7 +2460,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 18,
+          "id": 23,
           "name": "Chilli con carne",
           "subtitle": "",
           "category": "Vegetables",
@@ -2361,7 +2491,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 19,
+          "id": 24,
           "name": "Roast bird meat",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -2387,7 +2517,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 20,
+          "id": 25,
           "name": "Thin snail meat",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -2413,7 +2543,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 21,
+          "id": 26,
           "name": "Spicy crunchies",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -2444,7 +2574,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 22,
+          "id": 27,
           "name": "Scrambled egg",
           "subtitle": "",
           "category": "Vegetables",
@@ -2470,7 +2600,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 23,
+          "id": 28,
           "name": "Worm crunchies",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -2506,7 +2636,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 24,
+          "id": 29,
           "name": "Cider",
           "subtitle": "",
           "category": "Brewing",
@@ -2537,12 +2667,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Fremennik", "Morytania"],
+          "areas": ["Fremennik", "Morytania", "Varlamore"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 25,
+          "id": 30,
           "name": "Trout",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -2568,7 +2698,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 26,
+          "id": 31,
           "name": "Roast rabbit",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -2594,7 +2724,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 27,
+          "id": 32,
           "name": "Spider on shaft",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -2625,7 +2755,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 28,
+          "id": 33,
           "name": "Spider on stick",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -2656,7 +2786,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 29,
+          "id": 34,
           "name": "Chocchip crunchies",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -2692,7 +2822,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 30,
+          "id": 35,
           "name": "Lean snail meat",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -2718,7 +2848,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 31,
+          "id": 36,
           "name": "Cod",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -2739,12 +2869,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Kandarin", "Fremennik", "Morytania", "Tirannwn", "Kourend"],
+          "areas": ["Kandarin", "Fremennik", "Morytania", "Tirannwn", "Kourend", "Misthalin", "Varlamore"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 32,
+          "id": 37,
           "name": "Wizard blizzard",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -2805,7 +2935,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 33,
+          "id": 38,
           "name": "Dwarven stout",
           "subtitle": "",
           "category": "Brewing",
@@ -2846,12 +2976,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Fremennik", "Morytania"],
+          "areas": ["Fremennik", "Morytania", "Varlamore"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 34,
+          "id": 39,
           "name": "Cup of tea",
           "subtitle": "",
           "category": "Other",
@@ -2882,7 +3012,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 35,
+          "id": 40,
           "name": "Pike",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -2908,7 +3038,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 36,
+          "id": 41,
           "name": "Meat pie",
           "subtitle": "",
           "category": "Baking",
@@ -2934,7 +3064,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 115,
+          "id": 42,
           "name": "Servery meat pie",
           "subtitle": "Requires 45% Hosidius favour",
           "category": "Mess hall",
@@ -2948,7 +3078,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 37,
+          "id": 43,
           "name": "Short green guy",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -2994,7 +3124,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 38,
+          "id": 44,
           "name": "Pot of cream",
           "subtitle": "",
           "category": "Other",
@@ -3020,7 +3150,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 39,
+          "id": 45,
           "name": "Roast beast meat",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -3041,12 +3171,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Desert", "Karamja", "Kandarin"],
+          "areas": ["Desert", "Kandarin", "Fremennik"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 40,
+          "id": 46,
           "name": "Cooked crab meat",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -3072,7 +3202,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 41,
+          "id": 47,
           "name": "Fat snail meat",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -3098,7 +3228,33 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 42,
+          "id": 48,
+          "name": "Cooked wild kebbit",
+          "subtitle": "",
+          "category": "Meat/Fish",
+          "exp": 73.0,
+          "level": 23,
+          "icon": "https://oldschool.runescape.wiki/images/Cooked_wild_kebbit.png?aefd3",
+          "inputs": [
+            {
+              "name": "Raw wild kebbit",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Cooked wild kebbit",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Kandarin"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 49,
           "name": "Asgarnian ale",
           "subtitle": "",
           "category": "Brewing",
@@ -3139,12 +3295,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Fremennik", "Morytania"],
+          "areas": ["Fremennik", "Morytania", "Varlamore"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 43,
+          "id": 50,
           "name": "Salmon",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -3170,7 +3326,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 44,
+          "id": 51,
           "name": "Stew",
           "subtitle": "",
           "category": "Other",
@@ -3206,7 +3362,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 116,
+          "id": 52,
           "name": "Servery stew",
           "subtitle": "Requires 45% Hosidius favour",
           "category": "Mess hall",
@@ -3220,7 +3376,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 45,
+          "id": 53,
           "name": "Fruit batta",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -3266,7 +3422,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 46,
+          "id": 54,
           "name": "Toad batta",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -3307,7 +3463,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 47,
+          "id": 55,
           "name": "Worm batta",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -3343,7 +3499,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 48,
+          "id": 56,
           "name": "Slimy eel",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -3364,12 +3520,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Misthalin", "Morytania"],
+          "areas": ["Misthalin", "Morytania", "Asgarnia"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 49,
+          "id": 57,
           "name": "Cooked sweetcorn",
           "subtitle": "",
           "category": "Vegetables",
@@ -3395,7 +3551,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 50,
+          "id": 58,
           "name": "Vegetable batta",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -3451,7 +3607,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 51,
+          "id": 59,
           "name": "Mud pie",
           "subtitle": "",
           "category": "Baking",
@@ -3477,7 +3633,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 52,
+          "id": 60,
           "name": "Cheese+tom batta",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -3513,7 +3669,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 53,
+          "id": 61,
           "name": "Greenman's ale",
           "subtitle": "",
           "category": "Brewing",
@@ -3554,12 +3710,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Fremennik", "Morytania"],
+          "areas": ["Fremennik", "Morytania", "Varlamore"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 54,
+          "id": 62,
           "name": "Cooked chompy",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -3585,7 +3741,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 55,
+          "id": 63,
           "name": "Tuna",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -3611,7 +3767,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 56,
+          "id": 64,
           "name": "Apple pie",
           "subtitle": "",
           "category": "Baking",
@@ -3637,7 +3793,59 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 57,
+          "id": 65,
+          "name": "Cooked bream",
+          "subtitle": "Perilous Moons",
+          "category": "Meat/Fish",
+          "exp": 45.0,
+          "level": 30,
+          "icon": "https://oldschool.runescape.wiki/images/thumb/Cooked_bream_detail.png/130px-Cooked_bream_detail.png?8f887",
+          "inputs": [
+            {
+              "name": "Raw bream",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Cooked bream",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Varlamore"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 66,
+          "name": "Cooked moss lizard",
+          "subtitle": "Perilous Moons",
+          "category": "Meat/Fish",
+          "exp": 60.0,
+          "level": 30,
+          "icon": "https://oldschool.runescape.wiki/images/thumb/Cooked_moss_lizard_detail.png/130px-Cooked_moss_lizard_detail.png?be5ad",
+          "inputs": [
+            {
+              "name": "Raw moss lizard",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Cooked moss lizard",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Varlamore"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 67,
           "name": "Worm hole",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -3678,7 +3886,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 58,
+          "id": 68,
           "name": "Cooked karambwan",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -3704,7 +3912,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 59,
+          "id": 69,
           "name": "Cooked fishcake",
           "subtitle": "",
           "category": "Baking",
@@ -3730,7 +3938,59 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 60,
+          "id": 70,
+          "name": "Cooked larupia",
+          "subtitle": "",
+          "category": "Meat/Fish",
+          "exp": 92.0,
+          "level": 31,
+          "icon": "https://oldschool.runescape.wiki/images/Cooked_larupia.png?6c27c",
+          "inputs": [
+            {
+              "name": "Raw larupia",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Cooked larupia",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Kandarin"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 71,
+          "name": "Cooked barb-tailed kebbit",
+          "subtitle": "",
+          "category": "Meat/Fish",
+          "exp": 106.0,
+          "level": 32,
+          "icon": "https://oldschool.runescape.wiki/images/Cooked_barb-tailed_kebbit.png?d31dc",
+          "inputs": [
+            {
+              "name": "Raw barb-tailed kebbit",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Cooked barb-tailed kebbit",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Kandarin"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 72,
           "name": "Drunk dragon",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -3781,7 +4041,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 61,
+          "id": 73,
           "name": "Choc saturday",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -3832,7 +4092,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 62,
+          "id": 74,
           "name": "Garden pie",
           "subtitle": "",
           "category": "Baking",
@@ -3858,7 +4118,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 63,
+          "id": 75,
           "name": "Wizard's mind bomb",
           "subtitle": "",
           "category": "Brewing",
@@ -3899,12 +4159,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Fremennik", "Morytania"],
+          "areas": ["Fremennik", "Morytania", "Varlamore"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 64,
+          "id": 76,
           "name": "Rainbow fish",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -3930,7 +4190,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 65,
+          "id": 77,
           "name": "Plain pizza",
           "subtitle": "",
           "category": "Baking",
@@ -3956,7 +4216,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 66,
+          "id": 78,
           "name": "Veg ball",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -3997,7 +4257,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 67,
+          "id": 79,
           "name": "Jug of wine",
           "subtitle": "",
           "category": "Other",
@@ -4028,7 +4288,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 68,
+          "id": 80,
           "name": "Blurberry special",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -4099,7 +4359,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 69,
+          "id": 81,
           "name": "Pat of butter",
           "subtitle": "",
           "category": "Other",
@@ -4125,7 +4385,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 70,
+          "id": 82,
           "name": "Cave eel",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -4151,7 +4411,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 71,
+          "id": 83,
           "name": "Potato with butter",
           "subtitle": "",
           "category": "Vegetables",
@@ -4182,7 +4442,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 72,
+          "id": 84,
           "name": "Dragon bitter",
           "subtitle": "",
           "category": "Brewing",
@@ -4228,7 +4488,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 73,
+          "id": 85,
           "name": "Lobster",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -4254,7 +4514,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 74,
+          "id": 86,
           "name": "Cake",
           "subtitle": "",
           "category": "Baking",
@@ -4295,7 +4555,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 75,
+          "id": 87,
           "name": "Tangled toad's legs",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -4341,7 +4601,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 76,
+          "id": 88,
           "name": "Chilli potato",
           "subtitle": "",
           "category": "Vegetables",
@@ -4372,7 +4632,33 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 77,
+          "id": 89,
+          "name": "Cooked graahk",
+          "subtitle": "",
+          "category": "Meat/Fish",
+          "exp": 124.0,
+          "level": 41,
+          "icon": "https://oldschool.runescape.wiki/images/Cooked_graahk.png?3d2ee",
+          "inputs": [
+            {
+              "name": "Raw graahk",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Cooked graahk",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Varlamore"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 90,
           "name": "Cooked jubbly",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -4398,7 +4684,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 78,
+          "id": 91,
           "name": "Fried onions",
           "subtitle": "",
           "category": "Vegetables",
@@ -4424,7 +4710,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 79,
+          "id": 92,
           "name": "Chocolate bomb",
           "subtitle": "",
           "category": "Gnome cooking",
@@ -4470,7 +4756,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 80,
+          "id": 93,
           "name": "Bass",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -4491,12 +4777,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Kandarin", "Fremennik", "Morytania", "Tirannwn", "Kourend"],
+          "areas": ["Kandarin", "Fremennik", "Morytania", "Tirannwn", "Kourend", "Desert", "Varlamore"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 81,
+          "id": 94,
           "name": "Moonlight mead",
           "subtitle": "",
           "category": "Brewing",
@@ -4537,12 +4823,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Fremennik", "Morytania"],
+          "areas": ["Fremennik", "Morytania", "Varlamore"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 82,
+          "id": 95,
           "name": "Swordfish",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -4568,7 +4854,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 83,
+          "id": 96,
           "name": "Meat pizza",
           "subtitle": "",
           "category": "Baking",
@@ -4599,7 +4885,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 84,
+          "id": 97,
           "name": "Fried mushrooms",
           "subtitle": "",
           "category": "Vegetables",
@@ -4625,7 +4911,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 85,
+          "id": 98,
           "name": "Potato with cheese",
           "subtitle": "",
           "category": "Vegetables",
@@ -4656,7 +4942,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 86,
+          "id": 99,
           "name": "Fish pie",
           "subtitle": "",
           "category": "Baking",
@@ -4682,7 +4968,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 87,
+          "id": 100,
           "name": "Cheese",
           "subtitle": "",
           "category": "Other",
@@ -4708,7 +4994,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 88,
+          "id": 101,
           "name": "Axeman's folly",
           "subtitle": "",
           "category": "Brewing",
@@ -4749,12 +5035,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Fremennik", "Morytania"],
+          "areas": ["Fremennik", "Morytania", "Varlamore"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 89,
+          "id": 102,
           "name": "Chocolate cake",
           "subtitle": "",
           "category": "Baking",
@@ -4785,7 +5071,33 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 90,
+          "id": 103,
+          "name": "Cooked kyatt",
+          "subtitle": "",
+          "category": "Meat/Fish",
+          "exp": 143.0,
+          "level": 51,
+          "icon": "https://oldschool.runescape.wiki/images/Cooked_kyatt.png?6c27c",
+          "inputs": [
+            {
+              "name": "Raw kyatt",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Cooked kyatt",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Varlamore"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 104,
           "name": "Egg potato",
           "subtitle": "",
           "category": "Vegetables",
@@ -4816,7 +5128,33 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 92,
+          "id": 105,
+          "name": "Botanical Pie",
+          "subtitle": "",
+          "category": "Meat/Fish",
+          "exp": 180.0,
+          "level": 52,
+          "icon": "https://oldschool.runescape.wiki/images/Half_a_botanical_pie.png?43cf2",
+          "inputs": [
+            {
+              "name": "Uncooked botanical pie",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Botanical pie",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Kourend"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 106,
           "name": "Lava eel",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -4842,7 +5180,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 93,
+          "id": 107,
           "name": "Chef's delight",
           "subtitle": "",
           "category": "Brewing",
@@ -4883,12 +5221,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Fremennik", "Morytania"],
+          "areas": ["Fremennik", "Morytania", "Varlamore"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 94,
+          "id": 108,
           "name": "Anchovy pizza",
           "subtitle": "",
           "category": "Baking",
@@ -4919,7 +5257,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 95,
+          "id": 109,
           "name": "Mushroom & onion",
           "subtitle": "",
           "category": "Vegetables",
@@ -4950,7 +5288,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 96,
+          "id": 110,
           "name": "Pitta bread",
           "subtitle": "",
           "category": "Baking",
@@ -4976,7 +5314,33 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 97,
+          "id": 111,
+          "name": "Cooked pyre fox",
+          "subtitle": "",
+          "category": "Meat/Fish",
+          "exp": 154.0,
+          "level": 59,
+          "icon": "https://oldschool.runescape.wiki/images/Cooked_pyre_fox.png?6c27c",
+          "inputs": [
+            {
+              "name": "Raw pyre fox",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Cooked pyre fox",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Varlamore"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 112,
           "name": "Slayer's respite",
           "subtitle": "",
           "category": "Brewing",
@@ -5017,12 +5381,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Fremennik", "Morytania"],
+          "areas": ["Fremennik", "Morytania", "Varlamore"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 98,
+          "id": 113,
           "name": "Mushroom pie",
           "subtitle": "",
           "category": "Baking",
@@ -5048,7 +5412,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 99,
+          "id": 114,
           "name": "Curry",
           "subtitle": "",
           "category": "Other",
@@ -5089,7 +5453,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 100,
+          "id": 115,
           "name": "Monkfish",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -5115,7 +5479,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 101,
+          "id": 116,
           "name": "Mushroom potato",
           "subtitle": "",
           "category": "Vegetables",
@@ -5146,7 +5510,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 102,
+          "id": 117,
           "name": "Pineapple pizza",
           "subtitle": "",
           "category": "Baking",
@@ -5177,7 +5541,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 117,
+          "id": 118,
           "name": "Servery pineapple pizza",
           "subtitle": "Requires 45% Hosidius favour",
           "category": "Mess hall",
@@ -5191,7 +5555,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 103,
+          "id": 119,
           "name": "Wine of zamorak",
           "subtitle": "",
           "category": "Other",
@@ -5222,7 +5586,33 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 104,
+          "id": 120,
+          "name": "Cooked sunlight antelope",
+          "subtitle": "",
+          "category": "Meat/Fish",
+          "exp": 175.0,
+          "level": 68,
+          "icon": "https://oldschool.runescape.wiki/images/Cooked_sunlight_antelope.png?aefd3",
+          "inputs": [
+            {
+              "name": "Raw sunlight antelope",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Cooked sunlight antelope",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Varlamore"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 121,
           "name": "Tuna potato",
           "subtitle": "",
           "category": "Vegetables",
@@ -5253,7 +5643,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 105,
+          "id": 122,
           "name": "Admiral pie",
           "subtitle": "",
           "category": "Baking",
@@ -5279,7 +5669,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 106,
+          "id": 123,
           "name": "Sacred eel",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -5305,7 +5695,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 107,
+          "id": 124,
           "name": "Dragonfruit pie",
           "subtitle": "",
           "category": "Baking",
@@ -5331,7 +5721,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 108,
+          "id": 125,
           "name": "Shark",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -5352,12 +5742,38 @@
               "chance": 1
             }
           ],
-          "areas": ["Kandarin", "Fremennik", "Morytania", "Tirannwn", "Kourend"],
+          "areas": ["Kandarin", "Fremennik", "Morytania", "Tirannwn", "Kourend", "Misthalin", "Varlamore", "Desert", "Asgarnia", "Wilderness"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 109,
+          "id": 126,
+          "name": "Cooked dashing kebbit",
+          "subtitle": "",
+          "category": "Meat/Fish",
+          "exp": 215.0,
+          "level": 82,
+          "icon": "https://oldschool.runescape.wiki/images/Cooked_dashing_kebbit.png?d31dc",
+          "inputs": [
+            {
+              "name": "Raw dashing kebbit",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Cooked dashing kebbit",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Varlamore"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 127,
           "name": "Sea turtle",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -5378,12 +5794,12 @@
               "chance": 1
             }
           ],
-          "areas": ["Misthalin", "Kandarin", "Wilderness", "Fremennik"],
+          "areas": ["Misthalin", "Kandarin", "Wilderness", "Fremennik", "Desert", "Kourend"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
         {
-          "id": 118,
+          "id": 128,
           "name": "Anglerfish",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -5409,7 +5825,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 111,
+          "id": 129,
           "name": "Wild pie",
           "subtitle": "",
           "category": "Baking",
@@ -5435,7 +5851,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 112,
+          "id": 130,
           "name": "Dark crab",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -5461,7 +5877,7 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 113,
+          "id": 131,
           "name": "Manta ray",
           "subtitle": "",
           "category": "Meat/Fish",
@@ -5487,7 +5903,33 @@
           "equilibriumInfo": ""
         },
         {
-          "id": 114,
+          "id": 132,
+          "name": "Cooked moonlight antelope",
+          "subtitle": "",
+          "category": "Meat/Fish",
+          "exp": 215.0,
+          "level": 82,
+          "icon": "https://oldschool.runescape.wiki/images/Cooked_moonlight_antelope.png?6c27c",
+          "inputs": [
+            {
+              "name": "Raw moonlight antelope",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "outputs": [
+            {
+              "name": "Cooked moonlight antelope",
+              "amount": 1.0,
+              "chance": 1
+            }
+          ],
+          "areas": ["Varlamore"],
+          "expActions": 1.0,
+          "equilibriumInfo": ""
+        },
+        {
+          "id": 133,
           "name": "Summer pie",
           "subtitle": "",
           "category": "Baking",
