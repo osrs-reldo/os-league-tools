@@ -1,6 +1,6 @@
 import images from '../assets/images';
 
-export const TROPHY_THRESHOLDS = [0, 2500, 5000, 10000, 18000, 28000, 42000, 56000];
+export const TROPHY_THRESHOLDS = [0, 2000, 4000, 10000, 20000, 30000, 45000, 60000];
 
 export const TROPHIES = [
   {
