@@ -664,7 +664,7 @@ export const DIARY_LOCATIONS = {
   DESERT: {
     id: 1,
     label: 'Desert',
-    icon: images['task-kharidian.png'],
+    icon: images['task-desert.png'],
   },
   FALADOR: {
     id: 2,
@@ -689,7 +689,7 @@ export const DIARY_LOCATIONS = {
   KOUREND: {
     id: 6,
     label: 'Kourend',
-    icon: images['task-xeric.png'],
+    icon: images['task-kourend.png'],
   },
   LUMBRIDGE: {
     id: 7,

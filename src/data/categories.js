@@ -278,7 +278,7 @@ export const CATEGORY = {
     },
   },
   MINIGAMES: {
-    label: 'Minigames & Skilling bosses',
+    label: 'Minigames',
     icon: images['task-minigame.png'],
     subcategories: {
       TEMPOROSS: {

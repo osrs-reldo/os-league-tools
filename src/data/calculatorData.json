@@ -1733,7 +1733,7 @@
             }
           ],
           "outputs": [],
-          "areas": ["Fremennik","Varlamore"],
+          "areas": ["Fremennik", "Varlamore"],
           "expActions": 1.0,
           "equilibriumInfo": ""
         }
@@ -1774,27 +1774,7 @@
           "label": "Other"
         }
       ],
-      "multipliers": [
-        {
-          "id": "0",
-          "name": "Production prodigy",
-          "subtitle": "25% chance to double exp and output",
-          "multiplier": 1.25,
-          "appliesTo": {
-            "exp": true,
-            "inputs": false,
-            "outputs": true
-          },
-          "categories": ["Meat/Fish", "Baking"],
-          "exceptions": [],
-          "actions": [103, 99, 67, 44],
-          "matchers": [],
-          "autoCheckWithRelic": {
-            "tier": 0,
-            "index": 1
-          }
-        }
-      ],
+      "multipliers": [],
       "actions": [
         {
           "id": 0,
@@ -1896,7 +1876,18 @@
               "chance": 1
             }
           ],
-          "areas": ["Asgarnia", "Fremennik", "Kandarin", "Karamja", "Misthalin", "Tirannwn", "Morytania", "Kourend","Varlamore","Wilderness"],
+          "areas": [
+            "Asgarnia",
+            "Fremennik",
+            "Kandarin",
+            "Karamja",
+            "Misthalin",
+            "Tirannwn",
+            "Morytania",
+            "Kourend",
+            "Varlamore",
+            "Wilderness"
+          ],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
@@ -1948,7 +1939,17 @@
               "chance": 1
             }
           ],
-          "areas": ["Asgarnia", "Fremennik", "Karamja", "Misthalin", "Tirannwn","Kourend","Varlamore","Kandarin","Morytania"],
+          "areas": [
+            "Asgarnia",
+            "Fremennik",
+            "Karamja",
+            "Misthalin",
+            "Tirannwn",
+            "Kourend",
+            "Varlamore",
+            "Kandarin",
+            "Morytania"
+          ],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
@@ -2000,7 +2001,18 @@
               "chance": 1
             }
           ],
-          "areas": ["Misthalin", "Asgarnia", "Karamja", "Desert", "Wilderness", "Kandarin", "Fremennik", "Kourend","Varlamore","Morytania"],
+          "areas": [
+            "Misthalin",
+            "Asgarnia",
+            "Karamja",
+            "Desert",
+            "Wilderness",
+            "Kandarin",
+            "Fremennik",
+            "Kourend",
+            "Varlamore",
+            "Morytania"
+          ],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
@@ -2052,7 +2064,18 @@
               "chance": 1
             }
           ],
-          "areas": ["Misthalin", "Asgarnia", "Karamja", "Desert", "Wilderness", "Kandarin", "Fremennik","Kourend","Varlamore","Morytania"],
+          "areas": [
+            "Misthalin",
+            "Asgarnia",
+            "Karamja",
+            "Desert",
+            "Wilderness",
+            "Kandarin",
+            "Fremennik",
+            "Kourend",
+            "Varlamore",
+            "Morytania"
+          ],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
@@ -2208,7 +2231,18 @@
               "chance": 1
             }
           ],
-          "areas": ["Misthalin", "Asgarnia", "Karamja", "Desert", "Wilderness", "Kandarin", "Fremennik", "Kourend","Varlamore","Morytania"],
+          "areas": [
+            "Misthalin",
+            "Asgarnia",
+            "Karamja",
+            "Desert",
+            "Wilderness",
+            "Kandarin",
+            "Fremennik",
+            "Kourend",
+            "Varlamore",
+            "Morytania"
+          ],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
@@ -2280,7 +2314,17 @@
               "chance": 1
             }
           ],
-          "areas": ["Morytania", "Fremennik", "Tirannwn", "Asgarnia", "Kandarin", "Misthalin", "Kourend","Karamja","Varlamore"],
+          "areas": [
+            "Morytania",
+            "Fremennik",
+            "Tirannwn",
+            "Asgarnia",
+            "Kandarin",
+            "Misthalin",
+            "Kourend",
+            "Karamja",
+            "Varlamore"
+          ],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
@@ -2393,7 +2437,17 @@
               "chance": 1
             }
           ],
-          "areas": ["Kandarin", "Fremennik", "Morytania", "Tirannwn", "Kourend","Desert","Misthalin","Varlamore","Asgarnia"],
+          "areas": [
+            "Kandarin",
+            "Fremennik",
+            "Morytania",
+            "Tirannwn",
+            "Kourend",
+            "Desert",
+            "Misthalin",
+            "Varlamore",
+            "Asgarnia"
+          ],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
@@ -3066,7 +3120,7 @@
         {
           "id": 42,
           "name": "Servery meat pie",
-          "subtitle": "Requires 45% Hosidius favour",
+          "subtitle": "",
           "category": "Mess hall",
           "exp": 160.0,
           "level": 20,
@@ -3364,7 +3418,7 @@
         {
           "id": 52,
           "name": "Servery stew",
-          "subtitle": "Requires 45% Hosidius favour",
+          "subtitle": "",
           "category": "Mess hall",
           "exp": 168.0,
           "level": 25,
@@ -5543,7 +5597,7 @@
         {
           "id": 118,
           "name": "Servery pineapple pizza",
-          "subtitle": "Requires 45% Hosidius favour",
+          "subtitle": "",
           "category": "Mess hall",
           "exp": 369.0,
           "level": 65,
@@ -5742,7 +5796,18 @@
               "chance": 1
             }
           ],
-          "areas": ["Kandarin", "Fremennik", "Morytania", "Tirannwn", "Kourend", "Misthalin", "Varlamore", "Desert", "Asgarnia", "Wilderness"],
+          "areas": [
+            "Kandarin",
+            "Fremennik",
+            "Morytania",
+            "Tirannwn",
+            "Kourend",
+            "Misthalin",
+            "Varlamore",
+            "Desert",
+            "Asgarnia",
+            "Wilderness"
+          ],
           "expActions": 1.0,
           "equilibriumInfo": ""
         },
@@ -5999,27 +6064,7 @@
           "label": "Other"
         }
       ],
-      "multipliers": [
-        {
-          "id": "0",
-          "name": "Production prodigy",
-          "subtitle": "25% chance to double exp and output",
-          "multiplier": 1.25,
-          "appliesTo": {
-            "exp": true,
-            "inputs": false,
-            "outputs": true
-          },
-          "categories": ["Spinning/Weaving", "Armour", "Pottery", "Jewelry", "Glassblowing", "Weapons"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": [],
-          "autoCheckWithRelic": {
-            "tier": 0,
-            "index": 1
-          }
-        }
-      ],
+      "multipliers": [],
       "actions": [
         {
           "id": 0,
@@ -14619,27 +14664,7 @@
           "label": "Javelins"
         }
       ],
-      "multipliers": [
-        {
-          "id": "0",
-          "name": "Production prodigy",
-          "subtitle": "25% chance to double exp and output",
-          "multiplier": 1.25,
-          "appliesTo": {
-            "exp": true,
-            "inputs": false,
-            "outputs": true
-          },
-          "categories": ["Bows", "Bolt tips"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": [],
-          "autoCheckWithRelic": {
-            "tier": 0,
-            "index": 1
-          }
-        }
-      ],
+      "multipliers": [],
       "actions": [
         {
           "id": 0,
@@ -19909,27 +19934,7 @@
           "label": "Barbarian mixes"
         }
       ],
-      "multipliers": [
-        {
-          "id": "0",
-          "name": "Production prodigy",
-          "subtitle": "25% chance to double exp and output",
-          "multiplier": 1.25,
-          "appliesTo": {
-            "exp": true,
-            "inputs": false,
-            "outputs": true
-          },
-          "categories": ["Potions", "Cleaning", "Barbarian mixes"],
-          "exceptions": [16, 75, 85, 90, 97],
-          "actions": [],
-          "matchers": [],
-          "autoCheckWithRelic": {
-            "tier": 0,
-            "index": 1
-          }
-        }
-      ],
+      "multipliers": [],
       "actions": [
         {
           "id": 0,
@@ -39740,25 +39745,6 @@
           "actions": [27, 73],
           "matchers": [],
           "autoCheckWithRelic": null
-        },
-        {
-          "id": "1",
-          "name": "Production prodigy",
-          "subtitle": "25% chance to double exp and output",
-          "multiplier": 1.5,
-          "appliesTo": {
-            "exp": true,
-            "inputs": false,
-            "outputs": true
-          },
-          "categories": ["Bronze", "Iron", "Steel", "Mithril", "Adamant", "Rune"],
-          "exceptions": [],
-          "actions": [],
-          "matchers": [],
-          "autoCheckWithRelic": {
-            "tier": 0,
-            "index": 1
-          }
         }
       ],
       "actions": [
@@ -42293,7 +42279,7 @@
         {
           "id": 13,
           "name": "Fruit stall",
-          "subtitle": "Requires 15% Hosidius favour",
+          "subtitle": "",
           "category": "Stalls",
           "exp": 28.5,
           "level": 25,
