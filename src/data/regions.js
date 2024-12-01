@@ -3,7 +3,7 @@ import getAllQuestPrereqs from '../util/getAllQuestPrereqs';
 
 export const NONE_REGION_ID = -1;
 export const DEFAULT_REGIONS = [0, 1];
-export const REGION_UNLOCK_THRESHOLDS = [0, 90, 200, 300];
+export const REGION_UNLOCK_THRESHOLDS = [0, 90, 200, 400];
 
 export const LEAGUES_REGIONS = [
   {
