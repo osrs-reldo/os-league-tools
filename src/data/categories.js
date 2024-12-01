@@ -6,6 +6,14 @@ export const CATEGORY = {
     label: 'Bossing',
     icon: images['task-bossing.png'],
     subcategories: {
+      AMOXLIATL: {
+        label: 'Amoxliatl',
+        icon: images['amoxliatl.png'],
+      },
+      ARAXXOR: {
+        label: 'Araxxor',
+        icon: images['araxxor.png'],
+      },
       BARROWS: {
         label: 'Barrows',
         icon: images['barrows.png'],
@@ -27,11 +35,11 @@ export const CATEGORY = {
         icon: images['dagannoth-supreme.png'],
       },
       DT2: {
-        label: 'Desert Treasure II',
+        label: 'The Forgotten Four',
         icon: images['duke.png'],
       },
       GAUNTLET: {
-        label: 'Gauntlet',
+        label: 'Corrupted Gauntlet',
         icon: images['the-gauntlet.png'],
       },
       GENERAL: {
@@ -45,6 +53,10 @@ export const CATEGORY = {
       GWD: {
         label: 'God Wars',
         icon: images['general-graardor.png'],
+      },
+      HUEYCOATL: {
+        label: 'Hueycoatl',
+        icon: images['the-huey-coatl.png'],
       },
       HYDRA: {
         label: 'Alchemical Hydra',
@@ -66,13 +78,13 @@ export const CATEGORY = {
         label: 'Kraken',
         icon: images['kraken.png'],
       },
-      MIMIC: {
-        label: 'Mimic',
-        icon: images['mimic.png'],
-      },
       MOLE: {
         label: 'Giant Mole',
         icon: images['giant-mole.png'],
+      },
+      MOONS: {
+        label: 'Moons of Peril',
+        icon: images['lunar-chests.png'],
       },
       MUSPAH: {
         label: 'Phantom Muspah',
@@ -94,6 +106,10 @@ export const CATEGORY = {
         label: 'Sarachnis',
         icon: images['sarachnis.png'],
       },
+      SCURRIUS: {
+        label: 'Scurrius',
+        icon: images['scurrius.png'],
+      },
       SIRE: {
         label: 'Abyssal Sire',
         icon: images['abyssal-sire.png'],
@@ -102,9 +118,9 @@ export const CATEGORY = {
         label: 'Skotizo',
         icon: images['skotizo.png'],
       },
-      TEMPOROSS: {
-        label: 'Tempoross',
-        icon: images['tempoross.png'],
+      SOL: {
+        label: 'The Colosseum',
+        icon: images['sol-heredit.png'],
       },
       THERMY: {
         label: 'Thermy',
@@ -117,14 +133,6 @@ export const CATEGORY = {
       WILDERNESS: {
         label: 'Wilderness',
         icon: images['chaos-elemental.png'],
-      },
-      WINTERTODT: {
-        label: 'Wintertodt',
-        icon: images['wintertodt.png'],
-      },
-      ZALCANO: {
-        label: 'Zalcano',
-        icon: images['zalcano.png'],
       },
       ZULRAH: {
         label: 'Zulrah',
@@ -270,16 +278,24 @@ export const CATEGORY = {
     },
   },
   MINIGAMES: {
-    label: 'Minigames',
+    label: 'Minigames & Skilling bosses',
     icon: images['task-minigame.png'],
     subcategories: {
+      TEMPOROSS: {
+        label: 'Tempoross',
+        icon: images['tempoross.png'],
+      },
+      WINTERTODT: {
+        label: 'Wintertodt',
+        icon: images['wintertodt.png'],
+      },
+      ZALCANO: {
+        label: 'Zalcano',
+        icon: images['zalcano.png'],
+      },
       BA: {
         label: 'Barbarian Assault',
         icon: images['task-strength.png'],
-      },
-      MTA: {
-        label: 'Mage Training Arena',
-        icon: images['task-magic.png'],
       },
       OTHER: {
         label: 'Other',
@@ -296,10 +312,6 @@ export const CATEGORY = {
       CHOMPIES: {
         label: 'Chompy Bird Hunting',
         icon: images['task-ranged.png'],
-      },
-      CWARS: {
-        label: 'Castle Wars',
-        icon: images['task-combat.png'],
       },
     },
   },
@@ -382,7 +394,6 @@ export const CATEGORY = {
         label: 'Base Level',
         icon: images['task-gold-star.png'],
       },
-      FAVOUR: { label: 'Kourend Favour', icon: images['task-xeric.png'] },
       GENERAL: { label: 'General', icon: images['task-green.png'] },
       MILESTONE: {
         label: 'Milestone Level',

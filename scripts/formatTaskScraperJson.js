@@ -2,7 +2,6 @@ const taskMapper = require('./taskMapper');
 const fs = require('fs');
 
 // TODO:
-// - categories temporarily disabled, mapper values need to be manually updated
 // - prereqs should have a mapper similar to categories
 
 // we want to keep enums from being expanded, so everything is generated as
@@ -29,7 +28,7 @@ function formatTasks() {
       const wikiScpRegex = /\{\{SCP\|.*?\}\} /g;
       descriptionWithoutLinks = descriptionWithoutLinks.replace(wikiScpRegex, '');
 
-      // const { category, subcategory } = taskMapper.toCategories(task);
+      const { category, subcategory } = taskMapper.toCategories(id);
       writeStream.write(`'${id}': {\n    `);
       writeStream.write(`id: '${id}',\n    `);
       writeStream.write(`label: \`${label.replace(/[\[\]]/g, '')}\`,\n    `);
@@ -37,10 +36,8 @@ function formatTasks() {
       writeStream.write(`skillReqs: ${formatSkillReqs(skills)},\n    `);
       writeStream.write(`regions: ['${region}'],\n    `);
       writeStream.write(`difficulty: DIFFICULTY.${tier.toUpperCase()},\n    `);
-      writeStream.write(`category: CATEGORY.OTHER,\n    `);
-      writeStream.write(`subcategory: CATEGORY.OTHER.subcategories.GENERAL,\n    `);
-      // writeStream.write(`category: ${category && `CATEGORY.${category}`},\n    `);
-      // writeStream.write(`subcategory: ${subcategory && `CATEGORY.${category}.subcategories.${subcategory}`},\n    `);
+      writeStream.write(`category: ${category && `CATEGORY.${category}`},\n    `);
+      writeStream.write(`subcategory: ${subcategory && `CATEGORY.${category}.subcategories.${subcategory}`},\n    `);
       writeStream.write("prerequisite: '',\n  ");
       writeStream.write('},\n  ');
     });
@@ -56,7 +53,6 @@ async function fetchTaskJson() {
 
 function formatSkillReqs(skillReqs) {
   if (skillReqs) {
-    console.log(skillReqs);
     return stringifyArray(
       skillReqs
         .split(', ')
