@@ -30,7 +30,7 @@ export function submitRenderError(error, info, deviceInfo) {
   const message = [error.message, error.stack, '', '# Component stack:', JSON.stringify(info, undefined, 2)].join('\n');
   return submitFeedback(
     {
-      description: `Error boundary on ${window.location.pathname}`,
+      description: `Error boundary on ${window.location.href}`,
       reproSteps: message,
       device: JSON.stringify(deviceInfo, undefined, 2),
       debugInfo: JSON.stringify(window.localStorage, undefined, 2),
