@@ -22,9 +22,11 @@ function formatTasks() {
       const { label, description, skills, other, tier, region, id } = match?.groups || {};
 
       // Strip links from description
-      // [[Goblin#Level_5|Goblin]] or {{SCP|...}}
+      // [[Goblin#Level_5|Goblin]] or [[Anvil]] or {{SCP|...}}
+      const wikiSimpleLinkRegex = /\[\[([^|]+?)??\]\]/g;
+      let descriptionWithoutLinks = description.replace(wikiSimpleLinkRegex, '$1');
       const wikiLinkRegex = /\[\[.*?\|(.*?)\]\]/g;
-      let descriptionWithoutLinks = description.replace(wikiLinkRegex, '$1');
+      descriptionWithoutLinks = descriptionWithoutLinks.replace(wikiLinkRegex, '$1');
       const wikiScpRegex = /\{\{SCP\|.*?\}\} /g;
       descriptionWithoutLinks = descriptionWithoutLinks.replace(wikiScpRegex, '');
 

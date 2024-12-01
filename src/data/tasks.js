@@ -161,7 +161,7 @@ export default {
   319: {
     id: '319',
     label: `Check Your Slayer Task`,
-    description: `Use an Slayer Task`,
+    description: `Use an Enchanted Gem to check your Slayer Task`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.EASY,
@@ -359,7 +359,7 @@ export default {
   1269: {
     id: '1269',
     label: `Dye a cape orange`,
-    description: `Dye a orange`,
+    description: `Dye a cape orange`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.EASY,
@@ -483,7 +483,7 @@ export default {
   366: {
     id: '366',
     label: `Locate a Runecrafting Altar With a Talisman`,
-    description: `Use any Runecrafting Altar`,
+    description: `Use any talisman to check the location of a Runecrafting Altar`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.EASY,
@@ -857,7 +857,7 @@ export default {
   774: {
     id: '774',
     label: `Craft an Air Rune`,
-    description: `Craft an Essence at the Air Altar`,
+    description: `Craft an Air Rune from Essence at the Air Altar`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.EASY,
@@ -967,7 +967,7 @@ export default {
   854: {
     id: '854',
     label: `Craft a Fire Rune`,
-    description: `Craft a Essence at the Fire Altar`,
+    description: `Craft a Fire Rune from Essence at the Fire Altar`,
     skillReqs: [{ skill: 'Runecraft', level: 14 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.EASY,
@@ -1619,7 +1619,7 @@ export default {
   1557: {
     id: '1557',
     label: `Ask for a Quest from Bob`,
-    description: `Talk to Lumbridge axe shop and ask for a Quest`,
+    description: `Talk to Bob in Lumbridge axe shop and ask for a Quest`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -1685,7 +1685,7 @@ export default {
   1780: {
     id: '1780',
     label: `Drink a beer in the Longhall`,
-    description: `Drink a Longhall in Barbarian Village`,
+    description: `Drink a beer in the Longhall in Barbarian Village`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -1828,7 +1828,7 @@ export default {
   1563: {
     id: '1563',
     label: `Kill a Duck with a fire spell`,
-    description: `Kill a fire spell`,
+    description: `Kill a Duck with a fire spell`,
     skillReqs: [{ skill: 'Magic', level: 13 }],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -1905,7 +1905,7 @@ export default {
   1564: {
     id: '1564',
     label: `Kill an Imp with an earth spell`,
-    description: `Kill an earth spell`,
+    description: `Kill an Imp with an earth spell`,
     skillReqs: [{ skill: 'Magic', level: 9 }],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -2015,7 +2015,7 @@ export default {
   1799: {
     id: '1799',
     label: `Take a Canoe to Champions Guild`,
-    description: `Take a Champions Guild`,
+    description: `Take a Canoe from Lumbridge to the Champions Guild`,
     skillReqs: [{ skill: 'Woodcutting', level: 12 }],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.EASY,
@@ -2114,7 +2114,7 @@ export default {
   1130: {
     id: '1130',
     label: `Open a Bronze Chest`,
-    description: `Open a Shades of Mort'ton`,
+    description: `Open a Bronze Chest from Shades of Mort'ton`,
     skillReqs: [{ skill: 'Firemaking', level: 5 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.EASY,
@@ -2290,7 +2290,7 @@ export default {
   1715: {
     id: '1715',
     label: `Kill a Guard in Varlamore underground`,
-    description: `Kill a Varlamore underground`,
+    description: `Kill a Guard in Varlamore underground`,
     skillReqs: [],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.EASY,
@@ -2345,7 +2345,7 @@ export default {
   1714: {
     id: '1714',
     label: `Pick some Sweetcorn from a Field`,
-    description: `Pick some Field`,
+    description: `Pick some Sweetcorn from a Field`,
     skillReqs: [],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.EASY,
@@ -4544,7 +4544,7 @@ export default {
   775: {
     id: '775',
     label: `Craft a Body Rune`,
-    description: `Craft a Essence at the Body Altar`,
+    description: `Craft a Body Rune from Essence at the Body Altar`,
     skillReqs: [{ skill: 'Runecraft', level: 20 }],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -4665,7 +4665,7 @@ export default {
   1251: {
     id: '1251',
     label: `Equip Amy's Saw`,
-    description: `Obtain and Equip Minigame}} Mahogany Homes`,
+    description: `Obtain and Equip Amy's Saw from Mahogany Homes`,
     skillReqs: [],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5130,7 +5130,7 @@ export default {
   860: {
     id: '860',
     label: `Mine 30 Chunks of Granite`,
-    description: `Mine 30 chunks of Quarry`,
+    description: `Mine 30 chunks of Granite at the Kharidian Desert Quarry`,
     skillReqs: [{ skill: 'Mining', level: 45 }],
     regions: ['Desert'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5593,7 +5593,7 @@ export default {
   579: {
     id: '579',
     label: `Unlock Free Use of the Blast Furnace`,
-    description: `Unlock free use of the Foreman`,
+    description: `Unlock free use of the Keldagrim Blast Furnace by speaking with the Foreman`,
     skillReqs: [{ skill: 'Smithing', level: 60 }],
     regions: ['Fremennik'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5911,7 +5911,7 @@ export default {
   1442: {
     id: '1442',
     label: `Kill a Newtroost`,
-    description: `Kill a Tower of Life`,
+    description: `Kill a Newtroost underneath the Tower of Life`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -5922,7 +5922,7 @@ export default {
   1441: {
     id: '1441',
     label: `Kill a Swordchick`,
-    description: `Kill a Tower of Life`,
+    description: `Kill a Swordchick underneath the Tower of Life`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6024,7 +6024,7 @@ export default {
   1527: {
     id: '1527',
     label: `Use a Herring on a mighty tree`,
-    description: `Use a mightiest of trees`,
+    description: `Use a herring on the mightiest of trees`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6211,7 +6211,7 @@ export default {
   1529: {
     id: '1529',
     label: `Sleep in Paramaya Inn`,
-    description: `Pay the barkeep to sleep in Shilo Village`,
+    description: `Pay the barkeep to sleep in Paramaya Inn, in Shilo Village`,
     skillReqs: [],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6387,7 +6387,7 @@ export default {
   1058: {
     id: '1058',
     label: `Defeat a Drake`,
-    description: `Defeat a Mount Karuulm Slayer Dungeon`,
+    description: `Defeat a Drake in the Mount Karuulm Slayer Dungeon`,
     skillReqs: [{ skill: 'Slayer', level: 84 }],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6541,7 +6541,7 @@ export default {
   1591: {
     id: '1591',
     label: `Offer an egg to a shrine`,
-    description: `Offer an egg to a woodcutting guild`,
+    description: `Offer an egg to a shrine in the woodcutting guild`,
     skillReqs: [{ skill: 'Woodcutting', level: 60 }],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -6585,7 +6585,7 @@ export default {
   1285: {
     id: '1285',
     label: `Smelt a mithril bar in a volcanic fissure`,
-    description: `Smelt a volcanic Fissure`,
+    description: `Smelt a Mithril bar in a volcanic Fissure`,
     skillReqs: [{ skill: 'Smithing', level: 50 }],
     regions: ['Kourend'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7097,7 +7097,7 @@ export default {
   458: {
     id: '458',
     label: `Pickpocket a Bullseye Lantern From a Cave Goblin`,
-    description: `Pickpocket a Cave Goblin`,
+    description: `Pickpocket a Bullseye Lantern from a Cave Goblin`,
     skillReqs: [{ skill: 'Thieving', level: 36 }],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7108,7 +7108,7 @@ export default {
   454: {
     id: '454',
     label: `Pickpocket a H.A.M. Member`,
-    description: `Pickpocket any hideout`,
+    description: `Pickpocket any H.A.M. member at their hideout`,
     skillReqs: [{ skill: 'Thieving', level: 15 }],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7130,7 +7130,7 @@ export default {
   1532: {
     id: '1532',
     label: `Provide Terry a buckle`,
-    description: `Show Belt Buckle`,
+    description: `Show Terry Balando in the Digsite a Belt Buckle`,
     skillReqs: [],
     regions: ['Misthalin'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7430,7 +7430,7 @@ export default {
   1326: {
     id: '1326',
     label: `Feed a ghast some sweets`,
-    description: `Feed a sweets`,
+    description: `Feed a ghast some sweets`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7496,7 +7496,7 @@ export default {
   1131: {
     id: '1131',
     label: `Open a Black Chest`,
-    description: `Open a Shades of Mort'ton`,
+    description: `Open a Black Chest from Shades of Mort'ton`,
     skillReqs: [{ skill: 'Firemaking', level: 35 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7507,7 +7507,7 @@ export default {
   963: {
     id: '963',
     label: `Pet Frank`,
-    description: `Pet goodest boy`,
+    description: `Pet Darkmeyer's goodest boy`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -7540,7 +7540,7 @@ export default {
   1546: {
     id: '1546',
     label: `Smuggle some Rum`,
-    description: `Use the Karamja rum through customs`,
+    description: `Use the Ring of Charos to smuggle some Karamja rum through customs`,
     skillReqs: [],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8048,7 +8048,7 @@ export default {
   1782: {
     id: '1782',
     label: `Obtain a Cake from a Nest`,
-    description: `Obtain a Nest`,
+    description: `Obtain a Cake from a Nest`,
     skillReqs: [],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8169,7 +8169,7 @@ export default {
   1692: {
     id: '1692',
     label: `Teleport to Cam Torum using a Calcified Moth`,
-    description: `Teleport to Calcified Moth`,
+    description: `Teleport to Cam Torum using a Calcified Moth`,
     skillReqs: [{ skill: 'Mining', level: 41 }],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -8477,7 +8477,7 @@ export default {
   982: {
     id: '982',
     label: `Use the Abyss`,
-    description: `Use the Runecrafting Altar`,
+    description: `Use the Abyss to access a Runecrafting Altar`,
     skillReqs: [],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.MEDIUM,
@@ -9445,7 +9445,7 @@ export default {
   1391: {
     id: '1391',
     label: `Obtain a Magic seed from a birds nest`,
-    description: `Obtain a birds nest`,
+    description: `Obtain a Magic seed from a birds nest`,
     skillReqs: [],
     regions: ['General'],
     difficulty: DIFFICULTY.HARD,
@@ -9654,7 +9654,7 @@ export default {
   776: {
     id: '776',
     label: `Craft 50 Law Runes`,
-    description: `Craft 50 Essence at the Law Altar`,
+    description: `Craft 50 Law Runes from Essence at the Law Altar`,
     skillReqs: [{ skill: 'Runecraft', level: 54 }],
     regions: ['Asgarnia'],
     difficulty: DIFFICULTY.HARD,
@@ -11100,7 +11100,7 @@ export default {
   1439: {
     id: '1439',
     label: `Kill a Frogeel`,
-    description: `Kill a Tower of Life`,
+    description: `Kill a Frogeel underneath the Tower of Life`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.HARD,
@@ -11111,7 +11111,7 @@ export default {
   1440: {
     id: '1440',
     label: `Kill a Jubster`,
-    description: `Kill a Tower of Life`,
+    description: `Kill a Jubster underneath the Tower of Life`,
     skillReqs: [],
     regions: ['Kandarin'],
     difficulty: DIFFICULTY.HARD,
@@ -11546,7 +11546,7 @@ export default {
   1603: {
     id: '1603',
     label: `Craft 100 Blood runes`,
-    description: `Craft 100 Kourend Blood Altar`,
+    description: `Craft 100 Blood runes at the Kourend Blood Altar`,
     skillReqs: [
       { skill: 'Runecraft', level: 77 },
       { skill: 'Mining', level: 38 },
@@ -11974,7 +11974,7 @@ export default {
   1723: {
     id: '1723',
     label: `1 Araxxor Kill`,
-    description: `Kill the Morytania Spider cave`,
+    description: `Kill the Araxxor in Morytania Spider cave`,
     skillReqs: [{ skill: 'Slayer', level: 92 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.HARD,
@@ -11985,7 +11985,7 @@ export default {
   1725: {
     id: '1725',
     label: `150 Araxxor Kills`,
-    description: `Kill the Morytania Spider cave 150 times`,
+    description: `Kill the Araxxor in Morytania Spider cave 150 times`,
     skillReqs: [{ skill: 'Slayer', level: 92 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.HARD,
@@ -11996,7 +11996,7 @@ export default {
   1724: {
     id: '1724',
     label: `50 Araxxor Kills`,
-    description: `Kill the Morytania Spider cave 50 times`,
+    description: `Kill the Araxxor in Morytania Spider cave 50 times`,
     skillReqs: [{ skill: 'Slayer', level: 92 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.HARD,
@@ -12326,7 +12326,7 @@ export default {
   1132: {
     id: '1132',
     label: `Open a Gold Chest`,
-    description: `Open a Shades of Mort'ton`,
+    description: `Open a Gold Chest from Shades of Mort'ton`,
     skillReqs: [{ skill: 'Firemaking', level: 80 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.HARD,
@@ -12630,7 +12630,7 @@ export default {
   1512: {
     id: '1512',
     label: `Equip any piece of Crystal Armour`,
-    description: `Equip either the Body or Legs`,
+    description: `Equip either the Crystal Helmet, Body or Legs`,
     skillReqs: [{ skill: 'Defence', level: 70 }],
     regions: ['Tirannwn'],
     difficulty: DIFFICULTY.HARD,
@@ -12663,7 +12663,7 @@ export default {
   1808: {
     id: '1808',
     label: `Load a blowpipe with Rune Darts`,
-    description: `Load a Rune Darts`,
+    description: `Load a Toxic Blowpipe with Rune Darts`,
     skillReqs: [{ skill: 'Fletching', level: 53 }],
     regions: ['Tirannwn'],
     difficulty: DIFFICULTY.HARD,
@@ -13531,7 +13531,7 @@ export default {
   970: {
     id: '970',
     label: `Sacrifice Some Dragon Bones at the Chaos Temple`,
-    description: `Sacrifice some Western Chaos Temple altar`,
+    description: `Sacrifice some Dragon Bones at the Western Chaos Temple altar`,
     skillReqs: [],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.HARD,
@@ -13809,7 +13809,7 @@ export default {
   1459: {
     id: '1459',
     label: `Equip a piece of Virtus`,
-    description: `Equip either the Robe top, or Robe Bottoms`,
+    description: `Equip either the Virtus Mask, Robe top, or Robe Bottoms`,
     skillReqs: [
       { skill: 'Magic', level: 78 },
       { skill: 'Defence', level: 75 },
@@ -14948,7 +14948,7 @@ export default {
   328: {
     id: '328',
     label: `Slay an Abyssal Demon`,
-    description: `Kill an Slayer Task`,
+    description: `Kill an Abyssal Demon whilst on an Abyssal Demon Slayer Task`,
     skillReqs: [{ skill: 'Slayer', level: 85 }],
     regions: ['General'],
     difficulty: DIFFICULTY.ELITE,
@@ -16082,7 +16082,7 @@ export default {
   1575: {
     id: '1575',
     label: `Pay Saniboch for Permanent Access`,
-    description: `Pay dungeon`,
+    description: `Pay Saniboch for Permanent Access into his dungeon`,
     skillReqs: [],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.ELITE,
@@ -16531,7 +16531,7 @@ export default {
   1726: {
     id: '1726',
     label: `300 Araxxor Kills`,
-    description: `Kill the Morytania Spider cave 300 times`,
+    description: `Kill the Araxxor in Morytania Spider cave 300 times`,
     skillReqs: [{ skill: 'Slayer', level: 92 }],
     regions: ['Morytania'],
     difficulty: DIFFICULTY.ELITE,
@@ -17208,7 +17208,7 @@ export default {
   1676: {
     id: '1676',
     label: `Perilous Moons Combat Achievements`,
-    description: `Complete all of the Perilous Moons`,
+    description: `Complete all of the Combat Achievements for Perilous Moons`,
     skillReqs: [],
     regions: ['Varlamore'],
     difficulty: DIFFICULTY.ELITE,
@@ -17454,7 +17454,7 @@ export default {
   1297: {
     id: '1297',
     label: `Equip full Elder chaos robe`,
-    description: `Equip the Robe, and top`,
+    description: `Equip the Elder Chaos Hood, Robe, and top`,
     skillReqs: [{ skill: 'Magic', level: 40 }],
     regions: ['Wilderness'],
     difficulty: DIFFICULTY.ELITE,
@@ -17830,7 +17830,7 @@ export default {
   1419: {
     id: '1419',
     label: `The Fight Caves Combat Achievements`,
-    description: `Complete all of the Raids}} The Fight Caves`,
+    description: `Complete all of the Combat Achievements for The Fight Caves`,
     skillReqs: [],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.MASTER,
@@ -17841,7 +17841,7 @@ export default {
   1418: {
     id: '1418',
     label: `The Inferno Combat Achievements`,
-    description: `Complete all of the Raids}} The Inferno`,
+    description: `Complete all of the Combat Achievements for The Inferno`,
     skillReqs: [],
     regions: ['Karamja'],
     difficulty: DIFFICULTY.MASTER,

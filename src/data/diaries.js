@@ -1442,7 +1442,7 @@ const DIARY_TASKS = [
   {
     id: 155,
     task: 'Kill the generals of Armadyl, Bandos, Saradomin, and Zamorak in the God Wars Dungeon.',
-    questReqs: ['441'],
+    questReqs: ['153'],
     skillReqs: [
       { skill: 'Agility', level: 70 },
       { skill: 'Strength', level: 70 },
@@ -1456,7 +1456,7 @@ const DIARY_TASKS = [
   {
     id: 156,
     task: 'Slay a Spiritual mage within the God Wars Dungeon.',
-    questReqs: ['441'],
+    questReqs: ['153'],
     skillReqs: [{ skill: 'Slayer', level: 83 }],
     otherReqs: [],
     location: DIARY_LOCATIONS.FREMENNIK,
