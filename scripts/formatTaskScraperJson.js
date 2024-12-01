@@ -11,7 +11,7 @@ function formatTasks() {
   const writeStream = fs.createWriteStream('./src/data/tasks.js');
   writeStream.write("import { CATEGORY } from './categories';\n");
   writeStream.write("import { DIFFICULTY } from './constants';\n\n");
-  writeStream.write("export const REGION_ANY = 'General';\n\n");
+  writeStream.write("export const REGION_ANY = 'Global';\n\n");
   writeStream.write('export default {\n  ');
   fetchTaskJson().then(tasks => {
     tasks.forEach((task, index) => {

@@ -7,7 +7,7 @@ import { DEFAULT_NOTES_TEXT } from '../data/constants';
 import SkillRequirementList from './SkillRequirementList';
 import Difficulty from './Difficulty';
 import Category from './Category';
-import { regionNames, regionsByName } from '../data/regions';
+import { GLOBAL_REGION, regionsByName } from '../data/regions';
 import { REGION_ANY } from '../data/tasks';
 
 function Task({ row, value, addToHistory }) {
@@ -298,11 +298,10 @@ function Priority({ row }) {
 }
 
 function Regions({ value }) {
-  const regionsToDisplay = value[0] === REGION_ANY ? regionNames : value;
   return (
     <div className='flex flex-row flex-wrap py-2 w-full h-full gap-1 justify-center items-center'>
-      {regionsToDisplay.map(region => {
-        const { icon } = regionsByName[region] || {};
+      {value.map(region => {
+        const icon = value[0] === REGION_ANY ? GLOBAL_REGION.icon : regionsByName[region].icon;
         return (
           <div key={region}>
             <img width={16} src={icon} alt={region} data-tip data-for={region} />

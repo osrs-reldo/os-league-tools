@@ -81,11 +81,8 @@ function ignoredFilter(record, filterState, { taskState }) {
 
 function regionsFilter(record, filterState, { regionsState }) {
   const unlockedRegionNames = regionsState.filter(id => id >= 0).map(id => regionsById[id].label);
-  if (record.regions[0] === REGION_ANY && filterState.regions.length) {
-    return true;
-  }
   if (filterState.regions[0] === UNLOCKED_REGION_FILTER_VALUE) {
-    return record.regions.some(area => unlockedRegionNames.includes(area));
+    return record.regions[0] === REGION_ANY || record.regions.some(area => unlockedRegionNames.includes(area));
   }
   return record.regions.some(area => filterState.regions.includes(area));
 }

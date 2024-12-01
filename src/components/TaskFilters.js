@@ -10,7 +10,8 @@ import { DIFFICULTY, STATS } from '../data/constants';
 import { formatCategoriesForCheckboxTree } from '../data/categories';
 import getSkillsPanelData from '../util/getSkillsPanelData';
 import { UNLOCKED_REGION_FILTER_VALUE } from './CalculatorFilters';
-import { regionsById, LEAGUES_REGIONS } from '../data/regions';
+import { regionsById, LEAGUES_REGIONS, GLOBAL_REGION } from '../data/regions';
+import { REGION_ANY } from '../data/tasks';
 
 export default function TaskFilters({ history }) {
   const filterState = useSelector(state => state.filters.tasks);
@@ -71,15 +72,17 @@ export default function TaskFilters({ history }) {
         <FilterButtons
           filterName='regions'
           selectedValues={
-            filterState.regions[0] === UNLOCKED_REGION_FILTER_VALUE ? unlockedRegionNames : filterState.regions
+            filterState.regions[0] === UNLOCKED_REGION_FILTER_VALUE
+              ? [...unlockedRegionNames, REGION_ANY]
+              : filterState.regions
           }
           updateFunc={updateTaskFilter}
-          values={LEAGUES_REGIONS}
+          values={[...LEAGUES_REGIONS, GLOBAL_REGION]}
         />
         <FilterSelectAll
           filterName='regions'
           updateFunc={updateTaskFilter}
-          values={LEAGUES_REGIONS.map(({ label }) => label)}
+          values={[...LEAGUES_REGIONS, GLOBAL_REGION].map(({ label }) => label)}
           additionalButtons={[{ label: 'unlocked', value: [UNLOCKED_REGION_FILTER_VALUE] }]}
         />
       </div>
@@ -120,18 +123,13 @@ export default function TaskFilters({ history }) {
           checked={filterState.showUnmetRequirements}
           onClick={e => dispatch(updateTaskFilter({ field: 'showUnmetRequirements', value: e.target.checked }))}
         />
+        {/* TODO re-enable after prereqs are mapped
         <LabeledCheckbox
           className='text-sm'
           label='Show tasks with incomplete prerequisites'
           checked={filterState.showIncompletePrereqs}
           onClick={e => dispatch(updateTaskFilter({ field: 'showIncompletePrereqs', value: e.target.checked }))}
-        />
-        <LabeledCheckbox
-          className='text-sm'
-          label='Use production prodigy skill boost'
-          checked={filterState.isProductionProdigy}
-          onClick={e => dispatch(updateTaskFilter({ field: 'isProductionProdigy', value: e.target.checked }))}
-        />
+        /> */}
       </div>
       <div className='lg:w-full text-sm flex flex-col mb-2 max-w-[320px]'>
         <SkillsFilter filterState={filterState} />
