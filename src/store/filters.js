@@ -6,8 +6,9 @@ import { getCategoriesForStore } from '../data/categories';
 import { STATS, DIFFICULTY, DIARY_LOCATIONS, DIARY_DIFFICULTY } from '../data/constants';
 import { QUEST_DIFFICULTY, QUEST_LENGTH } from '../data/quests';
 import { LEAGUES_REGIONS } from '../data/regions';
+import { REGION_ANY } from '../data/tasks';
 
-const CURRENT_VERSION = 21;
+const CURRENT_VERSION = 22;
 
 const mapDataValues = values => Object.values(values).map(({ label }) => label);
 
@@ -17,7 +18,7 @@ const INITIAL_TASK_STATE = {
   ignored: 'hide',
   difficulty: mapDataValues(DIFFICULTY),
   categories: getCategoriesForStore(),
-  regions: mapDataValues(LEAGUES_REGIONS),
+  regions: [...mapDataValues(LEAGUES_REGIONS), REGION_ANY],
   skills: Object.keys(STATS),
   reorderEnabled: false,
   showNoRequirements: true,
