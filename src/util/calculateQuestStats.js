@@ -12,7 +12,7 @@ export default function calculateQuestStats(questState) {
 
   for (const [id] of completedQuests) {
     const questDetails = QUESTS.find(quest => quest.id === id);
-    questPoints += questDetails.points || 0;
+    questPoints += questDetails?.points || 0;
   }
 
   return { points: questPoints, finished, inProgress, notStarted };
