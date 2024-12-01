@@ -8,12 +8,14 @@ import { addCharacter } from '../store/user/character';
 
 export default function importFromPlugin(pluginData, userState, dispatch, characterState) {
   const characterIndex = _.find(characterState.characters, pluginData.displayName);
-  if (!characterIndex) {
+  if (characterIndex === undefined) {
     dispatch(addCharacter({ rsn: pluginData.displayName, setActive: true }));
   }
 
   const syncedTasks = importTasks(pluginData.tasks, userState.tasks.tasks, dispatch);
-  dispatch(loadTaskState({ newState: { rsn: pluginData.displayName, tasks: syncedTasks } }));
+  dispatch(
+    loadTaskState({ newState: { rsn: pluginData.displayName, tasks: syncedTasks, regions: userState.regions } })
+  );
 
   const importedQuests = pluginData.quests;
   if (importedQuests) {
@@ -26,12 +28,12 @@ function importTasks(pluginTasks, localTasks, dispatch) {
   Object.keys(pluginTasks).forEach(taskId => {
     const pluginTask = pluginTasks[taskId];
     const localTask = localTasks[taskId] || INITIAL_TASK_STATE;
-    const completed = pluginTask.completedOn > 0 ? pluginTask.completedOn : null; // Always trust plugin as single source of truth for completion
+    const completed = pluginTask.completed > 0 ? pluginTask.completed : null; // Always trust plugin as single source of truth for completion
     syncedTasks[taskId] = {
       ...localTask,
       completed,
-      todo: completed ? null : selectCurrentValue(pluginTask.trackedOn, localTask.todo),
-      ignored: selectCurrentValue(pluginTask.ignoredOn, localTask.ignored),
+      todo: completed ? null : selectCurrentValue(pluginTask.tracked, localTask.todo),
+      ignored: selectCurrentValue(pluginTask.ignored, localTask.ignored),
       lastUpdated: Date.now(),
     };
   });
