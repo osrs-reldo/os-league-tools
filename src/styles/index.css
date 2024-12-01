@@ -29,7 +29,7 @@
     @apply tb-light:bg-tb-brown tb-dark:bg-tb-sand;
     @apply sl-light:bg-sl-teal sl-dark:bg-sl-ecto;
     @apply tr-light:bg-tr-umber tr-dark:bg-tr-orange;
-    @apply re-light:bg-re-wine re-dark:bg-re-berry;
+    @apply re-light:bg-re-ocean re-dark:bg-re-sky;
     @apply mono-light:bg-mono-white mono-dark:bg-mono-dark;
   }
   .bg-subdued {
@@ -61,7 +61,7 @@
     @apply tb-light:text-tb-brown tb-dark:text-tb-sand;
     @apply sl-light:text-sl-teal sl-dark:text-sl-ecto;
     @apply tr-light:text-tr-umber tr-dark:text-tr-orange;
-    @apply re-light:text-re-wine re-dark:text-re-berry;
+    @apply re-light:text-re-ocean re-dark:text-re-sky;
     @apply mono-light:text-mono-white mono-dark:text-mono-dark;
   }
   .text-success {
@@ -84,7 +84,7 @@
     @apply tb-light:border-tb-brown tb-dark:border-tb-sand;
     @apply sl-light:border-sl-teal sl-dark:border-sl-ecto;
     @apply tr-light:border-tr-umber tr-dark:border-tr-orange;
-    @apply re-light:border-re-wine re-dark:border-re-berry;
+    @apply re-light:border-re-ocean re-dark:border-re-sky;
     @apply mono-light:border-mono-white mono-dark:border-mono-dark;
   }
   .border-subdued {
@@ -104,7 +104,7 @@
     @apply tb-light:ring-tb-brown tb-dark:ring-tb-sand;
     @apply sl-light:ring-sl-teal sl-dark:ring-sl-ecto;
     @apply tr-light:ring-tr-umber tr-dark:ring-tr-orange;
-    @apply re-light:ring-re-wine re-dark:ring-re-berry;
+    @apply re-light:ring-re-ocean re-dark:ring-re-sky;
     @apply mono-light:ring-mono-white mono-dark:ring-mono-dark;
   }
   .ring-error {
@@ -115,7 +115,7 @@
     @apply tb-light:accent-tb-brown tb-dark:accent-tb-sand;
     @apply sl-light:accent-sl-teal sl-dark:accent-sl-ecto;
     @apply tr-light:accent-tr-umber tr-dark:accent-tr-orange;
-    @apply re-light:accent-re-wine re-dark:accent-re-berry;
+    @apply re-light:accent-re-ocean re-dark:accent-re-sky;
     @apply mono-light:accent-mono-white mono-dark:accent-mono-dark;
   }
   /* Compatibility classes for applying text colors to svg images */
@@ -147,11 +147,11 @@
   .tr-umber-img-compat {
     filter: invert(30%) sepia(53%) saturate(1885%) hue-rotate(351deg) brightness(93%) contrast(86%);
   }
-  .re-wine-img-compat {
-    filter: invert(15%) sepia(11%) saturate(3537%) hue-rotate(279deg) brightness(91%) contrast(90%);
+  .re-ocean-img-compat {
+    filter: invert(12%) sepia(87%) saturate(4574%) hue-rotate(197deg) brightness(91%) contrast(98%);
   }
-  .re-berry-img-compat {
-    filter: invert(51%) sepia(71%) saturate(257%) hue-rotate(277deg) brightness(95%) contrast(87%);
+  .re-sky-img-compat {
+    filter: invert(53%) sepia(70%) saturate(704%) hue-rotate(165deg) brightness(106%) contrast(101%);
   }
   .mono-dark-img-compat {
     filter: invert(88%) sepia(2%) saturate(93%) hue-rotate(171deg) brightness(108%) contrast(105%);
@@ -167,7 +167,7 @@
     @apply tb-light:tb-brown-img-compat tb-dark:tb-sand-img-compat;
     @apply sl-light:sl-teal-img-compat sl-dark:sl-ecto-img-compat;
     @apply tr-light:tr-umber-img-compat tr-dark:tr-orange-img-compat;
-    @apply re-light:re-wine-img-compat re-dark:re-berry-img-compat;
+    @apply re-light:re-ocean-img-compat re-dark:re-sky-img-compat;
     @apply mono-light:mono-white-img-compat mono-dark:mono-dark-img-compat;
   }
   /* TYPOGRAPHY */

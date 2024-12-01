@@ -15,8 +15,8 @@ module.exports = {
         'sl-teal': '#008076',
         'tr-orange': '#dc8B36',
         'tr-umber': '#b44a1e',
-        're-berry': '#c679a0',
-        're-wine': '#4c2136',
+        're-sky': '#20c3fe',
+        're-ocean': '#034f92',
         'mono-dark': '#f9fafb',
         'mono-white': '#374151',
         gray: {

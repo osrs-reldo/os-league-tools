@@ -669,12 +669,12 @@ body:is(.dark *) {
 
 .theme-re-dark .bg-accent {
   --tw-bg-opacity: 1;
-  background-color: rgb(198 121 160 / var(--tw-bg-opacity, 1));
+  background-color: rgb(32 195 254 / var(--tw-bg-opacity, 1));
 }
 
 .theme-re-light .bg-accent {
   --tw-bg-opacity: 1;
-  background-color: rgb(76 33 54 / var(--tw-bg-opacity, 1));
+  background-color: rgb(3 79 146 / var(--tw-bg-opacity, 1));
 }
 
 .theme-mono-dark .bg-accent {
@@ -809,12 +809,12 @@ body:is(.dark *) {
 
 .theme-re-dark .text-accent {
   --tw-text-opacity: 1;
-  color: rgb(198 121 160 / var(--tw-text-opacity, 1));
+  color: rgb(32 195 254 / var(--tw-text-opacity, 1));
 }
 
 .theme-re-light .text-accent {
   --tw-text-opacity: 1;
-  color: rgb(76 33 54 / var(--tw-text-opacity, 1));
+  color: rgb(3 79 146 / var(--tw-text-opacity, 1));
 }
 
 .theme-mono-dark .text-accent {
@@ -917,12 +917,12 @@ body:is(.dark *) {
 
 .theme-re-dark .border-accent {
   --tw-border-opacity: 1;
-  border-color: rgb(198 121 160 / var(--tw-border-opacity, 1));
+  border-color: rgb(32 195 254 / var(--tw-border-opacity, 1));
 }
 
 .theme-re-light .border-accent {
   --tw-border-opacity: 1;
-  border-color: rgb(76 33 54 / var(--tw-border-opacity, 1));
+  border-color: rgb(3 79 146 / var(--tw-border-opacity, 1));
 }
 
 .theme-mono-dark .border-accent {
@@ -1361,11 +1361,11 @@ body:is(.dark *) {
 }
 .theme-re-dark a.active {
   --tw-text-opacity: 1;
-  color: rgb(198 121 160 / var(--tw-text-opacity, 1));
+  color: rgb(32 195 254 / var(--tw-text-opacity, 1));
 }
 .theme-re-light a.active {
   --tw-text-opacity: 1;
-  color: rgb(76 33 54 / var(--tw-text-opacity, 1));
+  color: rgb(3 79 146 / var(--tw-text-opacity, 1));
 }
 .theme-mono-dark a.active {
   --tw-text-opacity: 1;
@@ -1456,11 +1456,11 @@ body:is(.dark *) {
 }
 .theme-re-dark .heading-accent-md {
   --tw-text-opacity: 1;
-  color: rgb(198 121 160 / var(--tw-text-opacity, 1));
+  color: rgb(32 195 254 / var(--tw-text-opacity, 1));
 }
 .theme-re-light .heading-accent-md {
   --tw-text-opacity: 1;
-  color: rgb(76 33 54 / var(--tw-text-opacity, 1));
+  color: rgb(3 79 146 / var(--tw-text-opacity, 1));
 }
 .theme-mono-dark .heading-accent-md {
   --tw-text-opacity: 1;
@@ -1572,11 +1572,11 @@ body:is(.dark *) {
 }
 .theme-re-dark .button-filled:active {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(198 121 160 / var(--tw-ring-opacity, 1));
+  --tw-ring-color: rgb(32 195 254 / var(--tw-ring-opacity, 1));
 }
 .theme-re-light .button-filled:active {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(76 33 54 / var(--tw-ring-opacity, 1));
+  --tw-ring-color: rgb(3 79 146 / var(--tw-ring-opacity, 1));
 }
 .theme-mono-dark .button-filled:active {
   --tw-ring-opacity: 1;
@@ -1625,11 +1625,11 @@ body:is(.dark *) {
 }
 .theme-re-dark .button-filled {
   --tw-bg-opacity: 1;
-  background-color: rgb(198 121 160 / var(--tw-bg-opacity, 1));
+  background-color: rgb(32 195 254 / var(--tw-bg-opacity, 1));
 }
 .theme-re-light .button-filled {
   --tw-bg-opacity: 1;
-  background-color: rgb(76 33 54 / var(--tw-bg-opacity, 1));
+  background-color: rgb(3 79 146 / var(--tw-bg-opacity, 1));
 }
 .theme-mono-dark .button-filled {
   --tw-bg-opacity: 1;
@@ -1681,11 +1681,11 @@ body:is(.dark *) {
 }
 .theme-re-dark .content-outline {
   --tw-border-opacity: 1;
-  border-color: rgb(198 121 160 / var(--tw-border-opacity, 1));
+  border-color: rgb(32 195 254 / var(--tw-border-opacity, 1));
 }
 .theme-re-light .content-outline {
   --tw-border-opacity: 1;
-  border-color: rgb(76 33 54 / var(--tw-border-opacity, 1));
+  border-color: rgb(3 79 146 / var(--tw-border-opacity, 1));
 }
 .theme-mono-dark .content-outline {
   --tw-border-opacity: 1;
@@ -1735,11 +1735,11 @@ body:is(.dark *) {
 }
 .theme-re-dark .button-outline:active {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(198 121 160 / var(--tw-ring-opacity, 1));
+  --tw-ring-color: rgb(32 195 254 / var(--tw-ring-opacity, 1));
 }
 .theme-re-light .button-outline:active {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(76 33 54 / var(--tw-ring-opacity, 1));
+  --tw-ring-color: rgb(3 79 146 / var(--tw-ring-opacity, 1));
 }
 .theme-mono-dark .button-outline:active {
   --tw-ring-opacity: 1;
@@ -1788,11 +1788,11 @@ body:is(.dark *) {
 }
 .theme-re-dark .button-outline {
   --tw-text-opacity: 1;
-  color: rgb(198 121 160 / var(--tw-text-opacity, 1));
+  color: rgb(32 195 254 / var(--tw-text-opacity, 1));
 }
 .theme-re-light .button-outline {
   --tw-text-opacity: 1;
-  color: rgb(76 33 54 / var(--tw-text-opacity, 1));
+  color: rgb(3 79 146 / var(--tw-text-opacity, 1));
 }
 .theme-mono-dark .button-outline {
   --tw-text-opacity: 1;
@@ -1836,11 +1836,11 @@ body:is(.dark *) {
 }
 .theme-re-dark .button-outline {
   --tw-border-opacity: 1;
-  border-color: rgb(198 121 160 / var(--tw-border-opacity, 1));
+  border-color: rgb(32 195 254 / var(--tw-border-opacity, 1));
 }
 .theme-re-light .button-outline {
   --tw-border-opacity: 1;
-  border-color: rgb(76 33 54 / var(--tw-border-opacity, 1));
+  border-color: rgb(3 79 146 / var(--tw-border-opacity, 1));
 }
 .theme-mono-dark .button-outline {
   --tw-border-opacity: 1;
@@ -1918,11 +1918,11 @@ body:is(.dark *) {
 }
 .theme-re-dark .button-group-active:active {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(198 121 160 / var(--tw-ring-opacity, 1));
+  --tw-ring-color: rgb(32 195 254 / var(--tw-ring-opacity, 1));
 }
 .theme-re-light .button-group-active:active {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(76 33 54 / var(--tw-ring-opacity, 1));
+  --tw-ring-color: rgb(3 79 146 / var(--tw-ring-opacity, 1));
 }
 .theme-mono-dark .button-group-active:active {
   --tw-ring-opacity: 1;
@@ -1971,11 +1971,11 @@ body:is(.dark *) {
 }
 .theme-re-dark .button-group-selected {
   --tw-bg-opacity: 1;
-  background-color: rgb(198 121 160 / var(--tw-bg-opacity, 1));
+  background-color: rgb(32 195 254 / var(--tw-bg-opacity, 1));
 }
 .theme-re-light .button-group-selected {
   --tw-bg-opacity: 1;
-  background-color: rgb(76 33 54 / var(--tw-bg-opacity, 1));
+  background-color: rgb(3 79 146 / var(--tw-bg-opacity, 1));
 }
 .theme-mono-dark .button-group-selected {
   --tw-bg-opacity: 1;
@@ -2059,10 +2059,10 @@ body:is(.dark *) {
   accent-color: #b44a1e;
 }
 .theme-re-dark .checkbox-primary {
-  accent-color: #c679a0;
+  accent-color: #20c3fe;
 }
 .theme-re-light .checkbox-primary {
-  accent-color: #4c2136;
+  accent-color: #034f92;
 }
 .theme-mono-dark .checkbox-primary {
   accent-color: #f9fafb;
