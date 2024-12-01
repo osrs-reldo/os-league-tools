@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import Banner from './common/Banner';
 import Page from './common/Page';
 import NavBar, { NavItem } from './common/NavBar';
 import FeedbackModal from './FeedbackModal';
@@ -57,24 +56,6 @@ export default function PageWrapper({ children }) {
       <Page.Nav>
         <NavBar navItems={navItems} brandName='OS League Tools' brandLogo={images[`icon-${theme}.png`]} />
       </Page.Nav>
-      <Page.Banner>
-        <Banner className='mx-[20%] mb-4'>
-          <p className='text-accent text-center'>✨ RAGING ECHOES LEAGUE IS HERE! ✨</p>
-          <p className='text-sm mb-2'>Please be patient with us as we get everything up & running.</p>
-          <p className='text-sm mb-2'>
-            The initial task list is expected to be available within a few hours after the servers go live. Some task
-            info may be missing or incorrect for the first day or two. We do NOT get any advance knowledge from Jagex so
-            it will take us some time to ingest all of the data!
-          </p>
-          <p className='text-sm'>
-            If you notice any other incorrect data, please{' '}
-            <span className='text-accent underline cursor-pointer' onClick={() => setFeedbackModalOpen(true)}>
-              submit a bug report
-            </span>{' '}
-            and we'll get to it as soon as we can!
-          </p>
-        </Banner>
-      </Page.Banner>
       <Page.Body>
         {children}
         <FeedbackModal isOpen={isFeedbackModalOpen} setIsOpen={val => setFeedbackModalOpen(val)} />
