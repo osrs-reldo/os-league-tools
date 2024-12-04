@@ -61,7 +61,7 @@ export default function TasksPanel({ readonly, taskState }) {
               />
             </div>
             <div className='text-accent text-sm text-center'>
-              {tier <= REGION_UNLOCK_THRESHOLDS.length + 1 ? (
+              {regionTier <= REGION_UNLOCK_THRESHOLDS.length + 1 ? (
                 <span>{`Next region unlocked at ${REGION_UNLOCK_THRESHOLDS[regionTier + 1]} tasks (${
                   REGION_UNLOCK_THRESHOLDS[regionTier + 1] - taskStats.tasks.complete.total
                 } remaining)`}</span>
