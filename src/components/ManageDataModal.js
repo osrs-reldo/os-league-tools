@@ -9,6 +9,7 @@ import { loadNewState, resetState } from '../store/common';
 import { selectActiveCharacter } from '../store/user/character';
 
 const PLUGIN_EXPORT_VERSION = 1;
+const LEAGUE_TASK_TYPE = 'LEAGUE_5';
 
 export default function ManageDataModal({ variant, isOpen, setIsOpen }) {
   switch (variant) {
@@ -343,6 +344,7 @@ function convertTasksToPluginExport(taskState, rsn) {
     version: PLUGIN_EXPORT_VERSION,
     rsn,
     tasks: {},
+	taskTypeName: LEAGUE_TASK_TYPE,
   };
   Object.keys(taskState).forEach(taskId => {
     reformattedTasks.tasks[taskId] = {
