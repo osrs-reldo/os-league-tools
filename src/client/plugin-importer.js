@@ -4,11 +4,14 @@ import _ from 'lodash';
 import { INITIAL_TASK_STATE } from '../store/tasks/constants';
 import { load as loadTaskState } from '../store/tasks/tasks';
 import { load as loadQuestState } from '../store/unlocks/unlocks';
-import { addCharacter } from '../store/user/character';
+import { addCharacter, updateActiveCharacter } from '../store/user/character';
 
 export default function importFromPlugin(pluginData, userState, dispatch, characterState) {
-  const characterIndex = _.find(characterState.characters, pluginData.displayName);
-  if (characterIndex === undefined) {
+  const characterExists = characterState.characters.includes(pluginData.displayName);
+  if (characterExists) {
+    const characterIndex = characterState.characters.indexOf(pluginData.displayName);
+    dispatch(updateActiveCharacter(characterIndex));
+  } else {
     dispatch(addCharacter({ rsn: pluginData.displayName, setActive: true }));
   }
 
