@@ -56,13 +56,18 @@ export default function Table({
   useEffect(() => {
     // Reset to first page when filters are changed
     table.gotoPage(0);
-  }, [filterState, forceResetPage]);
+    // eslint-disable-next-line no-console
+  }, [table.state.globalFilter, filterState, forceResetPage]);
 
   return (
     <>
       <div className='flex flex-row flex-wrap justify-between pb-3 px-3 items-end'>
         <span className='italic text-sm'>Showing: {table.page.length} rows</span>
-        <SearchBox globalFilter={table.state.globalFilter} setGlobalFilter={table.setGlobalFilter} />
+        <SearchBox
+          gotoPage={table.gotoPage}
+          globalFilter={table.state.globalFilter}
+          setGlobalFilter={table.setGlobalFilter}
+        />
       </div>
       <div className='overflow-auto px-3'>
         <div {...table.getTableProps()} style={{ minWidth: 'min-content' }}>
