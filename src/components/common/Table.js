@@ -56,7 +56,7 @@ export default function Table({
   useEffect(() => {
     // Reset to first page when filters are changed
     table.gotoPage(0);
-  }, [filterState, forceResetPage]);
+  }, [table.state.globalFilter, filterState, forceResetPage]);
 
   return (
     <>
