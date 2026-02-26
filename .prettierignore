@@ -1,0 +1,5 @@
+LEGACYAPP
+node_modules
+dist
+build
+.turbo

@@ -4,7 +4,14 @@
   "compilerOptions": {
     "target": "ES2020",
     "lib": ["es2022", "DOM", "DOM.Iterable"],
-
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
 
     "paths": {
       "@repo/api/*": ["./src/*"]

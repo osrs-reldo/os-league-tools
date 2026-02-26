@@ -1,24 +1,40 @@
 {
-  "name": "react-trpc-turbo",
+  "name": "reldo-monorepo",
   "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@8.9.0",
   "engines": {
-    "node": ">=18"
+    "node": ">=20 <=22"
   },
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky",
     "start:backend": "node apps/api/dist/server.js"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs,cjs,json,md,yml,yaml}": [
+      "prettier --write"
+    ],
+    "apps/**/*.{js,jsx,ts,tsx,mjs,cjs}": [
+      "sh -c 'pnpm turbo lint --filter=@repo/api --filter=@repo/web'"
+    ]
+  },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
     "@repo/eslint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
-    "turbo": "latest"
+    "turbo": "^2.0.9"
   }
 }
