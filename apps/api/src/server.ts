@@ -7,6 +7,7 @@ import { env } from '@api/env';
 import { httpLogger, logger } from '@api/logger';
 import { attachObservabilityMiddleware, initObservability } from '@api/observability';
 import { appRouter } from '@api/router';
+import { createContext } from '@api/trpc';
 
 async function main() {
   initObservability();
@@ -20,7 +21,7 @@ async function main() {
     '/trpc',
     createExpressMiddleware({
       router: appRouter,
-      createContext: (ctx) => ({ req: ctx.req, res: ctx.res }),
+      createContext,
       onError: ({ path, error, ctx }) => {
         logger.error(
           {
