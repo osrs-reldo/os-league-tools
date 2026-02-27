@@ -5,5 +5,7 @@ export * from '@api/db/schema/profiles';
 export * from '@api/db/schema/league-runs';
 export * from '@api/db/schema/tasks';
 export * from '@api/db/schema/task-progress';
+export * from '@api/db/schema/task-progress-events';
 export * from '@api/db/schema/sync-events';
+export * from '@api/db/schema/user-preferences';
 export * from '@api/db/schema/feedback-items';

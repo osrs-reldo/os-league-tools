@@ -19,7 +19,5 @@ export const apiKeys = pgTable(
     createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
     updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
   },
-  (table) => ({
-    userIdIdx: index('api_keys_user_id_idx').on(table.userId),
-  })
+  (table) => [index('api_keys_user_id_idx').on(table.userId)]
 );

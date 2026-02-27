@@ -15,7 +15,5 @@ export const leagueRuns = pgTable(
     createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
     updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
   },
-  (table) => ({
-    profileLeagueUnique: uniqueIndex('league_runs_profile_league_unique').on(table.profileId, table.leagueCode),
-  })
+  (table) => [uniqueIndex('league_runs_profile_league_unique').on(table.profileId, table.leagueCode)]
 );

@@ -13,7 +13,5 @@ export const tasks = pgTable(
     points: integer('points').notNull(),
     metadata: jsonb('metadata').notNull().default({}),
   },
-  (table) => ({
-    leagueExternalUnique: uniqueIndex('tasks_league_external_unique').on(table.leagueCode, table.externalTaskId),
-  })
+  (table) => [uniqueIndex('tasks_league_external_unique').on(table.leagueCode, table.externalTaskId)]
 );

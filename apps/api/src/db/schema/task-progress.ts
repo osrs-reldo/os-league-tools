@@ -18,7 +18,5 @@ export const taskProgress = pgTable(
     completedAt: timestamp('completed_at', { withTimezone: true }),
     source: taskSourceEnum('source').default('manual').notNull(),
   },
-  (table) => ({
-    runTaskUnique: uniqueIndex('task_progress_run_task_unique').on(table.leagueRunId, table.taskId),
-  })
+  (table) => [uniqueIndex('task_progress_run_task_unique').on(table.leagueRunId, table.taskId)]
 );

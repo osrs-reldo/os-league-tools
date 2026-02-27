@@ -16,7 +16,5 @@ export const profiles = pgTable(
     createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
     updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
   },
-  (table) => ({
-    userModeRsnUnique: uniqueIndex('profiles_user_mode_rsn_unique').on(table.userId, table.gameMode, table.rsn),
-  })
+  (table) => [uniqueIndex('profiles_user_mode_rsn_unique').on(table.userId, table.gameMode, table.rsn)]
 );
