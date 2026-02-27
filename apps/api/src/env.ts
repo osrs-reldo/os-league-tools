@@ -10,6 +10,10 @@ const envSchema = z.object({
   GITHUB_REPO: z.string().optional(),
   GITHUB_TOKEN: z.string().optional(),
   SENTRY_DSN: z.string().optional(),
+  ENABLE_TRPC_PANEL: z
+    .string()
+    .optional()
+    .transform((value) => value === 'true'),
 });
 
 export const env = envSchema.parse(process.env);

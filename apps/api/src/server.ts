@@ -2,6 +2,7 @@ import { createExpressMiddleware } from '@trpc/server/adapters/express';
 import cors from 'cors';
 import 'dotenv/config';
 import express from 'express';
+import { renderTrpcPanel } from 'trpc-panel';
 
 import { env } from '@api/env';
 import { httpLogger, logger } from '@api/logger';
@@ -34,6 +35,16 @@ async function main() {
       },
     })
   );
+
+  if (env.ENABLE_TRPC_PANEL && env.NODE_ENV !== 'production') {
+    app.get('/trpc-panel', (_req, res) => {
+      res.send(
+        renderTrpcPanel(appRouter, {
+          url: `http://localhost:${env.PORT}/trpc`,
+        })
+      );
+    });
+  }
 
   app.get('/', (_req, res) => {
     res.send('Server is running!');
