@@ -14,6 +14,7 @@ const envSchema = z.object({
     .string()
     .optional()
     .transform((value) => value === 'true'),
+  TASK_JSON_STORE_BASE_URL: z.string().default('https://raw.githubusercontent.com/osrs-reldo/task-json-store/refs/heads/main'),
 });
 
 export const env = envSchema.parse(process.env);

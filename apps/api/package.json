@@ -12,6 +12,7 @@
     "test": "vitest run --passWithNoTests",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "tsx src/db/migrate.ts",
+    "ingest:tasks": "tsx src/ingest/run-tasks-ingestion.ts",
     "build": "rimraf dist && tsc --noEmit false && tsc-alias",
     "start": "node dist/server.js"
   },
