@@ -34,6 +34,45 @@ pnpm dev
 
 and open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
+## API Explorer
+
+The backend includes a dev-only tRPC explorer panel.
+
+1. Ensure `ENABLE_TRPC_PANEL=true` in `apps/api/.env`
+2. Start the API: `pnpm --filter @repo/api dev`
+3. Open `http://localhost:3000/trpc-panel`
+
+Notes:
+
+- The panel is disabled in production.
+- API server health check is available at `http://localhost:3000/health`.
+
+## Local database setup (Postgres)
+
+The API uses Postgres + Drizzle migrations.
+
+### Option A: Docker
+
+```bash
+docker run --name reldo-postgres \
+  -e POSTGRES_USER=postgres \
+  -e POSTGRES_PASSWORD=postgres \
+  -e POSTGRES_DB=reldo_dev \
+  -p 5432:5432 -d postgres:16
+```
+
+Set in `apps/api/.env`:
+
+```bash
+DATABASE_URL=postgres://postgres:postgres@localhost:5432/reldo_dev
+```
+
+Run migrations:
+
+```bash
+pnpm --filter @repo/api db:migrate
+```
+
 # About
 
 ## Apps and Packages
