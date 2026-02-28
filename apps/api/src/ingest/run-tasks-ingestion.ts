@@ -1,7 +1,7 @@
 import 'dotenv/config';
 
 import { logger } from '@api/logger';
-import { fetchTaskStoreManifest, fetchTaskTypes, fetchTasksForType } from '@api/ingest/task-json-store/client';
+import { fetchTaskEnrichmentForType, fetchTaskStoreManifest, fetchTaskTypes, fetchTasksForType } from '@api/ingest/task-json-store/client';
 import { normalizeTaskDefinitions } from '@api/ingest/task-json-store/normalize';
 import { upsertTasks, upsertTaskTypes } from '@api/ingest/task-json-store/upsert';
 import { pool } from '@api/db/client';
@@ -26,7 +26,8 @@ async function run() {
     let totalTasks = 0;
     for (const taskType of enabledTaskTypes) {
       const rawTasks = await fetchTasksForType(taskType.taskJsonName);
-      const normalized = normalizeTaskDefinitions(taskType.taskJsonName, rawTasks);
+      const enrichment = await fetchTaskEnrichmentForType(taskType.taskJsonName);
+      const normalized = normalizeTaskDefinitions(taskType.taskJsonName, rawTasks, enrichment);
       totalTasks += normalized.length;
       const upserted = await upsertTasks(normalized);
 
@@ -34,6 +35,8 @@ async function run() {
         {
           taskType: taskType.taskJsonName,
           taskCount: normalized.length,
+          enrichedSkillsCount: Object.keys(enrichment.skillsByTaskId).length,
+          enrichedQuestsCount: Object.keys(enrichment.questsByTaskId).length,
           upserted,
           sampleStructIds: normalized.slice(0, 3).map((task) => task.structId),
         },

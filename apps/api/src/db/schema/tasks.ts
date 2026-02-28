@@ -16,6 +16,7 @@ export const tasks = pgTable(
     points: integer('points'),
     completionPercent: doublePrecision('completion_percent'),
     skillRequirements: jsonb('skill_requirements').default([]).notNull(),
+    questRequirements: jsonb('quest_requirements').default([]).notNull(),
     wikiNotes: text('wiki_notes'),
     metadata: jsonb('metadata').notNull().default({}),
     raw: jsonb('raw').notNull().default({}),

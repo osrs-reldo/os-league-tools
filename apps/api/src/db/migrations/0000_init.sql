@@ -82,6 +82,7 @@ CREATE TABLE "tasks" (
   "points" int,
   "completion_percent" double precision,
   "skill_requirements" jsonb NOT NULL DEFAULT '[]'::jsonb,
+  "quest_requirements" jsonb NOT NULL DEFAULT '[]'::jsonb,
   "wiki_notes" text,
   "metadata" jsonb NOT NULL DEFAULT '{}'::jsonb,
   "raw" jsonb NOT NULL DEFAULT '{}'::jsonb

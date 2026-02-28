@@ -23,12 +23,18 @@ export type RawTaskDefinition = {
   metadata?: Record<string, string | number>;
 };
 
+export type TaskTypeEnrichment = {
+  skillsByTaskId: Record<string, Array<{ skill: string; level: number }>>;
+  questsByTaskId: Record<string, number[]>;
+};
+
 export type NormalizedTaskDefinition = {
   taskType: string;
   structId: number;
   sortId: number;
   completionPercent: number | null;
   skillRequirements: Array<{ skill: string; level: number }>;
+  questRequirements: number[];
   wikiNotes: string | null;
   raw: RawTaskDefinition;
 };
