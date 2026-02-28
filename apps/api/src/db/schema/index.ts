@@ -3,6 +3,7 @@ export * from '@api/db/schema/users';
 export * from '@api/db/schema/api-keys';
 export * from '@api/db/schema/profiles';
 export * from '@api/db/schema/league-runs';
+export * from '@api/db/schema/task-types';
 export * from '@api/db/schema/tasks';
 export * from '@api/db/schema/task-progress';
 export * from '@api/db/schema/task-progress-events';

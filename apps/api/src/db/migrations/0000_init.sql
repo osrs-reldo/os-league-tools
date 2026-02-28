@@ -2,7 +2,6 @@ CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
 CREATE TYPE "api_key_status" AS ENUM ('active', 'revoked');
 CREATE TYPE "game_mode" AS ENUM ('leagues', 'main', 'ironman', 'hardcore', 'ultimate');
-CREATE TYPE "task_tier" AS ENUM ('easy', 'medium', 'hard', 'elite', 'master');
 CREATE TYPE "task_status" AS ENUM ('locked', 'available', 'complete');
 CREATE TYPE "task_source" AS ENUM ('manual', 'import', 'plugin');
 CREATE TYPE "client_type" AS ENUM ('web', 'plugin');
@@ -59,16 +58,35 @@ CREATE TABLE "league_runs" (
 );
 CREATE UNIQUE INDEX "league_runs_profile_league_unique" ON "league_runs" ("profile_id", "league_code");
 
+CREATE TABLE "task_types" (
+  "task_json_name" text PRIMARY KEY,
+  "name" text NOT NULL,
+  "description" text,
+  "is_enabled" boolean NOT NULL DEFAULT true,
+  "filters" jsonb NOT NULL DEFAULT '[]'::jsonb,
+  "int_param_map" jsonb NOT NULL DEFAULT '{}'::jsonb,
+  "string_param_map" jsonb NOT NULL DEFAULT '{}'::jsonb,
+  "task_point_tiers" jsonb NOT NULL DEFAULT '[]'::jsonb,
+  "created_at" timestamptz NOT NULL DEFAULT now(),
+  "updated_at" timestamptz NOT NULL DEFAULT now()
+);
+
 CREATE TABLE "tasks" (
   "id" uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-  "league_code" text NOT NULL,
+  "task_type" text NOT NULL REFERENCES "task_types"("task_json_name") ON DELETE cascade,
   "external_task_id" text NOT NULL,
-  "name" text NOT NULL,
-  "tier" "task_tier" NOT NULL,
-  "points" int NOT NULL,
-  "metadata" jsonb NOT NULL DEFAULT '{}'::jsonb
+  "sort_id" int NOT NULL,
+  "name" text,
+  "description" text,
+  "tier" text,
+  "points" int,
+  "completion_percent" double precision,
+  "skill_requirements" jsonb NOT NULL DEFAULT '[]'::jsonb,
+  "wiki_notes" text,
+  "metadata" jsonb NOT NULL DEFAULT '{}'::jsonb,
+  "raw" jsonb NOT NULL DEFAULT '{}'::jsonb
 );
-CREATE UNIQUE INDEX "tasks_league_external_unique" ON "tasks" ("league_code", "external_task_id");
+CREATE UNIQUE INDEX "tasks_type_external_unique" ON "tasks" ("task_type", "external_task_id");
 
 CREATE TABLE "task_progress" (
   "id" uuid PRIMARY KEY DEFAULT gen_random_uuid(),

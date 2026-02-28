@@ -8,6 +8,7 @@ export type TaskTypeDefinition = {
   description?: string;
   taskJsonName: string;
   isEnabled?: boolean;
+  filters?: unknown[];
   intParamMap?: Record<string, number>;
   stringParamMap?: Record<string, number>;
   taskPointTiers?: Array<{ points: number; label: string }>;
