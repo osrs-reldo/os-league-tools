@@ -1,8 +1,9 @@
 import { and, asc, eq } from 'drizzle-orm';
+import { TRPCError } from '@trpc/server';
 import { z } from 'zod';
 
 import { db } from '@api/db/client';
-import { leagueRuns, profiles, taskProgress, tasks } from '@api/db/schema';
+import { leagueRuns, profiles, taskProgress, taskProgressEvents, tasks } from '@api/db/schema';
 import { authedProcedure, router } from '@api/trpc';
 
 const getTaskCatalogInput = z.object({
@@ -13,6 +14,16 @@ const getRunSnapshotInput = z.object({
   profileId: z.string().uuid(),
   leagueCode: z.string().min(1),
   taskType: z.string().min(1),
+});
+
+const upsertTaskProgressInput = z.object({
+  profileId: z.string().uuid(),
+  leagueCode: z.string().min(1),
+  taskType: z.string().min(1),
+  externalTaskId: z.string().min(1),
+  status: z.enum(['locked', 'available', 'complete']),
+  source: z.enum(['manual', 'import', 'plugin']).default('manual'),
+  idempotencyKey: z.string().min(1).max(256).optional(),
 });
 
 type SkillRequirement = { skill: string; level: number };
@@ -179,6 +190,110 @@ export const progressionRouter = router({
         lockedTasks: taskRows.filter((task) => task.status === 'locked').length,
       },
       tasks: taskRows,
+    };
+  }),
+
+  upsertTaskProgress: authedProcedure.input(upsertTaskProgressInput).mutation(async ({ ctx, input }) => {
+    const [profile] = await db
+      .select({
+        id: profiles.id,
+      })
+      .from(profiles)
+      .where(and(eq(profiles.id, input.profileId), eq(profiles.userId, ctx.user.id)))
+      .limit(1);
+
+    if (!profile) {
+      throw new TRPCError({ code: 'NOT_FOUND', message: 'Profile not found.' });
+    }
+
+    const [task] = await db
+      .select({
+        id: tasks.id,
+      })
+      .from(tasks)
+      .where(and(eq(tasks.taskType, input.taskType), eq(tasks.externalTaskId, input.externalTaskId)))
+      .limit(1);
+
+    if (!task) {
+      throw new TRPCError({ code: 'NOT_FOUND', message: 'Task not found in catalog.' });
+    }
+
+    let [leagueRun] = await db
+      .select({
+        id: leagueRuns.id,
+        leagueCode: leagueRuns.leagueCode,
+        startedAt: leagueRuns.startedAt,
+      })
+      .from(leagueRuns)
+      .where(and(eq(leagueRuns.profileId, input.profileId), eq(leagueRuns.leagueCode, input.leagueCode)))
+      .limit(1);
+
+    if (!leagueRun) {
+      [leagueRun] = await db
+        .insert(leagueRuns)
+        .values({
+          profileId: input.profileId,
+          leagueCode: input.leagueCode,
+          startedAt: new Date(),
+        })
+        .returning({
+          id: leagueRuns.id,
+          leagueCode: leagueRuns.leagueCode,
+          startedAt: leagueRuns.startedAt,
+        });
+    }
+
+    const completedAt = input.status === 'complete' ? new Date() : null;
+
+    const [updatedProgress] = await db
+      .insert(taskProgress)
+      .values({
+        leagueRunId: leagueRun.id,
+        taskId: task.id,
+        status: input.status,
+        source: input.source,
+        completedAt,
+      })
+      .onConflictDoUpdate({
+        target: [taskProgress.leagueRunId, taskProgress.taskId],
+        set: {
+          status: input.status,
+          source: input.source,
+          completedAt,
+        },
+      })
+      .returning({
+        id: taskProgress.id,
+        status: taskProgress.status,
+        source: taskProgress.source,
+        completedAt: taskProgress.completedAt,
+      });
+
+    if (input.idempotencyKey) {
+      await db
+        .insert(taskProgressEvents)
+        .values({
+          taskProgressId: updatedProgress.id,
+          status: input.status,
+          source: input.source,
+          idempotencyKey: input.idempotencyKey,
+        })
+        .onConflictDoNothing({
+          target: taskProgressEvents.idempotencyKey,
+        });
+    }
+
+    return {
+      success: true,
+      profileId: input.profileId,
+      leagueRunId: leagueRun.id,
+      taskId: task.id,
+      progress: {
+        id: updatedProgress.id,
+        status: updatedProgress.status,
+        source: updatedProgress.source,
+        completedAt: updatedProgress.completedAt,
+      },
     };
   }),
 });
