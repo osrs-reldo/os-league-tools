@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "pnpm@8.9.0",
   "engines": {
-    "node": ">=20 <=22"
+    "node": ">=20"
   },
   "scripts": {
     "build": "turbo build",
@@ -22,7 +22,7 @@
       "prettier --write"
     ],
     "apps/**/*.{js,jsx,ts,tsx,mjs,cjs}": [
-      "sh -c 'pnpm turbo lint --filter=@repo/api --filter=@repo/web'"
+      "sh -c 'npx turbo lint --filter=@repo/api --filter=@repo/web'"
     ]
   },
   "devDependencies": {
