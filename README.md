@@ -34,6 +34,8 @@ pnpm dev
 
 and open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
+**Web routes:** Adding or changing files under `apps/web/src/routes/` (e.g. new pages under `tools/`) will cause the TanStack Router Vite plugin to regenerate `apps/web/src/routeTree.gen.ts` when you run `pnpm dev` or `pnpm build`. You do not need to edit the route tree by hand.
+
 ## API Explorer
 
 The backend includes a dev-only tRPC explorer panel.
