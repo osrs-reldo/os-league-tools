@@ -14,7 +14,7 @@ Looking for more info, or have a bug report or suggestion? Check out the [Discor
 
 Prerequisites:
 
-- Node >=20 <=22
+- Node >=20
 - Pnpm https://pnpm.io/installation
 
 From the repository root:
