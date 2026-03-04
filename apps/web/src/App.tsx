@@ -1,6 +1,8 @@
 import { RouterProvider, createRouter } from '@tanstack/react-router';
+import { Provider } from 'react-redux';
 
 import { TrpcWrapper } from './components/TrpcWrapper';
+import { store } from './store';
 import './index.css';
 import { routeTree } from './routeTree.gen';
 
@@ -14,8 +16,10 @@ declare module '@tanstack/react-router' {
 
 export function App() {
   return (
-    <TrpcWrapper>
-      <RouterProvider router={router} />
-    </TrpcWrapper>
+    <Provider store={store}>
+      <TrpcWrapper>
+        <RouterProvider router={router} />
+      </TrpcWrapper>
+    </Provider>
   );
 }
